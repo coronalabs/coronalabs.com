@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Tutorial: Understanding Android App Signing | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/00d0de513e0511587eebe2100ad2cfec.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2014/08/26/tutorial-understanding-android-app-signing/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Design[107,173] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="In this tutorial, we&#039;ll discuss how to create Android app builds and how to use the keytool utility, along with how to generate a keyhash or SHA1 signature for various services like Facebook and Google Play Game Services." />
+
+<meta name="keywords"  content="android,building and distribution,tutorial,tutorials, tips and demos" />
+
+<link rel="canonical" href="/blog/2014/08/26/tutorial-understanding-android-app-signing/" />
+<meta property="og:title" content="Tutorial: Understanding Android App Signing | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2014/08/26/tutorial-understanding-android-app-signing/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2013/06/google-play-store1.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="I must admit that when I started developing mobile apps, I was confused by the various requirements for protecting apps and guaranteeing their authenticity. On the iOS side, you have terms like entitlement, provisioning profile, bundle ID, and a host of other things. Android has similar functionality and their phrasing is equally confusing, including terms such as keystore, key hash, alias and, in addition, there are commands which must be entered on the command line. This week&#039;s tutorial looks specifically at the Android signing process with the goal of bringing clarity and understanding to this potentially complex topic. The Keystore The basics behind protecting your Android app is to use a generated certificate and digital &quot;key&quot; which provides a unique, encrypted, and reasonably un-hackable signature. This proves that the app came from you, not some other suspicious source. On Android, this is done via a keystore. The keystore is a simple file with a really large block of encrypted" />
+<meta property="article:published_time" content="2014-08-26T22:20:51Z" />
+<meta property="article:modified_time" content="2017-08-04T22:37:23Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Tutorial: Understanding Android App Signing | Corona Labs" />
+<meta name="twitter:description" content="I must admit that when I started developing mobile apps, I was confused by the various requirements for protecting apps and guaranteeing their authenticity. On the iOS side, you have terms like entitlement, provisioning profile, bundle ID, and a host of other things. Android has similar functionality and their phrasing is equally confusing, including terms such as keystore, key hash, alias and, in addition, there are commands which must be entered on the command line. This week&#039;s tutorial looks specifically at the Android signing process with the goal of bringing clarity and understanding to this potentially complex topic. The Keystore The basics behind protecting your Android app is to use a generated certificate and digital &quot;key&quot; which provides a unique, encrypted, and reasonably un-hackable signature. This proves that the app came from you, not some other suspicious source. On Android, this is done via a keystore. The keystore is a simple file with a really large block of encrypted" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2013/06/google-play-store1.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2013/06/google-play-store1.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-abcc55149ca8cb52d8f1822a14eae3f6.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Tutorial: Understanding Android App Signing Comments Feed" href="/blog/2014/08/26/tutorial-understanding-android-app-signing/feed/" />
+
+
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='http://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='http://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-4552022b35861dabb02f434bab7a5022.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-3ba04419323e257d3ee6dc44877419ee.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-c03f8577f822f081d9a995c119ea872a.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-4f944b57b95a0aa2775f67af2ac7ced3.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2014\/08\/26\/tutorial-understanding-android-app-signing\/","en":"\/blog\/2014\/08\/26\/tutorial-understanding-android-app-signing\/","US":"\/blog\/2014\/08\/26\/tutorial-understanding-android-app-signing\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-424ae6c56e085dc425b6003bc1c7b26b.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-9da262bd04693459328c75888687169c.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='From the Forum &#8212; Issue #34' href='/blog/2014/08/22/from-the-forum-issue-34/' />
+<link rel='next' title='From the Forum &#8212; Issue #35' href='/blog/2014/08/29/from-the-forum-issue-35/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=59420' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body class="post-template-default single single-post postid-59420 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2014/08/26/tutorial-understanding-android-app-signing/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2014/08/26/tutorial-understanding-android-app-signing/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Tutorial: Understanding Android App Signing</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-59420" class="post-59420 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials-tips-demos tag-android-2 tag-building-distribution tag-tutorial">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">26 August 2014<meta itemprop="interactionCount" content="UserComments: 23"/></span></p>
+						<h2 itemprop="name" class="entry_title">Tutorial: Understanding Android App Signing</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/rob/">Rob Miracle</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/tutorials-tips-demos/" rel="category tag">Tutorials, Tips and Demos</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Tutorial%3A+Understanding+Android+App+Signing&amp;p[url]=%2Fblog%2F2014%2F08%2F26%2Ftutorial-understanding-android-app-signing%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/06/google-play-store1.png&amp;p[summary]=In+this+tutorial%2C+we%5C%27ll+discuss+how+to+create+Android+app+builds+and+how+to+use+the+keytool+utility%2C+along+with+how+to+generate+a+keyhash+or+SHA1+signature+for+various+services+like+Facebook+and+Google+Play+Game+Services.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=In+this+tutorial%2C+we%27ll+discuss+how+to+create+Android+app+builds+and+how+to+use+the+keytool+utility%2C+along+with+how+/blog/2014/08/26/tutorial-understanding-android-app-signing/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2014%2F08%2F26%2Ftutorial-understanding-android-app-signing%2F&amp;title=Tutorial%3A+Understanding+Android+App+Signing&amp;description=In+this+tutorial%2C+we%27ll+discuss+how+to+create+Android+app+builds+and+how+to+use+the+keytool+utility%2C+along+with+how+to+generate+a+keyhash+or+SHA1+signature+for+various+services+like+Facebook+and+Google+Play+Game+Services.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F06%2Fgoogle-play-store1.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>I must admit that when I started developing mobile apps, I was confused by the various requirements for protecting apps and guaranteeing their authenticity. On the iOS side, you have terms like <strong>entitlement</strong>, <strong>provisioning profile</strong>, <strong>bundle ID</strong>, and a host of other things. Android has similar functionality and their phrasing is equally confusing, including terms such as <strong>keystore</strong>, <strong>key hash</strong>, <strong>alias</strong> and, in addition, there are commands which must be entered on the command line.</p>
+<p>This week&#8217;s tutorial looks specifically at the <strong>Android</strong> signing process with the goal of bringing clarity and understanding to this potentially complex topic.</p>
+<h3>The Keystore</h3>
+<p>The basics behind protecting your Android app is to use a generated certificate and digital &#8220;key&#8221; which provides a unique, encrypted, and reasonably un-hackable signature. This proves that the app came from you, not some other suspicious source.</p>
+<p>On Android, this is done via a <strong>keystore</strong>. The keystore is a simple file with a really large block of encrypted data. This file can be stored anywhere on your computer, and this is generally the first problem that developers encounter. Because there&#8217;s no standard location in which to store these, it&#8217;s easy to &#8220;lose&#8221; them &#8212; we will address this issue in a bit.</p>
+<p>Next, there are two types of keystores that you should be aware of: <strong>debug</strong> and <strong>release</strong>. The debug keystore should be used while developing your app &#8212; for example, it can be used when manually installing (side-loading) apps to local Android devices. However, the debug keystore can <strong>not</strong> be used for an app destined for Google Play or Amazon &#8212; for this, you must use a <strong>release</strong> keystore.</p>
+<p>For both types, a keystore is identified by two aspects: the <strong>filename</strong> that it&#8217;s stored in and an <strong>alias</strong>. Because a keystore file could potentially store multiple keystores, each one is identified by an <strong>alias</strong>. In most cases, you&#8217;ll only have one certificate/key pair in a file, but you still need to give it an alias.</p>
+<p>Keystore files are also protected by a <strong>pair</strong> of passwords: one for the keystore file itself and another for each keystore/alias pair within the file. While these passwords should ideally be unique, most developers use the same password for both.</p>
+<h4>Debug</h4>
+<p><strong>Debug</strong> keystores are somewhat standard. Google provides one with the Android Developer Tools but, for your convenience, Corona provides you with a debug keystore as well. This keystore is located in a standardized folder within your CoronaSDK application folder and you should use it while developing Corona apps.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e066e1223a150271788" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+CoronaSDK/Resource Library/Android/debug.keystore</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e066e1223a150271788-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e066e1223a150271788-1"><span class="crayon-v">CoronaSDK</span><span class="crayon-o">/</span><span class="crayon-e">Resource </span><span class="crayon-v">Library</span><span class="crayon-o">/</span><span class="crayon-v">Android</span><span class="crayon-o">/</span><span class="crayon-v">debug</span><span class="crayon-sy">.</span><span class="crayon-v">keystore</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0021 seconds] -->
+<p></p>
+<h4>Release</h4>
+<p>To create a <strong>release</strong> keystore for your app, you need to execute a command from your OS command line. For OS X, this is done via the <strong>Terminal</strong> app in which you&#8217;re presented with a <code>$</code> prompt. For Windows, this is done via the <strong>Command Prompt</strong> which can be accessed by opening the <strong>Start</strong> menu and searching for <code>cmd</code>. In Windows, you&#8217;ll be presented with a prompt like: <code>C:\&gt;</code></p>
+<p>As mentioned above, there&#8217;s no standard place to store keystore files, so it may be useful to create a folder specifically for this. By default, both the OS X Terminal and Windows Command Prompt will start within your &#8220;home&#8221; directory. On Mac, this translates to <code>/Users/yourloginname</code> and on Windows it translates to something like <code>C:\Users\yourloginname</code>. Within this home folder, you can create a folder to hold your keystores.</p>
+<p>In Windows, type:</p>
+<p><code>md Keystores</code></p>
+<p>In OS X, type:</p>
+<p><code>mkdir Keystores</code></p>
+<p>Once this is done, you can access the folder by typing:</p>
+<p><code>cd Keystores</code></p>
+<p>Once inside the <code>Keystores</code> directory, you should issue a command that&#8217;s fairly complex. Before proceeding, it&#8217;s very important to understand that this is <strong>not</strong> a &#8220;copy-and-paste&#8221; procedure &#8212; you <strong>must</strong> substitute values that are specific to the keystore you wish to generate.</p>
+<p>For the moment, let&#8217;s carefully inspect and dissect the following line:</p>
+<p><code>keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999</code></p>
+<p>Essentially, the first term means that this line will execute a program called <strong>keytool</strong>. For OS X, this should be installed already, but Windows users may need to install it (see below). Following this, all of the parts that begin with a hyphen (<code>-</code>) indicate parameters for the <code>keytool</code> command. Those options are as follows, and those in bold are the two which must be customized (the others can remain as shown):</p>
+<ul>
+<li><code>-genkey</code> &#8212; Tells <strong>keytool</strong> to generate a key.</li>
+<li><code>-v</code> &#8212; Tells keytool to be verbose (i.e. tell you what it&#8217;s doing).</li>
+<li><code>-keystore</code> &#8212; <strong>The filename to save the keystore as.</strong></li>
+<li><code>-alias</code> &#8212; <strong>The alias name to identify the keystore.</strong></li>
+<li><code>-keyalg RSA</code> &#8212; This says to use the RSA method to generate the keystore.</li>
+<li><code>-validity 999999</code> &#8212; This says to make the keystore valid for 999,999 days.</li>
+</ul>
+<p>For the <code>keystore</code> name, provide it with a name that makes sense. In theory, you should use a unique release keystore for each app, but it&#8217;s not required. For example, a puzzle game named &#8220;SwapIt&#8221; may have a keystore name such as <code>swapit.keystore</code>, but a more general release keystore could simply be <code>release.keystore</code>.</p>
+<p>For <code>alias</code>, provide it with a similar sensible name, for example <code>swapit</code>.</p>
+<p>With these changes, the line should look more like this:</p>
+<p><code>keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<p>Now hit the <strong>return/enter</strong> key to execute the command. You&#8217;ll then be prompted for more information in a routine that will appear as follows in the command window:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e066e1224c803314896" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Enter keystore password:  
+Re-enter new password: 
+What is your first and last name?
+  [Unknown]:  YourFirstName YourLastName
+What is the name of your organizational unit?
+  [Unknown]:  Indie      
+What is the name of your organization?
+  [Unknown]:  Your Company Name
+What is the name of your City or Locality?
+  [Unknown]:  YourCity
+What is the name of your State or Province?
+  [Unknown]:  ST
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US correct?
+  [no]:  yes
+Generating 1,024 bit RSA key pair and self-signed certificate (SHA1withRSA) with a validity of 999,999 days
+	for: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Enter key password for 
+	(RETURN if same as keystore password):  
+Re-enter new password: 
+[Storing swapit.keystore]</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-2">2</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-4">4</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-6">6</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-8">8</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-10">10</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-12">12</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-14">14</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-16">16</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-18">18</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-20">20</div><div class="crayon-num" data-line="crayon-5f8e066e1224c803314896-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1224c803314896-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e066e1224c803314896-1"><span class="crayon-e">Enter </span><span class="crayon-e">keystore </span><span class="crayon-v">password</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-2"><span class="crayon-v">Re</span><span class="crayon-o">-</span><span class="crayon-e">enter </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-v">password</span><span class="crayon-o">:</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-3"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">your </span><span class="crayon-e">first </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-e">last </span><span class="crayon-v">name</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">YourFirstName </span><span class="crayon-e">YourLastName</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-5"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">name </span><span class="crayon-e">of </span><span class="crayon-e">your </span><span class="crayon-e">organizational </span><span class="crayon-v">unit</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-6"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">Indie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-7"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">name </span><span class="crayon-e">of </span><span class="crayon-e">your </span><span class="crayon-v">organization</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">Your </span><span class="crayon-e">Company </span><span class="crayon-e">Name</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-9"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">name </span><span class="crayon-e">of </span><span class="crayon-e">your </span><span class="crayon-e">City </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">Locality</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-10"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">YourCity</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-11"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">name </span><span class="crayon-e">of </span><span class="crayon-e">your </span><span class="crayon-e">State </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">Province</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-12"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">ST</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-13"><span class="crayon-e">What </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-v">two</span><span class="crayon-o">-</span><span class="crayon-e">letter </span><span class="crayon-e">country </span><span class="crayon-e">code </span><span class="crayon-st">for</span><span class="crayon-h"> </span><span class="crayon-r">this</span><span class="crayon-h"> </span><span class="crayon-v">unit</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-14"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">Unknown</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">US</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-15"><span class="crayon-st">Is</span><span class="crayon-h"> </span><span class="crayon-v">CN</span><span class="crayon-o">=</span><span class="crayon-e">YourFirstName </span><span class="crayon-v">YourLastName</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">OU</span><span class="crayon-o">=</span><span class="crayon-v">Indie</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">O</span><span class="crayon-o">=</span><span class="crayon-e">Your </span><span class="crayon-e">Company </span><span class="crayon-v">Name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">L</span><span class="crayon-o">=</span><span class="crayon-v">YourCity</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">ST</span><span class="crayon-o">=</span><span class="crayon-v">ST</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">C</span><span class="crayon-o">=</span><span class="crayon-e">US </span><span class="crayon-v">correct</span><span class="crayon-sy">?</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-16"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-v">no</span><span class="crayon-sy">]</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">yes</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-17"><span class="crayon-i">Generating</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-cn">024</span><span class="crayon-h"> </span><span class="crayon-e">bit </span><span class="crayon-e">RSA </span><span class="crayon-e">key </span><span class="crayon-e">pair </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-r">self</span><span class="crayon-o">-</span><span class="crayon-e">signed </span><span class="crayon-e">certificate</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">SHA1withRSA</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-i">with</span><span class="crayon-h"> </span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-e">validity </span><span class="crayon-i">of</span><span class="crayon-h"> </span><span class="crayon-cn">999</span><span class="crayon-sy">,</span><span class="crayon-cn">999</span><span class="crayon-h"> </span><span class="crayon-e">days</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-18"><span class="crayon-e">	</span><span class="crayon-st">for</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CN</span><span class="crayon-o">=</span><span class="crayon-e">YourFirstName </span><span class="crayon-v">YourLastName</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">OU</span><span class="crayon-o">=</span><span class="crayon-v">Indie</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">O</span><span class="crayon-o">=</span><span class="crayon-e">Your </span><span class="crayon-e">Company </span><span class="crayon-v">Name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">L</span><span class="crayon-o">=</span><span class="crayon-v">YourCity</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">ST</span><span class="crayon-o">=</span><span class="crayon-v">ST</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">C</span><span class="crayon-o">=</span><span class="crayon-e">US</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-19"><span class="crayon-e">Enter </span><span class="crayon-e">key </span><span class="crayon-e">password </span><span class="crayon-st">for</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-20"><span class="crayon-h">	</span><span class="crayon-sy">(</span><span class="crayon-st">RETURN</span><span class="crayon-h"> </span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-e">same </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">keystore </span><span class="crayon-v">password</span><span class="crayon-sy">)</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-5f8e066e1224c803314896-21"><span class="crayon-v">Re</span><span class="crayon-o">-</span><span class="crayon-e">enter </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-v">password</span><span class="crayon-o">:</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1224c803314896-22"><span class="crayon-sy">[</span><span class="crayon-e">Storing </span><span class="crayon-v">swapit</span><span class="crayon-sy">.</span><span class="crayon-v">keystore</span><span class="crayon-sy">]</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0063 seconds] -->
+<p>The first password is the password for the overall keystore file. Next you&#8217;ll be asked for your first and last name (surname). The prompt for &#8220;organizational unit&#8221; is for companies with multiple departments like &#8220;Engineering&#8221; or &#8220;Development&#8221; and this value is not important for most Corona developers, but you need to still provide a value, such as &#8220;Development&#8221;. In addition, you&#8217;ll be prompted for your city, state/province, and country code.</p>
+<p>At this point, you must type in <strong>yes</strong> to confirm the information. Finally, if desired, you can supply a different password to the individual alias entry, or simply press <strong>return/enter</strong> to use the same password associated with the keystore file.</p>
+<p>When this is done, your keystore file will be in the folder where you ran the command.</p>
+<h4>Installing &#8220;keytool&#8221;</h4>
+<p>The <strong>keytool</strong> utility should be installed as part of JDK (Java Development Kit). This tutorial will not discuss actual installation of JDK, so if you&#8217;re new to this process, please read our corresponding <a href=http://docs.coronalabs.com/guide/start/installWin/index.html target="_blank">guide</a>.</p>
+<p>On Mac, the <strong>keytool</strong> utility will be placed in a location such that you can just type <code>keystore</code> in the Terminal to run it. On Windows, this likely won&#8217;t be the case &#8212; when you installed the JDK, it was probably installed within a folder specific to the JDK version. For instance, on my Windows 7 computer, it&#8217;s located in:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e066e12254304313570" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+C:\Program Files (x86)\Java\jdk1.8.0_05\bin</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e066e12254304313570-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e066e12254304313570-1"><span class="crayon-v">C</span><span class="crayon-o">:</span><span class="crayon-sy">\</span><span class="crayon-e">Program </span><span class="crayon-e">Files</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">x86</span><span class="crayon-sy">)</span><span class="crayon-sy">\</span><span class="crayon-v">Java</span><span class="crayon-sy">\</span><span class="crayon-v">jdk1</span><span class="crayon-sy">.</span><span class="crayon-cn">8.0_05</span><span class="crayon-sy">\</span><span class="crayon-v">bin</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p>Because the <b>keytool</b> utility is located here, it&#8217;s tempting to simply change to this directory and type <code>keytool ...</code> directly, but if you update/reinstall JDK and your keystores are stored here, you&#8217;ll lose all of those you already created. As such, a better solution is to prefix the location of your Java install before the keytool command. Before doing so, you must set an <strong>environment variable</strong> called <code>JAVA_HOME</code> which will provide a shortcut that you can use. If you&#8217;re not familiar with this task, see this <a href=https://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows target="_blank">tutorial</a>. Once it&#8217;s set, you can prefix it to the <code>keytool</code> command as follows:</p>
+<p><code>%JAVA_HOME\bin\keytool ...</code></p>
+<p>For instance, using the example keystore details from above, the command becomes this:</p>
+<p><code>%JAVA_HOME\bin\keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<h3>Building the App</h3>
+<p>To build with your release keystore, launch Corona SDK, load your app, and then build for Android (<strong>File</strong> → <strong>Build</strong> → <strong>Android…</strong>). In the <strong>Keystore</strong> dialog box, click on the <strong>Browse&#8230;</strong> button beside the <strong>Keystore</strong> pulldown menu. Navigate to where you saved your keystore file and select it from the dialog box, upon which you&#8217;ll be prompted to enter the keystore password.</p>
+<p>Once it&#8217;s loaded, you&#8217;ll see that the <strong>Key Alias</strong> field is empty. Select the proper alias in this pulldown list and click the <strong>Build</strong> button. Corona will then prompt you to enter the alias password. Once entered correctly, you&#8217;ll be taken back to the build screen where you can hit <strong>Build</strong> again to build the app. Fortunately, for as long as you use this same release keystore/alias, you won&#8217;t need to re-enter the passwords each time.</p>
+<h3>Keyhashes and SHA1 Signatures</h3>
+<p>When working with third parties like Facebook or Google Play Game Services (GPGS), sometimes you&#8217;ll be asked to generate a value from your keystore. For Google Play Game Services, you must use a <strong>release</strong> keystore for this task. For Facebook, you can develop/test with a debug keystore, but you&#8217;ll eventually need to provide them with information for an app signed with a release keystore.</p>
+<p>Both a <strong>keyhash</strong> (used by Facebook) and a <strong>SHA1 signature</strong> (used by GPGS) are short strings consisting of values that are calculated from the much larger keystore file. While these two are different values, the concept is the same &#8212; some standard math is performed on the values in the keystore to generate a unique value that cannot be easily reversed, helping ensure that the keystore hasn&#8217;t been altered by a hacker.</p>
+<h4>Generating a Keyhash</h4>
+<p>To generate the keyhash, you once again need to use the command line and enter a line which appears complex but in truth consists of just three commands:</p>
+<p><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore | openssl sha1 -binary | openssl base64</code></p>
+<p>The three commands taken separately are as follows:</p>
+<ul>
+<li><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore</code></li>
+<li><code>openssl sha1 -binary</code> &#8212; uses the SHA1 method of calculating a signature, output as binary.</li>
+<li><code>openssl base64</code> &#8212; outputs the data in Base64.</li>
+</ul>
+<p>As you can see, these three commands are separated by pipe (<code>|</code>) characters. The first command runs and outputs its results, which in turn becomes the input for the second command. Then the second command outputs its results which become the input for the third command. This can cause potential issues because, if there&#8217;s even a slight problem in an earlier command, the error gets passed on to the next command rather than the expected data.  For instance, if you mis-type your password, this command series will not notify you but rather produce an SHA1 string based on the input of &#8220;Invalid Password&#8221;.</p>
+<p>In any case, as noted earlier in this tutorial, this is <strong>not</strong> a copy-and-paste command &#8212; you must adjust <strong>-alias</strong> and <strong>-keystore</strong> to your specific values. When running this command using the keystore created above, the result is:</p>
+<p><code>tZRNBKXmYKOa22HvFl57za4gvU0=</code></p>
+<p>Note the <code>=</code> sign at the end &#8212; this indicates the end of the string and it <strong>is</strong> important.</p>
+<h4>Generating a SHA1 Signature</h4>
+<p>GPGS, in contrast, needs a text representation of the SHA1 output. Fortunately, the keytool utility can output this without any additional commands:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore -list -v</code></p>
+<p>After you enter the password, the output will look something like this:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e066e1225e031964781" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Alias name: swapit
+Creation date: Aug 24, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Issuer: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Serial number: 53fa57f7
+Valid from: Sun Aug 24 17:24:07 EDT 2014 until: Sun Jul 20 17:24:07 EDT 4752
+Certificate fingerprints:
+	 MD5:  66:22:E9:94:EA:14:EA:4A:06:EB:98:8B:DA:2B:25:D2
+	 SHA1: B5:94:4D:04:A5:E6:60:A3:9A:DB:61:EF:16:5E:7B:CD:AE:20:BD:4D
+	 Signature algorithm name: SHA1withRSA
+	 Version: 3</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-2">2</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-4">4</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-6">6</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-8">8</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-10">10</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-12">12</div><div class="crayon-num" data-line="crayon-5f8e066e1225e031964781-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e066e1225e031964781-14">14</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e066e1225e031964781-1"><span class="crayon-e">Alias </span><span class="crayon-v">name</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">swapit</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-2"><span class="crayon-e">Creation </span><span class="crayon-v">date</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-i">Aug</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">2014</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-3"><span class="crayon-e">Entry </span><span class="crayon-r">type</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">PrivateKeyEntry</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-4"><span class="crayon-e">Certificate </span><span class="crayon-e">chain </span><span class="crayon-v">length</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-cn">1</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-5"><span class="crayon-v">Certificate</span><span class="crayon-sy">[</span><span class="crayon-cn">1</span><span class="crayon-sy">]</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-6"><span class="crayon-v">Owner</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CN</span><span class="crayon-o">=</span><span class="crayon-e">YourFirstName </span><span class="crayon-v">YourLastName</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">OU</span><span class="crayon-o">=</span><span class="crayon-v">Indie</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">O</span><span class="crayon-o">=</span><span class="crayon-e">Your </span><span class="crayon-e">Company </span><span class="crayon-v">Name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">L</span><span class="crayon-o">=</span><span class="crayon-v">YourCity</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">ST</span><span class="crayon-o">=</span><span class="crayon-v">ST</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">C</span><span class="crayon-o">=</span><span class="crayon-e">US</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-7"><span class="crayon-v">Issuer</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CN</span><span class="crayon-o">=</span><span class="crayon-e">YourFirstName </span><span class="crayon-v">YourLastName</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">OU</span><span class="crayon-o">=</span><span class="crayon-v">Indie</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">O</span><span class="crayon-o">=</span><span class="crayon-e">Your </span><span class="crayon-e">Company </span><span class="crayon-v">Name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">L</span><span class="crayon-o">=</span><span class="crayon-v">YourCity</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">ST</span><span class="crayon-o">=</span><span class="crayon-v">ST</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">C</span><span class="crayon-o">=</span><span class="crayon-e">US</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-8"><span class="crayon-e">Serial </span><span class="crayon-v">number</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-cn">53fa57f7</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-9"><span class="crayon-e">Valid </span><span class="crayon-v">from</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">Sun </span><span class="crayon-i">Aug</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-h"> </span><span class="crayon-cn">17</span><span class="crayon-o">:</span><span class="crayon-cn">24</span><span class="crayon-o">:</span><span class="crayon-cn">07</span><span class="crayon-h"> </span><span class="crayon-i">EDT</span><span class="crayon-h"> </span><span class="crayon-cn">2014</span><span class="crayon-h"> </span><span class="crayon-st">until</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">Sun </span><span class="crayon-i">Jul</span><span class="crayon-h"> </span><span class="crayon-cn">20</span><span class="crayon-h"> </span><span class="crayon-cn">17</span><span class="crayon-o">:</span><span class="crayon-cn">24</span><span class="crayon-o">:</span><span class="crayon-cn">07</span><span class="crayon-h"> </span><span class="crayon-i">EDT</span><span class="crayon-h"> </span><span class="crayon-cn">4752</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-10"><span class="crayon-e">Certificate </span><span class="crayon-v">fingerprints</span><span class="crayon-o">:</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-11"><span class="crayon-h">	 </span><span class="crayon-v">MD5</span><span class="crayon-o">:</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">66</span><span class="crayon-o">:</span><span class="crayon-cn">22</span><span class="crayon-o">:</span><span class="crayon-v">E9</span><span class="crayon-o">:</span><span class="crayon-cn">94</span><span class="crayon-o">:</span><span class="crayon-v">EA</span><span class="crayon-o">:</span><span class="crayon-cn">14</span><span class="crayon-o">:</span><span class="crayon-v">EA</span><span class="crayon-o">:</span><span class="crayon-cn">4A</span><span class="crayon-o">:</span><span class="crayon-cn">06</span><span class="crayon-o">:</span><span class="crayon-v">EB</span><span class="crayon-o">:</span><span class="crayon-cn">98</span><span class="crayon-o">:</span><span class="crayon-cn">8B</span><span class="crayon-o">:</span><span class="crayon-v">DA</span><span class="crayon-o">:</span><span class="crayon-cn">2B</span><span class="crayon-o">:</span><span class="crayon-cn">25</span><span class="crayon-o">:</span><span class="crayon-e">D2</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-12"><span class="crayon-e">	 </span><span class="crayon-v">SHA1</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">B5</span><span class="crayon-o">:</span><span class="crayon-cn">94</span><span class="crayon-o">:</span><span class="crayon-cn">4D</span><span class="crayon-o">:</span><span class="crayon-cn">04</span><span class="crayon-o">:</span><span class="crayon-v">A5</span><span class="crayon-o">:</span><span class="crayon-v">E6</span><span class="crayon-o">:</span><span class="crayon-cn">60</span><span class="crayon-o">:</span><span class="crayon-v">A3</span><span class="crayon-o">:</span><span class="crayon-cn">9A</span><span class="crayon-o">:</span><span class="crayon-v">DB</span><span class="crayon-o">:</span><span class="crayon-cn">61</span><span class="crayon-o">:</span><span class="crayon-v">EF</span><span class="crayon-o">:</span><span class="crayon-cn">16</span><span class="crayon-o">:</span><span class="crayon-cn">5E</span><span class="crayon-o">:</span><span class="crayon-cn">7B</span><span class="crayon-o">:</span><span class="crayon-v">CD</span><span class="crayon-o">:</span><span class="crayon-v">AE</span><span class="crayon-o">:</span><span class="crayon-cn">20</span><span class="crayon-o">:</span><span class="crayon-v">BD</span><span class="crayon-o">:</span><span class="crayon-cn">4D</span></div><div class="crayon-line" id="crayon-5f8e066e1225e031964781-13"><span class="crayon-h">	 </span><span class="crayon-e">Signature </span><span class="crayon-e">algorithm </span><span class="crayon-v">name</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">SHA1withRSA</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e066e1225e031964781-14"><span class="crayon-e">	 </span><span class="crayon-v">Version</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-cn">3</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0049 seconds] -->
+<p>In this output, the <code>SHA1:</code> line is the string of hex digits which you need to provide to GPGS when setting up your app, as well as the value you need to provide to Google when setting up your app there. Alternatively, if you need the SHA1 signature formatted as a string rather than a colon-separated hex string, use this command:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore | openssl sha1 -hex</code></p>
+<h3>Conclusion</h3>
+<p>Hopefully this tutorial has helped clarify and understand the Android signing process better. Remember these command lines and the familiarize yourself with the parameters, and Android signing will soon become a simple task.</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/android-2/" rel="tag">android</a>, <a href="/blog/tags/building-distribution/" rel="tag">Building and Distribution</a>, <a href="/blog/tags/tutorial/" rel="tag">tutorial</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				Rob Miracle			    </span>
+				</h5>
+				<span class="author_email">rob@coronalabs.com</span>
+									<div class="author_text">
+						<p>Rob is the Developer Relations Manager for Corona Labs. Besides being passionate about helping other developers make great games using Corona, he is also enjoys making games in his spare time.
+
+Rob has been coding games since 1979 from personal computers to mainframes. He has over 16 years professional experience in the gaming industry.</p>
+					</div>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>23 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-3686">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 16:43h, 26 August</span>
+						<div class="text_holder" id="comment-3686">
+				<p>Hi Rob,</p>
+<p>I haven&#8217;t done these steps for quite a while but I&#8217;ll have to do them in a few weeks again &#8211; so thanks a lot for this nice compilation of all the stuff that has to be done in a nutshell.</p>
+<p>Best,<br />
+Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3687">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4f4662b33ad9b9d58b037dbf8901b09e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.idonthave.com/' rel='external nofollow' class='url'>undecode</a></h5>
+			<span class="comment_date">Posted at 20:10h, 26 August</span>
+						<div class="text_holder" id="comment-3687">
+				<p>Rob, wonderful contribution.</p>
+<p>I remember back in the time having problems with this until i found a step-by-step guide to create a keystore to publish my app. This is really complete and will help new developers, also the additional information about keyhashes helps me in case google doesn&#8217;t recognize the one in the app automatically when using GPGS.</p>
+<p>Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3688">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4b072a72613c6c9b088cbb1fb034118a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http:www.lairdtopfreegames.com' rel='external nofollow' class='url'>Mo</a></h5>
+			<span class="comment_date">Posted at 21:40h, 26 August</span>
+						<div class="text_holder" id="comment-3688">
+				<p>PERFECT! Thanks Rob 🙂</p>
+<p>MO</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3689">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4b072a72613c6c9b088cbb1fb034118a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http:www.lairdtopfreegames.com' rel='external nofollow' class='url'>Mo</a></h5>
+			<span class="comment_date">Posted at 21:44h, 26 August</span>
+						<div class="text_holder" id="comment-3689">
+				<p>The reason I said perfect not only because it is a fantastic tutorial but also because I was always affraid to touch the GPGS part (for leaderboard) with this I think I can attempt to add leaderboards to my apps in Android! Still scary but this explain a lot about the SHA1 business (man who came up with this stuff 🙂</p>
+<p>Thanks again.</p>
+<p>Mo</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3690">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8bf8f128c1e9f173bf11a2fa8a78465c-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Danial</h5>
+			<span class="comment_date">Posted at 04:38h, 27 August</span>
+						<div class="text_holder" id="comment-3690">
+				<p>I&#8217;ve never had to provide the SHA1 to get GPGS leaderboards to work for my Android apps  I haven&#8217;t been asked to provide it, so I am confused.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3691">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 19:09h, 27 August</span>
+						<div class="text_holder" id="comment-3691">
+				<p>If you upload your app to Google Play in Beta or Alpha mode before setting up the GPGS application, then it fetches the SHA1 signature from your uploaded APK (this is new, it didn&#8217;t use to be this way).  But you can setup a GPGS application before you upload a .apk to Google Play. In which case you have to enter the SHA1 signature of the app&#8217;s release keystore.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3693">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8bf8f128c1e9f173bf11a2fa8a78465c-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://cnn.com/' rel='external nofollow' class='url'>Danial</a></h5>
+			<span class="comment_date">Posted at 09:11h, 28 August</span>
+						<div class="text_holder" id="comment-3693">
+				<p>Ah, thanks for clearing that up, Rob!   *phew*</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3692">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4b072a72613c6c9b088cbb1fb034118a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http:www.lairdtopfreegames.com' rel='external nofollow' class='url'>Mo</a></h5>
+			<span class="comment_date">Posted at 22:27h, 27 August</span>
+						<div class="text_holder" id="comment-3692">
+				<p>Hi Rob,</p>
+<p>Are you saying that IF we have apps already live on Google Play and wanted to add a leaderboard (GPGS) to them, we would not need to deal with all that SHA1 business?</p>
+<p>That would be cool! I was frankly scared to go thru those steps. Thanks God for your tutorial!</p>
+<p>Thanks,</p>
+<p>Mo</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3694">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 15:33h, 28 August</span>
+						<div class="text_holder" id="comment-3694">
+				<p>You still have to go through all the setup steps, but if you have uploaded the .apk first and then &#8220;link to the app&#8221; then it will get the SHA1 signature for you, so that at least saves you the pain of generating it form the command line.</p>
+<p>Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3695">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4b072a72613c6c9b088cbb1fb034118a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http:www.lairdtopfreegames.com' rel='external nofollow' class='url'>Mo</a></h5>
+			<span class="comment_date">Posted at 23:57h, 29 August</span>
+						<div class="text_holder" id="comment-3695">
+				<p>Thanks Rob!</p>
+<p>Mo</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3696">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/031a1c93a70a3c667ce94434e51465f0-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.beadpond.com/' rel='external nofollow' class='url'>Kiffin Ayers</a></h5>
+			<span class="comment_date">Posted at 20:45h, 09 October</span>
+						<div class="text_holder" id="comment-3696">
+				<p>The SHA1 is requested when setting up your Android app on GameThrive. This tutorial was/is a life saver! Thank you Rob!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3697">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/654c59b9875c4ae36ee961c63c76451e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Tarun</h5>
+			<span class="comment_date">Posted at 22:32h, 28 March</span>
+						<div class="text_holder" id="comment-3697">
+				<p>Hi Rob,</p>
+<p>This has proved to be a very useful tutorial for me to at least start a process to create keystore. Bur I am stuck at a point. It says an error as:<br />
+&#8216;-genkey&#8217; is not recognized as an internal or external command,<br />
+operable program or batch file.</p>
+<p>Please help</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3698">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 20:48h, 29 March</span>
+						<div class="text_holder" id="comment-3698">
+				<p>That sounds like you&#8217;re running -genkey on a second line.  That command has to be strung together on one line.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3699">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4c4a4bfc9c5b05f3a14d698c84659e5c-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">ssiri</h5>
+			<span class="comment_date">Posted at 14:01h, 02 April</span>
+						<div class="text_holder" id="comment-3699">
+				<p>Superb Explanation.Thanks 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3700">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/75850dab53907496808bc3c19899dbb3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Milind</h5>
+			<span class="comment_date">Posted at 21:35h, 08 September</span>
+						<div class="text_holder" id="comment-3700">
+				<p>Thanks for a very clear and succinct explanation.  One thing, I&#8217;d suggest is to increase the default strength of the keystore, if possible, before you put your first app in the PlayStore since you can&#8217;t change it after the fact.</p>
+<p>See <a href="https://commonsware.com/blog/2013/09/09/psa-think-about-stronger-app-signing-keys.html" rel="nofollow">https://commonsware.com/blog/2013/09/09/psa-think-about-stronger-app-signing-keys.html</a></p>
+<p>So adding a -keysize 4096 to the keytool command would be good.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3701">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/2429a12b2c3429091bac44a7a27532fb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://engineershub.co/' rel='external nofollow' class='url'>Kritika Maheshwari</a></h5>
+			<span class="comment_date">Posted at 04:32h, 11 March</span>
+						<div class="text_holder" id="comment-3701">
+				<p>Hii<br />
+I have third party app and I dont have any SHA1 print. So while uploading it says print mismatch.Upload failed<br />
+You uploaded an APK that is signed with a different certificate to your previous APKs. You must use the same certificate. Your existing APKs are signed with the certificate(s) with fingerprint(s).</p>
+<p>What should I do? I got large number of downloads.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3702">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 19:44h, 11 March</span>
+						<div class="text_holder" id="comment-3702">
+				<p>You must use the same keystore that you first submitted the app with when you update. If you&#8217;ve lost that keystore and create a new one, your only choice is to create a new app.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3703">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/3e8926a5f73f6b568fb5ff8a19c0a393-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David</h5>
+			<span class="comment_date">Posted at 07:22h, 17 March</span>
+						<div class="text_holder" id="comment-3703">
+				<p>How do I create the certificate in the keystore as a p12 or pfx file?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3704">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 16:53h, 17 March</span>
+						<div class="text_holder" id="comment-3704">
+				<p>You will probably have to go to Google and look that up. There isn&#8217;t anything special about our keystores. They are standard Android keystores. If it can be done there should be plenty of tutorials out there.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3705">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c66b0fb0119e85b0690b6405bc8b849a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.nulledsharing.com/' rel='external nofollow' class='url'>Ucef</a></h5>
+			<span class="comment_date">Posted at 16:27h, 31 March</span>
+						<div class="text_holder" id="comment-3705">
+				<p>OMG, Why you Make it hard like it, with don&#8217;t use like eclipse or android studio signing</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3706">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 06:40h, 01 April</span>
+						<div class="text_holder" id="comment-3706">
+				<p>I would argue that our signing is quite simple. You hit the build dialog. Make sure you&#8217;re pointing to the keystore and your app is signed with almost no effort. Getting the keystore is not GUI based, but nothing prevents you from using Eclipse or Android studio to create the keystore in the first place. Also consider that you have to install very large IDE&#8217;s with either Eclipse or Android Studio for the sole purpose of generating a keystore. Corona SDK doesn&#8217;t need either of those IDE&#8217;s to work. A simple command line command that is installed as part of the Android tools needed to build the apps from Corona SDK is already there, ready for you to use. Now if Corona SDK needed Eclipse or Android Studio as part of it development workflow, then this would be a different story.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3707">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/eabc3f6e2e7dd414e4dd328e44e980ce-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">mahender</h5>
+			<span class="comment_date">Posted at 07:02h, 14 July</span>
+						<div class="text_holder" id="comment-3707">
+				<p>But after all these steps on the add a key time they are showing &#8220;your android signing key is locked&#8221;.<br />
+How i can fix this problem</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3708">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 11:09h, 14 July</span>
+						<div class="text_holder" id="comment-3708">
+				<p>I looked at that error and it seems to be a PhoneGap error. I&#8217;ve never seen a Corona Labs project produce that error. If you are using Corona SDK, I would suggest you ask in our community forums at <a href="https://forums.coronalabs.com/" rel="nofollow">https://forums.coronalabs.com</a>. If you&#8217;re not using Corona SDK or one of our other products, I&#8217;m not sure of what benefit we would be to help you resolve this. If you don&#8217;t know what Corona SDK is all about I invite you to visit <a href="/" rel="nofollow"></a> and check out our wonderful cross-platform development tools.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-95a65088037418e8646346c87072024d.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"59420","is_front_page":"","is_blog_page":"","is_category":"","site_url":"http:\/\/coronalabs.com\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-0be71dd89d0eceaca9843e7c3efe26f8.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-175d3f630150b6c2431472b6ea7bda23.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-d373414dfb3e1938c02eb07ec666bd3d.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-91fb076536097355265728cbacea3d53.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-0bdec33a45721a8ef1eaca39851674fb.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

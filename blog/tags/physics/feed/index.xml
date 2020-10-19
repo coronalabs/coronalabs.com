@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>physics &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/physics/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>physics &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Collision Filters plugin</title>
+		<link>/blog/2017/06/07/introducing-the-collision-filters-plugin/</link>
+		<pubDate>Wed, 07 Jun 2017 21:16:50 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[collision]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=70910</guid>
+		<description><![CDATA[Learn about the new Collision Filters plugin, designed to circumvent the math and complication of creating physics body collision filters!]]></description>
+				<content:encoded><![CDATA[<p>For game designers who utilize Corona&#8217;s built-in Box2D physics system, <strong>collision filters</strong> usually enter the design equation at some point in development. For instance, if your player in an endless runner game should collect power-ups, you&#8217;ll need a collision handler for it &#8212; but it&#8217;s a waste of time (and processing effort) to handle collisions between <em>enemies</em> and power-ups.</p>
+<p>Traditionally, setting up collision filters has been a tricky ordeal of calculating <code>categoryBits</code> and <code>maskBits</code>, as outlined in our <a href=https://docs.coronalabs.com/guide/physics/collisionDetection/index.html?#filtering target="_blank">Collision Detection</a> guide. While our &#8220;helper chart&#8221; makes the process much easier, many game developers wish there was an easier way &#8212; and now there is!</p>
+<h3>Collision Filters plugin</h3>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, you can skip all of the math and calculations involved in traditional collision filter setup. Instead, simply state your setup with clearly-named keys and strings. For instance:</p>
+<p><code>collisionFilters.setupFilters( { player={ "powerUps", "enemies" } } )</code></p>
+<p>With just this one simple command, the plugin will configure three collision filters:</p>
+<ol>
+<li><code>player</code> objects will collide with <code>powerUps</code> and <code>enemies</code></li>
+<li><code>powerUps</code> objects will only collide with <code>player</code></li>
+<li><code>enemies</code> objects will only collide with <code>player</code></li>
+</ol>
+<p>Once set up, getting the proper collision filter data is as simple as calling <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a> with a valid key or string from the configuration table:</p>
+<p><code>local playerFilter = collisionFilters.getFilter( "player" )</code></p>
+<p>Then, applying it to the player&#8217;s physics body, assuming <code>thisPlayer</code> represents the player object, is as easy as this:</p>
+<p><code>physics.addBody( thisPlayer, "dynamic", { filter=playerFilter } )</code></p>
+<h3>Smart associations</h3>
+<p>For those who have set up collision filters the traditional way, you&#8217;ll know that doing so requires a &#8220;reverse association&#8221; methodology. For instance, if you tell Box2D that <code>player</code> can collide with <code>enemies</code>, you must <strong>also</strong> tell it that <code>enemies</code> can collide with <code>player</code>. Now, using the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, that extra step is unnecessary &#8212; simply set up your primary associations and the plugin will internally calculate the reverse relationships! What&#8217;s more, it will dispatch a console warning if you accidentally declare associations which don&#8217;t match.</p>
+<h3>Getting started</h3>
+<p>To get started, proceed to the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">plugin documentation</a>. Simply add the plugin to your <code>build.settings</code> file, <code>require()</code> it in the module(s) where you&#8217;ll use it, set up your filter relationship with <a href=https://docs.coronalabs.com/plugin/collisionFilters/setupFilters.html target="_blank">collisionFilters.setupFilters()</a>, and add the appropriate filters to your physics bodies via <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a>.</p>
+<p>Hopefully this new plugin will simplify collision filter setup for all Corona game developers!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Climberia &#8211; a challenging climbing game</title>
+		<link>/blog/2016/04/05/case-study-climberia-a-challenging-climbing-game/</link>
+		<pubDate>Tue, 05 Apr 2016 14:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[case study]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=66351</guid>
+		<description><![CDATA[In this case study, we look at a new Corona-powered game called Climberia. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66359" src="/wordpress/wp-content/uploads/2016/04/icon-150x150.png" alt="icon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/icon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/icon-300x300.png 300w, /wordpress/wp-content/uploads/2016/04/icon-768x768.png 768w, /wordpress/wp-content/uploads/2016/04/icon-570x570.png 570w, /wordpress/wp-content/uploads/2016/04/icon-500x500.png 500w, /wordpress/wp-content/uploads/2016/04/icon-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/04/icon-700x700.png 700w, /wordpress/wp-content/uploads/2016/04/icon.png 1024w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are very creative and regularly produce amazing works. In this case study, we look at a new game called <a href=http://www.climberia.com/ target="_blank">Climberia</a>. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.</p>
+<p>Climberia is the brainchild of Nikola Georgiev and Stoyan Pedev of <a href=http://www.kvaba.com/ target="_blank">Kvaba</a>, a small studio in Sofia, Bulgaria. Georgiev and Pedev decided to start building games in their spare time while having a drink in their local pub.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/XFdnalWr-pY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>After trying a couple of projects that didn&#8217;t gain momentum, they stumbled upon the idea for Climberia. Using a Google search to find a 2D gaming platform, they discovered Corona SDK and quickly had a working demo of their idea. </p>
+<p>The gameplay was challenging and fun, but there was a problem: neither Georgiev or Pedev were artists and the game didn&#8217;t look very good. Fortunately, they found <a href=http://robo.bg/ target="_blank">Robo Video Lab</a> who fell in love with the game and the two companies formed a partnership to produce Climberia. The art team used low-polygon 3D models, converted them to 2D still images, and assembled it all into colorful scenes.</p>
+<p>The gameplay is very challenging. Like rock climbing, your pirate has to swing his arm and body to grab the next hand-hold. If the pirate lets go, he falls to the ocean floor and dies. Players must keep one finger on the screen the entire time while using another finger to swing the pirate and reach another hand-hold.</p>
+<p><img class="alignnone size-large wp-image-66360" src="/wordpress/wp-content/uploads/2016/04/Climberia-02-1024x576.png" alt="Climberia-02" width="960" height="540" /></p>
+<p>&#8220;We wanted to create a game where the player is challenged not only in the virtual world of the game but also in the physical world – to test his muscles and nerves&#8221;, said Georgiev. &#8220;The original idea was for a climber who has to constantly keep at least one of his hands on the wall, so a player&#8217;s thumb must always drag the screen. With the initial demo, we saw that we could improve the concept by adding the swinging and jumping features.&#8221;</p>
+<p>Corona SDK has been critical to their development process. As beginners in the game development field, Georgiev and Pedev found that it was easy to get started developing a 2D game in Corona. Rapid prototyping allowed them to assess the project early on and adjust certain aspects as the project matured.</p>
+<p>Climberia is available for iOS on April 5, 2016, and Kvaba plans to release an Android version in the coming months. Check it out in the app store!</p>
+<p><a href=https://itunes.apple.com/us/app/climberia-pirates/id1054929556?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Tutorial: Creating awesome water with LiquidFun, snapshots, and filters</title>
+		<link>/blog/2015/09/24/tutorial-creating-awesome-water-with-liquidfun-snapshots-and-filters/</link>
+		<comments>/blog/2015/09/24/tutorial-creating-awesome-water-with-liquidfun-snapshots-and-filters/#comments</comments>
+		<pubDate>Thu, 24 Sep 2015 20:29:12 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[liquid effects]]></category>
+		<category><![CDATA[LiquidFun]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=64081</guid>
+		<description><![CDATA[Following the worldwide success of “Freeze! - The Escape,” Frozen Gun Studios has just released the sequel, “Freeze! 2 - Brothers,” built entirely in Corona SDK. This tutorial illustrates how to create awesome water with LiquidFun, snapshots, and filters.]]></description>
+				<content:encoded><![CDATA[<p><em>This tutorial comes to you courtesy of Andreas von Lepel of <a href=http://www.frozengun.com/ target="_blank">Frozen Gun Studios</a>. Following the worldwide success of “Freeze! &#8211; The Escape” (<a href=https://itunes.apple.com/us/app/freeze%21/id518123684?mt=8 target="_blank">iOS</a>/<a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze target="_blank">Android</a>) with more than <strong>11 million</strong> freemium downloads, Frozen Gun Studios has just released the sequel, “Freeze! 2 &#8211; Brothers” (<a href=https://itunes.apple.com/app/freeze!-2-brothers/id904424939?mt=8 target="_blank">iOS</a>/<a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze2.google target="_blank">Android</a>), built entirely in Corona SDK and featuring LiquidFun-based water effects.</em></p>
+<hr />
+<h3>Overview</h3>
+<p>Very early in the development, I decided that it would be really interesting for the gameplay if I could have water and poisonous liquids like rocket fuel sloshing around in the rotating levels. Have a look at the trailer to see what we did:</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/kbAwJtuRV0U?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>As you can see, both our heroes can swim in the water, but in later stages the task for the player is to first collect all the deadly rocket fuel into a barrel and then to pick it up to open the level exit.</p>
+<h3>Project code</h3>
+<p>Setting up a scene with basic water using LiquidFun is really easy and there are some nice examples included in the Corona <a href=https://github.com/coronalabs/samples-coronasdk/tree/master/Physics target="_blank">SampleCode repository</a>. However, creating really nice, transparent water with a visible &#8220;surface&#8221; is a little harder and you need to use snapshots and filters. Fortunately, as usual with Corona SDK, even complex stuff is mostly done for you by the engine.</p>
+<p>As we step through this tutorial, I encourage you to download the <a href=https://github.com/coronalabs/samples-coronasdk/tree/master/Physics/LiquidFun-Transparency target="_blank">LiquidFun-Transparency</a> project in the GitHub repository, also bundled into recent builds of Corona SDK:</p>
+<p><code>CoronaSDK-XXXX</code> → <code>SampleCode</code> → <code>Physics</code> → <code>LiquidFun-Transparency</code></p>
+<p>Within the project folder, open the <code>main.lua</code> file. We&#8217;ll start with the basic world setup:</p>
+<h4>Liquid &#8220;container&#8221;</h4>
+<p></p><pre class="crayon-plain-tag">-- Add three physics objects as borders for the simulated liquid, located outside the visible screen
+local leftSide = display.newRect( worldGroup, -54-letterboxWidth, display.contentHeight-180, 600, 70 )
+physics.addBody( leftSide, &quot;static&quot; )
+leftSide.rotation = 86
+
+local centerPiece = display.newRect( worldGroup, display.contentCenterX, display.contentHeight+60+letterboxHeight, 440, 120 )
+physics.addBody( centerPiece, &quot;static&quot; )
+
+local rightSide = display.newRect( worldGroup, display.contentWidth+54+letterboxWidth, display.contentHeight-180, 600, 70 )
+physics.addBody( rightSide, &quot;static&quot; )
+rightSide.rotation = -86</pre><p>In this block, I use three static rectangles to build a container outside of the screen boundaries. The container is open at the top and it will later hold the water inside of the screen.</p>
+<h4>Scrolling background</h4>
+<p>I want even demos to look nice, so in the next block, I add an endless scrolling background by placing two identical background images adjacent to each other, one fully visible in the middle of the screen, the other to the right of it.</p><pre class="crayon-plain-tag">-- Create an endless scrolling background, using background image from &quot;Freeze!&quot;
+local background1 = display.newImageRect( worldGroup, &quot;background.png&quot;, 320, 480 )
+background1.x = 160
+background1.y = 240
+background1.xScale = 1.202
+background1.yScale = 1.200
+transition.to( background1, { time=12000, x=-224, iterations=0 } )
+
+local background2 = display.newImageRect( worldGroup, &quot;background.png&quot;, 320, 480 )
+background2.x = 544
+background2.y = 240
+background2.xScale = 1.202
+background2.yScale = 1.200
+transition.to( background2, { time=12000, x=160, iterations=0 } )</pre><p>Note that both images are moved slowly to the left and then, via endless iterations, are set back to their original positions and moved again, all using simple <a href=https://docs.coronalabs.com/api/library/transition/index.html target="_blank">transition.to()</a> calls.</p>
+<h4>The hero</h4>
+<p>Next, I add our eye hero into the scene as a dynamic physics object that will swim on the water. It can also be touched and dragged around by the user. I will not dive into the touch-drag code, about which a lot has been written and demonstrated previously.</p><pre class="crayon-plain-tag">-- Create our eye (the hero of &quot;Freeze!&quot;)
+local hero = display.newImageRect( worldGroup, &quot;hero.png&quot;, 64, 64 )
+hero.x = 160
+hero.y = -400
+physics.addBody( hero, { density=0.7, friction=0.3, bounce=0.2, radius=30 } )
+
+-- Make hero draggable via a touch handler and physics touch joint
+local function dragBody( event )
+    local body = event.target
+    local phase = event.phase
+
+    if ( &quot;began&quot; == phase ) then
+        display.getCurrentStage():setFocus( body, event.id )
+        body.isFocus = true
+        body.tempJoint = physics.newJoint( &quot;touch&quot;, body, event.x, event.y )
+        body.isFixedRotation = true
+    elseif ( body.isFocus ) then
+        if ( &quot;moved&quot; == phase ) then
+            body.tempJoint:setTarget( event.x, event.y )
+        elseif ( &quot;ended&quot; == phase or &quot;cancelled&quot; == phase ) then
+            display.getCurrentStage():setFocus( body, nil )
+            body.isFocus = false
+            event.target:setLinearVelocity( 0,0 )
+            event.target.angularVelocity = 0
+            body.tempJoint:removeSelf()
+            body.isFixedRotation = false
+        end
+    end
+    return true
+end
+hero:addEventListener( &quot;touch&quot;, dragBody )</pre><p></p>
+<h4>LiquidFun particle system and water</h4>
+<p>In the next block, the particle system for the water is created, and a big rectangle of water particles is placed into the scene. </p>
+<p></p><pre class="crayon-plain-tag">-- Create the LiquidFun particle system for the water
+local particleSystem = physics.newParticleSystem{
+    filename = &quot;liquidParticle.png&quot;,
+    radius = 3,
+    imageRadius = 5,
+    gravityScale = 1.0,
+    strictContactCheck = true
+}
+
+-- Create a &quot;block&quot; of water (LiquidFun group)
+particleSystem:createGroup(
+    {
+        flags = { &quot;tensile&quot; },
+        x = 160,
+        y = 0,
+        color = { 0.1, 0.1, 0.1, 1 },
+        halfWidth = 128,
+        halfHeight = 256
+    }
+)</pre><p>And this is the result if you start the code now:</p>
+<p><center><img class="wp-image-64126 alignnone" style="margin-bottom: 18px;" src="/wordpress/wp-content/uploads/2015/09/LiquidFunDemo01.png" alt="LiquidFunDemo01" width="300" height="615" /><br />
+<em>The water is flowing, but it&#8217;s more like oil, because there is no transparency yet.</em></center></p>
+<h4>Adding transparency (first attempt)</h4>
+<p>Now things get a little more complex. I want to render the water semi-transparent, e.g. with an alpha value of <code>0.3</code> (30%) so that the background is visible through the water.</p>
+<p>If I change the last value (alpha) of the the <code>color</code> property on line <code>111</code>, there will be some transparency, but not exactly what I&#8217;m looking for:</p>
+<p><center><img class="alignnone wp-image-64127" style="margin-bottom: 18px;" src="/wordpress/wp-content/uploads/2015/09/LiquidFunDemo02.png" alt="LiquidFunDemo02" width="300" height="615" /><br />
+<em>Each particle now has an alpha value of 30%.</em></center>If you look closely at the image, you can see that each round particle now has an alpha value of <code>0.3</code>, and this gives a chaotic rendering of the water because all of the particles overlap slightly. While this could be nice effect for certain cases, it&#8217;s definitely not what I am trying to achieve.</p>
+<h4>Adding transparency using a snapshot</h4>
+<p>The solution is to render all the particles into a <a href=https://docs.coronalabs.com/api/library/display/newSnapshot.html target="_blank">snapshot</a> texture on each frame and then apply transparency to the entire texture. Here are the relevant lines:</p><pre class="crayon-plain-tag">-- Initialize snapshot for full screen
+local snapshot = display.newSnapshot( worldGroup, 320+letterboxWidth+letterboxWidth, 480+letterboxHeight+letterboxHeight )
+local snapshotGroup = snapshot.group
+snapshot.x = 160
+snapshot.y = 240
+snapshot.canvasMode = &quot;discard&quot;
+snapshot.alpha = 0.3</pre><p></p><pre class="crayon-plain-tag">-- Insert the particle system into the snapshot
+snapshotGroup:insert( particleSystem )
+snapshotGroup.x = -160
+snapshotGroup.y = -240</pre><p></p><pre class="crayon-plain-tag">-- Update (invalidate) the snapshot each frame
+local function onEnterFrame( event )
+    snapshot:invalidate()
+end
+Runtime:addEventListener( &quot;enterFrame&quot;, onEnterFrame )</pre><p>Essentially, a snapshot and its group are created, positioned in the center of the content area. Note that the width and height of the snapshot are adjusted by the <code>letterboxWidth</code> and <code>letterboxHeight</code> variables calculated earlier in <code>main.lua</code> &#8212; this ensures that, when running in <code>"letterbox"</code> scale mode, the snapshot occupies the entire screen on devices of various aspect ratios.</p>
+<p>On line <code>123</code>, I set the alpha value of the entire snapshot to <code>0.3</code>, effectively setting the entire snapshot texture to 30% opacity. Following this, the particle system is inserted into the snapshot group and finally, with the help of an <code>"enterFrame"</code> listener, the snapshot is invalidated and rendered anew each frame.</p>
+<p>With this addition, you can see that the water now has realistic transparency:</p>
+<p><center><img class="alignnone wp-image-64128" style="margin-bottom: 18px;" src="/wordpress/wp-content/uploads/2015/09/LiquidFunDemo03.png" alt="LiquidFunDemo03" width="300" height="615" /><br />
+<em>Transparency! At last!</em></center></p>
+<h4>Go for pretty and add a filter</h4>
+<p>After I got this far, I was quite happy. But the cool engineers at Corona Labs added <a href=https://docs.coronalabs.com/guide/graphics/effects.html target="_blank">filter</a> support, so I started to experiment a lot with all of the filters and filter options in my quest to add a nice visible surface to the water. It took some time to achieve the correct look, but in the end it was really easy:</p><pre class="crayon-plain-tag">-- Apply a &quot;sobel&quot; filter to portray the visible surface of the water
+snapshot.fill.effect = &quot;filter.sobel&quot;</pre><p>And that&#8217;s it, we now have water with transparency and a nice water surface!</p>
+<p><center><img class="alignnone wp-image-64129" style="margin-bottom: 18px;" src="/wordpress/wp-content/uploads/2015/09/LiquidFunDemo04.png" alt="LiquidFunDemo04" width="300" height="615" /><br />
+<em>The water &#8220;surface&#8221; shows as a visible line on top of the water<br />
+(the edge of the rendered water enhanced by the sobel filter).</em></center></p>
+<h4>Where to go from here</h4>
+<p>From here, there are a lot of experiments you can do, e.g. play around with the density of the hero eye (with this you can influence whether it should be very light and always float on top of the water, or whether it should be heavy and sink below).</p>
+<p>Another option is to use different filters for the water and tune their respective filter settings:</p>
+<ul>
+<li><code>snapshot.fill.effect = "filter.emboss"</code></li>
+<li><code>snapshot.fill.effect = "filter.frostedGlass"</code></li>
+<li><code>snapshot.fill.effect = "filter.crystallize"</code></li>
+<li><code>snapshot.fill.effect = "filter.scatter"</code></li>
+</ul>
+<p>Finally, don&#8217;t forget the many different &#8220;flags&#8221; you can use for the LiquidFun group &#8212; e.g. add <code>"staticPressure"</code> and the water particles at the bottom of the container will not be compressed.</p>
+<h3>Performance issues</h3>
+<p>Not all devices are powerful enough to display water with these added special effects while maintaining an acceptable frame rate. Because of this, I take the following precautions:</p>
+<ul>
+<li>On iOS, I use the snapshot on all supported devices (iPhone 4S and better; iPad 2 and better). However, the additional sobel filter is added only on more powerful devices like the iPad Air or iPad mini 2 (iPad4,*), iPhone 5S (iPhone6,1), or iPod Touch 5G (iPod5,1) and better.</li>
+<li>For Android, I set the <code>minSdkVersion</code> to <code>"16"</code> (Android 4.1) to exclude many older devices. Also, I use the sobel filter only on devices that support high precision shaders, as determined by this:<br />
+<code>system.getInfo( "gpuSupportsHighPrecisionFragmentShaders" )</code></li>
+<li>Finally, I test the <code>system.getInfo( "androidDisplayDensityName" )</code> for <code>"xhdpi"</code>, <code>"xxhdpi"</code>, and <code>"xxxhdpi"</code> &#8212; only these devices will get the sobel filter, because they are quite modern and should hopefully be fast enough.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>As you can see, it is quite easy to create nice-looking water and other liquids, and at last the technology is good enough to make all of this useable on modern mobile devices. I&#8217;m looking forward to seeing more games which make use of this, as liquids are great fun for players and developers alike.</p>
+<p>If you want to learn more about “Freeze! 2 – Brothers,” visit <a href=http://www.freeze2.com/ target="_blank">www.freeze2.com</a>, or download it for either <a href=https://itunes.apple.com/app/freeze!-2-brothers/id904424939?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze2.google target="_blank">Android</a>. I hope you enjoy the game!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/24/tutorial-creating-awesome-water-with-liquidfun-snapshots-and-filters/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Creating Motorized Wheeled Carts</title>
+		<link>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/</link>
+		<comments>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/#respond</comments>
+		<pubDate>Thu, 09 Jul 2015 04:52:12 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[wheeled cart]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63269</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 148, we stepped through the concepts and source code to create a motorized wheeled cart using pivot joints and Corona's built in physics engine. We also explored applying torque and gravity to the cart to get some interesting effects. Here are clips to help you catch up. Download the examples from the Hangout to see how everything works. ]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 148, we stepped through the concepts and source code to <a href=/blog/coronageek/corona-geek-147/>create a motorized wheeled cart</a> using pivot joints and Corona&#8217;s built in physics engine. We also explored applying torque and gravity to the cart to get some interesting effects. <a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Sampler target="_blank">Download the examples from the Hangout</a> to see how everything works.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-148/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/M4EAuOwV_pM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Source code sampler demo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/RNCQP8uF884?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Wheeled cart example introduction</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/mwK9txkhQSw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; When grouping objects can be beneficial</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/7qEnCArnlcw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Motorize cart source code walk-thru</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/nD72mD2YN-4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Applying torque to wheels</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/wEMB0-yO0H4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Source code wrap-up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/AIkox0mLefQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>While you are at it, be sure to watch Hangout #149 where we learn <a href=/blog/coronageek/corona-geek-149/>shader concepts</a> from Steven Johnson at <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a>. Links to the source code and other resources are also provided. Have fun.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Using Physics, Creating Joints, and Making Objects Interact</title>
+		<link>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/</link>
+		<comments>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/#respond</comments>
+		<pubDate>Wed, 24 Jun 2015 16:46:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[joints]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[touch joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63067</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 146, we looked at working with Corona's built in physics engine to create draggable rag dolls, physics bodies, touch joints, and pivot joints. We even look at observing and troubleshooting physics objects using hybrid mode. Here are a few clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 146, we looked at <a href=/blog/coronageek/corona-geek-146/>working with Corona&#8217;s built in physics engine</a> to create draggable rag dolls, physics bodies, touch joints, and pivot joints. We even look at observing and troubleshooting physics objects using hybrid mode. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">Download the code from the Hangout</a> to see how the examples work.</p>
+<p>Here are clips from Hangout #146. <a href=/blog/coronageek/corona-geek-146/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/hZQZNEYJQhM" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Ed Maurina shares his app publishing strategy</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/eTn7E21lqKY" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Physics documentation Highlights</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/xNXciSjyZaU" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Physics joint highlights</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4WV9jnrNtFc" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Physics sampler overview</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Jgc3BgJYqGI" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Constructing simple physics joints</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/OlsI7oeKG_U" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Constructing a rag doll</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/a6pFebPnHw4" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Allowing physics bodies to sleep</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/SAMcIamAEBA" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Troubleshooting physics bodies using Hybrid mode</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/oCYWuewfVlM" frameborder="0" allowfullscreen></iframe></p>
+<p>While you&#8217;re at it, be sure to <a href=/blog/coronageek/corona-geek-147/>watch Hangout #147</a> where we continued our conversation around working with Corona&#8217;s built in physics engine to create draggable rag doll, create physics bodies, touch joints, and pivot joints.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Extending Library Functionality and Storing Game Settings as JSON Data</title>
+		<link>/blog/coronageek/hangout-highlights-extending-library-functionality-storing-game-settings-as-json-data/</link>
+		<comments>/blog/coronageek/hangout-highlights-extending-library-functionality-storing-game-settings-as-json-data/#respond</comments>
+		<pubDate>Wed, 17 Jun 2015 19:46:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[joints]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[rag doll]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63045</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 145, we looked at extending libraries, loading and saving JSON data, and persisting state across app sessions. The discussion stitched all these topics together into one helpful conversation. Here are clips from Hangout #145.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 145, we looked at <a href=/blog/coronageek/corona-geek-145/>extending libraries, loading and saving JSON data, and persisting state across app sessions</a>. The discussion stitched all these topics together into one helpful conversation. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/extendingLibraries.zip target="_blank">Download the code from the Hangout</a>.</p>
+<p>Here are clips from Hangout #145. <a href=/blog/coronageek/corona-geek-145/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/Kyow-1sg_eA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; The Panel Discusses Reward Based Ads</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/HTADOqNUWns?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Ed Maurina extends the Display library&#8217;s functionality</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/HICvhBqBH1U?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Loading and saving data to local storage</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/l7b3JGSRRdg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; More loading and saving data to local storage</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/WnYxPUcqnu8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Using JSON to store game settings</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/SCslZ51KO_k?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Persisting data across game sessions</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/moK7UNL7cIQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Ed demo&#8217;s a data persistence sampler</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/fDCJrmWeZvY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>While you&#8217;re at it, be sure to <a href=/blog/coronageek/corona-geek-146/>watch Hangout #146</a> where we started working with Corona&#8217;s built in physics engine to create draggable rag doll, create physics bodies, touch joints, and pivot joints.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-extending-library-functionality-storing-game-settings-as-json-data/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #146 &#8211; Creating Draggable Rag Dolls, Using Physics Bodies, and Creating Joints</title>
+		<link>/blog/coronageek/corona-geek-146/</link>
+		<comments>/blog/coronageek/corona-geek-146/#comments</comments>
+		<pubDate>Mon, 15 Jun 2015 22:03:03 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[joints]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[rag doll]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63017</guid>
+		<description><![CDATA[Last Monday we looked at creating library extensions, loading and saving data using JSON to persist states between app uses. Today we cracked open the can of joy that is the Box2D Physics Engine. We created draggable rag dolls, used physics bodies, touch joints, and pivot joints.  Download the code from today's discussion.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Gme0NLd8FNI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we looked at <a href=/blog/coronageek/corona-geek-145/>creating library extensions, and loading and saving data using JSON to persist states between app uses</a>.</p>
+<p>Today we cracked open the can of joy that is the Box2D physics engine. We created a Draggable Rag Doll, used <a href=https://docs.coronalabs.com/guide/physics/physicsBodies/index.html>physics bodies</a>, <a href=https://docs.coronalabs.com/guide/physics/physicsJoints/index.html?#touch>touch joints</a>, and <a href=https://docs.coronalabs.com/guide/physics/physicsJoints/index.html?#pivot>pivot joints</a>.  Then, we raced into motors and made a simple two wheeled car. </p>
+<p>We&#8217;ll be breaking down the physics code over the next several weeks. Let us know if you have any questions about the code or concepts along the way. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">Download the code from today&#8217;s discussion</a>.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>Don&#8217;t forget, this month we’re playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a> for the chance to win a $50 gift card. ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app.</p>
+<p>If you’d like to participate in June’s challenge with a free game option, play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a>.</p>
+<p>Each game has either levels or difficulty settings, so June’s high score winner will the announced based on high score as well as highest level completed or highest difficulty level played. Basically, more is better. </p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce July&#8217;s Geek Game Challenge on social media. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ).</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-145/>Corona Geek #145 &#8211; Creating Library Extensions, JSON Load/Save, and Persistence</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode <strong>CoronaGeek</strong> to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Corona Development Tips and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-146/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-146-2015-06-15-ragdoll-physics-joints.mp3" length="113222826" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #81 &#8211; Using applyForce, applyTorque, and HTML5</title>
+		<link>/blog/coronageek/corona-geek-hangout-81/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-81/#respond</comments>
+		<pubDate>Tue, 18 Mar 2014 21:22:28 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=57222</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed concepts from the Physics API like applyForce and applyTorque. Roaming Gamer's Ed Maurina stepped us through examples of each concept and explained how they affect game objects. Spiral Code Studio's Sergey Lerg also walked us through how he ported his Cubic Run LD game code to HTML5 using Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Ssno3LRoBKw?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout we discussed concepts from the Physics API like <a href=https://docs.coronalabs.com/api/type/Body/applyForce.html target="_blank">applyForce</a> and <a href=https://docs.coronalabs.com/api/type/Body/applyTorque.html target="_blank">applyTorque</a>. Roaming Gamer&#8217;s Ed Maurina stepped us through <a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/Corona%20Geek/Hangout%2081 target="_blank">examples of each concept</a> and explained how they affect game objects. Spiral Code Studio&#8217;s Sergey Lerg also walked us through how he <a href=http://spiralcodestudio.com/tmp/cubic.html target="_blank">ported his Cubic Run LD game</a> code to HTML5 using Corona SDK.</p>
+<p><iframe src="//www.youtube.com/embed/7TsgOZPvEks?rel=0" height="436" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/tmp/cubic.html target="_blank">Sergey Lerg&#8217;s HTML5 port of his endless runner game</a></li>
+<li><a href=https://developer.coronalabs.com/code/subfolders-lua-audio-xml-and-other-files-keep-sanity target="_blank">Sub Folders using Corona SDK</a><a href=http://bostonfig.com/ target="_blank"><br />
+</a></li>
+<li><a href=https://play.google.com/store/apps/details?id=com.spiralcodestudio.hexled target="_blank">Hex LED is free!</a></li>
+<li><a href=http://roaminggamer.com/sskcorona/ target="_blank">Corona Super Starter Kit (SSK)</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-81/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-81-2014-03-17-physics-api-and-html5.mp3" length="50735767" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-81-2014-03-17-physics-api-and-html5.mp3" length="50735767" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-81-2014-03-17-physics-api-and-html5.mp3" length="50735767" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-81-2014-03-17-physics-api-and-html5.mp3" length="50735767" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #53 &#8211; Make Rain and Lightning in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-53/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-53/#comments</comments>
+		<pubDate>Mon, 02 Sep 2013 21:22:04 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Special Effects]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=43512</guid>
+		<description><![CDATA[During this week's Corona Geek, it almost literally rained cats and dogs during the rain and lightning code snippet walkthroughs. We walked through a great piece of code by Corona Ambassador Volodymr Sergeyev, that showed how to create and recycle objects to simulate rain. Ed Maurina modified that code on the fly and the results will make you laugh out loud.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/dvYyxhcOmIc?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek, it almost literally rained cats and dogs during the rain and lightning code snippet walkthroughs. We walked through a great piece of code by Corona Ambassador Volodymr Sergeyev, that showed how to create and recycle objects to simulate rain. Ed Maurina modified that code on the fly and the results will make you laugh out loud. Then Dr. Brian Burton walked us through a code snippet that simulates different types of lightning. The results were very shocking and might even knock you out of you seat, especially if you&#8217;re wearing headphones. </p>
+<p>Next week, we&#8217;ll be looking at code to make objects float in water. In the meantime, check out Dr. Burton&#8217;s brand new book, <em><a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile App &amp; Game Dev with Corona</a></em> for more tips on how to use Corona&#8217;s physics engine in your games.</p>
+<p>Also, download the <a href=http://bit.ly/1dB25uJ target="_blank">Corona SDK source code</a> from today&#8217;s Hangout to see the code in action.</p>
+<p>Congratulations to Tony Morelli for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-53/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #52 &#8211; Making a Character Jump in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-52/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-52/#comments</comments>
+		<pubDate>Mon, 26 Aug 2013 22:05:12 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Touch Events]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=42673</guid>
+		<description><![CDATA[During this week's Corona Geek Ed Maurina, developer of Corona SDK game templates at Roaming Gamer, walked us through a Corona SDK code snippet that makes your game characters jump. Using Corona's built in physics engine, we applied force to a single character and then added a second character to show how easy it is to handle touch events for multiple objects using the same function.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/ozGapPbESUY?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Ed Maurina, developer of <a href=http://forums.coronalabs.com/topic/38518-roaming-gamer-template-prices-reduced/>Corona SDK game templates</a> at Roaming Gamer, walked us through a <a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/Corona%20Geek/Hangout%2052 target="_blank">Corona SDK code snippet</a> that makes your game characters jump. Using Corona&#8217;s built in physics engine, we <a href=http://docs.coronalabs.com/api/type/Body/applyForce.html target="_blank">applied force</a> to a single character and then added a second character to show how easy it is to <a href=http://docs.coronalabs.com/api/event/touch/index.html target="_blank">handle touch events</a> for multiple objects using the same function. Next week we&#8217;ll be looking at code to make it rain and flash lighting. In the meantime, check out Dr. Burton&#8217;s brand new book, <a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile App &amp; Game Dev with Corona</a> for more tips on how to use Corona&#8217;s physics engine in your games.</p>
+<p>Congratulations to Robert Araho for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-52/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-52-2013-08-26-character-jumping-code-snippet-review.mp3" length="51415290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-52-2013-08-26-character-jumping-code-snippet-review.mp3" length="51415290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-52-2013-08-26-character-jumping-code-snippet-review.mp3" length="51415290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-52-2013-08-26-character-jumping-code-snippet-review.mp3" length="51415290" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

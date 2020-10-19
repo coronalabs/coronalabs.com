@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>native text input &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/native-text-input/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>native text input &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #123 &#8211; Android TV Publishing, Native Text Input, and 2015 Goals</title>
+		<link>/blog/coronageek/corona-geek-123/</link>
+		<comments>/blog/coronageek/corona-geek-123/#comments</comments>
+		<pubDate>Mon, 05 Jan 2015 23:15:24 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Android TV]]></category>
+		<category><![CDATA[native text input]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60740</guid>
+		<description><![CDATA[During this week’s Hangout, artist, animator, and Corona Developer, Greg Pugh shared his experience with publishing apps to Android TV. Also, Ed Maurina took us through code for resizing native text and native text boxes, and we shared goals for 2015.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/bAaVGYxlhxY?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week’s Hangout, artist, animator, and Corona Developer, Greg Pugh shared his experience with publishing apps to Android TV. Greg recently published his children’s book companion game, <a href=https://play.google.com/store/apps/details?id=com.gpanimations.mbsttv target="_blank">Maddie Bear Snack Time</a>, to Google Play. Greg shared how he did it and what we need to know to do it ourselves.</p>
+<p>Also, Ed Maurina (aka Roaming Gamer) took us through code for <a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/Corona%20Geek/Hangout%20120.zip target="_blank">resizing text and moving text boxes around on the screen</a>. Working with text may not sound as glamorous as vector math and physics engines, but it can be very important if your app depends on it.</p>
+<p><strong>January&#8217;s Geek Games &#8211; Let&#8217;s Play!</strong></p>
+<p style="padding-left: 30px;">In January we&#8217;re playing Chip Chain on iOS or Android for the chance to win a $50 gift card. The rules are simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. The winner will be announced on February 2 when we announce the next game to play. <a href=http://chip-chain.com/ target="_blank">Download Chip Chain</a> now and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-122/ target="_blank">Corona Geek #122 &#8211; Using Coroutines in Lua and Creating 2D Shadows </a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://play.google.com/store/apps/details?id=com.gpanimations.mbsttv target="_blank">Maddie Bear Snack Time on Android TV</a> &#8211; a Corona game from GPAnimations</li>
+<li><a href=http://developer.android.com/reference/android/view/KeyEvent.html target="_blank">Android TV Game Controller Input Key Codes</a></li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/FireTVLib target="_blank">Roaming Gamer Controller Inputs Library</a></li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/Corona%20Geek/Hangout%20120.zip target="_blank">Roaming Gamer Native Text Scaling Repo</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module</a></li>
+<li><a href=http://careers.fusepowered.com/JobDescriptionMultiple.asp?WebJobPostingsID=588 target="_blank">We&#8217;re Hiring Core Engineers</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Beginning Mobile App Development Using Corona SDK</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-123/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-123-2015-01-05-android-tv-native-text-fields.mp3" length="87713877" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-123-2015-01-05-android-tv-native-text-fields.mp3" length="87713877" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-123-2015-01-05-android-tv-native-text-fields.mp3" length="87713877" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-123-2015-01-05-android-tv-native-text-fields.mp3" length="87713877" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Tutorial: New native text input features</title>
+		<link>/blog/2014/12/16/tutorial-new-native-text-input-features/</link>
+		<comments>/blog/2014/12/16/tutorial-new-native-text-input-features/#comments</comments>
+		<pubDate>Tue, 16 Dec 2014 19:00:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[native text input]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">/?p=60567</guid>
+		<description><![CDATA[Starting with Daily Build #2520, some new functions have been introduced to control and adapt native input fields/boxes to specific font sizes or field heights. These additions will help in the development of user interfaces for cross-platform apps. Read further to learn how these features may impact your current development.]]></description>
+				<content:encoded><![CDATA[<p>Starting with <a href=http://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build #2520</a>, the Corona Labs engineering team made some significant updates to the two native text entry API functions, <a href=http://docs.coronalabs.com/daily/api/library/native/newTextField.html target="_blank">native.newTextField()</a> and <a href=http://docs.coronalabs.com/daily/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a>. Some of these are <strong>breaking</strong> changes, meaning that they will cause your apps to behave differently.</p>
+<p>Before we talk about these changes, let&#8217;s discuss why they were implemented. Essentially, the <a href=http://docs.coronalabs.com/daily/api/library/native/index.html target="_blank">native</a> API features live outside of the Corona SDK OpenGL display hierarchy. If you define your content area as 320×480, create a <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html target="_blank">display.newText()</a> object with a <strong>20</strong> point font, and run the app on an iPhone 5S (640×1136), Corona SDK will automatically make that a <strong>40</strong> pixel text object. In this same case, if the text inside a <a href=http://docs.coronalabs.com/daily/api/library/native/index.html target="_blank">native</a> input field is also 20 points, the operating system will scale the font from 20 points to 40 points so that it fits. However, if your content area isn&#8217;t pixel perfect &#8212; say 320 points on what should be a 360 point iPad &#8212; or if you&#8217;re trying to adapt it to Android&#8217;s 160-ppi setup, the scaling may not end up matching. In addition, on iOS, OS X, and Android, the amount of &#8220;chrome&#8221; (decoration/border around the input area) varies, thus compounding the overall issue.</p>
+<p>With this in mind, let&#8217;s explore the changes and how they impact these two API calls.</p>
+<h3>native.newTextField() and native.newTextBox() now use scaled fonts</h3>
+<p>This is a <strong>breaking</strong> change. Now, when using <a href=http://docs.coronalabs.com/daily/api/library/native/newTextField.html target="_blank">native.newTextField()</a> or <a href=http://docs.coronalabs.com/daily/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a>, the specified font size will match the size of a <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html target="_blank">display.newText()</a> object that uses the same font size (previously this was based on the device&#8217;s native point size).</p>
+<p>Because this is a breaking change, and you may have implemented a workaround for font scaling, we&#8217;ve provided two new &#8220;legacy&#8221; setting options via <a href=http://docs.coronalabs.com/daily/api/library/display/setDefault.html target="_blank">display.setDefault()</a>. Note that there is a distinct option for native text input <strong>fields</strong> and <strong>boxes</strong>:</p>
+<ul>
+<li>Input <strong>field</strong> &#8212; <code>display.setDefault( "isNativeTextFieldFontSizeScaled", false )</code></li>
+<li>Input <strong>box</strong> &#8212; <code>display.setDefault( "isNativeTextBoxFontSizeScaled", false )</code></li>
+</ul>
+<h3>Fonts automatically resize to fit the field height</h3>
+<p>In a previous <a href=/blog/2014/12/02/tutorial-sizing-text-input-fields/ target="_blank">tutorial</a>, we introduced a couple functions to help size your text input fields and the text within them. One of the sample functions allowed you to specify the desired height of the field and have the font fit the field. This is now the <strong>default</strong> behavior for <a href=http://docs.coronalabs.com/daily/api/library/native/newTextField.html target="_blank">native.newTextField()</a>.</p>
+<p>However, if you&#8217;ve already implemented a workaround, you can change this behavior as well. You can either have the font resize to fit the field <strong>or</strong> the field resize to contain the font. This is achieved via two new functions:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/api/type/TextField/resizeFontToFitHeight.html target="_blank">object:resizeFontToFitHeight()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/api/type/TextField/resizeHeightToFitFont.html target="_blank">object:resizeHeightToFitFont()</a></li>
+</ul>
+<p>The first of these functions (<a href=http://docs.coronalabs.com/daily/api/type/TextField/resizeFontToFitHeight.html target="_blank">object:resizeFontToFitHeight()</a>) is useful if you change the input field&#8217;s height sometime after the field is created, and you want to resize the font to fit within the field. For example:</p><pre class="crayon-plain-tag">local textField = native.newTextField( 160, 240, 280, 40 )
+textField.text = &quot;Hello World&quot;
+
+-- Change the height of the text field
+textField.height = 60
+-- Resize the font to best fit the text field's new height
+textField:resizeFontToFitHeight()</pre><p>The second function (<a href=http://docs.coronalabs.com/daily/api/type/TextField/resizeHeightToFitFont.html target="_blank">object:resizeHeightToFitFont()</a>) is useful when the font size is the higher priority, and the field can be a variable size to accommodate the font size.</p><pre class="crayon-plain-tag">local textField = native.newTextField( 160, 240, 280, 40 )
+textField.text = &quot;Hello World&quot;
+
+-- Change the text field's font size to the system default
+textField.size = 60
+-- Resize the text field's height to best fit the font
+textField:resizeHeightToFitFont()</pre><p><strong>IMPORTANT:</strong> If you choose to use these new scaling methods, you should <strong>not</strong> use the functions presented in the previous tutorial.</p>
+<h3>Better use of chrome on Android</h3>
+<p>On Android, the &#8220;chrome&#8221; around the text field comes from a 9-slice image sheet (in Corona terms). This contains some extra transparency which causes the box to be smaller than it needs to be. Now, we look through the pixels to scale the text field so that it better matches what you see in the Corona Simulator and on iOS devices. This should make building multi-platform apps easier.</p>
+<p><a href=/wordpress/wp-content/uploads/2014/12/textfieldsizechanges.png><img class="alignnone size-full wp-image-60570" src=/wordpress/wp-content/uploads/2014/12/textfieldsizechanges.png alt="textfieldsizechanges" width="800" height="640" /></a></p>
+<p>In the diagram above, the green area represents the extra transparency that was making the fields a bit smaller than they should have been. Because of this change, your existing text fields will become slightly larger when  you rebuild your app using Daily Build #2520 or later.</p>
+<h3>The Corona Simulator for OS X now resizes fonts</h3>
+<p>One of the caveats in the previous tutorial involved font scaling in the Corona Simulator for OS X. If the Simulator &#8220;skin&#8221; was not at 100% zoom, the font would appear too large. As such, you could only use the new functions we introduced while the skin was at 100% zoom. Now, native fonts will resize correctly in the Corona Simulator for OS X.</p>
+<h3>Support for the system default font size</h3>
+<p>Corona SDK now lets you set the font size for native text input objects to match the user&#8217;s selected system default size. To do so, simply set the font&#8217;s size to <code>nil</code> and the font size for <a href=http://docs.coronalabs.com/daily/api/library/native/newTextField.html target="_blank">native.newTextField()</a> and <a href=http://docs.coronalabs.com/daily/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a> will obey the system default.</p><pre class="crayon-plain-tag">local textField = native.newText( 160, 240, 280, 30 )
+textField.size = nil  -- Set font size to the system default
+textField:resizeHeightToFitFont()</pre><p>This is a very useful feature, but you may need to put in more effort to lay out the text fields since the default font size can vary wildly between devices. If you pass in <code>nil</code> as the <code>fontSize</code> property of <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html target="_blank">display.newText()</a> or <a href=http://docs.coronalabs.com/daily/api/library/display/newEmbossedText.html target="_blank">display.newEmbossedText()</a> (or simply omit it entirely), those objects will use the default font size as well.</p>
+<h3>Other miscellaneous fixes</h3>
+<p>Two other features/fixes related to fonts were also implemented as of Daily Build #2520:</p>
+<ol>
+<li>Previously, on iOS, there was a bug that prevented you from changing the size of a <a href=http://docs.coronalabs.com/daily/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a> until <strong>after</strong> the box had text inside it. This bug has been fixed.</li>
+<li>Before, if you wanted to change the font on a <a href=http://docs.coronalabs.com/daily/api/library/native/newTextField.html target="_blank">native.newTextField()</a> or <a href=http://docs.coronalabs.com/daily/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a>, you had to call the <a href=http://docs.coronalabs.com/daily/api/library/native/newFont.html target="_blank">native.newFont()</a> API, yet for <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html target="_blank">display.newText()</a> you were always expected to specify a string for the font name. Now, for consistency, you can pass a <a href=http://docs.coronalabs.com/daily/api/library/native/newFont.html target="_blank">native.newFont()</a> value to <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html target="_blank">display.newText()</a> as well.</li>
+</ol>
+<h3>Conclusion</h3>
+<p>With these new features to control and adapt native input fields/boxes to specific font sizes or field heights, developing user interfaces for cross-platform apps using Corona is now easier and more cohesive.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/16/tutorial-new-native-text-input-features/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Sizing Text Input Fields</title>
+		<link>/blog/2014/12/02/tutorial-sizing-text-input-fields/</link>
+		<comments>/blog/2014/12/02/tutorial-sizing-text-input-fields/#comments</comments>
+		<pubDate>Tue, 02 Dec 2014 21:18:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[native text input]]></category>
+		<category><![CDATA[text input]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=60315</guid>
+		<description><![CDATA[In this tutorial, discover a more accurate way to configure the font size and overall size of Corona's native text input fields, taking into account both content scaling and device DPI.]]></description>
+				<content:encoded><![CDATA[<div style="background-color: #ffeecc; padding: 10px 16px 0px 16px; border: 1px solid #cc9977; margin-bottom: 20px;">
+<p><strong>NOTE:</strong> New <a href=/blog/2014/12/16/tutorial-new-native-text-input-features/ target="_blank">features</a> have been added to Corona SDK <a href=http://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build</a> <strong>2014.2520</strong> that handles the same tasks that this tutorial covers. If you&#8217;re using that build or later, you do not need the code presented below, but for those developers using builds earlier than 2014.2520, this tutorial is still useful for purposes of sizing native text input fields.</p>
+</div>
+<p>In a <a href=/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/ target="_blank">previous tutorial</a>, we illustrated how to add native text inputs into a <a href=http://docs.coronalabs.com/api/library/display/newGroup.html target="_blank">display.newGroup()</a> or a <a href=http://docs.coronalabs.com/api/library/composer/index.html target="_blank">Composer</a> scene, allowing them to be moved as a unified group. This week, we&#8217;ll discuss how to elegantly configure both the font size and overall size of <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> input fields.</p>
+<p>The reason why native text input objects are challenging is because Corona does not automatically scale fonts in any native UI, including native input fields and other native objects such as web views. Instead, these native objects use the system&#8217;s default font size, so while the defined content area (and the native objects) may be scaled relative to the actual content area, their font sizes are not. Consider this simple example:</p><pre class="crayon-plain-tag">-- config.lua
+application = {
+    content = {
+        width = 320,
+        height = 480,
+        scale = &quot;letterbox&quot;,
+    }
+}
+
+-- main.lua
+local centerX = display.contentCenterX
+local centerY = display.contentCenterY
+local myText = display.newText( centerX, centerY, &quot;Hello World&quot;, &quot;Helvetica&quot;, 20 )
+
+local myInputField = native.newTextField( centerX, centerY+80, 200, 30 )
+myInputField.size = 20</pre><p>With a content area of 320×480, one pixel would equal one &#8220;point&#8221; measurement on an older device like the iPhone 3GS. In this case, because we defined the text size of both objects as <code>20</code>, the <code>myText</code> text object would be 20 pixels (and points) tall and the native input&#8217;s text would also be 20 pixels (and points) tall. However, if we tried this same code on an iPhone 4S with its real screen being 640×960 &#8212; exactly double the size as the 3GS &#8212; Corona would automatically scale the <code>myText</code> text to be 40 pixels tall. The device would scale the text field font and the text field based on it&#8217;s point&#8217;s system.  iOS would double the size on Retina displays.  Android would scale up depending on its DPI settings.</p>
+<h3>Implementing Scaling</h3>
+<p>There are two options to consider when approaching the sizing of text input fields:</p>
+<ol>
+<li>Make the text inside the <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> match the height of <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> labels or other related text, while the height of the overall input box remains variable.</li>
+<li>Make the height of the <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> fixed and force its text to fit inside.</li>
+</ol>
+<p>There are, of course, considerations regarding both methods. Using fixed-height boxes is easier for layout purposes, but matching other text object sizes may look better. Ultimately, the UI design and layout will dictate which approach is best.</p>
+<p>Now, let&#8217;s create two utility functions and attach them to the <a href=http://docs.coronalabs.com/api/library/native/index.html target="_blank">native.*</a> library since they are related to native text input fields. In this way, both functions become part of the native library and you can call them throughout a project.</p>
+<h3>Making the Field Fit the Text</h3>
+<p>This first function makes the input field boundaries properly fit around the text. It returns a <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> along with the scaled font size.</p><pre class="crayon-plain-tag">function native.newScaledTextField( centerX, centerY, width, desiredFontSize )
+    -- Corona provides a resizeHeightToFitFont() feature on build #2520 or higher
+    if ( tonumber( system.getInfo(&quot;build&quot;) ) &gt;= 2014.2520 ) then
+        local textField = native.newTextField(centerX, centerY, width, 30)
+        local isFontSizeScaled = textField.isFontSizeScaled
+        textField.isFontSizeScaled = true
+        textField.size = desiredFontSize
+        textField:resizeHeightToFitFont()
+        textField.isFontSizeScaled = isFontSizeScaled
+        return textField
+    end
+    local fontSize = desiredFontSize or 0
+
+    -- Create a text object, measure its height, and then remove it
+    local textToMeasure = display.newText( &quot;X&quot;, 0, 0, native.systemFont, fontSize )
+    local textHeight = textToMeasure.contentHeight
+    textToMeasure:removeSelf()
+    textToMeasure = nil
+
+    local scaledFontSize = fontSize / display.contentScaleY
+    local textMargin = 20 * display.contentScaleY  -- convert 20 pixels to content coordinates
+
+    -- Calculate the text input field's font size and vertical margin, per-platform
+    local platformName = system.getInfo( &quot;platformName&quot; )
+    if ( platformName == &quot;iPhone OS&quot; ) then
+        local modelName = system.getInfo( &quot;model&quot; )
+        if ( modelName == &quot;iPad&quot; ) or ( modelName == &quot;iPad Simulator&quot; ) then
+            scaledFontSize = scaledFontSize / ( display.pixelWidth / 768 )
+            textMargin = textMargin * ( display.pixelWidth / 768 )
+        else
+            scaledFontSize = scaledFontSize / ( display.pixelWidth / 320 )
+            textMargin = textMargin * ( display.pixelWidth / 320 )
+        end
+    elseif ( platformName == &quot;Android&quot; ) then
+        scaledFontSize = scaledFontSize / ( system.getInfo( &quot;androidDisplayApproximateDpi&quot; ) / 160 )
+        textMargin = textMargin * ( system.getInfo( &quot;androidDisplayApproximateDpi&quot; ) / 160 )
+    end
+
+    -- Create a text field that fits the font size from above
+    local textField = native.newTextField(
+        centerX,
+        centerY,
+        width,
+        textHeight + textMargin
+    )
+    textField.size = scaledFontSize
+    return textField, scaledFontSize
+end</pre><p>This function first creates a standard text object in the specified size. Once created, Corona gets this text object&#8217;s <a href=http://docs.coronalabs.com/api/library/display/contentHeight.html target="_blank">display.contentHeight()</a> and then immediately disposes of it. This is an important step because each device&#8217;s OS renders text a bit differently and we need a basis to measure upon. The next step is to calculate the scaled font size and the combined vertical margin for the input field. This considers Corona&#8217;s content scaling as well as various device adjustments. For iOS, this means handling iPhone and iPad a little different. For Android, we can adjust using the difference between the device&#8217;s real DPI and the 160 points-per-inch visual scale.</p>
+<p>With the calculations complete, a <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> is created, its <code>.size</code> is set to <code>scaledFontSize</code>, and the object is returned to the caller along with the scaled font size value.</p>
+<h3>Making the Text Fit the Field</h3>
+<p>This next function is useful when the input field should be a fixed height and its text must fit within its boundaries. Unlike the above function which creates the text field, we&#8217;ll need to create a text field first and pass it to this function.</p><pre class="crayon-plain-tag">function native.getScaledFontSize( textField )
+    -- Use Corona's auto font sizing feature if running on build #2520 or higher
+    -- For best performance, use resizeFontToFitHeight() instead of this native.getScaledFontSize() function
+    if ( tonumber( system.getInfo(&quot;build&quot;) ) &gt;= 2014.2520 ) then
+         local previousFontSize = textField.size
+         textField:resizeFontToFitHeight()
+         local bestFitFontSize = textField.size
+         textField.size = previousFontSize
+         return bestFitFontSize
+    end
+    local fontSize = 10
+
+    local textMargin = 20 * display.contentScaleY  -- convert 20 pixels to content coordinates
+
+    local platformName = system.getInfo( &quot;platformName&quot; )
+    if ( platformName == &quot;iPhone OS&quot; ) then
+        local modelName = system.getInfo( &quot;model&quot; )
+        if ( modelName == &quot;iPad&quot; ) or ( modelName == &quot;iPad Simulator&quot; ) then
+            textMargin = textMargin * ( display.pixelWidth / 768 )
+        else
+            textMargin = textMargin * ( display.pixelWidth / 320 )
+        end
+    elseif ( platformName == &quot;Android&quot; ) then
+        textMargin = textMargin * ( system.getInfo( &quot;androidDisplayApproximateDpi&quot; ) / 160 )
+    end
+
+    -- Calculate a font size that will best fit the given text field's height
+    local textToMeasure = display.newText( &quot;X&quot;, 0, 0, native.systemFont, fontSize )
+    fontSize = fontSize * ( ( textField.contentHeight - textMargin ) / textToMeasure.contentHeight )
+    textToMeasure:removeSelf()
+    textToMeasure = nil
+
+    -- Update the given text field's font size to best fit its current height
+    -- Note that we must convert the font size above for the text field's native units and scale
+    local nativeScaledFontSize = fontSize / display.contentScaleY
+    if ( platformName == &quot;iPhone OS&quot; ) then
+        local modelName = system.getInfo( &quot;model&quot; )
+        if ( modelName == &quot;iPad&quot; ) or ( modelName == &quot;iPad Simulator&quot; ) then
+            nativeScaledFontSize = nativeScaledFontSize / ( display.pixelWidth / 768 )
+        else
+            nativeScaledFontSize = nativeScaledFontSize / ( display.pixelWidth / 320 )
+        end
+    elseif ( platformName == &quot;Android&quot; ) then
+        nativeScaledFontSize = nativeScaledFontSize / ( system.getInfo( &quot;androidDisplayApproximateDpi&quot; ) / 160 )
+    end
+    return nativeScaledFontSize
+end</pre><p>This function first calculates the text margin, applying both Corona&#8217;s content scaling and the device&#8217;s DPI-dependent scaling. Next, it creates a temporary text object, measures its height, and computes the unscaled font size based on the height of the text field (minus the margin). Then it calculates the <code>natveScaledFontSize</code> value, applying the device&#8217;s scaling. Finally, it returns this size to the caller.</p>
+<p>Remember that to use this function, we must <strong>first</strong> create the text field and then set the field&#8217;s font size based on the returned value of the function call:</p><pre class="crayon-plain-tag">local myInputField = native.newTextField( display.contentCenterX, 100, 200, 40 )
+myInputField.size = native.getScaledFontSize( myInputField )</pre><p></p>
+<h3>Gotchas</h3>
+<p>As always, when dealing with native objects, you should test on as many actual devices as possible. While the Corona Simulator for Mac allows for basic preview of input text fields, the text inside these fields will not be automatically scaled if the Simulator window is zoomed in or out &#8212; it will only be displayed at the correct size when the Simulator window is at normal zoom.</p>
+<h3>Conclusion</h3>
+<p>Hopefully this tutorial has illustrated some useful tips &#8212; and two convenient functions &#8212; which can help you better implement native text fields on varying platforms.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/02/tutorial-sizing-text-input-fields/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Moving native text input fields/boxes</title>
+		<link>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/</link>
+		<comments>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/#comments</comments>
+		<pubDate>Tue, 18 Nov 2014 22:14:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[native text input]]></category>
+		<category><![CDATA[text input]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">/?p=60212</guid>
+		<description><![CDATA[If you develop a mobile app user interface where native text input objects exist in the lower half of the screen, those objects are prone to being covered by the device's keyboard. In this tutorial, we'll explore a simple method to prevent this.]]></description>
+				<content:encoded><![CDATA[<p>One challenge for Corona developers is how to deal with <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a> objects, in particular when they are located in the lower half of the screen where they can be covered by the device&#8217;s keyboard. A common solution is to explicitly move native text field/box objects upward by some variable &#8220;keyboard height&#8221; when the keyboard becomes active, thus keeping them within view/access of the user.</p>
+<h3>Using display groups</h3>
+<p>For simplicity, native objects can be moved as one &#8220;unit,&#8221; specifically as part of a <a href=http://docs.coronalabs.com/api/library/display/newGroup.html target="_blank">display.newGroup()</a> which may contain supporting objects like a background, images, buttons, etc. Consider this code:</p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 0.5 )
+
+-- Create forward references for UI objects
+local value1, value2, result
+
+-- Create new display group for the UI objects
+local UIGroup = display.newGroup()
+
+-- Listener function for text input events
+local function textListener( event )
+
+    if ( event.phase == &quot;began&quot; ) then
+
+        -- Transition group upward to y=50
+        transition.to( UIGroup, { time=1000, y=50 } )
+
+    elseif ( event.phase == &quot;ended&quot; or event.phase == &quot;submitted&quot; ) then
+
+        local v1 = tonumber( value1.text )
+        local v2 = tonumber( value2.text )
+        if ( v1 and v2 ) then
+            -- Update the &quot;result&quot; text object
+            result.text = v1 + v2
+            -- Dismiss (hide) the native keyboard
+            native.setKeyboardFocus( nil )
+            -- Transition group back down to y=300
+            transition.to( UIGroup, { time = 1000, y = 300 })
+        end
+    end
+end
+
+local title = display.newText( &quot;Add two numbers&quot;, display.contentCenterX, 75, native.systemFont, 40 )
+title:setFillColor( 0, 0, 0 )
+UIGroup:insert( title )
+
+value1 = native.newTextField( display.contentCenterX, 150, 160, 40 )
+UIGroup:insert( value1 )
+value1:addEventListener( &quot;userInput&quot;, textListener )
+value1.inputType = &quot;number&quot;
+
+value2 = native.newTextField( display.contentCenterX, 225, 160, 40 )
+UIGroup:insert( value2 )
+value2:addEventListener( &quot;userInput&quot;, textListener )
+value2.inputType = &quot;number&quot;
+
+local plus = display.newText( &quot;+&quot;, display.contentCenterX-120, 215, native.systemFont, 80 )
+plus:setFillColor( 0, 0, 0 )
+UIGroup:insert( plus )
+
+result = display.newText( &quot;______&quot;, display.contentCenterX, 300, native.systemFont, 80 )
+result:setFillColor( 0, 0, 0 )
+UIGroup:insert( result )
+
+local equals = display.newText( &quot;=&quot;, display.contentCenterX-120, 300, native.systemFont, 80 )
+equals:setFillColor( 0, 0, 0 )
+UIGroup:insert( equals )
+
+-- Initially position the group at y=300
+UIGroup.y = 300</pre><p>This code creates a simple UI (User Interface) consisting of two text fields named <code>value1</code> and <code>value2</code>, plus (<strong>+</strong>) and equal (<strong>=</strong>) text objects, a <strong>title</strong> text label, and a label to hold the results of summing the two fields. All of these objects are inserted within the <code>UIGroup</code> display group, including the native text fields. Thus, when we position the group &#8212; or transition it upwards or downwards &#8212; everything moves in unison.</p>
+<p>Of course, this doesn&#8217;t mean that you can position native objects in front of normal display objects &#8212; native objects will <strong>always</strong> appear in front of other display objects, but we can still handle the movement and positioning of these objects as one collective group.</p>
+<p>Note that when handling the text field inputs, we confirm that a value has been entered into <strong>both</strong> fields before transitioning the group back down. We also confirm that each value is a number to avoid any potential errors in summing them together. With these two checks in place, the fields will remain accessible above the keyboard while the user interacts with them, and then when both have valid entries, the group can transition back down while the keyboard is simultaneously dismissed/hidden. Of course, depending on your own design, this approach may vary, but you should ensure that the input fields remain accessible for the duration of the required interactivity.</p>
+<h3>Conclusion</h3>
+<p>As demonstrated, this method is useful for handling native input objects. It can benefit developers of business/utility apps in particular, since apps in these categories often rely on keyboard-based interaction.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Customizing text input</title>
+		<link>/blog/2013/12/03/tutorial-customizing-text-input/</link>
+		<comments>/blog/2013/12/03/tutorial-customizing-text-input/#comments</comments>
+		<pubDate>Tue, 03 Dec 2013 22:33:22 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[native text input]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=53051</guid>
+		<description><![CDATA[One commonly requested feature is a "widget-based" text input field — one that allows for more "styling" than a device's native input field. Today's tutorial gives you a foundation to build this.]]></description>
+				<content:encoded><![CDATA[<p>One commonly requested feature is a &#8220;widget-based&#8221; text input field and today&#8217;s tutorial gives you a foundation to build your own. This isn&#8217;t a complete implementation, and it only overcomes a few issues related with <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a>, but it should provide a good starting point.</p>
+<p>Let&#8217;s begin with some basic setup code:</p><pre class="crayon-plain-tag">local myTextField = widget.newTextField(
+   {
+   top = 10,
+   left = 20,
+   width = 200,
+   height = 30,
+   cornerRadius = 8,
+   strokeWidth = 3,
+   backgroundColor = { 1, 1, 1 },
+   strokeColor = { 0, 0, 0 },
+   font = &quot;Helvetica&quot;,
+   fontSize = 24,
+   listener = textFieldHandler
+   }
+)</pre><p>Naturally, a widget like this could end up with an enormous number of options, but let&#8217;s start by considering some basic options:</p>
+<ul>
+<li><strong>top</strong> — distance from the top of the screen</li>
+<li><strong>left</strong> — distance from the left of the screen</li>
+<li><strong>x</strong> — location of the widget horizontally (center)</li>
+<li><strong>y</strong> — location of the widget vertically (center)</li>
+<li><strong>width</strong> — width of the field</li>
+<li><strong>height</strong> — height of the field</li>
+<li><strong>font</strong> — Font to use</li>
+<li><strong>fontSize</strong> — size of the font</li>
+<li><strong>backgroundColor</strong> — the color behind the text</li>
+<li><strong>strokeColor</strong> — the color of the stroke around the field</li>
+<li><strong>strokeWidth</strong> — the size of the stroke</li>
+<li><strong>cornerRadius</strong> — if you want rounded corners</li>
+<li><strong>text</strong> — the initial text</li>
+<li><strong>inputType</strong> — the type of keyboard to show</li>
+<li><strong>listener</strong> — the input handler</li>
+</ul>
+<p>Obviously this could be extended to include things like the value of the &#8220;return&#8221; button, having placeholder text that disappears when you first start editing the field, and even skinning features. However, since this function is going to use a native text field, we&#8217;ll need to write — at the core — a function to handle editing of the field:</p><pre class="crayon-plain-tag">local function textFieldHandler( event )
+
+   -- &quot;event.text&quot; only exists during the editing phase to show what's being edited; 
+   -- it is NOT the field's &quot;.text&quot; attribute (that is &quot;event.target.text&quot;).
+
+   if ( event.phase == &quot;began&quot; ) then
+      -- user begins editing textField
+      print( &quot;Begin editing&quot;, event.target.text )
+   elseif ( event.phase == &quot;ended&quot; or event.phase == &quot;submitted&quot; ) then
+      -- do something with defaulField's text
+      print( &quot;Final Text: &quot;, event.target.text )
+      native.setKeyboardFocus( nil )
+   elseif ( event.phase == &quot;editing&quot; ) then
+      print( event.newCharacters )
+      print( event.oldText )
+      print( event.startPosition )
+      print( event.text )
+   end
+end</pre><p>If we want this to be part of the widget library, we simply add it to a module and include the widget library:</p><pre class="crayon-plain-tag">local widget = require( &quot;widget&quot; )
+function widget.newTextField( options )
+   ...
+end</pre><p>This will cause a new function, <code>newTextField()</code>, to be added to the instance of the widget library that has been included in your project. Then, in any scene or module where you require the <a href=https://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> library, the function will be available.</p>
+<p>Now let&#8217;s define the default option values:</p><pre class="crayon-plain-tag">function widget.newTextField( options )
+   local customOptions = options or {}
+   local opt = {}
+   opt.left = customOptions.left or 0
+   opt.top = customOptions.top or 0
+   opt.x = customOptions.x or 0
+   opt.y = customOptions.y or 0
+   opt.width = customOptions.width or (display.contentWidth * 0.75)
+   opt.height = customOptions.height or 20
+   opt.id = customOptions.id
+   opt.listener = customOptions.listener or nil
+   opt.text = customOptions.text or &quot;&quot;
+   opt.inputType = customOptions.inputType or &quot;default&quot;
+   opt.font = customOptions.font or native.systemFont
+   opt.fontSize = customOptions.fontSize or opt.height * 0.67
+
+   -- Vector options
+   opt.strokeWidth = customOptions.strokeWidth or 2
+   opt.cornerRadius = customOptions.cornerRadius or opt.height * 0.33 or 10
+   opt.strokeColor = customOptions.strokeColor or { 0, 0, 0 }
+   opt.backgroundColor = customOptions.backgroundColor or { 1, 1, 1 }
+   ...</pre><p>The code above may seem a bit confusing, but we&#8217;re simply accepting a parameter to the function called <code>options</code>. The first line creates a table named <code>customOptions</code> which makes sure it&#8217;s a Lua table. If you don&#8217;t pass the <code>options</code> parameter, an empty table is created. After that, we just set each of the individual options to either the passed value or a default value. For this widget, things like the corner radius and the font size should default to values that adapt to the size of the field.</p>
+<h3>Creating the visual elements</h3>
+<p>In this section, we&#8217;ll create the visual part of our text field widget, including the <strong>native</strong> UI element to pair it with:</p><pre class="crayon-plain-tag">local field = display.newGroup()
+
+local background = display.newRoundedRect( 0, 0, opt.width, opt.height, opt.cornerRadius )
+background:setFillColor( unpack(opt.backgroundColor) )
+background.strokeWidth = opt.strokeWidth
+background.stroke = opt.strokeColor
+field:insert( background )
+
+if ( opt.x ) then
+   field.x = opt.x
+elseif ( opt.left ) then
+   field.x = opt.left + opt.width * 0.5
+end
+if ( opt.y ) then
+   field.y = opt.y
+elseif ( opt.top ) then
+   field.y = opt.top + opt.height * 0.5
+end
+
+-- Native UI element
+local tHeight = opt.height - opt.strokeWidth * 2
+if &quot;Android&quot; == system.getInfo(&quot;platformName&quot;) then
+    --
+    -- Older Android devices have extra &quot;chrome&quot; that needs to be compesnated for.
+    --
+    tHeight = tHeight + 10
+end
+
+field.textField = native.newTextField( 0, 0, opt.width - opt.cornerRadius, tHeight )
+field.textField.x = field.x
+field.textField.y = field.y
+field.textField.hasBackground = false
+field.textField.inputType = opt.inputType
+field.textField.text = opt.text
+print( opt.listener, type(opt.listener) )
+if ( opt.listener and type(opt.listener) == &quot;function&quot; ) then
+   field.textField:addEventListener( &quot;userInput&quot;, opt.listener )
+end
+
+local deviceScale = ( display.pixelWidth / display.contentWidth ) * 0.5
+
+field.textField.font = native.newFont( opt.font )
+field.textField.size = opt.fontSize * deviceScale</pre><p>Here are a few points to consider as you inspect this code:</p>
+<ul>
+<li>If you round the corners, don&#8217;t let the actual text field extend into the corners.</li>
+<li>Remember to hide the native text field background so that your custom visuals show up.</li>
+<li><a href=https://docs.coronalabs.com/api/library/native/newTextField.html>native.newTextField()</a> needs the font string name converted to a <a href=https://docs.coronalabs.com/api/library/native/newFont.html target="_blank">native.newFont()</a>. However, the size is a bit tricky because native text fields do not automatically scale. Thus, we must calculate the device&#8217;s real scale factor and then multiply the desired font size by that scale factor.</li>
+</ul>
+<h3>Removing the elements</h3>
+<p>We need to make sure that when the widget gets removed, the native text field gets removed as well. Previously, we would need to override the <a href=https://docs.coronalabs.com/api/type/DisplayObject/removeSelf.html target="_blank">removeSelf()</a> function with our own function that would eventually call the original <a href=https://docs.coronalabs.com/api/type/DisplayObject/removeSelf.html target="_blank">removeSelf()</a>. However, the new <a href=http://docs.coronalabs.com/api/event/finalize/index.html target="_blank">finalize</a> event makes this process easier. This allows us to set up a function that&#8217;s executed <em>just before the display object is removed from the stage</em>, in case there are related cleanup tasks we need to handle — in this case, removing the native text field just before our custom text field group is removed.</p><pre class="crayon-plain-tag">function field:finalize( event )
+   event.target.textField:removeSelf()
+end
+field:addEventListener( &quot;finalize&quot; ) 
+
+return field</pre><p></p>
+<h3>Using the custom text field</h3>
+<p>Using our new &#8220;widget&#8221; text field is simple. To place it on screen, our code may look like this:</p><pre class="crayon-plain-tag">local myTextField = widget.newTextField(
+   {
+   width = 250,
+   height = 30,
+   text = &quot;Hello World!&quot;,
+   fontSize = 18,
+   font = &quot;HelveticaNeue-Light&quot;,
+   listener = textFieldHandler
+   }
+)
+
+myTextField.x = display.contentCenterX
+myTextField.y = 100</pre><p></p>
+<h4>Retrieve the value of the text field</h4>
+<p></p><pre class="crayon-plain-tag">local myText = myTextField.textField.text</pre><p></p>
+<h4>Set the value of the text field</h4>
+<p></p><pre class="crayon-plain-tag">myTextField.textField.text = &quot;Edited Value&quot;</pre><p></p>
+<h3>In summary</h3>
+<p>This tutorial should get you started with implementing &#8220;styled&#8221; text input fields and, hopefully, extending them to more complex use cases.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/12/03/tutorial-customizing-text-input/feed/</wfw:commentRss>
+		<slash:comments>19</slash:comments>
+		</item>
+	</channel>
+</rss>

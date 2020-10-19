@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Lua Glider &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/lua-glider/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Lua Glider &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>App of the Week: Little Galaxy</title>
+		<link>/blog/2013/08/19/app-of-the-week-little-galaxy/</link>
+		<comments>/blog/2013/08/19/app-of-the-week-little-galaxy/#comments</comments>
+		<pubDate>Mon, 19 Aug 2013 23:03:41 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[Lua Glider]]></category>
+		<category><![CDATA[TexturePacker]]></category>
+
+		<guid isPermaLink="false">/?p=41750</guid>
+		<description><![CDATA[<div><a href="http://bitmapgalaxy.com/">Bitmap Galaxy</a>, a small studio based in Slovakia, had a vision to create an "endless" game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours.</div>
+
+<div style="margin-top:10px;">From this, <a href="https://itunes.apple.com/nz/app/little-galaxy/id576764076">Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</div>
+
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-41752" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png" srcset="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png 180w, /wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" />This week’s App of the Week comes to us from <a href=http://bitmapgalaxy.com/>Bitmap Galaxy</a>, a small studio based in Slovakia. This three-person team had a vision to create an &#8220;endless&#8221; game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours. They also aimed to create a game that appeals to players&#8217; emotions with a lovable character and storyline. From this, <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</p>
+<p><img class="alignright size-full wp-image-41979" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/Little-Galaxy.jpeg" />Upon launching Little Galaxy, you’re instantly transported to space, with the mission of helping the main character navigate the universe. Each planet is in constant rotation and it&#8217;s your job to transport the little boy from place to place by tapping the screen when he&#8217;s aligned with another planet. While it&#8217;s important to collect stars along the way, it takes skill to aim properly and avoid sending him into the abyss.</p>
+<p>The team worked with Corona SDK to build Little Galaxy, spending their free time polishing a game to delight players. When asked about working with Corona on the project, lead developer Peter Janosik told us, “Thanks to Corona SDK, it was easy to rapidly prototype all of our ideas. For us, this was definitely the most interesting part of the project.”</p>
+<p>Bitmap Galaxy relied heavily upon Corona&#8217;s display APIs during development. Peter noted that, &#8220;It’s really easy to work with sprite sheets and transitions; it saves a lot of time.” The team also reviewed new Corona features regularly and found that having access to Daily Builds helped them discover new API calls to resolve issues quickly. Additionally, they relied on <a href=http://www.mydevelopersgames.com/Glider/>Lua Glider</a> for debugging needs and <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> for sprite sheet support.</p>
+<p>Download <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> from iTunes for $1.29 and watch for the game&#8217;s release for Android soon!</p>
+<p><iframe src="//www.youtube.com/embed/6_lscYW9BCE" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/19/app-of-the-week-little-galaxy/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+	</channel>
+</rss>

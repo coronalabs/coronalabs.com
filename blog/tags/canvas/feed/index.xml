@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>canvas &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/canvas/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>canvas &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Paint Brushes, Trailing Object Effects, and More with the Snapshot Canvas</title>
+		<link>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/</link>
+		<comments>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/#comments</comments>
+		<pubDate>Fri, 01 Nov 2013 13:35:14 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[brush]]></category>
+		<category><![CDATA[canvas]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[porter duff]]></category>
+		<category><![CDATA[render to texture]]></category>
+		<category><![CDATA[snapshot]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50816</guid>
+		<description><![CDATA[Today, I'm going to show you how to use snapshots to achieve the sorts of tricks you'd want to do in traditional CPU-based graphics. 
+
+One of the old school tricks is to be able to touch pixels on the frame buffer directly, or modify the pixels of an image directly. In a GPU world, you cannot do that b/c passing memory between the CPU and GPU is extremely expensive.
+
+Snapshots to the rescue!
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50128" style="margin: 2px 20px 10px 0px;" alt="gfx2-icon" src="http://www.coronalabs.com/wp-content/uploads/2013/10/gfx2-icon.png" />Today, I&#8217;m going to show you how to use snapshots to achieve the sorts of tricks you might be used to doing if you did a lot of traditional CPU-based computer graphics.</p>
+<p>One of the old school tricks is to be able to touch pixels on the frame buffer directly, or modify the pixels of an image directly. In a GPU world, you cannot do that b/c passing memory between the CPU and GPU is extremely expensive.</p>
+<h3>Versatility of Snapshots</h3>
+<p>Snapshots to the rescue!</p>
+<p>Normally, you use snapshots as a one-time operation to cache a single rendered result. They work by adding objects to the snapshot&#8217;s &#8216;group&#8217; property, and then calling &#8216;invalidate()&#8217; each time you want to render the group&#8217;s children to the texture. This lets you achieve cool effects like this <a href=http://forums.coronalabs.com/topic/40443-mode-7-demo-full-source/>Mode7 demo</a>.</p>
+<p>We recently added some <a href=http://docs.coronalabs.com/tachyon/api/type/SnapshotObject/index.html>new canvas features</a> to let you manipulate the snapshot texture in new and interesting ways.</p>
+<p>Here&#8217;s a video showing you a trailing brush effect that renders onto the snapshot. Underneath the snapshot is a background image of the world:</p>
+<p><iframe src="//www.youtube.com/embed/JAyD6LP9cCQ" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+<p>One way to achieve this affect is to keep track of every brush image we draw and then fade it out over time. That&#8217;s pretty complex and unwieldy to write code for.</p>
+<p>A far easier way approach is to draw the brush image onto the snapshot for every touch event. The trick is to draw a black translucent rectangle in between each touch, thus causing previously drawn images to appear to fade away. It&#8217;s a common technique from the CPU days, but now you can achieve it on the GPU!</p>
+<p>In Corona, the way to do this is to use the new canvas feature of snapshot, combined with support for Porter-Duff blend modes:</p><pre class="crayon-plain-tag">local w = display.viewableContentWidth
+local h = display.viewableContentHeight
+
+local background = display.newImage( &quot;world.jpg&quot;, w*0.5, h*0.5 )
+
+local snapshot = display.newSnapshot( w,h )
+snapshot:translate( w * 0.5, h * 0.5 )
+snapshot.canvasMode = &quot;discard&quot;
+
+function listener( event )
+   local x,y = event.x - snapshot.x, event.y - snapshot.y
+
+   if ( event.phase == &quot;began&quot; or event.phase == &quot;moved&quot; ) then
+      local r = display.newRect( 0, 0, w, h )
+      r:setFillColor( 0, .98 )
+      r.blendMode = &quot;dstIn&quot; -- enables snapshot to render over background
+
+      local o = display.newImage( &quot;brush.png&quot;, x, y )
+      o:setFillColor( 1, 0, 1 )
+
+      snapshot.canvas:insert( r )
+      snapshot.canvas:insert( o )
+      snapshot:invalidate( &quot;canvas&quot; ) -- accumulate changes w/o clearing
+   end
+end
+
+Runtime:addEventListener( &quot;touch&quot;, listener )</pre><p>Incidentally, if you take out the black rectangles between each touch, you can also build a <a href=http://forums.coronalabs.com/index.php?app=core&module=attach&section=attach&attach_id=888>simple paint brush program (code)</a>.</p>
+<h3>The Snapshot Canvas</h3>
+<p>The new <code>snapshot.canvas</code> lets you draw onto the snapshot texture without clearing between invalidates. In order to render these objects to the snapshot, you invalidate with the &#8220;canvas&#8221; parameter, e.g. <code>snapshot:invalidate( "canvas" )</code>.</p>
+<p>We&#8217;ve also added a <code>snapshot.canvasMode</code> property that lets you control what happens to the children between invalidates. Normally, the canvas group is emptied, and the children are appended to the snapshot&#8217;s main group. This ensure that your snapshot texture isn&#8217;t lost, which sometimes happens when your app is suspended. If you don&#8217;t care to preserve your edits, you can throw away the children via the <code>"discard"</code> mode.</p>
+<h3>Porter-Duff Blend Modes</h3>
+<p>The Porter-Duff blend modes are something we&#8217;ve also added. The normal blend mode that we&#8217;re all used to corresponds to &#8220;srcOver&#8221;, but there are a ton of other modes like <code>"clear"</code>, <code>"xor"</code>, <code>"dstIn"</code>, <code>"src"</code>, <code>"dst"</code>, etc that let you do a lot of amazing things.</p>
+<p>In the example above, we could have used the normal blend mode. However, if you do that, the background of the snapshot will become black and you won&#8217;t be able to see the image of the world behind the snapshot. The key is to only fade out the portions of the snapshot that are already opaque. And so in the example above, we use the <code>"dstIn"</code> which multiplies the snapshot texture with the alpha of the black rectangle.</p>
+<h3>In Summary</h3>
+<p>As you can see, snapshots are an incredibly powerful and versatile tool. And yes, there are some obvious next steps for snapshots (e.g. using them as textures for other objects), so we&#8217;ve put that on our roadmap. I think what&#8217;s really amazing is that this example only used a couple of features, so we&#8217;ve only scratched the surface of what&#8217;s possible!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/feed/</wfw:commentRss>
+		<slash:comments>15</slash:comments>
+		</item>
+	</channel>
+</rss>

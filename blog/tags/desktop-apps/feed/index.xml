@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>desktop apps &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/desktop-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>desktop apps &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights &#8211; Making Desktop Development Project Decisions</title>
+		<link>/blog/coronageek/hangout-highlights-making-desktop-development-project-decisions/</link>
+		<comments>/blog/coronageek/hangout-highlights-making-desktop-development-project-decisions/#respond</comments>
+		<pubDate>Wed, 28 Oct 2015 17:47:16 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[desktop games]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64436</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 164, we continued with our new game development series focusing on desktop game development using keyboard and mouse inputs. We discussed desktop vs. mobile project configuration settings, aspect ratios, and screen redrawing. We cover what you need to know to set up your project correctly from the beginning. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 164, we continued with our new game development series focusing on desktop game development using keyboard and mouse inputs. We discussed desktop vs. mobile project configuration settings, aspect ratios, and screen redrawing. Desktop and mobile games share some similarities, but there are also some things to consider when developing for desktop. In this Hangout, we cover what you need to know to set up your project correctly from the beginning.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-164/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Activating Plugins</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/QPO1H-NRE8E?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Desktop Width and Height Configuration Settings</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/j_siqbGStg0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Desktop Screen Resolutions</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/hxMue7j_9lQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Minimizing Desktop Game Windows</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/6Sx_Seme7Uk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Setting Windowing Modes</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/g5gWOekpfNo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Desktop Game Demo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/SP66rc4pZ7c?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Desktop Debugger Demo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/YWMgr47eFAg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout on <a href=/blog/coronageek/corona-geek-165/>adding players, enemies, aiming, and animation</a> to a desktop game.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-making-desktop-development-project-decisions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #165 &#8211; Adding Players, Enemies, and Animation to a Desktop Game</title>
+		<link>/blog/coronageek/corona-geek-165/</link>
+		<comments>/blog/coronageek/corona-geek-165/#respond</comments>
+		<pubDate>Mon, 26 Oct 2015 21:37:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[desktop games]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64406</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we added a player, enemies, and sprite animation to our desktop, top down shooter game. We also looked at using third party art in our game and how that art affected our overall game design and user input strategy. As always, you can download the source code for today's demo.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/t6JfDVIHOj8?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we added a player, enemies, and sprite animation to our desktop, top down shooter game. We also looked at using third party art in our game and how that art affected our overall game design and user input strategy. As always, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">download the source code</a> for the demo.</p>
+<p>Next week we&#8217;ll look at aiming, motion, and animation sequencing using other elements from the third party animation pack. Eventually we will explore tiling, adding defensive obstacles, and a whole lot more. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=http://www.reinerstilesets.de/ target="_blank">Zombies ++ by Reiner</a></li>
+<li><a href=http://www.lostgarden.com/search/label/free%20game%20graphics target="_blank">&#8216;Lost Garden&#8217; art by Daniel Cook</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-165/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-165-2015-10-26-desktop-game-dev-players-enemies-animation.mp3" length="87459527" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #164 &#8211; Desktop Game Project Configuration Decisions</title>
+		<link>/blog/coronageek/corona-geek-164/</link>
+		<comments>/blog/coronageek/corona-geek-164/#respond</comments>
+		<pubDate>Mon, 19 Oct 2015 21:14:57 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[desktop games]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64371</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued with our new game development series focusing on desktop game development using both keyboard and game controller inputs. We discussed desktop vs. mobile project configuration, aspect ratios, and screen redrawing. Download the demo code to see these desktop game concepts in action.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/hQwUpMt_luQ?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we continued with our new game development series focusing on <a href=/blog/coronageek/corona-geek-163/>desktop game development using both keyboard and game controller inputs</a>. We discussed desktop vs. mobile project configuration, aspect ratios, and screen redrawing. As always, we demonstrated everything with a demo, which you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">download now</a>.</p>
+<p>Next week we begin writing code for our top down shooter. We&#8217;ll move the player around on the screen, spawn off-screen enemies, fire bullets, and implement a simple heads up display (HUD). In the meantime, <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/deviceInputs.zip target="_blank">download the full source code</a> from last week&#8217;s desktop game controls discussion to see demos of the various input methods we&#8217;ll be using. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://gamasutra.com/blogs/ItayKeren/20150511/243083/Scroll_Back_The_Theory_and_Practice_of_Cameras_in_SideScrollers.php target="_blank">The Theory and Practice of Cameras in SideScrollers</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-164/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-164-2015-10-19-desktop-game-development-configuration.mp3" length="84171756" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #163 &#8211; Desktop Game Development With Controls</title>
+		<link>/blog/coronageek/corona-geek-163/</link>
+		<comments>/blog/coronageek/corona-geek-163/#respond</comments>
+		<pubDate>Mon, 12 Oct 2015 21:14:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[game controller inputs]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[keyboard inputs]]></category>
+		<category><![CDATA[mouse inputs]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64329</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we began a brand new series focusing on desktop game development using keyboard, mouse, and game controller inputs. Download the full source code from today's discussion to see demos of the various input methods in action.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/zsU-pk5FOAU?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we began a brand new series focusing on desktop game development using keyboard, mouse, and game controller inputs. Previously, we’ve focused on creating mobile games that rely solely on touch inputs, so this will be a fun topic to cover using Corona SDK.</p>
+<p>Next week we will start building a top down shooter game using keyboard and mouse inputs. In the meantime, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/deviceInputs.zip target="_blank">download the full source code</a> from today&#8217;s discussion to see demos of the various input methods in action. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-163/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-163-2015-10-12-desktop-game-development-with-controls.mp3" length="87586482" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Laser Dog, HoPiKo Game, and Desktop Apps</title>
+		<link>/blog/coronageek/hangout-highlights-laser-dog-hopiko-game-and-desktop-apps/</link>
+		<comments>/blog/coronageek/hangout-highlights-laser-dog-hopiko-game-and-desktop-apps/#respond</comments>
+		<pubDate>Wed, 09 Sep 2015 16:07:01 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[desktop games]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63958</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 157, we talked with special guests Rob and Simon from Laser Dog about Hopiko, their latest action packed mobile game. We also discussed their plans for publishing Win32 and OS X desktop games with controller support. If you missed the Hangout, here are clips to help you catch up. Watch the entire conversation, or just the parts that interest you most. Part 1 &#8211; Laser Dog Team Overview Part 2 &#8211; Matching Music To Game Play Part 3 &#8211; Updating Games Versus Creating New Games Part 4 &#8211; Creating Game Music Part 5 &#8211;...]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 157, we talked with special guests Rob and Simon from Laser Dog about Hopiko, their latest action packed mobile game. We also discussed their plans for publishing Win32 and OS X desktop games with controller support. </p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-157/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Laser Dog Team Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/_sc49xVlg5Y?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Matching Music To Game Play</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1tBw1fDfFW8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Updating Games Versus Creating New Games</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/FHhNrivJCog?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Creating Game Music</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/4BTUiY1K_XU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; App Promotion &#8211; Launching HoPiKo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/5JqDXLioeOk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Media Outreach for Launching Games</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/-gyKRgSnoJU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we covered part 4 of our ongoing “Using Gravity In Games” development discussion with a look at <a href=/blog/coronageek/corona-geek-158/>building game objects, restarting and advancing to new levels</a>. We created a brand new level live on the Hangout in just 7 minutes. Be sure to download the project sources to see how the code works.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-laser-dog-hopiko-game-and-desktop-apps/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

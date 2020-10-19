@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cloud &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/cloud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>cloud &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #131</title>
+		<link>/blog/2016/07/08/from-the-forum-issue-131/</link>
+		<pubDate>Sat, 09 Jul 2016 01:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[DRY]]></category>
+		<category><![CDATA[Endless Runner]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[modules]]></category>
+
+		<guid isPermaLink="false">/?p=67414</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>When is running endlessly not really running?</h3>
+<p>Starting out on the long road of game development means learning concepts that are not intuitive, even to programmers. Procedural generation, game loops, and asset management versus memory management are all concerns facing fledgling Corona enthusiasts.</p>
+<p>The endless runner is a great project to get your feet wet in the world of Corona game development. However, though it seems simple on the candy-coated surface, things can get messy pretty quickly. Discussion on the anatomy of an endless runner came up in the forum recently <a href=https://forums.coronalabs.com/topic/64465-is-endless-running-game-really-endless/ target="_blank">here</a>. It underlines some basic elements of game design which are useful no matter where you are in your development journey.</p>
+<h3>Coronium LS</h3>
+<p>We are all waiting with baited breath for the full release of Corona Labs&#8217; hosted solution which is being discussed in hushed whispers around campfires. While we wait, <strong>Develephant</strong> unleashed a community-supported option to the masses, <strong>Coronium LS</strong>. According to the man himself, it’s a “hybrid cloud solution for your Corona SDK games. A lot of ‘love’ went into this project, and I&#8217;m very excited to share it with you. Get your helmets on.”</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64464-new-coronium-ls-the-hybrid-cloud target="_blank">original thread</a> that points to the documentation and information on the project as a whole!</p>
+<h3>When to use a module</h3>
+<p>Continuing on the theme of game development, we have a fantastic conversation going on between a relatively new Corona developer and a couple of old-timers who have been around the block. Specifically, when do you use a module instead of simply including code in <code>main.lua</code> or whichever scene you are running? Check out <a href=https://forums.coronalabs.com/topic/63854-when-does-it-make-sense-to-employ-a-module-instead-of-a-function-within-a-scene-file/ target="_blank">the discussion</a> for a thorough dissertation on the finer points of modularized code, along with the basic tenets of &#8220;DRY&#8221; programming.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #125</title>
+		<link>/blog/2016/05/31/from-the-forum-issue-125/</link>
+		<pubDate>Tue, 31 May 2016 21:41:51 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[backups]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[RevMob]]></category>
+		<category><![CDATA[SQLite3]]></category>
+
+		<guid isPermaLink="false">/?p=66976</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Security-minded Coronium instances</h3>
+<p>Coronium-based apps are coming out of the woodwork these days. Having a Corona-supported server solution developed completely in Lua is a fantastic resource to new and veteran Corona users alike.</p>
+<p>However, it’s important to remember that not everything is served on a silver platter for us. The steps available to shore up endpoints and security are not unique to Coronium, so research on those fronts is paramount. One developer, in kicking the tires on his app and Coronium instance, was wondering what was going on with their iOS 9 test device. As it turns out, the app was running afoul of the App Transport Security policy instituted by Apple.</p>
+<p>A potential fix is referenced in the original post. Click on through to find out more about making your Coronium instance that much more secure!</p>
+<p><a href=https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/ target="_blank">https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/</a></p>
+<h3>Coronium step-by-step walkthrough</h3>
+<p>Coronium&#8217;s server solution has been talked up quite a bit in this running feature. For good reason of course, as having a server implementation written in pure Lua means not moving between languages during development and not fragmenting your workflow.</p>
+<p>While Coronium is relatively intuitive, there are still portions that may not be clear to new users. There are security concerns that may not occur when a developer’s primary experience is in game development. The installation guide is incredibly valuable, but having something from a user’s standpoint can be useful as well.</p>
+<p>The original thread below goes through a step-by-step installation, created by a genuine Corona developer, of the Coronium product. It’s a great read, and <strong>Develephant</strong> himself commented on how useful of a resource it is. Jump on over and check it out for yourself!</p>
+<p><a href=https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/ target="_blank">https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/</a></p>
+<h3>Understanding auto-backup workflow</h3>
+<p>These days, business apps are expected to allow users to pick up where they left off, regardless of device or location. The million dollar question: how can we ensure a user’s app data is available across the globe? The low barrier to entry for database implementations means that a simple SQL configuration can house any information necessary for a user to bounce around at will.</p>
+<p>If you’re using that SQL database, though, how you’re going to manage all that data becomes the primary concern. You want to make sure that you’re doing your level-best to maintain the integrity of the data that has become the real currency in your app.</p>
+<p>The below thread contains an interesting back-and-forth discussion surrounding the best way to handle data being passed between an app leveraging a SQL database, and the database itself. Have your own take? Add to the dogpile!</p>
+<p><a href=https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/ target="_blank">https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #124</title>
+		<link>/blog/2016/05/20/from-the-forum-issue-124/</link>
+		<pubDate>Fri, 20 May 2016 14:29:46 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66877</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A little bit more from Google Maps</h3>
+<p>This first tip is short and sweet and it revolves around one of the great “gotchas” that is the basis of Corona SDK: the OpenGL layer. As we all know, because of the architecture which underlies Corona SDK, any <a href=https://docs.coronalabs.com/daily/api/library/native/index.html>native.*</a> API call that creates a native object places that element above graphical objects created within your Corona app.</p>
+<p>If you have your sights set on a super-engaging geo-tagging game, this creates quite the boondoggle. You can’t capture maps with <a href=https://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a> et. al, nor can you mark up the maps that you create. However, standout Corona developer <strong>AidenWolf</strong> reminds us that we can still leverage the Google Static Maps API. Check out the original thread below and get clued in on how you can modify your map images with very little hassle!</p>
+<p><a href=https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/ target="_blank">https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/</a></p>
+<h3>Remote server querying workflows</h3>
+<p>If you aren’t coming from a system administrator background, configuring your Corona project to interface nicely with your remote server can be a bit of a struggle. Wrapping your head around all the moving parts isn’t the most exciting process.</p>
+<p>Fortunately, exemplary Corona support engineer Rob Miracle responded to a forum thread with some questions about this topic, and helped out everyone by giving a quick-and-dirty dissertation on the finer aspects of SQL integration. Click through to the original thread to grab a bit more info on this very necessary skill.</p>
+<p><a href=https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/ target="_blank">https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/</a></p>
+<h3>Some tips for desktop window sizes</h3>
+<p>The nuts and bolts of Windows and OS X desktop deployment are still being felt out by the Corona community at large. While we do have access to the vast majority of APIs that are standard for mobile development at this point, there are still a few here and there that don’t readily apply.</p>
+<p>One of the missing pieces is the read order of our projects. Does the <code>config.lua</code> file get read first, or does the desktop environment get queued in order to identify the various values for the <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display.*</a> APIs? As Corona engineer <strong>Joshua Quick</strong> states:</p>
+<p>“It&#8217;s a chicken &amp; egg issue. We need to read your &#8216;<code>config.lua'</code> file to determine what the pixel width and height of the window should be, which of course means the <code>display.*</code> Lua APIs can&#8217;t be ready for you to use since the pixel width and height you want to read haven&#8217;t been determined yet.”</p>
+<p>I’ve included two different forum threads that tackle this topic in depth, so that you can be well-armed when you run up against this desktop idiosyncrasy. Truck through to the links below to get inundated with desktop display value discussions!</p>
+<p><a href=https://forums.coronalabs.com/topic/63123-display-in-configlua target="_blank">https://forums.coronalabs.com/topic/63123-display-in-configlua</a><br />
+<a href=https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/ target="_blank">https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #123</title>
+		<link>/blog/2016/05/13/from-the-forum-issue-123/</link>
+		<pubDate>Fri, 13 May 2016 18:02:05 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66813</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Fonts and the developers who love them</h3>
+<p>There have been many, many posts regarding the implementation of custom fonts. For clarity, custom fonts are any font type that is not part of the underlying OS. For most business apps and generic games, the provided fonts are plenty diverse. However, when a developer really wants to leave their mark and make an impression, a striking font is a great way to add some curb appeal for a low price.</p>
+<p>Sometimes, however, custom fonts just do not want to play nice with our projects. In this case, you need to identify vagaries between the <code>.otf</code> versus <code>.ttf</code> types, kerning, and character width, just to name a few &#8212; and sometimes that custom font you’ve had your eye on just doesn’t want to work at all! Fortunately, another Corona developer ran into the same issue and, in the thread below, he provides some tips on how to overcome this hurdle by modifying the main font file. Check it out if you’ve been struggling with a font!</p>
+<p><a href=https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/ target="_blank">https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/</a></p>
+<h3>Coronium with a splash of MySQL</h3>
+<p><a href=http://coronium.io/ target="_blank">Coronium</a> and Coronium Cloud are products of <strong>develephant</strong>’s creative vision and they are as much labors of love as they are products from which the greater Corona community can benefit. There has been lots of movement regarding the status of Coronium Cloud and Coronium 2, but <strong>develephant</strong> still has time to drop some gems for us in the forum.</p>
+<p>This week we found a sweet tutorial for current and future users of Coronium, showing how to handle MySQL integration with the new server configuration. Click through to the original thread to watch the YouTube video!</p>
+<p><a href=https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/ target="_blank">https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/</a></p>
+<h3>Dynamic apps with interactive components&#8230;. on the fly!</h3>
+<p>The best part of the Corona forum is that sometimes simple questions turn into a larger discussion of &#8220;best practices&#8221; which convince our peers to peel the curtain back and show us how they are making their particular brand of sausage. My tortured metaphors aside, collaborating, sharing, and learning is how we all become better developers, and that should be the highest goal in our journey.</p>
+<p>The original thread I’m referencing starts off in a simple discussion regarding the extensibility of the <a href=https://docs.coronalabs.com/api/type/Map/addMarker.html target="_blank">addMarker()</a> API provided by Corona. It evolves into a examination of the efficacy of dynamic HTML file generation when the use case calls for a very specific and specialized interaction between app and user. Needless to say, it’s an intriguing topic, so head down to the original thread to pick up some pointers from the pseudo-code provided.</p>
+<p><a href=https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/ target="_blank">https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #108</title>
+		<link>/blog/2016/01/29/from-the-forum-issue-108/</link>
+		<pubDate>Fri, 29 Jan 2016 23:15:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[fill]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[Ldoc]]></category>
+		<category><![CDATA[parse.com]]></category>
+		<category><![CDATA[textures]]></category>
+
+		<guid isPermaLink="false">/?p=65456</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Parse leaves a void</h3>
+<p>For those of us who have been living under a rock may be surprised to learn that <strong>Parse</strong>, one of the most powerful third party server backends, has announced plans to shutter its service in a year&#8217;s time. There are a fair amount of Corona apps created with a Parse backbone, so this is potentially a huge blow to the community.</p>
+<p>Where do we go from here? There are several different options in the realm of backends server products. You can&#8217;t shake a stick without hitting one. However, today we&#8217;re going to highlight a solution that combines a few different pieces into a virtual Voltron of awesomeness.</p>
+<p>Corona dev (and our new best friend) <strong>Simon Fearby</strong> details how to get a managed server solution implemented that replaced Parse in functionality, with step by step instructions. Do yourself a favor and check out the link, and don&#8217;t forget to say thanks!</p>
+<p><a href=https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/ target="_blank">https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/</a></p>
+<h3>Documentation: the elephant in the room</h3>
+<p>I love backstory. I usually err on the side of over-explaining, sometimes, to my detriment. When it comes to documentation, though, I drop the ball and just start creating syntax that is nigh-impossible to decipher.</p>
+<p>If you&#8217;re like me, there is how fire us after all. Instead of resorting to electric shock, we can leverage a handy program called <a href=http://stevedonovan.github.io/ldoc/ target="_blank">Ldoc</a>. Developer <strong>Rene</strong> from <strong><a href=http://devilsquid.com/ target="_blank">DevilSquid</a></strong> lays out the details on its use, and even gives some instructions and pointers for getting started.</p>
+<p>Check out the original thread to see where Ldoc can fit into your workflow. Documentation for a program that generated documentation? What a time to be alive.</p>
+<p><a href=https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/ target="_blank">https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/</a></p>
+<h3>A fill, three years in the making</h3>
+<p>Way back during the pre-Graphics 2.0 days, we imagined new ways to use our compositions and captured images in interesting ways. With the advent of snapshots, many though a fill using the same was just around the corner.</p>
+<p>At last, <strong>Vlad</strong> from Corona has delivered the coolest of fills, allowing us to finally use snapshots. It’s a new feature, and one that needs the tired kicked on it by the entire Corona community. So do Vlad and yourself a favor, check out the original thread, and see how you can start using snapshot fills in your apps and games right now!</p>
+<p><a href=https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/ target="_blank">https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Tutorial: Using iCloud Key-Value Storage</title>
+		<link>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/</link>
+		<comments>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:06:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[storage]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64971</guid>
+		<description><![CDATA[In this tutorial, learn how to save and retrieve key-value pairs in Apple's iCloud.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are pleased to introduce the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, available as of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>. This plugin is currently in &#8220;beta&#8221; while we finish polishing the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and give it further rounds of testing.</p>
+<p>In this tutorial, we&#8217;ll explore <strong>Key-Value Storage</strong> or <strong>KVS</strong> (we will address &#8220;Documents in iCloud&#8221; and &#8220;CloudKit&#8221; in other tutorials).</p>
+<h3>Overview</h3>
+<p>KVS allows you to store &#8220;key-value&#8221; pairs in Apple&#8217;s iCloud using a very simple set of API calls. With KVS you can store strings, numbers, and tables of data using a simple <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> call.</p>
+<p>Before you dive in, there are some KVS limits to be aware of:</p>
+<ul>
+<li>You can use 1 megabyte of storage at most.</li>
+<li>You can have up to 1024 total keys.</li>
+<li>Keys can be up to 64 bytes long and include unicode characters. Unicode characters take up more space than alpha-numeric characters. You can use up to 63 alpha-numeric characters.</li>
+</ul>
+<p>Depending on your requirements, you can use one key with a lot of tabled data, or you can use many keys with separate bits of data. Keep in mind that when you sync one key with a lot of data, you&#8217;re changing a lot at once. Also remember that data is generally synced over both WiFi and Cellular, so syncing keys with large amounts of data can be time consuming, even when only one small part of that data changed.</p>
+<h3>Provisioning your app</h3>
+<p>Before you can deploy your iCloud-capable app to the store, your provisioning profile must have iCloud enabled. This is done in the <strong>Member Center</strong> of the <a href=https://developer.apple.com/ target="_blank">Apple Developer</a> portal under <strong>Certificates, Identifiers &amp; Profiles</strong>. Once there, click <strong>Identifiers</strong> → <strong>App IDs</strong>. Click on the desired app (it can <strong>not</strong> use a wildcard App ID) and scroll down to the <strong>iCloud</strong> row. There, check the box to enable iCloud. Next, click the radio button to enable CloudKit, then click on the <strong>Edit</strong> button.</p>
+<p><img class="alignnone size-full wp-image-64973" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.01.58-PM.png" alt="Screen Shot 2015-12-16 at 7.01.58 PM" width="667" height="132" /></p>
+<p>On the next screen, check the box for your app&#8217;s bundle ID:</p>
+<p><img class="alignnone size-full wp-image-64972" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.00.01-PM.png" alt="Screen Shot 2015-12-16 at 7.00.01 PM" width="658" height="77" /></p>
+<p>Click <strong>Continue</strong> and then <strong>Done</strong>. At this point, you will need to regenerate your provisioning profile (see the <strong>Creating Provisioning Profiles</strong> section <a href=https://docs.coronalabs.com/daily/guide/distribution/iOSBuild/index.html>here</a>).</p>
+<h3>Updating build.settings</h3>
+<p>To include the iCloud plugin, you must add it to your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = {
+
+    plugins =
+    {
+        [&quot;plugin.iCloud&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, osx=true, appletvos=true },
+        },
+    },
+}</pre><p>In addition, you must edit the block for <code>iphone</code> and/or <code>tvos</code>:</p><pre class="crayon-plain-tag">settings = {
+
+    iphone = {
+        iCloud = true, 
+        plist = {
+ 
+        }
+    },
+
+    -- Optional (only for use with Apple TV and tvOS)
+    tvos =
+    {
+        iCloud = true,
+    },
+}</pre><p></p>
+<h3>Corona Enterprise</h3>
+<p>For Enterprise builds, you have to include the <code>Corona_plugin_iCloud.framework</code> which is located in the Enterprise plugins download tab on the <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Builds page</a>.</p>
+<p>In addition, there are some Xcode settings required for enabling iCloud, located on the project&#8217;s <strong>Capabilities</strong> screen. Here, ensure that iCloud is enabled and that <strong>Key-value storage</strong> is checked.</p>
+<p><img class="alignnone size-full wp-image-64976" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.27.05-PM.png" alt="Screen Shot 2015-12-16 at 7.27.05 PM" width="695" height="264" /></p>
+<h3>Saving values to iCloud</h3>
+<p>In any scene or Lua file where you need to access iCloud services, you must require the plugin:</p><pre class="crayon-plain-tag">local iCloud = require( &quot;plugin.iCloud&quot; )</pre><p>Then, when you&#8217;re ready to save some data, simply call <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> with a key and value, for example:</p><pre class="crayon-plain-tag">iCloud.set( &quot;playMusic&quot;, &quot;on&quot; )</pre><p>This will set a key named <code>playMusic</code> with the value of <code>"on"</code>.</p>
+<h4>Accepted values</h4>
+<p>KVS allows you to store the following data types:</p>
+<ul>
+<li>numbers</li>
+<li>strings</li>
+<li>tables</li>
+</ul>
+<p>While you cannot store booleans this way, they can be part of table data. Alternatively, you can simply use numbers like <code>1</code> or <code>0</code> to indicate true or false, or just store the strings <code>"true"</code> or <code>"false"</code>, but you will need to convert them back to boolean values before you use them as Lua booleans.</p>
+<p>Note that if you choose to store a table, it must contain only <strong>key-value pairs</strong>. Tables with numeric keys (arrays) can not be stored directly as tables. In other words, the following array will produce an error if you attempt to store it to KVS:</p><pre class="crayon-plain-tag">local array = { true, 0, 10 }   -- This is analogous to { 1=true, 2=0, 3=10 }
+iCloud.set( &quot;myArray&quot;, array )  -- This value will not be stored</pre><p>If you have an array to store, one option is to use <a href=https://docs.coronalabs.com/api/library/json/encode.html target="_blank">json.encode()</a> on the table and save it as string data, then use <a href=https://docs.coronalabs.com/api/library/json/decode.html target="_blank">json.decode()</a> on the string to convert it back into a table after you retrieve it from iCloud.</p>
+<h3>Retrieving data</h3>
+<p>To get data back from KVS, simply call the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/get.html target="_blank">iCloud.get()</a> method:</p><pre class="crayon-plain-tag">local musicOn = iCloud.get( &quot;playMusic&quot; )</pre><p>If the value can&#8217;t be found, <code>nil</code> will be returned. It&#8217;s that simple!</p>
+<h3>Deleting data</h3>
+<p>If you no longer need some data, you can recover used storage by deleting the key from iCloud using the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/delete.html target="_blank">iCloud.delete()</a> method:</p><pre class="crayon-plain-tag">iCloud.delete( &quot;playMusic&quot; )</pre><p></p>
+<h3>Synchronizing data</h3>
+<p>An important purpose of iCloud is to allow users with multiple devices to share data between them. In other words, if you finish a level in a game on your iPad, you should be able to pick up your iPhone and play the next level. If you load certain saved settings (data) from KVS when the app starts, the app should have the latest data &#8212; but what if the app is open at the same time on both devices and changes to the data occur?</p>
+<p>One option is to enable a listener function via <a href=https://docs.coronalabs.com/daily/plugin/iCloud/setKVSListener.html target="_blank">iCloud.setKVSListener()</a> that will execute when values change, effectively keeping your app up-to-date. Consider this block of code:</p><pre class="crayon-plain-tag">local function on_iCloudUpdate( event )
+    if ( event.type == &quot;initialSync&quot; or event.type == &quot;serverChange&quot; ) then
+        musicOn = iCloud.get( &quot;playMusic&quot; )
+    end
+end
+
+iCloud.setKVSListener( on_iCloudUpdate )</pre><p>See the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/event/iCloudKVSEvent/index.html target="_blank">iCloudKVSEvent</a> documentation for the various values returned as part of the <code>event</code> table.</p>
+<h3>Conclusion</h3>
+<p>This tutorial is just the first in respect to storing and sharing data in Apple&#8217;s iCloud. To learn more, please refer to the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">iCloud documentation</a>.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #89 &#8211; Coronium Analytics, oSnap Selfie App, and Music Apps</title>
+		<link>/blog/coronageek/corona-geek-hangout-89/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-89/#comments</comments>
+		<pubDate>Mon, 12 May 2014 21:37:06 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[Coronium]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58547</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talked with Coronium Developer, Chris Byerly about the new features of Coronium 1.5. We also talked with Mobile App Chat podcast host Steve P. Young about his new selfie camera app called, oSnap, and we featured some helpful iOS music apps for creating game audio loops.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/HQmm8ztR1XI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we talked with Coronium Developer, Chris Byerly about the <a href=http://coronium.io/ target="_blank">new features of Coronium</a>, like analytics and modules. Chris demo&#8217;d a <a href=https://bitbucket.org/develephant/coronium-leaderboard-module target="_blank">public leaderboard module</a> that&#8217;s implemented on an AWS instance using just 66 lines of code. We also talked with <a href=http://mobileappchat.com/ target="_blank">Mobile App Chat podcast</a> host Steve P. Young about his new <a href=https://itunes.apple.com/us/app/osnap-perfect-camera-for-selfie/id859025613?mt=8&ign-mpt=uo%3D4 target="_blank">selfie camera app</a> called, <a href=http://osnapapp.com/ target="_blank">oSnap</a>. Steve shared why he decided to create a camera app With so many other camera apps on the market. And finally, we looked at few iOS music apps that can help you create custom sounds for your games without being a musician.</p>
+<p><strong>What&#8217;s new in Coronium 1.5</strong><iframe src="//www.youtube.com/embed/EJWl_7T8FM8?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>oSnap Camera App for Selfies</strong></p>
+<p><iframe src="//www.youtube.com/embed/bKf3UAZCta0?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Simple Audio Game Loop Made with Figure</strong><br />
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/141068605&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe></p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://www.questlord.com/ target="_blank">Questlord</a> ( <a href=https://itunes.apple.com/us/app/questlord/id510864423?mt=8 target="_blank">iOS</a> | <a href=https://play.google.com/store/apps/details?id=com.lavalevel.questlord target="_blank">Android</a> )</li>
+<li><a href=https://www.youtube.com/watch?v=w_Ti3dP8aDY target="_blank">Eric Kinkead&#8217;s talk on App Marketing</a></li>
+<li><a href=https://developer.amazon.com/public/community/events/2014/fire-tv-event-reg?ref_=pe_132830_118091800 target="_blank">Fire TV Developer Workshops</a></li>
+<li><a href=https://itunes.apple.com/app/figure/id511269223?mt=8 target="_blank">Music App &#8211; Figure by Propellerhead</a></li>
+<li><a href=https://itunes.apple.com/us/app/musyc/id489836689?mt=8 target="_blank">Music App &#8211; Musyc</a></li>
+<li><a href=https://itunes.apple.com/us/app/novation-launchpad/id584362474?mt=8 target="_blank">Music App &#8211; Launchpad</a></li>
+<li><a href=http://loopyapp.com/ target="_blank">Music App &#8211; Loopy HD</a></li>
+<li><a href=http://youtu.be/HPz8Jhd917M target="_blank">Making Music with Loopy HD (video)</a></li>
+<li><a href=http://docs.coronalabs.com/daily/composer/tutorial.html target="_blank">Composer GUI tutorial</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-89/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-89-2014-05-12-coronium-osnap-and-music-apps.mp3" length="59156290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-89-2014-05-12-coronium-osnap-and-music-apps.mp3" length="59156290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-89-2014-05-12-coronium-osnap-and-music-apps.mp3" length="59156290" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-89-2014-05-12-coronium-osnap-and-music-apps.mp3" length="59156290" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #78 &#8211; Coronium Project, Parse, and Cloud Computing</title>
+		<link>/blog/coronageek/corona-geek-hangout-78/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-78/#comments</comments>
+		<pubDate>Mon, 24 Feb 2014 23:23:52 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[Parse]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=56481</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talked with Chris Byerley, aka DevElephant, to discuss his Coronium Cloud project that uses open source technology to create a data &#038; push stack for Corona SDK apps and games. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/liSppKMWRG8?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout we talked with Chris Byerley ( <a href=http://twitter.com/develephant target="_blank">@DevElephant</a> ) to discuss his <a href=http://wiki.coronium.org/ target="_blank">Coronium Cloud project</a> that uses open source technology to create a data &amp; push stack for Corona SDK apps and games. Chris has assembled an amazing stack of technology &#8220;for creating server-side components for your apps and games. Leveraging the Lua code that you already use in your Corona SDK projects you can easily call on <a href=http://bit.ly/1o1xqYn target="_blank">MySQL</a>, <a href=http://bit.ly/1jv1c7K target="_blank">MongoDB</a>, <a href=http://bit.ly/1chyfa3 target="_blank">PHP</a>, and <a href=http://bit.ly/1fOBfvv target="_blank">server-side Lua</a> to enhance your project. You can also integrate Push services from both <a href=http://bit.ly/1lgiEzL target="_blank">Apple</a> and <a href=http://bit.ly/Mpw910 target="_blank">Google</a> with the proper credentials.&#8221;</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://www.ladeezfirstmedia.com/category/parse-com/ target="_blank">Using Parse with Corona SDK (Tutorials)</a></li>
+<li><a href=http://bit.ly/1fz60Im target="_blank">DevElephant&#8217;s mod_parse module</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+<p><strong>Need to market your app?</strong> Sign up for a <a href=http://www.preapps.com/about-us target="_blank">PreApps developer account</a> and use the <strong>promo code &#8220;CoronaLabs&#8221;</strong> at checkout to try their <a href=http://www.preapps.com/featured-options target="_blank">PreApps Featured Feedback app posting</a> free for 30 days. Hurry, offer ends February 28th, 2014.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-78/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Particle Editor &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/particle-editor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Particle Editor &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #84 &#8211; Raspberry Pi Development and Editing Particles in Corona Simulator</title>
+		<link>/blog/coronageek/corona-geek-hangout-84/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-84/#respond</comments>
+		<pubDate>Tue, 08 Apr 2014 02:08:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Particle Editor]]></category>
+		<category><![CDATA[Raspberry Pi]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=57965</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed Raspberry Pi development with Corona Ambassador, Jen Looper. We also talked with Corona Ambassador, Ed Maurina about particle editing directly in Corona Simulator.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/YXqbze0MhuI?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we discussed <a href=http://amzn.to/1hy4z9J target="_blank">Raspberry Pi development</a> with Corona Ambassador, Jen Looper. Jen showed us how she can reach out and control hardware using familiar Lua code. We also talked with Corona Ambassador, Ed Maurina about particle editing in Corona. With the announcement of <a href=/blog/2014/03/21/announcing-support-for-particle-designer-2-0/ target="_blank">Corona SDK support of Particle Designer 2.0</a>, Ed decided to write a <a href=http://roaminggamer.com/makegames/ target="_blank">particle editor for Mac and Windows</a> that runs directly in Corona Simulator.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://burtonsmediagroup.com/ target="_blank">Corona books</a></li>
+<li><a href=http://pushbots.com/ target="_blank">Pushbots</a></li>
+<li><a href=https://bitbucket.org/develephant/mod_pushbots target="_blank">mod_pushbots</a></li>
+<li><a href=http://gremlininteractive.com/ target="_blank">Paypal and Kiip plugins</a> (email info at gremlininteractive.com to join the beta)</li>
+<li><a href=http://roomalyzr.com/ target="_blank">Roomalyzer</a></li>
+<li><a href=http://eclipse.org/mihini/ target="_blank">mihini</a></li>
+<li><a href=http://eclipse.org/koneki/ target="_blank">koneki</a></li>
+<li><a href=http://eclipse.org/paho/ target="_blank">paho</a></li>
+<li><a href=https://xively.com/dev/tutorials/pi/ target="_blank">xively</a></li>
+<li><a href=http://roaminggamer.com/makegames/ target="_blank">Universal Emitter Loader</a></li>
+</ul>
+<p><strong>Looking to promote your app before it&#8217;s published?</strong></p>
+<ul>
+<li><a href=http://preapps.com/ target="_blank">Check out PreApps 2.0</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-84/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-84-2014-04-07-raspberry-pi-and-particle-editing.mp3" length="47047062" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-84-2014-04-07-raspberry-pi-and-particle-editing.mp3" length="47047062" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-84-2014-04-07-raspberry-pi-and-particle-editing.mp3" length="47047062" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-84-2014-04-07-raspberry-pi-and-particle-editing.mp3" length="47047062" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

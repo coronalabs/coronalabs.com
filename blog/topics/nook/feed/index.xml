@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NOOK &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/nook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>NOOK &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Barnes &#038; Noble closing the Nook App Store</title>
+		<link>/blog/2016/03/07/barnes-noble-closing-the-nook-app-store/</link>
+		<pubDate>Tue, 08 Mar 2016 01:20:16 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[NOOK]]></category>
+
+		<guid isPermaLink="false">/?p=66017</guid>
+		<description><![CDATA[Barnes &#038; Noble has announced the termination of their 3rd-party app developer services. Read further to learn if this affects you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-64606" style="margin: 0px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2015/10/nook-badge-150x150.png" alt="nook-badge" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/10/nook-badge-150x150.png 150w, /wordpress/wp-content/uploads/2015/10/nook-badge.png 200w" sizes="(max-width: 150px) 100vw, 150px" />On March 4, 2016, <a href=https://help.barnesandnoble.com/app/answers/detail/a_id/3516/related/1/session/L2F2LzEvdGltZS8xNDU3MTE3Njk2L3NpZC8yNzYxckVLbQ%3D%3D target="_blank">Barnes &amp; Noble announced</a>, through various <a href=http://www.techspot.com/news/64002-barnes-noble-closing-nook-app-store-more-march.html target="_blank">tech blogs</a> and direct emails to both customers and developers, that it will be ending its 3rd-party app store service.</p>
+<p>As of March 15, 2016, your apps on the Nook store will no longer be available for sale. Also, any in-app purchases will be turned off. As a developer, you don&#8217;t need to do anything. All accounts will be settled by the end of April and the developer portal will remain accessible until the end of May, in case you need access to reports and sales figures.</p>
+<p>Note that Nook users can continue to use already-installed Nook apps after the termination date, although in-app purchases will no longer work. Barnes &amp; Noble recommends that you continue to support Nook customers through Google Play, which is supported on all Nook devices produced <em>after</em> the Nook Tablet. For Nook Color and Nook Tablet users, however, this is the end of the line.</p>
+<p>On the Corona Labs side, starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2835</a>, we have removed support for Nook. If you need to make any app updates for the Nook store before it closes, you will need to use the most recent <a href=/ target="_blank">public build</a> (2016.2830). If you need to update apps for the Nook Color or Nook tablet, the last build which supported those devices was <a href=https://developer.coronalabs.com/release/2014/2263/ target="_blank">2016.2263</a>. Given the inherent delay in the app approval process, you should submit updates as soon as possible.</p>
+<p>Moving forward, we recommend that you simply build your apps for <a href=https://play.google.com/ target="_blank">Google Play</a> and upload them to that marketplace, so users with more recent Nook devices can still discover and download your apps.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Word Hunt &#8211; Word Search</title>
+		<link>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/</link>
+		<comments>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/#comments</comments>
+		<pubDate>Tue, 12 Feb 2013 00:01:49 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Amazon Kindle]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[NOOK]]></category>
+
+		<guid isPermaLink="false">/?p=29143</guid>
+		<description><![CDATA[Creating a new standard for digital word puzzles, the Corona-built Word Hunt – Word Search combines the principles of the classic game, with awesome steampunk graphics that pop right off the screen.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM.png" alt="Word Hunt icon" class="alignleft size-full wp-image-29144" srcset="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM.png 205w, /wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM-150x150.png 150w" sizes="(max-width: 205px) 100vw, 205px" />Creating a new standard for digital word puzzles, the Corona-built <a href=http://developer.coronalabs.com/showcase/word-hunt-word-search>Word Hunt – Word Search</a> combines the principles of a classic game, with awesome steampunk graphics that pop right off the screen.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/02/Word-Hunt-screenshot.jpg" alt="Word Hunt screenshot" class="alignright size-full wp-image-29145" />For adventurous wordsmiths, Word Hunt – Word Search features over 50 categories of words, ranging from sports, to world currencies to Shakespeare. The game provides three levels of difficulty, with harder levels presenting more rows, columns and words to discover. My favorite element of the game was having the ability to build my own Word Hunt list. After creating a &#8220;dogs&#8221; category, I customized my list by adding over a dozen dog breeds that I then uncovered in a maze of letters. </p>
+<p>If you’re a fan of word searches, be sure to check out this <a href=https://www.coronalabs.com/products/enterprise/>cross-platform game</a> for your device:</p>
+<p><strong>iTunes</strong>: <a href=https://itunes.apple.com/us/app/word-hunt-word-search/id594501587?ls=1&mt=8>https://itunes.apple.com/us/app/word-hunt-word-search/id594501587?ls=1&amp;mt=8</a></p>
+<p><strong>Google Play</strong>: <a href=https://play.google.com/store/apps/details?id=com.bluefireventures.wordhunt>https://play.google.com/store/apps/details?id=com.bluefireventures.wordhunt</a></p>
+<p><strong>Amazon Appstore</strong>: <a href=http://www.amazon.com/gp/product/B00B29PJGS>http://www.amazon.com/gp/product/B00B29PJGS</a></p>
+<p><strong>NOOK Apps</strong>: <a href=http://www.barnesandnoble.com/w/word-hunt-word-search-learning-gems/1114195817?ean=2940043948052>http://www.barnesandnoble.com/w/word-hunt-word-search-learning-gems/1114195817?ean=2940043948052</a></p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/mEX1QV_alQQ" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.17.03-PM.png" alt="Tapforss icon" class="alignleft size-full wp-image-29146" /></a></p>
+<h4 style="margin-bottom: 10px;">Tapforss</h4>
+<p>Tapsforss is an arcade-physics puzzler that forces you to defy gravity by guiding a crystal ball from nest to nest in underground caves. As you tap buttons on the screen, you apply force to the ball, moving it upwards or to the right or left to guide it to safety. The treacherous terrain of the caves is filled with jagged surfaces and obstacles &#8211; make sure to avoid these as you navigate your ball through each level. If you&#8217;re up for a challenge, <a href=https://itunes.apple.com/us/app/tapforss/id593635795?mt=8&ign-mpt=uo%3D4>download Tapforss</a> and enjoy an intriguing and beautiful mobile adventure.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/O5n9FhYm0Z8" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>conditional builds &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/conditional-builds/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>conditional builds &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #135</title>
+		<link>/blog/2016/08/05/from-the-forum-issue-135/</link>
+		<pubDate>Fri, 05 Aug 2016 21:03:54 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[conditional builds]]></category>
+		<category><![CDATA[multiplayer]]></category>
+		<category><![CDATA[photon]]></category>
+		<category><![CDATA[scope]]></category>
+		<category><![CDATA[symbolic links]]></category>
+
+		<guid isPermaLink="false">/?p=67642</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. This weeks topics include multiplayer integration, using symbolic links, and understanding scope in Lua.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Multiplayer guides always come in handy</h3>
+<p>It seems like with every rise of the morning sun, Corona developers have new multiplayer options to consider when developing their games. Fortunately, there are a few options that spring to the front and streamline the process while integrating nicely with Corona.</p>
+<p>One of the more popular options is <a href=https://docs.coronalabs.com/plugin/photon/index.html target="_blank">Photon</a>, a robust multiplayer and networking platform which has a very strong presence in the Corona forums. In addition to easy integration, a Corona YouTuber has posted an incredibly useful video tutorial on creating a multiplayer game using the Photon engine at its core.</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64826-full-photon-game-video-tutorial/ target="_blank">original thread</a> to learn a bit more about this project, and if you have questions, don’t be shy!</p>
+<h3>When “if-then” just isn’t enough</h3>
+<p>Let’s paint a picture: you have multiple methods for handling different types of devices, app store delivery methods, or screen sizes. You want to maintain one code base, but still want to make sure that each new build contains the correct configurations associated with your stipulations. What’s the best way to accomplish this with the least amount of code?</p>
+<p>Corona support engineer <strong>Rob Miracle</strong> chimed in on the thread below with some tips on setting up symbolic links (&#8220;symlinks&#8221;) on macOS machines. Valuable in other areas as well, symlinks can be worth their weight in gold.</p>
+<p>Read the <a href=https://forums.coronalabs.com/topic/64905-conditional-assembly-for-differing-builds-in-numerous-countries target="_blank">original thread</a> to grab some tips on this process and how it can make a complicated project much simpler.</p>
+<h3>Treading the familiar grounds of “scope”</h3>
+<p><strong>Scope</strong> in Lua is a fickle beast. It can mystify new converts and conquer the most aged among us. Learning it is a requirement, but mastering it can take years.</p>
+<p>Corona has many resources to help developers learn how scope works. Having a firm grasp of how scope relates to clean code and how it contributes to a solid project can be found in <a href=https://forums.coronalabs.com/topic/64779-scope-forward-declarations-and-functions-and-functions-event-listeners-and-ordering/>this forum discussion</a>.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

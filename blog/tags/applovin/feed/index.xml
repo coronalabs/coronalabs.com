@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>applovin &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/applovin/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>applovin &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>More AppLovin love! Announcing support for tvOS</title>
+		<link>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/</link>
+		<comments>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/#comments</comments>
+		<pubDate>Sat, 13 Feb 2016 03:25:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[monetization]]></category>
+
+		<guid isPermaLink="false">/?p=65699</guid>
+		<description><![CDATA[AppLovin is now available for your tvOS apps. Read further to learn more about this new capability.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />Corona Labs is pleased to announce that our <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin plugin</a> is now compatible with <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS apps</a>. Currently, AppLovin is one of the few monetization options available for Apple TV apps.</p>
+<p>You will need to make one minor adjustment to your <code>build.settings</code> file if you&#8217;re using the <code>supportedPlatforms</code> line. If building for tvOS, simply include the <code>appletvos</code> option:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+    },
+}</pre><p>Note that AppLovin ads for tvOS will always be <strong>videos</strong> (no static interstitials), just as if you&#8217;re watching TV. Also note that if the ad is associated with a tvOS app, clicking the remote button while the ad displays may take you to the app&#8217;s entry in the store.</p>
+<p>To learn more about implementing AppLovin in your app, check out our <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">announcement</a> and the AppLovin plugin <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a>.</p>
+<p>If you have more questions or need help, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Labs Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>AppLovin plugin: now with rewarded/incentivized ads</title>
+		<link>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/</link>
+		<comments>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 02:03:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65538</guid>
+		<description><![CDATA[Learn more about recent updates to the AppLovin plugin which let you offer virtual rewards to users in exchange for watching ads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />We are pleased to announce a new feature in the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin: rewarded/incentivized video ads! These ads &#8212; in contrast to standard graphical interstitial and video interstitial ads &#8212; can be implemented to reward users with some form of in-app currency upon viewing the ad. For example, if your game uses &#8220;coins&#8221; as an in-app currency, you can award the player with some coins each time they view a rewarded video ad.</p>
+<h3>AppLovin setup</h3>
+<p>To implement rewarded/incentivized ads, you must enable and configure them on a per-app basis within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>. The process is straightforward: basically just enable the feature, choose a frequency capping option, set up the virtual currency, select the modal options, and save your settings.</p>
+<h3>API changes</h3>
+<p>To use rewarded/incentivized ads within Corona, simply add the <code>isIncentivized</code> parameter (boolean value of <code>true</code>) to your <a href=https://docs.coronalabs.com/daily/plugin/applovin/load.html target="_blank">applovin.load()</a>, <a href=https://docs.coronalabs.com/daily/plugin/applovin/show.html target="_blank">applovin.show()</a>, or <a href=https://docs.coronalabs.com/daily/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> API calls. For instance:</p><pre class="crayon-plain-tag">applovin.load( true )
+applovin.show( true )
+applovin.isLoaded( true )</pre><p>Note that incentivized ad offers can be limited to a certain amount in a given day, defined under &#8220;frequency capping&#8221; in the <a href=https://www.applovin.com/manage>AppLovin developer portal</a>. If you are using frequency capping, we recommend that you check for an <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html>event.phase</a> value of <code>"validationExceededQuota"</code> to determine if the limit has been reached. When this occurs, you may consider showing a normal graphical or video interstitial ad instead.</p>
+<h3>Listener changes</h3>
+<p>When using rewarded/incentivized ads, you can use the same event listener function as always, although you will find some new data passed in relation to incentivized ads.</p>
+<p>First and foremost, the <code>event</code> table will contain a new entry called <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/data.html target="_blank">event.data</a>. This is a table containing key-value pairs related to incentivized/rewarded video events. For instance, after a user has successfully completed watching a video, <code>event.data</code> will contain the key-value pairs associated with the rewarded currency:</p>
+<ul>
+<li><code>event.data.currency</code> — The type of currency.</li>
+<li><code>event.data.amount</code> — The amount of currency rewarded.</li>
+</ul>
+<p>In addition, the <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html target="_blank">event.phase</a> string may be one of the following values, all specifically related to incentivized/rewarded video ads:</p>
+<ul>
+<li><code>"declinedToView"</code> — Indicates that the user chose &#8220;no&#8221; when prompted to view the ad.</li>
+<li><code>"validationSucceeded"</code> — Indicates that the user viewed the ad and that their reward was approved by the AppLovin server.</li>
+<li><code>"validationExceededQuota"</code> — Indicates that the AppLovin server was contacted, but the user has already received the maximum amount of rewards allowed in a given day.</li>
+<li><code>"validationRejected"</code> — Indicates that the AppLovin server rejected the reward request.</li>
+<li><code>"validationFailed"</code> — Indicates that the AppLovin server could not be contacted.</li>
+</ul>
+<h3>In summary</h3>
+<p>This new addition to the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin gives you even more options for engaging and monetizing your users. For more information, please read the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>We&#8217;re AppLovin your Corona apps</title>
+		<link>/blog/2016/02/03/were-applovin-your-corona-apps/</link>
+		<comments>/blog/2016/02/03/were-applovin-your-corona-apps/#comments</comments>
+		<pubDate>Wed, 03 Feb 2016 18:21:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65479</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the immediate availability of the AppLovin plugin. This plugin allows developers to monetize users through AppLovin graphical interstitial and video interstitial ads.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/02/applovin.png rel="attachment wp-att-65510"><img class="alignright wp-image-65510 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" /></a>Corona Labs is pleased to announce the immediate availability of a new plugin that lets you implement ads from <a href=https://applovin.com/ target="_blank">AppLovin</a>. Their platform uses real-time data to understand your users and target them with relevant brands, ensuring that you are reaching users who are likely to interact with your marketing. AppLovin delivers content to over a billion mobile users every month.</p>
+<h3>Signing up</h3>
+<p>To use AppLovin, you will need to <a href=https://applovin.com/signup target="_blank">sign up</a> and get an AppLovin SDK key. Regardless of iOS or Android, you will get just one SDK key which should be used throughout your projects. Once you gain access to the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a><strong>, </strong>navigate to the <strong>Account</strong> section, expand the <strong>Account</strong> menu on the left side, select <strong>Keys</strong>, and your SDK key should be revealed.</p>
+<h3>Including the plugin</h3>
+<p>As with all plugins, you must include AppLovin in your <code>build.settings</code> file. For iOS, you just need the AppLovin plugin itself. For Android, you must also include the Google Play Services plugin since AppLovin needs to access library code within that plugin.</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+        -- Include this for Android only
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { android=true }
+        },
+    },
+}</pre><p></p>
+<h3>Setup and initialization</h3>
+<p>Similar to other plugins, you must <code>require()</code> the plugin in any Lua file where you plan to call AppLovin&#8217;s APIs.</p><pre class="crayon-plain-tag">-- Require the AppLovin plugin
+local applovin = require( &quot;plugin.applovin&quot; )</pre><p>Next, add a basic AppLovin event listener (it can be completed later) and initialize the AppLovin plugin:</p><pre class="crayon-plain-tag">-- AppLovin listener
+local function adListener( event )
+
+end
+
+-- Initialize the AppLovin plugin
+applovin.init( adListener, { sdkKey=&quot;YOUR_SDK_KEY&quot;, verboseLogging=false } )</pre><p>Note that the <a href=https://docs.coronalabs.com/plugin/applovin/init.html target="_blank">applovin.init()</a> call takes two parameters: the event listener function name and a table of parameters. Inside the table of parameters, your unique SDK key is required. In addition, you can include the <code>verboseLogging</code> key with a value of <code>true</code> to output AppLovin logs to the console.</p>
+<h3>Loading and showing ads</h3>
+<p>AppLovin offers graphical interstitial ads, video interstitial ads, and rewarded/incentivized video ads (no banners). The types displayed are controlled solely within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>, so the only valid parameter for the load or show APIs is the optional <code>isIncentivized</code> boolean which tells the plugin to load or show a rewarded/incentivized ad (see <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> for details). There is also no &#8220;hide&#8221; API since interstitial ads need to be closed by the user or played to completion before the app continues.</p>
+<p>To load an ad, simply call the <a href=https://docs.coronalabs.com/plugin/applovin/load.html target="_blank">applovin.load()</a> API:</p><pre class="crayon-plain-tag">applovin.load()</pre><p>Then, to show it, simply call <a href=https://docs.coronalabs.com/plugin/applovin/show.html target="_blank">applovin.show()</a>:</p><pre class="crayon-plain-tag">applovin.show()</pre><p>Similar to other ad providers, you can also call <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> to check if an ad is loaded before showing it. Like the APIs above, this accepts the boolean <code>isIncentivized</code> parameter, allowing you to check which type of ad is loaded.</p><pre class="crayon-plain-tag">if applovin.isLoaded() then
+    applovin.show()
+end</pre><p></p>
+<h3>Event listener callbacks</h3>
+<p>All of the APIs mentioned above, with the exception of  <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a>, will call the event listener function. The event table which is dispatched will contain various <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/index.html target="_blank">properties</a>, including the following <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/phase.html target="_blank">phases</a> (<code>event.phase</code>):</p>
+<ul>
+<li><code>"init"</code> &#8212; Indicates that the AppLovin plugin was initialized successfully.</li>
+<li><code>"failed"</code> &#8212; Indicates that an ad failed to load.</li>
+<li><code>"loaded"</code> &#8212; Indicates that an ad loaded successfully.</li>
+<li><code>"displayed"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was displayed.</li>
+<li><code>"hidden"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was closed/hidden.</li>
+<li><code>"playbackBegan"</code> — Indicates that a video interstitial ad was displayed.</li>
+<li><code>"playbackEnded"</code> — Indicates that a video interstitial ad was closed/hidden.</li>
+<li><code>"clicked"</code> &#8212; Indicates that an ad was clicked/tapped.</li>
+</ul>
+<p>In addition, a series of event properties help you work with <strong>rewarded/incentivized video ads</strong>. Please see <a href=/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/ target="_blank">this announcement</a> for details.</p>
+<p>For more information, please read the <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+<h3>Important notes</h3>
+<ul>
+<li>The AppLovin app configuration screen has many options for configuring and controlling the types of ads you get. For instance, you can restrict the ads to &#8220;child safe&#8221; if the app is targeting children. You can change these settings as often as needed, but <strong>for an app released to market</strong>, you must also email <a href=mailto:applovin-support@coronalabs.com>applovin-support@coronalabs.com</a> with a summary of your changes. This ensures that your ads and associated preferences will be delivered consistently.</li>
+<li>For monetization through the AppLovin plugin, Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</li>
+</ul>
+<h3>In summary</h3>
+<p>With the addition of AppLovin, Corona Labs is committed to bringing you more and more monetization options for your apps. If you have any questions about this plugin, please discuss in the <a href=https://forums.coronalabs.com/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/03/were-applovin-your-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+	</channel>
+</rss>

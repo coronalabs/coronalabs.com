@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>DRY &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/dry/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>DRY &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #131</title>
+		<link>/blog/2016/07/08/from-the-forum-issue-131/</link>
+		<pubDate>Sat, 09 Jul 2016 01:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[DRY]]></category>
+		<category><![CDATA[Endless Runner]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[modules]]></category>
+
+		<guid isPermaLink="false">/?p=67414</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>When is running endlessly not really running?</h3>
+<p>Starting out on the long road of game development means learning concepts that are not intuitive, even to programmers. Procedural generation, game loops, and asset management versus memory management are all concerns facing fledgling Corona enthusiasts.</p>
+<p>The endless runner is a great project to get your feet wet in the world of Corona game development. However, though it seems simple on the candy-coated surface, things can get messy pretty quickly. Discussion on the anatomy of an endless runner came up in the forum recently <a href=https://forums.coronalabs.com/topic/64465-is-endless-running-game-really-endless/ target="_blank">here</a>. It underlines some basic elements of game design which are useful no matter where you are in your development journey.</p>
+<h3>Coronium LS</h3>
+<p>We are all waiting with baited breath for the full release of Corona Labs&#8217; hosted solution which is being discussed in hushed whispers around campfires. While we wait, <strong>Develephant</strong> unleashed a community-supported option to the masses, <strong>Coronium LS</strong>. According to the man himself, it’s a “hybrid cloud solution for your Corona SDK games. A lot of ‘love’ went into this project, and I&#8217;m very excited to share it with you. Get your helmets on.”</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64464-new-coronium-ls-the-hybrid-cloud target="_blank">original thread</a> that points to the documentation and information on the project as a whole!</p>
+<h3>When to use a module</h3>
+<p>Continuing on the theme of game development, we have a fantastic conversation going on between a relatively new Corona developer and a couple of old-timers who have been around the block. Specifically, when do you use a module instead of simply including code in <code>main.lua</code> or whichever scene you are running? Check out <a href=https://forums.coronalabs.com/topic/63854-when-does-it-make-sense-to-employ-a-module-instead-of-a-function-within-a-scene-file/ target="_blank">the discussion</a> for a thorough dissertation on the finer points of modularized code, along with the basic tenets of &#8220;DRY&#8221; programming.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

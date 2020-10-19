@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Flurry &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/flurry/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Flurry &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New Flurry Analytics plugin now available</title>
+		<link>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/</link>
+		<comments>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 12 Apr 2016 21:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Flurry]]></category>
+		<category><![CDATA[Statistics]]></category>
+
+		<guid isPermaLink="false">/?p=66437</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of a new Flurry Analytics plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. Read further to learn more about this powerful tool.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66441" src="/wordpress/wp-content/uploads/2016/04/flurrybanner.png" alt="flurrybanner" width="239" height="64" />Corona Labs is pleased to announce the availability of the new <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">Flurry Analytics</a> plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. It can also tell you how much time people spend doing tasks and record errors that occur. Armed with this data, you can improve how your app flows and provide a better experience to your users.</p>
+<p>If you are migrating from the previous Flurry plugin, there are a few things to be aware of. Everything is covered in our <a href=https://docs.coronalabs.com/plugin/flurry-analytics/migration.html target="_blank">migration guide</a>, but most importantly:</p>
+<ul>
+<li>You need to update your <code>build.settings</code> file and change the plugin provider from <code>["CoronaProvider.analytics.flurry"]</code> to <code>["plugin.flurry.analytics"]</code>.</li>
+<li>For Android users, the <code>["plugin.google.play.services"]</code> plugin must now be included. Previously you were required to use the Google Play Game Services plugin (<code>["CoronaProvider.gameNetwork.google"]</code>). Note that if you are using any ad provider plugins on Android, you may already have this additional plugin included.</li>
+</ul>
+<p>Other important additions to this plugin include a required listener function for <a href=https://docs.coronalabs.com/plugin/flurry-analytics/event/analyticsRequest/index.html target="_blank">analyticsRequest</a> events, specified as part of the <a href=https://docs.coronalabs.com/plugin/flurry-analytics/init.html target="_blank">flurryAnalytics.init()</a> call. You can also enable crash analytics and set logging levels in the same function. Finally, new functions have been added to measure timed events &#8212; see <a href=https://docs.coronalabs.com/plugin/flurry-analytics/startTimedEvent.html target="_blank">flurryAnalytics.startTimedEvent()</a> and <a href=https://docs.coronalabs.com/plugin/flurry-analytics/endTimedEvent.html target="_blank">flurryAnalytics.endTimedEvent()</a>.</p>
+<p>If you are new to Flurry, you will need to sign up <a href=https://developer.yahoo.com/analytics/ target="_blank">here</a> and get an API key. Once you&#8217;re registered, you can use the same site to see your app&#8217;s statistics as they are collected.</p>
+<p>The complete <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">documentation</a> for the Flurry Analytics plugin can be found <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">here</a>.</p>
+<p>Want to discuss further? Please join us in the <a href=https://forums.coronalabs.com/forum/654-corona-store-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

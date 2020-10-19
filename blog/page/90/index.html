@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Blog | Corona Labs - Part 90</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/00d0de513e0511587eebe2100ad2cfec.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script>
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+
+<meta name="keywords"  content="3-d,corona sdk,graphics,multitexturing,normal mapping,game development,videos,controller,key events,tutorial,tutorials, tips and demos,children\'s,ebook,kwik,mobile app of the week,game mechanics,physics,touch events,corona geek,google+ hangouts,crowdsourcing,indiegogo,guest bloggers,ad network,plugin,gamestick,hid,ouya,arcade,lua glider,texturepacker,game controllers" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel='prev' href='/blog/page/89/' />
+<link rel='next' href='/blog/page/91/' />
+
+<link rel="canonical" href="/blog/" />
+<meta property="og:title" content="Blog | Corona Labs - Part 90" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/blog/page/90/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="Announcements, featured apps, tutorials, how-to and game development information to help Corona developers succeed." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Blog | Corona Labs - Part 90" />
+<meta name="twitter:description" content="Announcements, featured apps, tutorials, how-to and game development information to help Corona developers succeed." />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-b66c534ea2d32d9123d9ba2034031f08.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+
+
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='https://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='https://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-b8674cbf705f6800e4c39626ea12a541.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-1a19bb4009b00727ae545e834c88ec1f.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-88312d6ccff4a3570b3db197b12cb532.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-698aa832940bd67decd795f1bd23433b.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/","en":"\/blog\/","US":"\/blog\/","ru_RU":"https:\/\/ru.coronalabs.com\/blog\/","ru":"https:\/\/ru.coronalabs.com\/blog\/","RU":"https:\/\/ru.coronalabs.com\/blog\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-824426e66e79e692e26c5e5b63cb6452.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-3d7bf654e9e30cc40e584574182b2763.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body data-rsssl=1 class="blog paged paged-90  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1815 current_page_item current_page_parent active narrow"><a href="/blog/" class="current"><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children  has_sub narrow"><a title="EN" href="/blog/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+	<li id="nav-menu-item-wpml-ls-1014-ru" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-ru wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="RU" href="https://ru.coronalabs.com/blog/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">RU</span></span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1815 current_page_item current_page_parent active"><a href="/blog/" class="current"><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children  has_sub"><a title="EN" href="/blog/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+	<li id="mobile-menu-item-wpml-ls-1014-ru" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-ru wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="RU" href="https://ru.coronalabs.com/blog/" class=""><span><span class="wpml-ls-native">RU</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+				
+				<div class="title_outer title_without_animation with_image"    data-height="364">
+		<div class="title title_size_large  position_center" style="height:364px;">
+			<div class="image responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  >
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" style="padding-top:42px;">
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Blog</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+		<div class="container">
+        		<div class="container_inner default_template_holder clearfix">
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+					<div class="column1">
+						<div class="column_inner">
+							<div class="blog_holder blog_small_image">
+
+						<article id="post-42762" class="post-42762 post type-post status-publish format-standard has-post-thumbnail hentry category-corona-sdk category-game-development category-videos tag-3-d tag-corona-sdk-2 tag-graphics-2 tag-multitexturing tag-normal-mapping">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/28/3-d-effects-with-normal-mapping/" title="3-D effects with Normal Mapping">
+							<img width="215" height="215" src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-27-at-11.56.15-PM.png" class="attachment-full size-full wp-post-image" alt="" srcset="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-27-at-11.56.15-PM.png 215w, /wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-27-at-11.56.15-PM-150x150.png 150w" sizes="(max-width: 215px) 100vw, 215px" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">28 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/28/3-d-effects-with-normal-mapping/" title="3-D effects with Normal Mapping">3-D effects with Normal Mapping</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">Just a quick preview of what's coming in the next preview of graphics 2.0 that we'll be seeding out soon.
+
+It's a feature known as normal mapping and it's a workhorse technique for simulating lighting effects in traditional 3-D graphics. We're repurposing it so this is trivial to do in Corona....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/walter/">walter</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/corona-sdk/" rel="category tag">Corona SDK</a>, <a href="/blog/topics/game-development/" rel="category tag">Game Development</a>, <a href="/blog/topics/videos/" rel="category tag">Videos</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=3-D+effects+with+Normal+Mapping&amp;p[url]=%2Fblog%2F2013%2F08%2F28%2F3-d-effects-with-normal-mapping%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-27-at-11.56.15-PM.png&amp;p[summary]=Just+a+quick+preview+of+what%5C%27s+coming+in+the+next+preview+of+graphics+2.0+that+we%5C%27ll+be+seeding+out+soon.%0A%0AIt%5C%27s+a+feature+known+as+normal+mapping+and+it%5C%27s+a+workhorse+technique+for+simulating+lighting+effects+in+traditional+3-D+graphics.+We%5C%27re+repurposing+it+so+this+is+trivial+to+do+in+Corona.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Just+a+quick+preview+of+what%27s+coming+in+the+next+preview+of+graphics+2.0+that+we%27ll+be+seeding+out+soon.%0A%0AIt%27s+a+/blog/2013/08/28/3-d-effects-with-normal-mapping/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F28%2F3-d-effects-with-normal-mapping%2F&amp;title=3-D+effects+with+Normal+Mapping&amp;description=Just+a+quick+preview+of+what%27s+coming+in+the+next+preview+of+graphics+2.0+that+we%27ll+be+seeding+out+soon.%0A%0AIt%27s+a+feature+known+as+normal+mapping+and+it%27s+a+workhorse+technique+for+simulating+lighting+effects+in+traditional+3-D+graphics.+We%27re+repurposing+it+so+this+is+trivial+to+do+in+Corona.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F08%2FScreen-Shot-2013-08-27-at-11.56.15-PM.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/28/3-d-effects-with-normal-mapping/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-42699" class="post-42699 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials-tips-demos tag-controller tag-key-events tag-tutorial">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/27/tutorial-introduction-to-game-controllers/" title="Tutorial: Introduction to game controllers">
+							<img width="125" height="125" src="/wordpress/wp-content/uploads/2013/08/hid-feat.png" class="attachment-full size-full wp-post-image" alt="" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">27 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/27/tutorial-introduction-to-game-controllers/" title="Tutorial: Introduction to game controllers">Tutorial: Introduction to game controllers</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">It's an exciting time to be a mobile app developer. Through the magic of mobile and Bluetooth support on devices, it's now possible to use controllers to play games, in addition to the standard touchscreen and accelerometer....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/rob/">Rob Miracle</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/tutorials-tips-demos/" rel="category tag">Tutorials, Tips and Demos</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Tutorial%3A+Introduction+to+game+controllers&amp;p[url]=%2Fblog%2F2013%2F08%2F27%2Ftutorial-introduction-to-game-controllers%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/08/hid-feat.png&amp;p[summary]=It%5C%27s+an+exciting+time+to+be+a+mobile+app+developer.+Through+the+magic+of+mobile+and+Bluetooth+support+on+devices%2C+it%5C%27s+now+possible+to+use+controllers+to+play+games%2C+in+addition+to+the+standard+touchscreen+and+accelerometer.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=It%27s+an+exciting+time+to+be+a+mobile+app+developer.+Through+the+magic+of+mobile+and+Bluetooth+support+on+devices%2C+/blog/2013/08/27/tutorial-introduction-to-game-controllers/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F27%2Ftutorial-introduction-to-game-controllers%2F&amp;title=Tutorial%3A+Introduction+to+game+controllers&amp;description=It%27s+an+exciting+time+to+be+a+mobile+app+developer.+Through+the+magic+of+mobile+and+Bluetooth+support+on+devices%2C+it%27s+now+possible+to+use+controllers+to+play+games%2C+in+addition+to+the+standard+touchscreen+and+accelerometer.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F08%2Fhid-feat.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/27/tutorial-introduction-to-game-controllers/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-42485" class="post-42485 post type-post status-publish format-standard has-post-thumbnail hentry category-app-of-the-week tag-childrens tag-ebook tag-kwik">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/26/app-of-the-week-zala-and-the-treasure-cave/" title="App of the Week: Zala and the Treasure Cave">
+							<img width="183" height="184" src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-23-at-4.39.54-PM.png" class="attachment-full size-full wp-post-image" alt="" srcset="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-23-at-4.39.54-PM.png 183w, /wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-23-at-4.39.54-PM-150x150.png 150w" sizes="(max-width: 183px) 100vw, 183px" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">26 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/26/app-of-the-week-zala-and-the-treasure-cave/" title="App of the Week: Zala and the Treasure Cave">App of the Week: Zala and the Treasure Cave</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt"><div>When a group of friends discover a secret treasure map, they need your help to decipher the map and embark on an adventure through the African savanna.</div>
+ 
+<div style="margin-top:10px;">Created for children ages 4-6, <a href="https://itunes.apple.com/us/app/zala-and-the-treasure-cave/id682584983?mt=8&amp;ign-mpt=uo%3D4">Zala and the Treasure Cave</a> captivates children’s senses — from touch to sound to sight — through vibrant illustrations and engaging elements to pull kids into the story.</div>...</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/inna/">inna</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/app-of-the-week/" rel="category tag">Mobile App of the Week</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=App+of+the+Week%3A+Zala+and+the+Treasure+Cave&amp;p[url]=%2Fblog%2F2013%2F08%2F26%2Fapp-of-the-week-zala-and-the-treasure-cave%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-23-at-4.39.54-PM.png&amp;p[summary]=%3Cdiv%3EWhen+a+group+of+friends+discover+a+secret+treasure+map%2C+they+need+your+help+to+decipher+the+map+and+embark+on+an+adventure+through+the+African+savanna.%3C%2Fdiv%3E%0A+%0A%3Cdiv+style%3D%5C%22margin-top%3A10px%3B%5C%22%3ECreated+for+children+ages+4-6%2C+%3Ca+href%3D%5C%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fzala-and-the-treasure-cave%2Fid682584983%3Fmt%3D8%26amp%3Bign-mpt%3Duo%253D4%5C%22%3EZala+and+the+Treasure+Cave%3C%2Fa%3E+captivates+children%E2%80%99s+senses+%E2%80%94%C2%A0from+touch+to+sound+to+sight+%E2%80%94%C2%A0through+vibrant+illustrations+and+engaging+elements+to+pull+kids+into+the+story.%3C%2Fdiv%3E', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=%3Cdiv%3EWhen+a+group+of+friends+discover+a+secret+treasure+map%2C+they+need+your+help+to+decipher+the+map+and+embark+on+an+/blog/2013/08/26/app-of-the-week-zala-and-the-treasure-cave/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F26%2Fapp-of-the-week-zala-and-the-treasure-cave%2F&amp;title=App+of+the+Week%3A+Zala+and+the+Treasure+Cave&amp;description=%3Cdiv%3EWhen+a+group+of+friends+discover+a+secret+treasure+map%2C+they+need+your+help+to+decipher+the+map+and+embark+on+an+adventure+through+the+African+savanna.%3C%2Fdiv%3E%0A+%0A%3Cdiv+style%3D%22margin-top%3A10px%3B%22%3ECreated+for+children+ages+4-6%2C+%3Ca+href%3D%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fzala-and-the-treasure-cave%2Fid682584983%3Fmt%3D8%26amp%3Bign-mpt%3Duo%253D4%22%3EZala+and+the+Treasure+Cave%3C%2Fa%3E+captivates+children%E2%80%99s+senses+%E2%80%94%C2%A0from+touch+to+sound+to+sight+%E2%80%94%C2%A0through+vibrant+illustrations+and+engaging+elements+to+pull+kids+into+the+story.%3C%2Fdiv%3E&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F08%2FScreen-Shot-2013-08-23-at-4.39.54-PM.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/26/app-of-the-week-zala-and-the-treasure-cave/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-42673" class="post-42673 coronageek type-coronageek status-publish has-post-thumbnail hentry category-corona-geek category-hangouts tag-game-mechanics tag-physics tag-touch-events">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/coronageek/corona-geek-hangout-52/" title="Corona Geek #52 &#8211; Making a Character Jump in Corona SDK">
+													</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">26 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/coronageek/corona-geek-hangout-52/" title="Corona Geek #52 &#8211; Making a Character Jump in Corona SDK">Corona Geek #52 &#8211; Making a Character Jump in Corona SDK</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">During this week's Corona Geek Ed Maurina, developer of Corona SDK game templates at Roaming Gamer, walked us through a Corona SDK code snippet that makes your game characters jump. Using Corona's built in physics engine, we applied force to a single character and then added a second character to show how easy it is to handle touch events for multiple objects using the same function....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/charles/">Charles McKeever</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/corona-geek/" rel="category tag">Corona Geek</a>, <a href="/blog/topics/hangouts/" rel="category tag">Google+ Hangouts</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/coronageek/corona-geek-hangout-52/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-42260" class="post-42260 post type-post status-publish format-standard has-post-thumbnail hentry category-guest-bloggers tag-crowdsourcing tag-indiegogo">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/23/guest-piece-little-columbus-from-app-concept-to-working-prototype/" title="Guest piece: Columbus Little &#8211; From app concept to working prototype">
+							<img width="694" height="271" src="/wordpress/wp-content/uploads/2013/08/Columbus-Little.png" class="attachment-full size-full wp-post-image" alt="" srcset="/wordpress/wp-content/uploads/2013/08/Columbus-Little.png 694w, /wordpress/wp-content/uploads/2013/08/Columbus-Little-300x117.png 300w" sizes="(max-width: 694px) 100vw, 694px" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">23 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/23/guest-piece-little-columbus-from-app-concept-to-working-prototype/" title="Guest piece: Columbus Little &#8211; From app concept to working prototype">Guest piece: Columbus Little &#8211; From app concept to working prototype</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">Philip and Tobias Schneider are the creators of <a href="http://en.columbuslittle.com/">Columbus Little</a>, an app that lets kids discover the world in a playful way. Philip and Tobias are currently running a campaign on <a href="http://igg.me/at/columbuslittle/x/3916812">Indiegogo</a> to raise funds for Columbus Little. 
+
+This piece is the first of a two-part series on turning an app idea into a crowd-sourcing campaign....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/inna/">inna</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/guest-bloggers/" rel="category tag">Guest Bloggers</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Guest+piece%3A+Columbus+Little+%26%238211%3B+From+app+concept+to+working+prototype&amp;p[url]=%2Fblog%2F2013%2F08%2F23%2Fguest-piece-little-columbus-from-app-concept-to-working-prototype%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/08/Columbus-Little.png&amp;p[summary]=Philip+and+Tobias+Schneider+are+the+creators+of+%3Ca+href%3D%5C%22http%3A%2F%2Fen.columbuslittle.com%2F%5C%22%3EColumbus+Little%3C%2Fa%3E%2C+an+app+that+lets+kids+discover+the+world+in+a+playful+way.+Philip+and+Tobias+are+currently+running+a+campaign+on+%3Ca+href%3D%5C%22http%3A%2F%2Figg.me%2Fat%2Fcolumbuslittle%2Fx%2F3916812%5C%22%3EIndiegogo%3C%2Fa%3E+to+raise+funds+for+Columbus+Little.+%0A%0AThis+piece+is+the+first+of+a+two-part+series+on+turning+an+app+idea+into+a+crowd-sourcing+campaign.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Philip+and+Tobias+Schneider+are+the+creators+of+%3Ca+href%3D%22http%3A%2F%2Fen.columbuslittle.com%2F%22%3EColumbus+Little%3C%2Fa%3E%2C+an+app+/blog/2013/08/23/guest-piece-little-columbus-from-app-concept-to-working-prototype/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F23%2Fguest-piece-little-columbus-from-app-concept-to-working-prototype%2F&amp;title=Guest+piece%3A+Columbus+Little+%26%238211%3B+From+app+concept+to+working+prototype&amp;description=Philip+and+Tobias+Schneider+are+the+creators+of+%3Ca+href%3D%22http%3A%2F%2Fen.columbuslittle.com%2F%22%3EColumbus+Little%3C%2Fa%3E%2C+an+app+that+lets+kids+discover+the+world+in+a+playful+way.+Philip+and+Tobias+are+currently+running+a+campaign+on+%3Ca+href%3D%22http%3A%2F%2Figg.me%2Fat%2Fcolumbuslittle%2Fx%2F3916812%22%3EIndiegogo%3C%2Fa%3E+to+raise+funds+for+Columbus+Little.+%0A%0AThis+piece+is+the+first+of+a+two-part+series+on+turning+an+app+idea+into+a+crowd-sourcing+campaign.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F08%2FColumbus-Little.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/23/guest-piece-little-columbus-from-app-concept-to-working-prototype/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-37754" class="post-37754 post type-post status-publish format-standard has-post-thumbnail hentry category-guest-bloggers tag-ad-network tag-plugin">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/" title="Guest piece: CrossInstall&#8217;s ad platform now available as a Corona Plugin">
+							<img width="189" height="75" src="/wordpress/wp-content/uploads/2013/05/CrossInstall-logo.png" class="attachment-full size-full wp-post-image" alt="" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">22 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/" title="Guest piece: CrossInstall&#8217;s ad platform now available as a Corona Plugin">Guest piece: CrossInstall&#8217;s ad platform now available as a Corona Plugin</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">Jeff Marshall, Founder at <a href="http://www.x48.net/">CrossInstall</a>, has a long background in game development, ad networks, and app monetization platforms.  He has built several ad network companies, most recently CrossInstall.  Jeff also has 15+ years of experience building games on consoles, social networks and mobile platforms. Jeff is also a Corona SDK veteran, and has released several games for iOS and Android with the platform.
+
+As our newest Corona Plugin partner, CrossInstall is an ad network that focuses on driving quality traffic for advertising partners and delivering top payments to publishing partners. For more information, please see the <a href="http://docs.coronalabs.com/daily/plugin/crossinstall/">CrossInstall...</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/inna/">inna</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/guest-bloggers/" rel="category tag">Guest Bloggers</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Guest+piece%3A+CrossInstall%26%238217%3Bs+ad+platform+now+available+as+a+Corona+Plugin&amp;p[url]=%2Fblog%2F2013%2F08%2F22%2Fguest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/05/CrossInstall-logo.png&amp;p[summary]=Jeff+Marshall%2C+Founder+at+%3Ca+href%3D%5C%22http%3A%2F%2Fwww.x48.net%2F%5C%22%3ECrossInstall%3C%2Fa%3E%2C+has+a+long+background+in+game+development%2C+ad+networks%2C+and+app+monetization+platforms.++He+has+built+several+ad+network+companies%2C+most+recently+CrossInstall.++Jeff+also+has+15%2B+years+of+experience+building+games+on+consoles%2C+social+networks+and+mobile+platforms.+Jeff+is+also+a+Corona+SDK+veteran%2C+and+has+released+several+games+for+iOS+and+Android+with+the+platform.%0A%0AAs+our+newest+Corona+Plugin+partner%2C+CrossInstall+is+an+ad+network+that+focuses+on+driving+quality+traffic+for+advertising+partners+and+delivering+top+payments+to+publishing+partners.+For+more+information%2C+please+see+the+%3Ca+href%3D%5C%22http%3A%2F%2Fdocs.coronalabs.com%2Fdaily%2Fplugin%2Fcrossinstall%2F%5C%22%3ECrossInstall+documentation%3C%2Fa%3E.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Jeff+Marshall%2C+Founder+at+%3Ca+href%3D%22http%3A%2F%2Fwww.x48.net%2F%22%3ECrossInstall%3C%2Fa%3E%2C+has+a+long+background+in+game+development%2C+/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F22%2Fguest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin%2F&amp;title=Guest+piece%3A+CrossInstall%26%238217%3Bs+ad+platform+now+available+as+a+Corona+Plugin&amp;description=Jeff+Marshall%2C+Founder+at+%3Ca+href%3D%22http%3A%2F%2Fwww.x48.net%2F%22%3ECrossInstall%3C%2Fa%3E%2C+has+a+long+background+in+game+development%2C+ad+networks%2C+and+app+monetization+platforms.++He+has+built+several+ad+network+companies%2C+most+recently+CrossInstall.++Jeff+also+has+15%2B+years+of+experience+building+games+on+consoles%2C+social+networks+and+mobile+platforms.+Jeff+is+also+a+Corona+SDK+veteran%2C+and+has+released+several+games+for+iOS+and+Android+with+the+platform.%0A%0AAs+our+newest+Corona+Plugin+partner%2C+CrossInstall+is+an+ad+network+that+focuses+on+driving+quality+traffic+for+advertising+partners+and+delivering+top+payments+to+publishing+partners.+For+more+information%2C+please+see+the+%3Ca+href%3D%22http%3A%2F%2Fdocs.coronalabs.com%2Fdaily%2Fplugin%2Fcrossinstall%2F%22%3ECrossInstall+documentation%3C%2Fa%3E.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F05%2FCrossInstall-logo.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-42178" class="post-42178 coronageek type-coronageek status-publish has-post-thumbnail hentry category-corona-geek category-hangouts tag-gamestick tag-hid tag-ouya">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/coronageek/corona-geek-51-snippets/" title="Corona Geek Snippets &#8211; HID Support, Ouya, GameStick Support">
+													</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">21 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/coronageek/corona-geek-51-snippets/" title="Corona Geek Snippets &#8211; HID Support, Ouya, GameStick Support">Corona Geek Snippets &#8211; HID Support, Ouya, GameStick Support</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">During Monday's Corona Geek Hangout we shared that Corona SDK now supports HID controllers, which means you can now target Ouya, GameStick game controller, MOGA Pro, PS 3 controller, NVIDIA Shield, along with Bluetooth keyboards and mice (all HID devices). Here's a snippet from the Hangout where Snake Head Software Founder, Gerald Bailey, raised the important question of what do these controllers mean for mobile games. Roaming Gamer, Ed Maurina, responded with a answer that offers up some good perspective....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/charles/">Charles McKeever</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/corona-geek/" rel="category tag">Corona Geek</a>, <a href="/blog/topics/hangouts/" rel="category tag">Google+ Hangouts</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/coronageek/corona-geek-51-snippets/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-41750" class="post-41750 post type-post status-publish format-standard has-post-thumbnail hentry category-app-of-the-week tag-arcade-2 tag-lua-glider tag-texturepacker">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/2013/08/19/app-of-the-week-little-galaxy/" title="App of the Week: Little Galaxy">
+							<img width="180" height="180" src="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png" class="attachment-full size-full wp-post-image" alt="" srcset="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png 180w, /wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" />						</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">19 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/19/app-of-the-week-little-galaxy/" title="App of the Week: Little Galaxy">App of the Week: Little Galaxy</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt"><div><a href="http://bitmapgalaxy.com/">Bitmap Galaxy</a>, a small studio based in Slovakia, had a vision to create an "endless" game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours.</div>
+
+<div style="margin-top:10px;">From this, <a href="https://itunes.apple.com/nz/app/little-galaxy/id576764076">Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</div>
+
+...</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/inna/">inna</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/app-of-the-week/" rel="category tag">Mobile App of the Week</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=App+of+the+Week%3A+Little+Galaxy&amp;p[url]=%2Fblog%2F2013%2F08%2F19%2Fapp-of-the-week-little-galaxy%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png&amp;p[summary]=%3Cdiv%3E%3Ca+href%3D%5C%22http%3A%2F%2Fbitmapgalaxy.com%2F%5C%22%3EBitmap+Galaxy%3C%2Fa%3E%2C+a+small+studio+based+in+Slovakia%2C+had+a+vision+to+create+an+%5C%22endless%5C%22+game+with+a+simple+one-touch+control+and+intuitive+design%C2%A0%E2%80%94+a%C2%A0game+that+could+be+easily+learned+and+played+for+hours.%3C%2Fdiv%3E%0D%0A%0D%0A%3Cdiv+style%3D%5C%22margin-top%3A10px%3B%5C%22%3EFrom+this%2C+%3Ca+href%3D%5C%22https%3A%2F%2Fitunes.apple.com%2Fnz%2Fapp%2Flittle-galaxy%2Fid576764076%5C%22%3ELittle+Galaxy%3C%2Fa%3E+was+born%3A+an+arcade+game+set+in+space%2C+featuring+a+small+boy+that+jumps+from+planet+to+planet+in+search+of+a+new+home.%3C%2Fdiv%3E%0D%0A%0D%0A', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=%3Cdiv%3E%3Ca+href%3D%22http%3A%2F%2Fbitmapgalaxy.com%2F%22%3EBitmap+Galaxy%3C%2Fa%3E%2C+a+small+studio+based+in+Slovakia%2C+had+a+vision+to+create+/blog/2013/08/19/app-of-the-week-little-galaxy/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F19%2Fapp-of-the-week-little-galaxy%2F&amp;title=App+of+the+Week%3A+Little+Galaxy&amp;description=%3Cdiv%3E%3Ca+href%3D%22http%3A%2F%2Fbitmapgalaxy.com%2F%22%3EBitmap+Galaxy%3C%2Fa%3E%2C+a+small+studio+based+in+Slovakia%2C+had+a+vision+to+create+an+%22endless%22+game+with+a+simple+one-touch+control+and+intuitive+design%C2%A0%E2%80%94+a%C2%A0game+that+could+be+easily+learned+and+played+for+hours.%3C%2Fdiv%3E%0D%0A%0D%0A%3Cdiv+style%3D%22margin-top%3A10px%3B%22%3EFrom+this%2C+%3Ca+href%3D%22https%3A%2F%2Fitunes.apple.com%2Fnz%2Fapp%2Flittle-galaxy%2Fid576764076%22%3ELittle+Galaxy%3C%2Fa%3E+was+born%3A+an+arcade+game+set+in+space%2C+featuring+a+small+boy+that+jumps+from+planet+to+planet+in+search+of+a+new+home.%3C%2Fdiv%3E%0D%0A%0D%0A&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F08%2Fapp_icon_little_galaxy_512x512.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/19/app-of-the-week-little-galaxy/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-41983" class="post-41983 coronageek type-coronageek status-publish has-post-thumbnail hentry category-corona-geek category-hangouts tag-game-controllers tag-gamestick tag-hid tag-ouya">
+			<div class="post_content_holder">
+									<div class="post_image">
+						<a itemprop="url" href="/blog/coronageek/corona-geek-hangout-51/" title="Corona Geek #51 &#8211; Ouya Support, Nexus 7 Tips, and 16bitLabs">
+													</a>
+					</div>
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">19 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/coronageek/corona-geek-hangout-51/" title="Corona Geek #51 &#8211; Ouya Support, Nexus 7 Tips, and 16bitLabs">Corona Geek #51 &#8211; Ouya Support, Nexus 7 Tips, and 16bitLabs</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">During this week's Corona Geek, we shared that Corona Simulator now has Ouya and GameStick 'View As' options, Corona SDK now supports all HID controllers, tips for side-loading apps on Nexus 7 and Andrea Zanetti from Italy shared his adventures as a 16 year old app developer....</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/charles/">Charles McKeever</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/corona-geek/" rel="category tag">Corona Geek</a>, <a href="/blog/topics/hangouts/" rel="category tag">Google+ Hangouts</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/coronageek/corona-geek-hangout-51/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+					<article id="post-41777" class="post-41777 post type-post status-publish format-standard hentry category-corona-sdk">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">16 August 2013<meta itemprop="interactionCount" content="UserComments: 0"/></span></p>
+						<h3 itemprop="name" class="entry_title"><a itemprop="url" href="/blog/2013/08/16/coronas-global-reach/" title="Corona&#8217;s Global Reach!">Corona&#8217;s Global Reach!</a></h3>
+						
+
+<p itemprop="description" class="post_excerpt">Take a look at this screenshot showing where our developers come from!...</p>
+<div class="post_info">	
+							                                 <i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/david/">david</a>
+                                </span>
+                            						
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i>
+ <a href="/blog/topics/corona-sdk/" rel="category tag">Corona SDK</a>                          
+																													<span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Corona%26%238217%3Bs+Global+Reach%21&amp;p[url]=%2Fblog%2F2013%2F08%2F16%2Fcoronas-global-reach%2F&amp;p[images][0]=&amp;p[summary]=Take+a+look+at+this+screenshot+showing+where+our+developers+come+from%21', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Take+a+look+at+this+screenshot+showing+where+our+developers+come+from%21/blog/2013/08/16/coronas-global-reach/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F08%2F16%2Fcoronas-global-reach%2F&amp;title=Corona%26%238217%3Bs+Global+Reach%21&amp;description=Take+a+look+at+this+screenshot+showing+where+our+developers+come+from%21&amp;image=', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>	
+													</div>
+						
+						<div class="post_more">
+							<a itemprop="url" href="/blog/2013/08/16/coronas-global-reach/" class="qbutton small">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+							<div class='pagination'><ul><li class='first'><a itemprop='url' href='/blog/'><i class='fa fa-angle-double-left'></i></a></li><li class='prev prev_first'><a itemprop='url' href='/blog/page/89/'><i class='fa fa-angle-left'></i></a></li><li><a itemprop='url' href='/blog/page/86/' class='inactive'>86</a></li><li><a itemprop='url' href='/blog/page/87/' class='inactive'>87</a></li><li><a itemprop='url' href='/blog/page/88/' class='inactive'>88</a></li><li><a itemprop='url' href='/blog/page/89/' class='inactive'>89</a></li><li class='active'><span>90</span></li><li><a itemprop='url' href='/blog/page/91/' class='inactive'>91</a></li><li><a itemprop='url' href='/blog/page/92/' class='inactive'>92</a></li><li><a itemprop='url' href='/blog/page/93/' class='inactive'>93</a></li><li><a itemprop='url' href='/blog/page/94/' class='inactive'>94</a></li><li class='next next_last'><a href="/blog/page/91/"><i class='fa fa-angle-right'></i></a></li><li class='last'><a itemprop='url' href='/blog/page/112/'><i class='fa fa-angle-double-right'></i></a></li></ul></div>
+				</div>
+						</div>
+					</div>
+					<div class="column2">
+							<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-3" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-8" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-7" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-2" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-7" class="widget widget_tag_cloud posts_holder"><h5>All tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-3" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+	
+					</div>
+				</div>
+				</div>
+        	</div>
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-44ab35495eb13b448ea9307a96f479f3.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"1815","is_front_page":"","is_blog_page":"1","is_category":"","site_url":"\/wordpress","is_archive":"","is_search":"","is_singular":"","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-933b528a2d57748fe8c83f115a193bac.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-301fe8920786443d62854aa56f62d416.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-589214c34f008189ea441c146f569db3.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-7509df77330fcb9cc352a1e134790124.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-46e09ba307b0b6c4b86ea442fd0f8392.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

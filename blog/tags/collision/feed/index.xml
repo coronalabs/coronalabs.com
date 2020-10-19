@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>collision &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/collision/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>collision &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Collision Filters plugin</title>
+		<link>/blog/2017/06/07/introducing-the-collision-filters-plugin/</link>
+		<pubDate>Wed, 07 Jun 2017 21:16:50 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[collision]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=70910</guid>
+		<description><![CDATA[Learn about the new Collision Filters plugin, designed to circumvent the math and complication of creating physics body collision filters!]]></description>
+				<content:encoded><![CDATA[<p>For game designers who utilize Corona&#8217;s built-in Box2D physics system, <strong>collision filters</strong> usually enter the design equation at some point in development. For instance, if your player in an endless runner game should collect power-ups, you&#8217;ll need a collision handler for it &#8212; but it&#8217;s a waste of time (and processing effort) to handle collisions between <em>enemies</em> and power-ups.</p>
+<p>Traditionally, setting up collision filters has been a tricky ordeal of calculating <code>categoryBits</code> and <code>maskBits</code>, as outlined in our <a href=https://docs.coronalabs.com/guide/physics/collisionDetection/index.html?#filtering target="_blank">Collision Detection</a> guide. While our &#8220;helper chart&#8221; makes the process much easier, many game developers wish there was an easier way &#8212; and now there is!</p>
+<h3>Collision Filters plugin</h3>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, you can skip all of the math and calculations involved in traditional collision filter setup. Instead, simply state your setup with clearly-named keys and strings. For instance:</p>
+<p><code>collisionFilters.setupFilters( { player={ "powerUps", "enemies" } } )</code></p>
+<p>With just this one simple command, the plugin will configure three collision filters:</p>
+<ol>
+<li><code>player</code> objects will collide with <code>powerUps</code> and <code>enemies</code></li>
+<li><code>powerUps</code> objects will only collide with <code>player</code></li>
+<li><code>enemies</code> objects will only collide with <code>player</code></li>
+</ol>
+<p>Once set up, getting the proper collision filter data is as simple as calling <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a> with a valid key or string from the configuration table:</p>
+<p><code>local playerFilter = collisionFilters.getFilter( "player" )</code></p>
+<p>Then, applying it to the player&#8217;s physics body, assuming <code>thisPlayer</code> represents the player object, is as easy as this:</p>
+<p><code>physics.addBody( thisPlayer, "dynamic", { filter=playerFilter } )</code></p>
+<h3>Smart associations</h3>
+<p>For those who have set up collision filters the traditional way, you&#8217;ll know that doing so requires a &#8220;reverse association&#8221; methodology. For instance, if you tell Box2D that <code>player</code> can collide with <code>enemies</code>, you must <strong>also</strong> tell it that <code>enemies</code> can collide with <code>player</code>. Now, using the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, that extra step is unnecessary &#8212; simply set up your primary associations and the plugin will internally calculate the reverse relationships! What&#8217;s more, it will dispatch a console warning if you accidentally declare associations which don&#8217;t match.</p>
+<h3>Getting started</h3>
+<p>To get started, proceed to the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">plugin documentation</a>. Simply add the plugin to your <code>build.settings</code> file, <code>require()</code> it in the module(s) where you&#8217;ll use it, set up your filter relationship with <a href=https://docs.coronalabs.com/plugin/collisionFilters/setupFilters.html target="_blank">collisionFilters.setupFilters()</a>, and add the appropriate filters to your physics bodies via <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a>.</p>
+<p>Hopefully this new plugin will simplify collision filter setup for all Corona game developers!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>coronimum &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronimum/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>coronimum &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #131</title>
+		<link>/blog/2016/07/08/from-the-forum-issue-131/</link>
+		<pubDate>Sat, 09 Jul 2016 01:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[DRY]]></category>
+		<category><![CDATA[Endless Runner]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[modules]]></category>
+
+		<guid isPermaLink="false">/?p=67414</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>When is running endlessly not really running?</h3>
+<p>Starting out on the long road of game development means learning concepts that are not intuitive, even to programmers. Procedural generation, game loops, and asset management versus memory management are all concerns facing fledgling Corona enthusiasts.</p>
+<p>The endless runner is a great project to get your feet wet in the world of Corona game development. However, though it seems simple on the candy-coated surface, things can get messy pretty quickly. Discussion on the anatomy of an endless runner came up in the forum recently <a href=https://forums.coronalabs.com/topic/64465-is-endless-running-game-really-endless/ target="_blank">here</a>. It underlines some basic elements of game design which are useful no matter where you are in your development journey.</p>
+<h3>Coronium LS</h3>
+<p>We are all waiting with baited breath for the full release of Corona Labs&#8217; hosted solution which is being discussed in hushed whispers around campfires. While we wait, <strong>Develephant</strong> unleashed a community-supported option to the masses, <strong>Coronium LS</strong>. According to the man himself, it’s a “hybrid cloud solution for your Corona SDK games. A lot of ‘love’ went into this project, and I&#8217;m very excited to share it with you. Get your helmets on.”</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64464-new-coronium-ls-the-hybrid-cloud target="_blank">original thread</a> that points to the documentation and information on the project as a whole!</p>
+<h3>When to use a module</h3>
+<p>Continuing on the theme of game development, we have a fantastic conversation going on between a relatively new Corona developer and a couple of old-timers who have been around the block. Specifically, when do you use a module instead of simply including code in <code>main.lua</code> or whichever scene you are running? Check out <a href=https://forums.coronalabs.com/topic/63854-when-does-it-make-sense-to-employ-a-module-instead-of-a-function-within-a-scene-file/ target="_blank">the discussion</a> for a thorough dissertation on the finer points of modularized code, along with the basic tenets of &#8220;DRY&#8221; programming.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #125</title>
+		<link>/blog/2016/05/31/from-the-forum-issue-125/</link>
+		<pubDate>Tue, 31 May 2016 21:41:51 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[backups]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[RevMob]]></category>
+		<category><![CDATA[SQLite3]]></category>
+
+		<guid isPermaLink="false">/?p=66976</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Security-minded Coronium instances</h3>
+<p>Coronium-based apps are coming out of the woodwork these days. Having a Corona-supported server solution developed completely in Lua is a fantastic resource to new and veteran Corona users alike.</p>
+<p>However, it’s important to remember that not everything is served on a silver platter for us. The steps available to shore up endpoints and security are not unique to Coronium, so research on those fronts is paramount. One developer, in kicking the tires on his app and Coronium instance, was wondering what was going on with their iOS 9 test device. As it turns out, the app was running afoul of the App Transport Security policy instituted by Apple.</p>
+<p>A potential fix is referenced in the original post. Click on through to find out more about making your Coronium instance that much more secure!</p>
+<p><a href=https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/ target="_blank">https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/</a></p>
+<h3>Coronium step-by-step walkthrough</h3>
+<p>Coronium&#8217;s server solution has been talked up quite a bit in this running feature. For good reason of course, as having a server implementation written in pure Lua means not moving between languages during development and not fragmenting your workflow.</p>
+<p>While Coronium is relatively intuitive, there are still portions that may not be clear to new users. There are security concerns that may not occur when a developer’s primary experience is in game development. The installation guide is incredibly valuable, but having something from a user’s standpoint can be useful as well.</p>
+<p>The original thread below goes through a step-by-step installation, created by a genuine Corona developer, of the Coronium product. It’s a great read, and <strong>Develephant</strong> himself commented on how useful of a resource it is. Jump on over and check it out for yourself!</p>
+<p><a href=https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/ target="_blank">https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/</a></p>
+<h3>Understanding auto-backup workflow</h3>
+<p>These days, business apps are expected to allow users to pick up where they left off, regardless of device or location. The million dollar question: how can we ensure a user’s app data is available across the globe? The low barrier to entry for database implementations means that a simple SQL configuration can house any information necessary for a user to bounce around at will.</p>
+<p>If you’re using that SQL database, though, how you’re going to manage all that data becomes the primary concern. You want to make sure that you’re doing your level-best to maintain the integrity of the data that has become the real currency in your app.</p>
+<p>The below thread contains an interesting back-and-forth discussion surrounding the best way to handle data being passed between an app leveraging a SQL database, and the database itself. Have your own take? Add to the dogpile!</p>
+<p><a href=https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/ target="_blank">https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #124</title>
+		<link>/blog/2016/05/20/from-the-forum-issue-124/</link>
+		<pubDate>Fri, 20 May 2016 14:29:46 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66877</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A little bit more from Google Maps</h3>
+<p>This first tip is short and sweet and it revolves around one of the great “gotchas” that is the basis of Corona SDK: the OpenGL layer. As we all know, because of the architecture which underlies Corona SDK, any <a href=https://docs.coronalabs.com/daily/api/library/native/index.html>native.*</a> API call that creates a native object places that element above graphical objects created within your Corona app.</p>
+<p>If you have your sights set on a super-engaging geo-tagging game, this creates quite the boondoggle. You can’t capture maps with <a href=https://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a> et. al, nor can you mark up the maps that you create. However, standout Corona developer <strong>AidenWolf</strong> reminds us that we can still leverage the Google Static Maps API. Check out the original thread below and get clued in on how you can modify your map images with very little hassle!</p>
+<p><a href=https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/ target="_blank">https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/</a></p>
+<h3>Remote server querying workflows</h3>
+<p>If you aren’t coming from a system administrator background, configuring your Corona project to interface nicely with your remote server can be a bit of a struggle. Wrapping your head around all the moving parts isn’t the most exciting process.</p>
+<p>Fortunately, exemplary Corona support engineer Rob Miracle responded to a forum thread with some questions about this topic, and helped out everyone by giving a quick-and-dirty dissertation on the finer aspects of SQL integration. Click through to the original thread to grab a bit more info on this very necessary skill.</p>
+<p><a href=https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/ target="_blank">https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/</a></p>
+<h3>Some tips for desktop window sizes</h3>
+<p>The nuts and bolts of Windows and OS X desktop deployment are still being felt out by the Corona community at large. While we do have access to the vast majority of APIs that are standard for mobile development at this point, there are still a few here and there that don’t readily apply.</p>
+<p>One of the missing pieces is the read order of our projects. Does the <code>config.lua</code> file get read first, or does the desktop environment get queued in order to identify the various values for the <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display.*</a> APIs? As Corona engineer <strong>Joshua Quick</strong> states:</p>
+<p>“It&#8217;s a chicken &amp; egg issue. We need to read your &#8216;<code>config.lua'</code> file to determine what the pixel width and height of the window should be, which of course means the <code>display.*</code> Lua APIs can&#8217;t be ready for you to use since the pixel width and height you want to read haven&#8217;t been determined yet.”</p>
+<p>I’ve included two different forum threads that tackle this topic in depth, so that you can be well-armed when you run up against this desktop idiosyncrasy. Truck through to the links below to get inundated with desktop display value discussions!</p>
+<p><a href=https://forums.coronalabs.com/topic/63123-display-in-configlua target="_blank">https://forums.coronalabs.com/topic/63123-display-in-configlua</a><br />
+<a href=https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/ target="_blank">https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #123</title>
+		<link>/blog/2016/05/13/from-the-forum-issue-123/</link>
+		<pubDate>Fri, 13 May 2016 18:02:05 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66813</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Fonts and the developers who love them</h3>
+<p>There have been many, many posts regarding the implementation of custom fonts. For clarity, custom fonts are any font type that is not part of the underlying OS. For most business apps and generic games, the provided fonts are plenty diverse. However, when a developer really wants to leave their mark and make an impression, a striking font is a great way to add some curb appeal for a low price.</p>
+<p>Sometimes, however, custom fonts just do not want to play nice with our projects. In this case, you need to identify vagaries between the <code>.otf</code> versus <code>.ttf</code> types, kerning, and character width, just to name a few &#8212; and sometimes that custom font you’ve had your eye on just doesn’t want to work at all! Fortunately, another Corona developer ran into the same issue and, in the thread below, he provides some tips on how to overcome this hurdle by modifying the main font file. Check it out if you’ve been struggling with a font!</p>
+<p><a href=https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/ target="_blank">https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/</a></p>
+<h3>Coronium with a splash of MySQL</h3>
+<p><a href=http://coronium.io/ target="_blank">Coronium</a> and Coronium Cloud are products of <strong>develephant</strong>’s creative vision and they are as much labors of love as they are products from which the greater Corona community can benefit. There has been lots of movement regarding the status of Coronium Cloud and Coronium 2, but <strong>develephant</strong> still has time to drop some gems for us in the forum.</p>
+<p>This week we found a sweet tutorial for current and future users of Coronium, showing how to handle MySQL integration with the new server configuration. Click through to the original thread to watch the YouTube video!</p>
+<p><a href=https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/ target="_blank">https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/</a></p>
+<h3>Dynamic apps with interactive components&#8230;. on the fly!</h3>
+<p>The best part of the Corona forum is that sometimes simple questions turn into a larger discussion of &#8220;best practices&#8221; which convince our peers to peel the curtain back and show us how they are making their particular brand of sausage. My tortured metaphors aside, collaborating, sharing, and learning is how we all become better developers, and that should be the highest goal in our journey.</p>
+<p>The original thread I’m referencing starts off in a simple discussion regarding the extensibility of the <a href=https://docs.coronalabs.com/api/type/Map/addMarker.html target="_blank">addMarker()</a> API provided by Corona. It evolves into a examination of the efficacy of dynamic HTML file generation when the use case calls for a very specific and specialized interaction between app and user. Needless to say, it’s an intriguing topic, so head down to the original thread to pick up some pointers from the pseudo-code provided.</p>
+<p><a href=https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/ target="_blank">https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

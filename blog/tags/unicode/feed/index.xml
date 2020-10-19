@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>unicode &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/unicode/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>unicode &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the UTF-8 string plugin</title>
+		<link>/blog/2016/03/21/introducing-the-utf-8-string-plugin/</link>
+		<comments>/blog/2016/03/21/introducing-the-utf-8-string-plugin/#comments</comments>
+		<pubDate>Mon, 21 Mar 2016 20:24:16 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[multi-byte]]></category>
+		<category><![CDATA[string]]></category>
+		<category><![CDATA[strings]]></category>
+		<category><![CDATA[text]]></category>
+		<category><![CDATA[unicode]]></category>
+		<category><![CDATA[UTF-8]]></category>
+
+		<guid isPermaLink="false">/?p=66168</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the UTF-8 plugin, useful for managing strings with non-ASCII characters. Read further to learn how this plugin may help in your app development.]]></description>
+				<content:encoded><![CDATA[<p>One potential challenge for app developers is &#8220;localizing&#8221; their apps internationally. Perhaps it&#8217;s a simple matter of working with someone&#8217;s name which has non-ASCII characters in it, or more comprehensive support for languages like Japanese which uses a unique character set.</p>
+<p>The core issue for Corona developers is that Lua&#8217;s <a href=https://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> functions consider a string as merely a series of bytes, and it&#8217;s unaware of multi-byte characters. This causes problems if you want to know how many characters are in a string containing multi-byte characters because, in this case, Lua will simply count the bytes. Even more issues can arise if you need to gather sub-strings or convert a non-ASCII string to uppercase or lowercase. All in all, this can be considerably frustrating to developers who build apps for worldwide distribution.</p>
+<h3>The solution?</h3>
+<p>Recently, Corona Labs released the <a href=https://store.coronalabs.com/plugin/utf-8 target="_blank">UTF-8 plugin</a> to help alleviate these issues. The plugin&#8217;s functions closely mirror the existing <a href=https://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> library functions, except that the UTF-8 equivalents handle multi-byte strings. For instance, just as you might use <a href=https://docs.coronalabs.com/api/library/string/match.html target="_blank">string.match()</a>, on a normal ASCII string, you can substitute <code>utf8.match()</code> for non-ASCII strings.</p>
+<p>This plugin also introduces several new functions for advanced purposes, helping you deal with character positions, offsets, code points, sub-string insertion/removal, and more. You can see a complete list and usage details in our <a href=https://docs.coronalabs.com/plugin/utf8/index.html target="_blank">documentation</a>.</p>
+<h3>Usage</h3>
+<p>Like all Corona plugins, you need to include it in your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.utf8&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;
+        },
+    },
+}</pre><p>Then, in any module where you want to use UTF-8 functions, simply <code>require()</code> the plugin as usual:</p><pre class="crayon-plain-tag">local utf8 = require( &quot;plugin.utf8&quot; )</pre><p>After that, simply call <code>string.[methodName]</code> functions as <code>utf8.[methodName]</code> instead. For example, notice the output values of the respective &#8220;length&#8221; functions (<code>string.len()</code> and <code>utf8.len()</code>) on an identical string:</p><pre class="crayon-plain-tag">-- The Russian alphabet
+print( string.len( &quot;АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ&quot; ) )  --prints 64
+print( utf8.len( &quot;АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ&quot; ) )    --prints 32</pre><p></p>
+<h3>Conclusion</h3>
+<p>As you can see, the UTF-8 plugin offers some valuable new capabilities to Corona developers, in particular those developing apps for international distribution. To learn more, please reference the <a href=https://docs.coronalabs.com/plugin/utf8/index.html target="_blank">documentation</a> or discuss this plugin in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/21/introducing-the-utf-8-string-plugin/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

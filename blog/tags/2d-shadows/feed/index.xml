@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>2D Shadows &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/2d-shadows/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>2D Shadows &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</title>
+		<link>/blog/coronageek/corona-geek-154/</link>
+		<comments>/blog/coronageek/corona-geek-154/#respond</comments>
+		<pubDate>Mon, 10 Aug 2015 22:13:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[2D Shadows]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63645</guid>
+		<description><![CDATA[Today, Steven Johnson shared his code for creating a custom 2D shadows shader example and Ed Maurina showed us how to simulate and use gravity in a games similar to They Need To Be Fed 3. Watch the replay and check the show notes to download the code.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Qktg1GIQeiI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> shared his <a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">code for creating a custom 2D shadows shader example</a> and Roaming Gamer’s, Ed Maurina showed us <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to simulate and use gravity in a games</a> similar to the popular iOS and Android game, <a href=http://www.bitatebit.com/ target="_blank">They Need To Be Fed 3</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">Corona Geek After Dark #6</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/c7uvoj9iibb7o7ogt7vr4hinc90 target="_blank">passion versus profit</a>, multiplayer game development, and a ton of other stuff.</p>
+<p><strong>Corona Geek Games July Challenge Winner!</strong></p>
+<p>Congratulations again to Huub van Vuren for being July&#8217;s high score winner at Rise 1.0 with an amazing high score of 606! Huub has earned a $50 gift card for playing games. That&#8217;s pretty cool. We&#8217;ll announce a game for August on next week&#8217;s Hangout. Thank you to everyone who participated in July&#8217;s challenge. Check out the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> for a full list of scores.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Download it and have fun!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-153/>Corona Geek #153 &#8211; Custom Shader Math and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">2D Shadow Custom Shader Example Code</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://sellfy.com/p/rovA/ target="_blank">Gear Jumper Template</a></li>
+<li><a href=https://www.youtube.com/watch?v=AJdEqssNZ-U target="_blank">The Art of Screenshake</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy Apps</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-154/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-154-2015-08-10-using-gravity-in-games-and-2d-shadows.mp3" length="94398172" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #122  &#8211; Using Coroutines in Lua and Creating 2D Shadows</title>
+		<link>/blog/coronageek/corona-geek-122/</link>
+		<comments>/blog/coronageek/corona-geek-122/#comments</comments>
+		<pubDate>Mon, 29 Dec 2014 22:54:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[2D Shadows]]></category>
+		<category><![CDATA[coroutines]]></category>
+		<category><![CDATA[lua]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60723</guid>
+		<description><![CDATA[During this week's Hangout, Corona Developer, Steven Johnson introduced us to the concept of time slicing using coroutines in Lua and René Aye from PyroPixel showed us how to create 2D shadow effects on angular, round, and complex shapes using his 2D shadow system.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/wtNuzLwFLxI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Hangout, Corona Developer, Steven Johnson (aka, Star Crunch in the forums) introduced us to the concept of time slicing using <a href=http://www.lua.org/pil/9.html target="_blank">coroutines in Lua</a>. Steven presented a collection of <a href=https://github.com/ggcrunchy/samples target="_blank">lua coroutine code examples</a> to show how coroutines can be used to stop and start the execution of code and how to reduce the amount of code needed to work with timers.</p>
+<p><iframe src="//www.youtube.com/embed/1DMKZqygIek?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>René Aye from <a href=http://PyroPixel.de/ target="_blank">PyroPixel</a> also showed us how to create 2D shadow effects on angular, round, and complex shapes using his 2D shadow system. René showed several <a href=https://bitbucket.org/reneaye/corona-2d-shadow-system/ target="_blank">2d shadow demos</a> including one using Corona&#8217;s built-in physics engine and one with multiple 2D shadows and draggable light sources. The effects are amazing and will add a whole new dimension to your games.</p>
+<p><iframe src="//www.youtube.com/embed/L5qNrGk1cII?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Ship Just One More App Before 2015</strong></p>
+<p style="padding-left: 30px;">Want to get that unfinished app off your hard drive and into the app store? Then participate in this year&#8217;s <a href=http://shipjam.com/ target="_blank">first annual Ship Jam</a> and win some prizes. Community members, <a href=https://twitter.com/LTallardy target="_blank">Laura Tallardy</a> and <a href=https://twitter.com/LavaLevel target="_blank">Eric Kinkead</a> are hosting the jam. Check out the <a href=http://shipjam.weebly.com/rules.html target="_blank">Ship Jam website</a> for full details.</p>
+<p><strong>December&#8217;s Geek Games Winner!</strong></p>
+<p style="padding-left: 30px;">For December, we played <a href=http://CityBirdsGame.com/ target="_blank">City Birds</a> and <a href=http://salvo.jp/app/vritra/en/ target="_blank">Vritra</a> for a chance to win two $50 gift cards.  This month&#8217;s high score winner of both gift cards is Greg Pugh from <a href=http://GPAnimations.com/ target="_blank">GPAnimations</a>.</p>
+<p style="padding-left: 30px;">While this month&#8217;s competition is over, you can still play both gamess and post your high score on the <a href=http://facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a>. Can you beat Greg&#8217;s score?</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-121/ target="_blank">Corona Geek #121 – How menuMe Is Re-Inventing The Restaurant Menu</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Time is almost up! Just 2 more days to <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek and save 20%</strong></a> at checkout when buying Corona SDK books from Burton&#8217;s Media Group. The coupon code expires on January 1st. Get it before it&#8217;s gone!</li>
+</ul>
+<ul>
+<li><a href=https://github.com/ggcrunchy/samples target="_blank">Coroutine Lua Examples</a></li>
+<li><a href=https://bitbucket.org/reneaye/corona-2d-shadow-system/ target="_blank">2D Shadow System on Bitbucket</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=https://play.google.com/store/apps/details?id=com.gpanimations.mbsttv target="_blank">Maddie Bear Snack Time on Android TV</a> &#8211; a Corona game from GPAnimations</li>
+<li><a href=http://militantgame.com/ target="_blank">MilitAnt Game</a> &#8211; A non-Corona game from Xibalba Studios</li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-122/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

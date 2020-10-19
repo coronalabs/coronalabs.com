@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ironSource &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ironsource/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ironSource &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Maximize app revenue with ironSource rewarded video and offerwalls</title>
+		<link>/blog/coronageek/maximize-app-revenue-with-ironsource-rewarded-video-and-offerwalls/</link>
+		<comments>/blog/coronageek/maximize-app-revenue-with-ironsource-rewarded-video-and-offerwalls/#respond</comments>
+		<pubDate>Fri, 18 Nov 2016 16:49:27 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ironSource]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[offerwalls]]></category>
+		<category><![CDATA[rewareded video]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68329</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with ironSource about the importance of reinvesting ad revenue back into app promotion to grow a user base and we discussed the merits of combing rewarded video and offerwalls to engage users and maximize earnings.]]></description>
+				<content:encoded><![CDATA[<p>In this special interview we talk with Garrett Olson about <a href=/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/>app monetization using ironSource</a>. Garrett talked about the importance of reinvesting ad revenue back into app promotion to grow an app&#8217;s user base. We also discussed the merits of combing the use of rewarded video and offerwalls to engage users and maximize earnings from your apps.</p>
+<p>To get started, <a href=https://platform.supersonic.com/partners/signup target="_blank">sign up with ironSource</a>, then use the easy <a href=https://docs.coronalabs.com/plugin/supersonic/index.html>ironSource plugin for Corona SDK</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/q5cCZZJxrZc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/maximize-app-revenue-with-ironsource-rewarded-video-and-offerwalls/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-15-ironsource.mp3" length="27533136" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

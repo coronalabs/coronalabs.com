@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iOS9 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ios9/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iOS9 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #161 &#8211; Crystal, iOS 9 Ad Blocker, Developer Interview</title>
+		<link>/blog/coronageek/corona-geek-161/</link>
+		<comments>/blog/coronageek/corona-geek-161/#respond</comments>
+		<pubDate>Mon, 28 Sep 2015 21:23:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[ad blockers]]></category>
+		<category><![CDATA[content blockers]]></category>
+		<category><![CDATA[iOS9]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64160</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we talked with Dean Murphy, developer of Crystal, a popular iOS 9 ad blocker. Dean talked about why he decided to create an ad blocker and what kind of response he has seen from consumers. We also discussed ad blocking from the perspective of the consumers, advertisers, and content creators. Dean shared some interesting stats and insights into why consumers are deciding to block ads and what Crystal is doing to give consumers more control.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/dpiCDdfiOag?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we talked with Dean Murphy, developer of <a href=http://crystalapp.co/ target="_blank">Crystal, a popular iOS 9 ad blocker</a>. Dean talked about why he decided to create an ad blocker and what kind of response he has seen from consumers. We also discussed ad blocking from the perspective of the consumers, advertisers, and content creators. Dean shared some interesting stats and insights into why consumers are deciding to block ads and what Crystal is doing to give consumers more control. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Next week we will continue our game development series with a look at building a level editor. In the meantime, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the Monsters Need Coins source code</a> to see what&#8217;s been developed so far.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/c8p3hbhrlh8qr8nu1qo119ts7ls target="_blank">Corona Geek After Dark #13</a> when we will discuss general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://www.youtube.com/watch?v=X2p__STnE6I target="_blank">Ad Blockers, Apple TV, Uber self driving cars</a>, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://crystalapp.co/ target="_blank">Crystal Ad Blocker for iOS 9.0</a></li>
+<li><a href=http://murphyapps.co/blog/2015/9/25/on-acceptable-ads target="_blank">Acceptable Ads</a></li>
+<li><a href=http://murphyapps.co/blog/2015/9/22/why-are-people-using-content-blockers target="_blank">Why are people blocking ads</a></li>
+<li><a href=http://adage.com/article/media/publishers-weigh-ways-fight-ad-blocking/299116/ target="_blank">Desktop ad blocking on the rise</a></li>
+<li><a href=http://www.marco.org/2015/09/18/just-doesnt-feel-good target="_blank">Marco Arment&#8217;s decision to pull Peace from the AppStore</a></li>
+<li><a href=http://rampantmumblings.madewithopinion.com/an-interview-with-the-creator-of-crystal-a-content/?# target="_blank">Rampant Mumblings, Crystal Interview</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-161/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-161-2015-09-28-crystal-ad-blocker-interview.mp3" length="77946254" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

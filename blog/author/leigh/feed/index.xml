@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>leigh &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/leigh/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>leigh &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Congratulations Takashi Iyoda, winner of AppLovin’s Apple TV App Challenge!</title>
+		<link>/blog/2016/04/27/congratulations-takashi-iyoda-winner-of-applovins-apple-tv-app-challenge/</link>
+		<pubDate>Wed, 27 Apr 2016 21:55:59 +0000</pubDate>
+		<dc:creator><![CDATA[leigh]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=66606</guid>
+		<description><![CDATA[Using Corona SDK, developer Takashi Iyoda recently won $25,000 for his strategic puzzle game <em>Dungeon Tiles</em>. Read further to learn more about Takashi’s big win.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-66608" src="/wordpress/wp-content/uploads/2016/04/applovin-app-challenge-corona-winner-300x225.jpg" alt="applovin app challenge corona winner" width="300" height="225" />Imagine you have an idea for an app. So you build it in Corona, fly all the way from Japan to San Francisco, stay in a hostel, and win $25,000. Sound like an amazing journey?</p>
+<p>Well that&#8217;s exactly what Takashi Iyoda did. Takashi used Corona SDK to develop a tvOS app to compete in <a href=https://applovin.com/ target="_blank">AppLovin&#8217;s</a> <a href=https://applovin.com/appchallenge target="_blank"> Apple TV App Challenge</a>.</p>
+<p>Takashi&#8217;s app <em>Dungeon Tiles</em> was selected as the winner of the contest portion of the App Challenge. Participants were required to submit an original, unpublished Apple TV app. Now he gets to fly home with an amazing story and a lot more money in his pocket.</p>
+<p>What made <em>Dungeon Tiles</em> stand out from the crowd and take the top prize? Basil Shikin, VP of Engineering at AppLovin and one of the judges of the contest, said three things came to his mind:</p>
+<ol>
+<li>&#8220;The graphics were great. I thought the way the app was designed really lends itself to a TV screen.</li>
+<li>The gameplay is deceptively simple. You can start with a pretty simple game and it gets really challenging really fast.</li>
+<li>Player vs. player mode is awesome. I love games where you have a choice to either improve your position, worsen position of your enemy or maybe improve enemy’s position. It gives a lot of room for strategy.”</li>
+</ol>
+<h2>About Dungeon Tiles</h2>
+<p><img class="aligncenter wp-image-66609 size-large" src="/wordpress/wp-content/uploads/2016/04/1player_4-1024x576.png" alt="1player_4" width="960" height="540" /></p>
+<p>“<em>Dungeon Tiles</em> is a strategic puzzle game with minimalism and RPG elements in which players swipe the touch surface to collect swords, dragons, lives, and gold,” says Takashi. “First of all, I developed a prototype of <em>Dungeon Tiles</em> for iOS. Corona has an iOS simulator, so it&#8217;s easy to check how the game works. And then I added Siri Controller codes. With Corona SDK, I can rapidly develop <em>Dungeon Tiles</em>.”</p>
+<p><em>Dungeon Tiles</em> is set to launch on Apple TV this June.</p>
+<p><img class="alignright size-medium wp-image-66607" src="/wordpress/wp-content/uploads/2016/04/takashi-in-palo-alto-300x225.jpg" alt="takashi in palo alto" width="300" height="225" />We also got a chance to meet Takashi in person after his big win when he stopped by our office. Congratulations again Takashi Iyoda. We are all very proud of you!</p>
+<p>If you want to read more about Takashi’s big win, check out the <a href=https://blog.applovin.com/the-tvos-contest-winners-excellence-in-gameplay/ target="_blank">rundown of this year’s event here</a> or learn more about <a href=https://applovin.com/appchallenge target="_blank">AppLovin’s App Challenge here</a>. And don’t forget to check out the <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">AppLovin plugin</a> with <a href=/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/ target="_blank">tvOS support</a>!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

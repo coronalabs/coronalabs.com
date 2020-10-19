@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Amazon &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/amazon-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Amazon &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Amazon In-App Purchasing v2 plugin now available</title>
+		<link>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/</link>
+		<comments>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 06 Apr 2016 15:37:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Amazon Kindle]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[IAP]]></category>
+		<category><![CDATA[in-app purchase]]></category>
+		<category><![CDATA[Kindle]]></category>
+
+		<guid isPermaLink="false">/?p=66343</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Amazon IAP V2 plugin. Learn about changes you need to implement to migrate to the new plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-58615" src="/wordpress/wp-content/uploads/2013/05/AmazonProductLogo-150x150.png" alt="AmazonProductLogo" width="150" height="150" />Corona Labs is pleased to announce the immediate availability of the <strong>Amazon IAP v2</strong> plugin. If you plan to deploy your app to Amazon Kindle devices and use their in-app purchasing (IAP) service, you should implement this plugin within your projects as soon as possible. Additionally, if you currently have an app in the Amazon Appstore that uses their IAP service, it must be updated to the v2 plugin before<strong> April 30, 2016</strong>.</p>
+<h3>Implementing the new plugin</h3>
+<p>The plugin is pre-activated in the store for you. Because this is an official Corona Labs plugin, you need to change your <code>build.settings</code> file to reflect a different <code>publisherId</code>. The plugin name remains the same, but <code>publisherId</code> must be changed to <code>"com.coronalabs"</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.amazon.iap&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { [&quot;android-kindle&quot;]=true }
+        },
+    },
+}</pre><p></p>
+<h3>New functions and properties</h3>
+<p>This updated plugin includes a few additional functions and properties in comparison to the <a href=https://docs.coronalabs.com/plugin/amazon.iap/index.html target="_blank">legacy</a> plugin:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/isActive.html target="_blank">store.isActive</a> is now supported. This property will be <code>true</code> if the plugin was initialized successfully. You can use this as the sole point of confirmation that other store functions and processes can be initiated.</li>
+<li>New <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/getUserData.html target="_blank">store.getUserData()</a> function added to retrieve the user ID and marketplace code of the currently logged-in user.</li>
+<li>New properties available in the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/productList/index.html target="_blank">productList</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/loadProducts.html target="_blank">store.loadProducts()</a>, as well as the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/storeTransaction/index.html target="_blank">storeTransaction</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/init.html target="_blank">initialization</a>, <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/purchase.html target="_blank">purchase</a>, and <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">restore</a> requests.</li>
+</ul>
+<h3>Transaction changes</h3>
+<p>In addition to the new functions and properties above, some important changes have been made in the v2 plugin:</p>
+<ul>
+<li>Amazon now requires that you &#8220;finalize&#8221; all transactions. Thus, you must now call <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/finishTransaction.html target="_blank">store.finishTransaction()</a> following every transaction to notify Amazon about the transaction being processed.</li>
+<li>Amazon IAP v2 does not include a <code>"restored"</code> state for transactions. The <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">store.restore()</a> function can still be called to retrieve all of the user&#8217;s purchases, but now all valid transactions will be of the <code>"purchased"</code> state.</li>
+</ul>
+<h3>Migration guide</h3>
+<p>All of the above points are summarized in our <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/migration.html target="_blank">migration guide</a> which will assist users of the legacy plugin in updating to the new plugin.</p>
+<h3>Documentation</h3>
+<p>As always, we provide comprehensive <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/index.html target="_blank">documentation</a> for this plugin. Both users of the legacy plugin and new users are encouraged to consult this documentation in order to successfully implement Amazon In-App Purchasing.</p>
+<h3>In summary</h3>
+<p>Remember, Amazon requires that all apps utilizing their in-app purchasing service are upgraded to v2 before<strong> April 30, 2016</strong>. If you have further questions, please discuss them in the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Submitting Corona Apps for Amazon Fire TV</title>
+		<link>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/</link>
+		<comments>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/#comments</comments>
+		<pubDate>Thu, 29 May 2014 23:47:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[fire tv]]></category>
+
+		<guid isPermaLink="false">/?p=58707</guid>
+		<description><![CDATA[Greg Pugh is the founder of GP Animations, producer of the "Maddie Bear" book series. In this guest post, he writes about his experience in porting his recent app to the Amazon Fire TV and how simple the process can be.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-58723 size-thumbnail" style="margin: 1px 10px 10px 30px;" src="/wordpress/wp-content/uploads/2014/05/greg-pugh-126x150.jpg" alt="greg-pugh" width="126" height="150" /><em>Corona Ambassador Greg Pugh is the founder of <a href=http://www.GPAnimations.com/ target="_blank">GP Animations</a>, producer of the <a href=http://www.MaddieBearBooks.com/ target="_blank">Maddie Bear</a> book series. When he&#8217;s not writing and illustrating children&#8217;s book apps, he also works as a Flash developer, tutorial writer, and UI designer. Follow him on Twitter at <a href=http://www.twitter.com/GPAnimations target="_blank">@GPAnimations</a>.</em></p>
+<hr />
+<p>After publishing the paperback and iPad versions of <a href=http://www.MaddieBearBooks.com/ target="_blank">Maddie Bear’s Birthday</a>, I wanted to keep the series going, but I didn’t have any ideas for the next story. So, I took a break from writing and decided to create an endless runner game called <a href=http://gpanimationsblog.com/2014/04/18/maddie-bears-snack-time/ target="_blank">Maddie Bear’s Snack Time</a>. It&#8217;s a very simple game with one-touch controls that I ported to iOS, Android, Nook, and Kindle Fire very easily. My 21-month-old daughter actually figured out how to navigate through the menu and play it within 2 minutes, so in my book, the game was a success.</p>
+<p>When Amazon announced their new <a href=http://www.amazon.com/gp/product/B00CX5P8FC/ref=topnav_storetab_aftv target="_blank">Fire TV</a> device, it seemed like a natural transition to port over from Kindle Fire to the Fire TV. I assumed that all I would need to change was the &#8220;tap&#8221; events into &#8220;button&#8221; events and send it off to Amazon. The problem was that I didn’t know how the Fire TV’s remote control mapped its button layout. So, I contacted Ed Maurina (<a href=http://www.RoamingGamer.com/ target="_blank">www.RoamingGamer.com</a>) since he already knew how to map Ouya controller events to work with the Corona Simulator. After a few trial runs on a friend&#8217;s Fire TV, we achieved a solution which would allow me to get <a href=http://gpanimationsblog.com/2014/04/29/maddie-bears-snack-time-amazon-fire-tv-edition/ target="_blank">Maddie Bear’s Snack Time</a> on the Fire TV.</p>
+<h3>Prepping for Fire TV</h3>
+<p>To prepare your app for the Fire TV and Amazon App Store, I suggest you obtain Ed’s <a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/FireTVLib target="_blank">Fire TV Library</a>. Using this library, you can convert all of your &#8220;touch&#8221; and &#8220;tap&#8221; events to Fire TV remote controller events. Ed’s library is also great because you can use your computer’s keyboard to test the controls in the Corona Simulator. If you have a USB gaming controller that allows you to assign keyboard keys to its buttons, you can even test your app using that.</p>
+<p>Since I already had the Kindle Fire and Android versions of my app on the Amazon App Store, I published the Fire TV version using the same <strong>Application Name</strong>, <strong>Version Name</strong>, and <strong>Package Name</strong>. However, I changed the <strong>Version Code</strong> to <strong>2</strong>. This lets Amazon know that it&#8217;s the same app but with added support for a new device. This also prevents duplicate apps for different devices appearing on the Amazon App Store, which can confuse customers.</p>
+<h4>Notes For Publishing to Fire TV</h4>
+<ul>
+<li>The app should be 2GB or less in size. Anything 4GB or higher may not install/run on the Fire TV.</li>
+<li>The UI should be simple and easy to navigate using the Fire TV remote control with one hand.</li>
+<li>It can <strong>not</strong> require the following permissions:</li>
+</ul>
+<p><code style="margin-left: 30px; margin-top: 0px; padding-top: 0px;">android.permission.SET_WALLPAPER</code><br />
+<code style="margin-left: 30px;">android.permission.CALL_PRIVILEGED</code><br />
+<code style="margin-left: 30px;">android.permission.CALL_PHONE</code><br />
+<code style="margin-left: 30px;">android.permission.MODIFY_PHONE_STATE</code><br />
+<code style="margin-left: 30px;">android.permission.READ_PHONE_STATE</code><br />
+<code style="margin-left: 30px;">android.permission.READ_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.RECEIVE_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.SEND_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.WRITE_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.ACCESS_FINE_LOCATION</code><br />
+<code style="margin-left: 30px;">android.permission.RECORD_AUDIO</code><br />
+<code style="margin-left: 30px;">android.permission.CAMERA</code></p>
+<ul>
+<li>Include a 512×512 <strong>.png</strong> icon file with square corners and without transparency.</li>
+<li>Screenshots need to be <strong>.png</strong> or <strong>.jpeg</strong> format in landscape orientation at 1280×720 px (720p), 1920×1080 px (1080p), or 1024×600 px.</li>
+</ul>
+<h3>Testing the App</h3>
+<p>Once you have the app published, you can side-load it onto a Fire TV for testing. In my case, this was done by emailing the <strong>.apk</strong> file to my friend who gave me detailed reports of how the app ran. If you’re happy with its performance, sign into your Amazon Developer account and create a new app profile. Here you’ll upload the <strong>.apk</strong>, screenshots, icon, write a description, and provide other details just like any other app.</p>
+<h3>Submission</h3>
+<p>When I submitted my app, the status went from &#8220;Submitted&#8221; to &#8220;Live&#8221; within 24 hours. Either I picked a great time to submit an app or it&#8217;s because Amazon really wants to build up their Fire TV app library. Regardless, this could be a great time to get your app in the Fire TV store while the market is unsaturated.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Mosaika</title>
+		<link>/blog/2013/09/30/app-of-the-week-mosaika/</link>
+		<comments>/blog/2013/09/30/app-of-the-week-mosaika/#comments</comments>
+		<pubDate>Mon, 30 Sep 2013 22:51:37 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[point-and-click]]></category>
+
+		<guid isPermaLink="false">/?p=46677</guid>
+		<description><![CDATA[Joe Kauffman, the founder of Fire Maple Games, has built an incredible brand around his point-and-click adventure games. His puzzle games have propelled him to the <a href="http://venturebeat.com/2012/10/19/heres-how-you-become-an-app-store-millionaire-interview/">top of the charts</a> since the early days of the App Store, with his two major releases, <a href="http://www.coronalabs.com/blog/2011/01/17/app-of-the-week-january-16-2011-the-secret-of-grisly-manor/">The Secret of Grisly Manor</a> and <a href="https://itunes.apple.com/us/app/the-lost-city/id414835676?mt=8">The Lost City</a>, receiving over 10 million downloads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-thumbnail wp-image-46679" alt="Mosaika icon" src="/wordpress/wp-content/uploads/2013/09/Mosaika-icon-150x150.jpg" />Joe Kauffman, the founder of Fire Maple Games, has built an incredible brand around his point-and-click adventure games. His puzzle games have propelled him to the <a href=http://venturebeat.com/2012/10/19/heres-how-you-become-an-app-store-millionaire-interview/>top of the charts</a> since the early days of the App Store, with his two major releases, <a href=http://www.coronalabs.com/blog/2011/01/17/app-of-the-week-january-16-2011-the-secret-of-grisly-manor/>The Secret of Grisly Manor</a> and <a href=https://itunes.apple.com/us/app/the-lost-city/id414835676?mt=8>The Lost City</a>, receiving over 10 million downloads.</p>
+<p>Many point-and-click adventure fans have been awaiting Joe’s next release, Mosaika, and as of last Friday, the game went live on <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.joe.Mosaika_iOS>Google Play</a> and the <a href=http://www.amazon.com/Fire-Maple-Games-Mosaika/dp/B00FGFVMGA/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1380552519&sr=1-1&keywords=mosaika>Amazon Appstore</a>, with the iOS version coming very soon.</p>
+<p class="ac"><img class="wp-image-46678" alt="Mosaika screenshot" src="/wordpress/wp-content/uploads/2013/09/Mosaika-screenshot.png" /></p>
+<p>Mosaika transports you into a mesmerizing world of magic. When an evil sorceress puts a spell on the village of Mosaika to banish the inhabitants, the villagers need your puzzle-solving skills to break free. As you travel through Mosaika and explore mystical rooms, you’ll uncover clues to jot down in your virtual journal. These entries are vital to help you solve tricky puzzles along the way.</p>
+<p>Beyond the truly immersive gameplay that kept me hooked for hours, Mosaika’s stunning graphics and original music are second to none.</p>
+<p>If you’re a fan of point-and-click adventure games, head over to <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.joe.Mosaika_iOS>Google Play</a> or the <a href=http://www.amazon.com/Fire-Maple-Games-Mosaika/dp/B00FGFVMGA/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1380552519&sr=1-1&keywords=mosaika>Amazon Appstore</a> and download Mosaika, already a fan favorite!</p>
+<p><iframe src="//www.youtube.com/embed/HZR00N4nORA" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/30/app-of-the-week-mosaika/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elements of Photography</title>
+		<link>/blog/2013/09/23/app-of-the-week-elements-of-photography/</link>
+		<comments>/blog/2013/09/23/app-of-the-week-elements-of-photography/#comments</comments>
+		<pubDate>Mon, 23 Sep 2013 20:53:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=45686</guid>
+		<description><![CDATA[Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in "auto" mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href="http://elementsofphotography.com/">Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-thumbnail wp-image-45687" style="margin-top: 0px; margin-right: 20px;" alt="Elements of Photography icon" src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png" align="left" srcset="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png 150w, /wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM.png 249w" sizes="(max-width: 150px) 100vw, 150px" />Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in &#8220;auto&#8221; mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href=http://elementsofphotography.com/>Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade. Organized into chapters with beautiful HD photos and easy-to-understand text snippets, the app offers a beginner course in &#8220;Photography 101,&#8221; covering everything from focal length to shutter speed to advanced topics.</p>
+<p>Hoping to reach as many users as possible, the team developed the app with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> to target photographers-in-training who use iOS, Android, and Kindle devices. Lead developer and amateur photographer Amiya Patanaik told us, “Developing natively was out of question as it would have been prohibitively time consuming. Moreover, no one in the development team had a Mac and for a long time, I did not even have an Android phone. So we had to choose a cross-platform development framework to satisfy our needs.”</p>
+<p class="ac"><img src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.24.15-AM.png" alt="Elements of Photography icon" class="wp-image-46027" /></p>
+<p>The team considered wrapping the app with PhoneGap, but after some experimentation, felt it lacked the polish for commercial appeal. After evaluating other tools like Cocos2d-x, Moai, Gideros, GameMaker, and GameSalad, the team decided on Corona SDK for the platform&#8217;s rapid development capabilities, ease of use, and level of control. Patanaik noted that, “Most importantly, Corona SDK offered a vibrant community that shares code and ideas freely. This made it very easy to troubleshoot when we were stuck.” You can read more about Patanaik&#8217;s experience working with Corona SDK on his <a href=http://aptnk.in/2013/06/one-code-to-rule-them-all-writing-cross-platform-application-from-single-codebase-using-corona-sdk/>personal blog</a>.</p>
+<p>With over 20,000 downloads to date, Elements of Photography is even used by the <a href=http://www.veteraneducation.org>Veterans/ Vocational Education and Training (V-VET)</a>, a non-profit organization that helps recently-returned military veterans increase their skill set, assimilate into society, and generate an income.</p>
+<p>If you have a DSLR but don&#8217;t understand its full capabilities, or if you simply want to learn the basics of photography, download the app from <a href=https://itunes.apple.com/us/app/elements-of-photography/id654806469?mt=8>iTunes</a>, <a href= https://play.google.com/store/apps/details?id=com.aksharastudios.eop>Google Play</a> or the <a href=http://www.amazon.com/Akshara-Studios-Elements-of-Photography/dp/B00D5XYY4M>Amazon Appstore</a>.</p>
+<p><iframe src="//www.youtube.com/embed/lsIzXZSVbZE" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/23/app-of-the-week-elements-of-photography/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

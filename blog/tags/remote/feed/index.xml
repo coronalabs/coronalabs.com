@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>remote &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/remote/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>remote &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Using the mobile/remote accelerometer</title>
+		<link>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/</link>
+		<comments>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/#comments</comments>
+		<pubDate>Tue, 24 Nov 2015 21:26:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[accelerometer]]></category>
+		<category><![CDATA[remote]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64766</guid>
+		<description><![CDATA[In this tutorial, learn how to use accelerometer events to detect motions of a mobile device or the accelerometer-enabled Apple TV Remote.]]></description>
+				<content:encoded><![CDATA[<p>One of the cool things about the new <a href=https://developer.apple.com/tvos/human-interface-guidelines/remote-and-interaction/ target="_blank">Apple TV Remote</a> is that it has a built-in accelerometer, and similar to mobile devices, this allows you to guage the device&#8217;s position/orientation in space. Essentially, on either a mobile device or the remote control, the accelerometer makes three discrete measurements based on the orientation and center point of the device.</p>
+<h3>Accelerometer events</h3>
+<p>The <a href=https://docs.coronalabs.com/api/event/accelerometer/index.html target="_blank">accelerometer event</a> returns several useful values, including:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/name.html target="_blank">event.name</a> &#8212; This property will always be <code>"accelerometer"</code>.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/isShake.html target="_blank">event.isShake</a> &#8212; This property will be <code>true</code> if a rapid movement of the device is detected.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xGravity.html target="_blank">event.xGravity</a> / <a href=https://docs.coronalabs.com/api/event/accelerometer/yGravity.html target="_blank">event.yGravity</a> / <a href=https://docs.coronalabs.com/api/event/accelerometer/zGravity.html target="_blank">event.zGravity</a> &#8212; These events are probably the most useful. They are normalized, so you get a value between <code>-1.0</code> and <code>1.0</code>. These values are also smoothed out to adjust for micro-movements and prevent jerky actions.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xInstant.html target="_blank">event.xInstant</a>,<a href=https://docs.coronalabs.com/api/event/accelerometer/yInstant.html target="_blank"> event.yInstant</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/zInstant.html target="_blank">event.zInstant</a> &#8212; These values report the change since the last event, for instance the current <code>event.xGravity</code> minus the last <code>event.xGravity</code>.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xRaw.html target="_blank">event.xRaw</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/yRaw.html target="_blank">event.yRaw</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/zRaw.html target="_blank">event.zRaw</a> &#8212; These values are the actual values from the device (there is no filtering or smoothing applied).</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/deltaTime.html target="_blank">event.deltaTime</a> &#8212; Accelerometer events come at somewhat predictable intervals based on the value set by the <a href=https://docs.coronalabs.com/api/library/system/setAccelerometerInterval.html>system.setAccelerometerInterval()</a> function, but they are not guaranteed to arrive on time. This is where the <a href=https://docs.coronalabs.com/api/event/accelerometer/deltaTime.html target="_blank">event.deltaTime</a> comes in. It allows you to get the time between events so you can provide additional smoothing as needed.</li>
+</ul>
+<p>All of the &#8220;gravity,&#8221; &#8220;instant,&#8221; and &#8220;raw&#8221; values assume that the device is being held in &#8220;portrait&#8221; orientation. This is very common for people holding the Apple TV Remote (the remote being held like a traditional TV/audio remote control). However, if you&#8217;re designing a landscape-oriented app like a racing game, you might want the remote to be held in &#8220;landscape&#8221; orientation (like a traditional console game controller) in order to emulate a steering wheel. In this case, you should adjust your values by 90 degrees.</p>
+<h3>Implementation</h3>
+<p>Let&#8217;s look at a simple implementation of the accelerometer. This app will create a blue circle and allow you to move it around the screen by moving/orienting the device.</p><pre class="crayon-plain-tag">display.setDefault( &quot;anchorX&quot;, 0 )
+
+local dot = display.newCircle( display.contentCenterX, display.contentCenterY, 20 )
+dot:setFillColor( 0, 0, 1 )
+dot.color = &quot;blue&quot;
+dot.anchorX = 0.5
+
+local xGravityLabel = display.newText( &quot;xGravity:&quot;, 10, 15, native.systemFontBold, 12 )
+local yGravityLabel = display.newText( &quot;yGravity:&quot;, 10, 31, native.systemFontBold, 12 )
+local zGravityLabel = display.newText( &quot;zGravity:&quot;, 10, 47, native.systemFontBold, 12 )
+
+local xGravity = display.newText( &quot;&quot;, 80, 15, native.systemFont, 12 )
+local yGravity = display.newText( &quot;&quot;, 80, 31, native.systemFont, 12 )
+local zGravity = display.newText( &quot;&quot;, 80, 47, native.systemFont, 12 )
+
+local xInstantLabel = display.newText( &quot;xInstant:&quot;, 250, 15, native.systemFontBold, 12 )
+local yInstantLabel = display.newText( &quot;yInstant:&quot;, 250, 31, native.systemFontBold, 12 )
+local zInstantLabel = display.newText( &quot;zInstant:&quot;, 250, 47, native.systemFontBold, 12 )
+
+local xInstant = display.newText( &quot;&quot;, 330, 15, native.systemFont, 12 )
+local yInstant = display.newText( &quot;&quot;, 330, 31, native.systemFont, 12 )
+local zInstant = display.newText( &quot;&quot;, 330, 47, native.systemFont, 12 )
+
+local function onTilt( event )
+    xGravity.text = event.xGravity
+    yGravity.text = event.yGravity
+    zGravity.text = event.zGravity
+    xInstant.text = event.xInstant
+    yInstant.text = event.yInstant
+    zInstant.text = event.zInstant
+
+    dot.x = dot.x + event.xGravity
+    dot.y = dot.y + event.yGravity
+
+    if dot.x &gt; display.contentWidth then
+        dot.x = display.contentWidth
+    end
+    if dot.x &lt; 0 then
+        dot.x = 0
+    end
+    if dot.y &gt; display.contentHeight then
+        dot.y = display.contentHeight
+    end
+    if dot.y &lt; 0 then 
+        dot.y = 0
+    end
+
+    if event.isShake then
+        if dot.color == &quot;blue&quot; then
+            dot:setFillColor( 1, 0, 0 )
+            dot.color = &quot;red&quot;
+        else
+            dot:setFillColor( 0, 0, 1 )
+            dot.color = &quot;blue&quot;
+        end
+    end
+    return true
+end
+
+Runtime:addEventListener( &quot;accelerometer&quot;, onTilt )</pre><p>For this simple example, we create a dot (circle), color it blue, and set up some text display objects to show the values received from the accelerometer event.</p>
+<p>Accelerometer events require a listener function, served by our <code>onTilt()</code> function. Inside the function, we update the on-screen values based on the current accelerometer data.</p>
+<p>Next, we add the values of <code>event.xGravity</code> and <code>event.yGravity</code> to the dot&#8217;s <strong>x</strong> and <strong>y</strong> position. This will move the dot around the screen. Following this, we write four conditional statements to constrain the dot to the screen bounds.</p>
+<p>In the final block of the function, we test to see if the device was shaken and swap the color between red and blue each time a shake is detected.</p>
+<p>Finally, on the last line of the example, we enable the <code>"accelerometer"</code> event handler.</p>
+<h3>Conclusion</h3>
+<p>Using the accelerometer is an important part of getting your apps to run properly on tvOS &#8212; after all, not every control scheme can be accomplished with simple up/down/left/right key events or axis inputs. For example, consider a classic game like &#8220;Fruit Ninja.&#8221; On a mobile device, you couldn&#8217;t use the accelerometer to slash the fruit, but now with an accelerometer-enabled remote, you could detect slashing motions by tracking the accelerometer&#8217;s values.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

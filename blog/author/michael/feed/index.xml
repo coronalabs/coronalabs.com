@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>michael &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/michael/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>michael &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Store: Data and Language Cabinets, Page Curl Effects</title>
+		<link>/blog/2015/10/14/corona-store-data-and-language-cabinets-page-curl-effects/</link>
+		<pubDate>Wed, 14 Oct 2015 18:58:50 +0000</pubDate>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=64356</guid>
+		<description><![CDATA[We have a few exciting new plugins available on the Corona Store: Games by Candlelight provides persistent data and translation libraries, and Xibalba Studios brings us a fancy page curling effect. Please visit the store to activate plugins, or to submit a plugin yourself. 1. GBC Data Cabinet By Games by Candlelight The GBCDataCabinet plugin allows the Corona SDK developer to create and use session (located in memory) and persistent (located on disk) data throughout your application. You no longer have to create global variables to share data between Composer modules, for example. [crayon-5f8e00475ff93743332174/] Check it out on the Corona...]]></description>
+				<content:encoded><![CDATA[<p><em>We have a few exciting new plugins available on the <a href=https://store.coronalabs.com/>Corona Store</a>: Games by Candlelight provides persistent data and translation libraries, and Xibalba Studios brings us a fancy page curling effect.</em></p>
+<p><em>Please <a href=https://store.coronalabs.com>visit/ the store</a> to activate plugins, or to submit a plugin yourself.</em></p>
+<hr />
+<h3>1. GBC Data Cabinet</h3>
+<p>By <a href=http://gamesbycandlelight.com/ target="_blank">Games by Candlelight</a><br />
+The GBCDataCabinet plugin allows the Corona SDK developer to create and use session (located in memory) and persistent (located on disk) data throughout your application. You no longer have to create global variables to share data between Composer modules, for example.</p>
+<p></p><pre class="crayon-plain-tag">local GBCDataCabinet = require(&quot;plugin.GBCDataCabinet&quot;)
+
+-- 1. create a cabinet in memory
+local success = false
+success = GBCDataCabinet.createCabinet(&quot;My First Cabinet&quot;)
+success = GBCDataCabinet.set(&quot;My First Cabinet&quot;, &quot;Date&quot;, os.date())
+success = GBCDataCabinet.save(&quot;My First Cabinet&quot;)</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/gbc-data-cabinet target="_blank">Corona Store</a>.</p>
+<h3>2. GBC Language Cabinet</h3>
+<p>By <a href=http://gamesbycandlelight.com/ target="_blank">Games by Candlelight</a><br />
+GBC Language Cabinet is an easy to use way to display text in different languages. Simply specify which languages you are supporting, create or import tables of translated text, and use a basic function call to return the text in the correct language.</p>
+<p></p><pre class="crayon-plain-tag">local GBCLanguageCabinet = require (&quot;plugin.GBCLanguageCabinet&quot;)
+
+-- add some languages
+GBCLanguageCabinet.addLanguage(&quot;English&quot;, &quot;en&quot;)
+GBCLanguageCabinet.addLanguage(&quot;Deutsch&quot;, &quot;de&quot;)
+GBCLanguageCabinet.addLanguage(&quot;Espa&ntilde;ol&quot;, &quot;es&quot;)
+GBCLanguageCabinet.addLanguage(&quot;中國&quot;, &quot;zh&quot;)
+
+-- add some text
+GBCLanguageCabinet.addText(&quot;RedBall&quot;, {
+	{&quot;en&quot;, &quot;That is a ##color## ##object##.&quot;},
+	{&quot;de&quot;, &quot;Das ist eine ##color## ##object##.&quot;},
+	{&quot;es&quot;, &quot;Esa es una ##object## ##color##.&quot;},
+	{&quot;zh&quot;, &quot;這是一個 ##color## ##object##.&quot;},
+	{&quot;yoda&quot;, &quot;##color##, that ##object## is.&quot;},
+})
+
+-- translate
+txtString.text = GBCLanguageCabinet.getText(&quot;RedBall&quot;, &quot;de&quot;, {
+	color = &quot;rot&quot;,
+	object = &quot;Ball&quot;,
+})</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/gbc-language-cabinet target="_blank">Corona Store</a>.</p>
+<h3>3. Page Curl</h3>
+<p>By <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a><br />
+This plugin provides a page curl widget, the basic idea being to give the look and feel of turning a physical page as in a book or magazine.</p>
+<p><center><a href=/wordpress/wp-content/uploads/2015/10/Screenshot-android-1444769155.png><img src="/wordpress/wp-content/uploads/2015/10/Screenshot-android-1444769155-300x169.png" alt="Screenshot-android-1444769155" width="444" height="250" class="alignnone size-medium wp-image-64359" /></a></center></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/page-curl target="_blank">Corona Store</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Store: Collision Calculator, math2d, deltaTime</title>
+		<link>/blog/2015/09/30/corona-store-collision-calculator-math2d-deltatime/</link>
+		<pubDate>Wed, 30 Sep 2015 18:05:06 +0000</pubDate>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+
+		<guid isPermaLink="false">/?p=64228</guid>
+		<description><![CDATA[We have a few exciting new plugins available on the Corona Store: Collision calculation made simple, a 2D vector math library, and a module for time-based animations. Please visit the store to activate plugins, or to submit a plugin yourself. 1. Collision Calculator By Roaming Gamer This plugin allows users to generate a calculator &#8216;object&#8217; that then allows them to easily configure collisions using names instead of numbers. [crayon-5f8e004760bc0560042539/] Check it out on the Corona Store. 2. Math2d By Roaming Gamer The math2d plugin provides a set of standard 2d vector math operations, including: addition, subtraction, difference, dot, cross, angle2Vector,...]]></description>
+				<content:encoded><![CDATA[<p><em>We have a few exciting new plugins available on the <a href=https://store.coronalabs.com/>Corona Store</a>: Collision calculation made simple, a 2D vector math library, and a module for time-based animations.</em></p>
+<p><em>Please <a href=https://store.coronalabs.com>visit/ the store</a> to activate plugins, or to submit a plugin yourself.</em></p>
+<hr />
+<h3>1. Collision Calculator</h3>
+<p>By <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer</a><br />
+This plugin allows users to generate a calculator &#8216;object&#8217; that then allows them to easily configure collisions using names instead of numbers.</p>
+<p></p><pre class="crayon-plain-tag">-- Easily set up collision filters with a Roaming Gamer Collision Calculator
+local myCC = ccmgr.newCalculator()
+
+-- Name our objects
+myCC:addNames( &quot;block&quot;, &quot;redBall&quot;, &quot;greenBall&quot; )
+
+-- Make red balls collide with blocks and green balls
+myCC:collidesWith( &quot;redBall&quot;, { &quot;block&quot;, &quot;greenBall&quot; } )</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/collision-calculator target="_blank">Corona Store</a>.</p>
+<h3>2. Math2d</h3>
+<p>By <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer</a><br />
+The math2d plugin provides a set of standard 2d vector math operations, including: addition, subtraction, difference, dot, cross, angle2Vector, vector2Angle, length, squared length, and normalize.</p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/math2d target="_blank">Corona Store</a>.</p>
+<h3>3. deltatime</h3>
+<p>By <a href=https://github.com/poisa/deltatime-docs target="_blank">Julian Vidal</a><br />
+deltaTime is a plugin that allows developers to turn regular animations into time-based animations that will play back at the same speed regardless of framerate variations.</p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/deltatime target="_blank">Corona Store</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Store: Flashlights, Vibration, and Text to Speech</title>
+		<link>/blog/2015/09/15/corona-store-flashlights-vibration-and-text-to-speech/</link>
+		<comments>/blog/2015/09/15/corona-store-flashlights-vibration-and-text-to-speech/#comments</comments>
+		<pubDate>Tue, 15 Sep 2015 23:40:43 +0000</pubDate>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+
+		<guid isPermaLink="false">/?p=64066</guid>
+		<description><![CDATA[We have a few exciting new plugins available on the Corona Store: Spiral Code Studio hits us yet again with LED flashlight control, vibration control, and text to speech. Please visit the store to activate plugins, or to submit a plugin yourself. 1. Flashlight By Spiral Code Studio The Flashlight plugin provides access to the flash LED light source, which can be used as a torch. This works on Android and iOS. Using it is quite simple: [crayon-5f8e004761199581632377/] Check it out on the Corona Store. 2. Vibrator By Spiral Code Studio The Vibrator plugin provides you a fine control over...]]></description>
+				<content:encoded><![CDATA[<p><em>We have a few exciting new plugins available on the <a href=https://store.coronalabs.com/>Corona Store</a>: Spiral Code Studio hits us yet again with LED flashlight control, vibration control, and text to speech.</em></p>
+<p><em>Please <a href=https://store.coronalabs.com>visit/ the store</a> to activate plugins, or to submit a plugin yourself.</em></p>
+<hr />
+<h3>1. Flashlight</h3>
+<p>By <a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio</a></p>
+<p>The Flashlight plugin provides access to the flash LED light source, which can be used as a torch. This works on Android and iOS.</p>
+<p>Using it is quite simple:</p><pre class="crayon-plain-tag">local flashlight = require('plugin.flashlight')
+
+-- Show the light for 3 seconds
+flashlight.on()
+timer.performWithDelay( 3000, function() flashlight.off() end )</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/flashlight target="_blank">Corona Store</a>.</p>
+<h3>2. Vibrator</h3>
+<p>By <a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio</a></p>
+<p>The Vibrator plugin provides you a fine control over vibration ability of Android devices. iOS devices, unfortunately, lack such customization.</p>
+<p></p><pre class="crayon-plain-tag">local vibrator = require('plugin.vibrator')
+
+...
+
+-- Vibrate for a second
+vibrator.vibrate(1000)
+
+-- Wait for 100ms, vibrate for 500ms, turn off for 200ms, vibrate for 250ms. Repeat.
+vibrator.vibrate({100, 500,  200, 250}, 1)</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/vibrator target="_blank">Corona Store</a>.</p>
+<h3>3. Text to Speech</h3>
+<p>By <a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio</a></p>
+<p>The Text-To-Speech plugin enables your applications on Android and iOS to speak various text in various languages. You can control pitch, rate and volume.</p>
+<p></p><pre class="crayon-plain-tag">local texttospeech = require('plugin.texttospeech')
+texttospeech.speak( 'Hello, Corona!', {  
+    language = 'en-US',
+    pitch = 0.8,
+    rate = 0.6,
+    volume = 0.9
+} )</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/text-speech target="_blank">Corona Store</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/15/corona-store-flashlights-vibration-and-text-to-speech/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Corona Store: Toast Notifications and Lua Utilities</title>
+		<link>/blog/2015/09/02/corona-store-toast-notifications-and-lua-utilities/</link>
+		<comments>/blog/2015/09/02/corona-store-toast-notifications-and-lua-utilities/#comments</comments>
+		<pubDate>Wed, 02 Sep 2015 22:57:26 +0000</pubDate>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+
+		<guid isPermaLink="false">/?p=63938</guid>
+		<description><![CDATA[We have a few exciting new plugins available on the Corona Store: Spiral Code Studio returns to bring us Toast-style notifications, and Xibalba Studios brings two new utilities, written in Lua. Please visit the store to activate plugins, or to submit a plugin yourself. 1. Toast Notifications By Spiral Code Studio Toasts are messages displayed to the user for a brief time. You can now use them on Android and iOS, thanks to this plugin. Using it is quite simple: [crayon-5f8e0047624f9280065518/] Check it out on the Corona Store. 2. MWC Random Number Generator By Xibalba Studios This is a simple,...]]></description>
+				<content:encoded><![CDATA[<p><em>We have a few exciting new plugins available on the <a href=https://store.coronalabs.com/>Corona Store</a>: Spiral Code Studio returns to bring us Toast-style notifications, and Xibalba Studios brings two new utilities, written in Lua.</em></p>
+<p><em>Please <a href=https://store.coronalabs.com>visit/ the store</a> to activate plugins, or to submit a plugin yourself.</em></p>
+<hr />
+<h3>1. Toast Notifications</h3>
+<p>By <a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio</a></p>
+<p>Toasts are messages displayed to the user for a brief time. You can now use them on Android and iOS, thanks to this plugin.</p>
+<p>Using it is quite simple:</p><pre class="crayon-plain-tag">local toast = require('plugin.toast')
+toast.show('Non-intrusive notification message!')</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/toast target="_blank">Corona Store</a>.</p>
+<h3>2. MWC Random Number Generator</h3>
+<p>By <a href=http://www.xibalbastudios.com/ target="_blank">Xibalba Studios</a></p>
+<p>This is a simple, lightweight random number generator, adapted to Lua from some code by the late George Marsaglia (who maintained the famed Diehard test suite, for assessing various random number generators properties).</p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/mwc-random-number-generator target="_blank">Corona Store</a>.</p>
+<h3>3. Stable Array</h3>
+<p>By <a href=http://www.xibalbastudios.com/ target="_blank">Xibalba Studios</a></p>
+<p>This is a data structure much like a stock Lua array, except that removing objects doesn&#8217;t entail moving other objects, neither by shifting them down nor backfilling the liberated slot. Doing this naively in Lua would lead to holes, of course, such that the # operator becomes unreliable, to say nothing of ipairs() no longer iterating all elements, in general.</p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/stable-array target="_blank">Corona Store</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/02/corona-store-toast-notifications-and-lua-utilities/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Corona Store: Twitter and QR Scanner</title>
+		<link>/blog/2015/08/12/corona-store-twitter-and-qr-scanner/</link>
+		<comments>/blog/2015/08/12/corona-store-twitter-and-qr-scanner/#comments</comments>
+		<pubDate>Thu, 13 Aug 2015 00:50:40 +0000</pubDate>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+
+		<guid isPermaLink="false">/?p=63730</guid>
+		<description><![CDATA[We have two exciting new plugins available on the Corona Store: A versatile Twitter plugin by Jason Schroeder, and a QR code and barcode reader from Spiral Code Studio. Please visit the store to activate plugins, or to submit a plugin yourself. 1. Twitter By Jason Schroeder Created purely in Lua, this plugin leverages Twitter&#8217;s powerful web APIs to allow Corona users to access Twitter. You can quickly and easily let users log in, display their profile image, send tweets, and much more. Because this plugin is written in pure Lua, it is supported on all platforms. [crayon-5f8e004763173276271050/] Check it...]]></description>
+				<content:encoded><![CDATA[<p><em>We have two exciting new plugins available on the <a href=https://store.coronalabs.com/>Corona Store</a>: A versatile Twitter plugin by Jason Schroeder, and a QR code and barcode reader from Spiral Code Studio.</em></p>
+<p><em>Please <a href=https://store.coronalabs.com>visit/ the store</a> to activate plugins, or to submit a plugin yourself.</em></p>
+<hr />
+<h3>1. Twitter</h3>
+<p>By Jason Schroeder</p>
+<p><iframe width="1060" height="795" src="https://www.youtube.com/embed/Eg7N_f1BoTQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p><a href=/blog/2015/05/22/writing-plugins-in-pure-lua/ target="_blank">Created purely in Lua</a>, this plugin leverages Twitter&#8217;s powerful web APIs to allow Corona users to access Twitter. You can quickly and easily let users log in, display their profile image, send tweets, and much more. Because this plugin is written in pure Lua, it is supported on all platforms.</p>
+<p></p><pre class="crayon-plain-tag">local twitter = require &quot;plugin.twitter&quot;
+twitter.init(&quot;API_KEY&quot;, &quot;API_SECRET&quot;) -- Configure me!
+twitter.tweet(&quot;I used @schroederapps Twitter plugin for #CoronaSDK to tweet this from my app! http://twitter.plugin.jasonschroeder.com&quot;)/</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/twitter target="_blank">Corona Store</a>.</p>
+<h3>2. QR Scanner</h3>
+<p>By Spiral Code Studio</p>
+<p><a href=/wordpress/wp-content/uploads/2015/08/qrcode.30725623.png><img src=/wordpress/wp-content/uploads/2015/08/qrcode.30725623.png alt="qrcode.30725623" width="200" height="200" class="alignnone size-full wp-image-63733" /></a></p>
+<p>A <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/3582301--plugin-qr-barcode-scanner>much requested</a> feature is now available, thanks to Spiral Code Studio. With only a few lines of Lua, your apps can now read QR codes and barcodes! This plugin is available for Android and iOS.</p>
+<p></p><pre class="crayon-plain-tag">local qrscanner = require('plugin.qrscanner')
+
+local function listener(message)
+	print('QR Code message: ' .. tostring(message))
+end
+
+qrscanner.show(listener)</pre><p></p>
+<p>Check it out on the <a href=https://store.coronalabs.com/plugin/qr-scanner target="_blank">Corona Store</a>.</p>
+<hr />
+<p><em>Do you want to <a href=/blog/2015/05/22/writing-plugins-in-pure-lua/>turn your lua module or custom shaders into a plugin</a>, to share with others? Do you have a plugin created with Enterprise that you want to distribute? <a href=https://store.coronalabs.com/corona-store-application>Submit your plugin to the Corona Store</a>!</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/08/12/corona-store-twitter-and-qr-scanner/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

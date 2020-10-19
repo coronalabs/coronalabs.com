@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #136 &#8211; Starting a New Memory Match Game Development Series</title>
+	<atom:link href="/blog/coronageek/corona-geek-136/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-136/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Mike Kelly</title>
+		<link>/blog/coronageek/corona-geek-136/#comment-5759</link>
+		<dc:creator><![CDATA[Mike Kelly]]></dc:creator>
+		<pubDate>Sat, 31 Oct 2015 01:42:39 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62024#comment-5759</guid>
+		<description><![CDATA[hey Brian...!]]></description>
+		<content:encoded><![CDATA[<p>hey Brian&#8230;!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mike Kelly</title>
+		<link>/blog/coronageek/corona-geek-136/#comment-5758</link>
+		<dc:creator><![CDATA[Mike Kelly]]></dc:creator>
+		<pubDate>Sat, 31 Oct 2015 01:41:46 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62024#comment-5758</guid>
+		<description><![CDATA[this error also shows up at the end of your file:
+ ***** WARNING! require( &#039;CoronaLibrary&#039; ) - does not exit.  Check case of file.
+Oct 30 08:40:12.670 ***** WARNING! require( &#039;string&#039; ) - does not exit.  Check case of file.
+Oct 30 08:40:12.670 ***** WARNING! require( &#039;math&#039; ) - does not exit.  Check case of file.
+Oct 30 08:40:12.689 &#062;&#062;&#062;&#062;&#062;&#062;&#062;&#062; RGEasySocial: Other
+Oct 30 08:40:12.689 ***** WARNING! require( &#039;audio&#039; ) - does not exit.  Check case of file.
+again the game plays perfectly well!]]></description>
+		<content:encoded><![CDATA[<p>this error also shows up at the end of your file:<br />
+ ***** WARNING! require( &#8216;CoronaLibrary&#8217; ) &#8211; does not exit.  Check case of file.<br />
+Oct 30 08:40:12.670 ***** WARNING! require( &#8216;string&#8217; ) &#8211; does not exit.  Check case of file.<br />
+Oct 30 08:40:12.670 ***** WARNING! require( &#8216;math&#8217; ) &#8211; does not exit.  Check case of file.<br />
+Oct 30 08:40:12.689 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; RGEasySocial: Other<br />
+Oct 30 08:40:12.689 ***** WARNING! require( &#8216;audio&#8217; ) &#8211; does not exit.  Check case of file.<br />
+again the game plays perfectly well!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mike Kelly</title>
+		<link>/blog/coronageek/corona-geek-136/#comment-5757</link>
+		<dc:creator><![CDATA[Mike Kelly]]></dc:creator>
+		<pubDate>Sat, 31 Oct 2015 01:38:09 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62024#comment-5757</guid>
+		<description><![CDATA[first off, thanks for this really cool sharing of info! I&#039;m adapting the memory game you made, and although it works perfectly and builds successfully, I&#039;m getting: ERROR: The resource file (ssk/interfaces) could not be found at case-sensitive path (/
+and WARNING: Cannot create path for resource file &#039;ssk/interfaces&#039;. File does not exist.
+for pretty much every folder in the ask folder whenever the game starts up (on Command R for example). I tested it with your original standalone, and I get the same errors. I tried moving the folder, and the new path doesn&#039;t help. 
+the game even works if I capitalize SSK although it generates more error messages. I tried repairing Permissions on my Mac also.
+this is the complete path, and the folder is on the desktop with all folders intact from your standalone: ERROR: The resource file (ssk/extensions) could not be found at case-sensitive path (/Users/mikelly321/Desktop/StewSTEM/ssk/extensions). curious if the happens when you load your game in. thanks again!]]></description>
+		<content:encoded><![CDATA[<p>first off, thanks for this really cool sharing of info! I&#8217;m adapting the memory game you made, and although it works perfectly and builds successfully, I&#8217;m getting: ERROR: The resource file (ssk/interfaces) could not be found at case-sensitive path (/<br />
+and WARNING: Cannot create path for resource file &#8216;ssk/interfaces&#8217;. File does not exist.<br />
+for pretty much every folder in the ask folder whenever the game starts up (on Command R for example). I tested it with your original standalone, and I get the same errors. I tried moving the folder, and the new path doesn&#8217;t help.<br />
+the game even works if I capitalize SSK although it generates more error messages. I tried repairing Permissions on my Mac also.<br />
+this is the complete path, and the folder is on the desktop with all folders intact from your standalone: ERROR: The resource file (ssk/extensions) could not be found at case-sensitive path (/Users/mikelly321/Desktop/StewSTEM/ssk/extensions). curious if the happens when you load your game in. thanks again!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

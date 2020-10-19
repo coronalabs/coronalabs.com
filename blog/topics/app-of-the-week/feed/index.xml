@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mobile App of the Week &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/app-of-the-week/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Mobile App of the Week &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured Game: Henry the Cloud</title>
+		<link>/blog/2016/10/06/featured-game-henry-the-cloud/</link>
+		<pubDate>Thu, 06 Oct 2016 22:00:37 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=68361</guid>
+		<description><![CDATA[Think you can control the weather? Play <em>Henry the Cloud</em>, a new featured game from Amsterdam-based Dual Cortex Gaming, and see what a lean three-person team can create using Corona!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-68364" style="margin: 15px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/10/LOGO_BG_small-300x111.png" alt="logo_bg_small" width="202" height="75" /></p>
+<p>While the established game genres and game mechanics may seem consistently pre-defined, it&#8217;s always fun to find a game that adds in some creative twists. <em><a href=https://www.henrythecloud.com/ target="_blank">Henry the Cloud</a></em> is a well-grounded game from <a href=http://dualcortexgaming.com/ target="_blank">Dual Cortex Gaming</a> that plays exceptionally well while keeping your head in the clouds.</p>
+<p>As a friendly little cloud named Henry, your job is to navigate through obstacle-filled skies, seeing just how far you can travel, while gathering up coins and power-ups along the way. Helpful friends join you on your journey and you can unlock equipment and combine them to customize Henry and his friends.</p>
+<p>Use swiping actions to power the wind, you can steer Henry up and down to avoid the obstacles. Keep your eyes out for mountain peaks, random pelicans, tree tops, and angry clouds, while looking ahead for what&#8217;s constantly coming next.</p>
+<p><em>Henry the Cloud</em> was released on September 21 and it climbed to the #15 spot in <a href=http://toucharcade.com/2016/09/02/the-charming-henry-the-cloud-is-releasing-september-15th/ target="_blank">TouchArcade&#8217;s Hottest Games</a> within 24 hours of release.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/hqS-GCpCixc" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>As Dual Cortex Gaming&#8217;s first game release, <em>Henry the Cloud</em> implements many of Corona&#8217;s features, from in-app purchases to Facebook to leaderboards. The lean three-person team is based in Amsterdam, Netherlands and is made up of brothers Nick and Brent van der Meulen, along with Xander Horjus.</p>
+<p>Watch the <a href=/blog/coronageek/amsterdam-based-dual-cortex-gaming-builds-app-to-control-the-wind/>podcast interview</a> from back in April where Xander (Technical Engineer) and Nick (Art &amp; Design) shared insights about their collaborative process and game design philosophy.</p>
+<p><img class="alignnone size-large wp-image-68362" src="/wordpress/wp-content/uploads/2016/10/press_gameplay_04-1024x576.jpg" alt="press_gameplay_04" width="960" height="540" /></p>
+<p><em>Henry the Cloud</em> is available for free on the <a href=https://itunes.apple.com/us/app/henry-the-cloud/id1113077216?l=nl&mt=8 target="_blank">App Store</a>, <a href=https://play.google.com/store/apps/details?id=com.dualcortexgaming.henrythecloud target="_blank">Google Play</a>, and <a href=https://www.amazon.com/Dual-Cortex-Gaming-Henry-Cloud/dp/B01GSNTD28 target="_blank">Amazon Appstore</a>. Check out this amazing Corona-built game and drop by the <a href=http://forums.coronalabs.com/ target="_blank">Corona Forums</a> to show your support to the team.</p>
+<p><a href=https://itunes.apple.com/us/app/henry-the-cloud/id1113077216?l=nl&mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a>  <a href=https://play.google.com/store/apps/details?id=com.dualcortexgaming.henrythecloud target="_blank"><img class="alignnone size-full wp-image-67966" src="/wordpress/wp-content/uploads/2016/09/badge-google-play.png" alt="badge-google-play" width="50" height="50" srcset="/wordpress/wp-content/uploads/2016/09/badge-google-play.png 200w, /wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a>  <a href=https://www.amazon.com/Dual-Cortex-Gaming-Henry-Cloud/dp/B01GSNTD28 target="_blank"><img class="alignnone size-full wp-image-64608" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: Tower Crush – a great new Corona-built game</title>
+		<link>/blog/2016/05/24/featured-app-tower-crush-a-great-new-corona-built-game/</link>
+		<comments>/blog/2016/05/24/featured-app-tower-crush-a-great-new-corona-built-game/#comments</comments>
+		<pubDate>Tue, 24 May 2016 21:12:05 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=66903</guid>
+		<description><![CDATA[This week's featured app is a great example of what you can build with Corona. Learn about <em>Tower Crush</em> and see if it inspires you to create something awesome.
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66902" style="margin: 0px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/05/towercrushicon-150x150.png" alt="towercrushicon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/05/towercrushicon-150x150.png 150w, /wordpress/wp-content/uploads/2016/05/towercrushicon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />The great games just keep on coming! This week we want to let you know about <em><a href=http://www.towercrush.com/ target="_blank">Tower Crush</a></em>, an attractive, well-thought-out, and full-featured game from Cleverson Schmidt<span class="comment-text ">&#8216;s one-man indie studio <em>Impossible Apps</em></span>. Launched on May 18, 2016, it&#8217;s a bit early to have earned any accolades, but it&#8217;s an amazing example of what can be done in a Corona-built app.</p>
+<p><em>Tower Crush</em> features fantastic graphics and audio. The game supports multiple languages and social networking features. It uses the physics engine, voice-overs, a shop to manage upgrades, player vs. player support, rewarded video ads, leaderboards, and in-app purchases, all in a well-polished package.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/3URB5t-wEHA" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Despite balancing a day job along with a wife and child, Schmidt&#8217;s endeavor came into being. 56 Lua files and 750 images later, Tower Crush is now a reality. Schmidt estimates that 90% of the code is cross-platform and the other 10% around implementing leaderboards and in-app purchases across three platforms.</p>
+<p><img class="alignnone size-large wp-image-66901" src="/wordpress/wp-content/uploads/2016/05/towercurshss-1024x576.jpg" alt="towercurshss" width="960" height="540" /></p>
+<p>Schmidt has written up a <a href=http://www.towercrush.com/?#!The-story-behind-the-game/t47kb/573fb3290cf293e8d8d8a9f9 target="_blank">blog post</a> describing how <em>Tower Crush</em> came to be. He goes into great detail on his thought process about how to monetize the app.</p>
+<p>The game is free with in-app purchases from Apple iTunes, Google Play and Amazon.</p>
+<p><a href=https://itunes.apple.com/us/app/tower-crush/id695198278 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.impossibleapps.towercrush target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=http://www.amazon.com/Impossible-Apps-Tower-Crush/dp/B01FQ8KXX4 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+<p>With <em>Tower Crush</em>, Schmidt has built a game to be proud of. It&#8217;s a great example of what a little bit of creativity and a powerful engine like Corona can build.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/24/featured-app-tower-crush-a-great-new-corona-built-game/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Featured App: Alpha Omega &#8211; A game of jumbled words</title>
+		<link>/blog/2016/05/06/featured-app-alpha-omega-a-game-of-jumbled-up-words/</link>
+		<pubDate>Fri, 06 May 2016 18:43:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=66659</guid>
+		<description><![CDATA[Can an Internet meme be turned into a successful, compelling game built with Corona? For BorderLeap, the answer was "yes!". Read further to learn about "Alpha Omega."]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66661" src="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png" alt="alpha-omegaIcon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/alpha-omegaIcon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />As a programmer, spelling isn&#8217;t my greatest strength, but I&#8217;m one of those people who can look at a jumbled-up word and actually read it. In fact, many people can decipher words as long as the first and last letters are correct and it&#8217;s the proper length.</p>
+<p>For example, can you read this?</p>
+<p style="padding-left: 30px;">&#8220;<em>it deosn&#8217;t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae.</em>&#8220;</p>
+<p>What started as an urban legend and Internet meme seems to actually have some facts and a term behind it: <a href=https://en.wikipedia.org/wiki/Typoglycemia target="_blank">typoglycemia</a>.<b> </b></p>
+<p>Leave it to an enterprising game shop to turn this phenomenon into a compelling game. <a href=http://borderleap.com/ target="_blank">BorderLeap</a>, a small studio founded by Nate Dicken, took this concept and put together <a href=http://playalphaomega.com/ target="_blank"><em>Alpha Omega</em></a>. Originally released for the &#8220;small screen&#8221; in April 2014, BorderLeap recently released the game for OS X desktop.</p>
+<p>Since then, <em>Alpha Omega</em> has reached the #1 featured position across 150+ countries. It has also been the #1 paid &#8220;Puzzle&#8221; and #1 paid &#8220;Word&#8221; game, and it currently boasts accolades as the #2 overall paid game and #3 grossing game in the Mac App Store. As if that&#8217;s not enough, Apple featured <em>Alpha Omega</em> with a large banner in the &#8220;Word&#8221; game subcategory and also featured it in the &#8220;All Time Greats&#8221; in the same category.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fuvSOzmFgzw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Want to see what the buzz is all about and test your skills at unscrambling jumbled words? <em>Alpha Omega</em> is available for <a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega>Google Play</a>, and <a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12>OS X</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p>What kind of success can you achieve? Download <a href=https://www.coronalabs.com/ target="_blank">Corona SDK</a> and get started today!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: The Pedestal &#8211; a unique take on a jumping game</title>
+		<link>/blog/2016/04/14/featured-app-the-pedestal-a-unique-take-on-a-jumping-game/</link>
+		<pubDate>Thu, 14 Apr 2016 13:52:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[jump]]></category>
+		<category><![CDATA[ninja]]></category>
+
+		<guid isPermaLink="false">/?p=66464</guid>
+		<description><![CDATA[Learn about the Pedestal, a new minimalist game from Daniel Ivanov in this featured app post.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66469 size-medium" src="/wordpress/wp-content/uploads/2016/04/pedestal01-169x300.jpg" alt="pedestal01" width="169" height="300" />The Pedestal is a fun game based on a minimalist approach. In the game, you play the ninja Akira who has been trapped on a desolate pedestal. Your goal is to survive by jumping to avoid shurikens being thrown at you and avoid being hit by the scythes swinging above you. The game was inspired by Eastern Asian culture and the stories of Edgar Allan Poe.</p>
+<p>The game was recently released by indie developer Daniel Ivanov to the Apple App Store. It contains stunning, eerie sound effects alongside appealing art, which creates an enjoyable atmosphere along with challenging game play. The game takes advantage of Corona SDK&#8217;s physics and particle effect libraries to give the game it&#8217;s punch.</p>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/mstvKwXJ5TQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>You can download it from the Apple App Store for $0.99.</p>
+<p><a href=https://itunes.apple.com/us/app/the-pedestal/id1093740987?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-66270 size-thumbnail" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+<p>What can you do with Corona SDK? <a href=/ target="_blank">Download it for Free</a> and see!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Windsquire</title>
+		<link>/blog/2013/12/02/app-of-the-week-windsquire/</link>
+		<comments>/blog/2013/12/02/app-of-the-week-windsquire/#comments</comments>
+		<pubDate>Tue, 03 Dec 2013 00:56:03 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=52653</guid>
+		<description><![CDATA[Windsquire is an addicting game that combines skill-based racing and maze-like obstacles. Created by Baltimore-based <a href="http://www.mindgrub.com/">Mindgrub</a>, the storyline follows a squire who ventures on a quest to amass treasure. When the squire tumbles onto mystic runes, he becomes infused with the ability to fly by controlling the wind. His mission: to find treasure while escaping a ferocious dragon.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-52654" style="margin: 0px 20px 10px 0px;" alt="Windsquire icon" src="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-26-at-9.57.56-AM.png" srcset="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-26-at-9.57.56-AM.png 182w, /wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-26-at-9.57.56-AM-150x150.png 150w" sizes="(max-width: 182px) 100vw, 182px" /><img class="alignright size-full wp-image-52979" style="margin: 0px 2px 10px 20px;" alt="Windsquire screenshot" src="/wordpress/wp-content/uploads/2013/12/screen568x568-1-e1386013540947.jpeg" />Windsquire is an addicting game that combines skill-based racing and maze-like obstacles. Created by Baltimore-based <a href=http://www.mindgrub.com/>Mindgrub</a>, the storyline follows a squire who ventures on a quest to amass treasure. When the squire tumbles onto mystic runes, he becomes infused with the ability to fly by controlling the wind. His mission: to find treasure while escaping a ferocious dragon.</p>
+<p>Windsquire was originally conceived to be a puzzle game involving mazes and a floating balloon, but game director Mark Mirchandani told us that &#8220;Windsquire quickly evolved into a fantastically whimsical and intense experience involving dragons, magical powers, and weapons used to fight through the five unique worlds within Dragon Castle.&#8221; After nine months of development, the game evolved into a unique and creative title, now available for iOS and Google Play.</p>
+<p>Download Windquire from <a href=https://itunes.apple.com/ca/app/windsquire-race-from-dragon/id722392292?mt=8>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.mindgrub.games.windsquire>Google Play</a> and begin your adventure as a brave young squire!</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/FFg85GjRsVw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/12/02/app-of-the-week-windsquire/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: This Monster &#8211; Creatures that Love Color</title>
+		<link>/blog/2013/11/25/app-of-the-week-this-monster-creatures-that-love-color/</link>
+		<comments>/blog/2013/11/25/app-of-the-week-this-monster-creatures-that-love-color/#comments</comments>
+		<pubDate>Tue, 26 Nov 2013 02:31:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=52514</guid>
+		<description><![CDATA[Combining the power of <a href="http://www.coronalabs.com/products/corona-sdk">Corona SDK</a> and <a href="http://www.Kwiksher.com/">Kwik</a>, a previous art director and graphic designer at Kate Spade created <a href="http://thismonster.info/">This Monster</a> for the enjoyment of young players. This Monster is a homage to hand-made, textured art, offering children a fun, safe environment to explore their creativity on the iPad.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-52515" style="margin: 0px 20px 10px 0px;" alt="This Monster icon" src="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-25-at-12.27.37-PM.png" />Combining the power of <a href=http://www.coronalabs.com/products/corona-sdk>Corona SDK</a> and <a href=http://www.Kwiksher.com>Kwik/</a>, a previous art director and graphic designer at Kate Spade created <a href=http://thismonster.info/>This Monster</a> for the enjoyment of young players. This Monster is a homage to hand-made, textured art, offering children a fun, safe environment to explore their creativity on the iPad.</p>
+<p><img class="alignright size-full wp-image-52518" style="margin: 0px 0px 10px 20px;" alt="This Monster screenshot" src="/wordpress/wp-content/uploads/2013/11/This-Monster-.jpeg" />Nearly every element of the app incorporates charm and a small lesson for young players. For example, by feeding a monster that enjoys eating &#8220;colors,&#8221; children learn about different hues like turquoise and fuchsia. There&#8217;s also no shortage of unique characters, ranging from a polka-dot painter to a musical mermaid. After spending a bit of time with This Monster, I found the most charming element to be the app&#8217;s incorporation of &#8220;visual textures&#8221; — puff balls, cloth fabric, construction paper, and more — all of which add a layer of &#8220;realness&#8221; rarely seen in mobile content.</p>
+<p>This special touch was even recognized by <a href=http://www.fastcodesign.com/3021126/wanted/former-kate-spade-art-director-develops-an-adorbs-childrens-book-app>Fast Company</a> as writer Shonquis Moreno noted that, &#8220;It&#8217;s rare to see and &#8216;touch&#8217; things on the iPad screen that evoke the texture, color, and unpolished feel of real life.&#8221; To experience the app for yourself, download <a href=https://itunes.apple.com/us/app/this-monster-creatures-that/id675399364?mt=8>This Monster</a> from iTunes for $1.99.</p>
+<p><iframe src="//player.vimeo.com/video/71056125" height="281" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href=http://vimeo.com/71056125>this monster</a> from <a href=http://vimeo.com/user19756274>super circle</a> on <a href=https://vimeo.com>Vimeo/</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/25/app-of-the-week-this-monster-creatures-that-love-color/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Baby Turkey Trouble</title>
+		<link>/blog/2013/11/18/app-of-the-week-baby-turkey-trouble/</link>
+		<pubDate>Mon, 18 Nov 2013 23:12:20 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=51862</guid>
+		<description><![CDATA[To bring you a bit of Thanksgiving cheer, we've selected an App of the Week that combines quirky baby turkeys with the popular match-3 game genre. As the official app of the <a href="http://www.freebirdsmovie.com/">Free Birds</a> movie, Baby Turkey Trouble is a family-friendly holiday game that stars Tuff Puffs, adorable baby turkeys from the feature film.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-51863" style="margin: 2px 20px 20px 0px;" alt="Baby Turkey Trouble" src="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-18-at-10.45.51-AM.png" />To bring you a bit of Thanksgiving cheer, we&#8217;ve selected an App of the Week that combines quirky baby turkeys with the popular match-3 game genre. As the official app of the <a href=http://www.freebirdsmovie.com/>Free Birds</a> movie, Baby Turkey Trouble is a family-friendly holiday game that stars Tuff Puffs, adorable baby turkeys from the feature film.</p>
+<p><img class="alignright size-medium wp-image-51864" style="margin: 2px 2px 10px 20px;" alt="Baby Turkey Trouble Screenshot" src="/wordpress/wp-content/uploads/2013/11/Baby-Turkey-Trouble-Screenshot-169x300.jpeg" />When these helpless baby birds get stuck in an oak tree, they need your help to make it to safety. Use your finger to swap the location of birds on a grid and create matches of three or more to score points and unlock power-ups. The more matches you create, the higher your score and the more silly sound effects you&#8217;ll enjoy.</p>
+<p>By far, the most endearing element of the game was Reel FX&#8217;s incorporation of characters&#8217; sound snippets from the movie, voiced by Owen Wilson, Woody Harrelson, George Takei and Amy Poehler. If you&#8217;re curious to learn more, you can read about the making of Baby Turkey Trouble in last week&#8217;s guest piece by Dan Ferguson, head of the digital/interactive group at Reel FX.</p>
+<p>Baby Turkey Trouble is a free game, available on <a href=https://itunes.apple.com/app/id739560013>iTunes</a>, <a href=https://play.google.com/store/apps/details?id=com.reelfx.btt&hl=en>Google Play</a> and the <a href=http://www.amazon.com/gp/product/B00GM3ITMA>Amazon Appstore</a>. Download it today and check out the film, now in theaters.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/r-RnGP63rpM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Perplexicon</title>
+		<link>/blog/2013/11/11/app-of-the-week-perplexicon/</link>
+		<comments>/blog/2013/11/11/app-of-the-week-perplexicon/#comments</comments>
+		<pubDate>Mon, 11 Nov 2013 21:48:42 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[word game]]></category>
+
+		<guid isPermaLink="false">/?p=51319</guid>
+		<description><![CDATA[When brainstorming ideas for his latest word game, Justin Giles of <a href="http://www.greenriftsoftware.com/">Greenrift Software</a> wanted to create a game that challenged the status quo of the genre. Inspired by classics such as Boggle and Scrabble, Justin launched <a href="https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&#38;mt=8">Perplexicon</a>, presenting players with a 7×7 grid sparsely populated with a mix of letter tiles, required tiles, empty spaces, and other elements for novel gameplay.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-51320" style="margin: 2px 20px 10px 0px;" alt="Perplexicon" src="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-08-at-2.29.09-PM.png" />When brainstorming ideas for his latest word game, Justin Giles of <a href=http://www.greenriftsoftware.com/>Greenrift Software</a> wanted to create a game that challenged the status quo of the genre. Inspired by classics such as Boggle and Scrabble, Justin launched <a href=https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&mt=8>Perplexicon</a>, presenting players with a 7×7 grid sparsely populated with a mix of letter tiles, required tiles, empty spaces, and other elements for novel gameplay.</p>
+<p><img class="alignright  wp-image-51321" style="margin: 2px 2px 10px 20px;" alt="Perplexicon screenshot" src="/wordpress/wp-content/uploads/2013/11/Perplexicon-screenshot.jpeg" width="256" height="454" />In Perplexicon, you must race against the clock to place tiles on the grid and drag them around to create words. Things get more complicated as &#8220;viral&#8221; tiles show up and consume other tiles, and once the board is filled or time runs out, the game is over. Featuring more than 100 levels, players can enjoy the gradual increase in difficulty and hours of word-building fun.</p>
+<p>When developing Perplexicon, Justin relied on <a href=/resources/3rd-party-tools-and-services/>Particle Candy</a> for the particle effects, along with various code packages from <a href=http://www.glitchgames.co.uk/>Glitch Games</a> to help with sounds and data storage. He also implemented the Carrot plugin for Facebook integration and used the store library for in-app purchases via iTunes, Google Play, and Amazon.</p>
+<p>When asked about sharing tips with fellow developers, Justin noted that, “For app development, the odds are against us — your app may succeed and it may not. If you love making games, just roll with the punches and keep producing them. Your games will get better, your skills will improve, and eventually you might just make the next big hit!”</p>
+<p>If you enjoy a good word challenge, download Perplexicon for free from the app markets listed below.</p>
+<p>iTunes: <a href=https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&mt=8>itunes.apple.com/us/app/perplexicon/id599310368?ls=1&amp;mt=8</a><br />
+Google Play: <a href=https://play.google.com/store/apps/details?id=com.greenrift.perplexicon>play.google.com/store/apps/details?id=com.greenrift.perplexicon</a><br />
+Amazon Appstore: <a href=http://www.amazon.com/Greenrift-Software-LLC-Perplexicon/dp/B00FXISJDO>amazon.com/Greenrift-Software-LLC-Perplexicon/dp/B00FXISJDO</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/11/app-of-the-week-perplexicon/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elevator Joe</title>
+		<link>/blog/2013/11/04/app-of-the-week-elevator-joe/</link>
+		<comments>/blog/2013/11/04/app-of-the-week-elevator-joe/#comments</comments>
+		<pubDate>Mon, 04 Nov 2013 22:56:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=50949</guid>
+		<description><![CDATA[Riding on the coattails of <a href="http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/">Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, developer Erick Garayblas partnered with graphic artist Ryan Sumo to launch <a href="https://itunes.apple.com/us/app/elevator-joe/id646358937&#038;">Elevator Joe</a> in September 2013.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50951" style="margin-right: 20px; margin-left: 0px;" alt="Elevator Joe screenshot" src="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png" srcset="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png 184w, /wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM-150x150.png 150w" sizes="(max-width: 184px) 100vw, 184px" />Since childhood, Erick Garayblas has been fascinated with elevators. Stemming from the intrigue of how the machines coordinate with one another to fetch passengers on the proper floor at the requested time, Erick decided to create an elevator-based game. Riding on the coattails of <a href=http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/>Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, Erick partnered with graphic artist Ryan Sumo to launch <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937&>Elevator Joe</a> in September 2013.</p>
+<p><img class="alignright  wp-image-50950" style="margin-left: 20px; margin-top: 2px;" alt="Elevator Joe" src="/wordpress/wp-content/uploads/2013/10/Elevator-Joe.jpeg" width="288" height="511" />Elevator Joe is a time management and elevator simulation game where you have to bring tiny &#8220;Chibizens&#8221; to their destination floors as fast as possible. Along the way, you can upgrade your elevator, work through scenarios, unlock various items, and customize your tower. For every Chibizen you deliver, you receive Chibi Yens that can be used to purchase upgrades such as skill points, a new floor in the tower, and more. However, time is of the essence as Chibizens are a bit impatient and turn bright red when they’ve waited too long.</p>
+<p>The game took Erick and Ryan four months to develop, with Erick focusing on coding and design while Ryan worked on graphics. Erick noted that, &#8220;Corona SDK made it easier for us to prototype, iterate, and improve the game as we moved along.&#8221;</p>
+<p>Download Elevator Joe from <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.kuyimobile.elevatorjoe>Google Play</a> for a free and enjoyable challenge!</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/mE8VF1k6bSY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/04/app-of-the-week-elevator-joe/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Ruffl</title>
+		<link>/blog/2013/10/28/app-of-the-week-ruffl/</link>
+		<comments>/blog/2013/10/28/app-of-the-week-ruffl/#comments</comments>
+		<pubDate>Mon, 28 Oct 2013 19:39:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=50241</guid>
+		<description><![CDATA[<a href="https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8">Ruffl</a> is a real-time restaurant discovery and reservation app for hungry Londoners and travelers. The app boasts partnership with more than 450 London-based restaurants to connect diners with open tables at restaurants nearby.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50242" style="margin: 0px 20px 10px 0px;" alt="Ruffl" src="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM.png" srcset="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM.png 181w, /wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM-150x150.png 150w" sizes="(max-width: 181px) 100vw, 181px" /><a href=https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8>Ruffl</a> is a real-time restaurant discovery and reservation app for hungry Londoners and travelers. The app boasts partnership with more than 450 London-based restaurants to connect diners with open tables at restaurants.</p>
+<p><img class="alignright size-full wp-image-50243" style="margin-left: 25px; margin-top: 4px; margin-right:2px;" alt="Ruffl screenshot" src="/wordpress/wp-content/uploads/2013/10/Ruffl-screenshot.jpeg" />The concept is simple: Ruffl recommends five nearby dining spots with availability, based on the size of your group and the approximate amount you’re willing to spend. Restaurants are motivated to deliver great service and satisfying food, as diners are asked to rate the establishment following the meal. The better a restaurant&#8217;s reviews, the more likely it is to show up in the search shortlist in the app. Diners can also enjoy special offers and perks such as a free glass of wine for booking a reservation, and restauranteurs can fill empty tables by attracting nearby customers.</p>
+<p>Ruffl&#8217;s lead developers &#8211; Jérôme Zattoni and Andrew Mackrodt &#8211; enjoyed a speedy development cycle with <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a> and launched to the App Store on Tuesday, October 22. Co-founder and lead designer Laurence Carver explained, “Retrieving a quick and accurate geolocation is instrumental to Ruffl. Corona provides an easy to use location library which helped speed up our development.” When asked about the team&#8217;s decision to build with Corona Enterprise, Carver noted that the platform allowed him to use native code to interface with Google’s Fused Location Provider. This allows the app to accurately and quickly retrieve a user’s location even when GPS is not available.</p>
+<p>To gear up for launch, Ruffl rounded up $1.6M in funding from industry veterans including David Pritchard, the previous CEO of <a href=http://www.OpenTable.com>OpenTable/ UK</a>, Karen Hanton, founder and previous CEO of <a href=http://www.toptable.co.uk/>toptable</a>, and Mark Ferguson, the son of Sir Alex Ferguson.</p>
+<p>The Ruffl team is hard at work adding more restaurants to the growing list of options. If you&#8217;re a hungry Londoner, head to the App Store and check out <a href=https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8>Ruffl</a> for a refreshing, convenient, and spontaneous dining experience.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/28/app-of-the-week-ruffl/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

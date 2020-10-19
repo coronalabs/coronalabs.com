@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mac &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mac-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>mac &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>FAQ Wednesday: Mac Simulator Updates</title>
+		<link>/blog/2013/01/30/faq-wednesday-mac-simulator-updates/</link>
+		<pubDate>Thu, 31 Jan 2013 03:53:00 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28827</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. This week it's not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /><br />
+It&#8217;s Wednesday and time for another FAQ session. This week it&#8217;s not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.</p>
+<h2>1.  Loading the last project on simulator startup</h2>
+<p>In build #996, a new preference was added to the <strong>Preferences</strong> menu: &#8220;Automatically open last project&#8221;. This is convenient if you want the to reload the project you were working on when you last quit the simulator.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Build_1017_Preferences-300x249.png" alt="Corona Preference Window" class="alignright size-medium wp-image-28831" /></p>
+<h2>2. Reloading the last project</h2>
+<p>Both the Mac and Windows simulators had the ability to &#8220;Relaunch&#8221; the last project using <strong>Cmd R</strong> (<strong>Ctrl R</strong> on Windows), but that didn&#8217;t work in the Mac Simulator when the simulator was first started. As of build #1017, you can now start the simulator and press <strong>Cmd R</strong> to relaunch. You can also set the preference to always relaunch as mentioned in question 1.</p>
+<h2>3. Simulator now continues to run after a build</h2>
+<p>If you have built a project with the Mac Simulator, you no doubt have seen the giant &#8220;iOS spinner&#8221; on top of the device skin as the build was occurring. This continued after the build was done and was there to show you that the simulator was suspended. In build #996 the simulator still suspends the app during the build process, but now continues to run once the build is done. You can suspend the app in the simulator yourself by selecting <strong>Suspend</strong> from the <strong>Hardware</strong> menu or pressing <strong>Cmd downarrow</strong>.</p>
+<h2>4. Unicode characters in asset file names</h2>
+<p>As of build #1017 the Mac Simulator now supports Unicode in asset files names. This applies to image and sound files as well as subfolders. Note: Currently there is an issue using Unicode named files in Windows, which we are looking into.</p>
+<h2>5. Supporting iOS 6.1 builds</h2>
+<p>On January 28, Apple officially released iOS 6.1. We are installing the latest version on our build servers and it should be available in the next couple of days (check the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>Daily Build summary</a> page). For the next few Daily Builds, we will still support building for the existing iOS 6.0 SDK as well as the new 6.1 SDK. Just select the proper <strong>iOS SDK</strong> from the pull-down menu in the build window.</p>
+<p>If you have some ideas on how to improve the simulator or some feature you would like to see added to Corona, please visit the <a href=http://feedback.coronalabs.com>Corona/ Feedback</a> page.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed it and even learned a few things.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

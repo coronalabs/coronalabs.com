@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #119 – Rotating Around A Center Point Using Transitions and Using Coronium Sockets</title>
+	<atom:link href="/blog/coronageek/corona-geek-119/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-119/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Sat</title>
+		<link>/blog/coronageek/corona-geek-119/#comment-5720</link>
+		<dc:creator><![CDATA[Sat]]></dc:creator>
+		<pubDate>Sat, 13 Dec 2014 22:31:50 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60520#comment-5720</guid>
+		<description><![CDATA[Ignore the question, just started looking into coronium.gs :)]]></description>
+		<content:encoded><![CDATA[<p>Ignore the question, just started looking into coronium.gs 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sat</title>
+		<link>/blog/coronageek/corona-geek-119/#comment-5719</link>
+		<dc:creator><![CDATA[Sat]]></dc:creator>
+		<pubDate>Fri, 12 Dec 2014 11:53:30 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60520#comment-5719</guid>
+		<description><![CDATA[This was packed full of great stuff! The rotation transition code is something I&#039;ve been looking for for a while. I wanted to create a camera that would orbit the main character of my game, but I could only get a rigid square as well. I&#039;ll definitely be trying out your code. Thank you!
+
+Excited about using Coronium too, I had no idea it could be so simple to add cloud based functionality. I did have a quick question though...  Chris mentioned broadcasting can be used for chat, could it also be used to broadcast coordinates or moves of users to all players on a multiplayer game or would that be too server intensive?]]></description>
+		<content:encoded><![CDATA[<p>This was packed full of great stuff! The rotation transition code is something I&#8217;ve been looking for for a while. I wanted to create a camera that would orbit the main character of my game, but I could only get a rigid square as well. I&#8217;ll definitely be trying out your code. Thank you!</p>
+<p>Excited about using Coronium too, I had no idea it could be so simple to add cloud based functionality. I did have a quick question though&#8230;  Chris mentioned broadcasting can be used for chat, could it also be used to broadcast coordinates or moves of users to all players on a multiplayer game or would that be too server intensive?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

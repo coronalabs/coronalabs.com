@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tips &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/tips/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>tips &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #137 &#8211; App Development Consulting Tips and Community Questions</title>
+		<link>/blog/coronageek/corona-geek-137/</link>
+		<comments>/blog/coronageek/corona-geek-137/#respond</comments>
+		<pubDate>Mon, 13 Apr 2015 21:49:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[consulting]]></category>
+		<category><![CDATA[tips]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62311</guid>
+		<description><![CDATA[During last week’s Hangout we started a brand new memory matching game development series. This week we answered community questions and shared important consulting tips for anyone considering developing apps on the side for clients.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/tMDOwTPehfk?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During last week’s Hangout we started a brand new <a href=/blog/coronageek/corona-geek-135/>memory matching game development series</a>. We kicked things off with an overview of the finished game and looked at how to create and flip individual card objects.</p>
+<p>In the coming week&#8217;s we&#8217;ll be showing how to programmatically add display objects in a grid, randomly assign images to be displayed, match touched items, and more. Download the <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">project code</a> to follow along as new code is added. </p>
+<p>This week we planned to continue development with a look at how to lay out game pieces (cards) in a grid pattern, but instead we spent half our time answering community questions and the other half discussing consulting tips. We shared great tips for finding projects, working with clients, keeping records, and a lot more.</p>
+<p>So, next week we&#8217;ll finish up our consulting discussion and then we&#8217;ll get back on track with our game development series. Until then, why not play some games for the chance to win a $50 gift card.</p>
+<p><strong>April&#8217;s Geek Games Game &#8211; Let&#8217;s Play!</strong></p>
+<p>For April we are playing Bounce by Ketchapp. Bounce is a cloud jumper with one touch input and randomized obstacles. The scoring for this one might be pretty low, but the high score winner takes all. Download Bounce for <a href=http://j.mp/ios-bounce target="_blank">iOS</a> or <a href=http://bit.ly/bounce-android target="_blank">Android</a>.</p>
+<p>Submit your high score before the May 4th Hangout for a chance to win a $50 gift card. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-136/ target="_blank">Corona Geek #136 &#8211; Starting a New Memory Match Game Development Series</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>App Coding Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Want Coding Help? Talk to Sergey Lerg</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-137/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-137-2015-04-13-consulting-tips-community-questions.mp3" length="83558343" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Guest Post: Tips from a first-time developer</title>
+		<link>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/</link>
+		<comments>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/#comments</comments>
+		<pubDate>Thu, 28 Feb 2013 19:09:32 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[newbie]]></category>
+		<category><![CDATA[tips]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29691</guid>
+		<description><![CDATA[Andrew Kallem is the developer of What the Block?!, a February App of the Week winner. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.]]></description>
+				<content:encoded><![CDATA[<p><em>Andrew Kallem is the developer of What the Block?!, a <a href=http://www.coronalabs.com/blog/2013/02/04/app-of-the-week-what-the-block/>February App of the Week winner</a>. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.</em></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-31-at-4.06.57-PM.png" alt="What the Block icon" class="alignleft size-full wp-image-28859" />My name is Andrew Kallem, and I’m the creator of <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a>, a new puzzle game for iOS that&#8217;s soon coming to Android. Like many members of the Corona community, I’m a first-time developer, so I wanted to share a few tips with others who are working on or about to start their first project.</p>
+<p><strong>Concept and Prototyping</strong></p>
+<p>The first tip: Choose your project carefully! From the beginning, I knew I wanted to make a physics-based puzzle game, but even then, settling on the idea for What the Block?!™ didn’t happen right away.</p>
+<p>First, I coded quick and dirty prototypes of several different ideas. One of the great things about Corona is that you can code a basic prototype in no time. Prototyping not only helps you see which of your ideas are actually fun to play, it also gives you a sense which will be easier or harder to code. It’s something I think all first-time developers should do.</p>
+<p>Second, I knew I wanted to have a lot of puzzles (What the Block?!™ has over 150!), so I focused on ideas where creating them would be relatively easy.  For any project, it’s worth thinking in advance how much content you want to have (puzzles in a puzzle game, levels in a platformer, questions in a trivia game, etc.). Be wary of ideas that will take you a lot of effort just to create the content (let alone the coding!).</p>
+<p><strong>Development</strong></p>
+<p>Once I settled on the idea for What the Block?!™, I started fleshing out the prototype into a fully-fledged game. I learned far too much to write about in a single blog post, but I wanted to share two tips that I think are especially useful.</p>
+<p><em>Designing for multiple screen sizes</em></p>
+<p>Corona makes it easy to deploy to devices with any shape screen using the Dynamic Content Scaling feature. But here’s a tip to make it even easier: try using letterbox scaling and placing all of your visual elements relative to the screen corners, the centers of the screen edges, or the center of the screen. That way, no matter what the shape of the screen, everything is in the right place.</p>
+<p>Here are some screenshots from an iPhone 4, iPhone 5, and iPad 3 illustrating the point. You can see that the sticky notes and photos on the top are placed relative to the corners, the blocks and the other game elements are placed relative to the center of the bottom edge, and the background is placed at the center of the screen (with a large enough image to cover all screen sizes).</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss11-300x201.png" alt="WTB ss1" class="alignnone size-medium wp-image-29698" /> <img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss21-300x201.png" alt="WTB ss2" class="alignnone size-medium wp-image-29700" /></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/wtb-ss3-300x201.png" alt="wtb ss3" class="aligncenter size-medium wp-image-29702" /></p>
+<p><em>Test, test, test!</em></p>
+<p>Be sure to test your game on a real device as soon as you can, and more importantly, don’t just test “normal” play – do some “stress testing” too.  Try touching two buttons at the same time, touching the same button quickly and repeatedly, touching buttons that are supposed to be inactive, using four fingers, changing your device’s orientation back and forth quickly, etc.  Putting your game through the paces like this is a great way to find bugs that you wouldn’t otherwise notice but that your players will probably stumble across!</p>
+<p><strong>Final thoughts</strong></p>
+<p>I’d be happy to talk more about these topics or any other aspects of my development experience, so feel free to reach out to me.</p>
+<p>Meantime, I hope you’ll check out <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a> on the App Store!</p>
+<p><em>Andrew Kallem, aukStudios</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

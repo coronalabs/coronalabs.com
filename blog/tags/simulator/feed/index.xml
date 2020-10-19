@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>simulator &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/simulator/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>simulator &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Upgrading the Corona SDK Simulator</title>
+		<link>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/</link>
+		<comments>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/#comments</comments>
+		<pubDate>Wed, 12 Jun 2013 20:50:44 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[deauthorizing]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=35693</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /></p>
+<p>It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.</p>
+<h2 id="doihavetouninstallcoronasdkwhenupgradingtoanewversion">1. Do I have to uninstall Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t to have uninstall on Mac or Windows. </p>
+<h2 id="doihavetodeauthorizecoronasdkwhenupgradingtoanewversion">2. Do I have to deauthorize Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t have to deauthorize when installing a newer or older version. The only times you need to deauthorize is if you plan to use Corona SDK on another computer and you already have two computers authorized, if you change the email address associated with your Corona SDK license, or if you plan to reinstall the OS on your computer.</p>
+<p>When you upgrade (or downgrade) a version of Corona SDK, the newly installed version uses the account settings already stored on your computer (either in the Windows&#8217; registry or Mac&#8217;s plist file).</p>
+<h2 id="whendoineedtocontactcoronalabssupporttodeauthorizethemachinesonmyaccount">3. When do I need to contact Corona Labs&#8217; support to deauthorize the machines on my account?</h2>
+<p>There are very few times when you need to contact Corona Labs to deauthorize the machines on your account. If you forgot to deauthorize your machine, please contact us if you have changed the email address associated with your account or if you have reinstalled the operating system on your computer. Remember: to avoid these issues, don&#8217;t forget to deauthorize your computer(s) first.</p>
+<h2 id="canihavemorethanoneversionofcoronasdkinstalled">4. Can I have more than one version of Corona SDK installed?</h2>
+<p>The answer depends on the platform you&#8217;re using.</p>
+<p>On Mac, you can have many Corona SDK builds installed at the same time. The trick is to rename the <strong>CoronaSDK</strong> folder in the Applications folder after installing a new version. On my machine, I append the build number to the end of the folder name to keep them separate. For the last public build #1137, I would rename <strong>CoronaSDK</strong> to <strong>CoronaSDK&#8211;1137</strong>.</p>
+<p>For Windows, you can only have one version of Corona SDK installed at a time. You don&#8217;t have to uninstall when installing a newer version, but if you need to install an older build, you have to uninstall first.</p>
+<h2 id="faqtipoftheweek">5. FAQ Tip of the Week</h2>
+<p>The last public release (1137) added lots of bug fixes and some much needed features (<a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1137>Build 2013.1137 Release Notes</a>). One of the features you may have missed is the ability to retrieve the app name (using <strong>system.getInfo</strong>). You may wonder what advantage there is to retrieving the app name. Here&#8217;s one example.</p>
+<p>When debugging an app on a device, I like to enable the Runtime popup message feature (setting <strong>showRuntimeErrors = true</strong>). I want the popup for my debug builds but not when I submit it to the App Store. This involves modifying my project files and having to remember to remove the code when I&#8217;m ready to release the app.</p>
+<p>My solution is to add some code to the <strong>config.lua</strong> file to control the state of <strong>showRuntimeErrors</strong> without having to modify my project files.</p><pre class="crayon-plain-tag">application =
+{
+    showRuntimeErrors = ( string.find( system.getInfo( &amp;#8220;appName&amp;#8221; ), &amp;#8220;debug&amp;#8221; ) and true ),
+    ...
+}</pre><p></p>
+<p>The above code sets the <strong>showRuntimeErrors</strong> key <strong>true</strong> or <strong>nil</strong> depending on the app name. If the app name contains &#8220;debug&#8221; anywhere in the name, <strong>showRuntimeErrors</strong> is set to <strong>true</strong>. If the string is not present in the name, it&#8217;s set to <strong>nil</strong>. So if my app is called <strong>BubbleJump</strong>, the debug code is enabled if I append &#8220;-debug&#8221; to the end of the app name in the Corona SDK build window. Seeing <strong>BubbleJump-debug</strong> is also a good reminder that this is not a production-ready app. I chose &#8220;-debug&#8221;, but you can choose whatever you like.</p>
+<p>You can go one step further by adding the following code at the top of the <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local debug = ( string.find( system.getInfo( &quot;appName&quot; ), &quot;debug&quot; ) and true )</pre><p></p>
+<p>You can now use the <strong>debug</strong> variable to enable debug statements in your code. You can even use it to disable the <strong>print</strong> statement when <strong>debug</strong> is false/nil. This allows you to control the <strong>debug flag</strong> at build time instead of having to modify your project files and run the risk of releasing a version of your app with debug code enabled.</p>
+<p>One note of caution about using <strong>debug</strong> for a variable name. If you do use <strong>debug</strong>, make sure it&#8217;s a local variable and not a global one. Lua does have an internal <strong>debug</strong> library that you will override if you define <strong>debug</strong> as a global variable. Doing so will suppress any runtime error output and <strong>print</strong> output that your code may generate. It may be better to use <strong>dbg</strong> or <strong>_debug</strong> instead.</p>
+<p>One final note: I mention public release #1137 in this blog post. This release replaces build #1135 and fixes a potential issue with plugins.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>FAQ Wednesday: Mac Simulator Updates</title>
+		<link>/blog/2013/01/30/faq-wednesday-mac-simulator-updates/</link>
+		<pubDate>Thu, 31 Jan 2013 03:53:00 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28827</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. This week it's not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /><br />
+It&#8217;s Wednesday and time for another FAQ session. This week it&#8217;s not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.</p>
+<h2>1.  Loading the last project on simulator startup</h2>
+<p>In build #996, a new preference was added to the <strong>Preferences</strong> menu: &#8220;Automatically open last project&#8221;. This is convenient if you want the to reload the project you were working on when you last quit the simulator.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Build_1017_Preferences-300x249.png" alt="Corona Preference Window" class="alignright size-medium wp-image-28831" /></p>
+<h2>2. Reloading the last project</h2>
+<p>Both the Mac and Windows simulators had the ability to &#8220;Relaunch&#8221; the last project using <strong>Cmd R</strong> (<strong>Ctrl R</strong> on Windows), but that didn&#8217;t work in the Mac Simulator when the simulator was first started. As of build #1017, you can now start the simulator and press <strong>Cmd R</strong> to relaunch. You can also set the preference to always relaunch as mentioned in question 1.</p>
+<h2>3. Simulator now continues to run after a build</h2>
+<p>If you have built a project with the Mac Simulator, you no doubt have seen the giant &#8220;iOS spinner&#8221; on top of the device skin as the build was occurring. This continued after the build was done and was there to show you that the simulator was suspended. In build #996 the simulator still suspends the app during the build process, but now continues to run once the build is done. You can suspend the app in the simulator yourself by selecting <strong>Suspend</strong> from the <strong>Hardware</strong> menu or pressing <strong>Cmd downarrow</strong>.</p>
+<h2>4. Unicode characters in asset file names</h2>
+<p>As of build #1017 the Mac Simulator now supports Unicode in asset files names. This applies to image and sound files as well as subfolders. Note: Currently there is an issue using Unicode named files in Windows, which we are looking into.</p>
+<h2>5. Supporting iOS 6.1 builds</h2>
+<p>On January 28, Apple officially released iOS 6.1. We are installing the latest version on our build servers and it should be available in the next couple of days (check the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>Daily Build summary</a> page). For the next few Daily Builds, we will still support building for the existing iOS 6.0 SDK as well as the new 6.1 SDK. Just select the proper <strong>iOS SDK</strong> from the pull-down menu in the build window.</p>
+<p>If you have some ideas on how to improve the simulator or some feature you would like to see added to Corona, please visit the <a href=http://feedback.coronalabs.com>Corona/ Feedback</a> page.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed it and even learned a few things.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

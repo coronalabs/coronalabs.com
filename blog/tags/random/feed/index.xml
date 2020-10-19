@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>random &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/random/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>random &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Advanced Random Numbers</title>
+		<link>/blog/2014/03/11/tutorial-advanced-random-numbers/</link>
+		<comments>/blog/2014/03/11/tutorial-advanced-random-numbers/#comments</comments>
+		<pubDate>Tue, 11 Mar 2014 22:59:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[random]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=56957</guid>
+		<description><![CDATA[Most of us have dealt with generating random numbers at some point in our app development. In this tutorial, we'll look at the core syntax for generating random numbers, along with a "dice rolling" mechanism for more advanced use cases. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p>Most of us have dealt with generating random numbers at some point in our app development. In this tutorial, we&#8217;ll look at the core syntax for generating random numbers. Later, we&#8217;ll walk through a &#8220;dice rolling&#8221; mechanism for more advanced use cases.</p>
+<h3>Seeding the Generator</h3>
+<p>One of the most common mistakes in requesting random numbers is failing to <strong>seed</strong> the random number generator. Outside of some very high-tech, math-intensive, complex methods, most computers/devices generate <strong>pseudo-random</strong> numbers. As such, we must <strong>seed</strong> the random number generator with a value to start the generation. If we seed the generator with the same value, we&#8217;ll get the same pattern of random numbers. This can be useful in some cases, but in most cases we&#8217;ll want <strong>different</strong> numbers. To achieve this, we can add this line to our <code>main.lua</code> file:</p><pre class="crayon-plain-tag">math.randomseed( os.time() )</pre><p>Since <a href=http://docs.coronalabs.com/api/library/os/time.html target="_blank">os.time()</a> returns a different value each time we run the app, this call will seed the random number generator with a fairly random starting value. Conveniently, we only need to do this once, typically near the top of our main code.</p>
+<p>With that out of the way, let&#8217;s look at the <a href=http://docs.coronalabs.com/api/library/math/random.html target="_blank">math.random()</a> function which has three &#8220;modes&#8221;:</p>
+<ul>
+<li><code>value = math.random()</code> — returns a floating point number between 0 and 1.</li>
+<li><code>value = math.random( maxVal )</code> — returns an integer between 1 and <code>maxVal</code>.</li>
+<li><code>value = math.random( startVal, maxVal )</code> — returns an integer between <code>startVal</code> and <code>maxVal</code>.</li>
+</ul>
+<p>The first mode is the way most programming languages work, but since most people don&#8217;t really need floating point numbers between 0 and 1, we&#8217;ve traditionally needed to multiply this number by the maximum value. For instance, if we want a number between 1 and 10, the C code would look like this:</p><pre class="crayon-plain-tag">int number = int( rand() * 10 ) + 1</pre><p>Fortunately, Lua provides a convenience method to help with this, in the form of the 2nd structure above. Simply pass in the maximum value to get a number between 1 and <code>maxVal</code>.</p><pre class="crayon-plain-tag">local number = math.random( 10 )</pre><p>In the instances where the range should <strong>not</strong> start at 1, Lua offers the 3rd structure. For instance, if we want to spawn an enemy in the middle third of the screen, this code would be useful to generate its <strong>x</strong> position:</p><pre class="crayon-plain-tag">local number = math.random( 100, 220 )</pre><p></p>
+<h3>Roll the Dice!</h3>
+<p>The above functions are useful, but what if we need something more complex? In many games, for instance <strong>Dungeons &amp; Dragons</strong>™ and similar role-playing games, players need to roll <strong>three</strong> 6-sided dice to determine their character&#8217;s strength. In this example, character strength values range in the 3-18 range, but only a few players would roll for a strength of 3 or 18. Most characters would end up in the range of 10 to 11. Many board games like <strong>Monopoly</strong>™ use two 6-sided dice, so rolling a summed total of 2 or 12 is rare, while sums between 6 and 8 are more common. In statistics, this is referred to as a <strong>bell curve</strong>. However, the standard random number generator generates a flat line of numbers where each has an equal probability to be selected. As a result, dice rolling needs can get quite complex. Additionally, some games feature many varieties of dice in addition to the traditional 6-sided version — there are dice with 4 sides, 8 sides, 10, 12, 20, and even 30!</p>
+<p>Sometimes we&#8217;ll also need to add or subtract &#8220;modifiers&#8221; to the results. These gaming systems use a fairly common &#8220;language&#8221; for specifying the dice and modifiers. For instance, consider:</p>
+<ul>
+<li><code>3d6</code> — Generate a number by rolling three 6-sided dice, then add them up.</li>
+<li><code>2d8+3</code> — Generate a number by rolling two 8-sided dice, add them up, and then add 3 to the total.</li>
+</ul>
+<p>Rolling physical dice may be fun, but how can this be accomplished in Corona SDK? First, we should establish the &#8220;language&#8221; of the dice. In this tutorial, we&#8217;ll use a variant of the <a href=http://www.myth-weavers.com/wiki/index.php/Help:Myth-Weavers:DiceRoller target="_blank">Myth-Weavers</a> system. In this system, we start with the <strong>number of dice</strong>, then we write the letter <code>d</code>, followed by the <strong>number of sides</strong> to the dice. This is followed by an optional <code>+</code> or <code>−</code> and a number that gets added or subtracted. To make it a bit more functional, this system also supports the idea of keeping some dice results while discarding others. In the role-playing example, since most heroes need better stats than normal humans, their character stats are rolled using four 6-sided dice, but only the highest 3 dice results are kept and added together. This dice string would be represented as <code>4d6^3</code>. Now let&#8217;s inspect the Lua code:</p><pre class="crayon-plain-tag">local function rollDice( dicePattern )
+
+   -- Dice pattern 3d6+3k3
+   -- First number : number of dice
+   -- d : required string
+   -- Second number : sides to the dice
+   -- +/- : optional modifier
+   -- ^/k : optional string; '^' keeps the high values, 'k' keeps the low values
+   -- Third number : number of dice to keep, i.e. 4d6^3 keeps the best three numbers
+
+   local dice = {}
+   local random = math.random
+   local total = 0
+
+   -- Parse the string
+   local count, sides, sign, modifier, keepHiLo, keep = string.match( dicePattern, &quot;(%d+)[dD](%d+)([%+%-]*)(%d*)([%^k]*)(%d*)&quot; )
+
+   modifier = tonumber(modifier)
+   keep = tonumber(keep)
+   if ( modifier == nil ) then
+      modifier = 0
+   end
+   if ( sign == &quot;-&quot; and modifier &gt; 0 ) then
+      modifier = modifier * -1
+   end
+
+   for i = 1, count do
+      dice[i] = random( sides )
+   end
+
+   if ( keep ) then
+      local function keepCompare( a, b )
+         return a &gt; b
+      end
+      if ( keepHiLo == &quot;k&quot; ) then
+         table.sort( dice )
+      else
+         table.sort( dice, keepCompare )
+      end
+
+      for i = 1, keep do
+         total = total + dice[i]
+      end
+   else
+      for i = 1, count do
+         total = total + dice[i]
+      end
+   end
+   total = total + modifier
+   return total, dice
+end</pre><p></p>
+<h4>Deconstructing the Code</h4>
+<p>Let&#8217;s step through the code to see how it works:</p><pre class="crayon-plain-tag">local dice = {}
+   local random = math.random
+   local total = 0</pre><p>Here, we create a table to hold the individual dice rolls. We also localize the <code>math.random()</code> function for optimal performance and set the <code>total</code> value to 0.</p>
+<p>Next we need to parse the <code>dicePattern</code> argument using <a href=http://docs.coronalabs.com/api/library/string/match.html target="_blank">string.match()</a>:</p><pre class="crayon-plain-tag">local count, sides, modifier, keepHiLo, keep = string.match( dicePattern, &quot;(%d+)[dD](%d+)([%+%-]*)(%d*)([%^k]*)(%d*)&quot; )
+
+   modifier = tonumber(modifier)
+   keep = tonumber(keep)
+   if ( modifier == nil ) then
+      modifier = 0
+   end
+   if ( sign == &quot;-&quot; and modifier &gt; 0 ) then
+      modifier = modifier * -1
+   end</pre><p>In Lua, <code>string.match()</code> requires two parameters: the string we want to search through and a <strong>pattern</strong> of what to search for. All of the matches are returned to the variables on the left side of the <code>=</code> sign. In this example, we search for a <strong>number</strong> (<code>(%d+)</code>) followed by the letter <code>d</code> (<code>[dD]</code>). Note that we support both a lowercase <code>d</code> and an uppercase <code>D</code> as a minor fail-safe. Next, we look for the <strong>sides to the dice </strong>(<code>(%d+)</code>). In Lua pattern matching, <code>%d</code> indicates a single number while <code>%d+</code> indicates any number with <strong>1 or more</strong> digits.</p>
+<p>Next, we must search for the optional parts of the string. The next pattern set (<code>([%+%-]*)</code>) looks for a <code>+</code> or <code>−</code> sign and stores the results in a variable named <code>sign</code>. These are special symbols, so we need to <strong>escape</strong> them with a leading <code>%</code> sign. By placing them within square brackets, Lua knows that either one is valid. Finally, the <code>*</code> at the end indicates that <strong>zero or more</strong> matches are allowed, thus making it optional. The next pattern set (<code>(%d*)</code>) captures an optional number for the value of the modifier. Following this, we search for either a carrot <code>^</code> or the letter <code>k</code> to determine the number of dice to keep out of the set. The carrot is another special symbol, so it needs to be escaped with a percent sign. Finally, we capture the count of dice to keep. In this match, we&#8217;ll actually get an empty string returned for <code>modifier</code> and <code>keep</code>. By converting that string to a number with <code>tonumber()</code>, it will either return a number or <code>nil</code>. If the modifier is <code>nil</code>, make it 0. Then check the <code>sign</code> variable and, if it&#8217;s a minus sign, multiply <code>modifier</code> by -1.</p>
+<p>Now let&#8217;s generate the rolls:</p><pre class="crayon-plain-tag">for i = 1, count do
+      dice[i] = random( sides )
+   end
+
+   if ( keep ) then
+      local function keepCompare( a, b )
+         return a &gt; b
+      end
+      if ( keepHiLo == &quot;k&quot; ) then
+         table.sort( dice )
+      else
+         table.sort( dice, keepCompare )
+      end
+
+      for i = 1, keep do
+         total = total + dice[i]
+      end
+   else
+      for i = 1, count do
+         total = total + dice[i]
+      end
+   end
+   total = total + modifier
+   return total, dice</pre><p>The first <code>for</code> loop loads the dice array with a number randomly generated from the number of specified sides to the dice. If we ask for <code>4d6</code>, we&#8217;ll get an array of 4 numbers, each number ranging 1-6. Then, if <code>keep</code> is specified, we&#8217;ll get the sum of the values, up to the <code>keep</code> amount. To figure out which dice to keep, the array must be sorted using the <code>table.sort()</code>function. By checking the value of the <code>keepHiLo</code> value parsed from the string, we can sort the table from either low to high or vice-versa. Finally, we loop through the array of sorted numbers and only count those that we want to keep. Finally, to wrap up the function, we add the <code>modifier</code>, return the total of the rolls, and also return the array of rolls in case we want the calling routine to display the values.</p>
+<h4>Making a Roll</h4>
+<p>With the function established, we can call the function using a valid dice string and then access the dice values after the call:</p><pre class="crayon-plain-tag">local result, rolls = rollDice( &quot;3d6&quot; )
+for i = 1, #rolls do
+   print( i, rolls[i] )
+end
+print( result )
+result, rolls = rollDice( &quot;4d6+1^3&quot; )
+for i = 1, #rolls do
+   print( i, rolls[i] )
+end
+print( result )</pre><p></p>
+<h3>In Conclusion</h3>
+<p>Hopefully you have a clearer understanding of random number generation along with a function that you can use as an advanced dice rolling mechanism. Armed with this knowledge, you can implement ranges of random numbers that are not evenly distributed, allowing your app to easily support common, uncommon, and even rare events.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/11/tutorial-advanced-random-numbers/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

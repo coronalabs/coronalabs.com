@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek After Dark #19 &#8211; Apple TV, Monetization, CoronaCon, Stripe Plugin</title>
+	<atom:link href="/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Christian</title>
+		<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/#comment-5782</link>
+		<dc:creator><![CDATA[Christian]]></dc:creator>
+		<pubDate>Thu, 10 Mar 2016 17:45:01 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65519#comment-5782</guid>
+		<description><![CDATA[Regarding the stripe plugin. I thought you are not supposed to put your secret key in the client side.]]></description>
+		<content:encoded><![CDATA[<p>Regarding the stripe plugin. I thought you are not supposed to put your secret key in the client side.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jason Schroeder</title>
+		<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/#comment-5781</link>
+		<dc:creator><![CDATA[Jason Schroeder]]></dc:creator>
+		<pubDate>Sun, 14 Feb 2016 14:48:45 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65519#comment-5781</guid>
+		<description><![CDATA[@Damir: thanks for your kind comment! (This is Jason who is developing the Stripe plugin.) I personally am not developing a PayPal plugin at this time, but I know that Danny Glover had one a few years ago that was only for Enterprise users (it pre-dated the plugin marketplace). Danny&#039;s back on the CoronaLabs payroll, so maybe he&#039;ll revisit that code in the future. :)]]></description>
+		<content:encoded><![CDATA[<p>@Damir: thanks for your kind comment! (This is Jason who is developing the Stripe plugin.) I personally am not developing a PayPal plugin at this time, but I know that Danny Glover had one a few years ago that was only for Enterprise users (it pre-dated the plugin marketplace). Danny&#8217;s back on the CoronaLabs payroll, so maybe he&#8217;ll revisit that code in the future. 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Damir Kranjcec</title>
+		<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/#comment-5780</link>
+		<dc:creator><![CDATA[Damir Kranjcec]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2016 11:39:08 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65519#comment-5780</guid>
+		<description><![CDATA[Great to see the Stripe plugin is in development.
+Unfortunately, Stripe is not available in many countries.
+
+Any plans to make a PayPal plugin?]]></description>
+		<content:encoded><![CDATA[<p>Great to see the Stripe plugin is in development.<br />
+Unfortunately, Stripe is not available in many countries.</p>
+<p>Any plans to make a PayPal plugin?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ed</title>
+		<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/#comment-5779</link>
+		<dc:creator><![CDATA[Ed]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2016 01:49:12 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65519#comment-5779</guid>
+		<description><![CDATA[Watching the video... at min 46, when you talk about an app where people can only watch ads, have you checked the Video Reward by Perk? It looks similar to your idea (I&#039;ve not tried the app however)
+
+http://perk.com/perkstatic/home]]></description>
+		<content:encoded><![CDATA[<p>Watching the video&#8230; at min 46, when you talk about an app where people can only watch ads, have you checked the Video Reward by Perk? It looks similar to your idea (I&#8217;ve not tried the app however)</p>
+<p><a href="http://perk.com/perkstatic/home" rel="nofollow">http://perk.com/perkstatic/home</a></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

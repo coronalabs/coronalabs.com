@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tech &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/tech/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Tech &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Paint Brushes, Trailing Object Effects, and More with the Snapshot Canvas</title>
+		<link>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/</link>
+		<comments>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/#comments</comments>
+		<pubDate>Fri, 01 Nov 2013 13:35:14 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[brush]]></category>
+		<category><![CDATA[canvas]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[porter duff]]></category>
+		<category><![CDATA[render to texture]]></category>
+		<category><![CDATA[snapshot]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50816</guid>
+		<description><![CDATA[Today, I'm going to show you how to use snapshots to achieve the sorts of tricks you'd want to do in traditional CPU-based graphics. 
+
+One of the old school tricks is to be able to touch pixels on the frame buffer directly, or modify the pixels of an image directly. In a GPU world, you cannot do that b/c passing memory between the CPU and GPU is extremely expensive.
+
+Snapshots to the rescue!
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50128" style="margin: 2px 20px 10px 0px;" alt="gfx2-icon" src="http://www.coronalabs.com/wp-content/uploads/2013/10/gfx2-icon.png" />Today, I&#8217;m going to show you how to use snapshots to achieve the sorts of tricks you might be used to doing if you did a lot of traditional CPU-based computer graphics.</p>
+<p>One of the old school tricks is to be able to touch pixels on the frame buffer directly, or modify the pixels of an image directly. In a GPU world, you cannot do that b/c passing memory between the CPU and GPU is extremely expensive.</p>
+<h3>Versatility of Snapshots</h3>
+<p>Snapshots to the rescue!</p>
+<p>Normally, you use snapshots as a one-time operation to cache a single rendered result. They work by adding objects to the snapshot&#8217;s &#8216;group&#8217; property, and then calling &#8216;invalidate()&#8217; each time you want to render the group&#8217;s children to the texture. This lets you achieve cool effects like this <a href=http://forums.coronalabs.com/topic/40443-mode-7-demo-full-source/>Mode7 demo</a>.</p>
+<p>We recently added some <a href=http://docs.coronalabs.com/tachyon/api/type/SnapshotObject/index.html>new canvas features</a> to let you manipulate the snapshot texture in new and interesting ways.</p>
+<p>Here&#8217;s a video showing you a trailing brush effect that renders onto the snapshot. Underneath the snapshot is a background image of the world:</p>
+<p><iframe src="//www.youtube.com/embed/JAyD6LP9cCQ" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+<p>One way to achieve this affect is to keep track of every brush image we draw and then fade it out over time. That&#8217;s pretty complex and unwieldy to write code for.</p>
+<p>A far easier way approach is to draw the brush image onto the snapshot for every touch event. The trick is to draw a black translucent rectangle in between each touch, thus causing previously drawn images to appear to fade away. It&#8217;s a common technique from the CPU days, but now you can achieve it on the GPU!</p>
+<p>In Corona, the way to do this is to use the new canvas feature of snapshot, combined with support for Porter-Duff blend modes:</p><pre class="crayon-plain-tag">local w = display.viewableContentWidth
+local h = display.viewableContentHeight
+
+local background = display.newImage( &quot;world.jpg&quot;, w*0.5, h*0.5 )
+
+local snapshot = display.newSnapshot( w,h )
+snapshot:translate( w * 0.5, h * 0.5 )
+snapshot.canvasMode = &quot;discard&quot;
+
+function listener( event )
+   local x,y = event.x - snapshot.x, event.y - snapshot.y
+
+   if ( event.phase == &quot;began&quot; or event.phase == &quot;moved&quot; ) then
+      local r = display.newRect( 0, 0, w, h )
+      r:setFillColor( 0, .98 )
+      r.blendMode = &quot;dstIn&quot; -- enables snapshot to render over background
+
+      local o = display.newImage( &quot;brush.png&quot;, x, y )
+      o:setFillColor( 1, 0, 1 )
+
+      snapshot.canvas:insert( r )
+      snapshot.canvas:insert( o )
+      snapshot:invalidate( &quot;canvas&quot; ) -- accumulate changes w/o clearing
+   end
+end
+
+Runtime:addEventListener( &quot;touch&quot;, listener )</pre><p>Incidentally, if you take out the black rectangles between each touch, you can also build a <a href=http://forums.coronalabs.com/index.php?app=core&module=attach&section=attach&attach_id=888>simple paint brush program (code)</a>.</p>
+<h3>The Snapshot Canvas</h3>
+<p>The new <code>snapshot.canvas</code> lets you draw onto the snapshot texture without clearing between invalidates. In order to render these objects to the snapshot, you invalidate with the &#8220;canvas&#8221; parameter, e.g. <code>snapshot:invalidate( "canvas" )</code>.</p>
+<p>We&#8217;ve also added a <code>snapshot.canvasMode</code> property that lets you control what happens to the children between invalidates. Normally, the canvas group is emptied, and the children are appended to the snapshot&#8217;s main group. This ensure that your snapshot texture isn&#8217;t lost, which sometimes happens when your app is suspended. If you don&#8217;t care to preserve your edits, you can throw away the children via the <code>"discard"</code> mode.</p>
+<h3>Porter-Duff Blend Modes</h3>
+<p>The Porter-Duff blend modes are something we&#8217;ve also added. The normal blend mode that we&#8217;re all used to corresponds to &#8220;srcOver&#8221;, but there are a ton of other modes like <code>"clear"</code>, <code>"xor"</code>, <code>"dstIn"</code>, <code>"src"</code>, <code>"dst"</code>, etc that let you do a lot of amazing things.</p>
+<p>In the example above, we could have used the normal blend mode. However, if you do that, the background of the snapshot will become black and you won&#8217;t be able to see the image of the world behind the snapshot. The key is to only fade out the portions of the snapshot that are already opaque. And so in the example above, we use the <code>"dstIn"</code> which multiplies the snapshot texture with the alpha of the black rectangle.</p>
+<h3>In Summary</h3>
+<p>As you can see, snapshots are an incredibly powerful and versatile tool. And yes, there are some obvious next steps for snapshots (e.g. using them as textures for other objects), so we&#8217;ve put that on our roadmap. I think what&#8217;s really amazing is that this example only used a couple of features, so we&#8217;ve only scratched the surface of what&#8217;s possible!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/01/snapshot-canvas-paint-brushes-trailing-object-effects-etc/feed/</wfw:commentRss>
+		<slash:comments>15</slash:comments>
+		</item>
+		<item>
+		<title>Expansion File Support for Android</title>
+		<link>/blog/2013/04/17/expansion-file-support-for-android/</link>
+		<comments>/blog/2013/04/17/expansion-file-support-for-android/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 13:35:41 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[sdk]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31944</guid>
+		<description><![CDATA[We're happy to announce support for Google Play expansion files that will vastly simplify mobile app development. Why would you want to use expansion files? Read the full post to learn more!]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build</a> 1082, we&#8217;re happy to announce support for Google Play expansion files that will vastly simplify your <a href=http://www.coronalabs.com/products/corona-sdk/ target="_blank">mobile app development</a>. Why would you want to use expansion files? It turns out that Google Play has a 50MB size limit on APK files.  They have this limit so that when the user has to update their app, they don&#8217;t have to download all the asset files again, which can take up a long time.  To combat this, Google also lets you upload expansion files.  These files aren&#8217;t meant to be updated since they can be up to 2GB in size.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/04/downloading-187x300.png" alt="Downloading an Expansion File" /></p>
+<p>We&#8217;ve tried to make it as simple as possible for you to use.  Corona SDK will package everything except your Lua scripts into the expansion file, name it properly, and then put it in the correct format.  All of this is done locally so even if you have 2GB worth of asset files you won&#8217;t have to worry about a slow internet connection. All you have to do is to put a setting in the <code>build.settings</code> file, put your licensing key into <code>config.lua</code> file, and then upload your APK and expansion files onto Google Play.  Here are is a sample <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = 
+{
+	orientation =
+	{
+		default = &quot;landscapeLeft&quot;,
+		supported = { &quot;portrait&quot;, &quot;portraitUpsideDown&quot;, &quot;landscapeLeft&quot;, &quot;landscapeRight&quot; }
+	},
+	android =
+		{
+			&lt;strong&gt;usesExpansionFile = true&lt;/strong&gt;,
+			usesPermissions =
+			{
+				&quot;android.permission.INTERNET&quot;,
+				&quot;com.android.vending.CHECK_LICENSE&quot;,
+				&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;
+			},
+		},
+}</pre><p>Notice the line that says <code>usesExpansionFile = true</code> which will build the expansion file for you to upload ONLY if your build target is the Google Play store.  You should also add those 3 permissions so that we can download the expansion files for you.  You&#8217;ll need add 3 permissions so that we can automatically download the expansion files for you.  The <code>android.permission.INTERNET</code> permission lets us download the expansion files from Google&#8217;s servers.  The expansion files have to be saved in a specific location on external storage so that&#8217;s why we need the <code>android.permission.WRITE_EXTERNAL_STORAGE</code> permission.  That leaves us with the final permission: <code>com.android.vending.CHECK_LICENSE</code>.  In order for us to get the URL to download the expansion file, we have to go through Google Play&#8217;s Application Licensing Service.  Let&#8217;s take a look at <code>config.lua</code> to see how we have to set up licensing.</p><pre class="crayon-plain-tag">application =
+{
+	content =
+	{
+		width = 768,
+		height = 1024,
+		scale = &quot;letterbox&quot;,
+	},
+	license =
+	{
+		google =
+		{
+			key = &quot;Your key here&quot;
+		},
+	},
+}</pre><p>All you have to do is to put your key into the appropriate section of <code>config.lua</code> and you&#8217;re done.  This key lets us check with Google&#8217;s servers to see which files we need to download and see if we need to download anything new or missing.</p>
+<p>If you had to write your application natively in Java, then there are a lot of situations you have have to think about before you can even start your application.  </p>
+<ul>
+<li>What if the user doesn&#8217;t have enough space on their external storage? I better check to make sure they have the space.
+</li>
+<li>What if the user doesn&#8217;t even have their external storage mounted?  Looks like I&#8217;ll have to check on that first.
+</li>
+<li>What if the user doesn&#8217;t have a network connection?  I better warn them.  
+</li>
+<li>What if I updated my APK without updating my expansion file?  Guess I&#8217;ll need to update my code to use the correct expansion files.
+</li>
+<li>What if the user wipes their external storage?  I&#8217;ll have to download the files again in a download screen which has to work on all orientations and look good.
+</li>
+<li>What if the network fails in the middle of a download?  I&#8217;ll have to let the user retry the download.
+</li>
+<li>What if the user leaves the application while the download is happening?  I&#8217;ll have to handle the user exiting the app.
+</li>
+<li>How will the user know when the expansion files have been downloaded?  I&#8217;ll need to implement notifications.
+</li>
+<li>How do I even make the expansion files?  I&#8217;ll have to do a ton of research on how to package them.
+</li>
+<li>Where should I download the expansion files to?  More research time.
+</li>
+<li>What can I do to make my life easier? <strong><a href=http://www.coronalabs.com/store>Use Corona SDK!</a></strong></li>
+</ul>
+<p>All of these situations and more are handled by Corona SDK, so you don&#8217;t have to even think about them.  </p>
+<p>Time to go wild with your asset files!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/17/expansion-file-support-for-android/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

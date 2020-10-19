@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #28 &#8211; App Development Workflow &#8211; Round Table Discussion</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-28/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-28/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Henry Palma</title>
+		<link>/blog/coronageek/corona-geek-hangout-28/#comment-5555</link>
+		<dc:creator><![CDATA[Henry Palma]]></dc:creator>
+		<pubDate>Tue, 19 Feb 2013 02:59:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=29353#comment-5555</guid>
+		<description><![CDATA[Amazon app store allows you to keep multiple builds. One build for Kindle Devices and another for non-Kindle devices. You may want to try this to get around issues with non-kindle devices downloading your app.]]></description>
+		<content:encoded><![CDATA[<p>Amazon app store allows you to keep multiple builds. One build for Kindle Devices and another for non-Kindle devices. You may want to try this to get around issues with non-kindle devices downloading your app.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

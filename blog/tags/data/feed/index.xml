@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Data &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/data/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Data &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #47 &#8211; Working With Data in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-47/#comments</comments>
+		<pubDate>Tue, 23 Jul 2013 00:38:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Data]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[SQLite3]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed using data in Corona SDK. Dr. Burton walked us through an excellent code example of how to check for and connect to a local database file, and display the returned data in a TableView using SQLite and Corona SDK. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/02TjzFbQEes?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=https://plus.google.com/u/0/b/108159899655420864045/115350860735908946281/posts target="_blank">Dr. Brian Burton</a>, <a href=https://plus.google.com/b/108159899655420864045/115993784358801200530/posts target="_blank">Ed Maurina</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=https://plus.google.com/u/0/b/108159899655420864045/113858036245909441249/posts target="_blank">Jen Looper</a>, <a href=https://plus.google.com/u/0/b/108159899655420864045/115811849043797198763/posts target="_blank">Mohammed Bennouf</a>, and <a href=https://plus.google.com/u/0/b/108159899655420864045/116875464241306531958/posts target="_blank">Theo Rushin, Jr</a> to walk through some <a href=https://github.com/CoronaGeek/Corona-SDK-Database-TableView target="_blank">example code for storing and accessing data using SQLite and Corona SDK</a>. Dr. Burton walked through a code example that checked for a local SQLite database file, connected to the database, and displayed data in a TableView. The panel had a lot of great questions and tips to share. We plan to discuss how to pull data from remote sources and store the data in a local database in a future hangout.</p>
+<p>Be sure to pick up Dr. Burton&#8217;s book, &#8220;<a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learning Mobile Application &amp; Game Development with Corona</a>&#8220;, for more examples of how to work with databases and Corona SDK.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to David Freeman for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-47/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Design &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/design/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Design &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Finding playtesters for your game</title>
+		<link>/blog/2018/09/05/finding-playtesters-for-your-game/</link>
+		<pubDate>Wed, 05 Sep 2018 20:29:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75988</guid>
+		<description><![CDATA[We all want our games to be fun. But how do we assure that our games are fun? Learn more about using playtesting to achieve your goal.]]></description>
+				<content:encoded><![CDATA[<p>One of the challenges in building successful games comes down to one simple, but hard to answer question: Is it fun? We all need to know that answer. Compounding the problem is the fact that what you might find as fun, someone else may not enjoy.</p>
+<p>In <a href=http://www.gamasutra.com/blogs/JoostVanDongen/20180904/325770/The_challenge_of_finding_enough_playtesters.php target="_blank" rel="noopener">this blog post</a> by Joost van Dongen, a lead programmer and co-founder of<a href=http://www.ronimo-games.com/ target="_blank" rel="noopener"> Ronimo Games</a>, talks about how they go about finding playtesters for their games. He also discusses the differences between QA (Quality Assurance) and playtesting.</p>
+<p>Fun games lead to more successful games. How do you find playtesters? Let&#8217;s discuss playtesting further in the <a href=https://forums.coronalabs.com/topic/73771-from-the-blog-finding-playtesters-for-your-game/ target="_blank" rel="noopener">Corona community forums</a>!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://www.gamasutra.com/blogs/JoostVanDongen/20180904/325770/The_challenge_of_finding_enough_playtesters.php target="_blank" rel="noopener">Click here to read: The challenge of finding enough playtesters</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Building in-game tutorials</title>
+		<link>/blog/2018/08/24/building-in-game-tutorials/</link>
+		<pubDate>Fri, 24 Aug 2018 23:14:29 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75968</guid>
+		<description><![CDATA[Do you need to implement a tutorial in your game? Here's some great advice to get you going.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75821" src="/wordpress/wp-content/uploads/2018/06/corona_education_logo-1-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/06/corona_education_logo-1-150x150.png 150w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-300x300.png 300w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-768x768.png 768w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-570x570.png 570w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-500x500.png 500w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-700x700.png 700w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-125x125.png 125w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1.png 917w" sizes="(max-width: 150px) 100vw, 150px" />Some game designs make it obvious as to how you should play. Some games are so complex the entire game may feel like it needs a constant guide to play. But in most guides a simpler tutorial is usually called for.</p>
+<p>The staff at <a href=https://gamecareerguide.com/ target="_blank" rel="noopener">Game Career Guide</a> has produced a handy tutorial guiding you through some basics on building effective tutorials for your games.  They offer six concepts that can make your in-game tutorials more effective for your players.  Head on over to <a href=https://gamecareerguide.com/features/1744/6_tips_for_designing_a_game_.php target="_blank" rel="noopener">their tutorial</a> to get this great advice.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://gamecareerguide.com/features/1744/6_tips_for_designing_a_game_.php target="_blank" rel="noopener">Read Tutorial</a></p>
+</div>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Social media assets guide</title>
+		<link>/blog/2018/08/16/social-media-assets-guide/</link>
+		<pubDate>Thu, 16 Aug 2018 20:36:22 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Business of Apps]]></category>
+		<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">/?p=75946</guid>
+		<description><![CDATA[Building a social media presence is important to all app developers. Check out this handy guide to creating assets for the various sites you might want to join.]]></description>
+				<content:encoded><![CDATA[<div id="attachment_75948" style="width: 160px" class="wp-caption alignright"><img class="size-thumbnail wp-image-75948" src="/wordpress/wp-content/uploads/2018/08/socialmedia-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/08/socialmedia-150x150.png 150w, /wordpress/wp-content/uploads/2018/08/socialmedia-500x500.png 500w" sizes="(max-width: 150px) 100vw, 150px" /><p class="wp-caption-text">Image by Milky – Digital Innovation, from The Noun Project [<a href=https://creativecommons.org/licenses/by/3.0/us/deed.en target="_blank" rel="noopener">CC BY 3.0 us</a>], via Wikimedia Commons</p></div>Every app and game developer needs an online presence if they expect to have success. Aside from a website, social media is a huge area for helping market your app. Getting started is simple enough, create a Twitter account, create a Facebook page and other sites as well.</p>
+<p>One daunting challenge is artwork. Each social media site has their own requirements. It can take hours to figure out just what you need in addition to creating the work. But never fear, <a href=http://www.laurabularca.com/ target="_blank" rel="noopener">Laura Bularca</a> has <a href=http://www.laurabularca.com/2018/08/a-handy-art-assets-guide-for-social-media-presence/ target="_blank" rel="noopener">created a guide</a> to the art assets needed for a social media presence. Click on over to <a href=http://www.laurabularca.com/2018/08/a-handy-art-assets-guide-for-social-media-presence/ target="_blank" rel="noopener">her website</a> for her handy list of sites and what you need to set up that presence.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Game design: Adding consistency to your games</title>
+		<link>/blog/2018/07/26/game-design-adding-consistency-to-your-games/</link>
+		<pubDate>Thu, 26 Jul 2018 16:42:59 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75910</guid>
+		<description><![CDATA[When designing games, there are many things to consider. One item is consistency. Learn more about how this concept is important to the games you make.]]></description>
+				<content:encoded><![CDATA[<div id="attachment_75912" style="width: 160px" class="wp-caption alignright"><img class="size-thumbnail wp-image-75912" src="/wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-150x150.jpg" alt="Game Design" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-150x150.jpg 150w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-300x300.jpg 300w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-768x768.jpg 768w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-1024x1024.jpg 1024w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-570x570.jpg 570w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-500x500.jpg 500w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-1000x1000.jpg 1000w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-700x700.jpg 700w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" /><p class="wp-caption-text"><a href=https://www.freepik.com/free-vector/games-word-concept_2453836.htm>Designed by Freepik</a></p></div>
+<p>Corona is of course popular for making 2D games. But it takes more than a great engine and a great idea to be successful. There is a lot that&#8217;s needed to bring that great idea to a complete product that will be well received by your audience.</p>
+<p>In this <a href=http://www.gamasutra.com/blogs/RichardAtlas/20180722/322637/Is_Anything_More_Important_Than_a_Games_Consistency.php target="_blank" rel="noopener">blog post on Gamasutra</a>, <a href=http://www.gamasutra.com/blogs/author/RichardAtlas/995937/ target="_blank" rel="noopener">Richard Atlas</a>, dives into the concept of consistency. Consistency comes in many forms from marketing consistency to the expectations of genre pieces.</p>
+<p>Perhaps some of this advice will help you make the next rockstar game that brings you fame and fortune.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Programming Guide For Video-Gamers</title>
+		<link>/blog/2018/02/20/programming-guide-for-video-gamers/</link>
+		<pubDate>Tue, 20 Feb 2018 16:56:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=73348</guid>
+		<description><![CDATA[There are some great game development resources on the Internet. This is one page you might want to bookmark.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2010/07/GameEdition512-150x150.png" alt="" width="150" height="150" class="alignright size-thumbnail wp-image-1384" srcset="/wordpress/wp-content/uploads/2010/07/GameEdition512-150x150.png 150w, /wordpress/wp-content/uploads/2010/07/GameEdition512-300x300.png 300w, /wordpress/wp-content/uploads/2010/07/GameEdition512-500x500.png 500w, /wordpress/wp-content/uploads/2010/07/GameEdition512.png 512w" sizes="(max-width: 150px) 100vw, 150px" />There are some great resources available on the Internet for just about everything. Making computer games is no exception. Sometimes we come across a great resource that we think you might benefit from. </p>
+<p>The site <a href=http://ithare.com/ rel="noopener" target="_blank">IT Hare</a> offers up their <a href=http://ithare.com/programming-guide-for-video-gamers/ rel="noopener" target="_blank">Programming Guide For Video-Gamers</a>. This guide contains links/bookmarks to many other resources for game making, broken into development topics and career topics.</p>
+<p>Thanks to <strong>Sarah A.</strong> from San Diego, CA, an aspiring game developer, for finding this resource for us. It&#8217;s a great example of the community helping each other. If you come across great resources that would benefit our community just drop an email to support AT coronalabs.com.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Great game design tips: the art of color</title>
+		<link>/blog/2017/08/24/great-game-design-tips-the-art-of-color/</link>
+		<pubDate>Thu, 24 Aug 2017 22:06:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=72778</guid>
+		<description><![CDATA[Color -- or even a lack of color -- impacts every game ever created. In this roundup, discover how important color can be in your next project.]]></description>
+				<content:encoded><![CDATA[<p>Color &#8212; or even a lack of color &#8212; impacts every game ever created. Color is one of the primary emotional cues a designer can use to set the mood of a game and thus the player. In fact, understanding how to use color properly could be the difference between a hit app or one that gets almost no downloads.</p>
+<p>In this roundup, let&#8217;s look at several resources which discuss the topic of color in game design.</p>
+<div id="attachment_72780" style="width: 778px" class="wp-caption alignnone"><img class="wp-image-72780" src="/wordpress/wp-content/uploads/2017/08/botheadsss_trimmed-1024x402.png" alt="Screen shot from BotHeads" width="768" height="302" srcset="/wordpress/wp-content/uploads/2017/08/botheadsss_trimmed-1024x402.png 1024w, /wordpress/wp-content/uploads/2017/08/botheadsss_trimmed-300x118.png 300w, /wordpress/wp-content/uploads/2017/08/botheadsss_trimmed-768x302.png 768w, /wordpress/wp-content/uploads/2017/08/botheadsss_trimmed-700x275.png 700w, /wordpress/wp-content/uploads/2017/08/botheadsss_trimmed.png 1518w" sizes="(max-width: 768px) 100vw, 768px" /><p class="wp-caption-text">Screenshots from <a href=http://www.asmallgame.com/botheads/ target="_blank" rel="noopener">BotHeads</a>.</p></div>
+<div id="attachment_72787" style="width: 778px" class="wp-caption alignnone"><img class="wp-image-72787" src="/wordpress/wp-content/uploads/2017/08/LIMBO_02-1024x576.jpg" alt="Screen shot from Limbo" width="768" height="432" srcset="/wordpress/wp-content/uploads/2017/08/LIMBO_02-1024x576.jpg 1024w, /wordpress/wp-content/uploads/2017/08/LIMBO_02-300x169.jpg 300w, /wordpress/wp-content/uploads/2017/08/LIMBO_02-768x432.jpg 768w, /wordpress/wp-content/uploads/2017/08/LIMBO_02-700x394.jpg 700w, /wordpress/wp-content/uploads/2017/08/LIMBO_02-539x303.jpg 539w" sizes="(max-width: 768px) 100vw, 768px" /><p class="wp-caption-text">Screenshot from <a href=http://playdead.com/games/limbo/?#&gid=1&pid=8 target="_blank" rel="noopener">Limbo</a>.</p></div>
+<h4>1. <a href=http://babich.biz/blue-color/ target="_blank" rel="noopener">The Most Important Color In UI Design</a></h4>
+<p>In <a href=http://babich.biz/blue-color/ target="_blank" rel="noopener">this post</a> by Nick Babich, a software developer with a passion for UI/UX design, he discusses why the color <strong>blue</strong> is so popular in UI design and why it&#8217;s used in many mobile apps. From emotional reasons to technical reasons, he outlines several reasons why you should use blue.</p>
+<h4>2. <a href=http://www.gamasutra.com/blogs/HermanTulleken/20150729/249761/Color_in_games_An_indepth_look_at_one_of_game_designs_most_useful_tools.php target="_blank" rel="noopener">Color in games: An in-depth look at one of game design&#8217;s most useful tools</a></h4>
+<p>In <a href=http://www.gamasutra.com/blogs/HermanTulleken/20150729/249761/Color_in_games_An_indepth_look_at_one_of_game_designs_most_useful_tools.php target="_blank" rel="noopener">this article from Gamasutra</a>, Herman Tulleken and Jonathan Bailey take a deep dive into the purpose color serves in games. Not only do they show how games use color to brand themselves, they get into discussions about the emotion of color and how it&#8217;s used as signifiers and identifiers. This article will certainly make you think about color and its impact!</p>
+<h4>3. <a href=https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174 target="_blank" rel="noopener">Picking a Color Palette for Your Game&#8217;s Artwork</a></h4>
+<p>In <a href=https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174 target="_blank" rel="noopener">this article</a>, Tyler Seitz discusses color palettes and how to create them, along with some basic color theory that every game developer should understand.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Great game design tips: August 2017</title>
+		<link>/blog/2017/08/01/great-game-design-tips-august-2017/</link>
+		<pubDate>Tue, 01 Aug 2017 18:06:30 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=72609</guid>
+		<description><![CDATA[Game development entails countless aspects. In this roundup, we present some important topics which you can consider for making better games.]]></description>
+				<content:encoded><![CDATA[<p>Today we present several articles on game design topics which can help you build better, more compelling games!</p>
+<h4><a href=http://bit.ly/2vc693J target="_blank" rel="noopener">Make your game difficult but not punishing</a></h4>
+<p>In <a href=http://bit.ly/2vc693J target="_blank" rel="noopener">this article</a>, Ricardo Valério from <a href=https://medium.com/ target="_blank" rel="noopener">medium.com</a> discusses various factors in what makes a game challenging yet not punishing. The article starts by helping you understand what &#8220;difficulty&#8221; is, what motivates players, and how to build in the right mix of skill and achievement.</p>
+<h4><a href=http://bit.ly/2wfd9Ki target="_blank" rel="noopener">7 effective tips to create an engaging game level design</a></h4>
+<p>Keeping your players engaged is one of the challenging aspects of game design. In <a href=http://bit.ly/2wfd9Ki target="_blank" rel="noopener">this article</a>, Daniel Stallion covers different techniques for making your games more entertaining.</p>
+<h4><a href=http://ubm.io/2uODjW9 target="_blank" rel="noopener">Should you play bad games?</a></h4>
+<p>There are benefits from playing bad games &#8212; it&#8217;s a great way to learn what <em>doesn&#8217;t</em> work! In <a href=http://ubm.io/2uODjW9 target="_blank" rel="noopener">this article</a>, Andrii Goncharuk, game designer for Ubisoft, talks about why you should spend at least <em>some</em> time playing bad games.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Transitions &#8211; UX Design</title>
+		<link>/blog/2013/10/04/inteligent-transitions-in-ux-design/</link>
+		<comments>/blog/2013/10/04/inteligent-transitions-in-ux-design/#comments</comments>
+		<pubDate>Fri, 04 Oct 2013 18:00:47 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[Opportunities]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=5</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/04/inteligent-transitions-in-ux-design/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Oscar Wilde</title>
+		<link>/blog/2013/10/04/oscar-wilde/</link>
+		<pubDate>Fri, 04 Oct 2013 15:45:20 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Inspiration]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=20</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

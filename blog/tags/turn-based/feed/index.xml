@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>turn-based &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/turn-based/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>turn-based &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona weekly update: Turn-based multiplayer support</title>
+		<link>/blog/2013/07/31/corona-weekly-update-turn-based-multiplayer-support/</link>
+		<comments>/blog/2013/07/31/corona-weekly-update-turn-based-multiplayer-support/#comments</comments>
+		<pubDate>Wed, 31 Jul 2013 13:11:26 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Center]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[multiplayer]]></category>
+		<category><![CDATA[turn-based]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=39663</guid>
+		<description><![CDATA[Ready to invite your friends to play your latest game? You're in luck! 
+
+Starting in Daily Build #1172, you can <a href="http://www.coronalabs.com/products/corona-sdk/">develop iOS games</a> that take full advantage of turn-based multiplayer features in Game Center.
+
+We've built all these features into the 'gameNetwork' library so whether you have existing code or new code, it'll be a cinch to use. ]]></description>
+				<content:encoded><![CDATA[<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/07/Game-Center-icon1.png><img src=http://www.coronalabs.com/wp-content/uploads/2013/07/Game-Center-icon1.png alt="Game-Center-icon" class="alignright size-full wp-image-39677" /></a>Ready to invite your friends to play your latest game? You&#8217;re in luck!</p>
+<p>Starting in Daily Build #1172, you can <a href=http://www.coronalabs.com/products/corona-sdk/>develop iOS games</a> that take full advantage of turn-based multiplayer features in Game Center.</p>
+<p>We&#8217;ve built all these features into the &#8216;gameNetwork&#8217; library so whether you have existing code or new code, it&#8217;ll be a cinch to use.</p>
+<p>There&#8217;s a full sample available: <a href=https://github.com/coronalabs/gameNetwork-iOS-turnbased-multiplayer>https://github.com/coronalabs/gameNetwork-iOS-turnbased-multiplayer</a>.</p>
+<p>Here&#8217;s a quick tour:</p>
+<p>To invite players, you create a match with specific player id&#8217;s:</p>
+<p></p><pre class="crayon-plain-tag">gameNetwork.request( &quot;createMatch&quot;,
+{
+    playerIDs = {&quot;w4o98y3498hg349h&quot;, &quot;wrighfq547hg543&quot;},
+    listener=requestCallback
+})</pre><p></p>
+<p>To auto-match players, you also create a match but you specify the number of players you want to match:</p>
+<p></p><pre class="crayon-plain-tag">gameNetwork.request( &quot;createMatch&quot;,
+{
+    minPlayers = 2,
+    maxPlayers = 3,
+    listener=requestCallback
+})</pre><p></p>
+<p>You can also mix and match, inviting some some players and then also auto match players to the same match:</p>
+<p></p><pre class="crayon-plain-tag">gameNetwork.request( &quot;createMatch&quot;,
+{
+    playerIDs = {&quot;w4o98y3498hg349h&quot;, &quot;wrighfq547hg543&quot;},
+    minPlayers = 2,
+    maxPlayers = 3,
+    listener=requestCallback
+})</pre><p></p>
+<p>When the request listener is fired, the events contain a property &#8216;event.type&#8217; that takes on the following values:</p>
+<ul>
+<li>invitationReceived </li>
+<li>matchEnded </li>
+<li>playerTurn</li>
+</ul>
+<p>Perhaps the coolest thing is that notifications that tell you it&#8217;s your turn are automatic, so you don&#8217;t need to do anything!</p>
+<p>Happy coding!</p>
+<p>[Update] We also plan to add support for Game Center features added to iOS 6 such as invite messages, player attributes, and player groups.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/31/corona-weekly-update-turn-based-multiplayer-support/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+	</channel>
+</rss>

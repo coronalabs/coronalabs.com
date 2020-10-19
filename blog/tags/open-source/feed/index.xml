@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>open source &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/open-source/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>open source &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Open Source Plugins and (coming soon) Corona Store</title>
+		<link>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/</link>
+		<comments>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/#comments</comments>
+		<pubDate>Wed, 01 Apr 2015 19:35:15 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Sample Code]]></category>
+		<category><![CDATA[store]]></category>
+
+		<guid isPermaLink="false">/?p=61943</guid>
+		<description><![CDATA[At the end of January, I talked about wanting to make <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">plugins more open</a>.
+
+Today, we're doing two things to make that happen.]]></description>
+				<content:encoded><![CDATA[<p>At the end of January, I talked about wanting to make <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>.</p>
+<p>Today, we&#8217;re doing two things to make that happen:</p>
+<h3>Open Source Plugins</h3>
+<p>First, we are open sourcing <a href=https://github.com/coronalabs/plugins-source>Corona plugins on github</a>!</p>
+<p>These plugin projects are real-world examples of <a href=/products/enterprise/>CoronaEnterprise</a> projects. They come straight out of the <a href=https://store.coronalabs.com/plugins>Corona plugin directory</a>, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#8217;s <a href=http://docs.coronalabs.com/native/index.html>native APIs</a> to extend Corona&#8217;s core functionality.</p>
+<h3>Corona Store</h3>
+<p>Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free.</p>
+<p>The grand opening won&#8217;t happen until later this year, but we are accepting applications for <em>free</em> plugins (you can start charging for it after the grand opening): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a>.</p>
+<p>Also, if you have ideas or are looking for ideas, here&#8217;s a couple of resources that will be helpful:</p>
+<ol>
+<li>We are making extended CoronaEnterprise trials available for plugin developers. E-mail <code>enterprise at coronalabs dot com</code>.</li>
+<li>Lots of real-world examples of <a href=https://github.com/coronalabs/plugins-source>Corona plugins</a> available under the MIT license.</li>
+<li>A list of <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback?query=%5BPLUGIN%5D>feature requests</a> that could be implemented as plugins.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/feed/</wfw:commentRss>
+		<slash:comments>28</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #86 &#8211; Using Open Source Projects with Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-86/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-86/#comments</comments>
+		<pubDate>Mon, 21 Apr 2014 21:57:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Internet of Things]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[Raspberry Pi]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58332</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talked with Eclipse Foundation Internet of Things (IoT) Evangelist, Benjamin Cabé about using open platform hardware and open source projects with Corona SDK. Benjamin walked us through a project that included the use of some of the open-source tools that are part of the Eclipse IoT ecosystem along with a MQTT Corona SDK demo project.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Pa6Bfe4ZW_k?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we talked with <a title="Internet of Things" href=http://iot.eclipse.org/ target="_blank">Eclipse Foundation Internet of Things</a> (IoT) Evangelist, <a href=http://blog.benjamin-cabe.com/ target="_blank">Benjamin Cabé</a> about using open platform hardware and open source projects with Corona SDK. He advocates the use of open and innovative technologies for the Internet of Things and likes building crazy machines with <a href=https://www.adafruit.com/ target="_blank">Arduino kits</a> and all kinds of open hardware platforms. Benjamin walked us through a project that included the use of some of the <a href=http://www.eclipse.org/koneki/ldt/ target="_blank">open-source tools</a> that are part of the Eclipse IoT ecosystem along with a <a href=http://git.eclipse.org/c/mihini/org.eclipse.mihini.samples.git/tree/greenhouse-mqtt/corona-greenhouse-demo target="_blank">MQTT Corona SDK demo project</a>.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://iot.eclipse.org/ target="_blank">Eclipse Foundation Internet of Things</a></li>
+<li><a href=http://mqtt.org/ target="_blank">MQTT</a></li>
+<li><a href=http://www.thingiverse.com/thing:144791 target="_blank">Acrylic Greenhouse Starter Kit</a></li>
+<li><a href=http://www.eclipse.org/koneki/ldt/ target="_blank">Konecki IDE</a></li>
+<li><a href=http://git.eclipse.org/c/mihini/org.eclipse.mihini.samples.git/tree/greenhouse-mqtt/corona-greenhouse-demo target="_blank">MQTT Greenhouse Demo Using Corona SDK</a></li>
+<li><a href=https://wiki.eclipse.org/IoT/M2MIWG/Demonstrator?#Hardware target="_blank">Greenhouse Demo Setup Wiki</a></li>
+<li><a href=https://www.adafruit.com/ target="_blank">Arduino Starter Kits</a></li>
+<li><a href=http://gremlininteractive.com/ target="_blank">Paypal and Kiip plugins</a> (Use: gremlin_20%_off at checkout to save 20%)</li>
+<li><a href=http://www.roomalyzr.com/ target="_blank">Roomalyzr App</a></li>
+<li><a href=http://maddiebearbooks.com/ target="_blank">Maddie Bear Books</a></li>
+<li><a href=http://coronium.org/doku.php target="_blank">Coronium Cloud</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-86/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-86-2014-04-21-using-open-source-projects-with-corona-sdk.mp3" length="57480367" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-86-2014-04-21-using-open-source-projects-with-corona-sdk.mp3" length="57480367" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-86-2014-04-21-using-open-source-projects-with-corona-sdk.mp3" length="57480367" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-86-2014-04-21-using-open-source-projects-with-corona-sdk.mp3" length="57480367" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Weekly Update + Open Source</title>
+		<link>/blog/2013/04/09/corona-weekly-update-open-source/</link>
+		<comments>/blog/2013/04/09/corona-weekly-update-open-source/#comments</comments>
+		<pubDate>Wed, 10 Apr 2013 01:20:31 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[daily build]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31536</guid>
+		<description><![CDATA[Last week, we launched a new public release and also launched Corona SDK Starter, so I want to give you a quick update on all the great things we are adding to make Corona awesome for cross-platform app development. I also have some announcements on what we are doing in open source.]]></description>
+				<content:encoded><![CDATA[<p>Last week, we launched a new public release along with Corona SDK Starter. I want to give you a quick update on all the great things we are adding to make Corona awesome for <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform app development</a>. I also have some announcements on what we are doing in open source.</p>
+<p>Before I go on, I just wanted to clarify a few things about last week&#8217;s announcement:</p>
+<p>First, Corona Pro is currently available at $349. If you subscribe (or are already a subscriber) you will be able to renew for another 2 years. This is a fantastic time to get in before prices go up on May 1.</p>
+<p>Second, I want to share our philosophy behind Corona SDK Starter. The goal is to allow you all to create real apps for FREE. That includes using your own custom splash screen, which is the typical restriction you see on products that are &#8220;fake free.&#8221;</p>
+<p>The other thing, which I realized is worth explaining, is that Starter is going to be a continually evolving product. That means as time progresses, we are going to continue to explore how we can bring premium features and make them available to Starter developers. We are going to push the envelope on how we can do this to empower you, and still run a business so we can continue to innovate.</p>
+<p>That&#8217;s all I&#8217;ll say for now, though the tidbit on open source applies to Starter developers, so if that&#8217;s you, keep reading!</p>
+<h3>Graphics</h3>
+<p>So last week, I showed you our awesome demo of 5000 fish at 60 fps. The great thing about that demo is that it shows we are building on a really solid and fast foundation as we think about adding awesome new graphics features. The big takeaway here is that we are trying to build an engine that lets you do amazing graphics features in real-time. So think of Photoshop and Illustrator effects without the progress bar. Pretty ambitious, but that&#8217;s our goal.</p>
+<p>In terms of what we&#8217;re doing this week, we&#8217;ve broken ground on refactoring the architecture of our core engine code. The goal here is to make it easier for us to cleanly swap in the old and new graphics engines for things like regression testing. At the same time, we&#8217;re investigating render to texture support in the core renderer.</p>
+<h3>Plugins and Daily Builds</h3>
+<p>Daily Builds are going to resume tomorrow morning (assuming nobody broke the build). One of the check-ins you&#8217;ll notice is the following:</p>
+<p><code>Gluon/Mac: Enable simulator device builds for iOS</code></p>
+<p>What this means is the simulator will be able to do device builds that incorporate plugins hosted on our servers. We still want to do more testing before we let you play with it.</p>
+<p>On top of that, we&#8217;re also hard at work building a growing library of hosted plugins. It will start small, as initially it will include plugins that we write or plugins that are written by 3rd party partners. The goal is to expand this out so more folks can write plugins that are hosted, but we want to be methodical about this.</p>
+<h3>Open Source: &#8216;widget&#8217; and &#8216;gameNetwork&#8217; for Corona Cloud</h3>
+<p>When we open sourced widget v1, we did it with the intention of making your lives better and to minimize the impact it had for those of you who weren&#8217;t quite ready to jump to widget v2. Our intention was to put more control into your hands.</p>
+<p>We realized that we could do a couple of more things to make your life better and more manageable. Specifically, we&#8217;re going to open source &#8216;widget&#8217; v2 and the &#8216;gameNetwork&#8217; UI for Corona Cloud.</p>
+<h4>Relationship to Daily Builds</h4>
+<p>This is going to be especially useful for those of you who are using Corona SDK Starter. You will not have to wait until the next public release to get some critical bug fixes to these libraries, some of which are going in tomorrow&#8217;s Daily Build.</p>
+<p>Our plan is to keep this reasonably in sync with what we&#8217;re putting out in Daily Builds.</p>
+<h4>License</h4>
+<p>The source code will be made available under a BSD license. If you use the open source version of either of these libraries, we&#8217;ve added a minor requirement that you add the following somewhere in your app (e.g., the credits):</p>
+<p><code>This product includes software developed by Corona Labs Inc. (http://www.coronalabs.com)./</code></p>
+<h4>Contributions and Pull Requests</h4>
+<p>We&#8217;ll be posting these on our <a href=https://github.com/coronalabs>github page</a> by next week.</p>
+<p>If you&#8217;re interested in helping us make these libraries better, we&#8217;ll be putting together some guidelines on pull requests.</p>
+<p><center>* * *</center></p>
+<p>As you can see, we&#8217;ve kept hard at work, even after a monumental release. I look forward to sharing more with you, from inside the Corona Labs kitchen!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/09/corona-weekly-update-open-source/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+	</channel>
+</rss>

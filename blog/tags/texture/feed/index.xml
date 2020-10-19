@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>texture &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/texture/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>texture &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Custom Shader Effects</title>
+		<link>/blog/2015/04/15/custom-shader-effects/</link>
+		<comments>/blog/2015/04/15/custom-shader-effects/#comments</comments>
+		<pubDate>Wed, 15 Apr 2015 12:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[effects]]></category>
+		<category><![CDATA[glsl]]></category>
+		<category><![CDATA[imaging]]></category>
+		<category><![CDATA[shader]]></category>
+		<category><![CDATA[texture]]></category>
+
+		<guid isPermaLink="false">/?p=62261</guid>
+		<description><![CDATA[One of Corona's <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">major themes</a> for this year was graphics, and in particular, giving you more "under the hood" access to our graphics engine. Starting in daily build 2015.2560, we are giving you the ability to create <a href="http://docs.coronalabs.com/daily/guide/graphics/customEffects.html">custom shader effects</a>.]]></description>
+				<content:encoded><![CDATA[<p>[Update]: Some really cool shaders being shared in the forums <a href=http://forums.coronalabs.com/topic/56284-share-your-shaders/>here</a> and <a href=http://forums.coronalabs.com/topic/56212-corona-shader-playground-from-your-web-browser/?p=290925>here</a>.</p>
+<p>One of Corona&#8217;s <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major themes</a> for this year was graphics, and in particular, giving you more &#8220;under the hood&#8221; access to our graphics engine.</p>
+<h2>Fragment/Vertex Kernels</h2>
+<p>Starting in daily build 2015.2560, we are giving you the ability to create <a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>custom shader effects</a>. If you&#8217;re familiar with writing shaders in GLSL-ES, then you&#8217;ll feel right at home writing shaders in Corona.</p>
+<p>We&#8217;ve structured things so you don&#8217;t need to write a full shader program. Instead, you write snippets of GLSL-ES shader code that we call kernels. Instead of a full vertex shader program, you write a vertex kernel; instead of a full fragment shader program, you write a fragment kernel.</p>
+<p>This way, you can focus on creating and implementing cool visual effects without worrying about the surrounding scaffolding. In fact, we&#8217;ve used this same exact system for all the <a href=http://docs.coronalabs.com/daily/guide/graphics/effects.html>built-in shader effects</a> in Corona.</p>
+<h2>Web-based Shader Playground</h2>
+<p>To make this even easier, we&#8217;ve created a <a href=https://shader.coronalabs.com/>Corona Shader Playground</a> where you can play/experiment with Corona custom (fragment) shaders right from your browser!</p>
+<p>(NOTE: WebGL is required to see the preview. If your browser doesn&#8217;t have proper support, you will only see code, no preview.)</p>
+<p>Below are some live examples of fragment kernels that you can edit (just click in the code box). The inlined examples we have here are just a partial view into what the playground lets you do — click &#8220;Open in Playground&#8221; and you&#8217;ll get the full experience such as varying parameters, changing textures, etc.</p>
+<p>Here&#8217;s a basic &#8220;Hello World&#8221; fragment shader (WebGL support is required in your browser):</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/color.frag"></div>
+<p>Fragment kernel functions are called for every single pixel to determine the color to &#8220;shade&#8221; the pixel. In the above example, the shader always returns red which is why the entire shape gets colored red. As the comment suggests, try modifying the above code to use a different color and live preview the results.</p>
+<p>Here&#8217;s a slightly more complex shader:</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/simple.frag"></div>
+<p>This example achieves its effect by mapping texture coordinate values to the the &#8220;Red&#8221; and &#8220;Green&#8221; channels and using time to vary the &#8220;Blue&#8221; channel.</p>
+<p>Both of these fragment kernels are examples of generators, because they procedurally generate the texture (no source image textures are used).</p>
+<p>There are more complex shader effect examples in the playground like:</p>
+<ul>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/plasma.frag&[16,16,0.0,0.0]>plasma generator</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/bulge.frag&textures/512/checkerboard-diffuse.jpg&[0.25,0.0,0.0,0.0]>bulge image filter</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/moon.frag&textures/512/moon-diffuse.jpg&%5B0.005,0.01,-0.3,1.5%5D>rotating moon effect</a> (Lua means &#8220;moon&#8221; in Portuguese).</li>
+</ul>
+<h2>Resources</h2>
+<p>Ready to start playing? Here&#8217;s everything you need to get going:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>Custom Shader Effects Guide</a></li>
+<li><a href=https://shader.coronalabs.com/>WebGL-based Shader Playground</a></li>
+<li><a href=https://github.com/coronalabs/sample-customFilter>Sample Corona Project</a></li>
+<li><a href=http://forums.coronalabs.com/forum/647-custom-shader-effects/>Forum</a></li>
+</ul>
+<p><script>
+    var script = document.createElement('script');
+    script.src = "//shader.coronalabs.com/src/inject-shader.js";
+    document.head.appendChild(script);
+</script></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/15/custom-shader-effects/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

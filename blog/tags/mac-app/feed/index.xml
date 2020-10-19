@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mac app &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mac-app/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Mac app &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Mac App and Win32 App: Open Beta</title>
+		<link>/blog/2015/07/22/mac-app-and-win32-app-open-beta/</link>
+		<comments>/blog/2015/07/22/mac-app-and-win32-app-open-beta/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 17:08:09 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[desktop app]]></category>
+		<category><![CDATA[Mac app]]></category>
+		<category><![CDATA[win32 app]]></category>
+
+		<guid isPermaLink="false">/?p=63421</guid>
+		<description><![CDATA[At the beginning of this year, I outlined new platforms as a major theme for 2015. And a few months later, at GDC, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we've been conducting private betas with a small group of Corona developers.
+
+Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!]]></description>
+				<content:encoded><![CDATA[<p>At the beginning of this year, I outlined new platforms as a <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major theme for 2015</a>. And a few months later, at <a href=/blog/2015/03/02/corona-sdk-is-now-free/>GDC</a>, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we&#8217;ve been conducting private betas with a small group of Corona developers.</p>
+<p>Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds>Corona daily build</a> 2015.2687 (or later) to get started.</p>
+<h3>Building Desktop Apps</h3>
+<p>We&#8217;ve done a lot of work to make the experience of building desktop apps as smooth as possible.</p>
+<p>By default, you can build apps directly from Corona Simulator, just like you would for iOS or Android. No interaction with Xcode or Visual Studio is needed.</p>
+<p>You will see a new menu item under <code>File</code> => <code>Build</code> in the Corona Simulator which presents a new build dialog for desktop apps: on the Mac, you&#8217;ll be able to build Mac apps, and on Windows, you&#8217;ll be able to build Win32 apps.</p>
+<h3>Transitioning from Mobile to Desktop</h3>
+<p>When you target your project to a new platform, we&#8217;ve done a lot of heavy lifting for you.</p>
+<p>If your mobile project is fully functional in the Corona Simulator, then your project should easily port over as a desktop app.</p>
+<p>There are inevitably going to be a few things you&#8217;ll want to do: testing, tweaks (e.g. window size, behavior, and title) in <code>build.settings</code>, etc.</p>
+<p>Depending on your app design/project, you&#8217;ll also want to think about issues like:</p>
+<ul>
+<li>what&#8217;s appropriate on a desktop-sized screen such as window size, layout and orientation</li>
+<li>whether your touch-based code needs tweaking to work with a mouse</li>
+<li>how to handle plugins/services that aren&#8217;t available on desktop</li>
+<li>etc.</li>
+</ul>
+<h3>Desktop Features</h3>
+<p>In terms of features supported, you should think of the desktop feature set as what&#8217;s available in the Corona Simulator itself. This is a subset of the features supported on iOS/Android.</p>
+<p>For those of you interested in full control — accessing OS-specific features/services via native code, writing plugins, customizing things like menus, etc — you can create a truly native Xcode project (and coming later, a Visual Studio project) to fully customize your app via <a href=https://docs.coronalabs.com/daily/coronacards/osx/>CoronaCards for OS X</a>.</p>
+<h3>Examples</h3>
+<p>Some games port over really well. For example, these games from <a href=https://www.firemaplegames.com/>Fire Maple Games</a> (left), <a href=http://frozengun.com/>FrozenGun</a> (center) and <a href=http://www.glitchgames.co.uk/>Glitch Games</a> (right) worked immediately as desktop games:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Lost-City-Main.png><img src="/wordpress/wp-content/uploads/2015/07/Lost-City-Main-300x217.png" alt="Lost City Main" width="230" height="166" class="alignnone size-medium wp-image-63447" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1.png><img src="/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1-98x150.png" alt="Freeze Screenshot 1" width="98" height="150" class="alignnone size-thumbnail wp-image-63446" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/ForeverLost.png><img src="/wordpress/wp-content/uploads/2015/07/ForeverLost-300x184.png" alt="ForeverLost" width="230" height="141" class="alignnone size-medium wp-image-63422" /></a></p>
+<h3>Resources</h3>
+<p>More detail about using Corona on desktop are available in our docs:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html>Mac App Docs</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/win32Build/index.html>Win32 App Docs</a></li>
+</ul>
+<p>If you have more questions, please check out the forums:</p>
+<ul>
+<li><a href=https://forums.coronalabs.com/forum/649-os-x-desktop-app-testing/>Mac App Forums</a></li>
+<li><a href=https://forums.coronalabs.com/forum/650-win32-desktop-app-testing/>Win32 App Forums</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/07/22/mac-app-and-win32-app-open-beta/feed/</wfw:commentRss>
+		<slash:comments>41</slash:comments>
+		</item>
+		<item>
+		<title>Corona SDK is now Free + Mac/Win Desktop Apps + GDC</title>
+		<link>/blog/2015/03/02/corona-sdk-is-now-free/</link>
+		<comments>/blog/2015/03/02/corona-sdk-is-now-free/#comments</comments>
+		<pubDate>Mon, 02 Mar 2015 16:00:49 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[gdc]]></category>
+		<category><![CDATA[Mac app]]></category>
+		<category><![CDATA[Win app]]></category>
+
+		<guid isPermaLink="false">/?p=61617</guid>
+		<description><![CDATA[We have to big announcements! Corona SDK is now completely free, and Mac and Win32 desktop apps are coming soon. Read on for all the details.]]></description>
+				<content:encoded><![CDATA[<p>This week, to coincide with GDC, we&#8217;re making some very exciting announcements!</p>
+<h3>Corona SDK is completely FREE</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/free.png><img src=/wordpress/wp-content/uploads/2015/02/free.png alt="free" width="150" height="150" class="alignright size-full wp-image-61628" /></a>First, Corona SDK is now <a href=/pricing target="_blank">completely free</a>! Starting today, anyone who registers on our site will get the full power of Corona SDK (existing users can just logout and then re-login to the Corona Simulator).</p>
+<p>Previously, you had to pay to get access to things like daily builds, in-app purchases, premium graphics, Pro-tier plugins, Windows Phone 8, etc. — now, everyone will get those for free. If you&#8217;re familiar with the old subscription tiers for Corona SDK (Starter, Basic, and Pro), everyone will now get the functionality that was available in Pro. There is now a single &#8220;Corona SDK&#8221; — one tier to rule them all.</p>
+<p>It is worth noting that Corona Enterprise, CoronaCards iOS, and CoronaCards Android will continue to be paid products.</p>
+<p>If you&#8217;re an <strong>existing subscriber</strong> — Basic, Pro, or Enterprise — see <a href="#Subscriber-Upgrades">Free Upgrades for Subscribers</a> at the bottom of this post to learn about some great upgrades.</p>
+<h3>Mac App and Win32 App support</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/Mac-Win.png><img src=/wordpress/wp-content/uploads/2015/02/Mac-Win.png alt="Mac+Win" width="168" height="76" class="alignright size-full wp-image-61620" /></a>In my <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>State of Corona</a> address, I mentioned new platforms as a major theme for 2015 and our strategy to make it happen.</p>
+<p>And that brings us to our second major announcement: We are bringing Mac App and Win32 App support to the Corona platform!</p>
+<p>Yes, you read that right.</p>
+<p>We are going to make it incredibly easy for you to create apps that run everywhere — from desktop computers to mobile devices!</p>
+<p>Currently, we are in the early stages. Our next milestone is to be able to package this up into a form that can be shared in a beta. More on this soon.</p>
+<p>But we have some demos: come by the Fuse Powered/Corona Labs booth at the GDC Expo (Booth 1244, South Hall) this week if you&#8217;d like to see a few really great Corona apps running on desktop computers — as apps! We&#8217;ll also publish some videos of these here on the blog very soon.</p>
+<h3>Fuse Powered monetization</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/treasure-chest.jpg><img src="/wordpress/wp-content/uploads/2015/02/treasure-chest-300x188.jpg" alt="treasure-chest" width="300" height="188" class="alignright size-medium wp-image-61622" /></a>Finally, our parent company, <a href=http://fusepowered.com/>Fuse Powered</a>, is taking monetization to a whole new level with a its player-centric monetization engine. See some <a href=http://venturebeat.com/2015/02/24/fuse-powered-launches-player-centric-mobile-monetization-engine/ target="_blank">recent coverage in VentureBeat</a>.</p>
+<p>With this engine, you&#8217;ll be able to do 3 things. First, you&#8217;ll be able to analyze your players, and make meaningful conclusions from their in-game behavior. Next, you&#8217;ll be able to segment them based on these behaviors and figure out the most relevant offer to show them. Finally, you&#8217;ll be able to deliver targeted IAP offers, dynamic rewarded video, and ads.</p>
+<p>On top of it all, you&#8217;ll also be able to mediate your own ad networks and leverage AdRally, Fuse’s competitive ad marketplace.</p>
+<p>There&#8217;s nothing on the market like this today, and it all translates into helping you make significantly more money!</p>
+<p>While select Corona developers are already in private beta with Fuse Powered, we are working hard to nail down all the moving parts — there are a lot of them. Rest assured, we want to get this into your hands as quickly as possible.</p>
+<p>If you&#8217;d like to learn more, come to Jon&#8217;s session at GDC on Tuesday, Mar 3: <a href=http://schedule.gdconf.com/session/player-centric-live-ops-monetization-presented-by-fuse-powered-inc>Player Centric Live Ops Monetization</a>.</p>
+<p>Or come by the Fuse Powered/Corona Labs booth at the GDC Expo (Booth 1244, South Hall).</p>
+<p><a name="Subscriber-Upgrades"></a></p>
+<h3>Free Upgrades for Subscribers</h3>
+<p>Now that Corona is free, we do realize there are many of you that have bought/renewed your Corona subscriptions recently and we want to make sure we take care of you. If you were an existing Basic, Pro, or Enterprise customer as of this morning, we&#8217;re going to give you some amazing, free upgrades:</p>
+<ol>
+<li>Current Corona Enterprise customers get CoronaCards iOS and CoronaCards Android licenses (1 month for each month you have left).</li>
+<li>Current Corona SDK Pro customers have been upgraded to Corona Enterprise (1.5 months for each month you have left) and will also get CoronaCards iOS/Android.</li>
+<li>Current Basic customers have been upgraded to Corona Enterprise (1 month for each month you have left) and will also get CoronaCards iOS/Android.</li>
+</ol>
+<p>All these upgrades should be in place NOW, but it&#8217;s possible some of you may have to wait a day or so to see the full upgrade.</p>
+<p>However, if you&#8217;re a Basic or Pro customer <strong>who bought in 2015 (Jan 1, 2015 or after)</strong>, and you do <strong>not</strong> want these upgrades, you can request a <em>pro-rated</em> refund. Email us at refund@coronalabs.com by Mar 15, 2015 11:59pm PST. If you meet the conditions, we will issue a refund within a few days.</p>
+<p>If you have any questions, please review <a href=/frequently-asked-questions/?#what-does-it-mean-that-corona-sdk-is-now-free>the FAQs</a>. If you still have questions or want to discuss, feel free to post in <a href=http://forums.coronalabs.com/topic/54933-corona-sdk-is-now-free/>this thread in the forum</a> and we will do our best to make it all clear!</p>
+<hr />
+<p>We are super excited about making Corona SDK free and opening it up to an even bigger worldwide developer community. This, together with our expanded platform coverage and the work we are doing with Fuse Powered is making for the start of a great year!</p>
+<p>And, as always, we want to thank all our developers for using Corona and for making some amazing things with the Corona platform!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/03/02/corona-sdk-is-now-free/feed/</wfw:commentRss>
+		<slash:comments>123</slash:comments>
+		</item>
+	</channel>
+</rss>

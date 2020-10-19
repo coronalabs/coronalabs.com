@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GameCenter &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/gamecenter/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>GameCenter &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Changes in minimum OS version: iOS 6</title>
+		<link>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/</link>
+		<comments>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/#comments</comments>
+		<pubDate>Fri, 25 Apr 2014 19:18:44 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[GameCenter]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ios6]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=58354</guid>
+		<description><![CDATA[Starting in <a href="http://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2014.2277, we are changing the minimum supported version on iOS from 5.1 to 6. This means that if you do a device build with 2014.2277 (or later), your app will not run on a device whose version is below iOS 6.
+
+This change is needed to move our iOS architecture forward, and finally pay off technical debt that has been accumulating for nearly 18 months, which is an eternity in the mobile space.]]></description>
+				<content:encoded><![CDATA[<p>Starting in <a href=http://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2014.2277, we are changing the minimum supported version on iOS from 5.1 to 6. This means that if you do a device build with 2014.2277 (or later), your app will not run on a device whose version is below iOS 6.</p>
+<p>This change is needed to move our iOS architecture forward, and finally pay off technical debt that has been accumulating for nearly 18 months — an eternity in the mobile space.</p>
+<p>Now that previous iOS versions (3.x, 4.x, 5.x) account has declined to a mere 2% (according to <a href=https://developer.apple.com/support/appstore/>Apple</a>), we can no longer justify accumulating this sort of technical debt. It&#8217;s difficult to maintain; it&#8217;s fragile; and it&#8217;s not future-proof — we inevitably had to introduce new hacks.</p>
+<p>Back when iOS 6 was released, Apple made fundamental changes to how apps supported multiple orientations. Unfortunately, these changes were not compatible with code designed to work against earlier versions of iOS. </p>
+<p>Historically, to maintain support for both older and modern iOS versions, we had to do things that were not true to the modern way of doing things in iOS. This created a conflict in our architecture, one we predicted would generate problems in the future. And we were right — you may recall these unsavory strings in your build.settings:</p>
+<p></p><pre class="crayon-plain-tag">CoronaUseIOS6PortraitOnlyWorkaround
+CoronaUseIOS6LandscapeOnlyWorkaround
+CoronaUseIOS6IPadPhotoPickerLandscapeOnlyWorkaround
+CoronaUseIOS7LandscapeOnlyWorkaround
+CoronaUseIOS7IPadPhotoPickerLandscapeOnlyWorkaround</pre><p></p>
+<p>In the latest daily builds, we have modernized our orientation support, fully embracing the iOS 6 model for orientation support, thus removing the internal architectural conflict. That means we&#8217;ll no longer be able to deal with orientation properly on older iOS versions such as 5.1.</p>
+<p>The great thing about these changes are that they completely remove the need for the above hacks. For example, built-in UI like the photo picker and Game Center no longer require the hack. They&#8217;ll also eliminate the need for them in the <em>future</em>, so newer UI that Apple introduces will not need separate hacks. </p>
+<p>If you must release on iOS 5.1, we recommend you use an older daily build (prior to 2014.2277) or the last public release. All future daily builds and future releases will require iOS 6.0 or higher.</p>
+<p>&#8212;</p>
+<p>Enterprise users take note that if you update to the latest daily build: </p>
+<p>(1) You should update your Xcode project so that the &#8220;iOS Deployment Target&#8221; is 6.0, as this controls the minimum version.<br />
+(2) &#8216;UISupportedInterfaceOrientations&#8217; is now ignored, so if you want to control the orientations that the application (not to be confused with the Corona content) supports, your implementation of the &#8216;CoronaDelegate&#8217; should override &#8216;application:supportedInterfaceOrientationsForWindow:&#8217;.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

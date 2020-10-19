@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Interactive Books &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/interactive-books/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Interactive Books &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: 12 Huia Birds &#8211; bringing extinct birds back to life through interactive storytelling</title>
+		<link>/blog/2016/09/08/featured-app-12-huia-birds-bringing-extinct-birds-back-to-life-through-interactive-storytelling/</link>
+		<pubDate>Thu, 08 Sep 2016 20:13:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[eBooks]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Interactive Books]]></category>
+		<category><![CDATA[storybook]]></category>
+		<category><![CDATA[storytelling]]></category>
+
+		<guid isPermaLink="false">/?p=67984</guid>
+		<description><![CDATA[12 Huia Birds is an interactive story about the extinction of the huia bird in New Zealand. Written by Julian Stokoe and illustrated by Stacy Eyles, this amazing duo brings the ill-fated avian back to life as part of a richly interactive story.]]></description>
+				<content:encoded><![CDATA[<p>Recently we have showcased some incredible mobile games from the Corona developer community. This week, we turn our focus to a genre that isn&#8217;t covered as frequently: interactive books.</p>
+<p><a href=http://yoozoobooks.com/12huiabirds.html target="_blank"><em>12 Huia Birds</em></a> is an interactive story about the extinction of the huia bird in New Zealand. Written by Julian Stokoe and illustrated by Stacy Eyles, this amazing duo brings the ill-fated avian back to life as part of a richly interactive story.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/qC26AweOVeA?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe><br />
+Built using Corona, the book makes heavy use of <a href=http://esotericsoftware.com/ target="_blank">Spine</a> from <a href=http://esotericsoftware.com/ target="_blank">Esoteric Software</a> to create lively animations in the story. &#8220;The birds are all Spine files which loop animation cycles randomly. These were created before mesh was available so we are having fun with mesh for our next book app,&#8221; Stokoe said.</p>
+<p>The story unfolds as you touch various actors and engage in other eye-catching animations. One such animation includes a 360-degree view where you swipe your way around the bird to see it from various angles. Various worksheets and activities can also be downloaded from the app&#8217;s companion website to use in educational settings.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/zqDmPJNiLgo?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Unfortunately, the huia was lost before the invention of audio capture devices. So, their songs have been recreated based on musical notations written down by ornithologists at a time when the bird was still alive, as well as whistles recorded in the 1950s by a man who recalled the sound from his childhood.</p>
+<p><img class="alignnone size-full wp-image-67986" src="/wordpress/wp-content/uploads/2016/09/fE5Pim2ylTK3y7o_NMmAVWj-6iDPbIKiBWyGxc692QwIeQI44x5bQAQfFJmJH0KYXQh900.jpg" alt="fE5Pim2ylTK3y7o_NMmAVWj-6iDPbIKiBWyGxc692QwIeQI44x5bQAQfFJmJH0KYXQ=h900" width="960" height="540" /></p>
+<p><em>12 Huia Birds</em> won backing from <a href=http://www.nzonair.govt.nz/ target="_blank">NZ On Air&#8217;s Digital Media Fund</a> which allows <a href=http://yoozoobooks.com/ target="_blank">Yoozoo</a> to produce the book for free. Unlike many books that start in print and then are adapted to digital, this one is going the opposite direction, beginning digital with a print version in the future.</p>
+<p>If you are interested in learning more about the production of <em>12 Huia Birds</em>, visit their <a href=http://12huiabirds.tumblr.com/ target="_blank">developer blog</a> and download the book for free in the <a href=https://itunes.apple.com/us/app/12-huia-birds/id1059189790?mt=8 target="_blank">App Store</a>, on <a href=https://play.google.com/store/apps/details?id=com.yoozoo.books.huiaBirds target="_blank">Google Play</a>, and in the <a href=https://www.amazon.com/Yoozoo-Ltd-12-Huia-Birds/dp/B01CMZHGAW/ref=sr_1_1?ie=UTF8&qid=1473206630&sr=8-1&keywords=12+huia+birds target="_blank">Amazon Appstore</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/12-huia-birds/id1059189790?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.yoozoo.books.huiaBirds target="_blank"><img class="alignnone size-full wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a> <a href=https://www.amazon.com/Yoozoo-Ltd-12-Huia-Birds/dp/B01CMZHGAW/ref=sr_1_1?ie=UTF8&qid=1473206630&sr=8-1&keywords=12+huia+birds target="_blank"><img class="alignnone size-full wp-image-64608" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: A New Home for Charlie the Chocolate Chihuahua</title>
+		<link>/blog/2016/03/24/featured-app-a-new-home-for-charlie-the-chocolate-chihuahua/</link>
+		<pubDate>Thu, 24 Mar 2016 23:18:05 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[Children's Apps]]></category>
+		<category><![CDATA[children's books]]></category>
+		<category><![CDATA[Interactive Books]]></category>
+
+		<guid isPermaLink="false">/?p=66236</guid>
+		<description><![CDATA[A New Home for Charlie the Chocolate Chihuahua is an interactive book app from Fat Red Couch. Click through to earn more about this app.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66239" src="/wordpress/wp-content/uploads/2016/03/cccicon-150x150.png" alt="cccicon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/cccicon-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/cccicon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are creating some fantastic apps. Today Corona Labs would like to feature, <em>A New Home for Charlie the Chocolate Chihuahua</em>, an interactive book from <a href=http://fatredcouch.com/ target="_blank">Fat Red Couch, Inc</a>.</p>
+<p>Charlie the Chocolate Chihuahua is a story about a small dog making friends in his new home. Get to know characters like Rockin’ Rob Robin and Shearl, the tailless squirrel while playing interactive games that include puzzles, painting and drawing, interactive sounds and more. </p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/6dS444kkbDU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Artwork can be saved to the gallery for sharing. Those saved images can then later be used as part of the games jigsaw puzzle system. The player can adjust the number of pieces to set the puzzle difficulty.</p>
+<p>You can find this app:</p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/new-home-for-charlie-chocolate/id931004078?mt=8 target="_blank">Apple iTunes</a></li>
+<li><a href=https://play.google.com/store/apps/details?id=com.fatredcouch.charlie.thechocolatechihuahua.anewhomeforcharlie.android target="_blank">Google Play</a></li>
+<li><a href=http://www.amazon.com/New-Home-Charlie-Chocolate-Chihuahua/dp/B00UK5DD72 target="_blank">Amazon</a></li>
+<li>Coming soon for tvOS and OS X!</li>
+</ul>
+<p>A portion of the proceeds go to Rocket Dog Rescue, a rescue group that places dogs in approved homes.</p>
+<p><img class="alignnone size-full wp-image-66237" src="/wordpress/wp-content/uploads/2016/03/ccc01.png" alt="ccc01" width="960" height="540" /></p>
+<p><img class="alignnone size-full wp-image-66238" src="/wordpress/wp-content/uploads/2016/03/ccc02.png" alt="ccc02" width="960" height="540" /></p>
+<p>What can you create with Corona SDK?</p>
+<h3>Want to see your app featured here?</h3>
+<p>Corona Labs is always looking for apps to feature. If you’ve developed an app using Corona SDK, complete our <a href=/community/share/ target="_blank">showcase submission form</a> and you could show up in the blog, get a social media shout out, collect some cool swag or more!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #63 &#8211; Creating Children&#8217;s Apps and Simulating 2.5D Perspective in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-63/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-63/#comments</comments>
+		<pubDate>Mon, 11 Nov 2013 23:48:44 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Children's Apps]]></category>
+		<category><![CDATA[Graphics 2.0]]></category>
+		<category><![CDATA[Interactive Books]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=51376</guid>
+		<description><![CDATA[During this week's Corona Geek we talked with children's app developer Greg Pugh about creating children's apps using Corona SDK. As a one person shop, Greg has successfully created a series of very creative interactive children's books using Corona SDK and Kwik. He shared a number of tips and insights that you'll want to hear, even you're not creating children's apps. We also, looked at code for creating 2.5D perspective using the new Graphics 2.0 engine.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/TUiBKcAdWFU?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek we talked with cartoonist/writer/developer Greg Pugh from <a href=http://www.gpanimations.com/ target="_blank">GP Animations</a> about creating children&#8217;s apps using Corona SDK. As a one person shop, Greg has successfully created a series of very creative <a href=http://www.maddiebearbooks.com/ target="_blank">interactive children&#8217;s books</a> using Corona SDK and <a href=http://www.kwiksher.com/ target="_blank">Kwik</a>. He shared a number of tips and insights that you&#8217;ll want to hear, even you&#8217;re not creating children&#8217;s apps. We also, looked at code for <a href=http://www.coronalabs.com/blog/2013/10/31/tutorial-2-5d-perspective-in-graphics-2-0/>creating 2.5D perspective</a> using the new Graphics 2.0 engine. We had a blast.</p>
+<p>The deadline for the <a href=http://www.coronalabs.com/blog/2013/10/17/introducing-coronas-graphics-2-0-contest/>Graphics 2.0 Contest</a> has been extended to Sunday, November 17 at 11:59pm PST. So now you have time to polish up that submission for a chance to win Corona Enterprise or an iPad mini. That&#8217;s what Ray Delia from <a href=http://www.stinkykitties.com/S.K._Studios/Home.html target="_blank">S.K. Studios</a> is doing. Good luck Ray!</p>
+<p><strong>Joining the Hangout today was:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Dr. Brian Burton</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/108670140200721855983 target="_blank">Colette Levesque</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/115993784358801200530 target="_blank">Ed Maurina</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/104085792284662229668 target="_blank">Gerald Bailey</a></li>
+<li><a href=http://gpanimations.com/?ref=corona-geek target="_blank">Greg Pugh</a></li>
+<li><a href=http://www.stinkykitties.com/S.K._Studios/Home.html?ref=corona-geek target="_blank">Raymond Delia</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/110937253518059728892 target="_blank">Scott Sharpiro</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/116875464241306531958 target="_blank">Theo Rushin, Jr.</a></li>
+</ul>
+<p>&#8230; and thank you to everyone who watched the live <a href=http://youtube.com/coronageek target="_blank">Corona Geek Hangout on YouTube</a>.</p>
+<p>Congratulations to Joe Vest for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a>, <a href=http://www.facebook.com/coronageek>Facebook</a>, <a href=https://plus.google.com/b/108159899655420864045/108159899655420864045/posts target="_blank">Google+</a>, or <a href=http://youtube.com/coronageek target="_blank">YouTube</a> and complete the Corona Geek <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">giveaway form</a>.</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-63/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-63-2013-11-11-childrens-apps-25D-perspective.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-63-2013-11-11-childrens-apps-25D-perspective.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-63-2013-11-11-childrens-apps-25D-perspective.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-63-2013-11-11-childrens-apps-25D-perspective.mp3" length="0" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

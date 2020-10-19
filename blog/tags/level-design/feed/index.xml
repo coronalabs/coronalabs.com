@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>level design &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/level-design/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>level design &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #186 &#8211; Using Tiled Map Editor for level design with Corona</title>
+		<link>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/</link>
+		<comments>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/#comments</comments>
+		<pubDate>Tue, 10 May 2016 01:38:24 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[Tiled]]></category>
+		<category><![CDATA[Tiled Map Editor]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66787</guid>
+		<description><![CDATA[On today&#8217;s Corona Geek podcast, Michael Wilson from Pony Wolf stepped us through the basics of using the Tiled Map Editor as a layout tool with Corona. Michael gave us a quick tour of the editor&#8217;s interface and then jumped right into importing images, creating tilesets, adding physics to objects, and working with both Lua and JSON data files. He also demonstrated how he uses his PonyTiled Github library to work with Tiled in Corona. Michael&#8217;s Ludum Dare entry has been updated for Steam Greenlight. Be sure to vote it up! Show notes: Tiled Map Editor PonyTiled Github Repo ShoeBox Game Development Tool Corona...]]></description>
+				<content:encoded><![CDATA[<p>On today&#8217;s Corona Geek podcast, Michael Wilson from <a href=http://ponywolf.com/ target="_blank">Pony Wolf</a> stepped us through the basics of using the <a href=http://www.mapeditor.org/ target="_blank">Tiled Map Editor</a> as a layout tool with Corona.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/DMsiGsgwZts?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Michael gave us a quick tour of the editor&#8217;s interface and then jumped right into importing images, creating tilesets, adding physics to objects, and working with both Lua and JSON data files. He also demonstrated how he uses his <a href=https://github.com/ponywolf/ponytiled target="_blank">PonyTiled Github library</a> to work with Tiled in Corona.</p>
+<p>Michael&#8217;s Ludum Dare entry has been <a href=http://steamcommunity.com/sharedfiles/filedetails/?id=678046165 target="_blank">updated for Steam Greenlight</a>. Be sure to vote it up!</p>
+<p><strong>Show notes:</strong></p>
+<ul>
+<li><a href=http://www.mapeditor.org/ target="_blank">Tiled Map Editor</a></li>
+<li><a href=https://github.com/ponywolf/ponytiled target="_blank">PonyTiled Github Repo</a></li>
+<li><a href=http://renderhjs.net/shoebox/ target="_blank">ShoeBox Game Development Tool</a></li>
+<li><a href=https://www.youtube.com/watch?v=96GkKOdLGsQ target="_blank">Corona Geek #185 &#8211; Part 1 &#8211; Using Spine</a></li>
+<li><a href=https://www.youtube.com/watch?v=BPKQ6NZOGT4 target="_blank">Corona Geek #185 &#8211; Part 2 &#8211; Using Tiled to create The Mimic</a></li>
+<li><a href=https://ponywolf.itch.io/the-mimic target="_blank">The Mimic</a></li>
+<li><a href=https://ponywolf.itch.io/1-800-monsters target="_blank">1-800 Monsters</a></li>
+</ul>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://ponywolf.com/ target="_blank">Michael Wilson</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://www.sharkappsllc.com/ target="_blank">Tony Godfrey</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-186-2016-05-09-tiled-level-editor-basics.mp3" length="101691630" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #171 &#8211; Adding Tiled Backgrounds and Randomizing Enemy Types</title>
+		<link>/blog/coronageek/corona-geek-171/</link>
+		<comments>/blog/coronageek/corona-geek-171/#respond</comments>
+		<pubDate>Tue, 08 Dec 2015 01:31:07 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[level design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64884</guid>
+		<description><![CDATA[On today's Hangout we continued our desktop game development series. We talked about the process of adding tiled background images, make some zombies smarter than others, and randomizing enemy distribution across levels. Download source code for the demo.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/N7xKBWmB_LY?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we continued development on our desktop top down shooter game. This week we talked about the process of adding tiled background images. We learned how to make some zombies smarter than others, and we looked at how to randomize enemy distribution across levels to ensure we don&#8217;t overwhelm the player too early in the game.</p>
+<p><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">Download the source code</a> from today&#8217;s demo to follow along.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-171/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-171-2015-12-07-tiled-terrain-random-enemies.mp3" length="87792850" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Rapid Level Design Using A Visual Editor</title>
+		<link>/blog/coronageek/hangout-highlights-rapid-level-design-using-a-visual-editor/</link>
+		<comments>/blog/coronageek/hangout-highlights-rapid-level-design-using-a-visual-editor/#respond</comments>
+		<pubDate>Wed, 14 Oct 2015 18:31:05 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[level editors]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64349</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 162, we wrapped up our "Monsters Need Coins", game development series with a look at how to create a self-contained visual editor to quickly design game levels. Ed Maurina walked us through the editor's user interface, showed us how to go from an 8x8 grid to a working game level in less than a minute, and walked us through the roughly 1000 lines of code used to create the editor.  Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 162, we wrapped up our &#8220;Monsters Need Coins&#8221;, game development series with a look at how to create a self-contained visual editor to quickly design game levels. Ed Maurina walked us through the editor&#8217;s user interface, showed us how to go from an 8&#215;8 grid to a working game level in less than a minute, and walked us through the roughly 1000 lines of code used to create the editor. </p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-162/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/9j5kbi-9B18?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Visual Level Editor Use Case</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/8T0b1lBH70s?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Visual Editor Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/f_S_h5bWS2U?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Editor Code Review</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/d2_pUkFjapE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Editor Code Details</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/dUEZsQAaCEk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Visual Editor Wrap Up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qLhLc7RSioI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout on <a href=/blog/coronageek/corona-geek-163/>creating desktop games with controls</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-rapid-level-design-using-a-visual-editor/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #162 &#8211; Creating a Visual Game Editor</title>
+		<link>/blog/coronageek/corona-geek-162/</link>
+		<comments>/blog/coronageek/corona-geek-162/#comments</comments>
+		<pubDate>Mon, 05 Oct 2015 22:02:10 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[visual game editor]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64274</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we wrapped up our "Monsters Need Coins", game development series with a look at how to create a self-contained visual editor to quickly design game levels. Ed Maurina walked us through the editor's user interface, showed us how to go from an 8x8 grid to a working game level in less than a minute, and walked us through the roughly 1000 lines of code used to create the editor. Download the full source code for the game and the visual game editor to see who everything works.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/I3OM4U67OmM?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we wrapped up our &#8220;Monsters Need Coins&#8221;, game development series with a look at how to create a self-contained visual editor to quickly design game levels. Ed Maurina walked us through the editor&#8217;s user interface, showed us how to go from an 8&#215;8 grid to a working game level in less than a minute, and walked us through the roughly 1000 lines of code used to create the editor. </p>
+<p>As always, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the full source code for the game and the visual game editor</a> to see who everything works.   <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Next week we will talk with Microsoft Game Evangelist, Tobiah Zarlez about the future of game development. We will also start a brand new desktop game development series, where we will ultimately implement keyboard shortcuts and game controller inputs.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/clmlda7n427fbt6u12el8k5euvg target="_blank">Corona Geek After Dark #13</a> when we will discuss general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://www.youtube.com/watch?v=OitNZM2_trU target="_blank">touch vs controller input, texture packer, and peer rated content</a>, plus a ton of other stuff.</p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-162/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-162-2015-10-05-creating-visual-game-editors.mp3" length="74584817" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Invisible Game Pieces, Game Testing, and Auto-Generating Levels</title>
+		<link>/blog/coronageek/hangout-highlights-invisible-game-pieces-game-testing-and-auto-generating-levels/</link>
+		<comments>/blog/coronageek/hangout-highlights-invisible-game-pieces-game-testing-and-auto-generating-levels/#comments</comments>
+		<pubDate>Wed, 16 Sep 2015 18:22:28 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[game objects]]></category>
+		<category><![CDATA[level design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64052</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 158, we continued development on our "Monsters Need Coins" game. Ed Maurina walked us through code for creating platforms, monsters, spikes, and coins. We also looked at code for reloading levels when the player runs into spikes. Here are clips from the discussion.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 158, we continued development on our &#8220;Monsters Need Coins&#8221; game. Ed Maurina walked us through code for creating platforms, monsters, spikes, and coins. We also looked at code for reloading levels when the player runs into spikes.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-158/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/2D3R72yYjaY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Plugins and Community Questions</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0KYSzME-u10?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Game Updates Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/gXZdVbDVlsk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Building In Game Testing</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/zGnZGPDRLBo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Building Game Objects</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/VVpVunqSjOc?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Invisible Game Pieces</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/kaizTiU_-8Q?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Auto-Generating Levels</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/Hr9jUIclIGg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we looked at <a href=/blog/coronageek/corona-geek-159/>adding turrets to games</a>. We covered different turret types, vector math, and heat seeking bullets.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-invisible-game-pieces-game-testing-and-auto-generating-levels/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Implementing Levels In Games</title>
+		<link>/blog/coronageek/hangout-highlights-implementing-levels-in-games/</link>
+		<comments>/blog/coronageek/hangout-highlights-implementing-levels-in-games/#respond</comments>
+		<pubDate>Wed, 02 Sep 2015 20:08:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[level design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63903</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 156, we continued our "Using Gravity In Games Series". Ed Maurina showed us how to implement levels into our game. With even a simple understanding of the level file, you can create hundreds of completely custom levels using the concepts discussed. Here are clips from the hangout, along with a link to download the code.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 156, we continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed how to implement levels into our game. With even a simple understanding of the level file, you can create hundreds of completely custom levels. </p>
+<p>Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-156/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/nxOt8Jd0_fk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Level Building Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/jyArvI_WDYI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Turning It On and Off Again</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/r51YVhkBXdk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Level Building Code</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/E-KRzz4SP7s?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Positioning Coins</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/T_mGzwgH7uA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Player Positioning</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/SGH2HeJGr0k?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Tweaking Level Files</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/EIffgaXcO74?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Grids vs Dynamic Cameras</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/j9fVj7Jwo-4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Recap</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LmWboGO2cPc?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked with Rob and Simon from Laser Dog about <a href=/blog/coronageek/corona-geek-157/>designing and launching HoPiKo</a>. The interview is full of great insights from a two person game studio whose Alone game was chosen &#8220;App Store Best 2014&#8221; by Apple.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-implementing-levels-in-games/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #156 &#8211; Using Gravity In Games &#8211; Part 3, Adding Blocks, Spikes, Coins, and Monsters</title>
+		<link>/blog/coronageek/corona-geek-156/</link>
+		<comments>/blog/coronageek/corona-geek-156/#respond</comments>
+		<pubDate>Mon, 24 Aug 2015 22:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63816</guid>
+		<description><![CDATA[Today we covered part three of our "Using Gravity In Games" game development series with a look at level building. We looked at code for positioning platforms, spikes, coins, and monsters. We looked at how to dynamically center the camera on the player's starting position. Finally, we discussed the benefits of making code reusable and adding the ability to turn features on and off during play testing.  Download the updated source code for a full look at how the game works.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/0Pd1mzJl6qQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s weekly Corona Geek Hangout we continued our &#8220;Using Gravity In Games&#8221; game development series with a look at level building. This is part three of our look at developing a game similar to the popular mobile game, They Must Be Fed 3. </p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> of the series we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. </p>
+<p>Today Ed Maurina (<a href=https://forums.coronalabs.com/index.php?app=core&module=search&section=search&do=search&fromsearch=1>RoamingGamer</a>) walked us through level building code for creating platforms, spikes, coins, and monsters. We also looked at how to dynamically center the camera on the player&#8217;s starting position. The level builder code is designed to let you position spikes on the sides of blocks by adjusting a few configuration settings. We also discussed the benefits of making your code reusable and adding the ability to turn features on and off during play testing.  <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Download the updated source code</a> for a full look at how the pieces fit together.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ckrb3s4h7bj8evlum8mrd1si2uk target="_blank">Corona Geek After Dark #8</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Develphant&#8217;s new Spotify module</a>, forum threads, desktop app marketing, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+<li><a href=http://lua-users.org/wiki/SplitJoin target="_blank">Lua String Split</a></li>
+<li><a href=http://lua-users.org/wiki/DataDumper target="_blank">Lua Data Dumper</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-155/>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-156/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-156-2015-08-24-using-gravity-in-games-part-3-level-building.mp3" length="115678520" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

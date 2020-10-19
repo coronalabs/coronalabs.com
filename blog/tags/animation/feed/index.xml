@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>animation &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/animation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>animation &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Animating Street Puncher with Bobby Rasmusson</title>
+		<link>/blog/coronageek/street-puncher-game/</link>
+		<comments>/blog/coronageek/street-puncher-game/#respond</comments>
+		<pubDate>Mon, 24 Oct 2016 18:53:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[animation]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67918</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Bobby Rasmusson about developing and hand drawing hundreds of animations for his Street Puncher game. Bobby also shares what he would do differently to get featured in the app stores.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Bobby Rasmusson about his experience developing and hand drawing hundreds of animations for his <a href=http://www.streetpuncher.com>Street/ Puncher game</a>. Bobby is a self taught animator and product manager for Lyft. During the interview, Bobby shared his experience with in-app purchases, incentivizing players to share the game, and the things he would do differently to get featured in the app stores.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/2kDNCYANQj0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/street-puncher-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-street-puncher-game.mp3" length="27806397" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Tutorial: Animation with &#8220;enterFrame&#8221; listeners</title>
+		<link>/blog/2015/08/25/tutorial-animation-with-enterframe-listeners/</link>
+		<comments>/blog/2015/08/25/tutorial-animation-with-enterframe-listeners/#comments</comments>
+		<pubDate>Tue, 25 Aug 2015 21:33:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[animation]]></category>
+		<category><![CDATA[enterFrame]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=63809</guid>
+		<description><![CDATA[In this tutorial, learn how to animate objects programmatically using Corona's "enterFrame" listener.]]></description>
+				<content:encoded><![CDATA[<p>In Corona there are two methods of animation: <strong>sprite animation</strong> and <strong>procedural animation</strong>. Sprite animation (<a href=https://docs.coronalabs.com/guide/media/spriteAnimation/index.html target="_blank">guide</a>) involves using multiple frames (images) displayed in a cycle which gives the illusion of movement within the object. In contrast, procedural animation involves using programming techniques to move, rotate, scale or otherwise change the state of the object.</p>
+<p>The previous tutorial outlined procedural animation using <strong>transitions</strong>. This week, we&#8217;ll discuss how to manipulate objects using <code>"enterFrame"</code> events.</p>
+<h3>Overview</h3>
+<p>When an app is running, Corona updates the screen either 30 times per second or 60 times per second, a concept known as <strong>frames per second</strong> or <strong>fps</strong>. You can control this rate via the <code>fps</code> value inside the app&#8217;s <code>config.lua</code> file (<a href=https://docs.coronalabs.com/guide/basics/configSettings/index.html target="_blank">guide</a>):</p><pre class="crayon-plain-tag">application = {
+    content = {
+        scale = &quot;letterbox&quot;,
+        width = 320,
+        height = 480,
+        fps = 60,  -- 30 or 60
+    },
+}</pre><p>As the app runs, every time (frame) when Corona prepares to update the screen, it generates an event called <code>"enterFrame"</code> (<a href=https://docs.coronalabs.com/api/event/enterFrame/index.html target="_blank">reference</a>). Using this event in tandem with an <a href=https://docs.coronalabs.com/api/type/EventListener/index.html target="_blank">event listener</a>, you can animate an object by changing some aspect of it each frame.</p>
+<h3>Basic setup</h3>
+<p>Consider a classic game like <a href=https://en.wikipedia.org/wiki/Space_Invaders target="_blank">Space Invaders</a><sup>®</sup>. In this game, the aliens moved back and forth in a set pattern, and occasionally a special UFO would zoom across the top of the screen. Let&#8217;s illustrate how to move that UFO using an <code>"enterFrame"</code> listener:</p><pre class="crayon-plain-tag">local ufo = display.newCircle( 340, 15, 10 )
+
+local timeToMove = 5  -- animate over 5 seconds
+local fps = 60
+local numberOfTicks = fps * timeToMove  -- i.e. 300 ticks
+local finalDestination = -20
+local distanceToMove = ufo.x - finalDestination  -- i.e 360 points
+local pointsPerTick = distanceToMove / numberOfTicks  -- 1.2 points per tick</pre><p>This setup is probably a bit more verbose than you would write, but it&#8217;s useful to explain the math involved. Timing is based on clock/frame &#8220;ticks,&#8221; so in a 60 fps game, there will be 60 events fired per second. If we want to move our UFO across a 320 point screen over the course of 5 seconds, we must calculate exactly how much to move it on each tick.</p>
+<h4>Points versus pixels</h4>
+<p>Corona uses a virtual &#8220;content area&#8221; size defined in <code>config.lua</code> by <code>width</code> and <code>height</code> (see above). However, this will usually not &#8220;map&#8221; exactly to the <strong>pixel</strong> width on a real device. For example, the iPhone 6 screen is 750 pixels wide and the iPad Air screen is 1536 pixels wide. Thus, for frame-based animation of the UFO across the screen, it&#8217;s useful to convert each position change to <strong>points</strong>.</p>
+<p>In this example, we have 300 total &#8220;ticks&#8221; to move the UFO across the screen, because the fps is 60 and we&#8217;ll move it over the time span of 5 seconds (<code>60 × 5 = 300</code>). The UFO begins at an <strong>x</strong> position of 340, which is 20 points off the right side of the content area (<code>320+20</code>), and its destination is an <strong>x</strong> position of -20, which is 20 points off the <em>left</em> side of the content area. Thus, the actual distance of movement will be 360 points (<code>340 − -20 = 360</code>). Since we need to know how many points to move the object each tick, we simply divide the distance by the number of ticks <code>(360/300)</code> to get a result of <code>1.2</code>.</p>
+<h3>Using the &#8220;enterFrame&#8221; event</h3>
+<p>Now that we have the calculations for moving the UFO, let&#8217;s write a function that will execute on every tick:</p><pre class="crayon-plain-tag">function ufo:enterFrame()
+    self:translate( -pointsPerTick, 0 )
+    if self.x &lt;= finalDestination then
+        Runtime:removeEventListener( &quot;enterFrame&quot;, self )
+    end
+end
+
+Runtime:addEventListener( &quot;enterFrame&quot;, ufo )</pre><p>Outside the function &#8212; in the final line of this example &#8212; we add the <code>"enterFrame"</code> event listener to the Runtime and pass in the <code>ufo</code> display object as the target. This will start the frame-based animation process.</p>
+<p>For the function declaration, we &#8220;attach&#8221; the function to the UFO object using the <code>:</code> operator so that the object gets passed in. This is known as the Lua <strong>object method</strong>, and by doing so, we can access the UFO object within the function as <code>self</code>.</p>
+<p>Inside the function, on each frame, we want to move the UFO to the left. Knowing the <code>pointsPerTick</code> value of <code>1.2</code>, its simply a matter of subtracting that from the object&#8217;s <strong>x</strong> using the <a href=https://docs.coronalabs.com/api/type/DisplayObject/translate.html target="_blank">object:translate()</a> API. The additional code checks when the UFO is past its final destination point of -20, at which point we remove the <code>"enterFrame"</code> event listener, effectively stopping movement of the UFO.</p>
+<p>Of course this performs very simple motion along the <strong>x</strong> axis only, which could easily be done via a transition, but frame-based animation can potentially be used for more complex scenarios like moving an object in a pattern, moving enemies back and forth repeatedly, scrolling game backgrounds, etc.</p>
+<h3>Delta time</h3>
+<p>Note that when working with frame-based animation, it might be necessary to account for &#8220;delta&#8221; time fluctuations. This is because, internally, frames are not guaranteed to fire <em>precisely</em> on time, and depending on how much other activity is occurring in your app, this imprecision can affect the overall animation. If greater precision is required, please refer to this tutorial which outlines how to utilize delta time.</p>
+<h3>Conclusion</h3>
+<p>As you can see, <code>"enterFrame"</code> events provide yet another option for animating objects in Corona, in particular when the required animation is beyond the abilities of a single transition.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/08/25/tutorial-animation-with-enterframe-listeners/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

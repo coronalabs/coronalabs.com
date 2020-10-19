@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SQL &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/sql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>SQL &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Initializing a writable SQLite database</title>
+		<link>/blog/2015/05/19/tutorial-initializing-a-writable-sqlite-database-from-a-read-only-database/</link>
+		<comments>/blog/2015/05/19/tutorial-initializing-a-writable-sqlite-database-from-a-read-only-database/#comments</comments>
+		<pubDate>Tue, 19 May 2015 22:25:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[SQLite3]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=62790</guid>
+		<description><![CDATA[In this tutorial, learn how to initialize a writable database that is pre-populated from a read-only database within your application bundle.]]></description>
+				<content:encoded><![CDATA[<p>Working with SQLlite can be challenging, but one specific issue that Corona developers encounter is getting a pre-existing database into a location where data can be both read <strong>and</strong> inserted/updated.</p>
+<p>The issue originates in the fact that when you create an application bundle for iOS or a APK file for Android, it&#8217;s a self-contained &#8220;folder&#8221; of files which gets installed to the device. This happens to be read-only, so you cannot update a database contained within it. This application bundle is effectively referenced in code as <a href=https://docs.coronalabs.com/api/library/system/ResourceDirectory.html target="_blank" rel="noopener">system.ResourceDirectory</a>.</p>
+<p>In addition to <a href=https://docs.coronalabs.com/api/library/system/ResourceDirectory.html target="_blank" rel="noopener">system.ResourceDirectory</a>, your application has three folders which you <strong>can</strong> write files to, including updating a database within these folders. They are <a href=https://docs.coronalabs.com/api/library/system/DocumentsDirectory.html target="_blank" rel="noopener">system.DocumentsDirectory</a>, <a href=https://docs.coronalabs.com/api/library/system/CachesDirectory.html target="_blank" rel="noopener">system.CachesDirectory</a> and <a href=https://docs.coronalabs.com/api/library/system/TemporaryDirectory.html target="_blank" rel="noopener">system.TemporaryDirectory</a>. In the case of a database that you plan to update, the logical place for these is <a href=https://docs.coronalabs.com/api/library/system/DocumentsDirectory.html target="_blank" rel="noopener">system.DocumentsDirectory</a>. Why? Because unlike the &#8220;caches&#8221; and &#8220;temporary&#8221; folders, this folder is a persistent folder which will exist as long as the app remains installed on the device.</p>
+<h3>Initializing the database</h3>
+<p>When a user first installs your app, the <a href=https://docs.coronalabs.com/api/library/system/DocumentsDirectory.html target="_blank" rel="noopener">system.DocumentsDirectory</a> folder is essentially empty. If your app needs to access a database of initial information, you first need to move that database from the read-only space (<a href=https://docs.coronalabs.com/api/library/system/ResourceDirectory.html target="_blank" rel="noopener">system.ResourceDirectory</a>) into the &#8220;documents&#8221; folder where records can be inserted/updated. If it&#8217;s a very simple database, you could actually use Corona&#8217;s <a href=https://docs.coronalabs.com/api/library/sqlite3/index.html target="_blank" rel="noopener">sqlite3.*</a> calls to create an entirely <strong>new</strong> database within <a href=https://docs.coronalabs.com/api/library/system/DocumentsDirectory.html target="_blank" rel="noopener">system.DocumentsDirectory</a> and then insert your records. However, for a more complex database with multiple tables and a considerable number of records, this concept becomes more difficult and far less practical. As such, an easier approach is to copy the entire pre-existing database in one action.</p>
+<p>Consider the following module named <code>copyDBto.lua</code>:</p><pre class="crayon-plain-tag">local M = {}
+
+function M.copyDatabaseTo( filename, destination )
+    assert( type(filename) == &quot;string&quot;, &quot;string expected for the first parameter but got &quot; .. type(filename) .. &quot; instead.&quot; )
+    assert( type(destination) == &quot;table&quot;, &quot;table expected for the second paramter but bot &quot; .. type(destination) .. &quot; instead.&quot; )
+    local sourceDBpath = system.pathForFile( filename, system.ResourceDirectory )
+    -- io.open opens a file at path; returns nil if no file found
+    local readHandle, errorString = io.open( sourceDBpath, &quot;rb&quot; )
+    assert( readHandle, &quot;Database at &quot; .. filename .. &quot; could not be read from system.ResourceDirectory&quot; )
+    assert( type(destination.filename) == &quot;string&quot;, &quot;filename should be a string, its a &quot; .. type(destination.filename) )
+    print( type(destination.baseDir) )
+    assert( type(destination.baseDir) == &quot;userdata&quot;, &quot;baseName should be a valid system directory&quot; )
+
+    local destinationDBpath = system.pathForFile( destination.filename, destination.baseDir )
+    local writeHandle, writeErrorString = io.open( destinationDBpath, &quot;wb&quot; )
+    assert( writeHandle, &quot;Could not open &quot; .. destination.filename .. &quot; for writing.&quot; )
+
+    local contents = readHandle:read( &quot;*a&quot; )
+    writeHandle:write( contents )
+
+    io.close( writeHandle )
+    io.close( readHandle )
+    return true
+end
+
+return M</pre><p>In the module&#8217;s primary function (<code>copyDatabaseTo()</code>), you pass in the name of the database which is assumed to be an existing database file within your app&#8217;s bundle (<a href=https://docs.coronalabs.com/api/library/system/ResourceDirectory.html target="_blank" rel="noopener">system.ResourceDirectory</a>). In addition, you pass a table which contains the <code>filename</code> and <code>baseDir</code> that you wish to move the database to, in this case <a href=https://docs.coronalabs.com/api/library/system/DocumentsDirectory.html target="_blank" rel="noopener">system.DocumentsDirectory</a> as discussed above:</p><pre class="crayon-plain-tag">local dbfunc = require( &quot;copyDBto&quot; )
+local result = dbfunc.copyDatabaseTo( &quot;data.db&quot;, { filename=&quot;data.db&quot;, baseDir=system.DocumentsDirectory } )</pre><p>Assuming there are no errors, this will copy the entire database from your resources bundle to the writable folder you specified as the <code>filename</code> you defined. Of course, this action should only occur on the <strong>first</strong> run of the app so the database does not get replaced/overwritten every time.</p>
+<p>Consider this more thorough implementation of the above 2 lines within <code>main.lua</code>:</p><pre class="crayon-plain-tag">local sqlite3 = require( &quot;sqlite3&quot; )
+local dbfunc = require( &quot;copyDBto&quot; )
+ 
+local filename = &quot;data.db&quot;
+local baseDir = system.DocumentsDirectory
+ 
+-- Open &quot;data.db&quot;. If the file doesn't exist, it will be created
+local path = system.pathForFile( filename, baseDir )
+
+local doesExist = io.open( path, &quot;r&quot; )
+if not doesExist then
+    local result = dbfunc.copyDatabaseTo( &quot;data.db&quot;, { filename=&quot;data.db&quot;, baseDir=system.DocumentsDirectory } )
+    assert( result, &quot;Database failed to copy. Check the logs.&quot;)
+else
+    io.close( doesExist )
+end
+
+local db = sqlite3.open( path )   
+
+-- Handle the &quot;applicationExit&quot; event to close the database
+local function onSystemEvent( event )
+    if ( event.type == &quot;applicationExit&quot; ) then              
+        db:close()
+    end
+end
+
+-- Print the table contents
+for row in db:nrows( &quot;SELECT * FROM highscores&quot; ) do
+    local text = row.name .. &quot; : &quot; .. row.score
+    local t = display.newText( text, 120, 30*row.id, nil, 16 )
+    t:setFillColor( 1, 0, 1 )
+end
+ 
+-- Setup the event listener to catch &quot;applicationExit&quot;
+Runtime:addEventListener( &quot;system&quot;, onSystemEvent )</pre><p>On line 2, we <code>require()</code> the <code>copyDBto.lua</code> module. On lines 4 and 5, we set the name and target location of the database file and, on line 8, we create the internal path reference for it.</p>
+<p>Lines 10-16 check to see if the database already exists where you expect it. If it doesn&#8217;t (first run), we call the function to copy the database on line 12. After that, we open the database and process it as usual &#8212; in this example, this includes a function to close the database if the user exits the app, and a test <code>for</code> loop to display some of the data from the database.</p>
+<h3>Conclusion</h3>
+<p>As you can see, it&#8217;s very easy to create a pre-existing and pre-populated database, bundle it within your app resources, and quickly copy it to a writable folder. Note that this functionality works equally well with text files and JSON files, both of which may also be used to track/store persistent data within an app like high scores, settings, and more.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/05/19/tutorial-initializing-a-writable-sqlite-database-from-a-read-only-database/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #47 &#8211; Working With Data in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-47/#comments</comments>
+		<pubDate>Tue, 23 Jul 2013 00:38:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Data]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[SQLite3]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed using data in Corona SDK. Dr. Burton walked us through an excellent code example of how to check for and connect to a local database file, and display the returned data in a TableView using SQLite and Corona SDK. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/02TjzFbQEes?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=https://plus.google.com/u/0/b/108159899655420864045/115350860735908946281/posts target="_blank">Dr. Brian Burton</a>, <a href=https://plus.google.com/b/108159899655420864045/115993784358801200530/posts target="_blank">Ed Maurina</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=https://plus.google.com/u/0/b/108159899655420864045/113858036245909441249/posts target="_blank">Jen Looper</a>, <a href=https://plus.google.com/u/0/b/108159899655420864045/115811849043797198763/posts target="_blank">Mohammed Bennouf</a>, and <a href=https://plus.google.com/u/0/b/108159899655420864045/116875464241306531958/posts target="_blank">Theo Rushin, Jr</a> to walk through some <a href=https://github.com/CoronaGeek/Corona-SDK-Database-TableView target="_blank">example code for storing and accessing data using SQLite and Corona SDK</a>. Dr. Burton walked through a code example that checked for a local SQLite database file, connected to the database, and displayed data in a TableView. The panel had a lot of great questions and tips to share. We plan to discuss how to pull data from remote sources and store the data in a local database in a future hangout.</p>
+<p>Be sure to pick up Dr. Burton&#8217;s book, &#8220;<a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learning Mobile Application &amp; Game Development with Corona</a>&#8220;, for more examples of how to work with databases and Corona SDK.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to David Freeman for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-47/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-47-2013-07-22-databases.mp3" length="59557359" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

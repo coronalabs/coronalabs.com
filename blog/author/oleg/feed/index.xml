@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>oleg &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/oleg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>oleg &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum &#8212; Issue #68</title>
+		<link>/blog/2015/04/17/from-the-forum-issue-68/</link>
+		<pubDate>Fri, 17 Apr 2015 22:27:30 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=62381</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. iOS design just got simplier</h3>
+<p>Generating our UI icons is always a pain. Sizes, vector versus pixel, getting the right sheen on the lensflare… there is a lot to do in a little amount of time. Anything that takes the sting out of the research and the creation of our buttons and tabs is worth checking out.</p>
+<p>On to the the thread below, which talks about a cool website which has copies of iOS button templates, which mirror the Apple design philosophy perfectly. It seems there might be a reason for that. Head down to the original thread and check it out. It’s a dynamite resource and you would be doing a disservice in ignoring it!</p>
+<p><a href=http://forums.coronalabs.com/topic/56156-ios-8-icons/ target="_blank"><strong>http://forums.coronalabs.com/topic/56156-ios-8-icons/</strong></a></p>
+<h3>2. Text on Windows? A workaround for the rest of us</h3>
+<p>If your main development machine runs Windows, come to the front of the class and show off your behemoth of a laptop or plain black box of a desktop. Corona on Windows works very very well, but we do miss out on some cool features that OSX users have been enjoying for quite some time.</p>
+<p>One of these things is text input. Corona can run text fields on OSX, and they support keyboard inputs and generally allow you to debug text entry inside of the simulator. Windows can’t handle this natively which is a shortcoming of Microsoft, but there are a lot of folks that want this featureset anyway. And so it was that some intrepid developers were able to create a worthwhile alternative in the original thread below. Head on over to check it out of you’re itching for this functionality on your Windows machine!</p>
+<p><a href=http://forums.coronalabs.com/topic/56160-windows-simulator-text-input/ target="_blank"><strong>http://forums.coronalabs.com/topic/56160-windows-simulator-text-input/</strong></a></p>
+<h3>3. I got you.. diagonally!</h3>
+<p>Scrollviews have been an integral part of the widget library since it’s inception. Giving developers a nice option when it comes to a simple list, extending the widget functionality is sometimes necessary. As a recent developer found, diagonal scrolling isn’t enabled out-of-box, so they took it upon themselves to make up a nice edit from the open-source library, and shared it with the class!</p>
+<p>Feel free to check it out in the link below. It also provides the link to the original widget library, so if you’re hankering to get under the hood and get your hands dirty on a Corona-approved (but not supported!) open-source library then this is the one for you!</p>
+<p><a href=http://forums.coronalabs.com/topic/56034-diagonal-scrollview-widget/ target="_blank"><strong>http://forums.coronalabs.com/topic/56034-diagonal-scrollview-widget/</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum &#8212; Issue #67</title>
+		<link>/blog/2015/04/10/from-the-forum-issue-67/</link>
+		<pubDate>Fri, 10 Apr 2015 21:38:52 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=62304</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. He shoots he scores!</h3>
+<p>Organization is the key to productivity. If you can’t keep your daily tasks, calendar, and yes, even your code nice and tidy, you’re not going to get very much done. That’s why having a mobile app that helps keep your day organized can be a life-saver.</p>
+<p>I like to go back to older posts that I wrote about, taking a look at the new developments and learning more about what has come about since I delved into their depths. More often than not, there are comments from folks that are encountering errors and looking for help.</p>
+<p>Today, however, we have a real treat. Distinguished Corona developer <strong>Christopher Bishop</strong> has released his open-source framework for business apps. The germ of the idea can be traced back to the notion that, because Corona doesn’t mirror iOS/Android native functionality, it can’t be used to professional purposes. Chris set out to prove that idea wrong, and in the process, came up with a crackerjack of a library that can be used by any Corona developer right now!</p>
+<p>Head down to the original thread and check it out, and don’t forget to say thanks!</p>
+<p><a href=http://forums.coronalabs.com/topic/55970-corona-business-uiux-framework/ target="_blank"><strong>http://forums.coronalabs.com/topic/55970-corona-business-uiux-framework/</strong></a></p>
+<h3>2. Change the face but remain the same</h3>
+<p>Getting used to the changes and fixes made to the native.newTextField API is a great way to spend your time. It has come a long way since it’s inception, and the work that has been done on it really shows.</p>
+<p>Now comes the fun part, which is making the text field appear unique to your app. In some cases, modifying a text field isn’t really that useful, but the techniques to accomplish it can come in handy in some important situations. The question on how to make these changes was posed in the below link, and some interesting solutions were provided. Have a gander at the original post, and if you have any ideas of your own, feel free to share!</p>
+<p><a href=http://forums.coronalabs.com/topic/56075-change-how-nativenewtextfield-looks/ target="_blank"><strong>http://forums.coronalabs.com/topic/56075-change-how-nativenewtextfield-looks/</strong></a></p>
+<h3>3. Social media workflow, and the best way to login a user</h3>
+<p>Getting a user to post to Facebook about your app can be the first step to app development supremacy. One user shares, five other users try it out, they like, and tell give more… well, you get the idea. Making it as simple as humanly possible for someone to post to Facebook about your game or app, whether it’s a picture of a status update, should be of paramount importance.</p>
+<p>Using the native.showPopup() social plugin is a great way to take that first step. This allows users to share to any service recognized on a device. However, another developer wanted a way to let users post to Facebook, from the native Facebook app, without having several go-betweens and making the user login every time the app starts.</p>
+<p>Check it out at the link below, and if you have any suggestions or optimizations, share them with the class.</p>
+<p><a href=http://forums.coronalabs.com/topic/53381-is-there-any-way-to-know-if-a-user-already-logged-to-facebook target="_blank"><strong>http://forums.coronalabs.com/topic/53381-is-there-any-way-to-know-if-a-user-already-logged-to-facebook</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Post: Building a Custom Launcher with CoronaCards</title>
+		<link>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/</link>
+		<comments>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/#comments</comments>
+		<pubDate>Thu, 09 Apr 2015 21:38:06 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[guestpost]]></category>
+
+		<guid isPermaLink="false">/?p=61888</guid>
+		<description><![CDATA[Learn how Bonfire Media used <a href="http://coronacards.com/" target="_new">CoronaCards</a> to create "Aero Launcher," an enhanced launcher app for Android which has received almost 1,000,000 downloads.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s feature comes to you courtesy of <a href=http://www.bonfiremedia.com/ target="_blank">Bonfire Media</a>. As a long-time veteran of the mobile software industry, Bonfire Media has been making apps and games for over 10 years, and in the last few years has been using Corona SDK for several projects. One of their most recent releases, <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, was built with <a href=http://coronacards.com/ target="_blank">CoronaCards</a> and has already received almost 1,000,000 downloads.</em></p>
+<hr />
+<p><b>What is Aero Launcher?</b></p>
+<p>Before I describe <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, it probably makes sense to clarify what a &#8220;launcher&#8221; is. Almost everyone with a mobile device uses a launcher every day, as it&#8217;s simply the screen that appears on your smartphone or tablet when you hit the &#8220;home&#8221; button. Essentially, the launcher is the application we all use to launch and organize our apps and, as such, all mobile devices come with a built-in launcher. However, many people may not realize that, on Android devices, you can replace the boring stock launcher with an awesome, custom launcher.</p>
+<p>Aero Launcher is one such custom launcher. Here&#8217;s a short video:</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/QpmizVPRerE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Aero Launcher provides three main advantages over your default Android launcher:</p>
+<ol>
+<li>It automatically organizes all of your apps and games into simple tabs: <strong>Favorites</strong>, <strong>Apps</strong>, <strong>Games</strong> and <strong>System</strong>. Within each tab, you can optionally ask Aero to organize your apps even further into subcategories. This feature is great for users who don&#8217;t like to spend the time grouping all of their apps manually. In addition, you can easily move apps to your favorites tabs or uninstall unwanted apps by long-pressing an icon.</li>
+<li>Aero brings your homescreen alive with beautiful wallpapers, animated particle effects, custom fonts, and unique sounds. Here is an example of the &#8220;Fireworks&#8221; theme which shoots fireworks whenever you touch the screen, and the &#8220;Snow&#8221; theme that features falling snow:<a href=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg><img class="alignnone size-full wp-image-61893" src=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg alt="aerolauncher" width="1290" height="940" /></a></li>
+<li>Aero&#8217;s <strong>Genie</strong> tab recommends apps and games which you might enjoy, based on apps that you already have installed and use the most.</li>
+</ol>
+<h3>Why CoronaCards?</h3>
+<p>Why did we use Corona products instead of opting for the fully native Java development route? First of all, we really wanted a smooth, 60 fps experience for our launcher, including smooth animations, particle effects, and game-like responsiveness. Corona is very good for this, and because we are very experienced with Corona, we knew that we could make great themes using Corona rather than native Java. Plus, playing with cool animations and effects is more fun in Corona than in Java!</p>
+<p>So, why did we use <a href=http://coronacards.com/ target="_blank">CoronaCards</a> instead of simply Corona SDK? Well, one of the things which all custom launchers need is an inventory of all the apps that a user has installed. Corona SDK doesn&#8217;t have access to this information, but the native Android SDK does and we needed a way to check this. Thus, we were left with the choice between <a href=/products/enterprise/ target="_blank">Corona Enterprise</a> and CoronaCards. Both solutions would have worked, but the reason we went with CoronaCards is that we already had a large codebase from an old launcher we had written natively, and it felt simpler to embed a CoronaCards &#8220;view&#8221; into our existing launcher code rather than rewrite the bulk of our code in Lua and add native extensions.</p>
+<p>Essentially we considered it like this: Corona Enterprise is ideal if you want to create your apps primarily in Lua and Corona SDK and then add native extensions whenever necessary. CoronaCards, on the other hand, is a better fit for developers writing the bulk of their code natively who would then like to utilize the power and simplicity of Corona SDK for aspects of the front-end UI. For Aero Launcher, we used CoronaCards not just for elements of our UI, but for the <em>entire</em> UI. This pushed the boundaries of CoronaCards in a few cases, but with the help of other Corona developers, we were able to make it work, and work very well. In the end, Aero Launcher&#8217;s codebase is about 50% Java and 50% Lua.</p>
+<h3>Getting Aero Launcher</h3>
+<p>Aero Launcher is currently available on <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Google Play</a>. Please try it out and let us know what you think!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>From the Forum &#8212; Issue #63</title>
+		<link>/blog/2015/03/13/from-the-forum-issue-63-2/</link>
+		<pubDate>Sat, 14 Mar 2015 01:22:53 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=61781</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. One of these things are not like the other</h3>
+<p>New Corona SDK developers might be tempted to pack all of their music, database files and other various media right into their app, so that when users download it from an app store, they are getting all of the assets necessary to run every aspect of the app. Often times, this bloats the actual app download size and might turn off potential users from even installing it in the first place.</p>
+<p>A method that many developers use is to have the app check for and download any assets that might be required, depending on the functionality the user is attempting to access at any given moment. While this might not work for every app or game, it’s a useful solution when you have a “<em>Get Things Done</em>” style of app or a game that has a lot of unlockable content. There isn’t any point to download the items that the user isn’t going to access. Check out the below forum thread which discusses a possible method to ensure that your app checks for and downloads the right files, every time.</p>
+<p><a href=http://forums.coronalabs.com/topic/55085-download-file-just-if-newer/ target="_blank"><strong>http://forums.coronalabs.com/topic/55085-download-file-just-if-newer/</strong></a></p>
+<h3>2. If a train leaves&#8230;</h3>
+<p>I always liked word problems. Working out the logic behind why Lucy has 3 apples when Tom has 4 was a constant source of delight for me. Classic “if a train leaves” problems were enjoyable as well, and I want to make sure that everyone knows they are great.</p>
+<p>Calculating distance versus time spent moving is a nice trick, but this forum thread is highlighting turning distance into a percentage. Check the original forum post for more info on this, and if you have your own method or a way to extend this type of logic, feel free to throw it in!</p>
+<p><a href=http://forums.coronalabs.com/topic/54176-convert-distance-to-percentage/ target="_blank"><strong>http://forums.coronalabs.com/topic/54176-convert-distance-to-percentage/</strong></a></p>
+<h3>3. All signs point North!</h3>
+<p>With the huge announcement of <a href=/blog/2015/03/02/corona-sdk-is-now-free/ target="_blank">Corona SDK becoming completely free</a>, the general population are going to realize that it is the optimal package to create games that have the best balance between ease of development and a powerful feature set. The first two “<a href=/blog/topics/from-the-forum/ target="_blank"><em>From the Forum</em></a>” blog posts highlight some useful native and third-party modules that help make game development much more intuitive. However, before starting, it’s always important to lay out an action plan, and decide how exactly you are going to make your game come to fruition.</p>
+<p>One of the more common questions we’ve seen lately is, how should I create my levels? The below forum link is just one example, but the answer is always the same. Jumping right in and coding the next “Monument Valley” is everyone’s ideal, but it’s best to start small and build up to that. Using a level editor is, oftentimes, not necessary, especially when your game relies heavily on randomization as a feature!</p>
+<p>Check out the below link for some ideas on how a simple game can still have a dimension of difficulty and complexity to it, without designing an entire game world from scratch.</p>
+<p><a href=http://forums.coronalabs.com/topic/55259-level-editor/ target="_blank"><strong>http://forums.coronalabs.com/topic/55259-level-editor/</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Transitions &#8211; UX Design</title>
+		<link>/blog/2013/10/04/inteligent-transitions-in-ux-design/</link>
+		<comments>/blog/2013/10/04/inteligent-transitions-in-ux-design/#comments</comments>
+		<pubDate>Fri, 04 Oct 2013 18:00:47 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[Opportunities]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=5</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/04/inteligent-transitions-in-ux-design/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Portugal 2013 &#8211; gallery</title>
+		<link>/blog/2013/10/04/portugal-2013-gallery/</link>
+		<comments>/blog/2013/10/04/portugal-2013-gallery/#comments</comments>
+		<pubDate>Fri, 04 Oct 2013 17:01:30 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Sport]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Information]]></category>
+		<category><![CDATA[Inspiration]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=29</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			
+<a href=/b-portugal-2013-road-trip-gallery-01/><img width="150" height="150" src="/wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-01-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="/wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-01-150x150.jpg 150w, /wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-01-570x570.jpg 570w, /wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-01-500x500.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+<a href=/b-portugal-2013-road-trip-gallery-02/><img width="150" height="150" src="/wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-02-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="/wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-02-150x150.jpg 150w, /wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-02-570x570.jpg 570w, /wordpress/wp-content/uploads/2013/10/b-portugal-2013-road-trip-gallery-02-500x500.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+
+
+		</div> 
+	</div> </div></div></div></div></div><div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/04/portugal-2013-gallery/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Already There</title>
+		<link>/blog/2013/10/04/already-there/</link>
+		<pubDate>Fri, 04 Oct 2013 15:57:28 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[audio]]></category>
+		<category><![CDATA[Culture]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=33</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Trends in storytelling</title>
+		<link>/blog/2013/10/04/trends-in-storytelling/</link>
+		<pubDate>Fri, 04 Oct 2013 15:55:52 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Business]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[Information]]></category>
+		<category><![CDATA[Trends]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=26</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>FX Showreel</title>
+		<link>/blog/2013/10/04/supernatural-fx-showreel/</link>
+		<pubDate>Fri, 04 Oct 2013 15:50:08 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=22</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Oscar Wilde</title>
+		<link>/blog/2013/10/04/oscar-wilde/</link>
+		<pubDate>Fri, 04 Oct 2013 15:45:20 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Inspiration]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=20</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

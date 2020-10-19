@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Open Source Plugins and (coming soon) Corona Store | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/ae4fcfbed4b08dd68cd924dabf522eb5.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="At the end of January, I talked about wanting to make plugins more open. Today, we&#039;re doing two things to make that happen." />
+
+<meta name="keywords"  content="github,open source,plugins,sample code,store,corona native builds,corona sdk,news &amp; announcements" />
+
+<link rel="canonical" href="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/" />
+<meta property="og:title" content="Open Source Plugins and (coming soon) Corona Store | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2015/01/plugin-icon.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="At the end of January, I talked about wanting to make plugins more open. Today, we&#039;re doing two things to make that happen: Open Source Plugins First, we are open sourcing Corona plugins on github! These plugin projects are real-world examples of CoronaEnterprise projects. They come straight out of the Corona plugin directory, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#039;s native APIs to extend Corona&#039;s core functionality. Corona Store Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free. The grand opening won&#039;t happen until later this year, but we are accepting applications for free plugins (you can start charging for it after the grand opening): Corona Store application form. Also, if you have ideas or are looking for ideas, here&#039;s a couple of resources that will be helpful: We are" />
+<meta property="article:published_time" content="2015-04-01T19:35:15Z" />
+<meta property="article:modified_time" content="2017-11-17T15:37:53Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Open Source Plugins and (coming soon) Corona Store | Corona Labs" />
+<meta name="twitter:description" content="At the end of January, I talked about wanting to make plugins more open. Today, we&#039;re doing two things to make that happen: Open Source Plugins First, we are open sourcing Corona plugins on github! These plugin projects are real-world examples of CoronaEnterprise projects. They come straight out of the Corona plugin directory, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#039;s native APIs to extend Corona&#039;s core functionality. Corona Store Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free. The grand opening won&#039;t happen until later this year, but we are accepting applications for free plugins (you can start charging for it after the grand opening): Corona Store application form. Also, if you have ideas or are looking for ideas, here&#039;s a couple of resources that will be helpful: We are" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2015/01/plugin-icon.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2015/01/plugin-icon.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-b66c534ea2d32d9123d9ba2034031f08.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Open Source Plugins and (coming soon) Corona Store Comments Feed" href="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/feed/" />
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='https://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='https://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-b8674cbf705f6800e4c39626ea12a541.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-1a19bb4009b00727ae545e834c88ec1f.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-88312d6ccff4a3570b3db197b12cb532.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-698aa832940bd67decd795f1bd23433b.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2015\/04\/01\/open-source-plugins-and-coming-soon-corona-store\/","en":"\/blog\/2015\/04\/01\/open-source-plugins-and-coming-soon-corona-store\/","US":"\/blog\/2015\/04\/01\/open-source-plugins-and-coming-soon-corona-store\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-824426e66e79e692e26c5e5b63cb6452.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-3d7bf654e9e30cc40e584574182b2763.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='From the Forum &#8212; Issue #65' href='/blog/2015/03/27/from-the-forum-issue-65/' />
+<link rel='next' title='From the Forum &#8212; Issue #66' href='/blog/2015/04/03/from-the-forum-issue-66/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=61943' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-61943 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Open Source Plugins and (coming soon) Corona Store</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-61943" class="post-61943 post type-post status-publish format-standard has-post-thumbnail hentry category-corona-native category-corona-sdk category-announcements tag-github tag-open-source tag-plugins tag-sample-code tag-store">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">01 April 2015<meta itemprop="interactionCount" content="UserComments: 28"/></span></p>
+						<h2 itemprop="name" class="entry_title">Open Source Plugins and (coming soon) Corona Store</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/walter/">walter</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/corona-native/" rel="category tag">Corona native builds</a>, <a href="/blog/topics/corona-sdk/" rel="category tag">Corona SDK</a>, <a href="/blog/topics/announcements/" rel="category tag">News &amp; Announcements</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Open+Source+Plugins+and+%28coming+soon%29+Corona+Store&amp;p[url]=%2Fblog%2F2015%2F04%2F01%2Fopen-source-plugins-and-coming-soon-corona-store%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2015/01/plugin-icon.png&amp;p[summary]=At+the+end+of+January%2C+I+talked+about+wanting+to+make+%3Ca+href%3D%5C%22%2Fblog%2F2015%2F01%2F30%2Fstate-of-corona-thoughts-and-reflections-2015%2F%5C%22%3Eplugins+more+open%3C%2Fa%3E.%0D%0A%0D%0AToday%2C+we%5C%27re+doing+two+things+to+make+that+happen.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=At+the+end+of+January%2C+I+talked+about+wanting+to+make+%3Ca+/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2015%2F04%2F01%2Fopen-source-plugins-and-coming-soon-corona-store%2F&amp;title=Open+Source+Plugins+and+%28coming+soon%29+Corona+Store&amp;description=At+the+end+of+January%2C+I+talked+about+wanting+to+make+%3Ca+href%3D%22%2Fblog%2F2015%2F01%2F30%2Fstate-of-corona-thoughts-and-reflections-2015%2F%22%3Eplugins+more+open%3C%2Fa%3E.%0D%0A%0D%0AToday%2C+we%27re+doing+two+things+to+make+that+happen.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2015%2F01%2Fplugin-icon.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>At the end of January, I talked about wanting to make <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>.</p>
+<p>Today, we&#8217;re doing two things to make that happen:</p>
+<h3>Open Source Plugins</h3>
+<p>First, we are open sourcing <a href=https://github.com/coronalabs/plugins-source>Corona plugins on github</a>!</p>
+<p>These plugin projects are real-world examples of <a href=/products/enterprise/>CoronaEnterprise</a> projects. They come straight out of the <a href=https://store.coronalabs.com/plugins>Corona plugin directory</a>, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#8217;s <a href=http://docs.coronalabs.com/native/index.html>native APIs</a> to extend Corona&#8217;s core functionality.</p>
+<h3>Corona Store</h3>
+<p>Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free.</p>
+<p>The grand opening won&#8217;t happen until later this year, but we are accepting applications for <em>free</em> plugins (you can start charging for it after the grand opening): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a>.</p>
+<p>Also, if you have ideas or are looking for ideas, here&#8217;s a couple of resources that will be helpful:</p>
+<ol>
+<li>We are making extended CoronaEnterprise trials available for plugin developers. E-mail <code>enterprise at coronalabs dot com</code>.</li>
+<li>Lots of real-world examples of <a href=https://github.com/coronalabs/plugins-source>Corona plugins</a> available under the MIT license.</li>
+<li>A list of <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback?query=%5BPLUGIN%5D>feature requests</a> that could be implemented as plugins.</li>
+</ol>
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/github/" rel="tag">github</a>, <a href="/blog/tags/open-source/" rel="tag">open source</a>, <a href="/blog/tags/plugins/" rel="tag">plugins</a>, <a href="/blog/tags/sample-code/" rel="tag">Sample Code</a>, <a href="/blog/tags/store/" rel="tag">store</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				walter			    </span>
+				</h5>
+				<span class="author_email"></span>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>28 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-4273">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/b075b8fd37dc0a9c3a84a8cd533fda02-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">ojnab</h5>
+			<span class="comment_date">Posted at 13:38h, 01 April</span>
+						<div class="text_holder" id="comment-4273">
+				<p>Great. That&#8217;s the way to do it! Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4274">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/28a2de026f9abed6f3820ef245fbe286-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.pinkeye.be/' rel='external nofollow' class='url'>Thomas Vanden Abeele</a></h5>
+			<span class="comment_date">Posted at 13:46h, 01 April</span>
+						<div class="text_holder" id="comment-4274">
+				<p>Walter, like I said in my reaction when Corona became completely free and therefore my leftover subscription period became &#8220;money wasted&#8221;: there must be better ways to recompensate Pro users than &#8220;giving&#8221; them Enterprise, e.g. credit for an upcoming store.</p>
+<p>I must be visionary! I stand by my words: I still feel punished instead of rewarded for being a longtime paying supporter of Corona, compared to complete newcomers. To put things simply: please give Corona Pro users at least the option to convert their leftover months into store credit instead of (for most) a worthless Enterprise version.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4275">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a989feeecf6d02e7138cde7860a8e083-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Marin</h5>
+			<span class="comment_date">Posted at 14:31h, 01 April</span>
+						<div class="text_holder" id="comment-4275">
+				<p>You paid for the product you wanted. You got that product, right? I payed it also, and I also don&#8217;t need enterprise. But as long as I get what I&#8217;ve paid for, it&#8217;s ok. I can still use Corona as I always did, so why cry about it? You don&#8217;t have to pay anything anymore in the coming years. Be happy.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4282">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/28a2de026f9abed6f3820ef245fbe286-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Thomas Vanden Abeele</h5>
+			<span class="comment_date">Posted at 02:13h, 02 April</span>
+						<div class="text_holder" id="comment-4282">
+				<p>Other people are getting stuff for free that I am paying for, as a longtime loyal paying customer. That sounds like a good reason to not like this to me. I&#8217;m not unhappy, not crying and I won&#8217;t lose any sleep over this, but I find this to be bad customer service, and a disturbing tendency to change the rules while the game is still played. Your personal opinion differs, and that&#8217;s fine by me, naturally.</p>
+<p>I run my own business in the service sector with 20 employees, so I know very well that you can not refund hard cash that&#8217;s already in the books. But I also know that there are plenty of commercial gestures that you can do as a company using immaterial assets that don&#8217;t really cost you a penny per se &#8211; except for in a very indirect manner such a missed potential income. Like&#8230;&#8230;. items on an online store?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4284">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a989feeecf6d02e7138cde7860a8e083-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Marin</h5>
+			<span class="comment_date">Posted at 03:41h, 02 April</span>
+						<div class="text_holder" id="comment-4284">
+				<p>But items on that store that corona owns are already free. Only way they can offer you free items in the future is by denying 3rd party developers their profit?</p>
+<p>I own a small business as well. Just 4 employees here (myself included), so I get it that every penny counts. I know in my case that it does.</p>
+<p>I&#8217;m just saying, look at it from another angle. You still get what you paid for, but you don&#8217;t have to pay for it anymore when your licence expires. </p>
+<p>I personally don&#8217;t use just corona, I use some other frameworks as well. I had a lot of complaints about corona sdk, but since fuse purchased them, they are going in the right direction. A lot of good stuff is happening atm, and I&#8217;m happy for them, coz that makes my life also easier. Only thing missing (from my subjective view) is an easy drag &#8216;n&#8217; drop UI for corona. Like unity3d and a lot of other frameworks use.</p>
+<p>But I will wait it up for as long as it takes, since I don&#8217;t have to pay for corona sdk anymore. And also, I&#8217;m gonna test out fuse ads just as a thank you note for all the things that are happening atm.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4286">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/28a2de026f9abed6f3820ef245fbe286-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.pinkeye.be/' rel='external nofollow' class='url'>Thomas Vanden Abeele</a></h5>
+			<span class="comment_date">Posted at 04:20h, 02 April</span>
+						<div class="text_holder" id="comment-4286">
+				<p>Valid points. Regarding the store: it&#8217;s a common practice that &#8220;publishers&#8221; reserve the right to do promotions with the work of authors, ranging from discounts to a free give-aways. In a way, yes, it is denying 3rd party developers a part of their profit. Then again, it is promotion so it could just as well be beneficial to 3rd party developers. I used to be in the music industry, and you would see the same thing here: the record label would print 5000 copies of a record and sell all of them, but the royalty statement would only show 4700 copies. The other 300 were sent to DJs for free so they would play it and help build the success of the song.</p>
+<p>On a side note this does lead to fraudulent or abusive stuff sometimes. Often times, promotion costs are also subtracted from your royalty payments. This sometimes leads to record labels having a &#8220;friend&#8221; make an expensive video clip for a band, reducing the royalties to zero, and then taking a kickback from the video maker. You don&#8217;t want to know how shady the music business is!!!</p>
+<p>But back to free store credit: yes, it could reduce 3rd party profits. It could also increase the profits, if you like a certain product and buy more by the same developer. And lastly: typically these are not lost sales per se, in the sense that many of the purchases with &#8220;free&#8221; credits would not have happened otherwise.</p>
+<p>Oh well. I digress. I&#8217;m not too disgruntled by the money loss: that&#8217;s thankfully just a drop in the ocean, and it was foreseen and a conscious decision with budget I had at hand, and good value for money at the time.</p>
+<p>But it is shitty customer service to me, and it puts me off from doing more business with Corona, mostly because the way things went makes me thinks &#8220;What will be the next surprise? Mandatory ads when Fuse finds it doesn&#8217;t monetize enough from Corona?&#8221;</p>
+<p>And lastly, when paid plugins come into the picture, I wonder if we will venture again into a free basic version, and a more &#8220;Pro-like&#8221; version supported by cool plugins. Nothing wrong with that situation, but then I&#8217;m thinking: &#8220;Wait a minute, so I didn&#8217;t get a refund when Corona went from Pro to free, but I need to pay AGAIN now that I want to go from basic to &#8220;better&#8221;?</p>
+<p>Oh well. We&#8217;ll see what happens. First let&#8217;s get that three year in the making Corona project out of the door!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4287">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/52b457284768515e85eb2a1eee19108a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Peter</h5>
+			<span class="comment_date">Posted at 09:53h, 02 April</span>
+						<div class="text_holder" id="comment-4287">
+				<p>What an interesting discussion.  It reminds me of a story in the Christian Bible, in the book of Matthew, chapter 20.  Like Marin, I&#8217;m fine with receiving what I paid for.  Anything more is a courtesy on the part of the Corona team.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4290">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/eb07ead5fcc66935255a3de7c9889778-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Jay</h5>
+			<span class="comment_date">Posted at 13:30h, 02 April</span>
+						<div class="text_holder" id="comment-4290">
+				<p>I think you have a valid point. A store credit would have been better.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4276">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a989feeecf6d02e7138cde7860a8e083-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Marin</h5>
+			<span class="comment_date">Posted at 14:34h, 01 April</span>
+						<div class="text_holder" id="comment-4276">
+				<p>Finally. That&#8217;s all I can say about plugins and the market 🙂</p>
+<p>As far as other things are concerned, only thing missing to make Corona really great is UI tool for managing pics, widgets, animations, transitions, etc. I now that there is Composer GUI, but that simply isn&#8217;t a good tool. I know this won&#8217;t happen in a near future, but one can only hope that it will happen eventually 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4283">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 03:14h, 02 April</span>
+						<div class="text_holder" id="comment-4283">
+				<p>Hi Marin,</p>
+<p>we used the tool LevelHelper (you get it from gamedevhelper.com) for our game &#8220;Freeze!&#8221; and a few more successful apps. And we are still using it for new games. Have a look, it really saved use a lot of time (and it generates code for you if you want, like for continuos parallax scrolling backgrounds, collision, box2D stuff, etc.).</p>
+<p>I always thought it would be best for Coronalabs just to integrate LevelHelper by making a deal with the developer instead of creating their own composer from scratch. But who knows, they might do it one day.</p>
+<p>Best,<br />
+Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4285">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a989feeecf6d02e7138cde7860a8e083-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Marin</h5>
+			<span class="comment_date">Posted at 03:42h, 02 April</span>
+						<div class="text_holder" id="comment-4285">
+				<p>I have a working licence for LH2, so I know about Vladu and his product. Way better then composer GUI, but still way behind something like unity3d has 🙂</p>
+<p>And yes, it is the best solution for corona atm, so I do use it as well 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4277">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/575132740fc8fb33379843767d523521-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://spiralcodestudio.com/' rel='external nofollow' class='url'>Lerg</a></h5>
+			<span class="comment_date">Posted at 16:28h, 01 April</span>
+						<div class="text_holder" id="comment-4277">
+				<p>I guess this is not an April Fools prank.<br />
+Great news.<br />
+I&#8217;ll make a few submissions. For instance I will try to implement QR Code Scanner, iBeacon, Bluetooth and NFC plugins.</p>
+<p>And remember, you can always hire me to make a plugin for your specific needs.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4278">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 16:31h, 01 April</span>
+						<div class="text_holder" id="comment-4278">
+				<p>Haha, I was wondering if you people were going to think that.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4279">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/575132740fc8fb33379843767d523521-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://spiralcodestudio.com/' rel='external nofollow' class='url'>Lerg</a></h5>
+			<span class="comment_date">Posted at 16:44h, 01 April</span>
+						<div class="text_holder" id="comment-4279">
+				<p>There is a limit on how many form submissions one can make. I have two more plugins to submit, shall I write an email to somebody?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4280">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/575132740fc8fb33379843767d523521-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://spiralcodestudio.com/' rel='external nofollow' class='url'>Lerg</a></h5>
+			<span class="comment_date">Posted at 16:51h, 01 April</span>
+						<div class="text_holder" id="comment-4280">
+				<p>Ah, nevermind. It is just a temporary thing.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4281">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/7a4fbe9370aace8ed415757a2ed11332-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Chris</h5>
+			<span class="comment_date">Posted at 17:30h, 01 April</span>
+						<div class="text_holder" id="comment-4281">
+				<p>Hey &#8211; All I can say is lets bring Facebook&#8217;s new native UI stuff via javascript into the fold.<br />
+They&#8217;re going to release the android stuff, soon, too.<br />
+Holy cow &#8211; this would be awesome!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4288">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/b0dff396685e3c1cff16bceb644921e0-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Warren Fuller</h5>
+			<span class="comment_date">Posted at 12:48h, 02 April</span>
+						<div class="text_holder" id="comment-4288">
+				<p>This is excellent, looking over the code examples now!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4289">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 12:55h, 02 April</span>
+						<div class="text_holder" id="comment-4289">
+				<p>This is the best news I&#8217;ve heard in a while!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4291">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/b845aaa704696c29ad5a6e9fd2f79696-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Landon Cope</h5>
+			<span class="comment_date">Posted at 14:08h, 02 April</span>
+						<div class="text_holder" id="comment-4291">
+				<p>Great, maybe someone can finally fix the Google IAP3 plugin</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4292">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c4183a45831d21ee700d9986ddca434b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Marcus</h5>
+			<span class="comment_date">Posted at 15:12h, 02 April</span>
+						<div class="text_holder" id="comment-4292">
+				<p>I hope I did not read wrongly.  Corona store will be for everyone, including non enterprise user?  If so, this is the second best news this year from Corona after the Pro version was announced to be made free.  With the Corona store, I believe we can make many more interesting apps/games.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4293">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 08:30h, 03 April</span>
+						<div class="text_holder" id="comment-4293">
+				<p>Wow so I just read the FAQs for the store and this was my fear when I found out corona was being purchased by an advertising company </p>
+<p>&#8220;What type of Corona Plugins can I make?<br />
+We want to see all types of Corona Plugins made and there are hundreds of possibilities.</p>
+<p>The exception is that we will not allow plugins for ad network SDKs. Most ad network SDK/plugins will be provided via the Fuse Powered plugin.&#8221;</p>
+<p>Really? Fuse powered is great but let it be known that they are taking 30% of your revenue. I will never give up 30% of my revenue for some tools and ad mediation that I can build myself. Plus fusepowered doesn&#8217;t even support the major networks in my field. I they are as good as they claim why not let the users choose what they want and then pick what works best. Admob allows you to mediate their ads with tons of other networks, because at the end of the day they know they are the best and the users will come back to them.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4295">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David</h5>
+			<span class="comment_date">Posted at 19:57h, 03 April</span>
+						<div class="text_holder" id="comment-4295">
+				<p>David &#8211; Fuse supports a bunch of major networks and many other small ones, and they are adding new ones all the time. Also, a couple of points are worth clearing up:</p>
+<p>1) When you refer to the mediation that AdMob does, Fuse does the same thing &#8211; also for free. For many of the networks Fuse supports, developers are able to connect directly, at no cost.</p>
+<p>2) In addition to that, Fuse offers some great segmentation tools and the ability to optimize across IAP offers and advertising, also for free.</p>
+<p>3) When you talk about the 30% share &#8211; that refers to Fuse&#8217;s AdRally, which is the managed ad marketplace. This means that they actively manage connections to dozens of ad networks to optimize results. Unless you are going to build very sophisticated technology and are planning to employ a whole team of expert Ad Ops people, you will not be able to replicate this.</p>
+<p>So, in summary &#8211; if you are thinking about pure, basic mediation (as in AdMob), Fuse is free. Only if you use AdRally &#8211; to fully dynamically optimize across dozens of ad networks, is there a revenue share &#8211; just like there is with any ad network.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4297">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/fa463a05cba1dfd2adf3937bd8041f2f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">endy</h5>
+			<span class="comment_date">Posted at 00:58h, 05 April</span>
+						<div class="text_holder" id="comment-4297">
+				<p>Hi David,</p>
+<p>Wait, Fuse isn&#8217;t just AdRally for us? You are saying this like Fuse and AdRally are two different things for us Corona developers.</p>
+<p>When I read the announcement there <a href="/fuse-corona-faq/" rel="nofollow">/fuse-corona-faq/</a> it said:<br />
+&#8220;Fuse’s IAP and ad monetization tool, AdRally, will soon be available to Corona developers who want to generate ad revenue in a simple, seamless manner.&#8221;</p>
+<p>No other announcement since then, although it said &#8220;soon&#8221;. Also I can&#8217;t find anything called Fuse in the plugins list:<br />
+<a href="http://docs.coronalabs.com/plugin/index.html" rel="nofollow">http://docs.coronalabs.com/plugin/index.html</a><br />
+Same here in the supported ad networks:<br />
+<a href="http://docs.coronalabs.com/api/library/ads/index.html" rel="nofollow">http://docs.coronalabs.com/api/library/ads/index.html</a></p>
+<p>Thanks<br />
+endy</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4299">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David</h5>
+			<span class="comment_date">Posted at 10:46h, 05 April</span>
+						<div class="text_holder" id="comment-4299">
+				<p>endy &#8211; Fuse/AdRally are almost the same thing (not quite true, but we will explain the difference soon). There will only be 1 plugin for the whole thing and it will be the Fuse plugin.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4298">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 06:16h, 05 April</span>
+						<div class="text_holder" id="comment-4298">
+				<p>Hey David,</p>
+<p>My point wasn&#8217;t so much the mediation as much as it was just showing that if their network is the best then they should allow support for the rest. Who cares if 100,000 various ad network plugins are in the store, if fuse is the best then everyone will use them. Competition is the key to growing publisher revenue. I actually was one of the few that they reached out to, to try their early beta program and after talking to them for a few hours and being walked through their system, I decided it wasn&#8217;t worth it to me. Sure they have some cool tools, but the tools are only free as long as you serve up at least 1 day per user per day is what they told me. If you just want to use the tools then it isn&#8217;t free. Their adrally sounds promising but without support for the 3 largest ad companies in my space, I can guarantee you that they wont be able to even hit the numbers I&#8217;m hitting and then on top of that they are going to take 30% off the top. While I agree it&#8217;s great for some users, for users that have the ability to build the same tools and not lose 30% it doesn&#8217;t make sense. I still think handcuffing the users into a few limited ad companies is a bad bad idea for the growth of corona. But then again who cares how much corona grows if no one is using adrally and making the new owners money, seeing as how they put all their chips in that basket.</p>
+<p>IAP is on it&#8217;s way out and paid apps are all but dead. Advertising is the way to go and more and more publishers are realizing that. I have corona cards and enterprise so I can build my own plugins, but for those who can&#8217;t I think you&#8217;re makinga huge mistake not allowing advertising plugins to be sold.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4300">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David</h5>
+			<span class="comment_date">Posted at 10:48h, 05 April</span>
+						<div class="text_holder" id="comment-4300">
+				<p>David &#8211; Fuse is indeed now completely free, even if you don&#8217;t use the AdRally piece &#8211; that is a relatively recent change. There are large ad networks available via mediation, with more coming soon. And using AdRally (the managed piece) even as just the last item in a waterfall is always a good idea, although it will usually be able to beat any individual ad network and many developers use it as their top option.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4294">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/fa463a05cba1dfd2adf3937bd8041f2f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">endy</h5>
+			<span class="comment_date">Posted at 14:32h, 03 April</span>
+						<div class="text_holder" id="comment-4294">
+				<p>meh, I was really hoping for a good announcement about ad networks, maybe more info about AdRally.<br />
+/disappointed</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4296">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/590b358714ca8e2ee45c1cbf5a1ce9e9-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://roaminggamer.com/makegames/' rel='external nofollow' class='url'>Ed Maurina</a></h5>
+			<span class="comment_date">Posted at 20:07h, 03 April</span>
+						<div class="text_holder" id="comment-4296">
+				<p>I am extremely excited about this.  A store is absolutely a requirement for a healthy, vibrant, and growing community.</p>
+<p>Thank you also for giving us a view of the plugins you have.  </p>
+<p>Happy dance, happy dance, &#8230;</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-44ab35495eb13b448ea9307a96f479f3.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"61943","is_front_page":"","is_blog_page":"","is_category":"","site_url":"\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-933b528a2d57748fe8c83f115a193bac.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-301fe8920786443d62854aa56f62d416.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-589214c34f008189ea441c146f569db3.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-7509df77330fcb9cc352a1e134790124.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-46e09ba307b0b6c4b86ea442fd0f8392.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

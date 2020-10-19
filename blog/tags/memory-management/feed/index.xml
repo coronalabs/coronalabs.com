@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>memory management &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/memory-management/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>memory management &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #132</title>
+		<link>/blog/2016/07/15/from-the-forum-issue-132/</link>
+		<pubDate>Fri, 15 Jul 2016 18:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[Remote Control]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=67463</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>tvOS helper code makes life much easier</h3>
+<p>Getting our apps onto as many devices and platforms as possible is clearly a top priority among Corona developers. Why else would we decide to leverage the best SDK that can target the most OSes with minimal code changes between them?</p>
+<p>One of the most exciting (and most challenging) platforms has been tvOS. It’s a fascinating option for deployment that brings with it some unique challenges, including a custom controller and no &#8220;save-state&#8221; option on the device.</p>
+<p>Fortunately, stalwart developer <strong>Rakoonic</strong> has gifted us with a little utility that should streamline one aspect of tvOS development: a &#8220;remote controller&#8221; library which helps to standardize input for your apps and games. Speed over to <a href=https://forums.coronalabs.com/topic/64503-remote-controller-library-test/ target="_blank">the original thread</a> and check out what he’s offering!</p>
+<h3>A memory manager by any other name</h3>
+<p>Maintaining a trim and slim app can be a key to success. The way you manage the load time your program is incurring is something that users expect from modern developers. It’s also an integral part of software development that requires both creativity and focus to master.</p>
+<p>One developer was wondering why the memory in their game was going up significantly during testing. Corona Support Engineer <strong>Rob Miracle</strong> chimed in with some serious knowledge on Composer scene management and image sheet optimization. It never hurts to brush up on the best methods to keep your app overhead low and your user base high! Check out those techniques in <a href=https://forums.coronalabs.com/topic/64515-why-does-texture-memory-jump/ target="_blank">the forum thread</a>.</p>
+<h3>A leg up on Corona Enterprise for Android</h3>
+<p>I realize that the number of Corona SDK users dwarfs the user base for Corona Enterprise, but that doesn’t mean we can’t highlight some awesomeness from the Enterprise sub-forum!</p>
+<p>Recently, one Enterprise developer had some questions regarding sending messages from native iOS and what would be the best way to implement single message response callbacks on the Corona side. What they received was a great response pointing to the exact iOS API that should be utilized, a super reference to related tutorials, and a fantastic GitHub link with working code around the theory.</p>
+<p>The Corona engineer that responded went both “above” and “beyond” with a great answer to the question. Click through to <a href=https://forums.coronalabs.com/topic/64566-delegate-self/ target="_blank">the original link</a> to for more information on this process!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #125 &#8211; Memory Management in Composer Library Scenes</title>
+		<link>/blog/coronageek/corona-geek-125/</link>
+		<comments>/blog/coronageek/corona-geek-125/#comments</comments>
+		<pubDate>Mon, 19 Jan 2015 22:32:41 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[memory management]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60873</guid>
+		<description><![CDATA[During last week’s Hangout we started a discussion using Composer library and the Composer scene template to create and manage scenes in apps. This week we continued the discussion with a look at scene optimization tips, including scene memory usage examples.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4jdDkLW-upM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-124/>last week’s Hangout</a> we started a new discussion on how to use Composer library and the Composer scene template to create and manage scenes in our apps. We discussed the various Composer library events and pointed out some important concepts to be aware of when working with scenes using Composer.</p>
+<p>This week we continued the discussion with a look at scene optimization tips, including <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20125.zip target="_blank">scene memory usage examples</a>. Scene management is an important part of app development. Join the Hangout on Monday&#8217;s and be part of the conversation.</p>
+<p>Next week we&#8217;ll continue the discussion with a look at the difference between shared data and persistent data between Composer scenes. We&#8217;ll also look at custom Composer transitions.</p>
+<p><strong>January&#8217;s Geek Games &#8211; Let&#8217;s Play!</strong></p>
+<p style="padding-left: 30px;">In January we&#8217;re playing Chip Chain on iOS or Android for the chance to win a $50 gift card. The rules are simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. The winner will be announced on February 2 when we announce the next game to play. <a href=http://chip-chain.com/ target="_blank">Download Chip Chain</a> now and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-124/ target="_blank">Corona Geek #124 &#8211; Composer Library Scene Management</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20125.zip target="_blank">Download the code from today&#8217;s Hangout</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Corona Game Templates</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module</a></li>
+<li><a href=/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/>Use Swift with CoronaCards</a></li>
+<li><a href=http://careers.fusepowered.com/JobDescriptionMultiple.asp?WebJobPostingsID=588 target="_blank">We&#8217;re Hiring Core Engineers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-125/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights: Super Memory Meter</title>
+		<link>/blog/coronageek/hangout-highlights-corona-sdk-super-memory-meter/</link>
+		<comments>/blog/coronageek/hangout-highlights-corona-sdk-super-memory-meter/#comments</comments>
+		<pubDate>Wed, 19 Jun 2013 16:18:16 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[memory management]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=36352</guid>
+		<description><![CDATA[During Monday's Hangout Ed Maurina showed off a new memory monitoring tool that show realtime information about device memory, display memory, and frame per second while your app is running. The memory meter can be added to your projects with two lines of code and it comes with full documentation.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/pyfaqXYgJ7M?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During Monday&#8217;s Hangout <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a> showed off a new memory monitoring tool that show realtime information about device memory, display memory, and frame per second while your app is running. The memory meter can be added to your projects with two lines of code and it comes with full documentation. You can <a href=https://gumroad.com/l/uXdC target="_blank">download super meter</a> from the Roaming Gamer website. Thanks Ed!</p>
+<p><a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-43/ target="_blank">Watch the full Hangout</a> for more geek fun.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-corona-sdk-super-memory-meter/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #40 &#8211; Memory Management, Google IO, and Dilbert</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-40/#comments</comments>
+		<pubDate>Mon, 20 May 2013 22:51:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[texture memory]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378</guid>
+		<description><![CDATA[This week we hung out with Ed Maurina, Gerald Bailey, Jesse Warden, Matthew Chapman, and Richard Harris to discuss memory management in Corona SDK. Ed did an excellent job of explaining the sample app he created after one of our previous Hangouts where we discussed Storyboard. His app demonstrates how memory is affected when objects are set to nil at various stages of development.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/qqLZZnujog4#!?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://snakeheadsoftware.com/ target="_blank">Gerald Bailey</a>, <a href=https://plus.google.com/b/108159899655420864045/109537902154361720350/posts target="_blank">Jesse Warden</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, and <a href=http://appdevelopermagazine.com/ target="_blank">Richard Harris</a> to discuss memory management in Corona SDK. Ed did an excellent job of explaining the sample app he created after one of our previous Hangouts where we discussed Storyboard. His app demonstrates how memory is affected when objects are set to nil at various stages of development. Ed agreed to post his code on GitHub, so we&#8217;ll <a href=http://downloads.roaminggamer.com/coronageek/CoronaGeekAfterTalk.zip target="_blank">post a link to his code</a> once that is available. We also talked about the announcements at Google IO, the ongoing <a href=/blog/2013/05/15/dilbert-the-world-famous-engineer-and-corona-labs-partner-on-a-mobile-game-competition/>Dilbert contest</a>, and <a href=/blog/2013/05/16/update-on-corona-and-coppa-privacy-policies/>COPPA Privacy Policies</a>.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Theo Rushin, Jr. for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-40/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

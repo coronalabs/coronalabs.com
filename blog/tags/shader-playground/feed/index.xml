@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shader playground &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/shader-playground/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>shader playground &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #153 &#8211; Custom Shader Math and 2D Shadow Effects</title>
+		<link>/blog/coronageek/corona-geek-153/</link>
+		<comments>/blog/coronageek/corona-geek-153/#respond</comments>
+		<pubDate>Tue, 04 Aug 2015 00:50:52 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[shader effects]]></category>
+		<category><![CDATA[shader playground]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63590</guid>
+		<description><![CDATA[Today, Steven Johnson of led us through part 4 of our ongoing discussion on creating custom shader effects. During the Hangout Steven highlighted some of the exponential numerical issues surrounding shader math. We looked at a few visual representations of these “numerical issues” and talked about how to overcome hardware limitations to achieve device level precision.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/IfmM32onzq8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Steven Johnson of <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> led us through part 4 of our ongoing discussion on creating custom shader effects. During the Hangout Steven highlighted some of the exponential numerical issues surrounding shader math. We looked at a few visual representations of these “numerical issues” and talked about how to overcome hardware limitations to achieve device level precision. We also reviewed some new <a href=https://goo.gl/AWfOtk target="_blank">Corona Shader Playground</a> examples and looked at a 2D Shader example that implemented multi-pass shader effects.</p>
+<p>Xibalba Studios is the developer of <a href=http://xibalbastudios.com/games-2/coming-soon/index.html target="_blank">MilitAnt™</a> an action-packed side-scrolling platform/shooter set in a world ruled by insects. A lone soldier ant must defend his home colony at all costs from a brutal invasion by the enemy bug nations. If you haven&#8217;t already, play MilitAnt™ and see even more of Steven’s handy work.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/c7uvoj9iibb7o7ogt7vr4hinc90 target="_blank">Corona Geek After Dark #5</a> when we will discuss topics like general app development, forum questions, community insights, and more. Last week we discussed selling premium support services, licensing characters to make games, stepping outside your comfort zone, and a ton of other stuff.</p>
+<p><strong>Corona Geek Games July Challenge Winner!</strong></p>
+<p>Congratulations to Huub van Vuren for being July&#8217;s high score winner at Rise 1.0 with an amazing high score of 606! Huub has earned a $50 gift card for playing games. That&#8217;s pretty cool. We&#8217;ll announce a game for August on next week&#8217;s Hangout. Thank you to everyone who participated in July&#8217;s challenge. Check out the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> for a full list of scores.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Download it and have fun!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-152/>Corona Geek #152 &#8211; Facebook Integration and Social Media Sharing</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links Discussed in Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://www.patreon.com/roaminggamer target="_blank">Get App Development Help</a> from Roaming Gamer</li>
+<li><a href=https://www.shadertoy.com/ target="_blank">Shader Examples on ShaderToy</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-153/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-153-2015-08-03-custom-shader-math.mp3" length="75856980" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #150 &#8211; Custom Vertex Shader Effects and More Playground Examples</title>
+		<link>/blog/coronageek/corona-geek-150/</link>
+		<comments>/blog/coronageek/corona-geek-150/#respond</comments>
+		<pubDate>Mon, 13 Jul 2015 22:06:21 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[shader examples]]></category>
+		<category><![CDATA[shader playground]]></category>
+		<category><![CDATA[shaders]]></category>
+		<category><![CDATA[vertex shaders]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63296</guid>
+		<description><![CDATA[On today's Corona Geek Hangout, Steven Johnson introduced us to vertex shaders as part 2 of our introduction the topic of creating and working with custom shader effects. We looked at several working shader playground examples and learned a tip for using wireframe mode with display.setDrawMode to see the points of a polygon in a vertex shader example.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/I7ARuFWfAWo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> introduced us to vertex shaders as part 2 of our introduction the topic of creating and working with custom shader effects. We looked at several working <a href=https://forums.coronalabs.com/topic/56284-share-your-shaders/ target="_blank">shader playground examples</a> and we even learned a tip for using wireframe mode with display.setDrawMode to see the points of a polygon in a vertex shader example.</p>
+<p>Corona comes with a bunch of built in shader effects, but being able to create your own custom shader effects is extremely powerful. Combine that with physics and particle effects and you have the potential for some awesome special effects.</p>
+<p>If you missed last week’s Hangout where we got <a href=/blog/coronageek/corona-geek-149/>an introduction to shader concepts</a>, be sure to watch the code walk through. Shaders is a huge topic, but last week&#8217;s discussion and this week&#8217;s Hangout hopefully give you some insights into what&#8217;s possible using shaders.</p>
+<p><strong>Let’s Play Rise 1.0 for July&#8217;s Corona Geek Games Challenge</strong></p>
+<p>June&#8217;s Corona Geek Games Challenge winners were Luther Ayers and Jason Schroeder. Each winner received a $50 gift card for playing games! How cool is that!?</p>
+<p>For July we are playing Rise 1.0 by Vernon Coleman (aka, Novateur). To participate, share a picture of your highest Rise score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-149/>Corona Geek #149 &#8211; Shader Concepts and Playground Examples</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Hangout Resources</strong></p>
+<ul>
+<li><a href=/blog/2015/04/15/custom-shader-effects/ target="_blank">Custom Shader Effects</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/graphics/customEffects.html target="_blank">Custom Shader Effects Guide</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/graphics/effects.html target="_blank">Filter Effects, Generators, and Composites</a></li>
+<li><a href=https://www.khronos.org/opengles/sdk/docs/reference_cards/OpenGL-ES-2_0-Reference-card.pdf target="_blank">OpenGL ES 2.0 API Quick Reference Card</a></li>
+<li><a href=https://shader.coronalabs.com/?#textures/512/leaves-diffuse.jpg&%7B%22vdata%22:[0,1,0,0],%22tint%22:%22#ffffff%22,%22tint_a%22:%221%22,%22bg%22:%22#ffffff%22,%22bg_a%22:%221%22,%22shader%22:%22ICAgIC8qCQoKICAgIC0tCiAgICAtLSBQZXJtaXNzaW9uIGlzIGhlcmVieSBncmFudGVkLCBmcmVlIG9mIGNoYXJnZSwgdG8gYW55IHBlcnNvbiBvYnRhaW5pbmcKICAgIC0tIGEgY29weSBvZiB0aGlzIHNvZnR3YXJlIGFuZCBhc3NvY2lhdGVkIGRvY3VtZW50YXRpb24gZmlsZXMgKHRoZQogICAgLS0gIlNvZnR3YXJlIiksIHRvIGRlYWwgaW4gdGhlIFNvZnR3YXJlIHdpdGhvdXQgcmVzdHJpY3Rpb24sIGluY2x1ZGluZwogICAgLS0gd2l0aG91dCBsaW1pdGF0aW9uIHRoZSByaWdodHMgdG8gdXNlLCBjb3B5LCBtb2RpZnksIG1lcmdlLCBwdWJsaXNoLAogICAgLS0gZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNlbGwgY29waWVzIG9mIHRoZSBTb2Z0d2FyZSwgYW5kIHRvCiAgICAtLSBwZXJtaXQgcGVyc29ucyB0byB3aG9tIHRoZSBTb2Z0d2FyZSBpcyBmdXJuaXNoZWQgdG8gZG8gc28sIHN1YmplY3QgdG8KICAgIC0tIHRoZSBmb2xsb3dpbmcgY29uZGl0aW9uczoKICAgIC0tCiAgICAtLSBUaGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5vdGljZSBzaGFsbCBiZQogICAgLS0gaW5jbHVkZWQgaW4gYWxsIGNvcGllcyBvciBzdWJzdGFudGlhbCBwb3J0aW9ucyBvZiB0aGUgU29mdHdhcmUuCiAgICAtLQogICAgLS0gVEhFIFNPRlRXQVJFIElTIFBST1ZJREVEICJBUyBJUyIsIFdJVEhPVVQgV0FSUkFOVFkgT0YgQU5ZIEtJTkQsCiAgICAtLSBFWFBSRVNTIE9SIElNUExJRUQsIElOQ0xVRElORyBCVVQgTk9UIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YKICAgIC0tIE1FUkNIQU5UQUJJTElUWSwgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UgQU5EIE5PTklORlJJTkdFTUVOVC4KICAgIC0tIElOIE5PIEVWRU5UIFNIQUxMIFRIRSBBVVRIT1JTIE9SIENPUFlSSUdIVCBIT0xERVJTIEJFIExJQUJMRSBGT1IgQU5ZCiAgICAtLSBDTEFJTSwgREFNQUdFUyBPUiBPVEhFUiBMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULAogICAgLS0gVE9SVCBPUiBPVEhFUldJU0UsIEFSSVNJTkcgRlJPTSwgT1VUIE9GIE9SIElOIENPTk5FQ1RJT04gV0lUSCBUSEUKICAgIC0tIFNPRlRXQVJFIE9SIFRIRSBVU0UgT1IgT1RIRVIgREVBTElOR1MgSU4gVEhFIFNPRlRXQVJFLgogICAgLS0KICAgIC0tIFsgTUlUIGxpY2Vuc2U6IGh0dHA6Ly93d3cub3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvbWl0LWxpY2Vuc2UucGhwIF0KICAgIC0tCgogICAgKi8KCglQX1VWIGZsb2F0IFBJID0gNC4gKiBhdGFuKDEuKTsKCVBfVVYgZmxvYXQgVFdPX1BJID0gMi4gKiBQSTsKCVBfVVYgZmxvYXQgUElfT1ZFUl9UV08gPSBQSSAvIDIuOwoKCVBfVVYgZmxvYXQgT05FX09WRVJfUEkgPSAxLiAvIFBJOwoJUF9VViBmbG9hdCBPTkVfT1ZFUl9UV09fUEkgPSAuNSAvIFBJOwoKCVBfUE9TSVRJT04gdmVjMiBHZXRVVl9QaGlEZWx0YSAoUF9QT1NJVElPTiB2ZWMyIGRpZmYsIFBfVVYgZmxvYXQgZHBoaSkKCXsKCQlQX1BPU0lUSU9OIGZsb2F0IGRpc3Rfc3EgPSBkb3QoZGlmZiwgZGlmZik7CgoJCWlmIChkaXN0X3NxID4gMS4pIHJldHVybiB2ZWMyKC0xLik7CgoJCVBfUE9TSVRJT04gZmxvYXQgeiA9IHNxcnQoMS4gLSBkaXN0X3NxKTsKCQlQX1BPU0lUSU9OIGZsb2F0IHBoaSA9IGF0YW4oeiwgZGlmZi54KTsKCQlQX1BPU0lUSU9OIGZsb2F0IGFuZ2xlID0gLjUgKyBwaGkgLyBUV09fUEk7CgoJCWFuZ2xlID0gbW9kKGFuZ2xlICsgZHBoaSwgMS4pOwoKCQlyZXR1cm4gdmVjMihhbmdsZSwgLjUgKyBhc2luKGRpZmYueSkgLyBQSSk7Cgl9CgoJUF9DT0xPUiB2ZWM0IEZyYWdtZW50S2VybmVsIChQX1VWIHZlYzIgdXYpCgl7CiAgICAgICAgUF9VViB2ZWMyIHBvcyA9IHV2IC0gLjU7CiAgICAgICAgUF9VViBmbG9hdCBhbmdsZSA9IG1vZChhdGFuKHBvcy55LCBwb3MueCksIFRXT19QSSk7CiAKICAgICAgICAjaWYgMAogICAgICAgIAlQX1VWIGZsb2F0IGExID0gQ29yb25hVmVydGV4VXNlckRhdGEueDsgLy8gVGhlc2UgbnVtYmVycyBhcmUgYm90aCBpbiBbMCwgMV0uCiAgICAgICAgCVBfVVYgZmxvYXQgYTIgPSBDb3JvbmFWZXJ0ZXhVc2VyRGF0YS55OwogICAgICAgICNlbHNlCiAgICAgICAgCVBfVVYgZmxvYXQgYTEgPSBtb2QoQ29yb25hVG90YWxUaW1lICogLjA4NSwgMS4pOwogICAgICAgIAlQX1VWIGZsb2F0IGEyID0gbW9kKGExICsgLjQsIDEuKTsKICAgICAgICAjZW5kaWYKICAgICAgICAKICAgICAgICAvLyBPdXRzaWRlIHRoZSBhcmM/IChBbHNvLCBkZXRlY3QgdGhlIDAgLT4gMiAqIHBpIGJyYW5jaC4pCiAgICAgICAgaWYgKGExIDwgYTIpCiAgICAgICAgewogICAgICAgICAgICBpZiAoYW5nbGUgPCBhMSAqIFRXT19QSSB8fCBhbmdsZSA+IGEyICogVFdPX1BJKSByZXR1cm4gdmVjNCgwLik7CiAgICAgICAgfQogICAgICAgCiAgICAgICAgZWxzZQogICAgICAgIHsKICAgICAgICAgICAgaWYgKGFuZ2xlIDwgYTEgKiBUV09fUEkgJiYgYW5nbGUgPiBhMiAqIFRXT19QSSkgcmV0dXJuIHZlYzQoMC4pOwogICAgICAgIH0KICAgICAgICAKCQl1diA9IEdldFVWX1BoaURlbHRhKDIuICogdXYgLSAxLiwgLUNvcm9uYVRvdGFsVGltZSAvIDcuKTsKCiAgICAgICAgaWYgKHV2LnggPCAwLikgcmV0dXJuIHZlYzQoMC4pOyAvLyBPdXRzaWRlIHRoZSBzcGhlcmU/CiAgICAgICAgCgkJcmV0dXJuIENvcm9uYUNvbG9yU2NhbGUodGV4dHVyZTJEKENvcm9uYVNhbXBsZXIwLCB1dikpOwoJfQoKCg==%22%7D target="_blank">Shader Playground Example</a></li>
+<li><a href=https://www.shadertoy.com/ target="_blank">Shader Toy</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=https://gumroad.com/l/dyd-ebook target="_blank">Double Your Downloads in 5 Steps</a></li>
+<li><a href=https://itunes.apple.com/us/podcast/app-marketing-design-tips/id643216602?mt=2 target="_blank">App Masters Podcast</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-150/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-150-2015-07-13-shaders-and-playground-examples-part-2.mp3" length="82679421" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #149 &#8211; Shader Concepts and Playground Examples</title>
+		<link>/blog/coronageek/corona-geek-149/</link>
+		<comments>/blog/coronageek/corona-geek-149/#comments</comments>
+		<pubDate>Mon, 06 Jul 2015 21:37:06 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[shader playground]]></category>
+		<category><![CDATA[shaders]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63230</guid>
+		<description><![CDATA[On today's Corona Geek Hangout, Steven Johnson from Xibalba Studios introduced us to shaders, what they are, and when we might use them. We even looked at several working shader playground examples to see the code in action.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/d_HwA6yTGQ4?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> introduced us to shaders, what they are, and when we might use them. We even looked at several working <a href=https://forums.coronalabs.com/topic/56284-share-your-shaders/ target="_blank">shader playground examples</a> to see the code in action.</p>
+<p>Steven is well versed in this topic, so it was an opportunity for a shader newbie like myself to pick his brain. If you have heard of shaders since the introduction of Graphics 2.0, but have not been sure what they do, then this conversation will help shed some light on the topic.</p>
+<p>If you missed last week’s Hangout on <a href=/blog/coronageek/corona-geek-148/>creating motorized wheeled carts</a>, be sure to watch the code walk through. We talked about using pivot joints to create complex structures and then applied torque and other physics forces to the cart to get some interesting effects.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>June&#8217;s Corona Geek Games Challenge winners are Luther Ayers and Jason Schroeder. Luther played One Dot One Target for a high score of 18 and Jason topped the charts at 5491 playing Alone. Each winner get&#8217;s a $50 gift card for playing games! How cool is that!</p>
+<p>June&#8217;s challenge is over, but you can still download and play both games.</p>
+<p>ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app.</p>
+<p>One Dot One Target is available on both <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a> for free.</p>
+<p>We&#8217;ll announce the next Corona Geek Games Challenge for July on next week&#8217;s Hangout. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ) to see what game we will play.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-148/>Corona Geek #148 &#8211; Creating Motorized Wheeled Carts Using Pivot Joints</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Hangout Resources</strong></p>
+<ul>
+<li><a href=/blog/2015/04/15/custom-shader-effects/ target="_blank">Customer Shader Effects</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/graphics/customEffects.html target="_blank">Customer Shader Effects Guide</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/graphics/effects.html target="_blank">Filter Effects, Generators, and Composites</a></li>
+<li><a href=https://www.khronos.org/opengles/sdk/docs/reference_cards/OpenGL-ES-2_0-Reference-card.pdf target="_blank">OpenGL ES 2.0 API Quick Reference Card</a></li>
+<li><a href=https://shader.coronalabs.com/?#textures/512/leaves-diffuse.jpg&%7B%22vdata%22:[0,1,0,0],%22tint%22:%22#ffffff%22,%22tint_a%22:%221%22,%22bg%22:%22#ffffff%22,%22bg_a%22:%221%22,%22shader%22:%22ICAgIC8qCQoKICAgIC0tCiAgICAtLSBQZXJtaXNzaW9uIGlzIGhlcmVieSBncmFudGVkLCBmcmVlIG9mIGNoYXJnZSwgdG8gYW55IHBlcnNvbiBvYnRhaW5pbmcKICAgIC0tIGEgY29weSBvZiB0aGlzIHNvZnR3YXJlIGFuZCBhc3NvY2lhdGVkIGRvY3VtZW50YXRpb24gZmlsZXMgKHRoZQogICAgLS0gIlNvZnR3YXJlIiksIHRvIGRlYWwgaW4gdGhlIFNvZnR3YXJlIHdpdGhvdXQgcmVzdHJpY3Rpb24sIGluY2x1ZGluZwogICAgLS0gd2l0aG91dCBsaW1pdGF0aW9uIHRoZSByaWdodHMgdG8gdXNlLCBjb3B5LCBtb2RpZnksIG1lcmdlLCBwdWJsaXNoLAogICAgLS0gZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNlbGwgY29waWVzIG9mIHRoZSBTb2Z0d2FyZSwgYW5kIHRvCiAgICAtLSBwZXJtaXQgcGVyc29ucyB0byB3aG9tIHRoZSBTb2Z0d2FyZSBpcyBmdXJuaXNoZWQgdG8gZG8gc28sIHN1YmplY3QgdG8KICAgIC0tIHRoZSBmb2xsb3dpbmcgY29uZGl0aW9uczoKICAgIC0tCiAgICAtLSBUaGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5vdGljZSBzaGFsbCBiZQogICAgLS0gaW5jbHVkZWQgaW4gYWxsIGNvcGllcyBvciBzdWJzdGFudGlhbCBwb3J0aW9ucyBvZiB0aGUgU29mdHdhcmUuCiAgICAtLQogICAgLS0gVEhFIFNPRlRXQVJFIElTIFBST1ZJREVEICJBUyBJUyIsIFdJVEhPVVQgV0FSUkFOVFkgT0YgQU5ZIEtJTkQsCiAgICAtLSBFWFBSRVNTIE9SIElNUExJRUQsIElOQ0xVRElORyBCVVQgTk9UIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YKICAgIC0tIE1FUkNIQU5UQUJJTElUWSwgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UgQU5EIE5PTklORlJJTkdFTUVOVC4KICAgIC0tIElOIE5PIEVWRU5UIFNIQUxMIFRIRSBBVVRIT1JTIE9SIENPUFlSSUdIVCBIT0xERVJTIEJFIExJQUJMRSBGT1IgQU5ZCiAgICAtLSBDTEFJTSwgREFNQUdFUyBPUiBPVEhFUiBMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULAogICAgLS0gVE9SVCBPUiBPVEhFUldJU0UsIEFSSVNJTkcgRlJPTSwgT1VUIE9GIE9SIElOIENPTk5FQ1RJT04gV0lUSCBUSEUKICAgIC0tIFNPRlRXQVJFIE9SIFRIRSBVU0UgT1IgT1RIRVIgREVBTElOR1MgSU4gVEhFIFNPRlRXQVJFLgogICAgLS0KICAgIC0tIFsgTUlUIGxpY2Vuc2U6IGh0dHA6Ly93d3cub3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvbWl0LWxpY2Vuc2UucGhwIF0KICAgIC0tCgogICAgKi8KCglQX1VWIGZsb2F0IFBJID0gNC4gKiBhdGFuKDEuKTsKCVBfVVYgZmxvYXQgVFdPX1BJID0gMi4gKiBQSTsKCVBfVVYgZmxvYXQgUElfT1ZFUl9UV08gPSBQSSAvIDIuOwoKCVBfVVYgZmxvYXQgT05FX09WRVJfUEkgPSAxLiAvIFBJOwoJUF9VViBmbG9hdCBPTkVfT1ZFUl9UV09fUEkgPSAuNSAvIFBJOwoKCVBfUE9TSVRJT04gdmVjMiBHZXRVVl9QaGlEZWx0YSAoUF9QT1NJVElPTiB2ZWMyIGRpZmYsIFBfVVYgZmxvYXQgZHBoaSkKCXsKCQlQX1BPU0lUSU9OIGZsb2F0IGRpc3Rfc3EgPSBkb3QoZGlmZiwgZGlmZik7CgoJCWlmIChkaXN0X3NxID4gMS4pIHJldHVybiB2ZWMyKC0xLik7CgoJCVBfUE9TSVRJT04gZmxvYXQgeiA9IHNxcnQoMS4gLSBkaXN0X3NxKTsKCQlQX1BPU0lUSU9OIGZsb2F0IHBoaSA9IGF0YW4oeiwgZGlmZi54KTsKCQlQX1BPU0lUSU9OIGZsb2F0IGFuZ2xlID0gLjUgKyBwaGkgLyBUV09fUEk7CgoJCWFuZ2xlID0gbW9kKGFuZ2xlICsgZHBoaSwgMS4pOwoKCQlyZXR1cm4gdmVjMihhbmdsZSwgLjUgKyBhc2luKGRpZmYueSkgLyBQSSk7Cgl9CgoJUF9DT0xPUiB2ZWM0IEZyYWdtZW50S2VybmVsIChQX1VWIHZlYzIgdXYpCgl7CiAgICAgICAgUF9VViB2ZWMyIHBvcyA9IHV2IC0gLjU7CiAgICAgICAgUF9VViBmbG9hdCBhbmdsZSA9IG1vZChhdGFuKHBvcy55LCBwb3MueCksIFRXT19QSSk7CiAKICAgICAgICAjaWYgMAogICAgICAgIAlQX1VWIGZsb2F0IGExID0gQ29yb25hVmVydGV4VXNlckRhdGEueDsgLy8gVGhlc2UgbnVtYmVycyBhcmUgYm90aCBpbiBbMCwgMV0uCiAgICAgICAgCVBfVVYgZmxvYXQgYTIgPSBDb3JvbmFWZXJ0ZXhVc2VyRGF0YS55OwogICAgICAgICNlbHNlCiAgICAgICAgCVBfVVYgZmxvYXQgYTEgPSBtb2QoQ29yb25hVG90YWxUaW1lICogLjA4NSwgMS4pOwogICAgICAgIAlQX1VWIGZsb2F0IGEyID0gbW9kKGExICsgLjQsIDEuKTsKICAgICAgICAjZW5kaWYKICAgICAgICAKICAgICAgICAvLyBPdXRzaWRlIHRoZSBhcmM/IChBbHNvLCBkZXRlY3QgdGhlIDAgLT4gMiAqIHBpIGJyYW5jaC4pCiAgICAgICAgaWYgKGExIDwgYTIpCiAgICAgICAgewogICAgICAgICAgICBpZiAoYW5nbGUgPCBhMSAqIFRXT19QSSB8fCBhbmdsZSA+IGEyICogVFdPX1BJKSByZXR1cm4gdmVjNCgwLik7CiAgICAgICAgfQogICAgICAgCiAgICAgICAgZWxzZQogICAgICAgIHsKICAgICAgICAgICAgaWYgKGFuZ2xlIDwgYTEgKiBUV09fUEkgJiYgYW5nbGUgPiBhMiAqIFRXT19QSSkgcmV0dXJuIHZlYzQoMC4pOwogICAgICAgIH0KICAgICAgICAKCQl1diA9IEdldFVWX1BoaURlbHRhKDIuICogdXYgLSAxLiwgLUNvcm9uYVRvdGFsVGltZSAvIDcuKTsKCiAgICAgICAgaWYgKHV2LnggPCAwLikgcmV0dXJuIHZlYzQoMC4pOyAvLyBPdXRzaWRlIHRoZSBzcGhlcmU/CiAgICAgICAgCgkJcmV0dXJuIENvcm9uYUNvbG9yU2NhbGUodGV4dHVyZTJEKENvcm9uYVNhbXBsZXIwLCB1dikpOwoJfQoKCg==%22%7D target="_blank">Shader Playground Example</a></li>
+<li><a href=https://www.shadertoy.com/ target="_blank">Shader Toy</a></li>
+<li><a href=https://gumroad.com/l/dyd-ebook target="_blank">Double Your Downloads in 5 Steps</a></li>
+<li><a href=https://itunes.apple.com/us/podcast/app-marketing-design-tips/id643216602?mt=2 target="_blank">App Masters Podcast</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-149/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-149-2015-07-06-shaders-and-playground-examples.mp3" length="84431186" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

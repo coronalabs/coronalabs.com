@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #133 &#8211; Game Dev, Part 5 &#8211; Continuous Hallways, Particle Effects, and Game Restarting</title>
+	<atom:link href="/blog/coronageek/corona-geek-133/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-133/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: John</title>
+		<link>/blog/coronageek/corona-geek-133/#comment-5755</link>
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Fri, 20 Mar 2015 01:23:46 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61791#comment-5755</guid>
+		<description><![CDATA[--local ced = require &quot;scripts.caseErrorDetect&quot;
+--ced.promoteToError()
+
+Got it to work after commenting the first two lines out.]]></description>
+		<content:encoded><![CDATA[<p>&#8211;local ced = require &#8220;scripts.caseErrorDetect&#8221;<br />
+&#8211;ced.promoteToError()</p>
+<p>Got it to work after commenting the first two lines out.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: John</title>
+		<link>/blog/coronageek/corona-geek-133/#comment-5754</link>
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Fri, 20 Mar 2015 01:12:00 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61791#comment-5754</guid>
+		<description><![CDATA[I ran the code from repo and get nothing but errors. &quot;file does not exist errors or missing or check case of file. &quot;]]></description>
+		<content:encoded><![CDATA[<p>I ran the code from repo and get nothing but errors. &#8220;file does not exist errors or missing or check case of file. &#8220;</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

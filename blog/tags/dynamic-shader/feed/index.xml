@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dynamic shader &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/dynamic-shader/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>dynamic shader &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Dynamic Shader plugin</title>
+		<link>/blog/2017/02/01/introducing-the-dynamic-shader-plugin/</link>
+		<pubDate>Wed, 01 Feb 2017 18:09:02 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[dynamic shader]]></category>
+		<category><![CDATA[lighting]]></category>
+		<category><![CDATA[shader effects]]></category>
+
+		<guid isPermaLink="false">/?p=69504</guid>
+		<description><![CDATA[Lighting effects and shading are concepts usually reserved for 3D games, but an amazing new plugin can easily bring a similar atmosphere to your 2D games. Check it out!]]></description>
+				<content:encoded><![CDATA[<p><a href=https://marketplace.coronalabs.com/plugin/dynamic-shader><img class="alignright wp-image-69506" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2017/01/2017-01-18-18-22-25-web_logo2-150x122.png" alt="2017-01-18-18-22-25---web_logo2" width="175" height="142" /></a>When most people think about 2D games, they imagine a relatively &#8220;flat&#8221; environment &#8212; layered 2D sprites and images on a background. Some developers add parallax scrolling to give the impression of depth and distance, but generally that&#8217;s the limit. Very few developers even consider the possibility of adding lighting effects and shading to a 2D world, since these are design aspects usually reserved for 3D games.</p>
+<p>Now, thanks to innovative developer <a href=http://dynamicshader.com/index.html target="_blank">SporkFin Software</a>, Corona developers can easily add beautiful lighting and shading effects to their 2D art with the <a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Dynamic</a><a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank"> Shader</a> plugin. This shading occurs dynamically in real time, updating every frame, allowing for vivid expressions of mood and atmosphere.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4TJ3Vq_8-cI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>While Corona has featured this core technology for several years, most developers are not aware of how to implement it. The <a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Dynamic Shader</a> plugin, now available in the <a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Corona Marketplace</a>, makes the process of lighting and shading your game considerably easier with a wide assortment of APIs and configuration options. According to the plugin author, it only takes 4 steps and a few lines of code to add dynamic lighting to your app!</p>
+<p>As always, Corona Labs &#8212; and enterprising studios like <a href=http://dynamicshader.com/index.html target="_blank">SporkFin Software</a> &#8212; are committed to building the best 2D app development platform in the market. Grab the <a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Dynamic Shader</a> plugin today and bring a new level of atmosphere to your games!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Get the Dynamic Shader plugin</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

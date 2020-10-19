@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ad network &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ad-network/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Ad network &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest piece: CrossInstall&#8217;s ad platform now available as a Corona Plugin</title>
+		<link>/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/</link>
+		<comments>/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/#comments</comments>
+		<pubDate>Thu, 22 Aug 2013 17:19:52 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Ad network]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=37754</guid>
+		<description><![CDATA[Jeff Marshall, Founder at <a href="http://www.x48.net/">CrossInstall</a>, has a long background in game development, ad networks, and app monetization platforms.  He has built several ad network companies, most recently CrossInstall.  Jeff also has 15+ years of experience building games on consoles, social networks and mobile platforms. Jeff is also a Corona SDK veteran, and has released several games for iOS and Android with the platform.
+
+As our newest Corona Plugin partner, CrossInstall is an ad network that focuses on driving quality traffic for advertising partners and delivering top payments to publishing partners. For more information, please see the <a href="http://docs.coronalabs.com/daily/plugin/crossinstall/">CrossInstall documentation</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Jeff Marshall, Founder of <a href=http://www.x48.net/>CrossInstall</a>, has a long background in game development, ad networks, and app monetization platforms.  He has built several ad network companies, most recently CrossInstall.  Jeff also has 15+ years of experience building games on consoles, social networks and mobile platforms. Jeff is also a Corona SDK veteran, and has released several games for iOS and Android with the platform.</p>
+<p>CrossInstall, an ad network that focuses on driving quality traffic for advertising partners and delivering top payments to publishing partners, is our newest Corona Plugin partner. For more information, please see the <a href=http://docs.coronalabs.com/daily/plugin/crossinstall/>CrossInstall documentation</a>.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/07/jeff-and-jake-2-150x150.jpg" alt="jeff and jake (2)" class="alignleft size-thumbnail wp-image-42175" />As game developers, we are always in search of the holy grail of ad networks that kills it on revenue. <a href=http://www.crossinstall.com/>CrossInstall</a> is an ad network built by Corona app developers that started out with a super simple premise: an image URL and a click URL. That&#8217;s it. None of the bloat of your regular advertising SDKs that ping their servers every time a user launches your app and sends who knows what data. We wanted all the flexibility that comes with letting you code the ads however you like. </p>
+<p>Our native iOS and Android SDKs provide that same simplicity, and now we are even more excited to live directly in Corona&#8217;s fantastic Plugin framework, to make ad serving as easy as possible for the Corona community. Revenue is king when it comes to ads and we hope that CrossInstall is the best option for you.</p>
+<p>How do you maximize your ad network revenue?  Keep your ad networks honest by serving ads from multiple providers and re-balancing their impression distribution regularly as performance shifts.  Let us have the lion’s share of your impressions if we are winning; keep us on a small slice on the back-burner if we aren’t. That’s the way you should juggle ad networks – play them off each other and keep a close eye on everyone’s performance so you can move your traffic around to maximize revenue.</p>
+<p>We also aim to provide you with a high level of service: on our technology and on the human support side. We&#8217;ve got a lot of things in the pipeline that will provide all the tools you want from a monetization partner, and we plan to improve each week. We offer a live status dashboard so you can see what is going on with our network, live hourly-level charts for you to monitor your performance and your traffic, alerts galore and limitless reporting.</p>
+<p>For information on integrating CrossInstall and to download the sample app, visit <a href=http://docs.coronalabs.com/daily/plugin/crossinstall/>CrossInstall&#8217;s documentation page</a>. Next, <a href=http://www.crossinstall.com/signup?developer=1>sign up here</a> and fetch your revenue data via our API. If you&#8217;d like to get in touch, please email us at <a href=mailto:support@crossinstall.com>support@crossinstall.com</a>. We look forward to working with you!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/22/guest-piece-crossinstalls-ad-platform-now-available-as-a-corona-plugin/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Guest piece: SponsorPay Meets Corona, and Revenues Soar!</title>
+		<link>/blog/2013/06/06/guest-piece-sponsorpay-meets-corona-and-revenues-soar/</link>
+		<pubDate>Thu, 06 Jun 2013 17:00:18 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Ad network]]></category>
+		<category><![CDATA[partner]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[SponsorPay]]></category>
+
+		<guid isPermaLink="false">/?p=35301</guid>
+		<description><![CDATA[Projjol Banerjea is VP Marketing &#038; Business Development at SponsorPay, the world’s leading value-exchange advertising platform. He oversees marketing, including online/offline presence, PR/communications, industry relationships and market research, as well as strategic business development, presales and sales support.
+
+SponsorPay is one of our inaugural <a href="/resources/plugins/">Corona Plugin partners</a>, which are available for all Corona SDK developers. For more info please see the SponsorPay <a href="http://docs.coronalabs.com/plugin/sponsorpay/index.html">plugin documentation</a>. Read on for more information about SponsorPay's great monetization services for mobile developers.]]></description>
+				<content:encoded><![CDATA[<p><em>Projjol Banerjea is VP Marketing &#038; Business Development at SponsorPay, the world’s leading value-exchange advertising platform. He oversees marketing, including online/offline presence, PR/communications, industry relationships and market research, as well as strategic business development, presales and sales support.</p>
+<p>SponsorPay is one of our inaugural <a href=/resources/plugins/>Corona Plugin partners</a>, which are available for all Corona SDK developers. For more info please see the SponsorPay <a href=http://docs.coronalabs.com/plugin/sponsorpay/index.html>plugin documentation</a>. Read on for more information about SponsorPay&#8217;s great monetization services for mobile developers.</em></p>
+<hr/>
+<p><img src="/wordpress/wp-content/uploads/2013/06/Projjol-Banerjea-headshot1.png" alt="Projjol Banerjea headshot" class="alignleft size-full wp-image-35305" srcset="/wordpress/wp-content/uploads/2013/06/Projjol-Banerjea-headshot1.png 200w, /wordpress/wp-content/uploads/2013/06/Projjol-Banerjea-headshot1-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />At <a href=http://sponsorpay.com/>SponsorPay</a>, we strive to be the number one monetization partner in the market. That’s why we’re so excited about our <a href=http://www.coronalabs.com/blog/2013/05/21/corona-weekly-update-new-plugin-partners-core-gets-lighter/>new partnership</a> with Corona Labs!</p>
+<p>Our value-exchange advertising platform brings <a href=http://sponsorpay.com/brands>advertisers</a> and <a href=http://sponsorpay.com/developers>developers</a> together for mutual benefit. It drives the monetization of premium content on platforms such as Facebook, iOS and Android through brand engagement, user acquisition and direct response ad campaigns.  </p>
+<p>Our innovative monetization products include <a href=http://sponsorpay.com/developers?#brandengage>BrandEngage®</a>, our social video and engagement advertising product, and our <a href=http://sponsorpay.com/developers?#mediation>Mediation Platform</a> which gives publishers access to campaigns from top ad networks, DSPs and agencies worldwide, as well as our direct sales teams in the US, Europe and Asia.</p>
+<p>The industry we move in is dynamic and fast-paced with two-digit growth, especially in gaming and mobile. The <a href=http://mobilemarketingmagazine.com/content/mobile-time-spend-overtakes-tv-says-inmobi>average daily time spent</a> on mobile (117 minutes) has now surpassed TV (98 minutes) whereas the digital games market <a href=http://www.emarketer.com/Article/Mobile-Social-Support-Digital-Game-Revenue-Growth/1009726>grew by 39%</a> between January 2012 and January 2013. </p>
+<p>A great example of the effectiveness of our solution is the <a href=http://www.brandengage.com/campaigns/>engagement campaign</a> we ran with Coca-Cola across several platforms, including mobile. Gamers could watch a video ad from the Happiness Truck campaign and share it on Facebook. The result: more than 150,000 completed views and a 63.7% share rate. We’ve run similarly successful BrandEngage® campaigns with other premium brands such as Volkswagen, Warner Brothers, McDonald’s and Domino’s. </p>
+<p>We’re incredibly proud to be the first and only offer wall and rewarded video provider partnering with Corona Labs, and look forward to working with them to empower developers with a more seamless and effective monetization experience.</p>
+<p>Interested in learning more? Get to know us better by reading our <a href=http://blog.sponsorpay.com/>blog</a> and following us on <a href=http://twitter.com/sponsorpay>Twitter</a>. If you have any questions, please <a href=http://sponsorpay.com/company>contact us</a> directly – we’d love to hear from you!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

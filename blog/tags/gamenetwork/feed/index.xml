@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gameNetwork &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/gamenetwork/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>gameNetwork &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Game Center moved to a plugin</title>
+		<link>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/</link>
+		<comments>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/#comments</comments>
+		<pubDate>Wed, 08 Oct 2014 20:02:38 +0000</pubDate>
+		<dc:creator><![CDATA[dchan]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Game Center]]></category>
+		<category><![CDATA[gameNetwork]]></category>
+
+		<guid isPermaLink="false">/?p=59787</guid>
+		<description><![CDATA[As of Corona SDK build #2455, Game Center (iOS) has been moved to a plugin. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p>Starting in Corona SDK build 2014.2455, Game Center (iOS) has been moved to a plugin. This means that you will need to include the plugin in your <code>build.settings</code> file. In practice, this means that your <code>build.settings</code> file should include the following within the <code>plugins</code> table:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;CoronaProvider.gameNetwork.apple&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, },
+        },
+    },
+}</pre><p></p>
+<h3>Documentation</h3>
+<p>Once you&#8217;ve included the plugin, implementing Game Center is accomplished via the same methods as before. Please refer to the <a href=http://docs.coronalabs.com/daily/plugin/gameNetwork-apple/index.html target="_blank">documentation</a> for details.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+		<item>
+		<title>Staff Conversation #6: Google Play Game Services</title>
+		<link>/blog/coronageek/staff-conversation-6-google-play-game-services/</link>
+		<comments>/blog/coronageek/staff-conversation-6-google-play-game-services/#comments</comments>
+		<pubDate>Wed, 05 Jun 2013 15:25:58 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[gameNetwork]]></category>
+		<category><![CDATA[Google Play Game Services]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=35269</guid>
+		<description><![CDATA[During this week's Staff Conversations Hangout, we talked with Corona Labs' Core Engineer, Danny Chan, about Corona SDK support for Google Play Game Services. Danny gave some excellent insights into how the gameNetwork API makes support for Google Play Game Services and iOS Game Center seamless.]]></description>
+				<content:encoded><![CDATA[<p><em>Note: Graphics 2.0 is now in public beta for all Corona SDK Pro and Enterprise subscribers.</em></p>
+<hr />
+<p><iframe src="https://www.youtube.com/embed/vCNlZY4g-HQ?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />During this week&#8217;s Staff Conversations Hangout, we talked with Corona Labs&#8217; Core Engineer, Danny Chan, about <a href=http://docs.coronalabs.com/plugin/gameNetwork-google/index.html>Corona SDK support for Google Play Game Services</a>. Danny gave some excellent insights into how the <a title="gameNetwork API Documentation" href=http://docs.coronalabs.com/api/library/gameNetwork/index.html>gameNetwork API</a> makes support for Google Play Game Services and iOS Game Center seamless.</p>
+<p>We hope you enjoy the new segment. If you have topic suggestions for upcoming Staff Conversations, be sure to leave them in the <a href=http://forums.coronalabs.com/topic/28960-corona-geek-show-topics-and-questions/>Corona Geek forum</a>.</p>
+<p>Thanks for watching!</p>
+<p><strong>Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to Corona Geek on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Subscribe on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/staff-conversation-6-google-play-game-services/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>app business &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-business/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>app business &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Business of Apps: Using push notifications effectively</title>
+		<link>/blog/2016/10/12/business-of-apps-using-push-notifications-effectively/</link>
+		<pubDate>Wed, 12 Oct 2016 21:25:35 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Business of Apps]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[app business]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[notifications]]></category>
+		<category><![CDATA[push notifications]]></category>
+
+		<guid isPermaLink="false">/?p=68419</guid>
+		<description><![CDATA[Push notifications can be a powerful tool to keep your users engaged. Learn more about push notifications in this new "business of apps" series.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to the first article in a new series focused on the &#8220;business of apps.&#8221; Now that you have built a great app, what are your next steps? We hope this series of articles will help guide you to success!</p>
+<h3>Push notifications</h3>
+<p><img class="alignright wp-image-68431 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/10/pushnotifications-150x150.png" alt="pushnotifications" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/10/pushnotifications-150x150.png 150w, /wordpress/wp-content/uploads/2016/10/pushnotifications-300x300.png 300w, /wordpress/wp-content/uploads/2016/10/pushnotifications-500x500.png 500w, /wordpress/wp-content/uploads/2016/10/pushnotifications.png 512w" sizes="(max-width: 150px) 100vw, 150px" />One of the most powerful tools in your app marketing toolkit is <strong>push notifications</strong>. Essentially, push notifications are small messages/alerts that you can send to users of your app, even when they are not actively running it.</p>
+<p>Mobile users spend a lot of time each day using their mobile device, but most apps only get launched once. Push notifications are a great way to increase engagement at a low cost.</p>
+<p>Measuring your success is tracked using two main metrics: <strong>opt-in rates</strong> and <strong>reaction rates</strong>, both of which we&#8217;ll outline in this article.</p>
+<h3>Opt-in rates</h3>
+<p><strong>Opt-in rates</strong> represent how many people have agreed to let you send them push notifications. On iOS, your users are prompted to allow push notifications &#8212; some people will choose to allow them (opt-in) while others will opt-out and decide they don&#8217;t want to be disturbed. On Android, in contrast, you will have a 100% opt-in rate since Google does not require asking the user.</p>
+<p>According to <a href=http://www.accengage.com/benchmark-your-push-notification-opt-in-and-reaction-rates-on-ios-and-android-by-industry-and-country/ target="_blank">Accengage</a>, a company specializing in customer relationship management (CRM) and push notifications, the telecom, finance, and travel markets see the highest opt-in rates. Retail and fast-moving goods, such as things you buy at the grocery store, were near the bottom, while gaming sees a 36% opt-in rate on iOS (slightly below the average of 41% for all categories).</p>
+<p><img class="wp-image-68434 size-medium alignright" style="margin: 20px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/10/optinrate-300x183.png" alt="optinrate" width="300" height="183" /></p>
+<p>Since iOS only lets you show the opt-in permission once to request the user&#8217;s opt-in or opt-out, it&#8217;s generally best to wait until they have been using the app awhile instead of showing it immediately after the app starts up for the first time.</p>
+<p>Also, opt-in rates are higher when you tell the user <em>why </em>they should opt-in. If they choose to do so, show them the iOS permission dialog at that time. If not, save the request until later &#8212; you can always prompt them again in the future or provide an option in your UI to allow them to opt-in.</p>
+<h3>Reaction rates</h3>
+<p>Reaction rates are a measure of how often the user interacts with push notifications. Reaction rates average 4.3% on iOS and 13.1% on Android, according to Accengage. While the fast-moving goods industry has the lowest opt-in rate, it has the highest reaction rate &#8212; iOS sees a 7.5% reaction rate and Android 25%, both nearly double the average. The gaming segment is just a touch below average.</p>
+<p>Multiple factors impact reaction rates, including how often you send notifications, when you send them, and how engaging the messages are. Remember that push notifications are a source of interruption and while they can increase your engagement, they also risk annoying the user who may then choose to opt-out entirely.</p>
+<p>Finding the &#8220;sweet spot&#8221; is important. In the next section, we&#8217;ll outline several considerations in sending push notifications.</p>
+<h3>Using push notifications effectively</h3>
+<p>Several factors and considerations go into a successful push notification campaign according to a <a href=https://home.tapjoy.com/blog/7-surprising-facts-open-rates-push-notifications/ target="_blank">study by Tapjoy</a>. Knowing what to send and when to send it are keys to improving your reaction rates.</p>
+<h4>Message frequency</h4>
+<p>How often you send push notifications can greatly impact the success of your campaign. Multiplayer games which broadcast a player&#8217;s turn in the game can be sent when necessary. However, reminders to <em>play</em> your game should be more sparse. Your &#8220;industry&#8221; factors in as well. A news app might push breaking news alerts several times a day, but that amount of marketing messages would be far too high.</p>
+<p>In fact, if you take breaking news and multiplayer game turns out of the equation to focus on marketing-based notifications, Tapjoy&#8217;s study found that sending them <strong>once per week</strong> had more than double the reaction rate compared to monthly pushes, and more than <em>triple</em> the reaction rate of daily pushes. Clearly, the sweet spot for marketing notifications is weekly pushes!</p>
+<h4>Using sounds</h4>
+<p>Sounds can be a great way to alert the user that they should interact with your app, but those sounds can come at inopportune times such as during a meeting or while users are sleeping. Tapjoy&#8217;s study found that silent push notifications were responded to more than twice as often as notifications that included sounds. Also, using notification sounds in multiplayer games with frequent turn reminders can give the user a sense that you&#8217;re &#8220;blowing up their phone.&#8221; In short, use sounds sparingly and wisely!</p>
+<h4>Day of the week</h4>
+<p>Reaction rates are fairly consistent across different days of the week, but Monday has a slightly higher reaction rate than any other day of the week. Friday and Saturday are the lowest, but Sunday sees an upward increase again. Plan your marketing pushes during weekdays for best results.</p>
+<h4>Time of day</h4>
+<p>Time of day is an important factor as well. If your push notification includes a sound effect, sending it while users are sleeping is a fast route to negative reviews and opt-outs &#8212; after all, not everybody silences their mobile device at night. Tapjoy&#8217;s study showed that sending push notifications during the middle of the day in the local time zone showed a significant increase in average revenue per daily average user.</p>
+<h4>Certain phrases perform better</h4>
+<p>Tapjoy&#8217;s study found that the messaging phrase matters considerably. Starting the message with &#8220;<em>Get your …</em>&#8221; leads to the best reaction rate while terms like &#8220;<em>Come back &#8230;</em>&#8221; and &#8220;<em>Collect &#8230;</em>&#8221; did not work well. Essentially, &#8220;call to action&#8221; phrasing prompts the user to respond with more urgency, yielding a higher success rate.</p>
+<h4>Segmenting users</h4>
+<p>Not every user is interested in everything you offer. A classic example of this are news apps. Sports fans like to know when the score in their favorite games change. Other users are interested in traffic or weather alerts and aren&#8217;t interested in sports. Fortunately, many push notification systems allow you to &#8220;segment&#8221; your audience into areas of interest. Tracking behaviors or gathering certain user data within your app is yet another way to help fine-tune your push notification campaigns.</p>
+<h3>Implementing notifications in Corona-built apps</h3>
+<p>Corona Labs provides APIs to let you register your device with both <a href=https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html?#//apple_ref/doc/uid/TP40008194-CH100-SW9/ target="_blank">Apple&#8217;s APNS</a> (Apple Push Notification Service) and <a href=https://developers.google.com/cloud-messaging/ target="_blank">Google&#8217;s GCM </a>(Google Cloud Messaging). You can use the registration event to register with the push notification service of your choice. Please consult the <a href=https://docs.coronalabs.com/guide/events/appNotification/index.html target="_blank">Local/Push Notifications</a> guide for more information.</p>
+<p>In addition, Corona Labs has a push notification partner in <a href=https://onesignal.com/ target="_blank">OneSignal</a>. OneSignal provides a great plugin to simplify implementation of push notifications in your app, both from a registration perspective and app-to-app messaging.</p>
+<p>OneSignal supports many powerful tools to reach your users. For example, you can easily send reminders to players involved in your multiplayer game (for turn management). OneSignal also does a great job of handling inbound push notifications. Their dashboard supports real-time tracking so you can monitor your own conversion rates, and they support A/B testing which is a great way to test the effectiveness of different messages. As if that&#8217;s not enough, you can segment your messages to provide better targeting to your users and you can even schedule notifications to be sent at optimum times, directly from their dashboard. To get started, <a href=https://marketplace.coronalabs.com/plugin/onesignal target="_blank">activate OneSignal</a> in the marketplace and then proceed to their <a href=https://documentation.onesignal.com/docs/corona-sdk target="_blank">documentation</a> for usage details.</p>
+<h3>Conclusion</h3>
+<p>Push notifications are a powerful way to engage your users, but they should be used wisely. Deliver valuable messages, respect your users, call them to action, and succeed!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

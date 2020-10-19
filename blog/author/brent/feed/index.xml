@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Brent Sorrentino &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/brent/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Brent Sorrentino &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Splash Screen Control issues update</title>
+		<link>/blog/2017/09/26/splash-screen-control-issues-update/</link>
+		<pubDate>Tue, 26 Sep 2017 21:48:14 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=72914</guid>
+		<description><![CDATA[As has been reported in the forums, the Splash Screen Control plugin has been misbehaving for some developers. Please read this update if you've been affected.]]></description>
+				<content:encoded><![CDATA[<p><span style="font-weight: 400;">It seems that when it rains, it pours. As has been reported in the forums, the <a href=https://marketplace.coronalabs.com/plugin/splash-screen-control target="_blank" rel="noopener">Splash Screen Control</a> plugin has stopped working for some Corona developers. Fortunately, as of this post, we believe we&#8217;ve solved it.</span></p>
+<p><span style="font-weight: 400;">The problem originated around two different issues. For Corona Native users, a change to a background API was being applied incorrectly. This was resolved last Friday and we had Native builds back up-and-running quickly.</span></p>
+<p><span style="font-weight: 400;">For Corona Simulator users, we addressed an issue with the cache busting after your plugin expired and you renewed, but that caused a database issue involving multiple records. We have been working diligently to solve this matter and you should now be able to resume builds using the Splash Screen Control plugin.</span></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/09/15/corona-marketplace-recent-featured-products-09-15-17/</link>
+		<pubDate>Fri, 15 Sep 2017 20:47:04 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72874</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/plugin/coronium-core target="_blank" rel="noopener">Coronium Core</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/coronium-core><img class="alignleft wp-image-72875" src="/wordpress/wp-content/uploads/2017/09/2017-09-12-15-00-21-logo.png" alt="" width="200" height="200" srcset="/wordpress/wp-content/uploads/2017/09/2017-09-12-15-00-21-logo.png 256w, /wordpress/wp-content/uploads/2017/09/2017-09-12-15-00-21-logo-150x150.png 150w, /wordpress/wp-content/uploads/2017/09/2017-09-12-15-00-21-logo-125x125.png 125w" sizes="(max-width: 200px) 100vw, 200px" /></a><strong>Coronium</strong> returns in full force with <a href=https://marketplace.coronalabs.com/plugin/coronium-core target="_blank" rel="noopener">Coronium Core</a>, the ultimate cloud sidekick for your Corona apps and games. Check out this all-in-one Lua application plugin/server built specifically for Corona developers!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/plugin/like-button target="_blank" rel="noopener">Like Button</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/like-button><img class="alignleft wp-image-72877" src="/wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-300x170.png" alt="" width="256" height="145" srcset="/wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-300x170.png 300w, /wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-768x435.png 768w, /wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-700x397.png 700w, /wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-539x303.png 539w, /wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button-125x71.png 125w, /wordpress/wp-content/uploads/2017/09/2017-09-11_19-39-36_-_Like_Button.png 940w" sizes="(max-width: 256px) 100vw, 256px" /></a>The <a href=https://marketplace.coronalabs.com/plugin/like-button target="_blank" rel="noopener">Like Button</a> plugin from Corona maestro Scott Harrison allows you to easily display the Facebook &#8220;like&#8221; button on iOS and Android. Check it out!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/casual-game-music-pack-2 target="_blank" rel="noopener">Casual Game Music Pack 2</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/casual-game-music-pack-2><img class="alignleft wp-image-72879" src="/wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-300x263.png" alt="" width="256" height="224" srcset="/wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-300x263.png 300w, /wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-768x672.png 768w, /wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-1024x896.png 1024w, /wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-700x613.png 700w, /wordpress/wp-content/uploads/2017/09/2017-09-08-15-02-24-CGM2_DVD_BIG-125x109.png 125w" sizes="(max-width: 256px) 100vw, 256px" /></a><a href=https://marketplace.coronalabs.com/asset/casual-game-music-pack-2 target="_blank" rel="noopener">Casual Game Music Pack 2</a> includes all of the essential music, jingles, stingers, and sound effects to kickstart your game!</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/09/01/corona-marketplace-recent-featured-products-09-01-17/</link>
+		<pubDate>Fri, 01 Sep 2017 20:44:32 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72815</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/asset/mobile-game target="_blank" rel="noopener">Mobile Game Audio</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/mobile-game><img class="alignleft wp-image-72820" src="/wordpress/wp-content/uploads/2017/09/2017-08-17-14-20-24-ESM_Mobile_Game_BASE-300x300.jpg" alt="" width="256" height="256" /></a>The <a href=https://marketplace.coronalabs.com/asset/mobile-game target="_blank" rel="noopener">Mobile Game</a> audio pack includes 578 game-ready audio assets, inspired by popular best-selling mobile games, giving you sounds that you can quickly implement inside any game to give it a familiar &#8220;hit app&#8221; feel.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/plugin/s3-lite target="_blank" rel="noopener">S3 Lite</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/s3-lite><img class="alignleft wp-image-72816" src="/wordpress/wp-content/uploads/2017/09/2017-08-31-14-03-25-logo.png" alt="" width="250" height="250" /></a>The <a href=https://marketplace.coronalabs.com/plugin/s3-lite target="_blank" rel="noopener">S3 Lite</a> plugin lets you add secure file transfers to your Corona applications and games using <strong>Amazon S3</strong> (Amazon Simple Storage Service). Amazon S3 makes it simple and practical to collect, store, and analyze data &#8212; regardless of format &#8212; all at massive scale.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/torch-bot-2d-character-sprites target="_blank" rel="noopener">Torch Bot 2D Character Sprites</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/torch-bot-2d-character-sprites><img class="alignleft wp-image-72818" src="/wordpress/wp-content/uploads/2017/09/2017-08-25-10-01-35-logo-277x300.jpg" alt="" width="256" height="278" /></a><a href=https://marketplace.coronalabs.com/asset/torch-bot-2d-character-sprites target="_blank" rel="noopener">Torch Bot</a> is a 2D animated character designed for runner games, side-scrollers, arcade games, and more! 13 stunning animations at HD size with animations as transparent .PNG exports, as well as .PSD and Spine files for editing.</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/08/18/corona-marketplace-recent-featured-products-08-18-17/</link>
+		<pubDate>Fri, 18 Aug 2017 20:18:38 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72752</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/asset/builder-game target="_blank" rel="noopener">Builder Game Audio</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/builder-game><img class="alignleft wp-image-72758" src="/wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-300x300.jpg" alt="" width="200" height="200" srcset="/wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-300x300.jpg 300w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-150x150.jpg 150w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-768x768.jpg 768w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-1024x1024.jpg 1024w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-570x570.jpg 570w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-500x500.jpg 500w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-1000x1000.jpg 1000w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-14-39-ESM_Builder_Game_-_Full_Cover_hi_res-700x700.jpg 700w" sizes="(max-width: 200px) 100vw, 200px" /></a><a href=https://marketplace.coronalabs.com/asset/builder-game target="_blank" rel="noopener">Builder Game</a> includes 625+ fun, cartoon adventure sound effects that your audience/users will love and recognize. This pack is complete with bubbly items and collects, cute UI effects, cartoon creatures, doors opening, closing sounds in many styles like treasure chests, apothecary cabinets, wooden doors, and so much more!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/plugin/fortumo target="_blank" rel="noopener">Fortumo</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/fortumo><img class="alignleft wp-image-72753 size-medium" src="/wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo-300x170.jpg" alt="" width="300" height="170" srcset="/wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo-300x170.jpg 300w, /wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo-768x435.jpg 768w, /wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo-700x397.jpg 700w, /wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo-539x303.jpg 539w, /wordpress/wp-content/uploads/2017/08/2017-08-02_09-12-41_-_fortumo.jpg 940w" sizes="(max-width: 300px) 100vw, 300px" /></a>The <a href=https://marketplace.coronalabs.com/plugin/fortumo target="_blank" rel="noopener">Fortumo</a> plugin enables developers to charge for premium features and sell virtual credits inside their Android applications. <a href=https://fortumo.com/ target="_blank" rel="noopener">Fortumo</a> supports one-click mobile payments in 98+ countries.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/sci-fi-sounds-and-weapons target="_blank" rel="noopener">Sci-Fi Sounds and Weapons</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/sci-fi-sounds-and-weapons><img class="alignleft wp-image-72756 size-medium" src="/wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-300x169.jpg" alt="" width="300" height="169" srcset="/wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-300x169.jpg 300w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-768x432.jpg 768w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-1024x576.jpg 1024w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-700x394.jpg 700w, /wordpress/wp-content/uploads/2017/08/2017-08-07-15-47-39-sci-fi_1920x1080-539x303.jpg 539w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href=https://marketplace.coronalabs.com/asset/sci-fi-sounds-and-weapons target="_blank" rel="noopener">Sci-Fi Sounds and Weapons</a> contains 287 sci-fi sound effects, including ambiences, general sounds, and weapons. Also contains an additional 645 bonus sound effects covering guns, 8-bit sci-fi, and general sounds.</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/08/04/corona-marketplace-recent-featured-products-08-04-17/</link>
+		<pubDate>Fri, 04 Aug 2017 21:10:17 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72669</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/plugin/mailgun-sender target="_blank" rel="noopener">Mailgun Sender</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/mailgun-sender><img class="alignleft wp-image-72670" src="/wordpress/wp-content/uploads/2017/08/2017-07-31-03-19-28-logo.png" alt="" width="180" height="180" srcset="/wordpress/wp-content/uploads/2017/08/2017-07-31-03-19-28-logo.png 256w, /wordpress/wp-content/uploads/2017/08/2017-07-31-03-19-28-logo-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" /></a>Are you building an app which may benefit from more comprehensive email functionality, including tracking, test sending, and more? The <a href=https://marketplace.coronalabs.com/plugin/mailgun-sender target="_blank" rel="noopener">Mailgun Sender</a> plugin enables you to send up to 10,000 free emails per month from your Corona applications!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/plugin/android-share target="_blank" rel="noopener">Android Share</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/android-share><img class="alignleft wp-image-72672 size-medium" src="/wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share-300x170.png" alt="" width="300" height="170" srcset="/wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share-300x170.png 300w, /wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share-768x435.png 768w, /wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share-700x397.png 700w, /wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share-539x303.png 539w, /wordpress/wp-content/uploads/2017/08/2017-07-27_13-46-49_-_Android_Share.png 940w" sizes="(max-width: 300px) 100vw, 300px" /></a>Plugin wizard <strong>Scott Harrison</strong> continues his momentum with the <a href=https://marketplace.coronalabs.com/plugin/android-share target="_blank" rel="noopener">Android Share</a> plugin, a convenient utility plugin which allows you to share files with other Android apps.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/magic-and-spell-sounds target="_blank" rel="noopener">Magic and Spell Sounds</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/magic-and-spell-sounds><img class="alignleft wp-image-72674 size-medium" src="/wordpress/wp-content/uploads/2017/08/2017-07-28-10-49-45-magic_700x400-300x171.jpg" alt="" width="300" height="171" srcset="/wordpress/wp-content/uploads/2017/08/2017-07-28-10-49-45-magic_700x400-300x171.jpg 300w, /wordpress/wp-content/uploads/2017/08/2017-07-28-10-49-45-magic_700x400-345x198.jpg 345w, /wordpress/wp-content/uploads/2017/08/2017-07-28-10-49-45-magic_700x400.jpg 700w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href=https://marketplace.coronalabs.com/asset/magic-and-spell-sounds target="_blank" rel="noopener">Magic and Spell Sounds</a> is a professionally-designed sound library covering many types of magic and spells, from shining in the light to bringing darkness. This collection includes 422 magic and spell sounds, plus 260 bonus sounds from the <a href=https://marketplace.coronalabs.com/asset/pro-sound-collection target="_blank" rel="noopener">Pro Sound Collection</a>.</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/07/21/corona-marketplace-recent-featured-products-07-21-17/</link>
+		<pubDate>Fri, 21 Jul 2017 21:08:29 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72527</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/plugin/fabric-crashlytics target="_blank" rel="noopener">Fabric + Crashlytics</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/fabric-crashlytics><img class="alignleft wp-image-72529 size-medium" src="/wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric-300x170.png" alt="" width="300" height="170" srcset="/wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric-300x170.png 300w, /wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric-768x435.png 768w, /wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric-700x397.png 700w, /wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric-539x303.png 539w, /wordpress/wp-content/uploads/2017/07/2017-07-16_01-39-27_-_Fabric.png 940w" sizes="(max-width: 300px) 100vw, 300px" /></a>Analytics are a great way to learn more about your app&#8217;s users and improve the user experience. <a href=https://marketplace.coronalabs.com/plugin/fabric-crashlytics target="_blank" rel="noopener">This plugin</a> allows you to log Fabric analytic data (also known as Fabric Answers) and log crash data via Crashlytics.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/mix-line-98-new target="_blank" rel="noopener">Mix Line 98 New</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/mix-line-98-new><img class="alignleft wp-image-72534 size-full" src="/wordpress/wp-content/uploads/2017/07/22945sale4-1.png" alt="" width="270" height="271" srcset="/wordpress/wp-content/uploads/2017/07/22945sale4-1.png 270w, /wordpress/wp-content/uploads/2017/07/22945sale4-1-150x150.png 150w" sizes="(max-width: 270px) 100vw, 270px" /></a>If &#8220;Match 3&#8221; games seem a bit too easy, grab a copy of this <strong>&#8220;Match 5&#8221;</strong> game template and customize it as your own. <a href=https://marketplace.coronalabs.com/asset/mix-line-98-new target="_blank" rel="noopener">Mix Line 98 New</a> is an open-source prototype of both a &#8220;Match 5&#8221; game and a puzzle game, useful for developing your own games with these themes.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/bard-s-rpg-starter-kit target="_blank" rel="noopener">Bard&#8217;s RPG Starter Kit</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/bard-s-rpg-starter-kit><img class="alignleft wp-image-72535 size-medium" src="/wordpress/wp-content/uploads/2017/07/2017-07-20-15-51-06-Bards-RPG-300x200.png" alt="" width="300" height="200" srcset="/wordpress/wp-content/uploads/2017/07/2017-07-20-15-51-06-Bards-RPG-300x200.png 300w, /wordpress/wp-content/uploads/2017/07/2017-07-20-15-51-06-Bards-RPG.png 600w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href=https://marketplace.coronalabs.com/asset/bard-s-rpg-starter-kit target="_blank" rel="noopener">Bard&#8217;s RPG Starter Kit</a> is an excellent choice for those on a tight budget who need lush orchestration for a fantasy RPG game. With a generous offering of battle music &amp; exploration music, this library covers the basic needs of most RPGs.</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/07/07/corona-marketplace-recent-featured-products-07-07-17/</link>
+		<pubDate>Fri, 07 Jul 2017 20:19:06 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72281</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/plugin/image-slider target="_blank" rel="noopener">Image Slider</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/image-slider><img class="alignleft wp-image-72282 size-medium" src="/wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-300x150.jpg" alt="" width="300" height="150" srcset="/wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-300x150.jpg 300w, /wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-768x385.jpg 768w, /wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-1024x513.jpg 1024w, /wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-1000x500.jpg 1000w, /wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider-700x351.jpg 700w, /wordpress/wp-content/uploads/2017/07/2017-06-26-11-54-03-imageSlider.jpg 1095w" sizes="(max-width: 300px) 100vw, 300px" /></a>Image sliders are useful in countless types of apps and games, and this <a href=https://marketplace.coronalabs.com/plugin/image-slider target="_blank" rel="noopener">Image Slider</a> plugin offers a robust set of features and customization options to meet your needs.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/ebook-template target="_blank" rel="noopener">eBook Template</a></h3>
+<p><img class="alignleft wp-image-72289" src="/wordpress/wp-content/uploads/2017/07/2017-07-05-09-30-12-book-300x250.jpg" alt="" width="240" height="200" srcset="/wordpress/wp-content/uploads/2017/07/2017-07-05-09-30-12-book-300x250.jpg 300w, /wordpress/wp-content/uploads/2017/07/2017-07-05-09-30-12-book.jpg 512w" sizes="(max-width: 240px) 100vw, 240px" />Perhaps you dream of making a beautiful eBook in Corona, but you&#8217;re not sure where to begin. This wonderful <a href=https://marketplace.coronalabs.com/asset/ebook-template target="_blank" rel="noopener">eBook Template</a> handles a lot of the back-end work for you, letting you focus on your story and art!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/search?search=animated+boy target="_blank" rel="noopener">Animated Boys</a> / <a href=https://marketplace.coronalabs.com/search?search=animated+girl target="_blank" rel="noopener">Animated Girls</a></h3>
+<p><img class="alignleft wp-image-72286" src="/wordpress/wp-content/uploads/2017/07/chars-300x261.jpg" alt="" width="249" height="217" srcset="/wordpress/wp-content/uploads/2017/07/chars-300x261.jpg 300w, /wordpress/wp-content/uploads/2017/07/chars.jpg 599w" sizes="(max-width: 249px) 100vw, 249px" /><strong>DionArtworks</strong> has generously created a series of <a href=https://marketplace.coronalabs.com/search?search=animated+boy target="_blank" rel="noopener">Animated Boys</a> and <a href=https://marketplace.coronalabs.com/search?search=animated+girl target="_blank" rel="noopener">Animated Girls</a>, all featuring multiple animation sequences. They may be cute but they still carry guns!</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/06/23/corona-marketplace-recent-featured-products-6-23-17/</link>
+		<pubDate>Fri, 23 Jun 2017 19:58:01 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=72066</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/plugin/firebase-auth target="_blank" rel="noopener">Firebase Auth</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/firebase-auth><img class="alignleft wp-image-72073 size-medium" src="/wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-300x170.png" alt="" width="300" height="170" srcset="/wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-300x170.png 300w, /wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-768x435.png 768w, /wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-1024x580.png 1024w, /wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-700x397.png 700w, /wordpress/wp-content/uploads/2017/06/2017-06-07_18-37-26_-_firebase_auth-2-539x303.png 539w" sizes="(max-width: 300px) 100vw, 300px" /></a>Need another awesome tool in your Firebase suite for Corona apps? The <a href=https://marketplace.coronalabs.com/plugin/firebase-auth target="_blank" rel="noopener">Firebase Auth</a> plugin allows you to log in through Firebase Auth for iOS 8.0+ and Android 4.0+.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/rpg-music-collection-vol-1 target="_blank" rel="noopener">RPG Music Collection – Vol 1</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/rpg-music-collection-vol-1><img class="alignleft wp-image-72077 size-medium" src="/wordpress/wp-content/uploads/2017/06/RPG-Music-Pack-Vol-1-Icon-1-300x286.jpg" alt="" width="300" height="286" srcset="/wordpress/wp-content/uploads/2017/06/RPG-Music-Pack-Vol-1-Icon-1-300x286.jpg 300w, /wordpress/wp-content/uploads/2017/06/RPG-Music-Pack-Vol-1-Icon-1.jpg 465w" sizes="(max-width: 300px) 100vw, 300px" /></a>RPGs are always enhanced by a compelling soundtrack. This excellent <a href=https://marketplace.coronalabs.com/asset/rpg-music-collection-vol-1 target="_blank" rel="noopener">audio pack</a> features 10 loopable music tracks, great for RPGs, JRPGs, adventure games, dungeon crawlers, and more!</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/4-directional-game-character-sprites target="_blank" rel="noopener">4-Directional Game Character Sprites</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/4-directional-game-character-sprites><img class="alignleft wp-image-72070 size-medium" src="/wordpress/wp-content/uploads/2017/06/2017-04-28_21-40-36_-_4D_2D_Game_Character_Sprite_Sheets_icon-300x300.png" alt="" width="300" height="300" srcset="/wordpress/wp-content/uploads/2017/06/2017-04-28_21-40-36_-_4D_2D_Game_Character_Sprite_Sheets_icon-300x300.png 300w, /wordpress/wp-content/uploads/2017/06/2017-04-28_21-40-36_-_4D_2D_Game_Character_Sprite_Sheets_icon-150x150.png 150w, /wordpress/wp-content/uploads/2017/06/2017-04-28_21-40-36_-_4D_2D_Game_Character_Sprite_Sheets_icon-500x500.png 500w, /wordpress/wp-content/uploads/2017/06/2017-04-28_21-40-36_-_4D_2D_Game_Character_Sprite_Sheets_icon.png 512w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href=https://marketplace.coronalabs.com/asset/4-directional-game-character-sprites target="_blank" rel="noopener">This pack</a> is suitable for 4-directional games, shooting games, running games, platform games, and side-scrolling games. Includes both .PNG and 3D Blender files!</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace – Recent featured products</title>
+		<link>/blog/2017/06/09/corona-marketplace-recent-featured-products-06-09-17/</link>
+		<pubDate>Fri, 09 Jun 2017 19:53:09 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketplace]]></category>
+
+		<guid isPermaLink="false">/?p=70930</guid>
+		<description><![CDATA[The Corona Marketplace is continually growing. Check out some of the recent featured products!]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t peeked into the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Corona Marketplace</a> recently, it now offers dozens of plugins and assets, from art packs to audio tracks to useful utility plugins. Periodically, we will highlight a few exciting products which can help you develop your dream app using Corona.</p>
+<h3><a href=https://marketplace.coronalabs.com/asset/grunge-ui-vectors-kit target="_blank" rel="noopener">Grunge UI Vectors Kit</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/grunge-ui-vectors-kit target="_blank" rel="noopener"><img class="alignleft wp-image-70931 size-medium" src="/wordpress/wp-content/uploads/2017/06/2017-05-11-17-10-01-grunge-ui-vectors-kit-main-900-300x200.jpg" width="300" height="200" /></a></p>
+<p>The <a href=https://marketplace.coronalabs.com/asset/grunge-ui-vectors-kit target="_blank" rel="noopener">Grunge UI Vectors Kit</a> is the ultimate kit for creating rough, gritty user interfaces for games. It contains pre-made components that you can combine to build your perfect UI.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/plugin/firebase-database target="_blank" rel="noopener">Firebase Database</a></h3>
+<p><a href=https://marketplace.coronalabs.com/plugin/firebase-database target="_blank" rel="noopener"><img class="alignleft wp-image-70934 size-medium" src="/wordpress/wp-content/uploads/2017/06/2017-06-01_12-25-04_-_firebase_database-300x170.png" width="300" height="170" /></a>Plugin maestro Scott Harrison continues his streak with the <a href=https://marketplace.coronalabs.com/plugin/firebase-database target="_blank" rel="noopener">Firebase Database</a> plugin, allowing you to access the Firebase database API.</p>
+<div style="clear: both;"></div>
+<h3><a href=https://marketplace.coronalabs.com/asset/block-blaster target="_blank" rel="noopener">Block Blaster</a></h3>
+<p><a href=https://marketplace.coronalabs.com/asset/block-blaster target="_blank" rel="noopener"><img class="alignleft wp-image-70932 size-medium" src="/wordpress/wp-content/uploads/2017/06/2017-06-02-14-00-12-product-logo-300x130.png" width="300" height="130" /></a><a href=https://marketplace.coronalabs.com/asset/block-blaster target="_blank" rel="noopener">Block Blaster</a> is a game template in the spirit of the arcade games Breakout™ and Arkanoid™ where you bounce the ball off your paddle and destroy the blocks above.</p>
+<div style="clear: both;"></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing the Collision Filters plugin</title>
+		<link>/blog/2017/06/07/introducing-the-collision-filters-plugin/</link>
+		<pubDate>Wed, 07 Jun 2017 21:16:50 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[collision]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=70910</guid>
+		<description><![CDATA[Learn about the new Collision Filters plugin, designed to circumvent the math and complication of creating physics body collision filters!]]></description>
+				<content:encoded><![CDATA[<p>For game designers who utilize Corona&#8217;s built-in Box2D physics system, <strong>collision filters</strong> usually enter the design equation at some point in development. For instance, if your player in an endless runner game should collect power-ups, you&#8217;ll need a collision handler for it &#8212; but it&#8217;s a waste of time (and processing effort) to handle collisions between <em>enemies</em> and power-ups.</p>
+<p>Traditionally, setting up collision filters has been a tricky ordeal of calculating <code>categoryBits</code> and <code>maskBits</code>, as outlined in our <a href=https://docs.coronalabs.com/guide/physics/collisionDetection/index.html?#filtering target="_blank">Collision Detection</a> guide. While our &#8220;helper chart&#8221; makes the process much easier, many game developers wish there was an easier way &#8212; and now there is!</p>
+<h3>Collision Filters plugin</h3>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, you can skip all of the math and calculations involved in traditional collision filter setup. Instead, simply state your setup with clearly-named keys and strings. For instance:</p>
+<p><code>collisionFilters.setupFilters( { player={ "powerUps", "enemies" } } )</code></p>
+<p>With just this one simple command, the plugin will configure three collision filters:</p>
+<ol>
+<li><code>player</code> objects will collide with <code>powerUps</code> and <code>enemies</code></li>
+<li><code>powerUps</code> objects will only collide with <code>player</code></li>
+<li><code>enemies</code> objects will only collide with <code>player</code></li>
+</ol>
+<p>Once set up, getting the proper collision filter data is as simple as calling <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a> with a valid key or string from the configuration table:</p>
+<p><code>local playerFilter = collisionFilters.getFilter( "player" )</code></p>
+<p>Then, applying it to the player&#8217;s physics body, assuming <code>thisPlayer</code> represents the player object, is as easy as this:</p>
+<p><code>physics.addBody( thisPlayer, "dynamic", { filter=playerFilter } )</code></p>
+<h3>Smart associations</h3>
+<p>For those who have set up collision filters the traditional way, you&#8217;ll know that doing so requires a &#8220;reverse association&#8221; methodology. For instance, if you tell Box2D that <code>player</code> can collide with <code>enemies</code>, you must <strong>also</strong> tell it that <code>enemies</code> can collide with <code>player</code>. Now, using the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, that extra step is unnecessary &#8212; simply set up your primary associations and the plugin will internally calculate the reverse relationships! What&#8217;s more, it will dispatch a console warning if you accidentally declare associations which don&#8217;t match.</p>
+<h3>Getting started</h3>
+<p>To get started, proceed to the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">plugin documentation</a>. Simply add the plugin to your <code>build.settings</code> file, <code>require()</code> it in the module(s) where you&#8217;ll use it, set up your filter relationship with <a href=https://docs.coronalabs.com/plugin/collisionFilters/setupFilters.html target="_blank">collisionFilters.setupFilters()</a>, and add the appropriate filters to your physics bodies via <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a>.</p>
+<p>Hopefully this new plugin will simplify collision filter setup for all Corona game developers!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

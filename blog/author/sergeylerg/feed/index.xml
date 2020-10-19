@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sergeylerg &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/sergeylerg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>sergeylerg &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Cannon &#8211; a new sample game</title>
+		<link>/blog/2016/02/02/corona-cannon-a-new-corona-sdk-sample-game/</link>
+		<comments>/blog/2016/02/02/corona-cannon-a-new-corona-sdk-sample-game/#comments</comments>
+		<pubDate>Tue, 02 Feb 2016 20:00:01 +0000</pubDate>
+		<dc:creator><![CDATA[sergeylerg]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=65443</guid>
+		<description><![CDATA[Corona Canon is a fully redesigned, feature rich, complete game sample app that you can download and learn from or re-skin for your own use. Learn what it's all about!]]></description>
+				<content:encoded><![CDATA[<p>A long time ago, a demo was made for Corona SDK by Jonathan and Biffy Beebe called <em>Ghosts vs. Monsters (GvM)</em>. It was a simple clone of a very popular game of that time &#8211; <em>Angry Birds</em>.</p>
+<p><img class="alignnone size-full wp-image-65460" src="/wordpress/wp-content/uploads/2016/02/Screen-Shot-2016-01-29-at-7.19.02-PM.png" alt="Screen Shot 2016-01-29 at 7.19.02 PM" width="961" height="640" /></p>
+<h3>Updating the game for today</h3>
+<p>Five years have passed since then. The original <em>GvM</em> was developed for <strong>Graphics v1, </strong>it only supported 480&#215;320 or 960&#215;640 resolution screens, and the code didn&#8217;t follow current best practices.</p>
+<p>For instance, there were many global variables, the project didn&#8217;t use OOP (<em>Object Oriented Programming practices</em>), and the code wasn&#8217;t <strong>DRY</strong> (<em>Don&#8217;t Repeat Yourself). </em>Each level needed a new <strong>levelN.lua</strong> file, which repeated the entire logic of the game plus level layout.</p>
+<p>The project wasn&#8217;t perfect, but it was a great example 5 years ago. <em>Director class</em> was the only scene management choice at the time and there was no way to organize projects with sub-directories. Dark times.</p>
+<p>After the acquisition of Corona Labs by Perk, and with addition of new hires, it was time that we made a fresh new clone! Or a remake of the clone. Or is it a clone&#8217;s clone? Too many clones&#8230; Let&#8217;s just call it a remake.</p>
+<p>The &#8220;remake&#8221; started as a simple code update to the original game, to make it compatible with modern versions of Corona SDK. As a side note, it was actually my first task at Corona Labs as a new hire. Initially, I started updating the code, but quickly realized it was not enough. Developers would not fully benefit from simple code update. We needed a game that shows best practices. So, I created a new game with similar features, from scratch.</p>
+<p>The old graphics weren&#8217;t made for high resolutions, so we decided to use free assets by <a href=http://kenney.nl/ target="_blank">kenney.nl</a>, which are great for prototyping. I also wanted to use <a href=http://www.mapeditor.org/ target="_blank">Tiled</a> to showcase how to integrate it into a Corona game. I wanted to integrate a simple level editor too. It also needed to be playable on all platforms including OS X, Windows desktop and Apple TV, so controller support was a must.</p>
+<p><img class="alignnone size-full wp-image-65464" src="/wordpress/wp-content/uploads/2016/02/Screen-Shot-w-badge.png" alt="Screen-Shot-w-badge" width="964" height="645" /></p>
+<p>As for the new game theme, I came up with an idea to fire Corona Labs and Perk logos from a cannon, like cannonballs. We can’t fight pigs, right? No unnecessary animal cruelty&#8230; So what can we fight with in Corona? Why, bugs of course! <em>Corona Debugger</em> could have been a cool name for this game, but we settled down on <em>Corona Cannon</em> instead.</p>
+<p>During development, some fixes and improvements were also introduced in Corona. The <a href=https://docs.coronalabs.com/api/library/easing/index.html target="_blank"><code>easing.continuousLoop</code></a> was fixed, and Apple tvOS remote support was improved, as was desktop support.</p>
+<h3>Fun fact</h3>
+<p><strong>Ghost vs. Monsters</strong>: 11 files, 1080 blank lines, 771 comment lines, 3487 code lines.<br />
+<strong>Corona Cannon</strong>: 21 files, 320 blank lines, 179 comment lines, 2288 code lines.</p>
+<p>With considerably fewer lines of code, <em>Corona Cannon</em> is much more feature rich. Less code lines per file also means it’s much easier for a new developers to understand the project.</p>
+<p>To use the demo, you will need to use <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build <span class="field-content">2016.2818</span> or later</a>.</p>
+<h3>Code structure</h3>
+<p>At the root of the project, you will find sub-directories, icons and standard files like <code>build.settings</code>, <code>config.lua</code> and <code>main.lua</code>. Here is the short directory structure with descriptions:</p>
+<p><code><strong>CoronaCannon</strong><br />
+<strong>├── classes/</strong> - components of the game, simple OOP approach.<br />
+<strong>│ ├── ball.lua</strong> - cannonball that flies and destroys bugs.<br />
+<strong>│ ├── block.lua</strong> - building blocks of the structures where bugs are hiding.<br />
+<strong>│ ├── bug.lua</strong> - main enemy in the game.<br />
+<strong>│ ├── cannon.lua</strong> - launches balls.<br />
+<strong>│ ├── end_level_popup.lua</strong> - dialog window that is shown at the end of a level.<br />
+<strong>│ ├── level_editor.lua</strong> - simple shortcut based in-game level editor.<br />
+<strong>│ ├── puff.lua</strong> - white or yellow cloud to represent dust or an explosion.<br />
+<strong>│ ├── shade.lua</strong> - dims the screen and doesn’t let touch/tap events through.<br />
+<strong>│ └── sidebar.lua</strong> - pause menu and settings bar.<br />
+<strong>├── images/</strong> - all in-game images go here.<br />
+<strong>│ ├── ammo/</strong> - cannonballs.<br />
+<strong>│ ├── background/</strong> - sprites for close background elements, used in Tiled.<br />
+<strong>│ ├── background_flat/</strong> - sprites for distant background elements, used in Tiled.<br />
+<strong>│ ├── blocks/</strong> - building blocks.<br />
+<strong>│ │ ├── stone/</strong> - stone material.<br />
+<strong>│ │ └── wood/</strong> - wood material.<br />
+<strong>│ ├── buttons/</strong> - all the buttons.<br />
+<strong>│ ├── controls/</strong> - instructions on various controls like a gamepad or a touchsceeen.<br />
+<strong>│ ├── green_tiles/</strong> - level tiles sprites, used in Tiled.<br />
+<strong>│ ├── puffs/</strong> - white clouds.<br />
+<strong>│ └── …</strong> - all the other images used in the game.<br />
+<strong>├── levels/</strong> - 10 levels of the game.<br />
+<strong>├── libs/</strong> - reusable libraries.<br />
+<strong>│ ├── controller.lua</strong> - gamepads, Apple TV Remote, keyboard.<br />
+<strong>│ ├── databox.lua</strong> - persistent storage of user data.<br />
+<strong>│ ├── eachframe.lua</strong> - enterFrame manager.<br />
+<strong>│ ├── relayout.lua</strong> - reposition elements on the screen on resize event.<br />
+<strong>│ ├── sounds.lua</strong> - sounds and music manager.<br />
+<strong>│ └── tiled.lua</strong> - Tiled importer.<br />
+<strong>├── maps/</strong> - Tiled maps and their Lua exports.<br />
+<strong>├── scenes/</strong> - composer scenes.<br />
+<strong>│ ├── game.lua</strong> - main gameplay.<br />
+<strong>│ ├── level_select.lua</strong> - select one level.<br />
+<strong>│ ├── menu.lua</strong> - start screen.<br />
+<strong>│ └── reload_game.lua</strong> - “Loading...” scene, required for restarting a level.<br />
+<strong>├── sounds/</strong> - all the sounds and music files.<br />
+<strong>├── build.settings</strong> - important platform specific settings.<br />
+<strong>├── config.lua</strong> - extended letterbox scaling, defaults to 640x960.<br />
+<strong>├── main.lua</strong> - entry point for every Corona app.<br />
+<strong>├── prepare_icons.sh</strong> - command line script to generate icons from 1024px files.<br />
+<strong>└── …</strong> - Icons and launchscreens.<br />
+</code></p>
+<p>Dive into the code starting from main.lua and study the project based on its comments. We will be providing a detailed video that explains the code. Stay tuned for that!</p>
+<p>Moving forward, all new demos will be published in our special GitHub directory <a href=https://github.com/coronalabs-samples target="_blank">https://github.com/coronalabs-samples</a></p>
+<h3>Conclusion</h3>
+<p>Corona Cannon, as a demo project, provides great examples and best practices for both novice and experienced developers. I tried to keep the code structure simple, files small and everything clean overall. There&#8217;s no spaghetti code, no global variables, no cryptic variable names, and no useless comments.</p>
+<p><a href=https://github.com/coronalabs-samples/CoronaCannon target="_blank">Grab the source</a> and start working with your own version or download one of the pre-built versions to see what the game is like.</p>
+<p>This demo also runs everywhere. It’s published on Google Play and it’s pending review on the Apple stores (iOS, tvOS, and OS X). We will update this post with the links to all stores as they become available.</p>
+<p>Source Code &#8211; <a href=https://github.com/coronalabs-samples/CoronaCannon target="_blank">https://github.com/coronalabs-samples/CoronaCannon</a><br />
+Google Play &#8211; <a href=https://play.google.com/store/apps/details?id=com.coronalabs.coronacannon target="_blank">https://play.google.com/store/apps/details?id=com.coronalabs.coronacannon</a><br />
+iOS &#8211; <a href=https://itunes.apple.com/us/app/corona-cannon/id1078778611 target="_blank">https://itunes.apple.com/us/app/corona-cannon/id1078778611</a><br />
+tvOS &#8211; <a href=https://itunes.apple.com/us/app/corona-cannon/id1078778611 target="_blank">https://itunes.apple.com/us/app/corona-cannon/id1078778611</a><br />
+OS X desktop &#8211; <a href=https://itunes.apple.com/us/app/corona-cannon/id1078798116 target="_blank">https://itunes.apple.com/us/app/corona-cannon/id1078798116</a><br />
+Amazon &#8211; <a href=http://www.amazon.com/Corona-Labs-Cannon/dp/B01BEG102A target="_blank">http://www.amazon.com/Corona-Labs-Cannon/dp/B01BEG102A</a><br />
+OUYA &#8211; <a href=https://www.ouya.tv/game/Corona-Cannon/ target="_blank">https://www.ouya.tv/game/Corona-Cannon/</a><br />
+Windows Desktop &#8211; <a href=http://developer.coronalabs.com/sites/default/files/Corona%20Cannon.zip target="_blank">http://developer.coronalabs.com/sites/default/files/Corona%20Cannon.zip</a><br />
+Windows Phone 8 &#8211; <a href=https://www.microsoft.com/store/apps/9NBLGGH5PWVN target="_blank">https://www.microsoft.com/store/apps/9NBLGGH5PWVN</a></p>
+<p>Feel free to discuss this sample game <a href=https://forums.coronalabs.com/ target="_blank">in the forums</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/02/corona-cannon-a-new-corona-sdk-sample-game/feed/</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+		</item>
+	</channel>
+</rss>

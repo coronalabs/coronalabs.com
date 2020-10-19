@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>daily build &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/daily-build/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>daily build &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Weekly Update + Open Source</title>
+		<link>/blog/2013/04/09/corona-weekly-update-open-source/</link>
+		<comments>/blog/2013/04/09/corona-weekly-update-open-source/#comments</comments>
+		<pubDate>Wed, 10 Apr 2013 01:20:31 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[daily build]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31536</guid>
+		<description><![CDATA[Last week, we launched a new public release and also launched Corona SDK Starter, so I want to give you a quick update on all the great things we are adding to make Corona awesome for cross-platform app development. I also have some announcements on what we are doing in open source.]]></description>
+				<content:encoded><![CDATA[<p>Last week, we launched a new public release along with Corona SDK Starter. I want to give you a quick update on all the great things we are adding to make Corona awesome for <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform app development</a>. I also have some announcements on what we are doing in open source.</p>
+<p>Before I go on, I just wanted to clarify a few things about last week&#8217;s announcement:</p>
+<p>First, Corona Pro is currently available at $349. If you subscribe (or are already a subscriber) you will be able to renew for another 2 years. This is a fantastic time to get in before prices go up on May 1.</p>
+<p>Second, I want to share our philosophy behind Corona SDK Starter. The goal is to allow you all to create real apps for FREE. That includes using your own custom splash screen, which is the typical restriction you see on products that are &#8220;fake free.&#8221;</p>
+<p>The other thing, which I realized is worth explaining, is that Starter is going to be a continually evolving product. That means as time progresses, we are going to continue to explore how we can bring premium features and make them available to Starter developers. We are going to push the envelope on how we can do this to empower you, and still run a business so we can continue to innovate.</p>
+<p>That&#8217;s all I&#8217;ll say for now, though the tidbit on open source applies to Starter developers, so if that&#8217;s you, keep reading!</p>
+<h3>Graphics</h3>
+<p>So last week, I showed you our awesome demo of 5000 fish at 60 fps. The great thing about that demo is that it shows we are building on a really solid and fast foundation as we think about adding awesome new graphics features. The big takeaway here is that we are trying to build an engine that lets you do amazing graphics features in real-time. So think of Photoshop and Illustrator effects without the progress bar. Pretty ambitious, but that&#8217;s our goal.</p>
+<p>In terms of what we&#8217;re doing this week, we&#8217;ve broken ground on refactoring the architecture of our core engine code. The goal here is to make it easier for us to cleanly swap in the old and new graphics engines for things like regression testing. At the same time, we&#8217;re investigating render to texture support in the core renderer.</p>
+<h3>Plugins and Daily Builds</h3>
+<p>Daily Builds are going to resume tomorrow morning (assuming nobody broke the build). One of the check-ins you&#8217;ll notice is the following:</p>
+<p><code>Gluon/Mac: Enable simulator device builds for iOS</code></p>
+<p>What this means is the simulator will be able to do device builds that incorporate plugins hosted on our servers. We still want to do more testing before we let you play with it.</p>
+<p>On top of that, we&#8217;re also hard at work building a growing library of hosted plugins. It will start small, as initially it will include plugins that we write or plugins that are written by 3rd party partners. The goal is to expand this out so more folks can write plugins that are hosted, but we want to be methodical about this.</p>
+<h3>Open Source: &#8216;widget&#8217; and &#8216;gameNetwork&#8217; for Corona Cloud</h3>
+<p>When we open sourced widget v1, we did it with the intention of making your lives better and to minimize the impact it had for those of you who weren&#8217;t quite ready to jump to widget v2. Our intention was to put more control into your hands.</p>
+<p>We realized that we could do a couple of more things to make your life better and more manageable. Specifically, we&#8217;re going to open source &#8216;widget&#8217; v2 and the &#8216;gameNetwork&#8217; UI for Corona Cloud.</p>
+<h4>Relationship to Daily Builds</h4>
+<p>This is going to be especially useful for those of you who are using Corona SDK Starter. You will not have to wait until the next public release to get some critical bug fixes to these libraries, some of which are going in tomorrow&#8217;s Daily Build.</p>
+<p>Our plan is to keep this reasonably in sync with what we&#8217;re putting out in Daily Builds.</p>
+<h4>License</h4>
+<p>The source code will be made available under a BSD license. If you use the open source version of either of these libraries, we&#8217;ve added a minor requirement that you add the following somewhere in your app (e.g., the credits):</p>
+<p><code>This product includes software developed by Corona Labs Inc. (http://www.coronalabs.com)./</code></p>
+<h4>Contributions and Pull Requests</h4>
+<p>We&#8217;ll be posting these on our <a href=https://github.com/coronalabs>github page</a> by next week.</p>
+<p>If you&#8217;re interested in helping us make these libraries better, we&#8217;ll be putting together some guidelines on pull requests.</p>
+<p><center>* * *</center></p>
+<p>As you can see, we&#8217;ve kept hard at work, even after a monumental release. I look forward to sharing more with you, from inside the Corona Labs kitchen!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/09/corona-weekly-update-open-source/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+		<item>
+		<title>Corona SDK Daily Build Update</title>
+		<link>/blog/2013/03/04/corona-sdk-daily-build-update/</link>
+		<comments>/blog/2013/03/04/corona-sdk-daily-build-update/#comments</comments>
+		<pubDate>Tue, 05 Mar 2013 02:34:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[daily build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29788</guid>
+		<description><![CDATA[The current Corona Daily Build is now 1041. And we've been doing a lot to make Corona the best <a href="/products/corona-sdk/">cross-platform engine</a> out there. Lots of items on  iOS and Android that we've knocked out.]]></description>
+				<content:encoded><![CDATA[<p>The current Corona <a href=https://developer.coronalabs.com/downloads/daily-builds>Daily Build</a> is now 1041. And we&#8217;ve been doing a lot to make Corona the best <a href=/products/corona-sdk/>cross-platform engine</a> out there.</p>
+<p>Lots of small items that we&#8217;ve knocked out include:</p>
+<ul>
+<li>Android: Fixed silent crash that can only be seen in the log when exiting out of the app having native objects, (introduced in Daily Build #1030)</li>
+<li>Android: Fixed silent crash that can only be seen in the log when quickly backing out of the app just before an alert dialog or activity indicator gets displayed</li>
+<li>Android: When cancelAlert is called on an alert the event.action was clicked instead of cancelled, casenum: 10224</li>
+<li>Android: Fixed store.finishTransaction() with Google Play; no longer causes past purchases to be received</li>
+<li>Android: Fixed bug where a landscape-only app would sometimes display a black screen when returning from screen lock, (happens rarely and only on particular devices)</li>
+<li>Android: Fixed a crash that can sometimes occur when accessing a TextField or TextBox&#8217;s &#8220;text&#8221; property while the end-user is editing the field</li>
+<li>Disable &#8220;demo&#8221; fix due to win sim bug</li>
+<li>iOS: Inneractive: Added minor change to support the keywords &#8216;fullscreen&#8217; or &#8216;interstitial&#8217; to display interstitials</li>
+</ul>
+<p>A ton of polish items dominated our bug fix list for Widget 2.0, but we also fixed some annoying iOS and Android bugs:</p>
+<ul>
+<li>10224: Android: Alert Box not returning &#8220;cancelled&#8221; action</li>
+<li>21159: Android: media.show(media.PhotoLibrary) would fail to load images from Picasa, Google+, SkyDrive, and other remote sources</li>
+<li>21098: iOS: native.newWebView loading/refresh coverup panel does not align with element</li>
+<li>20755: iOS: Webview gray loading page is offset</li>
+<li>20733: Kindle: On the amazon kindle the attachments had the wrong content type which caused the attachments to show incorrectly. </li>
+<li>21068: Widget 2.0: TableView insertRow id</li>
+<li>21073: Widget 2.0: All labels on buttons are embossed regardless of the &#8217;emboss&#8217;  setting.</li>
+<li>21099: Widget 2.0 tableView category touch bug</li>
+<li>21140: Widget 2.0: &#8220;ended&#8221; event fired when finger released off button</li>
+<li>21160: Widget 2.0: bug with .deleteAllRows()</li>
+<li>21162: Widget 2.0: ScrollView: Pulling past limits repeatedly, causes the scrollView to scroll in the opposite direction</li>
+<li>21188: Widget 2.0: Tinting graphics buttons not possible</li>
+<li>21243: Widget 2.0: Set tableview selection color</li>
+<li>21249: Widget 2.0: ScrollView: Scroll Width/Height not recalculated with added content</li>
+<li>21251: Widget 2.0: newtableview &#8211; tableViews with few rows have incorrect bottom limit</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/04/corona-sdk-daily-build-update/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

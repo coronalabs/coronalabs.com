@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>newbie &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/newbie/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>newbie &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Tips from a first-time developer</title>
+		<link>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/</link>
+		<comments>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/#comments</comments>
+		<pubDate>Thu, 28 Feb 2013 19:09:32 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[newbie]]></category>
+		<category><![CDATA[tips]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29691</guid>
+		<description><![CDATA[Andrew Kallem is the developer of What the Block?!, a February App of the Week winner. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.]]></description>
+				<content:encoded><![CDATA[<p><em>Andrew Kallem is the developer of What the Block?!, a <a href=http://www.coronalabs.com/blog/2013/02/04/app-of-the-week-what-the-block/>February App of the Week winner</a>. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.</em></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-31-at-4.06.57-PM.png" alt="What the Block icon" class="alignleft size-full wp-image-28859" />My name is Andrew Kallem, and I’m the creator of <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a>, a new puzzle game for iOS that&#8217;s soon coming to Android. Like many members of the Corona community, I’m a first-time developer, so I wanted to share a few tips with others who are working on or about to start their first project.</p>
+<p><strong>Concept and Prototyping</strong></p>
+<p>The first tip: Choose your project carefully! From the beginning, I knew I wanted to make a physics-based puzzle game, but even then, settling on the idea for What the Block?!™ didn’t happen right away.</p>
+<p>First, I coded quick and dirty prototypes of several different ideas. One of the great things about Corona is that you can code a basic prototype in no time. Prototyping not only helps you see which of your ideas are actually fun to play, it also gives you a sense which will be easier or harder to code. It’s something I think all first-time developers should do.</p>
+<p>Second, I knew I wanted to have a lot of puzzles (What the Block?!™ has over 150!), so I focused on ideas where creating them would be relatively easy.  For any project, it’s worth thinking in advance how much content you want to have (puzzles in a puzzle game, levels in a platformer, questions in a trivia game, etc.). Be wary of ideas that will take you a lot of effort just to create the content (let alone the coding!).</p>
+<p><strong>Development</strong></p>
+<p>Once I settled on the idea for What the Block?!™, I started fleshing out the prototype into a fully-fledged game. I learned far too much to write about in a single blog post, but I wanted to share two tips that I think are especially useful.</p>
+<p><em>Designing for multiple screen sizes</em></p>
+<p>Corona makes it easy to deploy to devices with any shape screen using the Dynamic Content Scaling feature. But here’s a tip to make it even easier: try using letterbox scaling and placing all of your visual elements relative to the screen corners, the centers of the screen edges, or the center of the screen. That way, no matter what the shape of the screen, everything is in the right place.</p>
+<p>Here are some screenshots from an iPhone 4, iPhone 5, and iPad 3 illustrating the point. You can see that the sticky notes and photos on the top are placed relative to the corners, the blocks and the other game elements are placed relative to the center of the bottom edge, and the background is placed at the center of the screen (with a large enough image to cover all screen sizes).</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss11-300x201.png" alt="WTB ss1" class="alignnone size-medium wp-image-29698" /> <img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss21-300x201.png" alt="WTB ss2" class="alignnone size-medium wp-image-29700" /></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/wtb-ss3-300x201.png" alt="wtb ss3" class="aligncenter size-medium wp-image-29702" /></p>
+<p><em>Test, test, test!</em></p>
+<p>Be sure to test your game on a real device as soon as you can, and more importantly, don’t just test “normal” play – do some “stress testing” too.  Try touching two buttons at the same time, touching the same button quickly and repeatedly, touching buttons that are supposed to be inactive, using four fingers, changing your device’s orientation back and forth quickly, etc.  Putting your game through the paces like this is a great way to find bugs that you wouldn’t otherwise notice but that your players will probably stumble across!</p>
+<p><strong>Final thoughts</strong></p>
+<p>I’d be happy to talk more about these topics or any other aspects of my development experience, so feel free to reach out to me.</p>
+<p>Meantime, I hope you’ll check out <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a> on the App Store!</p>
+<p><em>Andrew Kallem, aukStudios</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

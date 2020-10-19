@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IAP &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/iap/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>IAP &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Amazon In-App Purchasing v2 plugin now available</title>
+		<link>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/</link>
+		<comments>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 06 Apr 2016 15:37:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Amazon Kindle]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[IAP]]></category>
+		<category><![CDATA[in-app purchase]]></category>
+		<category><![CDATA[Kindle]]></category>
+
+		<guid isPermaLink="false">/?p=66343</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Amazon IAP V2 plugin. Learn about changes you need to implement to migrate to the new plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-58615" src="/wordpress/wp-content/uploads/2013/05/AmazonProductLogo-150x150.png" alt="AmazonProductLogo" width="150" height="150" />Corona Labs is pleased to announce the immediate availability of the <strong>Amazon IAP v2</strong> plugin. If you plan to deploy your app to Amazon Kindle devices and use their in-app purchasing (IAP) service, you should implement this plugin within your projects as soon as possible. Additionally, if you currently have an app in the Amazon Appstore that uses their IAP service, it must be updated to the v2 plugin before<strong> April 30, 2016</strong>.</p>
+<h3>Implementing the new plugin</h3>
+<p>The plugin is pre-activated in the store for you. Because this is an official Corona Labs plugin, you need to change your <code>build.settings</code> file to reflect a different <code>publisherId</code>. The plugin name remains the same, but <code>publisherId</code> must be changed to <code>"com.coronalabs"</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.amazon.iap&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { [&quot;android-kindle&quot;]=true }
+        },
+    },
+}</pre><p></p>
+<h3>New functions and properties</h3>
+<p>This updated plugin includes a few additional functions and properties in comparison to the <a href=https://docs.coronalabs.com/plugin/amazon.iap/index.html target="_blank">legacy</a> plugin:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/isActive.html target="_blank">store.isActive</a> is now supported. This property will be <code>true</code> if the plugin was initialized successfully. You can use this as the sole point of confirmation that other store functions and processes can be initiated.</li>
+<li>New <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/getUserData.html target="_blank">store.getUserData()</a> function added to retrieve the user ID and marketplace code of the currently logged-in user.</li>
+<li>New properties available in the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/productList/index.html target="_blank">productList</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/loadProducts.html target="_blank">store.loadProducts()</a>, as well as the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/storeTransaction/index.html target="_blank">storeTransaction</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/init.html target="_blank">initialization</a>, <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/purchase.html target="_blank">purchase</a>, and <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">restore</a> requests.</li>
+</ul>
+<h3>Transaction changes</h3>
+<p>In addition to the new functions and properties above, some important changes have been made in the v2 plugin:</p>
+<ul>
+<li>Amazon now requires that you &#8220;finalize&#8221; all transactions. Thus, you must now call <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/finishTransaction.html target="_blank">store.finishTransaction()</a> following every transaction to notify Amazon about the transaction being processed.</li>
+<li>Amazon IAP v2 does not include a <code>"restored"</code> state for transactions. The <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">store.restore()</a> function can still be called to retrieve all of the user&#8217;s purchases, but now all valid transactions will be of the <code>"purchased"</code> state.</li>
+</ul>
+<h3>Migration guide</h3>
+<p>All of the above points are summarized in our <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/migration.html target="_blank">migration guide</a> which will assist users of the legacy plugin in updating to the new plugin.</p>
+<h3>Documentation</h3>
+<p>As always, we provide comprehensive <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/index.html target="_blank">documentation</a> for this plugin. Both users of the legacy plugin and new users are encouraged to consult this documentation in order to successfully implement Amazon In-App Purchasing.</p>
+<h3>In summary</h3>
+<p>Remember, Amazon requires that all apps utilizing their in-app purchasing service are upgraded to v2 before<strong> April 30, 2016</strong>. If you have further questions, please discuss them in the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Increasing App Revenue with Fortumo Mobile Payments</title>
+		<link>/blog/2013/05/30/increasing-app-revenue-with-fortumo-mobile-payments/</link>
+		<comments>/blog/2013/05/30/increasing-app-revenue-with-fortumo-mobile-payments/#comments</comments>
+		<pubDate>Thu, 30 May 2013 16:02:48 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[IAP]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=34866</guid>
+		<description><![CDATA[Jaana Metsamaa is the head of engineering at Fortumo, the mobile payments company that powers in-app payments for game developers such as Rovio, Gameloft, Vostu and Zeptolab. The company covers 80 countries through 300 operators and lets users make payments on the web and in Android, Windows 8 and Windows Phone apps. 
+
+Fortumo recently added Corona SDK support for their in-app payments via a Corona Plugin. In this post, Jaana walks developers through the integration process for adding mobile payments into their Android and NOOK apps built with Corona.]]></description>
+				<content:encoded><![CDATA[<p><em>Jaana Metsamaa is the head of engineering at <a href=http://fortumo.com/>Fortumo</a>, the mobile payments company that powers in-app payments for game developers such as Rovio, Gameloft, Vostu and Zeptolab. The company covers 80 countries through 300 operators and lets users make payments on the web and in Android, Windows 8 and Windows Phone apps. </p>
+<p>Fortumo recently added <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> support for their Android and NOOK in-app payments via a <a href=http://www.coronalabs.com/resources/plugins>Corona Plugin</a>. In this post, Jaana walks developers through the integration process for adding mobile payments into their Android apps built with Corona.</em></p>
+<hr/>
+<p><img src="/wordpress/wp-content/uploads/2013/05/Jaana-Metsamaa-150x150.jpg" alt="Jaana Metsamaa" class="alignleft size-thumbnail wp-image-34882" />Mobile payments give end-users a way to make in-app payments by charging purchases to their phone bill. Mobile payments work for literally anyone who has a mobile phone, whereas credit card payments are available to only those that have a credit card. In most countries (especially emerging markets such as Brazil and China) phones outnumber credit cards by up to ten times. This means adding mobile payment capability into your app will significantly increase the number of potential paying users.</li>
+<p><img src="/wordpress/wp-content/uploads/2013/05/AngryBirds.jpg" alt="Fortumo one-click mobile payment flow in Rovio&#039;s Angry Birds" class="alignright size-full wp-image-34874" />On top of that, mobile payments are significantly faster than credit card payments &#8211; users do not need to sign up, fill out forms or enter their credit card credentials. You can see an example of Fortumo&#8217;s one-click mobile payment flow in the Angry Birds&#8217; screenshot to the right. It&#8217;s a one-click solution from the first payment, requires no sign up or registration, and ultimately leads to higher conversion rates and revenue.</p>
+<p>Developers using Corona SDK can now integrate Fortumo’s payments and start billing in any Android app store, including Google Play, NOOK Apps, Amazon Appstore and other 3rd party app stores. Integration should only take about an hour. Here’s how to get started: </p>
+<ol>
+<li><strong>Service Setup via Fortumo homepage</strong>: Create an account on <a href=http://fortumo.com/>our homepage</a> and navigate to the Dashboard. On the Dashboard, create a new service for in-app purchasing on Android or NOOK. After creating the service, you will need to integrate the Fortumo Corona Plugin into your app.</li>
+<p>
+<li><strong>Configuring the SDK</strong>: In order to use the Fortumo plugin, you need to add the following to your &#8220;build.settings&#8221; file. Note that the Corona simulator will automatically include the Android permissions that the plugin needs to the built APK.</li>
+<p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+  plugins =
+	{
+		-- key is the name passed to Lua's require()
+		[&quot;plugin.fortumo&quot;] =
+		{
+			-- required
+			publisherId = &quot;com.fortumo&quot;,
+		},
+	},		
+}</pre><p></p>
+<li><strong>Making a payment</strong>: Configuring payments with Fortumo is simple:
+</li>
+<p>
+<p></p><pre class="crayon-plain-tag">-- enable Fortumo plugin  
+local fortumo = require(&quot;plugin.fortumo&quot;)
+-- initiate Fortumo payment object
+local request = fortumo.newPaymentRequest();
+-- set the product name to be displayed to the user
+ request:setDisplayString(&quot;Super Powers #1&quot;);
+-- associate the payment with your Fortumo account
+ request:setService(&quot;service id&quot;, &quot;app secret&quot;);
+-- set unique product identifier
+ request:setProductName(&quot;ProductSKU-User123&quot;);
+ -- non-consumable products (by product name) can be restored even after app uninstall
+ request:setConsumable(false); reinstall
+ -- launch the payment flow
+ fortumo.makePayment(request, onPaymentComplete);
+ 
+&hellip;
+-- And once the payment has been completed, we&rsquo;ll receive the payment result
+function onPaymentComplete(response)
+  print(&quot;complete=&quot; .. response.billingStatus);
+end</pre><p></p>
+<p>
+<p>onPaymentComplete may return fortumo.BILLING_STATUS_PENDING if the UI is hidden before the payment is completed. If it’s a non-consumable product then it will return fortumo.BILLING_STATUS_BILLED the next time makePayment is called. Alternatively, it’s possible to use fortumo.setStatusChangeListener() method to get notified as soon as possible in the background.</p>
+<p>The full Fortumo Lua API documentation for more details about the APIs and access to the sample project can be found at <a href=http://docs.coronalabs.com/daily/plugin/fortumo>http://docs.coronalabs.com/daily/plugin/fortumo</a>.</p>
+<li><strong>Setting up server side receipt verification (optional)</strong>: Receipt verification is a convenient way to stream payment data to your servers and for integrating in-app purchases with users online profile so that purchases and users’ virtual items can be kept track of online. Receipt verification works by making a HTTP GET request to your server after each payment. Here you can read about how to get your service backend to talk to Fortumo.</li>
+</ol>
+<p>After testing and making sure that payments work, you’re good to go!  </p>
+<p>We are excited to be working with Corona developers and are looking forward to bringing you additional revenue from users without credit cards. If you have any questions or need help with the integration, please let us know at <a href=mailto:support@fortumo.com>support@fortumo.com</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/30/increasing-app-revenue-with-fortumo-mobile-payments/feed/</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+	</channel>
+</rss>

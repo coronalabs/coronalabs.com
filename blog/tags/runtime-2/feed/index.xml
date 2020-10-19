@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>runtime &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/runtime-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>runtime &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQ: Runtime Error Listener</title>
+		<link>/blog/2013/03/13/wednesday-faq-runtime-error-listener/</link>
+		<pubDate>Wed, 13 Mar 2013 19:25:38 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[runtime]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=30020</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQs) about the new runtime error handler and about Android permissions.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignleft size-full wp-image-28552" />It&#8217;s Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQs) about the new runtime error handler and about Android permissions.</p>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/03/FAQ24_screen1-281x300.png" alt="FAQ Runtime Popup" class="alignright size-medium wp-image-30026" /></p>
+<h2>1. What about the Runtime Error Message Popup on current Daily Builds?</h2>
+<p>Starting with Build 1030 on Android and Build 1047 for all other platforms, runtime errors will now generate a popup message box showing the error along with the file and line number (if it&#8217;s a debug build). The error information is still displayed in the console, but you don&#8217;t need a console/terminal window open to know that an error occurred. Starting with Build 1047, you can include a runtime listener in your code to trap the error and suppress the runtime popup message (if desired).</p>
+<p>The runtime message box occurs by default on all platforms, including both the Mac and Windows Simulators.</p>
+<h2>2. How do I implement a Lua Runtime Error Listener?</h2>
+<p>The following code shows how to implement the runtime listener (&#8220;unhandledError&#8221;). If you run the code in the Corona Simulator or on a device, you will see the error caused by concatenating a nil value with a string in the print statement.</p>
+<p></p><pre class="crayon-plain-tag">local releaseBuild = true   -- Set to true to suppress popup message
+
+-- Error handler
+local function myUnhandledErrorListener( event )
+
+    if releaseBuild then
+        print( &quot;Handling the unhandled error &gt;&gt;&gt;\n&quot;, event.errorMessage )
+        display.newText( &quot;&gt;&gt;&gt; ERROR OCCURRED &lt;&lt;&lt;&quot;, 30, 1, native.systemFont, 18 )
+    else
+        print( &quot;Not handling the unhandled error &gt;&gt;&gt;\n&quot;, event.errorMessage )
+    end
+    
+    return releaseBuild
+end
+
+Runtime:addEventListener(&quot;unhandledError&quot;, myUnhandledErrorListener)
+
+-- Displays text message in center of screen
+txtMsg1 = display.newText( &quot;Runtime Error Test Code&quot;, 55, 200, &quot;Verdana-Bold&quot;, 14 )
+
+print( &quot;ABC&quot; .. nil )  -- &lt;&lt;&lt;&lt; Lua error here</pre><p></p>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/03/FAQ24_screen2-146x300.png" alt="Runtime error with Popup" class="alignright size-medium wp-image-30027" /></p>
+<p>If you return <strong>false</strong> from the listener (the default value), the popup message box occurs when the listener function exits. Returning <strong>true</strong> indicates that the listener function handled the runtime error and the popup message is suppressed. In the above code, the <strong>releaseBuild</strong> variable determines if the popup message is displayed or not.</p>
+<h2>3. What is the best practices for the Runtime Error Listener?</h2>
+<p>The intent of adding the runtime popup message and the runtime error listener is to give the developer more tools to get there code running and to track down errors. If you build for debug (<strong>developer</strong> mode on iOS or using the <strong>debug</strong> key on Android), any runtime errors include the file name and line number where the error occurred. It also includes a message about the error. Normally, this information is included in the popup message box. If you add the runtime listener and suppress the popup, you still have access to the error information through the event table passed to the listener and in the console/terminal.</p>
+<p>In production release, only the error type is available. You can implement the runtime listener and use it to suppress the error popup and log the errors internally. What you do with this error log is up to you. You can ignore it or create a log file that is sent to your own server to track problems. One of the advantages of allowing popup errors to occur, is that it sends the information back to Google Play, which makes the information available to the developer. If you suppress the popup, the information will be lost unless you log and send it to your own server.</p>
+<p>You may want to allow the runtime popups during your debug and testing phases and suppress the popup when you deliver your app to the app store.</p>
+<p>One thing that I mentioned in a previous FAQ, ignoring errors is not the best practice. Runtime errors will alter the code path and may cause the app to become unstable. You should always test your app on as many devices as possible and eliminate or trap (using <strong>pcall</strong>) any errors found.</p>
+<h2>4. I&#8217;m using the Runtime Listener but I&#8217;m still getting the Runtime Error popup.</h2>
+<p>If you implemented the runtime error listener in your code that suppresses the error popup and you&#8217;re still getting the popup, you may have an error occurring before the runtime listener starts. As shown in the above example code, the runtime listener function was the first thing defined in the code. The key is enabling the runtime listener as soon as possible so it can trap the errors. Errors that occur before the runtime error listener has been enabled, will generate the popup message. Generally, errors that occur on startup are easy to fix and don&#8217;t require trapping. It&#8217;s the runtime errors that occur with touch events, collisions, etc., that occur while the app is running, that are the important ones to trap if you want to suppress the popup message to your users.</p>
+<h2>5. What about Android Permissions and runtime errors?</h2>
+<p>In Build 1030 we removed the default permissions in the Android Manifest so you are now responsible for adding back the permissions for APIs that require them. All the Daily Build sample code projects and the API pages have been updated to show the required permissions in the <strong>build.settings</strong> file.</p>
+<p>Generally, missing permissions will generate a runtime error with either a runtime popup or by calling the runtime &#8220;unHandledError&#8221; listener (if implemented). Missing permissions is something that should be tested and caught before releasing your app (see question 6).</p>
+<h2>6. Which Android Permissions won&#8217;t generate a runtime error?</h2>
+<p>Some API calls will fail silently if the proper permissions are not set in <strong>build.settings</strong> file. They are:</p>
+<ul>
+<li>display.capture</li>
+<li>display.captureBoard</li>
+<li>display.captureScreen</li>
+<li>media.newRecording</li>
+<li>media.newVideo</li>
+<li>media.save</li>
+<li>media.show</li>
+<li>native.webView</li>
+<li>native.newWebPopup</li>
+<li>heading( Compass) event</li>
+<li>location (GPS) event</li>
+</ul>
+<p>For the APIs listed above, you need to check the results to verify that the code works as expected. It&#8217;s a good idea to double check that you have set the proper permissions in the <strong>build.settings</strong> file for those APIs. For future builds we are looking at adding runtime checks for all APIs to insure they all have the proper permissions set.</p>
+<p>Check the <a href=https://developer.coronalabs.com/downloads/daily-builds>Daily Build Documents</a> for the correct Android permissions needed for each API.</p>
+<p>That&#8217;s it for today&#8217;s answers. I hope you enjoyed them and even learned a few things!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

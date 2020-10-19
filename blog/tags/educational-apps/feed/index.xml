@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>educational apps &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/educational-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>educational apps &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest piece: 8 tips on creating engaging mobile content for young minds</title>
+		<link>/blog/2013/11/15/guest-piece-8-tips-on-creating-engaging-content-for-young-minds/</link>
+		<comments>/blog/2013/11/15/guest-piece-8-tips-on-creating-engaging-content-for-young-minds/#comments</comments>
+		<pubDate>Fri, 15 Nov 2013 16:35:45 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[educational apps]]></category>
+		<category><![CDATA[kids apps]]></category>
+
+		<guid isPermaLink="false">/?p=51740</guid>
+		<description><![CDATA[Elpida Voulgari is the co-founder of <a href="http://www.avokiddo.com/">Avokiddo</a>, a studio focused on creating high quality educational apps for young children. Avokiddo’s Beck and Bo has received several awards, including a 2013 Parents’ Choice Approved Award and was recognized as an App of the Week by Corona Labs. The studio’s latest title, Avokiddo Emotions, was featured on iTunes’ main banner in Education and graced by Apple as New and Noteworthy. Apple also handpicked both apps as “Best for ages 5 and under.”
+
+In today's piece, Elpida shares tips on developing children’s apps and discusses elements to consider when creating mobile content for youngsters.]]></description>
+				<content:encoded><![CDATA[<p><em>Elpida Voulgari is the co-founder of <a href=http://www.avokiddo.com/>Avokiddo</a>, a studio focused on creating high quality educational apps for young children. Avokiddo’s <a href=http://www.coronalabs.com/blog/2013/01/28/app-of-the-week-beck-and-bo/>Beck and Bo</a> has received several awards, including a 2013 Parents’ Choice Approved Award and was recognized as an App of the Week by Corona Labs. The studio’s latest title, Avokiddo Emotions, was featured on iTunes’ main banner in Education and graced by Apple as New and Noteworthy. Apple also handpicked both apps as “Best for ages 5 and under.”</p>
+<p>In today&#8217;s piece, Elpida shares tips on developing children’s apps and discusses elements to consider when creating mobile content for youngsters.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/11/Elpida-Voulgari-1-277x300.jpg" alt="Elpida Voulgari headshot" class="alignleft size-medium wp-image-51741" />At Avokiddo we’re always brainstorming the best approach for creating educational content for youngsters. We ask ourselves: “Why are children drawn into an app, what piques their interest, how do they process information, how do they learn, what keeps them engaged and what makes them laugh?”</p>
+<p>Creating educational content for children is rewarding work. Our apps have received overwhelmingly positive reviews and are used by teachers and educators around the world. Both our apps &#8211; Corona App of the Week winner <a href=http://www.coronalabs.com/blog/2013/01/28/app-of-the-week-beck-and-bo/>Beck and Bo</a> and <a href=https://itunes.apple.com/us/app/avokiddo-emotions-playful/id661758013?mt=8>Avokiddo Emotions</a> &#8211; have been reviewed by major media outlets and handpicked by Apple as “Best for ages 5 and under.” We also receive daily testimonies from parents of children with special needs, saying that Avokiddo Emotions has helped their children better express emotions.</p>
+<p>When it comes to development, we rely on <a href=http://www.coronalabs.com/i-want-to-build/education-kid-apps/>Corona SDK</a>, a framework that allows us to publish to multiple platforms and reach a broad audience. Corona SDK’s intuitive architecture and well-documented API makes it easy for our team to bring ideas to life without wasting time on technicalities.</p>
+<p>That being said, creating apps for kids takes much more than technical know-how. It takes personal involvement and strategy. To create our games, we put ourselves in children’s shoes to see things from their perspective. Here are the basic guidelines we recommend when designing <a href=http://www.coronalabs.com/i-want-to-build/education-kid-apps/>educational content</a>:</p>
+<p>1. <strong>Define your app’s purpose</strong>: Before diving into development, identify a problem within an educational branch and utilize technology to provide the solution. When it comes to designing educational apps for kids, you must take a holistic approach &#8211; spending quality time with kids, studying their behavior, and understanding what they like and dislike. These observations are not something you can find in a user manual.</p>
+<p>2. <strong>Balance fun and learning</strong>: These two elements go hand-in-hand. When kids enjoy something, they are more likely to absorb new information. Learning is not merely about memorizing &#8211; which is a passive and repetitive process – but about absorbing information and truly understanding it through a hands-on approach.</p>
+<p>3. <strong>Encourage creativity and self-expression</strong>: A mobile device is merely the medium &#8211; it should provide a challenging and stimulating environment where children obtain knowledge through active exploration and interaction. As kids are already born with a creative mind, take the opportunity to cultivate this quality.</p>
+<p>4. <strong>Simplicity and clarity is a must</strong>: Eliminate complicated scenarios, multiple screen levels and complex UI. Neither children nor parents should have to read instructions on how to play, as engagement needs to occur naturally. An app with a clear look and feel helps kids avoid distractions. In Avokiddo Emotions, we explore facial expressions, feelings and behaviors. The app uses no textual instructions or other language-related UI making it a universal success without localization restrictions.</p>
+<p>5. <strong>Create a beautiful UI</strong>: The overall aesthetics and graphics should be exceptional. Many designers underestimate this, thinking that kids can’t appreciate the difference. It’s our responsibility to offer children the very best experience to stimulate their imagination and train their brains and eyes to recognize and appreciate beauty.</p>
+<p>6. <strong>Be innovative, yet familiar</strong>: Find a balance between the familiar and the new in order to make an age-appropriate app. In Beck and Bo, we encourage kids to experiment by dragging and dropping objects around the screen while listening to the objects’ names and sounds. Kids learn that the sun and clouds belong in the sky, that a boat floats on the water, and that apples fall from a tree. The concept of gravity is introduced to them using everyday items that they’re already familiar with.</p>
+<p>7. <strong>Encourage real-life interactions and relationships</strong>: While technology favors communication, it also breeds isolation. Learning should be inclusive and stimulate real-life relationships. Educational apps should encourage kids, parents, and educators to actively participate together.</p>
+<p>8. <strong>Consider privacy and safety</strong>: Since revisions to the Children&#8217;s Online Privacy Protection Act (COPPA) went into effect on July 1, 2013, app developers are required to comply with a set of rules regarding the collection of personal information and the use of external links inside their apps. The <a href=http://momswithapps.com/about>“Know What’s Inside”</a> program is a great initiative that helps family-friendly app developers adopt best practices and comply with the new COPPA standards.</p>
+<p>While the mobile world is evolving fast, more and more teachers and parents will continue to use mobile devices to educate and inspire children. To stay competitive in the educational content space, it’s important to be passionate about what you do and offer content of value. Educating kids is a very delicate process that needs to be approached with love and responsibility. It is our duty as developers to create apps that inspire, arouse interest in learning and cultivate creativity among youngsters.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/15/guest-piece-8-tips-on-creating-engaging-content-for-young-minds/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

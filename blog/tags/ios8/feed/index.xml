@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iOS8 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ios8/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iOS8 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #94 &#8211; Apple App Store Changes, Composer GUI Beta Updates, and World Cup Open API</title>
+		<link>/blog/coronageek/corona-geek-94/</link>
+		<comments>/blog/coronageek/corona-geek-94/#comments</comments>
+		<pubDate>Mon, 16 Jun 2014 21:08:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[iOS8]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58827</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, we shared community announcements, including updates to Composer GUI Beta, a caution about installing OSX 10.10 Beta with Corona, and new plugins for Amazon Ads and Chartboost. We also discussed 6 things Apple didn't tell us at WWDC14.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Es7PZ7GOTOo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, we shared community announcements, including <a href=/blog/2014/06/11/composer-gui-beta-update/>updates to Composer GUI Beta</a>, a caution about <a href=/blog/2014/06/12/corona-sdk-and-osx-10-10-yosemite-status/>installing OSX 10.10 Beta with Corona</a>, and new <a href=/blog/2014/06/09/additional-3rd-party-plugins/>plugins for Amazon Ads and Chartboost</a>. We also discussed <a href=http://www.appmarketinglab.com/6-app-store-optimization-changes-coming-ios8/ target="_blank">6 things Apple didn&#8217;t tell us at WWDC14</a>.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-hangout-93/>Corona Geek #93 – Apple Rejects Rewards, LiquidFun, and Swift</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-85/>Corona Geek #85 &#8211; Using Go Lang with Corona SDK</a></li>
+<li><a href=https://itunes.apple.com/us/app/5-second-frenzy/id880726851 target="_blank">5 Second Frenzy</a> game for iOS</li>
+<li><a href=https://itunes.apple.com/app/id878234291 target="_blank">Match 3 Me</a> game for iOS</li>
+<li><a href=https://itunes.apple.com/us/app/minute-stretches-stretch-strengthen/id882267978?ls=1&mt=8 target="_blank">Minunte Stretches</a> app for iOS</li>
+<li><a href=http://www.adbuddiz.com/developers target="_blank">Ad Buddiz</a></li>
+<li><a href=http://www.macincloud.com/features/tools/tools target="_blank">MacinCloud comes with Corona SDK installed</a></li>
+<li><a href=http://www.kimonolabs.com/worldcup/explorer target="_blank">Word Cup Open API Explorer</a></li>
+<li><a href=http://www.irradiatedsoftware.com/ target="_blank">SizeUp OSX window manger</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-94/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

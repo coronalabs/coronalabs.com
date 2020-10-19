@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>game animation &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-animation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>game animation &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #166 &#8211; Sequencing Desktop Game Animations</title>
+		<link>/blog/coronageek/corona-geek-166/</link>
+		<comments>/blog/coronageek/corona-geek-166/#respond</comments>
+		<pubDate>Mon, 02 Nov 2015 22:32:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[animations]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[game animation]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64612</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued develop of our top down shooter desktop game with a look at how to turn static images into moving animated sequences of images. We implemented animation sequences for the player's standing, jumping, walking, and fighting states. Download the source code for the demo.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/u2kFX98fqMQ?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we continued develop on our top down shooter desktop game with a look at how to turn static images into moving animated sequences of images. We implemented animation sequences for our player&#8217;s standing, jumping, walking, and fighting states. </p>
+<p>Sequencing animations can by hand can be time consuming. For comparison, we looked at a simple animation example where the individual image were manually ordered. Then we looked at a complex example with a sprite sheet that included over 300 individual images. Those images were ordered using a &#8220;sprite maker&#8221; script, which works with the <a href=http://www.reinerstilesets.de/ target="_blank">third party art asset pack</a> we are using to develop our desktop game.</p>
+<p>As always, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">download the source code</a> for the demo.</p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=http://www.reinerstilesets.de/ target="_blank">Zombies ++ by Reiner</a></li>
+<li><a href=http://www.lostgarden.com/search/label/free%20game%20graphics target="_blank">&#8216;Lost Garden&#8217; art by Daniel Cook</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-166/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-166-2015-11-02-desktop-game-animations.mp3" length="94064327" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>android &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/android-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>android &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Android plugin dependencies update</title>
+		<link>/blog/2016/10/05/android-plugin-dependencies-update/</link>
+		<pubDate>Wed, 05 Oct 2016 21:17:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=68358</guid>
+		<description><![CDATA[Corona Labs will soon be making updates to the plugin framework to improve how plugin developers can handle plugin dependencies for Android. Read further to understand these changes.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-35232" src="/wordpress/wp-content/uploads/2013/05/Icon_Resources_Plugin.png" alt="Corona Plugins" width="122" height="122" />When Corona Labs initially implemented plugins and opened up the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> to the community, plugin developers could include any external library needed by a plugin. This opened up a world of possibilities for plugin developers, but it also introduced some dependency issues for Android that now need to be addressed.</p>
+<p>Plugin dependencies on iOS aren&#8217;t an issue because of how Apple structures their libraries and frameworks. On Android, however, dependencies can lead to problems where different plugins want to use different versions of supporting libraries.</p>
+<p>Google, for instance has two main libraries that other plugins frequently need to use: Android Support Library and Google Play Services. To complicate things, there are multiple versions of these library files available.</p>
+<p>Typically a plugin developer will use the latest version of these libraries when they initially build a plugin. Over time, newer versions of the libraries are released, but plugins are not updated to use these latest versions. This results in plugins that simply don&#8217;t work together. Naturally, as the number of plugins in the marketplace grows, the number of incompatibilities will grow as well. So, over the past few months, our engineers have been working to solve this problem.</p>
+<p>In the coming weeks, we intend to introduce <strong>Dependency Plugins</strong>. These are special plugins that address the various incompatibilities between Android libraries. Essentially, plugin developers will be able to specify plugin dependencies in the <code>metadata.lua</code> of their plugin submission to ensure compatibility with other plugins.</p>
+<p>Once plugins start using these new Dependency Plugins, you should see fewer plugin conflicts. However, as plugins become more dependent on Google Play Services, it will be important for Android devices to have Google Play Services enabled. Thus, if your app user has explicitly <em>disabled</em> Google Play Services and tries to run a Corona app, they will be prompted to re-enable it before your <code>main.lua</code> code runs (a dialog message will guide them through the process).</p>
+<p>We will publish an announcement once the changes to the plugin framework are finalized. In the meantime, please join us in <a href=https://forums.coronalabs.com/forum/654-corona-store-plugins/ target="_blank">Corona Forums</a> to discuss further.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #128</title>
+		<link>/blog/2016/06/17/from-the-forum-issue-128/</link>
+		<pubDate>Sat, 18 Jun 2016 00:04:02 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[high score]]></category>
+		<category><![CDATA[Material]]></category>
+		<category><![CDATA[score keeping]]></category>
+		<category><![CDATA[scores]]></category>
+		<category><![CDATA[sprite]]></category>
+		<category><![CDATA[sprite edtior]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">/?p=67198</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A scorekeeping module keeping up with the best in branding</h3>
+<p>I’m all for making things easier in life. Superstar developer <strong>DevilSquid</strong> provided a very useful module that saves us time when handling scores in your game. It lets you use your own bitmap fonts, and has some nifty particle effects to give boring old text a little razzle dazzle.</p>
+<p>Come on over and check out the <a href=https://forums.coronalabs.com/topic/63466-uberscore-%E2%80%93-animated-score-counter-quick-easy/ target="_blank">original thread here</a>!</p>
+<h3>Crowd-sourced Material UI</h3>
+<p>I’m a pretty big fan of a unified user interface. Something about a well-thought-out UI marrying intuitive functionality with practicality turns an otherwise simple app into something I cannot do without.</p>
+<p>Google Material is one design scheme that hits every one of my interest points. That’s why, when another Corona developer took it upon themselves to re-create Google Material within Corona SDK, I applauded. When they decided to turn it into a publicly available module, complete with a home on Github, I knew that I had to do whatever I could to make sure that the project received as many eyeballs as possible.</p>
+<p>It’s already relatively robust, with <a href=https://forums.coronalabs.com/topic/62108-implementing-ui-based-on-ios-7-google-material/ target="_blank">the original thread</a> showing off some basic features and Material aesthetics. The best part of this story is that we can all add onto this great work! Make a pull request and you can contribute right now!</p>
+<h3>Community suggestions on the best sprite editor</h3>
+<p>We all have our preferences when it comes to digital editing suites. It’s difficult to find one that scratches every single itch that we developers have, but it’s possible to get pretty close.</p>
+<p>To this end, a developer was recently looking for suggestions on what Sprite editors the Corona community favored. The answers that came back ran the gamut between obscure and well-known. Anyone looking to change their graphics editing routine (or perhaps, looking for something to start out with) would do well to check out <a href=https://forums.coronalabs.com/topic/63563-sprite-editor/ target="_blank">the original thread</a>!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android Studio templates now available for Corona Enterprise</title>
+		<link>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/</link>
+		<comments>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/#comments</comments>
+		<pubDate>Wed, 25 May 2016 20:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+
+		<guid isPermaLink="false">/?p=66638</guid>
+		<description><![CDATA[Android Studio support for Corona Enterprise is here! Read further to learn how Android Studio can benefit your development.]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2886</a>, Android and iOS development for Corona Enterprise are finally on equal footing; Android Studio support for Corona Enterprise is here!</p>
+<p>Google released Android Studio 1.0 as the official IDE for Android Development in December 2014. This change brought several useful tools to the Android development landscape, but focused around the development of standard Android applications.</p>
+<p>For Corona Enterprise on Android, we simply relied on the Android command line tools and custom scripts for doing Enterprise development; no IDE integration whatsoever. This left Android Enterprise developers with very few tools to iterate on code quickly and the whole process more painful than it had to be.</p>
+<h3>What about the old project model?</h3>
+<p>Just as Google moved away from the Ant build system, so are we. Android Studio is the present and future; this is where we want to be.</p>
+<p>Now that Android Studio templates are available, <strong>the Ant project templates have been deprecated</strong> and all new Enterprise projects should use Android Studio.</p>
+<p>Despite being deprecated, documentation for using Enterprise with the Ant build system will still be available through around September or October of this year.</p>
+<h3>Getting started with Android Studio</h3>
+<p>If you&#8217;re new to Corona Enterprise or Android Studio, see our <a href=https://docs.coronalabs.com/daily/native/android/prereqs.html target="_blank">Android Prerequisites</a> guide for instructions on how to set up Android Studio for Corona Enterprise development.</p>
+<h3>Migrating to Android Studio</h3>
+<p>For existing Android Enterprise projects, see our <a href=https://docs.coronalabs.com/native/android/androidStudio/index.html>Migration to Android Studio</a> guide. We will be <strong>dropping support for the Ant project model </strong>in the coming months. Specifically, the public release in <strong>September/October</strong> will mark the end of Ant project support for Corona Enterprise. Please have all of the Enterprise apps that you&#8217;ll continue to support migrated by this time.</p>
+<h3>How Android Studio makes development easier</h3>
+<p>Android Studio brings several useful tools that make the Android Enterprise developer&#8217;s life much easier. Some of these include:</p>
+<h4>Code completion</h4>
+<p>Can&#8217;t remember what that exact Android API was? No problem – Android Studio&#8217;s got you covered!</p>
+<h4>Static Code Analyzer</h4>
+<p>This handy tool can inspect Java code throughout your project and help you catch possible bugs, simplify complex code snippets, find coding style issues, typos, and so much more. We highly recommend giving this a run via Analyze → Inspect Code&#8230;</p>
+<h4>JAR Decompilation</h4>
+<p>Ever been in a situation where your app is crashing inside some library that you don&#8217;t have the source code to? Assuming that library isn&#8217;t obfuscated with ProGuard, the JAR decompilation tool will let you take a peek into the implementation for better understanding of the library.</p>
+<h4>Integrated support for Android Virtual Device (AVD) testing</h4>
+<p>While it was possible to test out Corona Enterprise projects using Android Virtual Devices (AVDs) before, Android Studio makes this significantly better by offering improved performance and easy integration into the IDE.</p>
+<p>Testing with AVDs does come with some caveats you should be aware of:</p>
+<ul>
+<li>Since Corona is built with the ARMv7 architecture in mind, be sure to <strong>only</strong> use system images with ABI: <strong>armeabi-v7a</strong>.</li>
+<li>AVDs do <strong>not </strong>have Google Play installed on them. This means that testing things like Google Licensing, Expansion Files, or IAP cannot be done in AVDs.</li>
+<li>AVDs are a little slow to boot. Be patient and don&#8217;t accidentally close one AVD after running a single test.</li>
+</ul>
+<h4>No more command line</h4>
+<p>You can now do all building, deployment, and view logcat through Android Studio. No need for shell scripts!</p>
+<h4>No guessing at API Levels for Android APIs</h4>
+<p>Android Studio warns you if you use an API that was introduced later than your <code>minSDKVersion</code>. No more redesigning for older Android versions at the last minute.</p>
+<h4>Easier integration of common external libraries</h4>
+<p>While this doesn&#8217;t apply to libraries that are only distributed as JAR files, Android Studio makes it significantly easier to add things like the Android Support libraries and Google Play Services to your projects.</p>
+<p>A simple line in the dependencies block of your <code>build.gradle</code> script it all it takes for adding in whichever version of the Android Support libraries you desire:</p><pre class="crayon-plain-tag">dependencies {
+    ...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+}</pre><p>For Google Play Services, you can even <a href=https://developers.google.com/android/guides/setup?#add_google_play_services_to_your_project>select which components of it</a> to compile into your app. This is especially helpful if your app is getting close to the <a href=http://developer.android.com/tools/building/multidex.html?#about>method reference limit</a> for a single dex file.</p>
+<h4>Multi-dex support is now easy as pie</h4>
+<p>This can now be added to Corona Enterprise projects using the simple steps outlined by Google <a href=http://developer.android.com/tools/building/multidex.html target="_blank">here</a>.</p>
+<h3>Testimonials</h3>
+<p>Still not convinced that Android Studio is the best thing since sliced bread? Read these testimonials from our engineers:</p>
+<ul>
+<li><em>&#8220;I don&#8217;t have to switch between Sublime Text and the Terminal 200 times a day now!&#8221;</em> — Danny Glover</li>
+<li><em>&#8220;It&#8217;s like Xcode for Android&#8230;.but better.&#8221;</em> — Ingemar Bergmark</li>
+<li><em>&#8220;The only disadvantage of using Android Studio over the old Ant method is&#8230; oh, well, there is none.&#8221;</em> — Sergey Lerg</li>
+</ul>
+<h3>Regarding AVD testing</h3>
+<p>If you&#8217;re giving AVD testing a try for the first time with Android Studio, there are some best practices you should be aware of:</p>
+<p>You <strong>should </strong>use AVD testing for:</p>
+<ul>
+<li><strong>Testing UI on form factors that aren&#8217;t readily available to you.</strong> While Google&#8217;s <a href=https://developers.google.com/cloud-test-lab/overview>Android Cloud Test Lab</a> does allow some form of UI testing, you&#8217;ll be able to iterate faster using AVDs.</li>
+<li><strong>Testing with OS versions that aren&#8217;t readily available to you.</strong> If your app is using some APIs or features that aren&#8217;t available on all the API Levels you support, this is a good way to quickly test behaviors on any questionable API levels.</li>
+<li><strong>Testing situations that are difficult to set up on actual devices.</strong> The emulator that AVDs run in allow you to mock up situations that may be more difficult to test on real hardware. For example, you can mock up the battery state and phone calls.</li>
+</ul>
+<p>You <strong>should not</strong> use AVD testing for:</p>
+<ul>
+<li><strong>Performance testing.</strong> Because this is an emulated environment, the performance you see with an AVD is not the same as what you&#8217;ll see on real hardware. For bigger apps, testing in this manner may not produce usable/practical results.</li>
+<li><strong>As a substitute for on-device testing.</strong> You should make sure your app works on a plethora of actual hardware before submitting it anywhere.</li>
+</ul>
+<p>For more info, consult Google&#8217;s <a href=http://developer.android.com/tools/devices/managing-avds.html>Managing AVDs with the AVD Manager</a> Guide.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Featured App: Alpha Omega &#8211; A game of jumbled words</title>
+		<link>/blog/2016/05/06/featured-app-alpha-omega-a-game-of-jumbled-up-words/</link>
+		<pubDate>Fri, 06 May 2016 18:43:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=66659</guid>
+		<description><![CDATA[Can an Internet meme be turned into a successful, compelling game built with Corona? For BorderLeap, the answer was "yes!". Read further to learn about "Alpha Omega."]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66661" src="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png" alt="alpha-omegaIcon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/alpha-omegaIcon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />As a programmer, spelling isn&#8217;t my greatest strength, but I&#8217;m one of those people who can look at a jumbled-up word and actually read it. In fact, many people can decipher words as long as the first and last letters are correct and it&#8217;s the proper length.</p>
+<p>For example, can you read this?</p>
+<p style="padding-left: 30px;">&#8220;<em>it deosn&#8217;t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae.</em>&#8220;</p>
+<p>What started as an urban legend and Internet meme seems to actually have some facts and a term behind it: <a href=https://en.wikipedia.org/wiki/Typoglycemia target="_blank">typoglycemia</a>.<b> </b></p>
+<p>Leave it to an enterprising game shop to turn this phenomenon into a compelling game. <a href=http://borderleap.com/ target="_blank">BorderLeap</a>, a small studio founded by Nate Dicken, took this concept and put together <a href=http://playalphaomega.com/ target="_blank"><em>Alpha Omega</em></a>. Originally released for the &#8220;small screen&#8221; in April 2014, BorderLeap recently released the game for OS X desktop.</p>
+<p>Since then, <em>Alpha Omega</em> has reached the #1 featured position across 150+ countries. It has also been the #1 paid &#8220;Puzzle&#8221; and #1 paid &#8220;Word&#8221; game, and it currently boasts accolades as the #2 overall paid game and #3 grossing game in the Mac App Store. As if that&#8217;s not enough, Apple featured <em>Alpha Omega</em> with a large banner in the &#8220;Word&#8221; game subcategory and also featured it in the &#8220;All Time Greats&#8221; in the same category.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fuvSOzmFgzw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Want to see what the buzz is all about and test your skills at unscrambling jumbled words? <em>Alpha Omega</em> is available for <a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega>Google Play</a>, and <a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12>OS X</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p>What kind of success can you achieve? Download <a href=https://www.coronalabs.com/ target="_blank">Corona SDK</a> and get started today!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Jordanian TV game show &#8220;Arrange it Correctly&#8221; powered by Corona</title>
+		<link>/blog/2016/04/26/case-study-jordanian-tv-game-show-arrange-it-correctly-powered-by-corona/</link>
+		<pubDate>Tue, 26 Apr 2016 18:49:25 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Game Show]]></category>
+		<category><![CDATA[MSSQL]]></category>
+		<category><![CDATA[TV]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=66576</guid>
+		<description><![CDATA[Think Corona SDK is for mobile games? Well it's powering a TV game show. Learn more about how this came to be.]]></description>
+				<content:encoded><![CDATA[<p>Picture this: It&#8217;s 7:00 p.m. and a popular TV game show is coming on. The host with his perfectly-coiffed hair and big smile stands at his lectern and points to a grid of TVs on a wall. Those TVs display categories, dollar amounts, and eventually answers. He also has a display in front of him with the correct answers. Nearby, three contestants stand at their podiums with TVs that show their scores. The contestants have a touch-sensitive screen to write and submit answers on. Behind the scenes, producers, directors, and judges are driving the game, timing commercials, confirming answers, and more.</p>
+<p>Someone had to write software for all of that. They had to network it together with a database and build a complex information system that drives the game. It must have required a huge team of developers and months of development time, right?</p>
+<p>For the <a href=http://www.roya.tv/ target="_blank">Roya TV</a> station in Amman, Jordan, along with a creative Corona SDK development team, it did not. Challenged to put together a TV game show in just 30 days, <a href=https://www.maysalward.com/ target="_blank">Maysalward</a>, a 16-person studio in Amman and Irbid, Jordan, beat out seven other studios to get the job of creating <a href=http://www.roya.tv/shows/196-%D8%B1%D8%AA%D8%A8%D9%87%D8%A7-%D8%B5%D8%AD/ target="_blank"><em>Arrange it Correctly</em></a><em>,</em> a TV game show about putting things in the right order. The other studios all wanted six months to do the job, but using Corona SDK, the team knew they could finish the job in much less time. Maysalward challenged a four person team consisting of a senior designer, senior developer, and two application testers to build the game. The team put Corona to the test and met their deadline, albeit with some 22-hour work days.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LZDrdeZQDgU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>The game</h3>
+<p>In <em>Arrange it Correctly,</em> three teams of two players stand at podiums with a touch screen Windows device for entering answers. This is driven by a full screen Windows desktop app. On the front of each podium is another Windows device running a full screen app to display the current score of each team. Behind the host, the audience sees a huge display known as the &#8220;big board&#8221; with the core game running. Another Corona-built Windows desktop app monitors the database and delivers the game output to the big board via HDMI cable. The host uses an Android tablet that displays the answers and other information. In the control room, the show&#8217;s director and producers control the pace of the game from a control computer. It&#8217;s all powered by a .NET system connected to a Microsoft SQL server.</p>
+<p>Apps built with Corona SDK can run on all of these devices. <a href=https://www.maysalward.com/ target="_blank">Maysalward</a> chose Corona because of how it could both connect to networked, database-driven solutions and create the game&#8217;s displays easily.</p>
+<p>According to Tariq Khatib, the senior developer on the project, &#8220;We used reusable stable code from other previous projects which shortened the total time needed for database connections.&#8221; Nour Khrais, Founder and CEO of Maysalward, added, &#8220;We have good experience with Corona and it&#8217;s a smooth development when it comes to mobile and desktop.&#8221;</p>
+<p>Corona&#8217;s ease and speed of development for both mobile and desktop came into play as the project moved towards the deadline. &#8220;It was really easy to manage change requests. Sometimes we did immediate onsite changes based on visual feedback from [the] TV Presenter or director or producer&#8230; it was really quick to recompile and replace old versions.&#8221; Khatib continued.</p>
+<p>He concluded &#8220;We are very proud of it, and it could have never been built in this time, with this performance, without Corona. Actually we agreed on the delivery time knowing that Corona can do it.&#8221;</p>
+<h3>Conclusion</h3>
+<p>We are constantly amazed at where we find Corona being used. Developers are using it to create great new entertainment apps, utility apps, and apps to enrich people&#8217;s lives. This may be one of the most unique case studies yet!</p>
+<p>Roya TV has already filmed 40 episodes of <em>Arrange it Correctly </em>with even more to come.</p>
+<p>What amazing things can you do with Corona? Cheer for the Maysalward team by reading more about their success in the <a href=https://forums.coronalabs.com/topic/62726-live-tv-show-contest-with-prizes-for-winners-made-with-corona-sdk/?#entry325559 target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing Multidex Support for Android Builds in Corona SDK</title>
+		<link>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/</link>
+		<comments>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/#comments</comments>
+		<pubDate>Thu, 31 Mar 2016 20:55:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[multidex]]></category>
+
+		<guid isPermaLink="false">/?p=66280</guid>
+		<description><![CDATA[Corona SDK now has multidex support for Android builds starting 2016.2853. Learn what multidex does for you. ]]></description>
+				<content:encoded><![CDATA[<p>With the recent wave of new plugins, some Corona developers have reported Android build failures with errors like this:</p><pre class="crayon-plain-tag">Encountered 65k symbol DEX limit. Reducing the number of plugins will help avoid this limit.</pre><p>This error happens due to a design limitation in the Android platform where the file containing the compiled Android code is limited to 65k symbols. More information on this limitation can be found <a href=http://developer.android.com/tools/building/multidex.html?#about>here</a>.</p>
+<p>Today, we are pleased to announce that Corona SDK projects built for Android are no longer subject to this limit, thanks to Multidex support!</p>
+<h3>What is Multidex support?</h3>
+<p>Multidex support allows the Android build system to generate multiple files containing Android bytecode and be able to load symbols between the two dynamically. These Android bytecode files are known as DEX files and as previously mentioned, each one has a hard limit of 65k symbols.</p>
+<h3>How do I take advantage of multidex in Corona SDK?</h3>
+<p>The only thing you&#8217;ll need to do to take advantage of multidex support is upgrade to <a href=https://developer.coronalabs.com/downloads/daily-builds/>daily build 2016.2853 or later</a>. After that, you don&#8217;t have to do <span style="text-decoration: underline;"><strong>anything</strong></span> to perform a multidex build for Android. Just do an Android build as you normally would and our build system will take care of the rest for you.</p>
+<h3>How does Corona address known multdex limitations?</h3>
+<p>The multidex system isn&#8217;t perfect for older versions of Android and there are <a href=http://developer.android.com/tools/building/multidex.html?#limitations target="_blank">known limitations</a>. We&#8217;ve done our best to ensure Corona-made apps aren&#8217;t hindered by these limitations.</p>
+<p class="">That said, we still advise you test your project on older versions of Android (2.3.3 &#8211; 4.0). If your project does run into any of the limitations listed in the link above, you may have to change the <code>minSdkVersion</code> of your project to <a href=http://developer.android.com/about/versions/android-4.0.html>API Level 14 (Android 4.0)</a>. You can do this by adding the following to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        minSdkVersion = &quot;14&quot;,
+    },
+}</pre><p></p>
+<h3>Impact on Android Builds through Corona SDK.</h3>
+<p>Generating Android apps that utilize multiple DEX files isn&#8217;t a cheap process. You may see a slight increase in build times because of this.</p>
+<h3>Reporting Issues</h3>
+<p>Should you encounter any issues with this, please let us know by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+<p>Feel free to discuss this in our <a href=https://forums.coronalabs.com/forum/531-android-including-kindle-and-nook/ target="_blank">Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Understanding Android App Signing</title>
+		<link>/blog/2014/08/26/tutorial-understanding-android-app-signing/</link>
+		<comments>/blog/2014/08/26/tutorial-understanding-android-app-signing/#comments</comments>
+		<pubDate>Tue, 26 Aug 2014 22:20:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Building and Distribution]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=59420</guid>
+		<description><![CDATA[In this tutorial, we'll discuss how to create Android app builds and how to use the keytool utility, along with how to generate a keyhash or SHA1 signature for various services like Facebook and Google Play Game Services.]]></description>
+				<content:encoded><![CDATA[<p>I must admit that when I started developing mobile apps, I was confused by the various requirements for protecting apps and guaranteeing their authenticity. On the iOS side, you have terms like <strong>entitlement</strong>, <strong>provisioning profile</strong>, <strong>bundle ID</strong>, and a host of other things. Android has similar functionality and their phrasing is equally confusing, including terms such as <strong>keystore</strong>, <strong>key hash</strong>, <strong>alias</strong> and, in addition, there are commands which must be entered on the command line.</p>
+<p>This week&#8217;s tutorial looks specifically at the <strong>Android</strong> signing process with the goal of bringing clarity and understanding to this potentially complex topic.</p>
+<h3>The Keystore</h3>
+<p>The basics behind protecting your Android app is to use a generated certificate and digital &#8220;key&#8221; which provides a unique, encrypted, and reasonably un-hackable signature. This proves that the app came from you, not some other suspicious source.</p>
+<p>On Android, this is done via a <strong>keystore</strong>. The keystore is a simple file with a really large block of encrypted data. This file can be stored anywhere on your computer, and this is generally the first problem that developers encounter. Because there&#8217;s no standard location in which to store these, it&#8217;s easy to &#8220;lose&#8221; them &#8212; we will address this issue in a bit.</p>
+<p>Next, there are two types of keystores that you should be aware of: <strong>debug</strong> and <strong>release</strong>. The debug keystore should be used while developing your app &#8212; for example, it can be used when manually installing (side-loading) apps to local Android devices. However, the debug keystore can <strong>not</strong> be used for an app destined for Google Play or Amazon &#8212; for this, you must use a <strong>release</strong> keystore.</p>
+<p>For both types, a keystore is identified by two aspects: the <strong>filename</strong> that it&#8217;s stored in and an <strong>alias</strong>. Because a keystore file could potentially store multiple keystores, each one is identified by an <strong>alias</strong>. In most cases, you&#8217;ll only have one certificate/key pair in a file, but you still need to give it an alias.</p>
+<p>Keystore files are also protected by a <strong>pair</strong> of passwords: one for the keystore file itself and another for each keystore/alias pair within the file. While these passwords should ideally be unique, most developers use the same password for both.</p>
+<h4>Debug</h4>
+<p><strong>Debug</strong> keystores are somewhat standard. Google provides one with the Android Developer Tools but, for your convenience, Corona provides you with a debug keystore as well. This keystore is located in a standardized folder within your CoronaSDK application folder and you should use it while developing Corona apps.</p><pre class="crayon-plain-tag">CoronaSDK/Resource Library/Android/debug.keystore</pre><p></p>
+<h4>Release</h4>
+<p>To create a <strong>release</strong> keystore for your app, you need to execute a command from your OS command line. For OS X, this is done via the <strong>Terminal</strong> app in which you&#8217;re presented with a <code>$</code> prompt. For Windows, this is done via the <strong>Command Prompt</strong> which can be accessed by opening the <strong>Start</strong> menu and searching for <code>cmd</code>. In Windows, you&#8217;ll be presented with a prompt like: <code>C:\&gt;</code></p>
+<p>As mentioned above, there&#8217;s no standard place to store keystore files, so it may be useful to create a folder specifically for this. By default, both the OS X Terminal and Windows Command Prompt will start within your &#8220;home&#8221; directory. On Mac, this translates to <code>/Users/yourloginname</code> and on Windows it translates to something like <code>C:\Users\yourloginname</code>. Within this home folder, you can create a folder to hold your keystores.</p>
+<p>In Windows, type:</p>
+<p><code>md Keystores</code></p>
+<p>In OS X, type:</p>
+<p><code>mkdir Keystores</code></p>
+<p>Once this is done, you can access the folder by typing:</p>
+<p><code>cd Keystores</code></p>
+<p>Once inside the <code>Keystores</code> directory, you should issue a command that&#8217;s fairly complex. Before proceeding, it&#8217;s very important to understand that this is <strong>not</strong> a &#8220;copy-and-paste&#8221; procedure &#8212; you <strong>must</strong> substitute values that are specific to the keystore you wish to generate.</p>
+<p>For the moment, let&#8217;s carefully inspect and dissect the following line:</p>
+<p><code>keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999</code></p>
+<p>Essentially, the first term means that this line will execute a program called <strong>keytool</strong>. For OS X, this should be installed already, but Windows users may need to install it (see below). Following this, all of the parts that begin with a hyphen (<code>-</code>) indicate parameters for the <code>keytool</code> command. Those options are as follows, and those in bold are the two which must be customized (the others can remain as shown):</p>
+<ul>
+<li><code>-genkey</code> &#8212; Tells <strong>keytool</strong> to generate a key.</li>
+<li><code>-v</code> &#8212; Tells keytool to be verbose (i.e. tell you what it&#8217;s doing).</li>
+<li><code>-keystore</code> &#8212; <strong>The filename to save the keystore as.</strong></li>
+<li><code>-alias</code> &#8212; <strong>The alias name to identify the keystore.</strong></li>
+<li><code>-keyalg RSA</code> &#8212; This says to use the RSA method to generate the keystore.</li>
+<li><code>-validity 999999</code> &#8212; This says to make the keystore valid for 999,999 days.</li>
+</ul>
+<p>For the <code>keystore</code> name, provide it with a name that makes sense. In theory, you should use a unique release keystore for each app, but it&#8217;s not required. For example, a puzzle game named &#8220;SwapIt&#8221; may have a keystore name such as <code>swapit.keystore</code>, but a more general release keystore could simply be <code>release.keystore</code>.</p>
+<p>For <code>alias</code>, provide it with a similar sensible name, for example <code>swapit</code>.</p>
+<p>With these changes, the line should look more like this:</p>
+<p><code>keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<p>Now hit the <strong>return/enter</strong> key to execute the command. You&#8217;ll then be prompted for more information in a routine that will appear as follows in the command window:</p><pre class="crayon-plain-tag">Enter keystore password:  
+Re-enter new password: 
+What is your first and last name?
+  [Unknown]:  YourFirstName YourLastName
+What is the name of your organizational unit?
+  [Unknown]:  Indie      
+What is the name of your organization?
+  [Unknown]:  Your Company Name
+What is the name of your City or Locality?
+  [Unknown]:  YourCity
+What is the name of your State or Province?
+  [Unknown]:  ST
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US correct?
+  [no]:  yes
+Generating 1,024 bit RSA key pair and self-signed certificate (SHA1withRSA) with a validity of 999,999 days
+	for: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Enter key password for 
+	(RETURN if same as keystore password):  
+Re-enter new password: 
+[Storing swapit.keystore]</pre><p>The first password is the password for the overall keystore file. Next you&#8217;ll be asked for your first and last name (surname). The prompt for &#8220;organizational unit&#8221; is for companies with multiple departments like &#8220;Engineering&#8221; or &#8220;Development&#8221; and this value is not important for most Corona developers, but you need to still provide a value, such as &#8220;Development&#8221;. In addition, you&#8217;ll be prompted for your city, state/province, and country code.</p>
+<p>At this point, you must type in <strong>yes</strong> to confirm the information. Finally, if desired, you can supply a different password to the individual alias entry, or simply press <strong>return/enter</strong> to use the same password associated with the keystore file.</p>
+<p>When this is done, your keystore file will be in the folder where you ran the command.</p>
+<h4>Installing &#8220;keytool&#8221;</h4>
+<p>The <strong>keytool</strong> utility should be installed as part of JDK (Java Development Kit). This tutorial will not discuss actual installation of JDK, so if you&#8217;re new to this process, please read our corresponding <a href=http://docs.coronalabs.com/guide/start/installWin/index.html target="_blank">guide</a>.</p>
+<p>On Mac, the <strong>keytool</strong> utility will be placed in a location such that you can just type <code>keystore</code> in the Terminal to run it. On Windows, this likely won&#8217;t be the case &#8212; when you installed the JDK, it was probably installed within a folder specific to the JDK version. For instance, on my Windows 7 computer, it&#8217;s located in:</p><pre class="crayon-plain-tag">C:\Program Files (x86)\Java\jdk1.8.0_05\bin</pre><p>Because the <b>keytool</b> utility is located here, it&#8217;s tempting to simply change to this directory and type <code>keytool ...</code> directly, but if you update/reinstall JDK and your keystores are stored here, you&#8217;ll lose all of those you already created. As such, a better solution is to prefix the location of your Java install before the keytool command. Before doing so, you must set an <strong>environment variable</strong> called <code>JAVA_HOME</code> which will provide a shortcut that you can use. If you&#8217;re not familiar with this task, see this <a href=https://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows target="_blank">tutorial</a>. Once it&#8217;s set, you can prefix it to the <code>keytool</code> command as follows:</p>
+<p><code>%JAVA_HOME\bin\keytool ...</code></p>
+<p>For instance, using the example keystore details from above, the command becomes this:</p>
+<p><code>%JAVA_HOME\bin\keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<h3>Building the App</h3>
+<p>To build with your release keystore, launch Corona SDK, load your app, and then build for Android (<strong>File</strong> → <strong>Build</strong> → <strong>Android…</strong>). In the <strong>Keystore</strong> dialog box, click on the <strong>Browse&#8230;</strong> button beside the <strong>Keystore</strong> pulldown menu. Navigate to where you saved your keystore file and select it from the dialog box, upon which you&#8217;ll be prompted to enter the keystore password.</p>
+<p>Once it&#8217;s loaded, you&#8217;ll see that the <strong>Key Alias</strong> field is empty. Select the proper alias in this pulldown list and click the <strong>Build</strong> button. Corona will then prompt you to enter the alias password. Once entered correctly, you&#8217;ll be taken back to the build screen where you can hit <strong>Build</strong> again to build the app. Fortunately, for as long as you use this same release keystore/alias, you won&#8217;t need to re-enter the passwords each time.</p>
+<h3>Keyhashes and SHA1 Signatures</h3>
+<p>When working with third parties like Facebook or Google Play Game Services (GPGS), sometimes you&#8217;ll be asked to generate a value from your keystore. For Google Play Game Services, you must use a <strong>release</strong> keystore for this task. For Facebook, you can develop/test with a debug keystore, but you&#8217;ll eventually need to provide them with information for an app signed with a release keystore.</p>
+<p>Both a <strong>keyhash</strong> (used by Facebook) and a <strong>SHA1 signature</strong> (used by GPGS) are short strings consisting of values that are calculated from the much larger keystore file. While these two are different values, the concept is the same &#8212; some standard math is performed on the values in the keystore to generate a unique value that cannot be easily reversed, helping ensure that the keystore hasn&#8217;t been altered by a hacker.</p>
+<h4>Generating a Keyhash</h4>
+<p>To generate the keyhash, you once again need to use the command line and enter a line which appears complex but in truth consists of just three commands:</p>
+<p><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore | openssl sha1 -binary | openssl base64</code></p>
+<p>The three commands taken separately are as follows:</p>
+<ul>
+<li><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore</code></li>
+<li><code>openssl sha1 -binary</code> &#8212; uses the SHA1 method of calculating a signature, output as binary.</li>
+<li><code>openssl base64</code> &#8212; outputs the data in Base64.</li>
+</ul>
+<p>As you can see, these three commands are separated by pipe (<code>|</code>) characters. The first command runs and outputs its results, which in turn becomes the input for the second command. Then the second command outputs its results which become the input for the third command. This can cause potential issues because, if there&#8217;s even a slight problem in an earlier command, the error gets passed on to the next command rather than the expected data.  For instance, if you mis-type your password, this command series will not notify you but rather produce an SHA1 string based on the input of &#8220;Invalid Password&#8221;.</p>
+<p>In any case, as noted earlier in this tutorial, this is <strong>not</strong> a copy-and-paste command &#8212; you must adjust <strong>-alias</strong> and <strong>-keystore</strong> to your specific values. When running this command using the keystore created above, the result is:</p>
+<p><code>tZRNBKXmYKOa22HvFl57za4gvU0=</code></p>
+<p>Note the <code>=</code> sign at the end &#8212; this indicates the end of the string and it <strong>is</strong> important.</p>
+<h4>Generating a SHA1 Signature</h4>
+<p>GPGS, in contrast, needs a text representation of the SHA1 output. Fortunately, the keytool utility can output this without any additional commands:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore -list -v</code></p>
+<p>After you enter the password, the output will look something like this:</p><pre class="crayon-plain-tag">Alias name: swapit
+Creation date: Aug 24, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Issuer: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Serial number: 53fa57f7
+Valid from: Sun Aug 24 17:24:07 EDT 2014 until: Sun Jul 20 17:24:07 EDT 4752
+Certificate fingerprints:
+	 MD5:  66:22:E9:94:EA:14:EA:4A:06:EB:98:8B:DA:2B:25:D2
+	 SHA1: B5:94:4D:04:A5:E6:60:A3:9A:DB:61:EF:16:5E:7B:CD:AE:20:BD:4D
+	 Signature algorithm name: SHA1withRSA
+	 Version: 3</pre><p>In this output, the <code>SHA1:</code> line is the string of hex digits which you need to provide to GPGS when setting up your app, as well as the value you need to provide to Google when setting up your app there. Alternatively, if you need the SHA1 signature formatted as a string rather than a colon-separated hex string, use this command:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore | openssl sha1 -hex</code></p>
+<h3>Conclusion</h3>
+<p>Hopefully this tutorial has helped clarify and understand the Android signing process better. Remember these command lines and the familiarize yourself with the parameters, and Android signing will soon become a simple task.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/26/tutorial-understanding-android-app-signing/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Update: Android Widget Themes</title>
+		<link>/blog/2014/08/08/update-android-widget-themes/</link>
+		<comments>/blog/2014/08/08/update-android-widget-themes/#comments</comments>
+		<pubDate>Fri, 08 Aug 2014 20:41:44 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">/?p=59334</guid>
+		<description><![CDATA[Starting in the most recent public build, all Corona developers can now opt to use two new widget themes in their projects. These new themes are styled after the Android "Holo Light" and "Holo Dark" themes which are commonly found on Android devices running recent versions of the OS.]]></description>
+				<content:encoded><![CDATA[<p>Starting in the most recent <a href=https://developer.coronalabs.com/downloads/corona-sdk target="_blank">public build</a>, all Corona developers can now opt to use two new <a href=http://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> themes in their projects. These new themes are styled after the Android <strong>&#8220;Holo Light&#8221;</strong> and <strong>&#8220;Holo Dark&#8221;</strong> themes which are commonly found on Android devices running recent versions of the OS.</p>
+<p>Both of the new themes contain assets up to the <code>@4x</code> scale profile, which means that your widgets should appear crisp and clean on even the highest resolution Android devices like the Nexus 10.</p>
+<div style="width: 95%;">
+<p><img class="alignnone size-full wp-image-59335" style="margin: 0px; padding-bottom: 20px; padding-top: 10px;" src="/wordpress/wp-content/uploads/2014/08/android-themes.png" alt="android-themes" /></p>
+</div>
+<h3>Setting the Themes</h3>
+<p>The new themes can be set by passing the proper value to the <a href=http://docs.coronalabs.com/api/library/widget/setTheme.html target="_blank">widget.setTheme()</a> API:</p><pre class="crayon-plain-tag">-- Use new 'Holo Light' theme
+widget.setTheme( &quot;widget_theme_android_holo_light&quot; )</pre><p></p><pre class="crayon-plain-tag">-- Use new 'Holo Dark' theme
+widget.setTheme( &quot;widget_theme_android_holo_dark&quot; )</pre><p>And that&#8217;s it &#8212; all non-skinned widgets throughout the project will appear in the new chosen theme.</p>
+<h3>Updated Sample Project</h3>
+<p>To preview the new themes in action, please load the <strong>WidgetDemo</strong> sample project included with Corona SDK:</p>
+<p><code>CoronaSDK</code> → <code>SampleCode</code> → <code>Interface</code> → <code>WidgetDemo</code></p>
+<h3>Previous Android Theme</h3>
+<p>Note that using the new Holo themes is entirely optional. The previous Android theme files are still available, so if you wish to continue using that theme, be sure to set the theme as follows:</p><pre class="crayon-plain-tag">-- Use older Android 2.x theme
+widget.setTheme( &quot;widget_theme_android&quot; )</pre><p></p>
+<h3>In Summary</h3>
+<p>Hopefully you can easily integrate these new themes into your existing projects with a minimal amount of repositioning, although some adjustments will be necessary due to slightly differing sizes of the updated styles.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/08/update-android-widget-themes/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>CoronaViewer: Android Beta</title>
+		<link>/blog/2014/07/15/coronaviewer-android-beta/</link>
+		<comments>/blog/2014/07/15/coronaviewer-android-beta/#comments</comments>
+		<pubDate>Tue, 15 Jul 2014 20:09:34 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59184</guid>
+		<description><![CDATA[A few weeks ago, we introduced the beta of <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">CoronaViewer for iOS</a>. (If you haven't seen this yet, check out the video in the <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">original CoronaViewer post</a>.)
+
+Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you'll be able to preview your app across multiple OS's <em>and</em> multiple devices — simultaneously!]]></description>
+				<content:encoded><![CDATA[<p>A few weeks ago, we introduced the beta of <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>CoronaViewer for iOS</a>. (If you haven&#8217;t seen this yet, check out the video in the <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>original CoronaViewer post</a>.)</p>
+<p>Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you&#8217;ll be able to preview your app across multiple OS&#8217;s <em>and</em> multiple devices — simultaneously!</p>
+<p>To access CoronaViewer, you’ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+<p>If you&#8217;ve got feedback on this beta, let us know in the <a href=http://forums.coronalabs.com/forum/641-coronaviewer/>CoronaViewer forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/07/15/coronaviewer-android-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elevator Joe</title>
+		<link>/blog/2013/11/04/app-of-the-week-elevator-joe/</link>
+		<comments>/blog/2013/11/04/app-of-the-week-elevator-joe/#comments</comments>
+		<pubDate>Mon, 04 Nov 2013 22:56:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=50949</guid>
+		<description><![CDATA[Riding on the coattails of <a href="http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/">Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, developer Erick Garayblas partnered with graphic artist Ryan Sumo to launch <a href="https://itunes.apple.com/us/app/elevator-joe/id646358937&#038;">Elevator Joe</a> in September 2013.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50951" style="margin-right: 20px; margin-left: 0px;" alt="Elevator Joe screenshot" src="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png" srcset="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png 184w, /wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM-150x150.png 150w" sizes="(max-width: 184px) 100vw, 184px" />Since childhood, Erick Garayblas has been fascinated with elevators. Stemming from the intrigue of how the machines coordinate with one another to fetch passengers on the proper floor at the requested time, Erick decided to create an elevator-based game. Riding on the coattails of <a href=http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/>Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, Erick partnered with graphic artist Ryan Sumo to launch <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937&>Elevator Joe</a> in September 2013.</p>
+<p><img class="alignright  wp-image-50950" style="margin-left: 20px; margin-top: 2px;" alt="Elevator Joe" src="/wordpress/wp-content/uploads/2013/10/Elevator-Joe.jpeg" width="288" height="511" />Elevator Joe is a time management and elevator simulation game where you have to bring tiny &#8220;Chibizens&#8221; to their destination floors as fast as possible. Along the way, you can upgrade your elevator, work through scenarios, unlock various items, and customize your tower. For every Chibizen you deliver, you receive Chibi Yens that can be used to purchase upgrades such as skill points, a new floor in the tower, and more. However, time is of the essence as Chibizens are a bit impatient and turn bright red when they’ve waited too long.</p>
+<p>The game took Erick and Ryan four months to develop, with Erick focusing on coding and design while Ryan worked on graphics. Erick noted that, &#8220;Corona SDK made it easier for us to prototype, iterate, and improve the game as we moved along.&#8221;</p>
+<p>Download Elevator Joe from <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.kuyimobile.elevatorjoe>Google Play</a> for a free and enjoyable challenge!</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/mE8VF1k6bSY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/04/app-of-the-week-elevator-joe/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

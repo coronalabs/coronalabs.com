@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Third-Party Tools &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/third-party-tools/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Third-Party Tools &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Localizing your app – a community language resource</title>
+		<link>/blog/2017/01/24/localizing-your-app-a-community-language-resource/</link>
+		<pubDate>Tue, 24 Jan 2017 20:24:17 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[translation]]></category>
+
+		<guid isPermaLink="false">/?p=69470</guid>
+		<description><![CDATA[Several years ago, a group of Corona developers started a Google spreadsheet which provides you with translations for localizing your apps. Check it out!]]></description>
+				<content:encoded><![CDATA[<p>The term &#8220;localize your app&#8221; simply means to present the UI/text in your users&#8217; local language, but where do you begin? Online translation sites and dictionaries can supply basic words, but sometimes the true meaning is lost in a language-specific subtlety, or the dictionary fails to understand which term you really need.</p>
+<p>Fortunately, a group of Corona developers recognized this dilemma and, several years ago, started a Google spreadsheet to help with app localization. It provides you with commom translations for many words/terms used in apps, organized into categories. For example, if you need to localize your &#8220;Play&#8221; button into Spanish, the answer is &#8220;Jugar.&#8221; How about Russian? Simply scan across the row and find &#8220;Запустить.&#8221;</p>
+<p><img class="alignnone size-large wp-image-69471" src="/wordpress/wp-content/uploads/2017/01/language-spreadsheet-1024x458.png" alt="language-spreadsheet" width="960" height="429" /></p>
+<p>Once you find the translated text you need, free plugins like <a href=https://marketplace.coronalabs.com/plugin/gbc-language-cabinet target="_blank">GBC Language Cabinet</a> can help you manage how to pick and display the correct text within your app.</p>
+<p><a href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">This spreadsheet</a> is a great example of &#8220;crowd-sourcing&#8221; and there is still work to be done &#8212; some languages are not yet complete, so we encourage you to help populate columns for languages which you&#8217;re fluent in.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">View the spreadsheet</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>HockeyApp plugin now available for Corona apps</title>
+		<link>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/</link>
+		<comments>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/#comments</comments>
+		<pubDate>Wed, 18 May 2016 20:08:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash reporting]]></category>
+		<category><![CDATA[hockeyapp]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[testing]]></category>
+
+		<guid isPermaLink="false">/?p=66827</guid>
+		<description><![CDATA[Our new HockeyApp plugin can help you make use of the HockeyApp testing and crash reporting service. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/05/hockey.png><img class="alignright wp-image-66860 size-thumbnail" style="margin: 2px 0px 10px 25px;" src="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png" alt="hockey" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png 150w, /wordpress/wp-content/uploads/2016/05/hockey-300x300.png 300w, /wordpress/wp-content/uploads/2016/05/hockey.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a><a href=https://www.hockeyapp.net/features/ target="_blank">HockeyApp</a> is a service from Microsoft that allows you to upload test builds of your iOS, Android, Windows, and OS X apps. Once uploaded, you can easily distribute them to your testers. HockeyApp also lets you provide release notes on what has changed and gather stats on downloads and other app metrics during the testing process. In addition, it supports crash reporting. All of these factors are where the Corona <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp plugin</a> comes into play.</p>
+<h3>Getting started</h3>
+<p>Like all third-party services, you will need to <a href=https://rink.hockeyapp.net/users/sign_up target="_blank">register</a> with HockeyApp. Once that step is complete, you can start setting up your apps, your testers, and begin deploying test builds. Since this is a Corona plugin, you will also need to add the plugin to your <code>build.settings</code> and <code>require()</code> it in <code>main.lua</code> (see our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp documentation</a> for details). Finally, you will need to <a href=https://store.coronalabs.com/plugin/hockeyapp target="_blank">activate the plugin</a> in the Corona Marketplace.</p>
+<h3>Features</h3>
+<p>For crash reporting, you simply need to initialize the plugin by calling the <a href=https://docs.coronalabs.com/plugin/hockey/init.html target="_blank">hockeyApp.init()</a> function with an app ID retrieved from the HockeyApp portal. If your app crashes during testing, the plugin will detect it and report the crash to the HockeyApp dashboard.</p>
+<p>While you can choose to have HockeyApp send your testers an email when there is an app update, you may prefer to have your app detect when a new version is available via the <a href=https://docs.coronalabs.com/plugin/hockey/checkForUpdate.html target="_blank">hockeyApp.checkForUpdate()</a> call. Similarly, you can un-register for updates with the <a href=https://docs.coronalabs.com/plugin/hockey/unRegisterForUpdate.html target="_blank">hockeyApp.unRegisterForUpdate()</a> call.</p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> plugin is simple &#8212; just add a few lines of code and let HockeyApp do the rest! You can find complete usage details for HockeyApp in our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">plugin documentation</a>, or discuss it further in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Check out Visual Studio Code &#8211; a free text editor from Microsoft</title>
+		<link>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/</link>
+		<comments>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/#comments</comments>
+		<pubDate>Wed, 20 Apr 2016 17:25:19 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<category><![CDATA[Visual Studio Code]]></category>
+
+		<guid isPermaLink="false">/?p=66537</guid>
+		<description><![CDATA[Check out the latest 3rd-party tool for Corona SDK: Microsoft Visual Studio Code, a text editor born from Visual Studio.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66538" src="/wordpress/wp-content/uploads/2016/04/500px-Visual_Studio_2013_Logo.svg_-145x150.png" alt="500px-Visual_Studio_2013_Logo.svg" width="145" height="150" />Corona developers are always looking for new tools to help improve their workflow.</p>
+<p>Many people have heard about Microsoft Visual Studio, an Integrated Development Environment (IDE) for building Microsoft applications, whether it be for Windows desktop or Windows Phone.</p>
+<p>To be clear, <a href=https://code.visualstudio.com/ target="_blank"><strong>Visual Studio Code</strong></a> &#8212; the topic of this announcement &#8212; is <em>not</em> the same thing as Visual Studio. Rather, it&#8217;s a text editor born from the full Visual Studio IDE. Why is this important? Two reasons:</p>
+<h3>1. It runs on OS X</h3>
+<p>While the full Visual Studio IDE is a Windows-based tool, <a href=https://code.visualstudio.com/ target="_blank">Visual Studio Code</a> has a native version for OS X. If you&#8217;re comfortable with the IDE in Windows, you&#8217;ll feel right at home when working in OS X.</p>
+<h3>2. It supports Corona SDK</h3>
+<p>Code highlighting is part of the standard Visual Studio Code editor, and an optional extension called <a href=https://marketplace.visualstudio.com/items?itemName=Tobiah.corona-tools target="_blank">Corona Tools</a> brings Corona&#8217;s documentation to the editor. Installing the extension gives you keyboard shortcuts to either open or search Corona Labs&#8217; documentation. While this is currently a new extension with limited functionality, feel free to reach out to the developer, <a href=http://www.tobiahz.com/ target="_blank">Tobiah Zarlez</a>, to request additional features.</p>
+<h3>In summary</h3>
+<p>We love seeing new third-party tools being developed for Corona SDK. If you would like to see one featured on our <a href=/resources/third-party-tools-and-services/>Third-Party Tools and Services page</a>, please let us know in the <a href=https://forums.coronalabs.com/forum/553-other-third-party-tools/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

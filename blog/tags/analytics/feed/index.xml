@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Analytics &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/analytics/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Analytics &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Free App Analytics powered by Kochava</title>
+		<link>/blog/2016/11/08/free-app-analytics-powered-by-kochava/</link>
+		<pubDate>Tue, 08 Nov 2016 20:30:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[attribution]]></category>
+		<category><![CDATA[Mobile Analytics]]></category>
+
+		<guid isPermaLink="false">/?p=68452</guid>
+		<description><![CDATA[One of our analytics/attribution partners, Kochava, has introduced a new service called "Free App Analytics" which brings their powerful analytics engine to app developers and app marketers for free. Learn more about this great tool to measure your app's success.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/11/faa.png><img class="alignright wp-image-68683 size-thumbnail" style="margin: 5px 0px 20px 30px;" src="/wordpress/wp-content/uploads/2016/11/faa-150x115.png" width="150" height="115" /></a>One of our mobile analytics/attribution partners, <a href=https://www.kochava.com/ target="_blank">Kochava</a>, has introduced a new service called <strong>Free App Analytics</strong> which brings their powerful analytics engine to app developers and app marketers for free.</p>
+<p>In today’s hyper-competitive and complex mobile marketing ecosystem, app developers generally can&#8217;t afford to fly blind. Free App Analytics removes the cost barrier and gives all app developers access to the most advanced measurement and analytics platform in the world. And, when your app grows to where you need access to Kochava&#8217;s top-tier features, they support zero-impact migration from Free App Analytics to Kochava Enterprise.</p>
+<p>“Mobile marketing is a complex business, and there is no shortage of providers and solutions claiming to give you the edge over the competition with their proprietary tools,” said Charles Manning, CEO of Kochava. “Through Free App Analytics, we are able to make the Kochava platform available to a wider audience, especially those who are learning the mechanics and reacting to the dynamics involved in the mobile marketing ecosystem for the first time. This release changes the rules of engagement across the ecosystem by giving the advertiser total transparency, control and access to the metrics they need to measure and react to be successful in the space – all without the cost typically associated with this level of information and precision.”</p>
+<p>Free App Analytics provides advertisers with a rich suite of features unique to the Kochava platform, including Media Guide, a comprehensive global index of thousands of integrated ad networks allowing discovery, filtering, and selection to match an advertiser’s audience preferences.</p>
+<p>Post-install event tracking gives advertisers insight to user actions that are meaningful and relevant to their key performance indicators, and the platform’s real-time analytics provide unparalleled capability for row-level cohort and segment creation based on unlimited customizable criteria.</p>
+<h3>Getting started</h3>
+<p>To take advantage of Free App Analytics, sign up through Kochava&#8217;s <a href=https://www.freeappanalytics.com/sign-up/ target="_blank">Free App Analytics</a> dashboard (different than Kochava&#8217;s normal portal). Then, in your Corona-based app, include the plugin in your <code>build.settings</code> and <code>require()</code> it in modules where you need it. From there, consult the <a href=https://docs.coronalabs.com/plugin/kochava-app-analytics/index.html target="_blank">plugin documentation</a> for usage details.</p>
+<p>Comments or feedback? Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Forums</a> to discuss this great addition to our plugin suite.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>GameAnalytics plugin – analytics for mobile games</title>
+		<link>/blog/2016/10/26/new-game-analytics-plugin-for-corona-sdk/</link>
+		<pubDate>Wed, 26 Oct 2016 15:19:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[game analytics]]></category>
+		<category><![CDATA[Mobile Analytics]]></category>
+
+		<guid isPermaLink="false">/?p=68504</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of a new GameAnalytics plugin to track important app events and better understand player behavior. Read on to learn more about this great analytics plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-68525" style="margin: 6px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-150x150.png" alt="ga_circle_logo_black" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-150x150.png 150w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-300x300.png 300w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-768x768.png 768w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-1024x1024.png 1024w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-570x570.png 570w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-500x500.png 500w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-700x700.png 700w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black.png 1298w" sizes="(max-width: 120px) 100vw, 120px" />Corona Labs is pleased to announce the availability of a <em>new</em> <a href=http://www.gameanalytics.com/ target="_blank">GameAnalytics</a> plugin to help you track events in your mobile game, add context to those events, and better understand user behavior. Created as a free service &#8220;by game developers for game developers,&#8221; the GameAnalytics team understands the type of important events that you need to capture and the best way to track them.</p>
+<p><iframe width="560" height="335" src="https://www.youtube.com/embed/ZC7RIDDFK2Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>This popular mobile-first game analytics service lets you collect metrics using a variety of new custom event types like <em>Progression</em>, <em>Resource</em>, <em>Business</em>, and <em>Design</em>. Custom events can be used to track player progression, spot sticking points, and optimize gameplay so players can reach their moment of joy faster. In-game economy and virtual goods can also be measured to help you understand when you may be giving out too many rewards.</p>
+<p><img class="alignnone size-large wp-image-68564" src="/wordpress/wp-content/uploads/2016/10/GAscreenshot-1024x628.png" alt="gascreenshot" width="960" height="589" />GameAnalytics offers pre-set dashboards for each event type and you can add customized widgets to your dashboard using a drag-and-drop query builder. Perhaps best of all, it&#8217;s 100% free!</p>
+<p>To get started with GameAnalytics, <a href=https://go.gameanalytics.com/signup target="_blank">create a GameAnalytics account</a> and <a href=https://marketplace.coronalabs.com/plugin/game-analytics target="_blank">activate the plugin</a> in the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. Then, follow the <a href=https://github.com/GameAnalytics/GA-SDK-CORONA/wiki target="_blank">GameAnalytics documentation</a> to get your Corona app set up to track events in real time.</p>
+<p>Note that this new plugin effectively replaces the previous, now-deprecated version of GameAnalytics. The previous version will eventually be removed from our servers entirely, so any developer who is using the older version is highly encouraged to update to this new plugin as soon as possible.</p>
+<p>Questions or comments? Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a> to discuss this powerful addition to the growing list of <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> plugins!</p>
+]]></content:encoded>
+	<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-10-26-gameanalytics-tom-kinniburgh.mp3" length="27966695" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>New Flurry Analytics plugin now available</title>
+		<link>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/</link>
+		<comments>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 12 Apr 2016 21:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Flurry]]></category>
+		<category><![CDATA[Statistics]]></category>
+
+		<guid isPermaLink="false">/?p=66437</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of a new Flurry Analytics plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. Read further to learn more about this powerful tool.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66441" src="/wordpress/wp-content/uploads/2016/04/flurrybanner.png" alt="flurrybanner" width="239" height="64" />Corona Labs is pleased to announce the availability of the new <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">Flurry Analytics</a> plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. It can also tell you how much time people spend doing tasks and record errors that occur. Armed with this data, you can improve how your app flows and provide a better experience to your users.</p>
+<p>If you are migrating from the previous Flurry plugin, there are a few things to be aware of. Everything is covered in our <a href=https://docs.coronalabs.com/plugin/flurry-analytics/migration.html target="_blank">migration guide</a>, but most importantly:</p>
+<ul>
+<li>You need to update your <code>build.settings</code> file and change the plugin provider from <code>["CoronaProvider.analytics.flurry"]</code> to <code>["plugin.flurry.analytics"]</code>.</li>
+<li>For Android users, the <code>["plugin.google.play.services"]</code> plugin must now be included. Previously you were required to use the Google Play Game Services plugin (<code>["CoronaProvider.gameNetwork.google"]</code>). Note that if you are using any ad provider plugins on Android, you may already have this additional plugin included.</li>
+</ul>
+<p>Other important additions to this plugin include a required listener function for <a href=https://docs.coronalabs.com/plugin/flurry-analytics/event/analyticsRequest/index.html target="_blank">analyticsRequest</a> events, specified as part of the <a href=https://docs.coronalabs.com/plugin/flurry-analytics/init.html target="_blank">flurryAnalytics.init()</a> call. You can also enable crash analytics and set logging levels in the same function. Finally, new functions have been added to measure timed events &#8212; see <a href=https://docs.coronalabs.com/plugin/flurry-analytics/startTimedEvent.html target="_blank">flurryAnalytics.startTimedEvent()</a> and <a href=https://docs.coronalabs.com/plugin/flurry-analytics/endTimedEvent.html target="_blank">flurryAnalytics.endTimedEvent()</a>.</p>
+<p>If you are new to Flurry, you will need to sign up <a href=https://developer.yahoo.com/analytics/ target="_blank">here</a> and get an API key. Once you&#8217;re registered, you can use the same site to see your app&#8217;s statistics as they are collected.</p>
+<p>The complete <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">documentation</a> for the Flurry Analytics plugin can be found <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">here</a>.</p>
+<p>Want to discuss further? Please join us in the <a href=https://forums.coronalabs.com/forum/654-corona-store-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Announcing the Google Analytics plugin</title>
+		<link>/blog/2016/02/15/announcing-the-google-analytics-plugin/</link>
+		<comments>/blog/2016/02/15/announcing-the-google-analytics-plugin/#comments</comments>
+		<pubDate>Mon, 15 Feb 2016 23:40:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65734</guid>
+		<description><![CDATA[Corona Labs is pleased to introduce the Google Analytics plugin. This plugin can be used to gain valuable insight about your users and how they interact with your apps.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65732" src="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png" alt="EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png 150w, /wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Under the category of &#8220;<em>The more you know,</em>&#8221; we&#8217;ve increased our suite of analytics engine support with the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin.</p>
+<p>In addition to basics like the number of users and sessions, you get a wealth of demographic information about your users such as city, country, language, and &#8220;new&#8221; versus &#8220;returning&#8221; users. You also get detailed information like the app version, which OS it&#8217;s running on, the device type, screen resolution, and more. Finally, you can track custom events within the app, for example the user&#8217;s actions, which UI elements are interacted with the most, and more.</p>
+<h3>Setting up Google Analytics</h3>
+<p>To use Google Analytics, you must first set up an account with Google at <a href=http://www.google.com/analytics/ target="_blank">www.google.com/analytics/</a>. You can have up to 100 <strong>accounts</strong> under a single login, each account can have up to 50 <strong>properties</strong>, and each property can have up to 25 <strong>views</strong>. While each of your apps could be its own account, you&#8217;ll probably just need one account with each app as a unique property of it.</p>
+<p>To begin, <strong>activate</strong> the Google Analytics plugin <a href=https://store.coronalabs.com/plugin/google-analytics target="_blank">here</a>.</p>
+<p>Next, you&#8217;ll need to include the plugin within the app&#8217;s <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.googleAnalytics&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, }
+        },
+    },
+}</pre><p>When you create a property in the Google Analytics dashboard &#8212; assigning the <strong>app name</strong> along with it &#8212; you&#8217;ll get a unique <strong>Tracking ID</strong> such as <code>UA-12345678-1</code>. You&#8217;ll need to pass both of these values to the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/init.html target="_blank">googleAnalytics.init()</a> API. For example:</p><pre class="crayon-plain-tag">local googleAnalytics = require( &quot;plugin.googleAnalytics&quot; )
+
+googleAnalytics.init( &quot;Mega Race 3000&quot;, &quot;UA-12345678-1&quot; )</pre><p></p>
+<h3>Logging analytics events</h3>
+<p>While simply setting up Google Analytics will give you insight into various demographic and device-related details as mentioned above, you&#8217;ll probably want to gather specific data about the user&#8217;s actions <em>within</em> the app. Some examples include:</p>
+<ul>
+<li>Checking how long users play the game. If the results aren&#8217;t meeting your expectations, you may consider adding incentives or additional features.</li>
+<li>Checking how often &#8212; and how long &#8212; users play a specific level in the game.</li>
+<li>Checking which options/settings are the most popular among a wide user demographic.</li>
+</ul>
+<p>All of these examples involve <strong>logging events</strong> with Google Analytics. To log an event, simply call the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( category, action, label )</pre><p>The first parameter, <code>category</code>, is a required parameter used to create a &#8220;group&#8221; of events within Google Analytics. For example, a category such as <code>"userAction"</code> may be used to track actions performed by the user. Or, if your app interacts with a server and data is processed by the server, you might want a category named <code>"serverAction"</code>.</p>
+<p>The second parameter, <code>action</code>, is a required parameter which associates a specific action with the category. For instance, if the user interacts with a button in your game, you could log an action of <code>"buttonPressed"</code> in the <code>"userAction"</code> category.</p>
+<p>The third parameter, <code>label</code>, is an optional parameter which lets you define additional information for the action, for instance the specific button which was pressed. For example, if the user pressed the &#8220;Play&#8221; button in your game, your <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> call might look like this:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( &quot;userAction&quot;, &quot;Button pressed&quot;, &quot;Play&quot; )</pre><p>Ultimately, it&#8217;s your choice on which events should be logged, when, and why. We recommend a certain level of discretion in terms of which events/actions will be useful for analyzing user behavior in your app.</p>
+<h3>Tracking screens/scenes</h3>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin features an additional tracking call which is used to track different <strong>screens</strong>. Google Analytics&#8217; heritage is based on tracking website activity, which is &#8220;screen&#8221;-oriented, but the concept of screens can easily be compared to app <strong>scenes</strong>. This can give you insight on how frequently users visit particular scenes in your app, for example how often the &#8220;settings&#8221; scene is visited or whether users even view your &#8220;help&#8221; scene.</p>
+<p>To track screen usage, use the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logScreenName.html target="_blank">googleAnalytics.logScreenName()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logScreenName( screenName )</pre><p>This call simply requires a string which names your screen/scene. If you are using Corona&#8217;s <a href=https://docs.coronalabs.com/daily/guide/system/composer/index.html target="_blank">Composer</a> scene management library, you can simply add one line of code in the <code>scene:show()</code> function&#8217;s <code>"did"</code> phase to log the screen/scene name with Google Analytics:</p><pre class="crayon-plain-tag">function scene:show( event )
+    if ( event.phase == &quot;did&quot; ) then
+        -- Log the screen/scene name with Google Analytics
+        googleAnalytics.logScreenName( composer.getSceneName( &quot;current&quot; ) )
+    end
+end</pre><p></p>
+<h3>Additional notes</h3>
+<p>Like any analytics engine, data isn&#8217;t very useful until you&#8217;ve accumulated enough to analyze. A majority of the reports you can view need &#8220;aggregated&#8221; data, although some information is available &#8220;live.&#8221;</p>
+<p>If you intend to track user information, you will likely need to include a <strong>privacy policy</strong> in your app or on your website so that users can learn about what is being tracked. If you require a privacy policy, please search the web for a template that can be adapted to your company/app.</p>
+<h3>In summary</h3>
+<p>As you can see, the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin can be used to gain virtually any degree of insight about your apps, from user demographics to specific in-app usage patterns.</p>
+<p>To learn more about the Google Analytics plugin, please proceed to our <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">documentation</a>, and if you have further questions, please visit the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/15/announcing-the-google-analytics-plugin/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release</title>
+		<link>/blog/2013/09/04/new-public-release-2/</link>
+		<comments>/blog/2013/09/04/new-public-release-2/#comments</comments>
+		<pubDate>Wed, 04 Sep 2013 23:01:01 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[GameStick]]></category>
+		<category><![CDATA[nvidia shield]]></category>
+		<category><![CDATA[Ouya]]></category>
+		<category><![CDATA[socialkit]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=43816</guid>
+		<description><![CDATA[</a>Today, we are announcing our latest Public Release, 2013.1202. It's immediately available for <a href="https://developer.coronalabs.com/downloads/corona-sdk">download</a> for your <a href="/products/corona-sdk/">app development</a> pleasure!
+
+There are a lots of improvements in the <a href="https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202">release notes</a>, so I'll just highlight a few.]]></description>
+				<content:encoded><![CDATA[<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg><img src=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg alt="Ouya corona sdk" class="alignleft size-full wp-image-43820" /></a>Today, we are announcing our latest Public Release, 2013.1202. It&#8217;s immediately available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a> for your <a href=/products/corona-sdk/>app development</a> pleasure!</p>
+<p>There are a lots of improvements in the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202>release notes</a>, so I&#8217;ll just highlight a few.</p>
+<p>First, we&#8217;ve added Ouya, GameStick, and NVIDIA Shield support. This includes support for game controllers and joysticks on those devices. We&#8217;ve also added general support for HID-based devices on Android, so you can connect your keyboard, mouse, and touchpad. If you have a MOGA Pro or a Sony PS3 controller, those are HID-based and work as well!</p>
+<p>While we&#8217;re on the gaming theme, we&#8217;ve added real-time multiplayer support via Google Play game services on Android. And we&#8217;ve added turn-based multiplayer support via Game Center on iOS. We&#8217;ve also partnered with <a href=http://www.coronalabs.com/blog/2013/08/15/guest-piece-photon-cloud-corona-sdk-a-dream-team-for-cross-platform-multiplayer-games/>Photon Cloud</a> for real-time multiplayer support across iOS and Android.</p>
+<p>For more business-oriented apps, we&#8217;ve added several features like left/center/right alignment to &#8216;display.newText&#8217;. We&#8217;ve also started to offer support for the iOS SocialKit framework. This is done via a plugin to the &#8216;native.showPopup&#8217; API that lets you post on Facebook, Twitter, and Weibo. We added Address Book popup as an iOS plugin as well.</p>
+<p>On the monetization and services side, our roster of 3rd party plugins continues to grow:</p>
+<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2.png><img src="http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2-216x300.png" alt="corona amplitude analytics" class="alignright size-medium wp-image-43818" /></a></p>
+<p>* Google Game Play Services<br />
+* Vungle<br />
+* CrossInstall<br />
+* AppRever<br />
+* Pinsight Media+</p>
+<p>Finally, the last thing I&#8217;ll highlight is we are upgrading our old analytics (a.k.a. LaunchPad) to <a href=https://amplitude.com/>Amplitude</a>. If you&#8217;ve ever played with other analytics services, one thing you know is that you can often wait a day or longer before you see data. As things scale up, you might experience a few hours delay, but Amplitude&#8217;s goal is to give you near real-time data!</p>
+<p>As part of this upgrade, we&#8217;ve also cleaned up the web dashboard. We think it&#8217;s a lot more usable and the information is presented in a manner that will help you understand your customers a lot better. During the transition, the old dashboard will not display your data properly.</p>
+<p>In terms of timing, the entire transition is happening right now, and we hope to have it completed by the end of September. The great thing is, you won&#8217;t have to do a thing to take advantage of the basic service — it&#8217;s free!</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/04/new-public-release-2/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Analytics: They&#8217;re Baaaaaaack!</title>
+		<link>/blog/2013/04/24/analytics-theyre-baaaaaaack/</link>
+		<comments>/blog/2013/04/24/analytics-theyre-baaaaaaack/#comments</comments>
+		<pubDate>Wed, 24 Apr 2013 23:52:46 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Analytics]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=32582</guid>
+		<description><![CDATA[Device Analytics are back!]]></description>
+				<content:encoded><![CDATA[<p>Device Analytics are back!<br />
+<a href=http://www.coronalabs.com/wp-content/uploads/2013/04/Screen-Shot-2013-04-24-at-3.27.38-PM.png><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/Screen-Shot-2013-04-24-at-3.27.38-PM-300x189.png" alt="Device Analytics Chart" class="alignnone size-medium wp-image-32586" /></a><br />
+After many adventures we&#8217;ve got a robust system that can handle the billions of sessions that Corona SDK apps generate each month.  We&#8217;re doing a staged rollout with the first available chart being <strong>Sessions by Device per Day</strong>. As you can see from the screen shot above, you&#8217;ll get a stacked chart that will show you the total number of sessions on the Y-axis and the sessions per device in colored bands.  You can hover over the chart to see individual daily session counts per device.  Click on a device name in the legend to toggle its inclusion in the chart.</p>
+<p>We eliminated the last gremlin in the works yesterday (2013-04-23) so that&#8217;s the first data you&#8217;ll see for some apps.  For other apps, there should be a full month of data.</p>
+<p>Get started on the <a href=https://developer.coronalabs.com/dashboard title="Dashboard">Dashboard</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/24/analytics-theyre-baaaaaaack/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

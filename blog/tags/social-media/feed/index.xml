@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>social media &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/social-media/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>social media &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #127</title>
+		<link>/blog/2016/06/12/from-the-forum-issue-127/</link>
+		<pubDate>Sun, 12 Jun 2016 16:52:47 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[camera]]></category>
+		<category><![CDATA[platform]]></category>
+		<category><![CDATA[sharing]]></category>
+		<category><![CDATA[social media]]></category>
+
+		<guid isPermaLink="false">/?p=67136</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Useful camera module</h3>
+<p>If you’ve been around the Corona forums as much as some &#8220;old timers&#8221; have, you’ll know the affection we have for <strong>Gymbyl Coding</strong>’s time-tested <a href=https://gist.github.com/GymbylCoding/8675733 target="_blank">Perspective</a> game world camera module. Lightweight, simple to implement, tastes great, <em>and</em> less filling: a perfect recipe for an indispensable utility!</p>
+<p>There are some times, however, when you have to think outside the box to obtain a proper solution, and <strong>Roaming Gamer</strong> has a camera template that is perfect as a base for in-game object tracking.</p>
+<p>According to the author, an updated version is available in his <a href=http://roaminggamer.com/makegames/ target="_blank">EAT Framework</a> which is a handy suite of tools in its own right. Check out the <a href=https://forums.coronalabs.com/topic/63503-rg-camera-problem/ target="_blank">original thread</a> on how you can get a handle on your game&#8217;s camera.</p>
+<h3>ZeroBrane IDE updated</h3>
+<p>IDEs are, in many cases, considered essential in the success of a development venture. Gone are the days when coders type away in a plain text editor without common conveniences like auto-completion and function libraries.</p>
+<p>Corona SDK has been blessed to have quite a few IDE suitors vying for the hands of developers. Recently, <a href=https://studio.zerobrane.com/ target="_blank">ZeroBrane</a> has emerged from the pack, showing robustness of utilization, a relatively low learning curve, and active support from the original developer.</p>
+<p>The main base has just been updated, bringing with it some heavyweight features that add to the functionality of an already mature IDE. Click through to the <a href=https://forums.coronalabs.com/topic/61409-ann-zerobrane-studio-lua-ide-v130-is-released-with-updated-corona-api-and-markers-panel/ target="_blank">original link</a> to get up to date.</p>
+<h3>Native sharing and differences between OSes</h3>
+<p>Social sharing has gotten a lot of attention in recent weeks. The Corona <a href=https://store.coronalabs.com/plugin/twitter target="_blank">Twitter plugin</a> from <strong>Jason Schroeder</strong> is definitely useful and functionally rock-solid, but Facebook’s murky procedures and current setup can confuse even the savviest of veterans.</p>
+<p>I’ve gathered a couple of threads that discuss the topic in detail. <a href=https://forums.coronalabs.com/topic/63443-is-it-possible-to-share-scores-on-android-with-sms-whatsapp-twiteretc-if-so-how/ target="_blank">This one</a> includes a useful snippet of sample code to achieve the sharing that eludes some Corona developers. Check out <a href=https://forums.coronalabs.com/topic/63483-facebook-sharing-is-not-working-in-ios-in-webpopup/ target="_blank">this thread</a> as well, and remember to ask any questions that come to mind!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

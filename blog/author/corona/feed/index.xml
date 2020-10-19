@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corona &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/corona/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>corona &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Welcome Chartboost and AdColony to our monetization family</title>
+		<link>/blog/2016/08/31/welcome-chartboost-and-adcolony/</link>
+		<comments>/blog/2016/08/31/welcome-chartboost-and-adcolony/#comments</comments>
+		<pubDate>Wed, 31 Aug 2016 18:27:21 +0000</pubDate>
+		<dc:creator><![CDATA[corona]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=67827</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of Chartboost and AdColony, our two newest monetization plugins. Learn more about these very popular ad networks.]]></description>
+				<content:encoded><![CDATA[<p>&nbsp;</p>
+<p><a href=/wordpress/wp-content/uploads/2016/08/chartboost-adcolony.png><img class="wp-image-67841 alignright" style="margin: 4px 0px 10px 20px;" src=/wordpress/wp-content/uploads/2016/08/chartboost-adcolony.png alt="chartboost-adcolony" width="200" height="81" /></a>Outside of the 12+ other monetization plugins now available, Corona is also proud to announce support for <a href=https://docs.coronalabs.com/plugin/chartboost/index.html target="_blank">Chartboost</a> and <a href=https://docs.coronalabs.com/plugin/adcolony/index.html target="_blank">AdColony</a>. As some of you know, these ad networks are quite possibly the most heavily requested by the community and we are pleased to offer them officially. As with our other monetization plugins, these will be kept up-to-date as their underlying SDKs are updated to ensure the best user experience.</p>
+<p>Unlike our other monetization plugins, integration of Chartboost or AdColony works slightly differently. In order to use them in your projects, you will first need to activate <a href=https://docs.coronalabs.com/plugin/coronaads/index.html target="_blank">Corona Ads</a>, create an app within the Corona Ads dashboard, and then activate the app for Chartboost and/or AdColony.</p>
+<p>To be clear, you do not need to use Corona Ads &#8212; simply add your apps and activate these third-party ad networks within the Corona Ads dashboard. You also do not need an account with Chartboost or AdColony; you will receive payment for user activity from Corona Labs instead of from the ad networks directly.</p>
+<p>Similar to our <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">AppLovin</a> and <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugins (quite popular in the community as well), Corona will take a small 5% commission before paying the remaining 95% to you, the developer.</p>
+<p>As always, the Corona Labs team is dedicated to ensuring the quality of builds while making the overall process of developing apps easier and more profitable. That&#8217;s why we are excited to offer you <a href=http://marketplace.coronalabs.com/plugins/monetization target="_blank">over a dozen monetization plugins</a> &#8212; and now <a href=https://docs.coronalabs.com/plugin/chartboost/index.html target="_blank">Chartboost</a> and <a href=https://docs.coronalabs.com/plugin/adcolony/index.html target="_blank">AdColony</a> &#8212; as improved ways to monetize your apps. Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a> to discuss these great additions.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/31/welcome-chartboost-and-adcolony/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>grid &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/grid/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>grid &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Working With a Grid Layout</title>
+		<link>/blog/2015/04/07/tutorial-working-with-a-grid-layout/</link>
+		<comments>/blog/2015/04/07/tutorial-working-with-a-grid-layout/#comments</comments>
+		<pubDate>Tue, 07 Apr 2015 22:09:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[grid]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=62021</guid>
+		<description><![CDATA[In this tutorial, learn how to position and move objects on a board for games like chess, checkers, and other grid-based games.]]></description>
+				<content:encoded><![CDATA[<p>Many games use a grid where pieces or items are positioned in rows and columns. Classic examples would be chess or checkers, but even more modern games like <em>Candy Crush</em>™ position the pieces in a grid as well.</p>
+<p>Mechanically, a grid is nothing more than a two-dimensional array, and each element in the array represents a single spot on the grid. In Lua, two-dimensional arrays are basically a table in which each child table represents a row for the grid, and each entry in that row table represents a column index within the row.</p>
+<p>Let&#8217;s look at the core Lua code used in a <a href=https://www.dropbox.com/s/zg4ep4zhnbh1h3w/GridProject.zip?dl=0 target="_blank" rel="noopener">demo project</a> which you should download and experiment with alongside this tutorial.</p>
+<p>View the code on <a href=https://gist.github.com/8387deec14650adf03a4>Gist</a>.</p>
+<p>First, we define some constants: the number of rows and columns as <code>GRID_WIDTH</code> and <code>GRID_HEIGHT</code> respectively. We also define the width and height of each cell on the grid as <code>CELL_WIDTH</code> and <code>CELL_HEIGHT</code>. Following this, we create an empty table for the overall grid, then we execute a loop for the total number of rows in the grid (<code>GRID_HEIGHT</code>) and, in that index position, we create another empty table which will represent the overall row.</p>
+<p>Next, we place the grid&#8217;s image on the screen and position it in the center of the content area. Then we create two more constants for offsetting pieces relative to the image. Here, we calculate <code>gbOffsetX</code> and <code>gbOffsetY</code> based on the grid image&#8217;s location and size.</p>
+<h3>Referencing Cells</h3>
+<p>Because we have effectively created a &#8220;stack of rows,&#8221; a specific cell must be referenced in a <code>[row][column]</code> manner as follows:</p>
+<p><code>local somePiece = grid[4][5]</code></p>
+<p>This code will reference the cell 5 positions from the left (5th column) and 4 positions from the top (4th row). Thus, the row value comes first and the column value second.</p>
+<p>Now conceptually, it may be more logical to reference cell positions as an <code>x,y</code> coordinate position, or in other words, a &#8220;column, row&#8221; format. For example, the top-left space on a checkers board would be <code>1,1</code> and the top-right space would be <code>8,1</code> (remember that checkers uses an 8×8 board). Thus, when calling the <code>spawnPiece()</code> function, two parameters, <code>xPos</code> and <code>yPos</code>, are expected to represent the position in the grid.</p>
+<h3>Spawning Pieces</h3>
+<p>Within the actual <code>spawnPiece()</code> function, we first validate the parameters passed in. This includes checking the piece type and ensuring that the cell position is not outside the range (size) of the grid. If the validation succeeds, we generate the piece&#8217;s display object and store the piece&#8217;s position on the board as attributes of that object. Finally, we place the piece in the actual screen position (pixel coordinates) based on the constants we defined earlier.</p>
+<h3>Moving Pieces</h3>
+<p>The next function is used to move a piece. In this example, we test this function by calling it after a timer of 2 seconds, but this would likely be done via a touch, swipe, selecting the piece and tapping its destination, or any number of other methods.</p>
+<p>In any case, within the <code>movePiece()</code> function, we first validate that the requested position is within range of the grid and confirm that the position is not occupied by another piece. If the validation passes, we move the piece&#8217;s position within the <code>grid</code> table and then visually slide (transition) the piece to the new position.</p>
+<h3>Conclusion</h3>
+<p>As shown in this tutorial, it&#8217;s simple to use a two-dimensional array to create a grid, store the position of pieces within the array, and use basic math to position and move the visual pieces based on logical coordinates. Remember to download the <a href=https://github.com/coronalabs/GridLayout target="_blank" rel="noopener">demo project</a> to experiment with and edit for use in your own grid-based app project.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/07/tutorial-working-with-a-grid-layout/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

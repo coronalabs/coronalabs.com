@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Tutorial: Implementing &quot;SendTo&quot; with CoronaCards and Swift | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/00d0de513e0511587eebe2100ad2cfec.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Design[107,200] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="In this tutorial, we&#039;ll implement the native &quot;SendTo&quot; feature in a CoronaCards-based app, allowing for sharing via Twitter, Facebook, and other services, as well as access to features like printing and AirDrop." />
+
+<meta name="keywords"  content="coronacards,swift,tutorial,xcode,uncategorized" />
+
+<link rel="canonical" href="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/" />
+<meta property="og:title" content="Tutorial: Implementing &quot;SendTo&quot; with CoronaCards and Swift | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2014/12/swift.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="In a previous tutorial, we showed you how to use CoronaCards with Swift. In this tutorial, we&#039;ll implement a native feature in a CoronaCards-based app: the SendTo button, recognizable as the following: In many iOS apps, when you press the SendTo button, it brings up a &quot;sharing panel&quot; that lets you share your information via Twitter, Facebook, and other services, as well as providing access to features like printing and AirDrop. In native terms, this panel is known as an UIActivityViewController. Conveniently, this can be implemented using CoronaCards. Before you proceed, ensure that you have already installed the CoronaCards templates from the previous tutorial and that you can build the project presented therein. Setting Up First, create a new Xcode project using the CoronaCards &quot;Single View&quot; template. Then, give your project a name and copy your CoronaCards license.ccdata file to the core project folder where main.lua is located. The Corona Side The CoronaCards template provides you" />
+<meta property="article:published_time" content="2014-12-30T20:00:32Z" />
+<meta property="article:modified_time" content="2017-11-17T15:35:35Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Tutorial: Implementing &quot;SendTo&quot; with CoronaCards and Swift | Corona Labs" />
+<meta name="twitter:description" content="In a previous tutorial, we showed you how to use CoronaCards with Swift. In this tutorial, we&#039;ll implement a native feature in a CoronaCards-based app: the SendTo button, recognizable as the following: In many iOS apps, when you press the SendTo button, it brings up a &quot;sharing panel&quot; that lets you share your information via Twitter, Facebook, and other services, as well as providing access to features like printing and AirDrop. In native terms, this panel is known as an UIActivityViewController. Conveniently, this can be implemented using CoronaCards. Before you proceed, ensure that you have already installed the CoronaCards templates from the previous tutorial and that you can build the project presented therein. Setting Up First, create a new Xcode project using the CoronaCards &quot;Single View&quot; template. Then, give your project a name and copy your CoronaCards license.ccdata file to the core project folder where main.lua is located. The Corona Side The CoronaCards template provides you" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2014/12/swift.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2014/12/swift.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-abcc55149ca8cb52d8f1822a14eae3f6.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Tutorial: Implementing &#8220;SendTo&#8221; with CoronaCards and Swift Comments Feed" href="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/feed/" />
+
+
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='http://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='http://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-4552022b35861dabb02f434bab7a5022.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-3ba04419323e257d3ee6dc44877419ee.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-c03f8577f822f081d9a995c119ea872a.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-4f944b57b95a0aa2775f67af2ac7ced3.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2014\/12\/30\/tutorial-implementing-sendto-with-coronacards-and-swift\/","en":"\/blog\/2014\/12\/30\/tutorial-implementing-sendto-with-coronacards-and-swift\/","US":"\/blog\/2014\/12\/30\/tutorial-implementing-sendto-with-coronacards-and-swift\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-424ae6c56e085dc425b6003bc1c7b26b.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-9da262bd04693459328c75888687169c.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='iOS Build Improvements' href='/blog/2014/12/29/ios-build-improvements/' />
+<link rel='next' title='From the Forum &#8212; Issue #53' href='/blog/2015/01/02/from-the-forum-issue-53/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=60685' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body class="post-template-default single single-post postid-60685 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Tutorial: Implementing &#8220;SendTo&#8221; with CoronaCards and Swift</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-60685" class="post-60685 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-coronacards tag-swift tag-tutorial tag-xcode">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">30 December 2014<meta itemprop="interactionCount" content="UserComments: 7"/></span></p>
+						<h2 itemprop="name" class="entry_title">Tutorial: Implementing &#8220;SendTo&#8221; with CoronaCards and Swift</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/rob/">Rob Miracle</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/uncategorized/" rel="category tag">Uncategorized</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Tutorial%3A+Implementing+%26%238220%3BSendTo%26%238221%3B+with+CoronaCards+and+Swift&amp;p[url]=%2Fblog%2F2014%2F12%2F30%2Ftutorial-implementing-sendto-with-coronacards-and-swift%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2014/12/swift.png&amp;p[summary]=In+this+tutorial%2C+we%5C%27ll+implement+the+native+%5C%22SendTo%5C%22+feature+in+a+CoronaCards-based+app%2C+allowing+for+sharing+via+Twitter%2C+Facebook%2C+and+other+services%2C+as+well+as+access+to+features+like+printing+and+AirDrop.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=In+this+tutorial%2C+we%27ll+implement+the+native+%22SendTo%22+feature+in+a+CoronaCards-based+app%2C+allowing+for+sharing+via+/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2014%2F12%2F30%2Ftutorial-implementing-sendto-with-coronacards-and-swift%2F&amp;title=Tutorial%3A+Implementing+%26%238220%3BSendTo%26%238221%3B+with+CoronaCards+and+Swift&amp;description=In+this+tutorial%2C+we%27ll+implement+the+native+%22SendTo%22+feature+in+a+CoronaCards-based+app%2C+allowing+for+sharing+via+Twitter%2C+Facebook%2C+and+other+services%2C+as+well+as+access+to+features+like+printing+and+AirDrop.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2014%2F12%2Fswift.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p><img class="alignright size-full wp-image-60689" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2014/12/sharingpanel.jpg" alt="sharingpanel" width="200" height="356" />In a previous tutorial, we showed you how to use CoronaCards with Swift. In this tutorial, we&#8217;ll implement a native feature in a <a href=http://coronacards.com/ target="_blank">CoronaCards</a>-based app: the <strong>SendTo</strong> button, recognizable as the following:</p>
+<p><img class="alignnone wp-image-60686" src="/wordpress/wp-content/uploads/2014/12/sendTo.png" alt="sendTo" width="33" height="27" /></p>
+<p>In many iOS apps, when you press the <strong>SendTo</strong> button, it brings up a &#8220;sharing panel&#8221; that lets you share your information via Twitter, Facebook, and other services, as well as providing access to features like printing and AirDrop. In native terms, this panel is known as an <a href=https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIActivityViewController_Class/index.html target="_blank">UIActivityViewController</a>. Conveniently, this can be implemented using <a href=http://coronacards.com/ target="_blank">CoronaCards</a>.</p>
+<p>Before you proceed, ensure that you have already installed the CoronaCards templates from the previous tutorial and that you can build the project presented therein.</p>
+<h3>Setting Up</h3>
+<p>First, create a new Xcode project using the CoronaCards &#8220;Single View&#8221; template. Then, give your project a name and copy your CoronaCards <code>license.ccdata</code> file to the core project folder where <code>main.lua</code> is located.</p>
+<h3>The Corona Side</h3>
+<p>The CoronaCards template provides you with the &#8220;HelloPhysics&#8221; sample app as a starting point, and this tutorial will build upon it. Our &#8220;SendTo&#8221; Corona app will provide a button to invoke the sharing, but first we need something to share. Toward this end, the app will capture the screen using <a href=http://docs.coronalabs.com/api/library/display/captureScreen.html target="_blank">display.captureScreen()</a> and save it to a temporary file using <a href=http://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a>. Then, the code will send an event to the native side where the <code>UIActivityViewController</code> will be shown, and this event will contain a text message, the captured image, and a URL. When the controller finishes, it will trigger an event back in the Corona side that will tell your app if it was completed and what service was chosen. Finally, a <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> object will be used to show the results.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e05a92ee84178392287" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+---------------------------------------------------------------------------------------
+-- A simple physics example in 8 lines!
+---------------------------------------------------------------------------------------
+
+local physics = require( "physics" )
+--
+-- Hello Physics Sample app
+--
+physics.start()
+
+local sky = display.newImage( "sky.png", 160, 195 )
+local ground = display.newImage( "ground.png", 160, 445 )
+
+local crate = display.newImage( "crate.png", 180, -50 )
+crate.rotation = 5
+
+physics.addBody( ground, "static", { friction=0.5, bounce=0.3 } )
+physics.addBody( crate, { density=3.0, friction=0.5, bounce=0.3 } )
+
+--
+-- Set up the share "button" and result text object
+--
+local shareText  -- Forward declare the button
+local resultText = display.newText( "", display.contentCenterX, 20,  "HelveticaNeue", 20 )
+
+--
+-- Set up the communications to Swift
+--
+local function handleTap( event )
+    --
+    -- Capture the screen
+    -- Also, hide the button initially
+    --
+    shareText.isVisible = false
+    local screen = display.captureScreen( false )
+    --
+    -- Save the capture to the temporary directory
+    --
+    display.save( screen, { filename="screencapture.jpg", baseDir=system.TemporaryDirectory, isFullResolution=true, backgroundColor={0,0,0,0} } )
+    screen:removeSelf()
+    screen = nil
+    --
+    -- Show the button
+    --
+    shareText.isVisible = true
+
+    local event = {
+        name = "coronaView",
+        message = "I just watched Hello Physics!",
+        image = { filename="screencapture.jpg", baseDir=system.TemporaryDirectory },
+        url = ""
+    }
+    -- Dispatch the data to the global Runtime object
+    Runtime:dispatchEvent( event )
+    return true
+end
+
+shareText = display.newText( "Share", display.contentCenterX, 200, "HelveticaNeue", 24 )
+shareText:addEventListener( "tap", handleTap )
+shareText.x = display.contentCenterX
+shareText.y = display.contentHeight - 15
+
+--
+-- Set up a listener to handle return event from Swift
+--
+local function sendToComplete( event )
+    print( "sendToComplete" )
+    print( event.name )  -- String value of "sendTo"
+    print( event.complete )  -- Boolean of true or false
+    print( event.activity )  -- Activity name
+
+    if ( event.complete ) then
+        resultText.text = "Shared by " .. event.activity
+    else
+        resultText.text = "Cancelled"
+    end
+    return true
+end
+
+Runtime:addEventListener( "sendTo", sendToComplete )
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-2">2</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-4">4</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-6">6</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-8">8</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-10">10</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-12">12</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-14">14</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-16">16</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-18">18</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-20">20</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-22">22</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-24">24</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-26">26</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-28">28</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-30">30</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-32">32</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-34">34</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-36">36</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-38">38</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-40">40</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-42">42</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-44">44</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-46">46</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-48">48</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-50">50</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-52">52</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-54">54</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-56">56</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-58">58</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-60">60</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-62">62</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-64">64</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-66">66</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-68">68</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-70">70</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-71">71</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-72">72</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-73">73</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-74">74</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-75">75</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-76">76</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-77">77</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-78">78</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-79">79</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee84178392287-80">80</div><div class="crayon-num" data-line="crayon-5f8e05a92ee84178392287-81">81</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-1"><span class="crayon-c">---------------------------------------------------------------------------------------</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-2"><span class="crayon-c">-- A simple physics example in 8 lines!</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-3"><span class="crayon-c">---------------------------------------------------------------------------------------</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-4">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-5"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">physics</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">require</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"physics"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-6"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-7"><span class="crayon-c">-- Hello Physics Sample app</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-8"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-9"><span class="crayon-v">physics</span><span class="crayon-sy">.</span><span class="crayon-e">start</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-10">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-11"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">sky</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newImage</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"sky.png"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">160</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">195</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-12"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">ground</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newImage</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"ground.png"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">160</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">445</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-13">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-14"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">crate</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newImage</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"crate.png"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">180</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-cn">50</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-15"><span class="crayon-v">crate</span><span class="crayon-sy">.</span><span class="crayon-v">rotation</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-16">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-17"><span class="crayon-v">physics</span><span class="crayon-sy">.</span><span class="crayon-e">addBody</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">ground</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"static"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">friction</span><span class="crayon-o">=</span><span class="crayon-cn">0.5</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">bounce</span><span class="crayon-o">=</span><span class="crayon-cn">0.3</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-18"><span class="crayon-v">physics</span><span class="crayon-sy">.</span><span class="crayon-e">addBody</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">crate</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">density</span><span class="crayon-o">=</span><span class="crayon-cn">3.0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">friction</span><span class="crayon-o">=</span><span class="crayon-cn">0.5</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">bounce</span><span class="crayon-o">=</span><span class="crayon-cn">0.3</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-19">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-20"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-21"><span class="crayon-c">-- Set up the share "button" and result text object</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-22"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-23"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">shareText</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">-- Forward declare the button</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-24"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">resultText</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newText</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">""</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-v">contentCenterX</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">20</span><span class="crayon-sy">,</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"HelveticaNeue"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">20</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-25">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-26"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-27"><span class="crayon-c">-- Set up the communications to Swift</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-28"><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-29"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-e">handleTap</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-30"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-31"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Capture the screen</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-32"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Also, hide the button initially</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-33"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-34"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">shareText</span><span class="crayon-sy">.</span><span class="crayon-v">isVisible</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">false</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-35"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">screen</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">captureScreen</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-r">false</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-36"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-37"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Save the capture to the temporary directory</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-38"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-39"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">save</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">screen</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">filename</span><span class="crayon-o">=</span><span class="crayon-s">"screencapture.jpg"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">baseDir</span><span class="crayon-o">=</span><span class="crayon-v">system</span><span class="crayon-sy">.</span><span class="crayon-v">TemporaryDirectory</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">isFullResolution</span><span class="crayon-o">=</span><span class="crayon-r">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">backgroundColor</span><span class="crayon-o">=</span><span class="crayon-sy">{</span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-cn">0</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-40"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">screen</span><span class="crayon-o">:</span><span class="crayon-e">removeSelf</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-41"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">screen</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">nil</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-42"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-43"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Show the button</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-44"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-45"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">shareText</span><span class="crayon-sy">.</span><span class="crayon-v">isVisible</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">true</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-46">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-47"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-48"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">name</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"coronaView"</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-49"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">message</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"I just watched Hello Physics!"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-50"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">image</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">filename</span><span class="crayon-o">=</span><span class="crayon-s">"screencapture.jpg"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">baseDir</span><span class="crayon-o">=</span><span class="crayon-v">system</span><span class="crayon-sy">.</span><span class="crayon-i">TemporaryDirectory</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-51"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">url</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">""</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-52"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-53"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Dispatch the data to the global Runtime object</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-54"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">Runtime</span><span class="crayon-o">:</span><span class="crayon-e">dispatchEvent</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-55"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">true</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-56"><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-57">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-58"><span class="crayon-v">shareText</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newText</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Share"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-v">contentCenterX</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">200</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"HelveticaNeue"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-59"><span class="crayon-v">shareText</span><span class="crayon-o">:</span><span class="crayon-e">addEventListener</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"tap"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">handleTap</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-60"><span class="crayon-v">shareText</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">contentCenterX</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-61"><span class="crayon-v">shareText</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-v">contentHeight</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-cn">15</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-62">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-63"><span class="crayon-c">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-64"><span class="crayon-c">-- Set up a listener to handle return event from Swift</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-65"><span class="crayon-c">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-66"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-e">sendToComplete</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-67"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"sendToComplete"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-68"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">name</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">-- String value of "sendTo"</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-69"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">complete</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">-- Boolean of true or false</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-70"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">activity</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">-- Activity name</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-71">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-72"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">complete</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-73"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">resultText</span><span class="crayon-sy">.</span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"Shared by "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-e">activity</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-74"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">else</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-75"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">resultText</span><span class="crayon-sy">.</span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"Cancelled"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-76"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-77"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">true</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-78"><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-79">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee84178392287-80"><span class="crayon-v">Runtime</span><span class="crayon-o">:</span><span class="crayon-e">addEventListener</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"sendTo"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">sendToComplete</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee84178392287-81">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0131 seconds] -->
+<p>Let&#8217;s inspect the key aspects of this code. Pressing the share &#8220;button&#8221; (<code>shareText</code>) triggers the object&#8217;s handler function, <code>handleTap()</code>, inside which the screen is captured. It then saves the captured screen to the <code>system.TemporaryDirectory</code> folder. Next, an event table is constructed. The native side listens for an event called <code>coronaView</code>, and it expects some text, a URL, and an image, so we add those items to the event table.  Finally, we dispatch the event to the global Runtime.</p>
+<p>When the <code>UIActivityViewController</code> finishes (see below), it sends an event back to the CoronaCards side.  This requires a Runtime event listener that we&#8217;ll call <code>sendTo</code>, and it will communicate whether the information was shared or if it was cancelled. If shared, it will return the method which was used.</p>
+<h3>The Swift Side</h3>
+<p>On the Swift side, we need to make several changes to the <code>ViewController.swift</code> file. For reference, the entire file looks like this:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8e05a92ee97948266336" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+//
+//  ViewController.swift
+//  ActivityController
+//
+//  Created by Rob Miracle on 12/28/14.
+//  Copyright (c) 2014 Corona Labs. All rights reserved.
+//
+
+import UIKit
+
+class ViewController : CoronaViewController, CoronaViewDelegate
+{
+	var coronaView: CoronaView! = nil
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		// Do any additional setup after loading the view, typically from a nib.
+
+		coronaView = self.view as CoronaView // Force downcast
+		coronaView.coronaViewDelegate = self
+		coronaView.run()
+	}
+
+	override func didReceiveMemoryWarning()
+	{
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+    
+    func coronaView(view: CoronaView, receiveEvent event: NSDictionary) -&gt; AnyObject? {
+        /*
+            event dictionary contains:
+            message = text to share
+            image = NSDictionary with file name and path
+            url = URL to post
+        */
+        
+        let message: String = event["message"] as String
+        let imageData = event["image"] as NSData
+        let image:UIImage = UIImage(data: imageData as NSData)!
+        let myURL:String = event["url"] as String
+        let url = NSURL(string: myURL)
+        
+        shareTextImageAndURL(sharingText: message, sharingImage: image, sharingURL: url)
+        return(true)
+    }
+    
+    func shareTextImageAndURL(#sharingText: String?, sharingImage: UIImage?, sharingURL: NSURL?) {
+        var sharingItems = [AnyObject]()
+        var view = self.view as CoronaView
+        
+        if let text = sharingText {
+            sharingItems.append(text)
+        }
+        if let image = sharingImage {
+            sharingItems.append(image)
+        }
+        if let url = sharingURL {
+            sharingItems.append(url)
+        }
+        
+        let activityViewController = UIActivityViewController(activityItems: sharingItems, applicationActivities: nil)
+
+        activityViewController.completionHandler = {(activityType, completed:Bool) in
+            if !completed {
+                println("cancelled")
+                let event = ["name":"sendTo", "complete":false]
+                view.sendEvent(event)
+                return
+            } else {
+                println("complete \(activityType)")
+                let event = ["name":"sendTo", "complete":true, "activity":activityType]
+                view.sendEvent(event)
+            }
+        }
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+    }
+}
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-2">2</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-4">4</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-6">6</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-8">8</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-10">10</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-12">12</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-14">14</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-16">16</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-18">18</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-20">20</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-22">22</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-24">24</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-26">26</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-28">28</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-30">30</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-32">32</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-34">34</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-36">36</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-38">38</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-40">40</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-42">42</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-44">44</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-46">46</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-48">48</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-50">50</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-52">52</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-54">54</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-56">56</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-58">58</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-60">60</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-62">62</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-64">64</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-66">66</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-68">68</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-70">70</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-71">71</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-72">72</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-73">73</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-74">74</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-75">75</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-76">76</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-77">77</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8e05a92ee97948266336-78">78</div><div class="crayon-num" data-line="crayon-5f8e05a92ee97948266336-79">79</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-1"><span class="crayon-o">/</span><span class="crayon-o">/</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-2"><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">ViewController</span><span class="crayon-sy">.</span><span class="crayon-v">swift</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-3"><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">ActivityController</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-4"><span class="crayon-o">/</span><span class="crayon-o">/</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-5"><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">Created </span><span class="crayon-e">by </span><span class="crayon-e">Rob </span><span class="crayon-e">Miracle </span><span class="crayon-i">on</span><span class="crayon-h"> </span><span class="crayon-cn">12</span><span class="crayon-o">/</span><span class="crayon-cn">28</span><span class="crayon-o">/</span><span class="crayon-cn">14.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-6"><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-e">Copyright</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">c</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-cn">2014</span><span class="crayon-h"> </span><span class="crayon-e">Corona </span><span class="crayon-v">Labs</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-e">All </span><span class="crayon-e">rights </span><span class="crayon-v">reserved</span><span class="crayon-sy">.</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-7"><span class="crayon-o">/</span><span class="crayon-o">/</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-8">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-9"><span class="crayon-e">import </span><span class="crayon-e">UIKit</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-10">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-11"><span class="crayon-e">class </span><span class="crayon-v">ViewController</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CoronaViewController</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">CoronaViewDelegate</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-12"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-13"><span class="crayon-h">	</span><span class="crayon-e">var </span><span class="crayon-v">coronaView</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CoronaView</span><span class="crayon-o">!</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">nil</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-14"><span class="crayon-h">	</span><span class="crayon-e">override </span><span class="crayon-e">func </span><span class="crayon-e">viewDidLoad</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-15"><span class="crayon-h">	</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-16"><span class="crayon-h">		</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">viewDidLoad</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-17"><span class="crayon-h">		</span><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-st">Do</span><span class="crayon-h"> </span><span class="crayon-e">any </span><span class="crayon-e">additional </span><span class="crayon-e">setup </span><span class="crayon-e">after </span><span class="crayon-e">loading </span><span class="crayon-e">the </span><span class="crayon-v">view</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">typically </span><span class="crayon-i">from</span><span class="crayon-h"> </span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-v">nib</span><span class="crayon-sy">.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-18">&nbsp;</div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-19"><span class="crayon-h">		</span><span class="crayon-v">coronaView</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-e">view </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-v">CoronaView</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-e">Force </span><span class="crayon-e">downcast</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-20"><span class="crayon-e">		</span><span class="crayon-v">coronaView</span><span class="crayon-sy">.</span><span class="crayon-v">coronaViewDelegate</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">self</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-21"><span class="crayon-h">		</span><span class="crayon-v">coronaView</span><span class="crayon-sy">.</span><span class="crayon-e">run</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-22"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-23">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-24"><span class="crayon-h">	</span><span class="crayon-e">override </span><span class="crayon-e">func </span><span class="crayon-e">didReceiveMemoryWarning</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-25"><span class="crayon-h">	</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-26"><span class="crayon-h">		</span><span class="crayon-r">super</span><span class="crayon-sy">.</span><span class="crayon-e">didReceiveMemoryWarning</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-27"><span class="crayon-h">		</span><span class="crayon-o">/</span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-e">Dispose </span><span class="crayon-e">of </span><span class="crayon-e">any </span><span class="crayon-e">resources </span><span class="crayon-e">that </span><span class="crayon-e">can </span><span class="crayon-e">be </span><span class="crayon-v">recreated</span><span class="crayon-sy">.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-28"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-29"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-30"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">func </span><span class="crayon-e">coronaView</span><span class="crayon-sy">(</span><span class="crayon-v">view</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">CoronaView</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">receiveEvent </span><span class="crayon-v">event</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">NSDictionary</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-&gt;</span><span class="crayon-h"> </span><span class="crayon-e">AnyObject</span><span class="crayon-sy">?</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-31"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">/</span><span class="crayon-o">*</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-32"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">event </span><span class="crayon-e">dictionary </span><span class="crayon-v">contains</span><span class="crayon-o">:</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-33"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">message</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">text </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">share</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-34"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">image</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">NSDictionary </span><span class="crayon-e">with </span><span class="crayon-e">file </span><span class="crayon-e">name </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-e">path</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-35"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">url</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">URL </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-v">post</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-36"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">*</span><span class="crayon-o">/</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-37"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-38"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">message</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">String</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">[</span><span class="crayon-s">"message"</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">String</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-39"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">imageData</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">[</span><span class="crayon-s">"image"</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">NSData</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-40"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">image</span><span class="crayon-o">:</span><span class="crayon-v">UIImage</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">UIImage</span><span class="crayon-sy">(</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">imageData </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-v">NSData</span><span class="crayon-sy">)</span><span class="crayon-o">!</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-41"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">myURL</span><span class="crayon-o">:</span><span class="crayon-v">String</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">[</span><span class="crayon-s">"url"</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">String</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-42"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">url</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">NSURL</span><span class="crayon-sy">(</span><span class="crayon-v">string</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">myURL</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-43"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-44"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">shareTextImageAndURL</span><span class="crayon-sy">(</span><span class="crayon-v">sharingText</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">message</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">sharingImage</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">image</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">sharingURL</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">url</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-45"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-sy">(</span><span class="crayon-r">true</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-46"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-47"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-48"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">func </span><span class="crayon-e">shareTextImageAndURL</span><span class="crayon-sy">(</span><span class="crayon-o">#</span><span class="crayon-v">sharingText</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">String</span><span class="crayon-sy">?</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">sharingImage</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">UIImage</span><span class="crayon-sy">?</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">sharingURL</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">NSURL</span><span class="crayon-sy">?</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-49"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">var </span><span class="crayon-v">sharingItems</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-v">AnyObject</span><span class="crayon-sy">]</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-50"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">var </span><span class="crayon-v">view</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-e">view </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">CoronaView</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-51"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-52"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-e">let </span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">sharingText</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-53"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">sharingItems</span><span class="crayon-sy">.</span><span class="crayon-e">append</span><span class="crayon-sy">(</span><span class="crayon-v">text</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-54"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-55"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-e">let </span><span class="crayon-v">image</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">sharingImage</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-56"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">sharingItems</span><span class="crayon-sy">.</span><span class="crayon-e">append</span><span class="crayon-sy">(</span><span class="crayon-v">image</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-57"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-58"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-e">let </span><span class="crayon-v">url</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">sharingURL</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-59"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">sharingItems</span><span class="crayon-sy">.</span><span class="crayon-e">append</span><span class="crayon-sy">(</span><span class="crayon-v">url</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-60"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-61"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-62"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">activityViewController</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">UIActivityViewController</span><span class="crayon-sy">(</span><span class="crayon-v">activityItems</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">sharingItems</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">applicationActivities</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-r">nil</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-63">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-64"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">activityViewController</span><span class="crayon-sy">.</span><span class="crayon-v">completionHandler</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-sy">(</span><span class="crayon-v">activityType</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">completed</span><span class="crayon-o">:</span><span class="crayon-v">Bool</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">in</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-65"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-o">!</span><span class="crayon-e">completed</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-66"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">println</span><span class="crayon-sy">(</span><span class="crayon-s">"cancelled"</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-67"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">event</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-s">"name"</span><span class="crayon-o">:</span><span class="crayon-s">"sendTo"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"complete"</span><span class="crayon-o">:</span><span class="crayon-r">false</span><span class="crayon-sy">]</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-68"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">view</span><span class="crayon-sy">.</span><span class="crayon-e">sendEvent</span><span class="crayon-sy">(</span><span class="crayon-v">event</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-69"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-70"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-71"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">println</span><span class="crayon-sy">(</span><span class="crayon-s">"complete <span class="crayon-sy">\</span><span class="crayon-sy">(</span><span class="crayon-v">activityType</span><span class="crayon-sy">)</span>"</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-72"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">let </span><span class="crayon-v">event</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-s">"name"</span><span class="crayon-o">:</span><span class="crayon-s">"sendTo"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"complete"</span><span class="crayon-o">:</span><span class="crayon-r">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"activity"</span><span class="crayon-o">:</span><span class="crayon-v">activityType</span><span class="crayon-sy">]</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-73"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">view</span><span class="crayon-sy">.</span><span class="crayon-e">sendEvent</span><span class="crayon-sy">(</span><span class="crayon-v">event</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-74"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-75"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-76"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-e">presentViewController</span><span class="crayon-sy">(</span><span class="crayon-v">activityViewController</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">animated</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-r">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">completion</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-r">nil</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-77"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8e05a92ee97948266336-78"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8e05a92ee97948266336-79">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0147 seconds] -->
+<p>The first change is setting up a delegate to handle the events &#8212; this is how other controllers can &#8220;talk&#8221; to your CoronaView on the CoronaCards side. We also add the <code>CoronaViewDelegate</code> to the end of the class declaration.</p>
+<p>The event handler which receives the event from CoronaCards needs to be called <code>coronaView</code>. So, we must rename <code>view</code> to <code>coronaView</code> and declare it as part of the <code>ViewController</code> class. Also, we&#8217;ll hook up the delegate prior to running the CoronaView.</p>
+<p>Next, we need to set up the event handling function which will receive the data from Corona. Inside the function, we extract the various fields from the event table. Interestingly, the image entry does not include the file name and path, but rather the binary image data, and this arrives as a <code>NSData</code> type which we can convert to a <code>UIImage</code> type. In addition, we convert the URL from a string to an <code>NSURL</code>.</p>
+<p>With the data ready to go, we call the function <code>shareTextImageAndURL</code>, passing the objects to the function. The <code>shareTextImageAndURL</code> function simply looks for each of the three objects and adds them to the <code>sharingItems</code> array.</p>
+<p>Finally, we create the <code>UIActivityViewController</code>, initializing it with our items to share, and instruct it to use all available options. For the completion handler for <code>UIActivityViewController</code>, if the controller was cancelled, we set up an event table named <code>sendTo</code> (as defined on the CoronaCards side) and set the <code>complete</code> entry to <code>false</code>. In the <code>else</code> clause, we set up an event table with <code>complete</code> set to <code>true</code> and set <code>activity</code> to the <code>activityType</code>. In both cases, we send the event to the CoronaCards view. Finally, we instruct the controller to show via the <code>presentViewController()</code> command.</p>
+<h3>Conclusion</h3>
+<p>As demonstrated in this tutorial, <a href=http://coronacards.com/ target="_blank">CoronaCards</a> gives you access to a wide range of native features which allow you to expand the power of your Corona-based project. As always, please contribute with questions and comments below.</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/coronacards/" rel="tag">CoronaCards</a>, <a href="/blog/tags/swift/" rel="tag">Swift</a>, <a href="/blog/tags/tutorial/" rel="tag">tutorial</a>, <a href="/blog/tags/xcode/" rel="tag">Xcode</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				Rob Miracle			    </span>
+				</h5>
+				<span class="author_email">rob@coronalabs.com</span>
+									<div class="author_text">
+						<p>Rob is the Developer Relations Manager for Corona Labs. Besides being passionate about helping other developers make great games using Corona, he is also enjoys making games in his spare time.
+
+Rob has been coding games since 1979 from personal computers to mainframes. He has over 16 years professional experience in the gaming industry.</p>
+					</div>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>7 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-3990">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/00f78870628f52fd561f0e073fd7a9fb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Erich Grüttner D.</h5>
+			<span class="comment_date">Posted at 17:45h, 30 December</span>
+						<div class="text_holder" id="comment-3990">
+				<p>Thank you, just  in time!!!</p>
+<p>Happy new year CoronaLabs Team!!!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3991">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">JCH_APPLE</h5>
+			<span class="comment_date">Posted at 08:22h, 02 January</span>
+						<div class="text_holder" id="comment-3991">
+				<p>It could be nice to have the same example with Corona Enterprise in order to see what differs in the 2 ways : native using Corona and Corona using native.</p>
+<p>Rob, thank you for all these greats tutor, and happy new year to Corona people.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3992">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 14:58h, 02 January</span>
+						<div class="text_holder" id="comment-3992">
+				<p>The ObjC way of doing this isn&#8217;t drastically different.  My Enterprise Fu isn&#8217;t very strong, but if it were me, I&#8217;d go back to the Enterprise tutorials that I did and turn it into a plugin.  Maybe name it plugin.sendto.  That tutorial had data passing between native and Corona as well.</p>
+<p>The one thing, is it would need to be the ObjC version of using the UIActivityViewController instead of Swift.   With CoronaCards, the Lua library (and lua_State structures) are behind an Objective C class which Swift can easily bridge too.  However in the Enterprise example, the current plugin code is C++ talking to a C library and ObjC calls the C++.  The bridging between Swift and C/C++ takes more work to make happen and I&#8217;m not there yet.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3993">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">JCH_APPLE</h5>
+			<span class="comment_date">Posted at 04:01h, 03 January</span>
+						<div class="text_holder" id="comment-3993">
+				<p>Thank you. I will try and if succeed I will post result. Printing would be very useful in business app.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3994">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1a0670fc65763ca33d34ece5b3ce53fb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">corona273</h5>
+			<span class="comment_date">Posted at 22:30h, 06 January</span>
+						<div class="text_holder" id="comment-3994">
+				<p>Note there&#8217;s also an outstanding feature request to add the iOS sharing sheet to Corona SDK (it&#8217;s a trivial addition, and the Android sharing panel is already supported):<br />
+<a href="http://forums.coronalabs.com/topic/53371-supporting-ios-modal-share-action-sheet-airdrop-print-add-to-home-screen-add-bookmark-add-to-reading-list-etc/" rel="nofollow">http://forums.coronalabs.com/topic/53371-supporting-ios-modal-share-action-sheet-airdrop-print-add-to-home-screen-add-bookmark-add-to-reading-list-etc/</a></p>
+<p>Rob, any thoughts on when this might happen?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3995">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9df8a20b38c72d272cd8559e3dacc4f2-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Mustafa</h5>
+			<span class="comment_date">Posted at 00:47h, 07 January</span>
+						<div class="text_holder" id="comment-3995">
+				<p>Thank you Rob,<br />
+Will this possible with Pro?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3996">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 16:04h, 07 January</span>
+						<div class="text_holder" id="comment-3996">
+				<p>No.  This is not available for Pro.   We  need to have people vote for it.  Please go to <a href="http://feedback.coronalabs.com/" rel="nofollow">http://feedback.coronalabs.com</a> and look for an existing feature request or create a new one.</p>
+<p>Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-95a65088037418e8646346c87072024d.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"60685","is_front_page":"","is_blog_page":"","is_category":"","site_url":"http:\/\/coronalabs.com\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-0be71dd89d0eceaca9843e7c3efe26f8.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-175d3f630150b6c2431472b6ea7bda23.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-d373414dfb3e1938c02eb07ec666bd3d.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-91fb076536097355265728cbacea3d53.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-0bdec33a45721a8ef1eaca39851674fb.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

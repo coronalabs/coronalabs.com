@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Supersonic &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/supersonic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Supersonic &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Supersonic, our latest monetization plugin</title>
+		<link>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/</link>
+		<comments>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/#comments</comments>
+		<pubDate>Tue, 17 May 2016 19:31:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[Supersonic]]></category>
+
+		<guid isPermaLink="false">/?p=66798</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Supersonic monetization plugin. Read further to learn more about this great addition to our plugin suite.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66852" style="margin: 0px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/05/supersonic.png" alt="supersonic" width="220" height="80" srcset="/wordpress/wp-content/uploads/2016/05/supersonic.png 440w, /wordpress/wp-content/uploads/2016/05/supersonic-300x109.png 300w" sizes="(max-width: 220px) 100vw, 220px" />Corona Labs is committed to providing you with many options to make your apps financially successful. The latest addition to our suite of monetization options is popular ad provider <a href=https://www.supersonic.com/ target="_blank">Supersonic</a>. Supersonic helps you generate revenue with high fill rates and eCPMs, and provides methods to encourage your users to engage with high-definition videos from top advertising brands.</p>
+<p><span class="comment-text ">&#8220;We’re excited to partner with Corona Labs to significantly boost ad monetization for its developer community. This partnership will give Corona developers the ability to manage and optimize multiple ad networks, maximizing eCPMs and fill rates by creating an inventory marketplace in which advertisers compete,&#8221; says Gil Shoham, CRO and Co-Founder of ironSource, Supersonic&#8217;s parent company. &#8220;Developers who integrate our plugin can deploy high-definition rewarded video, interstitial, and offer wall ad units seamlessly, benefiting from our global demand without another SDK integration.&#8221;</span></p>
+<h3>Getting started</h3>
+<p>To get started with Supersonic, you will need to create an account and log in to their <a href=https://platform.supersonic.com/partners/signup target="_blank">dashboard</a> to set up your apps. You will need to provide a URL for an app in the Apple App Store or on Google Play, or you can give them a temporary name for an app that isn&#8217;t live.</p>
+<p>Just like with other ad providers, you will need to add the plugin to your <code>build.settings</code> and <code>require()</code> the plugin. For details on this and other Corona-side requirements, please see our <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">Supersonic plugin documentation</a>.</p>
+<h3>Supported ad types</h3>
+<p>The initial plugin supports offer walls, interstitial ads, and rewarded videos:</p>
+<ul>
+<li>An offer wall presents the user with a list of actions they can take to earn a reward, such as credits or extra lives. These actions include taking surveys, installing different apps, etc.</li>
+<li>Interstitial ads include both static and non-rewarded video ads. Supersonic&#8217;s servers determine if an interstitial will be static or video based on their analytic patterns.</li>
+<li>Rewarded videos allow you to give in-game currency to your users get when they view a video. You control the reward, whether it be coins, gems, credits, or some other item that works in your app.</li>
+</ul>
+<p>Note that this plugin does not currently support the Supersonic mediation service.</p>
+<h3>Conclusion</h3>
+<p>To learn more about Supersonic, its API calls, and other details, please see the <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">plugin documentation</a>, or continue the discussion in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

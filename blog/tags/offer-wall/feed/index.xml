@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>offer wall &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/offer-wall/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>offer wall &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Persona.ly, an offer wall plugin for Corona</title>
+		<link>/blog/2016/06/28/introducing-persona-ly-an-offer-wall-plugin-for-corona/</link>
+		<pubDate>Tue, 28 Jun 2016 19:58:49 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[offer wall]]></category>
+
+		<guid isPermaLink="false">/?p=67157</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Persona.ly plugin. Learn more about this plugin and how you can use it to improve your app's monetization.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-full wp-image-67297 alignright" style="max-width: 200px; margin: 4px 0px 15px 25px;" src="/wordpress/wp-content/uploads/2016/06/personaly.png" alt="personaly" width="400" height="145" srcset="/wordpress/wp-content/uploads/2016/06/personaly.png 400w, /wordpress/wp-content/uploads/2016/06/personaly-300x109.png 300w" sizes="(max-width: 400px) 100vw, 400px" />In today&#8217;s app ecosystem, it can be challenging to get your users to engage with your monetization sources. Rewarding the user for their time is a popular way to improve engagement.</p>
+<p>We have several plugins that support rewarded videos (watch a video, get in-app goodies). Another way to engage users is with an <strong>offer wall</strong>. Offer walls provide the user an opportunity to do something &#8211; take a survey, install another app, sign up for a magazine, provide some personal information, etc. In exchange, the user gets rewarded with some form of in-app currency like gems, coins, tokens, credits, etc.</p>
+<p><img class="alignright size-medium wp-image-67333" src="/wordpress/wp-content/uploads/2016/06/Mobile_Demo1-300x251.png" alt="Mobile_Demo(1)" width="300" height="251" />Along these lines, Corona Labs is pleased to announce <a href=http://persona.ly/ target="_blank">Persona.ly</a>, a plugin that lets you implement offer walls in your app. In contrast to many monetization partners, Persona.ly is a &#8220;white glove&#8221; service &#8212; when you register with them, you will get assigned an account manager who will guide you through the setup and other requirements for using this plugin.</p>
+<h3>Implementation</h3>
+<p>Using Persona.ly in your Corona app is very similar to most other monetization plugins. First, you will need to include the plugin code in your <code>build.settings</code>. Then, in your Lua modules, <code>require()</code> and <a href=https://docs.coronalabs.com/daily/plugin/personaly/init.html target="_blank">init()</a> the plugin using an <strong>app hash</strong> that you get from Persona.ly, along with a unique ID for the user. From there, it&#8217;s simply a matter of calling the <a href=https://docs.coronalabs.com/daily/plugin/personaly/show.html target="_blank">show()</a> method to display an offer wall in your app.</p>
+<p>Because Persona.ly is a more hands-on service, there are a couple of additional requirements. First, you have to provide a unique ID for each user, and it&#8217;s up to you to determine and keep track of that unique ID. This ID is passed as part of the <a href=https://docs.coronalabs.com/daily/plugin/personaly/init.html target="_blank">init()</a> call. You also need to set up a server that their servers can talk to. Your Persona.ly account manager can help you with these aspects.</p>
+<h3>Conclusion</h3>
+<p>Persona.ly is a great way to increase your app&#8217;s earning potential. You can learn more about Persona.ly from <a href=http://persona.ly/ target="_blank">their website</a>. For more information on the Corona implementation, see our <a href=https://docs.coronalabs.com/daily/plugin/personaly/index.html target="_blank">documentation</a>, and if you have further questions, please visit the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

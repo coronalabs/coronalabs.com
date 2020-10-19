@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>puzzle &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/puzzle-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>puzzle &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: Alpha Omega &#8211; A game of jumbled words</title>
+		<link>/blog/2016/05/06/featured-app-alpha-omega-a-game-of-jumbled-up-words/</link>
+		<pubDate>Fri, 06 May 2016 18:43:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=66659</guid>
+		<description><![CDATA[Can an Internet meme be turned into a successful, compelling game built with Corona? For BorderLeap, the answer was "yes!". Read further to learn about "Alpha Omega."]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66661" src="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png" alt="alpha-omegaIcon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/alpha-omegaIcon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />As a programmer, spelling isn&#8217;t my greatest strength, but I&#8217;m one of those people who can look at a jumbled-up word and actually read it. In fact, many people can decipher words as long as the first and last letters are correct and it&#8217;s the proper length.</p>
+<p>For example, can you read this?</p>
+<p style="padding-left: 30px;">&#8220;<em>it deosn&#8217;t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae.</em>&#8220;</p>
+<p>What started as an urban legend and Internet meme seems to actually have some facts and a term behind it: <a href=https://en.wikipedia.org/wiki/Typoglycemia target="_blank">typoglycemia</a>.<b> </b></p>
+<p>Leave it to an enterprising game shop to turn this phenomenon into a compelling game. <a href=http://borderleap.com/ target="_blank">BorderLeap</a>, a small studio founded by Nate Dicken, took this concept and put together <a href=http://playalphaomega.com/ target="_blank"><em>Alpha Omega</em></a>. Originally released for the &#8220;small screen&#8221; in April 2014, BorderLeap recently released the game for OS X desktop.</p>
+<p>Since then, <em>Alpha Omega</em> has reached the #1 featured position across 150+ countries. It has also been the #1 paid &#8220;Puzzle&#8221; and #1 paid &#8220;Word&#8221; game, and it currently boasts accolades as the #2 overall paid game and #3 grossing game in the Mac App Store. As if that&#8217;s not enough, Apple featured <em>Alpha Omega</em> with a large banner in the &#8220;Word&#8221; game subcategory and also featured it in the &#8220;All Time Greats&#8221; in the same category.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fuvSOzmFgzw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Want to see what the buzz is all about and test your skills at unscrambling jumbled words? <em>Alpha Omega</em> is available for <a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega>Google Play</a>, and <a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12>OS X</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p>What kind of success can you achieve? Download <a href=https://www.coronalabs.com/ target="_blank">Corona SDK</a> and get started today!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Zen Sand</title>
+		<link>/blog/2013/08/05/app-of-the-week-zen-sand/</link>
+		<pubDate>Mon, 05 Aug 2013 22:10:34 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[puzzle]]></category>
+
+		<guid isPermaLink="false">/?p=39840</guid>
+		<description><![CDATA[<a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">Zen Sand</a> is the perfect app for relaxation, combining soothing music and elegant visuals with a unique gameplay to challenge the mind. Created by <a href="http://www.polygonplay.com/">Polygon Play</a>, a one-man studio based in Finland, <a href="http://developer.coronalabs.com/showcase/zen-sand">Zen Sand</a> is the studio's latest game for iOS.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM.png" alt="Zen Sand icon" class="alignleft size-full wp-image-39841" srcset="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM.png 207w, /wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM-150x150.png 150w" sizes="(max-width: 207px) 100vw, 207px" /><a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">Zen Sand</a> is the perfect app for relaxation, combining soothing music and elegant visuals with a unique gameplay to challenge the mind. Created by <a href=http://www.polygonplay.com/>Polygon Play</a>, a one-man studio based in Finland, <a href=http://developer.coronalabs.com/showcase/zen-sand>Zen Sand</a> is the studio&#8217;s latest game for iOS.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/08/Zen-Sand-screenshot-2.jpg" alt="Zen Sand screenshot" class="alignright size-full wp-image-39842" />The objective of the game is simple: as hundreds of grains of sand fall down the screen, you must guide them into beautiful Japanese porcelain vases. Each vase displays a number that signifies the number of grains necessary to fill the vase to the brim. </p>
+<p>To guide the grains towards their destination, you must draw bamboo stalks by dragging your finger across the screen. The grains respond to the effects of gravity, wind, and collision so planning and foresight are essential to success. The less bamboo sticks you use, the more pearls you will earn which can later be used to unlock solutions to difficult levels. As you advance in the game, you&#8217;ll be challenged to fill vases with colored sand after it has been sifted through a colored Japanese lantern &#8211; the toughest element of the game.</p>
+<p>Part of what makes Zen Sand so peaceful is that each level is inspired by a season of the year that&#8217;s illustrated with lovely graphics and calming music. I especially enjoyed the words of wisdom from the Zen Master that were displayed at the completion of each level.</p>
+<p>To experience the serenity of Zen Sand, download the game from <a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">iTunes</a> for $1.99 and let us know how you enjoy it.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/6qqsFW_HFDg" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Penguin Rescue</title>
+		<link>/blog/2013/07/01/app-of-the-week-penguin-rescue/</link>
+		<pubDate>Mon, 01 Jul 2013 15:56:52 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[children's]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Kindle]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=36634</guid>
+		<description><![CDATA[Created by Learning Gems, <a href="https://itunes.apple.com/us/app/learning-gems-penguin-rescue/id652219740?ls=1&#38;mt=8">Penguin Rescue</a> is a word puzzle game that’s centered around saving adorable penguins from the perils of an ice cavern. Available for young players on iOS, Android and Kindle devices, Penguin Rescue is loads of fun, boasting chirpy music and fantastic graphics.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-thumbnail wp-image-36635" alt="Penguin Rescue" src="/wordpress/wp-content/uploads/2013/06/Screen-Shot-2013-06-23-at-5.02.38-PM-150x150.png" srcset="/wordpress/wp-content/uploads/2013/06/Screen-Shot-2013-06-23-at-5.02.38-PM-150x150.png 150w, /wordpress/wp-content/uploads/2013/06/Screen-Shot-2013-06-23-at-5.02.38-PM.png 201w" sizes="(max-width: 150px) 100vw, 150px" />Created by <a href=http://www.learninggems.com/>Learning Gems</a>, <a href=https://itunes.apple.com/us/app/learning-gems-penguin-rescue/id652219740?ls=1&mt=8>Penguin Rescue</a> is a word puzzle game that’s centered around saving adorable penguins from the perils of an ice cavern. Available for young players on iOS, Android and Kindle Fire devices, Penguin Rescue is loads of fun, boasting chirpy music and fantastic graphics.</p>
+<p><img class="alignright size-full wp-image-36639" alt="Penguin Rescue screenshot" src="/wordpress/wp-content/uploads/2013/06/Penguin-Rescue-screenshot1.jpg" />To save a penguin, you must solve the word puzzle in each game. To start, you’re presented with snowballs that are each marked with a letter. You&#8217;re given twelve attempts to throw the snowballs at icicles above &#8211; with each correctly guessed letter, the snowball hits an icicle causing it to fall and break through the ice below to get your penguin one step closer to safety.</p>
+<p>Once you solve the entire word, all the ice blocks break and your penguin friend can swim out. The faster you solve each puzzle, the more points you will earn, and with each completed word you save the life of one penguin. Once you&#8217;ve played several rounds, you can get a snapshot of the rescued birds by visiting the Penguin Village. Upon seeing all your successfully &#8220;rescued&#8221; friends, you&#8217;ll enjoy a sense of accomplishment and will feel even more motivated to forge ahead and save the others.</p>
+<p>You can download your copy of Penguin Rescue for just $0.99 in the following app stores:</p>
+<p>iTunes: <a href=https://itunes.apple.com/us/app/learning-gems-penguin-rescue/id652219740?ls=1&mt=8>itunes.apple.com/us/app/learning-gems-penguin-rescue/id652219740?ls=1&amp;mt=8</a></p>
+<p>Google Play: <a href=https://play.google.com/store/apps/details?id=com.bluefireventures.penguinrescue>play.google.com/store/apps/details?id=com.bluefireventures.penguinrescue</a></p>
+<p>Amazon Appstore: <a href="http://www.amazon.com/Learning-Gems-Penguin-Rescue/dp/B00CYPD4GG/&lt;br /&gt;
+">amazon.com/Learning-Gems-Penguin-Rescue/dp/B00CYPD4GG/</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Move and Fire</title>
+		<link>/blog/2013/05/06/app-of-the-week-move-and-fire/</link>
+		<comments>/blog/2013/05/06/app-of-the-week-move-and-fire/#comments</comments>
+		<pubDate>Mon, 06 May 2013 21:39:01 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[crossplatform]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[puzzle]]></category>
+
+		<guid isPermaLink="false">/?p=33134</guid>
+		<description><![CDATA[Move and Fire is a puzzle game that weaves the basic principles of pinball with the laws of physics. It's both challenging and entertaining, and features standout graphics that pop right off the screen.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-05-at-10.37.43-AM.png" alt="Move and Fire logo" class="alignleft size-full wp-image-33135" /></p>
+<p>Move and Fire is a puzzle game that weaves the basic principles of pinball with the laws of physics. It&#8217;s both challenging and entertaining, featuring standout graphics that pop right off the screen.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/05/Move-and-Fire-screenshot-200x300.jpg" alt="Move and Fire screenshot" class="alignright size-medium wp-image-33136" />In Move and Fire, your goal is to hit yellow orbs with a small ball that ricochets off blocks and obstacles within each level. To collect all the orbs, you must strategically position the blocks, which direct the ball in the right direction. Once you collect all the orbs, you receive a score that&#8217;s based on the amount of time it took you to complete the level, as well as the number of block readjustments you made. Of course, a faster time and a minimum number of block readjustments awards you with a higher score. Though this puzzler becomes quite difficult from the start, there&#8217;s nothing more gratifying than successfully completing a level and moving ahead. </p>
+<p>With 100 challenging puzzles across four worlds and an interactive leaderboard, you can easily kill several hours conquering Move and Fire. Best of all, the game is <a href=www.coronalabs.com/products/corona-sdk>cross-platform</a>, and offered as a free download for players on both <a href=https://play.google.com/store/apps/details?id=com.yakaz.mtb>Android</a> and <a href=https://itunes.apple.com/us/app/move-and-fire/id597457573?ls=1&mt=8>iOS</a>.</p>
+<p>Also, for those of you that followed our Corona April App of the Month poll on Facebook, we&#8217;d like to applaud <a href=http://www.coronalabs.com/blog/2013/04/01/app-of-the-week-garfields-trivia-party/>Garfield’s Trivia Party</a> on winning the community vote! Remember to like <a href=https://www.facebook.com/CoronaLabs>Corona Labs on Facebook</a> to vote in future App of the Month polls.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/CgoDTvblXHE" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv">
+<p><img src="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-05-at-10.50.40-AM.png" alt="The Three Little Pigs icon" class="alignleft size-full wp-image-33140" /></a></p>
+<h4 style="margin-bottom: 10px;">The Three Little Pigs</h4>
+<p>The Three Little Pigs is an interactive storybook for iOS, that offers a twist on the fairytale that we all know and love. The adorable illustrations, easy navigation and delightful storyline is perfect for young children to read aloud, or to enjoy via the storybook&#8217;s narration. Thanks to <a href=http://www.coronalabs.com/blog/2012/08/19/guest-post-developing-ebooks-with-kwik-2/>Kwik 2.0</a>, a popular third party tool, The Three Little Pigs was created <em>without any code</em> by a team of talented artists at <a href=http://www.backseat-driver.com/>Backseat Driver</a>. Download The Three Little Pigs from <a href=https://itunes.apple.com/us/app/three-little-pigs-interactive/id625171096?mt=8>iTunes</a> for $1.99 to experience this lovely interactive tale.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/06/app-of-the-week-move-and-fire/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Stay Alight!</title>
+		<link>/blog/2013/04/15/app-of-the-week-stay-alight/</link>
+		<comments>/blog/2013/04/15/app-of-the-week-stay-alight/#comments</comments>
+		<pubDate>Mon, 15 Apr 2013 19:27:58 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[puzzle]]></category>
+
+		<guid isPermaLink="false">/?p=31697</guid>
+		<description><![CDATA[Developed by Wyse Games, Stay Alight! is a stunning new physics-based game for iPad/iPhone. Within a week of launch, Stay Alight! rose to the App Store's Top 10 of puzzle and arcade games.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/04/Screen-Shot-2013-04-11-at-6.57.59-PM.png" alt="Stay Alight icon" class="alignleft size-full wp-image-31698" />Created by Russia-based <a href=http://www.wysegames.com/en/>Wyse Games</a>, <a href=http://developer.coronalabs.com/showcase/stay-alight-hd-0>Stay Alight!</a> is a stunning new physics-based game for iPad/iPhone. Within a week of launch, Stay Alight! rose to the App Store&#8217;s Top 10 of puzzle and arcade game in five countries. The game&#8217;s allure lies in the captivating gameplay and the gorgeous, highly detailed graphics. Each level also provide a host of unique features, from the beautiful music, to the unique movements and sounds of the characters.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/Staying-Alight-screenshot.jpg" alt="Stay Alight screenshot" class="alignright size-full wp-image-31699" />In the opening scene of the game, players are shown a world filled with garbage, pollution and destruction. In short, microbes have captured the planet and it’s your job destroy them. Making use of physics-based game mechanics, you’re given power balls to complete levels by eliminating a slew of microbes.</p>
+<p>Each level provides a set number of energy balls and the challenge is to use your weapon strategically so you don&#8217;t run out or balls. By aiming a light ball at boxes and barrels in a level, you can eliminate multiple microbes at one time. When hit, these objects roll and bounce towards the monsters and instantly destroy them. </p>
+<p>Whether you’re a fan of graphical games, or if you love puzzles and arcades, Stay Alight! is sure to capture your attention. Check out Stay Alight! on <a href="https://itunes.apple.com/us/app/stay-alight!/id628008290?mt=8
+">iTunes</a> for just $0.99.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/GnNZTINHOpg" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv">
+<p><img src="/wordpress/wp-content/uploads/2013/04/Screen-Shot-2013-04-12-at-1.05.22-PM.png" alt="Hideout icon" class="alignleft size-full wp-image-31748" /></a></p>
+<h4 style="margin-bottom: 10px;">Hideout: Early Reading</h4>
+<p>Developed by <a href=http://www.coronalabs.com/case-study/brigham-young-university/>Brigham Young University</a>, a Corona Labs educational partner, Hideout: Early Reading teaches children to read through a series of interactive activities. Emphasizing letter-sound association and word repetition to enhance the reading experience, Hideout: Early Reading has already earned a 5-star rating in the App Store. The app&#8217;s vibrant illustrations, positive messages, and catchy music are nothing short of impressive. Download <a href=https://itunes.apple.com/us/app/id625966929?mt=8>Hideout: Early Reading</a> as a free app for your iPhone/iPad.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/15/app-of-the-week-stay-alight/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>permissions &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/permissions/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>permissions &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Breaking change: Android 6 and device IDs</title>
+		<link>/blog/2016/02/23/breaking-change-android-6-and-device-ids/</link>
+		<comments>/blog/2016/02/23/breaking-change-android-6-and-device-ids/#comments</comments>
+		<pubDate>Tue, 23 Feb 2016 15:37:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[permissions]]></category>
+
+		<guid isPermaLink="false">/?p=65748</guid>
+		<description><![CDATA[Users who upgrade to Android 6 will likely have a different deviceID than they had with earlier versions of Android. Learn how to ensure that your app continues to get the same ID as before.]]></description>
+				<content:encoded><![CDATA[<p>Before the release of Android 6, users were regularly asked to grant permissions when installing new apps. Often times users were asked to grant the <code>android.permission.READ_PHONE_STATE</code> permission, which is considered a dangerous permission. This caused many people to not install apps for fear of what the apps might be doing with that granted permission.</p>
+<p>Android 6 eases those fears by moving permissions to an on-demand system. Now you can request <code>android.permission.READ_PHONE_STATE</code> when your app needs it. However, this change creates an issue with the Corona SDK API that allows you to get the device&#8217;s device ID using <a href=https://docs.coronalabs.com/api/library/system/getInfo.html?#deviceid target="_blank"><code>system.getInfo("deviceID")</code></a>.</p>
+<p>If the user&#8217;s device grants the <code>android.permission.READ_PHONE_STATE</code> permission, then the device&#8217;s unique phone ID (IMEI, MEID or ESN depending on the carrier) is returned. For devices without a phone or which have not granted the permission, a unique system ID assigned by the operating system is returned.</p>
+<p>If your app currently uses the deviceID value, it&#8217;s very likely that any users who upgrade to Android 6 will have a different <code>deviceID</code> than they had with earlier versions of Android. If it is important to your app to maintain the same ID, you must take steps to ensure that your app continues to get the phone ID instead of the OS ID.</p>
+<p>You can do this in main.lua by requesting the proper <code>android.permission.READ_PHONE_STATE</code> permission before attempting to get the deviceID. Consider this code:</p><pre class="crayon-plain-tag">-- get the default deviceID
+
+local deviceID = system.getInfo( &quot;deviceID&quot; )
+
+local deviceIDText = display.newText(deviceID, display.contentCenterX, 50, native.systemFontBold, 20 )
+
+local function appPermissionsListener( event )
+	-- regardless of what the user chose, we now either have the Phone permission or we don't
+	-- so grab the current deviceID in case it's different than the pre-permission check value.
+	deviceID = system.getInfo( &quot;deviceID&quot; )
+	deviceIDText.text = deviceID
+end
+--
+-- all of this only matters for Android 6 or later, so don't bother non-Android 6 users:
+--
+if system.getInfo( &quot;androidApiLevel&quot; ) &amp;gt;= 23 then 
+	-- Ah ha! Android 6 or later
+	--
+	-- Check to see if the user has previouslly granted permissions.
+	-- if they have not, then we should prompt them to ask.
+	--
+	local grantedPermissions = system.getInfo( &quot;grantedAppPermissions&quot; )
+	local hasPhonePermission = false
+
+	for i = 1, #grantedPermissions do
+		--
+		-- check for the specific READ_PHONE_STATE permission or the &quot;Phone&quot; group permission
+		--
+		if &quot;android.permission.READ_PHONE_STATE&quot; == grantedPermissions[i] or &quot;Phone&quot; == grantedPermissions[i] then
+			-- found phone permissions
+			hasPhonePermission = true
+			-- exit the loop.
+			break
+		end
+	end
+
+	--
+	-- if we get to this point and hasPhonePermission is false, then we didn't find it in the 
+	-- permissions list, so prompt the user for it.
+	--
+	if not hasPhonePermission then
+		--
+		-- Create a table for the options to pass to requestAppPermission
+		--
+		local permissionOptions =
+		{
+			appPermission = &quot;android.permission.READ_PHONE_STATE&quot;,
+			urgency = &quot;Critical&quot;,
+			listener = appPermissionsListener,
+			rationaleTitle = &quot;Read phone state required&quot;,
+			rationaleDescription = &quot;This app needs this state to retrieve previously saved data. Re-request now?&quot;,
+			settingsRedirectTitle = &quot;Alert&quot;,
+			settingsRedirectDescription = &quot;Without the ability to access your device's unique ID, it can't function properly. Please grant camera access within Settings.&quot;
+		}
+		native.showPopup( &quot;requestAppPermission&quot;, permissionOptions )
+	end
+end</pre><p>Since the OS-based ID doesn&#8217;t require special permissions, we recommend that you standardize on the OS generated ID instead of the Phone ID moving forward.</p>
+<p>Have questions? Join us in the <a href=https://docs.coronalabs.com/api/library/system/getInfo.html?#deviceid target="_blank">Corona Labs Android forum</a>!</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/23/breaking-change-android-6-and-device-ids/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

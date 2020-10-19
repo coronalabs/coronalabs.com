@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>level director &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/level-director/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>level director &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Piece: An Introduction to Level Director</title>
+		<link>/blog/2013/10/10/guest-piece-an-introduction-to-level-director/</link>
+		<comments>/blog/2013/10/10/guest-piece-an-introduction-to-level-director/#comments</comments>
+		<pubDate>Thu, 10 Oct 2013 21:11:22 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[level director]]></category>
+		<category><![CDATA[third party tool]]></category>
+
+		<guid isPermaLink="false">/?p=48610</guid>
+		<description><![CDATA[Alan Gough has been involved in the software industry for over 25 years, mainly writing software for large insurance and investment management companies using technologies from Assembler to C#. Alan is also the founder of Retrofit Productions, the creator of <a href="http://www.retrofitproductions.com/level-director/">Level Director</a>, a <a href="http://www.coronalabs.com/resources/3rd-party-tools-and-services/">third party tool</a> which helps app developers create complex screens and levels with ease. 
+
+In today’s piece, Alan writes on Level Director tool and discusses how with a few clicks, the tool can take developers' design ideas from paper to the mobile world.]]></description>
+				<content:encoded><![CDATA[<p><em>Alan Gough has been involved in the software industry for over 25 years, mainly writing software for large insurance and investment management companies using technologies from Assembler to C#. Alan is also the founder of Retrofit Productions, the creator of <a href=http://www.retrofitproductions.com/level-director/>Level Director</a>, a <a href=http://www.coronalabs.com/resources/3rd-party-tools-and-services/>third party tool</a> which helps app developers create complex screens and levels with ease. </p>
+<p>In today’s piece, Alan writes on Level Director tool and discusses how with a few clicks, the tool can take developers&#8217; design ideas from paper to the mobile world.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/06/Level-Director-150x92.png" alt="Level Director logo" class="alignleft size-thumbnail wp-image-35686" />The inspiration behind <a href=http://www.retrofitproductions.com/level-director/>Level Director</a> was born from my first project using <a href=coronalabs.com/products/corona-sdk/>Corona SDK</a> to recreate the much loved Hunchback game from the 80s. I was looking for a tool that would help me quickly create many levels in the game.</p>
+<p>After a bit of research, I discovered that there were no tools out there on the Windows platform that could meet my basic requirements and sufficiently run on my old Android 2.2 device. Realizing this unmet need in the market and the frustration in not having a tool to help me create my game, Level Director was born.</p>
+<p>From its humble beginnings, Level Director has now become a feature rich level authoring and asset management tool specifically designed to work with Lua and Corona SDK on the Windows platform.<br />
+It allows you to simply drag rectangles, circles, text and image assets onto the level with full support of Box2D physics and the exporter will do the rest and generate the Corona specific Lua code for you. </p>
+<div style="margin: 0px auto; width: 600px;">
+<figure><img src="/wordpress/wp-content/uploads/2013/10/Screenshot-from-Level-Director.jpg" alt="Screenshot from Level Director" class="aligncenter size-full wp-image-48611" /><figcaption>This screenshot shows how image assets and text have been added across multiple layers to build a level.</figcaption></figure>
+</div>
+<div style="margin: 0px auto; width: 600px;">
+<figure><img src="/wordpress/wp-content/uploads/2013/10/Screenshot-2-from-Level-Director.jpg" alt="Screenshot from Level Director" class="aligncenter size-full wp-image-48613" /><figcaption>This screenshot shows the results of the level above, exported and running on a device.</figcaption></figure>
+</div>
+<p>To improve performance, it uses a pseudo engine system which basically consists of some utility modules to help render the objects to the screen which can also be used externally if you want to add new assets on the fly. Level Director also supports complex bodies and has its own shape and collision editor. Better yet, you can import them from Code’n’Web&#8217;s <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> and <a href=http://www.codeandweb.com/physicseditor>PhysicsEditor</a> tools. Level Director also supports Bezier curves, paths, joints, animation sequences and parallax scrolling. </p>
+<p>Level Director’s user base is growing rapidly with more and more development teams such as <a href=http://www.Blerdo.com>Blerdo/</a> coming on board each day. There are also plenty of <a href= http://www.retrofitproductions.com/level-director/examples/>example projects</a> to see the tool in action.</p>
+<p>Like many of my other games, Hunchback has been placed on the backburner. Due to the success of Level Director, I’ve spent much of my time supporting users and beefing up the tool. You can download a <a href=http://www.retrofitproductions.com/level-director>free copy</a> or purchase the <a href=http://www.retrofitproductions.com/level-director>full version</a> of Level Director using this limited 20% off discount code ‘LD20OFF’. Please note, this code is good through October 31, 2013.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/10/guest-piece-an-introduction-to-level-director/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

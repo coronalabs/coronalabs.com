@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>offerwall &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/offerwall/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>offerwall &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing TrialPay: Users earn in-game rewards</title>
+		<link>/blog/2016/08/18/introducing-trialpay-more-ways-to-monetize-your-app/</link>
+		<pubDate>Thu, 18 Aug 2016 17:24:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[offerwall]]></category>
+		<category><![CDATA[rewards]]></category>
+		<category><![CDATA[surveys]]></category>
+
+		<guid isPermaLink="false">/?p=67749</guid>
+		<description><![CDATA[Introducing TrialPay, a plugin that lets your users take advantage of offer walls and other ad formats to engage your users and help you monetize your app. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=http://www.trialpay.com/ target="_blank"><img class="alignright size-thumbnail wp-image-67751" style="margin: 4px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/08/tp-colored-logo-150x76.png" alt="tp-colored-logo" width="150" height="76" />TrialPay</a> is a service that allows you to monetize your apps by letting users complete various tasks to earn in-game rewards. These tasks include installing apps, taking surveys, and so on.</p>
+<p><span class="comment-text ">&#8220;In our ongoing efforts to help developers better engage and reward their users, we have enabled access to our alternative payment tools as a plugin in the Corona SDK. We are excited about this partnership and helping to make it easier for existing Corona developers to access our tools. As part of our acquisition by Visa in April 2015, one of our new features is the ability to unlock offline payment spend as a way for your users to earn currency in your app. We look forward to your feedback and working with all the Corona developers!&#8221; said Tiffany Kwong, VP of Partnerships.<br />
+</span></p>
+<p>To implement TrialPay, you will first need to <a href=https://merchant.trialpay.com/register/?t=mb target="_blank">sign up</a> at their <a href=https://merchant.trialpay.com/ target="_blank">developer portal</a>. Once logged in, click on the <strong>My Evergreen Apps</strong> tab to add your app. Then, simply add the relevant code to your <code>build.settings</code> and other modules as needed. Please see the <a href=https://docs.coronalabs.com/plugin/trialPay/index.html target="_blank">documentation</a> to learn more.</p>
+<p>Corona Labs is committed to providing you unique ways to monetize your apps. If you want to discuss this plugin further, join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

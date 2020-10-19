@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Perry Clarke &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/perry/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Perry Clarke &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>iOS Build Improvements</title>
+		<link>/blog/2014/12/29/ios-build-improvements/</link>
+		<comments>/blog/2014/12/29/ios-build-improvements/#comments</comments>
+		<pubDate>Mon, 29 Dec 2014 14:33:09 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+
+		<guid isPermaLink="false">/?p=60669</guid>
+		<description><![CDATA[iOS build improvements are here]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2014/12/matrix1.png><img class="alignnone size-medium wp-image-60671" src=/wordpress/wp-content/uploads/2014/12/matrix1.png alt="matrix1" width="719" height="160" /></a><br />
+Provisioning profiles and signing certificates are enough to make anyone&#8217;s screen feel like something from a &#8217;90s <a href=http://www.imdb.com/title/tt0133093/ target="_blank">sci-fi flick</a>.</p>
+<p>We&#8217;ve been delving into their innards and have come up with some improvements to the way code signing works.  One of the headaches in signing apps happens when there are multiple identities with the same name in the Keychain. It&#8217;s fairly easy to end up with multiple identities with the same name due to things like expired certificates and Apple doesn&#8217;t give you much control over the names of developer and distribution certificates. Previously, the way to work around this was to completely clear out Keychain Access and start over.  The solution to this to use a <a href=http://en.wikipedia.org/wiki/Public_key_fingerprint target="_blank">fingerprint</a> which uniquely identifies a certificate which allows the specific identity referred to by a certificate embedded in a provisioning profile to be used rather than just one with the same name. This is how Xcode does it and now CoronaSDK is fingerprint-enabled too.</p>
+<p>The <em>practical</em> upshot of all this is that those weird instances where an iOS build seems to work but the app can&#8217;t be installed on a device because &#8220;The application does not have a valid signature&#8221; should be a thing of the past. It&#8217;s unlikely but possible that a few folks might now see an error about a missing certificate because they were rolling the dice with the Keychain and getting lucky and signing their app with a different identity than they thought they were and things <em>just happened</em> to work out. A quick visit to the Xcode preferences and a refresh of the <strong>Accounts</strong> pane should fix things once and for all.</p>
+<p>While we had the hood up and the engine out we took the opportunity to fix some nagging issues with iOS builds such as mismatches between provisioning profiles and app entitlements for things like <strong>beta-reports-active</strong> and <strong>get-task-allow</strong> which should result in smoother TestFlight distributions. We also improved error reporting during builds so you now see what actually went wrong if a build goes side-ways. It&#8217;s the little things!</p>
+<p>All of this goodness is available to subscribers in <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build</a> 2014.2526</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/29/ios-build-improvements/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Corona Editor 1.5</title>
+		<link>/blog/2014/12/15/announcing-corona-editor-1-5/</link>
+		<pubDate>Mon, 15 Dec 2014 23:32:33 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60584</guid>
+		<description><![CDATA[There is a new version of Corona Editor out. Read on to see how this version will make your workflow faster than ever!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.01.35-PM-300x223.png" alt="Screen Shot 2014-12-15 at 3.01.35 PM" width="300" height="223" class="alignright size-medium wp-image-60588" /><br />
+We&#8217;re excited to announce that a new version of <a href=/products/editor>Corona Editor</a> (our plugin for Sublime Text) is out and ready! </p>
+<p>We&#8217;ve added some <a href=https://github.com/coronalabs/CoronaSDK-SublimeText/blob/master/RELEASE-NOTES.md>new features and squashed quite a few bugs</a> (how&#8217;d they get in there?) to make Corona Editor better and your workflow even faster.</p>
+<p>The main improvements are to completion and the debugger. Completion now handles periods in items much more smoothly and has additional features like optional removal of whitespace (which was submitted by a Corona user &#8211; thank you!). The debugger now has much improved display of variable values and handles multi-directory projects much more seamlessly. You can find a complete list of changes <a href=https://github.com/coronalabs/CoronaSDK-SublimeText/blob/master/RELEASE-NOTES.md>here</a>.</p>
+<p>Check out the <a href=http://forums.coronalabs.com/topic/53345-corona-editor-15-released/>forum post</a> for more links to useful info. Since feedback around this can get technical, we&#8217;ve closed comments on this post &#8211; please post feedback/comments to the <a href=http://forums.coronalabs.com/topic/53345-corona-editor-15-released/>forum thread</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Analytics: They&#8217;re Baaaaaaack!</title>
+		<link>/blog/2013/04/24/analytics-theyre-baaaaaaack/</link>
+		<comments>/blog/2013/04/24/analytics-theyre-baaaaaaack/#comments</comments>
+		<pubDate>Wed, 24 Apr 2013 23:52:46 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Analytics]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=32582</guid>
+		<description><![CDATA[Device Analytics are back!]]></description>
+				<content:encoded><![CDATA[<p>Device Analytics are back!<br />
+<a href=http://www.coronalabs.com/wp-content/uploads/2013/04/Screen-Shot-2013-04-24-at-3.27.38-PM.png><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/Screen-Shot-2013-04-24-at-3.27.38-PM-300x189.png" alt="Device Analytics Chart" class="alignnone size-medium wp-image-32586" /></a><br />
+After many adventures we&#8217;ve got a robust system that can handle the billions of sessions that Corona SDK apps generate each month.  We&#8217;re doing a staged rollout with the first available chart being <strong>Sessions by Device per Day</strong>. As you can see from the screen shot above, you&#8217;ll get a stacked chart that will show you the total number of sessions on the Y-axis and the sessions per device in colored bands.  You can hover over the chart to see individual daily session counts per device.  Click on a device name in the legend to toggle its inclusion in the chart.</p>
+<p>We eliminated the last gremlin in the works yesterday (2013-04-23) so that&#8217;s the first data you&#8217;ll see for some apps.  For other apps, there should be a full month of data.</p>
+<p>Get started on the <a href=https://developer.coronalabs.com/dashboard title="Dashboard">Dashboard</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/24/analytics-theyre-baaaaaaack/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Expansion File Support for Android</title>
+		<link>/blog/2013/04/17/expansion-file-support-for-android/</link>
+		<comments>/blog/2013/04/17/expansion-file-support-for-android/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 13:35:41 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[sdk]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31944</guid>
+		<description><![CDATA[We're happy to announce support for Google Play expansion files that will vastly simplify mobile app development. Why would you want to use expansion files? Read the full post to learn more!]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build</a> 1082, we&#8217;re happy to announce support for Google Play expansion files that will vastly simplify your <a href=http://www.coronalabs.com/products/corona-sdk/ target="_blank">mobile app development</a>. Why would you want to use expansion files? It turns out that Google Play has a 50MB size limit on APK files.  They have this limit so that when the user has to update their app, they don&#8217;t have to download all the asset files again, which can take up a long time.  To combat this, Google also lets you upload expansion files.  These files aren&#8217;t meant to be updated since they can be up to 2GB in size.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/04/downloading-187x300.png" alt="Downloading an Expansion File" /></p>
+<p>We&#8217;ve tried to make it as simple as possible for you to use.  Corona SDK will package everything except your Lua scripts into the expansion file, name it properly, and then put it in the correct format.  All of this is done locally so even if you have 2GB worth of asset files you won&#8217;t have to worry about a slow internet connection. All you have to do is to put a setting in the <code>build.settings</code> file, put your licensing key into <code>config.lua</code> file, and then upload your APK and expansion files onto Google Play.  Here are is a sample <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = 
+{
+	orientation =
+	{
+		default = &quot;landscapeLeft&quot;,
+		supported = { &quot;portrait&quot;, &quot;portraitUpsideDown&quot;, &quot;landscapeLeft&quot;, &quot;landscapeRight&quot; }
+	},
+	android =
+		{
+			&lt;strong&gt;usesExpansionFile = true&lt;/strong&gt;,
+			usesPermissions =
+			{
+				&quot;android.permission.INTERNET&quot;,
+				&quot;com.android.vending.CHECK_LICENSE&quot;,
+				&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;
+			},
+		},
+}</pre><p>Notice the line that says <code>usesExpansionFile = true</code> which will build the expansion file for you to upload ONLY if your build target is the Google Play store.  You should also add those 3 permissions so that we can download the expansion files for you.  You&#8217;ll need add 3 permissions so that we can automatically download the expansion files for you.  The <code>android.permission.INTERNET</code> permission lets us download the expansion files from Google&#8217;s servers.  The expansion files have to be saved in a specific location on external storage so that&#8217;s why we need the <code>android.permission.WRITE_EXTERNAL_STORAGE</code> permission.  That leaves us with the final permission: <code>com.android.vending.CHECK_LICENSE</code>.  In order for us to get the URL to download the expansion file, we have to go through Google Play&#8217;s Application Licensing Service.  Let&#8217;s take a look at <code>config.lua</code> to see how we have to set up licensing.</p><pre class="crayon-plain-tag">application =
+{
+	content =
+	{
+		width = 768,
+		height = 1024,
+		scale = &quot;letterbox&quot;,
+	},
+	license =
+	{
+		google =
+		{
+			key = &quot;Your key here&quot;
+		},
+	},
+}</pre><p>All you have to do is to put your key into the appropriate section of <code>config.lua</code> and you&#8217;re done.  This key lets us check with Google&#8217;s servers to see which files we need to download and see if we need to download anything new or missing.</p>
+<p>If you had to write your application natively in Java, then there are a lot of situations you have have to think about before you can even start your application.  </p>
+<ul>
+<li>What if the user doesn&#8217;t have enough space on their external storage? I better check to make sure they have the space.
+</li>
+<li>What if the user doesn&#8217;t even have their external storage mounted?  Looks like I&#8217;ll have to check on that first.
+</li>
+<li>What if the user doesn&#8217;t have a network connection?  I better warn them.  
+</li>
+<li>What if I updated my APK without updating my expansion file?  Guess I&#8217;ll need to update my code to use the correct expansion files.
+</li>
+<li>What if the user wipes their external storage?  I&#8217;ll have to download the files again in a download screen which has to work on all orientations and look good.
+</li>
+<li>What if the network fails in the middle of a download?  I&#8217;ll have to let the user retry the download.
+</li>
+<li>What if the user leaves the application while the download is happening?  I&#8217;ll have to handle the user exiting the app.
+</li>
+<li>How will the user know when the expansion files have been downloaded?  I&#8217;ll need to implement notifications.
+</li>
+<li>How do I even make the expansion files?  I&#8217;ll have to do a ton of research on how to package them.
+</li>
+<li>Where should I download the expansion files to?  More research time.
+</li>
+<li>What can I do to make my life easier? <strong><a href=http://www.coronalabs.com/store>Use Corona SDK!</a></strong></li>
+</ul>
+<p>All of these situations and more are handled by Corona SDK, so you don&#8217;t have to even think about them.  </p>
+<p>Time to go wild with your asset files!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/17/expansion-file-support-for-android/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

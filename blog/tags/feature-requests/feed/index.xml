@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>feature requests &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/feature-requests/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>feature requests &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Plugins coming soon to a marketplace near you</title>
+		<link>/blog/2016/01/21/plugin-development-coming-soon-to-a-marketplace-near-you/</link>
+		<comments>/blog/2016/01/21/plugin-development-coming-soon-to-a-marketplace-near-you/#comments</comments>
+		<pubDate>Thu, 21 Jan 2016 20:23:39 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[feature requests]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65278</guid>
+		<description><![CDATA[Corona Labs engineers are continually working on additional plugins to help you expand the features of your apps. Learn what's in the development pipeline and how you can be recommend plugins for upcoming development.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-34463" src="/wordpress/wp-content/uploads/2013/05/Corona_Plugin_logo2.png" alt="Corona Plugin" width="180" height="185" />Plugins make up a major piece of the Corona ecosystem, allowing the product to grow without increasing the core app size. This lets us keep your app bundles small while creating features you may want to include in your app.</p>
+<p>Plugins also allow us to provide rapid updates without requiring new builds. You can see a collection of the currently available plugins in the <a href=https://store.coronalabs.com>Corona/ Marketplace</a>.</p>
+<p>What you won&#8217;t see in the list are the plugins we are currently developing. While there is always a chance that priorities can change, here&#8217;s an update on what we are working on.</p>
+<h3>Coming soon!</h3>
+<p>On the heels of the <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">Facebook Audience Network (FAN) plugin</a> that we announced on Friday, January 15, look for these plugins, coming soon:</p>
+<p><a href=http://www.google.com/analytics/ target="_blank">Google Analytics</a> &#8212; This plugin will allow your app to use Google Analytics to track events and usage, helping you gain insights into customer behavior and grow your audience.</p>
+<p><a href=http://hockeyapp.net/ target="_blank">Hockey App</a> &#8212; Hockey App is an app testing platform for both iOS and Android. This plugin will provide valuable features like crash reports, analytics about your testers, and more.</p>
+<p><a href=http://monetize.coronalabs.com/ target="_blank">Corona Ads</a> &#8212; We hope to have the initial plugin out to beta testers by the end of January, with a wider audience rollout towards the end of February. See our <a href=/blog/2016/01/14/corona-ads-beta-update/ target="_blank">recent update</a> on the blog!</p>
+<h3>On the horizon</h3>
+<p><a href=https://try.crashlytics.com/ target="_blank">Crashlytics</a> &#8212; This plugin will provide you with crash reports and analytics for both iOS and Android, helping you improve your apps.</p>
+<p><a href=https://apsalar.com/ target="_blank">Apsalar</a> &#8212; This plugin will give you access to analytics that can help you improve your return-on-investment, segment your audience, and provide custom messaging to users.</p>
+<p><a href=https://www.applovin.com/ target="_blank">Applovin</a> &#8212; This plugin will help you use data to reach new consumers through marketing automation and analytics.</p>
+<h3>Going forward</h3>
+<p>While this list isn&#8217;t exhaustive, it should provide you with some insight into what we are working on. Keep in mind that while we can&#8217;t control all aspects of development on these plugins, we are constantly working on new features and trying new things.</p>
+<p>If you have a specific plugin in mind, you can help us decide what to work on next by <a href=http://feedback.coronalabs.com/ target="_blank">creating a new feature suggestion</a> through our feedback site, or by voting on an existing request. Learn more about this in the <a href=https://forums.coronalabs.com/topic/61123-what-plugins-would-you-like-to-see-available-for-corona-sdk/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/21/plugin-development-coming-soon-to-a-marketplace-near-you/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

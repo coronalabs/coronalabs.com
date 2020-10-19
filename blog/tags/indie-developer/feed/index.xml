@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>indie developer &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/indie-developer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>indie developer &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #157 &#8211; Alone Game Developer Talks About Developing and Launching HoPiKo Game</title>
+		<link>/blog/coronageek/corona-geek-157/</link>
+		<comments>/blog/coronageek/corona-geek-157/#comments</comments>
+		<pubDate>Mon, 31 Aug 2015 22:32:51 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[hopiko]]></category>
+		<category><![CDATA[indie developer]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63870</guid>
+		<description><![CDATA[Today we talked with special guests Rob and Simon from Laser Dog about Hopiko, their latest action packed mobile game. We also discussed their plans for publishing Win32 and OS X desktop games with controller support. Plus, now you can download the updated code from our "Using Gravity In Games" development discussion.]]></description>
+				<content:encoded><![CDATA[<p>On today&#8217;s Corona Geek Hangout we talked with special guests Rob and Simon from Laser Dog about HoPiKo, their latest beautifully designed mobile game. Laser Dog&#8217;s Alone game was part of Apple&#8217;s App Store Best of 2014 and HoPiKo is set to become their next big hit. </p>
+<p>With 700 levels of frustratingly fast paced puzzle fun, HoPiKo has tons of particle effects, and <a href=http://www.laserdog.co.uk/blog/31/3/2015/making-music-on-gameboys target="_blank">custom music tracks created using a  modified Game Boy</a> to keep you playing for hours.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/2vMOd015Ozc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>We also discussed their plans for publishing Win32 and OS X desktop games with controller support. This is an excellent discussion with lots of gold nuggets. Be sure to listen to the full interview, and check the links below for more details about Hopiko and Laser Dog.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/aKzmgXPGmjQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>We ran out of time today, but we will continue our &#8220;Using Gravity In Games&#8221; development discussion next week with a look at restarting and advancing to new levels. This will be part four of our look at developing a game similar to the popular mobile game, They Must Be Fed 3. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> of the series we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. In part three, we <a href=/blog/coronageek/corona-geek-156/>added level building code for creating platforms, spikes, coins, and monsters</a>. We also looked at how to dynamically center the camera on the player&#8217;s starting position. </p>
+<p>If you want to jump ahead, <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated code today</a>. Ed Maurina has published the updates we meant to talk about during today&#8217;s Hangout. How cool is that? Thanks Ed!</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/crgd912u4fucmar5dhmv9f70q3k target="_blank">Corona Geek After Dark #9</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/ckrb3s4h7bj8evlum8mrd1si2uk target="_blank">Facebook app approval, home automation using Apple TV, game developers we follow</a>, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://www.hopiko-game.com/ target="_blank">Hopiko Game</a></li>
+<li><a href=http://laserdoggames.bandcamp.com/album/hopiko-sountrack-ep target="_blank">Hopiko EP Sound Track</a></li>
+<li><a href=https://soundcloud.com/roballison target="_blank">More Hopiko Music Tracks</a></li>
+<li><a href=http://www.alone-game.com/ target="_blank">Alone Game</a></li>
+<li><a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog&#8217;s blog</a></li>
+<li><a href=https://twitter.com/laserdoggames/ target="_blank">Laser Dog on Twitter</a></li>
+<li><a href=http://hey.wearestac.com/talks/enough-to-go-full-time target="_blank">Laser Dog explains how they created Alone (video)</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-156/>Corona Geek #156 &#8211; Using Gravity In Games &#8211; Part 3, Adding Blocks, Spikes, Coins, and Monsters</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-157/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-157-2015-08-31-laser-dog-interview-hopiko-game-launch.mp3" length="92728425" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #39 &#8211; Creating Forever Lost, Episodes 1, 2, and 3</title>
+		<link>/blog/coronageek/corona-geek-hangout-39/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-39/#respond</comments>
+		<pubDate>Mon, 13 May 2013 23:32:22 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[adventure games]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[indie developer]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=33723</guid>
+		<description><![CDATA[This week we hung out with Graham Ranson and Simon Pearce of Glitch Games to discuss how they designed and developed their hit game Forever Lost. Both game developers were brutally honest about the process and their design decisions. They also provided some encouraging insights into how two game developers make their living off of a popular game title.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Muk2Mna1rFw?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://snakeheadsoftware.com/ target="_blank">Gerald Bailey</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=http://appdevelopermagazine.com/ target="_blank">Richard Harris</a>, and of course <a href=https://twitter.com/GrahamRanson target="_blank">Graham Ranson</a> and <a href=https://twitter.com/_simon_pearce_ target="_blank">Simon Pearce</a> of <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> to discuss how they designed and developed their <a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?mt=8 target="_blank">hit game Forever Lost</a>. Graham and Simon were brutally honest about the process and their design decisions. They also provided some encouraging insights into how two game developers make their living off of a popular game title.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Peter Stanley for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-39/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights: Writing A Custom Keyboard for Spelling Test</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/</link>
+		<comments>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 23:50:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[Learning Apps]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220</guid>
+		<description><![CDATA[In this hangout snippet from Monday's Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his Spelling Test app. He also talks about his adventures in supporting Hebrew as well as multibyte characters.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4Oo4dPcu2ss?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p><img class="wp-image-477 alignright" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" /> In this hangout snippet from Monday&#8217;s Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his <a href=https://itunes.apple.com/us/app/spelling-test-by-funexam.com/id421083384?mt=8 target="_blank">Spelling Test app</a>. He also talks about his adventures in supporting Hebrew as well as multibyte characters. Watch the full hangout to catch other <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-35/>interesting app development tips</a>.</p>
+<p><strong>Subscribe:</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #35 &#8211; Hanging out with Spelling Test developer, Brian Park</title>
+		<link>/blog/coronageek/corona-geek-hangout-35/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-35/#comments</comments>
+		<pubDate>Tue, 16 Apr 2013 03:01:19 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[educational]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Kindle Fire]]></category>
+		<category><![CDATA[Nook]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32041</guid>
+		<description><![CDATA[This week, we hung out with Spelling Test developer, Brian Park. Spelling Test is the #1 rated spelling app for iOS, Android, Kindle Fire, and NOOK. Brian shared how his app was originally developed using x-code and objective-c and how after much personal expense and effort he ultimately decided to rewrite Spelling Test himself using Corona SDK. Even though Brian doesn't consider himself a programmer, he's developed an extremely popular cross platform educational app with many advanced features including a completely custom keyboard that suppresses spelling correction when taking tests.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Y3ohJDOicoA?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Spelling Test developer, Brian Park. Spelling Test is the #1 rated spelling app for iOS, Android, Kindle Fire, and NOOK. Brian shared how his app was originally developed using X-Code and Objective-C and how after much personal expense and effort he ultimately decided to rewrite Spelling Test himself using Corona SDK. Even though Brian doesn&#8217;t consider himself a programmer, he&#8217;s developed an extremely popular <a href=http://www.coronalabs.com/products/corona-sdk>cross platform educational app</a> with many advanced features including a completely custom keyboard that suppresses spelling correction when taking tests. Watch/listen to the full hangout for more details.</p>
+<div style="clear: both;"></div>
+<p>Also joining us on the developer panel were <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Mark Allen for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-35/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #34 &#8211; Hanging out with Climate Clock&#8217;s Ben Wong</title>
+		<link>/blog/coronageek/corona-geek-hangout-34/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-34/#respond</comments>
+		<pubDate>Tue, 09 Apr 2013 01:50:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31456</guid>
+		<description><![CDATA[This week, we hung out with Climate Clock's, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it's design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/S3OWp49EqVo?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Climate Clock&#8217;s, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it&#8217;s design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.</p>
+<p>Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information and <a title="Download Climate Clock" href=http://climateclockapp.com/ target="_blank">check out Climate Clock</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Justin Giles. Congrats Justin! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-34/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #33 &#8211; Hanging out with Questlord&#8217;s Eric Kinkead</title>
+		<link>/blog/coronageek/corona-geek-hangout-33/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-33/#comments</comments>
+		<pubDate>Wed, 03 Apr 2013 16:09:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[RPG]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=30974</guid>
+		<description><![CDATA[This week we hung out with Eric Kinkead, the developer of Questlord, a turn-based Role Playing Game (RPG). Eric shared his Corona SDK mobile developer story with us, along with his views on what makes a super successful mobile game.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/SPu2EZJTZBM?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Questlord&#8217;s Eric Kinkead. <a href=http://questlord.com/ target="_blank">Questlord</a> is a turn-based Role Playing Game (RPG) in the classic style of the legendary Computer Role Playing Games that defined the genre. Eric shared his <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> mobile developer story with us, along with his views on what makes a successful mobile game. Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=https://itunes.apple.com/app/id537840971?mt=8 target="_blank">Mohamed Bennouf</a> and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear:both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Patrick Flahan. Congrats Patrick! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-33/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Code Samples &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/code-samples/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Code Samples &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Updated: New features added to the Business App sample</title>
+		<link>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/</link>
+		<comments>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/#comments</comments>
+		<pubDate>Tue, 08 Mar 2016 16:59:56 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Sample Code]]></category>
+
+		<guid isPermaLink="false">/?p=65965</guid>
+		<description><![CDATA[The Corona Labs business app sample project has been updated to support database and input operations. Read the post to learn more details and how you can grab this project and get started beyond games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-47971" src="/wordpress/wp-content/uploads/2013/10/photo-5-169x300.png" alt="Corona Business App - Blog" width="169" height="300" />The <a href=https://github.com/coronalabs/business-app-sample target="_blank">Corona Labs Business App sample project</a> has been updated with some frequently requested &#8220;<em>How do I do this?</em>&#8221; examples. A new data tab (and menu item) have been added for you. This new scene offers:</p>
+<ul>
+<li>a <a href=https://docs.coronalabs.com/api/library/widget/newTableView.html target="_blank">tableView</a> populated from selecting data from an <a href=https://docs.coronalabs.com/api/library/sqlite3/index.html target="_blank">SQLite</a> database</li>
+<li>tapping on a tableView row lets you edit the record and store the changes</li>
+<li>tapping on the &#8220;Add&#8221; button lets you add new records to the database</li>
+</ul>
+<p>To support these changes, a database abstraction module has been added that provides initialization of the database and basic <a href=https://en.wikipedia.org/wiki/Create,_read,_update_and_delete target="_blank">CRUD operations</a> (Create, Read, Update, Delete) for records in the database.</p>
+<p>As part of the solution, you create a Lua table that defines your database scheme and the module will use that table for it&#8217;s operations.</p>
+<p>Both the <strong>Update</strong> and <strong>Add</strong> screens provide examples of using  <a href=https://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField&#8217;s</a> to input data and write to the database.</p>
+<p>The code that populates the <code>tableView</code> uses <a href=https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller target="_blank">MVC (Model, View, Controller)</a> best practices to separate the data from the display.</p>
+<p>The <code>tableView's</code> <code><a href="https://docs.coronalabs.com/api/library/table/insert.html" target="_blank">insert</a></code> function provides the controller aspect so your <code>onRowRender()</code> function knows about it&#8217;s record and doesn&#8217;t have to know anything about how your data table is constructed and ordered.</p>
+<p>Additionally a bug was fixed in the <code>tableView</code> refresh code to handle a case where your <code>tableView</code> didn&#8217;t have enough records in it and you tapped below the last record.</p>
+<p><a href=https://github.com/coronalabs/business-app-sample target="_blank">Download these new features</a> today by visiting the project on the Corona Labs github repository. See how it can help you develop business style apps.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #180 &#8211; Adding Explosive Mines and Handling Player Deaths</title>
+		<link>/blog/coronageek/corona-geek-180/</link>
+		<comments>/blog/coronageek/corona-geek-180/#respond</comments>
+		<pubDate>Tue, 16 Feb 2016 02:24:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65765</guid>
+		<description><![CDATA[On today's Corona Geek we explored the code and concepts behind implementing explosive mines that wipe out all spawned enemies and we discussed how to handle player deaths when the player object runs into enemies.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/-uih6xuoX84?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />Today&#8217;s Corona Geek Hangout was fraught with technical issues. Google Plus Hangouts kept crashing and we lost the first part of the show, but in the end we were victorious. To overcome our challenges, we switched to a new video conferencing service, which presented some interesting new options and provided some much needed video quality. You should notice these welcomed changes right away.</p>
+<p>During the second half of the show, we explored the code and concepts behind implementing explosive mines that wipe out all spawned enemies and we discussed how to handle player deaths when the player object runs into enemies.</p>
+<p>This Hangout is the last episode in our Geometry Wars Clone series. The current code is playable on mobile and desktop using touch and game controllers. <a href=http://github.com/roaminggamer/CoronaGeek/blob/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the Geometry Wars Clone project</a> and make it your own.</p>
+<p>By the way, Ed Maurina is looking for testers for his new tool to automatically generate common types of starter game templates. Signup to be an <a href=https://forums.coronalabs.com/topic/61560-seeking-alpha-and-beta-testers-corona-game-dev-tool/ target="_blank">alpha / beta tester</a> for his project and help shape a development tool that will benefit the whole community.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank">Share your developer story</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>Let&#8217;s Meet Face-to-Face:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Mobile World Congress in Barcelona, February 22-25</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Casual Connect Europe, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Game Developers Conference in San Francisco, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-180/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-180-2016-02-15-twin-stick-shooter-game-writing-code-part-6-mines.mp3" length="41563430" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #179 &#8211; The President Wants Students To Learn Computer Science</title>
+		<link>/blog/coronageek/corona-geek-179-the-president-wants-students-to-learn-computer-science/</link>
+		<comments>/blog/coronageek/corona-geek-179-the-president-wants-students-to-learn-computer-science/#respond</comments>
+		<pubDate>Tue, 09 Feb 2016 00:13:58 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65544</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we talked about the need to for students to learn computer science, automatically generate common types of starter game templates, and controlling the firing pattern of a player's weapons.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/w3GWb_RfT4E?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we talked about President Obama&#8217;s desire to empower all American students from kindergarten through high school to <a href=https://www.whitehouse.gov/blog/2016/01/30/computer-science-all target="_blank">learn computer science</a>.</p>
+<p>We also discussed a new tool Roaming Gamer&#8217;s Ed Maurina is creating to automatically generate common types of starter game templates. Signup to be an <a href=https://forums.coronalabs.com/topic/61560-seeking-alpha-and-beta-testers-corona-game-dev-tool/ target="_blank">alpha / beta tester</a> for his project.</p>
+<p>And, we continued development of our twin stick shooter game with a look at controlling the firing pattern of a player&#8217;s weapons. <a href=http://github.com/roaminggamer/CoronaGeek/blob/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the related twin stick shooter project code</a> and make it your own.</p>
+<p><strong>Pro Tip:</strong> Search for the text &#8220;HANGOUT 179&#8221; in the project to follow along with today&#8217;s Hangout discussion or jump ahead to next week&#8217;s talk on creating mines by searching the project for &#8220;purgeEnemies&#8221;.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><strong>Forever Lost is coming to Steam.</strong> Vote YES to <a href=http://www.glitchgames.co.uk/help-get-forever-lost-on-steam/ target="_blank">GREENLIGHT the project</a>.</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank">Share your developer story</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>Let&#8217;s Meet Face-to-Face:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Mobile World Congress in Barcelona, February 22-25</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Casual Connect Europe, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Game Developers Conference in San Francisco, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-179-the-president-wants-students-to-learn-computer-science/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-179-2016-02-08-twin-stick-shooter-game-writing-code-part-5-weapons.mp3" length="81053780" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #177 &#8211; Twin Stick Game Development &#8211; Using Sensors</title>
+		<link>/blog/coronageek/corona-geek-177/</link>
+		<comments>/blog/coronageek/corona-geek-177/#respond</comments>
+		<pubDate>Mon, 25 Jan 2016 23:00:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[sensors]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65390</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued development of our twin stick shooter game with a look at creating a grid based algorithm for smart enemy spawning using physics sensors.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/uBb-o7qcZsU?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we continued development of our twin stick shooter game with a look at creating a grid based algorithm for smart enemy spawning using <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/sensors.zip target="_blank">physics sensors</a>. The also touched on <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/objectCaching.zip target="_blank">object caching</a> and it&#8217;s possible benefits.</p>
+<p><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the twin stick shooter project code</a> and make it your own.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=https://forums.coronalabs.com/topic/61316-object-caching/>Join the Object Caching forum conversation</a></li>
+<li><a href=http://www.cravecreative.com/alien-scapecraft.php target="_blank">Play Alien SpaceCraft on Apple TV</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-177/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-177-2016-01-25-twin-stick-shooter-game-writing-code-part-3.mp3" length="74873209" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Grid System Enemy Spawning And Working With Tables</title>
+		<link>/blog/coronageek/hangout-highlights-grid-system-enemy-spawning-and-working-with-tables/</link>
+		<comments>/blog/coronageek/hangout-highlights-grid-system-enemy-spawning-and-working-with-tables/#respond</comments>
+		<pubDate>Wed, 20 Jan 2016 17:30:55 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[Lua Tables]]></category>
+		<category><![CDATA[twin stick shooter]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65318</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 175, we continued our twin stick shooter game development series with a look at the grid system used to spawn new enemies and determine their starting proximity to the player. We also discussed global variables and functions, and introduced code to save, load, and inspect table data. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 175, we continued our twin stick shooter game development series with a look at the grid system used to spawn new enemies and determine their starting proximity to the player. We also discussed global variables and functions, and introduced code to save, load, and inspect table data.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-175/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Getting moved into the Perk office</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qhNadWBo5a0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Twin Stick Shooter Project Review</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/EeEb1f7741k?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Game Element Highlights</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/sF3aNf8e1LE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Grid System Spawning</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/9b5IT7fFuc8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Grid System Code Review</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/7J-sZbylhPs?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Deep Copying Tables</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/jORmAYSRTA4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Benefits of Table Dumps</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/Op1NuBfuG5Q?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout on <a href=/blog/coronageek/corona-geek-176/>creating custom HUDs and using shuffling techniques</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-grid-system-enemy-spawning-and-working-with-tables/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #175 &#8211; Twin Stick Game Development &#8211; Writing Code &#8211; Part 1</title>
+		<link>/blog/coronageek/corona-geek-175-twin-stick-game-development-writing-code-part-1/</link>
+		<comments>/blog/coronageek/corona-geek-175-twin-stick-game-development-writing-code-part-1/#respond</comments>
+		<pubDate>Mon, 11 Jan 2016 23:08:06 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[controller support]]></category>
+		<category><![CDATA[twin stick shooter]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65167</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued our twin stick shooter game development series with a look at the grid system used to spawn new enemies and determine their starting proximity to the player. We also discussed global variables and functions, and introduced code to save, load, and inspect table data. Download the project code and make it your own.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/3vRlIibBSDI?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we continued our twin stick shooter game development series with a look at the grid system used to spawn new enemies and determine their starting proximity to the player. We also discussed global variables and functions, and introduced code to save, load, and inspect table data. </p>
+<p><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the project code</a> and make it your own.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2016/01/composerSwipeNavigation.zip target="_blank">Download a Composer Swipe Extension</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-175-twin-stick-game-development-writing-code-part-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-175-2016-01-11-twin-stick-shooter-game-writing-code-part-1.mp3" length="77503740" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #174 &#8211; Creating A Twin Stick Shooter Game</title>
+		<link>/blog/coronageek/corona-geek-174/</link>
+		<comments>/blog/coronageek/corona-geek-174/#respond</comments>
+		<pubDate>Mon, 28 Dec 2015 22:10:48 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[game controller inputs]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65098</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we started a new game development series on creating a twin stick shooter game modeled after Geometry Wars. Ed Maurina walked us through an overview of the game's design and the key game mechanics we will replicate.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/e3VvCZqcBlY?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we started a new game development series on creating a twin stick shooter game modeled after <a href=http://www.ign.com/wikis/geometry-wars-retro-evolved/Enemies target="_blank">Geometry Wars</a>. Ed Maurina walked us through an overview of the game&#8217;s design and the key game mechanics we will replicate. </p>
+<p>Specifically, we talked about adding weapons like cannons and mines, implementing parallax camera effects, creating radial explosions, caching objects and calculations as optimizations and remapping inputs to allow for game play via touch as well as game controllers.</p>
+<p>Get a head start on development. <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the source code</a> to get a taste of the game we&#8217;ll be building.</p>
+<p><iframe src="https://www.youtube.com/embed/OxtZUURTHzs?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-174/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-174-2015-12-28-twin-stick-shooter-game-part-1.mp3" length="69303380" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #173 &#8211; Adding Game Controller Support</title>
+		<link>/blog/coronageek/corona-geek-173/</link>
+		<comments>/blog/coronageek/corona-geek-173/#respond</comments>
+		<pubDate>Mon, 21 Dec 2015 22:31:26 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[game controller inputs]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65020</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we finished development on our top down shooter series with a look at how to add game controller support to desktop games. We examined the difference between analog and digital inputs with a look at working with axis events versus key events. We also shared code snippets for normalizing rotation and splitting strings on specific values.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/LI6GwO4G6oY?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we finished development on our <a href=https://www.youtube.com/watch?v=zsU-pk5FOAU&list=PLQUSbLhyMnAqWcw-9DrKl2szm4_ii8pS1 target="_blank">top down shooter series</a> with a look at how to add game controller support to desktop games. We examined the difference between analog and digital inputs with a look at working with axis events versus key events. We also shared code snippets for normalizing rotation and splitting strings on specific values.</p>
+<p>You can <a href=https://www.youtube.com/watch?v=zsU-pk5FOAU&list=PLQUSbLhyMnAqWcw-9DrKl2szm4_ii8pS1 target="_blank">replay all 11 videos in the series</a> from the Corona Geek Channel and you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">download source code</a> for the game to see how all the pieces fit together.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-173/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-173-2015-12-21-adding-game-controller-support.mp3" length="83102825" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Level Balancing, Enemy Types and Tiled Backgrounds</title>
+		<link>/blog/coronageek/hangout-highlights-level-balancing-enemy-types-and-tiled-backgrounds/</link>
+		<comments>/blog/coronageek/hangout-highlights-level-balancing-enemy-types-and-tiled-backgrounds/#respond</comments>
+		<pubDate>Wed, 16 Dec 2015 18:41:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[desktop game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64944</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 171, we talked about adding tiled terrain and random enemy types to our top down desktop shooter game. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 171, we talked about adding tiled terrain and random enemy types to our top down desktop shooter game. We learned how to make some zombies smarter than others, and we looked at how to randomize enemy distribution across levels to ensure we don’t overwhelm the player too early in the game.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-171/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/JY1ydTaKbQQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Mulitple Enemy Types</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/i2pz3BSOm_0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Tile Layout Patterns</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/hyIjb8ZACW8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Random Tiling Placement</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ya-xWC81PXM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Drawing Tiled Backgrounds</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/Lp3tHJpXBWI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Gem Types</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qP4YZF-eQEc?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Wrap Up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/NthHKmdSpVk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout on <a href=/blog/coronageek/corona-geek-172/>dropping pick-ups and traps</a> to battle a zombie horde.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-level-balancing-enemy-types-and-tiled-backgrounds/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #172 &#8211; Dropping Pick-ups and Traps To Fight Zombies</title>
+		<link>/blog/coronageek/corona-geek-172/</link>
+		<comments>/blog/coronageek/corona-geek-172/#respond</comments>
+		<pubDate>Mon, 14 Dec 2015 22:59:28 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[desktop game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64935</guid>
+		<description><![CDATA[On today's Hangout we continued development on our top down desktop shooter game. We added traps and pickups to help us battle the inbound zombie horde. We also added sounds, heads up display elements, and randomly generated bounding forest objects around the perimeter of our world. Download the source code.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/-TtdvT9ZrsI?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we continued development on our top down desktop shooter game. We added traps and pickups to help us battle the inbound zombie horde. We also added sounds, heads up display elements, and randomly generated bounding forest objects around the perimeter of our world.</p>
+<p>Next week we will add game controller support. <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">Download the source code</a> from today&#8217;s demo to follow along.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=/blog/coronageek/watch-roj-niyogi-answers-community-questions/ target="_blank">Watch Roj Niyogi&#8217;s Interview</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-172/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-172-2015-12-14-dropping-pick-ups-and-traps.mp3" length="98237127" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

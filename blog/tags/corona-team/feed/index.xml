@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corona team &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona-team/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>corona team &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>We are growing! Corona Labs hires more staff</title>
+		<link>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/</link>
+		<comments>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/#comments</comments>
+		<pubDate>Mon, 18 Jan 2016 22:59:15 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona team]]></category>
+
+		<guid isPermaLink="false">/?p=65249</guid>
+		<description><![CDATA[You may have noticed a few new faces showing up in the forums, or the flurry of new features rolling out for Corona SDK! Now that Corona Labs is part of Perk.com, we’ve had the opportunity to grow our staff in some important areas.]]></description>
+				<content:encoded><![CDATA[<p>You may have noticed a few new faces showing up in the forums, or the flurry of new features rolling out for Corona SDK! Now that Corona Labs is part of Perk.com, we&#8217;ve had the opportunity to grow our staff in some important areas.</p>
+<p>Here are some of the new team members and the roles they will be filling. You will likely recognize some of the names!</p>
+<h3>Danny Glover</h3>
+<p>Danny has returned to Corona Labs as a <a href=https://www.linkedin.com/in/dannyglover86 target="_blank">Plugin and Framework Engineer</a> after running his own business for a while. Many of the plugins you use today were contributed by Danny and now he&#8217;s back to develop even more great plugins. Please welcome him back.</p>
+<h3>Sergey Lerg</h3>
+<p>You may know him in the forums as <a href=https://twitter.com/sergeylerg target="_blank">@lerg</a>. Sergey came up with great examples for doing 2.5D graphics when Graphics 2.0 came out. Now he&#8217;s an Engineer focused on updating our full featured game samples to use modern Corona SDK platform and plugin development standards.</p>
+<h3>Chris Byerley</h3>
+<p>Known in the forums as <a href=https://twitter.com/develephant target="_blank">@develephant</a>, Chris is the developer of the &#8220;mod_parse&#8221; module (now the <a href=https://store.coronalabs.com/plugin/parse target="_blank">Parse</a> plugin) and the awesome Lua-based cloud product, <a href=http://coronium.io/ target="_blank">Coronium</a>. Chris joins the team as a Lead Engineer to redefine Corona Cloud, which will be based on his work with Coronium.</p>
+<h3>Kegan <span class="comment-text ">Blumenthal</span></h3>
+<p>Kegan is new to the Perk and Corona Labs family. He joins the Corona team under the role of <a href=https://www.linkedin.com/in/keganblumenthal target="_blank">Business Development Manager</a> focused on developing new business models for Corona and spearheading commercial efforts for Corona Ads.</p>
+<h3>Charles McKeever</h3>
+<p>You probably know Charles from the weekly <a href=https://www.youtube.com/user/CoronaGeek target="_blank">Corona Geek Hangouts</a>, but Charles has also been quietly working as our Developer Evangelist in the background for several years. He&#8217;s now full time with Corona Labs, filling a Director of Publisher Relations role. He will continue to host online Corona Geek events along with attending offline events like GDC 2016, planning out CoronaCon 2016, punching out social media posts, and reaching out to developers.</p>
+<h3>Brent Sorrentino</h3>
+<p>Many of you know Brent from the forums. If you&#8217;ve ever used Corona&#8217;s documentation or referenced a guide, you&#8217;ve benefitted from Brent&#8217;s hard work. After several years of serving the Corona community, Brent is now onboard full time as a <a href=https://www.linkedin.com/in/ignisdesign target="_blank">Developer Evangelist</a>. In addition to his work in the forums and documentation, he is also working on new step-by-step guides to make it easy to get started with Corona SDK.</p>
+<h3>Rob Miracle</h3>
+<p>Sometimes referred to as &#8220;<a href=https://twitter.com/miracleman target="_blank">Miracle Man</a>&#8220;, Rob has been a forum ninja for several years. His weekly tutorials have helped countless Corona developers and his tireless dedication to the community captures the spirit of Corona SDK. Despite being employed full-time outside of Corona, Rob is continuing in his role in Developer Relations.</p>
+<p>Please take a moment to leave these exceptional talents a welcome in the comments below.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/feed/</wfw:commentRss>
+		<slash:comments>34</slash:comments>
+		</item>
+	</channel>
+</rss>

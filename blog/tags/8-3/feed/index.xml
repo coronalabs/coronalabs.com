@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>8.3 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/8-3/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>8.3 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Xcode Requirements: iOS 8.3 + iOS 8.4-beta</title>
+		<link>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/</link>
+		<comments>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/#comments</comments>
+		<pubDate>Wed, 22 Apr 2015 22:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[8.3]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=62399</guid>
+		<description><![CDATA[Apple just released iOS 8.3 SDK, so starting in <a href="https://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default. ]]></description>
+				<content:encoded><![CDATA[<p>Apple just released iOS 8.3 SDK, so starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default.</p>
+<p>As always, the target iOS version does not affect backward compatibility. The apps you build with Corona will still be backwards compatible to iOS 6.0.</p>
+<h3>Changes to Xcode Requirements</h3>
+<p>Starting with 2015.2616, Corona Simulator will be more stringent about the version of Xcode you have installed (older versions work like before, in a less stringent manner). In particular, when you select a particular target iOS version, you must have the corresponding version of Xcode installed. For example, if you want to target iOS 8.3, you must install Xcode 6.3 which includes iOS 8.3 SDK.</p>
+<p>We made these changes due to <a href=https://devforums.apple.com/message/1127742>subtle issues</a> that were introduced in Xcode 6.3. To ensure that device builds for iOS 8.3 work properly with plugins, we had to make Corona Simulator more picky about which version of Xcode it uses; otherwise, device builds involving plugins will fail.</p>
+<p>Apple engineers have suggested that this more stringent pairing of iOS SDK version to Xcode version is technically more correct. While Xcode has been more forgiving in the past, we have chosen the more conservative route to minimize chances for future errors that you may encounter.</p>
+<h3>Unsupported Xcode versions</h3>
+<p>The changes we describe simply mean that you&#8217;ll have to download the appropriate version of Xcode whenever Corona Simulator changes its default iOS version target.</p>
+<p>However, if you have a version of Xcode installed that does <strong>not</strong> match what Corona Simulator expects, you can still use it. We call this the &#8220;I&#8217;m feeling lucky&#8221; option. That means, maybe it&#8217;ll work; maybe it won&#8217;t. Either way, you&#8217;re free to try, but you&#8217;re on your own. We won&#8217;t support it.</p>
+<p>In this situation, you will see the following warning dialog. You can still proceed, but you&#8217;ll also see a big <code>"UNSUPPORTED"</code> in the iOS SDK pulldown.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png alt="Corona Simulator iOS SDK mismatch warning" width="563" height="322" class="aligncenter size-full wp-image-62527" /></a></p>
+<h3>Multiple versions of Xcode</h3>
+<p>Sometimes there are situations where you will want multiple versions of Xcode installed. One reason is that we include access to iOS beta builds, e.g. iOS 8.4-beta is a version you can target in the latest daily build, as shown in the following diagram:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png alt="Corona Simulator Device Build Dialog Xcode 6.3" width="562" height="322" class="aligncenter size-full wp-image-62521" /></a></p>
+<p>In order to access the iOS 8.4-beta target, you must (of course) install that version. You will also need to use <a href=https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcode-select.1.html>xcode-select</a> to ensure that Corona Simulator finds this version of Xcode. You can type <code>xcode-select -p</code> to find out which version of Xcode is currently selected on your system.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

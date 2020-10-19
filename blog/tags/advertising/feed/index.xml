@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>advertising &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/advertising/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>advertising &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Facebook Audience Network plugin: updated rev-share ratio</title>
+		<link>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/</link>
+		<comments>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 23:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65571</guid>
+		<description><![CDATA[Corona Labs has released an update to the Facebook Audience Network monetization plugin. Learn more about how these changes benefit you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-63472" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png" alt="facebook-logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png 150w, /wordpress/wp-content/uploads/2015/07/facebook-logo.png 160w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs has updated the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> monetization plugin.</p>
+<p>Based on feedback, we&#8217;ve decided to set the revenue-sharing ratio for the Facebook Audience Network ad provider plugin at a flat 5% instead of the more complicated &#8220;tier&#8221; system previously announced. This rate applies across the spectrum regardless of ad requests/impressions.</p>
+<p>To get started with the Facebook Audience Network plugin, see our <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">recent announcement</a> for the plugin, or see the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">documentation</a>. We thank our developer community for their feedback and support!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>AppLovin plugin: now with rewarded/incentivized ads</title>
+		<link>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/</link>
+		<comments>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 02:03:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65538</guid>
+		<description><![CDATA[Learn more about recent updates to the AppLovin plugin which let you offer virtual rewards to users in exchange for watching ads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />We are pleased to announce a new feature in the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin: rewarded/incentivized video ads! These ads &#8212; in contrast to standard graphical interstitial and video interstitial ads &#8212; can be implemented to reward users with some form of in-app currency upon viewing the ad. For example, if your game uses &#8220;coins&#8221; as an in-app currency, you can award the player with some coins each time they view a rewarded video ad.</p>
+<h3>AppLovin setup</h3>
+<p>To implement rewarded/incentivized ads, you must enable and configure them on a per-app basis within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>. The process is straightforward: basically just enable the feature, choose a frequency capping option, set up the virtual currency, select the modal options, and save your settings.</p>
+<h3>API changes</h3>
+<p>To use rewarded/incentivized ads within Corona, simply add the <code>isIncentivized</code> parameter (boolean value of <code>true</code>) to your <a href=https://docs.coronalabs.com/daily/plugin/applovin/load.html target="_blank">applovin.load()</a>, <a href=https://docs.coronalabs.com/daily/plugin/applovin/show.html target="_blank">applovin.show()</a>, or <a href=https://docs.coronalabs.com/daily/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> API calls. For instance:</p><pre class="crayon-plain-tag">applovin.load( true )
+applovin.show( true )
+applovin.isLoaded( true )</pre><p>Note that incentivized ad offers can be limited to a certain amount in a given day, defined under &#8220;frequency capping&#8221; in the <a href=https://www.applovin.com/manage>AppLovin developer portal</a>. If you are using frequency capping, we recommend that you check for an <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html>event.phase</a> value of <code>"validationExceededQuota"</code> to determine if the limit has been reached. When this occurs, you may consider showing a normal graphical or video interstitial ad instead.</p>
+<h3>Listener changes</h3>
+<p>When using rewarded/incentivized ads, you can use the same event listener function as always, although you will find some new data passed in relation to incentivized ads.</p>
+<p>First and foremost, the <code>event</code> table will contain a new entry called <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/data.html target="_blank">event.data</a>. This is a table containing key-value pairs related to incentivized/rewarded video events. For instance, after a user has successfully completed watching a video, <code>event.data</code> will contain the key-value pairs associated with the rewarded currency:</p>
+<ul>
+<li><code>event.data.currency</code> — The type of currency.</li>
+<li><code>event.data.amount</code> — The amount of currency rewarded.</li>
+</ul>
+<p>In addition, the <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html target="_blank">event.phase</a> string may be one of the following values, all specifically related to incentivized/rewarded video ads:</p>
+<ul>
+<li><code>"declinedToView"</code> — Indicates that the user chose &#8220;no&#8221; when prompted to view the ad.</li>
+<li><code>"validationSucceeded"</code> — Indicates that the user viewed the ad and that their reward was approved by the AppLovin server.</li>
+<li><code>"validationExceededQuota"</code> — Indicates that the AppLovin server was contacted, but the user has already received the maximum amount of rewards allowed in a given day.</li>
+<li><code>"validationRejected"</code> — Indicates that the AppLovin server rejected the reward request.</li>
+<li><code>"validationFailed"</code> — Indicates that the AppLovin server could not be contacted.</li>
+</ul>
+<h3>In summary</h3>
+<p>This new addition to the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin gives you even more options for engaging and monetizing your users. For more information, please read the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>We&#8217;re AppLovin your Corona apps</title>
+		<link>/blog/2016/02/03/were-applovin-your-corona-apps/</link>
+		<comments>/blog/2016/02/03/were-applovin-your-corona-apps/#comments</comments>
+		<pubDate>Wed, 03 Feb 2016 18:21:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65479</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the immediate availability of the AppLovin plugin. This plugin allows developers to monetize users through AppLovin graphical interstitial and video interstitial ads.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/02/applovin.png rel="attachment wp-att-65510"><img class="alignright wp-image-65510 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" /></a>Corona Labs is pleased to announce the immediate availability of a new plugin that lets you implement ads from <a href=https://applovin.com/ target="_blank">AppLovin</a>. Their platform uses real-time data to understand your users and target them with relevant brands, ensuring that you are reaching users who are likely to interact with your marketing. AppLovin delivers content to over a billion mobile users every month.</p>
+<h3>Signing up</h3>
+<p>To use AppLovin, you will need to <a href=https://applovin.com/signup target="_blank">sign up</a> and get an AppLovin SDK key. Regardless of iOS or Android, you will get just one SDK key which should be used throughout your projects. Once you gain access to the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a><strong>, </strong>navigate to the <strong>Account</strong> section, expand the <strong>Account</strong> menu on the left side, select <strong>Keys</strong>, and your SDK key should be revealed.</p>
+<h3>Including the plugin</h3>
+<p>As with all plugins, you must include AppLovin in your <code>build.settings</code> file. For iOS, you just need the AppLovin plugin itself. For Android, you must also include the Google Play Services plugin since AppLovin needs to access library code within that plugin.</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+        -- Include this for Android only
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { android=true }
+        },
+    },
+}</pre><p></p>
+<h3>Setup and initialization</h3>
+<p>Similar to other plugins, you must <code>require()</code> the plugin in any Lua file where you plan to call AppLovin&#8217;s APIs.</p><pre class="crayon-plain-tag">-- Require the AppLovin plugin
+local applovin = require( &quot;plugin.applovin&quot; )</pre><p>Next, add a basic AppLovin event listener (it can be completed later) and initialize the AppLovin plugin:</p><pre class="crayon-plain-tag">-- AppLovin listener
+local function adListener( event )
+
+end
+
+-- Initialize the AppLovin plugin
+applovin.init( adListener, { sdkKey=&quot;YOUR_SDK_KEY&quot;, verboseLogging=false } )</pre><p>Note that the <a href=https://docs.coronalabs.com/plugin/applovin/init.html target="_blank">applovin.init()</a> call takes two parameters: the event listener function name and a table of parameters. Inside the table of parameters, your unique SDK key is required. In addition, you can include the <code>verboseLogging</code> key with a value of <code>true</code> to output AppLovin logs to the console.</p>
+<h3>Loading and showing ads</h3>
+<p>AppLovin offers graphical interstitial ads, video interstitial ads, and rewarded/incentivized video ads (no banners). The types displayed are controlled solely within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>, so the only valid parameter for the load or show APIs is the optional <code>isIncentivized</code> boolean which tells the plugin to load or show a rewarded/incentivized ad (see <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> for details). There is also no &#8220;hide&#8221; API since interstitial ads need to be closed by the user or played to completion before the app continues.</p>
+<p>To load an ad, simply call the <a href=https://docs.coronalabs.com/plugin/applovin/load.html target="_blank">applovin.load()</a> API:</p><pre class="crayon-plain-tag">applovin.load()</pre><p>Then, to show it, simply call <a href=https://docs.coronalabs.com/plugin/applovin/show.html target="_blank">applovin.show()</a>:</p><pre class="crayon-plain-tag">applovin.show()</pre><p>Similar to other ad providers, you can also call <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> to check if an ad is loaded before showing it. Like the APIs above, this accepts the boolean <code>isIncentivized</code> parameter, allowing you to check which type of ad is loaded.</p><pre class="crayon-plain-tag">if applovin.isLoaded() then
+    applovin.show()
+end</pre><p></p>
+<h3>Event listener callbacks</h3>
+<p>All of the APIs mentioned above, with the exception of  <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a>, will call the event listener function. The event table which is dispatched will contain various <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/index.html target="_blank">properties</a>, including the following <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/phase.html target="_blank">phases</a> (<code>event.phase</code>):</p>
+<ul>
+<li><code>"init"</code> &#8212; Indicates that the AppLovin plugin was initialized successfully.</li>
+<li><code>"failed"</code> &#8212; Indicates that an ad failed to load.</li>
+<li><code>"loaded"</code> &#8212; Indicates that an ad loaded successfully.</li>
+<li><code>"displayed"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was displayed.</li>
+<li><code>"hidden"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was closed/hidden.</li>
+<li><code>"playbackBegan"</code> — Indicates that a video interstitial ad was displayed.</li>
+<li><code>"playbackEnded"</code> — Indicates that a video interstitial ad was closed/hidden.</li>
+<li><code>"clicked"</code> &#8212; Indicates that an ad was clicked/tapped.</li>
+</ul>
+<p>In addition, a series of event properties help you work with <strong>rewarded/incentivized video ads</strong>. Please see <a href=/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/ target="_blank">this announcement</a> for details.</p>
+<p>For more information, please read the <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+<h3>Important notes</h3>
+<ul>
+<li>The AppLovin app configuration screen has many options for configuring and controlling the types of ads you get. For instance, you can restrict the ads to &#8220;child safe&#8221; if the app is targeting children. You can change these settings as often as needed, but <strong>for an app released to market</strong>, you must also email <a href=mailto:applovin-support@coronalabs.com>applovin-support@coronalabs.com</a> with a summary of your changes. This ensures that your ads and associated preferences will be delivered consistently.</li>
+<li>For monetization through the AppLovin plugin, Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</li>
+</ul>
+<h3>In summary</h3>
+<p>With the addition of AppLovin, Corona Labs is committed to bringing you more and more monetization options for your apps. If you have any questions about this plugin, please discuss in the <a href=https://forums.coronalabs.com/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/03/were-applovin-your-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+	</channel>
+</rss>

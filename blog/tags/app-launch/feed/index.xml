@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>app launch &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-launch/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>app launch &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Business of Apps: The app launch checklist</title>
+		<link>/blog/2016/11/14/business-of-apps-the-app-launch-checklist/</link>
+		<pubDate>Mon, 14 Nov 2016 21:07:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Business of Apps]]></category>
+		<category><![CDATA[app launch]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[App Promotion]]></category>
+		<category><![CDATA[ASO]]></category>
+
+		<guid isPermaLink="false">/?p=68748</guid>
+		<description><![CDATA[There is considerably more than just great visuals and programming behind any successful app. To help you succeed, we have consolidated a checklist of important tasks to consider, both pre-launch and post-launch.]]></description>
+				<content:encoded><![CDATA[<p>For many, creating apps is about getting the code right, creating a great design, and implementing the visuals to make it work. While these are critical elements to success, it only scratches the surface of a successful application launch.</p>
+<p>In addition to building a compelling app, these steps should also be part of your plan for success.</p>
+<h2><img class="alignnone size-full wp-image-68755" src="/wordpress/wp-content/uploads/2016/11/checklistitems_appprep.png" alt="checklistitems_appprep" width="700" height="70" /></h2>
+<h2>App Preparation</h2>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Include features that get you &#8220;Featured&#8221;</h3>
+<p>Both Apple and Google will be more likely to feature your app if you include their game networking services (Game Center or Google Play Games Services). Also, including features like cloud storage and other advanced services will make your app appear more professional and well-rounded.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Include push notifications</h3>
+<p>Push notifications are a great way to increase app engagement as long as they&#8217;re not abused. See our <a href=/blog/2016/10/12/business-of-apps-using-push-notifications-effectively/ target="_blank">previous post</a> for tips on how to effectively manage a push notification campaign.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Implement app analytics</h3>
+<p>Knowing what your users are doing and how they are finding your app is a great way to measure your success. Both <a href=https://docs.coronalabs.com/plugin/kochava-app-analytics/index.html target="_blank">Kochava</a> and <a href=https://docs.coronalabs.com/plugin/tenjin/index.html target="_blank">Tenjin</a> provide great solutions for this.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Use source control for your code</h3>
+<p>You may be working on version 2 of your app, but you need to fix a bug in version 1. Source control can be a lifesaver in such cases.</p>
+<h2><img class="alignnone size-full wp-image-68756" src="/wordpress/wp-content/uploads/2016/11/checklistitems_marketing.png" alt="checklistitems_marketing" width="700" height="70" /></h2>
+<h2>Marketing</h2>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Research your competition</h3>
+<p>What features are your competitors including? What is broken in their app? How can you make your app better? Knowing what works and what doesn&#8217;t can set your app apart from the crowd.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Build a list of contacts</h3>
+<p>Discovering a list of blogs that cover the field your app is aiming for, as well as reaching out to other influential people, can provide a great launchpad for when your app is ready.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Research featured apps in your category</h3>
+<p>Try to understand why featured apps earn their ranking. What attributes do they have in common? See what you can include in your app to also get your app featured.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Make a press kit</h3>
+<p>There will be a time when you want to reach out to bloggers, review sites, or other places to promote your app. Make their lives easy by providing them with a high-resolution icon, some intriguing screen shots, and key talking points about your app.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Get social!</h3>
+<p>You need to get your social media footprint established well before you launch your app. It takes time to build real followers for both <a href=https://facebook.com/ target="_blank">Facebook</a> and <a href=https://twitter.com/ target="_blank">Twitter</a>. You need to be engaged with your followers so you don&#8217;t look like just another advertiser. Post in-progress screenshots from time to time and, most importantly, give people a way to talk about your app (it can’t be shared if you don’t have an account!).</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Publish a gameplay video (trailer)</h3>
+<p>Record a short video of your game in action and make sure it shows off the best and most interesting aspects. A simple <a href=https://youtube.com/ target="_blank">YouTube</a> video will also give people another way to visually share your game across social media and on blogs.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Understand how SEO and ASO impacts app discovery</h3>
+<p><strong>SEO</strong> (<strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization) is the technique that helps your content get discovered in searches. <strong>ASO</strong> (<strong>A</strong>pp <strong>S</strong>tore <strong>O</strong>ptimization) is a type of SEO for the app stores. Learn ASO best practices or hire a trusted professional to get your app to bubble to the top of searches.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Create a website</h3>
+<p>A simple one page website is a great place to eventually place store links, support links, and your press kit. Be sure to provide links to your social media accounts and collect emails so you can notify people when your app launches!</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Join popular forums</h3>
+<p>Getting involved with forums like <a href=http://toucharcade.com/ target="_blank">TouchArcade</a> and establishing yourself in the community can help build enthusiasm and excitement for your app.</p>
+<h2><img class="alignnone size-full wp-image-68757" src="/wordpress/wp-content/uploads/2016/11/checklistitems_prelaunch.png" alt="checklistitems_prelaunch" width="700" height="70" /></h2>
+<h2>Pre-Launch</h2>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Focus-test your app</h3>
+<p>Find friends and potential customers and let them use the app. Watch how they interact with elements and look for places where they get stuck. Don’t explain the app to them, but just hand them the device and let them play. Do this multiple times as your app evolves.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Test launch in different geo-locations and localize</h3>
+<p>Before you launch your app worldwide, try test launching it in different countries to see how it performs. Collect feedback and fix anything that needs to be addressed for a broader global launch. Also, you can greatly increase your app&#8217;s reach if you support multiple languages.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Learn your store&#8217;s requirements</h3>
+<p>It&#8217;s good to know what the official submission guidelines are for the stores you plan to submit too. Review these and be prepared for what they are going to ask.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Beta-test your app</h3>
+<p>You know how your app is supposed to work, but many bugs can be found by people who aren&#8217;t as familiar with it. Using <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> is a great way to cross-platform test your app.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Give your users a way to contact you in-app</h3>
+<p>Getting feedback is always a good thing. It can help prevent 1-star ratings in the store which can be death for an app.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Collect some user data</h3>
+<p>Build features into your app that let you collect contact information. Given that many users only open an app once or use it for less than three months, being able to reach out to them is a good way to keep your app in use.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Implement crash reporting</h3>
+<p>Plugins like <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> or other analytics tools like <a href=https://github.com/GameAnalytics/GA-SDK-CORONA/wiki target="_blank">GameAnalytics</a> or <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">Flurry Analytics</a> can catch crashes and report them to you. After all, you can&#8217;t fix it if you don&#8217;t know it&#8217;s happening!</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Build in a way to have &#8220;specials&#8221;</h3>
+<p>Award extra points to people who complete quests or achieve goals. These also make great updates for later.</p>
+<h2><img class="alignnone size-full wp-image-68758" src="/wordpress/wp-content/uploads/2016/11/checklistitems_launchday.png" alt="checklistitems_launchday" width="700" height="70" /></h2>
+<h2>Launch Day</h2>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Get reviews as fast as you can</h3>
+<p>Getting at least five 5-star reviews will raise your app&#8217;s profile. Get friends and family to rate your app and also leverage your beta testers. Ask in the <a href=https://www.facebook.com/groups/310088005728833/ target="_blank">Corona Indie Developer&#8217;s group</a> on Facebook (and rate their apps too!).</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Hit up public relations outlets</h3>
+<p>Put your press kit to use! Engage that list of influential people and tech bloggers in your area and let them know about your app. Give them promo codes to help them experience your app beyond screenshots.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Consider a paid ad campaign</h3>
+<p>Paying for long term acquisition of users may not be practical for you, but a limited campaign in the first few days can get your app the extra visibility it needs to rank high enough for people to find it on their own.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Announce in your forum threads</h3>
+<p>You have been building up excitement in places like Touch Arcade, now reward those who have been following you with a few promo codes.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Engage your early adopters</h3>
+<p>Reward them for sharing your app with in-app goodies or features that you can turn off after a few days.</p>
+<h2><img class="alignnone size-full wp-image-68759" src="/wordpress/wp-content/uploads/2016/11/checklistitems_postlaunch.png" alt="checklistitems_postlaunch" width="700" height="70" /></h2>
+<h2>Post Launch</h2>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Update quickly</h3>
+<p>While regular updates may not make a lot of sense for your app, you should plan to update fairly soon after app launch. Doing so shows users that you are making improvements to the app, even if they&#8217;re just minor cosmetic aspects. These updates are seen as a positive sign that you&#8217;re going to take care of the app over the long run.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Watch your Reviews</h3>
+<p>Poor reviews can lead to more poor reviews. Try to reach out to the reviewer and find out what the issues are and then quickly help resolve them. Watch for other reviews and comments on social media as well.</p>
+<h3><img class="alignleft size-thumbnail wp-image-68752" src="/wordpress/wp-content/uploads/2016/11/Checkmark-1-150x150.png" alt="checkmark" width="20" height="20" />Use push notifications</h3>
+<p>You built in notifications, now take advantage of them (responsibly). Do not spam your users, but push out occasional reminders and let them know about special events/quests that you&#8217;ve set up.</p>
+<p>These post-launch activities are ongoing. Overall, you should plan to continuously iterate on all the items in this checklist to help achieve app longevity.</p>
+<h3>Conclusion</h3>
+<p>Achieving success for your game is a multi-faceted &#8220;art form&#8221; which begins well before your game is launched to the marketplace, and it continues long afterward. The above tips should help you navigate the process and see actual results!</p>
+<p>Do you have more tips that have worked well for you? Please share in the <a href=https://forums.coronalabs.com/ target="_blank">Corona Forums</a>!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

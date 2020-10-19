@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Stripe &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/stripe/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Stripe &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek After Dark #19 &#8211; Apple TV, Monetization, CoronaCon, Stripe Plugin</title>
+		<link>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/#comments</comments>
+		<pubDate>Thu, 04 Feb 2016 23:55:31 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[CoronaCon]]></category>
+		<category><![CDATA[Stripe]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65519</guid>
+		<description><![CDATA[On last night's Corona Geek After Dark, we discussed Apple TV game controllers, Facebook Audience Network oddities, speaker session ideas for CoronaCon and Jason Schroeder demoed his Stripe plugin.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/WTjwWhkDx0A?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On last night&#8217;s Corona Geek After Dark, we discussed using controllers with Apple TV and whether people are buying game controllers or not. We also touched on monetization, mediation, and Facebook Audience Network oddities. We brainstormed speaker session ideas for CoronaCon and Jason Schroeder demoed his Stripe plugin, which is nearing completion.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon sessions topics</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Apply to be a speaker at CoronaCon</a></li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://www.xibalbastudios.com/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://omnigeekmedia.com/ target="_blank">Rob Miracle</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a></li>
+<li><a href=http://www.jasonschroeder.com/ target="_blank">Jason Schroeder</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://www.playlevel.com/ target="_blank">Barry Swan</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-19-apple-tv-monetization-stripe-plugin-coronacon/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-20-2016-02-03-monetization-stripe-coronacon.mp3" length="140447347" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

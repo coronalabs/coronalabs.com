@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>guestpost &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/guestpost/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>guestpost &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Building a Custom Launcher with CoronaCards</title>
+		<link>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/</link>
+		<comments>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/#comments</comments>
+		<pubDate>Thu, 09 Apr 2015 21:38:06 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[guestpost]]></category>
+
+		<guid isPermaLink="false">/?p=61888</guid>
+		<description><![CDATA[Learn how Bonfire Media used <a href="http://coronacards.com/" target="_new">CoronaCards</a> to create "Aero Launcher," an enhanced launcher app for Android which has received almost 1,000,000 downloads.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s feature comes to you courtesy of <a href=http://www.bonfiremedia.com/ target="_blank">Bonfire Media</a>. As a long-time veteran of the mobile software industry, Bonfire Media has been making apps and games for over 10 years, and in the last few years has been using Corona SDK for several projects. One of their most recent releases, <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, was built with <a href=http://coronacards.com/ target="_blank">CoronaCards</a> and has already received almost 1,000,000 downloads.</em></p>
+<hr />
+<p><b>What is Aero Launcher?</b></p>
+<p>Before I describe <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, it probably makes sense to clarify what a &#8220;launcher&#8221; is. Almost everyone with a mobile device uses a launcher every day, as it&#8217;s simply the screen that appears on your smartphone or tablet when you hit the &#8220;home&#8221; button. Essentially, the launcher is the application we all use to launch and organize our apps and, as such, all mobile devices come with a built-in launcher. However, many people may not realize that, on Android devices, you can replace the boring stock launcher with an awesome, custom launcher.</p>
+<p>Aero Launcher is one such custom launcher. Here&#8217;s a short video:</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/QpmizVPRerE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Aero Launcher provides three main advantages over your default Android launcher:</p>
+<ol>
+<li>It automatically organizes all of your apps and games into simple tabs: <strong>Favorites</strong>, <strong>Apps</strong>, <strong>Games</strong> and <strong>System</strong>. Within each tab, you can optionally ask Aero to organize your apps even further into subcategories. This feature is great for users who don&#8217;t like to spend the time grouping all of their apps manually. In addition, you can easily move apps to your favorites tabs or uninstall unwanted apps by long-pressing an icon.</li>
+<li>Aero brings your homescreen alive with beautiful wallpapers, animated particle effects, custom fonts, and unique sounds. Here is an example of the &#8220;Fireworks&#8221; theme which shoots fireworks whenever you touch the screen, and the &#8220;Snow&#8221; theme that features falling snow:<a href=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg><img class="alignnone size-full wp-image-61893" src=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg alt="aerolauncher" width="1290" height="940" /></a></li>
+<li>Aero&#8217;s <strong>Genie</strong> tab recommends apps and games which you might enjoy, based on apps that you already have installed and use the most.</li>
+</ol>
+<h3>Why CoronaCards?</h3>
+<p>Why did we use Corona products instead of opting for the fully native Java development route? First of all, we really wanted a smooth, 60 fps experience for our launcher, including smooth animations, particle effects, and game-like responsiveness. Corona is very good for this, and because we are very experienced with Corona, we knew that we could make great themes using Corona rather than native Java. Plus, playing with cool animations and effects is more fun in Corona than in Java!</p>
+<p>So, why did we use <a href=http://coronacards.com/ target="_blank">CoronaCards</a> instead of simply Corona SDK? Well, one of the things which all custom launchers need is an inventory of all the apps that a user has installed. Corona SDK doesn&#8217;t have access to this information, but the native Android SDK does and we needed a way to check this. Thus, we were left with the choice between <a href=/products/enterprise/ target="_blank">Corona Enterprise</a> and CoronaCards. Both solutions would have worked, but the reason we went with CoronaCards is that we already had a large codebase from an old launcher we had written natively, and it felt simpler to embed a CoronaCards &#8220;view&#8221; into our existing launcher code rather than rewrite the bulk of our code in Lua and add native extensions.</p>
+<p>Essentially we considered it like this: Corona Enterprise is ideal if you want to create your apps primarily in Lua and Corona SDK and then add native extensions whenever necessary. CoronaCards, on the other hand, is a better fit for developers writing the bulk of their code natively who would then like to utilize the power and simplicity of Corona SDK for aspects of the front-end UI. For Aero Launcher, we used CoronaCards not just for elements of our UI, but for the <em>entire</em> UI. This pushed the boundaries of CoronaCards in a few cases, but with the help of other Corona developers, we were able to make it work, and work very well. In the end, Aero Launcher&#8217;s codebase is about 50% Java and 50% Lua.</p>
+<h3>Getting Aero Launcher</h3>
+<p>Aero Launcher is currently available on <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Google Play</a>. Please try it out and let us know what you think!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

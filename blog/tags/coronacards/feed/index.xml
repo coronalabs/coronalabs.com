@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CoronaCards &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronacards/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>CoronaCards &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Building a Custom Launcher with CoronaCards</title>
+		<link>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/</link>
+		<comments>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/#comments</comments>
+		<pubDate>Thu, 09 Apr 2015 21:38:06 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[guestpost]]></category>
+
+		<guid isPermaLink="false">/?p=61888</guid>
+		<description><![CDATA[Learn how Bonfire Media used <a href="http://coronacards.com/" target="_new">CoronaCards</a> to create "Aero Launcher," an enhanced launcher app for Android which has received almost 1,000,000 downloads.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s feature comes to you courtesy of <a href=http://www.bonfiremedia.com/ target="_blank">Bonfire Media</a>. As a long-time veteran of the mobile software industry, Bonfire Media has been making apps and games for over 10 years, and in the last few years has been using Corona SDK for several projects. One of their most recent releases, <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, was built with <a href=http://coronacards.com/ target="_blank">CoronaCards</a> and has already received almost 1,000,000 downloads.</em></p>
+<hr />
+<p><b>What is Aero Launcher?</b></p>
+<p>Before I describe <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, it probably makes sense to clarify what a &#8220;launcher&#8221; is. Almost everyone with a mobile device uses a launcher every day, as it&#8217;s simply the screen that appears on your smartphone or tablet when you hit the &#8220;home&#8221; button. Essentially, the launcher is the application we all use to launch and organize our apps and, as such, all mobile devices come with a built-in launcher. However, many people may not realize that, on Android devices, you can replace the boring stock launcher with an awesome, custom launcher.</p>
+<p>Aero Launcher is one such custom launcher. Here&#8217;s a short video:</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/QpmizVPRerE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Aero Launcher provides three main advantages over your default Android launcher:</p>
+<ol>
+<li>It automatically organizes all of your apps and games into simple tabs: <strong>Favorites</strong>, <strong>Apps</strong>, <strong>Games</strong> and <strong>System</strong>. Within each tab, you can optionally ask Aero to organize your apps even further into subcategories. This feature is great for users who don&#8217;t like to spend the time grouping all of their apps manually. In addition, you can easily move apps to your favorites tabs or uninstall unwanted apps by long-pressing an icon.</li>
+<li>Aero brings your homescreen alive with beautiful wallpapers, animated particle effects, custom fonts, and unique sounds. Here is an example of the &#8220;Fireworks&#8221; theme which shoots fireworks whenever you touch the screen, and the &#8220;Snow&#8221; theme that features falling snow:<a href=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg><img class="alignnone size-full wp-image-61893" src=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg alt="aerolauncher" width="1290" height="940" /></a></li>
+<li>Aero&#8217;s <strong>Genie</strong> tab recommends apps and games which you might enjoy, based on apps that you already have installed and use the most.</li>
+</ol>
+<h3>Why CoronaCards?</h3>
+<p>Why did we use Corona products instead of opting for the fully native Java development route? First of all, we really wanted a smooth, 60 fps experience for our launcher, including smooth animations, particle effects, and game-like responsiveness. Corona is very good for this, and because we are very experienced with Corona, we knew that we could make great themes using Corona rather than native Java. Plus, playing with cool animations and effects is more fun in Corona than in Java!</p>
+<p>So, why did we use <a href=http://coronacards.com/ target="_blank">CoronaCards</a> instead of simply Corona SDK? Well, one of the things which all custom launchers need is an inventory of all the apps that a user has installed. Corona SDK doesn&#8217;t have access to this information, but the native Android SDK does and we needed a way to check this. Thus, we were left with the choice between <a href=/products/enterprise/ target="_blank">Corona Enterprise</a> and CoronaCards. Both solutions would have worked, but the reason we went with CoronaCards is that we already had a large codebase from an old launcher we had written natively, and it felt simpler to embed a CoronaCards &#8220;view&#8221; into our existing launcher code rather than rewrite the bulk of our code in Lua and add native extensions.</p>
+<p>Essentially we considered it like this: Corona Enterprise is ideal if you want to create your apps primarily in Lua and Corona SDK and then add native extensions whenever necessary. CoronaCards, on the other hand, is a better fit for developers writing the bulk of their code natively who would then like to utilize the power and simplicity of Corona SDK for aspects of the front-end UI. For Aero Launcher, we used CoronaCards not just for elements of our UI, but for the <em>entire</em> UI. This pushed the boundaries of CoronaCards in a few cases, but with the help of other Corona developers, we were able to make it work, and work very well. In the end, Aero Launcher&#8217;s codebase is about 50% Java and 50% Lua.</p>
+<h3>Getting Aero Launcher</h3>
+<p>Aero Launcher is currently available on <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Google Play</a>. Please try it out and let us know what you think!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Implementing &#8220;SendTo&#8221; with CoronaCards and Swift</title>
+		<link>/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/</link>
+		<comments>/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/#comments</comments>
+		<pubDate>Tue, 30 Dec 2014 20:00:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Swift]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=60685</guid>
+		<description><![CDATA[In this tutorial, we'll implement the native "SendTo" feature in a CoronaCards-based app, allowing for sharing via Twitter, Facebook, and other services, as well as access to features like printing and AirDrop.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-60689" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2014/12/sharingpanel.jpg" alt="sharingpanel" width="200" height="356" />In a previous tutorial, we showed you how to use CoronaCards with Swift. In this tutorial, we&#8217;ll implement a native feature in a <a href=http://coronacards.com/ target="_blank">CoronaCards</a>-based app: the <strong>SendTo</strong> button, recognizable as the following:</p>
+<p><img class="alignnone wp-image-60686" src="/wordpress/wp-content/uploads/2014/12/sendTo.png" alt="sendTo" width="33" height="27" /></p>
+<p>In many iOS apps, when you press the <strong>SendTo</strong> button, it brings up a &#8220;sharing panel&#8221; that lets you share your information via Twitter, Facebook, and other services, as well as providing access to features like printing and AirDrop. In native terms, this panel is known as an <a href=https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIActivityViewController_Class/index.html target="_blank">UIActivityViewController</a>. Conveniently, this can be implemented using <a href=http://coronacards.com/ target="_blank">CoronaCards</a>.</p>
+<p>Before you proceed, ensure that you have already installed the CoronaCards templates from the previous tutorial and that you can build the project presented therein.</p>
+<h3>Setting Up</h3>
+<p>First, create a new Xcode project using the CoronaCards &#8220;Single View&#8221; template. Then, give your project a name and copy your CoronaCards <code>license.ccdata</code> file to the core project folder where <code>main.lua</code> is located.</p>
+<h3>The Corona Side</h3>
+<p>The CoronaCards template provides you with the &#8220;HelloPhysics&#8221; sample app as a starting point, and this tutorial will build upon it. Our &#8220;SendTo&#8221; Corona app will provide a button to invoke the sharing, but first we need something to share. Toward this end, the app will capture the screen using <a href=http://docs.coronalabs.com/api/library/display/captureScreen.html target="_blank">display.captureScreen()</a> and save it to a temporary file using <a href=http://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a>. Then, the code will send an event to the native side where the <code>UIActivityViewController</code> will be shown, and this event will contain a text message, the captured image, and a URL. When the controller finishes, it will trigger an event back in the Corona side that will tell your app if it was completed and what service was chosen. Finally, a <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> object will be used to show the results.</p><pre class="crayon-plain-tag">---------------------------------------------------------------------------------------
+-- A simple physics example in 8 lines!
+---------------------------------------------------------------------------------------
+
+local physics = require( &quot;physics&quot; )
+--
+-- Hello Physics Sample app
+--
+physics.start()
+
+local sky = display.newImage( &quot;sky.png&quot;, 160, 195 )
+local ground = display.newImage( &quot;ground.png&quot;, 160, 445 )
+
+local crate = display.newImage( &quot;crate.png&quot;, 180, -50 )
+crate.rotation = 5
+
+physics.addBody( ground, &quot;static&quot;, { friction=0.5, bounce=0.3 } )
+physics.addBody( crate, { density=3.0, friction=0.5, bounce=0.3 } )
+
+--
+-- Set up the share &quot;button&quot; and result text object
+--
+local shareText  -- Forward declare the button
+local resultText = display.newText( &quot;&quot;, display.contentCenterX, 20,  &quot;HelveticaNeue&quot;, 20 )
+
+--
+-- Set up the communications to Swift
+--
+local function handleTap( event )
+    --
+    -- Capture the screen
+    -- Also, hide the button initially
+    --
+    shareText.isVisible = false
+    local screen = display.captureScreen( false )
+    --
+    -- Save the capture to the temporary directory
+    --
+    display.save( screen, { filename=&quot;screencapture.jpg&quot;, baseDir=system.TemporaryDirectory, isFullResolution=true, backgroundColor={0,0,0,0} } )
+    screen:removeSelf()
+    screen = nil
+    --
+    -- Show the button
+    --
+    shareText.isVisible = true
+
+    local event = {
+        name = &quot;coronaView&quot;,
+        message = &quot;I just watched Hello Physics!&quot;,
+        image = { filename=&quot;screencapture.jpg&quot;, baseDir=system.TemporaryDirectory },
+        url = &quot;&quot;/
+    }
+    -- Dispatch the data to the global Runtime object
+    Runtime:dispatchEvent( event )
+    return true
+end
+
+shareText = display.newText( &quot;Share&quot;, display.contentCenterX, 200, &quot;HelveticaNeue&quot;, 24 )
+shareText:addEventListener( &quot;tap&quot;, handleTap )
+shareText.x = display.contentCenterX
+shareText.y = display.contentHeight - 15
+
+--
+-- Set up a listener to handle return event from Swift
+--
+local function sendToComplete( event )
+    print( &quot;sendToComplete&quot; )
+    print( event.name )  -- String value of &quot;sendTo&quot;
+    print( event.complete )  -- Boolean of true or false
+    print( event.activity )  -- Activity name
+
+    if ( event.complete ) then
+        resultText.text = &quot;Shared by &quot; .. event.activity
+    else
+        resultText.text = &quot;Cancelled&quot;
+    end
+    return true
+end
+
+Runtime:addEventListener( &quot;sendTo&quot;, sendToComplete )</pre><p>Let&#8217;s inspect the key aspects of this code. Pressing the share &#8220;button&#8221; (<code>shareText</code>) triggers the object&#8217;s handler function, <code>handleTap()</code>, inside which the screen is captured. It then saves the captured screen to the <code>system.TemporaryDirectory</code> folder. Next, an event table is constructed. The native side listens for an event called <code>coronaView</code>, and it expects some text, a URL, and an image, so we add those items to the event table.  Finally, we dispatch the event to the global Runtime.</p>
+<p>When the <code>UIActivityViewController</code> finishes (see below), it sends an event back to the CoronaCards side.  This requires a Runtime event listener that we&#8217;ll call <code>sendTo</code>, and it will communicate whether the information was shared or if it was cancelled. If shared, it will return the method which was used.</p>
+<h3>The Swift Side</h3>
+<p>On the Swift side, we need to make several changes to the <code>ViewController.swift</code> file. For reference, the entire file looks like this:</p><pre class="crayon-plain-tag">//
+//  ViewController.swift
+//  ActivityController
+//
+//  Created by Rob Miracle on 12/28/14.
+//  Copyright (c) 2014 Corona Labs. All rights reserved.
+//
+
+import UIKit
+
+class ViewController : CoronaViewController, CoronaViewDelegate
+{
+	var coronaView: CoronaView! = nil
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		// Do any additional setup after loading the view, typically from a nib.
+
+		coronaView = self.view as CoronaView // Force downcast
+		coronaView.coronaViewDelegate = self
+		coronaView.run()
+	}
+
+	override func didReceiveMemoryWarning()
+	{
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+    
+    func coronaView(view: CoronaView, receiveEvent event: NSDictionary) -&gt; AnyObject? {
+        /*
+            event dictionary contains:
+            message = text to share
+            image = NSDictionary with file name and path
+            url = URL to post
+        */
+        
+        let message: String = event[&quot;message&quot;] as String
+        let imageData = event[&quot;image&quot;] as NSData
+        let image:UIImage = UIImage(data: imageData as NSData)!
+        let myURL:String = event[&quot;url&quot;] as String
+        let url = NSURL(string: myURL)
+        
+        shareTextImageAndURL(sharingText: message, sharingImage: image, sharingURL: url)
+        return(true)
+    }
+    
+    func shareTextImageAndURL(#sharingText: String?, sharingImage: UIImage?, sharingURL: NSURL?) {
+        var sharingItems = [AnyObject]()
+        var view = self.view as CoronaView
+        
+        if let text = sharingText {
+            sharingItems.append(text)
+        }
+        if let image = sharingImage {
+            sharingItems.append(image)
+        }
+        if let url = sharingURL {
+            sharingItems.append(url)
+        }
+        
+        let activityViewController = UIActivityViewController(activityItems: sharingItems, applicationActivities: nil)
+
+        activityViewController.completionHandler = {(activityType, completed:Bool) in
+            if !completed {
+                println(&quot;cancelled&quot;)
+                let event = [&quot;name&quot;:&quot;sendTo&quot;, &quot;complete&quot;:false]
+                view.sendEvent(event)
+                return
+            } else {
+                println(&quot;complete \(activityType)&quot;)
+                let event = [&quot;name&quot;:&quot;sendTo&quot;, &quot;complete&quot;:true, &quot;activity&quot;:activityType]
+                view.sendEvent(event)
+            }
+        }
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+    }
+}</pre><p>The first change is setting up a delegate to handle the events &#8212; this is how other controllers can &#8220;talk&#8221; to your CoronaView on the CoronaCards side. We also add the <code>CoronaViewDelegate</code> to the end of the class declaration.</p>
+<p>The event handler which receives the event from CoronaCards needs to be called <code>coronaView</code>. So, we must rename <code>view</code> to <code>coronaView</code> and declare it as part of the <code>ViewController</code> class. Also, we&#8217;ll hook up the delegate prior to running the CoronaView.</p>
+<p>Next, we need to set up the event handling function which will receive the data from Corona. Inside the function, we extract the various fields from the event table. Interestingly, the image entry does not include the file name and path, but rather the binary image data, and this arrives as a <code>NSData</code> type which we can convert to a <code>UIImage</code> type. In addition, we convert the URL from a string to an <code>NSURL</code>.</p>
+<p>With the data ready to go, we call the function <code>shareTextImageAndURL</code>, passing the objects to the function. The <code>shareTextImageAndURL</code> function simply looks for each of the three objects and adds them to the <code>sharingItems</code> array.</p>
+<p>Finally, we create the <code>UIActivityViewController</code>, initializing it with our items to share, and instruct it to use all available options. For the completion handler for <code>UIActivityViewController</code>, if the controller was cancelled, we set up an event table named <code>sendTo</code> (as defined on the CoronaCards side) and set the <code>complete</code> entry to <code>false</code>. In the <code>else</code> clause, we set up an event table with <code>complete</code> set to <code>true</code> and set <code>activity</code> to the <code>activityType</code>. In both cases, we send the event to the CoronaCards view. Finally, we instruct the controller to show via the <code>presentViewController()</code> command.</p>
+<h3>Conclusion</h3>
+<p>As demonstrated in this tutorial, <a href=http://coronacards.com/ target="_blank">CoronaCards</a> gives you access to a wide range of native features which allow you to expand the power of your Corona-based project. As always, please contribute with questions and comments below.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #80 &#8211; CoronaCards, Windows Phone, and Endless Runner Part 2</title>
+		<link>/blog/coronageek/corona-geek-hangout-80/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-80/#comments</comments>
+		<pubDate>Mon, 10 Mar 2014 21:46:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Endless Runner]]></category>
+		<category><![CDATA[html5]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=56953</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed what CoronaCards is and what it means to use Corona SDK inside native iOS and Android apps, as well as Accelerator, PhoneGap, Xamarin, and Unity projects. We'll also discussed Windows Phone demos at the Microsoft GDC 2014 booth. And finally, we finished up the second half of our endless runner game mechanics conversation.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/zbM30nNbi-E?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout we discussed what CoronaCards is and what it means to <a href=http://CoronaCards.com/ target="_blank">use Corona SDK inside native iOS and Android apps</a>, as well as Accelerator, PhoneGap, Xamarin, and Unity projects. We&#8217;ll also discussed Windows Phone demos at the Microsoft <a href=/blog/2014/03/04/going-to-gdc-come-to-our-party/ target="_blank">GDC 2014</a> booth. And finally, we finished up the <a href=/blog/coronageek/corona-geek-hangout-79/>first half of our endless runner game mechanics conversation</a>. We looked at how to track travel distance and how to tell if our player fell in a hole. Be sure to <a href=http://bit.ly/NP5BY3 target="_blank">download the endless runner sample app</a> that covers all the essential parts of an endless runner style game.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/tmp/cubic.html target="_blank">Sergey Lerg&#8217;s HTML5 port of his endless runner game</a></li>
+<li><a href=http://funkyvisions.com/funkyvisions/buttermilk/play.html target="_blank">Running apps using App.io</a></li>
+<li><a href=http://bostonfig.com/ target="_blank">Boston Festival of Indies</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-80/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-80-2014-03-10-coronacards-windows-phone-endless-runners-part-2.mp3" length="47520944" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-80-2014-03-10-coronacards-windows-phone-endless-runners-part-2.mp3" length="47520944" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-80-2014-03-10-coronacards-windows-phone-endless-runners-part-2.mp3" length="47520944" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-80-2014-03-10-coronacards-windows-phone-endless-runners-part-2.mp3" length="47520944" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

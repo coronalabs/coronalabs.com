@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #40 &#8211; Memory Management, Google IO, and Dilbert</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-40/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-40/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Ed Maurina</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5605</link>
+		<dc:creator><![CDATA[Ed Maurina]]></dc:creator>
+		<pubDate>Thu, 13 Jun 2013 20:56:33 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5605</guid>
+		<description><![CDATA[Hello all!  I took the file off my site and move it to gitHub:
+
+Please download this from gitHub instead.  Thanks! 
+
+https://github.com/roaminggamer/RG_FreeStuff/tree/master/CoronaGeekAfterTalk]]></description>
+		<content:encoded><![CDATA[<p>Hello all!  I took the file off my site and move it to gitHub:</p>
+<p>Please download this from gitHub instead.  Thanks! </p>
+<p><a href="https://github.com/roaminggamer/RG_FreeStuff/tree/master/CoronaGeekAfterTalk" rel="nofollow">https://github.com/roaminggamer/RG_FreeStuff/tree/master/CoronaGeekAfterTalk</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ed Maurina</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5604</link>
+		<dc:creator><![CDATA[Ed Maurina]]></dc:creator>
+		<pubDate>Fri, 24 May 2013 19:11:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5604</guid>
+		<description><![CDATA[Hi.  This is a quick summary of how the the sample code (CoronaGeekAfterTalk.zip) came about and what it does.
+
+How the Code Came About
+====================
+On a prior CoronaGeek hangout, the following questions where raised:
+
+Question #1 - What happens (when using storyboard) if I have local references to objects in the scene and then scene is purged?  Do the local references get cleaned up or do I lose that memory?
+
+Question #2 - Is there and easier/better way to handle local references to objects in a storyboard scene?
+
+Question #3 - If I create display objects and add event listeners, do I have to remove them later or will the listeners be automatically removed when the objects are destroyed/removed?
+
+Initially, my answers were:
+
+#1 - No, the local references are not cleaned up.  That memory gets lost.
+#2 - Yes, there is a better way than using locals.  Store handles to objects on the scene&#039;s group object.
+#3 - Not sure.  I think you used to have to removed the listeners, but that may have changed.
+
+After the show, I thought, &quot;Hmmm... I should test my answers out.&quot;  So, I spent a little time and cobbled together the app found in CoronaGeekAfterTalk.zip.
+
+
+What the Code/App Does (and how to use it)
+=================================
+The code in CoronaGeekAfterTalk.zip contains six (6) sample scenes that do the following:
+
+1. Creates a blank scene (almost no content) to show how much memory is used for a (mostly) empty scene.
+
+2. Creates a scene with about 23,000 image and stores a reference to every image in the table &#039;imageHandles&#039;.  Then, when the scene is purged in scene:destroyScene(), that table is set to nil, effectively nil-ing the references.
+
+3. Same thing as #2, but does not nil the table.
+
+4. Same as #2, but instead of a local table, attaches the table to the group provided by the storyboard scene manager (see scene:createScene() and scene:enterScene()).  This table will be automatically removed when the group is removed by storyboard.  The important thing to understand about this example is that, we can reference the object references any time, but we no longer are responsible for nil-ing them out. 
+
+5. In this sample, I created 23,000 images and attached a uniquely generated event listener function to each one.  I did this to take up as much memory as possible.  To be clear, every object has its own touch function and the objects are not all sharing a single function which would be the efficient way to do it.  In this example, when the purge happens, I remove all the listeners by iterating over the image handles and calling &#039;obj:removeEventListener()&#039;.
+
+6. Same as #5, but I do not remove the event listeners manually.
+
+Please note: #5 and #6 use the &#039;improved&#039; handle tracking technique from #4. i.e. Automatic nil-ing when the scene is purged.
+
+
+To run the samples do the following:
+1. Load it in the simulator.
+2. Observe the main memory and texture memory &#039;in-use&#039; values while at the main menu.
+3. Click one of the 6 sample buttons to run that sample.
+4. Observe the main memory and texture memory &#039;in-use&#039; values while running the sample.
+5. Click the back button (all scenes have one).
+6. Observe the main memory and texture memory &#039;in-use&#039; values while at the main menu.
+
+At this point, you should be able to see the following:
+
+- The memory has been (mostly) cleaned up and is the same as when we started, 
+
+OR
+
+- The memory has not been cleaned up.
+
+You can re-run the tests as often as you like, but I suggest restarting the simulator between different scene tests.
+
+
+Final Results
+==========
+Question #1 - Correct.  The local references are not cleaned up and there is a memory leak.
+
+Question #2 - Interesting.  Most of the memory is cleaned up, but a little bit of memory is consistently NOT cleaned up.  However, there is no leak.  For some reason, Lua is defering the memory clearing and free space coallescing.
+
+Question #3 - Interesting and awesome.  Corona is clearing the memory associated with the listeners automatically when the objects are deleted.  This makes coding that much faster and easier.
+
+Final Notes
+=========
+
+I forgot to mention this, but in mainMenu.lua, you will notice that everytime we enter the scene I call &#039;storyboard.purgeAll()&#039; to force the removal of all non-active scenes.  If I did not do this, this app would not do any memory cleaning because I have plenty of memory to hold the inactive scenes in memory.]]></description>
+		<content:encoded><![CDATA[<p>Hi.  This is a quick summary of how the the sample code (CoronaGeekAfterTalk.zip) came about and what it does.</p>
+<p>How the Code Came About<br />
+====================<br />
+On a prior CoronaGeek hangout, the following questions where raised:</p>
+<p>Question #1 &#8211; What happens (when using storyboard) if I have local references to objects in the scene and then scene is purged?  Do the local references get cleaned up or do I lose that memory?</p>
+<p>Question #2 &#8211; Is there and easier/better way to handle local references to objects in a storyboard scene?</p>
+<p>Question #3 &#8211; If I create display objects and add event listeners, do I have to remove them later or will the listeners be automatically removed when the objects are destroyed/removed?</p>
+<p>Initially, my answers were:</p>
+<p>#1 &#8211; No, the local references are not cleaned up.  That memory gets lost.<br />
+#2 &#8211; Yes, there is a better way than using locals.  Store handles to objects on the scene&#8217;s group object.<br />
+#3 &#8211; Not sure.  I think you used to have to removed the listeners, but that may have changed.</p>
+<p>After the show, I thought, &#8220;Hmmm&#8230; I should test my answers out.&#8221;  So, I spent a little time and cobbled together the app found in CoronaGeekAfterTalk.zip.</p>
+<p>What the Code/App Does (and how to use it)<br />
+=================================<br />
+The code in CoronaGeekAfterTalk.zip contains six (6) sample scenes that do the following:</p>
+<p>1. Creates a blank scene (almost no content) to show how much memory is used for a (mostly) empty scene.</p>
+<p>2. Creates a scene with about 23,000 image and stores a reference to every image in the table &#8216;imageHandles&#8217;.  Then, when the scene is purged in scene:destroyScene(), that table is set to nil, effectively nil-ing the references.</p>
+<p>3. Same thing as #2, but does not nil the table.</p>
+<p>4. Same as #2, but instead of a local table, attaches the table to the group provided by the storyboard scene manager (see scene:createScene() and scene:enterScene()).  This table will be automatically removed when the group is removed by storyboard.  The important thing to understand about this example is that, we can reference the object references any time, but we no longer are responsible for nil-ing them out. </p>
+<p>5. In this sample, I created 23,000 images and attached a uniquely generated event listener function to each one.  I did this to take up as much memory as possible.  To be clear, every object has its own touch function and the objects are not all sharing a single function which would be the efficient way to do it.  In this example, when the purge happens, I remove all the listeners by iterating over the image handles and calling &#8216;obj:removeEventListener()&#8217;.</p>
+<p>6. Same as #5, but I do not remove the event listeners manually.</p>
+<p>Please note: #5 and #6 use the &#8216;improved&#8217; handle tracking technique from #4. i.e. Automatic nil-ing when the scene is purged.</p>
+<p>To run the samples do the following:<br />
+1. Load it in the simulator.<br />
+2. Observe the main memory and texture memory &#8216;in-use&#8217; values while at the main menu.<br />
+3. Click one of the 6 sample buttons to run that sample.<br />
+4. Observe the main memory and texture memory &#8216;in-use&#8217; values while running the sample.<br />
+5. Click the back button (all scenes have one).<br />
+6. Observe the main memory and texture memory &#8216;in-use&#8217; values while at the main menu.</p>
+<p>At this point, you should be able to see the following:</p>
+<p>&#8211; The memory has been (mostly) cleaned up and is the same as when we started, </p>
+<p>OR</p>
+<p>&#8211; The memory has not been cleaned up.</p>
+<p>You can re-run the tests as often as you like, but I suggest restarting the simulator between different scene tests.</p>
+<p>Final Results<br />
+==========<br />
+Question #1 &#8211; Correct.  The local references are not cleaned up and there is a memory leak.</p>
+<p>Question #2 &#8211; Interesting.  Most of the memory is cleaned up, but a little bit of memory is consistently NOT cleaned up.  However, there is no leak.  For some reason, Lua is defering the memory clearing and free space coallescing.</p>
+<p>Question #3 &#8211; Interesting and awesome.  Corona is clearing the memory associated with the listeners automatically when the objects are deleted.  This makes coding that much faster and easier.</p>
+<p>Final Notes<br />
+=========</p>
+<p>I forgot to mention this, but in mainMenu.lua, you will notice that everytime we enter the scene I call &#8216;storyboard.purgeAll()&#8217; to force the removal of all non-active scenes.  If I did not do this, this app would not do any memory cleaning because I have plenty of memory to hold the inactive scenes in memory.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Derek J</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5603</link>
+		<dc:creator><![CDATA[Derek J]]></dc:creator>
+		<pubDate>Thu, 23 May 2013 14:54:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5603</guid>
+		<description><![CDATA[Thank you good sirs. Much appreciated.]]></description>
+		<content:encoded><![CDATA[<p>Thank you good sirs. Much appreciated.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ed Maurina</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5602</link>
+		<dc:creator><![CDATA[Ed Maurina]]></dc:creator>
+		<pubDate>Tue, 21 May 2013 20:47:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5602</guid>
+		<description><![CDATA[Hi!  I&#039;m slow as molasses this week, but here is a direct download link to the app I originally sent to Charles and the others after an earlier show:
+
+http://downloads.roaminggamer.com/coronageek/CoronaGeekAfterTalk.zip]]></description>
+		<content:encoded><![CDATA[<p>Hi!  I&#8217;m slow as molasses this week, but here is a direct download link to the app I originally sent to Charles and the others after an earlier show:</p>
+<p><a href="http://downloads.roaminggamer.com/coronageek/CoronaGeekAfterTalk.zip" rel="nofollow">http://downloads.roaminggamer.com/coronageek/CoronaGeekAfterTalk.zip</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5601</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Tue, 21 May 2013 15:32:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5601</guid>
+		<description><![CDATA[Hi Derek J. Thank you for watching the show. Ed should be publishing the app soon. A link will be added to the post when it&#039;s ready.]]></description>
+		<content:encoded><![CDATA[<p>Hi Derek J. Thank you for watching the show. Ed should be publishing the app soon. A link will be added to the post when it&#8217;s ready.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Derek J</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5600</link>
+		<dc:creator><![CDATA[Derek J]]></dc:creator>
+		<pubDate>Tue, 21 May 2013 15:28:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5600</guid>
+		<description><![CDATA[As an aside,I was unable to submit a comment without putting in a website, though the form doesn&#039;t have it labelled as required.]]></description>
+		<content:encoded><![CDATA[<p>As an aside,I was unable to submit a comment without putting in a website, though the form doesn&#8217;t have it labelled as required.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Derek J</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/#comment-5599</link>
+		<dc:creator><![CDATA[Derek J]]></dc:creator>
+		<pubDate>Tue, 21 May 2013 15:27:06 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378#comment-5599</guid>
+		<description><![CDATA[Very informative(and timely) I was just starting to tinker with storyboard and memory management. Any chance we can get a link to the test app code that was used?]]></description>
+		<content:encoded><![CDATA[<p>Very informative(and timely) I was just starting to tinker with storyboard and memory management. Any chance we can get a link to the test app code that was used?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

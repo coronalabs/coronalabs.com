@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iAds &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/iads/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iAds &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Apple is dropping support for the iAds App Network. What does that mean to you?</title>
+		<link>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/</link>
+		<comments>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/#comments</comments>
+		<pubDate>Wed, 17 Feb 2016 17:30:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[iAds]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65264</guid>
+		<description><![CDATA[Apple has announced that it is going to drop support for iAds. Apps must be updated to remove iAds before June 30. The iAds plugin will be removed as of March 31, 2016. Learn what this means to you.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-full wp-image-59778 alignright" src="/wordpress/wp-content/uploads/2014/10/apple-e1412720862104.png" alt="apple" width="125" height="125" />Recently, Apple <a href=https://developer.apple.com/news/?id=01152016a&1452895272 target="_blank">announced</a> plans to drop support for the iAds advertising network. However it appears that&#8217;s not the case &#8212; instead, they are dropping support for iAds App Network. Although these sound similar, they are quite different.</p>
+<p>The iAds App Network was a feature where you could become an &#8220;advertiser&#8221; and advertise your apps inside other people&#8217;s apps. This app promotion network seems to be what&#8217;s closing down. Apple will not be taking new clients for this program, but it appears that you can still use typical iAds in your app.</p>
+<p>Depending on how you interpret the announcement and subsequent tech blog posts, you may not be confident in iAds. If this is the case, you may want to consider an alternate monetization method such as the <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">Facebook Audience Network</a> or <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">AppLovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

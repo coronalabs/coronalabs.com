@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ouya &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ouya/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Ouya &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Labs and OUYA partner to create more opportunities for game developers on the big screen</title>
+		<link>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/</link>
+		<comments>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/#comments</comments>
+		<pubDate>Thu, 26 Sep 2013 15:57:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Ouya]]></category>
+
+		<guid isPermaLink="false">/?p=46216</guid>
+		<description><![CDATA[From an action-packed arcade game to a turn-based RPG, some games look 10x more awesome on the big screen. To provide Corona developers with more distribution opportunities, we’re thrilled to announce a partnership with <a href="https://www.ouya.tv/">OUYA</a> an innovative game console that’s made headlines for their developer-friendly approach to gaming.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/09/Ouya-game-system-300x168.jpg" alt="Ouya game system " class="alignleft size-medium wp-image-46217" />From an action-packed arcade game to a turn-based RPG, some games look 10x more awesome on the big screen. To provide Corona developers with more distribution opportunities, we’re thrilled to announce a partnership with <a href=https://www.ouya.tv/>OUYA</a> an innovative game console that’s made headlines for their developer-friendly approach to gaming.</p>
+<p>In the midst of the console versus mobile debate, we’re offering developers the best of both worlds. The power of Corona SDK’s unprecedented development speed, combined with the chance to get a head start in OUYA’s growing market, opens a new avenue for game developers. With less than 500 games on OUYA, the market is far less saturated than the App Store or Google Play, and presents an opportunity to any developer that wants to see their game on the television. That means our talented community &#8211; that’s right, all of you &#8211; can start creating the next big hit.</p>
+<h3>Getting started with OUYA</h3>
+<p>Corona SDK Pro and Enterprise developers can now incorporate OUYA’s game network and integrate in-app purchase into their OUYA games.</p>
+<p>Take a look at <a href=http://docs.coronalabs.com/daily/plugin/ouya/>OUYA’s plugin documentation</a> and download the referenced sample source code. Once your project is ready to build, select “Build for Android” in the Corona Simulator and OUYA as your “Target App Store.” </p>
+<h3>Limitless game controller support</h3>
+<p>As a reminder, beyond integrating the OUYA game controller, you can now target nearly all <a href=http://www.coronalabs.com/blog/2013/08/27/tutorial-introduction-to-game-controllers/>HID devices</a> including the GameStick (to ship on October 29) and PlayStation DualShock 3 game controllers, along with MOGA Pro and NVIDIA Shield. Customize your games by taking full advantage of controllers’ buttons, D-pad, analog thumbsticks and triggers. Taking it one step further, we also enable you to incorporate Bluetooth keyboards and mice into your games.</p>
+<h3>Why develop for OUYA?</h3>
+<p>OUYA is ramping up and providing attractive benefits to developers.</p>
+<ul>
+<li><strong>Accessibility</strong>: OUYA works diligently to support as many developers as possible.
+<li><strong>Discoverability</strong>: OUYA shares content from all sorts of great developers. From OUYA’s engagement-metrics driven trended sections, to special guest-curated categories, OUYA looks to surface unique and enjoyable content to keep gamers playing and exploring new content.</li>
+<li><strong>Publishing is easy</strong>: With a few clicks and a controller in hand, your game will be live on TV for the world to see.</li>
+<li><strong>Low financial barrier</strong>: OUYA offers an affordable console dev kit; just $99 for the console, and no fees for submission of games or updates.</li>
+</ul>
+<p>We can’t wait to see what you cook up for OUYA. So get to porting, and share your work with us!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release</title>
+		<link>/blog/2013/09/04/new-public-release-2/</link>
+		<comments>/blog/2013/09/04/new-public-release-2/#comments</comments>
+		<pubDate>Wed, 04 Sep 2013 23:01:01 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[GameStick]]></category>
+		<category><![CDATA[nvidia shield]]></category>
+		<category><![CDATA[Ouya]]></category>
+		<category><![CDATA[socialkit]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=43816</guid>
+		<description><![CDATA[</a>Today, we are announcing our latest Public Release, 2013.1202. It's immediately available for <a href="https://developer.coronalabs.com/downloads/corona-sdk">download</a> for your <a href="/products/corona-sdk/">app development</a> pleasure!
+
+There are a lots of improvements in the <a href="https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202">release notes</a>, so I'll just highlight a few.]]></description>
+				<content:encoded><![CDATA[<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg><img src=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg alt="Ouya corona sdk" class="alignleft size-full wp-image-43820" /></a>Today, we are announcing our latest Public Release, 2013.1202. It&#8217;s immediately available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a> for your <a href=/products/corona-sdk/>app development</a> pleasure!</p>
+<p>There are a lots of improvements in the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202>release notes</a>, so I&#8217;ll just highlight a few.</p>
+<p>First, we&#8217;ve added Ouya, GameStick, and NVIDIA Shield support. This includes support for game controllers and joysticks on those devices. We&#8217;ve also added general support for HID-based devices on Android, so you can connect your keyboard, mouse, and touchpad. If you have a MOGA Pro or a Sony PS3 controller, those are HID-based and work as well!</p>
+<p>While we&#8217;re on the gaming theme, we&#8217;ve added real-time multiplayer support via Google Play game services on Android. And we&#8217;ve added turn-based multiplayer support via Game Center on iOS. We&#8217;ve also partnered with <a href=http://www.coronalabs.com/blog/2013/08/15/guest-piece-photon-cloud-corona-sdk-a-dream-team-for-cross-platform-multiplayer-games/>Photon Cloud</a> for real-time multiplayer support across iOS and Android.</p>
+<p>For more business-oriented apps, we&#8217;ve added several features like left/center/right alignment to &#8216;display.newText&#8217;. We&#8217;ve also started to offer support for the iOS SocialKit framework. This is done via a plugin to the &#8216;native.showPopup&#8217; API that lets you post on Facebook, Twitter, and Weibo. We added Address Book popup as an iOS plugin as well.</p>
+<p>On the monetization and services side, our roster of 3rd party plugins continues to grow:</p>
+<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2.png><img src="http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2-216x300.png" alt="corona amplitude analytics" class="alignright size-medium wp-image-43818" /></a></p>
+<p>* Google Game Play Services<br />
+* Vungle<br />
+* CrossInstall<br />
+* AppRever<br />
+* Pinsight Media+</p>
+<p>Finally, the last thing I&#8217;ll highlight is we are upgrading our old analytics (a.k.a. LaunchPad) to <a href=https://amplitude.com/>Amplitude</a>. If you&#8217;ve ever played with other analytics services, one thing you know is that you can often wait a day or longer before you see data. As things scale up, you might experience a few hours delay, but Amplitude&#8217;s goal is to give you near real-time data!</p>
+<p>As part of this upgrade, we&#8217;ve also cleaned up the web dashboard. We think it&#8217;s a lot more usable and the information is presented in a manner that will help you understand your customers a lot better. During the transition, the old dashboard will not display your data properly.</p>
+<p>In terms of timing, the entire transition is happening right now, and we hope to have it completed by the end of September. The great thing is, you won&#8217;t have to do a thing to take advantage of the basic service — it&#8217;s free!</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/04/new-public-release-2/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek Snippets &#8211; HID Support, Ouya, GameStick Support</title>
+		<link>/blog/coronageek/corona-geek-51-snippets/</link>
+		<comments>/blog/coronageek/corona-geek-51-snippets/#respond</comments>
+		<pubDate>Wed, 21 Aug 2013 16:30:29 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[GameStick]]></category>
+		<category><![CDATA[HID]]></category>
+		<category><![CDATA[Ouya]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=42178</guid>
+		<description><![CDATA[During Monday's Corona Geek Hangout we shared that Corona SDK now supports HID controllers, which means you can now target Ouya, GameStick game controller, MOGA Pro, PS 3 controller, NVIDIA Shield, along with Bluetooth keyboards and mice (all HID devices). Here's a snippet from the Hangout where Snake Head Software Founder, Gerald Bailey, raised the important question of what do these controllers mean for mobile games. Roaming Gamer, Ed Maurina, responded with a answer that offers up some good perspective.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/eOYpPCYfOiw?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During Monday&#8217;s Corona Geek Hangout we shared that Corona SDK now supports HID controllers, which means you can now target Ouya, GameStick game controller, MOGA Pro, PS 3 controller, NVIDIA Shield, along with Bluetooth keyboards and mice (all HID devices). Here&#8217;s a snippet from the Hangout where <a href=http://snakeheadsoftware.com/ target="_blank">Snake Head Software</a> Founder, Gerald Bailey, raised the important question of what do these controllers mean for mobile games. <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer</a>, Ed Maurina, responded with a answer that offers up some good perspective. <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-51/>Watch the Hangout</a> for more details.</p>
+<p><strong>Here are two other snippets you might enjoy</strong></p>
+<ul>
+<li><a href=http://www.youtube.com/watch?v=Pzal7GaNuNk target="_blank">Side Loading Apps on Nexus 7 Second Generation</a></li>
+<li><a href=http://www.youtube.com/watch?v=kVm-VabvhTs target="_blank">Creating a Game Studio &#8211; Andrea Zanetti, 16bitLabs</a></li>
+</ul>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-51-snippets/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #51 &#8211; Ouya Support, Nexus 7 Tips, and 16bitLabs</title>
+		<link>/blog/coronageek/corona-geek-hangout-51/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-51/#comments</comments>
+		<pubDate>Mon, 19 Aug 2013 22:09:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Controllers]]></category>
+		<category><![CDATA[GameStick]]></category>
+		<category><![CDATA[HID]]></category>
+		<category><![CDATA[Ouya]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=41983</guid>
+		<description><![CDATA[During this week's Corona Geek, we shared that Corona Simulator now has Ouya and GameStick 'View As' options, Corona SDK now supports all HID controllers, tips for side-loading apps on Nexus 7 and Andrea Zanetti from Italy shared his adventures as a 16 year old app developer.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/iYd2pPQKCDI?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek, we shared that Corona Simulator now has Ouya and GameStick &#8216;View As&#8217; options, which means developers can start exploring Ouya using Corona SDK. The plugin to allow IAP and Ouya Store publishing is in the works. Once it&#8217;s ready, it will be possilbe to publish apps to the Ouya Store. The other great news mentioned is that Corona SDK now supports all HID controllers, which means you can now target GameStick game controller, MOGA Pro, PS 3 controller, NVIDIA Shield, along with Bluetooth keyboards and mice (all HID devices). We also shared some Nexus 7 app side-loading tips and talked with 16bitLabs game developer, Andrea Zanetti from Italy, about his adventures as a 16 year old app developer.</p>
+<p><strong>Here are links to resources mentioned during today&#8217;s show:</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/SimpleKeyDumper target="_blank">HID Key Dumper App (Android Devices and OUYA)</a></li>
+<li><a href=http://www.androidcentral.com/how-enable-developer-settings-android-42 target="_blank">Enable Android Developer Features Android 4.2+</a></li>
+<li><a href=http://www.coronalabs.com/blog/2013/07/09/tutorial-basic-debugging/?#comment-32499 target="_blank">Rob&#8217;s Great Debug Article</a></li>
+<li><a href=http://docs.coronalabs.com/guide/distribution/androidBuild/index.html?#device-installation target="_blank">Using ADB to side load</a></li>
+<li><a href=http://airdroid.com/ target="_blank">AirDroid &#8211; Access your Android over the web</a></li>
+<li><a title="Free iOS and Android Physics Game" href=http://iceherogame.com/ target="_blank">Ice Hero Game by 16bitLabs</a></li>
+</ul>
+<p>Be sure to check out Roaming Gamer&#8217;s <a href=http://forums.coronalabs.com/topic/38518-roaming-gamer-template-prices-reduced/>Corona SDK game template library</a>. All templates are on sale now and the code is fully documented and easy to understand. Show regular, Ed Maurina is the master mind behind the code and he&#8217;s very good at creating code that is easy to follow.</p>
+<p>Congratulations to Tom-Greger for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-51/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-51-2013-08-19-ouya-nexus7-16bitLabs.mp3" length="44718655" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-51-2013-08-19-ouya-nexus7-16bitLabs.mp3" length="44718655" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-51-2013-08-19-ouya-nexus7-16bitLabs.mp3" length="44718655" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-51-2013-08-19-ouya-nexus7-16bitLabs.mp3" length="44718655" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #45 &#8211; Is NOOK Color Dead, Ouya Sells Out, Become a Corona SDK Hotshot</title>
+		<link>/blog/coronageek/corona-geek-hangout-45/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-45/#comments</comments>
+		<pubDate>Mon, 01 Jul 2013 21:53:35 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Nook]]></category>
+		<category><![CDATA[Ouya]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=37248</guid>
+		<description><![CDATA[This week we hung out with Nevin Flanagan to discuss his new Corona SDK Hotshot book, which takes you beyond the basics of developing with a much larger look at game development concepts using Lua and Corona SDK. Nevin is credited as a contributor to the World of Warcraft user interface, so he's been using Lua for a long time and has been using Corona SDK for the last several years. We also talked about the recent NOOK Color announcements and Ouya's hot selling game consoles.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Fj4fibgnViU?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=http://www.packtpub.com/corona-software-development-kit-hotshot/book target="_blank">Nevin Flanagan</a>, <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://www.youtube.com/user/jesterxl target="_blank">Jesse Warden</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a> to discuss Nevin&#8217;s new <a href=http://www.packtpub.com/corona-software-development-kit-hotshot/book target="_blank">Corona SDK Hotshot</a> book, which takes you beyond the basics of developing with a much larger look at game development concepts using Lua and Corona SDK. Nevin is credited as a contributor to the World of Warcraft user interface, so he&#8217;s been using Lua for a long time and has been using Corona SDK for the last several years. We also talked about the recent NOOK Color announcements and Ouya&#8217;s hot selling game consoles.</p>
+<p>Just as a reminder, there&#8217;s only a few more days to get the Roaming Gamer &#8216;Green Throttle Tools &#8211; Pro&#8217; library at the early adopter price. July 4th, the price will go up to $30 (currently $20), so <a href=https://gumroad.com/l/fzOt target="_blank">download the library now</a> ( <a href=https://sellfy.com/p/H0s4/ target="_blank">alternate download</a> )</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Colette Levesque for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-45/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-45-2013-07-01-corona-sdk-hotshot.mp3" length="52614080" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-45-2013-07-01-corona-sdk-hotshot.mp3" length="52614080" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-45-2013-07-01-corona-sdk-hotshot.mp3" length="52614080" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-45-2013-07-01-corona-sdk-hotshot.mp3" length="52614080" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

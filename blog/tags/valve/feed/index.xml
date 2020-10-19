@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>valve &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/valve/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>valve &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing Steamworks, a plugin for Steam apps</title>
+		<link>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/</link>
+		<comments>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 14:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[achievements]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[leaderboards]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[steam]]></category>
+		<category><![CDATA[valve]]></category>
+
+		<guid isPermaLink="false">/?p=67650</guid>
+		<description><![CDATA[Corona Labs is pleased to announce our plugin for Steamworks. Learn how you can take advantage of this plugin to publish desktop games to Steam!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png" alt="share_steam_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w" sizes="(max-width: 150px) 100vw, 150px" />When it comes to PC desktop games, the premier place to publish is <a href=http://store.steampowered.com/ target="_blank">Steam</a>.</p>
+<p>Now, Corona developers can build apps for Windows (<code>win32.exe</code>) or macOS and submit them to Steam to be &#8220;greenlit.&#8221; During the greenlight process, the Steam community reviews apps and decides if they want them to be published.</p>
+<p>To ensure that your games can compete in the Steam store, Corona Labs has been diligently working to create a <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">plugin for Steam</a>. This plugin supports core features requested by developers who have already had their apps successfully published to Steam.</p>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">Steamworks plugin</a>, your app can now take advantage of leaderboards, achievements, user stats, player information, and various Steam overlays in your game. These features aren&#8217;t required, but their presence in your game could encourage more people to vote &#8220;yes!&#8221;.</p>
+<h3>About the plugin</h3>
+<p>This plugin is a bit different than our other game networking plugins. For example, there is no login API. Instead, you must be logged into the Steam client on your computer. The plugin then talks to the Steam client to exchange information with the Steam servers. On macOS, it&#8217;s best to set up the Corona Simulator as a Steam app and launch Corona SDK from Steam for maximum support.</p>
+<p>Many of the API calls return data immediately, if the data has been cached or is readily available. For instance, if you are getting information about a user and the plugin previously retrieved the data, it is returned to you immediately. However, if the data is not immediately available, and you have set up an event listener for that type of data, an event will trigger the listener and then you can update your local data with the new information.</p>
+<h3>In summary</h3>
+<p>Learn more about implementing Steamworks in your game by reading our Steamworks plugin <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">documentation</a> and by examining our Steamworks <a href=https://github.com/coronalabs/steamworks-sample target="_blank">sample app</a>. And, join us in the Corona <a href=https://forums.coronalabs.com/ target="_blank">forums</a> to discuss this wonderful addition to our plugin library.</p>
+<hr />
+<div style="font-size: 80%; font-color: #999;">Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

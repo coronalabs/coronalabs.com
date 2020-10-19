@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>particles &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/particles/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>particles &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #129</title>
+		<link>/blog/2016/06/24/from-the-forum-issue-129/</link>
+		<pubDate>Fri, 24 Jun 2016 15:33:27 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[loading screens]]></category>
+		<category><![CDATA[particles]]></category>
+		<category><![CDATA[saved files]]></category>
+		<category><![CDATA[smoke trails]]></category>
+
+		<guid isPermaLink="false">/?p=67265</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Saving in the crypt</h3>
+<p>We all value security. Whether you’re looking for a quality deadbolt for your home’s front door or a solid solution to app data, it never hurts to know all the latest security trends.</p>
+<p>It is and will remain my fervent opinion that obfuscation is the only profitable method to secure data. I was extremely pleased to see a thread pop up that not only discussed methods for saving app data, but contained a cool snippet of code that demonstrated how to encrypt the data one would be saving.</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/63717-creating-a-save-function/ target="_blank">original thread here</a>, and don’t forget to say thanks!</p>
+<h3>Await the loading screen!</h3>
+<p>I always like to have a coroutine method in my back pocket. Nothing major for the most part: just something graphical to let my users know that the app hasn’t gone &#8220;kablooie&#8221; on them &#8212; instead, it&#8217;s just chugging through some data or retrieving an asset from a server.</p>
+<p>Not everyone has a back-up plan for this kind of issue, so I wanted to share a thread where stellar Corona support engineer Rob Miracle talks about several different ways one can invent and implement a loading dialog. No need to make a separate scene if it doesn’t make sense for your app’s workflow &#8212; a simple overlay should do the trick!</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/63654-loading-system/ target="_blank">original thread</a> to find this illuminating discussion!</p>
+<h3>Leaving a smoky trail</h3>
+<p>One of the more interesting and dynamic effects in a physics-based game is representing a trail or &#8220;tail&#8221; of a projectile. Throwing a baseball, hitting a golf ball, tossing a javelin &#8212; all of these become more complex when coupled with this interesting articulation.</p>
+<p>That doesn’t mean that you can’t have fun modifying the code contained in the original thread below to suit your needs! The sky&#8217;s the limit with this base snippet at your disposal: a snake-style game, trailing columns of smoke, maybe some particle details. Have an improvement or addition? Let us know <a href=https://forums.coronalabs.com/topic/63495-smoke-trails target="_blank">in the thread</a>.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing Support for Particle Designer 2.0</title>
+		<link>/blog/2014/03/21/announcing-support-for-particle-designer-2-0/</link>
+		<comments>/blog/2014/03/21/announcing-support-for-particle-designer-2-0/#comments</comments>
+		<pubDate>Fri, 21 Mar 2014 16:00:29 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[particle designer]]></category>
+		<category><![CDATA[particles]]></category>
+
+		<guid isPermaLink="false">/?p=57387</guid>
+		<description><![CDATA[We are very pleased to announce support for Particle Designer 2.0, one of the best particle effects editors in the market. Used by major mobile studios and indie developers alike, Particle Designer features 48 fully-configurable properties, multiple emitters, realtime preview, and more.]]></description>
+				<content:encoded><![CDATA[<p>A good particle system is important for games and we are pleased to announce support for <a href=http://71squared.com/en/particledesigner target="_blank">Particle Designer 2.0</a>, one of the best particle effects editors in the market. If you&#8217;re a <a href=/pricing/ target="_blank">Corona Pro or Enterprise</a> subscriber, you can begin using this feature immediately, starting with <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build #2214</a> or later.</p>
+<h3>Key Features</h3>
+<p><a href=http://71squared.com/en/particledesigner target="_blank">Particle Designer 2.0</a>, used by many major studios, offers cool features to mobile developers, including:</p>
+<ul>
+<li><strong>High Configurability</strong> — 48 properties allow you to create wildly unique effects.</li>
+<li><strong>Multiple Emitters</strong> — Support for multiple simultaneous particle systems.</li>
+<li><strong>Realtime Preview</strong> — Watch particles immediately morph to reflect your property changes.</li>
+<li><strong>Drag-and-Drop</strong> — Full drag-and-drop support for background and particle images.</li>
+</ul>
+<h3>Particle Designer + Corona SDK</h3>
+<p>Adding Particle Designer effects to a Corona project is as simple as 1-2-3…</p>
+<ol>
+<li>When the particle system meets your expectations in Particle Designer, export it as a JSON file.</li>
+<li>Open and decode the JSON file within Lua and pass it to <a href=http://docs.coronalabs.com/daily/api/library/display/newEmitter.html target="_blank">display.newEmitter()</a>.</li>
+<li>Move and rotate emitters like any other display object, either via direct property settings or <a href=http://docs.coronalabs.com/api/library/transition/index.html target="_blank">transitions</a>.</li>
+</ol>
+<h3>Ready to Begin?</h3>
+<p>If you&#8217;re ready to dive in, you can <a href=http://71squared.com/en/particledesigner target="_blank">download Particle Designer 2.0</a> and start experimenting with amazing particle effects in Corona <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build #2204</a> or later. In the meantime, watch for a Particle Designer tutorial, coming soon!</p>
+<p><iframe src="//www.youtube.com/embed/djQpdLG0-4g?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/21/announcing-support-for-particle-designer-2-0/feed/</wfw:commentRss>
+		<slash:comments>28</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>in-app purchase &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/in-app-purchase/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>in-app purchase &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Amazon In-App Purchasing v2 plugin now available</title>
+		<link>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/</link>
+		<comments>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 06 Apr 2016 15:37:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Amazon Kindle]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[IAP]]></category>
+		<category><![CDATA[in-app purchase]]></category>
+		<category><![CDATA[Kindle]]></category>
+
+		<guid isPermaLink="false">/?p=66343</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Amazon IAP V2 plugin. Learn about changes you need to implement to migrate to the new plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-58615" src="/wordpress/wp-content/uploads/2013/05/AmazonProductLogo-150x150.png" alt="AmazonProductLogo" width="150" height="150" />Corona Labs is pleased to announce the immediate availability of the <strong>Amazon IAP v2</strong> plugin. If you plan to deploy your app to Amazon Kindle devices and use their in-app purchasing (IAP) service, you should implement this plugin within your projects as soon as possible. Additionally, if you currently have an app in the Amazon Appstore that uses their IAP service, it must be updated to the v2 plugin before<strong> April 30, 2016</strong>.</p>
+<h3>Implementing the new plugin</h3>
+<p>The plugin is pre-activated in the store for you. Because this is an official Corona Labs plugin, you need to change your <code>build.settings</code> file to reflect a different <code>publisherId</code>. The plugin name remains the same, but <code>publisherId</code> must be changed to <code>"com.coronalabs"</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.amazon.iap&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { [&quot;android-kindle&quot;]=true }
+        },
+    },
+}</pre><p></p>
+<h3>New functions and properties</h3>
+<p>This updated plugin includes a few additional functions and properties in comparison to the <a href=https://docs.coronalabs.com/plugin/amazon.iap/index.html target="_blank">legacy</a> plugin:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/isActive.html target="_blank">store.isActive</a> is now supported. This property will be <code>true</code> if the plugin was initialized successfully. You can use this as the sole point of confirmation that other store functions and processes can be initiated.</li>
+<li>New <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/getUserData.html target="_blank">store.getUserData()</a> function added to retrieve the user ID and marketplace code of the currently logged-in user.</li>
+<li>New properties available in the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/productList/index.html target="_blank">productList</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/loadProducts.html target="_blank">store.loadProducts()</a>, as well as the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/event/storeTransaction/index.html target="_blank">storeTransaction</a> event table associated with <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/init.html target="_blank">initialization</a>, <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/purchase.html target="_blank">purchase</a>, and <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">restore</a> requests.</li>
+</ul>
+<h3>Transaction changes</h3>
+<p>In addition to the new functions and properties above, some important changes have been made in the v2 plugin:</p>
+<ul>
+<li>Amazon now requires that you &#8220;finalize&#8221; all transactions. Thus, you must now call <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/finishTransaction.html target="_blank">store.finishTransaction()</a> following every transaction to notify Amazon about the transaction being processed.</li>
+<li>Amazon IAP v2 does not include a <code>"restored"</code> state for transactions. The <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/restore.html target="_blank">store.restore()</a> function can still be called to retrieve all of the user&#8217;s purchases, but now all valid transactions will be of the <code>"purchased"</code> state.</li>
+</ul>
+<h3>Migration guide</h3>
+<p>All of the above points are summarized in our <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/migration.html target="_blank">migration guide</a> which will assist users of the legacy plugin in updating to the new plugin.</p>
+<h3>Documentation</h3>
+<p>As always, we provide comprehensive <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/index.html target="_blank">documentation</a> for this plugin. Both users of the legacy plugin and new users are encouraged to consult this documentation in order to successfully implement Amazon In-App Purchasing.</p>
+<h3>In summary</h3>
+<p>Remember, Amazon requires that all apps utilizing their in-app purchasing service are upgraded to v2 before<strong> April 30, 2016</strong>. If you have further questions, please discuss them in the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/06/amazon-in-app-purchasing-v2-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+	</channel>
+</rss>

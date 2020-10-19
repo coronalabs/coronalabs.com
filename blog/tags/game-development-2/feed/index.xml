@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>game development &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-development-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>game development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using PlayFab for cloud gaming</title>
+		<link>/blog/2016/11/29/using-playfab-for-cloud-gaming/</link>
+		<pubDate>Tue, 29 Nov 2016 18:11:45 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[cloud gaming]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?p=68987</guid>
+		<description><![CDATA[In this special interview, PlayFab CEO, James Gwertzman shares insight into how this robust cloud gaming services offers value with their Game Services, Game Manager, PlayStream, and an Add-On Marketplace.]]></description>
+				<content:encoded><![CDATA[<p>In this special interview, PlayFab CEO, James Gwertzman shares insight into how this robust <a href=/blog/2016/09/29/introducing-playfab-a-new-plugin-and-service-for-your-cloud-gaming-needs/>cloud gaming service</a> offers value with their Game Services, Game Manager, and PlayStream products in addition to an add-on Marketplace. Whether you want to have back-end building blocks for your live game, empower your team with a centralized mission control, see events in real-time, or expand your game’s features while reducing SDK fatigue, <a href=/blog/2016/09/29/introducing-playfab-a-new-plugin-and-service-for-your-cloud-gaming-needs/>PlayFab has you covered</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/FGbVM46B968?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Thank you for watching and listening!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace update – more assets!</title>
+		<link>/blog/2016/11/16/corona-marketplace-update-more-assets/</link>
+		<pubDate>Wed, 16 Nov 2016 14:35:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[From the Store]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[tileset]]></category>
+
+		<guid isPermaLink="false">/?p=68790</guid>
+		<description><![CDATA[Marketplace assets are rapidly expanding. Read on to learn about the latest additions to the Corona Marketplace.]]></description>
+				<content:encoded><![CDATA[<p>Over the weekend, our hard-working marketplace team slipped some amazing new assets into the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. These high-quality graphic asset packs are now available for purchase, and more are on the way.</p>
+<p>Peek in today and see all of the new <a href=https://marketplace.coronalabs.com/assets target="_blank">game development assets</a> which have been added!</p>
+<p><a href=/wordpress/wp-content/uploads/2016/11/2016-11-12_22-54-52_-_Preview16.jpg><img class="alignnone wp-image-68822" style="margin-right: 20px; margin-bottom: 10px; margin-top: 25px;" src=/wordpress/wp-content/uploads/2016/11/2016-11-12_22-54-52_-_Preview16.jpg alt="2016-11-12_22-54-52_-_preview16" width="280" height="196" /></a><a href=/wordpress/wp-content/uploads/2016/11/2016-11-12_23-03-32_-_Preview2.jpg><img class="alignnone wp-image-68834" style="margin-bottom: 10px; margin-top: 25px;" src=/wordpress/wp-content/uploads/2016/11/2016-11-12_23-03-32_-_Preview2.jpg width="280" height="196" /></a> <a href=/wordpress/wp-content/uploads/2016/11/2016-11-05_03-02-08_-_Preview8.jpg><img class="alignnone wp-image-68835" style="margin-right: 20px;" src=/wordpress/wp-content/uploads/2016/11/2016-11-05_03-02-08_-_Preview8.jpg alt="2016-11-05_03-02-08_-_preview8" width="280" height="196" /></a><a href=/wordpress/wp-content/uploads/2016/11/2016-11-13_00-34-54_-_Preview.jpg><img class="alignnone wp-image-68836" src=/wordpress/wp-content/uploads/2016/11/2016-11-13_00-34-54_-_Preview.jpg alt="2016-11-13_00-34-54_-_preview" width="280" height="196" /></a></p>
+<h3>Want to contribute?</h3>
+<p>While we finish up a few general details for assets, we invite you to <a href=https://marketplace.coronalabs.com/product-submit target="_blank">submit your assets</a> to the marketplace. We&#8217;re looking for high-quality artwork, audio, complete projects, templates, and more. Have a great animation sequence? How about some killer sprites? Have you written the perfect soundtrack? <a href=https://marketplace.coronalabs.com/product-submit target="_blank">Submit your works</a> and join the growing list of talented asset creators who are sharing their creativity with an amazing developer community!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Adding consumer brands to a skater game with Dain Hedgpeth</title>
+		<link>/blog/coronageek/skater-game/</link>
+		<comments>/blog/coronageek/skater-game/#respond</comments>
+		<pubDate>Mon, 07 Nov 2016 18:10:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[brand awareness]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67914</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Dain Hedgpeth about adding consumer brands to apps. Dain's Skater game focuses on the authenticate elements of skate culture while  seamlessly integrating both shoe and board brands into the game play. Hear what he would do differently if he started over today.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Dain Hedgpeth about adding consumer brands to apps. Dain&#8217;s <a href=http://skaterapp.com/>Skater game</a> focuses on the authenticate elements of skate culture while  seamlessly integrating both shoe and board brands into the game play. We asked Dain to share the lessons he has learned along the way and also what he would do differently if he started over today. His answers might surprise you.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/CacYhxcs90A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/skater-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-skater-game.mp3" length="20329622" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Developing Super Robot Jump Jump with Matt Rathbun</title>
+		<link>/blog/coronageek/super-robot-jump-jump-game/</link>
+		<comments>/blog/coronageek/super-robot-jump-jump-game/#respond</comments>
+		<pubDate>Mon, 31 Oct 2016 17:25:31 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67920</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Matt Rathbun about his indie game developer journey and how he managed to develop Super Robot Jump Jump while sleeping on a friend's couch.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Matt Rathbun about his indie game developer journey and how he managed to develop <a href=http://superrobotjumpjump.com/>Super Robot Jump Jump</a> while sleeping on a friend&#8217;s couch. Matt shares what it&#8217;s like to hire and work with a remote designer who later becomes full-time employed outside of the game development project. Also hear what Matt says is the secret to success in game marketing.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/aehVQGhSeIg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/super-robot-jump-jump-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-super-robot-jump-jump-game.mp3" length="22273148" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Animating Street Puncher with Bobby Rasmusson</title>
+		<link>/blog/coronageek/street-puncher-game/</link>
+		<comments>/blog/coronageek/street-puncher-game/#respond</comments>
+		<pubDate>Mon, 24 Oct 2016 18:53:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[animation]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67918</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Bobby Rasmusson about developing and hand drawing hundreds of animations for his Street Puncher game. Bobby also shares what he would do differently to get featured in the app stores.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Bobby Rasmusson about his experience developing and hand drawing hundreds of animations for his <a href=http://www.streetpuncher.com>Street/ Puncher game</a>. Bobby is a self taught animator and product manager for Lyft. During the interview, Bobby shared his experience with in-app purchases, incentivizing players to share the game, and the things he would do differently to get featured in the app stores.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/2kDNCYANQj0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/street-puncher-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-street-puncher-game.mp3" length="27806397" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Playing multiplayer GetMeBro! with Ondrej Dobsinsky</title>
+		<link>/blog/coronageek/getmebro-game/</link>
+		<comments>/blog/coronageek/getmebro-game/#respond</comments>
+		<pubDate>Mon, 26 Sep 2016 17:26:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67908</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Ondrej Dobsinsky about his multiplayer runner game that let's players ban abilities, "blink" to jump ahead of opponents, and includes a spectator mode so Twitch viewers can watch live tournaments.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Ondrej Dobsinsky about his <a href=http://www.getmebro.co.uk/>multiplayer online runner game</a>, GetMeBro!, which also includes a spectator mode so Twitch viewers can watch live tournaments. Ondrej shares how <a href=http://www.getmebro.co.uk/>GetMeBro!</a> got started with just a single soundtrack and how it evolved into an addictive game that let&#8217;s players ban certain abilities to handicap other players and &#8220;blink&#8221; to jump up ahead of their opponent.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/WuZe-QK5snM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/getmebro-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-getmebro-game.mp3" length="24614746" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Breakdancing with Floor Kids&#8217; Mike Wozniewski</title>
+		<link>/blog/coronageek/floor-kids-break-dancing-game/</link>
+		<comments>/blog/coronageek/floor-kids-break-dancing-game/#comments</comments>
+		<pubDate>Wed, 07 Sep 2016 15:43:14 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67906</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Mike Wozniewski, developer of Floor Kids, to learn how a developer, a deejay, a dancer, and a dancing animator came together to create a breakdancing game with thousands of hand drawn images.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Mike Wozniewski, developer of <a href=http://www.floorkids.com/ target="_blank">Floor Kids</a>, about what it was like to compete and win 1st place at Pocket Gamer&#8217;s Very Big Indie Pitch in Vancouver. Mike also shared how the idea for Floor Kids developed over time and how a developer, a deejay, a dancer, and a dancing animator came together to create a <a href=http://www.floorkids.com/>breakdancing game</a> with thousands of hand drawn images.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/nAwdBld1eoE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/floor-kids-break-dancing-game/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-floor-kids-game.mp3" length="30099412" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Featured App: Return to Grisly Manor</title>
+		<link>/blog/2016/08/16/featured-app-return-to-grisly-manor/</link>
+		<comments>/blog/2016/08/16/featured-app-return-to-grisly-manor/#comments</comments>
+		<pubDate>Tue, 16 Aug 2016 14:57:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[adventure game]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?p=67729</guid>
+		<description><![CDATA[One of the earliest studios to achieve great success with Corona returns with their latest game, <em>Return to Grisly Manor</em>. Read on to see how Fire Maple Games continues to amaze players with beautiful, engaging adventure games.]]></description>
+				<content:encoded><![CDATA[<p>Corona developers everywhere continue to impress us with their creativity. Even small studios are raising the bar very high with incredible games.</p>
+<p>One studio that continually does amazing work is <a href=http://www.firemaplegames.com/ target="_blank">Fire Maple Games</a>. Founded by Joe Kauffman in 2008, he eventually teamed up with Pat O&#8217;Loughlin to build their first mobile adventure game, <em>The Secret of Grisly Manor</em>.</p>
+<p><em>Return to Grisly Manor</em> is a sequel to Fire Maple Games&#8217; original hit which was originally designed to run on an iPhone 2G with a slow processor and limited memory. At the time, the largest app you could download over-the-air (OTA) was 20 MB. This sequel chimes in with over 2100 art assets, 320 Lua files, and 325 sound effects. With advancements in mobile hardware and removal of OTA size limits, <em>Return to Grisly Mano</em>r is able to weigh in at four times the size of the original. All of this means that Fire Maple Games can leverage stunning images which drive amazing visual storytelling.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/_cXq6iO2cPM?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Since the original <em>Grisly Manor</em>, Fire Maple Games used <a href=http://www.coronalabs.com/ target="_blank">Corona</a> to produce two other outstanding adventure games. <em>The Lost City </em>was even more successful than <em>Grisly Manor</em> and it achieved the #1 paid app ranking in most countries. <em>The Hidden World </em>was also a commercial success, but it didn&#8217;t quite rise to the level of their previous games.</p>
+<p>&#8220;We decided to regroup and focus our efforts, and make the next game our best, most ambitious game yet,&#8221; said Kauffman.</p>
+<p><em><img class="alignnone size-full wp-image-67735" src="/wordpress/wp-content/uploads/2016/08/gm2_screenshot2_forums.jpg" alt="gm2_screenshot2_forums" width="800" height="533" /></em></p>
+<p><em>Return to Grisly Manor</em> is quickly climbing the charts and getting many 5-star reviews. Just recently released in the App Store, the game already ranks in the top 20 in several countries as well as in the top 10 for both Games/Family and Games/Adventure. On Google Play, <em>Return to Grisly Manor</em> has a 4.9/5 rating with over 70 5-star reviews. It&#8217;s also rapidly climbing the Amazon Appstore charts.</p>
+<h3>Some history</h3>
+<p>Kauffman has long had a passion for adventure games going back to the late 1970s. He has been building adventure games since he was 12 years old, starting on a classic Macintosh with 128 KB of memory. &#8220;I want to share the joy that those games brought me with other people,&#8221; he added.</p>
+<p>Joe and Pat both attended Millersville University in Pennsylvania where they studied fine art. Joe went on to work for Berkeley Systems on their popular screen saver software, but his love for games continued to fuel his imagination.</p>
+<p><img class="alignnone size-full wp-image-67739" src="/wordpress/wp-content/uploads/2016/08/gm2_screenshot5_forums.jpg" alt="gm2_screenshot5_forums" width="800" height="533" /></p>
+<p>Kauffman found <a href=http://www.coronalabs.com/ target="_blank">Corona</a> shortly after Adobe switched Flash from ActionScript 2 to ActionScript 3. &#8220;I worked as a Flash developer for many years. I loved it. I was able to create anything I could imagine. When Flash switched to AS3, I felt sort of lost. I wasn&#8217;t able to do as much as I could before and it lost a lot of its fun,&#8221; he says.</p>
+<p>&#8220;Corona was a revelation. It has the fun and ease of use of ActionScript, but it is lightning fast on mobile devices. It honestly feels like home. I can create anything I can think of. It&#8217;s wonderful,&#8221; he continued.</p>
+<h3>Conclusion</h3>
+<p><em>Return to Grisly Manor</em> is available on the <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id975985952?mt=8 target="_blank">Apple App Store</a>, <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.returntogrislymanor target="_blank">Google Play</a>, <a href=https://www.amazon.com/gp/mas/dl/android/com.firemaplegames.returntogrislymanor target="_blank">Amazon Appstore</a>, and <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id1142356357?mt=12 target="_blank">Mac App Store</a> for $2.99.</p>
+<p><a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id975985952?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.returntogrislymanor target="_blank"><img class="alignnone size-full wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a> <a href=https://www.amazon.com/gp/mas/dl/android/com.firemaplegames.returntogrislymanor target="_blank"><img class="alignnone size-full wp-image-64608" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a> <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id1142356357?mt=12 target="_blank"><img class="alignnone size-full wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p><a href=http://www.firemaplegames.com/ target="_blank">Fire Maple Games</a> and their adventure titles are a great example of using Corona to achieve success. All you need is an idea and a passion to get started. Take a moment to visit the Corona <a href=https://forums.coronalabs.com/topic/64922-return-to-grisly-manor/ target="_blank">forums</a> and congratulate Joe and Pat on their wonderful new title!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/16/featured-app-return-to-grisly-manor/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek After Dark #25 &#8211; Steam plugin, EAT, Coronium LS, CoronaCon, LuaConf, Win32 Pro Tips</title>
+		<link>/blog/coronageek/corona-geek-after-dark-25/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-25/#respond</comments>
+		<pubDate>Wed, 03 Aug 2016 16:07:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67707</guid>
+		<description><![CDATA[On Corona Geek After Dark #25, we talked about EAT (Ed's Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/fihLngJh_bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On Corona Geek After Dark #25, we talked about EAT (Ed&#8217;s Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-25/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-25-2016-08-03.mp3" length="153789721" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek After Dark #24 &#8211; App Judging Tips, LuaConf, and a Google Drive plugin</title>
+		<link>/blog/coronageek/corona-geek-after-dark-24-app-judging-tips-luaconf-and-a-google-drive-plugin/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-24-app-judging-tips-luaconf-and-a-google-drive-plugin/#respond</comments>
+		<pubDate>Fri, 15 Jul 2016 20:05:54 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67476</guid>
+		<description><![CDATA[On Corona Geek After Dark #24, we talked about the factors involved in app judging, Apple App Store advertising, and a Google Drive plugin that could be coming soon.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/ZBhuwS8q6Mw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On Corona Geek After Dark #24, we talked about the factors involved in app judging, Apple App Store advertising, and a Google Drive plugin that could be coming soon.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-24-app-judging-tips-luaconf-and-a-google-drive-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-24-2016-07-15.mp3" length="127349625" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

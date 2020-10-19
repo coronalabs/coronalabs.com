@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hackathon &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/hackathon/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>hackathon &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Corona SDK at Global Game Jam 2016</title>
+		<link>/blog/2016/01/27/global-game-jam-2016-tools-2d-game-development-using-corona-sdk/</link>
+		<pubDate>Wed, 27 Jan 2016 22:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=65412</guid>
+		<description><![CDATA[We're just days away from Global Game Jam 2016, the largest game hackathon of the year. Learn how you can attend and how you can use Corona SDK to jam!]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;re just days away from <a href=http://globalgamejam.org/ target="_blank">Global Game Jam 2016</a>, the largest game hackathon of the year.<br />
+<img class="alignright size-thumbnail wp-image-65415" style="margin: 20px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png" alt="GGJ round logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo.png 900w" sizes="(max-width: 150px) 100vw, 150px" /><br />
+If you haven&#8217;t heard about it before, Global Game Jam is a great opportunity for both veteran and novice game developers to gather together, collaborate, and make games over the course of one weekend.</p>
+<p>In addition to deciding to attend and actually forming a team, choosing a game development tool is one of the main decisions you&#8217;ll have to make. Fortunately, Corona SDK is listed as one of the top tools and technologies in the website&#8217;s list of platforms, so be sure to select it as your platform of choice.</p>
+<h3>Why you should choose Corona SDK</h3>
+<p><strong>Speed</strong> &#8212; Corona is excellent for rapid prototyping. When you save your code, the Corona Simulator detects the changed file and instantly refreshes itself so that you see the changes instantly. Corona SDK is also based on Lua which is an <a href=https://docs.coronalabs.com/guide/start/introLua/index.html>easy-to-learn language</a>.</p>
+<p><strong>Rich API ecosystem</strong> &#8212; Corona SDK provides an <a href=https://docs.coronalabs.com/api/index.html>extensive API set</a> for creating/manipulating images and sprites, playing audio, applying physics, and interacting with game elements. Corona also provides a scene management library to make multiple screens/levels simple. Finally, an ever-expanding <a href=https://store.coronalabs.com>plugin/ library</a> allows you to extend your app beyond the already robust API set.</p>
+<p><strong>Diverse platform deployment</strong> &#8212; While Corona SDK is known for being a mobile development platform (iOS, Android, and Windows Phone 8), it is also a TV platform, featuring support for Android TV and Apple&#8217;s new tvOS. Even more important is that Corona SDK can also build to both Windows x86 and OS X desktop. Thus, using the same code base, you can target a whole set of entertainment platforms.</p>
+<p><strong>Learning resources</strong> &#8212; Looking for the proper resources to get started? We&#8217;ve got it covered!</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/ target="_blank">Documentation and guides</a> &#8212; Each <a href=https://docs.coronalabs.com/ target="_blank">API</a> is documented and a collection of <a href=https://docs.coronalabs.com/guide/index.html target="_blank">guides</a> cover essential topics.</li>
+<li><a href=https://github.com/coronalabs/samples-coronasdk target="_blank">Sample code</a> &#8212; Some developers learn best by inspecting existing code. We have many examples which you can use as foundational aspects for your game.</li>
+</ul>
+<div style="background-color: #fed; border: 1px solid #ccc; padding: 12px 10px 10px 10px;"><a href=/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/ target="_blank">Read about the experience</a> of a team of Corona developers from Global Game Jam 2013!</div>
+<h3>Get started!</h3>
+<p>Ready to attend <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">Global Game Jam 2016</a>? Sign up on their <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">website</a> as soon as possible.</p>
+<p>Next, <a href=/products/corona-sdk/ target="_blank">download Corona SDK</a>. With rapid prototyping, a <a href=https://docs.coronalabs.com/api/index.html>robust API set</a>, a diverse range of deployable platforms, and plenty of learning resources, Corona is the perfect tool for developing your 2D game at Global Game Jam 2016 and beyond.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest piece: Corona SDK arrives in Rio, powering Red Beach Games&#8217; jam</title>
+		<link>/blog/2013/09/19/guest-piece-corona-sdk-arrives-in-rio-powering-red-beach-games-jam/</link>
+		<pubDate>Thu, 19 Sep 2013 20:35:41 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=43575</guid>
+		<description><![CDATA[From August 17-18, 2013, more than twenty people grouped into six teams and participated in the <a href="http://www.riomobilehackathon.com/">Rio Mobile Hackathon</a>, an event focused on mobile app and game development with <a href="www.coronalabs.com/products/corona-sdk">Corona SDK</a>. The event took place at the 21212 Accelerator HQ in Rio de Janeiro, Brazil.
+
+With teams coming from a variety of cities, the hackathon brought together people with a common interest in mobile technology and entrepreneurship. Participants varied from Computer Science students to game studio employees.]]></description>
+				<content:encoded><![CDATA[<p><em>Renato Cordeiro is the co-founder of <a href=http://redbeachgames.com/>Red Beach Games</a>, a startup focused in mobile game development based in Rio de Janeiro, Brazil. Renato and his team recently planned a weekend-long hackathon for nearly two dozen participants in his hometown.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/09/Rio-Mobile-Hackathon-300x121.png" alt="Rio Mobile Hackathon" class="alignleft size-medium wp-image-43576" />From August 17-18, 2013, more than twenty people grouped into six teams and participated in the <a href=http://www.riomobilehackathon.com/>Rio Mobile Hackathon</a>, an event focused on mobile app and game development with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>. The event took place at the 21212 Accelerator HQ in Rio de Janeiro, Brazil.</p>
+<p>With teams coming from a variety of cities, the hackathon brought together people with a common interest in mobile technology and entrepreneurship. Participants varied from Computer Science students to game studio employees.</p>
+<p>The idea for the event came after my partner at <a href=http://redbeachgames.com/>Red Beach Games</a> and I lived in the US and attended events such as <a href=http://startupweekend.org/>Startup Weekend</a>. Though this sort of event is nonexistent in Brazil, hackathons and jams accelerated our early development and we decided to do our part for our local community and organize a hackathon to encourage technological entrepreneurship in Rio de Janeiro.</p>
+<p>The event was made possible by various organizations that supported our idea, starting with Corona Labs. In addition to Corona Labs&#8217; support via prizes, other companies that provided gifts and discounts were central to the event including: </p>
+<ul>
+<li><a href=http://21212.com/>21212 Accelerator</a> allowed us to use their venue for the event</li>
+<li><a href=http://www.revmobmobileadnetwork.com/>RevMob</a> provided advertisement credit </li>
+<li><a href=http://www.mydevelopersgames.com/>M.Y. Developers</a> provided licenses for Lua Glider IDE</li>
+<li><a href=http://www.codeandweb.com/>Code&#8217;n&#8217;Web</a> provided licenses for PhysicsEditor</li>
+<li><a href=http://appdevelopermagazine.com/>App Developer Magazine</a> provided annual magazine subscriptions</li>
+<li><a href=http://aws.amazon.com/>Amazon Web Services</a> provided credit vouchers</li>
+<li><a href=http://www.burtonsmediagroup.com/>Burton’s Media Group</a> provided books on development with Corona SDK</li>
+</ul>
+<p>Additional supporters included Sebrae-R and Rio-Negócios, both local organizations that promote entrepreneurship and investment in Rio.</p>
+<h3>Day 1 &#8211; The Learning Process Begins</h3>
+<p>We decided to present some basic programming using Lua and Corona SDK, since most of the participants had never programmed in the language or used the platform. After the introduction, participants created their teams and started building their apps.</p>
+<h3>Day 2 &#8211; Programming and Polishing</h3>
+<p>The day started early, with participants arriving promptly at 9am and going straight to programming. Red Beach Games helped the teams by providing some technical support.</p>
+<p>At 7pm, teams started their presentations and then all participants voted on the best app and best game developed during the hackathon.</p>
+<h3>The Result &#8211; A Success! </h3>
+<p>The lack of prior knowledge with the Lua language and Corona SDK platform did not prevent participants from creating robust games and apps, using resources such as physics, sprites and SQlite3. Some participants had already  developed games using other cross-platform tools and they were pleasantly surprised to discover how direct and simple it was to start developing using Corona SDK. To us, that reinforces how Corona SDK is really a high performance platform.</p>
+<p>Softwares from other companies such as Code&#8217;n&#8217;Web&#8217;s PhysicsEditor and M.Y. Developers&#8217; Lua Glider IDE also contributed to the high quality of work. The first tool helped a lot of teams create complex bodies very quickly and the second provided the teams with a strong debugging and programming environment.</p>
+<p>The hackathon reached its goal of sharing knowledge and bringing people together with a common interest. After the hackathon, many participants even began using Corona SDK to develop mobile apps that are now live in the app stores. We are pleased to have stimulated the entrepreneurial culture in our city while helping these developers achieve their dreams of building mobile apps.</p>
+<h3>The Winners &#8211; Gosma and Toalha Econômica</h3>
+<p>The winner of the best game was Gosma (called “Goop” in English) &#8211; an endless runner game in which the main character dodges objects taking into account that each deviation changes the direction of gravity inside the game.</p>
+<p>The winner of the best app was Toalha Econômica (&#8220;Economic Towel&#8221; in English), an app that allows people to store revenues and expenses in order to manage their financial information. The app also allows users to see a monthly balance in a 2D graphic.</p>
+<p>The winners’ presentations can be seen at <a href=http://RioMobileHackathon.com/winners>riomobilehackathon.com/winners</a>. Also, check out the event photos on our <a href=http://facebook.com/RioMobileHackathon>Facebook page</a>.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners.jpg" alt="Rio Hackathon Winners" class="aligncenter size-full wp-image-43658" srcset="/wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners.jpg 960w, /wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners-300x225.jpg 300w, /wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners-768x576.jpg 768w, /wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners-800x600.jpg 800w, /wordpress/wp-content/uploads/2013/09/Rio-Hackathon-Winners-700x525.jpg 700w" sizes="(max-width: 960px) 100vw, 960px" />	</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Piece: Jamming in Bolivia &#8211; Introducing Students to Corona SDK</title>
+		<link>/blog/2013/07/11/guest-piece-jamming-in-bolivia-introducing-students-to-corona-sdk/</link>
+		<pubDate>Thu, 11 Jul 2013 17:35:33 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=37394</guid>
+		<description><![CDATA[Carlos Olivera is the CEO and Founder of <a href="http://www.islandofthemoon.com/">Island of the Moon</a>. Carlos has been involved in the mobile industry since 2001, as a software developer and entrepreneur. Previously a team lead and game producer at Gameloft, Carlos has been working with <a href="http://www.coronalabs.com/products/corona-sdk">Corona SDK</a> for over 2 years. Carlos lives in Bolivia where he is involved with local universities, developer groups, and other initiatives that allow him to mentor people in game development.
+
+In June 2013, Carlos and his team at Island of the Moon, coordinated a hackathon for local university students in Bolivia. Carlos writes on his experience teaching <a href="www.coronalabs.com/products/corona-sdk">mobile development</a> to first-time Corona users.]]></description>
+				<content:encoded><![CDATA[<p><em>Carlos Olivera is the CEO and Founder of <a href=http://www.islandofthemoon.com>Island/ of the Moon</a>. Carlos has been involved in the mobile industry since 2001, as a software developer and entrepreneur. Previously a team lead and game producer at Gameloft, Carlos has been working with <a href=http://www.coronalabs.com/products/corona-sdk>Corona SDK</a> for over 2 years. Carlos lives in Bolivia where he is involved with local universities, developer groups, and other initiatives that allow him to mentor people in game development.</p>
+<p>In June 2013, Carlos and his team at Island of the Moon, coordinated a hackathon for local university students in Bolivia. Carlos writes on his experience teaching <a href=www.coronalabs.com/products/corona-sdk>mobile development</a> to first-time Corona users.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/07/Carlos-Olivera.jpg" alt="Carlos Olivera" class="alignleft size-full wp-image-38067" srcset="/wordpress/wp-content/uploads/2013/07/Carlos-Olivera.jpg 200w, /wordpress/wp-content/uploads/2013/07/Carlos-Olivera-150x150.jpg 150w" sizes="(max-width: 200px) 100vw, 200px" />The video-game industry is growing around the world. Even in Bolivia, the software industry in growing rapidly, but gaming hasn’t quite caught up – our vision is to change that. Our studio, <a href=http://www.islandofthemoon.com>Island/ of the Moon</a>, organized a jam to introduce students to <a href=www.coronalabs.com/products/corona-sdk>game development</a> with the help of our sponsors, UCATEC University and Corona Labs, who generously donated licenses to the top three winning teams.</p>
+<p>Island of the Moon is an independent game studio based in Bolivia that makes mobile games and apps. We’re made up of 5 developers, 2 artists, 1 game producer, 2 sales managers, 1 sound engineer and 1 tester. Since joining the industry a year ago, we’ve fallen in love with game development. From the beginning, we began working with Corona SDK and we&#8217;re now nearly done with our first game, <a href=http://www.hooliganalone.com>Hooligan/ Alone</a>, coming soon to Android and iOS. Our studio also outsources custom projects for clients in the US. </p>
+<p>On Saturday morning, June 15, we gathered over 40 creative university students with a common challenge – to create a mobile game in one short weekend.</p>
+<p>Our goal for the hackathon was to encourage university students to spend a weekend making games &#8211; from concept to creation &#8211; and experiencing the feeling of creating something special with a lot of hard work and a bit of pressure. The participants came from varying backgrounds; some were information system engineers, while others were graphic designers.</p>
+<p>None of the participants had experience with Corona SDK or the Lua language prior to the event. Throughout the weekend, Island of the Moon team members taught the students how to use Corona SDK through workshops on game design, production, graphic art, animation and more. The theme of the hackathon was &#8220;Our Country, Our Games,&#8221; with a goal of creating mobile games with a local touch.</p>
+<p>At the end of the event, we witnessed six teams present entirely unique games. It was a tough call, but we chose MONOLIX as the winner, a team that created a game called Atatau!. MONOLIX exceeded our expectations and wowed us with their game.</p>
+<p>MONOLIX consisted of:<br />
+Production &#8211; María Eugenia Polo and René Polo<br />
+Development &#8211; Diego Zambrana, Vinicius Da Silva Limachi, and Henry Taby<br />
+Design and Marketing &#8211; Omar Condori and Bruno Calsina Valenzuela</p>
+<p>Here&#8217;s a picture of the proud winners:</p>
+<p><img src="/wordpress/wp-content/uploads/2013/07/winnerteam.jpg" alt="Winning team" class="aligncenter size-full wp-image-37396" /></p>
+<p>In the next few months, MONOLIX will improve their game and add features and mechanics to create a more polished product before submitting to the App Store and Google Play. Island of the Moon will be meeting with the team regularly to provide coaching, to make suggestions and give advice along the way.</p>
+<p>You can check out photos from the event on our <a href= https://www.facebook.com/media/set/?set=a.203907886426635.1073741831.203768146440609&type=3&uploaded=2>Facebook album</a>.</p>
+<p>It was so exciting to watch all the participants go through the development process and create a game in a short time span. We hope this event was the first of many in our country and we’re looking forward to the next gathering.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Hangout Highlights: Glitch Games&#8217; GIGJam 48 Hour Online Corona SDK Hackathon</title>
+		<link>/blog/coronageek/hangout-highlights-glitch-games-gigjam-48-hour-online-corona-sdk-hackathon/</link>
+		<comments>/blog/coronageek/hangout-highlights-glitch-games-gigjam-48-hour-online-corona-sdk-hackathon/#respond</comments>
+		<pubDate>Wed, 01 May 2013 22:01:12 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[GigJam48]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32903</guid>
+		<description><![CDATA[During the full Corona Geek #37 hangout, we talked at length with Graham Ranson about the upcoming GIGJam 48 hour online game development jam that Glitch Games is hosting on May 4th &#038; 5th for Corona SDK developers. Graham tells us all about what it takes to enter, how to submit your app, and how entries will be judged.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/-yIo7aOT9VY?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p><img class="alignright size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" /></p>
+<p>During the <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-37/>full Corona Geek #37 hangout</a>, we talked at length with Graham Ranson about the upcoming GIGJam 48 hour online game development jam that Glitch Games is hosting on May 4th &amp; 5th for Corona SDK developers. Graham tells us all about what it takes to enter, how to submit your app, and how entries will be judged.</p>
+<p>If you haven&#8217;t heard of this event, be sure to check out all the details on the official <a href=http://www.glitchgames.co.uk/gigjam/ target="_blank">Glitch Games GIG Jam 48</a> page. Over $3,300 dollars in prizes will be given away to winners of the jam.</p>
+<p><strong>Remember to Subscribe:</strong></p>
+<ul>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-glitch-games-gigjam-48-hour-online-corona-sdk-hackathon/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Guest Piece: A Global Game Jam (GGJ) Developer Story &#8211; San Francisco Style</title>
+		<link>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/</link>
+		<comments>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/#comments</comments>
+		<pubDate>Fri, 19 Apr 2013 20:27:38 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=32339</guid>
+		<description><![CDATA[In January 2013, Alexey Chernikov, a professional game developer collaborated with a mix of of graphic artists, sound engineers, and fellow developers at Global Game Jam (GGJ). Learn why Alexey and his team choose Corona SDK to create a winning game at the 48-hour hackathon.]]></description>
+				<content:encoded><![CDATA[<p><em>Alexey Chernikov is a professional game developer and Corona SDK user. In January 2013, Alexey collaborated with a mix of of graphic artists, sound engineers, and fellow developers at <a href=http://www.coronalabs.com/blog/coronageek/corona-labs-does-global-game-jam-san-francisco-style/>Global Game Jam (GGJ)</a> to create Heart Day with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>. Corona Labs sponsored the 48-hour hackathon, which attracted over 14,000 developers and designers worldwide.</em></p>
+<hr>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/389788_487360441283541_1455970070_n-150x150.jpg" alt="Alexey Chernikov - headshot" class="alignleft size-thumbnail wp-image-32344" />This year&#8217;s Global Game Jam (GGJ) was a blast! We had a lot of fun creating Heart Day during the weekend and it was great to be surrounded by creative people who share a love of video games.</p>
+<p>The theme of the jam was announced as an ominous, dark pulsating sound. Our team chose to interpret that as an unhealthy heartbeat. We dug through ideas and decided to go with a game where you control a heart, through whatever situations life throws at it. The ominous twist is that the game character isn’t very healthy. Even doing simple things like eating donuts, or getting stuck in traffic can clog his arteries, and clots that aren’t attended to will burst. As Heart Manager, you must take care of all the ills that befall the cardiovascular system of your avatar, and keep him alive. At the start of a mission, you get to see the &#8220;to do&#8221; list, for your mission:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/baby-Background-1.png" alt="baby Background (1)" class="alignnone size-full wp-image-32340" /></p>
+<p>Aside from creating the graphics layout, we needed to make a scripted level system, screen switching, and the general gameplay, which required input handling and timing logic. Corona SDK was a great tool to handle such time intensive events, because the API is very high level. It saved a lot of time on setting up the screen layout, implementing UI widgets &#8211; a “time left” progress bar; a gradient bar to show how far the current heart rate is from its optimal value (determined by you actually keeping the heart rate steady at that bpm), and all the various interface screens, such as level select, mission briefing, game over, and more.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/game_scene_320x480.png" alt="game_scene_320x480" class="alignnone size-full wp-image-32341" /></p>
+<p>We choose Corona SDK to develop the game, because using Lua simplified the scripting tasks. The scripted level system was key, because the game allowed for some hilarious story telling. In each level, you&#8217;re in charge of the heart of a different person who goes through a list of tasks for the day. These tasks strain the cardiovascular system in different ways &#8211; requiring different heart rates, exposing you to more clot-generating chemicals, and stress. We also used a JSON format for describing levels, which felt very seamless with Lua (because the JSON data model is exactly like Lua tables).</p>
+<p>Another goal was to get more game mechanics in the game. The game worked well as a hub of mechanics and there was a lot of room to invent what could go wrong with the cardiovascular system. We ended up submitting with four mechanics: keeping a steady bpm, clots (nudge to clear), bursts (tap to clear) and heart failure (shake to clear). We only got some of the secondary mechanics in on the last day, and it was a good help that Corona SDK provided a pretty high level input handling interface &#8211; we had some time to experiment with the way we accepted the input to clear all the hazards that could occur.</p>
+<p>Overall, we were very happy with the result, and had a great time working on the game!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/photo_19.jpg" alt="&quot;Heart Day&quot; Team" class="alignnone size-full wp-image-32345" /></p>
+<p><em>-Alexey Chernikov</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Guest piece: GIG Jam &#8211; The 48 Hour Corona SDK Hackathon (May 4-5, 2013)</title>
+		<link>/blog/2013/04/12/guest-piece-gig-jam-the-48-hour-corona-sdk-hackathon-may-4-5-2013/</link>
+		<comments>/blog/2013/04/12/guest-piece-gig-jam-the-48-hour-corona-sdk-hackathon-may-4-5-2013/#comments</comments>
+		<pubDate>Fri, 12 Apr 2013 16:39:55 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=31647</guid>
+		<description><![CDATA[On May 4-5, 2013, Glitch Games is organizing a 48-hour Corona SDK hackathon called Glitch Indie Game (GIG) Jam. Open to Corona SDK developers and those interested in working with the platform, GIG Jam is offering over $3300 worth of prizes spread across five winners.
+
+Learn all about the jam in today's piece from Graham Ranson of Glitch Games. Sign up for your chance to win a Corona SDK Pro license, Texture Packer Pro, Physics Editor, SpriteHelper and much more!]]></description>
+				<content:encoded><![CDATA[<p><em> On May 4-5, 2013, Glitch Games is organizing a 48-hour Corona SDK hackathon called Glitch Indie Game (GIG) Jam. Open to Corona SDK developers and those interested in working with the platform, GIG Jam is offering over $3300 worth of prizes spread across five winners.</p>
+<p>Learn all about the jam in today&#8217;s piece from Graham Ranson of Glitch Games. <a href=https://sellfy.com/p/sw0d/>Sign up </a> for your chance to win a Corona SDK Pro license, Texture Packer Pro, Physics Editor, SpriteHelper and much more!</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/04/GIG-Jam.png" alt="GIG Jam" class="alignleft size-full wp-image-31648" srcset="/wordpress/wp-content/uploads/2013/04/GIG-Jam.png 200w, /wordpress/wp-content/uploads/2013/04/GIG-Jam-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /><strong>What is GIG Jam?</strong></p>
+<p>Glitch Indie Game (GIG) Jam is a 48 hour game development jam exclusively for Corona SDK developers and those developers that are interested in using Corona, but haven’t yet made the plunge. </p>
+<p>Glitch Games, that’s us, are a two person indie outfit located in the south of England, just outside the city of Oxford. Our biggest game is <a href=https://www.facebook.com/ForeverLostGame>Forever Lost: Episode 1</a> and we are currently hard at work on the sequel, the brilliantly titled, Forever Lost: Episode 2.</p>
+<p>We’ve been developing as a company for just over a year and in that time we’ve released a handful of apps, all built with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>. We’ve also released a fair amount of code for other developers to use in their own projects (including GIG Jam) on our <a href=https://github.com/GlitchGames>GitHub page</a>.</p>
+<p>If you’re interested in reading about our story, please check out the &#8220;1 year later&#8221; post on our <a href=http://www.glitchgames.co.uk/1-year-later/>site</a>.</p>
+<p><strong>What inspired you to organize GIG Jam?</strong></p>
+<p>We really wanted to give back to the community that has given us so much help and feedback over the past year. We felt that a 48 hour jam to bring everyone together and foster some community spirit and rivalry would enable us to do that, even if only in a small way.</p>
+<p>The jam will also show the game developer community at large, the kind of work that can be done with Corona SDK in a vert short space of time. Hopefully, this will bring more developers into our little family.</p>
+<p>And also, supplies at the Glitch Bar were running low.</p>
+<p><strong>When is GIG Jam?</strong></p>
+<p>The hackathon will kick off on May 3 at 12:01am (GMT) and conclude on May 4 at 11:59pm (GMT). The fact that May 4 happens to be Star Wars Day is a completely accidental, yet awesome, coincidence.</p>
+<p><strong>Who can enter?</strong></p>
+<p>Anyone can enter! The only restriction is that you must use <a href=http://www.coronalabs.com/store/>Corona SDK</a> to develop your game. You can be a solo developer or part of a team or company &#8211; you&#8217;re free to decide.</p>
+<p>You can also use whatever resources and assets you have already created, or sourced from elsewhere. We just ask that you declare these upon submission so that the prior work can be taken into account.</p>
+<p><strong>Why should I sign up?</strong></p>
+<p>There are many reasons for you to take part. We believe that the primary one is for the challenge of seeing what you can accomplish in such a short amount of time. Some may enter for the fun of it, while others will gain some fans of their studio and/or games in the process. Perhaps you&#8217;ll participate to earn bragging rights or for the inevitable ticker tape parade that will be thrown in your honor when you win. Whatever your reason, we encourage you to <a href=https://sellfy.com/p/sw0d/>sign up </a> and have fun. Did we mention that we&#8217;re offering tons of prizes?</p>
+<p>There are currently over $3300 worth of software prizes spread across five winning places, this includes licences for <a href=www.coronalabs.com/products/corona-sdk>Corona SDK Pro</a>, <a href=http://outlawgametools.com/outlaw-code-editor-and-project-manager/>Outlaw IDE</a>, <a href=http://www.kwiksher.com/>Kwik 2</a>, <a href=http://esotericsoftware.com/>Spine</a>, <a href=http://www.codeandweb.com/texturepacker>Texture Packer Pro</a>, <a href=http://www.codeandweb.com/physicseditor>Physics Editor</a>, <a href=http://www.gamedevhelper.com/spritehelper/>SpriteHelper</a>, <a href=http://www.gamedevhelper.com/levelhelper/>LevelHelper</a>, <a href=http://www.gamedevhelper.com/codehelper/">CodeHelper</a> and <a href=http://www.flyingmeat.com/acorn/>Acorn</a>, among others. There are also some promotional slots on <a href=http://thumbarcade.com/>ThumbArcade</a> up for grabs and loads more. The full list can be seen on the <a href=http://www.glitchgames.co.uk/gigjam/>GIG Jam page</a> and more are still getting added, so please check back.</p>
+<p><strong>Where can I read more information?</strong></p>
+<p>You can learn more about the jam <a href=http://www.glitchgames.co.uk/gigjam/>here</a>, including the important rules, and please don’t forget to <a href=https://sellfy.com/p/sw0d/>sign up </a>, it only costs $10.</p>
+<p>You can also &#8220;like&#8221; the jam on <a href=https://www.facebook.com/GIGJam48>Facebook</a> and follow it on <a href=https://twitter.com/GIGJam48>Twitter</a>. We will be using the hashtag #GIGJam throughout, before and after the jam, so please use that if you&#8217;d like to be in the conversation.</p>
+<p>&#8211;<em>Graham Ranson, Glitch Games</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/12/guest-piece-gig-jam-the-48-hour-corona-sdk-hackathon-may-4-5-2013/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

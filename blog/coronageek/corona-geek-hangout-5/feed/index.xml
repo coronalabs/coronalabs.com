@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek Hangout &#8211; Episode 5 &#8211; iPhone5 / iOS6 Support, Microsoft Surface Developer Program, and Physics API</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-5/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-5/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Dean Paddy Murphy</title>
+		<link>/blog/coronageek/corona-geek-hangout-5/#comment-5472</link>
+		<dc:creator><![CDATA[Dean Paddy Murphy]]></dc:creator>
+		<pubDate>Thu, 20 Sep 2012 15:29:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=252#comment-5472</guid>
+		<description><![CDATA[https://gist.github.com/3751257
+
+
+May have been how I posted it (syntax error!), check the above link.
+
+
+My app is called Joke Shake! It&#039;s free for iPhone and iPad &#038; You can find it at  www.jokeshake.com
+
+
+
+It was a fun project that taught be a lot about analyctics, adverts, IAP, facebook integration, email/sms integration. It&#039;s great to see it out in the open now.]]></description>
+		<content:encoded><![CDATA[<p><a href="https://gist.github.com/3751257" rel="nofollow">https://gist.github.com/3751257</a></p>
+<p>May have been how I posted it (syntax error!), check the above link.</p>
+<p>My app is called Joke Shake! It&#8217;s free for iPhone and iPad &amp; You can find it at  <a href="http://www.jokeshake.com/" rel="nofollow">http://www.jokeshake.com/</a></p>
+<p>It was a fun project that taught be a lot about analyctics, adverts, IAP, facebook integration, email/sms integration. It&#8217;s great to see it out in the open now.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-5/#comment-5471</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Thu, 20 Sep 2012 14:36:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=252#comment-5471</guid>
+		<description><![CDATA[Excellent. Thanks for sharing. It looks like the link to github isn&#039;t working in the comments. Can you try posting it again? Also, what&#039;s the name of your app?]]></description>
+		<content:encoded><![CDATA[<p>Excellent. Thanks for sharing. It looks like the link to github isn&#8217;t working in the comments. Can you try posting it again? Also, what&#8217;s the name of your app?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: CraftyDeano</title>
+		<link>/blog/coronageek/corona-geek-hangout-5/#comment-5470</link>
+		<dc:creator><![CDATA[CraftyDeano]]></dc:creator>
+		<pubDate>Wed, 19 Sep 2012 18:38:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=252#comment-5470</guid>
+		<description><![CDATA[I will be soon, just updating my current app at the moment to take advantage of the larger screen.
+
+
+Works out in corona, 88 pixels (or 44 corona points) are added to both the top and bottom of the display, so its not a straight 176 to either top or bottom.
+
+
+I made a gist in github for a config.lua that sets screen size to the correct resolution for either iPhone&#039;s, iPhone 5 or iPad&#039;s.
+
+
+Link is here if you find it helpfulhttps://gist.github.com/3751257 :)]]></description>
+		<content:encoded><![CDATA[<p>I will be soon, just updating my current app at the moment to take advantage of the larger screen.</p>
+<p>Works out in corona, 88 pixels (or 44 corona points) are added to both the top and bottom of the display, so its not a straight 176 to either top or bottom.</p>
+<p>I made a gist in github for a config.lua that sets screen size to the correct resolution for either iPhone&#8217;s, iPhone 5 or iPad&#8217;s.</p>
+<p>Link is here if you find it helpfulhttps://gist.github.com/3751257 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-5/#comment-5469</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Wed, 19 Sep 2012 17:17:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=252#comment-5469</guid>
+		<description><![CDATA[Hey CraftyDeano. Good catch. I&#039;m not sure if that&#039;s the official reasoning, but it would seem to make some sense. Thanks for pointing that out. Are you developing apps for iPhone 5?]]></description>
+		<content:encoded><![CDATA[<p>Hey CraftyDeano. Good catch. I&#8217;m not sure if that&#8217;s the official reasoning, but it would seem to make some sense. Thanks for pointing that out. Are you developing apps for iPhone 5?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: CraftyDeano</title>
+		<link>/blog/coronageek/corona-geek-hangout-5/#comment-5468</link>
+		<dc:creator><![CDATA[CraftyDeano]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2012 22:16:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=252#comment-5468</guid>
+		<description><![CDATA[Hey guys,
+
+
+Regarding Default-568h@2x.png :  568 is half of 1136 (the iPhone 5 screen height), so its like a non retina iPhone 5 resolution... a little strange?]]></description>
+		<content:encoded><![CDATA[<p>Hey guys,</p>
+<p>Regarding <a href="mailto:Default-568h@2x.png">Default-568h@2x.png</a> :  568 is half of 1136 (the iPhone 5 screen height), so its like a non retina iPhone 5 resolution&#8230; a little strange?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

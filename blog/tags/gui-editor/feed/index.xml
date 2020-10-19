@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GUI editor &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/gui-editor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>GUI editor &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Composer GUI Beta Update</title>
+		<link>/blog/2014/06/11/composer-gui-beta-update/</link>
+		<comments>/blog/2014/06/11/composer-gui-beta-update/#comments</comments>
+		<pubDate>Wed, 11 Jun 2014 23:43:32 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[GUI editor]]></category>
+
+		<guid isPermaLink="false">/?p=58796</guid>
+		<description><![CDATA[Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332. 
+
+This update makes significant improvements over the <a href="/blog/2014/04/17/composer-gui-beta/">previous beta</a>. We've focused on polishing the existing feature set as well as improve your workflow. ]]></description>
+				<content:encoded><![CDATA[<p>Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332 (Mac only for now). </p>
+<p>This update makes significant improvements over the <a href=/blog/2014/04/17/composer-gui-beta/>previous beta</a>. We&#8217;ve focused on polishing the existing feature set as well as improve your workflow. Several key features were missing like resizable windows, full-screen mode, zooming in/out, and multiple selection (marquee or shift-click). Plus, all Pro subscribers can start using the Composer GUI right away, no need to enable it in the terminal as required in the previous version.</p>
+<p>We also focused on lots of small things that you don&#8217;t notice until they&#8217;re missing. For example, if you&#8217;re a long-time user of Adobe products, you&#8217;re used to quickly toggling the hand tool by holding down the spacebar. In the latest Composer GUI, you&#8217;ll be able to do the same thing.</p>
+<p>Here&#8217;s a short preview of what you can do in the updated Composer GUI:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/tfyg-MYz3-g" frameborder="0" allowfullscreen></iframe></p>
+<p>If you&#8217;re ready to play, here&#8217;s a <a href=https://github.com/coronalabs/aliens-vs-mutant-mice-final>sample</a> you can use with the latest daily build, the same one we use in the video. And as always, more information is available in our <a href=http://docs.coronalabs.com/daily/composer/>docs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/11/composer-gui-beta-update/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Composer GUI Beta</title>
+		<link>/blog/2014/04/17/composer-gui-beta/</link>
+		<comments>/blog/2014/04/17/composer-gui-beta/#comments</comments>
+		<pubDate>Thu, 17 Apr 2014 14:49:41 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[GUI editor]]></category>
+
+		<guid isPermaLink="false">/?p=58258</guid>
+		<description><![CDATA[Today, we are seeding out a new product that we call the "Composer GUI", a visual editor that allows you to rapidly create scenes, user interfaces, and game levels! 
+
+Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p>[UPDATE: A new <a href=/blog/2014/06/11/composer-gui-beta-update/>Composer GUI Beta</a> is now available]</p>
+<p>Today, we are seeding out a new product that we call the &#8220;Composer GUI&#8221;, a visual editor that allows you to rapidly create scenes, user interfaces, and game levels! </p>
+<p>It allows you to visually design in a drag-and-drop GUI interface. And as the name suggests, the Composer GUI is designed to work in conjunction with the Composer API.</p>
+<p>Here&#8217;s a quick video to give you a sense for what you&#8217;ll be able to do with the Composer GUI:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/K8zLU-2wtYQ" frameborder="0" allowfullscreen></iframe></p>
+<p>In addition, we designed the Composer GUI to be an integrated part of Corona Simulator. When you edit scenes in Composer, the Simulator automatically refreshes just like when you edit/save Lua files. You&#8217;ll also be able to preview individual scenes within Composer itself for even faster iteration.</p>
+<p>As you can see, there are lots of great features. For example, timeline animation and physics body editing will dramatically speed up your app development. We envision Composer GUI being used in many different ways: </p>
+<ul>
+<li>First, it makes Corona even more accessible by allowing people with no coding experience to get up and running very quickly.</li>
+<li>Second, it allows experienced developers to design UIs or levels in a fast and visual way and then refine/augment by further coding.</li>
+<li>Third, it improves team workflow by allowing members like designers to lay a scene out visually before passing it on to developers. </li>
+</ul>
+<h4>Early Beta Access</h4>
+<p>Before I tell you how to get access, I want to mention that the Composer GUI is very much a work in progress. It&#8217;s beta, but a really early beta. So even though we&#8217;ve integrated it into the daily builds, it won&#8217;t be visible by default. It&#8217;s something you&#8217;ll have to &#8220;unlock&#8221;.</p>
+<p>To play with (and unlock) Composer GUI, you&#8217;ll need to have a Pro (or higher) subscription:</p>
+<ol>
+<li>Download <a href=http://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2014.2264 (Mac only for now)</li>
+<li>In Terminal, run the following command:
+<ul>
+<li>
+<pre class="crayon-plain-tag">defaults write com.coronalabs.Corona_Simulator enableExtensions -bool YES</pre>
+</li>
+</ul>
+</li>
+<li>Run the Corona Simulator and you&#8217;ll see an option for &#8216;Corona Composer&#8217; on the Welcome window. It&#8217;s also accessible from the menu: &#8216;Window&#8217; => &#8216;Corona Composer&#8217;.</li>
+</ol>
+<h4>Docs</h4>
+<p>The best way to get up to speed is to go through the <a href=http://docs.coronalabs.com/daily/composer/tutorial.html>tutorial walkthrough</a> which parallels the video, and shows you how to take a <a href=https://github.com/coronalabs/aliens-vs-mutant-mice>starter project</a> and turn it into a really cool <a href=https://github.com/coronalabs/aliens-vs-mutant-mice-final>sample</a>.</p>
+<p>A list of known issues is available at the bottom of the preliminary <a href=http://docs.coronalabs.com/daily/composer/>Composer GUI docs site</a>.</p>
+<h4>Feedback</h4>
+<p>We&#8217;ve created a special <a href=http://forums.coronalabs.com/forum/636-composer-gui-beta-testing/>forum</a> for your feedback/comments.</p>
+<p>
+The Composer GUI furthers our vision of making Corona the tool of choice for designing, developing and distributing rich interactive content. It is still very early in its lifecycle, but we are looking forward to seeing how you use it and to your feedback!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/04/17/composer-gui-beta/feed/</wfw:commentRss>
+		<slash:comments>38</slash:comments>
+		</item>
+	</channel>
+</rss>

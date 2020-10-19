@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>App Store &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-store/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>App Store &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured app: Malachai</title>
+		<link>/blog/2016/11/02/featured-app-malachai-horror-jumpscare/</link>
+		<comments>/blog/2016/11/02/featured-app-malachai-horror-jumpscare/#comments</comments>
+		<pubDate>Wed, 02 Nov 2016 20:18:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[horror games]]></category>
+
+		<guid isPermaLink="false">/?p=68610</guid>
+		<description><![CDATA[Halloween is a great time to put out horror-themed games. Check out this creepy collaboration by Supertapp Interactive and NeWa Studios.]]></description>
+				<content:encoded><![CDATA[<p>Timing an app release with a major holiday is the Holy Grail of app marketing. Imagine the promotional benefits of releasing a horror-themed game just in time for Halloween! That&#8217;s exactly what <a href=https://supertapp-interactive.com/ target="_blank">Supertapp Interactive</a> and NeWa Studios recently did with their collaborative release of <em>Malachai</em>, a touch adventure game for iOS and Android.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/bBXn10F-RJ4" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Your role in the game is to investigate the unsolved disappearance of the Alderson family. During your research, you get the distinct sense that you are being followed. The game features a variety of puzzles to challenge you throughout the investigation.</p>
+<p><img class="alignnone size-large wp-image-68611" src="/wordpress/wp-content/uploads/2016/11/malachai-1024x576.png" alt="malachai" width="960" height="540" /></p>
+<p>Typically this genre needs a fine-tuned combination of challenges, artwork, and audio to fit the theme, all of which the designers achieved with <em>Malachai</em>. Game design was a collaborative effort, with Supertapp providing the programming and NeWa providing the artwork. The entire game was produced over a period of about two weeks.</p>
+<p><em>Malachai</em> was released late on a Friday, just three days before Halloween, and in less than 24 hours, the horror game had climbed to #4 in <a href=http://forums.toucharcade.com/showthread.php?t=296378# target="_blank">Touch Arcade&#8217;s Hot Games</a> list.</p>
+<p>The base game is free with a single in-app purchase option of $1.99 to unlock more content.</p>
+<p><a href=https://itunes.apple.com/gb/app/malachai/id1167431609?mt=8&ign-mpt=uo%3D4 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.newastudios.malachai target="_blank"><img class="alignnone size-full wp-image-67966" src="/wordpress/wp-content/uploads/2016/09/badge-google-play.png" alt="badge-google-play" width="50" height="50" srcset="/wordpress/wp-content/uploads/2016/09/badge-google-play.png 200w, /wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/11/02/featured-app-malachai-horror-jumpscare/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #94 &#8211; Apple App Store Changes, Composer GUI Beta Updates, and World Cup Open API</title>
+		<link>/blog/coronageek/corona-geek-94/</link>
+		<comments>/blog/coronageek/corona-geek-94/#comments</comments>
+		<pubDate>Mon, 16 Jun 2014 21:08:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[iOS8]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58827</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, we shared community announcements, including updates to Composer GUI Beta, a caution about installing OSX 10.10 Beta with Corona, and new plugins for Amazon Ads and Chartboost. We also discussed 6 things Apple didn't tell us at WWDC14.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Es7PZ7GOTOo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, we shared community announcements, including <a href=/blog/2014/06/11/composer-gui-beta-update/>updates to Composer GUI Beta</a>, a caution about <a href=/blog/2014/06/12/corona-sdk-and-osx-10-10-yosemite-status/>installing OSX 10.10 Beta with Corona</a>, and new <a href=/blog/2014/06/09/additional-3rd-party-plugins/>plugins for Amazon Ads and Chartboost</a>. We also discussed <a href=http://www.appmarketinglab.com/6-app-store-optimization-changes-coming-ios8/ target="_blank">6 things Apple didn&#8217;t tell us at WWDC14</a>.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-hangout-93/>Corona Geek #93 – Apple Rejects Rewards, LiquidFun, and Swift</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-85/>Corona Geek #85 &#8211; Using Go Lang with Corona SDK</a></li>
+<li><a href=https://itunes.apple.com/us/app/5-second-frenzy/id880726851 target="_blank">5 Second Frenzy</a> game for iOS</li>
+<li><a href=https://itunes.apple.com/app/id878234291 target="_blank">Match 3 Me</a> game for iOS</li>
+<li><a href=https://itunes.apple.com/us/app/minute-stretches-stretch-strengthen/id882267978?ls=1&mt=8 target="_blank">Minunte Stretches</a> app for iOS</li>
+<li><a href=http://www.adbuddiz.com/developers target="_blank">Ad Buddiz</a></li>
+<li><a href=http://www.macincloud.com/features/tools/tools target="_blank">MacinCloud comes with Corona SDK installed</a></li>
+<li><a href=http://www.kimonolabs.com/worldcup/explorer target="_blank">Word Cup Open API Explorer</a></li>
+<li><a href=http://www.irradiatedsoftware.com/ target="_blank">SizeUp OSX window manger</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-94/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-94-2014-06-16-apple-app-store-changes.mp3" length="62154103" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>“Freeze!” and 100% Indie (Guest piece)</title>
+		<link>/blog/2013/03/22/freeze-and-100-indie-guest-piece/</link>
+		<comments>/blog/2013/03/22/freeze-and-100-indie-guest-piece/#comments</comments>
+		<pubDate>Fri, 22 Mar 2013 17:02:43 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[amazon appstore]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[nook apps]]></category>
+		<category><![CDATA[puzzler]]></category>
+		<category><![CDATA[Samsung Apps]]></category>
+
+		<guid isPermaLink="false">/?p=30041</guid>
+		<description><![CDATA[Andreas von Lepel is the developer of Freeze!, an award-winning game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.
+
+Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and receives glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Andreas von Lepel is the developer of <a href=http://www.coronalabs.com/blog/2012/12/03/app-of-the-week-freeze/>Freeze!</a>, an award-winning puzzler arcade game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.</p>
+<p>Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and has received glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/LepelEditorialMed-11.jpg" alt="Freeze! dev headshot" class="alignleft size-full wp-image-30510" />My name is Andreas von Lepel, and I&#8217;m the creator of <a href=https://itunes.apple.com/app/id518123684>Freeze!</a> &#8211; a physics arcade-puzzler that I published in 10 languages on <a href=https://itunes.apple.com/app/id518123684>Apple&#8217;s App Store</a>, <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze/dp/B00A1SL8SE>Amazon Appstore</a>, <a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze&hl=en>Google Play</a>, <a href=http://www.barnesandnoble.com/w/freeze-the-escape-frozen-gun-games/1113761191?ean=2940043931788>NOOK Apps</a> and Samsung Apps. Freeze! was also featured by Apple in 149 countries as “New and Noteworthy.”</p>
+<p>Freeze! climbed to the #1 position as a freemium game in 36 countries on iTunes, won the “2013 Indie Prize Europe” award and has to my surprise (and delight), received more than 1.3 million downloads.</p>
+<p>If you&#8217;re not familiar with Freeze!, take a look at the launch trailer.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/ciQgYVgT0gk" frameborder="0" allowfullscreen></iframe></p>
+<p>After Freeze! hit stores on November 30, 2012, lots of amazing things began to happen. I&#8217;d like to tell you about the most interesting.</p>
+<p>Recently I was contacted by Chillingo and was asked to sign an NDA between Chillingo, EA, Samsung and myself. It regarded the launch of a new web portal for indie developers called <a href= http://www.100percentindie.com>100%/ Indie</a>. It launched just a few weeks ago and I haven&#8217;t been able to write about it, until now that is.</p>
+<p>Chillingo asked me to write an article series about the development of Freeze! and I was, of course, happy to participate. After all, there aren&#8217;t many bigger names out there than Chillingo, EA and Samsung! I&#8217;m excited to share that the first part two parts of my series are now live, the first piece is about the <href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a>, while the second details my <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>work with Corona SDK</a>.</p>
+<p>If you take a look at the image below, it will give you a hint about the things I write about in the first piece. It&#8217;s a comparison of the initial prototype  of Freeze!, after two weeks of development, and the final game:</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Freeze-image.png" alt="Freeze! image" class="alignnone size-full wp-image-30042" /></p>
+<p>I wanted to write in order to promote <a href=www.coronalabs.com/products/Corona-sdk>Corona SDK</a>, because without it, the development of Freeze! would not have been possible. And while the first part of the Freeze! series covers lots of interesting tidbits about game design and prototyping, the second installment covers the work I did with Corona and the tools I used to make my game. And more active developers, translates to more income for Corona Labs, which means an even stronger SDK!</p>
+<p>So, and what&#8217;s 100% Indie all about? Well, as I wrote above, I did publish Freeze! for Samsung Apps. This isn&#8217;t as easy as it should be &#8211; they have a review process that&#8217;s a bit complicated and though using Corona SDK is fine for publishing to Samsung Apps, I had to make a few tweaks and problem solve through some issues.</p>
+<p>100% Indie is now offering a very attractive program: publish your game to Samsung Apps via the 100% Indie program, and if your game is accepted, (the Chillingo guys will have a closer look at the quality of your work) you will get 100% revenue for the first 6 month, then 90% for the next 6 months etc. Take a look at the <a href=http://www.100percentindie.com/about/>nice conditions</a> and of course, by working with Chillingo, you have a bigger chance of getting some app store promotions by Samsung as well.</p>
+<p>Now read my first two articles about the <a href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a> and have a good laugh at the problems I faced and the mistakes I made (thankfully I was able to correct most of them). Also, read about my experience <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>working with Corona SDK</a> as well as other tools, and then get back to coding to create some great games!</p>
+<p><em>Andreas von Lepel, Creator of Freeze!</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/22/freeze-and-100-indie-guest-piece/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

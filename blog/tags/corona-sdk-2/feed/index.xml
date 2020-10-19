@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corona sdk &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona-sdk-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>corona sdk &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: Glitch Games &#8211; building successful cross-platform adventures</title>
+		<link>/blog/2016/03/31/case-study-glitch-games-building-successful-cross-platform-adventures/</link>
+		<pubDate>Thu, 31 Mar 2016 18:05:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">/?p=66259</guid>
+		<description><![CDATA[In this case study, we take a look at Glitch Games, a two-man indie studio from Oxfordshire, UK, and their success using Corona SDK to build popular adventure games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66275" src="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png" alt="Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCA=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />This is a tale of two best friends since college: Graham Ransom the programmer and Simon Pearce the artist. Even though they went to different universities, both went on to study game development. They started <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> in January 2012 working on kids&#8217; educational titles. Within a month after they met, they took part in their first 48 hour game jam and tried to build an adventure game.</p>
+<p>The result was  a title called <em>The Hauntening</em> which went on to win that game jam. They ended up releasing the game in the App Store for free to see if there was any interest in it. The feedback was positive and they began working on their first full-fledged adventure game. Eight months later, <em><a href=http://www.foreverlostgame.com/ target="_blank">Forever Lost</a>: Episode 1</em> was released for iOS and Android. Since then they have completed the trilogy and a free prequel game.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/H9ethihZrMw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Graham first discovered Corona SDK in 2009 when Corona was a fledgling framework. When he and Simon formed Glitch Games, it only made sense to continue using Corona SDK.</p>
+<p>Having been around for a while, it&#8217;s safe to call Graham a pioneer in mobile adventure games and an early adopter of Corona Labs&#8217; technologies as they come out, including our recent desktop support. Not only is the full suite of games available on Apple&#8217;s App Store, Google Play, and Amazon, it&#8217;s also available on both OS X and Windows desktop. In addition, they have built their own adventure framework called Serenity which sits on top of Corona SDK and allows them to rapidly build adventure games.</p>
+<p><img class="alignnone size-large wp-image-66276" src="/wordpress/wp-content/uploads/2016/03/hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6ch900-1024x640.png" alt="hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6c=h900" width="960" height="600" /></p>
+<p>When asked &#8220;Why Corona?&#8221; Graham said &#8220;If it wasn&#8217;t for Corona, <em>Forever Lost</em> wouldn&#8217;t exist today. We&#8217;d most likely have to go get real jobs.&#8221;  With multiple-millions of downloads across all the the stores, Glitch games is one of the proverbial success stories for indie studios. <em>Forever Lost</em> has been #1 in multiple countries and it was short-listed for the TIGA awards a couple of years ago.</p>
+<p>Graham likes Corona for ease of development and quick iteration. Their first kids&#8217; apps were turned around in less than a month, while their full adventure games take around eight months to build. Graham&#8217;s advice to those new to app development? &#8220;Download Corona and start making a game!&#8221;</p>
+<h3>Availability</h3>
+<p><a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.glitchgames.foreverlostepisode1hd target="_blank"><img class="alignnone size-thumbnail wp-image-66269" src="/wordpress/wp-content/uploads/2016/03/GooglePlayStore-150x52.png" alt="GooglePlayStore" width="150" height="52" /></a><a href=http://www.amazon.com/Forever-Lost-Episode-1-HD/dp/B00BF9USIO/ target="_blank"><img class="alignnone size-thumbnail wp-image-66271" src="/wordpress/wp-content/uploads/2016/03/AmazonStore-150x52.png" alt="AmazonStore" width="150" height="52" /></a><a href=https://itunes.apple.com/us/app/forever-lost-episode-1/id1036708333?ls=1&mt=12 target="_blank"><img class="alignnone size-thumbnail wp-image-66274" src="/wordpress/wp-content/uploads/2016/03/MacStore-150x52.png" alt="MacStore" width="150" height="52" /></a><a href=http://glitchgames.itch.io/forever-lost-episode-1 target="_blank"><img class="alignnone size-thumbnail wp-image-66273" src="/wordpress/wp-content/uploads/2016/03/ItchIoStore-150x50.png" alt="ItchIoStore" width="150" height="50" /></a></p>
+<h3>Conclusion</h3>
+<p>With a great idea and patience, you can built successful games with Corona SDK. Dream, Build, Ship!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>3-D effects with Normal Mapping</title>
+		<link>/blog/2013/08/28/3-d-effects-with-normal-mapping/</link>
+		<comments>/blog/2013/08/28/3-d-effects-with-normal-mapping/#comments</comments>
+		<pubDate>Wed, 28 Aug 2013 13:38:46 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Videos]]></category>
+		<category><![CDATA[3-d]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[multitexturing]]></category>
+		<category><![CDATA[normal mapping]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=42762</guid>
+		<description><![CDATA[Just a quick preview of what's coming in the next preview of graphics 2.0 that we'll be seeding out soon.
+
+It's a feature known as normal mapping and it's a workhorse technique for simulating lighting effects in traditional 3-D graphics. We're repurposing it so this is trivial to do in Corona.]]></description>
+				<content:encoded><![CDATA[<p>A feature known as normal mapping is a workhorse technique for simulating lighting effects in traditional 3-D graphics. We&#8217;re repurposing it so this is trivial to do in Corona.</p>
+<p>For example, here&#8217;s how how you can achieve a point light effect:</p><pre class="crayon-plain-tag">local multitexture =
+{
+	type=&quot;composite&quot;,
+	paint1={ type=&quot;image&quot;, filename=&quot;image.png&quot; },
+	paint2={ type=&quot;image&quot;, filename=&quot;normals.png&quot; }
+}
+
+local object = display.newRect( 0, 0, 200, 200 )
+object.fill = multitexture
+object.fill.effect = &quot;filter.normalMapWith1PointLight&quot;</pre><p>All effects have property knobs that you&#8217;ll be able to play with. In the point light, one of those knobs is the position of the point light. In the video below, we&#8217;re just moving the position in a circle:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/z0pEcncwkEQ?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/28/3-d-effects-with-normal-mapping/feed/</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+	</channel>
+</rss>

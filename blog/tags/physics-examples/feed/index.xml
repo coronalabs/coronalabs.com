@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Physics Examples &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/physics-examples/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Physics Examples &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #181 &#8211; Creating Destroyable Game Environments</title>
+		<link>/blog/coronageek/corona-geek-181/</link>
+		<comments>/blog/coronageek/corona-geek-181/#respond</comments>
+		<pubDate>Tue, 01 Mar 2016 00:46:50 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65974</guid>
+		<description><![CDATA[On today&#8217;s Corona Geek, Ed Maurina answered a recent forum question on how to create destroyable game environments. Ed demonstrated three possible solutions with varying degrees of sophistication. The panelist also had some great ideas to share around using shaders, and even excluding use of  the physics engine all together. Download the source code for today&#8217;s demo. Ed Maurina is getting ready to close the door on beta testers for his new tool to automatically generate common types of starter game templates. Don&#8217;t get left out, sign up now to be a beta tester and help shape a development tool that will benefit the whole community. Show Notes:...]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4gYM9T_2zdE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />On today&#8217;s Corona Geek, Ed Maurina answered a <a href=https://forums.coronalabs.com/topic/61560-seeking-alpha-and-beta-testers-corona-game-dev-tool/ target="_blank">recent forum question</a> on how to create destroyable game environments. Ed demonstrated three possible solutions with varying degrees of sophistication. The panelist also had some great ideas to share around using shaders, and even excluding use of  the physics engine all together.</p>
+<p>Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/scorchedEarth.zip target="_blank">source code for today&#8217;s demo</a>.</p>
+<p>Ed Maurina is getting ready to close the door on beta testers for his new tool to automatically generate common types of starter game templates. Don&#8217;t get left out, sign up now to be a <a href=https://forums.coronalabs.com/topic/61560-seeking-alpha-and-beta-testers-corona-game-dev-tool/ target="_blank">beta tester</a> and help shape a development tool that will benefit the whole community.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li>Play <a href=https://itunes.apple.com/nz/app/flappy-fruit-bat-free/id825072138?mt=8 target="_blank">Flappy Fruit Bat on Apple TV</a></li>
+<li>Learn how Tony Godfrey <a href=/blog/coronageek/developer-conversations-hoppy-naut/ target="_blank">localized Hoppy Naut</a> for Japanese, Korean, and Russian</li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://www.sharkappsllc.com/ target="_blank">Tony Godfrey</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=https://twitter.com/rakoonic target="_blank">Barry Swan</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank">Share your developer story</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>Let&#8217;s Meet Face-to-Face:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Game Developers Conference in San Francisco, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-181/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-181-2016-02-29-creating-destroyable-game-environments.mp3" length="70249083" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Adding Missile Shooting Turrets &#8211; Using Gravity In Games &#8211; Part 5</title>
+		<link>/blog/coronageek/hangout-highlights-adding-missile-shooting-turrets-using-gravity-in-games-part-5/</link>
+		<comments>/blog/coronageek/hangout-highlights-adding-missile-shooting-turrets-using-gravity-in-games-part-5/#respond</comments>
+		<pubDate>Wed, 23 Sep 2015 17:26:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[bullets]]></category>
+		<category><![CDATA[missiles]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[turrets]]></category>
+		<category><![CDATA[vector math]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64140</guid>
+		<description><![CDATA[Last week we continued development on our "Monsters Need Coins" game. Ed Maurina walked us through adding static missile shooting turrets to the game, along with adding homing missiles that follow the player around the platforms. We discussed the vector math involved to accomplish this and looked at the code for adding the turrets. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 159, we continued development on our &#8220;Monsters Need Coins&#8221; game. Ed Maurina walked us through adding static missile shooting turrets to the game, along with adding homing missiles that follow the player around the platforms. We discussed the vector math involved to accomplish this and looked at the code for adding the turrets.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-159/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; iPad Pro Panel Thoughts</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/vDvHoQMVXsc?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Corona SDK Plugins</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/5TG4ZFT_i5w?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Adding Turrets To Games &#8211; Turret Types </h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qc_7f6nUvCM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Adding Turrets To Games &#8211; Vector Math</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0QqT2--wATA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Adding Turrets To Games &#8211; Code Setup</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/rbUpnrI31GY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Adding Turrets To Games &#8211; Coordinate Systems </h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/KONFeARoktQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Adding Turrets To Games &#8211; Object Clean</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/yNi47LBkkow?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adding Turrets To Games &#8211; Bullet Vector Math</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/E-1kCCABNAU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Adding Turrets To Games &#8211; Heat Seeking Bullets</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/B5hxMaBDWyk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we looked at an isolated example of <a href=/blog/coronageek/corona-geek-160/>creating a homing turret that follows a moving object</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-adding-missile-shooting-turrets-using-gravity-in-games-part-5/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; 3D Printing Game Pieces, Player Air Control, and Key Inputs</title>
+		<link>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/</link>
+		<comments>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/#respond</comments>
+		<pubDate>Wed, 26 Aug 2015 16:30:44 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63843</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator....]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. </p>
+<p>We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-155/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 3D Printed Games Using BoardCraft</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/u6YXTXkdCdE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 3D Printing Game Market</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LtG9oaI7XYA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Kickstarter Insights</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/GZq0Xd-3xj4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Gravity In Games Rcap</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ceYqpYob4Xo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Adding Assets to Layers</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/KzJBd1oeTr4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Adding Key Inputs</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/dTbZ4WcUDhE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Player Air Control</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/6qVRkjlFWt4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adding a Player Foot</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0TM9vnbQcko?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Wrap Up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LQM999jpc00?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-156/>adding a level loader</a> to our &#8220;Using Gravity In Games&#8221; project.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #156 &#8211; Using Gravity In Games &#8211; Part 3, Adding Blocks, Spikes, Coins, and Monsters</title>
+		<link>/blog/coronageek/corona-geek-156/</link>
+		<comments>/blog/coronageek/corona-geek-156/#respond</comments>
+		<pubDate>Mon, 24 Aug 2015 22:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63816</guid>
+		<description><![CDATA[Today we covered part three of our "Using Gravity In Games" game development series with a look at level building. We looked at code for positioning platforms, spikes, coins, and monsters. We looked at how to dynamically center the camera on the player's starting position. Finally, we discussed the benefits of making code reusable and adding the ability to turn features on and off during play testing.  Download the updated source code for a full look at how the game works.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/0Pd1mzJl6qQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s weekly Corona Geek Hangout we continued our &#8220;Using Gravity In Games&#8221; game development series with a look at level building. This is part three of our look at developing a game similar to the popular mobile game, They Must Be Fed 3. </p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> of the series we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. </p>
+<p>Today Ed Maurina (<a href=https://forums.coronalabs.com/index.php?app=core&module=search&section=search&do=search&fromsearch=1>RoamingGamer</a>) walked us through level building code for creating platforms, spikes, coins, and monsters. We also looked at how to dynamically center the camera on the player&#8217;s starting position. The level builder code is designed to let you position spikes on the sides of blocks by adjusting a few configuration settings. We also discussed the benefits of making your code reusable and adding the ability to turn features on and off during play testing.  <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Download the updated source code</a> for a full look at how the pieces fit together.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ckrb3s4h7bj8evlum8mrd1si2uk target="_blank">Corona Geek After Dark #8</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Develphant&#8217;s new Spotify module</a>, forum threads, desktop app marketing, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+<li><a href=http://lua-users.org/wiki/SplitJoin target="_blank">Lua String Split</a></li>
+<li><a href=http://lua-users.org/wiki/DataDumper target="_blank">Lua Data Dumper</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-155/>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-156/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-156-2015-08-24-using-gravity-in-games-part-3-level-building.mp3" length="115678520" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Using Gravity In Games and Creating 2D Shadow Effects Using Custom Shaders</title>
+		<link>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/</link>
+		<comments>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/#respond</comments>
+		<pubDate>Wed, 19 Aug 2015 17:54:20 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[shader examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63784</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the project source code to follow along with the conversation. If you missed the Hangout, here are clips to help you catch up. Watch the entire conversation, or just the parts that interest you most. Part 1 &#8211; 2D Shadows Example Overview Part 2 &#8211; 2D Shadows Example Code Part 3 &#8211;...]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-154/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 2D Shadows Example Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qg1KW2MaIcg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 2D Shadows Example Code</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/fHp8XMLeoWw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; They Need To Be Fed 3 Game Overive</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/8HC7MQLtlTA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Breaking Down The Game Mechanics</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1lOqSjVydRg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Player Gravity Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ng0p7Lvsui0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Calculating Gravity</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0AF93KOs80s?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Adjusting Magnitude</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/zC_aJJ2Cn6w?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adjusting Block Size</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/q8sK8bRABXI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-155/>3D printing game pieces and using gravity in games &#8211; part 2</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Creating Motorized Wheeled Carts</title>
+		<link>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/</link>
+		<comments>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/#respond</comments>
+		<pubDate>Thu, 09 Jul 2015 04:52:12 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[wheeled cart]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63269</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 148, we stepped through the concepts and source code to create a motorized wheeled cart using pivot joints and Corona's built in physics engine. We also explored applying torque and gravity to the cart to get some interesting effects. Here are clips to help you catch up. Download the examples from the Hangout to see how everything works. ]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 148, we stepped through the concepts and source code to <a href=/blog/coronageek/corona-geek-147/>create a motorized wheeled cart</a> using pivot joints and Corona&#8217;s built in physics engine. We also explored applying torque and gravity to the cart to get some interesting effects. <a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Sampler target="_blank">Download the examples from the Hangout</a> to see how everything works.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-148/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/M4EAuOwV_pM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Source code sampler demo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/RNCQP8uF884?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Wheeled cart example introduction</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/mwK9txkhQSw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; When grouping objects can be beneficial</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/7qEnCArnlcw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Motorize cart source code walk-thru</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/nD72mD2YN-4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Applying torque to wheels</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/wEMB0-yO0H4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Source code wrap-up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/AIkox0mLefQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>While you are at it, be sure to watch Hangout #149 where we learn <a href=/blog/coronageek/corona-geek-149/>shader concepts</a> from Steven Johnson at <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a>. Links to the source code and other resources are also provided. Have fun.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-creating-motorized-wheeled-carts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Rag Doll Physics Code Walk-Thru</title>
+		<link>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/</link>
+		<comments>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/#respond</comments>
+		<pubDate>Wed, 01 Jul 2015 16:43:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[rag doll]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63185</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 147, we stepped through source code to create rag doll characters using pivot joints and Corona’s built in physics engine. We also shared tips for organizing project code. If you missed the Hangout, here are clips to help you catch up.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 147, we stepped through source code to <a href=/blog/coronageek/corona-geek-147/>create rag doll characters</a> using pivot joints and Corona&#8217;s built in physics engine. We also shared tips for organizing project code. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">Download the examples from the Hangout</a> to see how everything works.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-147/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LUpOY8mqOFQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Ed Maurina shows off a physics sampler</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/A7yeWhuakFg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Ed discusses attaching properties to a scene</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1ojiPfkTPzw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Using physics body filters</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/06GlPY6rZ54?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Constructing a rag doll</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/b5qoBGf02EY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Physic joint placement</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/36b2BD77O6c?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Be sure to watch Hangout #148 where we <a href=/blog/coronageek/corona-geek-148/>create a motorized wheeled cart</a> using pivot joints and physics. Links to the source code and other resources are also provided, so have fun.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #148 &#8211; Creating Motorized Wheeled Carts Using Pivot Joints</title>
+		<link>/blog/coronageek/corona-geek-148/</link>
+		<comments>/blog/coronageek/corona-geek-148/#respond</comments>
+		<pubDate>Mon, 29 Jun 2015 22:04:40 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63133</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we learned how to build a motorized wheeled cart using Corona’s built-in physics engine and pivot joints. We explored why you should consider adding display objects to a group and how torque affects different parts of a wheeled physics simulation. We also explored ideas for using a wheeled cart in a game. Download the source code from today's discussion.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/L3Mt4Ablslo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout we learned how to build a motorized wheeled cart using Corona’s built-in physics engine and pivot joints. We explored why you should consider adding display objects to a group and how torque affects different parts of a wheeled physics simulation. We also explored ideas for using a wheeled cart in a game. <a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Sampler target="_blank">Download the code from today&#8217;s discussion</a> to play with the examples.</p>
+<p>If you missed last week’s Hangout on <a href=/blog/coronageek/corona-geek-147/>creating rag doll characters</a>, be sure to watch the code walk through. We talked about using pivot and touch joints to create complex structures that other objects and players can interact with.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>Don&#8217;t forget, this is the last week to submit your high score for this month&#8217;s Corona Geek Games Challenge. We are playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a> for the chance to win a $50 gift card. ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app. Our you can play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a> for free.</p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce the Corona Geek Game Challenge winner on July 6th. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ) to find out who wins.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-147/>Corona Geek #147 – Creating A Rag Doll Character Using Pivot Joints and Physics Bodies</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Hangout Resources</strong></p>
+<ul>
+<li><a href=https://dl.dropboxusercontent.com/u/55969280/Space3.apk target="_blank">An APK of Sergey&#8217;s Developer Conference Space Game</a></li>
+<li><a href=https://github.com/Lerg/space3 target="_blank">Source code for Sergey&#8217;s Developer Conference Space Game</a></li>
+<li><a href=http://developers.magmic.com/46-things-launch-mobile-game-app-store/ target="_blank">46 things to do before you launch a mobile game on the App Store</a></li>
+<li><a href=http://incompetech.com/music/royalty-free/ target="_blank">Royalty-Free Music from Kevin MacLeod</a></li>
+<li><a href=http://nosoapradio.us/ target="_blank">Royalty-Free Music from NoSoapRadio</a></li>
+<li><a href=http://www.jasonschroeder.com/2015/02/25/timer-2-0-library-for-corona-sdk/ target="_blank">Timer 2.0 Library for Corona SDK</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-148/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-148-2015-06-29-creating-motorized-wheeled-carts.mp3" length="88959418" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Using Physics, Creating Joints, and Making Objects Interact</title>
+		<link>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/</link>
+		<comments>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/#respond</comments>
+		<pubDate>Wed, 24 Jun 2015 16:46:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[joints]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[touch joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63067</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 146, we looked at working with Corona's built in physics engine to create draggable rag dolls, physics bodies, touch joints, and pivot joints. We even look at observing and troubleshooting physics objects using hybrid mode. Here are a few clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 146, we looked at <a href=/blog/coronageek/corona-geek-146/>working with Corona&#8217;s built in physics engine</a> to create draggable rag dolls, physics bodies, touch joints, and pivot joints. We even look at observing and troubleshooting physics objects using hybrid mode. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">Download the code from the Hangout</a> to see how the examples work.</p>
+<p>Here are clips from Hangout #146. <a href=/blog/coronageek/corona-geek-146/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/hZQZNEYJQhM" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Ed Maurina shares his app publishing strategy</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/eTn7E21lqKY" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Physics documentation Highlights</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/xNXciSjyZaU" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Physics joint highlights</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4WV9jnrNtFc" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Physics sampler overview</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Jgc3BgJYqGI" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Constructing simple physics joints</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/OlsI7oeKG_U" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Constructing a rag doll</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/a6pFebPnHw4" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Allowing physics bodies to sleep</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/SAMcIamAEBA" frameborder="0" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Troubleshooting physics bodies using Hybrid mode</h3>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/oCYWuewfVlM" frameborder="0" allowfullscreen></iframe></p>
+<p>While you&#8217;re at it, be sure to <a href=/blog/coronageek/corona-geek-147/>watch Hangout #147</a> where we continued our conversation around working with Corona&#8217;s built in physics engine to create draggable rag doll, create physics bodies, touch joints, and pivot joints.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-using-physics-creating-joints-and-making-objects-interact/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #147 &#8211; Creating A Rag Doll Character Using Pivot Joints and Physics Bodies</title>
+		<link>/blog/coronageek/corona-geek-147/</link>
+		<comments>/blog/coronageek/corona-geek-147/#respond</comments>
+		<pubDate>Tue, 23 Jun 2015 01:04:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[touch joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63084</guid>
+		<description><![CDATA[Last Monday we started a series on working with Corona's built-in physics engine. We took a look at the Physics API documentation and we discussed the concepts behind constructing a rag doll from primitive shapes. This week we continued the physics conversation with a look at the code used to create the rag doll example and tips on how to organize project code. We even discussed how a simple dress up, or object placement game could be constructed, using the sampler code as a reference.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/AOq-49nH4Wc?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we started a series on working with <a href=/blog/coronageek/corona-geek-146/>Corona&#8217;s built-in physics engine</a>. We took a look at the Physics API documentation, which also covers creating different types of physics joints, like pivot and touch joints. Then we discussed the concepts behind constructing a rag doll character from primitive shapes.</p>
+<p>This week we continued the physics conversation with a look at the code used to create the rag doll example and tips on how to organize project code. We even discussed how a simple dress up, or object placement game might be constructed, using the sampler code as a reference. If you are interested in saving the state of your game so players can return to where they left off when they close the app, then <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">download the code from today&#8217;s discussion</a> to see how the samples are coded.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>Don&#8217;t forget, this month we’re playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a> for the chance to win a $50 gift card. ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app. Our you can play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a> for free.</p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce the Corona Geek Game Challenge winner on July 6th. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ) to find out who wins.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-146/>Corona Geek #146 &#8211; Creating Draggable Rag Dolls, Using Physics Bodies, and Creating Joints</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-147/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-147-2015-06-22-ragdoll-physics-part-2.mp3" length="78856655" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

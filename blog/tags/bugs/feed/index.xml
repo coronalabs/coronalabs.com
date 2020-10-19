@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bugs &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/bugs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>bugs &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>HockeyApp plugin now available for Corona apps</title>
+		<link>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/</link>
+		<comments>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/#comments</comments>
+		<pubDate>Wed, 18 May 2016 20:08:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash reporting]]></category>
+		<category><![CDATA[hockeyapp]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[testing]]></category>
+
+		<guid isPermaLink="false">/?p=66827</guid>
+		<description><![CDATA[Our new HockeyApp plugin can help you make use of the HockeyApp testing and crash reporting service. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/05/hockey.png><img class="alignright wp-image-66860 size-thumbnail" style="margin: 2px 0px 10px 25px;" src="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png" alt="hockey" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png 150w, /wordpress/wp-content/uploads/2016/05/hockey-300x300.png 300w, /wordpress/wp-content/uploads/2016/05/hockey.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a><a href=https://www.hockeyapp.net/features/ target="_blank">HockeyApp</a> is a service from Microsoft that allows you to upload test builds of your iOS, Android, Windows, and OS X apps. Once uploaded, you can easily distribute them to your testers. HockeyApp also lets you provide release notes on what has changed and gather stats on downloads and other app metrics during the testing process. In addition, it supports crash reporting. All of these factors are where the Corona <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp plugin</a> comes into play.</p>
+<h3>Getting started</h3>
+<p>Like all third-party services, you will need to <a href=https://rink.hockeyapp.net/users/sign_up target="_blank">register</a> with HockeyApp. Once that step is complete, you can start setting up your apps, your testers, and begin deploying test builds. Since this is a Corona plugin, you will also need to add the plugin to your <code>build.settings</code> and <code>require()</code> it in <code>main.lua</code> (see our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp documentation</a> for details). Finally, you will need to <a href=https://store.coronalabs.com/plugin/hockeyapp target="_blank">activate the plugin</a> in the Corona Marketplace.</p>
+<h3>Features</h3>
+<p>For crash reporting, you simply need to initialize the plugin by calling the <a href=https://docs.coronalabs.com/plugin/hockey/init.html target="_blank">hockeyApp.init()</a> function with an app ID retrieved from the HockeyApp portal. If your app crashes during testing, the plugin will detect it and report the crash to the HockeyApp dashboard.</p>
+<p>While you can choose to have HockeyApp send your testers an email when there is an app update, you may prefer to have your app detect when a new version is available via the <a href=https://docs.coronalabs.com/plugin/hockey/checkForUpdate.html target="_blank">hockeyApp.checkForUpdate()</a> call. Similarly, you can un-register for updates with the <a href=https://docs.coronalabs.com/plugin/hockey/unRegisterForUpdate.html target="_blank">hockeyApp.unRegisterForUpdate()</a> call.</p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> plugin is simple &#8212; just add a few lines of code and let HockeyApp do the rest! You can find complete usage details for HockeyApp in our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">plugin documentation</a>, or discuss it further in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona Bug Reports</title>
+		<link>/blog/2013/03/27/wednesday-faq-corona-bug-reports/</link>
+		<comments>/blog/2013/03/27/wednesday-faq-corona-bug-reports/#comments</comments>
+		<pubDate>Wed, 27 Mar 2013 17:50:47 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=30719</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about submitting Corona Bug Reports.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignleft size-full wp-image-28552" /><br />
+It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about submitting Corona Bug Reports.</p>
+<h2>1. The Corona Simulator not longer works, please fix it!</h2>
+<p>That was an actual bug report we received with no other information about the problem. We do like to know about bugs and try to fix them, but you need to supply information to help us do that. At the very minimum, we need the following items in your bug report:</p>
+<ul>
+<li>What platform are you having the problem on: Mac simulator, Windows, simulator, iOS, Android?</li>
+<li>If it&#8217;s failing only on a device, which ones have you tested and what version of the OS is it using?</li>
+<li>What Corona build are you using? If it&#8217;s a Daily Build, does it work with the Release Build? What build did it stop working on?</li>
+<li>Steps to reproduce the problem</li>
+<li>Project code to demonstrate the problem</li>
+</ul>
+<p>If your project is failing when doing a build or installing on a device, try building and installing one of the Corona sample projects (e.g., HelloWorld). That will tell you if your system is set up to build and install your app.</p>
+<p>When you&#8217;re filing a bug report, please think about what you would need to troubleshoot the problem if you were assigned this bug.</p>
+<p>You will see the <a href=http://developer.coronalabs.com/content/bug-submission>&#8220;Report A Bug&#8221;</a> link at the top of the Corona website when you&#8217;re logged in. Please fill out the entire form and add any additional information to help reproduce your bug.</p>
+<h2>2. I posted my bug in the forums, so why do I need to submit a bug report?</h2>
+<p>A lot of bugs get posted in the Corona forums, and that&#8217;s a good thing. It makes users aware of the possible problem and others can help confirm the bug. We do monitor the forums and respond to reports, but just because we responded in the forums, doesn&#8217;t mean the bug is in our system to be fixed. You need to file a formal bug report with the information listed above. This adds it to our bug tracking system and allows us to assign a priority to the bug and route it to engineering for a fix. It also assigns a case number that can be used to track the bug.</p>
+<h2>3. My bug was rejected because I didn&#8217;t supply test code. Why?</h2>
+<p>We need test code in order to verify the bug. Just describing what you&#8217;re doing in your code is generally not enough. In many cases it&#8217;s the combination of all the code files and assets that factor into the bug. We have tried to reproduce many bug cases with only a code snippet and find that there wasn&#8217;t enough information to show the problem.</p>
+<p>Supplying test code also helps us verify and assign your case faster. If there is a complete test project that we can run, it will be evaluated as soon as possible. Cases that require creating a new project with your code snippet, may be pushed aside until later.</p>
+<h2>4. My bug was rejected because I only supplied a main.lua file. Why?</h2>
+<p>Many cases come in with just a <strong>main.lua</strong> file attached. Sometimes this is enough to reproduce the problem but in many cases it&#8217;s not. I remember one case where only the <strong>main.lua</strong> file was supplied. I created a new project using the file and couldn&#8217;t reproduce the bug. It turned out that the bug only occurred in landscape mode. If they had supplied a complete set of project files, I would have seen the problem and saved time.</p>
+<p>Sometimes you don&#8217;t know the exact cause of the problem so supplying an entire test project that demonstrates the issue, will help us confirm the bug and get it assigned to be fixed sooner.</p>
+<h2>5. My project is too big to submit, what can I do?</h2>
+<p>As mentioned in Question 4, we want project code that demonstrates the problem, but we don&#8217;t want your complete project. The reason is it takes to much time to go through the code and try to understand what it&#8217;s doing. Not all problems you encounter in your development will be Corona bugs so you need to debug and isolate problems you&#8217;re seeing. If in that process you find a bug, and know that it&#8217;s not something you&#8217;re doing wrong in your code, please try to create a short test case that demonstrates the problem. You can then zip up that project (with all its support files and assets) and attach it to the bug report.</p>
+<p>We&#8217;ve had some users send us their complete project code and ask us to debug it for them. We don&#8217;t have the resources nor the time to do that and can only address bug reports where someone has taken the time to isolate and identify a Corona problem.</p>
+<h2>6 Why does the simulator crash when I run my app?</h2>
+<p>Simulator crashes occur with uncaught errors in the project code. We place a high priority on fixing errors that cause the simulators to crash, but sometimes there are errors in the project code that will crash the simulator.</p>
+<p>If you&#8217;re running the Mac simulator, it will generate a &#8220;crash log.&#8221; Many users have sent us these crash logs after getting the crash. The crash logs give us an idea where the problem is, but don&#8217;t help us find and fix the cause of the crash.</p>
+<p>To help solve this bug, we really need a small test project that can reproduce the simulator crash along with the steps to reproduce it.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/27/wednesday-faq-corona-bug-reports/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

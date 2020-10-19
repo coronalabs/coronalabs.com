@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News &amp; Announcements &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/announcements/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>News &amp; Announcements &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Future of Corona</title>
+		<link>/blog/2020/04/30/future-of-corona/</link>
+		<comments>/blog/2020/04/30/future-of-corona/#comments</comments>
+		<pubDate>Fri, 01 May 2020 01:28:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76412</guid>
+		<description><![CDATA[We wanted to provide an update on the transition away from Corona Labs, Inc. to our new open source initiative.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-76413" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png" alt="" width="620" height="256" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 620px) 100vw, 620px" />Hello, everyone.</p>
+<p>This is Vlad Shcherban, the main developer of Corona for the past several years. There are a lot of things I would like to discuss so I will try to be as brief as possible, with more details in the FAQ below.</p>
+<p>As you already <a href=/blog/2020/02/12/corona-labs-annual-update/>know</a>, as of May 1st, 2020,  Corona Labs Inc., the company is no more.</p>
+<p>But Corona (the engine powering thousands of apps) is anything but finished. It is only starting as a completely open source project. I plan to continue working on it with development <strong>funded via crowdfunding</strong>. This idea seems to have been very warmly received by the community on the Forums and Slack, with people already pitching in to support my effort to keep Corona alive. I am very optimistic. If the trend continues, it seems I will be able to continue working on Corona full time. If you like using Corona, or use it for business and would like to see its development and support continue, please support my crowdfunding campaign on <a href=https://www.patreon.com/shchvova target="_blank" rel="noopener">Patreon</a> or <a href=https://github.com/sponsors/shchvova target="_blank" rel="noopener">GitHub Sponsors</a>. Your support would be greatly appreciated by everyone using Corona.</p>
+<div class="button_container">
+<div class="left_button" style="float: left; width: 49%;">
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://www.patreon.com/shchvova target="_blank" rel="noopener">Support us on Patreon</a></p>
+</div>
+</div>
+<div class="right_button" style="float: left; width: 49%;">
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://github.com/sponsors/shchvova target="_blank" rel="noopener">Support us on GitHub</a></p>
+</div>
+</div>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+<p>Currently Corona is deeply tied to Corona Labs Inc.&#8217;s web services. I have been working hard over the last few months to move everything to either the Simulator running on a user&#8217;s machine or to free services available to open source software. From now on, new builds of Corona will appear on the “<a href=https://github.com/coronalabs/corona/releases target="_blank" rel="noopener">Releases</a>” section on Corona’s GitHub.</p>
+<p>The amazing folks from <a href=https://www.appodeal.com/home>Appodeal</a> have decided to fund “keeping the lights on” for essential parts of the Corona infrastructure: you will be able to download purchased Marketplace assets and make builds with existing versions of Corona Simulator. No new purchases, daily builds or plugin updates will be available from <a href=/ target="_blank" rel="noopener">coronalabs.com</a> after May 1st. Appodeal is also committed to contributing to the Corona open source project by releasing and updating plugins that will benefit the community in the near future.</p>
+<p>By the way, about Appodeal: they recently launched the<a href=https://www.appodeal.com/home/accelerator-program/ target="_blank" rel="noopener"> app accelerator program</a>: help with funding, user acquisition and monetization, while you are keeping rights to your app.</p>
+<p><b>(Re)brand &amp; COVID-19</b></p>
+<p>About half a year ago an idea was passed around to rebrand Corona, because it seems to be tied to a company which is closing. Since then, coronavirus has impacted many lives, which pushed the idea of rebranding over the line. With our awesome Slack community, we picked a new name for the engine: Solar2D. We feel like it is a good name, both nice, and connected to the origins of the original name. This rebrand will not be our priority since making sure that everything keeps working after May 1 is. It will be done gradually. Corona has quite a name recognition in the industry, and has rooted in the ecosystem. We will not be trying to get rid of it, prioritizing backwards compatibility. Everything you would be able to google with for Corona or Corona SDK will still work for Solar2D.</p>
+<p><b>Forums</b></p>
+<p>Forums have always been essential part of the Corona community. Our Forums were using a quite dated engine and authentication was tied to infrastructure which will be shut down in months to come. As of today, we have migrated the Forums to a new, more modern platform. We tried our best to migrate the Forums to the new platform at <a href=https://forums.solar2d.com/ target="_blank" rel="noopener">forums.solar2d.com</a>. Most posts should be available there. To access your existing account you would need to <a href=https://forums.solar2d.com/password-reset target="_blank" rel="noopener">reset your password</a>. Keep in mind, the new Forums are not tied to the Simulator login. You are not resetting your Corona/Solar2D password, only your Forums password.</p>
+<p><b>F.A.Q:</b></p>
+<p><b>Q: What are your funding goals?</b><br />
+A: I will be able to work full time on Corona without taking another job if funding exceeds an experienced software developer&#8217;s salary living in Toronto. 75% of money above the salary of a medium level software developer&#8217;s salary will be used for contractors to work on specific projects. I have hopes to get enough support to rehire, at least part time, some of the awesome developers we had to let go.</p>
+<p><b>Q: How do I migrate my projects to new Corona/Solar 2D?</b><br />
+A: You probably won’t have to do anything. The plan is to have the Simulator continue working as it is now, automatically downloading Corona’s first party plugins. Free plugins from other vendors would be added soon.</p>
+<p><b>Q: Would source code for plugins be available as well?</b></p>
+<p>A: Pretty much all code related to Corona Labs has been made available under the MIT license. I will move all updates &amp; development of plugins to GitHub in public repositories. For now, all “com.coronalabs” plugin binaries are <a href=https://github.com/search?q=topic%3Aplugin+org%3Acoronalabs target="_blank" rel="noopener">available</a> for download.</p>
+<p><b>Q: What about third-party plugins?</b><br />
+A: Third-party plugins can now be integrated using a custom plugin URL feature, or downloaded manually and placed in corresponding locations. I also have a plan to make the plugin system extendable, so the Simulator will be able to automatically configure plugins purchased from third-party stores. I am keeping in touch with vendors of most popular plugins to make sure they will be available.</p>
+<p><b>Q: Do I have to migrate my project to Native?</b><br />
+A: Only if you want to. The Simulator will continue working. In fact, it would be much easier to integrate with custom or self-built plugins.</p>
+<p><b>Q: You are vague about specific numbers on funding? Would there be some accountability?</b><br />
+A: I am vague, because I am coming from the background where talking about salaries is not something which is done. If you pledge $50 per month or more, I will disclose this information to you. Otherwise, I can assure you that my personal goals are more than reasonable.</p>
+<p><b>Q: How can I support Corona/Solar 2D?</b><br />
+A: Best way to support it is through crowdfunding on <a href=https://www.patreon.com/shchvova target="_blank" rel="noopener">Patreon</a> or <a href=https://github.com/sponsors/shchvova target="_blank" rel="noopener">GitHub Sponsors</a>. Since everything is open source, you can also improve the project directly. Also, you can be extremely helpful by answering questions on the forums, and telling others about Corona/Solar 2D.</p>
+<p><b>Q: Are you starting a new company to support the engine?</b><br />
+A: No. I am doing this as an individual. I will try to build a fail-safe environment where everything is not tied to me. Crowdfunding is to support me and my goal of making Corona/Solar 2D the best game engine ever, and to keep it updated and up to requirements of all points of distribution, as much as possible.</p>
+<p><b>Q: What are some of the engine development goals for the near future, any roadmap?</b><br />
+A: There are needs and wants here. Making sure that everything works without Corona Labs web services, supporting AndroidX artifacts and moving to Metal because of Apple’s plans to remove OpenGL are the most essential big tasks for the near future, as well as ongoing maintenance and plugin updates. Those are the needs which I would have to address to keep the engine functional. If funding permits, then the &#8220;wants&#8221; come in: I would really like to improve HTML5 support and add Switch support to the engine.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2020/04/30/future-of-corona/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>The Forums are moving&#8230;</title>
+		<link>/blog/2020/04/30/the-forums-are-moving/</link>
+		<pubDate>Thu, 30 Apr 2020 12:03:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76408</guid>
+		<description><![CDATA[The Corona Labs Forums are currently down as we migrate them to the new modern forum software on new hardware. The old Forums will remain down from this point forward. Once the migration is complete, forums.coronalabs.com will redirect to forums.solar2d.com or you can access them directly. You can reset your password here: https://forums.solar2d.com/password-reset Put in your Corona login email. You will get an email to that account and you can click on the link in the email to change the password. This password reset will just be for the Forums and will not affect your Simulator login. &#160; &#160;]]></description>
+				<content:encoded><![CDATA[<p>The Corona Labs Forums are currently down as we migrate them to the new modern forum software on new hardware. The old Forums will remain down from this point forward. Once the migration is complete, <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">forums.coronalabs.com</a> will redirect to <a href=https://forums.solar2d.com/ target="_blank" rel="noopener">forums.solar2d.com</a> or you can access them directly.</p>
+<p>You can reset your password here: <a href=https://forums.solar2d.com/password-reset target="_blank" rel="noopener">https://forums.solar2d.com/password-reset</a></p>
+<p>Put in your Corona login email. You will get an email to that account and you can click on the link in the email to change the password.</p>
+<p>This password reset will just be for the Forums and will not affect your Simulator login.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Labs transition update 22-April-2020</title>
+		<link>/blog/2020/04/22/corona-labs-transition-update-22-april-2020/</link>
+		<pubDate>Wed, 22 Apr 2020 23:14:34 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76395</guid>
+		<description><![CDATA[Many of you are curious how our transition is going. Here is a quick update as to its status.]]></description>
+				<content:encoded><![CDATA[<p>Many of you are curious how our transition is going. Here is a quick update as to its status.</p>
+<p><b>Let&#8217;s start with rebranding…</b></p>
+<p>Thanks to the help of the community, as we move away from Corona Labs Inc to our new open source/crowdfunding model, it&#8217;s time for a new name and new look.</p>
+<p>Introducing:</p>
+<p><img class="aligncenter size-full wp-image-76398" src="/wordpress/wp-content/uploads/2020/04/Solar2D-Land-CMYK-512.png" alt="" width="512" height="179" srcset="/wordpress/wp-content/uploads/2020/04/Solar2D-Land-CMYK-512.png 512w, /wordpress/wp-content/uploads/2020/04/Solar2D-Land-CMYK-512-300x105.png 300w, /wordpress/wp-content/uploads/2020/04/Solar2D-Land-CMYK-512-125x44.png 125w" sizes="(max-width: 512px) 100vw, 512px" /></p>
+<p>Corona will be rebranding as Solar 2D. You helped pick out the name. You contributed some great branding to work with. And you helped pick the best of the best. You should start seeing this logo or variants showing up across our sites in days and weeks to come. We want to thank the wonderful people at <a href=https://fourbyfour.com/ target="_blank" rel="noopener">fourbyfour.com</a> for the logo! We want to also thank the community for driving this so our engineering efforts could go to our main priorities.</p>
+<p><b>Offline Builds</b></p>
+<p>One of the key milestones is not having dependencies on Corona Lab&#8217;s build servers. This is on track and is in a prototype that&#8217;s being polished. We are committed to keeping you using the <del>Corona</del> Solar 2D simulator instead of requiring native builds (which will still be an option if you like). We are on target hit this goal. <strong>TL;DR</strong> &#8211; You will use Solar 2D the same way you use Corona today.</p>
+<p><b>Plugins</b></p>
+<p>More information on plugins will be coming soon. It&#8217;s a deeper discussion point and we wanted to keep this quick! We are planning a larger Q&amp;A post in the next few days. But all is proceeding as well.</p>
+<p><b>Forums</b></p>
+<p>We are moving the forums to a new platform. It&#8217;s our goal to keep as many posts as possible. We are working out a few issues at the moment. Stay tuned for an announcement specifically for that. There will likely need to be some downtime as we copy the latest content to the new server and change DNS to point to the new forums.</p>
+<p><b>Fundraising</b></p>
+<p>This is a question that comes up frequently. More details will be coming soon in the Q&amp;A post regarding this. Solar 2D&#8217;s success depends on you to support it. You can start pledging your support today at: <a href=https://github.com/sponsors/shchvova target="_blank" rel="noopener">Github Sponsors</a> or <a href=https://www.patreon.com/shchvova target="_blank" rel="noopener">Patreon</a>.</p>
+<p>We will be posting more information soon!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Keep Calm and Corona (the game engine, no relation) On!</title>
+		<link>/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/</link>
+		<pubDate>Tue, 24 Mar 2020 22:18:10 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76385</guid>
+		<description><![CDATA[We want to provide you a quick update on how Corona is proceeding to being a self-sustaining product.]]></description>
+				<content:encoded><![CDATA[<p>We wanted to provide you a quick status update on how things are proceeding towards our May 1, 2020 transition to the new open source platform.</p>
+<p><strong>Our goal through this transition is to make sure that you are able to build and deploy your games today, tomorrow and in the future and we are on track to keep you successful with Corona.</strong></p>
+<p>On an engineering perspective, we have accomplished a lot already:</p>
+<ol>
+<li>The source that we are using to build daily builds is on <a href=https://github.com/coronalabs/corona>GitHub</a></li>
+<li>The license has been changed to MIT</li>
+<li>Building engine itself is being moved to GitHub. It&#8217;s already complete for macOS. Windows is in progress.</li>
+<li>Completely offline device builds for iOS/tvOS and Android are in a prototype state, with plugins sourced from the hard drive.</li>
+<li>Site <a href=http://docs.coronalabs.com>docs.coronalabs.com/</a> is being built and deployed from <a href=https://github.com/coronalabs/corona-docs/>sources</a>.</li>
+<li>The community is making contributions to both C++ and Lua code as well as Documentation updates</li>
+<li>We have disabled the license checks for the Splash Screen Control and Self-Hosted plugins in latest daily builds.</li>
+</ol>
+<p>Over the next couple of weeks, we will be working on making the offline device builds production quality.  After that we will start to decouple Corona builds from the Single Sign On system and then start shutting down the Marketplace and working on a new web page.</p>
+<p>On the community front, we are looking at new platforms for the forums.</p>
+<p>With regards to financing, initial contributions to the GitHub crowdfunding site are off to a good start, but to be successful we will need considerably more. You can pledge your ongoing support by visiting either <a href=https://www.patreon.com/shchvova>Patreon</a> or <a href=https://github.com/sponsors/shchvova>GitHub Sponsors</a>. Note: we are not relying on crowdfunding yet, but after May the 1st, funding of the Corona game engine will be in your hands.</p>
+<p>Vlad Shcherban, Corona’s main contributor, has committed to full-time on-going support of Corona so you can be assured that your ability to continue to use Corona will continue.</p>
+<p>Stay tuned for more information and updates.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Labs annual update</title>
+		<link>/blog/2020/02/12/corona-labs-annual-update/</link>
+		<pubDate>Wed, 12 Feb 2020 22:58:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76376</guid>
+		<description><![CDATA[Welcome to 2020. Many of you have been asking for a roadmap. Here are the plans.]]></description>
+				<content:encoded><![CDATA[<p>It&#8217;s 2020 and many of you have been wanting a roadmap for the next year. We’ve got several major updates to shed the light on Corona’s future and give you more perspective on your business goals connected to our product.</p>
+<p>First, let us separate the business entity Corona Labs from the product Corona. On May 1, 2020, Corona Labs Inc. as a business entity will cease to operate. The main reason for this decision is the difference between income this business generates and operational expenses demanded. We assume that many of you, as mobile business owners yourself, can relate to this move. We appreciate your understanding and would like to thank everyone who contributed to our community growth. We&#8217;ve seen a lot of great games and apps produced by you, the community. From large studios to determined indie developers, you&#8217;ve surprised us and amazed us.</p>
+<p>While Corona Labs will fade into an entry in the computer software corporate history as a business entity, <b>Corona the product will go on as an open source project</b>. Here are the details on how we’re planning to proceed.</p>
+<p>TL; DR:</p>
+<p><b>Your existing and new games will continue to work. After we finish with the changes to the Corona Simulator, Native and CoronaCards, there should not be much difference in the development workflow for Corona users.</b></p>
+<ol>
+<li>Some of the Corona Labs staff have expressed an interest in continuing to work with Corona as an as-available hobby project, so some engine development will continue. There is a possibility that engineers would seek funding through platforms like Patreon or Github Sponsors to continue work in larger capacity.</li>
+<li><a href=https://www.appodeal.com/home/>Appodeal </a>will continue to fund infrastructure costs and work with the open source staff to keep the Appodeal plugin up to date.</li>
+<li>The Corona open source license will change from its current dual license state (Commercial + GPLv3) to a single, much more permissive license: The MIT License will make building the open source version of Corona easier for you and lift distribution restrictions on your apps and games. If you are using the GPL version of Corona, you can continue doing so in your fork.</li>
+<li>Corona Labs will remove Splash Screen restrictions and plugin license checks from Native and Simulator builds. All first-party plugins will be open sourced and be available on GitHub. Corona’s “daily” builds will be built using tools available for Open Source projects, and would be available on GitHub releases.</li>
+<li>We will change the Corona Simulator to be an offline tool, building for all supported platforms using local storage as a source for plugins.</li>
+<li>Marketplace sales will cease. Vendors will be paid what they are owed, and will have to distribute updates for their plugins themselves. Users will be able to download purchased plugins and assets before the store closure. Corona Labs will stop accepting new submissions to the Marketplace on February, 15. 2020. Self-hosted plugins will be turned on for everyone so community plugin developers can continue to provide plugins.</li>
+<li>We will migrate the forums and coronalabs.com website content to another platform, since the current setup is tied to an expensive infrastructure. We may need several community members to volunteer to administer the new Forums. We are still working on what the coronalabs.com website access will become.</li>
+<li>The community is welcome to spin up discussion forums. Possibilities include using GitHub&#8217;s Issues, Reddit&#8217;s /r/CoronaSDK page, a Facebook Group, etc. The community Slack will remain.</li>
+<li>The Corona Labs maintained social media accounts will remain open, and we will turn them into sources of useful information for developers (i.e., industry news, development and monetization tips, etc.).</li>
+<li>All these will not happen overnight. We are working on changes to the parts of the engine, and will release them gradually, moving the build process offline as well as migrating content to different platforms. We will post updates on the progress, as well as send out one more final email with all the details Feel free to follow <a href=https://github.com/coronalabs/corona/>Corona</a> on Github or get involved in development. Progress will be reflected in this <a href=https://github.com/coronalabs/corona/projects/2>Github Project</a>.</li>
+</ol>
+<p>We sincerely hope that Corona can continue to thrive and that our great community can be more involved in its future. If there is anyone who would be interested in volunteering, a partnership or acquiring Corona Labs, please, contact us by emailing <a href=mailto:support@coronalabs.com>support@coronalabs.com</a>.</p>
+<p>If you want to discuss this, please use <a href=https://forums.coronalabs.com/topic/77157-from-the-blog-corona-labs-annual-update/ target="_blank" rel="noopener">this Forum thread</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Labs server outages</title>
+		<link>/blog/2020/02/05/corona-labs-server-outages/</link>
+		<pubDate>Wed, 05 Feb 2020 22:46:57 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76374</guid>
+		<description><![CDATA[We would like to provide you with an update on our ongoing, periodic server outages.]]></description>
+				<content:encoded><![CDATA[<p>As many of you have discovered, there has been an ongoing, periodic server outage. Our team has been working hard to try and find the root cause, but the issue has eluded us so far.</p>
+<p>We know this is not a physical server problem. We can access the server. It is a dedicated server, so no other traffic is involved. The server load levels, network bandwidth and such are well within normal operating standards. The website worker processes just start taking a very long time to complete starting around 6am GMT. The problem persists for a range of hours from a low of around 7 hours to a high of around 13 hours. After that the servers and services return to normal. This only manifests itself on weekdays and not every day. </p>
+<p>We are in the process of bringing in some external expertise to help us diagnose and solve the problems. </p>
+<p>Corona Labs is committed to solving this issue as fast as we can to ensure that you have a reliable experience when using Corona.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona now supports Dark Mode</title>
+		<link>/blog/2019/10/27/corona-now-supports-dark-mode/</link>
+		<pubDate>Sun, 27 Oct 2019 16:12:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+
+		<guid isPermaLink="false">/?p=76365</guid>
+		<description><![CDATA[Corona now supports Dark Mode. Learn more about how this feature might affect your apps!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-76366" src="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png 150w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-300x300.png 300w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-125x125.png 125w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode.png 344w" sizes="(max-width: 150px) 100vw, 150px" />Apple recently added support for Dark Mode. Dark Mode first appeared in macOS Mojave and continues with macOS Catalina. On iOS Dark Mode first appeared in iOS 13. Even tvOS supports it! Dark Mode is a popular feature because many people prefer light text on a dark background and there is evidence that it’s more energy friendly as well. Android supports &#8220;Dark Theme&#8221; starting with Android 10. Corona now supports this across all supported platforms as well.</p>
+<p>Starting with daily build 2019.3545 , Corona now recognizes Dark Mode automatically and updates <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank" rel="noopener">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank" rel="noopener">native.newTextBox()</a> objects to work with the selected mode.</p>
+<p>In addition, <a href=http://docs.coronalabs.com/api/library/system/getInfo.html target="_blank" rel="noopener">system.getInfo(“darkMode”)</a> will return a true or false value, so you can now theme your app to the mode selected.</p><pre class="crayon-plain-tag">local darkMode = system.getInfo("darkMode")</pre><p>On iOS based builds, you can force your your app into &#8220;light&#8221; mode by adding an entry into the plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    iphone = 
+    { 
+         plist =
+         {
+               UIUserInterfaceStyle = "Light",
+         }
+     }
+}</pre><p>Please note, &#8220;Light&#8221; is case sensitive and must be capitalized. This works on older Corona builds and if you don&#8217;t want to update to the latest daily build, this is a way to keep the native text objects themed with your current app. If you want to do this for macOS builds, use this entry in your macOS plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    macos = 
+    { 
+         plist =
+         {
+               NSRequiresAquaSystemAppearance = true,
+         }
+     }
+}</pre><p></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android 64-bit is here&#8230;</title>
+		<link>/blog/2019/07/23/android-64-bit-is-here/</link>
+		<pubDate>Tue, 23 Jul 2019 15:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76303</guid>
+		<description><![CDATA[Corona Labs is happy to announce the general availability of the public beta of Android 64-bit Corona builds.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-71960" src="/wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-150x150.png 150w, /wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-570x570.png 570w, /wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-500x500.png 500w" sizes="(max-width: 150px) 100vw, 150px" />Whew! That was a challenging update… But our engineering team has been working very hard and with much fanfare, we would like to introduce to you a publicly available Android 64-bit build of Corona.</p>
+<p>If you check the daily builds, you will find a <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">new daily build: 2019.3504</a>. This build should be stable enough for <em>a public beta</em> and for you to release apps to Google Play that meets all of their current new requirements.</p>
+<p>This includes:</p>
+<ul>
+<li>The August 1 deadline for 64-bit support for new apps (updated apps have a year to implement).</li>
+<li>The August 1 deadline to support Android SDK 28/Android 9/Pie (updated apps have to be using them by November 1, 2019)</li>
+<li>The recently changed AdMob requirements that require the AppId be included in the <code>AndroidManifest.xml</code> (<code>build.settings</code> file.)</li>
+<li>All Corona controlled plugins, updated to 64-bit, and many have been updated to the most recent SDK for those app plugins.</li>
+<li>Support for Android responsive icons</li>
+<li>Faster builds that are less dependent on network connections.</li>
+<li>Support for Android App Bundles (<code>.aab</code> files)</li>
+</ul>
+<p>While we are certain that there may still be edge-cases that need addressed, the only way to find them is to open this up to a wider audience. If you run into any edge case, please start a new thread in our <a href=https://forums.coronalabs.com/forum/664-android-64-bit-testing/ target="_blank" rel="noopener">Community Forums Android 64-bit testing channel</a> (please don&#8217;t add it to an existing thread.)</p>
+<p><strong><img class="alignright size-thumbnail wp-image-67966" src="/wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png 150w, /wordpress/wp-content/uploads/2016/09/badge-google-play.png 200w" sizes="(max-width: 150px) 100vw, 150px" />There are a few things to be aware of.</strong></p>
+<ul>
+<li><code>.aab</code> files require you to use <a href=https://support.google.com/googleplay/android-developer/answer/7384423 target="_blank" rel="noopener">Google&#8217;s new App Signing procedure</a>. While we have discouraged this in the past over your standard keystores, you have to use this now and once you convert your app to use Google&#8217;s new App Signing, you have to use it going forward, but the gains by having your app size reduced is worth it.</li>
+<li>Your first Android 64-bit build may take some time as we need to download additional content (about 250 Mb total) to support the more local-natured building. Future builds should run noticeably faster.</li>
+<li>Android&#8217;s new responsive icons require a completely different file/folder structure than putting a few <code>Icon-*dpi.png</code> files alongside <code>main.lua</code>. The best thing you can do is to use the Corona &#8220;Welcome&#8221; window, create a new project and copy the <code>AndroidResources</code> folder to your project. Look at how the files in each of the various folders are named and sized, and create your new app icons using those names and sizes and overwrite our template icons. We are working on the guide explaining the topic.</li>
+<li>If you&#8217;re using AdMob or Appodeal, you must add some new content to your <code>build.settings</code>. See <a href=/blog/2019/07/22/important-admob-and-other-ad-plugin-changes/ target="_blank" rel="noopener">yesterday&#8217;s post</a> for details.</li>
+<li>If you&#8217;re still using the legacy AdMob plugin <code>[plugin.google.play.services]</code>, you must remove it.<br />
+Several plugins still doesn’t have full 64-bit support.</li>
+</ul>
+<p>It is recommended that anyone building for Google Play, using ad or other plugins, update to this build as soon as possible.</p>
+<p>Remember to report issues regarding this update to the Forums!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Important AdMob and other ad plugin changes</title>
+		<link>/blog/2019/07/22/important-admob-and-other-ad-plugin-changes/</link>
+		<pubDate>Mon, 22 Jul 2019 15:42:23 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76300</guid>
+		<description><![CDATA[There are some new requirements to implement AdMob and Appodeal. This post explains the changes you need to make to continue to integrate these plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png" alt="" width="150" height="150" class="alignright size-thumbnail wp-image-67842" srcset="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/admob-2-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/admob-2-1.png 310w" sizes="(max-width: 150px) 100vw, 150px" />It seems that all of our news lately has been wrapped around Google, and so it is again. AdMob has update their libraries again, and in doing so, created a breaking change. Your app&#8217;s App Id previously was only needed at the time you initialized the plugin. Google is now looking for it inside the <code>AndroidManifest.XML</code> file. If you wish to use AdMob as well as Appodeal (since it includes AdMob), you must add this to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        applicationChildElements =
+        {
+            [[
+                &lt;meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+                    android:value="[YOUR_ADMOB_APP_ID]"/&gt;  -- replace with your app id. See: https://goo.gl/fQ2neu
+            ]],
+        }
+    },
+    plugins =
+    {
+        ["plugin.admob"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },
+}</pre><p> </p>
+<p>Simply replace the <code>[YOUR_ADMOB_APP_ID]</code> with your actual App ID inside the quotes and with out the square brackets. </p>
+<p>In addition, many of you are still referencing the old legacy AdMob plugin since it was a dependency for many other ad plugins. Please look through your build.settings and remove any references to:</p>
+<p><code>["plugin.google.play.services"]</code></p>
+<p>If you do not remove this, your build will fail and you should get an error message in your console using the latest builds.</p>
+<p>You should make these changes before your next attempt to build for Android. See the <a href=http://docs.coronalabs.com/plugin/admob/index.html?#project-settings rel="noopener" target="_blank">AdMob implementation documentation for more details.</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Extending Corona libraries without native coding</title>
+		<link>/blog/2019/07/09/extending-corona-libraries-without-native-coding/</link>
+		<pubDate>Tue, 09 Jul 2019 21:34:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76297</guid>
+		<description><![CDATA[Matthew Webster provides a cool feature of Lua that lets you extend existing libraries without having to write your own native code in this tutorial.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-62993" src="/wordpress/wp-content/uploads/2015/06/code-feature.png" alt="" width="250" height="250" srcset="/wordpress/wp-content/uploads/2015/06/code-feature.png 250w, /wordpress/wp-content/uploads/2015/06/code-feature-150x150.png 150w" sizes="(max-width: 250px) 100vw, 250px" />This is a guest post by long time Corona user Matthew Webster.</p>
+<p>While Corona is simple, powerful and has many useful APIs, there&#8217;s always that <em>one extra thing</em>. Often, the one thing is apparently simple enough to be incorporated into an existing Lua API, but may appear forgotten about.</p>
+<p>This tutorial will show you how to:</p>
+<ul>
+<li>Add new functionality to the existing libraries</li>
+<li>Extend the existing functionality</li>
+</ul>
+<h3>Corona library APIs</h3>
+<p>All functionality in Corona are provided by library APIs. The documentation for which is <a href=http://docs.coronalabs.com/api/index.html target="_blank" rel="noopener">found here</a>.</p>
+<p>If we take a look at the <code>'string.*'</code> API we can see a collection of functions such as:</p>
+<ul>
+<li>string.find()</li>
+<li>string.format()</li>
+<li>string.gsub()</li>
+<li>string.len()</li>
+<li>string.lower()</li>
+</ul>
+<p>It happens that all of these functions are not written in Lua, they are handles into lower level functions provided in either C++ (cross platform), Objective-C (for iOS) or Java (for Android.) The same is true for libraries like the <code>'math.*'</code> APIs.</p>
+<p>Some APIs, however, are provided completely in Lua, for example Corona&#8217;s <code>'widget.*'</code> API is entirely written in Lua. Corona Labs have even made the original source code available!</p>
+<p>Whichever implementation the Corona Labs engineers have chosen to go with their code, the fact still stands that in our Lua world each function has its hands firmly tied to the rules of Lua. In fact, every library (including the <code>'string.*'</code> API) is actually a table. That&#8217;s right: <code>'string'</code> is a table and all the functions defined above are members of that table.</p>
+<p>This allows us to do some really clever things quite easily.</p>
+<h3>A Useful Function</h3>
+<p>The first thing we&#8217;ll learn is how to add our own functions to Corona SDKs own API Libraries. Why would we want to do that? Well, let&#8217;s say you&#8217;ve written a really useful function which removes the leading and trailing spaces from a string. In most languages this is usually called <code>'trim()'</code>:</p><pre class="crayon-plain-tag">local function trim( str )
+    return (str:gsub("^%s*(.-)%s*$", "%1"))
+end</pre><p>Don&#8217;t worry about what is actually happening inside the function. Just know that you&#8217;ve written it, it&#8217;s awesome and works really well when you want have a string which has really annoying spaces at the startand end:</p>
+<p><code>print( trim( " Hello World! " ) )</code></p>
+<p>Outputs:</p>
+<p><code>Hello World!</code></p>
+<p>The normal practice for many Corona developers is to put this <code>'trim()'</code> function into a library file, such as<br />
+&#8220;<code>utils.lua</code>&#8220;. What we want to do is make it a bit more memorable and categorically accurate&#8230; This function is<br />
+a string function, so it should be accessed like the other string functions.</p>
+<h3>Adding to Corona&#8217;s APIs</h3>
+<p>To be clear, our function is in a file called <code>"utils.lua"</code> so we want all the work done in that file. Of course, <code>"utils.lua"</code> will be loaded into memory in our <code>"main.lua"</code> with a standard <code>'require'</code> call:</p>
+<p><code>require("utils")</code></p>
+<p>The function in the <code>"utils.lua"</code> looks like this:</p><pre class="crayon-plain-tag">local function trim( str )
+    return (str:gsub("^%s*(.-)%s*$", "%1"))
+end</pre><p>So let&#8217;s add this function to the <code>'string.*'</code> API. In <code>"utils.lua"</code> after we define our function we follow it with a standard table value assignment (this is the magic bit):</p>
+<p><code>string.trim = trim</code></p>
+<p>And that&#8217;s it. Easy.</p>
+<p>You can now call <code>'string.trim(" Hello World! ")'</code> from anywhere in your code and it will print:</p>
+<p><code>Hello World!</code></p>
+<h3>The Beauty of a Library</h3>
+<p>Let&#8217;s say we have a string defined:</p>
+<p><code>local str = " Hello World! "</code></p>
+<p>What&#8217;s great about having the <code>'trim()'</code> function in the string API is that we can now call the function as a member of any string variable:</p>
+<p><code>print( str:trim() )</code></p>
+<p>Will output:</p>
+<p><code>Hello World!</code></p>
+<p>This is because the <code>'string'</code> library represents string variables in general.</p>
+<p>It&#8217;s important to note, that this does not add your trim function to everyone&#8217;s Corona <code>string.*</code> library nor will it make it available to your next project. You will need to continue require your <code>util.lua</code> file. But the idea here that:</p>
+<p><code>string.trim()</code></p>
+<p>makes more semantical sense than:</p>
+<p><code>util.trim()</code></p>
+<p>Hopefully this simple trick will make your development with Corona a bit more easy.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

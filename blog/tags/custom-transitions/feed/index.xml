@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>custom transitions &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/custom-transitions/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>custom transitions &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #128 &#8211; Creating Custom Composer Library Transitions</title>
+		<link>/blog/coronageek/corona-geek-128/</link>
+		<comments>/blog/coronageek/corona-geek-128/#comments</comments>
+		<pubDate>Tue, 10 Feb 2015 00:14:26 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[custom transitions]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61396</guid>
+		<description><![CDATA[During last week’s Hangout we took a break from our Composer Library series to talk with Corona Ambassador, Jason Schroeder about his Progress Ring module and his Color Picker module. During this week’s Hangout we wrapped up our Composer Library discussion with a look at creating custom Composer Library transitions and we revisited tips for unloading modules with adding sprites into Composer scenes.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/sbvGwmZqnzo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-127/>last week’s Hangout</a> we took a break from our Composer Library series to talk with Corona Ambassador, Jason Schroeder about his <a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring module</a> and his <a href=http://www.jasonschroeder.com/2014/03/24/add-a-color-picker-to-your-corona-app-with-one-line-of-code/ target="_blank">Color Picker module</a>. Both modules let you add impressive features to your apps using one line of code. Jason shared insights into both modules development and gave us a look at what’s coming next.</p>
+<p>During this week’s Hangout we wrapped up our Composer Library discussion with a look at <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20128.zip target="_blank">creating custom Composer Library transitions</a> and we revisited tips for unloading modules with adding sprites into Composer scenes.</p>
+<p>Next week we plan to start a new series where we&#8217;ll break down a popular game mechanic into reproducible steps. We&#8217;ll examine the concepts, the code, and the tips needed to implement the mechanic in your own games. We&#8217;ll also be looking at the Transitions library and how it can be used fuel many of the movements in your apps.</p>
+<p><strong>February Geek Games is Crossy Road. Let&#8217;s Play!</strong></p>
+<p>Last month we played Chip Chain for the chance to win a $50 gift card. For February Tyler McGraw suggested we play Crossy Road on either iOS, Android, or Amazon. Thanks Tyler. The rules are simple. Cross the road and rack up points, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to earn yourself a $50 gift card. We&#8217;ll announce February&#8217;s Geek Game winner on March 2nd. Good luck!</p>
+<p><strong>Want to suggest a game?</strong><br />
+The game can be yours or someone else&#8217;s. Games that play for high score on iOS and Android work best. If you have a recommendation, leave it in the comments below.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-127/ target="_blank">Corona Geek #127 – Adding A Progress Ring Module and Color Picker To Apps</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20128.zip target="_blank">Download the transition example code from today&#8217;s Hangout</a></li>
+<li><a href=/blog/2014/07/04/from-the-forum-issue-27/>From the Forums Issue 27</a> and <a href=/blog/2014/09/05/from-the-forum-issue-36/>Issue 36</a></li>
+<li><a href=http://forums.coronalabs.com/topic/48659-missing-composer-transition-effects/>Missing Composer Transition Effects</a> (Forum Link)</li>
+<li><a href=http://forums.coronalabs.com/topic/50598-ios-7-style-scene-transitions/>iOS 7 Style Scene Transitions</a> (Forum Link)</li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2015/01/caseDetectError.zip target="_blank">Case Sensitivity Fix Module</a></li>
+<li><a href=http://cravecreative.com/corona-widget-theme-1.html target="_blank">Save $5 on Widget Themes from Crave Creative</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Learn to Program Using Corona SDK</a></li>
+<li><a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>64 bit Compatibility</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-128/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>side-scroller &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/side-scroller/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>side-scroller &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured app: Hoppy Naut</title>
+		<link>/blog/2016/02/11/featured-app-hoppy-naut/</link>
+		<pubDate>Thu, 11 Feb 2016 19:54:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[side-scroller]]></category>
+
+		<guid isPermaLink="false">/?p=65526</guid>
+		<description><![CDATA[In this post we highlight a recently released Corona SDK built app: Hoppy Naut. Learn more about this app and how it was created.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65527" src="/wordpress/wp-content/uploads/2016/02/icon175x175-150x150.jpg" alt="icon175x175" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/icon175x175-150x150.jpg 150w, /wordpress/wp-content/uploads/2016/02/icon175x175.jpg 175w" sizes="(max-width: 150px) 100vw, 150px" />Corona SDK can be used to create a wide array of business apps, utility apps, and interactive books, but we have a special place in our hearts for 2D games.</p>
+<p>One such 2D game, recently released by Tony Godfrey of <a href=http://www.sharkappsllc.com/ target="_blank">Shark Apps, LLC</a>  (<strong>@tonygod</strong> in the forums!), brings you the adventures of <em>Hoppy Naut</em>.</p>
+<p><a href=http://www.hoppynaut.com/ target="_blank">Hoppy Naut</a> is a side-scrolling, jumping game. Explore ever-changing landscapes and alien towns as you jump over obstacles, attack creepy-crawlies and try to earn some coins and gifts as you move along through the world.</p>
+<p>The game features:</p>
+<ul>
+<li>30 characters that can be earned by collecting coins or as in-app purchase</li>
+<li>Six different worlds to explore, each with its own soundtrack</li>
+<li>Leaderboards and Achievements for Game Center, Google Play and Amazon GameCircle</li>
+<li>Analytics using Flurry plug-in</li>
+<li>Opt-in incentivized ads using Vungle and Fuse plug-ins</li>
+</ul>
+<p>It took Tony around 7 months, as a one-man shop, to get the game published. He said, “Building with Corona was the easy part of this project. Managing all the information in the app store dashboards and doing the right kind of marketing are much tougher challenges!”</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/FKQ3jVOyqUA?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Hoppy Naut is currently available as a free download on <a href=https://itunes.apple.com/us/app/hoppy-naut/id1016663459?ls=1&mt=8 target="_blank">iTunes for iOS </a>devices as well as <a href=https://play.google.com/store/apps/details?id=com.sharkappsllc.HoppyNaut target="_blank">Google Play</a> and <a href=http://www.amazon.com/shark-apps-LLC-Hoppy-Naut/dp/B01AR77GJI target="_blank">Amazon</a> for Android devices. Tony is also porting to OS X and tvOS as well.</p>
+<p>The game has been <a href=http://appadvice.com/appnn/2016/01/leap-and-bound-over-terrain-and-critters-in-hoppy-naut target="_blank">featured on AppAdvice.com</a> and on <a href=https://www.producthunt.com/games/hoppy-naut target="_blank">Product Hunt</a>.</p>
+<p>Follow Tony and his development on Twitter at <a href=https://twitter.com/sharkappsllc target="_blank">@SharkAppsLLC</a> and on his <a href=https://www.facebook.com/HoppyNaut/ target="_blank">Hoppy Naut Facebook page</a>.</p>
+<h3>Want to see your app featured here?</h3>
+<p>Corona Labs is always looking for apps to feature. If you&#8217;ve developed an app using Corona SDK, complete our <a href=/publishing/ target="_blank">showcase submission form</a> and you could show up in the blog, get a social media shout out, collect some cool swag or more!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

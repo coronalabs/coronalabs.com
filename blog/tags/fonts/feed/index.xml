@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fonts &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/fonts/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>fonts &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #123</title>
+		<link>/blog/2016/05/13/from-the-forum-issue-123/</link>
+		<pubDate>Fri, 13 May 2016 18:02:05 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66813</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Fonts and the developers who love them</h3>
+<p>There have been many, many posts regarding the implementation of custom fonts. For clarity, custom fonts are any font type that is not part of the underlying OS. For most business apps and generic games, the provided fonts are plenty diverse. However, when a developer really wants to leave their mark and make an impression, a striking font is a great way to add some curb appeal for a low price.</p>
+<p>Sometimes, however, custom fonts just do not want to play nice with our projects. In this case, you need to identify vagaries between the <code>.otf</code> versus <code>.ttf</code> types, kerning, and character width, just to name a few &#8212; and sometimes that custom font you’ve had your eye on just doesn’t want to work at all! Fortunately, another Corona developer ran into the same issue and, in the thread below, he provides some tips on how to overcome this hurdle by modifying the main font file. Check it out if you’ve been struggling with a font!</p>
+<p><a href=https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/ target="_blank">https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/</a></p>
+<h3>Coronium with a splash of MySQL</h3>
+<p><a href=http://coronium.io/ target="_blank">Coronium</a> and Coronium Cloud are products of <strong>develephant</strong>’s creative vision and they are as much labors of love as they are products from which the greater Corona community can benefit. There has been lots of movement regarding the status of Coronium Cloud and Coronium 2, but <strong>develephant</strong> still has time to drop some gems for us in the forum.</p>
+<p>This week we found a sweet tutorial for current and future users of Coronium, showing how to handle MySQL integration with the new server configuration. Click through to the original thread to watch the YouTube video!</p>
+<p><a href=https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/ target="_blank">https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/</a></p>
+<h3>Dynamic apps with interactive components&#8230;. on the fly!</h3>
+<p>The best part of the Corona forum is that sometimes simple questions turn into a larger discussion of &#8220;best practices&#8221; which convince our peers to peel the curtain back and show us how they are making their particular brand of sausage. My tortured metaphors aside, collaborating, sharing, and learning is how we all become better developers, and that should be the highest goal in our journey.</p>
+<p>The original thread I’m referencing starts off in a simple discussion regarding the extensibility of the <a href=https://docs.coronalabs.com/api/type/Map/addMarker.html target="_blank">addMarker()</a> API provided by Corona. It evolves into a examination of the efficacy of dynamic HTML file generation when the use case calls for a very specific and specialized interaction between app and user. Needless to say, it’s an intriguing topic, so head down to the original thread to pick up some pointers from the pseudo-code provided.</p>
+<p><a href=https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/ target="_blank">https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Important changes: Loading fonts just got easier!</title>
+		<link>/blog/2016/02/25/important-changes-loading-fonts-just-got-easier-in-corona-sdk/</link>
+		<comments>/blog/2016/02/25/important-changes-loading-fonts-just-got-easier-in-corona-sdk/#comments</comments>
+		<pubDate>Thu, 25 Feb 2016 18:33:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[text]]></category>
+
+		<guid isPermaLink="false">/?p=65736</guid>
+		<description><![CDATA[Starting with Public Release 2830, we've made custom font loading easier and more consistent. Read on to learn more!]]></description>
+				<content:encoded><![CDATA[<p>With the announcement of <a href=/blog/2016/02/22/new-public-release-2016-2830/>Public Release 2830</a> comes changes to how fonts are loaded/displayed.</p>
+<p>Previously, the usage of custom fonts was dependent on the operating system and the type of font being used. Sometimes you would need to use a font&#8217;s file name and other times you would use the &#8220;internal font name.&#8221;  Many developers made things easier on themselves by ensuring the font file name and the internal font name matched.</p>
+<p>Now, you can simply use the <strong>font file name + extension</strong>. This is consistent across <strong>all</strong> platforms except Windows Phone 8.</p>
+<p>For example, to display a custom font where the file name is <code>superfont.ttf</code>, simply use:</p><pre class="crayon-plain-tag">local myText = display.newText( &quot;Hello World!&quot;, 100, 200, &quot;superfont.ttf&quot;, 16 )</pre><p>Windows Phone 8 still has a different requirement which is <code>"#"</code>. Example:</p><pre class="crayon-plain-tag">local myText = display.newText( &quot;Hello World!&quot;, 100, 200, &quot;superfont.ttf#Super Font Regular&quot;, 16 )</pre><p>To simplify working with fonts, you should adopt this new method of loading custom fonts moving forward.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/25/important-changes-loading-fonts-just-got-easier-in-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>19</slash:comments>
+		</item>
+	</channel>
+</rss>

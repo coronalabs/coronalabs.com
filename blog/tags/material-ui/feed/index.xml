@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>material-ui &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/material-ui/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>material-ui &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New extension for Corona apps &#8212; material-ui</title>
+		<link>/blog/2017/01/18/new-extension-for-corona-apps-material-ui/</link>
+		<pubDate>Wed, 18 Jan 2017 18:16:04 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[material-ui]]></category>
+
+		<guid isPermaLink="false">/?p=69430</guid>
+		<description><![CDATA[Paul Cardwell has been building a beautiful user interface for Corona users. Check out his library and see how it can improve your app's UI!]]></description>
+				<content:encoded><![CDATA[<p>The Corona community is amazing! From utilities to plugins, some enterprising authors have made impressive extensions for Corona.</p>
+<p>Today, we want to mention another awesome extension &#8212; the free <a href=https://github.com/arcadefx/material-ui target="_blank">material-ui library</a> by Paul Cardwell. He has recently been <a href=https://forums.coronalabs.com/topic/62108-implementing-ui-based-on-ios-7-google-material/ target="_blank">posting updates</a> regarding his progress.</p>
+<p>This UI library is a collection of widgets featuring animations similar to Google&#8217;s Material UI on Android 6 and later, including animated buttons, switches, Android-style input boxes, and more.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/c8p3DMA6PzU" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>If you&#8217;re looking for a slick UI theme for your app, download <a href=https://github.com/arcadefx/material-ui target="_blank">material-ui</a> from Paul&#8217;s <a href=https://github.com/arcadefx/material-ui target="_blank">GitHub repository</a> and integrate it into your app today!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://github.com/arcadefx/material-ui target="_blank">Get material-ui</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

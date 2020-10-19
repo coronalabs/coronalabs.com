@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>game analytics &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-analytics/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>game analytics &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Flurry dashboard walkthrough with Developer Evangelist, Tasmin Singh</title>
+		<link>/blog/coronageek/flurry-mobile-analytics-dashboard-walkthrough/</link>
+		<comments>/blog/coronageek/flurry-mobile-analytics-dashboard-walkthrough/#respond</comments>
+		<pubDate>Mon, 21 Nov 2016 17:20:41 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[app analytics]]></category>
+		<category><![CDATA[game analytics]]></category>
+		<category><![CDATA[Mobile Analytics]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68333</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with UX Designer, Ali Eslamifar about the importance of having empathy for your users and how it drives us to also recognize that users don't always know what they want.]]></description>
+				<content:encoded><![CDATA[<p>In this special three part interview Flurry Developer Evangelist, Tasmin Singh walks us through some of the updates and reporting options found in the Flurry mobile analytics dashboard.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/vtNQ8UiN3qQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Tasmin then talked about understanding user behavior.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/72d5Gn1GNsI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>We then wrapped things up with a discussion on mobile app analytics tracking best practices.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/KCa2mdUl6Pw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Implement Flurry in your Corona apps using our <a href=https://docs.coronalabs.com/plugin/flurry/ target="_blank">Flurry plugin for Corona SDK</a>.</p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/flurry-mobile-analytics-dashboard-walkthrough/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GameAnalytics plugin – analytics for mobile games</title>
+		<link>/blog/2016/10/26/new-game-analytics-plugin-for-corona-sdk/</link>
+		<pubDate>Wed, 26 Oct 2016 15:19:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[game analytics]]></category>
+		<category><![CDATA[Mobile Analytics]]></category>
+
+		<guid isPermaLink="false">/?p=68504</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of a new GameAnalytics plugin to track important app events and better understand player behavior. Read on to learn more about this great analytics plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-68525" style="margin: 6px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-150x150.png" alt="ga_circle_logo_black" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-150x150.png 150w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-300x300.png 300w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-768x768.png 768w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-1024x1024.png 1024w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-570x570.png 570w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-500x500.png 500w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black-700x700.png 700w, /wordpress/wp-content/uploads/2016/10/GA_circle_logo_black.png 1298w" sizes="(max-width: 120px) 100vw, 120px" />Corona Labs is pleased to announce the availability of a <em>new</em> <a href=http://www.gameanalytics.com/ target="_blank">GameAnalytics</a> plugin to help you track events in your mobile game, add context to those events, and better understand user behavior. Created as a free service &#8220;by game developers for game developers,&#8221; the GameAnalytics team understands the type of important events that you need to capture and the best way to track them.</p>
+<p><iframe width="560" height="335" src="https://www.youtube.com/embed/ZC7RIDDFK2Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>This popular mobile-first game analytics service lets you collect metrics using a variety of new custom event types like <em>Progression</em>, <em>Resource</em>, <em>Business</em>, and <em>Design</em>. Custom events can be used to track player progression, spot sticking points, and optimize gameplay so players can reach their moment of joy faster. In-game economy and virtual goods can also be measured to help you understand when you may be giving out too many rewards.</p>
+<p><img class="alignnone size-large wp-image-68564" src="/wordpress/wp-content/uploads/2016/10/GAscreenshot-1024x628.png" alt="gascreenshot" width="960" height="589" />GameAnalytics offers pre-set dashboards for each event type and you can add customized widgets to your dashboard using a drag-and-drop query builder. Perhaps best of all, it&#8217;s 100% free!</p>
+<p>To get started with GameAnalytics, <a href=https://go.gameanalytics.com/signup target="_blank">create a GameAnalytics account</a> and <a href=https://marketplace.coronalabs.com/plugin/game-analytics target="_blank">activate the plugin</a> in the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. Then, follow the <a href=https://github.com/GameAnalytics/GA-SDK-CORONA/wiki target="_blank">GameAnalytics documentation</a> to get your Corona app set up to track events in real time.</p>
+<p>Note that this new plugin effectively replaces the previous, now-deprecated version of GameAnalytics. The previous version will eventually be removed from our servers entirely, so any developer who is using the older version is highly encouraged to update to this new plugin as soon as possible.</p>
+<p>Questions or comments? Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a> to discuss this powerful addition to the growing list of <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> plugins!</p>
+]]></content:encoded>
+	<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-10-26-gameanalytics-tom-kinniburgh.mp3" length="27966695" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

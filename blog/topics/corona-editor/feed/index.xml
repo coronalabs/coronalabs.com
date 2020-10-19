@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Editor &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/corona-editor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Editor &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona autocomplete package now available for Atom editor</title>
+		<link>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/</link>
+		<comments>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/#comments</comments>
+		<pubDate>Sat, 23 Jan 2016 03:52:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[atom]]></category>
+		<category><![CDATA[atom.io]]></category>
+		<category><![CDATA[build]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65325</guid>
+		<description><![CDATA[We are happy to announce the immediate availability of a convenient code completion package for the popular Atom editor. Installation of the package is simple using either Atom's package interface or from the command line.]]></description>
+				<content:encoded><![CDATA[<p>We would like to announce the immediate availability of a code completion package for the <a href=https://atom.io/ target="_blank">Atom editor</a>, which provides code completion as well as a description and links to the Corona Docs.</p>
+<p>You have two options to install the package: through Atom&#8217;s package interface or from the command line.</p>
+<p>If you choose the Atom&#8217;s package interface, open up the <strong>Preferences</strong> screen and click on <strong>Install</strong>.</p>
+<p>In the search box, type <code>corona</code> and hit enter. The <code>autocomplete-corona</code> package should show as the first option. Click on the <code>Install</code> button. This will install the package and you can start using it immediately.</p>
+<p>If you prefer, you can install it from the command line by executing:</p><pre class="crayon-plain-tag">apm install autocomplete-corona</pre><p>You may also need to enable the <code>language-lua</code> package as well, to get the syntax highlighting.</p>
+<p><img class="alignnone size-full wp-image-65328" src="/wordpress/wp-content/uploads/2016/01/demo.gif" alt="demo" width="902" height="296" /></p>
+<p>This is a no-frills package that uses Corona&#8217;s own docs to provide the code completion. Simply tab to complete and then tab between parameters to fill them out.</p>
+<p>This tool complements our Corona Editor and Corona Composer GUI tools to help you make your apps easier.</p>
+<p>Atom also supports building your project. There is not a pre-built Corona SDK build provider. However, you can configure your own by putting an extra file in the folder with your <code>main.lua</code> named:</p>
+<p><code>.atom-build.json</code></p>
+<p>You must include this file in every project you want to build. The contents of the file will vary depending on if you are using a daily build or public build. And it will vary between OS X and Windows.</p>
+<p>Here is an example OS X version for public releases:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>If you use daily builds change the first line to the right folder:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK-2811/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>For Windows, you will need to provide the right path to your Corona SDK install folder.</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;C:\Program Files (x86)\Corona Labs\Corona SDK\Corona\\ Simulator.exe&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>You must also install the build package to use this. <a href=https://github.com/noseglid/atom-build?#configuration-options target="_blank">Click here to learn more</a> about these build scripts.</p>
+<p>If you are an Atom fan, you will now be more empowered.</p>
+<p><span class="comment-text ">Having problems? Questions? <a href=https://forums.coronalabs.com/topic/61274-from-the-blog-corona-autocomplete-package-now-available-for-atom-editor/ target="_blank">Join the discussion</a> in the Corona Labs Forums.</span></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Corona Editor 1.6 Released</title>
+		<link>/blog/2016/01/11/corona-editor-1-6-released/</link>
+		<comments>/blog/2016/01/11/corona-editor-1-6-released/#comments</comments>
+		<pubDate>Tue, 12 Jan 2016 03:07:19 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+
+		<guid isPermaLink="false">/?p=65175</guid>
+		<description><![CDATA[Corona Editor has been updated to version 1.6. Learn about the changes and more about Corona Editor.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-49393 size-thumbnail" style="margin: 0px 0px 0px 20px;" src="/wordpress/wp-content/uploads/2015/06/code-feature.png" alt="" width="150" height="54" />Corona Labs is happy to announce the availability of <a href=https://github.com/coronalabs/CoronaSDK-SublimeText?#corona-editor target="_blank" rel="noopener">Corona Editor 1.6</a>. This is an update for the add-on package for Sublime Text 2 and Sublime Text 3 that provides code completion, syntax highlighting, documentation, and debugging to Corona developers.</p>
+<p>The release of 1.6 includes the following updates:</p>
+<h4> Debugger improvements</h4>
+<ul>
+<li>Fixed an issue with a hanging after pressing <code>Shift</code>+<code>F10</code>.</li>
+<li>Fixed a bug with spaces in project pathnames.</li>
+<li>Current status is now displayed in the &#8220;Console&#8221; pane.</li>
+<li>The &#8220;Console&#8221; output is now cleaner.</li>
+<li>Generally improved reliability.</li>
+</ul>
+<h4>Corona Editor Project improvements</h4>
+<ul>
+<li>On OS X, <code>Corona Editor</code> → <code>Run Project</code> now uses the most recent daily build in the <code>/Applications</code> folder by default. It will fall back to the public build if there are no daily builds.</li>
+<li>Removed project &#8220;build system.&#8221; The menu command <code>Corona Editor</code> → <code>Run Project</code> or the <code>Cmd</code>+<code>F10(Mac) Win+F10(Windows, maybe mapped to FN+F10)</code> key sequence is much more reliable.</li>
+<li>Added <code>Clear Build Panel</code> command to main menu and context menu.</li>
+</ul>
+<h4>Editing improvements</h4>
+<ul>
+<li>Fixed indentation of <code>elseif</code> blocks.</li>
+<li>Latest code completions are up to date to daily build 2016.2803.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/11/corona-editor-1-6-released/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>State of Corona: Thoughts and Reflections 2015</title>
+		<link>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/</link>
+		<comments>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/#comments</comments>
+		<pubDate>Fri, 30 Jan 2015 18:48:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=60991</guid>
+		<description><![CDATA[A lot has happened in the past year, so let's talk about where we've been and where we're headed in 2015.]]></description>
+				<content:encoded><![CDATA[<p>A lot has happened in the past year, so let&#8217;s talk about where we&#8217;ve been and where we&#8217;re headed.</p>
+<p>The biggest thing that happened was that we were acquired by <a href=http://fusepowered.com>Fuse/ Powered</a>. We&#8217;re all really happy to be part of the Fuse family. It sounds cliché but there couldn&#8217;t be a better cultural fit. The more we interact, the more it feels like we&#8217;ve all been working together for a lot longer — and having been through a couple of other acquisitions, that actually is a pretty big deal.</p>
+<p>As I&#8217;ve mentioned before, Fuse&#8217;s products help developers make more money. Right now, we&#8217;re in a small pilot with a small group of Corona developers. We want to make sure the Fuse/Corona integration is rock solid and battle-tested before we open the doors to everyone.</p>
+<p>On the Corona and product side there are lots of highlights, including CoronaCards, Windows Phone 8 support, debugging introspection, CoronaViewer, Composer API, Composer GUI Beta, Particle Designer support, and much more. These were all great additions to the Corona platform and we continue to work on them.</p>
+<h3>Looking ahead</h3>
+<p>Now, as I look ahead, I&#8217;m incredibly excited about where Corona is headed this year, so I&#8217;d thought I&#8217;d share the direction we&#8217;re taking this year.</p>
+<p>Before we dive in, I should emphasize that this is not a roadmap. I&#8217;ve previously discussed our thoughts on <a href=http://forums.coronalabs.com/topic/52439-fuse-acquires-corona/?p=272367>why we don&#8217;t do roadmaps</a> (and neither do other companies, at least not successfully) as well as our strong bias to talk about what we&#8217;ve actually delivered.</p>
+<p>So instead, I&#8217;ll touch on some of our thinking around four different themes where we will be doing significant work:</p>
+<ul>
+<li>Platforms</li>
+<li>Plugins</li>
+<li>Graphics</li>
+<li>Workflow</li>
+</ul>
+<p>And in keeping with our philosophy, I&#8217;ll talk about our approach and direction, holding off on specifics until I have concrete news to share.</p>
+<h3>Platforms</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/platform-logos.png><img src=/wordpress/wp-content/uploads/2015/01/platform-logos.png alt="platform logos" width="108" height="40" class="alignright size-full wp-image-60995" /></a>Corona has been designed to be portable and cross-platform, but that doesn&#8217;t mean there aren&#8217;t challenges in supporting new platforms. There&#8217;s a lot of effort to support an initial port, and a continuing cost to support OS updates and new hardware for that OS.</p>
+<p>That complexity is compounded by the sheer amount of features in Corona SDK. In this context, it only makes sense to target platforms with iOS/Android-level market traction.</p>
+<p>So how do we square the circle?</p>
+<p>We think the way forward is to simplify, as we did with Windows Phone 8. Support for new platforms becomes a lot more feasible if we only have to commit to a core set of features, leaving out ancillary feature and/or services.</p>
+<h3>Plugins</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/plugin-icon.png><img src="/wordpress/wp-content/uploads/2015/01/plugin-icon-150x131.png" alt="plugin icon" width="150" height="131" class="alignright size-thumbnail wp-image-60996" /></a>When we first introduced plugins, we architected it to be optimized for distribution. A plugin could be hosted on our server and be made available instantly to all Corona developers.</p>
+<p>Originally, we focused on 3rd parties that wanted to offer their services to the Corona community via these plugins.</p>
+<p>Today, we recognize that we could do more to make this more open. So our goal is to broaden the types of folks who can offer their plugins to the entire Corona community. At the same time, there are some key steps we need to take to help would-be plugin writers, especially resources focused on learning by example.</p>
+<h3>Graphics</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/2Dvenndiagram.png><img src="/wordpress/wp-content/uploads/2015/01/2Dvenndiagram-150x144.png" alt="2Dvenndiagram" width="150" height="144" class="alignright size-thumbnail wp-image-60997" /></a>Our vision for 2D graphics has always been very ambitious. With our graphics engine, we&#8217;ve vastly simplified how you achieve numerous visual effects intuitively and efficiently on modern GPU&#8217;s.</p>
+<p>This is all possible thanks to a lot of insightful and clever work under the hood. However, we&#8217;ve limited what you can do to what&#8217;s available in our API. In other words, we still haven&#8217;t taken full advantage of what our engine can offer.</p>
+<p>One reason we took a conservative approach was that GPU support was not consistent. We&#8217;ve rewritten our shaders numerous times to work around driver-specific bugs in the shader compiler — in some cases, basic GLSL language features did not work on certain GPU&#8217;s.</p>
+<p>Nowadays there&#8217;s just a little less fragmentation (hopefully), so we think the time is ripe to start opening up our graphics system. This means giving you more control and more techniques to extend beyond what we&#8217;ve done. We&#8217;ll also keep an eye out for obvious, missing gaps in the API.</p>
+<h3>Workflow</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/shortcut-thru-maze.png><img src="/wordpress/wp-content/uploads/2015/01/shortcut-thru-maze-150x108.png" alt="shortcut thru maze" width="150" height="108" class="alignright size-thumbnail wp-image-60999" /></a>We&#8217;ve always been very proud of Corona&#8217;s incredibly simple workflow. By eliminating complexity and the associated learning curves, we helped save you time and hopefully enabled you to find a little more delight in your day-to-day development.</p>
+<p>With Corona&#8217;s Lua API, you can put images on the screen and interact with them with just a few lines of code. With Corona Simulator, you can test our your ideas rapidly and in real-time. With Corona Editor, you&#8217;re focusing on editing code without worrying about how to navigate a confusing IDE.</p>
+<p>We think there&#8217;s a lot more to do here. Our work, for example, on Composer GUI and CoronaViewer is far from finished.</p>
+<p><center>* * *</center></p>
+<p>I&#8217;ve focused a lot on what we&#8217;re doing with Corona specifically, and only briefly touched on what the combination of Corona and Fuse will achieve together. Corona&#8217;s strength is helping you turn your ideas into working realities, building your apps faster. Fuse&#8217;s strength is enabling you to convert your apps into financially-viable realities, monetizing your apps better.</p>
+<p>So the direction we&#8217;re taking collectively is guided by the same principle that I&#8217;ve expressed many times before — your success is our success.</p>
+<h4><span style="font-family: serif; font-style: italic;">Walter</span></h4>
+<p>&nbsp;<br />
+&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/feed/</wfw:commentRss>
+		<slash:comments>36</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Corona Editor 1.5</title>
+		<link>/blog/2014/12/15/announcing-corona-editor-1-5/</link>
+		<pubDate>Mon, 15 Dec 2014 23:32:33 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60584</guid>
+		<description><![CDATA[There is a new version of Corona Editor out. Read on to see how this version will make your workflow faster than ever!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.01.35-PM-300x223.png" alt="Screen Shot 2014-12-15 at 3.01.35 PM" width="300" height="223" class="alignright size-medium wp-image-60588" /><br />
+We&#8217;re excited to announce that a new version of <a href=/products/editor>Corona Editor</a> (our plugin for Sublime Text) is out and ready! </p>
+<p>We&#8217;ve added some <a href=https://github.com/coronalabs/CoronaSDK-SublimeText/blob/master/RELEASE-NOTES.md>new features and squashed quite a few bugs</a> (how&#8217;d they get in there?) to make Corona Editor better and your workflow even faster.</p>
+<p>The main improvements are to completion and the debugger. Completion now handles periods in items much more smoothly and has additional features like optional removal of whitespace (which was submitted by a Corona user &#8211; thank you!). The debugger now has much improved display of variable values and handles multi-directory projects much more seamlessly. You can find a complete list of changes <a href=https://github.com/coronalabs/CoronaSDK-SublimeText/blob/master/RELEASE-NOTES.md>here</a>.</p>
+<p>Check out the <a href=http://forums.coronalabs.com/topic/53345-corona-editor-15-released/>forum post</a> for more links to useful info. Since feedback around this can get technical, we&#8217;ve closed comments on this post &#8211; please post feedback/comments to the <a href=http://forums.coronalabs.com/topic/53345-corona-editor-15-released/>forum thread</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Editor is now 1.0</title>
+		<link>/blog/2013/12/11/corona-editor-is-now-1-0/</link>
+		<comments>/blog/2013/12/11/corona-editor-is-now-1-0/#comments</comments>
+		<pubDate>Wed, 11 Dec 2013 20:05:59 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=53663</guid>
+		<description><![CDATA[I'm happy to announce that Corona Editor is now v1.0! We think this is the best lightweight IDE for Corona out there.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m happy to announce that Corona Editor is now 1.0!</p>
+<p>Since we <a href=/blog/2013/10/14/corona-editor-sublime-text/>first announced the beta</a>, you&#8217;ve given us fantastic feedback on how we could improve your daily code editing/development experience. We&#8217;ve added a ton of improvements including better support for both Sublime Text 2 and Sublime Text 3.</p>
+<p>We created a dedicated &#8220;Corona Editor&#8221; menu to help make it easier for you to access some great new features like a new code snippets feature that helps with syntax and coding conventions.</p>
+<p>In addition, we&#8217;ve added debugging and breakpoint support. Now you can set breakpoints directly in Sublime Text. Just open the file up, set a breakpoint, and launch the project — all within Sublime! We&#8217;ve even added special windows to Sublime so you can look at the callstack and inspect variable values directly.</p>
+<p>We&#8217;ve updated our video tour to highlight just a few of the great features in Corona Editor:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/lFUjJ2h6TiY?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>We think this is a great lightweight IDE for Corona developers and we look forward to your feedback. If you want any specific features, please <a href=http://feedback.coronalabs.com/forums/226389-corona-editor>add/vote for them</a>. And of course, we are open to <a href=https://github.com/coronalabs/CoronaSDK-SublimeText>code contributions</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/12/11/corona-editor-is-now-1-0/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+	</channel>
+</rss>

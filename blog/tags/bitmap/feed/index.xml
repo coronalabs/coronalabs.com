@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bitmap &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/bitmap/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>bitmap &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing external bitmap textures</title>
+		<link>/blog/2016/09/22/introducing-external-bitmap-textures/</link>
+		<pubDate>Thu, 22 Sep 2016 19:03:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[bitmap]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[textures]]></category>
+
+		<guid isPermaLink="false">/?p=67990</guid>
+		<description><![CDATA[Corona Labs engineers have created a new graphics-related feature and a new plugin which Enterprise/plugin developers can expand upon to build some very powerful graphical capabilities. Read further to learn more!]]></description>
+				<content:encoded><![CDATA[<p>The Corona engineers have been doing some wonderful things lately, especially on the graphics engine side. One of these items is a feature which allows plugin creators and Corona Enterprise users to push textures directly into the Corona Graphics pipeline, effectively providing bitmap data. Resulting textures will behave similarly to those created by <a href=https://docs.coronalabs.com/api/library/graphics/newTexture.html target="_blank">graphics.newTexture()</a>.</p>
+<h3>Below the surface</h3>
+<p>Normally with Corona <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display</a> APIs, images are loaded and textures are created in memory, processed via the graphics processing unit (GPU). Once the image is in that realm, it becomes difficult to do pixel-level manipulation &#8212; setting and getting individual pixel information is a time-consuming effort, making it impractical for most operations.</p>
+<p>Fortunately, the Corona Graphics API set provides capabilities to create textures with custom data from C-based plugins. The resulting objects inherit properties of <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> as well as <a href=https://docs.coronalabs.com/api/type/TextureResource/index.html target="_blank">TextureResource</a> properties. Once created, these objects have <code>filename</code> and <code>baseDir</code> properties which can be used in any <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display</a> API or for assigning fills.</p>
+<h3>Possibilities?</h3>
+<p>An example of a plugin which might utilize these capabilities is a plugin which loads SVG (Scalable Vector Graphics) files, rasterizes them on the native C side, and pushes the results to Corona to return a texture object. That texture object could then be used to create typical display objects.</p>
+<p>Other examples include image manipulation plugins based on <a href=http://www.imagemagick.org/script/index.php target="_blank">ImageMagick</a> or another C library, custom text and font renderers, and importing images from unsupported formats &#8212; the possibilities are endless!</p>
+<h3>Take it for a test drive!</h3>
+<p>To demonstrate this technology, our engineers have created a very simple plugin called <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">memoryBitmap</a>. Available in the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">Corona Marketplace</a>, this plugin has just a single method, <a href=https://docs.coronalabs.com/plugin/memoryBitmap/newTexture.html target="_blank">memoryBitmap.newTexture()</a>. This creates a blank texture of specified dimensions and the result is a new <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> object with two additional methods: <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/setPixel.html target="_blank">:setPixel()</a> and <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/getPixel.html target="_blank">:getPixel()</a>.</p>
+<p>Directly &#8220;out of the box,&#8221; this plugin isn&#8217;t particularly useful to Corona SDK developers, since it cannot access your existing images. However, its <a href=https://github.com/coronalabs/plugins-sample-memoryBitmap target="_blank">source code</a> may be useful to Corona Enterprise plugin developers as a template for cross-platform Corona plugins supported on macOS, iOS, tvOS, Android, and Windows.</p>
+<h3>Example</h3>
+<p>We made a quick demo to create Spirograph™ style drawings using this new plugin&#8217;s <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/setPixel.html target="_blank">:setPixel()</a> method. To test it, you&#8217;ll need to activate the plugin in the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">Corona Marketplace</a> and add the plugin to your <code>build.settings</code>.</p>
+<p><a href=/wordpress/wp-content/uploads/2016/09/memory-bitmap.png><img class="alignnone size-full wp-image-68106" src=/wordpress/wp-content/uploads/2016/09/memory-bitmap.png alt="memory-bitmap" width="960" height="540" /></a>Below is the code for creating the texture and manipulating it by setting pixels:</p><pre class="crayon-plain-tag">local memoryBitmap = require( &quot;plugin.memoryBitmap&quot; )
+
+local tex = memoryBitmap.newTexture(
+{
+    width = 1024,
+    height = 1024,
+    format = &quot;rgba&quot;
+})
+
+local function makeSpirals( texture, xOffset, yOffset, innerRadius, outerRadius, penOffset, color )
+    -- Based on: http://introcs.cs.princeton.edu/java/15inout/Spirograph.java.html
+    local R = outerRadius
+    local r = innerRadius
+    local a = penOffset
+
+    for t = 0.0, 100, 0.01 do
+        local x = (R+r) * math.cos(t) - (r+a) * math.cos(((R+r)/r)*t)
+        local y = (R+r) * math.sin(t) - (r+a) * math.sin(((R+r)/r)*t)
+        local degrees = -1 * math.deg((R+r)/r)*t
+        texture:setPixel( x + xOffset, y + yOffset, color )
+    end
+    texture:invalidate()
+end
+
+makeSpirals( tex, 512, 512, 100, 55, 20, { 1, 0, 0, 1 } )</pre><p>In this example, the <a href=https://docs.coronalabs.com/plugin/memoryBitmap/newTexture.html target="_blank">memoryBitmap.newTexture()</a> function is returning a blank slate to work with. Essentially, you tell it the size of the object and the color depth rules and then you can start manipulating pixels as much as you like.</p>
+<h3>Conclusion</h3>
+<p>We are excited to see what enterprising Corona developers will create with <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> and the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">memoryBitmap</a> plugin as a basis for amazing features. Got a great idea? Please join us in the <a href=https://forums.coronalabs.com/forum/615-advanced-graphics/ target="_blank">Corona forums</a>!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

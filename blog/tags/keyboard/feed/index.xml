@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>keyboard &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/keyboard/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>keyboard &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Moving native text input fields/boxes</title>
+		<link>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/</link>
+		<comments>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/#comments</comments>
+		<pubDate>Tue, 18 Nov 2014 22:14:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[native text input]]></category>
+		<category><![CDATA[text input]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">/?p=60212</guid>
+		<description><![CDATA[If you develop a mobile app user interface where native text input objects exist in the lower half of the screen, those objects are prone to being covered by the device's keyboard. In this tutorial, we'll explore a simple method to prevent this.]]></description>
+				<content:encoded><![CDATA[<p>One challenge for Corona developers is how to deal with <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank">native.newTextBox()</a> objects, in particular when they are located in the lower half of the screen where they can be covered by the device&#8217;s keyboard. A common solution is to explicitly move native text field/box objects upward by some variable &#8220;keyboard height&#8221; when the keyboard becomes active, thus keeping them within view/access of the user.</p>
+<h3>Using display groups</h3>
+<p>For simplicity, native objects can be moved as one &#8220;unit,&#8221; specifically as part of a <a href=http://docs.coronalabs.com/api/library/display/newGroup.html target="_blank">display.newGroup()</a> which may contain supporting objects like a background, images, buttons, etc. Consider this code:</p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 0.5 )
+
+-- Create forward references for UI objects
+local value1, value2, result
+
+-- Create new display group for the UI objects
+local UIGroup = display.newGroup()
+
+-- Listener function for text input events
+local function textListener( event )
+
+    if ( event.phase == &quot;began&quot; ) then
+
+        -- Transition group upward to y=50
+        transition.to( UIGroup, { time=1000, y=50 } )
+
+    elseif ( event.phase == &quot;ended&quot; or event.phase == &quot;submitted&quot; ) then
+
+        local v1 = tonumber( value1.text )
+        local v2 = tonumber( value2.text )
+        if ( v1 and v2 ) then
+            -- Update the &quot;result&quot; text object
+            result.text = v1 + v2
+            -- Dismiss (hide) the native keyboard
+            native.setKeyboardFocus( nil )
+            -- Transition group back down to y=300
+            transition.to( UIGroup, { time = 1000, y = 300 })
+        end
+    end
+end
+
+local title = display.newText( &quot;Add two numbers&quot;, display.contentCenterX, 75, native.systemFont, 40 )
+title:setFillColor( 0, 0, 0 )
+UIGroup:insert( title )
+
+value1 = native.newTextField( display.contentCenterX, 150, 160, 40 )
+UIGroup:insert( value1 )
+value1:addEventListener( &quot;userInput&quot;, textListener )
+value1.inputType = &quot;number&quot;
+
+value2 = native.newTextField( display.contentCenterX, 225, 160, 40 )
+UIGroup:insert( value2 )
+value2:addEventListener( &quot;userInput&quot;, textListener )
+value2.inputType = &quot;number&quot;
+
+local plus = display.newText( &quot;+&quot;, display.contentCenterX-120, 215, native.systemFont, 80 )
+plus:setFillColor( 0, 0, 0 )
+UIGroup:insert( plus )
+
+result = display.newText( &quot;______&quot;, display.contentCenterX, 300, native.systemFont, 80 )
+result:setFillColor( 0, 0, 0 )
+UIGroup:insert( result )
+
+local equals = display.newText( &quot;=&quot;, display.contentCenterX-120, 300, native.systemFont, 80 )
+equals:setFillColor( 0, 0, 0 )
+UIGroup:insert( equals )
+
+-- Initially position the group at y=300
+UIGroup.y = 300</pre><p>This code creates a simple UI (User Interface) consisting of two text fields named <code>value1</code> and <code>value2</code>, plus (<strong>+</strong>) and equal (<strong>=</strong>) text objects, a <strong>title</strong> text label, and a label to hold the results of summing the two fields. All of these objects are inserted within the <code>UIGroup</code> display group, including the native text fields. Thus, when we position the group &#8212; or transition it upwards or downwards &#8212; everything moves in unison.</p>
+<p>Of course, this doesn&#8217;t mean that you can position native objects in front of normal display objects &#8212; native objects will <strong>always</strong> appear in front of other display objects, but we can still handle the movement and positioning of these objects as one collective group.</p>
+<p>Note that when handling the text field inputs, we confirm that a value has been entered into <strong>both</strong> fields before transitioning the group back down. We also confirm that each value is a number to avoid any potential errors in summing them together. With these two checks in place, the fields will remain accessible above the keyboard while the user interacts with them, and then when both have valid entries, the group can transition back down while the keyboard is simultaneously dismissed/hidden. Of course, depending on your own design, this approach may vary, but you should ensure that the input fields remain accessible for the duration of the required interactivity.</p>
+<h3>Conclusion</h3>
+<p>As demonstrated, this method is useful for handling native input objects. It can benefit developers of business/utility apps in particular, since apps in these categories often rely on keyboard-based interaction.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/11/18/tutorial-moving-native-textfieldtextbox-objects/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

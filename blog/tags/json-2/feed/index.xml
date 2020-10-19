@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>json &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/json-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>json &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #145 &#8211; Creating Library Extensions, JSON Load/Save, and Persistence</title>
+		<link>/blog/coronageek/corona-geek-145/</link>
+		<comments>/blog/coronageek/corona-geek-145/#respond</comments>
+		<pubDate>Mon, 08 Jun 2015 22:52:21 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[data management]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[persistence]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62972</guid>
+		<description><![CDATA[Last Monday we showed how to short circuit the amount of work being performed between frames to improve the performance of touch based games. We also looked at creating radial dial timers using image masks. Today we looked at creating extending libraries, loading and saving JSON data, and persisting state across app sessions.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/bTk8AYrfKwE?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we showed how to short circuit the amount of work being performed between frames to <a href=/blog/coronageek/corona-geek-144/>improve the performance of touch based games</a>. We also looked at creating radial dial timers using image masks.</p>
+<p>Today we looked at creating extending libraries, loading and saving JSON data, and persisting state across app sessions. The discussion stitched all these topics together into one helpful conversation. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/extendingLibraries.zip target="_blank">Download the code from today&#8217;s discussion</a>.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>This month we’re playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a>. ALONE is a handcrafted, intense survival journey through space. Navigate caves, rip through rocky debris, dodge rocks and comets and test your endurance as you pursue ever higher scores in this ultra fast, procedural runner. It’s available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app.</p>
+<p>If you’d like to participate in June’s challenge with a free game option, play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a>. One Dot Impossible Target is a darts like game that is intriguing, mind twisting, and requires lots of concentration. As the dot rotates, your target is to hit the red dot for maximum point while avoiding the crossing bars or obstacles. You will need your full concentration to win each levels as they become more and more challenging.</p>
+<p>Each game has either levels or difficulty settings, so June’s high score winner will the announced based on high score as well as highest level completed or highest difficulty level played. Basically, more is better. </p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce July&#8217;s Geek Game Challenge on social media. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ).</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-144/>Corona Geek #144 &#8211; Improving Touch Based Game Performance Using Touch Coalescing</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode <strong>CoronaGeek</strong> to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Corona Development Tips and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-145/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-145-2015-06-08-extension-json-persistence.mp3" length="95873501" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #117 – Government Grants, Windows Phone 8 Tips, and JSON Gotchas</title>
+		<link>/blog/coronageek/corona-geek-117/</link>
+		<comments>/blog/coronageek/corona-geek-117/#comments</comments>
+		<pubDate>Mon, 24 Nov 2014 22:55:50 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[json]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60273</guid>
+		<description><![CDATA[This week Corona Ambassador, Ed Maurina, walked us through three specific JSON use cases where the oddities of saving and loading data using JSON can leave you scratching your head. We also discussed, grant writing for app development, Windows Phone 8 tips, and a brand new Apple Watch fart app that promises to blow you away.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/jDM71RsgTqM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>This week Corona Ambassador, Ed Maurina, walked us through <a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2014/11/JSON_Gotchas.zip target="_blank">three specific JSON use cases</a> where the oddities of saving and loading data using JSON can leave you scratching your head. We also discussed, grant writing for app development, Windows Phone 8 tips, and a brand new <a href=http://www.fart.watch/ target="_blank">Apple Watch fart app</a> that promises to blow you away.</p>
+<p><strong>Compete in November&#8217;s Corona Geek Games</strong></p>
+<p>Play this month’s Corona Geek Games Contest pick, <a href=http://doctorspingame.com/ target="_blank">Doctor Spin</a>, for the chance to win a $50 gift card. Post your high score to the <a href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> to compete! This month&#8217;s winner will be announced on December 1st. Follow us on <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, and <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> and grab the next promo codes as they&#8217;re released.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-116/ target="_blank">Corona Geek #116 – URL Encoding, Using JSON, and Clash of Clans Hidden Secrets</a></li>
+<li><a href=/university>Corona University</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Burtons Media Group &#8211; Corona Books &#8211; <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek</strong></a> and save 20% at checkout</li>
+<li>Roaming Gamer <a href=http://roaminggamer.com/makegames/ target="_blank">Game Templates and Tools</a></li>
+<li><a href=http://gpanimations.com/apps.html target="_blank">GP Animations Apps and Games</a></li>
+<li><a href=/community/irc/>Corona IRC Channel</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=/blog/2014/11/20/new-public-release-2014-2511/>New Public Release 2511</a></li>
+</ul>
+<p><strong>Forum</strong></p>
+<ul>
+<li><a href=http://forums.coronalabs.com/topic/52824-warning-your-windows-app-may-not-be-showing-up-in-the-windows-store/?#entry274415 target="_blank">Windows Phone Apps Not Showing in Windows Store</a></li>
+<li><a href=http://docs.coronalabs.com/coronacards/wp8/portapp.html?#optimizing-text-performance target="_blank">Optimizing Text Performance for Windows Phone 8</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-117/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-117-2014-11-24-json-oddities.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-117-2014-11-24-json-oddities.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-117-2014-11-24-json-oddities.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-117-2014-11-24-json-oddities.mp3" length="0" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #116 – URL Encoding, Using JSON, and Clash of Clans Hidden Secrets</title>
+		<link>/blog/coronageek/corona-geek-116/</link>
+		<comments>/blog/coronageek/corona-geek-116/#respond</comments>
+		<pubDate>Mon, 17 Nov 2014 22:35:26 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[URL Encoding]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60217</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed some of the hidden psychology and creative game mechanics used in the wildly successful Clash of Clans game. We also looked at how to encode urls for use with Corona’s network library and we looked at how Corona simplifies the use of JSON to save and load important game data.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/fSOhYhgWwvU?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we discussed some of the hidden psychology and creative game mechanics used in the wildly successful Clash of Clans game. We also looked at how to encode urls for use with Corona’s network library and we looked at how Corona simplifies the use of JSON to save and load important game data.</p>
+<p><strong>Compete in November&#8217;s Corona Geek Games</strong></p>
+<p>Play this month’s Corona Geek Games Contest pick, <a href=http://doctorspingame.com/ target="_blank">Doctor Spin</a>, for the chance to win a $50 gift card. Post your high score to the <a href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> to compete! This month&#8217;s winner will be announced on December 1st.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-115/ target="_blank">Corona Geek #115 – App Marketing in China, Spawning Enemies, and Being Optimized for iPhone 6 and 6 Plus</a></li>
+<li><a href=/university>Corona University</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Burtons Media Group &#8211; Corona Books &#8211; <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek</strong></a> and save 20% at checkout</li>
+<li><a href=http://coronium.io/ target="_blank">Coronium Cloud Server</a> &#8211; <strong>Newly Updated!</strong></li>
+<li>Spiral Code Studio <a href=http://spiralcodestudio.com/ target="_blank">Corona Games and Development</a></li>
+<li>Roaming Gamer <a href=http://roaminggamer.com/makegames/ target="_blank">Game Templates and Tools</a></li>
+<li><a href=http://gpanimations.com/apps.html target="_blank">GP Animations Apps and Games</a></li>
+<li>Crave Creative <strong><a href=http://www.cravecreative.com/ target="_blank">Widget Themes</a></strong> &#8211; <a href=http://www.cravecreative.com/corona-widget-theme-1.html target="_blank">Bold</a>, <a href=http://www.cravecreative.com/corona-widget-theme-2.html target="_blank">Elegant</a>, <a href=http://www.cravecreative.com/corona-widget-theme-3.html target="_blank">Light</a></li>
+<li><a href=/community/irc/>Corona IRC Channel</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://www.bluecloudsolutions.com/blog/know-app-localization-20-minutes/ target="_blank">App Localization in 20 Minutes</a></li>
+<li><a href=https://developer.apple.com/internationalization/ target="_blank">Apple on Internationalization and Localization</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=https://play.google.com/store/apps/details?id=com.seaburngames.brillbill target="_blank">Drill Bill game on Android</a></li>
+</ul>
+<p><strong>Other</strong></p>
+<ul>
+<li><a href=http://www.macupdate.com/app/mac/25227/alaunch target="_blank">OSX Menubar Application Launcher</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-116/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-116-2014-11-17-clash-of-clans-hidden-secrets-url-encoding-json.mp3" length="62093638" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-116-2014-11-17-clash-of-clans-hidden-secrets-url-encoding-json.mp3" length="62093638" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-116-2014-11-17-clash-of-clans-hidden-secrets-url-encoding-json.mp3" length="62093638" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-116-2014-11-17-clash-of-clans-hidden-secrets-url-encoding-json.mp3" length="62093638" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #58 &#8211; Accessing Data Remotely Using JSON In Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-58/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-58/#comments</comments>
+		<pubDate>Mon, 07 Oct 2013 21:07:01 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[remote data access]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=47957</guid>
+		<description><![CDATA[During this week's Corona Geek we walked through sample code to remotely access data via JSON in Corona SDK. We also discussed the pros and cons of building a backend web-based service compared to using Parse with Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4J9A6M3Ii-A?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek we walked through sample code to <a href=http://omnigeek.robmiracle.com/2012/04/15/using-corona-sdk-with-rest-api-services/ target="_blank">remotely access data via JSON in Corona SDK</a>. We also discussed the pros and cons of building a backend web-based service compared to <a href=http://www.ladeezfirstmedia.com/2013/06/26/tutorial-part-1-cloud-code-integrate-parse-coms-rest-api-with-your-coronasdk-app/ target="_blank">using Parse with Corona SDK</a>.</p>
+<p>You can <a href=http://bit.ly/16tQxW1 target="_blank">download the code</a> from today&#8217;s Hangout on GitHub.</p>
+<p>Congratulations to Chris Sturiale for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the Corona Geek <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek! Be sure to &#8220;thumbs up&#8221; this video on YouTube if you&#8217;d like to see more code-related sessions.</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-58/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-58-2013-10-07-accessing-remote-data-via-json.mp3" length="45566885" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-58-2013-10-07-accessing-remote-data-via-json.mp3" length="45566885" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-58-2013-10-07-accessing-remote-data-via-json.mp3" length="45566885" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-58-2013-10-07-accessing-remote-data-via-json.mp3" length="45566885" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

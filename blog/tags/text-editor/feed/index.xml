@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>text editor &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/text-editor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>text editor &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Editor + Sublime Text</title>
+		<link>/blog/2013/10/14/corona-editor-sublime-text/</link>
+		<comments>/blog/2013/10/14/corona-editor-sublime-text/#comments</comments>
+		<pubDate>Mon, 14 Oct 2013 21:36:13 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[ide]]></category>
+		<category><![CDATA[sublime]]></category>
+		<category><![CDATA[text editor]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=49156</guid>
+		<description><![CDATA[One of our guiding principles in building Corona SDK was that the developer experience mattered. This means enabling you to do things as quickly and easily as possible. Simplicity is key - we want to take something complex and remove all the unnecessary elements, so you can focus on the work that matters.
+
+Recently, we decided to extend that point of view to the actual coding experience. Now the community has already produced some fantastic <a href="/resources/3rd-party-tools-and-services/">mobile tools and IDEs</a>, so instead, we looked at the more basic problem of editing code.]]></description>
+				<content:encoded><![CDATA[<p>One of our guiding principles in building Corona SDK was that the developer experience mattered. This means enabling you to do things as quickly and easily as possible. Simplicity is key &#8211; we want to take something complex and remove all the unnecessary elements, so you can focus on the work that matters.</p>
+<p>Recently, we decided we wanted to extend that point of view to the actual coding experience. Now the community has already produced some fantastic <a href=/resources/3rd-party-tools-and-services/>mobile tools and IDEs</a>, so instead, we looked at the more basic problem of editing code.</p>
+<h2>Corona Editor</h2>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/10/Corona-Editor-Sublime-300x109.png" alt="Corona-Editor-Sublime" class="alignright size-medium wp-image-49393" srcset="/wordpress/wp-content/uploads/2013/10/Corona-Editor-Sublime-300x109.png 300w, /wordpress/wp-content/uploads/2013/10/Corona-Editor-Sublime.png 352w" sizes="(max-width: 300px) 100vw, 300px" />Today, I&#8217;m happy to announce Corona Editor (Beta), our answer to the old problem of making code editing painless. It takes what we think is the world&#8217;s best text editor, Sublime Text, and provides first-class integration with Corona SDK. </p>
+<p>Take a look at this video tour to see how Corona Editor is a natural fit with the Corona philosophy of keeping the tool lightweight, so you&#8217;re able to make good use of it immediately:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/emWUcaX-tyw?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>As you can see, initial features include code completion for all APIs and constants, the ability to bring up API docs directly from your code (public release or daily build docs), and hot keys to launch your app in the Corona Simulator from Sublime. </p>
+<p>There are still bugs to be worked out as it&#8217;s still in Beta, but you can play with it today! Head over to Corona Editor for instructions on how to install Sublime Text and the Corona Editor package.</p>
+<h2>Open Source</h2>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/10/github-logo-300x118.png" alt="github-logo" class="alignright size-medium wp-image-49394" />We are making Corona Editor completely <a href=https://github.com/coronalabs/CoronaSDK-SublimeText>open source</a>, so send us your pull requests. Your contributions will help the entire Corona community!</p>
+<p>In terms of future improvements, we&#8217;re looking at console integration directly in the Sublime editor and debugging support for breakpoints. Let us know if you&#8217;d like to help!</p>
+<p>One of the things we hope this plugin will do is improve code editing in other text editors and IDEs. The Corona Editor project comes with a <a href=https://github.com/coronalabs/CoronaSDK-SublimeText/blob/master/gen_completions/raw-api-definitions>raw list of Corona APIs</a>. They&#8217;re generated straight from our docs to enable code completions in Corona Editor. We will automatically be updating this file to reflect changes in daily builds, so this should be especially handy for enabling completions in other text editors and IDEs.</p>
+<p><em>Special thanks to Christopher Spence for his invaluable insights and feedback during development.</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/14/corona-editor-sublime-text/feed/</wfw:commentRss>
+		<slash:comments>34</slash:comments>
+		</item>
+	</channel>
+</rss>

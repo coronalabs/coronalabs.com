@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mediation &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mediation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>mediation &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Appodeal: intelligent, programmatic ad mediation</title>
+		<link>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/</link>
+		<comments>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/#comments</comments>
+		<pubDate>Thu, 04 Aug 2016 16:26:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67488</guid>
+		<description><![CDATA[Corona Labs is pleased to welcome Appodeal as our latest monetization plugin. This is our first plugin to offer complete ad mediation. Read further to learn more!]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/08/appodeal-3.png><img class="alignright wp-image-67639 size-thumbnail" style="margin: 16px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p>Ad mediation is a frequently requested app monetization feature, but it usually requires that you build in support for multiple ad networks in your app. That can be a lot of work.</p>
+<p>Fortunately, <a href=https://www.appodeal.com/ target="_blank">Appodeal</a> builds their network of ad provider SDKs directly into their plugin for you &#8212; simply include the Appodeal plugin and get the benefit of every ad network they support.</p>
+<p>One benefit of ad mediation is that you should get a 100% fill rate &#8212; never miss an ad! Appodeal&#8217;s service delivers higher-paying ads first, and they also analyze all of the ads available, factor in the user&#8217;s behavior, and find the best ad for the moment.</p>
+<p>You just need one account and one plugin (plus support plugins on Android) to benefit from all of Appodeal&#8217;s partners. They offer monthly payouts as well as on-demand payouts.</p>
+<p>&#8220;Appodeal is excited about our new partnership with Corona Labs, as it will open new doors and break the many restrictions developers often face. We look forward to helping Corona developers monetize their apps with ease while maximizing their earnings,&#8221; says Pavel Golubev, Appodeal CEO &amp; Founder.</p>
+<h3>Getting started</h3>
+<p>To begin, <a href=https://www.appodeal.com/ target="_blank">register with Appodeal</a>. Then, create an app for each platform you want to run ads on. Currently the Corona plugin supports iOS, Android, and tvOS. You will get a different application key for each platform. Finally, include the required changes in your <code>build.settings</code> file and implement the plugin much like any other Corona ad provider (see our <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for details).</p>
+<p>The Appodeal plugin offers three API calls: <a href=https://docs.coronalabs.com/plugin/appodeal/init.html target="_blank">appodeal.init()</a>, <a href=https://docs.coronalabs.com/plugin/appodeal/show.html target="_blank">appodeal.show()</a>, and <a href=https://docs.coronalabs.com/plugin/appodeal/hide.html target="_blank">appodeal.hide()</a>. If you are deploying your app to both iOS and Android,  you will have to initialize your plugin based on platform:</p><pre class="crayon-plain-tag">if &quot;Android&quot; == system.getInfo( &quot;platformName&quot; ) then
+    appodeal.init( adListener, { appKey=&quot;YOUR_ANDROID_APPLICATION_KEY&quot;, testMode=false } )
+else
+    appodeal.init( adListener, { appKey=&quot;YOUR_IOS_APPLICATION_KEY&quot;, testMode=false } )
+end</pre><p>See the Corona <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for more usage details.</p>
+<h3>Conclusion</h3>
+<p>Have any questions or comments? To discuss this wonderful addition to our suite of monetization plugins, please join us in the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">community forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Looking for beta developers to test Appodeal plugin</title>
+		<link>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/</link>
+		<comments>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/#comments</comments>
+		<pubDate>Tue, 19 Jul 2016 17:10:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67492</guid>
+		<description><![CDATA[Corona Labs is looking for some developers to help us test a new monetization plugin from Appodeal. Learn how you can join the beta test program for it.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67490 size-medium" src="/wordpress/wp-content/uploads/2016/07/appodeal_logo-300x67.jpg" width="300" height="67" />Corona Labs is working on a plugin for <a href=https://www.appodeal.com/ target="_blank">Appodeal</a>, a monetization partner that supports mediation.</p>
+<p>We are looking for a few developers to test the plugin. If you&#8217;re interested in getting an early look at the plugin and helping us test, please email <a href=mailto:ads@coronalabs.com>ads@coronalabs.com</a> from your registered Corona developer email. Please include the app you would like to integrate and the daily active users (DAU) for that app. We will get back with you if you&#8217;re selected.</p>
+<p>We look forward to hearing from you!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

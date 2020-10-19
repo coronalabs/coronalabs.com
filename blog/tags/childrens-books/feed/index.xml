@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>children&#8217;s books &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/childrens-books/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>children&#8217;s books &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: A New Home for Charlie the Chocolate Chihuahua</title>
+		<link>/blog/2016/03/24/featured-app-a-new-home-for-charlie-the-chocolate-chihuahua/</link>
+		<pubDate>Thu, 24 Mar 2016 23:18:05 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[Children's Apps]]></category>
+		<category><![CDATA[children's books]]></category>
+		<category><![CDATA[Interactive Books]]></category>
+
+		<guid isPermaLink="false">/?p=66236</guid>
+		<description><![CDATA[A New Home for Charlie the Chocolate Chihuahua is an interactive book app from Fat Red Couch. Click through to earn more about this app.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66239" src="/wordpress/wp-content/uploads/2016/03/cccicon-150x150.png" alt="cccicon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/cccicon-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/cccicon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are creating some fantastic apps. Today Corona Labs would like to feature, <em>A New Home for Charlie the Chocolate Chihuahua</em>, an interactive book from <a href=http://fatredcouch.com/ target="_blank">Fat Red Couch, Inc</a>.</p>
+<p>Charlie the Chocolate Chihuahua is a story about a small dog making friends in his new home. Get to know characters like Rockin’ Rob Robin and Shearl, the tailless squirrel while playing interactive games that include puzzles, painting and drawing, interactive sounds and more. </p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/6dS444kkbDU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Artwork can be saved to the gallery for sharing. Those saved images can then later be used as part of the games jigsaw puzzle system. The player can adjust the number of pieces to set the puzzle difficulty.</p>
+<p>You can find this app:</p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/new-home-for-charlie-chocolate/id931004078?mt=8 target="_blank">Apple iTunes</a></li>
+<li><a href=https://play.google.com/store/apps/details?id=com.fatredcouch.charlie.thechocolatechihuahua.anewhomeforcharlie.android target="_blank">Google Play</a></li>
+<li><a href=http://www.amazon.com/New-Home-Charlie-Chocolate-Chihuahua/dp/B00UK5DD72 target="_blank">Amazon</a></li>
+<li>Coming soon for tvOS and OS X!</li>
+</ul>
+<p>A portion of the proceeds go to Rocket Dog Rescue, a rescue group that places dogs in approved homes.</p>
+<p><img class="alignnone size-full wp-image-66237" src="/wordpress/wp-content/uploads/2016/03/ccc01.png" alt="ccc01" width="960" height="540" /></p>
+<p><img class="alignnone size-full wp-image-66238" src="/wordpress/wp-content/uploads/2016/03/ccc02.png" alt="ccc02" width="960" height="540" /></p>
+<p>What can you create with Corona SDK?</p>
+<h3>Want to see your app featured here?</h3>
+<p>Corona Labs is always looking for apps to feature. If you’ve developed an app using Corona SDK, complete our <a href=/community/share/ target="_blank">showcase submission form</a> and you could show up in the blog, get a social media shout out, collect some cool swag or more!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

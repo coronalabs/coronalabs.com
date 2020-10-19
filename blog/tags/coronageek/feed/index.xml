@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CoronaGeek &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronageek/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>CoronaGeek &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek &#8211; Episode 23 &#8211; Hanging with Corona Paper, Global Game Jam</title>
+		<link>/blog/coronageek/corona-geek-hangout-23/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-23/#comments</comments>
+		<pubDate>Tue, 15 Jan 2013 07:35:36 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=28497</guid>
+		<description><![CDATA[During this week’s Corona Geek hangout we talked with special guest Stian Saunes from 10FINGERS AB about their Corona SDK focused digital magazine, Corona Paper. Also joining the show was Brent Sorrentino, Corona Labs forum ninja. Brent educated us about Global Game Jam, which is coming up at the end of January. We also shared a bunch of announcements about upcoming Corona events, so be sure to listen to see if something is happening in your area.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/FWnfsNY3zmg?rel=0" height="350" width="620" frameborder="0"></iframe></p>
+<p>During this week&#8217;s Corona Geek hangout we talked with special guest Stian Saunes from <a href=http://www.10fingers.se/ target="_blank">10FINGERS AB</a> about their <a href=http://coronapaper.com/ target="_blank">Corona SDK focused digital magazine</a>, Corona Paper. Also joining the show was <a href=http://www.coronalabs.com/blog/author/brent/ target="_blank">Brent Sorrentino</a>, Corona Labs forum ninja. Brent educated us about Global Game Jam, which is coming up at the end of January. We also shared a bunch of announcements about upcoming Corona events, so be sure to listen to see if something is happening in your area.</p>
+<p>This week&#8217;s t-shirt winner was Daniel Williams from <a href=http://ThatsSoPanda.com/ target="_blank">ThatsSoPanda.com</a>. Daniel followed Corona Geek on social media and then completed the <a href=http://coronageek.com/giveaway target="_blank">Corona Geek giveaway registration form</a> for a chance to win a Corona Labs t-shirt. Congratulations Daniel. Thank you for supporting the show and being a part of the Corona Community.</p>
+<p>As always, be sure to <a title="Corona Geek on Google+" href=https://plus.google.com/b/108159899655420864045/108159899655420864045/posts target="_blank">join us next Monday at 12pm PST / 8pm GMT for a new episode</a> and <a title="Corona Geek on Google+" href=https://plus.google.com/b/108159899655420864045/108159899655420864045/posts target="_blank">add us to your Google+ Corona SDK circle</a>.</p>
+<p>Thanks for watching,</p>
+<p>Charles McKeever<br />
+Developer Evangelist, Corona Labs</p>
+<hr />
+<p><strong>Show Geeks:</strong></p>
+<ul>
+<li><strong>Stian Saunes</strong> &#8211; <a href=http://CoronaPaper.com/ target="_blank">Corona Paper</a></li>
+<li><strong>Brent Sorrentino</strong> &#8211; <a href=CoronaLabs.com/ target="_blank">CoronaLabs.com</a></li>
+<li><strong>David Rangel</strong> &#8211; <a href=CoronaLabs.com/ target="_blank">CoronaLabs.com</a></li>
+<li><strong>Brian Burton</strong> &#8211; Author of <a href=http://CoronaGeek.com/burton-corona-book target="_blank">Mobile App Development with Corona: Getting Started</a></li>
+<li><strong>Charles McKeever</strong> &#8211; <a href=http://coronageek.com>Corona/ Geek</a> / Marathon Runner</li>
+</ul>
+<p>If you are new to the conversation, the Corona SDK is a cross platform mobile development tool kit that makes it easy for developers to create native applications for Android and iOS devices as well as for Kindle, and Nook. You can find out more about the Corona SDK at <a href=http://www.CoronaLabs.com/ target="_blank">CoronaLabs.com</a>.</p>
+<p><strong>Show Notes &#8211; 01/14/2013</strong></p>
+<p><strong>Announcements</strong></p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/fun-run-multiplayer-race/id547201991?mt=8 target="_blank">Fun Run</a>, which was <a href=http://www.coronalabs.com/blog/2013/01/07/app-of-the-week-fun-run/ target="_blank">last week&#8217;s Corona Labs App of the Week</a>, Fun Run soared to the #3 free game on the App Store, coming in just behind Google Maps! That&#8217;s pretty impressive considering Google Maps is a globally sought after app. Congratulations to dirtyBit the Fun Run team.</li>
+</ul>
+<p><strong>Upcoming Events</strong></p>
+<ul>
+<li>Jan 15th &#8211; <a href=http://www.meetup.com/CoronaItalia/events/95775372/ target="_blank">Torino Italy</a> &#8211; Alessandro Grigiante is presenting on using Corona SDK for app development</li>
+<li>Jan 16th &#8211; <a href=http://www.societyillustrators.org/Events-and-Programs/Lectures/2013/APPsolute-Fun/APPsolute-Fun!.aspx target="_blank">Society of Illustrators</a>, New York City</li>
+<li>17th, Raleigh NC &#8211; <a href=http://www.meetup.com/triangle-corona-sdk-meetup/events/dwxvgdyrcbwb/ target="_blank">Mobile App Game Developers Meetup</a> &#8211; Jake Scarano, Rob Miracle</li>
+</ul>
+<ul>
+<li>Alex at Kwiksher is offering <a href=http://www.kwiksher.com/free-webinars/ target="_blank">3 free Kwik webinars</a> to help you <a href=http://www.kwiksher.com/free-webinars/ target="_blank">learn the basics of Kwik</a>.
+<ul>
+<li>The webinars in January are in English.</li>
+<li>Spanish and Brazilian Portuguese may be available upon request with a minimum attendance of 10 people</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Corona Paper has started layout on issue number 3!</li>
+</ul>
+<ul>
+<li>Use the promo code &#8220;coronageek&#8221; at checkout when <a href=http://burtonsmediagroup.com/books target="_blank">buying Corona SDK books</a> on Dr. Brian Burton&#8217;s website. Brian has several books to help you get started in mobile app development using Corona SDK.</li>
+</ul>
+<ul>
+<li>Ambassador shout out &#8211; we sent out an email to all ambassadors recently. If you didn’t get an email and think you should have, email me coronageek&lt;at&gt;coronalabs.com and let me know so we can get that fixed. We have big plans for 2013 and you won&#8217;t want to miss out on the fun.</li>
+</ul>
+<ul>
+<li><a href=http://globalgamejam.org/ target="_blank">Global Game Jam</a>, 48 hours or gaming fun, is coming up on January 25th &#8211; 27th</li>
+</ul>
+<ul>
+<li><a href=http://www.apps-world.net/northamerica/ target="_blank">Apps World San Francisco 2013</a> is coming up in February
+<ul>
+<li>Walter Luh and David Rangel are both speaking at the event.</li>
+<li>Corona Labs will have a booth.</li>
+<li>Corona Geek will be live blogging from the event.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Lastest Build Release Notes<br />
+</strong><a href=http://developer.coronalabs.com/corona-daily-builds/summary target="_blank">http://developer.coronalabs.com/corona-daily-builds/summary</a></p>
+<ul>
+<li>Congratulations to the Corona Labs Engineers for passing up the <strong>1000 daily builds</strong> mark. Build 1003 is now available for download.</li>
+</ul>
+<p><strong>Corona Blog highlights</strong></p>
+<ul>
+<li><a href=http://www.coronalabs.com/blog/2013/01/10/corona-labs-and-iddiction-promotion-and-publishing-for-corona-developers/ target="_blank">Corona Labs has partnered with Iddiction</a>, a leading distribution and discovery platform for mobile apps, to offer another way for indie developers to promote and monetize their awesome mobile content.</li>
+</ul>
+<p><strong>Developer Spotlight</strong></p>
+<ul>
+<li>Stian Saunes from 10FINGERS AB joined us on the show from Sweden to talk about Corona Paper, the new <a href=http://coronapaper.com/ target="_blank">digital magazine devoted entirely to mobile app development using the Corona SDK</a>. The magazine captures the playful spirit of Corona and provides in-depth tutorials and articles on how to use the platform to build mobile apps. Stian talked about how the idea for the magazine came about and how an app development studio has managed to put together such a professional digital magazine around the Corona SDK. Issue 2 of the magazine will be coming out at the end of January and the 10FINGERS team is already working on issue number 3.</li>
+</ul>
+<ul>
+<li><a href=http://www.coronalabs.com/blog/author/brent/ target="_blank">Brent Sorrentino</a> also joined us to talk about <a href=http://globalgamejam.org/ target="_blank">Global Game Jam</a>, the 48 hour gaming extravaganza. Brent has been working with <a href=http://www.coronalabs.com/community/ambassadors/ target="_blank">Corona Ambassadors</a> from around the world to help them get involved with events in their areas. As a two day global event, game developers from all genres come together in their local area to discuss and build the games that others will want to play. There are currently over 300 events set to take place around the globe on January 25 &#8211; 27, so if you are into gaming, be sure to <a href=http://globalgamejam.org/locations target="_blank">look for an event in your local area</a>. If you participate in this year&#8217;s Global Game Jam, we want to know. Corona Labs will give any GGJ team that requests it a full Corona SDK Indie subscription lasting 3 months. See the <a href=http://globalgamejam.org/promotions target="_blank">Global Game Jam promotions page</a> for details.</li>
+</ul>
+<p><strong>Community Questions</strong></p>
+<ul>
+<li><a href=http://developer.coronalabs.com/forums/corona-geek target="_blank">Corona Geek now has a forum</a> where you can ask show questions, submit suggestions for show topics, and let us know which guests you&#8217;d like to see on the panel.</li>
+</ul>
+<p><strong>App Reviews &#8211; Coming this week<br />
+</strong></p>
+<p>Starting this week, I&#8217;m going to start doing app video reviews again. Here are the apps I&#8217;ll be looking at this week. If you have an app that you&#8217;d like to have reviewed, send me an email coronageek&lt;at&gt;coronalabs.com and let me know.</p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/finger-hoola/id563392651?mt=8 target="_blank">Finger Hoola</a>, by Ian Masters</li>
+<li><a href=https://play.google.com/store/apps/details?id=com.movingshark.games.pokertimer&feature=more_from_developer#?t=W251bGwsMSwyLDEwMiwiY29tLm1vdmluZ3NoYXJrLmdhbWVzLnBva2VydGltZXIiXQ target="_blank">Easy Poker Timer</a> by Brad Marcus</li>
+<li>Texas Holdem Starting Hand by Brad Marcus</li>
+<li>Super Magic Eightball by Brad Marcus</li>
+</ul>
+<p>That&#8217;s it for this week.</p>
+<p>Thank you for watching, listening, and supporting the show and we&#8217;ll see you on next week&#8217;s Corona Geek hangout.</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-23/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-23-2013-01-14-corona-paper.mp3" length="39119611" type="audio/mpeg" />
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-23-2013-01-14-corona-paper.mp3" length="39119611" type="audio/mpeg" />
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-23-2013-01-14-corona-paper.mp3" length="39119611" type="audio/mpeg" />
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-23-2013-01-14-corona-paper.mp3" length="39119611" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek Weekly Level Up &#8211; The Road Ahead</title>
+		<link>/blog/coronageek/corona-geek-weekly-level-up-the-road-ahead/</link>
+		<comments>/blog/coronageek/corona-geek-weekly-level-up-the-road-ahead/#respond</comments>
+		<pubDate>Fri, 11 Jan 2013 22:34:03 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=28216</guid>
+		<description><![CDATA[Knowing where you've been is just as important as knowing where you are going. That's why I like to write up a recap of the week. It helps remind me of what was accomplished during the week and hopefully it helps you catch up on anything you might have missed. This week's recap is going to be a little different because on Monday it was officially announced that Corona Geek joined Corona Labs family. So in today's recap I want to share with you what that means to me and what it will mean for the Corona community.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/walter-luh-dallas-corona-meetup-2011.jpg" alt="Walter Luh, Dallas Corona SDK Meetup" class="alignnone size-full wp-image-28388" /></p>
+<p>Knowing where you&#8217;ve been is just as important as knowing where you are going. That&#8217;s why I like to write up a recap of the week. It helps remind me of what was accomplished during the week and hopefully it helps you catch up on anything you might have missed. This week&#8217;s recap is going to be a little different because on Monday it was officially announced that Corona Geek joined the Corona Labs family. In today&#8217;s recap, I want to share what this means for me, and of course for the Corona community. For me, this is a dream come true in two ways.</p>
+<p><strong>I dream in color</strong></p>
+<p>Firstly, it is the realization of an idea that I had just over a year ago when I met Walter Luh at a Meetup in Dallas. About 20 or so developers sat around a conference table in an office building while Walter talked about what Corona did, where it was headed, and how it helped developers to create amazing apps with a fraction of the code, in a fraction of the time. Walter was able to talk big picture as well as individual lines of code. While this is something most people can&#8217;t do, Walter was able to do it well. Combined with the actual technical solution, I was sold on Corona SDK from the start.</p>
+<p>As I looked around the table I saw programmers, educators, marketers, and designers who were all looking for a tool that would help them create something amazing. They all had different skills, but they all wanted the same thing. It was in that moment that I envisioned a podcast that would help people learn more about Corona SDK and mobile development from one another. A show where the developers at Corona would answer questions asked by developers within the community. A show where developers could share what they had learned with others and they in turn could learn and be inspired by their peers. That show has become Corona Geek and now, as part of the Corona Labs family, it will be able to fill that role.</p>
+<p><strong>A-Game Players</strong></p>
+<p>Secondly, my dreams are coming true, because I&#8217;ve always wanted to work with a talented and passionate group of people who just &#8220;get it.&#8221; A group of people who are focused on accomplishing something truly amazing. A group that doesn&#8217;t punch the clock at five or look for ways to duck out early on Friday. I&#8217;ve always wanted to be part of a group that, as Steve Jobs called them, are &#8220;A-Game&#8221; players. Today, that dream is realized because I&#8217;m here to tell you that the Corona Labs team is about the more passionate, creative, focused, and hard-working group of people you will ever meet. I&#8217;m talking &#8220;4 in the morning,&#8221; &#8220;what day is it again,&#8221; &#8220;just one more minute, I&#8217;m almost done&#8221; kinda people, and I&#8217;m proud to be part of the them.</p>
+<p><strong>What it means for you</strong></p>
+<p>Well, that&#8217;s all great for me, but what does it mean for you? Well, it means Corona Labs is devoted to building the best mobile app platform and the strongest developer community on the planet. It means that as a developer you have a voice within the Corona community that everyone wants to hear.</p>
+<p>That voice is Corona Geek. Corona Geek is for developers, by developers. It&#8217;s a place where Corona Developers can come to hang and talk with other people who are passionately interested in the same thing. It&#8217;s a hangout for geeks, Corona Geeks. A place where we can learn from each other and discuss all the things that make our family members&#8217;, and &#8220;normal&#8221; friends&#8217; eyes glaze over. Corona Geek is yours.</p>
+<p>In the last five months, I&#8217;ve had the joy of talking with some extremely bright Corona developers who are using Corona SDK in very creative ways. These conversations have uncovered insights that I would have never discovered on my own. It&#8217;s that kind of discovery and inspiration that each of us has and can share with one another. That&#8217;s what Corona Geek is all about. Corona Geek is our place to participate in a virtual &#8220;show and tell&#8221; in front of our peers.</p>
+<p>I&#8217;ve also had the opportunity to talk with book authors, tool makers, and start ups. That&#8217;s been interesting and great as well. But labels are not important here, because each of us has something to share with the whole community regardless of our label. We are all Geeks first and we all have something to offer others. That&#8217;s what Corona Geek will be working towards in 2013.</p>
+<p>To start, you can expect to see more developer interviews, app reviews, video tutorials, and live event coverage over the next several months. Whether related to Corona SDK or to mobile app development in general, Corona Geek is interested in covering it. That means app development, app discovery, app marketing, app monetization &#8211; you name it.</p>
+<p>There&#8217;s a lot of work to be done. So, I need to ask for your help. I need you to tell me what you want to see on Corona Geek. What topics are most important to you? Are you like Ken Cardita who wants help with the pros and cons of various ad network options? Or are you like Ryley Newsham who&#8217;s looking for a super jump swipe solution for his new game? What&#8217;s most important to you? That&#8217;s what I need to hear from you. Sure, I have a list of things that I think would be good future topics for the show, but like I said before, it&#8217;s your show.</p>
+<p>You can tell me what topics you&#8217;re interested in by <a href=http://www.coronalabs.com/community/corona-geek/ target="_blank">filling out this form</a>, leaving a comment below, sending me an email, or hitting me up on any of the social media spaces. If you have any questions about Corona Geek, Corona SDK, or mobile development in general, don&#8217;t be afraid to email me via coronageek<at>coronalabs.com or contact me on Twitter, Facebook, Google+, or YouTube.</p>
+<p>Have a great weekend, and I&#8217;ll see you on <a href=https://plus.google.com/u/0/events/cu1esqfqc59n4ceu40n65d7slag target="_blank">Monday&#8217;s Corona Geek</a>.</p>
+<p>Charles McKeever<br />
+a.k.a., Corona Geek</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-weekly-level-up-the-road-ahead/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>App Review: 14px Game</title>
+		<link>/blog/coronageek/14px-game-review/</link>
+		<comments>/blog/coronageek/14px-game-review/#comments</comments>
+		<pubDate>Wed, 19 Dec 2012 01:29:55 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[14px]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[Platformer]]></category>
+
+		<guid isPermaLink="false">http://coronageek.com/?p=1348</guid>
+		<description><![CDATA[Here's a quick app review of 14px by Drummer Games, a 2D platformer game with a retro feel. Four worlds are included as part of the paid game along with 45 levels that range from introductory to absolutely insane. 14px also has an online level editor that allows you to create levels in your desktop browser and play them on your device and share them with your friends. More on that later.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/8g170cUyORg?rel=0" height="350" width="620" allowfullscreen="" frameborder="0"></iframe></p>
+<p style="text-align: left;"><strong>App:</strong> 14px<br />
+<strong>Category:</strong> Game<br />
+<strong>Developer:</strong> <a href=https://twitter.com/roballison target="_blank">Rob Allison</a>, Drummer Game<br />
+<strong>Price</strong>: .99 cents<br />
+<strong>In-App Purchases:</strong> None<br />
+<strong>Device:</strong> <a href=https://itunes.apple.com/us/app/14px/id576855899?mt=8 target="_blank">iOS (iPhone, iPad)</a> and <a href=https://play.google.com/store/apps/details?id=com.drummerGames.px14 target="_blank">Android</a> Developed using the Corona SDK</p>
+<p><strong>App Review:</strong></p>
+<p>14px by Drummer Games is a 2D platformer game with a retro feel. Four worlds are included as part of the paid game along with 45 levels that range from introductory to absolutely insane. 14px also has an online level editor that allows you to create levels in your desktop browser and play them on your device and share them with your friends. More on that later.</p>
+<p><img class="aligncenter" style="text-align: center;" alt="14px-game-review-9" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-9.png" width="590" height="443" /></p>
+<p>You start each level as an inkblot who is trying to get from the platform&#8217;s starting point to the end of the platform where a portal awaits to take you to the next level.</p>
+<p>Along the way, your objective is to collect orbs and free your inkblot friends without falling off the platform or being killed by a variety of hazards. Once you reach the portal, you teleport to the next level where you&#8217;re met with a whole new set of challenges.</p>
+<p><img class="aligncenter size-full wp-image-1363" alt="14px-game-review-7" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-7.png" width="590" height="443" /></p>
+<p>Each level builds on what you&#8217;ve learned in previous levels, but adds some form of unique twist to the game play to keep things interesting. Once you unlock a level, you can replay it again to improve your score, get those orbs you missed, or free the friends you ditched the first time around (don&#8217;t judge me 🙂 .</p>
+<p>14px has several settings you can adjust as well. You can turn off the music and sound effects, or change the control mode.</p>
+<p style="text-align: center;"><img class="aligncenter" alt="14px-game-review-4" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-4.png" width="590" height="443" /></p>
+<p>There are two control modes. One has offers a left and right control that you operate with your left thumb, and you jump up with your right thumb. The white control outlines are hard to see in the screen shots, so I&#8217;ve outlined them in red and labeled the controls in white.</p>
+<p><img class="aligncenter size-full wp-image-1387" alt="14px-control-mode-one" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-control-mode-one.jpg" width="590" height="443" /></p>
+<p>Control mode two, offers an option where you control the left, right, and up options with both thumbs. I found this mode hurt my brain too much, so I just play the game with control mode one turned on. I&#8217;m not that coordinated, but you might find mode two easier to operate than I did.</p>
+<p><img class="aligncenter size-full wp-image-1388" alt="14px-control-mode-two" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-control-mode-two.jpg" width="590" height="443" /></p>
+<p>One of the quirky things about the game that I love is that it keeps stats on all the different ways you die. This keeps the game feeling fun and challenging.</p>
+<p>Even during game play you are repeatedly told how you died and how many times you&#8217;ve tried to complete the level. It&#8217;s sort of like a badge of honor to know that you&#8217;ve been killed 67 times by falling off the platform when all you&#8217;re really trying to do is not get killed by a spinner, death floor, spikes, or a flying spikey thing (that what it&#8217;s actually called 🙂</p>
+<p><img class="aligncenter size-full wp-image-1361" alt="14px-game-review-5" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-5.png" width="590" height="443" /></p>
+<p>Fortunately there are some perks to being persistent. Once you build up enough points you can change your character from the default black inkblot to one of the other color characters, which gives you special abilities like super health, or super jump.</p>
+<p>Honestly, I haven&#8217;t tried to use one of these four characters yet because, I&#8217;m still trying to not fall off the platform like a duffus. I do have my eye on Prak, the blue super health inkblot. I think that will be my best bet at long term survival.</p>
+<p><img class="aligncenter size-full wp-image-1358" alt="14px-game-review-2" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-2.png" width="590" height="443" /></p>
+<p>Overall the game is a super fun and there hasn&#8217;t been a moment when I&#8217;ve felt like the game is redundant. Each new level offers different challenges and some even offer up dimensional challenges by flipping the map around during game play. When the map flips so does the orientation of everything, including gravity.</p>
+<p><strong>Online Editor</strong></p>
+<p>Like I mentioned earlier, 14px also has an <a href=http://14px.co.uk/level-editor/ target="_blank">online level editor</a> that allows you to create levels in your desktop browser and play them on your device and share them with your friends. The editor is in beta, so there are some missing features, but for now its a lot of fun to create your own maps and share them with others.</p>
+<p><iframe width="620" height="350" src="http://www.youtube.com/embed/E-vVltvlgbQ?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>The editor is well done and is super easy to use. The only issue I had with it was that I had to mouse over each of the different game pieces to learn what they were. I think if the pieces were organized into groups it might have helped me understand at a glance what pieces were meant to kill me and which ones were just non-lethal. It only takes a minute to figure it out for now, so I highly recommend creating your own maps.</p>
+<p>There is a <a href=https://itunes.apple.com/us/app/14px-free/id578642011?mt=8 target="_blank">free version of 14px</a>, if you want to try before you buy. It offers a few sample levels, but lacks the ability to play levels created with the online editor. The full version offers all worlds and levels as well.</p>
+<p><strong>10 Star Rating</strong></p>
+<p>Overall I give 14px 10 stars. It&#8217;s fun, creative, quirky, and innovative. I like the characters and the online editor gives me control over the app in a way that keeps things fresh and new. Download it now from either the <a href=https://itunes.apple.com/us/app/14px/id576855899?mt=8 target="_blank">Apple App Store</a> or <a href=https://play.google.com/store/apps/details?id=com.drummerGames.px14 target="_blank">Google Play</a> and give it a try, then come back here and tell me what you think of it. I&#8217;d love to hear your thoughts on the game.</p>
+<p>Charles McKeever<br />
+<a title="Mobile App Development Using Corona SDK" href=http://www.coronalabs.com/coronageek/>CoronaGeek</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/14px-game-review/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Samsung Galaxy S III (S3) Brings New Features</title>
+		<link>/blog/coronageek/samsung-galaxy-s-iii-s3-brings-new-features/</link>
+		<comments>/blog/coronageek/samsung-galaxy-s-iii-s3-brings-new-features/#comments</comments>
+		<pubDate>Tue, 08 May 2012 21:59:23 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+
+		<guid isPermaLink="false">http://sdkdallas.com/?p=98</guid>
+		<description><![CDATA[Samsung recently announced their new Samsung Galaxy S III (S3) phone and while Samsung's marketing department will tell you it's all about nature and being human, hardware fans will tell you it's all about the specs, and the software crowd will tell you it's about the operating system, I think it's all about being creative.]]></description>
+				<content:encoded><![CDATA[<p>Samsung recently announced their new Samsung Galaxy S III (S3) phone and while Samsung&#8217;s marketing department will tell you it&#8217;s all about nature and being human, hardware fans will tell you it&#8217;s all about the specs, and the software crowd will tell you it&#8217;s about the operating system, I think it&#8217;s all about being creative.</p>
+<p>From a hardware perspective, the screen has a 4.8-inch HD Super AMOLED display which is protected by Gorilla Glass 2. The device has Samsung&#8217;s new 1.4GHz quad-core Exynos processor, along with a GPU that is suppose to be 65 percent faster than the chip on the Galaxy S II. The phone is powered by a removable 2,100mAh battery. As for memory the S3 has a micro-SIM that provides room for expansion, but the base memory is 16GB, 32GB or 64GB of internal storage, depending on which version you buy.</p>
+<p>From a software perspective the S3 runs the Android 4.0 operating system and offers S-Voice and the picture in picture ability to watch videos while typing. The facial recognition feature is also an intriguing ability to add to the developer toolbox.</p>
+<p>But from a creative perspective mobile phones are more than just plastic devices. They are an extension of our ability to reach across space and time to do things we otherwise wouldn&#8217;t be able to do. Smart phone is such s limiting term. It&#8217;s a communicator, a navigator, an educator, and a companion. What we can do with them to enrich our lives and the lives of others is what makes them valuable, not their hardware, software, or organic-ness.</p>
+<p>As a developer what would you do with more horse power and SDK support?</p>
+<p><a href=http://www.coronalabs.com/coronageek/>CoronaGeek</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/samsung-galaxy-s-iii-s3-brings-new-features/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Upcoming Event &#8211; First Corona SDK Meetup In Dallas</title>
+		<link>/blog/coronageek/corona-sdk-meetup-dallas/</link>
+		<comments>/blog/coronageek/corona-sdk-meetup-dallas/#comments</comments>
+		<pubDate>Tue, 01 May 2012 03:00:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Corona SDK Meetup]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+		<category><![CDATA[Dallas]]></category>
+		<category><![CDATA[Meetup]]></category>
+
+		<guid isPermaLink="false">http://174.120.8.195/~sdk/?p=1</guid>
+		<description><![CDATA[To help us kick things off Dr. Brian Burton, author of Beginning Mobile App Development with Corona will be joining us to help answer questions about the Corona SDK. Dr. Burton teaches a course on mobile development at Abilene Christian University and he is a Corona SDK Ambassador.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter size-full wp-image-11002" title="corona-sdk-dallas-meetup-05042012" src="http://www.coronalabs.com/wp-content/uploads/2012/05/corona-sdk-dallas-meetup-05042012.jpg" alt="" width="590" height="300" />All great things start with a single first step. That&#8217;s why its time to hold our first meeting so we can take the important first step toward building a great Corona SDK developer community here in Dallas.</p>
+<p><iframe src="http://www.youtube.com/embed/soq9rRbwEzU?rel=0&amp;wmode=transparent" frameborder="0" width="590" height="430"></iframe></p>
+<p><strong>Here&#8217;s how to attend:</strong></p>
+<p><strong>Where:</strong> Sherlocks Pub, <a title="Corona SDK Meetup location" href=http://g.co/maps/nkgzf target="_blank">http://g.co/maps/nkgzf</a><br />
+<strong>When:</strong> Friday, May 4th, 2012 @ 6pm &#8211; 9pm<br />
+<strong>Cost:</strong> None<br />
+<strong>Special Notes:</strong> Wear your favorite t-shirt.</p>
+<p>To help us kick things off Dr. Brian Burton, author of <a title="Corona SDK Book Details" href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Beginning Mobile App Development with Corona</a> will be joining us to help answer questions about the Corona SDK. Dr. Burton teaches a course on mobile development at Abilene Christian University and he is a Corona SDK Ambassador.</p>
+<p>As a creative person with great ideas, this event is your chance to connect with other incredibe people. Story tellers, writers, artists, programmers, business types, we all have a skill we can use to create great things together.</p>
+<p>The Corona SDK makes it possible to <a title="About Corona SDK" href=http://www.coronalabs.com/corona/ target="_blank">rapidly prototype and develop mobile apps</a> on iOS, Android, Nook, and Kindle devices without needing to learn a complicated programming language. That means you can spend more time being creative.</p>
+<p>This first meeting is all about connecting and getting to know each other. Whether you&#8217;re new to mobile development or you&#8217;ve been developing for years, this event will put you in the same room with other talented people. Building relationships is what its all about, so come out and join us.</p>
+<p>See you at the meetup,</p>
+<p><strong>Charles McKeever</strong><br />
+Corona SDK Ambassador</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-sdk-meetup-dallas/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

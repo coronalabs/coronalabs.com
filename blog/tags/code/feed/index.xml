@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>code &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/code/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>code &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the new Corona Code Exchange</title>
+		<link>/blog/2014/01/20/introducing-the-new-corona-code-exchange/</link>
+		<comments>/blog/2014/01/20/introducing-the-new-corona-code-exchange/#comments</comments>
+		<pubDate>Mon, 20 Jan 2014 20:55:20 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[codeexchange]]></category>
+
+		<guid isPermaLink="false">/?p=55221</guid>
+		<description><![CDATA[Introducing a new version of the Corona Code Exchange, with full voting, commenting, sorting and search!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2012/05/Icon_Resources_CodeExchange.png" alt="Code Exchange icon" class="alignright size-full wp-image-36263" />Our Code Exchange has always been a great resource for the Corona community. But it was created years ago and it was really showing its age. So we&#8217;ve gone ahead and made a completely <a href=http://code.coronalabs.com>new/ version</a>. Please check it out at <a href=http://code.coronalabs.com>http://code.coronalabs.com</a>!</p>
+<p>You will notice that each entry has full commenting and voting built in. You can filter entries by popularity or recency and you can search based on full text, category or tags.</p>
+<p>When making a contribution, we strongly recommend that the code be entered into a repo, using an online tool like <a href=https://gist.github.com/ target="_blank">Gist</a>, <a href=https://github.com/ target="_blank">Github</a> or <a href=https://bitbucket.org/ target="_blank">Bitbucket</a>. The easiest to use and lightest-weight is Gist, and those repos can be easily embedded into the contribution if you enter the Gist&#8217;s id in the <a href=http://code.coronalabs.com/node/add/code>submission form</a>. Using a repo will make it easier for people to use your code and will make it easier for you to keep the code up to date if necessary. Opening an account on any of these services is easy and quick.</p>
+<p>Finally, we have taken just a few of the entries in the old Code Exchange and used them to seed the new Exchange. We are not automatically migrating all old entries because there was also a lot of code there that was out of date. We think it&#8217;s a better idea to start fresh, and we expect that over the next few weeks more code will be migrated over by the original authors. You can still browse the <a href=http://developer.coronalabs.com/code/>old exchange</a>, but no more submissions will be allowed.</p>
+<p>Last but not least, we want to thank all the developers that have contributed in the past and will contribute code in the future. It&#8217;s things like this that make the Corona community great and make it easy for people to get up to speed with Corona very quickly. Thank you!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/01/20/introducing-the-new-corona-code-exchange/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

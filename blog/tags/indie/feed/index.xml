@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>indie &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/indie/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>indie &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: The Pedestal &#8211; a unique take on a jumping game</title>
+		<link>/blog/2016/04/14/featured-app-the-pedestal-a-unique-take-on-a-jumping-game/</link>
+		<pubDate>Thu, 14 Apr 2016 13:52:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[jump]]></category>
+		<category><![CDATA[ninja]]></category>
+
+		<guid isPermaLink="false">/?p=66464</guid>
+		<description><![CDATA[Learn about the Pedestal, a new minimalist game from Daniel Ivanov in this featured app post.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66469 size-medium" src="/wordpress/wp-content/uploads/2016/04/pedestal01-169x300.jpg" alt="pedestal01" width="169" height="300" />The Pedestal is a fun game based on a minimalist approach. In the game, you play the ninja Akira who has been trapped on a desolate pedestal. Your goal is to survive by jumping to avoid shurikens being thrown at you and avoid being hit by the scythes swinging above you. The game was inspired by Eastern Asian culture and the stories of Edgar Allan Poe.</p>
+<p>The game was recently released by indie developer Daniel Ivanov to the Apple App Store. It contains stunning, eerie sound effects alongside appealing art, which creates an enjoyable atmosphere along with challenging game play. The game takes advantage of Corona SDK&#8217;s physics and particle effect libraries to give the game it&#8217;s punch.</p>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/mstvKwXJ5TQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>You can download it from the Apple App Store for $0.99.</p>
+<p><a href=https://itunes.apple.com/us/app/the-pedestal/id1093740987?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-66270 size-thumbnail" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+<p>What can you do with Corona SDK? <a href=/ target="_blank">Download it for Free</a> and see!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Glitch Games &#8211; building successful cross-platform adventures</title>
+		<link>/blog/2016/03/31/case-study-glitch-games-building-successful-cross-platform-adventures/</link>
+		<pubDate>Thu, 31 Mar 2016 18:05:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">/?p=66259</guid>
+		<description><![CDATA[In this case study, we take a look at Glitch Games, a two-man indie studio from Oxfordshire, UK, and their success using Corona SDK to build popular adventure games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66275" src="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png" alt="Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCA=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />This is a tale of two best friends since college: Graham Ransom the programmer and Simon Pearce the artist. Even though they went to different universities, both went on to study game development. They started <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> in January 2012 working on kids&#8217; educational titles. Within a month after they met, they took part in their first 48 hour game jam and tried to build an adventure game.</p>
+<p>The result was  a title called <em>The Hauntening</em> which went on to win that game jam. They ended up releasing the game in the App Store for free to see if there was any interest in it. The feedback was positive and they began working on their first full-fledged adventure game. Eight months later, <em><a href=http://www.foreverlostgame.com/ target="_blank">Forever Lost</a>: Episode 1</em> was released for iOS and Android. Since then they have completed the trilogy and a free prequel game.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/H9ethihZrMw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Graham first discovered Corona SDK in 2009 when Corona was a fledgling framework. When he and Simon formed Glitch Games, it only made sense to continue using Corona SDK.</p>
+<p>Having been around for a while, it&#8217;s safe to call Graham a pioneer in mobile adventure games and an early adopter of Corona Labs&#8217; technologies as they come out, including our recent desktop support. Not only is the full suite of games available on Apple&#8217;s App Store, Google Play, and Amazon, it&#8217;s also available on both OS X and Windows desktop. In addition, they have built their own adventure framework called Serenity which sits on top of Corona SDK and allows them to rapidly build adventure games.</p>
+<p><img class="alignnone size-large wp-image-66276" src="/wordpress/wp-content/uploads/2016/03/hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6ch900-1024x640.png" alt="hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6c=h900" width="960" height="600" /></p>
+<p>When asked &#8220;Why Corona?&#8221; Graham said &#8220;If it wasn&#8217;t for Corona, <em>Forever Lost</em> wouldn&#8217;t exist today. We&#8217;d most likely have to go get real jobs.&#8221;  With multiple-millions of downloads across all the the stores, Glitch games is one of the proverbial success stories for indie studios. <em>Forever Lost</em> has been #1 in multiple countries and it was short-listed for the TIGA awards a couple of years ago.</p>
+<p>Graham likes Corona for ease of development and quick iteration. Their first kids&#8217; apps were turned around in less than a month, while their full adventure games take around eight months to build. Graham&#8217;s advice to those new to app development? &#8220;Download Corona and start making a game!&#8221;</p>
+<h3>Availability</h3>
+<p><a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.glitchgames.foreverlostepisode1hd target="_blank"><img class="alignnone size-thumbnail wp-image-66269" src="/wordpress/wp-content/uploads/2016/03/GooglePlayStore-150x52.png" alt="GooglePlayStore" width="150" height="52" /></a><a href=http://www.amazon.com/Forever-Lost-Episode-1-HD/dp/B00BF9USIO/ target="_blank"><img class="alignnone size-thumbnail wp-image-66271" src="/wordpress/wp-content/uploads/2016/03/AmazonStore-150x52.png" alt="AmazonStore" width="150" height="52" /></a><a href=https://itunes.apple.com/us/app/forever-lost-episode-1/id1036708333?ls=1&mt=12 target="_blank"><img class="alignnone size-thumbnail wp-image-66274" src="/wordpress/wp-content/uploads/2016/03/MacStore-150x52.png" alt="MacStore" width="150" height="52" /></a><a href=http://glitchgames.itch.io/forever-lost-episode-1 target="_blank"><img class="alignnone size-thumbnail wp-image-66273" src="/wordpress/wp-content/uploads/2016/03/ItchIoStore-150x50.png" alt="ItchIoStore" width="150" height="50" /></a></p>
+<h3>Conclusion</h3>
+<p>With a great idea and patience, you can built successful games with Corona SDK. Dream, Build, Ship!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Game Legend John Romero Joins as Advisor, Talks Corona SDK</title>
+		<link>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/</link>
+		<comments>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/#comments</comments>
+		<pubDate>Thu, 24 Oct 2013 13:18:03 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Videos]]></category>
+		<category><![CDATA[advisor]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[john romero]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50340</guid>
+		<description><![CDATA[Today, I'm super happy to announce that John Romero has joined as an advisor! John has had an extremely prolific career across over a hundred games, including the iconic works Wolfenstein 3D, DOOM and Quake. He has seemingly boundless energy. He's not only working on new games, but he's also teaching classes in mobile game development and is a tireless advocate for indie game development.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m super happy to announce that John Romero has joined as an advisor! John has had an extremely prolific career across over a hundred games, including the iconic works Wolfenstein 3D, DOOM and Quake. He has seemingly boundless energy. He&#8217;s not only working on new games, but he&#8217;s also teaching classes in mobile game development and is a tireless advocate for indie game development.</p>
+<p>I recently sat down with John to talk about his experiences, perspective on the industry, the challenges facing game developers today, and (of course) what he loves about <a href=http://www.coronalabs.com/products/corona-sdk/>Corona</a>. Here are highlights from that conversation:</p>
+<p><iframe width="640" height="436" src="//www.youtube.com/embed/h2QofXwm384?rel=0" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Guest piece: For the love of game development</title>
+		<link>/blog/2013/09/12/guest-piece-for-the-love-of-game-development/</link>
+		<comments>/blog/2013/09/12/guest-piece-for-the-love-of-game-development/#comments</comments>
+		<pubDate>Thu, 12 Sep 2013 18:16:25 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">/?p=44726</guid>
+		<description><![CDATA[Paul Symons has worked as a Digital Marketer for 15 years and currently works as the head of digital for an agency. He recently took up <a href="www.coronalabs.com/products/corona-sdk">app development</a> as a hobby to continue his learning.
+
+Paul's recent release, <a href="http://www.coronalabs.com/blog/2013/06/10/app-of-the-week-plasma-pig/">Plasma Pig</a> was awarded App of the Week by Corona Labs in June 2013. In his guest piece, Paul writes about the lessons he learned on generating a profit in a competitive market and on developing for the sheer enjoyment of making games.]]></description>
+				<content:encoded><![CDATA[<p><em>Paul Symons has worked as a Digital Marketer for 15 years and currently works as the head of digital for an agency. He recently took up <a href=www.coronalabs.com/products/corona-sdk>app development</a> as a hobby to continue his learning.</p>
+<p>Paul&#8217;s recent release, <a href=http://www.coronalabs.com/blog/2013/06/10/app-of-the-week-plasma-pig/>Plasma Pig</a> was awarded App of the Week by Corona Labs in June 2013. In his guest piece, Paul writes about the lessons he learned on generating a profit in a competitive market and on developing for the sheer enjoyment of making games.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/09/pauls-300x290.jpg" alt="Paul Symons " class="alignleft size-medium wp-image-44728" />This is my stark and honest reflection of creating apps for iOS and Android. Please remember though, that I am not a company, just one guy, trying very, very hard to &#8216;make it&#8217; in a massively crowded marketplace.</p>
+<p>I&#8217;d like to start by talking about assumptions. What do I mean by that? Well, before I made <a href=https://itunes.apple.com/us/app/plasma-pig/id625315819?mt=8>Plasma Pig</a>, I had made some much smaller games, mainly for kids. These games were a bit quick and dirty: Number Pop, Shave the Sheep and Magic Spell. I built all these games with Corona SDK, and the platform was, and continues to be, an absolute pleasure to work with. Through creating these apps, I learned a huge amount about Corona, the various app stores and the processes for getting a game published. </p>
+<p>Image my surprise when these little games started getting 10-20 downloads a day&#8230; each! I thought to myself, &#8220;Ok, if I extrapolate that across a year, that&#8217;s over £5000 (at 69p per app!).&#8221; Not bad for a couple months of evening work! It&#8217;s amazing the motivation that earning money brings.</p>
+<p>So, back to my assumptions. I assumed that:</p>
+<ol>
+<li>By making a bigger game with better graphics, better sound and more levels, I would get more downloads.</li>
+<li>If I did more PR and marketing I was assured to succeed.</li>
+</ol>
+<p>Unfortunately, neither of those seeded true. I hear you shout: &#8220;But Paul, there are loads of review sites out there and that&#8217;s just the way to get your app seen and heard.&#8221;</p>
+<p>Well, assumptions are a dangerous thing. Plasma Pig took me six months of hard work, based on the assumption that the time I invested would be justly rewarded by the general public. After launch, based on an assumption I thought &#8216;time to market this bad boy,&#8217; I made a free version, reached out to every conceivable review site (not an easy task), spent several hundred dollars on Facebook mobile ads, and paid some &#8216;professional&#8217; PR companies to do the same.</p>
+<p>Well it appears I wasn&#8217;t deluded, and Plasma Pig *is* a good game as most review sites have a 5-star rating system and I never received lower than a 4-star review. Some review sites even made Plasma Pig &#8220;App of the Day&#8221; and Corona Labs was kind enough to make the game <a href=http://www.coronalabs.com/blog/2013/06/10/app-of-the-week-plasma-pig/>App of the Week</a>. Plasma Pig even got into the local newspaper which has a readership of 250,000. Brill! So with all of that I must have seen an uplift in sales right? Nope! Nothing. Plasma Pig, while critically successful is still essentially unknown and selling roughly 4-5 downloads a day on the App Store and 2-3 a day on Google Play with no downloads on Amazon Appstore.</p>
+<p>Why? Honestly I don&#8217;t know. Unfortunately, I have to come to conclusion that I simply do not have enough money to invest to make it successful. There are sites out there that guarantee you Top 25 in the App Store for $49,000 (yes, that&#8217;s what you&#8217;re up against) but it has taught me some VERY valuable lessons, that I really hope all Corona developers take on.</p>
+<ol>
+<li>While reviews are great, don&#8217;t assume that they are the answer to getting huge downloads. They aren&#8217;t. The most effective marketing I did was to keep badgering friends to download and review.</li>
+<li>Make your game awesome, please! Part of the reason our apps are so hard to find is that there is a LOT of rubbish out there, but DON&#8217;T assume that just because your game is great that revenues will be up.</li>
+<li>If you&#8217;re going to make a free version of your game, pay a lot of attention to converting people to the paid version.</li>
+<li>And this is the most important bit: don&#8217;t be dis-heartened, and keep creating. You&#8217;re in it because you love it, right?</li>
+</ol>
+<p>As for me, I still have high hopes for Plasma Pig, and I&#8217;ll keep fighting the good fight. I&#8217;m still pushing review sites, newspapers, friends and anyone else who will listen.</p>
+<p>I&#8217;m also getting on with creating more games, and this time I fear I may need to try the in-app purchase route (not a method I&#8217;m 100% on-board with) to monetize my game.</p>
+<p>The key here, is that while I&#8217;m still plugging away and intend to keep on creating with Corona SDK, I&#8217;m back to where I was at the beginning, developing games because I love it, not because I&#8217;m thinking of the ensuing riches.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/12/guest-piece-for-the-love-of-game-development/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Guest Piece: Making a Living in the Indie App Economy</title>
+		<link>/blog/2013/09/04/guest-piece-making-a-living-in-the-indie-app-economy/</link>
+		<comments>/blog/2013/09/04/guest-piece-making-a-living-in-the-indie-app-economy/#comments</comments>
+		<pubDate>Wed, 04 Sep 2013 16:23:32 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[monetization]]></category>
+
+		<guid isPermaLink="false">/?p=43785</guid>
+		<description><![CDATA[Laura Tallardy lives in Greenpoint, Brooklyn with her husband and their spoiled dog. She wears skinny jeans and works on digital dressup dolls all day, but swears she’s not a hipster. She just released her sixth Corona SDK powered app, <a href="https://itunes.apple.com/us/app/ballet-fashion-show-dress/id662597566?mt=8">Ballet Fashion Show</a>, a ballerina dress-up game for girls. Her other apps <a href="https://itunes.apple.com/us/app/mermaid-fashion-show-dress/id528096012?mt=8">Mermaid Fashion Show</a>, <a href="https://itunes.apple.com/us/app/princess-fashion-show/id548958149?mt=8">Princess Fashion Show</a>, <a href="https://itunes.apple.com/us/app/fairy-fashion-show-dress-up/id584206511?mt=8">Fairy Fashion Show</a>, <a href="https://itunes.apple.com/us/app/fairy-tale-games-mermaid-princess/id572811501?mt=8">Mermaid Princess Puzzles</a> and <a href="https://itunes.apple.com/us/app/flower-fairies-ballet-fairy/id614056889?mt=8">Fairy Ballerina Puzzles</a> are also available on iOS and Android.
+
+Laura's guest piece on making money as an indie app developer has been republished with her permission from <a href="http://thebillfold.com/">The Bill Fold</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Laura Tallardy lives in Greenpoint, Brooklyn with her husband and their spoiled dog. She wears skinny jeans and works on digital dressup dolls all day, but swears she’s not a hipster. She just released her sixth Corona SDK powered app, <a href=https://itunes.apple.com/us/app/ballet-fashion-show-dress/id662597566?mt=8>Ballet Fashion Show</a>, a ballerina dress-up game for girls. Her other apps <a href=https://itunes.apple.com/us/app/mermaid-fashion-show-dress/id528096012?mt=8>Mermaid Fashion Show</a>, <a href=https://itunes.apple.com/us/app/princess-fashion-show/id548958149?mt=8>Princess Fashion Show</a>, <a href=https://itunes.apple.com/us/app/fairy-fashion-show-dress-up/id584206511?mt=8>Fairy Fashion Show</a>, <a href=https://itunes.apple.com/us/app/fairy-tale-games-mermaid-princess/id572811501?mt=8>Mermaid Princess Puzzles</a> and <a href=https://itunes.apple.com/us/app/flower-fairies-ballet-fairy/id614056889?mt=8>Fairy Ballerina Puzzles</a> are also available on iOS and Android.</p>
+<p>Laura&#8217;s guest piece on making money as an indie app developer has been republished with her permission from <a href=http://thebillfold.com/>The Bill Fold</a>.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/09/tallardy20130530181718-1-119x150.jpg" alt="Laura Tallardy" class="alignleft size-thumbnail wp-image-43786" />I’m an independent children’s app developer who’s been in the iOS and Android app stores a little over a year, and I’m going to talk a little bit about the indie app economy. I’ve got four dress-up apps (mermaids, princesses, fairies and ballerinas, oh my!) that I’ve created myself and two puzzle apps (mermaid princesses and fairy ballerinas) that I’ve created with a partner. My apps have over 400,000 downloads between them, are sold worldwide in up to 21 languages, and have even won a couple awards.</p>
+<p>Actually making an app is an entire field of study itself but let’s skip that for now and focus on the finances.</p>
+<p>Here are five common ways for an app developer to make money:</p>
+<ol>
+<li><strong>Straight-up app sale</strong>. If someone buys your iOS app for $0.99, Apple takes 29 cents and gives you 70 cents. Set aside some of that for taxes, and you come to about 50 cents in your pocket for every app you sell.</li>
+<li><strong>In-app purchases</strong> are when someone downloads your app and you ask them to buy in-game items with real money. Same payment system as above, you get 70 cents, less taxes, so 50 cents for every 99 cents in-app purchase sale.</li>
+<li><strong>Ads!</strong> You’ve seen them—just by downloading the app and having a ad display you’ve given the developer a few cents, and you’ve dropped a few more cents in their pocket if you’ve clicked on one.</li>
+<li><strong>Selling the app as a property on an app buying and selling marketplace</strong>. You can sell your pre-made app to someone who then takes over the reins and sells it themselves (and keeps the profits, of course). Apps go for a couple hundred to a couple thousand dollars a pop.</li>
+<p>
+<li><strong>Working for the man!</strong> The man being an app development studio, or a client who needs an app. Your cut: whatever you can get up front, and/or a revenue share to split profits down the road.</li>
+</ol>
+<p>Now, what about if someone says they got a million downloads, how many drinks should you hit them up for? If they sold a million paid 99 cents apps, they’d have $700,000 before taxes. If they had a million downloads for a free app with a $0.99 in-app purchase required to unlock the rest of the app and no advertising, not everyone would unlock it (typically around one to two percent of people who download an app will make a purchase), so maybe $10,500 before taxes. If it was a million free downloads with advertising and a pay-per-install model, given a few ad network variables you could hope for around $13,000-$19,000 (very rough figure, the numbers can go up or down depending on how long people play the game and a few other factors).</p>
+<p>Never mind the hotshots though, what are the chances of making a decent profit? Everyone loves a <a href=http://www.nytimes.com/2012/11/18/business/as-boom-lures-app-creators-tough-part-is-making-a-living.html?pagewanted=all>bit of schadenfreude</a> so <a href=http://penny-arcade.com/report/article/going-broke-with-success-how-an-app-with-200000-downloads-led-to-devel>stories of failure</a> on the app stores tend to be more common than <a href=http://venturebeat.com/2012/10/19/heres-how-you-become-an-app-store-millionaire-interview/>stories of success</a>, but it’s totally do-able.</p>
+<p>While we’re on the subject, let’s talk startup costs. The bare minimum is a computer, a smartphone and some programming knowledge, and you can publish to Amazon for free. To publish in the Apple App Store you’ll need an Apple computer, an iPad or iPhone or iPod Touch, $99 for a one-year iOS Developer License and some programming knowledge. To get around the programming knowledge part you can buy software to help you along in your quest (free to a couple hundred bucks). You’ll probably have to pay a bit for code, art or audio assets, marketing and other sundry costs along the way. My first app cost around $600, but subsequent apps cost much less since I already had the software and developer license. Check out this <a href=http://orionsmason.wordpress.com/2012/02/27/how-to-become-an-indie-app-designer-while-being-incredibly-cheap/>excellent blog post</a> on how to keep starting costs down from Scott Adelman, an awesome indie dev I’ve created a couple apps with.</p>
+<p>But down to brass tacks! If you’ve thrown your hat in the app-making ring, how much can you expect to pull in a month? It’s all over the map. (You knew that, right?) Streaming Colour App Studio did an <a href=http://www.streamingcolour.com/blog/2011/09/28/results-ios-game-revenue-survey/>excellent survey</a> and analysis on app developer income (read <a href=http://www.streamingcolour.com/blog/2011/09/28/results-ios-game-revenue-survey/>lots more here</a> if you’re a chart geek, and a <a href=http://thegamebakers.com/money-and-the-app-store-a-few-figures-that-might-help-an-indie-developer.html>little more here</a>) and here’s the scoop: The bottom 25 percent have made less than $200 since they’ve been on the App Store. The next 25 percent have made between $200 and $3,000, and the 50-75 quarter made between $3,000 and $30,000. The top 10 percent have made $400K, and the top 4 percent are MILLIONAIRES!</p>
+<p>The truth is, that’s over the apps’ lifetimes. My fellow developers bring in a range from nothing to extra spending cash to a couple thousand a month and up, depending on how much time they can dedicate to apps (part-timers and students tend to pull in beer money, full-timers and exceptionally dedicated part-timers can make enough to live on if they hustle).</p>
+<p>Right now I’m pretty much living off of app money, and I’ve been at this for about 19 months full-time. It’s helped me pay off some youthful debts, deal with day-to-day expenses, save some cash and pay for my doggie’s vet bills with enough left over for some nail polish, maybe a CD and a couple candy bars.</p>
+<p>I’ve been living a fairly bohemian lifestyle for the past eight years, so I’m pleased with my riches of nail polish, candy, and CDs. What I’m getting at here is that if you have a sweet cushy job making $80,000 or more, there might be an adjustment period until you reach your preferred app tycoon income level.</p>
+<p>App development is hard work—no sugar coating that—and making it a viable job is a delicate operation. But if you have the passion to make an awesome app and aspire to one day hang around the house in your PJs while you watch Netflix and program, then go for it! It’s totally worth it have hundreds of thousands of people download and use your app, and sometimes it makes you look cool at parties.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/04/guest-piece-making-a-living-in-the-indie-app-economy/feed/</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Jackpot Words</title>
+		<link>/blog/2013/04/29/app-of-the-week-jackpot-words/</link>
+		<comments>/blog/2013/04/29/app-of-the-week-jackpot-words/#comments</comments>
+		<pubDate>Mon, 29 Apr 2013 22:23:36 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+
+		<guid isPermaLink="false">/?p=32715</guid>
+		<description><![CDATA[Created by Naomi Kokubo of LavaMind, Jackpot Words combines the thrill of casino slots with the challenge of word games.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/04/Jackpot-Words-145x150.png" alt="Jackpot Words" class="alignleft size-thumbnail wp-image-32716" />After a brief hiatus, we’re back with another awesome App of the Week! Created by Naomi Kokubo of LavaMind, <a href=http://developer.coronalabs.com/showcase/jackpot-words>Jackpot Words</a> combines the thrill of casino slots with the challenge of word games.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/Jackpot-Words-screenshot-300x168.jpg" alt="Jackpot Words screenshot" class="alignright size-medium wp-image-32717" />While traditional slot machines display only symbols such as cherries and bells, Jackpot Words overlays these objects with bubble letters that can be used to create words. To collect coins and to win jackpots, use your finger to swipe across letters on the screen. With more coins, you&#8217;ll even unlock special mini-games and treasures. You can choose to play against friends, a randomly selected opponent, or simply challenge yourself to see how many coins you can earn.</p>
+<p>For a refreshing take on your favorite word puzzles, head over to <a href=https://itunes.apple.com/us/app/jackpot-words/id546722251?mt=8>iTunes</a> and download Jackpot Words for free. Stay tuned for the game&#8217;s upcoming release for Android, Kindle and NOOK!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/29/app-of-the-week-jackpot-words/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Guest Piece: A Global Game Jam (GGJ) Developer Story &#8211; San Francisco Style</title>
+		<link>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/</link>
+		<comments>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/#comments</comments>
+		<pubDate>Fri, 19 Apr 2013 20:27:38 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=32339</guid>
+		<description><![CDATA[In January 2013, Alexey Chernikov, a professional game developer collaborated with a mix of of graphic artists, sound engineers, and fellow developers at Global Game Jam (GGJ). Learn why Alexey and his team choose Corona SDK to create a winning game at the 48-hour hackathon.]]></description>
+				<content:encoded><![CDATA[<p><em>Alexey Chernikov is a professional game developer and Corona SDK user. In January 2013, Alexey collaborated with a mix of of graphic artists, sound engineers, and fellow developers at <a href=http://www.coronalabs.com/blog/coronageek/corona-labs-does-global-game-jam-san-francisco-style/>Global Game Jam (GGJ)</a> to create Heart Day with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>. Corona Labs sponsored the 48-hour hackathon, which attracted over 14,000 developers and designers worldwide.</em></p>
+<hr>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/389788_487360441283541_1455970070_n-150x150.jpg" alt="Alexey Chernikov - headshot" class="alignleft size-thumbnail wp-image-32344" />This year&#8217;s Global Game Jam (GGJ) was a blast! We had a lot of fun creating Heart Day during the weekend and it was great to be surrounded by creative people who share a love of video games.</p>
+<p>The theme of the jam was announced as an ominous, dark pulsating sound. Our team chose to interpret that as an unhealthy heartbeat. We dug through ideas and decided to go with a game where you control a heart, through whatever situations life throws at it. The ominous twist is that the game character isn’t very healthy. Even doing simple things like eating donuts, or getting stuck in traffic can clog his arteries, and clots that aren’t attended to will burst. As Heart Manager, you must take care of all the ills that befall the cardiovascular system of your avatar, and keep him alive. At the start of a mission, you get to see the &#8220;to do&#8221; list, for your mission:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/baby-Background-1.png" alt="baby Background (1)" class="alignnone size-full wp-image-32340" /></p>
+<p>Aside from creating the graphics layout, we needed to make a scripted level system, screen switching, and the general gameplay, which required input handling and timing logic. Corona SDK was a great tool to handle such time intensive events, because the API is very high level. It saved a lot of time on setting up the screen layout, implementing UI widgets &#8211; a “time left” progress bar; a gradient bar to show how far the current heart rate is from its optimal value (determined by you actually keeping the heart rate steady at that bpm), and all the various interface screens, such as level select, mission briefing, game over, and more.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/game_scene_320x480.png" alt="game_scene_320x480" class="alignnone size-full wp-image-32341" /></p>
+<p>We choose Corona SDK to develop the game, because using Lua simplified the scripting tasks. The scripted level system was key, because the game allowed for some hilarious story telling. In each level, you&#8217;re in charge of the heart of a different person who goes through a list of tasks for the day. These tasks strain the cardiovascular system in different ways &#8211; requiring different heart rates, exposing you to more clot-generating chemicals, and stress. We also used a JSON format for describing levels, which felt very seamless with Lua (because the JSON data model is exactly like Lua tables).</p>
+<p>Another goal was to get more game mechanics in the game. The game worked well as a hub of mechanics and there was a lot of room to invent what could go wrong with the cardiovascular system. We ended up submitting with four mechanics: keeping a steady bpm, clots (nudge to clear), bursts (tap to clear) and heart failure (shake to clear). We only got some of the secondary mechanics in on the last day, and it was a good help that Corona SDK provided a pretty high level input handling interface &#8211; we had some time to experiment with the way we accepted the input to clear all the hazards that could occur.</p>
+<p>Overall, we were very happy with the result, and had a great time working on the game!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/photo_19.jpg" alt="&quot;Heart Day&quot; Team" class="alignnone size-full wp-image-32345" /></p>
+<p><em>-Alexey Chernikov</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Blendamaze: Delighting users with unique gameplay</title>
+		<link>/blog/2013/03/29/blendamaze-delighting-users-with-unique-gameplay/</link>
+		<pubDate>Fri, 29 Mar 2013 17:59:30 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=30767</guid>
+		<description><![CDATA[Nate Dicken is the owner of Borderleap and the creator of Blendamaze, a Corona App of the Week winner. As an artist and indie developer, Nate writes on creating unique gameplay to delight players of all ages.]]></description>
+				<content:encoded><![CDATA[<p><em>Nate Dicken is the owner of Borderleap and the creator of <a href=https://itunes.apple.com/us/app/blendamaze/id546937504?mt=8>Blendamaze</a>, a <a href=http://www.coronalabs.com/blog/2012/12/24/app-of-the-week-blendamaze/>Corona App of the Week</a> winner. As an artist and indie developer, Nate writes on creating unique gameplay to delight players of all ages.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Nate-Dicken.jpg" alt="Nate Dicken" class="alignleft size-full wp-image-30775" srcset="/wordpress/wp-content/uploads/2013/03/Nate-Dicken.jpg 200w, /wordpress/wp-content/uploads/2013/03/Nate-Dicken-150x150.jpg 150w" sizes="(max-width: 200px) 100vw, 200px" /><strong>A Solid Foundation</strong></p>
+<p>I confess I’m a bit of a perfectionist. I find myself often laboring over that single pixel that’s off or that bit of Lua code I’m trying to perfect. In those early months last year of deciding I wanted to make a game, this drove me to to research, research and research. I wanted every facet of what I built to be the best it could possibly be. Possibly a goal too lofty for my first game, but I needed to dive right in.  </p>
+<p>What type of game would I build? What games did well? What elements would I need to include in the game? How much would I charge and what monetization methods are most profitable? How do you get ranked in the app stores? How do you get featured? How in the world would I market this thing when I had nearly no connections yet in the industry? Too many questions! I can safely assume that you’ve battled with questions these as well.</p>
+<p>As I found, this is an ideal time to take a deep breath and look at the big picture. Towering above these unanswered questions was the comfort of knowing that if I created something original, made it look great, and added a solid user experience behind it, there was a good chance it could do really well. The foundation to any successful app is its quality.</p>
+<p><strong>The Importance of a Unique Idea</strong></p>
+<p>With my love of drawing and painting, I’d been contemplating the idea to create a color-theory game. Digging around the App Store I confirmed this was a good space to be building a game and there was the possibility of creating something really unique and special.  </p>
+<p>In its early stages, Blendamaze was actually called “Blender” and was a block-style game where you had to work with colors and “blend” them together to solve puzzles. This seemed a bit too much like other games out there such as Tetris, so I desired to have a more unique aspect to the gameplay. I would often ask during this brainstorming stage, “Why would anyone want to buy this?” Focusing on the end user is critical.</p>
+<p>When I was a kid, I had one of those original wooden labyrinth marble games that we’d often play. If you&#8217;ve ever played, you know they are quite fun &#8211; and difficult!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/labyrinth.jpg" alt="labyrinth" class="alignnone size-full wp-image-30768" /></p>
+<p>Last spring, I came across it in storage and memories of playing the labyrinth game began to mix with ideas of how I could combine it with a color theory component. Bingo! This was it &#8211; the unique recipe I needed for a unique game. The idea was born &#8211; using a marble to blend colors together with the intention of matching a specific target color. This was an early concept I had for the game before the “maze” component began to really take shape. As you can see in this version, there was multiple marbles per level&#8230;</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/blender-v2.png" alt="blender-v2" class="alignnone size-full wp-image-30770" /></p>
+<p><strong>Polishing the Idea</strong></p>
+<p>I  put significant thought into the details of Blendamaze. Solid user experience is so critical to creating a successful game or app that people enjoy. Building on the foundation of creating a quality game that people would hopefully love, I knew the design needed to be attractive, yet clean and simple.</p>
+<p>As the idea evolved, so did its complexity. With so many components blended together, my fear was that players might get lost in the experience. As we all know, and experience, ourselves with games and apps, if it’s complicated or looses our attention, we’re done with it quickly.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/blender-whiteboard.png" alt="blender-whiteboard" class="alignnone size-full wp-image-30771" /></p>
+<p>So many factors to consider! Obstacles, level creation, storyline, social sharing, scoring, achievements, and more. During this process it’s important to simplify and get to the root of the idea.  As hard as it is, an app or game can be made much stronger if features that don’t positively contribute to the core purpose are cut.  </p>
+<p>Consider the value of this for your next app or game. A web studio that&#8217;s often inspired me is <a href=http://37signals.com/>37Signals</a>, creators of Basecamp project management software. They&#8217;d often share that right before launch day, they&#8217;d nix entire features or sections. Why? Because doing this strengthened the user experience as well as remaining features, while simplifying the product.</p>
+<p>For Blendamaze, I&#8217;d considered numerous changes, especially changes to the storyline and character as well as the crazy obstacles. These seemed to detract from the simplicity of blending paint colors. The reviews have confirmed that users enjoy the balance between the blend of maze and paint.</p>
+<p>You should ask yourself these questions: &#8220;How would the end user like the game?&#8221; and &#8220;Would they find it enjoyable and easy to understand?&#8221; These questions led me to wonder how I would teach the user to play Blendamaze. One way that has proved successful has been to bake instructions right into the actual gameboard. I integrated instructions into the first few levels on the board itself, enabling people to learn the rules while actually playing.  </p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/blendamaze-instructions.png" alt="blendamaze-instructions" class="alignnone size-full wp-image-30772" /></p>
+<p><strong>Consistency is Key&#8230;</strong></p>
+<p>Consistency is important to consider for any game you create. Take a step back and think of how all the elements tie together aesthetically and functionally. I wanted every aspect of the game to look real. This focus on consistency guided every decision around design and user experience. Subtle shadows and bold, diminishing paint streaks that appear after paint splatter, helped portray this level of realism.  Fine-tuned physics even dictated how the marble would interact with the board and paint holes. Additional code needed to be written to enable something as simple as applying force to the ball as it nears a paint hole. Custom sound effects were created by programmatically altering sound pitch to create the effects of playing a physical labyrinth board. This all required extra time but was well worth it.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/blendamaze-screens.png" alt="blendamaze-screens" class="alignnone size-full wp-image-30773" /></p>
+<p>All the details came together to become a beautiful, yet challenging puzzle game that both adults and children enjoy. This has been a huge appeal as the color theory aspect is educational for children yet the game gets tough at later levels for older kids and adults. My desire to release a game with unique gameplay and with wide appeal has been taken quite well by fans! The reviews in the App Store have been truly humbling and I&#8217;m happy to see people who really love the game and who share it with friends. For your next game, I encourage you to seek out that unique aspect for your game or app. Develop, refine and polish the idea and build a solid user experience around it. Never sacrifice on quality and you’ll have a solid foundation to do well!</p>
+<p><strong>Getting in touch&#8230;</strong></p>
+<p>I look forward to connecting with more folks in the Corona community and working with mobile designers and developers on future projects. Please don’t hesitate to get in touch!  </p>
+<p><em>Nate Dicken</p>
+<p><a href=http://borderleap.com>http://borderleap.com</a><br />
+<a href=http://twitter.com/borderleap>http://twitter.com/borderleap</a><br />
+<a href=mailto:nate@borderleap.com>nate@borderleap.com</a><br />
+<a href=http://twitter.com/natedicken>http://twitter.com/natedicken</a><br />
+<a href=http://www.linkedin.com/in/natedicken/>http://www.linkedin.com/in/natedicken/</a></p>
+<p>BorderLeap is a mobile game/app studio that was founded in 2012 by Nate Dicken, a veteran of the web industry with over 15 years of design, UX and development experience. Keep an eye out for new apps and games by BorderLeap, including new features and levels for Blendamaze! You can view more info about Blendamaze at <a href=http://blendamaze.com>http://blendamaze.com</a> and grab your free copy in the App Store at <a href=https://itunes.apple.com/us/app/blendamaze/id546937504?mt=8&uo=4>https://itunes.apple.com/us/app/blendamaze/id546937504?mt=8&#038;uo=4</a></em></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>“Freeze!” and 100% Indie (Guest piece)</title>
+		<link>/blog/2013/03/22/freeze-and-100-indie-guest-piece/</link>
+		<comments>/blog/2013/03/22/freeze-and-100-indie-guest-piece/#comments</comments>
+		<pubDate>Fri, 22 Mar 2013 17:02:43 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[amazon appstore]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[nook apps]]></category>
+		<category><![CDATA[puzzler]]></category>
+		<category><![CDATA[Samsung Apps]]></category>
+
+		<guid isPermaLink="false">/?p=30041</guid>
+		<description><![CDATA[Andreas von Lepel is the developer of Freeze!, an award-winning game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.
+
+Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and receives glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Andreas von Lepel is the developer of <a href=http://www.coronalabs.com/blog/2012/12/03/app-of-the-week-freeze/>Freeze!</a>, an award-winning puzzler arcade game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.</p>
+<p>Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and has received glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/LepelEditorialMed-11.jpg" alt="Freeze! dev headshot" class="alignleft size-full wp-image-30510" />My name is Andreas von Lepel, and I&#8217;m the creator of <a href=https://itunes.apple.com/app/id518123684>Freeze!</a> &#8211; a physics arcade-puzzler that I published in 10 languages on <a href=https://itunes.apple.com/app/id518123684>Apple&#8217;s App Store</a>, <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze/dp/B00A1SL8SE>Amazon Appstore</a>, <a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze&hl=en>Google Play</a>, <a href=http://www.barnesandnoble.com/w/freeze-the-escape-frozen-gun-games/1113761191?ean=2940043931788>NOOK Apps</a> and Samsung Apps. Freeze! was also featured by Apple in 149 countries as “New and Noteworthy.”</p>
+<p>Freeze! climbed to the #1 position as a freemium game in 36 countries on iTunes, won the “2013 Indie Prize Europe” award and has to my surprise (and delight), received more than 1.3 million downloads.</p>
+<p>If you&#8217;re not familiar with Freeze!, take a look at the launch trailer.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/ciQgYVgT0gk" frameborder="0" allowfullscreen></iframe></p>
+<p>After Freeze! hit stores on November 30, 2012, lots of amazing things began to happen. I&#8217;d like to tell you about the most interesting.</p>
+<p>Recently I was contacted by Chillingo and was asked to sign an NDA between Chillingo, EA, Samsung and myself. It regarded the launch of a new web portal for indie developers called <a href= http://www.100percentindie.com>100%/ Indie</a>. It launched just a few weeks ago and I haven&#8217;t been able to write about it, until now that is.</p>
+<p>Chillingo asked me to write an article series about the development of Freeze! and I was, of course, happy to participate. After all, there aren&#8217;t many bigger names out there than Chillingo, EA and Samsung! I&#8217;m excited to share that the first part two parts of my series are now live, the first piece is about the <href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a>, while the second details my <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>work with Corona SDK</a>.</p>
+<p>If you take a look at the image below, it will give you a hint about the things I write about in the first piece. It&#8217;s a comparison of the initial prototype  of Freeze!, after two weeks of development, and the final game:</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Freeze-image.png" alt="Freeze! image" class="alignnone size-full wp-image-30042" /></p>
+<p>I wanted to write in order to promote <a href=www.coronalabs.com/products/Corona-sdk>Corona SDK</a>, because without it, the development of Freeze! would not have been possible. And while the first part of the Freeze! series covers lots of interesting tidbits about game design and prototyping, the second installment covers the work I did with Corona and the tools I used to make my game. And more active developers, translates to more income for Corona Labs, which means an even stronger SDK!</p>
+<p>So, and what&#8217;s 100% Indie all about? Well, as I wrote above, I did publish Freeze! for Samsung Apps. This isn&#8217;t as easy as it should be &#8211; they have a review process that&#8217;s a bit complicated and though using Corona SDK is fine for publishing to Samsung Apps, I had to make a few tweaks and problem solve through some issues.</p>
+<p>100% Indie is now offering a very attractive program: publish your game to Samsung Apps via the 100% Indie program, and if your game is accepted, (the Chillingo guys will have a closer look at the quality of your work) you will get 100% revenue for the first 6 month, then 90% for the next 6 months etc. Take a look at the <a href=http://www.100percentindie.com/about/>nice conditions</a> and of course, by working with Chillingo, you have a bigger chance of getting some app store promotions by Samsung as well.</p>
+<p>Now read my first two articles about the <a href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a> and have a good laugh at the problems I faced and the mistakes I made (thankfully I was able to correct most of them). Also, read about my experience <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>working with Corona SDK</a> as well as other tools, and then get back to coding to create some great games!</p>
+<p><em>Andreas von Lepel, Creator of Freeze!</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/22/freeze-and-100-indie-guest-piece/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Making Progress as a Solo Mobile Game Developer</title>
+		<link>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/</link>
+		<comments>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/#comments</comments>
+		<pubDate>Fri, 08 Mar 2013 22:57:08 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=29851</guid>
+		<description><![CDATA[Making games can be a lot fun, but it can also be a tremendous amount of work. Many people try to create games on their own but far fewer actually succeed -- myself included.
+
+With Kung-Fu Clash, I decided to try things differently than on previous projects. This post discusses some of the approaches that helped me to successfully publish my first game.]]></description>
+				<content:encoded><![CDATA[<p><em>Hugo Bonacci is the indie developer and designer of App of the Week winner, <a href=http://www.coronalabs.com/blog/2012/11/26/app-of-the-week-kung-fu-clash/>Kung-Fu Clash</a>. His passion for gaming began at a young each and Hugo is still a big fan of NES and SNES games (he even plays them with his kids!) and is inspired by games such as Final Fantasy, Zelda, Secret of Mana, and Chrono Trigger.</p>
+<p>During the day, Hugo works as a UX Consultant for a company in Dallas, Texas, but his real passion lies in game development. Check out Hugo&#8217;s software development blog and design portfolio at <a href=http://hugoware.net>hugoware.net/</a>.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Kung-Fu-Clash-150x128.png" alt="Kung-Fu Clash" class="alignleft size-thumbnail wp-image-29854" />Making games can be a lot fun, but it can also be a tremendous amount of work. Many people try to create games on their own but far fewer actually succeed &#8212; myself included.</p>
+<p>With <a href=https://itunes.apple.com/us/app/kung-fu-clash/id571843687?mt=8>Kung-Fu Clash</a> I decided to try things differently than on previous projects. This post discusses some of the approaches that helped me to successfully publish my first game.</p>
+<p><strong>Design First</strong></p>
+<p>Don&#8217;t be in a hurry to start writing code for your game. Take your time and plan what your game is about, how it works, and get a general idea of what needs to be done. It&#8217;s much quicker to find flaws on paper than to spend hours writing code only to discover an idea won&#8217;t work.</p>
+<p>Try to come up with an idea that makes your game distinct from others. Sometimes it&#8217;s as simple as taking a common gaming category (for example, a first person shooter) and giving it a unique twist (e.g. adding orange and blue portals!).</p>
+<p>You don&#8217;t need to have a detailed outline of every single screen and behavior in your game. I&#8217;ve found that simple sketches and notes are more than enough to get ideas out of your head.</p>
+<p>Planning shouldn&#8217;t be limited to only the start of a project. Any time you want to add a feature or modify the way something works, take some time to jot your ideas down before you begin.</p>
+<p><strong>Keep Things Simple</strong></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Ninja-mockups-264x300.png" alt="Ninja mockups" class="alignright size-medium wp-image-29857" /><br />
+As with any project, the number of tasks required for completion can quickly spiral out of control. Each time you think you&#8217;ve identified everything that needs to be done you end up noticing an entirely new set of tasks you&#8217;ve missed.</p>
+<p>Start by creating a list of the core requirements for your game, this means removing non-essential game elements like power-ups, high-scores, etc. Next, include each of the sprites, animations, backgrounds, music and other creative assets you&#8217;ll need to create. Lastly, don&#8217;t forget to include tasks that are generally overlooked until they&#8217;re needed, such as managing user settings, handling transitions between scenes, game menus, resource management, etc.</p>
+<p>It doesn&#8217;t take long before your &#8220;simple&#8221; game becomes a daunting list work that will take several weeks to finish. Don&#8217;t let this intimidate you. Having an overview of tasks to complete will help you set goals and track progress along the way.</p>
+<p>Lastly, if you want to add something to your game then go through this process again. Ask yourself what you will need to code and design to make it happen. Once you&#8217;ve figured out what needs to be done, decide if you really need the feature or if it can wait.</p>
+<p>Keeping things simple sometimes means telling yourself &#8220;no&#8221; about adding features to your game.</p>
+<p><strong>Stay Focused</strong></p>
+<p>It&#8217;s easy to get discouraged when you&#8217;re the only person working on a project, especially when progress is slow or you&#8217;ve been working for several months, but fortunately there are a couple ways to stay motivated.</p>
+<p>First, start by sharing your progress with friends, family, and social networks. Let people see what you&#8217;re working on and share in your excitement. Put your game on a device and let people to try it. It&#8217;s exciting, and highly motivating, to see your game in action.</p>
+<p>Don&#8217;t be discouraged if it doesn&#8217;t work correctly &#8212; it&#8217;s just a demo. Additionally, don&#8217;t act on user feedback immediately. Unless it&#8217;s a critical flaw, simply take note of their suggestions and then review it later. Trying to implement new ideas, even good ones, will slow down progress.</p>
+<p>Second, If you find yourself feeling unmotivated, overwhelmed, or simply confused on what you should be doing, then it&#8217;s probably a sign you need to get organized. Take some time to examine your project and write a list of remaining tasks. Simply knowing what needs to be done can go a long way in keeping a project on track.</p>
+<p>When you sit down to work, review your list and set yourself a goal of at least one task (or more) to finish and then mark them off as you go.</p>
+<p><strong>Use Time Wisely</strong></p>
+<p>Try and find ways to preview your ideas before you attempt to write code. For example, I use Flash for character design and animation, but it also works well for visualizing how a character looks moving across a background or to quickly experiment with different kinds of special effects.</p>
+<p>Creating art for a game is a very time consuming process so be sure to plan for high resolution displays early by using vector art, 3D, or very large PSDs. Don&#8217;t try and create your own sprite sheets by hand, but instead use applications like <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> or Zwoptex to streamline the process.</p>
+<p>Consider using stock resources for assets you’re not able to create for yourself. For example, I’m not a musician and I’ve wasted weeks of development time in the past trying to create music only to end up with sub-par results. For this project I decided to purchase royalty-free music instead. Not only did the music sound far superior to anything I would have created on my own, it saved a lot of time as a result.</p>
+<p>Avoid writing code if an open-source library is available that does the same thing. Even if it&#8217;s not an exact match, it&#8217;s much quicker to modify an existing library than write one from scratch. As interesting as writing &#8220;framework code&#8221; can be, your time is better spent focused on code specific to your game.</p>
+<p>Don&#8217;t be afraid to spend time on writing scripts that automate repetitive tasks. If you find yourself doing the same process a couple times then it&#8217;s a perfect candidate for automation. When you&#8217;re the only person working on a project, the time spent on tedious activities is time taken away from meaningful accomplishments.</p>
+<p>Lastly, avoid over-engineering your code. This isn&#8217;t a call for haphazard programming, but instead a reminder that the most perfectly abstracted code base that never ships is still a failure. Try to reuse code whenever possible (DRY), write helpful comments, and use meaningful function and variable names, but your primary focus should be on creating a flawless user experience. </p>
+<p><strong>Don&#8217;t Settle</strong></p>
+<p>Look carefully at every detail in your game and never accept &#8220;good enough.&#8221; If you aren&#8217;t happy with something, or it doesn&#8217;t &#8216;feel&#8217; right, then there&#8217;s a good chance that your audience won&#8217;t like it either. Polish every detail until you feel it&#8217;s perfect. Treat your game as if it were a masterpiece &#8212; it deserves no less!</p>
+<p>It&#8217;s difficult being the only person working on a project, but it also means you&#8217;re the only one who decides what goes into the final product. Take advantage of having complete control and only accept your best work!</p>
+<p><em>Hugo Bonacci, Creator of King-Fu Clash</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

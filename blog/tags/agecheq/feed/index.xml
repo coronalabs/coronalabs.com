@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>AgeCheq &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/agecheq/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>AgeCheq &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #99 &#8211; Discussing COPPA Compliance with AgeCheq</title>
+		<link>/blog/coronageek/corona-geek-99/</link>
+		<comments>/blog/coronageek/corona-geek-99/#respond</comments>
+		<pubDate>Mon, 21 Jul 2014 21:43:10 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[AgeCheq]]></category>
+		<category><![CDATA[COPPA]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59226</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, we talked about COPPA compliance with AgeCheq Director of Game Developer Relations, Tyler Smith. AgeCheq makes a simple SDK for Corona so indie developers can create games for kids without having to worry about the headache of creating their own COPPA compliance ecosystem.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/906H_bnhCpY?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, we talked about <a href=http://www.agecheq.com/?page_id=166 target="_blank">COPPA compliance with AgeCheq</a> Director of Game Developer Relations, Tyler Smith. Driving the conversation is the FTC&#8217;s recent decision to file lawsuit against Amazon for In-App purchases made by children. AgeCheq makes a simple SDK for Corona so indie developers can create games for kids without having to worry about the headache of creating their own COPPA compliance ecosystem.</p>
+<p>&nbsp;</p>
+<p><strong>Wow, 100 Hangouts!</strong></p>
+<p>Next week we&#8217;ll be hosting the 100th Corona Geek Hangout as usual. However, to celebrate the recording of 100 great shows, we&#8217;ll be hosting a special 101 Hangout on August 4th where Corona Labs staff members will be answering as many of your questions as possible during the 1 hour hangout. If you want to throw your questions into the mix, you can submit questions for the next two weeks. A prize will go to the best question, which will be selected by the regular Hangout panel.</p>
+<p>Enter for a chance to win. <strong><a href=https://coronalabs.wufoo.com/forms/corona-geek-101-questions-for-corona-labs-panel/ target="_blank">Submit a question</a></strong> now.</p>
+<p>&nbsp;</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-98/ target="_blank">Corona Geek #98 – Learning Mobile Application and Game Development with Corona SDK</a></li>
+<li><a href=https://bitbucket.org/develephant/mod_localize/wiki/Home target="_blank">Localize your apps with mod_localize</a> by Develephant</li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=http://www.maddiebearbooks.com/comics.html target="_blank">Maddie Bear Books comic strip</a></li>
+<li><a href=https://itunes.apple.com/us/app/minute-stretches-stretch-strengthen/id882267978?mt=8 target="_blank">Minute Stretches for iOS</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=/blog/2014/07/09/guest-post-agecheq-makes-it-easy-to-be-coppa-compliant/ target="_blank">Tutorial: Implementing AgeCheq with Corona SDK</a></li>
+<li><a href=http://www.cnet.com/news/apple-and-google-ordered-to-revise-app-store-refund-policies-in-south-korea/ target="_blank">South Korea Defines &#8211; Fair Trade Practices</a></li>
+<li><a href=http://www.forbes.com/sites/amitchowdhry/2014/07/10/apple-informed-the-ftc-about-googles-in-app-purchase-issues/ target="_blank">Apple Reportedly Informed The FTC About Google&#8217;s In-App Purchase Issues</a></li>
+<li><a href=http://techcrunch.com/2014/07/10/ftc-takes-legal-action-against-amazon-for-unauthorized-in-app-purchases/ target="_blank">FTC Takes Legal Action Against Amazon For Unauthorized In-app Purchases</a></li>
+<li><a href=http://www.gottabemobile.com/2014/07/18/google-opts-for-honesty-on-free-apps/ target="_blank">Google Opts for Honesty on Free Apps</a></li>
+</ul>
+<p><strong>Books</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile Application &amp; Game Development with Corona SDK</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Beginning Mobile App Development with Corona</a></li>
+</ul>
+<p><strong>Plugins</strong></p>
+<ul>
+<li><a href=http://gremlininteractive.com/product-category/corona-plugins/ target="_blank">Plugin Sale at Gremlin Interactive</a> ( Amazon Ads, Chartboost, Kiip, and Paypal )</li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-99/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-99-2014-07-21-coppa-compliance.mp3" length="61400584" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-99-2014-07-21-coppa-compliance.mp3" length="61400584" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-99-2014-07-21-coppa-compliance.mp3" length="61400584" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-99-2014-07-21-coppa-compliance.mp3" length="61400584" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

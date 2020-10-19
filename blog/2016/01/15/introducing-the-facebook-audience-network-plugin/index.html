@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Introducing the Facebook Audience Network plugin | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/00d0de513e0511587eebe2100ad2cfec.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="Corona Labs is pleased to announce immediate availability of the Facebook Audience Network plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs." />
+
+<meta name="keywords"  content="ads,advertising,facebook,facebook audience network,monetization,plugin,uncategorized" />
+
+<link rel="canonical" href="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/" />
+<meta property="og:title" content="Introducing the Facebook Audience Network plugin | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2015/07/facebook-logo.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="Corona Labs is pleased to announce immediate availability of the Facebook Audience Network plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook. Using familiar API calls like .load() and .show(), you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook. To get started, visit the Getting Started with the Audience Network page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app. Testing Facebook Audience Network IMPORTANT — Facebook has a method for calling test ads which is different from other Corona ad providers. To test ads during implementation of this plugin, you must follow their requirements. Please read the notes in the fbAudienceNetwork.init() documentation and follow the steps to enable test ads. Initializing the plugin On the Corona side, this plugin has been pre" />
+<meta property="article:published_time" content="2016-01-16T01:11:53Z" />
+<meta property="article:modified_time" content="2016-01-16T01:11:53Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Introducing the Facebook Audience Network plugin | Corona Labs" />
+<meta name="twitter:description" content="Corona Labs is pleased to announce immediate availability of the Facebook Audience Network plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook. Using familiar API calls like .load() and .show(), you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook. To get started, visit the Getting Started with the Audience Network page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app. Testing Facebook Audience Network IMPORTANT — Facebook has a method for calling test ads which is different from other Corona ad providers. To test ads during implementation of this plugin, you must follow their requirements. Please read the notes in the fbAudienceNetwork.init() documentation and follow the steps to enable test ads. Initializing the plugin On the Corona side, this plugin has been pre" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2015/07/facebook-logo.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2015/07/facebook-logo.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-b66c534ea2d32d9123d9ba2034031f08.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Introducing the Facebook Audience Network plugin Comments Feed" href="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/" />
+
+
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='https://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='https://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-b8674cbf705f6800e4c39626ea12a541.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-1a19bb4009b00727ae545e834c88ec1f.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-88312d6ccff4a3570b3db197b12cb532.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-698aa832940bd67decd795f1bd23433b.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2016\/01\/15\/introducing-the-facebook-audience-network-plugin\/","en":"\/blog\/2016\/01\/15\/introducing-the-facebook-audience-network-plugin\/","US":"\/blog\/2016\/01\/15\/introducing-the-facebook-audience-network-plugin\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-824426e66e79e692e26c5e5b63cb6452.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-3d7bf654e9e30cc40e584574182b2763.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='From the Forum — Issue #106' href='/blog/2016/01/15/from-the-forum-issue-106/' />
+<link rel='next' title='We are growing! Corona Labs hires more staff' href='/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=65212' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-65212 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Introducing the Facebook Audience Network plugin</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-65212" class="post-65212 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-ads tag-advertising tag-facebook tag-facebook-audience-network tag-monetization-2 tag-plugin">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">15 January 2016<meta itemprop="interactionCount" content="UserComments: 43"/></span></p>
+						<h2 itemprop="name" class="entry_title">Introducing the Facebook Audience Network plugin</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/rob/">Rob Miracle</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/uncategorized/" rel="category tag">Uncategorized</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Introducing+the+Facebook+Audience+Network+plugin&amp;p[url]=%2Fblog%2F2016%2F01%2F15%2Fintroducing-the-facebook-audience-network-plugin%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2015/07/facebook-logo.png&amp;p[summary]=Corona+Labs+is+pleased+to+announce+immediate+availability+of+the+%3Ca+href%3D%5C%22https%3A%2F%2Fdocs.coronalabs.com%2Fplugin%2FfbAudienceNetwork%2Findex.html%5C%22%3EFacebook+Audience+Network%3C%2Fa%3E+plugin.+This+new+plugin+brings+Facebook+Ads+to+your+Corona-based+apps+with+a+straightforward+collection+of+APIs.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=Corona+Labs+is+pleased+to+announce+immediate+availability+of+the+%3Ca+/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2016%2F01%2F15%2Fintroducing-the-facebook-audience-network-plugin%2F&amp;title=Introducing+the+Facebook+Audience+Network+plugin&amp;description=Corona+Labs+is+pleased+to+announce+immediate+availability+of+the+%3Ca+href%3D%22https%3A%2F%2Fdocs.coronalabs.com%2Fplugin%2FfbAudienceNetwork%2Findex.html%22%3EFacebook+Audience+Network%3C%2Fa%3E+plugin.+This+new+plugin+brings+Facebook+Ads+to+your+Corona-based+apps+with+a+straightforward+collection+of+APIs.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2015%2F07%2Ffacebook-logo.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9beb5873095087" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+    plugins =
+    {
+        ["plugin.fbAudienceNetwork"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9beb5873095087-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9beb5873095087-2">2</div><div class="crayon-num" data-line="crayon-5f8ded6e9beb5873095087-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9beb5873095087-4">4</div><div class="crayon-num" data-line="crayon-5f8ded6e9beb5873095087-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9beb5873095087-6">6</div><div class="crayon-num" data-line="crayon-5f8ded6e9beb5873095087-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9beb5873095087-8">8</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9beb5873095087-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">plugins</span><span class="crayon-h"> </span><span class="crayon-o">=</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9beb5873095087-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8ded6e9beb5873095087-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">[</span><span class="crayon-s">"plugin.fbAudienceNetwork"</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-o">=</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9beb5873095087-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8ded6e9beb5873095087-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">publisherId</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"com.coronalabs"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9beb5873095087-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">supportedPlatforms</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">iphone</span><span class="crayon-o">=</span><span class="crayon-r">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">android</span><span class="crayon-o">=</span><span class="crayon-r">true</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8ded6e9beb5873095087-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9beb5873095087-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0028 seconds] -->
+<p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9bec4262923549" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local fbAudienceNetwork = require( "plugin.fbAudienceNetwork" )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = "[your banner placement ID here]"
+local interstitialPlacementID = "[your interstitial placement ID here]"
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == "init" ) then
+        print( "Facebook Audience Network event: initialization successful" )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == "loaded" ) then
+            print( "Facebook Audience Network event: " .. event.type .. " ad loaded successfully" )
+            if ( event.type == "banner" ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == "interstitial" ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == "closed" ) then
+        print( "Facebook Audience Network event: " .. event.type .. " ad closed by user" )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == "clicked" ) then
+        print( "Facebook Audience Network event: " .. event.type .. " ad clicked/tapped by user" )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == "failed" ) then
+        print( "Facebook Audience Network event: " .. event.type .. " ad failed to load" )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )
+
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-2">2</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-4">4</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-6">6</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-8">8</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-10">10</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-12">12</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-14">14</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-16">16</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-18">18</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-20">20</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-22">22</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-24">24</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-26">26</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-28">28</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-30">30</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-32">32</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-34">34</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-36">36</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-38">38</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-40">40</div><div class="crayon-num" data-line="crayon-5f8ded6e9bec4262923549-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bec4262923549-42">42</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">require</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"plugin.fbAudienceNetwork"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-2">&nbsp;</div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-3"><span class="crayon-c">-- Preset Facebook placement IDs; replace these with your own</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-4"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">bannerPlacementID</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"[your banner placement ID here]"</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-5"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">interstitialPlacementID</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"[your interstitial placement ID here]"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-6">&nbsp;</div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-7"><span class="crayon-c">-- Ad listener function</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-8"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-e">adListener</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Successful initialization of the Facebook Audience Network</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"init"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Facebook Audience Network event: initialization successful"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-13">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- An ad loaded successfully</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"loaded"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Facebook Audience Network event: "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-s">" ad loaded successfully"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"banner"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-18"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- To show the banner upon load completion, call fbAudienceNetwork.show() here</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-19"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"interstitial"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-20"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- To show the interstitial upon load completion, call fbAudienceNetwork.show() here</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-21"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-22">&nbsp;</div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-23"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- An interstitial ad was closed by the user</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-24"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"closed"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-25"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Facebook Audience Network event: "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-s">" ad closed by user"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-26"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Process any task involved with an ad being closed by the user</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-27">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-28"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- The ad was clicked/tapped</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-29"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"clicked"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-30"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Facebook Audience Network event: "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-s">" ad clicked/tapped by user"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-31"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Process any task involved with an ad being clicked by the user</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-32">&nbsp;</div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-33"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- The ad failed to load</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-34"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"failed"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-35"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Facebook Audience Network event: "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-r">type</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-s">" ad failed to load"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-36"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-37"><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-38">&nbsp;</div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-39"><span class="crayon-c">-- Initialize the Facebook Audience Network</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-40"><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">init</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">adListener</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bec4262923549-41">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bec4262923549-42">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0059 seconds] -->
+<p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9becb776293834" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+-- Banner
+fbAudienceNetwork.load( "banner", bannerPlacementID, "BANNER_HEIGHT_50" )
+-- Interstitial
+fbAudienceNetwork.load( "interstitial", interstitialPlacementID )</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9becb776293834-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9becb776293834-2">2</div><div class="crayon-num" data-line="crayon-5f8ded6e9becb776293834-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9becb776293834-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9becb776293834-1"><span class="crayon-c">-- Banner</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9becb776293834-2"><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">load</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"banner"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">bannerPlacementID</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"BANNER_HEIGHT_50"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9becb776293834-3"><span class="crayon-c">-- Interstitial</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9becb776293834-4"><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">load</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"interstitial"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">interstitialPlacementID</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9bed3815907897" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+fbAudienceNetwork.show( "banner", bannerPlacementID, { yAlign="bottom" } )</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9bed3815907897-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9bed3815907897-1"><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">show</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"banner"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">bannerPlacementID</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-v">yAlign</span><span class="crayon-o">=</span><span class="crayon-s">"bottom"</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9bed7816161566" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( "interstitial", interstitialPlacementID )
+end
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9bed7816161566-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bed7816161566-2">2</div><div class="crayon-num" data-line="crayon-5f8ded6e9bed7816161566-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bed7816161566-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9bed7816161566-1"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">isLoaded</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">interstitialPlacementID</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-r">true</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bed7816161566-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">show</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"interstitial"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">interstitialPlacementID</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8ded6e9bed7816161566-3"><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bed7816161566-4">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8ded6e9bedb234392899" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+fbAudienceNetwork.hide( bannerPlacementID )
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8ded6e9bedb234392899-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8ded6e9bedb234392899-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8ded6e9bedb234392899-1"><span class="crayon-v">fbAudienceNetwork</span><span class="crayon-sy">.</span><span class="crayon-e">hide</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">bannerPlacementID</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8ded6e9bedb234392899-2">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/ads/" rel="tag">ads</a>, <a href="/blog/tags/advertising/" rel="tag">advertising</a>, <a href="/blog/tags/facebook/" rel="tag">Facebook</a>, <a href="/blog/tags/facebook-audience-network/" rel="tag">Facebook Audience Network</a>, <a href="/blog/tags/monetization-2/" rel="tag">monetization</a>, <a href="/blog/tags/plugin/" rel="tag">plugin</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				Rob Miracle			    </span>
+				</h5>
+				<span class="author_email">rob@coronalabs.com</span>
+									<div class="author_text">
+						<p>Rob is the Developer Relations Manager for Corona Labs. Besides being passionate about helping other developers make great games using Corona, he is also enjoys making games in his spare time.
+
+Rob has been coding games since 1979 from personal computers to mainframes. He has over 16 years professional experience in the gaming industry.</p>
+					</div>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>43 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-4694">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 17:58h, 17 January</span>
+						<div class="text_holder" id="comment-4694">
+				<p>Wait why exactly am I going to give you guys 20% of the revenue my apps make? Please tell me this isn&#8217;t going to be the new norm of the company? I was more then happy to pay my 600$ a year but now you&#8217;re trying to take 20% of all my revenue and tell me that corona is free.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4695">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 18:03h, 17 January</span>
+						<div class="text_holder" id="comment-4695">
+				<p>For those that didn&#8217;t see it this is what it says in the docs &#8220;For monetization through the Facebook Audience Network plugin, Corona Labs takes a 20% revenue share in the form of a ratio model. No special action is needed during implementation — simply integrate the plugin and 1 out of every 5 ads will be served on a Corona Labs placement ID.&#8221;</p>
+<p>Ratio model is the most asinine thing I&#8217;ve heard of in a long time.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4714">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:27h, 19 January</span>
+						<div class="text_holder" id="comment-4714">
+				<p>Corona SDK is free and there are other monetization options available that do not employ a ratio model.  </p>
+<p>We are revising the ratio model such that it will be tiered based on growth.  More information to come shortly.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4696">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1e6776e64bd5065d98ff974f7559887b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">adrian</h5>
+			<span class="comment_date">Posted at 20:06h, 17 January</span>
+						<div class="text_holder" id="comment-4696">
+				<p>I have read in multiple places now that although Corona will be Free, some plugins will either have some sort of &#8220;ratio model&#8221; (to use the term you like) or cost extra to use if you have the free version of Corona. They have to make money somehow and Perk has to make back 2M it paid for Corona. I wish it was 10% for the Facebook Audience Network and not 20%, but it is still better than nothing.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4697">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 21:36h, 17 January</span>
+						<div class="text_holder" id="comment-4697">
+				<p>I mean for those making a few dollars 10-20% is just fine I suppose. I&#8217;d rather pay the 600$ I used to pay before they went free. 20% of my revenue would be well over 6 figures. I have no problem paying money to use corona but using the &#8220;ratio model&#8221; only benefits those making less then 3,000$ a year or the old 600$ a year model works a lot better.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4703">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/62a4f025e1bfde1cca059054d361f0f9-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Ruben</h5>
+			<span class="comment_date">Posted at 05:29h, 18 January</span>
+						<div class="text_holder" id="comment-4703">
+				<p>Exactly.<br />
+For people just starting a free SDK with 1/5 of revenue share going to Perk could work. </p>
+<p>But for even small devs doing more than 500$/month in ads, the real cost of Corona would skyrocket.</p>
+<p>You could just get the Enterprise at the point, but if you don&#8217;t need it, it doesn&#8217;t make sense getting it. We need a Pro version for small/mid devs that don&#8217;t need Enterprise.<br />
+Otherwise I&#8217;m sorry but there&#8217;s no way I&#8217;m going to pay thousands of dollars-yearly-for Corona.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4715">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:30h, 19 January</span>
+						<div class="text_holder" id="comment-4715">
+				<p>We&#8217;re working to release a revised ratio model that is tiered in nature based on growth that will bring the ratio down to as low as 1/20 rev-share.  </p>
+<p>I&#8217;d like to think the Corona SDK helps you make money as a developer.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4698">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 00:11h, 18 January</span>
+						<div class="text_holder" id="comment-4698">
+				<p>Hi David,</p>
+<p>well, I guess with your Casino games you must be one of the guys who make real money &#8211; most of the other developers making &#8220;normal&#8221; games ain&#8217;t that lucky.</p>
+<p>But I fully agree with you &#8211; there should be an option without any revenue split, e.g. if you pay for enterprise you don&#8217;t have to share your earnings.</p>
+<p>Maybe something like that is already implemented / planned for? I don&#8217;t know, didn&#8217;t have the time to go into the fine print right now.</p>
+<p>Best<br />
+Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4704">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Dave Grant</h5>
+			<span class="comment_date">Posted at 05:53h, 18 January</span>
+						<div class="text_holder" id="comment-4704">
+				<p>Yeah I totally get that and for those who don&#8217;t make that much money the revenue sharing is a good idea. It limits upfront costs. I know I&#8217;m not the norm by any means but I&#8217;m sure there are quite a few people doing over 3,000$ a year.</p>
+<p>I have enterprise actually. I also have all the corona cards. At one point I was paying for multiple pro accounts, enterprise and cards something like 2-3k per year and I was perfectly fine with that. Under their rev sharing they would be making that every few days from me.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4699">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/26d29f4946533441c44e0ae823f280f3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Dr.Klaus</h5>
+			<span class="comment_date">Posted at 01:22h, 18 January</span>
+						<div class="text_holder" id="comment-4699">
+				<p>if 20% == 100 USD a day, than Corona will get about 365*100 = 36.5k usd in year.<br />
+I think will be better to hire good programmer, who remake my game using, for example, UNITY, and I forget about stupid plugins and greedy corona team 🙂</p>
+<p>I going to think about it 🙁</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4716">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:32h, 19 January</span>
+						<div class="text_holder" id="comment-4716">
+				<p>We&#8217;re revising the model but since you&#8217;re doing math here &#8211; you can&#8217;t forget the flipside of the equation.  80% = $400.  $400 x 365 = $146,000/year.  Not too bad.</p>
+<p>And if you don&#8217;t make it, you don&#8217;t pay us anything.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4722">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/26d29f4946533441c44e0ae823f280f3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Dr.Klaus</h5>
+			<span class="comment_date">Posted at 03:55h, 20 January</span>
+						<div class="text_holder" id="comment-4722">
+				<p>I am Enterprise developer. I have purchased Corona and do not want to pay additionally!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4724">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 06:15h, 20 January</span>
+						<div class="text_holder" id="comment-4724">
+				<p>Please don&#8217;t take this the wrong way but you can&#8217;t take the success for everyones apps. What I found about the app game is it doesn&#8217;t really require a high quality app it just requires great marketing. If you guys were helping me with marketing then I&#8217;d be all for the rev sharing. You just just give me the ability to make the app which I could make in native, unity, cocos, swift, flash, titanium etc etc.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4725">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/26d29f4946533441c44e0ae823f280f3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Dr.Klaus</h5>
+			<span class="comment_date">Posted at 08:07h, 20 January</span>
+						<div class="text_holder" id="comment-4725">
+				<p>David Grant +1<br />
+There are lot of guys who can&#8217;t to pay for Enterprise version of corona and in this case corona staff can use rev sharing. BUT if I use PAID version of corona engine, there is NOTHING for you guys to claim or share.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4700">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8c73f9428b81445613f8fc6452757da7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.ubj3d.com/' rel='external nofollow' class='url'>Damir Kranjcec</a></h5>
+			<span class="comment_date">Posted at 01:23h, 18 January</span>
+						<div class="text_holder" id="comment-4700">
+				<p>Agree with the above comments.</p>
+<p>Getting harder and harder for indie developers to make any money.</p>
+<p>My suggestion: Make a Pro version of Corona which would include Corona Enterprise and charge for it.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4701">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/975dec7693aab4f1fbf85a39c2b80664-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Anthony</h5>
+			<span class="comment_date">Posted at 04:40h, 18 January</span>
+						<div class="text_holder" id="comment-4701">
+				<p>Is the Perk ad shown first? </p>
+<p>If so, that disadvantages the developer. E.g. 1 interstitial shown and then app closure does happen.  But perhaps more importantly&#8230;</p>
+<p>&#8230; Those earning a pittance using Corona will likely not object to the ratio model. Those, like David Grant (and there are others) that earn serious money will almost certainly not accept this. It&#8217;s simply too costly for the developer. Different Corona developers will effectively be paying different amounts for the same product.</p>
+<p>I can&#8217;t see how Perk can get a good return on this &#8220;ratio&#8221; model. The top earning Corona developers will be forced to move on. Those earning very little (even if there are large numbers of them) will likely not generate enough revenue to sustain Corona/Perk.</p>
+<p>Let&#8217;s survey the community. I for one wish to see a return to a paid subscription.</p>
+<p>Best &#8211; Anthony.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4717">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:35h, 19 January</span>
+						<div class="text_holder" id="comment-4717">
+				<p>There is no Perk ad shown here.  </p>
+<p>We&#8217;re revising the ratio to be tiered based on app growth and will have more details on this shortly.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4702">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.active-documents.com/' rel='external nofollow' class='url'>jch_APPLE</a></h5>
+			<span class="comment_date">Posted at 05:03h, 18 January</span>
+						<div class="text_holder" id="comment-4702">
+				<p>I&#8217;m not sure to understand. Does-it mean that if I implement this plug-in, 20% of my sales will go to Corona ? Or just that revenue made by FAN will be split 80-20 ?<br />
+My opinion is that Corona should go back to old way, with an annual fee for pro users. Everybody can understand that a company has to pay people, &#8220;free&#8221; can&#8217;t be long term</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4718">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:36h, 19 January</span>
+						<div class="text_holder" id="comment-4718">
+				<p>We&#8217;re revising the ratio model to be tiered and oriented around your app&#8217;s growth.  Important to note is that this is FAN plugin specific and not all plugins will operate the same way.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4705">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.active-documents.com/' rel='external nofollow' class='url'>jch_APPLE</a></h5>
+			<span class="comment_date">Posted at 09:01h, 18 January</span>
+						<div class="text_holder" id="comment-4705">
+				<p>There&#8217;s also the possibility for us to develop an app for a third party and being paid for that. If our customers intend to have a ROI based on ad revenues, it will be difficult for us to explain them that they have paid to get 80% for them and 20% for Corona.<br />
+Coming back to 2014&#8217;s price scheme seems to be the solution. Corona guy&#8217;s, you have the mailing list, ask the question to the community !</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4719">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:36h, 19 January</span>
+						<div class="text_holder" id="comment-4719">
+				<p>This is FAN plugin specific.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4727">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.active-documents.com/' rel='external nofollow' class='url'>jch_APPLE</a></h5>
+			<span class="comment_date">Posted at 23:47h, 21 January</span>
+						<div class="text_holder" id="comment-4727">
+				<p>Thank taking time to respond to my 2 questions. I&#8217;m not directly concerned (I don&#8217;t get revenues with adds) but could you imagine Bill Gates asking writers to share some revenues because they would have use Word to write their best-sellers?<br />
+Having free licence to get a maximum of developers is nice.<br />
+These developers could easily understand that they have to share their revenues (all revenues generated with Corona).<br />
+Just add a  paying Pro licence without share.<br />
+This way you&#8217;ll satisfy everybody and you&#8217;ll avoid having developers moving different platforms.<br />
+Something has changed since Perk acquired Corona and you show more personal investment than previous owners. Please don&#8217;t let a simple decision having a negative impact on a bunch of very positive announcements and actions.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4706">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4e9d314a83f811f2a9ab4629d80e9d00-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Naveen</h5>
+			<span class="comment_date">Posted at 11:34h, 18 January</span>
+						<div class="text_holder" id="comment-4706">
+				<p>I hope other plugins don&#8217;t go this way. I&#8217;d happily pay a few thousand a year so get a mid tier with no revenue sharing.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4707">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4e9d314a83f811f2a9ab4629d80e9d00-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Naveen</h5>
+			<span class="comment_date">Posted at 11:35h, 18 January</span>
+						<div class="text_holder" id="comment-4707">
+				<p>*to get a mid tier with no revenue sharing. This model doesn&#8217;t make sense for devs that make a decent amount.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4708">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9f35a585947b9cfd947d5f1f8747d6f3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Tony</h5>
+			<span class="comment_date">Posted at 13:54h, 18 January</span>
+						<div class="text_holder" id="comment-4708">
+				<p>Guys with Enterprise, unfortunately, let&#8217;s not hope much from Corona Team. seems they are not targeting us anymore.<br />
+So, Let&#8217;s build our community of plugins. or let&#8217;s move to unity.</p>
+<p>by saying Enterprise Guys, I think it covers most those who doing well with Corona.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4709">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5dd943c31375826ff7ec5736983e9916-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Steven Warren</h5>
+			<span class="comment_date">Posted at 14:48h, 18 January</span>
+						<div class="text_holder" id="comment-4709">
+				<p>I have zero issues paying for Corona SDK. I paid for a license before it was offered free. That was a fixed cost and a price of doing business. What I do have issues with, is giving away 20% of my revenue. I generate 90% of my revenue from ads. </p>
+<p>I love using Corona, it makes so many things simpler. But, I am a business man and I am in business to increase my bottom line. Corona&#8217;s monetization platforms have been diminishing over the last few years making it harder to justify using it. </p>
+<p>Could someone from Corona or Perk chime in and tell us if this is the revenue model going forward? Will the next updated Admob plugin also use this model? How about other advertiser plugins?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4710">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d1561cc25743b18c4b020240ed9a510b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://ligerapps.com/' rel='external nofollow' class='url'>clement</a></h5>
+			<span class="comment_date">Posted at 15:17h, 18 January</span>
+						<div class="text_holder" id="comment-4710">
+				<p>Terrible idea I would rather you keep the price fixed rather than seeking a percentage&#8230;this makes it where unity and some of the other open source sound more enticing</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4711">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/cbec6bbb7a3bad3507e3fa2a8b591cf5-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Anthony</h5>
+			<span class="comment_date">Posted at 00:54h, 19 January</span>
+						<div class="text_holder" id="comment-4711">
+				<p>Steven Warren asks some excellent questions: </p>
+<p>&#8220;Could someone from Corona or Perk chime in and tell us if this is the revenue model going forward?&#8221;</p>
+<p>&#8220;Will the next updated Admob plugin also use this model?&#8221;</p>
+<p>if this is the model going forward I&#8217;m out of Corona. My ad earnings would completely price out the ad revenue sharing that Corona appears to be adopting.</p>
+<p>The idea of 20% of my AdMob revenue going to pay for Corona is unacceptable to me.</p>
+<p>@ Roj, Corona/Perk. With respect, you need to consider this ad revenue sharing model carefully. It&#8217;s all very well dismissing the paid subscription model as it didn&#8217;t work before. Please try to make it work. The punitive ad revenue sharing model will drive the mid- and high-earning developers away. You will be left with 20% (or tiered or whatever %) of very little from the majority of developers who earn &#8220;hobby income&#8221; rather than income substantial enough to sustain a business.</p>
+<p>Best &#8211; Anthony</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4712">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/eb1ef56860c1ff79bc95bc8be62da06a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">nori</h5>
+			<span class="comment_date">Posted at 11:23h, 19 January</span>
+						<div class="text_holder" id="comment-4712">
+				<p>As a developer that just recently got into lua and corona sdk, the idea that taking a percentage of revenue from ads plugins.. while other platforms don&#8217;t.. makes it almost a no brainer to switch now while it&#8217;s still early just in case corona/perk decides to take shares of all ad plugins.  I mean what&#8217;s stopping them now?</p>
+<p>I would be all be for the 2014 pricing scheme where we would pay corona/perk is a static amount per year vs a percentage through the lifetime of my apps. </p>
+<p>On the other side of the field, perk wants to make money off their purchase of corona, but something like this isn&#8217;t really a good thing in the long run.  The model should be like &#8220;FREE with rev share &#8221; or &#8220;Paid yearly with no rev share&#8221;. </p>
+<p>just my two cents..</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4713">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/62a4f025e1bfde1cca059054d361f0f9-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://Www.pxlartificer.com/' rel='external nofollow' class='url'>Ruben</a></h5>
+			<span class="comment_date">Posted at 15:44h, 19 January</span>
+						<div class="text_holder" id="comment-4713">
+				<p>Please also checkout this forum post I started when I noticed the new 20% revenue share cut for Perk.<br />
+<a href="https://forums.coronalabs.com/topic/61099-facebook-audience-network-corona-takes-20-revenue-share/" rel="nofollow">https://forums.coronalabs.com/topic/61099-facebook-audience-network-corona-takes-20-revenue-share/</a></p>
+<p>I asked if Perk will use a similar strategy for other ad platforms and Roj responded positively:<br />
+&#8220;Re: other monetization plugins, our general thought is that we&#8217;d like to succeed with our publishers&#8217; success.  As such, we&#8217;re working on models like the one in place for Facebook Audience Network but they will vary in arrangement (some will be ratios but with different rev-shares, some will be tiered rev-shares based on volume, others you&#8217;ll have an indirect relationship with an ad network but will benefit from better rev-shares we have with the network, etc)&#8221;</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4720">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/37cf051ca193d35d24f6a3d096ede049-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Roj Niyogi</a></h5>
+			<span class="comment_date">Posted at 20:39h, 19 January</span>
+						<div class="text_holder" id="comment-4720">
+				<p>Posted a response in the Forums recently but submitting here as well:</p>
+<p>To those who are mentioning that this model is clearly not conducive to developers who already have several million impressions being served a month and have an active user base &#8211; you are right.  As such we are revising our ratio model to be tiered based on growth and will be providing details about this early next week. </p>
+<p>To those who have been supportive of our decision to operate this plugin on a ratio model, I appreciate this.  Our goal is to ensure the longevity of the Corona SDK framework and this strategy is one of *many* we will be employing towards this mission.  We understand that the plugin ratio model may not be appropriate for all developers but also believe that more options instead of fewer makes for a more vibrant ecosystem allowing for more possibilities when building apps.</p>
+<p>To those curious about whether or not ratio models will be applied to both legacy and future ad networks, the answer is &#8220;it depends&#8221;.  We are working with various networks to establish different kinds of models some of which will keep plugins functioning the way they have, others which will allow new monetization plugins to exist in the plugin ecosystem in a way that is mutually beneficial to both the developer as well as the platform itself.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4721">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">David Grant</h5>
+			<span class="comment_date">Posted at 22:54h, 19 January</span>
+						<div class="text_holder" id="comment-4721">
+				<p>So I&#8217;m trying to use the plugin and I&#8217;ve noticed that every other time I launch my app it gives me an error. I&#8217;ve debugged it for hours and nothing makes sense as the same call works every other time without fail. I&#8217;m wondering if instead of showing your ad every 1:5 if you&#8217;re not trying to show it every other time? It&#8217;s really the only thing that makes sense as my code doesn&#8217;t change at all between app sessions.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4723">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff74b5de60d80b83502e29e03dab75da-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://www.coronalabs.com/' rel='external nofollow' class='url'>Danny Glover</a></h5>
+			<span class="comment_date">Posted at 04:54h, 20 January</span>
+						<div class="text_holder" id="comment-4723">
+				<p>Hey David.</p>
+<p>Can you drop me a line @ <a href="mailto:danny@coronalabs.com">danny@coronalabs.com</a> ?<br />
+I&#8217;d like to know more about the error you are receiving.</p>
+<p>Thank you</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4726">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8c73f9428b81445613f8fc6452757da7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.ubj3d.com/' rel='external nofollow' class='url'>Damir Kranjcec</a></h5>
+			<span class="comment_date">Posted at 05:35h, 21 January</span>
+						<div class="text_holder" id="comment-4726">
+				<p>If Corona finally opens the PAID plugin marketplace, then there will be for sure developers offering the plugins for decent price so devs will be able to avoid the rev-share model.</p>
+<p>If not, the devs with high-revenue will hire someone to make them the plugins.</p>
+<p>In the end, only devs with low-revenue will use the rev-share model, so Perk will not benefit from this model, IMO.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4728">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.active-documents.com/' rel='external nofollow' class='url'>jch_APPLE</a></h5>
+			<span class="comment_date">Posted at 00:02h, 22 January</span>
+						<div class="text_holder" id="comment-4728">
+				<p>+1, it&#8217;s obvious. It&#8217;s like paying a tax on our work, people hate taxes. Successful people are talented, they can learn new development tools and move and Perk will get the exact opposite of their goal.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4729">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9a29035fa661d02714c366e093bf3f31-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.quizpub.co.uk/' rel='external nofollow' class='url'>Martin</a></h5>
+			<span class="comment_date">Posted at 17:23h, 01 February</span>
+						<div class="text_holder" id="comment-4729">
+				<p>20% revenue share, 30% to Google, 25% VAT, 40% income tax&#8230;..<br />
+What do I get? Not a lot.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4730">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 17:38h, 01 February</span>
+						<div class="text_holder" id="comment-4730">
+				<p>Google takes a much larger share of AdMob revenue; however, Facebook audience network ads don&#8217;t go through Google or Apple&#8217;s accounting at all that I&#8217;m aware of. Also we&#8217;ve changed the ratio to be more fair. It now ranges between 16% and 5% depending on number of ads deployed.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-4731">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9a4591e55d312615c827e96fe1acfd2f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.cravecreative.com/' rel='external nofollow' class='url'>Mike</a></h5>
+			<span class="comment_date">Posted at 06:46h, 02 February</span>
+						<div class="text_holder" id="comment-4731">
+				<p>My app says it is “public and available to all users” and has made thousands of a ad requests but is not receiving and ads. Under “Audience Network” it still says the app is “currently testing your Facebook ad placements”. This is been going on for 5 days. Anybody have any idea what the problem could be?</p>
+<p>I can&#8217;t find any place for support on Facebooks web site.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4732">
+	<div class="comment">
+		<div class="image">  </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.gamecodeur.fr/partager-revenus-moteur-de-jeu-scandaleux/' rel='external nofollow' class='url'>Partager ses revenus avec son moteur de jeu ? Scandaleux ? - Gamecodeur - Devenir programmeur de jeux vidéo, école de jeux vidéo en ligneGamecodeur - Devenir programmeur de jeux vidéo, école de jeux vidéo en ligne</a></h5>
+			<span class="comment_date">Posted at 02:18h, 21 February</span>
+						<div class="text_holder" id="comment-4732">
+				<p>[&#8230;] Lire la news et les commentaires des utilisateurs (en anglais). [&#8230;]</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4733">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a215ddaff6d6cf94a1b86061f89b7b3f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.tiltangames.com/' rel='external nofollow' class='url'>Adi</a></h5>
+			<span class="comment_date">Posted at 00:07h, 14 March</span>
+						<div class="text_holder" id="comment-4733">
+				<p>Hi, why is it required to add in the plug-in initialization the supported platforms? shouldn&#8217;t it work on all platforms including amazon for example?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4734">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 16:22h, 14 March</span>
+						<div class="text_holder" id="comment-4734">
+				<p>If you are only building for Android and iOS it&#8217;s not required. But if you&#8217;re also building for OS X or Window&#8217;s Desktop or tvOS, then you need to include this to stop us from trying to include it on those platforms.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-4735">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/cf648d0e691cbb4b11c0f1a8c07ecedb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Isaac</h5>
+			<span class="comment_date">Posted at 23:10h, 22 March</span>
+						<div class="text_holder" id="comment-4735">
+				<p>So are you guys going with a flat 5% rate now or there is still tier? Probably you can either update this post or make it clearer in the documentation <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html" rel="nofollow">https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html</a></p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-4736">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 15:17h, 23 March</span>
+						<div class="text_holder" id="comment-4736">
+				<p>I thought we had updated the post. It&#8217;s 5%. Post has been updated. Thanks for spotting this.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-44ab35495eb13b448ea9307a96f479f3.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"65212","is_front_page":"","is_blog_page":"","is_category":"","site_url":"\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-933b528a2d57748fe8c83f115a193bac.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-301fe8920786443d62854aa56f62d416.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-589214c34f008189ea441c146f569db3.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-7509df77330fcb9cc352a1e134790124.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-46e09ba307b0b6c4b86ea442fd0f8392.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

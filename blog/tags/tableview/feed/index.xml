@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TableView &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/tableview/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>TableView &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Advanced TableView tactics</title>
+		<link>/blog/2014/03/04/tutorial-advanced-tableview-tactics/</link>
+		<comments>/blog/2014/03/04/tutorial-advanced-tableview-tactics/#comments</comments>
+		<pubDate>Tue, 04 Mar 2014 23:29:21 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[TableView]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">/?p=56664</guid>
+		<description><![CDATA[In the mobile app world, table views, or "list views," are based on a paradigm where information is presented to the user in a series of single-column rows. In this tutorial, we're going to look more deeply at this powerful tool in the widget repository and discuss how to implement some advanced features with just a little extra coding.]]></description>
+				<content:encoded><![CDATA[<p>In this tutorial, we&#8217;re going to look more deeply at table views (or &#8220;list views&#8221;) which are based on a mobile device paradigm where information is presented to the user in a series of single-column rows. In iOS, apps like Mail, Clock, and Contacts are obvious table views, but they are also used in countless other apps for menus and more.</p>
+<p>In Corona, <a href=http://docs.coronalabs.com/api/library/widget/newTableView.html target="_blank">widget.newTableView()</a> is a widget rendered in OpenGL and it has been built to emulate some of the more common features of a native table view. Under the hood, a Corona table view is built on top of a <a href=http://docs.coronalabs.com/api/library/widget/newScrollView.html target="_blank">widget.newScrollView()</a> which handles the up/down scrolling, the spring-like behavior, and the momentum-based scrolling.</p>
+<h3>Setup</h3>
+<p>In this tutorial example, we&#8217;ll create a table view that spans the full width of the screen, positioned just below an upper title bar and spanning down to a <a href=http://docs.coronalabs.com/api/library/widget/newTabBar.html target="_blank">widget.newTabView()</a> controller at the bottom. Here&#8217;s the basic code:</p><pre class="crayon-plain-tag">local navBarHeight = 60
+local tabBarHeight = 50
+local myList = widget.newTableView {
+   top = navBarHeight, 
+   width = display.contentWidth, 
+   height = display.contentHeight - navBarHeight - tabBarHeight,
+   onRowRender = onRowRender,
+   onRowTouch = onRowTouch,
+   listener = scrollListener
+}</pre><p>This creates an &#8220;empty&#8221; table view of the described size. Now, we must populate it with <strong>rows</strong>. This is done using the <a href=http://docs.coronalabs.com/api/type/TableViewWidget/insertRow.html target="_blank">tableView:insertRow()</a> method which inserts a blank, empty row into the view. To populate the widget in this example, we&#8217;ll use a table of items that contain a name and phone number:</p><pre class="crayon-plain-tag">local myData = {}
+myData[1] = { name=&quot;Fred&quot;,    phone=&quot;555-555-1234&quot; }
+myData[2] = { name=&quot;Barney&quot;,  phone=&quot;555-555-1235&quot; }
+myData[3] = { name=&quot;Wilma&quot;,   phone=&quot;555-555-1236&quot; }
+myData[4] = { name=&quot;Betty&quot;,   phone=&quot;555-555-1237&quot; }
+myData[5] = { name=&quot;Pebbles&quot;, phone=&quot;555-555-1238&quot; }
+myData[6] = { name=&quot;BamBam&quot;,  phone=&quot;555-555-1239&quot; }
+myData[7] = { name=&quot;Dino&quot;,    phone=&quot;555-555-1240&quot; }
+
+for i = 1, #myData do
+   myList:insertRow{
+      rowHeight = 60,
+      isCategory = false,
+      rowColor = { 1, 1, 1 },
+      lineColor = { 0.90, 0.90, 0.90 }
+   }
+end</pre><p>Even with this setup, nothing is visually rendered to the table view at this point. Behind the scenes, the table view widget keeps track of which rows are on screen and draws only those rows when they are needed. This is accomplished by a function that we provide and define as the <code>onRowRender</code> parameter in the table view constructor. When this function is called by the table view, we&#8217;re provided with the handle to the appropriate row.</p>
+<p>In Corona, each <strong>row</strong> is actually a separate <a href=http://docs.coronalabs.com/api/library/display/newGroup.html target="_blank">display.newGroup()</a>. Thus, in the row rendering function, we can create the necessary custom display objects and use the standard <a href=http://docs.coronalabs.com/api/type/GroupObject/insert.html target="_blank">group:insert(object)</a> method to insert each into the table view row.</p>
+<p>How does the row rendering function know what to render within each row? Let&#8217;s inspect a typical example of the row rendering function:</p><pre class="crayon-plain-tag">local function onRowRender( event )
+
+   --Set up the localized variables to be passed via the event table
+
+   local row = event.row
+   local id = row.index
+
+   row.bg = display.newRect( 0, 0, display.contentWidth, 60 )
+   row.bg.anchorX = 0
+   row.bg.anchorY = 0
+   row.bg:setFillColor( 1, 1, 1 )
+   row:insert( row.bg )
+
+   row.nameText = display.newText( myData[id].name, 12, 0, native.systemFontBold, 18 )
+   row.nameText.anchorX = 0
+   row.nameText.anchorY = 0.5
+   row.nameText:setFillColor( 0 )
+   row.nameText.y = 20
+   row.nameText.x = 42
+
+   row.phoneText = display.newText( myData[id].phone, 12, 0, native.systemFont, 18 )
+   row.phoneText.anchorX = 0
+   row.phoneText.anchorY = 0.5
+   row.phoneText:setFillColor( 0.5 )
+   row.phoneText.y = 40
+   row.phoneText.x = 42
+
+   row.rightArrow = display.newImageRect( &quot;rightarrow.png&quot;, 15 , 40, 40 )
+   row.rightArrow.x = display.contentWidth - 20
+   row.rightArrow.y = row.height / 2
+
+   row:insert( row.nameText )
+   row:insert( row.phoneText )
+   row:insert( row.rightArrow )
+   return true
+end</pre><p>The &#8220;magic&#8221; here is how we use the row&#8217;s ID number to map against the <code>myData</code> dataset. However, while this works great for simple cases, it won&#8217;t work for more advanced table views that contain &#8220;category&#8221; rows or empty rows for spacing purposes.</p>
+<h3>Introducing passable parameters</h3>
+<p>This feature has been available for some time but it hasn&#8217;t been discussed too much. Essentially, it provides a programmatic way to associate a row and specific data <em>without</em> relying on an ID number. Let&#8217;s use the same example but pass in parameters instead:</p><pre class="crayon-plain-tag">for i = 1, #myData do
+   myList:insertRow{
+      rowHeight = 60,
+      isCategory = false,
+      rowColor = { 1, 1, 1 },
+      lineColor = { 0.90, 0.90, 0.90 },
+      params = {
+         name = myData[i].name,
+         phone = myData[i].phone
+      }
+   }
+end</pre><p>Now we can insert rows that contain data using the <code>params</code> table. Rows that have no data can be inserted without parameters (category rows, for example). Then, in the row rendering function, we can simply test to see if it&#8217;s a category row or not and render it accordingly:</p><pre class="crayon-plain-tag">local function onRowRender( event )
+
+   --Set up the localized variables to be passed via the event table
+
+   local row = event.row
+   local id = row.index
+   local params = event.row.params
+
+   row.bg = display.newRect( 0, 0, display.contentWidth, 60 )
+   row.bg.anchorX = 0
+   row.bg.anchorY = 0
+   row.bg:setFillColor( 1, 1, 1 )
+   row:insert( row.bg )
+
+   if ( event.row.params ) then    
+      row.nameText = display.newText( params.name, 12, 0, native.systemFontBold, 18 )
+      row.nameText.anchorX = 0
+      row.nameText.anchorY = 0.5
+      row.nameText:setFillColor( 0 )
+      row.nameText.y = 20
+      row.nameText.x = 42
+
+      row.phoneText = display.newText( params.phone, 12, 0, native.systemFont, 18 )
+      row.phoneText.anchorX = 0
+      row.phoneText.anchorY = 0.5
+      row.phoneText:setFillColor( 0.5 )
+      row.phoneText.y = 40
+      row.phoneText.x = 42
+
+      row.rightArrow = display.newImageRect( &quot;rightarrow.png&quot;, 15 , 40, 40 )
+      row.rightArrow.x = display.contentWidth - 20
+      row.rightArrow.y = row.height / 2
+
+      row:insert( row.nameText )
+      row:insert( row.phoneText )
+      row:insert( row.rightArrow )
+   end
+   return true
+end</pre><p>Now the row rendering function doesn&#8217;t need to know anything about our data structure. This helps support the concept of <strong>Model-View-Controller (MVC)</strong>. With this method, we can focus on our <strong>View</strong> and know which data to get without knowledge of how the <strong>Model</strong> is tracking the data. In most cases, this is a very good way to populate table view rows and it should make it easier to visualize data with the associated row.</p>
+<h3>Reloading the table view on a status bar tap</h3>
+<p>This is a frequently-requested feature that&#8217;s easy to implement with a small amount of code. How the data is pulled in will depend largely on the app design, and it&#8217;s your responsibility to create a reload function that will be called as part of the tap handler. In most cases, the common functionality will be:</p>
+<ol>
+<li>Retrieve the updated data (new tweets or RSS feeds, for example).</li>
+<li>Flush (clear) the existing table view&#8217;s data.</li>
+<li>Re-insert the new data into the table view.</li>
+</ol>
+<p>To flush/empty the rows as mentioned in step #2, we can call this function:</p><pre class="crayon-plain-tag">myList:deleteAllRows()</pre><p>Now, to build in the &#8220;status bar tap&#8221; functionality, we can create a transparent rectangle where the status bar resides and add a <code>"tap"</code> event handler on it. This tap function will, not surprisingly, call the custom reload function. It&#8217;s that simple!</p><pre class="crayon-plain-tag">local reloadBar = display.newRect( display.contentCenterX, display.topStatusBarContentHeight*0.5, display.contentWidth, display.topStatusBarContentHeight )
+reloadBar.isVisible = false
+reloadBar.isHitTestable = true
+reloadBar:addEventListener( &quot;tap&quot;, reloadTable )</pre><p>There&#8217;s one important aspect to note: since the rectangle object is invisible (<code>.isVisible = false</code>), we must set <code>.isHitTestable</code> to <strong>true</strong> so it reacts to tap/touch events.</p>
+<h3>Implementing &#8220;spring reloading&#8221;</h3>
+<p>Table view &#8220;spring reloading&#8221; is the technique of pulling down on the list to have it reload/refresh. This isn&#8217;t quite as easy to implement as the status bar tap method, but let&#8217;s walk through it.</p>
+<p>There are some prerequisites to consider as part of the User Interface and User Experience (UI/UX) for spring reloading. When a user pulls down on a table view, it reveals the &#8220;background&#8221; of the app. In some cases, you may want to place something behind the table view, like a solid gray block. Also, most spring reload systems have an animated graphic that shows when the user has pulled down far enough, prompting them to release their touch. In iOS, this is usually a spinner, which you may consider imitating via the Corona <a href=http://docs.coronalabs.com/api/library/widget/newSpinner.html target="_blank">spinner</a> widget. Ultimately, though, it&#8217;s your decision about how to handle the UI/UX for your app.</p>
+<p>Before implementing spring reloading, let&#8217;s further examine the table view event system. Here&#8217;s our example table view constructor again:</p><pre class="crayon-plain-tag">local myList = widget.newTableView {
+   top = navBarHeight, 
+   width = display.contentWidth, 
+   height = display.contentHeight - navBarHeight - tabBarHeight,
+   onRowRender = onRowRender,
+   onRowTouch = onRowTouch,
+   listener = scrollListener
+}</pre><p>As we&#8217;ve seen so far, the <code>onRowRender</code> function handles rendering and display of the actual table rows. Below that, the <code>onRowTouch</code> function handles <code>"tap"</code> and <code>"touch"</code> events on the individual rows (see the documentation for <a href=http://docs.coronalabs.com/api/library/widget/newTableView.html target="_blank">widget.newTableView()</a> for usage examples). The final function, assigned to the <code>listener</code> property, is the function that will listen for <em>scroll-related</em> events on the table — and those events are of particular interest in spring reloading. Using this listener, we&#8217;ll be able to detect when the table view starts to move, when it&#8217;s still moving under momentum, and when it stops moving. We&#8217;ll also get an <code>event.phase = nil</code> when the table view reaches the limits of its scrolling, and it&#8217;s this event phase which indicates that we should reload the table view. Let&#8217;s look at the example code:</p><pre class="crayon-plain-tag">local springStart = 0
+local needToReload = false
+
+local function scrollListener( event )
+   if ( event.phase == &quot;began&quot; ) then
+      springStart = event.target.parent.parent:getContentPosition()
+      needToReload = false
+   elseif ( event.phase == &quot;moved&quot; ) then
+      if ( event.target.parent.parent:getContentPosition() &gt; springStart + 60 ) then
+         needToReload = true
+      end
+   elseif ( event.limitReached == true and event.phase == nil and event.direction == &quot;down&quot; and needToReload == true ) then
+      --print( &quot;Reloading Table!&quot; )
+      needToReload = false
+      reloadTable()
+   end
+   return true
+end</pre><p>Notice how these conditional checks are used for different processes within the spring reloading:</p>
+<ul>
+<li>In the <code>"began"</code> phase, we store the current content position of the table view. This way, when the user pulls down on the list, accidental reloads are not triggered if the user pulls down just slightly. We also set the flag variable <code>needToReload</code> to <code>false</code> in this phase.  If you wish to have an animation start to indicate they are beginning a spring reload, this would be a good time to start it.</li>
+<li>In the <code>"moved"</code> phase, if the table view position changes by a set amount more than it started at, in this example 60 pixels, we set the <code>needToReload</code> flag to <code>true</code>. Since the user could still be dragging the table view at this time, we do <strong>not</strong> trigger the reload yet.  If you have a graphic or animation showing the user it&#8217;s now time to let go or they have pulled down enough, you would change the graphic/animation here as well.</li>
+<li>In the <code>"ended"</code> phase, you can stop any animations you started in the <code>"began"</code> or <code>"moved"</code> phases.</li>
+<li>In the final conditional check, we don&#8217;t want to reload only when the movement ends. If we did, the table view would reload every time the scrolling stopped on the table view. Instead, we&#8217;ll check for a series of conditions, starting with the <code>event.limitReached</code> event equal to <code>true</code>. This event has no phase (<code>nil</code>), so we also check for the absence of <code>event.phase</code>. Next, we check that the movement direction is <code>"down"</code> (typically, reloads don&#8217;t occur after scrolling up) and we also confirm that the <code>needToReload</code> flag is <code>true</code> (i.e. the user has pulled the view down enough distance). If all of these conditions are met, we call the <code>reloadTable()</code> function to start the table view reload.</li>
+</ul>
+<h3>In conclusion</h3>
+<p>Hopefully this tutorial has shown you how to add some creative and useful features to the table view widget. With the ability to use parameters to pass data to the row rendering function, plus these easy-to-implement reloading features, you can now supercharge your table views.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/04/tutorial-advanced-tableview-tactics/feed/</wfw:commentRss>
+		<slash:comments>41</slash:comments>
+		</item>
+	</channel>
+</rss>

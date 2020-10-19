@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Game Development &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Game Development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Developing engaging word puzzle games with Steve Bullock</title>
+		<link>/blog/coronageek/word-roundup-stampede/</link>
+		<comments>/blog/coronageek/word-roundup-stampede/#respond</comments>
+		<pubDate>Wed, 09 Nov 2016 16:16:22 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Puzzle Games]]></category>
+		<category><![CDATA[word games]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68670</guid>
+		<description><![CDATA[In this special interview we talk with Steve Bullock to learn what it takes to create engaging word games like Word Roundup Stampede. Steve has developed word games for over 20 years and is now teamed up with David L. Hoyt, the world’s most syndicated daily game creator.]]></description>
+				<content:encoded><![CDATA[<p>In this special interview we talk with Steve Bullock from Adveractive about the inspiration, development, and release of <a href=http://www.word-roundup.com/stampede.html target="_blank" rel="noopener noreferrer">Word Roundup Stampede</a>.</p>
+<p>Steve has been developing word games for over 20 years and he now develops games with nationally syndicated puzzle creator David L. Hoyt. As the world’s most syndicated daily game creator, David&#8217;s puzzle games and brain teasers appear in USA Today’s Up &amp; Down Words, Jumble Crosswords, and TV Jumble.</p>
+<p>Together, Steve and David have published <a href=https://itunes.apple.com/us/app/just-2-words/id636099342?mt=8 target="_blank" rel="noopener noreferrer">Just 2 Words</a>, <a href=https://itunes.apple.com/us/app/just-jumble/id825880656?mt=8 target="_blank" rel="noopener noreferrer">Just Jumble</a>, <a href=https://itunes.apple.com/us/app/word-winder/id561044985?mt=8 target="_blank" rel="noopener noreferrer">Word Winder</a>, and <a href=https://itunes.apple.com/us/app/just-2-fun/id755922885?mt=8 target="_blank" rel="noopener noreferrer">Just 2 Fun</a>, all using Corona.</p>
+<p>In this interview, Steve shares some great insights into what it takes to create engaging puzzle games. Follow <a href=https://www.facebook.com/wordroundup/ target="_blank" rel="noopener noreferrer">Word Roundup Stampeded on Facebook</a> for news and release updates.</p>
+<p><iframe src="https://www.youtube.com/embed/jt_oYpHuI5I?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank" rel="noopener noreferrer">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank" rel="noopener noreferrer">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank" rel="noopener noreferrer">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank" rel="noopener noreferrer">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank" rel="noopener noreferrer">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/word-roundup-stampede/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #163 &#8211; Desktop Game Development With Controls</title>
+		<link>/blog/coronageek/corona-geek-163/</link>
+		<comments>/blog/coronageek/corona-geek-163/#respond</comments>
+		<pubDate>Mon, 12 Oct 2015 21:14:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[desktop apps]]></category>
+		<category><![CDATA[game controller inputs]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[keyboard inputs]]></category>
+		<category><![CDATA[mouse inputs]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64329</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we began a brand new series focusing on desktop game development using keyboard, mouse, and game controller inputs. Download the full source code from today's discussion to see demos of the various input methods in action.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/zsU-pk5FOAU?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we began a brand new series focusing on desktop game development using keyboard, mouse, and game controller inputs. Previously, we’ve focused on creating mobile games that rely solely on touch inputs, so this will be a fun topic to cover using Corona SDK.</p>
+<p>Next week we will start building a top down shooter game using keyboard and mouse inputs. In the meantime, you can <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/deviceInputs.zip target="_blank">download the full source code</a> from today&#8217;s discussion to see demos of the various input methods in action. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Want Project Help?</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-163/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-163-2015-10-12-desktop-game-development-with-controls.mp3" length="87586482" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; 3D Printing Game Pieces, Player Air Control, and Key Inputs</title>
+		<link>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/</link>
+		<comments>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/#respond</comments>
+		<pubDate>Wed, 26 Aug 2015 16:30:44 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63843</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator....]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. </p>
+<p>We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-155/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 3D Printed Games Using BoardCraft</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/u6YXTXkdCdE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 3D Printing Game Market</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LtG9oaI7XYA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Kickstarter Insights</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/GZq0Xd-3xj4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Gravity In Games Rcap</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ceYqpYob4Xo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Adding Assets to Layers</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/KzJBd1oeTr4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Adding Key Inputs</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/dTbZ4WcUDhE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Player Air Control</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/6qVRkjlFWt4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adding a Player Foot</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0TM9vnbQcko?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Wrap Up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LQM999jpc00?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-156/>adding a level loader</a> to our &#8220;Using Gravity In Games&#8221; project.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Using Gravity In Games and Creating 2D Shadow Effects Using Custom Shaders</title>
+		<link>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/</link>
+		<comments>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/#respond</comments>
+		<pubDate>Wed, 19 Aug 2015 17:54:20 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[shader examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63784</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the project source code to follow along with the conversation. If you missed the Hangout, here are clips to help you catch up. Watch the entire conversation, or just the parts that interest you most. Part 1 &#8211; 2D Shadows Example Overview Part 2 &#8211; 2D Shadows Example Code Part 3 &#8211;...]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-154/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 2D Shadows Example Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qg1KW2MaIcg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 2D Shadows Example Code</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/fHp8XMLeoWw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; They Need To Be Fed 3 Game Overive</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/8HC7MQLtlTA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Breaking Down The Game Mechanics</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1lOqSjVydRg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Player Gravity Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ng0p7Lvsui0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Calculating Gravity</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0AF93KOs80s?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Adjusting Magnitude</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/zC_aJJ2Cn6w?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adjusting Block Size</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/q8sK8bRABXI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-155/>3D printing game pieces and using gravity in games &#8211; part 2</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Ichi Game Mechanics and Handling Physics Engine Nuances</title>
+		<link>/blog/coronageek/hangout-highlights-ichi-game-mechanics-and-handling-physics-engine-nuances/</link>
+		<comments>/blog/coronageek/hangout-highlights-ichi-game-mechanics-and-handling-physics-engine-nuances/#respond</comments>
+		<pubDate>Wed, 27 May 2015 20:59:24 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Ichi Game]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62868</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 142, we examined the core mechanics behind creating an Ichi game. We looked at how create and align bumpers, and we talked about some nuances of working with Corona's built-in physics engine. We even looked a how to add a level editor to the game. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 142, we examined the core mechanics behind <a href=/blog/coronageek/corona-geek-142/>creating an Ichi game</a>. We looked at how create and align bumpers, and we talked about some nuances of working with Corona&#8217;s built-in physics engine. We even looked a how to add a level editor to the game. <a href=http://bit.ly/icmt_ichi_mechanics target="_blank">Download the code</a> to see how everything was coded. </p>
+<p>Here are clips from Hangout #142. <a href=/blog/coronageek/corona-geek-142/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/tubgPz63SSc?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Windows Desktop Support Demo</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/NTKgdBcjuXg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Ichi Game Mechanics Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/hW6nAW3OCQU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Using Hybrid Mode</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qOGuT35U4wU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Using Sensors for Collision Detection</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/YmtENGOFlZQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Built-in Level Editor</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/64YwWa5EM4o?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>While you&#8217;re at it, be sure to <a href=/blog/coronageek/corona-geek-143/>watch Hangout #143</a> where we talked with CBEffects&#8217; author Caleb Place about his popular <a href=https://github.com/GymbylCoding/CBEffects target="_blank">particle effects library</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-ichi-game-mechanics-and-handling-physics-engine-nuances/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Creating and Matching Puzzle Game Pieces</title>
+		<link>/blog/coronageek/hangout-highlights-creating-and-matching-puzzle-game-pieces/</link>
+		<comments>/blog/coronageek/hangout-highlights-creating-and-matching-puzzle-game-pieces/#respond</comments>
+		<pubDate>Wed, 20 May 2015 16:30:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Ichi Game]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62773</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 141, we examined the core mechanics behind creating and matching puzzle game pieces. We covered how to create puzzle pieces and tell when they are arranged correctly. There's even a bonus look at snapping objects to corners. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 141, we examined the core mechanics behind <a href=/blog/coronageek/corona-geek-141/>creating and matching puzzle game pieces</a>. We even looked at how to snap objects to the corners of the puzzle board. <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">Download the code</a> to see how everything was coded. </p>
+<p>Here are clips from Hangout #141. <a href=/blog/coronageek/corona-geek-141/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/dDdoGjOM7es?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Corona Geek Games Tips</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/MVNXxKdx9Lw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Corona SDK on Udemy</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/lWPEfLBGqwg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Blog Posts and Fuse Powered Podcast</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/etv8Otg98s8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; A Look at Super Starter Kit</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/_aLcHnRl-Ew?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Creating Puzzle Pieces</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/wyUODcudv70?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Matching Puzzle Pieces</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/wRHRnhokaNg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>While you&#8217;re at it, be sure to <a href=/blog/coronageek/corona-geek-142/>watch Hangout #142</a> where we looked at the core mechanics of an Ichi game.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-creating-and-matching-puzzle-game-pieces/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #142 &#8211; Ichi Game Mechanics, Bumpers, and One Touch Input</title>
+		<link>/blog/coronageek/corona-geek-142/</link>
+		<comments>/blog/coronageek/corona-geek-142/#respond</comments>
+		<pubDate>Mon, 18 May 2015 21:15:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Ichi Game]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62799</guid>
+		<description><![CDATA[During last week’s Hangout we looked at how to create and match puzzle pieces. This week we explored the core mechanics for creating an Ichi game. We covered the creation of bumpers, bumper turning, one-touch input, and creating goal objects/sensors.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/K6WmZ4QBD9c?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During last week’s Hangout we looked at <a href=/blog/coronageek/corona-geek-141/>how to create and match puzzle pieces</a>. If you’ve ever asked yourself, “How do you do that?” this will help answer your questions. There’s also some bonus bits about snapping objects to corners.</p>
+<p>This week we explored the core mechanics for creating an Ichi game. We covered the creation of bumpers, bumper turning, one-touch input, and creating goal objects/sensors. <a href=http://bit.ly/icmt_ichi_mechanics target="_blank">Download the code</a> to see how everything works.</p>
+<p><strong>Let&#8217;s Play Boom Dot for May!</strong></p>
+<p>For May we’re playing Boom Dot for a chance to win a $50 gift card. To participate, share a screenshot / picture of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> before the June 1st Hangout.</p>
+<p>Boom Dot is available in the <a href=http://bit.ly/apple-boom-dot target="_blank">Apple Store</a>, <a href=http://bit.ly/google-boom-dot target="_blank">Google Play Store</a>, and <a href=http://bit.ly/amazon-boom-dot target="_blank">Amazon App Store</a>. Download it and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-141/>Corona Geek #141 &#8211; Creating and Matching Puzzle Pieces</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode <strong>CoronaGeek</strong> to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/laser-puzzle-great-logic-game/id647540345?mt=8 target="_blank">Laser Puzzle &#8211; iOS</a></li>
+<li><a href=https://play.google.com/store/apps/details?id=com.spiralcodestudio.laserflow&hl=en target="_blank">Laser Puzzle &#8211; Android</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-142/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-142-2015-05-18-ichi-game-mechanics.mp3" length="86991177" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Matching Logic and Productivity App Development</title>
+		<link>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/</link>
+		<comments>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/#respond</comments>
+		<pubDate>Thu, 14 May 2015 03:38:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62665</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 140, we added matching logic for our memory matching game. We also talked with Richard Brooke, developer of TaskPad+, a task management business app developed with Corona SDK. Richard shared his experience with using Corona to build a productivity app. He also told us if he would do it again. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 140, we added <a href=/blog/coronageek/corona-geek-140/>matching logic for our memory matching game</a>. The solution involved representing matching cards as numbers. <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">Download the source code</a> to see how it was developed.</p>
+<p>We also talked with Richard Brooke, developer of TaskPad+, a <a href=https://itunes.apple.com/app/id885631761 target="_blank">task management business app</a> developed with Corona SDK. Richard shared his experience with using Corona to build a productivity app. He also told us if he would do it again.</p>
+<p>Here are clips from Hangout #140. <a href=/blog/coronageek/corona-geek-140/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p>We cover some of the things you may have missed from last time.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/d9RJlmrgFQk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Developing a productivity app using Corona SDK</h3>
+<p>TaskPad+ developer, Richard Brooke demos his new productivity app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/dblowPZBIwY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Implementing a calendar</h3>
+<p>Richard talks about how he implemented a calendar in his app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/on-HYXUtBLE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Developer insights</h3>
+<p>Richard tells us if he would use Corona SDK again to develop his non-game app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/80MtcxCuV5Y?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Introducing memory matching logic</h3>
+<p>Ed Maurina introduces memory matching game logic.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/qBF1y6B8J5E?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Card flipping review</h3>
+<p>Ed reviews how card flipping works.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/6xgZ9NmH6wo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Matching logic</h3>
+<p>Ed shows how card matching works.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/nxrDv62umq4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Matching game sampler</h3>
+<p>Ed shows shows off a memory matching game sampler.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/v2vVrb4AgG4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Be sure to <a href=/blog/coronageek/corona-geek-141/>watch Hangout #141</a> where we looked at how to create and match puzzle pieces as part of a classic puzzle game.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #141 &#8211; Creating and Matching Puzzle Pieces</title>
+		<link>/blog/coronageek/corona-geek-141/</link>
+		<comments>/blog/coronageek/corona-geek-141/#respond</comments>
+		<pubDate>Mon, 11 May 2015 21:53:19 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62662</guid>
+		<description><![CDATA[During last week’s Hangout we finished up our memory matching game series by adding game logic to keep track of which cards have matching images and which don’t. This week we examined the core mechanics for creating a puzzle game. We covered how to create puzzle pieces and how to tell when they are arranged correctly.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/189tUCHMFOw?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During last week’s Hangout we finished up our memory matching game series by <a href=/blog/coronageek/corona-geek-140/>adding game logic</a> to keep track of which cards have matching images and which don’t.</p>
+<p>This week we examined the core mechanics for creating a puzzle game. We focused in on the parts that might leave you wondering, “How do they do that?” We covered how to create puzzle pieces and tell when they are arranged correctly. <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">Download the code</a> to see how it was coded.</p>
+<p><strong>Let&#8217;s Play Boom Dot for May!</strong></p>
+<p>For May we’re playing Boom Dot for a chance to win a $50 gift card. To participate, share a screenshot / picture of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> before the June 1st Hangout.</p>
+<p>Boom Dot is available in the <a href=http://bit.ly/apple-boom-dot target="_blank">Apple Store</a>, <a href=http://bit.ly/google-boom-dot target="_blank">Google Play Store</a>, and <a href=http://bit.ly/amazon-boom-dot target="_blank">Amazon App Store</a>. Download it and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-140/>Corona Geek #140 &#8211; Developing a Non-Game App and Memory Matching Game Logic</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode CoronaGeek to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+</ul>
+<p><strong>Other Resources</strong></p>
+<ul>
+<li>How-to: <a href=http://startappsblog.com/code-basics-create-button-in-corona-sdk/ target="_blank">Create a UI Button in Corona SDK</a></li>
+<li>How-to: <a href=https://halfcodehalfdesign.wordpress.com/2015/05/07/displaying-trajectory/ target="_blank">Displaying Angry Birds Style Trajectory Points</a></li>
+<li><a href=https://www.youtube.com/channel/UCwzi_MiS0jugMKQCnHsqgVQ/videos target="_blank">Subscribe to the new Fuse Powered Youtube channel</a></li>
+<li>Watch &#8211; <a href=https://www.youtube.com/watch?v=9NSc0M2q2Jw target="_blank">Adding An App To The Dashboard</a></li>
+<li>Watch &#8211; <a href=https://www.youtube.com/watch?v=wb1pAUdlQHA target="_blank">Game Analysis &#8211; Mr Jump</a></li>
+<li><a href=https://www.fusepowered.com/blog/2015/05/an-introduction-to-push-notifications/ target="_blank">An Introduction to Push Notifications</a> for Monetization</li>
+<li>Listen &#8211; <a href=https://www.fusepowered.com/blog/2015/05/podcast-episode-1-outerminds-and-the-launch-of-tadpole-tap/ target="_blank">Podcast Episode 1 – Outerminds And The Launch Of Tadpole Tap</a></li>
+<li><a href=https://www.fusepowered.com/blog/2015/05/5-metrics-every-game-should-track/ target="_blank">5 Metrics Every Game Should Track</a></li>
+<li><a href=https://www.fusepowered.com/blog/2015/05/a-beginners-guide-to-player-segmentation/ target="_blank">A Beginner’s Guide to Player Segmentation</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-141/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-141-2015-05-11-creating-matching-puzzle-game-pieces.mp3" length="86220043" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Creating Grid Patterns and Apple Watch Talk</title>
+		<link>/blog/coronageek/hangout-highlights-creating-game-grid-patterns-apple-watch-talk/</link>
+		<comments>/blog/coronageek/hangout-highlights-creating-game-grid-patterns-apple-watch-talk/#respond</comments>
+		<pubDate>Wed, 06 May 2015 16:20:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62638</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 139, we looked at organizing memory matching game pieces into a grid pattern. The solution involves coding a loop within a loop to create repeating rows of cards. Here are clips from Hangout #139. Watch the entire Hangout, or just the pieces that interest you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 139, we looked at <a href=/blog/coronageek/corona-geek-139/>organizing memory matching game pieces</a> into a grid pattern. The solution involves coding a loop within a loop to create repeating rows of cards. <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">Download the code</a> to see how it all fits together.</p>
+<p>Here are clips from Hangout #139. <a href=/blog/coronageek/corona-geek-139/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p>Jason Schroeder tells us why he uses his name as his brand.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/f0isBJUhS2A?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Memory Matching Game Recap</h3>
+<p>Ed Maurina gives us a brief overview of our matching game project.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/nH8jpAFo3to?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Grid Pattern Visualization &#8211; Part 1</h3>
+<p>Ed helps us visualize the logic behind the game grid.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/CFYX4lMGYIE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Calculating Grid Positions</h3>
+<p>Ed shows us how game pieces get positioned on the game grid.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/zOHGyG_ClJY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Game Mechanics Format</h3>
+<p>We discuss the merits of focusing on just game mechanics in future Hangouts.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/AkXnm_flJgs?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Thoughts on Apple Watch</h3>
+<p>The panel discusses Apple Watch interface considerations.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/__Xp6yBqoOk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; More Thoughts on Apple Watch </h3>
+<p>The panel discusses potential killer apps for Apple Watch.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/G03PgRz7U8I?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Be sure to <a href=/blog/coronageek/corona-geek-140/>watch Hangout #140</a> where we finish our memory matching game. We added game logic to keep track of which cards have matching images and which don’t. Our next Hangout topic will focus on the core mechanics of creating a puzzle game. We&#8217;ll look at how the puzzle pieces are created and how they connect. Stay tuned.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-creating-game-grid-patterns-apple-watch-talk/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

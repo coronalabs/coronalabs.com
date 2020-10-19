@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>localization &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/localization/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>localization &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Localizing your app – a community language resource</title>
+		<link>/blog/2017/01/24/localizing-your-app-a-community-language-resource/</link>
+		<pubDate>Tue, 24 Jan 2017 20:24:17 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[translation]]></category>
+
+		<guid isPermaLink="false">/?p=69470</guid>
+		<description><![CDATA[Several years ago, a group of Corona developers started a Google spreadsheet which provides you with translations for localizing your apps. Check it out!]]></description>
+				<content:encoded><![CDATA[<p>The term &#8220;localize your app&#8221; simply means to present the UI/text in your users&#8217; local language, but where do you begin? Online translation sites and dictionaries can supply basic words, but sometimes the true meaning is lost in a language-specific subtlety, or the dictionary fails to understand which term you really need.</p>
+<p>Fortunately, a group of Corona developers recognized this dilemma and, several years ago, started a Google spreadsheet to help with app localization. It provides you with commom translations for many words/terms used in apps, organized into categories. For example, if you need to localize your &#8220;Play&#8221; button into Spanish, the answer is &#8220;Jugar.&#8221; How about Russian? Simply scan across the row and find &#8220;Запустить.&#8221;</p>
+<p><img class="alignnone size-large wp-image-69471" src="/wordpress/wp-content/uploads/2017/01/language-spreadsheet-1024x458.png" alt="language-spreadsheet" width="960" height="429" /></p>
+<p>Once you find the translated text you need, free plugins like <a href=https://marketplace.coronalabs.com/plugin/gbc-language-cabinet target="_blank">GBC Language Cabinet</a> can help you manage how to pick and display the correct text within your app.</p>
+<p><a href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">This spreadsheet</a> is a great example of &#8220;crowd-sourcing&#8221; and there is still work to be done &#8212; some languages are not yet complete, so we encourage you to help populate columns for languages which you&#8217;re fluent in.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">View the spreadsheet</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #115 – App Marketing in China and Spawning Random Enemies</title>
+		<link>/blog/coronageek/corona-geek-115/</link>
+		<comments>/blog/coronageek/corona-geek-115/#respond</comments>
+		<pubDate>Mon, 10 Nov 2014 22:43:51 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[spawning]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60193</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed selling apps in China and why you might consider attracting downloads in one country over another. We looked at how to randomly spawn enemies in a game and how to get your apps labeled as “Optimized” for iPhone 6 and 6 Plus in the Apple App Store.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/PtaaF23CfKk?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we discussed selling apps in China and why you might consider attracting downloads in one country over another. We looked at how to randomly spawn enemies in a game and how to get your apps labeled as “Optimized” for iPhone 6 and 6 Plus in the Apple App Store.</p>
+<p><strong>November&#8217;s Corona Geek Game</strong></p>
+<p>Congratulations to Kerem San, winner of last month&#8217;s Corona Geek Games contest. Kerem posted his <a href=http://spiralcodestudio.com/2048hex/ target="_blank">2048 Hex</a> high score on the Corona Geek Facebook page and won a $50 gift card to the retailer of his choice.</p>
+<p>This month we are playing Doctor Spin by <a href=/blog/coronageek/corona-geek-108/>Code Delivery Boy</a>. If you would like to play along and have a chance to win a gift card, <a href=http://www.doctorspingame.com/ target="_blank">download Doctor Spin</a> and share a screenshot of your high score on the <a href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook page</a>. The winner will be announced on December 1st.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-114/ target="_blank">Corona Geek #114 – Animated Counters and Adaptive Content Scaling</a></li>
+<li><a href=/university>Corona University</a></li>
+<li><a href=https://www.youtube.com/watch?v=3bUG0vDduEM&list=PLQUSbLhyMnAqAAce1xQN2k88y6Nwdng83&index=1 target="_blank">Special 1-hour Acquisition Hangout</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Burtons Media Group &#8211; Corona Books &#8211; <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek</strong></a> and save 20% at checkout</li>
+<li>Spiral Code Studio <a href=http://spiralcodestudio.com/ target="_blank">Corona Games and Development</a></li>
+<li>Roaming Gamer <a href=http://roaminggamer.com/makegames/ target="_blank">Game Templates and Tools</a></li>
+<li>Crave Creative <a href=http://www.cravecreative.com/ target="_blank">Widget Themes</a> &#8211; <a href=http://www.cravecreative.com/corona-widget-theme-1.html target="_blank">Bold</a>, <a href=http://www.cravecreative.com/corona-widget-theme-2.html target="_blank">Elegant</a>, <a href=http://www.cravecreative.com/corona-widget-theme-3.html target="_blank">Light</a></li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/blob/master/SSK/RGGlobals/ssk/globals/functions.lua target="_blank">First Not Nil Function &#8211; Github Repo</a></li>
+<li><a href=http://forums.coronalabs.com/topic/47560-create-random-position-that-are-not-colliding-each-other/?#entry245588 target="_blank">Generating Non-Overlapping Display Objects</a> &#8211; <a href=https://www.youtube.com/watch?v=K3ixlmzfgNk&list=UU1I_sK219oBk-5Uw2rYz3Tg target="_blank">Watch the video</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://www.forbes.com/sites/karstenstrauss/2014/09/17/want-people-to-download-your-app-translate-it-into-chinese/ target="_blank">Forbes article on getting app downloads in China</a></li>
+<li><a href=http://murphyapps.co/blog/2012/10/18/corona-sdk-tutorial-ios-app-localization target="_blank">Localizing your apps using Corona</a></li>
+<li><a href=http://online.wsj.com/articles/SB10001424127887324906004578292233989943540 target="_blank">Challenges of selling in non-english markets</a></li>
+<li><a href=http://www.androidauthority.com/samsung-devices-now-banned-use-chinese-officials-530392/ target="_blank">Samsung banned for China&#8217;s government officials</a></li>
+<li><a href=http://www.bloomberg.com/news/2014-07-16/how-china-may-make-apple-and-samsung-smartphones-a-tougher-sell.html target="_blank">2014 mobile market growth in China</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-115/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

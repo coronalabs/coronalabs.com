@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>space &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/space/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>space &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Mobile Development Lesson Learned: Ship Now! (Guest Piece)</title>
+		<link>/blog/2013/05/31/mobile-development-lesson-learned-ship-now-guest-piece/</link>
+		<comments>/blog/2013/05/31/mobile-development-lesson-learned-ship-now-guest-piece/#comments</comments>
+		<pubDate>Fri, 31 May 2013 16:30:13 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[space]]></category>
+
+		<guid isPermaLink="false">/?p=34774</guid>
+		<description><![CDATA[Mohamed Bennouf is the Co-Founder of LairdGames, an independent app development studio. As a Corona SDK developer for over two years, Mohamed won App of the Week in February 2013 for his recent game Space Missile Command.
+
+Prior to creating Space Missile Command, Mohamed released five Palm OS games since 2006, including three hard-core flight simulators. Mohamed lives in the Bay Area, works full-time as a field engineer, and makes software to relax.]]></description>
+				<content:encoded><![CDATA[<p><em>Mohamed Bennouf is the Co-Founder of LairdGames, an independent app development studio. As a Corona SDK developer for over two years, Mohamed won App of the Week in February 2013 for his recent game <a href=http://www.coronalabs.com/blog/2013/02/25/app-of-the-week-space-missile-command/>Space Missile Command</a>.</p>
+<p>Prior to creating Space Missile Command, Mohamed released five Palm OS games since 2006, including three hard-core flight simulators. Mohamed lives in the Bay Area, works full-time as a field engineer, and makes software to relax.</em></p>
+<hr/>
+<p><img src="/wordpress/wp-content/uploads/2013/05/Mo-Laird1.png" alt="Mo Laird" class="alignleft size-full wp-image-34781" />Before I say more about the lessons I learned, let me give you some background about <a href=https://itunes.apple.com/us/app/asteroids-invaders-vs-space/id537840971?mt=8>Space Missile Command</a> and my journey into the wonderful world of mobile apps.</p>
+<p>Everything started around 2005 when I first bought a Palm Pilot and then a Treo phone. Back then, an app store like PalmGear took 50-60% of developers&#8217; proceeds but I didn’t really mind since apps priced at $15+ were very common.</p>
+<p>My first app was Lunar Module Simulator, a very hardcore lunar lander simulator that took two years to develop! On a side-note, try to see if you detect a trend in this blog post. All the lunar lander games at the time were arcadish and so I wanted to develop a simulation that even Neil Armstrong would approve of. So I spent a considerable time reading everything I could about the Apollo program; I studied the technical documents on the NASA web site and even simulated the way the lunar module computer controlled the main descent engine. The game was a mini-success since it was unique at the time. You can see an old <a href=http://www.youtube.com/watch?v=y06Wui7KLuw>YouTube video</a> I made to promote it.</p>
+<p>After creating that app in 2008, I developed a couple more apps that took me just a few months to make. Next, I decided to try to make another &#8220;big&#8221; simulation game. This time it would be a F16 flight combat simulator. Once again, I researched and learned a ton about physics simulation of aircrafts like the F16. I learned all I could about weapons systems so I could simulate weapon drop as accurately as possible. And after two years the ViperOne F16 simulator was released (noticing the trend now?). Unfortunately I could not reproduce the relative success of Lunar Module Simulator and I sold a grand total of 3 copies of ViperOne. But what was even more devastating was that I completely missed the App Store and iPhone revolution. I was so bent on finishing ViperOne that nothing else mattered. Here&#8217;s a <a href=http://www.youtube.com/watch?v=qmWV1fhNSmY>YouTube video</a> of ViperOne in action.</p>
+<p>Eventually Palm/Treo was replaced by the iPhone and I was forced to look at developing for iOS. Space Missile Command was born May 2010. The game was really just a proof of concept to learn how to use a different SDK. Back then, I did not have a Mac so it was impossible for me to develop using Xcode (thank God!), so I found a nice little C++ based SDK (DragonFire) that allowed for development on a PC. Unfortunately after six months I came to conclusion that the SDK lacked many features that I needed. The most important one was the lack of particle effect engine needed for the realistic explosions in Space Missile Command. Eventually I found the perfect SDK. Corona SDK had a physics engine, offered a third party particle engine called <a href=http://www.x-pressive.com/ParticleCandy_Corona/features.html>Particle Candy</a>, and much more. I had to purchase a Mac Mini to actually ship my app, but it was all worth it.</p>
+<p>Even though DragonFire SDK is C++ based and Corona SDK is Lua based, the switch was painless. Frankly, the main issue was that, as usual, I took on way too much app!</p>
+<p>Space Missile Command is really a processor hog as there are so many things going on at the same time. Because of this, I encountered many road blocks, all related to moving multiple objects on the screen while having complex explosions and sound effects playing at the same time. Memory leaks had to be squashed and the app needed a lot of polish. This last phase &#8211; app polishing &#8211; took 90% of my development time. As a new iPhone/iPad developer, I wanted my app to be perfect. Being the only &#8220;apha&#8221; tester for a long time, I was always finding something to improve or change. As the weeks became months, and months turned into years, it became clear that I had to release the app. It was clear perhaps because my poor wife, Cathy, told me at least once every day to release the darn thing.</p>
+<p>That&#8217;s when I realized that I did not have an app icon. Fortunately, a wonderful designer, Ricardo Jorge, came forward and designed the current amazing icon for Space Missile Command. But he did not stop there. Ricardo also provided me all the assets for buttons (UI), all at the affordable price of $0! I will never be able to repay him for his generosity as he made the game a reality. I came to the understanding that people first see the icon and then screenshots when deciding whether to download the game. They never wonder about the code behind it or care how long it took for someone to develop it. Why should they?</p>
+<p>Finally, I got some amazingly patient beta testers who made the game even better. I have to say that the Corona community is the MOST amazing community ever. Everybody here shares what they know and of course it is a fantastic way to learn from others when you start your development journey with Corona SDK. </p>
+<p>After two years of development, Space Missile Command was released on December 19th, 2012 just in time for the winter holidays! Until recently, the game was downloaded more than 11,000 times and most of those downloads were ad supported by Revmob. Then, I had the opportunity to get promoted as a “Free App of the Day” by AppTubo. It was incredible to shoot up to the top of the chart in the European markets (AppTubo is a Paris-based company), and I received 22,000 download in day one alone! For a few days, Space Missile Command was even in the top 5 overall in Italy! At the end of the day, more than 40,000 people downloaded the game thanks to that promotion.</p>
+<p>In two simple words, the overarching lesson I learn from developing Space Missile Command is: &#8220;SHIP&#8230;NOW!&#8221;</p>
+<p>It sounds so obvious, but really, for everybody who is currently spending 6 months, a year, (or God forbid 2 years!) to complete the perfect app: don’t do it! Just ship.  </p>
+<p>Here a list of why you do not want to have a long development cycle:</p>
+<ul>
+<li><strong>Risky business</strong>: There is no way to tell if the app your are working so hard on will be a success. Most likely it won&#8217;t be (apologies for the negativity). You&#8217;ll only get the first indication for success once the app catches a customer’s eye in an app store.</li>
+<li><strong>Lost opportunities</strong>: How many apps could you have developed during that &#8220;lost&#8221; time? The mobile app business is really like the stock market. It follows the &#8220;don&#8217;t have all your eggs in one basket&#8221; philosophy.</li>
+<li><strong>You will be left behind</strong>: Mobile technology advances at an amazing pace. Corona SDK also updates at an incredible rate. The more time you spend working on your app, the more issues you will encounter when you are ready to ship. API&#8217;s that worked great a year ago become obsolete a year or 6 months later and this forces you to adapt, because now your code may be broken.</li>
+<li><strong>People’s taste in games change quickly</strong>: A game genre that was popular even a few months ago can quickly become obsolete. People are always looking for the next big thing, and it&#8217;s not easy to deliver new things when it takes ages to develop an app.</li>
+<li><strong>Marketing the app becomes an afterthought</strong>: You are so exhausted by the development of the app that you have no energy left to market your work. So you simply put it in the store and pray. Not a winning strategy!</li>
+</ul>
+<p>I could go on and on, but I hope I have persuaded you (and more importantly myself) that FAST  iteration on the app stores is a better strategy when it comes to the mobile apps business. You need to fail faster so you can learn what works and what does not work on the App Store. One thing I did not talk about is the need for App Store Optimization (ASO). I am hoping to write more on that in a future guest post, but suffice it to say if you do not have $100K to spend on advertising, ASO is your best bet. </p>
+<p>Thanks for reading and be sure to check out <a href=https://itunes.apple.com/us/app/asteroids-invaders-vs-space/id537840971?mt=8>Space Missile Command</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/31/mobile-development-lesson-learned-ship-now-guest-piece/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

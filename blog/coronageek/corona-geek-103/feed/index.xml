@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #103 – Creating Object Oriented Character Classes for Games</title>
+	<atom:link href="/blog/coronageek/corona-geek-103/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-103/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-103/#comment-5703</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Fri, 20 Mar 2015 18:07:02 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59387#comment-5703</guid>
+		<description><![CDATA[Hi Mike,
+
+Here are links to the post by Chris and a few other excellent resources.
+
+http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-1/
+http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-2/
+http://roaminggamer.com/2014/06/17/oops-easy-object-hiearchies-for-corona-sdk-games/
+http://www.omidahourai.com/from-zero-to-oo-ardentkids-guide-to-object-oriented-lua-with-corona-sdk
+
+Hope that helps :)]]></description>
+		<content:encoded><![CDATA[<p>Hi Mike,</p>
+<p>Here are links to the post by Chris and a few other excellent resources.</p>
+<p><a href="http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-1/" rel="nofollow">http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-1/</a><br />
+<a href="http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-2/" rel="nofollow">http://www.develephant.net/an-rpg-themed-oop-design-pattern-for-corona-sdk-part-2/</a><br />
+<a href="http://roaminggamer.com/2014/06/17/oops-easy-object-hiearchies-for-corona-sdk-games/" rel="nofollow">http://roaminggamer.com/2014/06/17/oops-easy-object-hiearchies-for-corona-sdk-games/</a><br />
+<a href="http://www.omidahourai.com/from-zero-to-oo-ardentkids-guide-to-object-oriented-lua-with-corona-sdk" rel="nofollow">http://www.omidahourai.com/from-zero-to-oo-ardentkids-guide-to-object-oriented-lua-with-corona-sdk</a></p>
+<p>Hope that helps 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mike</title>
+		<link>/blog/coronageek/corona-geek-103/#comment-5702</link>
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Wed, 18 Mar 2015 09:50:49 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59387#comment-5702</guid>
+		<description><![CDATA[Please provide a link for the OOP blog posts as mentioned?]]></description>
+		<content:encoded><![CDATA[<p>Please provide a link for the OOP blog posts as mentioned?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

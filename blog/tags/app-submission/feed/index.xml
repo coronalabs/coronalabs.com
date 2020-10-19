@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>app submission &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-submission/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>app submission &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Apple&#8217;s iOS 7 Submission Requirements</title>
+		<link>/blog/2014/01/29/apples-ios-7-submission-requirements/</link>
+		<comments>/blog/2014/01/29/apples-ios-7-submission-requirements/#comments</comments>
+		<pubDate>Wed, 29 Jan 2014 23:11:26 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[app submission]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[ios7]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=55578</guid>
+		<description><![CDATA[As many of you are probably aware, Apple has announced they are <a href="http://www.macworld.com/article/2080865/apple-requiring-app-submissions-to-be-optimized-for-ios-7-by-feb-1.html">requiring app submissions</a> to be optimized for iOS7 starting on Feb 1.
+
+If you are using our Graphics 2.0 builds (by either migrating, or by using the compatibility mode), then you're already good to go. Graphics 2.0 builds have supported iOS7 since Day 1. ]]></description>
+				<content:encoded><![CDATA[<p>As many of you are probably aware, Apple has announced they are <a href=http://www.macworld.com/article/2080865/apple-requiring-app-submissions-to-be-optimized-for-ios-7-by-feb-1.html>requiring app submissions</a> to be optimized for iOS7 starting on Feb 1.</p>
+<p>If you are using our Graphics 2.0 builds (by either migrating, or by using the compatibility mode), then you&#8217;re already good to go. Graphics 2.0 builds have supported iOS7 since Day 1. </p>
+<p>If you are still on Graphics 1.0, you will have issues with Apple&#8217;s submission process. You have several options:</p>
+<ol>
+<li>Upgrade your project to Graphics 2.0 and use <a href=http://docs.coronalabs.com/guide/graphics/migration_v1.html>1.0 compatibility mode</a> (i.e. adding one line in config.lua). This has been used very successfully by many apps, including highly complex ones.</li>
+<li>Upgrade your project to Graphics 2.0 by <a href=http://docs.coronalabs.com/guide/graphics/migration_g20.html>migrating your code</a>. This allows you to take full advantage of the great graphics capabilities of Corona.</li>
+<li>Use a Graphics 1.0 daily build that explicitly supports iOS 7.</li>
+</ol>
+<p>&nbsp; </p>
+<p>Now, we recognize that daily builds are only available to Pro (and above) subscribers. We thought about what we can do to help you around this issue, so here&#8217;s what we are going to do:</p>
+<ul>
+<li>We are making build 2014.1262 available to all Corona developers (<a href=http://developer.coronalabs.com/sites/default/files/CoronaSDK-2014.1262.dmg>Mac</a>) (<a href=http://developer.coronalabs.com/sites/default/files/CoronaSDK-2014.1262.msi>Win</a>).</li>
+<li>This build is based on Graphics 1.0 and supports iOS7, so you can use it to build your apps and submit to the app store.</li>
+<li>This is not a public release. It is a daily build that fixes the following issues present in 2013.1260:</li>
+<ul>
+<li>The Facebook listener won&#8217;t receive an event when the user denies the login request.</li>
+<li>Requesting additional Facebook permissions returns the incorrect event state.</li>
+<li>scrollView event.phase not being passed to the listener.</li>
+</ul>
+</ul>
+<p>If there are other issues in 1262 that affect your app and you are not able to use it, we are very sorry. We want to shield you from disruptions like this, but that is not always completely possible. In this case, Apple has decided to enact a big restriction to keep pace with the mobile industry. And following Apple&#8217;s lead, we have to keep moving forward, and that means focusing 100% on our Graphics 2.0 builds.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/01/29/apples-ios-7-submission-requirements/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+	</channel>
+</rss>

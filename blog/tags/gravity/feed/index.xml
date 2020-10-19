@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Gravity &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/gravity/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Gravity &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights &#8211; 3D Printing Game Pieces, Player Air Control, and Key Inputs</title>
+		<link>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/</link>
+		<comments>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/#respond</comments>
+		<pubDate>Wed, 26 Aug 2015 16:30:44 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63843</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator....]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 155, we talked with BoardCraft CEO, Todd Porter about printing 3D game pieces to add dimension to games. We discussed the 3D printing game market and how game developers can use physical assets to add value to their digital properties. </p>
+<p>We also continued our &#8220;Using Gravity In Games Series&#8221;. Ed Maurina showed us how to add air control to our game character to keep them from jumping outside the playable area of our game. Ed also showed us how to add key inputs to our game to make play testing easier in Corona Simulator. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-155/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 3D Printed Games Using BoardCraft</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/u6YXTXkdCdE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 3D Printing Game Market</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LtG9oaI7XYA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Kickstarter Insights</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/GZq0Xd-3xj4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Gravity In Games Rcap</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ceYqpYob4Xo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Adding Assets to Layers</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/KzJBd1oeTr4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Adding Key Inputs</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/dTbZ4WcUDhE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Player Air Control</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/6qVRkjlFWt4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adding a Player Foot</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0TM9vnbQcko?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 9 &#8211; Wrap Up</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LQM999jpc00?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-156/>adding a level loader</a> to our &#8220;Using Gravity In Games&#8221; project.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-3d-printing-game-pieces-player-air-control-and-key-inputs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #156 &#8211; Using Gravity In Games &#8211; Part 3, Adding Blocks, Spikes, Coins, and Monsters</title>
+		<link>/blog/coronageek/corona-geek-156/</link>
+		<comments>/blog/coronageek/corona-geek-156/#respond</comments>
+		<pubDate>Mon, 24 Aug 2015 22:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63816</guid>
+		<description><![CDATA[Today we covered part three of our "Using Gravity In Games" game development series with a look at level building. We looked at code for positioning platforms, spikes, coins, and monsters. We looked at how to dynamically center the camera on the player's starting position. Finally, we discussed the benefits of making code reusable and adding the ability to turn features on and off during play testing.  Download the updated source code for a full look at how the game works.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/0Pd1mzJl6qQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s weekly Corona Geek Hangout we continued our &#8220;Using Gravity In Games&#8221; game development series with a look at level building. This is part three of our look at developing a game similar to the popular mobile game, They Must Be Fed 3. </p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> of the series we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. </p>
+<p>Today Ed Maurina (<a href=https://forums.coronalabs.com/index.php?app=core&module=search&section=search&do=search&fromsearch=1>RoamingGamer</a>) walked us through level building code for creating platforms, spikes, coins, and monsters. We also looked at how to dynamically center the camera on the player&#8217;s starting position. The level builder code is designed to let you position spikes on the sides of blocks by adjusting a few configuration settings. We also discussed the benefits of making your code reusable and adding the ability to turn features on and off during play testing.  <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Download the updated source code</a> for a full look at how the pieces fit together.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ckrb3s4h7bj8evlum8mrd1si2uk target="_blank">Corona Geek After Dark #8</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Develphant&#8217;s new Spotify module</a>, forum threads, desktop app marketing, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+<li><a href=http://lua-users.org/wiki/SplitJoin target="_blank">Lua String Split</a></li>
+<li><a href=http://lua-users.org/wiki/DataDumper target="_blank">Lua Data Dumper</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-155/>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-156/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-156-2015-08-24-using-gravity-in-games-part-3-level-building.mp3" length="115678520" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights &#8211; Using Gravity In Games and Creating 2D Shadow Effects Using Custom Shaders</title>
+		<link>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/</link>
+		<comments>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/#respond</comments>
+		<pubDate>Wed, 19 Aug 2015 17:54:20 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[shader examples]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63784</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the project source code to follow along with the conversation. If you missed the Hangout, here are clips to help you catch up. Watch the entire conversation, or just the parts that interest you most. Part 1 &#8211; 2D Shadows Example Overview Part 2 &#8211; 2D Shadows Example Code Part 3 &#8211;...]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 154, Steven Johnson from Xibalba Studios shared his code for creating a custom 2D shadows shader example and Roaming Gamer’s, Ed Maurina showed us how to simulate and use gravity in a game similar to They Need To Be Fed 3. Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">project source code</a> to follow along with the conversation.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-154/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; 2D Shadows Example Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/qg1KW2MaIcg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; 2D Shadows Example Code</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/fHp8XMLeoWw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; They Need To Be Fed 3 Game Overive</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/8HC7MQLtlTA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Breaking Down The Game Mechanics</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1lOqSjVydRg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Player Gravity Overview</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/ng0p7Lvsui0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Calculating Gravity</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/0AF93KOs80s?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Adjusting Magnitude</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/zC_aJJ2Cn6w?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Adjusting Block Size</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/q8sK8bRABXI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Also, be sure to catch this week&#8217;s Hangout where we talked about <a href=/blog/coronageek/corona-geek-155/>3D printing game pieces and using gravity in games &#8211; part 2</a>.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-using-gravity-in-games-and-creating-2d-shadow-effects-using-custom-shaders/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</title>
+		<link>/blog/coronageek/corona-geek-155/</link>
+		<comments>/blog/coronageek/corona-geek-155/#respond</comments>
+		<pubDate>Mon, 17 Aug 2015 21:56:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[3d printing]]></category>
+		<category><![CDATA[board game]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63761</guid>
+		<description><![CDATA[Today, we talked with special guest Todd Porter, CEO of BoardCraft about creating  3D printed game pieces. We also continued our gravity game discussion with a look at how to set up our world using layers, how to enable multitouch, and how to capture key inputs on Windows and OS X. The project code and graphics have been updated since last week, so be sure to download the updated source code.
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/8e6vHNwB4yM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, we talked with special guest Todd Porter, CEO of BoardCraft, about making your app stand out using 3D printed game pieces. </p>
+<p>BoardCraft is a multi-disciplined group of experienced AAA game developers that has worked with major players in the game industry such as EA, Atari, Sega, Microsoft, Epic and Ion Storm. </p>
+<p>I <a href=https://www.youtube.com/watch?v=jwxaBXlkCdA target="_blank">ran into Todd at RTX2015</a> in Austin Texas and was immediately impressed with the <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus board game</a> the <a href=http://boardcraft.com/ target="_blank">BoardCraft engine</a>. Check out their <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus Kickstarter campaign</a> to bring the BoardCraft software to the board game community.</p>
+<p>Also on the Hangout, Roaming Gamer’s, Ed Maurina continued our gravity game discussion. Ed showed us how to set up our world using layers, how to enable multitouch, and <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to capture key inputs</a> on Windows and OS X for testing during game development. The code and graphics have been updated since last week, so be sure to <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated source code</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Corona Geek After Dark #7</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">multiplayer physics</a>, push notifications, and our favorite game development podcasts, plus a ton of other stuff.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-154/>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://BoardCraft.com/ target="_blank">3D Printed Board Game Pieces</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=http://xibalbastudios.com/militant_en.html target="_blank">MilitAnt™ by Xibalba Studios</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-155/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-155-2015-08-17-3d-printed-game-pieces-and-using-gravity-in-games-part-2.mp3" length="105964104" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</title>
+		<link>/blog/coronageek/corona-geek-154/</link>
+		<comments>/blog/coronageek/corona-geek-154/#respond</comments>
+		<pubDate>Mon, 10 Aug 2015 22:13:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[2D Shadows]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63645</guid>
+		<description><![CDATA[Today, Steven Johnson shared his code for creating a custom 2D shadows shader example and Ed Maurina showed us how to simulate and use gravity in a games similar to They Need To Be Fed 3. Watch the replay and check the show notes to download the code.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Qktg1GIQeiI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> shared his <a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">code for creating a custom 2D shadows shader example</a> and Roaming Gamer’s, Ed Maurina showed us <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to simulate and use gravity in a games</a> similar to the popular iOS and Android game, <a href=http://www.bitatebit.com/ target="_blank">They Need To Be Fed 3</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">Corona Geek After Dark #6</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/c7uvoj9iibb7o7ogt7vr4hinc90 target="_blank">passion versus profit</a>, multiplayer game development, and a ton of other stuff.</p>
+<p><strong>Corona Geek Games July Challenge Winner!</strong></p>
+<p>Congratulations again to Huub van Vuren for being July&#8217;s high score winner at Rise 1.0 with an amazing high score of 606! Huub has earned a $50 gift card for playing games. That&#8217;s pretty cool. We&#8217;ll announce a game for August on next week&#8217;s Hangout. Thank you to everyone who participated in July&#8217;s challenge. Check out the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> for a full list of scores.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Download it and have fun!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-153/>Corona Geek #153 &#8211; Custom Shader Math and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">2D Shadow Custom Shader Example Code</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://sellfy.com/p/rovA/ target="_blank">Gear Jumper Template</a></li>
+<li><a href=https://www.youtube.com/watch?v=AJdEqssNZ-U target="_blank">The Art of Screenshake</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy Apps</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-154/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-154-2015-08-10-using-gravity-in-games-and-2d-shadows.mp3" length="94398172" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

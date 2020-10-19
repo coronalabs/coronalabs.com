@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>config.lua &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/config-lua/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>config.lua &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #124</title>
+		<link>/blog/2016/05/20/from-the-forum-issue-124/</link>
+		<pubDate>Fri, 20 May 2016 14:29:46 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66877</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A little bit more from Google Maps</h3>
+<p>This first tip is short and sweet and it revolves around one of the great “gotchas” that is the basis of Corona SDK: the OpenGL layer. As we all know, because of the architecture which underlies Corona SDK, any <a href=https://docs.coronalabs.com/daily/api/library/native/index.html>native.*</a> API call that creates a native object places that element above graphical objects created within your Corona app.</p>
+<p>If you have your sights set on a super-engaging geo-tagging game, this creates quite the boondoggle. You can’t capture maps with <a href=https://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a> et. al, nor can you mark up the maps that you create. However, standout Corona developer <strong>AidenWolf</strong> reminds us that we can still leverage the Google Static Maps API. Check out the original thread below and get clued in on how you can modify your map images with very little hassle!</p>
+<p><a href=https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/ target="_blank">https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/</a></p>
+<h3>Remote server querying workflows</h3>
+<p>If you aren’t coming from a system administrator background, configuring your Corona project to interface nicely with your remote server can be a bit of a struggle. Wrapping your head around all the moving parts isn’t the most exciting process.</p>
+<p>Fortunately, exemplary Corona support engineer Rob Miracle responded to a forum thread with some questions about this topic, and helped out everyone by giving a quick-and-dirty dissertation on the finer aspects of SQL integration. Click through to the original thread to grab a bit more info on this very necessary skill.</p>
+<p><a href=https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/ target="_blank">https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/</a></p>
+<h3>Some tips for desktop window sizes</h3>
+<p>The nuts and bolts of Windows and OS X desktop deployment are still being felt out by the Corona community at large. While we do have access to the vast majority of APIs that are standard for mobile development at this point, there are still a few here and there that don’t readily apply.</p>
+<p>One of the missing pieces is the read order of our projects. Does the <code>config.lua</code> file get read first, or does the desktop environment get queued in order to identify the various values for the <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display.*</a> APIs? As Corona engineer <strong>Joshua Quick</strong> states:</p>
+<p>“It&#8217;s a chicken &amp; egg issue. We need to read your &#8216;<code>config.lua'</code> file to determine what the pixel width and height of the window should be, which of course means the <code>display.*</code> Lua APIs can&#8217;t be ready for you to use since the pixel width and height you want to read haven&#8217;t been determined yet.”</p>
+<p>I’ve included two different forum threads that tackle this topic in depth, so that you can be well-armed when you run up against this desktop idiosyncrasy. Truck through to the links below to get inundated with desktop display value discussions!</p>
+<p><a href=https://forums.coronalabs.com/topic/63123-display-in-configlua target="_blank">https://forums.coronalabs.com/topic/63123-display-in-configlua</a><br />
+<a href=https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/ target="_blank">https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #111 – Texture Memory Management and Ultimate Config.lua Revisited</title>
+		<link>/blog/coronageek/corona-geek-111/</link>
+		<comments>/blog/coronageek/corona-geek-111/#comments</comments>
+		<pubDate>Mon, 13 Oct 2014 22:42:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[Dynamic Content Scaling]]></category>
+		<category><![CDATA[texture memory]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59807</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Corona Ambassador Ed Maurina shared texture memory management tips for freeing up texture memory when you have to display and retain many hundreds to thousands of images on and off-screen. Also Corona Ambassador Sergey Lerg shared his config.lua solution for scaling content to fit the most common screen sizes, including iPhone 6 and 6 Plus.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/DDKceEWKq-8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, <a href=http://roaminggamer.com/makegames/ target="_blank">Corona Ambassador Ed Maurina</a> shared <a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2014/10/Texture%20Memory%20Management.zip target="_blank">texture memory management</a> tips for freeing up texture memory when you have to display and retain many hundreds to thousands of images on and off-screen. Also <a href=http://spiralcodestudio.com/ target="_blank">Corona Ambassador Sergey Lerg</a> shared his <a href=https://github.com/Lerg/awesome-config-lua target="_blank">config.lua solution</a> for scaling content to fit the most common screen sizes, including iPhone 6 and 6 Plus.</p>
+<p><strong>Compete In The &#8220;Geek Games&#8221;</strong></p>
+<p>Remember to put your gaming skills to go use. <strong>Post your <a title="2048 Hex" href=http://bit.ly/2048hex target="_blank">2048 Hex</a> high score</strong> to the <a title="Corona Geek Facebook page" href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> for a chance to win a $50 gift card to a retailer of your choice! Multiple entries are allowed. Post each time you get a new high score. A winner will be announced on November 3rd. We&#8217;ll remind you throughout the month. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-110/ target="_blank">Corona Geek #110 &#8211; Coronium Game Server, Windows Phone Apps, and Swiping Objects</a></li>
+<li><a href=/university>Corona University</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=http://burtonsmediagroup.com/ target="_blank">Burtons Media Group &#8211; Corona Books</a></li>
+<li><a href=http://roaminggamer.com/makegames/ target="_blank">Roaming Gamer &#8211; Game Templates and Tools</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio &#8211; Corona Games and Development</a></li>
+<li><a href=http://codecanyon.net/item/moons-parental-gate-for-corona-sdk/9096318 target="_blank">Swipe Parental Gate</a></li>
+<li><a href=http://www.theverge.com/2014/9/27/6854607/att-promotion-doubles-data-in-largest-mobile-share-value-plans target="_blank">AT&amp;T Doubles Data Plans</a></li>
+<li><a href=/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/>Game Center moved to plugin</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-111/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

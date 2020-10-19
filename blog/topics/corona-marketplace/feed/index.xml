@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Marketplace &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/corona-marketplace/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Marketplace &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Self-Hosted Plugins plan</title>
+		<link>/blog/2018/01/24/introducing-the-self-hosted-plugins-plan/</link>
+		<pubDate>Wed, 24 Jan 2018 18:47:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73278</guid>
+		<description><![CDATA[There is a new plan for self-hosted plugins. Learn more about this new feature and how you can use it.]]></description>
+				<content:encoded><![CDATA[<p>There have been several requests for a standalone self-hosted plugin plan. Self-hosted plugins are a method for studios who are making their own native plugins to create plugins, yet still use the simulator for building their apps. Normally if you need to use a custom plugin, you would have to use native builds to create and test each build.</p>
+<p>Previously, the self-hosted plugin feature was part of the Unlimited Enterprise package.. Once we made native builds free, this feature was added to the <a href=https://marketplace.coronalabs.com/support/priority-plus-support target="_blank" rel="noopener">Priority Plus Support plan</a>. We have now made a standalone version of the self-hosted plugin plan. This feature is now available for $499/year and can be purchased in the <a href=https://marketplace.coronalabs.com/support/self-hosted-plugins target="_blank" rel="noopener">Corona Marketplace</a>.</p>
+<p>Now studios can access this feature without the need for the additional support plan.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing new non-revenue-share F.A.N. plugin</title>
+		<link>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/</link>
+		<comments>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/#comments</comments>
+		<pubDate>Tue, 22 Aug 2017 16:03:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=72769</guid>
+		<description><![CDATA[Corona Labs now offers two versions of the Facebook Audience Network plugin: revenue-share and paid. Learn more about the two versions and which one is right for you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-72770" src="/wordpress/wp-content/uploads/2017/08/facebook-an-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2017/08/facebook-an-150x150.png 150w, /wordpress/wp-content/uploads/2017/08/facebook-an-300x300.png 300w, /wordpress/wp-content/uploads/2017/08/facebook-an.png 500w" sizes="(max-width: 150px) 100vw, 150px" />Our current <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank" rel="noopener">Facebook Audience Network</a> (F.A.N.) monetization plugin was originally created as a &#8220;revenue-share&#8221; plugin where a small percentage (5%) of your Facebook Audience Network ads are credited to a Corona Labs account.</p>
+<p>Now, just like we did with <a href=/blog/2017/05/31/introducing-new-non-revenue-share-applovin-plugin/ target="_blank" rel="noopener">AppLovin</a> earlier this year, we offer the Facebook Audience Network in <strong>two</strong> forms:</p>
+<ul>
+<li>The <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network target="_blank" rel="noopener">original revenue-share version</a> where 5% of the delivered ads are attributed to Corona Labs.</li>
+<li>A new <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">paid version</a> of the plugin without any revenue-share component. You keep 100% of your ad revenue and you manage your account directly.</li>
+</ul>
+<p>The new paid Facebook Audience Network plugin is available in the <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">Corona Marketplace</a> for $199/year.</p>
+<p>To use the paid version:</p>
+<ol>
+<li>Visit the Corona Marketplace and purchase the <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">Facebook Audience Network Paid</a> plugin.</li>
+<li>In your <code>build.settings</code> file, change the plugin entry from <code>"plugin.fbAudienceNetwork"</code> to <code>"plugin.fbAudienceNetwork.paid"</code>.</li>
+<li>Update any <code>require()</code> statements in your code:<br />
+<code>local fbAudienceNetwork = require( "plugin.fbAudienceNetwork.paid" )</code></li>
+</ol>
+<p>Please visit our <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank" rel="noopener">integration documentation</a> for instructions on how to get up and running with Facebook Audience Network.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>We have a winner in our latest Corona Marketplace contest!</title>
+		<link>/blog/2017/04/18/we-have-a-winner-in-our-latest-corona-marketplace-contest/</link>
+		<pubDate>Tue, 18 Apr 2017 18:06:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=70638</guid>
+		<description><![CDATA[Our contest for simple game templates has concluded. Let's all congratulate the winners!]]></description>
+				<content:encoded><![CDATA[<p>Congratulations to <strong>Daniel Williams</strong> (a.k.a. &#8220;thatsopanda&#8221;) for his game template submission <em><a href=https://marketplace.coronalabs.com/asset/guess-the-picture-game-template target="_blank">Guess the Picture</a></em>.  <em>Guess the Picture</em> is a basic word game where you look at a photo and select letters from a grid to identify and correctly spell the pictured item. It serves as a great example of how to create word-based games and Daniel even included a bonus version which has <a href=https://marketplace.coronalabs.com/plugin/appodeal target="_blank">Appodeal</a> ads implemented.</p>
+<p>For his winning entry, Daniel will receive a pair of Bose QC35 headphones and a higher revenue share of 85% for six months.</p>
+<p><a href=https://marketplace.coronalabs.com/asset/guess-the-picture-game-template><img class="alignnone size-full wp-image-70639" src="/wordpress/wp-content/uploads/2017/04/16785screenshot-1.png" alt="16785screenshot-1" width="730" height="487" /></a></p>
+<h4>Runners up</h4>
+<p><em><a href=https://marketplace.coronalabs.com/asset/frogso target="_blank">Frogso</a></em> by <strong>Blobuk Games</strong> chimed in as the second place winner. In this game, your frog catches flies to climb higher and higher out of the lily pad pond. Blobuk Games will get an 85% revenue share for <em>Frogso</em> for six months.</p>
+<p>Coming in third place is <strong>Ed Maurina</strong> with his arcade classic <em><a href=https://marketplace.coronalabs.com/asset/missile-command-game-templates target="_blank">Missile Command</a></em> which gets him an 80% revenue share for three months.</p>
+<hr />
+<p>We sincerely thank everybody who participated! Check out these winners and the other submissions in the <a href=https://marketplace.coronalabs.com/assets/complete-projects target="_blank">Complete Projects</a> section of the Corona Marketplace!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Marketplace Contest: Simple Game Templates</title>
+		<link>/blog/2017/02/23/corona-marketplace-contest-simple-game-templates/</link>
+		<pubDate>Fri, 24 Feb 2017 00:01:50 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69650</guid>
+		<description><![CDATA[Announcing our next Corona Marketplace contest! Enter to win a pair of Bose QC35 wireless headphones!]]></description>
+				<content:encoded><![CDATA[<p><strong>NOTE: The contest deadline has been extended until Friday, April 7, 2017.</strong></p>
+<p>Corona Labs invites you to participate in our next Marketplace contest! This time, your mission is to build a <strong>simple game template</strong> &#8212; code, art, and audio that can be used by other Corona developers as a template/foundation for their dream game. Entries will go into the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> for others to download and modify (see below).</p>
+<p>The game should be &#8220;eye-catching and simple&#8221; &#8212; think of games like <a href=https://en.wikipedia.org/wiki/Flappy_Bird target="_blank"><em>Flappy Bird</em></a> or <a href=https://en.wikipedia.org/wiki/2048_(video_game) target="_blank"><em>2048</em></a> where the mechanics are very basic but the game is challenging. Many of the most successful games were built around the concept of simplicity and the ability to just &#8220;jump right in&#8221; and play.</p>
+<p><a href=/wordpress/wp-content/uploads/2017/02/MarketplaceContest2-2.png target="_blank"><img class="alignnone wp-image-69661 size-full" src=/wordpress/wp-content/uploads/2017/02/MarketplaceContest2-2.png width="730" height="300" /></a></p>
+<h3>Submission Details</h3>
+<ul>
+<li>All templates submitted through our <a href=https://marketplace.coronalabs.com/product-submit target="_blank">Submit a Product</a> form from <strong>February 23, 2017</strong> until <strong>April 7, 2017</strong> will be eligible for this contest. Please review our <a href=https://marketplace.coronalabs.com/vendor-faq target="_blank">Vendor FAQ</a> to learn more about the submission process.</li>
+<li>The game must load and play in the Corona Simulator &#8212; do <strong>not</strong> include features or plugins that require building for a device. For this contest, the focus is <em>gameplay</em>.</li>
+<li>Your product, if approved, will be offered for sale before the deadline &#8212; it simply needs to be submitted before April 7, 2017 to be eligible for the contest.</li>
+<li>All candidate submissions must be available for permanent inclusion in the Corona Marketplace.</li>
+<li>Corona Labs reserves the right to use submissions for promotional purposes.</li>
+<li>If you (the developer) no longer intend to maintain the template for any reason, Corona Labs reserves the right to &#8220;adopt&#8221; it and continue to maintain it.</li>
+</ul>
+<h3>Prizes</h3>
+<p><strong>Grand Prize</strong> – <a href=https://www.bose.com/en_us/products/headphones/over_ear_headphones/quietcomfort-35-wireless.html target="_blank">Bose QC35 Wireless Headphones</a> + a higher revenue share for your product for 6 months (85%).</p>
+<p><strong>Runner-Up Prize</strong> – A higher revenue share for your product for 6 months (85%).</p>
+<p><strong>Honorable Mentions</strong> – In case we need to recognize any other solid submissions that didn’t quite make the cut; a higher revenue share for your product for 3 months (80%).</p>
+<p>Of course all recognized products will be featured (with the green &#8220;Featured&#8221; banner) in the marketplace.</p>
+<h3>Ready, Set, Go!</h3>
+<p>Get those creative juices flowing! If you need any clarifications about this contest, please ask in the <a href=https://forums.coronalabs.com/forum/660-marketplace-announcements/ target="_blank">Corona Forums</a>. We&#8217;re excited to see what you come up with!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_ufzclwgcvm btn-lg btn-solid base_clr_bg " href=https://marketplace.coronalabs.com/product-submit target="_blank">Submit Your Entry</a></p>
+<style>
+<p> .btn_ufzclwgcvm.base_clr_brd { border-color: #ff6300; } .btn_ufzclwgcvm.base_clr_txt { color: #ff6300; } .btn_ufzclwgcvm.base_clr_bg { background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>We have a winner in our Corona Marketplace contest!</title>
+		<link>/blog/2017/02/16/we-have-a-winner-in-our-corona-marketplace-contest/</link>
+		<pubDate>Thu, 16 Feb 2017 18:13:12 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69597</guid>
+		<description><![CDATA[Let's congratulate Ed Maurina for winning our Corona Marketplace contest. Read further to learn about his winning entry!]]></description>
+				<content:encoded><![CDATA[<p>Congratulations to <strong>Ed Maurina</strong> from <a href=https://marketplace.coronalabs.com/asset/super-starter-kit-2-ssk2-pro target="_blank">Roaming Gamer</a>, winner of our recent Corona Marketplace submission contest! Ed submitted <a href=https://marketplace.coronalabs.com/asset/super-starter-kit-2-ssk2-pro target="_blank">SSK2 &#8211; Super Starter Kit 2</a>, both in <a href=https://marketplace.coronalabs.com/asset/super-starter-kit-2-ssk2-pro target="_blank">Pro</a> and <a href=https://marketplace.coronalabs.com/asset/super-starter-kit-2-ssk2-lite target="_blank">Lite</a> versions.</p>
+<p>The <strong>Super Starter Kit 2</strong> provides solutions to many common design and coding aspects that developers need to solve. According to Ed, &#8220;it&#8217;s a collection of libraries and utilities designed to take your Corona SDK development experience to a whole new level of efficiency and speed.&#8221;</p>
+<p>You can get an idea of the sheer amount of features included <a href=https://roaminggamer.github.io/RGDocs/pages/SSK2/ target="_blank">on the website</a>. Make sure you select the <strong>Lite</strong> and <strong>Pro</strong> drop-down menus in the top bar to see everything included.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7nWenvQZYS0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>For Ed&#8217;s great contribution, he will receive a pair of Bose GC35 headphones and an increased revenue share from the SSK2 plugins.</p>
+<h4>Runners up</h4>
+<p>Coming in a close second was the <a href=https://marketplace.coronalabs.com/asset/radiance-particle-effect-creator target="_blank">Radiance Particle Effect Creator</a> by <strong>Anaqim</strong> and, in third place, the <a href=https://marketplace.coronalabs.com/plugin/dynamic-shader target="_blank">Dynamic Shader</a> plugin by <strong>SporkFin Software</strong>. They will each get an increased revenue share for their excellent submissions!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://marketplace.coronalabs.com/search?search=SSK target="_blank">Get SSK2 </a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

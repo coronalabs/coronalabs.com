@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CoronaViewer &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronaviewer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>CoronaViewer &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CoronaViewer: Android Beta</title>
+		<link>/blog/2014/07/15/coronaviewer-android-beta/</link>
+		<comments>/blog/2014/07/15/coronaviewer-android-beta/#comments</comments>
+		<pubDate>Tue, 15 Jul 2014 20:09:34 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59184</guid>
+		<description><![CDATA[A few weeks ago, we introduced the beta of <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">CoronaViewer for iOS</a>. (If you haven't seen this yet, check out the video in the <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">original CoronaViewer post</a>.)
+
+Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you'll be able to preview your app across multiple OS's <em>and</em> multiple devices — simultaneously!]]></description>
+				<content:encoded><![CDATA[<p>A few weeks ago, we introduced the beta of <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>CoronaViewer for iOS</a>. (If you haven&#8217;t seen this yet, check out the video in the <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>original CoronaViewer post</a>.)</p>
+<p>Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you&#8217;ll be able to preview your app across multiple OS&#8217;s <em>and</em> multiple devices — simultaneously!</p>
+<p>To access CoronaViewer, you’ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+<p>If you&#8217;ve got feedback on this beta, let us know in the <a href=http://forums.coronalabs.com/forum/641-coronaviewer/>CoronaViewer forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/07/15/coronaviewer-android-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #97 &#8211; Variable Localization, CoronaViewer Tips, and App Prototyping</title>
+		<link>/blog/coronageek/corona-geek-97/</link>
+		<comments>/blog/coronageek/corona-geek-97/#comments</comments>
+		<pubDate>Mon, 07 Jul 2014 21:55:36 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[Prototyping]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59106</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Ed Maurina showed us how to automate the addition of commonly used variables to projects. We looked at displaying projects instantly across multiple devices using CoronaViewer and Dropbox for synchronization. We also explored two standalone iOS apps that enable Corona app development directly on a device with fewer keystrokes.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/5rfS5r-UB-o?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Ed Maurina showed us <a href=http://roaminggamer.com/2014/07/08/auto-localization-trick-lua/ target="_blank">how to automate the addition of commonly used variables</a> to projects. We looked at <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/ target="_blank">displaying projects instantly across multiple devices</a> using CoronaViewer and Dropbox for synchronization. We also explored two standalone iOS apps that enable Corona app development directly on a device with fewer keystrokes.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-96/ target="_blank">Corona Geek #96 – Create Particle Effects In Photoshop Using Kaboom, and Ask Ed</a></li>
+</ul>
+<p><strong>Plugins</strong></p>
+<ul>
+<li><a href=http://gremlininteractive.com/product-category/corona-plugins/ target="_blank">Plugin Sale at Gremlin Interactive</a> ( Amazon Ads, Chartboost, Kiip, and Paypal )</li>
+</ul>
+<p><strong>Books</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile Application &amp; Game Development with Corona SDK</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=https://itunes.apple.com/us/app/maddie-bears-birthday/id836642884?ls=1&mt=8 target="_blank">Maddie Bear&#8217;s Birthday on iOS</a></li>
+<li><a href=https://itunes.apple.com/us/app/minute-stretches-stretch-strengthen/id882267978?ls=1&mt=8 target="_blank">Minute Stretches on iOS</a></li>
+<li><a href=https://itunes.apple.com/us/app/id892544688?mt=8 target="_blank">Princess Birthday Party Puzzles for Kids</a></li>
+<li><a href=https://itunes.apple.com/us/app/first-pitch-live-baseball/id888045461?ls=1&mt=8 target="_blank">First Pitch game on iOS</a></li>
+</ul>
+<p><strong>Tutorials</strong></p>
+<ul>
+<li><a href=http://spiralcodestudio.com/corona-sdk-pro-tip-of-the-day-20/ target="_blank">Automatic Local Variables</a></li>
+</ul>
+<p><strong>Libraries</strong></p>
+<ul>
+<li><a href=http://forums.coronalabs.com/topic/33119-million-tile-engine-beta-release/page-22?#entry254384 target="_blank">Million Tile Engine Update</a></li>
+<li><a href=https://www.youtube.com/watch?v=9UUVpWxlAIk target="_blank">Coronastein3D</a></li>
+</ul>
+<p><strong>CoronaViewer</strong></p>
+<ul>
+<li><a href=http://forums.coronalabs.com/topic/49059-a-counter-argument-please-keep-dropbox-even-if-you-implement-direct-ip/ target="_blank">CoronaViewer Tips Discussion</a></li>
+<li><a href=http://www.textasticapp.com/ target="_blank">Textastic on iOS</a></li>
+<li><a href=https://itunes.apple.com/us/app/textexpander/id326180690?mt=8 target="_blank">TextExpander on iOS</a></li>
+<li><a href=http://smilesoftware.com/TextExpander/index.html target="_blank">TextExpander for Desktop</a></li>
+</ul>
+<p><strong>Collaboration Tools<br />
+</strong></p>
+<ul>
+<li><a href=http://www.invisionapp.com/ target="_blank">Web &amp; App Prototyping Tool</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-97/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-97-2014-07-07-localized-variables-coronaviewer-tips-prototyping.mp3" length="63898414" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-97-2014-07-07-localized-variables-coronaviewer-tips-prototyping.mp3" length="63898414" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-97-2014-07-07-localized-variables-coronaviewer-tips-prototyping.mp3" length="63898414" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-97-2014-07-07-localized-variables-coronaviewer-tips-prototyping.mp3" length="63898414" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>CoronaViewer: Instant on-device previews</title>
+		<link>/blog/2014/06/26/coronaviewer-instant-on-device-previews/</link>
+		<comments>/blog/2014/06/26/coronaviewer-instant-on-device-previews/#comments</comments>
+		<pubDate>Thu, 26 Jun 2014 12:32:25 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59031</guid>
+		<description><![CDATA[One of the things app developers love about Corona is the fast iteration. 
+
+Today, we're taking that one step further with CoronaViewer - edit your project from your desktop and preview them right away on your device!]]></description>
+				<content:encoded><![CDATA[<p>One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. </p>
+<p>Today, we&#8217;re going to take that one step further with CoronaViewer. It&#8217;s going to dramatically improve your productivity. With CoronaViewer, you&#8217;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. </p>
+<p>CoronaViewer is an app that you run on your device. It works by sync&#8217;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#8217;ll automatically be updated to CoronaViewer.</p>
+<p>Here&#8217;s a quick video showing how CoronaViewer works in practice:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/bpXE6MgyPQc?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#8217;ll find it&#8217;s well worth it to be able to preview your app instantly on device.</p>
+<p>To access CoronaViewer, you&#8217;ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/26/coronaviewer-instant-on-device-previews/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+	</channel>
+</rss>

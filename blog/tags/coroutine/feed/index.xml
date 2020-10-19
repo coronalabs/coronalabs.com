@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>coroutine &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coroutine/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>coroutine &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Using Coroutines in Corona</title>
+		<link>/blog/2015/02/10/tutorial-using-coroutines-in-corona/</link>
+		<comments>/blog/2015/02/10/tutorial-using-coroutines-in-corona/#comments</comments>
+		<pubDate>Tue, 10 Feb 2015 22:23:48 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[coroutine]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=61368</guid>
+		<description><![CDATA[Coroutines, one of Lua's key features, are quite powerful and give you the ability to start and stop blocks of code as needed. From advanced timer manipulation to creating state machines, coroutines give you greater control over when parts of your code execute. This tutorial touches on just a few of their many uses, in particular those which play to Corona's own strengths.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s guest tutorial comes to you courtesy of Steven Johnson, the Technical Director and head of R&amp;D at Xibalba Studios. Steven has been using Lua since 2003 and he has worked with custom engines, Vision SDK, LÖVE, HTML5 emulation, and projects with SDL bindings in C++ and LuaJIT. When he&#8217;s not working on his own hobby projects, he likes to research math and graphics concepts.</em></p>
+<hr />
+<p>Coroutines, <a href=http://www.jucs.org/jucs_10_7/coroutines_in_lua/de_Moura_A_L.html target="_blank">introduced in Lua 5.0</a>, are one of the language&#8217;s key features, but despite having been available in Corona from the beginning, they seem to receive very little attention. This is unfortunate, as coroutines are quite powerful, giving you the ability to start and stop blocks of code as needed. Whether you want to do advanced timer manipulation or create state machines, coroutines give you greater control over when the parts of your code execute. This tutorial will touch on just a few of their many uses, in particular those which play to Corona&#8217;s own strengths.</p>
+<h3><a name="basics"></a>The Basics</h3>
+<p>Let&#8217;s begin with a quick primer on the API. All functions are found in the <b>coroutine</b> table. As of this writing, these have not been included in Corona&#8217;s SDK API reference, but may be found in the <a href=http://www.lua.org/manual/5.1/manual.html?#5.2 target="_blank">Lua manual</a>.</p>
+<p>Creating a coroutine is simple enough:</p><pre class="crayon-plain-tag">-- This is the &quot;routine&quot; part of the coroutine, the code that gets run...
+local function Body()
+    print( &quot;In the coroutine!&quot; )
+end
+
+-- ...and this is the object we need to run it.
+local co = coroutine.create( Body )</pre><p>This gives us a reference, <code>co</code>, to the coroutine.</p>
+<p>We can inspect its type:</p><pre class="crayon-plain-tag">print( type( co ) )  -- prints &quot;thread&quot;</pre><p>What we find is that <code>co</code> is a distinct kind of object, rather than a table or userdata as we might expect. Don&#8217;t worry too much about the term &#8220;thread&#8221;; in Lua, it and &#8220;coroutine&#8221; are mostly interchangeable<a name="from_note1"></a><a href="#note1">[1]</a>. Also, these are <b>not </b>operating system threads, which preempt running code to switch tasks. Rather, coroutines are collaborative; the coroutine itself decides when to give up control.</p>
+<p>We can also ask about the coroutine&#8217;s status:</p><pre class="crayon-plain-tag">print( coroutine.status( co ) )  -- prints &quot;suspended&quot;</pre><p>As we can see, simply creating the coroutine doesn&#8217;t run it. This shouldn&#8217;t be too surprising. Creating a function, for instance, is distinct from calling it. To run the coroutine, we must do this:</p><pre class="crayon-plain-tag">coroutine.resume( co )  -- prints &quot;In the coroutine!&quot;</pre><p>The body executes, and the message inside gets printed, as expected.</p>
+<p>What is the coroutine&#8217;s status now? Let&#8217;s check:</p><pre class="crayon-plain-tag">print( coroutine.status( co ) )  -- prints &quot;dead&quot;</pre><p>The body has run its course, so nothing remains for the coroutine to do, and it goes dead.</p>
+<p>Once a coroutine is dead, all we can do with it is ask its status, which will always be <code>"dead"</code>. If we try to resume it once more, nothing happens. Or rather, as we&#8217;ll see shortly, it fails silently.</p>
+<p>At this point, coroutines seem like nothing more than a complicated way to call a function once, and only once!</p>
+<p>The missing piece of the puzzle is the ability to yield:</p><pre class="crayon-plain-tag">local function Body()
+    print( &quot;First resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Second resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Final resume&quot; )
+end
+
+local co = coroutine.create( Body )
+
+coroutine.resume( co )  -- prints &quot;First resume&quot;
+
+print( &quot;After first yield&quot; )
+
+coroutine.resume( co )  -- prints &quot;Second resume&quot;
+
+print( &quot;After second yield&quot; )
+
+coroutine.resume( co )  -- prints &quot;Final resume&quot;</pre><p>The first <code>coroutine.resume</code> kicks off the coroutine. The code at the beginning of the body executes, and a message is printed. So far, nothing new.</p>
+<p>When the <code>coroutine.yield</code> fires, we suddenly hop outside of the coroutine&#8217;s body and back among the code that created it. Instead of getting the message <b>&#8220;Second resume&#8221;</b>, we see <b>&#8220;After first yield&#8221;</b>.</p>
+<p>The coroutine is once again in a suspended state, just as it was after being created. It is <b>not</b> dead; there is still code left to execute. However, the coroutine won&#8217;t run again until we explicitly resume it.</p>
+<p>When we do so, execution picks up where it left off, immediately after the yield, and we get the expected <b>&#8220;Second resume&#8221;</b>. Another yield and a final resume round out the snippet, giving us <b>&#8220;After second yield&#8221;</b> followed by <b>&#8220;Final resume&#8221;</b>.</p>
+<p>After each of the yields, the status will be <code>"suspended"</code>. After the final resume, our coroutine is once again <code>"dead"</code>.</p>
+<h3><a name="data"></a>Working With Data</h3>
+<p>It&#8217;s possible to pass data to and from a coroutine. We can send values to the coroutine by passing them as arguments to <code>coroutine.resume</code>:</p><pre class="crayon-plain-tag">local function Body( a, b, c )
+    DoSomething()
+
+    local d, e = coroutine.yield()
+
+    DoSomethingElse()
+
+    local f, g, h = coroutine.yield()
+
+    DoOneLastThing()
+end
+
+local co = coroutine.create( Body )
+
+coroutine.resume( co, &quot;one&quot;, 2 )  -- a = &quot;one&quot;, b = 2, c = nil
+coroutine.resume( co, 8, {} )  -- d = 8, e = the table
+coroutine.resume( co, 42, 9 )  -- f = 42, g = 9, h = nil</pre><p>As we see, on the very first resume (the one which kicks the coroutine off, after creation), the data winds up in the parameters. On each subsequent resume, they instead show up as return values of the most recent <code>coroutine.yield</code>.</p>
+<p>Receiving isn&#8217;t too different, but we go through <code>coroutine.yield</code> instead:</p><pre class="crayon-plain-tag">local function Body()
+    DoSomething()
+
+    coroutine.yield( 1, &quot;3&quot; )
+
+    DoSomethingElse()
+
+    coroutine.yield( { n = 6 }, 7, 4 )
+
+    DoOneLastThing()
+
+    return &quot;Data&quot;, 1
+end
+
+local co = coroutine.create( Body )
+
+print( coroutine.resume( co ) )  -- prints true, 1, &quot;3&quot;
+print( coroutine.resume( co ) )  -- prints true, something about the table, 7, 4
+print( coroutine.resume( co ) )  -- prints true, &quot;Data&quot;, 1</pre><p>Here we see that any arguments passed to <code>coroutine.yield</code> end up as return values of the most recent <code>coroutine.resume</code>, as do any values returned from the coroutine body.</p>
+<p>(<b>Programming in Lua</b> contains an <a href=http://www.lua.org/pil/9.2.html target="_blank">excellent example</a> of data-passing in action.)</p>
+<p>Now, there&#8217;s something peculiar about the yield snippet. In the printed results, what does that <code>true</code> mean? It indicates that the resume was successful. Had an error occurred along the way, that <code>true</code> would be a <code>false</code> instead, the only other return value being an error message. When I mentioned before how resuming a dead coroutine fails silently, this is what is happening.</p>
+<p>And speaking of dead coroutines, that&#8217;s what we&#8217;re stuck with, following an error.</p>
+<h3><a name="wrap"></a>Wrapping Up</h3>
+<p>We&#8217;ll often only need to create, resume, and yield a coroutine. This is common enough that a convenience function, <code>coroutine.wrap</code>, is provided in order to make coroutines more friendly to use:</p><pre class="crayon-plain-tag">local function Body()
+    print( &quot;First resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Second resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Final resume&quot; )
+end
+
+local wrapped = coroutine.wrap( Body )
+
+wrapped()  -- prints &quot;First resume&quot;
+wrapped()  -- prints &quot;Second resume&quot;
+wrapped()  -- prints &quot;Final resume&quot;</pre><p>This resembles our earlier examples, except resuming the coroutine seems to behave like a regular function call. In fact, the wrapper <b>is </b>just a function; <code>coroutine.resume</code> is taken care of behind the scenes, together with the coroutine reference itself.</p>
+<p>Passing data around works much as before, except unlike <code>coroutine.resume</code>, the wrapper doesn&#8217;t return a success boolean. So what if it fails? For instance, in the last example, if we were to call the wrapper once more, now that the coroutine has finished?</p>
+<p><a href=/wordpress/wp-content/uploads/2015/02/crash.jpg><img class=" size-full wp-image-61372 aligncenter" src=/wordpress/wp-content/uploads/2015/02/crash.jpg alt="crash" width="320" height="242" /></a></p>
+<p><strong>&#8220;KERBLOOEY!&#8221;</strong></p>
+<p>Of course, when developing in Corona, this is generally what we&#8217;ll want. It&#8217;s an error like any other. With all of this under our belt, we&#8217;re ready to advance.</p>
+<h3><a name="tagteam"></a>The Coroutine-Timer Tag Team</h3>
+<p><code>coroutine.wrap</code> offers some interesting possibilities. In particular, the wrapper being just a function opens some doors for us. Many Corona APIs, the various event listeners for instance, take function arguments, and will happily accept our coroutine-in-disguise.</p>
+<p>Now, presumably we would favor coroutines over regular functions because we want the yield capability. Once we yield, however, the rest of the coroutine won&#8217;t happen, unless the wrapper gets called again (remember, doing this just performs a resume, under the hood). Therefore, we&#8217;ll typically want to use coroutines in logic that we expect to trigger multiple times.<a name="from_note2"></a><a href="#note2">[2]</a></p>
+<p>As it happens, we have many such mechanisms in Corona. Timers, for instance:</p><pre class="crayon-plain-tag">local function Body()
+    print( &quot;First resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Second resume&quot; )
+
+    coroutine.yield()
+
+    print( &quot;Final resume&quot; )
+end
+
+timer.performWithDelay( 1000, coroutine.wrap( Body ), 3 )</pre><p>As you might imagine, this will fire every second or so, printing one of the now-familiar messages each time. This is all well and good, but notice the iteration count: <strong>three</strong> iterations. Two for the yields and one more to run the final leg. If we overestimate this count, say by specifying four iterations, we&#8217;ll end up trying to resume a dead coroutine. The code above is quite simple, so this isn&#8217;t a huge worry.</p>
+<p>As our coroutine body grows larger, it becomes increasingly difficult to maintain a correct count, especially when the yields are in loops or behind function calls. Once we bring <code>if</code> statements into the mix, we can&#8217;t even depend on a fixed number, and then we&#8217;re completely out of luck.</p>
+<p>We really want something that &#8220;just works&#8221;. Fortunately, <code>"timer"</code> events come packaged with a reference, <a href=http://docs.coronalabs.com/api/event/timer/source.html target="_blank">source</a>, which can be used to cancel the corresponding timer. Rather than hard-coding some number of iterations, we can simply let the timer run indefinitely, only canceling it once we&#8217;ve finished our task.</p>
+<p>A first attempt might go something like this:</p><pre class="crayon-plain-tag">local function Body( event )
+    DoSomething()
+
+    coroutine.yield()
+
+    DoSomethingElse()
+
+    timer.cancel( event.source )
+end
+
+timer.performWithDelay( 50, coroutine.wrap( Body ), 0 )</pre><p>And this will work&#8230; until it doesn&#8217;t. Unfortunately, coroutines flush out a <a href=http://en.wikipedia.org/wiki/Leaky_abstraction target="_blank">leaky abstraction</a>: Corona is recycling the event tables. Presumably this is to avoid garbage collector spikes, and is a great idea. With normal functions, we would never know the difference. But we&#8217;re being naughty. By yielding, we end up holding on to that event table across multiple frames. Meanwhile, Corona has been passing the table around, swapping timer references in and out. When it comes time to deal with &#8220;our&#8221; timer, we might cancel a different one altogether!</p>
+<p>We can play nice by saving the reference up front:</p><pre class="crayon-plain-tag">local function Body( event )
+    local source = event.source
+
+    DoSomething()
+
+    coroutine.yield()
+
+    DoSomethingElse()
+
+    timer.cancel( source )
+end
+
+timer.performWithDelay( 50, coroutine.wrap( Body ), 0 )</pre><p>This does work. However, the <code>"timer"</code> event also contains <b>count</b> and <b>time</b> fields, and similar issues crop up.</p>
+<p>We can account for these too. Our code probably won&#8217;t care where the event table came from (and as we just saw, it shouldn&#8217;t), and will be none the wiser if we give it a &#8220;shadow&#8221; table.<a name="from_note3"></a><a href="#note3">[3]</a> We update this shadow table instead, and all is well again.</p>
+<h3><a name="timerutil"></a>A Timer Utility</h3>
+<p>Figuring these things out each time is going to get old. For that matter, most coroutine-based timers are going to have the same &#8220;look&#8221; to them, once we do get these details in order. We ought to roll this all up for reuse:</p><pre class="crayon-plain-tag">function CoroPerformWithDelay( delay, func, n )
+    local wrapped = coroutine.wrap( function( event )
+        func( event )  -- Do the action...
+
+        return &quot;cancel&quot;  -- ...then tell the timer to die when we're done.
+    end )
+
+    local event2  -- Our &quot;shadow&quot; event.
+
+    return timer.performWithDelay( delay, function( event )
+        event2 = event2 or { source = event.source }  -- On first run, save source...
+
+        event2.count = event.count  -- ...update these every time.
+        event2.time = event.time
+
+        local result = wrapped( event2 )  -- Update the coroutine. It will pick up the event on the first run.
+
+        if result == &quot;cancel&quot; then
+            timer.cancel( event2.source )  -- After func completes, or on a cancel request, kill the timer.
+        end
+    end, n or 0 )
+end</pre><p>Now, we&#8217;ve been looking at timers, but the same ideas extend to <code>"enterFrame"</code> listeners, and even to repeating transitions. I tend to favor timers because of the customizable delay, and find them a bit more natural to cancel. If the coroutine is going to run forever anyway, however, it&#8217;s rather arbitrary.</p>
+<p>Since we&#8217;ve brought up canceling, note that it&#8217;s perfectly fine to cancel the timer early. That said, it&#8217;s important to recognize that the timer and coroutine are two distinct things, so we would still need to yield the coroutine. Our helper function lets us do both at once (from inside the coroutine, of course) by calling <code>coroutine.yield("cancel")</code>.</p>
+<h3><a name="waitutils"></a>Waiting Around</h3>
+<p>So we have coroutines running on top of timers. Where do we go from here? Just using a timer encourages us to think of individual steps in the coroutine as taking place in time. If we apply this perspective to an earlier example, first we <code>DoSomething()</code>, then <i>later</i> we <code>DoSomethingElse()</code>. It&#8217;s a short leap from there to wanting something more explicitly chronological, like &#8220;<code>DoSomethingElse()</code> five seconds from now&#8221;. Can we achieve this?</p>
+<p>Well, we do know when &#8220;now&#8221; is: we just ask <code>system.getTimer</code>. &#8220;The future,&#8221; then, is just &#8220;now&#8221; plus 5000 milliseconds. Once &#8220;the future&#8221; arrives, we know our five seconds are up. The most straightforward approach is to loop until then, yielding on each iteration. <a name="from_note4"></a><a href="#note1">[4]</a></p>
+<p>Consider the following:</p><pre class="crayon-plain-tag">function WaitMS ( duration, update )
+    local now = system.getTimer()
+    local ends_at = now + duration
+
+    while now &lt; ends_at do
+        if update then -- Call any per-frame behavior. Yielding is discouraged, as it throws off our bookkeeping.
+            update()
+        end
+
+        coroutine.yield()
+
+        now = system.getTimer()
+    end
+end</pre><p>Then, lo and behold, we can do this:</p><pre class="crayon-plain-tag">DoSomething()
+WaitMS( 5000 )
+DoSomethingElse()</pre><p>Five seconds may be a long time, relatively speaking, just to wait around. The optional <code>update</code> parameter lets us sneak in little batches of work, as necessary.</p>
+<p>We can wait for something other than time, obviously. Perhaps some condition must be satisfied:</p><pre class="crayon-plain-tag">function WaitUntilTrue( func, update )
+    while not func() do
+        if update then
+            update()
+        end
+
+        coroutine.yield()
+    end
+end</pre><p>Let&#8217;s try it out! Here, we fire off a transition, then wait for it to finish:</p><pre class="crayon-plain-tag">local pos = { x = 20 }
+local done = false  -- We haven't even started. Of course we're not done!
+
+transition.to( pos, {
+    x = 50,
+
+    onComplete = function()
+        done = true  -- NOW we're done.
+    end
+})
+
+WaitUntilTrue( function()
+    return done  -- Are we done yet?
+end )
+DoSomethingElse()</pre><p>Similarly, we can wait for some property to be true:</p><pre class="crayon-plain-tag">function WaitUntilPropertyTrue( object, name, update )
+    while not object[name] do
+        if update then
+            update()
+        end
+
+        coroutine.yield()
+    end
+end</pre><p>Let&#8217;s use this to wait until an object becomes visible:</p><pre class="crayon-plain-tag">local rect = display.newRect( 100, 100, 50, 50 )
+
+rect.isVisible = false
+
+timer.performWithDelay( 5000, function()
+    rect.isVisible = true
+end )
+
+WaitUntilPropertyTrue( rect, &quot;isVisible&quot; )
+DoSomethingElse()</pre><p>Many more ideas could be explored. Obviously the &#8220;Wait until X is false&#8221; variants have their place. We can even watch multiple states, for which we&#8217;d have &#8220;Wait until all states in X are true&#8221;, &#8220;Wait until any state in X is true&#8221;, and so forth.</p>
+<p>Each of these helper functions was fairly general, but nothing prevents us from making more specific ones. Compound operations, such as &#8220;Wait until object is visible, then wait ten seconds&#8221;, may also come in handy.</p>
+<p>As the last examples show, coroutines play well with timers and transitions. Just one more tool in our kit.</p>
+<h3><a name="statemachine"></a>State Machines</h3>
+<p>Sometimes we&#8217;ll run across code like the following:</p><pre class="crayon-plain-tag">if state == 1 then
+    DoState1()
+elseif state == 2 then
+    DoState2()
+-- etc...</pre><p>Or, using strings:</p><pre class="crayon-plain-tag">if state == &quot;starting&quot; then
+    Start()
+elseif state == &quot;walking&quot; then
+    Walk()
+elseif state == &quot;waiting&quot; then
+    Wait()
+-- etc...</pre><p>This works well enough, but it&#8217;s often overkill, especially when we&#8217;re merely performing a sequence of actions. Beyond that, the pattern itself has some inherent dangers. When using integer states, we must remember which state belongs to what action. It doesn&#8217;t take long to lose our place. If we switch to the <span style="line-height: 1.5;">wrong state, say by mistyping the integer, we could easily have a debugging nightmare on our hands.</span></p>
+<p>This isn&#8217;t such a problem with strings, of course, but we do have the hassle of thinking up good names. This is less trivial than it may seem. Things start out easy enough. We have <code>"starting"</code>, <code>"walking"</code>, and <code style="line-height: 1.5;">"waiting"</code><span style="line-height: 1.5;"> states&#8230; so far so good! </span>Then we&#8217;re walking again. Hmm. <code>"walking2"</code>? Sure, why not. Next it&#8217;s back to waiting. (<em>sigh</em>) <code>"waiting2"</code> it is.</p>
+<p>Finally we come to the really awkward stuff. What do we call &#8220;updating x, choosing a fill color, and emptying an array&#8221;? We may end up making little functions, such as <code>Start</code>, <code>Walk</code>, and <code>Wait</code> in the last example, rather than inline <span style="line-height: 1.5;">code, just to reduce some of this visual congestion. The naming problem strikes again! This also reduces code locality: we need to go hunting to find </span><span style="line-height: 1.5;">those functions and see what&#8217;s in them. Furthermore, if we have several such functions, we&#8217;ve really only shifted the clutter around.</span></p>
+<p>It would be better if the last snippet could instead be written:</p><pre class="crayon-plain-tag">Start()
+Walk()
+Wait()</pre><p>It should be obvious where this is headed. That style falls out quite naturally from moving our logic into a coroutine.</p>
+<p>As a broader example, we might write the high-level game loop for some sort of sports title:</p><pre class="crayon-plain-tag">CoroPerformWithDelay( 30, function()
+    OpeningSequence()
+
+    for period = 1, NumberOfPeriods do
+        WaitMS( 15000, PanCamera )  -- Show audience, stadium, etc.
+
+        StartTheClock()
+
+        repeat
+            Play()  -- Basically, whatever happens between &quot;serving the ball&quot; and blowing the whistle.
+        until OutOfTime()
+
+        if period &lt; NumberOfPeriods then
+            BetweenPeriodsSequence()  -- National anthem, hear from coaches, etc.
+        else
+            EndingSequence()  -- Fireworks!
+        end
+    end
+end)</pre><p></p>
+<h3><a name="sm2"></a>State Machines, Take Two</h3>
+<p>Now, we may <b>want</b> &#8220;conventional&#8221; state machines. Character AI, for instance, typically consists of several independent behaviors, each of them fairly significant, which the character cycles through. Thankfully, we can accommodate this as well.</p>
+<p>Consider a very simple AI, for one of the players in our sports title:</p><pre class="crayon-plain-tag">local States = {}
+
+function States.Defensive()
+    repeat
+        GetCloserTo( Ball )
+
+        if CloseTo( Ball ) then
+            TryToGrabIt()
+        end
+    until GainedPossession()
+
+    return States.Offensive()
+end
+
+function States.Offensive()
+    repeat
+        GetCloserTo( Goal )
+
+        if CloseTo(Goal) then
+            TryToScore()
+        end
+    until LostPossession()
+
+    return States.Defensive()
+end
+
+local player = CoroPerformWithDelay( 30, States.Defensive )</pre><p>The player begins as the defender. The defensive strategy consists entirely of getting the ball away from the opponent (it isn&#8217;t a very sophisticated sport). With that objective in mind, the player tries to get in range of, and steal, the ball. If this succeeds, or the opponent lost the ball in some other way, the player has command of the ball and goes on the offensive.</p>
+<p>Offense is a similar affair. The player tries to draw near the goal and score a point. If the opponent regains possession (ball was grabbed, the player scored, etc.), it&#8217;s back to defense.</p>
+<p>Switching states is a simple matter of calling the appropriate function. I tend to lump all my states into a table, when doing this sort of thing. There usually isn&#8217;t any obviously correct order for the states, so forward declarations end up being too much hassle, especially as the switches become ever more tangled.</p>
+<p>The <code>return state()</code> syntax is key. This is what is known as a <a href=http://www.lua.org/manual/5.1/manual.html?#2.5.8 target="_blank">tail call</a>. Whenever we call a function normally, Lua must leave behind some information so that, once the function finishes, execution can pick up where it left off. The trouble is, when we switch states, we have no intention of coming back! While we <b>can</b> hop around using the standard <code>state()</code> form, eventually so much of this bookkeeping piles up that it overflows the stack, and we crash. A tail call, on the other hand, in effect declares &#8220;I&#8217;m done here&#8221;. Lua honors this (by doing nothing) and the problem goes away.</p>
+<p>Between the game loop and the player AI, we have two coroutines running. Nothing stops us from going further, say by making two full teams&#8217; worth of player AI. In the end, it comes down to what works.</p>
+<h3><a name="long"></a>Long-Running Processes</h3>
+<p>Timer-backed coroutines are great when it comes to events that span time. As it turns out, they&#8217;re perfect for tackling another class of problems, too: actions that just plain take a while!</p>
+<p>&#8220;A while&#8221; could mean on the order of a minute or two, yet even a 50-millisecond operation will make our frame rate hiccup, if it doesn&#8217;t allow the rest of the program a chance to act.</p>
+<p>A good example of this is loading a game level. We might find ourselves performing some quite time-consuming steps, such as unzipping large files or downloading images. The number of resources may also be significant. Each one takes time, and it adds up.</p>
+<p>There&#8217;s not always much we can do about the predicament itself. What we probably <b>can</b> do is take some action between, or during, these many operations. If the long-running process is embedded in a coroutine, we can call <code>coroutine.yield</code> to temporarily cede control.</p>
+<p>Yielding between might look like so:</p><pre class="crayon-plain-tag">DoHeavywork()
+
+coroutine.yield()
+
+DoMoreHeavyWork()</pre><p>And during:</p><pre class="crayon-plain-tag">local function DoHeavyWork()
+    for i = 1, NumberOfThingsToProcess do
+        DoSomeWork(i)
+
+        coroutine.yield()
+    end
+end</pre><p>The yields put the action to sleep now and then, giving time back to Corona.</p>
+<p>As with any long-running activity in Corona, it&#8217;s good practice to have something visual going on, be it the activity indicator, or a progress view, or even a simple animation. For particularly lengthy loads, we might even add a little mini-game as an overlay, to pass the time.</p>
+<h3><a name="yieldutil"></a>Some Yield Helpers</h3>
+<p>A shortcoming of using <code>coroutine.yield</code> directly is that, when we do yield, we&#8217;re done for that frame, even though there might still be time left for work. We can mitigate this somewhat by parametrizing the yield operation. That way, we can experiment with different strategies of staggering the yields, until we settle on a winner. The last snippet then becomes:</p><pre class="crayon-plain-tag">local function DoHeavyWork( yfunc )
+    for i = 1, NumberOfThingsToProcess do
+        DoSomeWork(i)
+
+        yfunc()
+    end
+end</pre><p>As an example, we might use the following routine. When called, it tries to yield, but only actually does so if a certain amount of time has elapsed:</p><pre class="crayon-plain-tag">do
+    local since
+
+    function YieldOnTimeout()
+        local now = system.getTimer()
+
+        if not since then
+            since = now  -- On first try, just sync.
+        elseif now - since &gt;= 15 then  -- 15 milliseconds, but could be customized or an argument.
+            since = now
+
+            coroutine.yield()
+        end
+    end
+end</pre><p>(The <code>do</code>&#8211;<code>end</code> construction limits the scope of <code>since</code>, keeping it private to <code>YieldOnTimeout</code>.)</p>
+<p>In use, it might look like:</p><pre class="crayon-plain-tag">DoHeavyWork( YieldOnTimeout )</pre><p>This is no panacea, however. Sometimes we&#8217;ll get unlucky, say when there are only a couple milliseconds to spare and we run one more operation, which ends up taking five. To account for this, it may be best to underestimate the timeout.</p>
+<p>Another possibility is to yield every few calls:</p><pre class="crayon-plain-tag">do
+    local calls = 0
+
+    function YieldEveryFewCalls()
+        calls = calls + 1
+
+        if calls == 4 then  -- Again, customizable and could be an argument.
+            calls = 0
+
+            coroutine.yield()
+        end
+    end
+end</pre><p>Yet another idea is to yield randomly, say 25% of the time:</p><pre class="crayon-plain-tag">function YieldOccasionally()
+    if math.random( 100 ) &lt;= 25 then  -- Ditto.
+        coroutine.yield()
+    end
+end</pre><p></p>
+<h3><a name="debug"></a>Coroutines as a Debugging Tool</h3>
+<p>The <code>print()</code> statement is a hallmark of debugging, across a broad spectrum of programming languages. Sometimes this comes down to convenience, such as when it would take too much effort to configure a debugger, then place and watch breakpoints. On rare occasions, integrating a debugger may even <b>seem</b> to make the problem go away: an attack of the dreaded <a href=http://en.wikipedia.org/wiki/Heisenbug target="_blank">Heisenbug</a>!. A common strategy is to sprinkle <code>print()</code> statements around suspect points in the code, then compare the output with our expectations. If a message doesn&#8217;t appear, either the code in question was never visited or the program crashed along the way. As we narrow down the scope of the problem, we can remove instances of <code>print()</code> that are no longer necessary.</p>
+<p>One concern in normal code is that most (or all) of these <code>print()</code> statements will execute, so we wind up with one long burst of messages. We might also need some sense of <b>when</b> a piece of code was executed, and what our program looked like at the time. It&#8217;s hard to guess where the process broke down.</p>
+<p>Enter coroutines. If we can roughly isolate the troublesome code, it can be temporarily embedded in a coroutine. Then, by following each <code>print()</code> with a yield, we&#8217;re able to inspect the state of the world at that moment. Consider the following:</p><pre class="crayon-plain-tag">DoSomething()
+
+-- We're curious about the snippet starting here...
+
+local red = display.newRect( 100, 100, 30, 70 )
+
+red:setFillColor( 1, 0, 0 )
+
+print( &quot;Added red rect&quot; )
+
+local blue = display.newCircle( 150, 30, 10 )
+
+blue:setFillColor( 0, 0, 1 )
+
+print( &quot;Added blue circle&quot; )
+
+local green = display.newRect( 200, 100, 60, 20 )
+
+green:setFillColor( 0, 1, 0 )
+
+print( &quot;Added green rect&quot; )
+
+-- ...and ending here.
+
+DoSomethingElse()</pre><p>All of our messages and display objects show up at once.</p>
+<p>With coroutines:</p><pre class="crayon-plain-tag">DoSomething()
+
+-- Start of temporary debugging code...
+local function print2( ... )
+    print( ... )
+    coroutine.yield()
+end
+
+CoroPerformWithDelay( 2000, function()  -- Wait 2 seconds after each print statement.
+-- ...end of temporary debugging code
+
+local red = display.newRect( 100, 100, 30, 70 )
+
+red:setFillColor( 1, 0, 0 )
+
+print2( &quot;Added red rect&quot; )
+
+local blue = display.newCircle( 150, 30, 10 )
+
+blue:setFillColor( 0, 0, 1 )
+
+print2( &quot;Added blue circle&quot; )
+
+local green = display.newRect( 200, 100, 60, 20 )
+
+green:setFillColor( 0, 1, 0 )
+
+print2( &quot;Added green rect&quot; )
+
+-- Start of temporary debugging code...
+end )
+-- ...end of temporary debugging code
+
+DoSomethingElse()</pre><p>By using coroutines, we get to watch the action unfold. In the example above, we now have a couple seconds to review the state of affairs after each <code>print2</code>, without significantly changing the code shape. If we only need to do some visual inspection, we can even just use <code>coroutine.yield</code> directly.</p>
+<p>I employed this technique quite recently, in order to test some <a href=http://code.coronalabs.com/code/layout-helpers target="_blank">layout routines</a>. Since these primarily involve display objects, <code>print()</code> only got me so far. Many of the operations consist of one object being positioned relative to another, so if something went wrong in the middle, the whole layout fell apart. By viewing the steps one at a time, I was able to pinpoint when and where things went awry.</p>
+<p>Bear in mind that this method does slightly alter the program flow, on account of the yields. Therefore, we must include this in our notion of isolation. In the previous example, for instance, <code>DoSomethingElse</code> shouldn&#8217;t depend on what happens inside the wrapped-up code.</p>
+<h3><a name="touch"></a>The Magic Touch</h3>
+<p>A timer won&#8217;t always be the best fit for debugging. With a short delay, the steps may go by too soon. Much longer, and we might instead grow weary waiting, especially if the problem tends to show up quite late.</p>
+<p>Fortunately, time isn&#8217;t the only way to drive a coroutine. We hinted earlier at using wrapped coroutines as event listeners. <code>"touch"</code> listeners are one such choice, and in fact give us direct control: on each touch, we resume the wrapped-up code.</p>
+<p>With Corona, it&#8217;s easy to create a dummy display object and assign it such a listener. Then, instead of waiting around for the timer, we just click rapidly through any steps we want to ignore. Once we find something suspicious, we can take our time.</p>
+<p>The previous example then becomes:</p><pre class="crayon-plain-tag">DoSomething()
+
+-- Start of temporary debugging code...
+local function print2( ... )
+    print( ... )
+    coroutine.yield()
+end
+
+local co = coroutine.create( function()  -- Wait for next touch event.
+-- ...end of temporary debugging code
+
+local red = display.newRect( 100, 100, 30, 70 )
+
+red:setFillColor( 1, 0, 0 )
+
+print2( &quot;Added red rect&quot; )
+
+local blue = display.newCircle( 150, 30, 10 )
+
+blue:setFillColor( 0, 0, 1 )
+
+print2( &quot;Added blue circle&quot; )
+
+local green = display.newRect( 200, 100, 60, 20 )
+
+green:setFillColor( 0, 1, 0 )
+
+print2( &quot;Added green rect&quot; )
+
+-- Start of temporary debugging code...
+end )
+
+local button = display.newCircle( 20, 20, 10 )
+
+button:setFillColor( .7 )
+button:addEventListener( &quot;touch&quot;, function( event )
+    if event.phase == &quot;began&quot; then
+        local ok, err = coroutine.resume( co )
+
+        if not ok then
+            print( err )  -- What went wrong?
+        end
+    end
+
+    return true
+end)
+-- ...end of temporary debugging code --
+
+DoSomethingElse()</pre><p>After one click, we see:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/02/debug1.jpg><img class=" size-full wp-image-61378 aligncenter" src=/wordpress/wp-content/uploads/2015/02/debug1.jpg alt="debug1" width="320" height="300" /></a></p>
+<p><span style="line-height: 1.5;">(The gray circle is our &#8220;button&#8221;, the dummy display object.)</span></p>
+<p>After another:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/02/debug2.jpg><img class=" size-full wp-image-61379 aligncenter" src=/wordpress/wp-content/uploads/2015/02/debug2.jpg alt="debug2" width="320" height="300" /></a></p>
+<p>Finally:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/02/debug3.jpg><img class=" size-full wp-image-61380 aligncenter" src=/wordpress/wp-content/uploads/2015/02/debug3.jpg alt="debug3" width="320" height="300" /></a></p>
+<p>This is actually a situation where <code>coroutine.create</code> and <code>coroutine.resume</code> are more appropriate. We don&#8217;t want <span style="line-height: 1.5;">to crash our program just because we clicked too many times and ran a dead coroutine. We also end up with a basic sandbox, where an error </span><span style="line-height: 1.5;">can occur without bringing down our whole program (the coroutine will then be dead, of course). If our code snippet was properly isolated, </span><span style="line-height: 1.5;">this should work just fine.</span></p>
+<p>Once everything is good to go, we can remove all the &#8220;temporary debugging code&#8221; and move on.</p>
+<h3><a name="gotchas"></a>Gotchas</h3>
+<p>There are a few specific cases where coroutines break, owing mainly to some quirks in the interaction between Lua and C. Thanks to some redesign in the codebase, these have been fixed in Lua 5.2+. Corona is based on 5.1, though, so for the time being these issues are a fact of life.</p>
+<p>Two such problem areas involve <a href=http://www.lua.org/manual/5.1/manual.html?#pdf-pcall target="_blank">protected calls</a> and <a href=http://www.lua.org/manual/5.1/manual.html?#2.8 target="_blank">metamethods</a>, as Peter &#8220;Corsix&#8221; Cawley <a href=http://www.corsix.org/content/look-lua-52-work3 target="_blank">points out on his blog</a> (see point #2). Note that the article itself mainly concerns 5.2, whereas we only care about the 5.1-related misbehavior. There have been some attempts to deal with protected calls, such as <a href=https://github.com/keplerproject/coxpcall target="_blank">Coxpcall</a>, created expressly to allow them in <a href=https://github.com/keplerproject/copas target="_blank">Copas</a> (a library for building TCP/IP servers atop coroutines).</p>
+<p><a href=http://www.lua.org/manual/5.1/manual.html?#2.4.5 target="_blank">Iterators</a> are the other problem spot:</p><pre class="crayon-plain-tag">local wrapped = coroutine.wrap( function()
+    for _ in function()  -- An (obviously not useful!) iterator body.
+        print( &quot;Before&quot; )
+
+        coroutine.yield()  -- In 5.1, gives error: attempt to yield across metamethod / C-call boundary.
+
+        print( &quot;After&quot; )
+    end do
+        print( &quot;Loop!&quot; )
+    end
+end )
+
+wrapped()</pre><p>This is a rather lame iterator (it doesn&#8217;t even attempt to iterate!), but it demonstrates the issue. Attempting to yield directly from the so-called iterator function results in an error, in Lua 5.1. We see the message <b>&#8220;Before&#8221;</b>, and then our program goes down in flames. Note that this is <b>not</b> the same as <a href=http://www.lua.org/pil/9.3.html target="_blank">using coroutines as iterators</a> (an incredibly useful feature but, alas, an entire topic of its own!).</p>
+<p>Thankfully these all tend to be rare situations, but it&#8217;s good to be aware of them.</p>
+<h3><a name="saving"></a>Saving</h3>
+<p>The final gotcha comes from a design perspective. Being able to yield offers us great flexibility, but the flip side is that we do actually need to traverse the coroutine body to arrive at a given point in our code, with all of our local variables and program state in order. We can&#8217;t just jump to somewhere in the middle, in general. This presents a problem if the application must be able to save and later restore itself exactly where it left off. This isn&#8217;t insurmountable, but does need to be accounted for early on. It will almost certainly be difficult, and probably not worth the hassle.</p>
+<p>If the application only needs to be saved every now and then (say between levels or at checkpoints, in a game), or has some leeway regarding what gets restored, this is a much smaller issue.</p>
+<h3><a name="examples"></a>Examples</h3>
+<p>Most of the code in this article has been adapted from the samples repository <a href=https://github.com/ggcrunchy/samples/tree/master/coroutines target="_blank">found here</a>. It can be downloaded from <a href=https://github.com/ggcrunchy/samples/archive/master.zip target="_blank">here</a>. These samples were made to be shown during a <a href=/blog/coronageek/corona-geek-122/ target="_blank">Corona Geek hangout</a>, so I wrote in a <span style="line-height: 1.5;">style which allows entire segments of the program to be turned on and off quickly. In particular, code gets blocked in </span><a style="line-height: 1.5;" href=http://www.lua.org/pil/1.3.html target="_blank">long comments</a><span style="line-height: 1.5;">. Doing so lets us start with a commented-out section:</span></p><pre class="crayon-plain-tag">--[[
+DoSomething() -- Commented out, does not run.
+--]]</pre><p>We can then enable all its code at once, simply by adding another hyphen at the beginning of the comment:</p><pre class="crayon-plain-tag">---[[
+DoSomething() -- No longer commented, will run.
+--]]</pre><p>To disable it once more, just remove the hyphen. I used this blocking method in <code>main.lua</code>, to <code>require()</code> each example, as well as within the modules themselves.</p>
+<p>Also, in order to reduce switches between the simulator and console while recording, I overrode <code>print()</code> in <code>main.lua</code>, such that messages show up on the screen (as text objects) rather than the console. To disable this, simply remove or comment out the assignment to <code>print()</code>.</p>
+<h3><a name="summary"></a>In Summary</h3>
+<p>Coroutines are a truly powerful feature of Lua which, when combined with such mechanisms as Corona&#8217;s timers and event listeners, offer us a novel and useful approach to a whole host of difficult problems. We&#8217;ve only scratched the surface. <a href=http://www.lua.org/pil/9.html target="_blank">Chapter 9</a> of <b>Programming in Lua</b> covers several topics only <span style="line-height: 1.5;">touched on here. Explore, and have fun!</span></p>
+<hr />
+<p><a name="note1"></a><a href="#from_note1">[1]</a> A coroutine <b>is</b> a thread. The reverse is also true, with one very important exception: the main thread. This is the &#8220;normal&#8221; part of the program, where our code runs when it&#8217;s not inside a coroutine.</p>
+<p><a name="note2"></a><a href="#from_note2">[2]</a> Typically, but not always. We could, for instance, assign the same wrapper to several listeners. Then, as these fire off piecemeal, the coroutine is gradually driven forward.</p>
+<p>Another use case is to abort complex code. We might find ourselves in the middle of some heavy operation, ten function calls deep, when we realize we just can&#8217;t deal with it. It&#8217;s easy enough to <code>return</code> out of one function. Getting out of nine more is a different story! On the other hand, if this is all inside a coroutine, we can just yield. Suddenly we&#8217;re back in the <a href="#note1">main thread</a>, and can just throw the coroutine away. Another way to achieve this is to <code>error()</code> out, although this seems a bit impolite if we don&#8217;t actually have an error.</p>
+<p>As the saying goes, &#8220;It&#8217;s better to ask forgiveness than permission.&#8221; Essentially, if it&#8217;s too much trouble to figure out up front whether an operation has even a chance of success, the best idea might be to just go for it. When we combine this approach with a set of choices, we arrive at a technique called backtracking, which can be summed up in another expression, &#8220;If at first you don&#8217;t succeed, try again.&#8221;</p>
+<p>We might want to do normal yields in the coroutine. The ability to send data through <code>coroutine.yield</code> comes to our rescue here. At the outset, we reserve a couple values, <b>&#8220;success&#8221;</b> and <b>&#8220;failure&#8221;</b> perhaps, then resume until we run across one or the other.</p>
+<p><a name="note3"></a><a href="#from_note3">[3]</a> Creating shadow tables reintroduces garbage, of course. However, coroutine-based timers will by and large be created far less frequently than garden variety timers, and be longer-running besides, so this is unlikely to be a problem in practice.</p>
+<p><a name="note4"></a><a href="#from_note4">[4]</a> Another possibility, when yielding, is to pass control of the coroutine to a scheduler, which will later resume the coroutine once it&#8217;s ready to go. This has its pros and cons. Since we&#8217;re no longer spinning in a loop, it may prove more efficient, especially when we have several coroutines going. At the <span style="line-height: 1.5;">same time, if we still need to do updates, these costs just reappear in a different form, say as </span><code style="line-height: 1.5;">"enterFrame"</code><span style="line-height: 1.5;"> listener overhead.</span></p>
+<p>Scheduler implementations abound. Some examples in pure Lua are <a href=https://github.com/xopxe/Lumen target="_blank">Lumen</a> and <a href=https://gist.github.com/Deco/1818054 target="_blank">this Gist</a>. Others, coded partially in C and C++, include <a href=https://github.com/lefcha/concurrentlua target="_blank">ConcurrentLua</a>, <a href=https://github.com/SierraWireless/luasched target="_blank">luasched</a>, and <a href=https://github.com/dmattp/nylon target="_blank">Nylon</a>. Unfortunately, we can&#8217;t simply drop these last few into a Corona codebase. That said, enough of their code <b>is</b> written in Lua to reward some study.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/02/10/tutorial-using-coroutines-in-corona/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+	</channel>
+</rss>

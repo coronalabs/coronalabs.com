@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ajay &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/ajay/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ajay &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Changes to Android minimum OS version</title>
+		<link>/blog/2016/12/21/changes-to-android-minimum-os-version/</link>
+		<pubDate>Thu, 22 Dec 2016 00:55:12 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69264</guid>
+		<description><![CDATA[With upcoming enforcements from Google, along with the need to implement new features, we are updating the minimum Android OS version to 4.0.3. Read further to learn about this change.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/12/android-distribution-chart.png><img class="alignright wp-image-69307 size-medium" src="/wordpress/wp-content/uploads/2016/12/android-distribution-chart-300x150.png" alt="android-distribution-chart" width="300" height="150" /></a>Starting in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3009</a>, we are changing the minimum supported version for Android from <strong>2.3.3</strong> to <strong>4.0.3</strong>. From this build onward, Corona device builds will <strong>not</strong> run on an Android device whose OS version is below 4.0.3.</p>
+<p>We are doing this for several reasons:</p>
+<h3>Google Play Services</h3>
+<p>When Google updates Google Play Services to version 10.2 <a href=https://android-developers.googleblog.com/2016/11/google-play-services-and-firebase-for-android-will-support-api-level-14-at-minimum.html target="_blank">early in 2017</a>, it will no longer support Android 2.3 &#8211; 3.2.6. Thus, we won&#8217;t be able to provide meaningful updates to the Google Play Services components for older Android versions. Some of these components include:</p>
+<ul>
+<li>AdMob</li>
+<li>Google Play Games Services</li>
+<li>Google Analytics</li>
+</ul>
+<h3>Core features</h3>
+<p>Some core Corona features that we wish to implement are only practical if we drop support for Android builds older than 4.0.3. For example, going forward, we need to place application icons in the <code>.apk</code>&#8216;s <code>/res/mipmap</code> directory instead of <code>/res/drawable</code>. This is now <em>required</em> for apps to be featured on Google Play.</p>
+<h3>Third-party SDK adherence</h3>
+<p>Many of the third-party SDKs we support via plugins have already dropped support for Android 2.x &#8211; 3.x. Others never supported those versions to begin with, or they required a lot of extra work to maintain/support for very little gain. Some of the plugins in this category include:</p>
+<ul>
+<li>Facebook</li>
+<li>AdColony</li>
+<li>InMobi</li>
+<li>KIDOZ</li>
+<li>Peanut Labs</li>
+<li>RevMob</li>
+<li>NFC (Near Field Control)</li>
+</ul>
+<h3>Tiny user base</h3>
+<p>Around the time of this writing, roughly 1.2% of Android devices use 2.3.3 &#8211; 2.3.7 and less than 0.2% use 3.0 &#8211; 4.0.2. Thus, it no longer makes sense for us to invest time and energy on preserving OS versions of the distant past.</p>
+<h3>Conclusion</h3>
+<p>Dropping support for older OS versions is not something we do casually or lightly &#8212; we want Corona developers&#8217; apps to run on the largest platform-respective OS base as possible. However, with less than 1.5% of Android devices using versions older than 4.0.3, along with Google encouraging (and sometimes enforcing) newer features, we feel this change is mandatory.</p>
+<p>Please join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums</a> if you have questions or concerns on this subject.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android plugin dependency update</title>
+		<link>/blog/2016/12/14/android-plugin-dependency-update/</link>
+		<pubDate>Wed, 14 Dec 2016 21:10:22 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=69121</guid>
+		<description><![CDATA[Corona Labs is pleased to announce updates to our plugin system which allows Android plugins with dependencies to co-exist much better. Read further to see how this affects your plugins and apps that use them.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2013/03/androidize-feat.png><img class="alignright wp-image-30615 size-thumbnail" src="/wordpress/wp-content/uploads/2013/03/androidize-feat-141x150.png" alt="androidize-feat" width="141" height="150" /></a>On October 5th 2016, we announced progress toward a <a href=/blog/2016/10/05/android-plugin-dependencies-update/ target="_blank">dependency system</a> for Android plugins to help resolve various incompatibilities between plugin library versions. We are excited to announce that, as of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3005</a>, this dependency system has been put into effect. Although it may seem unclear to most users, this is a critical step forward to allow plugins with different dependencies to work together.</p>
+<h3>Plugin developers: how this affects you</h3>
+<p>With this updated system in effect, all <strong>Android</strong> plugins that make use of either the <a href=https://developer.android.com/topic/libraries/support-library/index.html target="_blank">Android Support Libraries</a> or <a href=https://developers.google.com/android/guides/overview target="_blank">Google Play Services</a> <strong>must conform</strong> to the versions we&#8217;ve encapsulated in dependency plugins. Future plugin submissions which do not take advantage of the dependency system <strong>will be rejected</strong>.</p>
+<p>Furthermore, plugins submitted to the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> which depend on either the <a href=https://developer.android.com/topic/libraries/support-library/index.html target="_blank">Android Support Libraries</a> or <a href=https://developers.google.com/android/guides/overview target="_blank">Google Play Services</a> have until <strong>January 31, 2017</strong> to be updated to the dependency system. Starting on February 1, 2017, any third-party plugin which is <strong>not </strong>updated to the dependency system will be hidden until the changes are implemented.</p>
+<p>Going forward, we will give plugin developers timely notice of our intention to update dependency plugins. More information on the technical details of the dependency system and how to update your plugins can be found in the <a href=https://docs.coronalabs.com/daily/native/android/dependencies.html target="_blank">Android Dependency Integration</a> guide.</p>
+<h3>The state of plugin compatibility issues</h3>
+<p>Most of Corona’s internally-developed plugins have already been updated to use the new dependency system. As a result, most of the incompatibilities between affected plugins are now resolved. The most crucial compatibility issues we&#8217;ve resolved include:</p>
+<ul>
+<li>AdMob and Google Analytics</li>
+<li>AdMob and Google Play Games Services</li>
+<li>Pollfish and Google Play Games Services</li>
+</ul>
+<p>Note that some compatibility issues between plugins that aren&#8217;t related to the Android Support Libraries or Google Play Services still exist, but we hope to address them in the near future. These include:</p>
+<ul>
+<li>Corona Ads and Facebook Audience Network</li>
+<li>Appodeal and various other plugins</li>
+</ul>
+<h4>Affected plugins</h4>
+<p>The plugins affected by this update include:</p>
+<div style="float: left;">
+<ul>
+<li>AdColony</li>
+<li>AppLovin</li>
+<li>Appodeal</li>
+<li>Chartboost</li>
+<li>Corona Ads</li>
+<li>Facebook</li>
+<li>Facebook Audience Network</li>
+<li>Flurry Analytics</li>
+<li>Google Analytics</li>
+<li>Google Play Game Services</li>
+<li>Google Play Services (AdMob)</li>
+<li>InMobi</li>
+</ul>
+</div>
+<div style="float: left;">
+<ul>
+<li>Kidoz</li>
+<li>Kochava</li>
+<li>MediaBrix</li>
+<li>Peanut Labs</li>
+<li>Persona.ly</li>
+<li>Pollfish</li>
+<li>Revmob</li>
+<li>SuperAwesome</li>
+<li>SuperSonic</li>
+<li>Tenjin</li>
+<li>TrialPay</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+<h4>Technical notes</h4>
+<p>Other technical issues you should note regarding <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3005</a> or higher:</p>
+<ul>
+<li>As of this writing, any plugins that depend on the <a href=https://developer.android.com/topic/libraries/support-library/index.html target="_blank">Android Support Libraries</a> use version <strong>23.4.0</strong> and any plugins that depend on <a href=https://developers.google.com/android/guides/overview target="_blank">Google Play Services</a> use version <strong>9.6.1</strong>.</li>
+<li>Since plugin dependencies are specified as part of a plugin&#8217;s <code>metadata.lua</code>, most plugins that previously required inclusion of <code>plugin.google.play.services</code> in your <code>build.settings</code> file no longer require it. While leaving it there will do no harm, you can omit it if you&#8217;re using <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3005</a> or higher.</li>
+</ul>
+<h3>In conclusion</h3>
+<p>We thank you for your patience and, as always, please join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Forums</a> to discuss further.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android Studio templates now available for Corona Enterprise</title>
+		<link>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/</link>
+		<comments>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/#comments</comments>
+		<pubDate>Wed, 25 May 2016 20:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+
+		<guid isPermaLink="false">/?p=66638</guid>
+		<description><![CDATA[Android Studio support for Corona Enterprise is here! Read further to learn how Android Studio can benefit your development.]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2886</a>, Android and iOS development for Corona Enterprise are finally on equal footing; Android Studio support for Corona Enterprise is here!</p>
+<p>Google released Android Studio 1.0 as the official IDE for Android Development in December 2014. This change brought several useful tools to the Android development landscape, but focused around the development of standard Android applications.</p>
+<p>For Corona Enterprise on Android, we simply relied on the Android command line tools and custom scripts for doing Enterprise development; no IDE integration whatsoever. This left Android Enterprise developers with very few tools to iterate on code quickly and the whole process more painful than it had to be.</p>
+<h3>What about the old project model?</h3>
+<p>Just as Google moved away from the Ant build system, so are we. Android Studio is the present and future; this is where we want to be.</p>
+<p>Now that Android Studio templates are available, <strong>the Ant project templates have been deprecated</strong> and all new Enterprise projects should use Android Studio.</p>
+<p>Despite being deprecated, documentation for using Enterprise with the Ant build system will still be available through around September or October of this year.</p>
+<h3>Getting started with Android Studio</h3>
+<p>If you&#8217;re new to Corona Enterprise or Android Studio, see our <a href=https://docs.coronalabs.com/daily/native/android/prereqs.html target="_blank">Android Prerequisites</a> guide for instructions on how to set up Android Studio for Corona Enterprise development.</p>
+<h3>Migrating to Android Studio</h3>
+<p>For existing Android Enterprise projects, see our <a href=https://docs.coronalabs.com/native/android/androidStudio/index.html>Migration to Android Studio</a> guide. We will be <strong>dropping support for the Ant project model </strong>in the coming months. Specifically, the public release in <strong>September/October</strong> will mark the end of Ant project support for Corona Enterprise. Please have all of the Enterprise apps that you&#8217;ll continue to support migrated by this time.</p>
+<h3>How Android Studio makes development easier</h3>
+<p>Android Studio brings several useful tools that make the Android Enterprise developer&#8217;s life much easier. Some of these include:</p>
+<h4>Code completion</h4>
+<p>Can&#8217;t remember what that exact Android API was? No problem – Android Studio&#8217;s got you covered!</p>
+<h4>Static Code Analyzer</h4>
+<p>This handy tool can inspect Java code throughout your project and help you catch possible bugs, simplify complex code snippets, find coding style issues, typos, and so much more. We highly recommend giving this a run via Analyze → Inspect Code&#8230;</p>
+<h4>JAR Decompilation</h4>
+<p>Ever been in a situation where your app is crashing inside some library that you don&#8217;t have the source code to? Assuming that library isn&#8217;t obfuscated with ProGuard, the JAR decompilation tool will let you take a peek into the implementation for better understanding of the library.</p>
+<h4>Integrated support for Android Virtual Device (AVD) testing</h4>
+<p>While it was possible to test out Corona Enterprise projects using Android Virtual Devices (AVDs) before, Android Studio makes this significantly better by offering improved performance and easy integration into the IDE.</p>
+<p>Testing with AVDs does come with some caveats you should be aware of:</p>
+<ul>
+<li>Since Corona is built with the ARMv7 architecture in mind, be sure to <strong>only</strong> use system images with ABI: <strong>armeabi-v7a</strong>.</li>
+<li>AVDs do <strong>not </strong>have Google Play installed on them. This means that testing things like Google Licensing, Expansion Files, or IAP cannot be done in AVDs.</li>
+<li>AVDs are a little slow to boot. Be patient and don&#8217;t accidentally close one AVD after running a single test.</li>
+</ul>
+<h4>No more command line</h4>
+<p>You can now do all building, deployment, and view logcat through Android Studio. No need for shell scripts!</p>
+<h4>No guessing at API Levels for Android APIs</h4>
+<p>Android Studio warns you if you use an API that was introduced later than your <code>minSDKVersion</code>. No more redesigning for older Android versions at the last minute.</p>
+<h4>Easier integration of common external libraries</h4>
+<p>While this doesn&#8217;t apply to libraries that are only distributed as JAR files, Android Studio makes it significantly easier to add things like the Android Support libraries and Google Play Services to your projects.</p>
+<p>A simple line in the dependencies block of your <code>build.gradle</code> script it all it takes for adding in whichever version of the Android Support libraries you desire:</p><pre class="crayon-plain-tag">dependencies {
+    ...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+}</pre><p>For Google Play Services, you can even <a href=https://developers.google.com/android/guides/setup?#add_google_play_services_to_your_project>select which components of it</a> to compile into your app. This is especially helpful if your app is getting close to the <a href=http://developer.android.com/tools/building/multidex.html?#about>method reference limit</a> for a single dex file.</p>
+<h4>Multi-dex support is now easy as pie</h4>
+<p>This can now be added to Corona Enterprise projects using the simple steps outlined by Google <a href=http://developer.android.com/tools/building/multidex.html target="_blank">here</a>.</p>
+<h3>Testimonials</h3>
+<p>Still not convinced that Android Studio is the best thing since sliced bread? Read these testimonials from our engineers:</p>
+<ul>
+<li><em>&#8220;I don&#8217;t have to switch between Sublime Text and the Terminal 200 times a day now!&#8221;</em> — Danny Glover</li>
+<li><em>&#8220;It&#8217;s like Xcode for Android&#8230;.but better.&#8221;</em> — Ingemar Bergmark</li>
+<li><em>&#8220;The only disadvantage of using Android Studio over the old Ant method is&#8230; oh, well, there is none.&#8221;</em> — Sergey Lerg</li>
+</ul>
+<h3>Regarding AVD testing</h3>
+<p>If you&#8217;re giving AVD testing a try for the first time with Android Studio, there are some best practices you should be aware of:</p>
+<p>You <strong>should </strong>use AVD testing for:</p>
+<ul>
+<li><strong>Testing UI on form factors that aren&#8217;t readily available to you.</strong> While Google&#8217;s <a href=https://developers.google.com/cloud-test-lab/overview>Android Cloud Test Lab</a> does allow some form of UI testing, you&#8217;ll be able to iterate faster using AVDs.</li>
+<li><strong>Testing with OS versions that aren&#8217;t readily available to you.</strong> If your app is using some APIs or features that aren&#8217;t available on all the API Levels you support, this is a good way to quickly test behaviors on any questionable API levels.</li>
+<li><strong>Testing situations that are difficult to set up on actual devices.</strong> The emulator that AVDs run in allow you to mock up situations that may be more difficult to test on real hardware. For example, you can mock up the battery state and phone calls.</li>
+</ul>
+<p>You <strong>should not</strong> use AVD testing for:</p>
+<ul>
+<li><strong>Performance testing.</strong> Because this is an emulated environment, the performance you see with an AVD is not the same as what you&#8217;ll see on real hardware. For bigger apps, testing in this manner may not produce usable/practical results.</li>
+<li><strong>As a substitute for on-device testing.</strong> You should make sure your app works on a plethora of actual hardware before submitting it anywhere.</li>
+</ul>
+<p>For more info, consult Google&#8217;s <a href=http://developer.android.com/tools/devices/managing-avds.html>Managing AVDs with the AVD Manager</a> Guide.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Multidex Support for Android Builds in Corona SDK</title>
+		<link>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/</link>
+		<comments>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/#comments</comments>
+		<pubDate>Thu, 31 Mar 2016 20:55:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[multidex]]></category>
+
+		<guid isPermaLink="false">/?p=66280</guid>
+		<description><![CDATA[Corona SDK now has multidex support for Android builds starting 2016.2853. Learn what multidex does for you. ]]></description>
+				<content:encoded><![CDATA[<p>With the recent wave of new plugins, some Corona developers have reported Android build failures with errors like this:</p><pre class="crayon-plain-tag">Encountered 65k symbol DEX limit. Reducing the number of plugins will help avoid this limit.</pre><p>This error happens due to a design limitation in the Android platform where the file containing the compiled Android code is limited to 65k symbols. More information on this limitation can be found <a href=http://developer.android.com/tools/building/multidex.html?#about>here</a>.</p>
+<p>Today, we are pleased to announce that Corona SDK projects built for Android are no longer subject to this limit, thanks to Multidex support!</p>
+<h3>What is Multidex support?</h3>
+<p>Multidex support allows the Android build system to generate multiple files containing Android bytecode and be able to load symbols between the two dynamically. These Android bytecode files are known as DEX files and as previously mentioned, each one has a hard limit of 65k symbols.</p>
+<h3>How do I take advantage of multidex in Corona SDK?</h3>
+<p>The only thing you&#8217;ll need to do to take advantage of multidex support is upgrade to <a href=https://developer.coronalabs.com/downloads/daily-builds/>daily build 2016.2853 or later</a>. After that, you don&#8217;t have to do <span style="text-decoration: underline;"><strong>anything</strong></span> to perform a multidex build for Android. Just do an Android build as you normally would and our build system will take care of the rest for you.</p>
+<h3>How does Corona address known multdex limitations?</h3>
+<p>The multidex system isn&#8217;t perfect for older versions of Android and there are <a href=http://developer.android.com/tools/building/multidex.html?#limitations target="_blank">known limitations</a>. We&#8217;ve done our best to ensure Corona-made apps aren&#8217;t hindered by these limitations.</p>
+<p class="">That said, we still advise you test your project on older versions of Android (2.3.3 &#8211; 4.0). If your project does run into any of the limitations listed in the link above, you may have to change the <code>minSdkVersion</code> of your project to <a href=http://developer.android.com/about/versions/android-4.0.html>API Level 14 (Android 4.0)</a>. You can do this by adding the following to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        minSdkVersion = &quot;14&quot;,
+    },
+}</pre><p></p>
+<h3>Impact on Android Builds through Corona SDK.</h3>
+<p>Generating Android apps that utilize multiple DEX files isn&#8217;t a cheap process. You may see a slight increase in build times because of this.</p>
+<h3>Reporting Issues</h3>
+<p>Should you encounter any issues with this, please let us know by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+<p>Feel free to discuss this in our <a href=https://forums.coronalabs.com/forum/531-android-including-kindle-and-nook/ target="_blank">Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: iOS Beta, improvements, and new features</title>
+		<link>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/</link>
+		<comments>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/#comments</comments>
+		<pubDate>Wed, 02 Sep 2015 03:18:48 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63836</guid>
+		<description><![CDATA[More good news for Facebook integration. Coinciding with the recent beta release of Facebook-v4 on Android, we&#8217;ve launched the iOS version of the Facebook v4 plugin! The iOS version does come with a couple caveats to be aware of: iOS 6 is not supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK. iOS 9 is supported with a couple additional setup steps detailed here. Improvements In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK...]]></description>
+				<content:encoded><![CDATA[<p>More good news for Facebook integration.</p>
+<p>Coinciding with the recent beta release of Facebook-v4 on Android, <strong>we&#8217;ve launched the iOS version of the Facebook v4 plugin</strong>! The iOS version does come with a couple caveats to be aware of:</p>
+<ul>
+<li>iOS 6 is <strong>not</strong> supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK.</li>
+<li>iOS 9 is supported with a couple additional setup steps detailed <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#ios9 target="_blank">here</a>.</li>
+</ul>
+<h2>Improvements</h2>
+<p>In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK 4.5.1. and the Android version has been upgraded to 4.5.0.</p>
+<p>Another improvement we&#8217;ve made concerns Corona Enterprise. In the past setting up the Facebook plugin with Corona Enterprise hadn&#8217;t been very obvious. We&#8217;ve rectified this by providing a more step-by-step guide for setup with Corona Enterprise available <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#enterprise target="_blank">here</a>.</p>
+<h2>New features</h2>
+<p>We&#8217;re always striving to make our APIs more useful with less hassle. We feel that these new features show evidence of that aspiration and hope they will make your lives easier when it comes to Facebook integration.</p>
+<p>First off, facebook.currentAccessToken has been deprecated in favor of <strong><a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a></strong>. Before, facebook.currentAccessToken could be used to determine if someone was logged in already. For <a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a>, on top of providing knowledge of whether you have a logged in user, this new API provides access to:</p>
+<ul>
+<li>The permissions the user has granted your app</li>
+<li>The permission they&#8217;ve denied your app</li>
+<li>Their Facebook User ID</li>
+<li>and more.</li>
+</ul>
+<p>Also, <a href=https://docs.coronalabs.com/plugin/facebook-v4/showDialog.html target="_blank">facebook.showDialog()</a> now integrates Facebook&#8217;s new &#8220;Share Dialog&#8221;.</p>
+<ul>
+<li>This will bring up the Share Dialog and let you share a link with it.</li>
+<li>If you have the Facebook app installed on your device, bringing up this dialog will allow you to tag friends and a place, all without additional calls to bring up the Places and Friends dialogs.</li>
+</ul>
+<p>In the old plugin, you could only present the Feed dialog for letting users post on Facebook. Tagging a location and friends required bringing up two more dialogs before the Feed dialog.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_FEED.png><img class="alignnone size-medium wp-image-63913 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_FEED-225x300.png" alt="FBv4_FEED" width="225" height="300" /></a></p>
+<p>Now with Facebook-v4, tagging friends and a location couldn&#8217;t be easier.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_LINK1.png><img class="alignnone size-medium wp-image-63915 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_LINK1-225x300.png" alt="FBv4_LINK" width="225" height="300" /></a></p>
+<p>See the <a class="bbc_url" title="External link" href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#settings rel="nofollow external">Facebook v4 plugin home page</a> to get started!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: Android Beta</title>
+		<link>/blog/2015/07/24/facebook-v4-plugin-android-beta/</link>
+		<pubDate>Fri, 24 Jul 2015 17:12:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63464</guid>
+		<description><![CDATA[Since Facebook released <a href="https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/" target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href="https://developers.facebook.com/docs/graph-api" target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.]]></description>
+				<content:encoded><![CDATA[<p>Since Facebook released <a href=https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/ target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.</p>
+<p>We are releasing a new <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin built on top of <a href=https://developers.facebook.com/docs/android target="_blank">Facebook SDK</a> v4.4.0!</p>
+<p>Currently this plugin is in beta and is currently available <strong>on Android only</strong> as we&#8217;re finishing up the iOS side.</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Corona daily build</a> 2015.2685 (or later) to get started.</p>
+<h2>What about the old Facebook plugin?</h2>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin supercedes the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a>. Consequently, we are deprecating the old facebook plugin. While it will still be available, Corona will no longer be supporting it or providing any maintenance updates to it.</p>
+<p>The main reason is because Facebook will deprecate <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v2.1 on <em>October 30, 2016</em>, and the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a> depends on that API.</p>
+<p>Therefore, we recommend migrating to the <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin, as it will soon be required.</p>
+<h2>New features</h2>
+<p>For this initial release, we&#8217;ve provided some new APIs that improve developer and user experience with login.</p>
+<p>In particular, one popular request has been saving login info in a better manner. To address this, we now provide the AccessToken for a logged in user through <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/currentAccessToken.html>facebook.currentAccessToken</a>. This property is updated inside the plugin, so managing access tokens is no longer the responsibility of the Corona developer!</p>
+<h2>Upgrading to Facebook v4</h2>
+<p>With the new facebook plugin, we wanted to be sure that the migration process would be as painless as possible. This was accomplished by making the new plugin a nearly complete superset of the old one. We&#8217;ve maintained all the old APIs while adding new ones and new possibilities with old ones.</p>
+<p>Outside of different responses you may get in the <code>fbconnect</code> event from <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/request.html>facebook.request()</a> and <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/showDialog.html>facebook.showDialog()</a>, the rest of your facebook code should be backward-compatible!</p>
+<p>For more detailed instructions on upgrading, see our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/migration.html>migration guide</a>.</p>
+<h2>Resources</h2>
+<p>More detail on the new plugin can be found in our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html>docs</a>.</p>
+<p>Feel free to discuss the new plugin on the <a href=https://forums.coronalabs.com/forum/653-facebook-v4/>Facebook v4 forum</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

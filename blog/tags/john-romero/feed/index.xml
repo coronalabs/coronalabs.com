@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>john romero &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/john-romero/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>john romero &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Game Legend John Romero Joins as Advisor, Talks Corona SDK</title>
+		<link>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/</link>
+		<comments>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/#comments</comments>
+		<pubDate>Thu, 24 Oct 2013 13:18:03 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Videos]]></category>
+		<category><![CDATA[advisor]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[john romero]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50340</guid>
+		<description><![CDATA[Today, I'm super happy to announce that John Romero has joined as an advisor! John has had an extremely prolific career across over a hundred games, including the iconic works Wolfenstein 3D, DOOM and Quake. He has seemingly boundless energy. He's not only working on new games, but he's also teaching classes in mobile game development and is a tireless advocate for indie game development.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m super happy to announce that John Romero has joined as an advisor! John has had an extremely prolific career across over a hundred games, including the iconic works Wolfenstein 3D, DOOM and Quake. He has seemingly boundless energy. He&#8217;s not only working on new games, but he&#8217;s also teaching classes in mobile game development and is a tireless advocate for indie game development.</p>
+<p>I recently sat down with John to talk about his experiences, perspective on the industry, the challenges facing game developers today, and (of course) what he loves about <a href=http://www.coronalabs.com/products/corona-sdk/>Corona</a>. Here are highlights from that conversation:</p>
+<p><iframe width="640" height="436" src="//www.youtube.com/embed/h2QofXwm384?rel=0" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/24/game-legend-john-romero-joins-as-advisor-talks-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

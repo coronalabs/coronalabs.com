@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #68 &#8211; Audio Visualization Using Graphics 2.0</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-68/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-68/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Rob Miracle</title>
+		<link>/blog/coronageek/corona-geek-hangout-68/#comment-5655</link>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+		<pubDate>Thu, 19 Dec 2013 03:13:42 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=53789#comment-5655</guid>
+		<description><![CDATA[There is the Facebook sample app under the SampleCode/Network folder that has a bunch of examples on how to do things.  You also have the facebook.showDialog() option to popup facebook dialogs to do things.  There is also the native.showPopup(&quot;social&quot;) plugin that will let you do Facebook posting with almost now setup.
+
+Rob]]></description>
+		<content:encoded><![CDATA[<p>There is the Facebook sample app under the SampleCode/Network folder that has a bunch of examples on how to do things.  You also have the facebook.showDialog() option to popup facebook dialogs to do things.  There is also the native.showPopup(&#8220;social&#8221;) plugin that will let you do Facebook posting with almost now setup.</p>
+<p>Rob</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: helios</title>
+		<link>/blog/coronageek/corona-geek-hangout-68/#comment-5654</link>
+		<dc:creator><![CDATA[helios]]></dc:creator>
+		<pubDate>Wed, 18 Dec 2013 03:48:16 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=53789#comment-5654</guid>
+		<description><![CDATA[so much for the Graphics 2.0 tutorials. . do you have a working, clear example on how to &quot;post, share,invite&quot; features on Facebook???
+been a month trying to do it, all i can do access facebook log-in interface]]></description>
+		<content:encoded><![CDATA[<p>so much for the Graphics 2.0 tutorials. . do you have a working, clear example on how to &#8220;post, share,invite&#8221; features on Facebook???<br />
+been a month trying to do it, all i can do access facebook log-in interface</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

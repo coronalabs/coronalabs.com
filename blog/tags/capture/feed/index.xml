@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>capture &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/capture/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>capture &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Daily Build Roundup: Select/Capture Video + iTunes Library Access</title>
+		<link>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/</link>
+		<comments>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/#comments</comments>
+		<pubDate>Mon, 28 Oct 2013 13:07:13 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[camera]]></category>
+		<category><![CDATA[capture]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[photo]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50461</guid>
+		<description><![CDATA[We've added some media goodies to the latest <a href="http://developer.coronalabs.com/corona-daily-builds/summary">daily builds</a>! Check out today's blog post to learn what new features are available as of Daily Build 2013.1244.]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;ve added some media goodies to the latest <a href=http://developer.coronalabs.com/corona-daily-builds/summary>daily builds</a>! The following are available as of 2013.1244.</p>
+<h2>Videos (and Photos)</h2>
+<p>In the latest daily builds, you now have the ability to select and capture videos. Instead of adding even more complexity to <a href=http://docs.coronalabs.com/api/library/media/show.html>media.show()</a>, we decided it was time to deprecate that function in favor of newer and cleaner APIs.</p>
+<p>Our goal here was to distinguish between selecting media versus capturing media. In both cases, a native UI provided by the OS is presented.</p>
+<p>To select a video, simply call the new <a href=http://docs.coronalabs.com/daily/api/library/media/selectVideo.html>media.selectVideo()</a> function and the native UI interface for selecting a video from the device&#8217;s catalog comes up:</p>
+<p></p><pre class="crayon-plain-tag">local function onComplete(event)
+    if event.completed then
+        media.playVideo(event.url)
+    end
+end
+
+if media.hasSource( media.PhotoLibrary ) then
+   media.selectVideo( { listener = onComplete )
+end</pre><p></p>
+<p>Similarly, you can present an interface to capture video using <a href=http://docs.coronalabs.com/daily/api/library/media/captureVideo.html>media.captureVideo()</a>:</p>
+<p></p><pre class="crayon-plain-tag">local function onComplete(event)
+    if event.completed then
+        media.playVideo(event.url)
+    end
+end
+
+if media.hasSource( media.Camera ) then
+    media.captureVideo( { listener = onComplete } )
+end</pre><p></p>
+<p>We also created similar functions for photos: <a href=http://docs.coronalabs.com/daily/api/library/media/selectPhoto.html>media.selectPhoto()</a> and <a href=http://docs.coronalabs.com/daily/api/library/media/capturePhoto.html>media.capturePhoto()</a>. We recommend you use these instead of the deprecated &#8220;media.show()&#8221;:</p>
+<h2>Accessing/Playing the iTunes Library</h2>
+<p>With the new <a href=http://docs.coronalabs.com/daily/plugin/iTunes/>iTunes plugin</a>, you&#8217;ll be able to access the iTunes library and play songs from them:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/show.html>iTunes.show()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/play.html>iTunes.play()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/pause.html>iTunes.pause()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/resume.html>iTunes.resume()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/stop.html>iTunes.stop()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/isPlaying.html>iTunes.isPlaying()</a></li>
+</ul>
+<p>The &#8220;iTunes.show()&#8221; allows you to pick music from the iTunes library, which you can then play using &#8220;iTunes.play()&#8221;.</p>
+<p>The full documentation is available <a href=http://docs.coronalabs.com/daily/plugin/iTunes/>here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

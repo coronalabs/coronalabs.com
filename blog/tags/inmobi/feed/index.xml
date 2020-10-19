@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>inMobi &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/inmobi/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>inMobi &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Welcome InMobi to the Corona monetization plugin suite</title>
+		<link>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/</link>
+		<comments>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/#comments</comments>
+		<pubDate>Tue, 19 Apr 2016 20:18:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[inMobi]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=66530</guid>
+		<description><![CDATA[Corona Labs is pleased to offer the new InMobi monetization plugin. Read further to learn more about this ad provider.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66532" src="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png" alt="inMobi logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/share-logo.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Here at Corona Labs, we want you to be successful with your app development, and monetization is an important part of your success. As such, we are pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/inmobi target="_blank">InMobi</a> plugin. InMobi&#8217;s new discovery platform allows developers to monetize their apps through rich user engagement and seamlessly integrated ads.</p>
+<p>We reached out to Irene Herranz, Head of Global Developer Marketing at InMobi, for a few words on the new plugin. She says, “Gaming developers are always on the lookout for easier ways to achieve steady revenue and grow their mobile businesses. Through our partnership with Corona Labs, developers can kickstart their global monetization efforts by running InMobi&#8217;s high-performing video and display ads to focus on what they do best – developing amazing games.”</p>
+<p>InMobi&#8217;s platform allows you to use banner ads, interstitial ads, and rewarded videos. Native ads are not currently supported via the Corona plugin.</p>
+<h3>Getting started</h3>
+<p>First, you must sign up with InMobi at their <a href=https://www.inmobi.com/user/index?#signup target="_blank">developer portal</a>. After you do, you can create your app and start adding ad placements. Currently, they support one ad placement per app. If you need both banners and interstitial ads in the same app, you will need to create two apps in their portal, one for each placement (just make sure to use the same app store URL for both entries).</p>
+<p>Next, just like all plugins, you will need to add code to your <code>build.settings</code> file to include the plugin. You can get the exact required code from our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">InMobi documentation</a>.</p>
+<h3>Banner ad sizes</h3>
+<p>Unlike most ad providers that provide a fixed size for banner ads, InMobi has a &#8220;best fit&#8221; model which allows you to specify other sizes. For instance, if you want a 300×100 banner, InMobi will attempt to deliver an ad of that size (or very close). If there is no inventory for your requested size and InMobi can&#8217;t provide a &#8220;best fit&#8221; ad, they will drop back to a standard 320×50 banner ad.</p>
+<h3>Refreshing ads</h3>
+<p>InMobi allows you to turn on &#8220;automatic refreshing&#8221; of banner ads. If you enable it, the default ad refresh cycle is 60 seconds, but that time can also be customized. Just remember that your revenue from ads is not based on the number of ads delivered, but on the number of ads that users interact with. So, a faster ad rotation will not necessarily translate to better revenue, and in fact it may negatively impact the user&#8217;s experience.</p>
+<p>Enabling ad rotation and the frequency of the rotation is handled through parameters passed to <a href=https://docs.coronalabs.com/plugin/inmobi/load.html target="_blank">inMobi.load()</a>.</p>
+<h3>Conclusion</h3>
+<p>InMobi is a great service for users to integrate into their apps. To learn more, please check out our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">documentation</a> and <a href=https://github.com/coronalabs/plugins-sample-inmobi>sample app</a>. If you have questions or want to discuss this plugin further, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

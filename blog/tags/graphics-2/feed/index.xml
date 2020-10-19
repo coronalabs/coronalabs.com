@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>graphics &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/graphics-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>graphics &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing external bitmap textures</title>
+		<link>/blog/2016/09/22/introducing-external-bitmap-textures/</link>
+		<pubDate>Thu, 22 Sep 2016 19:03:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[bitmap]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[textures]]></category>
+
+		<guid isPermaLink="false">/?p=67990</guid>
+		<description><![CDATA[Corona Labs engineers have created a new graphics-related feature and a new plugin which Enterprise/plugin developers can expand upon to build some very powerful graphical capabilities. Read further to learn more!]]></description>
+				<content:encoded><![CDATA[<p>The Corona engineers have been doing some wonderful things lately, especially on the graphics engine side. One of these items is a feature which allows plugin creators and Corona Enterprise users to push textures directly into the Corona Graphics pipeline, effectively providing bitmap data. Resulting textures will behave similarly to those created by <a href=https://docs.coronalabs.com/api/library/graphics/newTexture.html target="_blank">graphics.newTexture()</a>.</p>
+<h3>Below the surface</h3>
+<p>Normally with Corona <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display</a> APIs, images are loaded and textures are created in memory, processed via the graphics processing unit (GPU). Once the image is in that realm, it becomes difficult to do pixel-level manipulation &#8212; setting and getting individual pixel information is a time-consuming effort, making it impractical for most operations.</p>
+<p>Fortunately, the Corona Graphics API set provides capabilities to create textures with custom data from C-based plugins. The resulting objects inherit properties of <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> as well as <a href=https://docs.coronalabs.com/api/type/TextureResource/index.html target="_blank">TextureResource</a> properties. Once created, these objects have <code>filename</code> and <code>baseDir</code> properties which can be used in any <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display</a> API or for assigning fills.</p>
+<h3>Possibilities?</h3>
+<p>An example of a plugin which might utilize these capabilities is a plugin which loads SVG (Scalable Vector Graphics) files, rasterizes them on the native C side, and pushes the results to Corona to return a texture object. That texture object could then be used to create typical display objects.</p>
+<p>Other examples include image manipulation plugins based on <a href=http://www.imagemagick.org/script/index.php target="_blank">ImageMagick</a> or another C library, custom text and font renderers, and importing images from unsupported formats &#8212; the possibilities are endless!</p>
+<h3>Take it for a test drive!</h3>
+<p>To demonstrate this technology, our engineers have created a very simple plugin called <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">memoryBitmap</a>. Available in the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">Corona Marketplace</a>, this plugin has just a single method, <a href=https://docs.coronalabs.com/plugin/memoryBitmap/newTexture.html target="_blank">memoryBitmap.newTexture()</a>. This creates a blank texture of specified dimensions and the result is a new <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> object with two additional methods: <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/setPixel.html target="_blank">:setPixel()</a> and <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/getPixel.html target="_blank">:getPixel()</a>.</p>
+<p>Directly &#8220;out of the box,&#8221; this plugin isn&#8217;t particularly useful to Corona SDK developers, since it cannot access your existing images. However, its <a href=https://github.com/coronalabs/plugins-sample-memoryBitmap target="_blank">source code</a> may be useful to Corona Enterprise plugin developers as a template for cross-platform Corona plugins supported on macOS, iOS, tvOS, Android, and Windows.</p>
+<h3>Example</h3>
+<p>We made a quick demo to create Spirograph™ style drawings using this new plugin&#8217;s <a href=https://docs.coronalabs.com/plugin/memoryBitmap/type/MemoryBitmap/setPixel.html target="_blank">:setPixel()</a> method. To test it, you&#8217;ll need to activate the plugin in the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">Corona Marketplace</a> and add the plugin to your <code>build.settings</code>.</p>
+<p><a href=/wordpress/wp-content/uploads/2016/09/memory-bitmap.png><img class="alignnone size-full wp-image-68106" src=/wordpress/wp-content/uploads/2016/09/memory-bitmap.png alt="memory-bitmap" width="960" height="540" /></a>Below is the code for creating the texture and manipulating it by setting pixels:</p><pre class="crayon-plain-tag">local memoryBitmap = require( &quot;plugin.memoryBitmap&quot; )
+
+local tex = memoryBitmap.newTexture(
+{
+    width = 1024,
+    height = 1024,
+    format = &quot;rgba&quot;
+})
+
+local function makeSpirals( texture, xOffset, yOffset, innerRadius, outerRadius, penOffset, color )
+    -- Based on: http://introcs.cs.princeton.edu/java/15inout/Spirograph.java.html
+    local R = outerRadius
+    local r = innerRadius
+    local a = penOffset
+
+    for t = 0.0, 100, 0.01 do
+        local x = (R+r) * math.cos(t) - (r+a) * math.cos(((R+r)/r)*t)
+        local y = (R+r) * math.sin(t) - (r+a) * math.sin(((R+r)/r)*t)
+        local degrees = -1 * math.deg((R+r)/r)*t
+        texture:setPixel( x + xOffset, y + yOffset, color )
+    end
+    texture:invalidate()
+end
+
+makeSpirals( tex, 512, 512, 100, 55, 20, { 1, 0, 0, 1 } )</pre><p>In this example, the <a href=https://docs.coronalabs.com/plugin/memoryBitmap/newTexture.html target="_blank">memoryBitmap.newTexture()</a> function is returning a blank slate to work with. Essentially, you tell it the size of the object and the color depth rules and then you can start manipulating pixels as much as you like.</p>
+<h3>Conclusion</h3>
+<p>We are excited to see what enterprising Corona developers will create with <a href=https://docs.coronalabs.com/api/type/TextureResourceExternal/index.html target="_blank">TextureResourceExternal</a> and the <a href=https://marketplace.coronalabs.com/plugin/memory-bitmap target="_blank">memoryBitmap</a> plugin as a basis for amazing features. Got a great idea? Please join us in the <a href=https://forums.coronalabs.com/forum/615-advanced-graphics/ target="_blank">Corona forums</a>!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #108</title>
+		<link>/blog/2016/01/29/from-the-forum-issue-108/</link>
+		<pubDate>Fri, 29 Jan 2016 23:15:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[fill]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[Ldoc]]></category>
+		<category><![CDATA[parse.com]]></category>
+		<category><![CDATA[textures]]></category>
+
+		<guid isPermaLink="false">/?p=65456</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Parse leaves a void</h3>
+<p>For those of us who have been living under a rock may be surprised to learn that <strong>Parse</strong>, one of the most powerful third party server backends, has announced plans to shutter its service in a year&#8217;s time. There are a fair amount of Corona apps created with a Parse backbone, so this is potentially a huge blow to the community.</p>
+<p>Where do we go from here? There are several different options in the realm of backends server products. You can&#8217;t shake a stick without hitting one. However, today we&#8217;re going to highlight a solution that combines a few different pieces into a virtual Voltron of awesomeness.</p>
+<p>Corona dev (and our new best friend) <strong>Simon Fearby</strong> details how to get a managed server solution implemented that replaced Parse in functionality, with step by step instructions. Do yourself a favor and check out the link, and don&#8217;t forget to say thanks!</p>
+<p><a href=https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/ target="_blank">https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/</a></p>
+<h3>Documentation: the elephant in the room</h3>
+<p>I love backstory. I usually err on the side of over-explaining, sometimes, to my detriment. When it comes to documentation, though, I drop the ball and just start creating syntax that is nigh-impossible to decipher.</p>
+<p>If you&#8217;re like me, there is how fire us after all. Instead of resorting to electric shock, we can leverage a handy program called <a href=http://stevedonovan.github.io/ldoc/ target="_blank">Ldoc</a>. Developer <strong>Rene</strong> from <strong><a href=http://devilsquid.com/ target="_blank">DevilSquid</a></strong> lays out the details on its use, and even gives some instructions and pointers for getting started.</p>
+<p>Check out the original thread to see where Ldoc can fit into your workflow. Documentation for a program that generated documentation? What a time to be alive.</p>
+<p><a href=https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/ target="_blank">https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/</a></p>
+<h3>A fill, three years in the making</h3>
+<p>Way back during the pre-Graphics 2.0 days, we imagined new ways to use our compositions and captured images in interesting ways. With the advent of snapshots, many though a fill using the same was just around the corner.</p>
+<p>At last, <strong>Vlad</strong> from Corona has delivered the coolest of fills, allowing us to finally use snapshots. It’s a new feature, and one that needs the tired kicked on it by the entire Corona community. So do Vlad and yourself a favor, check out the original thread, and see how you can start using snapshot fills in your apps and games right now!</p>
+<p><a href=https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/ target="_blank">https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #59 &#8211; Graphics 2.0, Corona Editor, and Game Code</title>
+		<link>/blog/coronageek/corona-geek-hangout-59/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-59/#respond</comments>
+		<pubDate>Mon, 14 Oct 2013 22:07:22 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[Graphics 2.0]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=49403</guid>
+		<description><![CDATA[During this week's Corona Geek we talked with Corona Labs' CEO, Walter Luh, about the Corona SDK Graphics 2.0 Public Beta, Corona Editor, and a new Graphics 2.0 contest to be announced later this week. Ed Maurina from Roaming Gamer also walked us through his Gear Jumper game template and showed off a few very cool Graphics 2.0 effects.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/cSCK2rJybXw?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek we talked with Corona Labs&#8217; CEO, Walter Luh, about the Corona SDK Graphics 2.0 Public Beta, Corona Editor, and a new Graphics 2.0 contest to be announced later this week. Ed Maurina from Roaming Gamer also walked us through code from his <a href=http://roaminggamer.com/makegames/?ref=coronageek target="_blank">Gear Jumper game template</a> and showed off a few very cool <a href=http://www.youtube.com/watch?list=PLQUSbLhyMnAqEuHq4hvlgd4dwadLGemZy&feature=player_detailpage&v=cSCK2rJybXw#t=2622 target="_blank">Graphics 2.0 effects</a>.</p>
+<p>Congratulations to Chris Brubaker for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the Corona Geek <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">giveaway form</a>.</p>
+<p>Thanks to Greg Pugh at <a href=http://www.gpanimations.com/?ref=coronageek target="_blank">GP Animations</a> for supplying artwork for today&#8217;s video thumbnail, and thank you all for watching. We&#8217;ll see you on next week&#8217;s Corona Geek! Be sure to &#8220;thumbs up&#8221; this video on YouTube if you&#8217;d like to see more code-related sessions.</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-59/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-59-2013-10-14-graphics-20-corona-editor-game-code.mp3" length="59593009" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-59-2013-10-14-graphics-20-corona-editor-game-code.mp3" length="59593009" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-59-2013-10-14-graphics-20-corona-editor-game-code.mp3" length="59593009" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-59-2013-10-14-graphics-20-corona-editor-game-code.mp3" length="59593009" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>3-D effects with Normal Mapping</title>
+		<link>/blog/2013/08/28/3-d-effects-with-normal-mapping/</link>
+		<comments>/blog/2013/08/28/3-d-effects-with-normal-mapping/#comments</comments>
+		<pubDate>Wed, 28 Aug 2013 13:38:46 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Videos]]></category>
+		<category><![CDATA[3-d]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[multitexturing]]></category>
+		<category><![CDATA[normal mapping]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=42762</guid>
+		<description><![CDATA[Just a quick preview of what's coming in the next preview of graphics 2.0 that we'll be seeding out soon.
+
+It's a feature known as normal mapping and it's a workhorse technique for simulating lighting effects in traditional 3-D graphics. We're repurposing it so this is trivial to do in Corona.]]></description>
+				<content:encoded><![CDATA[<p>A feature known as normal mapping is a workhorse technique for simulating lighting effects in traditional 3-D graphics. We&#8217;re repurposing it so this is trivial to do in Corona.</p>
+<p>For example, here&#8217;s how how you can achieve a point light effect:</p><pre class="crayon-plain-tag">local multitexture =
+{
+	type=&quot;composite&quot;,
+	paint1={ type=&quot;image&quot;, filename=&quot;image.png&quot; },
+	paint2={ type=&quot;image&quot;, filename=&quot;normals.png&quot; }
+}
+
+local object = display.newRect( 0, 0, 200, 200 )
+object.fill = multitexture
+object.fill.effect = &quot;filter.normalMapWith1PointLight&quot;</pre><p>All effects have property knobs that you&#8217;ll be able to play with. In the point light, one of those knobs is the position of the point light. In the video below, we&#8217;re just moving the position in a circle:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/z0pEcncwkEQ?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/28/3-d-effects-with-normal-mapping/feed/</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+		<item>
+		<title>Staff Conversation #5: Graphics 2.0 Demo</title>
+		<link>/blog/coronageek/staff-conversation-5-walter-luh-graphics-demo/</link>
+		<comments>/blog/coronageek/staff-conversation-5-walter-luh-graphics-demo/#respond</comments>
+		<pubDate>Tue, 07 May 2013 18:05:30 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[demo]]></category>
+		<category><![CDATA[graphics]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=33259</guid>
+		<description><![CDATA[During today's Staff Conversations hangout, Walter Luh demos some of the new 3D-like effects that will be possible as part of Corona SDK's Graphics 2.0. As Walter explains, these types of effects are possible without a Z-axis, which helps to avoid unnecessary confusion for developers who want to include 3D-style animations in an app.]]></description>
+				<content:encoded><![CDATA[<p><em>Note: Graphics 2.0 is now in public beta for all Corona SDK Pro and Enterprise subscribers.</em></p>
+<hr />
+<p><iframe src="https://www.youtube.com/embed/49WHH58AEj0?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />During today&#8217;s Staff Conversations hangout, Walter Luh demos some of the new 3D-like effects that will be possible as part of Corona SDK&#8217;s Graphics 2.0. As Walter explains, these types of effects are possible without a Z-axis, which helps to avoid unnecessary confusion for developers who want to include 3D-style animations in an app.</p>
+<p>We hope you enjoy the new segments. If you have topic suggestions for upcoming Staff Conversations, be sure to leave them in the <a href=http://forums.coronalabs.com/topic/28960-corona-geek-show-topics-and-questions/>Corona Geek forum</a>.</p>
+<p>Thanks for watching!</p>
+<p><strong>Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to Corona Geek on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Subscribe on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/staff-conversation-5-walter-luh-graphics-demo/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Staff Conversation #4: Walter Luh on the future of mobile graphics</title>
+		<link>/blog/coronageek/staff-conversation-4-walter-luh-on-the-future-of-mobile-graphics/</link>
+		<comments>/blog/coronageek/staff-conversation-4-walter-luh-on-the-future-of-mobile-graphics/#respond</comments>
+		<pubDate>Tue, 30 Apr 2013 21:28:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[mobile graphics]]></category>
+		<category><![CDATA[Staff]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32849</guid>
+		<description><![CDATA[During today's Staff Conversations hangout, Walter Luh talks about how graphics computing has changed over the last 15 years. He also shares some of his thoughts about the future of mobile graphics and how Corona SDK is going to make 3D like effects possible using a familiar 2D framework.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/dO9kXn0bwsY?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />During today&#8217;s Staff Conversations hangout, Walter Luh talks about how graphics computing has changed over the last 15 years. He also shares some of his thoughts about the future of mobile graphics and how Corona SDK is going to make 3D like effects possible using a familiar 2D framework.</p>
+<p>We hope you enjoy the new segments. If you have topic suggestions for upcoming Staff Conversations, be sure to leave them in the <a href=http://forums.coronalabs.com/topic/28960-corona-geek-show-topics-and-questions/>Corona Geek forum</a>.</p>
+<p>Thanks for watching!</p>
+<p><strong>Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to Corona Geek on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Subscribe on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/staff-conversation-4-walter-luh-on-the-future-of-mobile-graphics/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Weekly Update + Open Source</title>
+		<link>/blog/2013/04/09/corona-weekly-update-open-source/</link>
+		<comments>/blog/2013/04/09/corona-weekly-update-open-source/#comments</comments>
+		<pubDate>Wed, 10 Apr 2013 01:20:31 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[daily build]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31536</guid>
+		<description><![CDATA[Last week, we launched a new public release and also launched Corona SDK Starter, so I want to give you a quick update on all the great things we are adding to make Corona awesome for cross-platform app development. I also have some announcements on what we are doing in open source.]]></description>
+				<content:encoded><![CDATA[<p>Last week, we launched a new public release along with Corona SDK Starter. I want to give you a quick update on all the great things we are adding to make Corona awesome for <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform app development</a>. I also have some announcements on what we are doing in open source.</p>
+<p>Before I go on, I just wanted to clarify a few things about last week&#8217;s announcement:</p>
+<p>First, Corona Pro is currently available at $349. If you subscribe (or are already a subscriber) you will be able to renew for another 2 years. This is a fantastic time to get in before prices go up on May 1.</p>
+<p>Second, I want to share our philosophy behind Corona SDK Starter. The goal is to allow you all to create real apps for FREE. That includes using your own custom splash screen, which is the typical restriction you see on products that are &#8220;fake free.&#8221;</p>
+<p>The other thing, which I realized is worth explaining, is that Starter is going to be a continually evolving product. That means as time progresses, we are going to continue to explore how we can bring premium features and make them available to Starter developers. We are going to push the envelope on how we can do this to empower you, and still run a business so we can continue to innovate.</p>
+<p>That&#8217;s all I&#8217;ll say for now, though the tidbit on open source applies to Starter developers, so if that&#8217;s you, keep reading!</p>
+<h3>Graphics</h3>
+<p>So last week, I showed you our awesome demo of 5000 fish at 60 fps. The great thing about that demo is that it shows we are building on a really solid and fast foundation as we think about adding awesome new graphics features. The big takeaway here is that we are trying to build an engine that lets you do amazing graphics features in real-time. So think of Photoshop and Illustrator effects without the progress bar. Pretty ambitious, but that&#8217;s our goal.</p>
+<p>In terms of what we&#8217;re doing this week, we&#8217;ve broken ground on refactoring the architecture of our core engine code. The goal here is to make it easier for us to cleanly swap in the old and new graphics engines for things like regression testing. At the same time, we&#8217;re investigating render to texture support in the core renderer.</p>
+<h3>Plugins and Daily Builds</h3>
+<p>Daily Builds are going to resume tomorrow morning (assuming nobody broke the build). One of the check-ins you&#8217;ll notice is the following:</p>
+<p><code>Gluon/Mac: Enable simulator device builds for iOS</code></p>
+<p>What this means is the simulator will be able to do device builds that incorporate plugins hosted on our servers. We still want to do more testing before we let you play with it.</p>
+<p>On top of that, we&#8217;re also hard at work building a growing library of hosted plugins. It will start small, as initially it will include plugins that we write or plugins that are written by 3rd party partners. The goal is to expand this out so more folks can write plugins that are hosted, but we want to be methodical about this.</p>
+<h3>Open Source: &#8216;widget&#8217; and &#8216;gameNetwork&#8217; for Corona Cloud</h3>
+<p>When we open sourced widget v1, we did it with the intention of making your lives better and to minimize the impact it had for those of you who weren&#8217;t quite ready to jump to widget v2. Our intention was to put more control into your hands.</p>
+<p>We realized that we could do a couple of more things to make your life better and more manageable. Specifically, we&#8217;re going to open source &#8216;widget&#8217; v2 and the &#8216;gameNetwork&#8217; UI for Corona Cloud.</p>
+<h4>Relationship to Daily Builds</h4>
+<p>This is going to be especially useful for those of you who are using Corona SDK Starter. You will not have to wait until the next public release to get some critical bug fixes to these libraries, some of which are going in tomorrow&#8217;s Daily Build.</p>
+<p>Our plan is to keep this reasonably in sync with what we&#8217;re putting out in Daily Builds.</p>
+<h4>License</h4>
+<p>The source code will be made available under a BSD license. If you use the open source version of either of these libraries, we&#8217;ve added a minor requirement that you add the following somewhere in your app (e.g., the credits):</p>
+<p><code>This product includes software developed by Corona Labs Inc. (http://www.coronalabs.com)./</code></p>
+<h4>Contributions and Pull Requests</h4>
+<p>We&#8217;ll be posting these on our <a href=https://github.com/coronalabs>github page</a> by next week.</p>
+<p>If you&#8217;re interested in helping us make these libraries better, we&#8217;ll be putting together some guidelines on pull requests.</p>
+<p><center>* * *</center></p>
+<p>As you can see, we&#8217;ve kept hard at work, even after a monumental release. I look forward to sharing more with you, from inside the Corona Labs kitchen!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/09/corona-weekly-update-open-source/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+		<item>
+		<title>State of Corona: New Public Release + FREE + Re-imagining Pro</title>
+		<link>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/</link>
+		<comments>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/#comments</comments>
+		<pubDate>Thu, 04 Apr 2013 16:27:54 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[pro]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31173</guid>
+		<description><![CDATA[Today, we have some very exciting news. A new public release, a new version of Corona and a few other changes and coming features.
+
+We are making mobile app development more accessible than ever!
+
+]]></description>
+				<content:encoded><![CDATA[<p><em>Note: Graphics 2.0 is now in public beta for all Corona SDK Pro and Enterprise subscribers.</em></p>
+<hr />
+<p>Today, I have some very exciting news.</p>
+<p>Before I dive in, let me talk about the new public release we just made available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a>. We&#8217;ve been fixing a lot of plumbing this time around. Lots of infrastructure and feature improvements like a rewritten async http network library, a re-architected widget library, remote push notifications on Android, iAds, to name a few. We also have a new build server that&#8217;s much more scalable.</p>
+<p>There&#8217;s tons more listed on the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1076>release notes</a>. All in all, there&#8217;s been an incredible amount of work to make <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform development</a> as painless as possible. By the way, if you&#8217;re curious about Apple&#8217;s May 1 deadline on UDIDs, we&#8217;ve got you covered. Read more about it in the release notes.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/big-news.jpg" alt="big-news" class="alignright size-full wp-image-31197" /></p>
+<h3>Introducing Corona SDK Starter</h3>
+<p>Okay, so here&#8217;s where it gets really exciting. From very early on, we have focused on democratizing app development. We felt (and still do) that anyone could create the next great app with Corona. Since then, Corona has been embraced by indies and your apps have hit the top of the charts.</p>
+<p>Indies are a key part of our community, so today, we are taking that vision a step further. We are announcing Corona SDK Starter &#8211; a completely FREE version of Corona that lets you publish to all the platforms we support without paying us a single cent.</p>
+<p>With Corona SDK Starter and the Starter tier of Corona Cloud, you can publish amazing, connected apps faster and more affordably (free!) than ever before. We are the only platform that lets developers do this. A lot of other products have hidden fees or force some sort of watermark/splash screen. There is no such restriction with Starter. That&#8217;s the difference between &#8220;fake free&#8221; and a true free option.</p>
+<p>Now, of course, not everything is free — we&#8217;ve got a business to run after all!</p>
+<p>If you want to access certain specific features like in-app purchase and analytics, you&#8217;ll need to subscribe to a paid plan. You can still build with those features on your own device, but you can&#8217;t publish apps to the store if they use those premium features. Daily builds are also only available to paying subscribers.</p>
+<h3>Re-imagining Pro</h3>
+<p>From the beginning, Corona SDK has been about packaging up industry-standard technologies that big game studios use and making them available to you. The same underlying architecture that powered all the original top apps (Angry Birds, Tap Tap Revenge, Diner Dash) was the inspiration for Corona — only we made it 10x faster and easier.</p>
+<p>That&#8217;s why nothing beats Corona when it comes to its combination of power and speed of development.</p>
+<p>Today, we are ready for the next growth spurt of innovation. We think Corona is the best platform in the universe, but the true measure is if we can make our latest innovations available to Pro subscribers.</p>
+<p>So that&#8217;s what we&#8217;re going to do. We are going to make some amazing technologies available to all paying subscribers, but especially Pro. Here&#8217;s a glimpse at some of the exciting things that we&#8217;ll be making available:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/imagine-300x187.png" alt="imagine" class="alignright size-medium wp-image-31200" /></p>
+<h4><strong>Graphics</strong></h4>
+<p>As I talked about last week, our bleeding-edge OpenGL-ES 2.0/shader-based graphics engine is in the works. You are going to be blown away with what you can do. I&#8217;ll talk about that more later but I did want to give you a teaser.</p>
+<p>If you watch this week&#8217;s <a href=http://www.youtube.com/watch?v=SPu2EZJTZBM>CoronaGeek episode</a>, you&#8217;ll be able to see 5,000 fish running at 60 fps! It may be hard to tell from the video, but this is what I showed to a lucky few at GDC. I recommend watching the whole show, but if you&#8217;re pressed for time, you can skip to roughly the 35:00 mark.</p>
+<h4><strong>Plugins</strong></h4>
+<p>Second, there&#8217;s Project Gluon, a.k.a plugins. We&#8217;ve done a ton of plumbing work so that you&#8217;ll be able to integrate 3rd party services and functionality into your app, and do so painlessly from the comfort of the Corona Simulator.</p>
+<p>Now there&#8217;s good news and bad news here. There are a lot of moving parts, so plugins didn&#8217;t quite make it to the public release — and yes, I&#8217;m disappointed too.</p>
+<p>But the good news is that plugins are coming very soon! We&#8217;re getting ready to seed this to beta testers this month. We are actively building a library of plugins that will be hosted on our servers. We&#8217;re working with folks like Amazon to get you more monetization options. We are acutely aware that this is a big issue for a lot of you.</p>
+<h4><strong>Device Access</strong></h4>
+<p>Lastly (for now), we have found a way for you to access certain Java and Objective-C APIs from Lua! On the Android side, we already have the foundation there thanks to Enterprise, and we&#8217;re looking at how we can accelerate bringing those Enterprise innovations down to Pro developers. In parallel, we also have a proof-of-concept on the iOS side, so I&#8217;ll have more news once we&#8217;re past the research phase.</p>
+<h3>New Pro Pricing and Subscriber Promotions</h3>
+<p>As you can see, we are re-imagining Pro as a much more sophisticated product. By May, we anticipate that the daily builds available to Pro will offer significantly more value than they do today. Because of that, we will be changing the price of Pro to $599/year starting May 1. Even after this change, we think Pro still remains a great bargain &#8211; it&#8217;s less than $50 per month and saves you hours of development work each and every day. And more importantly, you&#8217;ll be able to do more and more!</p>
+<p>In the mean time, we want to thank our current subscribers and do the following:</p>
+<ul>
+<li>All current Indie subscribers are now upgraded to Pro (the Indie subscription has ceased to exist). </li>
+<li>All current Pro subscribers now have an extra 2 months added on to their subscription.</li>
+</ul>
+<p>In addition, we are offering a special promotion:</p>
+<ul>
+<li>Between now and April 30, anyone can <a href="https://marketplace.coronalabs.com/
+">buy a Pro subscription</a> (or add to their existing subscription) for $349 before the new price takes effect.</li>
+<li>But wait there&#8217;s more. As long as you have an active subscription on May 1, you will be able to renew at the $349/year price for 2 more years — just don&#8217;t let your subscription lapse!</li>
+</ul>
+<p>For more info, please refer to our <a href=/faq/>Corona SDK Pricing FAQs</a>.</p>
+<p><center>* * *</center></p>
+<p>Before I wrap up, there is one more item worth mentioning: we&#8217;ve finally gotten around to putting Corona Enterprise on our <a href="https://marketplace.coronalabs.com/
+">store page</a>. If you are a small outfit, you qualify for the $999/year tier. Larger organizations can get Enterprise at $2499/year which comes with extra goodies and volume discounts. Check out our <a href="https://marketplace.coronalabs.com/
+">entire pricing lineup</a> to see which one makes the most sense for you.</p>
+<p>There&#8217;s a lot of game changing stuff here, but Corona SDK Starter brings me back to how we all got started — to change people&#8217;s lives in real ways. We think more people will have the opportunity to be a part of the mobile revolution and take advantage of the mobile revolution. We can&#8217;t wait to get all of our innovations into your hands – and more importantly, see what you do with them.</p>
+<p><em>Walter</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/feed/</wfw:commentRss>
+		<slash:comments>138</slash:comments>
+		</item>
+	</channel>
+</rss>

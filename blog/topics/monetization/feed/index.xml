@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Monetization &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/monetization/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Monetization &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Important AdMob and other ad plugin changes</title>
+		<link>/blog/2019/07/22/important-admob-and-other-ad-plugin-changes/</link>
+		<pubDate>Mon, 22 Jul 2019 15:42:23 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76300</guid>
+		<description><![CDATA[There are some new requirements to implement AdMob and Appodeal. This post explains the changes you need to make to continue to integrate these plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png" alt="" width="150" height="150" class="alignright size-thumbnail wp-image-67842" srcset="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/admob-2-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/admob-2-1.png 310w" sizes="(max-width: 150px) 100vw, 150px" />It seems that all of our news lately has been wrapped around Google, and so it is again. AdMob has update their libraries again, and in doing so, created a breaking change. Your app&#8217;s App Id previously was only needed at the time you initialized the plugin. Google is now looking for it inside the <code>AndroidManifest.XML</code> file. If you wish to use AdMob as well as Appodeal (since it includes AdMob), you must add this to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        applicationChildElements =
+        {
+            [[
+                &lt;meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+                    android:value="[YOUR_ADMOB_APP_ID]"/&gt;  -- replace with your app id. See: https://goo.gl/fQ2neu
+            ]],
+        }
+    },
+    plugins =
+    {
+        ["plugin.admob"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },
+}</pre><p> </p>
+<p>Simply replace the <code>[YOUR_ADMOB_APP_ID]</code> with your actual App ID inside the quotes and with out the square brackets. </p>
+<p>In addition, many of you are still referencing the old legacy AdMob plugin since it was a dependency for many other ad plugins. Please look through your build.settings and remove any references to:</p>
+<p><code>["plugin.google.play.services"]</code></p>
+<p>If you do not remove this, your build will fail and you should get an error message in your console using the latest builds.</p>
+<p>You should make these changes before your next attempt to build for Android. See the <a href=http://docs.coronalabs.com/plugin/admob/index.html?#project-settings rel="noopener" target="_blank">AdMob implementation documentation for more details.</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Monetization best practices (and a new Ad Tutorial!)</title>
+		<link>/blog/2018/10/02/monetization-best-practices-and-a-new-ad-tutorial/</link>
+		<pubDate>Tue, 02 Oct 2018 18:53:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76032</guid>
+		<description><![CDATA[Do you want to implement ads in your game or app but don't know where to start? We have a tutorial for you and a blog post that helps you understand monetization. Check it out!]]></description>
+				<content:encoded><![CDATA[<h3>New tutorial!</h3>
+<p>First, we would like to take this opportunity to let you know about a new tutorial on implementing advertising in your Corona apps. The tutorial covers code and common code to implement an ad plugin in your app. You can <a href=https://docs.coronalabs.com/tutorial/basics/ads/index.html target="_blank" rel="noopener">view it here</a>!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://docs.coronalabs.com/tutorial/basics/ads/index.html target="_blank" rel="noopener">Read the Implementing Ads tutorial</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+<h3>Monetization best practices</h3>
+<p>A great question was asked in our Community Forums about using in-app purchases (IAP) to turn off advertising. It may seem like a simple idea but there is more to it.</p>
+<p>When you sell your app for a fixed price, that person pays you once, ever. When you use ads, you get a continuous stream of income as long as your app or game is being used. If someone uses IAP to turn off ads, you get continuous income until they pay for the IAP, then you get the one-time fee and that&#8217;s it. For some apps, IAP subscriptions can provide ongoing income, but an app has to be pretty special, with lots of new content to convince users to continuously pay for it.</p>
+<p>Let&#8217;s look at the financial considerations in answering this question. Let&#8217;s say that you end up setting the IAP fee to turn off ads at $0.99 (or an initial purchase price with no ads). Because the app stores take 30% of your sales, that means you will make $0.69 from that user when they make the purchase. But the question is: Will you make more from advertising?</p>
+<p>Using Appodeal as an example and information from <a href=https://www.appodeal.com/home/monetizing-casual-games/ target="_blank" rel="noopener">Appodeal&#8217;s E-Book &#8220;Monetizing Casual Games&#8221;</a>, banner ads typically pay about $0.43 per thousand banner ads shown. To earn that same $0.69 from app sales, you need to display over 1,600 banner ads to your app user. Assuming your banner ads rotate every 45 seconds, it will take over 1,200 minutes or about 20 hours of view time to earn that same amount of money from the user. Note: eCPM values for the United States and Europe were averaged together from numbers in the e-Book.</p>
+<p>Banner ads may not be the best way to implement ads. If you&#8217;re using other ad forms, like interstitials which pay an average of $4.59 per thousand ads, you need to show about 150 interstitial ads to earn the equivalent purchase income. Note, video interstitials pay more than static interstitial ads. Let&#8217;s say you can show 2 interstitial ads per session on average, the user only has to play about 75 times to make up that income. You don&#8217;t want to over-show ads to keep it from becoming an annoyance causing your user to just quit your app.</p>
+<p>Rewarded video pays about $10 per 1000 rewarded videos. That means the user only needs to view 7 rewarded videos to earn you that same $0.69.</p>
+<p>How do you get to that many ad displays? Most users tend to play a game a lot at first, then over time, they play less and less. All games have a usage &#8220;tail&#8221;. If you view this generic usage graph, it looks like a dinosaur:</p>
+<div id="attachment_76033" style="width: 1034px" class="wp-caption alignnone"><img src="/wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-1024x532.png" alt="" width="1024" height="532" class="size-large wp-image-76033" srcset="/wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-1024x532.png 1024w, /wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-300x156.png 300w, /wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-768x399.png 768w, /wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-700x364.png 700w, /wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg-125x65.png 125w, /wordpress/wp-content/uploads/2018/10/1200px-Long_tail.svg.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /><p class="wp-caption-text">Picture by <a href=http://www.haykranen.nl/ target-"_blank">Hay Kranen</a> / PD</p></div>
+<p>The left side is your initial usage spike (the head) and then as time passes it gets used less and less (the tail). Some games will have a long tail, but many will have a short tail. No one can really predict in advance how long your game&#8217;s tail will be. Successful apps will have a longer tail and a taller tail. It indicates that you are retaining users longer. Games and apps with a long tail will make more money from advertising. If your game doesn&#8217;t have any longevity to it, you want to convert them to paid as soon as possible.</p>
+<p>This combination of retention and revenue is your game&#8217;s LTV or Lifetime Value.</p>
+<p>If your game is too short, offering an option to disable ads won&#8217;t be effective because you won&#8217;t have any retention to motivate them to disable ads. If your ads are too annoying, people may get turned off to your app and give up on it early. You have to strike a proper balance between advertising and entertainment or utility value of your app.</p>
+<p>Even short-lived apps can monetize successfully by &#8230;</p>
+<h3>Using Rewarded Video</h3>
+<p>Rewarded video is clearly the winner in the eCPM value for you, but you have to use them wisely. Rewarded video is the user volunteering their time in exchange for some in-game reward. You can&#8217;t just throw a rewarded video in front of a user automatically. That&#8217;s the job of an interstitial ad. If you force the user to watch an ad, even if you reward them, it&#8217;s still forcing them to watch the ad.</p>
+<p>Consider they have played your level and lost. Your game logic shows them an ad and resets back to the beginning. That is an Interstitial ad placement. If you prompt them &#8220;Would you like to view an ad to continue to the next level?&#8221; and if they agree, you should show them the video and let them move on to the next level. If they choose no, simply take them back to the beginning, but don&#8217;t force them to watch the ad.</p>
+<p>Rewarded ads encourage players to continue playing, either by not losing progress or by gaining some in-game feature which can extend your app&#8217;s LTV. Using these techniques, even games with shorter tails can be quite successful.</p>
+<h3>Conclusion</h3>
+<p>Every app is different. You should make the most entertaining game you can or the most useful business or utility app that brings real value to the user, then balance your advertising, in-app purchases and in-app currency to maximize your income.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Getting your Corona apps ready for GDPR!</title>
+		<link>/blog/2018/05/16/getting-your-corona-apps-ready-for-gdpr/</link>
+		<pubDate>Wed, 16 May 2018 19:06:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=75773</guid>
+		<description><![CDATA[GDPR is coming! What is Corona doing to help you get ready? Learn more in our GDPR update!]]></description>
+				<content:encoded><![CDATA[<p>Great news Corona developers! Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">daily build 2018.3286</a>, metrics collected by Corona-made apps are now GDPR safe. We no longer collect any ID&#8217;s or data points that would be considered personal data under these data regulations.</p>
+<p>We will be updating our privacy policy to reflect these changes. Keep in mind that builds of Corona pre-2018.3286 are not GDPR compliant and if you have apps for sale in the EU they will need to be updated with 2018.3286 or later.</p>
+<dl>
+<dt><strong>Q. What is GDPR?</strong></dt>
+<dd>A. GDPR stands for &#8220;<em>General Data Protection Regulation</em>&#8220;. It&#8217;s a law affecting businesses established in the European Union or has end users based in the EU that requires you to get explicit permission from users to collect private data and manage that data. Businesses that don&#8217;t comply can face heavy fines.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What if I want to continue to use a public build or older daily build?</strong></dt>
+<dd>A. Then you will still need to update your apps and present the user a dialog box asking for permission for Corona to collect data in addition to any other services that you need to also ask permission for.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What is the best way to know if my user is in the EU?</strong></dt>
+<dd>A. Because users travel or may use technologies like VPNs, there is no reliable way to determine if a resident of the EU is in the EU. Also, other privacy laws are changing to be more stringent in additional areas. It&#8217;s best to ask all users for this permission.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What do I need to do to get permission from our app users?</strong></dt>
+<dd>A. There are several steps you need to complete to give your users the opportunity to control their data.</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Present a dialog to your users explaining that you&#8217;re using third-party services that collect private data.</li>
+</ol>
+</li>
+</ol>
+<p><img class="alignnone size-large wp-image-75779" src="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png" alt="" width="1024" height="597" srcset="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png 1024w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-300x175.png 300w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-768x448.png 768w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-700x408.png 700w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-125x73.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<ol start="2">
+<li>Make sure to include a link to your privacy policy. To save space in your dialog, your privacy policy should link to the privacy policies of any service you&#8217;re using.</li>
+<li>Your dialog can present the user an on/off switch for each service to allow the end user to choose which services they want to grant permission to or decline permission. That switch should default to <code>off</code> since the intent is to get &#8220;opt-in&#8221; from the end user. See the UK&#8217;s Information Commissioner&#8217;s Office <a href=https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/consent/ target="_blank" rel="noopener">document on GDPR Consent</a></li>
+<li>Store the settings locally so you can remember their choices. Saving the settings online will require you to store personal data and you would have to ask permission for that.</li>
+<li>On a settings screen, include options to allow the user to select to turn on or off permissions.</li>
+<li>When the user changes their mind, then your app can react to those changes.</li>
+<li>For now, if a user declines to use a service, simply use &#8220;if&#8221; statements to not initialize the plugin or call any methods of that plugin. If they later change their mind, then you can initialize the plugin and call it&#8217;s methods.</li>
+<li>As services update their SDK&#8217;s to offer GDPR management API&#8217;s and we update our plugins to support them, you can update your apps to add support. As an example, Appodeal&#8217;s new SDK will support showing non-targeted ads to users who don&#8217;t grant permission and higher quality ads to those who grant permission. There will be a way to let Appodeal&#8217;s SDK know if the user has granted permission or not.</li>
+</ol>
+</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What changes do I need to make to take advantage of a plugin&#8217;s GDPR features?</strong></dt>
+<dd>A. Unfortunately every plugin provider is implementing this in radically different ways. Some will require you to pass a consent parameter on an initialization call, others are handling their own permission, others will have methods in their SDK to manage data. As we update the plugins to be GDPR compliant, we are also updating each <a href=https://docs.coronalabs.com/plugin/index.html target="_blank" rel="noopener">plugin&#8217;s documentation</a>. There should be a yellow note near the top of each plugin&#8217;s page that points you to GDPR additions to be aware of.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. How will I know when a plugin has been updated?</strong></dt>
+<dd>A. The best way is to check the documentation page and look for the GDPR note at the top of the document.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q: Where I can learn more about GDPR compliance?</strong></dt>
+<dd>A: See the following:</p>
+<ul>
+<li>The EU&#8217;s official site &#8211; <a href=https://gdpr-info.eu/ target="_blank" rel="noopener">https://gdpr-info.eu/</a></li>
+<li>Appodeal&#8217;s primary GDPR page: <a href=https://www.appodeal.com/home/gdpr/ target="_blank" rel="noopener">https://www.appodeal.com/home/gdpr/</a></li>
+<li>Appodeal&#8217;s GDPR guide &#8211; <a href=https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/</a></li>
+<li>Appodeal&#8217;s Blog &#8211; <a href=https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/</a></li>
+</ul>
+</dd>
+</dl>
+<p>Corona is committed to making sure you can be compliant with these laws. If you have questions about this, please ask in our <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing the StartApp monetization plugin</title>
+		<link>/blog/2018/02/21/announcing-the-startapp-monetization-plugin/</link>
+		<pubDate>Wed, 21 Feb 2018 14:27:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73350</guid>
+		<description><![CDATA[Monetization with StartApp is now available for your Corona made app. Learn more about this exciting opportunity to be more successful with your app or game.]]></description>
+				<content:encoded><![CDATA[<p>After a lot of hard work, Corona is happy to announce the release of the <a href=https://marketplace.coronalabs.com/plugin/startapp target="_blank" rel="noopener">StartApp</a> plugin!</p>
+<p>Now, app publishers who use the Corona framework to build their mobile applications will now be able<br />
+to easily integrate StartApp’s SDK to monetize their Corona apps.</p>
+<p><a href=https://marketplace.coronalabs.com/plugin/startapp><img class="alignnone size-full wp-image-73352" src="/wordpress/wp-content/uploads/2018/02/730x300_2.jpg" alt="" width="730" height="300" srcset="/wordpress/wp-content/uploads/2018/02/730x300_2.jpg 730w, /wordpress/wp-content/uploads/2018/02/730x300_2-300x123.jpg 300w, /wordpress/wp-content/uploads/2018/02/730x300_2-700x288.jpg 700w, /wordpress/wp-content/uploads/2018/02/730x300_2-125x51.jpg 125w" sizes="(max-width: 730px) 100vw, 730px" /></a></p>
+<p>StartApp is an insight-driven mobile technology company that enables partners to turn data into fulfilling mobile moments. By creating innovative ways of exploring mobile users’ intents and behaviors, and of being smarter about responding to these factors, we help our partners optimize and better execute their strategies.</p>
+<p>Corona is excited to now enable its developers to monetize using StartApp SDK, <a href=https://www.startapp.com/blog/startapp-becomes-3rd-popular-android-monetization-sdk/ target="_blank" rel="noopener">ranked as the 3rd most popular monetization SDK</a> behind only AdMob and Facebook Audience Network, according to SDK analytics firm Mobbo with over 1 Billion MAUs, over 400,000 app partners.</p>
+<p>Not yet a using StartApp monetization plugin? <a href=https://marketplace.coronalabs.com/plugin/startapp target="_blank" rel="noopener">Start using it now</a>!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing new non-revenue-share F.A.N. plugin</title>
+		<link>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/</link>
+		<comments>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/#comments</comments>
+		<pubDate>Tue, 22 Aug 2017 16:03:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=72769</guid>
+		<description><![CDATA[Corona Labs now offers two versions of the Facebook Audience Network plugin: revenue-share and paid. Learn more about the two versions and which one is right for you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-72770" src="/wordpress/wp-content/uploads/2017/08/facebook-an-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2017/08/facebook-an-150x150.png 150w, /wordpress/wp-content/uploads/2017/08/facebook-an-300x300.png 300w, /wordpress/wp-content/uploads/2017/08/facebook-an.png 500w" sizes="(max-width: 150px) 100vw, 150px" />Our current <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank" rel="noopener">Facebook Audience Network</a> (F.A.N.) monetization plugin was originally created as a &#8220;revenue-share&#8221; plugin where a small percentage (5%) of your Facebook Audience Network ads are credited to a Corona Labs account.</p>
+<p>Now, just like we did with <a href=/blog/2017/05/31/introducing-new-non-revenue-share-applovin-plugin/ target="_blank" rel="noopener">AppLovin</a> earlier this year, we offer the Facebook Audience Network in <strong>two</strong> forms:</p>
+<ul>
+<li>The <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network target="_blank" rel="noopener">original revenue-share version</a> where 5% of the delivered ads are attributed to Corona Labs.</li>
+<li>A new <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">paid version</a> of the plugin without any revenue-share component. You keep 100% of your ad revenue and you manage your account directly.</li>
+</ul>
+<p>The new paid Facebook Audience Network plugin is available in the <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">Corona Marketplace</a> for $199/year.</p>
+<p>To use the paid version:</p>
+<ol>
+<li>Visit the Corona Marketplace and purchase the <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network-paid target="_blank" rel="noopener">Facebook Audience Network Paid</a> plugin.</li>
+<li>In your <code>build.settings</code> file, change the plugin entry from <code>"plugin.fbAudienceNetwork"</code> to <code>"plugin.fbAudienceNetwork.paid"</code>.</li>
+<li>Update any <code>require()</code> statements in your code:<br />
+<code>local fbAudienceNetwork = require( "plugin.fbAudienceNetwork.paid" )</code></li>
+</ol>
+<p>Please visit our <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank" rel="noopener">integration documentation</a> for instructions on how to get up and running with Facebook Audience Network.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2017/08/22/facebook-audience-network-plugin-now-available-without-revenue-sharing/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Updated Vungle plugin (v5.1) with new features</title>
+		<link>/blog/2017/07/25/updated-vungle-plugin-v5-1-with-new-features/</link>
+		<pubDate>Tue, 25 Jul 2017 19:26:29 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=72487</guid>
+		<description><![CDATA[Vungle, a Corona Labs video ad partner, has updated their plugin SDK to version 5.1. Read on to learn about this new plugin and how it may impact you.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://vungle.com/ target="_blank" rel="noopener">Vungle</a>, a Corona Labs video ad partner, has released a new plugin which integrates version 5.1 of their SDK. This updated plugin also brings some new features that you may find desirable, including:</p>
+<ul>
+<li>Vungle now supports multiple ad placements. Instead of a single video asset type, you can now use multiple placements with either video or rewarded video types.</li>
+<li>Dynamic Templates let you give more users even more ad templates.</li>
+<li>Native Ads, or Vungle&#8217;s Flex-View technology, lets you add immersive video ad banners into your app&#8217;s user experience (you will need to contact your Vungle account manager to enable this feature).</li>
+</ul>
+<p>To use the <strong>new</strong> version of Vungle, edit your <code>build.settings</code> and <strong>replace</strong>&#8230;</p><pre class="crayon-plain-tag">[&quot;CoronaProvider.ads.vungle&quot;] =
+{
+    publisherId = &quot;com.vungle&quot;
+},</pre><p>&#8230;with this:</p><pre class="crayon-plain-tag">[&quot;plugin.vungle&quot;] =
+{
+    publisherId = &quot;com.vungle&quot;
+}</pre><p>You will also need to use <a href=https://developer.coronalabs.com/release/2017/3103/ target="_blank" rel="noopener">daily build 2017.3103</a> or later to access the new plugin.</p>
+<p>For more details, see the <a href=https://docs.coronalabs.com/plugin/vungle/index.html target="_blank" rel="noopener">Vungle 5.1 documentation</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Important Google IAP Plugin Update</title>
+		<link>/blog/2017/07/19/important-google-iap-plugin-update/</link>
+		<pubDate>Wed, 19 Jul 2017 23:08:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=72461</guid>
+		<description><![CDATA[Corona Labs' engineering team has made an important update to the Google In-App Purchase plugin. Please read further to learn about the change.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs&#8217; engineering team has made an important update to the <a href=https://docs.coronalabs.com/plugin/google-iap-v3/index.html target="_blank" rel="noopener">Google In-App Purchase plugin</a> that you need to be aware of.</p>
+<p>Starting with Corona daily build <a href=https://developer.coronalabs.com/release/2017/3105/ target="_blank" rel="noopener">2017.3105</a>, the <a href=https://docs.coronalabs.com/plugin/google-iap-v3/init.html target="_blank" rel="noopener">store.init()</a> call for Google IAP is now <strong>asynchronous</strong>. This means that it will return immediately while it continues to initialize in the background. This change was made to help reduce the number of ANR or &#8220;Application Not Responding&#8221; messages being reported in the Google Play Console.</p>
+<p>Basically, ANR reports can occur when Android senses that an app appears non-responsive &#8212; this may happen when performing synchronous network activity on a poor network connection. During testing, it&#8217;s hard to see <code>store.init()</code> taking any time because it normally completes in just milliseconds, but when users have slower connections, the time can increase dramatically and trigger an ANR report.</p>
+<h3>The solution</h3>
+<p>Because of this change, you should modify how your app uses the Google IAP plugin.</p>
+<p>While many developers already delay the <a href=https://docs.coronalabs.com/plugin/google-iap-v3/loadProducts.html target="_blank" rel="noopener">store.loadProducts()</a> call until the user reaches a place where products are listed, some developers call <a href=https://docs.coronalabs.com/plugin/google-iap-v3/loadProducts.html target="_blank" rel="noopener">store.loadProducts()</a> immediately after calling <a href=https://docs.coronalabs.com/plugin/google-iap-v3/init.html target="_blank" rel="noopener">store.init()</a> (the first mandatory call to get things rolling).</p>
+<p>Under this new model, you should <strong>wait</strong> until you receive an <code>"init"</code> callback indicating that Google IAP is completely initialized and ready to process requests (this applies to <a href=https://docs.coronalabs.com/plugin/google-iap-v3/restore.html target="_blank" rel="noopener">store.restore()</a> as well).</p>
+<p>The updated version of the plugin generates a new <a href=https://docs.coronalabs.com/plugin/google-iap-v3/event/init/index.html target="_blank" rel="noopener">init</a> event which is dispatched to the transaction listener specified within <a href=https://docs.coronalabs.com/plugin/google-iap-v3/init.html target="_blank" rel="noopener">store.init()</a>. This event has the unique <code>event.name</code> property with a value of <code>"init"</code> which you can use to differentiate it between <a href=https://docs.coronalabs.com/plugin/google-iap-v3/event/storeTransaction/index.html target="_blank" rel="noopener">storeTransaction</a> events which must be handled by the same listener. Please see the <a href=https://docs.coronalabs.com/plugin/google-iap-v3/init.html target="_blank" rel="noopener">documentation</a> for an example of doing so.</p>
+<p><strong>Remember, these changes only affect Corona build <a href=https://developer.coronalabs.com/release/2017/3105/ target="_blank" rel="noopener">2017.3105</a> and later.</strong></p>
+<hr noshade="noshade" size="1" />
+<p>In addition to this update, we have fixed a Null Pointer Reference (NPR) error in the <a href=https://docs.coronalabs.com/plugin/amazon-iap-v2/index.html target="_blank" rel="noopener">Amazon IAP</a> plugin. This fix is available in all versions.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Appodeal plugin updated to SDK version 2.0</title>
+		<link>/blog/2017/07/12/appodeal-plugin-updated-to-sdk-version-2-0/</link>
+		<pubDate>Wed, 12 Jul 2017 17:01:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=72371</guid>
+		<description><![CDATA[The Appodeal plugin has been updated. Read on to learn how this may affect you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67639 size-thumbnail" src="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs offers over twenty monetization plugins that we strive to keep maintained and up-to-date. Usually these updates are transparent and we notify you via posts to the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank" rel="noopener">Monetization</a> subforum. Occasionally, however, there are breaking changes that we need to make you aware of.</p>
+<p>Specifically, the latest update to the <a href=https://marketplace.coronalabs.com/plugin/appodeal target="_blank" rel="noopener">Appodeal plugin</a> has two breaking changes which may require that you update your code:</p>
+<ul>
+<li>The <code>"video"</code> ad type has been rolled into the <code>"interstitial"</code> type. Thus, in various API calls like <a href=https://docs.coronalabs.com/plugin/appodeal/load.html target="_blank" rel="noopener">appodeal.load()</a> and <a href=https://docs.coronalabs.com/plugin/appodeal/show.html target="_blank" rel="noopener">appodeal.show()</a>, <code>"video"</code> will no longer work. However, you <strong>can</strong> control the choice of video vs. static interstitial ads through the <a href=https://www.appodeal.com/signin target="_blank" rel="noopener">Appodeal Dashboard</a>.</li>
+<li>tvOS support has been removed. In other words, if you&#8217;re building for tvOS, the Appodeal plugin will no longer work.</li>
+</ul>
+<p>These changes will affect developers using Corona build <a href=https://developer.coronalabs.com/release/2017/3068/ target="_blank" rel="noopener">2017.3068</a> (the current public release) or later. If you wish to use the older plugin version, you&#8217;ll need to use an older daily build of Corona.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Welcome LoopMe, a new monetization plugin</title>
+		<link>/blog/2017/06/06/welcome-loopme-a-new-monetization-plugin/</link>
+		<pubDate>Tue, 06 Jun 2017 21:55:20 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=70813</guid>
+		<description><![CDATA[Corona Labs is pleased to announce a new monetization plugin from LoopMe. Learn more about this great addition to our suite of plugins.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-70815 size-thumbnail" src="/wordpress/wp-content/uploads/2017/05/LoopMeSquareLogo-1-300x300.png" alt="Logo1_LoopMe" width="150" height="69" />In our quest to offer you the best advertising options for your mobile apps, Corona Labs is pleased to announce a new plugin partner: <a href=https://loopme.com/ target="_blank" rel="noopener">LoopMe</a>. They specialize in video and other fullscreen (interstitial) ads offering high eCPMs. They even support video ads for vertically designed apps.</p>
+<p>&#8220;App developers are rightly looking for return on the hard work that goes into creating apps. Using the free-to-download Corona plugin for LoopMe, app developers can now access stable eCPMs and fill rates throughout the year so you can best plan your earnings and costs,&#8221; said Vishal Dalal, Head of Performance for LoopMe.</p>
+<p>To get started with LoopMe, <a href=https://app.loopme.com/ target="_blank" rel="noopener">sign up at their site</a> and add an Ad Spot. Next, <a href=https://marketplace.coronalabs.com/plugin/loopme target="_blank" rel="noopener">activate</a> the plugin for your developer account in the Corona Marketplace. Then, using your <code>appKey</code> from LoopMe, you can integrate the plugin into your project by following their <a href=https://github.com/loopme/loopme-corona-plugin/tree/master/docs target="_blank" rel="noopener">documentation</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing new non-revenue-share AppLovin plugin</title>
+		<link>/blog/2017/05/31/introducing-new-non-revenue-share-applovin-plugin/</link>
+		<pubDate>Wed, 31 May 2017 17:17:29 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=70849</guid>
+		<description><![CDATA[Corona Labs is pleased to announce a new AppLovin plugin that removes revenue sharing. Learn more about this addition to our monetization plugin suite.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin.paid target="_blank"><img class="alignright size-thumbnail wp-image-65510" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" /></a>Corona Labs provides a wide selection of <a href=https://docs.coronalabs.com/plugin/index.html target="_blank">monetization plugins</a> that fit various developer/business needs, from premium paid options to alternative options which entail no up-front fee. The original <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">AppLovin</a> plugin was designed in the &#8220;revenue-share&#8221; model where developers can use it for free, but Corona Labs takes a small percentage of the earned ad revenue.</p>
+<p>Now, we are pleased to announce that we provide <strong>both</strong> options for AppLovin, aimed at accommodating different Corona developers and business models:</p>
+<ul>
+<li>The original <a href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin target="_blank">revenue-share version</a> in which Corona Labs takes a fixed 5% flat rate from earned ad revenue.</li>
+<li>A new <a href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin.paid target="_blank">AppLovin Paid</a> version of the plugin without any revenue-share component &#8212; this version lets you keep 100% of your ad revenue and allows you to manage your account/settings with AppLovin directly.</li>
+</ul>
+<p>Like our other premium monetization plugins, <a href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin.paid target="_blank">AppLovin Paid</a> is available for $199/year in the Corona Marketplace.</p>
+<p>If you are a current AppLovin user and you want to switch from the revenue-share version to the paid version, follow this basic process:</p>
+<ol>
+<li>Visit the Corona Marketplace and <a href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin.paid target="_blank">purchase the AppLovin Paid plugin</a>.</li>
+<li>In your <code>build.settings</code> file, change the plugin entry from <code>"plugin.applovin"</code> to <code>"plugin.applovin.paid"</code>.</li>
+<li>Update any <code>require()</code> statements in your code, for example<br />
+<code>local applovin = require( "plugin.applovin.paid" )</code>.</li>
+</ol>
+<p>If you haven&#8217;t used AppLovin before, please visit our <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">integration documentation</a> and follow the instructions to get up and running.</p>
+<h3>API updates</h3>
+<p>In addition to this new plugin, we&#8217;ve updated the <a href=https://docs.coronalabs.com/plugin/applovin/load.html target="_blank">applovin.load()</a> API for both versions to be more in line with our other monetization plugins. Previously, this API had an obscure method to load interstitial ads versus rewarded video ads. Now, you can call this API with a string like <code>applovin.load("rewardedvideo")</code> or <code>applovin.load("interstitial")</code>. Of course, we have maintained backward compatibility with the old syntax, but we recommend updating to the new format.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://marketplace.coronalabs.com/plugin/com.coronalabs/plugin.applovin.paid target="_blank">Get the AppLovin Paid plugin</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

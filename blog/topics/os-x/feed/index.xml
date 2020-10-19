@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>OS-X &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/os-x/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>OS-X &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona now supports Dark Mode</title>
+		<link>/blog/2019/10/27/corona-now-supports-dark-mode/</link>
+		<pubDate>Sun, 27 Oct 2019 16:12:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+
+		<guid isPermaLink="false">/?p=76365</guid>
+		<description><![CDATA[Corona now supports Dark Mode. Learn more about how this feature might affect your apps!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-76366" src="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png 150w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-300x300.png 300w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-125x125.png 125w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode.png 344w" sizes="(max-width: 150px) 100vw, 150px" />Apple recently added support for Dark Mode. Dark Mode first appeared in macOS Mojave and continues with macOS Catalina. On iOS Dark Mode first appeared in iOS 13. Even tvOS supports it! Dark Mode is a popular feature because many people prefer light text on a dark background and there is evidence that it’s more energy friendly as well. Android supports &#8220;Dark Theme&#8221; starting with Android 10. Corona now supports this across all supported platforms as well.</p>
+<p>Starting with daily build 2019.3545 , Corona now recognizes Dark Mode automatically and updates <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank" rel="noopener">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank" rel="noopener">native.newTextBox()</a> objects to work with the selected mode.</p>
+<p>In addition, <a href=http://docs.coronalabs.com/api/library/system/getInfo.html target="_blank" rel="noopener">system.getInfo(“darkMode”)</a> will return a true or false value, so you can now theme your app to the mode selected.</p><pre class="crayon-plain-tag">local darkMode = system.getInfo("darkMode")</pre><p>On iOS based builds, you can force your your app into &#8220;light&#8221; mode by adding an entry into the plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    iphone = 
+    { 
+         plist =
+         {
+               UIUserInterfaceStyle = "Light",
+         }
+     }
+}</pre><p>Please note, &#8220;Light&#8221; is case sensitive and must be capitalized. This works on older Corona builds and if you don&#8217;t want to update to the latest daily build, this is a way to keep the native text objects themed with your current app. If you want to do this for macOS builds, use this entry in your macOS plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    macos = 
+    { 
+         plist =
+         {
+               NSRequiresAquaSystemAppearance = true,
+         }
+     }
+}</pre><p></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Steamworks plugin is now open-source</title>
+		<link>/blog/2018/10/17/steamworks-plugin-is-now-open-source/</link>
+		<pubDate>Wed, 17 Oct 2018 17:23:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Win32]]></category>
+
+		<guid isPermaLink="false">/?p=76043</guid>
+		<description><![CDATA[The Corona Steamworks plugin is now open-source. Learn what that means and how you can extend this cool feature.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75672" src="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png 150w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018.png 200w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs is pleased to announce that the <a href=https://marketplace.coronalabs.com/corona-plugins/steamworks target="_blank" rel="noopener">Steamworks plugin</a> is now open-source. The Steamworks plugin is used by PC and macOS games published to Valve&#8217;s Steam service that allows support for leaderboards, achievements, user profile data, and microtransaction support.</p>
+<p>Now you can download the repository for the plugin and add your own features and extensions to it. You will have to have a Steam developer account to be able to test the plugin. Follow Steamworks documentation (available on Steam’s developer portal) to learn how to enable Steamworks debugging and development for your game. You can get the plugin source at our <a href=https://github.com/coronalabs/steamworks-corona target="_blank" rel="noopener">GitHub repository</a>.</p>
+<p>You can learn more about the Steamworks plugin in our <a href=/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/ target="_blank" rel="noopener">previous announcement</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: The Lords of the Earth Flame</title>
+		<link>/blog/2016/10/19/featured-app-the-lords-of-the-earth-flame/</link>
+		<pubDate>Wed, 19 Oct 2016 18:13:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Win32]]></category>
+
+		<guid isPermaLink="false">/?p=68028</guid>
+		<description><![CDATA[The Lords of the Earth Flame is an interactive adventure game based on text-based RPGs. Learn more about this beautiful Corona-built app.]]></description>
+				<content:encoded><![CDATA[<p>At Corona Labs, we notice your newly released and in-development apps. What you&#8217;re creating is impressive and, in fact, it&#8217;s a blessing to show off your work. This time we would like to highlight <em><a href=https://www.facebook.com/tlotef/ target="_blank">The Lords of the Earth Flame</a> </em>from <a href=http://rhino-games.com/ target="_blank">Rhino Games</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/AiUMEH1nwVY?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><em><a href=https://www.facebook.com/tlotef/ target="_blank">The Lords of the Earth Flame</a></em> is a novel game based in the genres of interactive fiction and text-based role playing games. Featuring a structure that lets you choose the path of adventure, you enjoy a rich gaming experience that can go on for hours. The non-linear nature of the game allows you to determine the course of action instead of the story defining your path for you.</p>
+<p><img class="alignnone size-large wp-image-68029" src="/wordpress/wp-content/uploads/2016/09/lordEarthFlameSS-1024x576.jpg" alt="lordearthflamess" width="960" height="540" /></p>
+<p>The game is currently available on <a href=http://store.steampowered.com/app/487180 target="_blank">Steam</a> for both Windows and macOS.</p>
+<p><a href=http://store.steampowered.com/app/487180 target="_blank"><img class="alignnone size-full wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo.png" alt="share_steam_logo" width="50" height="50" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x512.png 500w" sizes="(max-width: 50px) 100vw, 50px" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Hiding the cursor in OS X and Windows desktop builds</title>
+		<link>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/</link>
+		<comments>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/#comments</comments>
+		<pubDate>Tue, 26 Jan 2016 17:16:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Win32]]></category>
+		<category><![CDATA[desktop development]]></category>
+
+		<guid isPermaLink="false">/?p=65404</guid>
+		<description><![CDATA[You can now show and hide the mouse cursor on Windows and OS X desktop builds. Learn how!]]></description>
+				<content:encoded><![CDATA[<p>Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2813</a>, you can now show and hide the mouse cursor in both OS X and Windows desktop builds. To hide the cursor, call:</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, false )</pre><p>To show it again, call the function again with <code>true</code> as the second parameter.</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, true )</pre><p>This completes the <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/11294433-optionally-hide-os-cursor-in-desktop-builds target="_blank">Optionally Hide OS Cursor in Desktop Builds</a> feedback request. If you have questions or need help, please discuss further it in the <a href=https://forums.coronalabs.com/topic/61330-from-the-blog-hiding-the-cursor-in-os-x-and-windows-desktop-builds/ target="_blank">forums</a>.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Announcing OS X, tvOS updates, and the new iCloud plugin!</title>
+		<link>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/</link>
+		<comments>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:17:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">/?p=64961</guid>
+		<description><![CDATA[The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work on OS X builds, tvOS builds, and the new iCloud plugin.]]></description>
+				<content:encoded><![CDATA[<p>The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work giving us some exciting new features and platforms to explore.</p>
+<h3>OS X initial release</h3>
+<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>, we are proud to announce that OS X is no longer in beta! We have the core features working at a level where we feel comfortable encouraging you to release apps to the Mac App store. Platforms like this are never complete and there are more features to add, but this marks a stable point in OS X development where we think you can successfully deploy desktop apps for Mac. To learn more, see our <a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html target="_blank">Creating OS X Desktop Apps</a> guide.</p>
+<h3>tvOS now in beta</h3>
+<p>Additionally, we are removing the &#8220;alpha&#8221; label from our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS support</a>. We believe that you should be able to publish apps to iTunes Connect for tvOS. Of course there is more to do before we can mark this as fully released, but the core features are now in place. You can pick this up in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a> as well. To learn more, check out our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">Apple TV and tvOS guide</a>.</p>
+<h3>The iCloud plugin (beta)</h3>
+<p>We are also pleased to announce the immediate availability of the new <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>. This plugin lets you store various data types in Apple&#8217;s iCloud service. The three main types of data you can store are:</p>
+<ul>
+<li><strong>Key-Value Storage</strong> &#8212; This lets you store simple data values like numbers, strings, and tables.</li>
+<li><strong>Documents</strong> &#8212; This lets you develop apps where you can save whole files to the cloud and sync them with other devices.</li>
+<li><strong>CloudKit</strong> &#8212; This is a full database implementation where you can have public and private database implementations which your app can access from multiple devices.</li>
+</ul>
+<p>In its simplest use, iCloud (all three methods) lets you save data from your app to iCloud and retrieve it later when you need it. In addition, if you have your app installed on multiple devices, for example your iPhone and iPad, the app can share data.</p>
+<p>To get started with the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, see the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and our <a href=/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/ target="_blank">first tutorial</a>.</p>
+<h3>Get started!</h3>
+<p>With this progress on both OS X desktop builds and tvOS builds, now is a great time to consider additional platforms for your existing apps!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

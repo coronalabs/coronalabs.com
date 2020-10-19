@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>3d printing &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/3d-printing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>3d printing &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</title>
+		<link>/blog/coronageek/corona-geek-155/</link>
+		<comments>/blog/coronageek/corona-geek-155/#respond</comments>
+		<pubDate>Mon, 17 Aug 2015 21:56:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[3d printing]]></category>
+		<category><![CDATA[board game]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63761</guid>
+		<description><![CDATA[Today, we talked with special guest Todd Porter, CEO of BoardCraft about creating  3D printed game pieces. We also continued our gravity game discussion with a look at how to set up our world using layers, how to enable multitouch, and how to capture key inputs on Windows and OS X. The project code and graphics have been updated since last week, so be sure to download the updated source code.
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/8e6vHNwB4yM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, we talked with special guest Todd Porter, CEO of BoardCraft, about making your app stand out using 3D printed game pieces. </p>
+<p>BoardCraft is a multi-disciplined group of experienced AAA game developers that has worked with major players in the game industry such as EA, Atari, Sega, Microsoft, Epic and Ion Storm. </p>
+<p>I <a href=https://www.youtube.com/watch?v=jwxaBXlkCdA target="_blank">ran into Todd at RTX2015</a> in Austin Texas and was immediately impressed with the <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus board game</a> the <a href=http://boardcraft.com/ target="_blank">BoardCraft engine</a>. Check out their <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus Kickstarter campaign</a> to bring the BoardCraft software to the board game community.</p>
+<p>Also on the Hangout, Roaming Gamer’s, Ed Maurina continued our gravity game discussion. Ed showed us how to set up our world using layers, how to enable multitouch, and <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to capture key inputs</a> on Windows and OS X for testing during game development. The code and graphics have been updated since last week, so be sure to <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated source code</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Corona Geek After Dark #7</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">multiplayer physics</a>, push notifications, and our favorite game development podcasts, plus a ton of other stuff.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-154/>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://BoardCraft.com/ target="_blank">3D Printed Board Game Pieces</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=http://xibalbastudios.com/militant_en.html target="_blank">MilitAnt™ by Xibalba Studios</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-155/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-155-2015-08-17-3d-printed-game-pieces-and-using-gravity-in-games-part-2.mp3" length="105964104" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

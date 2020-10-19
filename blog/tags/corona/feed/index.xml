@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corona &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>corona &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CoronaCards is cool. Here&#8217;s something even cooler!</title>
+		<link>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/</link>
+		<comments>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/#comments</comments>
+		<pubDate>Fri, 07 Mar 2014 14:08:37 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[webgl]]></category>
+
+		<guid isPermaLink="false">/?p=56812</guid>
+		<description><![CDATA[We think yesterday's <a href="/blog/2014/03/06/introducing-coronacards/">announcement</a> of <a href="http://www.coronacards.com/">CoronaCards</a> is a game changer. It changes the equation. Instead of a choice, it's all of the above — you get to leverage Corona technology in any existing native app!
+
+This may be hard to believe, but today, I want to give you a taste of something that's even more exciting. ]]></description>
+				<content:encoded><![CDATA[<p>We think yesterday&#8217;s <a href=/blog/2014/03/06/introducing-coronacards/>announcement</a> of <a href=http://www.coronacards.com>CoronaCards/</a> is a game changer. It changes the equation. Instead of a choice, it&#8217;s all of the above — you get to leverage Corona technology in any existing native app!</p>
+<p>Now as hard as this is to believe, I want to give you a taste of something that&#8217;s even more exciting. </p>
+<p>You may remember our &#8220;DebugDraw&#8221; sample app, as seen in a couple of the CoronaCards videos and as included in your Corona SDK installation.</p>
+<p>Well, check this out (works best in Chrome on a desktop):<br />
+<center><iframe src="http://coronacards.com/html5/Corona_Physics.html" seamless width="320" height="480" frameborder="0" scrolling="no"></iframe></center></p>
+<p>Yes, that&#8217;s what you think it is. A Corona app running in the browser. No plugins required. Enjoy!!!</p>
+<p><em>[Update: <a href=http://caniuse.com/webgl>Check browser support</a>. IE11 has a bug we haven&#8217;t worked around yet. Finally, you may need to <a href=http://www.khronos.org/webgl/wiki_1_15/index.php/Getting_a_WebGL_Implementation>turn on WebGL</a>, e.g. Safari users]</em></p>
+<p><em>[Update 2: The above demo code is available on <a href=https://github.com/coronalabs/sample-webgl-demo>github</a>, and also can be used in Corona-based native apps on iOS/Android]</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/feed/</wfw:commentRss>
+		<slash:comments>59</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona SDK Plugins</title>
+		<link>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/</link>
+		<comments>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/#comments</comments>
+		<pubDate>Wed, 07 Aug 2013 18:06:12 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=40349</guid>
+		<description><![CDATA[Wednesday calls for another session of frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />Wednesday calls for another session on frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.</p>
+<h2>1. How do plugins work?</h2>
+<p>Plugins are stored on Corona Labs&#8217; server and linked into your project when you do a build. To add a plugin to your project, you need to do two things: 1) add the plugin name to the <strong>build.settings</strong> file, and 2) add a &#8220;require&#8221; statement to your <strong>main.lua</strong> file to load the plugin code.</p>
+<p>The <strong>build.settings</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        -- key is the name passed to Lua's 'require()'
+        [&quot;plugin.zip&quot;] =
+        {
+            -- required
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },      
+}</pre><p></p>
+<p>The <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local zip = require( &quot;plugin.zip&quot; )</pre><p></p>
+<p>Visit the documentation for the plugin to determine the extract information needed. You can find plugin documentation <a href=http://docs.coronalabs.com/daily/plugin/index.html>here</a>.</p>
+<p>The great thing about plugins is they are only added to your project when needed. This reduces the size of your app by eliminating unneeded code.</p>
+<h2>2. Are plugins available for everyone?</h2>
+<p>Most plugins are only available to <strong>Pro</strong> users but there are some plugins available to <strong>Starter</strong> users. The &#8220;Availability&#8221; line at the top of the plugin&#8217;s main document page (index.html) indicates who can use the plugin. You can also see the plugin availability in the <a href=http://www.coronalabs.com/resources/plugins/><strong>Corona Plugin Directory.</strong></a></p>
+<h2>3. I&#8217;m trying to use a plugin in my project and it&#8217;s giving me an error. What&#8217;s wrong?</h2>
+<p>There are a number of potential reasons for plugin errors. Check the following:</p>
+<ul>
+<li>If you are a <strong>Starter</strong> user, make sure you are authorized to use the plugin (check <strong>Availability</strong>).</li>
+<li>Make sure you are using the proper Corona SDK build for the plugin. Some plugins require features/bug fixes only available starting with a specific build number. Most plugins work with the recent Public Build, but you should check this if you are getting a &#8220;plugin not available&#8221; error.</li>
+<li>Is the plugin available for the platform you&#8217;re building for? If the plugin is only available for Android, you will get a build error when building for iOS or iOS Simulator.</li>
+<li>Double check your code and make sure you&#8217;re using the correct calls for the plugin. All the plugins have sample code available, so it&#8217;s a good idea to download and run the vendor&#8217;s sample code to make sure that is working if you&#8217;re having problems.</li>
+</ul>
+<p>Most plugins are written and supported by third party vendors. Check out our <a href=http://forums.coronalabs.com/forum/605-corona-plugins/>Plugin Forum</a> for more information and please post questions for the vendors and other users.</p>
+<h2>4. Will I always get the most up-to-date plugin when I build my project?</h2>
+<p>The system will download and build with the latest plugin for the version of Corona SDK you&#8217;re running. The plugins are tied to the Corona build number so when you open a project that requires a plugin, the simulator checks to see if you have the most recent plugin module on your machine and downloads the latest version. When you do a build, the plugins for the build platform is linked into your project from our servers. This ensures you are always using the latest plugin version.</p>
+<h2>5. Can I write my own plugin?</h2>
+<p>Currently, plugins are provided by official partners, or by Corona Labs. In the near future, we plan to roll out a full plugin marketplace where any developer can submit plugins for sale. If you are serious about developing a plugin, please email us at <a href=mailto:partnerships@coronalabs.com>partnerships@coronalabs.com</a> and tell us what you have in mind. </p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona Build Servers</title>
+		<link>/blog/2013/07/10/wednesday-faqs-corona-build-servers/</link>
+		<comments>/blog/2013/07/10/wednesday-faqs-corona-build-servers/#comments</comments>
+		<pubDate>Wed, 10 Jul 2013 21:07:35 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[server]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=37617</guid>
+		<description><![CDATA[It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.</p>
+<h2>1. Is there a difference between developer and distribution builds for iOS?</h2>
+<p>Yes, with distribution builds (App Store and adhoc), Apple&#8217;s <strong>PNGCRUSH</strong> utility is called to compress the PNG files. To save time, the utility is not called when doing a <strong>developer</strong> build.</p>
+<p>We&#8217;ve had some reported cases where images were mangled when submitted to the App Store and rejected by Apple. The issue seems to be a problem with how some PNG images are formatted that causes problems when <strong>PNGCRUSH</strong> is used to compress the images. If this happens to you, the solution is to open the PNG file in Photoshop (or a similar photo editor) and re-save the image. You can probably do the same thing using Mac&#8217;s Preview program. It&#8217;s always a good idea to test an adhoc build of your app because that also calls <strong>PNGCRUSH</strong> to compress the images.</p>
+<h2>2. Why do I need an Internet connection to build my project?</h2>
+<p>The Corona servers host multiple versions of the Corona SDK. This includes all the public builds as well as daily builds. When you do a build on the Corona Simulator, it sends the build information to the Corona servers so it can pick the correct <strong>template</strong> (build file) and plugins. Having the build templates and plugins in the cloud, allow us to update the files as needed and add additional plugins as they become available.</p>
+<p>For users who want to build offline, we do offer <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a>.</p>
+<h2>3. When I do a build, is the source code and all my assets sent to Corona&#8217;s servers?</h2>
+<p>Your project code is converted into Lua byte code and sent to Corona servers so it can be packaged with the <strong>template</strong> file for the associated build. None of project&#8217;s assets are sent to the Corona servers. After the Lua code has been linked to the template, it&#8217;s sent back to the client (Corona Simulator) where all the project&#8217;s assets are added to the project and the app is digitally signed.</p>
+<h2>4. My hard drive failed and I lost my Corona project. Can I get a copy that was sent to your servers when I did a build?</h2>
+<p>No, as mentioned in the previous answer, only the Lua byte code for your project is sent to the Corona servers. This byte code is not human readable plus it doesn&#8217;t contain any comments you may have in your code nor are any of the project assets included. None project files are saved on our servers once it&#8217;s send back to the client to build the project locally.</p>
+<h2>5. Are daily builds stable enough to use if I want to distribute to the App Store?</h2>
+<p>Daily builds contain new features and bug fixes. If you want to publish your app with a daily build, it&#8217;s best to test as much as you can to ensure there are no bugs. We do try to fix regression bugs in daily builds as soon as we are aware of them, so it&#8217;s a good idea to hold off and monitor the forums and the <a href=https://developer.coronalabs.com/corona-daily-builds/summary>daily build summary</a> page for bug reports and fixes.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/10/wednesday-faqs-corona-build-servers/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Display Text Objects</title>
+		<link>/blog/2013/06/26/wednesday-faqs-display-text-objects/</link>
+		<comments>/blog/2013/06/26/wednesday-faqs-display-text-objects/#comments</comments>
+		<pubDate>Wed, 26 Jun 2013 21:12:13 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[justification]]></category>
+		<category><![CDATA[text]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=36836</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.</p>
+<h2>1. I&#8217;m creating lots of display.newText objects and it&#8217;s slowing down my app. Why?</h2>
+<p>It may seem like text is a simple thing to display on the screen but it can be very complicated and time consuming. When you create text with <strong>display.newText</strong>, the text must be first converted into a bit map and then sent to <strong>openGL</strong> so it can be rendered on the screen. The larger the text (in the number of character and font size), the longer this process takes. It also consumes texture memory just like displaying images.</p>
+<h2>2. I&#8217;m moving text around on the screen, will that slow down my app?</h2>
+<p>Moving or scaling text objects does not slow down Corona SDK. If you are changing the text, the bit map needs to be recreated, which can impact the frame rate. The same is true when changing the font size or the font type. These all require a new bit map and may affect performance.</p>
+<h2>3. I&#8217;m using display.newText and see a white or black block where the text should be. What&#8217;s wrong?</h2>
+<p>The black or white block is what you see when the text exceeds the texture limit of the device. Since text objects are converted to bit maps before being displayed, long text strings with a large font size can easily exceed the texture memory limit of some low-end devices. The solution is to limit the amount of text displayed in a single <strong>display.newText</strong> object. You should break up large text objects into multiple text objects.</p>
+<h2>4. How do I align text?</h2>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/06/FAQ31_image-161x300.png" alt="Text Justification" class="alignright size-medium wp-image-36838" /><br />
+Starting with Daily Build 1143 we added text alignment to <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html><strong>display.newText</strong></a>. You can specify &#8220;<strong>left</strong>&#8220;, &#8220;<strong>center</strong>&#8221; and &#8220;<strong>right</strong>&#8221; justification. The only limitation is you can&#8217;t change the justification after the text object has been constructed.</p>
+<p>When we added text justification to <strong>display.newText</strong>, we changed the way parameters are supplied to the function. The parameters are now sent in a Lua &#8220;<strong>option</strong>&#8221; table instead of as individual parameters. <strong>display.newText</strong> still supports the legacy call, but you can&#8217;t use it to justify the text. Be aware that if you call <strong>display.newText</strong> with the new option table, you specify <strong>x</strong> and <strong>y</strong> values, which reference the center of the text object and not <strong>left</strong> and <strong>top</strong> used in the legacy call.</p>
+<p>In order for text justification to work, you must supply the <strong>width</strong> parameter. If the <strong>height</strong> parameter is not supplied, it&#8217;s assumed to be 0 (this may change in the future). Left justification is assumed if no justification is specified.</p>
+<p></p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 128 )
+
+-- Create a rect to show the boundaries of our text fields
+local rect = display.newRect( 50, 35, 200, 150 )
+rect:setFillColor( 40 )
+
+-- Right aligned, single line
+local textOptions1 = { text = &quot;Line 1 right aligned&quot;, x = 100, y = 50, width = 200, align = &quot;right&quot;, font = native.systemFont, fontSize = 14 }
+local text1 = display.newText( textOptions1 )
+text1:setReferencePoint( display.TopLeftReferencePoint )
+text1.x = 50
+
+-- Center alignment, multiple lines
+local textString2 = &quot;Line 1 center aligned\nLine2 center&quot;
+local textOptions2 = { text = textString2, x = 150, y = 100, width = 200, height = 0, align = &quot;center&quot;, font = native.systemFont, fontSize = 14 }
+local text2 = display.newText( textOptions2 )
+text2:setReferencePoint( display.TopLeftReferencePoint )
+text2.x = 50
+
+-- No alignment specified
+local textOptions3 = { text = &quot;Line defaults to left aligned&quot;, x = 200, y = 150, width = 200, font = native.systemFont, fontSize = 14 }
+local text3 = display.newText( textOptions3 )
+text3:setReferencePoint( display.TopLeftReferencePoint )
+text3.x = 50</pre><p></p>
+<p>Text justification also works with custom fonts but you must install the fonts on the Mac or Windows simulator in order to make it work.</p>
+<h2>5. Does display.newEmbossedText work with justification?</h2>
+<p>Currently, text justification for <strong>display.newEmbossedText</strong> objects is not implemented. We hope to have it in a Daily Build soon.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/26/wednesday-faqs-display-text-objects/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Top 10 Reasons Why Corona Rocks</title>
+		<link>/blog/2013/06/13/top-10-reasons-why-corona-rocks/</link>
+		<comments>/blog/2013/06/13/top-10-reasons-why-corona-rocks/#comments</comments>
+		<pubDate>Thu, 13 Jun 2013 07:19:40 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[top 10]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=35772</guid>
+		<description><![CDATA[Hearing game legends John Romero and Brenda Brathwaite tell us why <a href="http://www.coronalabs.com/blog/2013/06/11/lunch-with-co-founder-of-id-software/">Corona is awesome</a> for <a href="/products/corona-sdk/" title="mobile app development with corona sdk">mobile app development</a> was inspiring. So in that spirit, here are the top 10 reasons why Corona is a no-brainer for native app development...]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/06/corona-top-ten-300x269.png" alt="corona-top-ten" class="alignright size-medium wp-image-35790" /><br />
+Hearing game legends John Romero and Brenda Brathwaite tell us why <a href=http://www.coronalabs.com/blog/2013/06/11/lunch-with-co-founder-of-id-software/>Corona is awesome</a> for <a href=/products/corona-sdk/ title="mobile app development with corona sdk">mobile app development</a> was inspiring. So in that spirit, here are the top 10 reasons why Corona is a no-brainer for native app development:</p>
+<p>10. <strong>Mobile first.</strong> Corona was written 100% from the ground-up for mobile. It&#8217;s lean and mean — none of that legacy cruft.</p>
+<p>9.  <strong>&#8220;OMG!&#8221;</strong> That&#8217;s the sort of reaction we get when we show Corona in action. It&#8217;s like trying to imagine life before smartphones. There&#8217;s no going back.</p>
+<p>8.  <strong>Daily builds.</strong> Waiting for a once a year update is an eternity in the mobile industry.</p>
+<p>7.  <strong>Simplicity, Performance, and Flexibility.</strong> Why compromise with one or two when you can pick all 3?</p>
+<p>6.  <strong>2D Graphics.</strong> We&#8217;ve cracked the code when it comes to building Photoshop-level graphics on top of OpenGL.</p>
+<p>5.  <strong>Documentation.</strong> There&#8217;s just a ton of it. Books (in print!), tutorials, and videos too.</p>
+<p>4.  <strong>Cross-platform.</strong> And when I say cross-platform, I actually <em>mean</em> cross-platform. You know, from the perspective of an engineer, not some marketing monkey. We strive for 95% whereas everyone else grades on a curve.</p>
+<p>3.  <strong>Elegant API&#8217;s.</strong> Build your apps 10x faster? Yup, design matters. </p>
+<p>2.  <strong>Community.</strong> You&#8217;ve touched our lives. Hopefully, we&#8217;ve touched yours in kind.</p>
+<p>And number one is&#8230; [queue the drum roll]</p>
+<p>1.  <strong>Google says so.</strong> I&#8217;m not kidding! Okay, maybe a little, but guess who happens to be the top hit for cross platform mobile development? Here&#8217;s the screenshot (via Chrome&#8217;s anonymous incognito mode):</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/06/Corona-sdk-mobile-app-development-1024x920.png" alt="Corona-sdk-mobile-app-development" class="aligncenter size-large wp-image-35779" /></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/13/top-10-reasons-why-corona-rocks/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Upgrading the Corona SDK Simulator</title>
+		<link>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/</link>
+		<comments>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/#comments</comments>
+		<pubDate>Wed, 12 Jun 2013 20:50:44 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[deauthorizing]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=35693</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /></p>
+<p>It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.</p>
+<h2 id="doihavetouninstallcoronasdkwhenupgradingtoanewversion">1. Do I have to uninstall Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t to have uninstall on Mac or Windows. </p>
+<h2 id="doihavetodeauthorizecoronasdkwhenupgradingtoanewversion">2. Do I have to deauthorize Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t have to deauthorize when installing a newer or older version. The only times you need to deauthorize is if you plan to use Corona SDK on another computer and you already have two computers authorized, if you change the email address associated with your Corona SDK license, or if you plan to reinstall the OS on your computer.</p>
+<p>When you upgrade (or downgrade) a version of Corona SDK, the newly installed version uses the account settings already stored on your computer (either in the Windows&#8217; registry or Mac&#8217;s plist file).</p>
+<h2 id="whendoineedtocontactcoronalabssupporttodeauthorizethemachinesonmyaccount">3. When do I need to contact Corona Labs&#8217; support to deauthorize the machines on my account?</h2>
+<p>There are very few times when you need to contact Corona Labs to deauthorize the machines on your account. If you forgot to deauthorize your machine, please contact us if you have changed the email address associated with your account or if you have reinstalled the operating system on your computer. Remember: to avoid these issues, don&#8217;t forget to deauthorize your computer(s) first.</p>
+<h2 id="canihavemorethanoneversionofcoronasdkinstalled">4. Can I have more than one version of Corona SDK installed?</h2>
+<p>The answer depends on the platform you&#8217;re using.</p>
+<p>On Mac, you can have many Corona SDK builds installed at the same time. The trick is to rename the <strong>CoronaSDK</strong> folder in the Applications folder after installing a new version. On my machine, I append the build number to the end of the folder name to keep them separate. For the last public build #1137, I would rename <strong>CoronaSDK</strong> to <strong>CoronaSDK&#8211;1137</strong>.</p>
+<p>For Windows, you can only have one version of Corona SDK installed at a time. You don&#8217;t have to uninstall when installing a newer version, but if you need to install an older build, you have to uninstall first.</p>
+<h2 id="faqtipoftheweek">5. FAQ Tip of the Week</h2>
+<p>The last public release (1137) added lots of bug fixes and some much needed features (<a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1137>Build 2013.1137 Release Notes</a>). One of the features you may have missed is the ability to retrieve the app name (using <strong>system.getInfo</strong>). You may wonder what advantage there is to retrieving the app name. Here&#8217;s one example.</p>
+<p>When debugging an app on a device, I like to enable the Runtime popup message feature (setting <strong>showRuntimeErrors = true</strong>). I want the popup for my debug builds but not when I submit it to the App Store. This involves modifying my project files and having to remember to remove the code when I&#8217;m ready to release the app.</p>
+<p>My solution is to add some code to the <strong>config.lua</strong> file to control the state of <strong>showRuntimeErrors</strong> without having to modify my project files.</p><pre class="crayon-plain-tag">application =
+{
+    showRuntimeErrors = ( string.find( system.getInfo( &amp;#8220;appName&amp;#8221; ), &amp;#8220;debug&amp;#8221; ) and true ),
+    ...
+}</pre><p></p>
+<p>The above code sets the <strong>showRuntimeErrors</strong> key <strong>true</strong> or <strong>nil</strong> depending on the app name. If the app name contains &#8220;debug&#8221; anywhere in the name, <strong>showRuntimeErrors</strong> is set to <strong>true</strong>. If the string is not present in the name, it&#8217;s set to <strong>nil</strong>. So if my app is called <strong>BubbleJump</strong>, the debug code is enabled if I append &#8220;-debug&#8221; to the end of the app name in the Corona SDK build window. Seeing <strong>BubbleJump-debug</strong> is also a good reminder that this is not a production-ready app. I chose &#8220;-debug&#8221;, but you can choose whatever you like.</p>
+<p>You can go one step further by adding the following code at the top of the <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local debug = ( string.find( system.getInfo( &quot;appName&quot; ), &quot;debug&quot; ) and true )</pre><p></p>
+<p>You can now use the <strong>debug</strong> variable to enable debug statements in your code. You can even use it to disable the <strong>print</strong> statement when <strong>debug</strong> is false/nil. This allows you to control the <strong>debug flag</strong> at build time instead of having to modify your project files and run the risk of releasing a version of your app with debug code enabled.</p>
+<p>One note of caution about using <strong>debug</strong> for a variable name. If you do use <strong>debug</strong>, make sure it&#8217;s a local variable and not a global one. Lua does have an internal <strong>debug</strong> library that you will override if you define <strong>debug</strong> as a global variable. Doing so will suppress any runtime error output and <strong>print</strong> output that your code may generate. It may be better to use <strong>dbg</strong> or <strong>_debug</strong> instead.</p>
+<p>One final note: I mention public release #1137 in this blog post. This release replaces build #1135 and fixes a potential issue with plugins.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Timers and Events</title>
+		<link>/blog/2013/05/29/wednesday-faqs-timers-and-events/</link>
+		<comments>/blog/2013/05/29/wednesday-faqs-timers-and-events/#comments</comments>
+		<pubDate>Wed, 29 May 2013 20:19:11 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[timers]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34783</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.</p>
+<h2>1. I&#8217;m trying to use timer.performWithDelay to add a delay in my code but it&#8217;s not working.</h2>
+<p>The API doesn&#8217;t do an actual delay within the code chunk but schedules a callback after the delay time has occurred. This is what is known as a non-blocking call.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )
+print( &quot;Test 3&quot; )</pre><p></p>
+<p>The above will print the strings in the following order in the terminal window: &#8220;Test 1&#8221;, &#8220;Test 3&#8221;, &#8220;Test 2&#8221;. The last message is printed 1 second (1000 milliseconds) after the delay was scheduled.</p>
+<p>If you want the strings to print out in the correct order, the statements after the timer.performWithDelay call must be moved to the callback routine.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+    print( &quot;Test 3&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )</pre><p></p>
+<p>If you need to delay sections of your code from executing, it needs to be done in a timer callback function (as shown above). Corona SDK doesn&#8217;t have any blocking <strong>delay()</strong> or <strong>sleep()</strong> functions.</p>
+<h2>2. I have a loop where I update an object on the screen but it seems to only update once.</h2>
+<p></p><pre class="crayon-plain-tag">local circle = display.newCircle( 10, 20, 25 )
+for i = 1, 20 do
+    circle.x = circle.x + i
+    circle.y = circle.y + i
+end</pre><p></p>
+<p>The above code moves the circle down the screen at a very fast pace. It&#8217;s not a practical example, but looking at the code you would think that the circle is changing position each time through the <strong>for</strong> loop. In fact it only changes once &#8212; at the end of the code chunk. The circle&#8217;s x and y properties are computed each time through the loop, but it&#8217;s actual position (rendering of the object on the screen), only occurs after the code chunk has finished executing.</p>
+<p>You also need to keep this in mind if you are trying to align objects multiple times in the same code chunk using <strong>setReferencePoint</strong>. Only the last <strong>setReferencePoint</strong> takes affect because the screen update only occurs after the code chunk has executed.</p>
+<h2>3. I&#8217;m doing some long calculations in my code and my touch listeners are not working. What&#8217;s happening?</h2>
+<p>If you try to add delays in your code using <strong>for</strong> loops or looping a long time within the same code chunk, you will affect the performance of your app. All events are fired after the code chunk ends, so as long as your code chunk is running, no listener events are called. All touch, timer, network, etc. events occur after the code chunk finishes.</p>
+<p>If you do need to loop for a long time within your code, you should break it up into multiple code chunks (using <strong>timer.performWithDelay</strong>) to allow events to occur.</p>
+<h2>4. I use timer.performWithDelay but the delays times don&#8217;t seem right.</h2>
+<p>The delay time is an approximate time and is fired based on the Frames Per Second (FPS) value set in the <strong>config.lua</strong> file. The default is 30 FPS or 33.33 milliseconds. You can also set it to 60 FPS (16.166 milliseconds). As mentioned in question 3, event timers are fired at the end of the code chunk. If the code contains loops that extend beyond the timer&#8217;s value, the timer event may occur later than expected. There is a timer listener parameter, <strong>event.time</strong>, that will give you the time when the event was finally fired that you can use to calculate the true delay.</p>
+<p>Another thing should be mentioned about the timer. The time value you specify is in milliseconds and is tied to either the default frame rate (30 FPS) or what you set in <strong>config.lua</strong>. If you set a value less than the frame rate time (16 or 33 milliseconds), the timer will fire every frame time instead of the actual time you set. So if you set the delay time to 10 milliseconds and you&#8217;re using the default 30 FPS, the delay will occur every 33.333 milliseconds.</p>
+<p></p><pre class="crayon-plain-tag">local function listener( event )
+    print( &quot;Timer ID and time: &quot;, event.source, event.time )
+end
+
+print( &quot;Starting time: &quot;, system.getTimer )
+timer.performWithDelay( 1, listener, 1 )
+timer.performWithDelay( 10, listener, 1 )
+timer.performWithDelay( 25, listener, 1 )
+timer.performWithDelay( 40, listener, 1 )
+print( &quot;Ending time: &quot;, system.getTimer )</pre><p></p>
+<p>This displays the following in the terminal window (the times are in milliseconds).</p>
+<p></p><pre class="crayon-plain-tag">Starting time:  29.97
+Ending time:    30.343
+Timer ID and time:  table: 0x11fb64b20  61.031
+Timer ID and time:  table: 0x11fb17d80  61.031
+Timer ID and time:  table: 0x1016bbd90  61.031
+Timer ID and time:  table: 0x10e534c50  93.692</pre><p></p>
+<p>The bottom line is the timer delays are approximate. You can use the <strong>event.time</strong> if you need to adjust for any differences between the expected delay time and the actual delay time.</p>
+<h2>5. I have a timer call that&#8217;s not passing my parameter when done. What&#8217;s wrong?</h2>
+<p>This is a common issue for new developers in Lua. <strong>timer.performWithDelay</strong> expects to receive a reference to a function. This is common with all other APIs that expect a &#8220;listener&#8221; or &#8220;completion&#8221; reference.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    print( &quot;Value is &quot;, value )
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )</pre><p></p>
+<p>The above will print &#8220;25&#8221; because <strong>doThis( 25 )</strong> is called before the delay is scheduled. The delay is performed but the listener is not called because it doesn&#8217;t think any listener was supplied (<strong>doThis</strong> returns nil).</p>
+<p>The solution to this problem is to use Lua closures. Closures allow you to call a function with a parameter and have it return a unique local function reference that uses the supplied parameter when that function reference is called.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    return function()
+        print( &quot;Value is &quot; .. value )
+    end
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )
+timer.performWithDelay( 1000, doThis( 100 ),1 )</pre><p></p>
+<p>Calling <strong>doThis</strong> function from within the <strong>timer.performWithDelay</strong> call will save <strong>value</strong> as a Lua <strong>upvalue</strong> that is associated with the returned function reference. The key thing to remember is <strong>doThis( 25 )</strong> is executed before the delay is schedule and the value returned from the function call is used as the listener&#8217;s address when the timer is fired.</p>
+<p>The nice thing about using closures is they can be called from different places using different parameter values and they return a unique function that uses the supplied parameter. In the above example the listener is called with the value 25 and than later the same listener is called with the value 100. This will print &#8220;25&#8221; and then &#8220;100&#8221; in the terminal window.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/29/wednesday-faqs-timers-and-events/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Miscellaneous Questions</title>
+		<link>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/</link>
+		<comments>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/#comments</comments>
+		<pubDate>Wed, 24 Apr 2013 23:19:37 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=32583</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).</p>
+<h2>1. Why doesn&#8217;t native.setActivityIndicator work in my code?</h2>
+<p><strong>native.setActivityIndicator</strong> cannot be set and cleared in the same code chunk. All display objects (including native objects) are not rendered on the screen until the code chunk ends.</p>
+<p>The following is the wrong way to set the Activity Indicator. The activity indicator is not set until AFTER the function ends, and then it&#8217;s cleared. (Note: There is a current bug in Android where the activity indicator does not turn off in this example.)</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+native.setActivityIndicator( false )</pre><p></p>
+<p>This is the right way to set the Activity Indicator. The indicator is cleared after one second. The problem with this approach is the activity indicator is set after the <strong>for loop</strong> executes so it&#8217;s not displaying the activity indicator during the time the <strong>for loop</strong> is running.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+
+-- Turn off the indicator after one second
+timer.performWithDelay( 1000, function() native.setActivityIndicator( false ) end )</pre><p></p>
+<p>The solution to the above problem would be running the <strong>for loop</strong> code in a timer function. You start the activity indicator before the timer starts and turn off the activity indicator in the timer function.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+timer.performWithDelay( 100,
+    function()
+        for i = 1, 1000 do
+            print( &quot;i = &quot; .. i )
+        end
+        native.setActivityIndicator( false )
+    end
+)</pre><p></p>
+<h2>2. I&#8217;m using Dynamic Scaling and don&#8217;t see native textField and textBox font sizes changing when I test on different devices.</h2>
+<p>When you specify the target screen size in <strong>config.lua</strong>, this allows display objects to scale depending on the native screen size of the device. The one exception is fonts used in native text fields. The fonts don&#8217;t automatically scale so the font size needs to be adjusted manually. You can determine the correct size by either reading the device type (using <strong>system.getInfo( &#8220;model&#8221; )</strong>) or reading the scaling factor of the device (<strong>display.contentScaleX</strong> and <strong>display.contentScaleY</strong>). For Android, we recently added some new <strong>system.getInfo</strong> API calls in our Daily builds that may help: <strong>&#8220;androidDisplayWidthInInches&#8221;</strong>, <strong>&#8220;androidDisplayHeightInInches&#8221;</strong>, <strong>&#8220;androidDisplayXDpi&#8221;</strong>, and <strong>&#8220;androidDisplayYDpi&#8221;</strong>.</p>
+<h2>3. My network.request calls are no longer working starting with build 1076. What happen?</h2>
+<p>Starting with build 1053 we added a default <strong>Content-Type</strong> field of &#8220;text/plain&#8221; for all platforms. This was done to be consistent among the platforms. Before build 1053 we relied on the OS to provide the <strong>Content-Type</strong> field if it was missing from the <strong>network.request</strong>. If your <strong>network.request</strong> contains a <strong>parms.bodyType</strong> equal to &#8220;binary&#8221;, or your <strong>parms.body</strong> contains a table (specifying filename), <strong>Content-Type</strong> will be set to &#8221; application/octet-stream&#8221;. If your <strong>network.request</strong> specifies a value for <strong>Content-Type</strong>, it will override the default value. In all other cases it will be set to &#8220;text/plain&#8221;.</p>
+<p></p><pre class="crayon-plain-tag">-- Example code to log in with username/password
+
+local function networkListener( event )
+    print( &quot;networkListener called&quot;, event.response )
+end
+
+local user = &quot;myName&quot;
+local password = &quot;abc&quot;
+
+local headers = {}
+headers[&quot;Content-Type&quot;] = &quot;application/x-www-form-urlencoded&quot;
+
+local body = &quot;login=&quot;..user..&quot;&amp;password=&quot;..password
+local params = {}
+params.headers = headers
+params.body = body
+-- go to http://requestb.in/ to set up an test page
+network.request(&quot;http://requestb.in/&quot;, &quot;POST&quot;, networkListener, params )</pre><p></p>
+<h2>4. Display.save now shows a white background in the saved image. The background use to be black.</h2>
+<p>We had a blending issue with <strong>display.save</strong> captures and it was fixed by making the background full alpha behind the objects being saved. This changed occurred in build 1079. If you are saving a group, the background will be transparent, which is undefined. Before 1079 we made the background black, which was causing problems for some users. Now the transparent areas may show up as either black or white when saving to a .JPEG file. If you save it to a .PNG file (which <strong>display.save</strong> now supports), the background will be transparent and take on the existing background when displayed.</p>
+<p>Specifying a .PNG file in <strong>display.save</strong> is one solution to the problem when saving a group. The other is creating a black <strong>display.newRect</strong> the size of your group and filling it with black and inserting it behind all your other group objects. You do this before calling <strong>display.save</strong> and remove the newRect object afterwards.</p>
+<h2>5. I&#8217;m using the released version of Corona SDK and seeing bugs in Widgets. What can I do?</h2>
+<p>The good news is we decided to open-source our Widgets 2.0 library. We have put the library up on <a href=https://github.com/coronalabs/>GitHub</a> that you can include in your own project. This is the same code we include in our Daily Builds and our plan is to keep both in sync. This means Starters, who don&#8217;t have access to our Daily Builds, can still use the latest Widget library. If you do find a Widget bug, please submit a bug report and a small test project demonstrating the bug. In the report please mention the Corona build you&#8217;re using and which version of the Widget library you&#8217;re reporting. Get more information <a href=http://forums.coronalabs.com/topic/34183-widgets-20-open-source/?hl=github>here</a></p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #34 &#8211; Hanging out with Climate Clock&#8217;s Ben Wong</title>
+		<link>/blog/coronageek/corona-geek-hangout-34/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-34/#respond</comments>
+		<pubDate>Tue, 09 Apr 2013 01:50:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31456</guid>
+		<description><![CDATA[This week, we hung out with Climate Clock's, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it's design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/S3OWp49EqVo?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Climate Clock&#8217;s, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it&#8217;s design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.</p>
+<p>Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information and <a title="Download Climate Clock" href=http://climateclockapp.com/ target="_blank">check out Climate Clock</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Justin Giles. Congrats Justin! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-34/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>State of Corona: New Public Release + FREE + Re-imagining Pro</title>
+		<link>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/</link>
+		<comments>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/#comments</comments>
+		<pubDate>Thu, 04 Apr 2013 16:27:54 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[pro]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31173</guid>
+		<description><![CDATA[Today, we have some very exciting news. A new public release, a new version of Corona and a few other changes and coming features.
+
+We are making mobile app development more accessible than ever!
+
+]]></description>
+				<content:encoded><![CDATA[<p><em>Note: Graphics 2.0 is now in public beta for all Corona SDK Pro and Enterprise subscribers.</em></p>
+<hr />
+<p>Today, I have some very exciting news.</p>
+<p>Before I dive in, let me talk about the new public release we just made available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a>. We&#8217;ve been fixing a lot of plumbing this time around. Lots of infrastructure and feature improvements like a rewritten async http network library, a re-architected widget library, remote push notifications on Android, iAds, to name a few. We also have a new build server that&#8217;s much more scalable.</p>
+<p>There&#8217;s tons more listed on the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1076>release notes</a>. All in all, there&#8217;s been an incredible amount of work to make <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform development</a> as painless as possible. By the way, if you&#8217;re curious about Apple&#8217;s May 1 deadline on UDIDs, we&#8217;ve got you covered. Read more about it in the release notes.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/big-news.jpg" alt="big-news" class="alignright size-full wp-image-31197" /></p>
+<h3>Introducing Corona SDK Starter</h3>
+<p>Okay, so here&#8217;s where it gets really exciting. From very early on, we have focused on democratizing app development. We felt (and still do) that anyone could create the next great app with Corona. Since then, Corona has been embraced by indies and your apps have hit the top of the charts.</p>
+<p>Indies are a key part of our community, so today, we are taking that vision a step further. We are announcing Corona SDK Starter &#8211; a completely FREE version of Corona that lets you publish to all the platforms we support without paying us a single cent.</p>
+<p>With Corona SDK Starter and the Starter tier of Corona Cloud, you can publish amazing, connected apps faster and more affordably (free!) than ever before. We are the only platform that lets developers do this. A lot of other products have hidden fees or force some sort of watermark/splash screen. There is no such restriction with Starter. That&#8217;s the difference between &#8220;fake free&#8221; and a true free option.</p>
+<p>Now, of course, not everything is free — we&#8217;ve got a business to run after all!</p>
+<p>If you want to access certain specific features like in-app purchase and analytics, you&#8217;ll need to subscribe to a paid plan. You can still build with those features on your own device, but you can&#8217;t publish apps to the store if they use those premium features. Daily builds are also only available to paying subscribers.</p>
+<h3>Re-imagining Pro</h3>
+<p>From the beginning, Corona SDK has been about packaging up industry-standard technologies that big game studios use and making them available to you. The same underlying architecture that powered all the original top apps (Angry Birds, Tap Tap Revenge, Diner Dash) was the inspiration for Corona — only we made it 10x faster and easier.</p>
+<p>That&#8217;s why nothing beats Corona when it comes to its combination of power and speed of development.</p>
+<p>Today, we are ready for the next growth spurt of innovation. We think Corona is the best platform in the universe, but the true measure is if we can make our latest innovations available to Pro subscribers.</p>
+<p>So that&#8217;s what we&#8217;re going to do. We are going to make some amazing technologies available to all paying subscribers, but especially Pro. Here&#8217;s a glimpse at some of the exciting things that we&#8217;ll be making available:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/imagine-300x187.png" alt="imagine" class="alignright size-medium wp-image-31200" /></p>
+<h4><strong>Graphics</strong></h4>
+<p>As I talked about last week, our bleeding-edge OpenGL-ES 2.0/shader-based graphics engine is in the works. You are going to be blown away with what you can do. I&#8217;ll talk about that more later but I did want to give you a teaser.</p>
+<p>If you watch this week&#8217;s <a href=http://www.youtube.com/watch?v=SPu2EZJTZBM>CoronaGeek episode</a>, you&#8217;ll be able to see 5,000 fish running at 60 fps! It may be hard to tell from the video, but this is what I showed to a lucky few at GDC. I recommend watching the whole show, but if you&#8217;re pressed for time, you can skip to roughly the 35:00 mark.</p>
+<h4><strong>Plugins</strong></h4>
+<p>Second, there&#8217;s Project Gluon, a.k.a plugins. We&#8217;ve done a ton of plumbing work so that you&#8217;ll be able to integrate 3rd party services and functionality into your app, and do so painlessly from the comfort of the Corona Simulator.</p>
+<p>Now there&#8217;s good news and bad news here. There are a lot of moving parts, so plugins didn&#8217;t quite make it to the public release — and yes, I&#8217;m disappointed too.</p>
+<p>But the good news is that plugins are coming very soon! We&#8217;re getting ready to seed this to beta testers this month. We are actively building a library of plugins that will be hosted on our servers. We&#8217;re working with folks like Amazon to get you more monetization options. We are acutely aware that this is a big issue for a lot of you.</p>
+<h4><strong>Device Access</strong></h4>
+<p>Lastly (for now), we have found a way for you to access certain Java and Objective-C APIs from Lua! On the Android side, we already have the foundation there thanks to Enterprise, and we&#8217;re looking at how we can accelerate bringing those Enterprise innovations down to Pro developers. In parallel, we also have a proof-of-concept on the iOS side, so I&#8217;ll have more news once we&#8217;re past the research phase.</p>
+<h3>New Pro Pricing and Subscriber Promotions</h3>
+<p>As you can see, we are re-imagining Pro as a much more sophisticated product. By May, we anticipate that the daily builds available to Pro will offer significantly more value than they do today. Because of that, we will be changing the price of Pro to $599/year starting May 1. Even after this change, we think Pro still remains a great bargain &#8211; it&#8217;s less than $50 per month and saves you hours of development work each and every day. And more importantly, you&#8217;ll be able to do more and more!</p>
+<p>In the mean time, we want to thank our current subscribers and do the following:</p>
+<ul>
+<li>All current Indie subscribers are now upgraded to Pro (the Indie subscription has ceased to exist). </li>
+<li>All current Pro subscribers now have an extra 2 months added on to their subscription.</li>
+</ul>
+<p>In addition, we are offering a special promotion:</p>
+<ul>
+<li>Between now and April 30, anyone can <a href="https://marketplace.coronalabs.com/
+">buy a Pro subscription</a> (or add to their existing subscription) for $349 before the new price takes effect.</li>
+<li>But wait there&#8217;s more. As long as you have an active subscription on May 1, you will be able to renew at the $349/year price for 2 more years — just don&#8217;t let your subscription lapse!</li>
+</ul>
+<p>For more info, please refer to our <a href=/faq/>Corona SDK Pricing FAQs</a>.</p>
+<p><center>* * *</center></p>
+<p>Before I wrap up, there is one more item worth mentioning: we&#8217;ve finally gotten around to putting Corona Enterprise on our <a href="https://marketplace.coronalabs.com/
+">store page</a>. If you are a small outfit, you qualify for the $999/year tier. Larger organizations can get Enterprise at $2499/year which comes with extra goodies and volume discounts. Check out our <a href="https://marketplace.coronalabs.com/
+">entire pricing lineup</a> to see which one makes the most sense for you.</p>
+<p>There&#8217;s a lot of game changing stuff here, but Corona SDK Starter brings me back to how we all got started — to change people&#8217;s lives in real ways. We think more people will have the opportunity to be a part of the mobile revolution and take advantage of the mobile revolution. We can&#8217;t wait to get all of our innovations into your hands – and more importantly, see what you do with them.</p>
+<p><em>Walter</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/feed/</wfw:commentRss>
+		<slash:comments>138</slash:comments>
+		</item>
+	</channel>
+</rss>

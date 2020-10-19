@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Special Effects &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/special-effects/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Special Effects &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #53 &#8211; Make Rain and Lightning in Corona SDK</title>
+		<link>/blog/coronageek/corona-geek-hangout-53/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-53/#comments</comments>
+		<pubDate>Mon, 02 Sep 2013 21:22:04 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[Special Effects]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=43512</guid>
+		<description><![CDATA[During this week's Corona Geek, it almost literally rained cats and dogs during the rain and lightning code snippet walkthroughs. We walked through a great piece of code by Corona Ambassador Volodymr Sergeyev, that showed how to create and recycle objects to simulate rain. Ed Maurina modified that code on the fly and the results will make you laugh out loud.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/dvYyxhcOmIc?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek, it almost literally rained cats and dogs during the rain and lightning code snippet walkthroughs. We walked through a great piece of code by Corona Ambassador Volodymr Sergeyev, that showed how to create and recycle objects to simulate rain. Ed Maurina modified that code on the fly and the results will make you laugh out loud. Then Dr. Brian Burton walked us through a code snippet that simulates different types of lightning. The results were very shocking and might even knock you out of you seat, especially if you&#8217;re wearing headphones. </p>
+<p>Next week, we&#8217;ll be looking at code to make objects float in water. In the meantime, check out Dr. Burton&#8217;s brand new book, <em><a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile App &amp; Game Dev with Corona</a></em> for more tips on how to use Corona&#8217;s physics engine in your games.</p>
+<p>Also, download the <a href=http://bit.ly/1dB25uJ target="_blank">Corona SDK source code</a> from today&#8217;s Hangout to see the code in action.</p>
+<p>Congratulations to Tony Morelli for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-53/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-53-2013-09-02-rain-lightning-code-reviews.mp3" length="46644033" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cloud gaming &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/cloud-gaming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>cloud gaming &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using PlayFab for cloud gaming</title>
+		<link>/blog/2016/11/29/using-playfab-for-cloud-gaming/</link>
+		<pubDate>Tue, 29 Nov 2016 18:11:45 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[cloud gaming]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?p=68987</guid>
+		<description><![CDATA[In this special interview, PlayFab CEO, James Gwertzman shares insight into how this robust cloud gaming services offers value with their Game Services, Game Manager, PlayStream, and an Add-On Marketplace.]]></description>
+				<content:encoded><![CDATA[<p>In this special interview, PlayFab CEO, James Gwertzman shares insight into how this robust <a href=/blog/2016/09/29/introducing-playfab-a-new-plugin-and-service-for-your-cloud-gaming-needs/>cloud gaming service</a> offers value with their Game Services, Game Manager, and PlayStream products in addition to an add-on Marketplace. Whether you want to have back-end building blocks for your live game, empower your team with a centralized mission control, see events in real-time, or expand your game’s features while reducing SDK fatigue, <a href=/blog/2016/09/29/introducing-playfab-a-new-plugin-and-service-for-your-cloud-gaming-needs/>PlayFab has you covered</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/FGbVM46B968?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Thank you for watching and listening!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>attribution &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/attribution/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>attribution &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Understanding Kochava attribution with Garrett MacDonald</title>
+		<link>/blog/coronageek/kochava-attribution-with-garrett-macdonald/</link>
+		<comments>/blog/coronageek/kochava-attribution-with-garrett-macdonald/#respond</comments>
+		<pubDate>Mon, 28 Nov 2016 18:03:49 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[app analytics]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[attribution]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68697</guid>
+		<description><![CDATA[In this special interview we talk with Garrett MacDonald from Kochava about using attribution to know who your customers are and how they use your app. Kochava gives you a deeper understanding of your app’s performance and, more importantly, where your customers are coming from. ]]></description>
+				<content:encoded><![CDATA[<p>In this special interview we talk with Garrett MacDonald from Kochava about using attribution to know who your customers are and how they use your app. Kochava gives you a deeper understanding of your app’s performance and, more importantly, where your customers are coming from. Implement attribution using Kochava in just a few lines of code using the <a href=https://docs.coronalabs.com/plugin/kochava/index.html target="_blank">Kochava plugin</a> for Corona.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/k1f7D5PmaDk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching and listening</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/kochava-attribution-with-garrett-macdonald/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Free App Analytics powered by Kochava</title>
+		<link>/blog/2016/11/08/free-app-analytics-powered-by-kochava/</link>
+		<pubDate>Tue, 08 Nov 2016 20:30:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[attribution]]></category>
+		<category><![CDATA[Mobile Analytics]]></category>
+
+		<guid isPermaLink="false">/?p=68452</guid>
+		<description><![CDATA[One of our analytics/attribution partners, Kochava, has introduced a new service called "Free App Analytics" which brings their powerful analytics engine to app developers and app marketers for free. Learn more about this great tool to measure your app's success.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/11/faa.png><img class="alignright wp-image-68683 size-thumbnail" style="margin: 5px 0px 20px 30px;" src="/wordpress/wp-content/uploads/2016/11/faa-150x115.png" width="150" height="115" /></a>One of our mobile analytics/attribution partners, <a href=https://www.kochava.com/ target="_blank">Kochava</a>, has introduced a new service called <strong>Free App Analytics</strong> which brings their powerful analytics engine to app developers and app marketers for free.</p>
+<p>In today’s hyper-competitive and complex mobile marketing ecosystem, app developers generally can&#8217;t afford to fly blind. Free App Analytics removes the cost barrier and gives all app developers access to the most advanced measurement and analytics platform in the world. And, when your app grows to where you need access to Kochava&#8217;s top-tier features, they support zero-impact migration from Free App Analytics to Kochava Enterprise.</p>
+<p>“Mobile marketing is a complex business, and there is no shortage of providers and solutions claiming to give you the edge over the competition with their proprietary tools,” said Charles Manning, CEO of Kochava. “Through Free App Analytics, we are able to make the Kochava platform available to a wider audience, especially those who are learning the mechanics and reacting to the dynamics involved in the mobile marketing ecosystem for the first time. This release changes the rules of engagement across the ecosystem by giving the advertiser total transparency, control and access to the metrics they need to measure and react to be successful in the space – all without the cost typically associated with this level of information and precision.”</p>
+<p>Free App Analytics provides advertisers with a rich suite of features unique to the Kochava platform, including Media Guide, a comprehensive global index of thousands of integrated ad networks allowing discovery, filtering, and selection to match an advertiser’s audience preferences.</p>
+<p>Post-install event tracking gives advertisers insight to user actions that are meaningful and relevant to their key performance indicators, and the platform’s real-time analytics provide unparalleled capability for row-level cohort and segment creation based on unlimited customizable criteria.</p>
+<h3>Getting started</h3>
+<p>To take advantage of Free App Analytics, sign up through Kochava&#8217;s <a href=https://www.freeappanalytics.com/sign-up/ target="_blank">Free App Analytics</a> dashboard (different than Kochava&#8217;s normal portal). Then, in your Corona-based app, include the plugin in your <code>build.settings</code> and <code>require()</code> it in modules where you need it. From there, consult the <a href=https://docs.coronalabs.com/plugin/kochava-app-analytics/index.html target="_blank">plugin documentation</a> for usage details.</p>
+<p>Comments or feedback? Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Forums</a> to discuss this great addition to our plugin suite.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing Tenjin – a new attribution plugin</title>
+		<link>/blog/2016/09/13/announcing-tenjin-a-new-attribution-plugin/</link>
+		<pubDate>Tue, 13 Sep 2016 18:03:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[attribution]]></category>
+
+		<guid isPermaLink="false">/?p=68018</guid>
+		<description><![CDATA[Corona Labs is pleased to welcome Tenjin, an attribution provider, to our family of plugin providers. Read on to learn how you can get the insights you need to maximize your mobile advertising budget.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-68022" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/09/logo-300x96.png" alt="logo" width="200" height="64" />Many developers purchase ads to help drive app installs. Perhaps you are even utilizing several different ad providers but you don&#8217;t have any real insight into which ads are performing best. Instead of just looking at total install numbers, wouldn&#8217;t it be more useful to know if ad provider &#8220;A&#8221; was performing better than ad provider &#8220;B&#8221;? You could then focus your ad spending on &#8220;A&#8221; rather than &#8220;B&#8221;. Essentially, <strong>attribution</strong> services give you the insight you need to maximize your advertising budget and Corona Labs is pleased to introduce <a href=https://www.tenjin.io/ target="_blank">Tenjin</a>, our latest attribution plugin.</p>
+<p>In addition to attribution, Tenjin also gives you access to <strong>analytics</strong> features. You can log numeric events using the <a href=https://docs.coronalabs.com/plugin/tenjin/logEvent.html target="_blank">tenjin.logEvent()</a> API and you can log IAP purchase data with the <a href=https://docs.coronalabs.com/plugin/tenjin/logPurchase.html target="_blank">tenjin.logPurchase()</a> API.</p>
+<p>To use attribution, you simply need to call the <a href=https://docs.coronalabs.com/plugin/tenjin/init.html target="_blank">tenjin.init()</a> API. Like all Corona plugins, you will need to include code in your <code>build.settings</code> file to include the plugin at build time. Both iOS and Android platforms are supported. You will also need to <a href=https://www.tenjin.io/sign_up target="_blank">sign up</a> with Tenjin to get an API key to initialize the plugin. See our Tenjin plugin <a href=https://docs.coronalabs.com/plugin/tenjin/index.html target="_blank">documentation</a> to learn more about utilizing this plugin in your app.</p>
+<p>Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a> to discuss this wonderful addition to our growing suite of helpful plugins. We would love to hear how you use attribution to increase app installs.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Building and Distribution &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/building-distribution/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Building and Distribution &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Understanding Android App Signing</title>
+		<link>/blog/2014/08/26/tutorial-understanding-android-app-signing/</link>
+		<comments>/blog/2014/08/26/tutorial-understanding-android-app-signing/#comments</comments>
+		<pubDate>Tue, 26 Aug 2014 22:20:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Building and Distribution]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=59420</guid>
+		<description><![CDATA[In this tutorial, we'll discuss how to create Android app builds and how to use the keytool utility, along with how to generate a keyhash or SHA1 signature for various services like Facebook and Google Play Game Services.]]></description>
+				<content:encoded><![CDATA[<p>I must admit that when I started developing mobile apps, I was confused by the various requirements for protecting apps and guaranteeing their authenticity. On the iOS side, you have terms like <strong>entitlement</strong>, <strong>provisioning profile</strong>, <strong>bundle ID</strong>, and a host of other things. Android has similar functionality and their phrasing is equally confusing, including terms such as <strong>keystore</strong>, <strong>key hash</strong>, <strong>alias</strong> and, in addition, there are commands which must be entered on the command line.</p>
+<p>This week&#8217;s tutorial looks specifically at the <strong>Android</strong> signing process with the goal of bringing clarity and understanding to this potentially complex topic.</p>
+<h3>The Keystore</h3>
+<p>The basics behind protecting your Android app is to use a generated certificate and digital &#8220;key&#8221; which provides a unique, encrypted, and reasonably un-hackable signature. This proves that the app came from you, not some other suspicious source.</p>
+<p>On Android, this is done via a <strong>keystore</strong>. The keystore is a simple file with a really large block of encrypted data. This file can be stored anywhere on your computer, and this is generally the first problem that developers encounter. Because there&#8217;s no standard location in which to store these, it&#8217;s easy to &#8220;lose&#8221; them &#8212; we will address this issue in a bit.</p>
+<p>Next, there are two types of keystores that you should be aware of: <strong>debug</strong> and <strong>release</strong>. The debug keystore should be used while developing your app &#8212; for example, it can be used when manually installing (side-loading) apps to local Android devices. However, the debug keystore can <strong>not</strong> be used for an app destined for Google Play or Amazon &#8212; for this, you must use a <strong>release</strong> keystore.</p>
+<p>For both types, a keystore is identified by two aspects: the <strong>filename</strong> that it&#8217;s stored in and an <strong>alias</strong>. Because a keystore file could potentially store multiple keystores, each one is identified by an <strong>alias</strong>. In most cases, you&#8217;ll only have one certificate/key pair in a file, but you still need to give it an alias.</p>
+<p>Keystore files are also protected by a <strong>pair</strong> of passwords: one for the keystore file itself and another for each keystore/alias pair within the file. While these passwords should ideally be unique, most developers use the same password for both.</p>
+<h4>Debug</h4>
+<p><strong>Debug</strong> keystores are somewhat standard. Google provides one with the Android Developer Tools but, for your convenience, Corona provides you with a debug keystore as well. This keystore is located in a standardized folder within your CoronaSDK application folder and you should use it while developing Corona apps.</p><pre class="crayon-plain-tag">CoronaSDK/Resource Library/Android/debug.keystore</pre><p></p>
+<h4>Release</h4>
+<p>To create a <strong>release</strong> keystore for your app, you need to execute a command from your OS command line. For OS X, this is done via the <strong>Terminal</strong> app in which you&#8217;re presented with a <code>$</code> prompt. For Windows, this is done via the <strong>Command Prompt</strong> which can be accessed by opening the <strong>Start</strong> menu and searching for <code>cmd</code>. In Windows, you&#8217;ll be presented with a prompt like: <code>C:\&gt;</code></p>
+<p>As mentioned above, there&#8217;s no standard place to store keystore files, so it may be useful to create a folder specifically for this. By default, both the OS X Terminal and Windows Command Prompt will start within your &#8220;home&#8221; directory. On Mac, this translates to <code>/Users/yourloginname</code> and on Windows it translates to something like <code>C:\Users\yourloginname</code>. Within this home folder, you can create a folder to hold your keystores.</p>
+<p>In Windows, type:</p>
+<p><code>md Keystores</code></p>
+<p>In OS X, type:</p>
+<p><code>mkdir Keystores</code></p>
+<p>Once this is done, you can access the folder by typing:</p>
+<p><code>cd Keystores</code></p>
+<p>Once inside the <code>Keystores</code> directory, you should issue a command that&#8217;s fairly complex. Before proceeding, it&#8217;s very important to understand that this is <strong>not</strong> a &#8220;copy-and-paste&#8221; procedure &#8212; you <strong>must</strong> substitute values that are specific to the keystore you wish to generate.</p>
+<p>For the moment, let&#8217;s carefully inspect and dissect the following line:</p>
+<p><code>keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999</code></p>
+<p>Essentially, the first term means that this line will execute a program called <strong>keytool</strong>. For OS X, this should be installed already, but Windows users may need to install it (see below). Following this, all of the parts that begin with a hyphen (<code>-</code>) indicate parameters for the <code>keytool</code> command. Those options are as follows, and those in bold are the two which must be customized (the others can remain as shown):</p>
+<ul>
+<li><code>-genkey</code> &#8212; Tells <strong>keytool</strong> to generate a key.</li>
+<li><code>-v</code> &#8212; Tells keytool to be verbose (i.e. tell you what it&#8217;s doing).</li>
+<li><code>-keystore</code> &#8212; <strong>The filename to save the keystore as.</strong></li>
+<li><code>-alias</code> &#8212; <strong>The alias name to identify the keystore.</strong></li>
+<li><code>-keyalg RSA</code> &#8212; This says to use the RSA method to generate the keystore.</li>
+<li><code>-validity 999999</code> &#8212; This says to make the keystore valid for 999,999 days.</li>
+</ul>
+<p>For the <code>keystore</code> name, provide it with a name that makes sense. In theory, you should use a unique release keystore for each app, but it&#8217;s not required. For example, a puzzle game named &#8220;SwapIt&#8221; may have a keystore name such as <code>swapit.keystore</code>, but a more general release keystore could simply be <code>release.keystore</code>.</p>
+<p>For <code>alias</code>, provide it with a similar sensible name, for example <code>swapit</code>.</p>
+<p>With these changes, the line should look more like this:</p>
+<p><code>keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<p>Now hit the <strong>return/enter</strong> key to execute the command. You&#8217;ll then be prompted for more information in a routine that will appear as follows in the command window:</p><pre class="crayon-plain-tag">Enter keystore password:  
+Re-enter new password: 
+What is your first and last name?
+  [Unknown]:  YourFirstName YourLastName
+What is the name of your organizational unit?
+  [Unknown]:  Indie      
+What is the name of your organization?
+  [Unknown]:  Your Company Name
+What is the name of your City or Locality?
+  [Unknown]:  YourCity
+What is the name of your State or Province?
+  [Unknown]:  ST
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US correct?
+  [no]:  yes
+Generating 1,024 bit RSA key pair and self-signed certificate (SHA1withRSA) with a validity of 999,999 days
+	for: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Enter key password for 
+	(RETURN if same as keystore password):  
+Re-enter new password: 
+[Storing swapit.keystore]</pre><p>The first password is the password for the overall keystore file. Next you&#8217;ll be asked for your first and last name (surname). The prompt for &#8220;organizational unit&#8221; is for companies with multiple departments like &#8220;Engineering&#8221; or &#8220;Development&#8221; and this value is not important for most Corona developers, but you need to still provide a value, such as &#8220;Development&#8221;. In addition, you&#8217;ll be prompted for your city, state/province, and country code.</p>
+<p>At this point, you must type in <strong>yes</strong> to confirm the information. Finally, if desired, you can supply a different password to the individual alias entry, or simply press <strong>return/enter</strong> to use the same password associated with the keystore file.</p>
+<p>When this is done, your keystore file will be in the folder where you ran the command.</p>
+<h4>Installing &#8220;keytool&#8221;</h4>
+<p>The <strong>keytool</strong> utility should be installed as part of JDK (Java Development Kit). This tutorial will not discuss actual installation of JDK, so if you&#8217;re new to this process, please read our corresponding <a href=http://docs.coronalabs.com/guide/start/installWin/index.html target="_blank">guide</a>.</p>
+<p>On Mac, the <strong>keytool</strong> utility will be placed in a location such that you can just type <code>keystore</code> in the Terminal to run it. On Windows, this likely won&#8217;t be the case &#8212; when you installed the JDK, it was probably installed within a folder specific to the JDK version. For instance, on my Windows 7 computer, it&#8217;s located in:</p><pre class="crayon-plain-tag">C:\Program Files (x86)\Java\jdk1.8.0_05\bin</pre><p>Because the <b>keytool</b> utility is located here, it&#8217;s tempting to simply change to this directory and type <code>keytool ...</code> directly, but if you update/reinstall JDK and your keystores are stored here, you&#8217;ll lose all of those you already created. As such, a better solution is to prefix the location of your Java install before the keytool command. Before doing so, you must set an <strong>environment variable</strong> called <code>JAVA_HOME</code> which will provide a shortcut that you can use. If you&#8217;re not familiar with this task, see this <a href=https://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows target="_blank">tutorial</a>. Once it&#8217;s set, you can prefix it to the <code>keytool</code> command as follows:</p>
+<p><code>%JAVA_HOME\bin\keytool ...</code></p>
+<p>For instance, using the example keystore details from above, the command becomes this:</p>
+<p><code>%JAVA_HOME\bin\keytool -genkey -v -keystore swapit.keystore -alias swapit -keyalg RSA -validity 999999</code></p>
+<h3>Building the App</h3>
+<p>To build with your release keystore, launch Corona SDK, load your app, and then build for Android (<strong>File</strong> → <strong>Build</strong> → <strong>Android…</strong>). In the <strong>Keystore</strong> dialog box, click on the <strong>Browse&#8230;</strong> button beside the <strong>Keystore</strong> pulldown menu. Navigate to where you saved your keystore file and select it from the dialog box, upon which you&#8217;ll be prompted to enter the keystore password.</p>
+<p>Once it&#8217;s loaded, you&#8217;ll see that the <strong>Key Alias</strong> field is empty. Select the proper alias in this pulldown list and click the <strong>Build</strong> button. Corona will then prompt you to enter the alias password. Once entered correctly, you&#8217;ll be taken back to the build screen where you can hit <strong>Build</strong> again to build the app. Fortunately, for as long as you use this same release keystore/alias, you won&#8217;t need to re-enter the passwords each time.</p>
+<h3>Keyhashes and SHA1 Signatures</h3>
+<p>When working with third parties like Facebook or Google Play Game Services (GPGS), sometimes you&#8217;ll be asked to generate a value from your keystore. For Google Play Game Services, you must use a <strong>release</strong> keystore for this task. For Facebook, you can develop/test with a debug keystore, but you&#8217;ll eventually need to provide them with information for an app signed with a release keystore.</p>
+<p>Both a <strong>keyhash</strong> (used by Facebook) and a <strong>SHA1 signature</strong> (used by GPGS) are short strings consisting of values that are calculated from the much larger keystore file. While these two are different values, the concept is the same &#8212; some standard math is performed on the values in the keystore to generate a unique value that cannot be easily reversed, helping ensure that the keystore hasn&#8217;t been altered by a hacker.</p>
+<h4>Generating a Keyhash</h4>
+<p>To generate the keyhash, you once again need to use the command line and enter a line which appears complex but in truth consists of just three commands:</p>
+<p><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore | openssl sha1 -binary | openssl base64</code></p>
+<p>The three commands taken separately are as follows:</p>
+<ul>
+<li><code>keytool -exportcert -alias yourkeyalias -keystore yourkeystore.keystore</code></li>
+<li><code>openssl sha1 -binary</code> &#8212; uses the SHA1 method of calculating a signature, output as binary.</li>
+<li><code>openssl base64</code> &#8212; outputs the data in Base64.</li>
+</ul>
+<p>As you can see, these three commands are separated by pipe (<code>|</code>) characters. The first command runs and outputs its results, which in turn becomes the input for the second command. Then the second command outputs its results which become the input for the third command. This can cause potential issues because, if there&#8217;s even a slight problem in an earlier command, the error gets passed on to the next command rather than the expected data.  For instance, if you mis-type your password, this command series will not notify you but rather produce an SHA1 string based on the input of &#8220;Invalid Password&#8221;.</p>
+<p>In any case, as noted earlier in this tutorial, this is <strong>not</strong> a copy-and-paste command &#8212; you must adjust <strong>-alias</strong> and <strong>-keystore</strong> to your specific values. When running this command using the keystore created above, the result is:</p>
+<p><code>tZRNBKXmYKOa22HvFl57za4gvU0=</code></p>
+<p>Note the <code>=</code> sign at the end &#8212; this indicates the end of the string and it <strong>is</strong> important.</p>
+<h4>Generating a SHA1 Signature</h4>
+<p>GPGS, in contrast, needs a text representation of the SHA1 output. Fortunately, the keytool utility can output this without any additional commands:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore -list -v</code></p>
+<p>After you enter the password, the output will look something like this:</p><pre class="crayon-plain-tag">Alias name: swapit
+Creation date: Aug 24, 2014
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Issuer: CN=YourFirstName YourLastName, OU=Indie, O=Your Company Name, L=YourCity, ST=ST, C=US
+Serial number: 53fa57f7
+Valid from: Sun Aug 24 17:24:07 EDT 2014 until: Sun Jul 20 17:24:07 EDT 4752
+Certificate fingerprints:
+	 MD5:  66:22:E9:94:EA:14:EA:4A:06:EB:98:8B:DA:2B:25:D2
+	 SHA1: B5:94:4D:04:A5:E6:60:A3:9A:DB:61:EF:16:5E:7B:CD:AE:20:BD:4D
+	 Signature algorithm name: SHA1withRSA
+	 Version: 3</pre><p>In this output, the <code>SHA1:</code> line is the string of hex digits which you need to provide to GPGS when setting up your app, as well as the value you need to provide to Google when setting up your app there. Alternatively, if you need the SHA1 signature formatted as a string rather than a colon-separated hex string, use this command:</p>
+<p><code>keytool -exportcert -alias swapit -keystore swapit.keystore | openssl sha1 -hex</code></p>
+<h3>Conclusion</h3>
+<p>Hopefully this tutorial has helped clarify and understand the Android signing process better. Remember these command lines and the familiarize yourself with the parameters, and Android signing will soon become a simple task.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/26/tutorial-understanding-android-app-signing/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

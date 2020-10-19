@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iPad &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/ipad/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iPad &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Local/Push Notifications Moved to a Plugin</title>
+		<link>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/</link>
+		<comments>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/#comments</comments>
+		<pubDate>Wed, 21 Jan 2015 19:21:00 +0000</pubDate>
+		<dc:creator><![CDATA[dchan]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[local notifications]]></category>
+		<category><![CDATA[notifications]]></category>
+		<category><![CDATA[push notifications]]></category>
+
+		<guid isPermaLink="false">/?p=60883</guid>
+		<description><![CDATA[Starting in Corona SDK build 2015.2542, local and push notifications have been moved to a plugin. Read further to learn how to update your existing apps.]]></description>
+				<content:encoded><![CDATA[<p>Starting in Corona SDK build <strong>2015.2542</strong>, local and push notifications have been moved to a plugin. If you&#8217;re using this feature, you will need to update your project’s <code>build.settings</code> file so that the <code>plugins</code> table includes the following:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.notifications&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },
+}</pre><p>On Corona Enterprise, there will be plugin binaries available in the plugins zip corresponding to the above daily build.</p>
+<h3>iOS Push Permissions Dialog</h3>
+<p>One of the benefits of this plugin is to give you more control over the timing of the push notification permissions dialog, an often requested <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/5881595-control-the-timing-of-allow-push-notifications-p>feature</a>. With this plugin, push notifications on iOS are no longer automatically registered — instead, you must explicitly request for the use of push notifications, prompting iOS to ask for permission:</p><pre class="crayon-plain-tag">local notifications = require( &quot;plugin.notifications&quot; )
+notifications.registerForPushNotifications()</pre><p></p>
+<h3>Deprecated APIs</h3>
+<p>Since notifications are now a plugin, we are deprecating the following core APIs:</p>
+<ul>
+<li><code>system.cancelNotification()</code> → <a href=http://docs.coronalabs.com/daily/plugin/notifications/cancelNotification.html>notifications.cancelNotification()</a></li>
+<li><code>system.scheduleNotification()</code> → <a href=http://docs.coronalabs.com/daily/plugin/notifications/scheduleNotification.html>notifications.scheduleNotification()</a></li>
+</ul>
+<p>These deprecated APIs will eventually be removed, so we recommend that you migrate your code as soon as possible. For your convenience, we have modified these APIs to call through to the new plugin APIs, but you must still include the notification plugin.</p>
+<h3>Documentation</h3>
+<p>Please refer to the <a href=http://docs.coronalabs.com/daily/plugin/notifications/index.html>notification documentation</a> for complete details.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Corona Weekly Update: iOS7 Beta, Text alignment, Facebook</title>
+		<link>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/</link>
+		<comments>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/#comments</comments>
+		<pubDate>Tue, 18 Jun 2013 04:40:10 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[ios7]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=36151</guid>
+		<description><![CDATA[Time for a quick update on your favorite <a href="/products/corona-sdk/">mobile app development</a> platform.
+
+Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the "flat" UI that was demonstrated was exactly the kind of thing we saw some of you <em>already</em> creating using Corona's graphics system. ]]></description>
+				<content:encoded><![CDATA[<p>Time for a quick update on your favorite <a href=/products/corona-sdk/>mobile app development</a> platform.</p>
+<p>Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the &#8220;flat&#8221; UI that was demonstrated was exactly the kind of thing we saw some of you <em><strong>already</strong></em> creating using Corona&#8217;s graphics system.</p>
+<p><img class="alignright size-medium wp-image-36154" alt="Corona iOS 7 Beta device build" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.04.16-PM-300x171.png" /></p>
+<p>For example, <a href=http://foreseetheday.com/>this app</a> was in the works before iOS 7 was even announced!</p>
+<p>Apple&#8217;s NDA prevents me from talking too much about iOS7, but what I can say is that we will fully support iOS7. In fact, last week, starting in <a href=http://developer.coronalabs.com/release/2013/1141/>daily build</a> 1141, you can try your app out on iOS 7 Beta. On the right, you just select &#8220;7.0 beta&#8221; from the iOS device build dialog in the Corona Simulator, and presto, you&#8217;ve got an app built against the iOS 7 Beta SDK that you can test on your own device.</p>
+<p>I really recommend you do try out your apps on iOS 7. If the past is any indication, we expect iOS 7 to introduce regression bugs that affect all iOS developers, not just Corona developers. The sooner you know about them, the less you&#8217;ll be surprised when iOS 7 is finally released!</p>
+<p><img class="alignright size-full wp-image-36163" alt="Corona SDK supports Facebook Connect" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.25.24-PM.png" /><br />
+(Our lawyers will bug me about this, so let me just remind you that if you are using iOS 7 Beta, you must honor Apple&#8217;s developer membership rules.)</p>
+<p>We also have upgraded <a href=http://www.coronalabs.com/facebook/>Corona&#8217;s Facebook support</a> on Android, so it&#8217;s on par with iOS. Now, you can run Facebook&#8217;s Scrumptious sample on Android just like you can on iOS.</p>
+<p>We&#8217;re also working on adding Facebook monetization features like <a href=https://developers.facebook.com/docs/tutorials/mobile-app-ads/>Mobile App Install Ads</a> that can help drive more installations of your app and increase discovery, all things that will help you make more money with your app! This should be coming in a daily build later this week.</p>
+<p><img class="size-medium wp-image-36165 alignright" alt="Corona-text-alignment" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Corona-text-alignment-300x45.png" width="300" height="45" /><br />
+There were a bunch of other interesting checkins that you&#8217;ll notice in the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>daily build notes</a> related to gaming, but the one I want to highlight is related to business apps or any app that&#8217;s dealing with lots of text.</p>
+<p>In the next daily build, we are going to be giving more text alignment capabilities. You&#8217;ll be able to set left, center, right alignment on multiline text objects, the ones created by &#8216;display.newText()&#8217;. There will be more docs forthcoming on our <a href=http://docs.coronalabs.com/daily/>daily build API docs</a>. I&#8217;ll update here when they&#8217;re ready.</p>
+<p><strong>UPDATE</strong>: The reference for the text alignment is <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html>here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Space Missile Command</title>
+		<link>/blog/2013/02/25/app-of-the-week-space-missile-command/</link>
+		<comments>/blog/2013/02/25/app-of-the-week-space-missile-command/#comments</comments>
+		<pubDate>Mon, 25 Feb 2013 20:51:27 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">/?p=29555</guid>
+		<description><![CDATA[Recently featured in the US App Store’s “What’s Hot” category, Space Missile Command is an action-packed adventure that's quickly rolling in glowing reviews.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-24-at-10.06.09-PM.png" alt="Space Command icon" class="alignleft size-full wp-image-29556" />While our last space-themed App of Week was the lovably quirky Aliens Abducted game, this week&#8217;s selection is an action-packed adventure for shooter game fans. <a href=https://itunes.apple.com/app/id537840971?mt=8>Space Missile Command</a> was recently featured in the US App Store’s “What’s Hot” category and is quickly rolling in glowing reviews.  </p>
+<p><img src="/wordpress/wp-content/uploads/2013/02/Powerful-weapers-300x168.jpg" alt="Powerful weapons" class="alignright size-medium wp-image-29557" />A brilliant mash-up of the classic Asteroids and Missile Command games, Space Missile Command challenges you to stop an asteroid invasion from destroying sacred planets.To blast the waves of asteroids and protect planets, you navigate a joystick around the screen and fire away. As you earn scores of points and power-ups, you&#8217;ll climb the officer ranks from a 2nd lieutenant to a four-star general. Beyond the rock-solid gameplay, the classical soundtrack and stunning special effects enhance the game to create an addictive experience.</p>
+<p>Space Missile Command is offered in a free light version, as well as $.99 download from the <a href=https://itunes.apple.com/app/id537840971?mt=8>App Store</a>, for advanced gameplay and additional levels.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/LRA9h-06Ih4" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/25/app-of-the-week-space-missile-command/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Filip Flisar Ski Cross</title>
+		<link>/blog/2013/02/18/app-of-the-week-filip-flisar-ski-cross/</link>
+		<comments>/blog/2013/02/18/app-of-the-week-filip-flisar-ski-cross/#comments</comments>
+		<pubDate>Mon, 18 Feb 2013 21:22:16 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29330</guid>
+		<description><![CDATA[Grab your ski poles and smash down the mountain in a race for the finish line. Perfect for snow season, the action-packed Filip Flisar Ski Cross, will have you tackling the hills and racing against skilled opponents.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-17-at-7.55.56-PM-150x150.png" alt="Ski Cross icon" class="alignleft size-thumbnail wp-image-29332" srcset="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-17-at-7.55.56-PM-150x150.png 150w, /wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-17-at-7.55.56-PM.png 181w" sizes="(max-width: 150px) 100vw, 150px" />Grab your ski poles and smash down the mountain in a race for the finish line. Perfect for snow season, the action-packed Filip Flisar Ski Cross, will have you tackling the hills and racing against skilled opponents. The game features X Games&#8217; ski cross silver medalist, Filip Flisar, and is available for players on both iOS and Android.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Ski-Cross-300x168.jpg" alt="Ski Cross icon" class="alignright size-medium wp-image-29331" />To hit the slopes, start by selecting from one of five champion skiers, picking a course, and choosing a preferred level of difficulty. As you race down the mountain to punk rock music, hold down the “duck” button and tilt your player in a particular direction to secure a perfect landing. You can also pick up energy boosts along the way to reach maximum speed. </p>
+<p>Experience this awesome <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform</a> ski adventure on your device, available as a free download on <a href=https://itunes.apple.com/us/app/filip-flisar-ski-cross/id591866843?ls=1&mt=8>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.appsick.skicross>Google Play</a>.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/fciz6lvTQwY" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/18/app-of-the-week-filip-flisar-ski-cross/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Word Hunt &#8211; Word Search</title>
+		<link>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/</link>
+		<comments>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/#comments</comments>
+		<pubDate>Tue, 12 Feb 2013 00:01:49 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Amazon Kindle]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[NOOK]]></category>
+
+		<guid isPermaLink="false">/?p=29143</guid>
+		<description><![CDATA[Creating a new standard for digital word puzzles, the Corona-built Word Hunt – Word Search combines the principles of the classic game, with awesome steampunk graphics that pop right off the screen.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM.png" alt="Word Hunt icon" class="alignleft size-full wp-image-29144" srcset="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM.png 205w, /wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.12.46-PM-150x150.png 150w" sizes="(max-width: 205px) 100vw, 205px" />Creating a new standard for digital word puzzles, the Corona-built <a href=http://developer.coronalabs.com/showcase/word-hunt-word-search>Word Hunt – Word Search</a> combines the principles of a classic game, with awesome steampunk graphics that pop right off the screen.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/02/Word-Hunt-screenshot.jpg" alt="Word Hunt screenshot" class="alignright size-full wp-image-29145" />For adventurous wordsmiths, Word Hunt – Word Search features over 50 categories of words, ranging from sports, to world currencies to Shakespeare. The game provides three levels of difficulty, with harder levels presenting more rows, columns and words to discover. My favorite element of the game was having the ability to build my own Word Hunt list. After creating a &#8220;dogs&#8221; category, I customized my list by adding over a dozen dog breeds that I then uncovered in a maze of letters. </p>
+<p>If you’re a fan of word searches, be sure to check out this <a href=https://www.coronalabs.com/products/enterprise/>cross-platform game</a> for your device:</p>
+<p><strong>iTunes</strong>: <a href=https://itunes.apple.com/us/app/word-hunt-word-search/id594501587?ls=1&mt=8>https://itunes.apple.com/us/app/word-hunt-word-search/id594501587?ls=1&amp;mt=8</a></p>
+<p><strong>Google Play</strong>: <a href=https://play.google.com/store/apps/details?id=com.bluefireventures.wordhunt>https://play.google.com/store/apps/details?id=com.bluefireventures.wordhunt</a></p>
+<p><strong>Amazon Appstore</strong>: <a href=http://www.amazon.com/gp/product/B00B29PJGS>http://www.amazon.com/gp/product/B00B29PJGS</a></p>
+<p><strong>NOOK Apps</strong>: <a href=http://www.barnesandnoble.com/w/word-hunt-word-search-learning-gems/1114195817?ean=2940043948052>http://www.barnesandnoble.com/w/word-hunt-word-search-learning-gems/1114195817?ean=2940043948052</a></p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/mEX1QV_alQQ" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-10-at-11.17.03-PM.png" alt="Tapforss icon" class="alignleft size-full wp-image-29146" /></a></p>
+<h4 style="margin-bottom: 10px;">Tapforss</h4>
+<p>Tapsforss is an arcade-physics puzzler that forces you to defy gravity by guiding a crystal ball from nest to nest in underground caves. As you tap buttons on the screen, you apply force to the ball, moving it upwards or to the right or left to guide it to safety. The treacherous terrain of the caves is filled with jagged surfaces and obstacles &#8211; make sure to avoid these as you navigate your ball through each level. If you&#8217;re up for a challenge, <a href=https://itunes.apple.com/us/app/tapforss/id593635795?mt=8&ign-mpt=uo%3D4>download Tapforss</a> and enjoy an intriguing and beautiful mobile adventure.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/O5n9FhYm0Z8" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/11/app-of-the-week-word-hunt-word-search/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: What the Block?!</title>
+		<link>/blog/2013/02/04/app-of-the-week-what-the-block/</link>
+		<comments>/blog/2013/02/04/app-of-the-week-what-the-block/#comments</comments>
+		<pubDate>Mon, 04 Feb 2013 21:31:08 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28858</guid>
+		<description><![CDATA[Using a clever and intuitive physics-based game design, What the Block?! is a challenging game that will put both your strategic thinking skills and your dexterity to the test. Based on Tetris-like principles, What the Block?! requires careful planning to successfully progress in the game.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-31-at-4.06.57-PM.png" alt="What the Block icon" class="alignleft size-full wp-image-28859" /></p>
+<p>Using a clever and intuitive physics-based game design, <a href="https://itunes.apple.com/app/what-the-block-!/id558301858?ls=1&#038;mt=8
+">What the Block?!</a> is a challenging game that will put both your strategic thinking skills and your dexterity to the test. Based on Tetris-like principles, What the Block?! is a cinch to learn, but requires careful planning to progress in the game.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/What-the-Block-screenshot-300x168.jpg" alt="What the Block screenshot" class="alignright size-medium wp-image-28860" />With over 150 hand-crafted puzzles, What the Block?! offers hours of addictive gameplay for fans of strategy games. Each level presents you with blocks that need to be rotated and dragged towards their corresponding shadow pattern. As you align, rotate, and move blocks, you&#8217;re encouraged to use more than one finger in a balancing act. Most levels also contains objects that will help you hoist your blocks into their proper place. By completing each level quickly and with minimal block movements, you&#8217;ll rack up more points.</p>
+<p>Within days of the game&#8217;s release, it&#8217;s received an average 5-star rating on iTunes from emphatic fans. To experience the addictive puzzle game for yourself, head over to the App Store and download <a href=https://itunes.apple.com/app/what-the-block-!/id558301858?ls=1&mt=8>What the Block?!</a> for $0.99.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/mKGiJqYaYVQ" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-04-at-11.47.23-AM.png" alt="Crazy Boxes" class="alignleft size-full wp-image-29045" /></a></p>
+<h4 style="margin-bottom: 10px;">Crazy Boxes</h4>
+<p>Crazy Boxes is an arcade shooting game set in a loony toy workshop filled with bouncy boxes. As boxes pop open on the screen, your objective is to hit them with a slew of balls by physically move your device. By aiming at the boxes and tapping the screen to fire away, you can bring them down and earn a bundle of points. Crazy Boxes&#8217; quirky characters and awesome interactivity provides a dynamic game experience for players of all ages. Check out the cross-platform game for your <a href=http://bit.ly/Y5eikp>iOS</a>, <a href=http://bit.ly/VFmzJn>Android</a>, or <a href=http://amzn.to/V8jq6m>Amazon</a> device.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/04/app-of-the-week-what-the-block/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Beck and Bo</title>
+		<link>/blog/2013/01/28/app-of-the-week-beck-and-bo/</link>
+		<comments>/blog/2013/01/28/app-of-the-week-beck-and-bo/#comments</comments>
+		<pubDate>Mon, 28 Jan 2013 21:58:03 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28745</guid>
+		<description><![CDATA[Created for toddlers and preschoolers, Beck and Bo encourages curiosity and exploration in youngsters. Already a hit among parents, Beck and Bo landed in the Top 10 of Paid Educational Games on iTunes.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-28-at-10.34.56-AM.png" alt="Beck and Bo" class="alignleft size-full wp-image-28746" /></p>
+<p>Created for toddlers and preschoolers, Beck and Bo encourages curiosity and exploration in youngsters. The app combines entertainment with real learning, bolstering children&#8217;s vocabulary and improving overall dexterity skills as they drag and drop animals, objects and characters within interactive scenes. Already a hit among parents, Beck and Bo landed in the Top 10 of Paid Educational Games on iTunes and was even featured in <a href=http://www.usatoday.com/story/tech/columnist/gudmundsen/2013/01/18/apps-for-toddlers/1833303>USA Today</a> as one of the best apps for introducing toddlers to digital play.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Beck-and-Bo-screenshot-300x200.jpg" alt="Beck and Bo screenshot" class="alignright size-medium wp-image-28747" />Beck and Bo takes your child on an interactive journey through twelve beautifully illustrated environments. Ranging from a zoo environment complete with gorgeous giraffes and elephants, to a beach scene filled with lavish palm trees and soothing waves, each scene comes to life before your eyes and provides an immersive learning experience. As objects float down the screen, children are encouraged to drag and drop them to their appropriate spot to complete a scene. Once an object is placed in its correct location, the app announces the image&#8217;s name, helping children associate a visual representation with a verbal sound. Visually irresistible, the paper cut-out style illustrations and soothing pastel colors also contribute to a very enjoyable experience. </p>
+<p>You can enjoy Beck and Bo for $1.99 on <a href=http://itunes.apple.com/us/app/beck-and-bo/id557624393?mt=8>iTunes</a> or on the <a href=http://www.amazon.com/react-in-Beck-and-Bo/dp/B009MO89Y4/ref=sr_1_2?s=mobile-apps&ie=UTF8&qid=1359402048&sr=1-2&keywords=beck+and+bo>Amazon Appstore</a>.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/sGKMGcKv15w" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-28-at-11.55.25-AM.png" alt="Space Disorder" class="alignleft size-full wp-image-28754" /></a></p>
+<h4 style="margin-bottom: 10px;">Space Disorder</h4>
+<p>Space Disorder is a platformer sci-fi adventure game with awesome cartoon illustrations. The game utilizes the mechanics of gravity as you propel your hero, Noah, on his journey to save his love, free alien prisoners and conquer robots. As you guide Noah through the space terrain, you must solve a slew of puzzles using grenades, laser rays and inverted gravity, collect coins and avoid the robots&#8217; traps in order to accomplish your mission. Offered as a free download on <a href=https://itunes.apple.com/us/app/space-disorder/id547594194?mt=8>iTunes</a>, the impressive graphics and addictive gameplay make this a must-have game.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/01/28/app-of-the-week-beck-and-bo/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Vidburn</title>
+		<link>/blog/2013/01/14/app-of-the-week-vidburn/</link>
+		<comments>/blog/2013/01/14/app-of-the-week-vidburn/#comments</comments>
+		<pubDate>Mon, 14 Jan 2013 20:39:33 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28454</guid>
+		<description><![CDATA[Vidburn is the ideal way to capture and share your most creative, silly and provocative moments without leaving a digital trace. Recently featured in Gizmodo and Business Insider, Vidburn is a free app for your iPhone that allows you to flex your creative muscle.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-13-at-10.27.48-PM.png" alt="Vidburn icon" class="alignleft size-full wp-image-28455" srcset="/wordpress/wp-content/uploads/2013/01/Screen-Shot-2013-01-13-at-10.27.48-PM.png 207w, /wordpress/wp-content/uploads/2013/01/Screen-Shot-2013-01-13-at-10.27.48-PM-150x150.png 150w" sizes="(max-width: 207px) 100vw, 207px" />Vidburn is the ideal way to capture and share your most creative, silly and provocative moments without leaving a digital trace. Recently featured in Gizmodo and Business Insider, <a href=https://itunes.apple.com/app/vidburn/id586432711?mt=8>Vidburn</a> is a free app that allows you to flex your creative muscle, through an ephemeral recording on your iPhone.</p>
+<p>When first released, Vidburn was pegged the &#8216;Snapchat for video&#8217; (though Snapchat itself released a video function right around the time Vidburn launched). It&#8217;s simple to use and loads of fun; you can record up to a 5 second video and share with friends via SMS, or by selecting a recipient off your contact list that already has the app. As soon as your friend watches your creation, the video clip will self-destruct. </p>
+<p>Whether you&#8217;re <a href=http://www.youtube.com/watch?v=XrUM8m2rnP0>imitating a sloth</a>, capturing an awkward conversation, or just want to send something a little racy, Vidburn is a fun way to record and share life&#8217;s most colorful moments.</p>
+<p><iframe width="420" height="315" src="http://www.youtube.com/embed/w_8j-Q8mQB8" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-13-at-10.45.55-PM.png" alt="Word Pop Free " class="alignleft size-full wp-image-28459" /></a></p>
+<h4 style="margin-bottom: 10px;">Word Pop Free</h4>
+<p>Word Pop Free is a newly launched <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform game</a> that helps children spell, learn the alphabet, and count by popping letters or objects that make up a word. The app features over 150 images that helps kids with word and letter association, and includes three to six letter words with extra modes and levels. Word Pop Free&#8217;s bright color scheme and simple mechanics make learning fun for youngsters. Best of all, you can enjoy Word Pop Free on a wide variety of devices &#8211; check out the game on the <a href=https://itunes.apple.com/us/app/word-pop-free/id591387098?mt=8>App Store</a>, <a href=https://play.google.com/store/apps/details?id=com.icyspark.wordpop.lite>Google Play</a>, or <a href=http://www.amazon.com/IcySpark-Word-Pop-Free/dp/B00ASKZ6PG>Amazon Appstore</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/01/14/app-of-the-week-vidburn/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Fun Run</title>
+		<link>/blog/2013/01/07/app-of-the-week-fun-run/</link>
+		<comments>/blog/2013/01/07/app-of-the-week-fun-run/#comments</comments>
+		<pubDate>Mon, 07 Jan 2013 22:32:29 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28159</guid>
+		<description><![CDATA[Fun Run is a multiplayer game that allows players to partake in an action-packed race. Topping the App Store charts, Fun Run has secured its place as #1 in both the action and racing categories.
+]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Fun-Run.png" alt="Fun Run" class="alignleft size-full wp-image-28160" srcset="/wordpress/wp-content/uploads/2013/01/Fun-Run.png 204w, /wordpress/wp-content/uploads/2013/01/Fun-Run-150x150.png 150w" sizes="(max-width: 204px) 100vw, 204px" /><a href=http://developer.coronalabs.com/showcase/fun-run-multiplayer-race>Fun Run</a> is a multiplayer, <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform game</a> that allows players to partake in an action-packed race. Topping the App Store charts, Fun Run has secured its place as #1 in both the action and racing categories and garnered thousands of positive reviews from fans on iOS and Android alike. Just today, Fun Run soared to #3 free game on the App Store, (following Google Maps!).</p>
+<p>In Fun Run, your cute character moves forward automatically, but in order to avoid obstacles and outrun opponents, you must jump by pressing an arrow at the bottom right of the screen. As you make a dash for the finish line, racing against either friends or random opponents, you can slow fellow racers by hurling weapons such as saw blades and lightning bolts. Of course, your opponents are likely to throw similar objects in your direction. </p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-07-at-1.59.40-PM.png" alt="Fun Run - Top 3" class="alignright size-full wp-image-28180" />Fun Run is a simple, addicting game that takes a bit of practice and strategy to master. The more you play, the better familiarized you become with the track, making the obstacles more predictable. Join in on the fun and head over to the <a href=https://itunes.apple.com/us/app/fun-run-multiplayer-race/id547201991?mt=8>App Store</a> or <a href=https://play.google.com/store/apps/details?id=no.dirtybit.funrun>Google Play</a> for a free download!</p>
+<p><iframe width="420" height="315" src="http://www.youtube.com/embed/nsrwF8dPjBc" frameborder="0" allowfullscreen></iframe> </p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv" style="padding-left:15px;">
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-07-at-1.18.01-PM.png" alt="What We Mean" class="alignleft size-full wp-image-28162" /></a></p>
+<h4 style="margin-bottom: 10px;">What We Mean</h4>
+<p><a href=https://itunes.apple.com/gb/app/what-we-mean/id578090540?mt=8>What We Mean</a> shares a captivating collection of poetry based on love letters between the developer&#8217;s (J. A. Fisher&#8217;s) grandparents during World War II. As a poetry lover and history buff, I absolutely loved the compilation of beautiful poems inspired by the original content from the letters. J. A. Fisher also shares 20 blackout poems &#8211; by redacting sections of his grandfather&#8217;s letters, he simulates a poetic War Department Censurer. What We Mean offers a unique, one-of-a-kind experience that you can enjoy from the <a href=https://itunes.apple.com/gb/app/what-we-mean/id578090540?mt=8>App Store</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/01/07/app-of-the-week-fun-run/feed/</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+		</item>
+	</channel>
+</rss>

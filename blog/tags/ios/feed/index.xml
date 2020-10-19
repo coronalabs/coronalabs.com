@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iOS &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ios/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iOS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: Alpha Omega &#8211; A game of jumbled words</title>
+		<link>/blog/2016/05/06/featured-app-alpha-omega-a-game-of-jumbled-up-words/</link>
+		<pubDate>Fri, 06 May 2016 18:43:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=66659</guid>
+		<description><![CDATA[Can an Internet meme be turned into a successful, compelling game built with Corona? For BorderLeap, the answer was "yes!". Read further to learn about "Alpha Omega."]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66661" src="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png" alt="alpha-omegaIcon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/alpha-omegaIcon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />As a programmer, spelling isn&#8217;t my greatest strength, but I&#8217;m one of those people who can look at a jumbled-up word and actually read it. In fact, many people can decipher words as long as the first and last letters are correct and it&#8217;s the proper length.</p>
+<p>For example, can you read this?</p>
+<p style="padding-left: 30px;">&#8220;<em>it deosn&#8217;t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae.</em>&#8220;</p>
+<p>What started as an urban legend and Internet meme seems to actually have some facts and a term behind it: <a href=https://en.wikipedia.org/wiki/Typoglycemia target="_blank">typoglycemia</a>.<b> </b></p>
+<p>Leave it to an enterprising game shop to turn this phenomenon into a compelling game. <a href=http://borderleap.com/ target="_blank">BorderLeap</a>, a small studio founded by Nate Dicken, took this concept and put together <a href=http://playalphaomega.com/ target="_blank"><em>Alpha Omega</em></a>. Originally released for the &#8220;small screen&#8221; in April 2014, BorderLeap recently released the game for OS X desktop.</p>
+<p>Since then, <em>Alpha Omega</em> has reached the #1 featured position across 150+ countries. It has also been the #1 paid &#8220;Puzzle&#8221; and #1 paid &#8220;Word&#8221; game, and it currently boasts accolades as the #2 overall paid game and #3 grossing game in the Mac App Store. As if that&#8217;s not enough, Apple featured <em>Alpha Omega</em> with a large banner in the &#8220;Word&#8221; game subcategory and also featured it in the &#8220;All Time Greats&#8221; in the same category.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fuvSOzmFgzw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Want to see what the buzz is all about and test your skills at unscrambling jumbled words? <em>Alpha Omega</em> is available for <a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega>Google Play</a>, and <a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12>OS X</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p>What kind of success can you achieve? Download <a href=https://www.coronalabs.com/ target="_blank">Corona SDK</a> and get started today!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Tutorial: Using iCloud Key-Value Storage</title>
+		<link>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/</link>
+		<comments>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:06:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[storage]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64971</guid>
+		<description><![CDATA[In this tutorial, learn how to save and retrieve key-value pairs in Apple's iCloud.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are pleased to introduce the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, available as of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>. This plugin is currently in &#8220;beta&#8221; while we finish polishing the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and give it further rounds of testing.</p>
+<p>In this tutorial, we&#8217;ll explore <strong>Key-Value Storage</strong> or <strong>KVS</strong> (we will address &#8220;Documents in iCloud&#8221; and &#8220;CloudKit&#8221; in other tutorials).</p>
+<h3>Overview</h3>
+<p>KVS allows you to store &#8220;key-value&#8221; pairs in Apple&#8217;s iCloud using a very simple set of API calls. With KVS you can store strings, numbers, and tables of data using a simple <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> call.</p>
+<p>Before you dive in, there are some KVS limits to be aware of:</p>
+<ul>
+<li>You can use 1 megabyte of storage at most.</li>
+<li>You can have up to 1024 total keys.</li>
+<li>Keys can be up to 64 bytes long and include unicode characters. Unicode characters take up more space than alpha-numeric characters. You can use up to 63 alpha-numeric characters.</li>
+</ul>
+<p>Depending on your requirements, you can use one key with a lot of tabled data, or you can use many keys with separate bits of data. Keep in mind that when you sync one key with a lot of data, you&#8217;re changing a lot at once. Also remember that data is generally synced over both WiFi and Cellular, so syncing keys with large amounts of data can be time consuming, even when only one small part of that data changed.</p>
+<h3>Provisioning your app</h3>
+<p>Before you can deploy your iCloud-capable app to the store, your provisioning profile must have iCloud enabled. This is done in the <strong>Member Center</strong> of the <a href=https://developer.apple.com/ target="_blank">Apple Developer</a> portal under <strong>Certificates, Identifiers &amp; Profiles</strong>. Once there, click <strong>Identifiers</strong> → <strong>App IDs</strong>. Click on the desired app (it can <strong>not</strong> use a wildcard App ID) and scroll down to the <strong>iCloud</strong> row. There, check the box to enable iCloud. Next, click the radio button to enable CloudKit, then click on the <strong>Edit</strong> button.</p>
+<p><img class="alignnone size-full wp-image-64973" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.01.58-PM.png" alt="Screen Shot 2015-12-16 at 7.01.58 PM" width="667" height="132" /></p>
+<p>On the next screen, check the box for your app&#8217;s bundle ID:</p>
+<p><img class="alignnone size-full wp-image-64972" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.00.01-PM.png" alt="Screen Shot 2015-12-16 at 7.00.01 PM" width="658" height="77" /></p>
+<p>Click <strong>Continue</strong> and then <strong>Done</strong>. At this point, you will need to regenerate your provisioning profile (see the <strong>Creating Provisioning Profiles</strong> section <a href=https://docs.coronalabs.com/daily/guide/distribution/iOSBuild/index.html>here</a>).</p>
+<h3>Updating build.settings</h3>
+<p>To include the iCloud plugin, you must add it to your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = {
+
+    plugins =
+    {
+        [&quot;plugin.iCloud&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, osx=true, appletvos=true },
+        },
+    },
+}</pre><p>In addition, you must edit the block for <code>iphone</code> and/or <code>tvos</code>:</p><pre class="crayon-plain-tag">settings = {
+
+    iphone = {
+        iCloud = true, 
+        plist = {
+ 
+        }
+    },
+
+    -- Optional (only for use with Apple TV and tvOS)
+    tvos =
+    {
+        iCloud = true,
+    },
+}</pre><p></p>
+<h3>Corona Enterprise</h3>
+<p>For Enterprise builds, you have to include the <code>Corona_plugin_iCloud.framework</code> which is located in the Enterprise plugins download tab on the <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Builds page</a>.</p>
+<p>In addition, there are some Xcode settings required for enabling iCloud, located on the project&#8217;s <strong>Capabilities</strong> screen. Here, ensure that iCloud is enabled and that <strong>Key-value storage</strong> is checked.</p>
+<p><img class="alignnone size-full wp-image-64976" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.27.05-PM.png" alt="Screen Shot 2015-12-16 at 7.27.05 PM" width="695" height="264" /></p>
+<h3>Saving values to iCloud</h3>
+<p>In any scene or Lua file where you need to access iCloud services, you must require the plugin:</p><pre class="crayon-plain-tag">local iCloud = require( &quot;plugin.iCloud&quot; )</pre><p>Then, when you&#8217;re ready to save some data, simply call <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> with a key and value, for example:</p><pre class="crayon-plain-tag">iCloud.set( &quot;playMusic&quot;, &quot;on&quot; )</pre><p>This will set a key named <code>playMusic</code> with the value of <code>"on"</code>.</p>
+<h4>Accepted values</h4>
+<p>KVS allows you to store the following data types:</p>
+<ul>
+<li>numbers</li>
+<li>strings</li>
+<li>tables</li>
+</ul>
+<p>While you cannot store booleans this way, they can be part of table data. Alternatively, you can simply use numbers like <code>1</code> or <code>0</code> to indicate true or false, or just store the strings <code>"true"</code> or <code>"false"</code>, but you will need to convert them back to boolean values before you use them as Lua booleans.</p>
+<p>Note that if you choose to store a table, it must contain only <strong>key-value pairs</strong>. Tables with numeric keys (arrays) can not be stored directly as tables. In other words, the following array will produce an error if you attempt to store it to KVS:</p><pre class="crayon-plain-tag">local array = { true, 0, 10 }   -- This is analogous to { 1=true, 2=0, 3=10 }
+iCloud.set( &quot;myArray&quot;, array )  -- This value will not be stored</pre><p>If you have an array to store, one option is to use <a href=https://docs.coronalabs.com/api/library/json/encode.html target="_blank">json.encode()</a> on the table and save it as string data, then use <a href=https://docs.coronalabs.com/api/library/json/decode.html target="_blank">json.decode()</a> on the string to convert it back into a table after you retrieve it from iCloud.</p>
+<h3>Retrieving data</h3>
+<p>To get data back from KVS, simply call the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/get.html target="_blank">iCloud.get()</a> method:</p><pre class="crayon-plain-tag">local musicOn = iCloud.get( &quot;playMusic&quot; )</pre><p>If the value can&#8217;t be found, <code>nil</code> will be returned. It&#8217;s that simple!</p>
+<h3>Deleting data</h3>
+<p>If you no longer need some data, you can recover used storage by deleting the key from iCloud using the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/delete.html target="_blank">iCloud.delete()</a> method:</p><pre class="crayon-plain-tag">iCloud.delete( &quot;playMusic&quot; )</pre><p></p>
+<h3>Synchronizing data</h3>
+<p>An important purpose of iCloud is to allow users with multiple devices to share data between them. In other words, if you finish a level in a game on your iPad, you should be able to pick up your iPhone and play the next level. If you load certain saved settings (data) from KVS when the app starts, the app should have the latest data &#8212; but what if the app is open at the same time on both devices and changes to the data occur?</p>
+<p>One option is to enable a listener function via <a href=https://docs.coronalabs.com/daily/plugin/iCloud/setKVSListener.html target="_blank">iCloud.setKVSListener()</a> that will execute when values change, effectively keeping your app up-to-date. Consider this block of code:</p><pre class="crayon-plain-tag">local function on_iCloudUpdate( event )
+    if ( event.type == &quot;initialSync&quot; or event.type == &quot;serverChange&quot; ) then
+        musicOn = iCloud.get( &quot;playMusic&quot; )
+    end
+end
+
+iCloud.setKVSListener( on_iCloudUpdate )</pre><p>See the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/event/iCloudKVSEvent/index.html target="_blank">iCloudKVSEvent</a> documentation for the various values returned as part of the <code>event</code> table.</p>
+<h3>Conclusion</h3>
+<p>This tutorial is just the first in respect to storing and sharing data in Apple&#8217;s iCloud. To learn more, please refer to the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">iCloud documentation</a>.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>About &#8220;App Transport Security&#8221; (ATS)</title>
+		<link>/blog/2015/09/17/about-app-transport-security-ats/</link>
+		<comments>/blog/2015/09/17/about-app-transport-security-ats/#comments</comments>
+		<pubDate>Fri, 18 Sep 2015 00:12:55 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ATS]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iOS 9]]></category>
+		<category><![CDATA[OS X 11]]></category>
+
+		<guid isPermaLink="false">/?p=63998</guid>
+		<description><![CDATA[NOTE: This tutorial has been replaced by the Managing App Transport Security guide.]]></description>
+				<content:encoded><![CDATA[<p><strong>NOTE:</strong> This tutorial has been replaced by the <a href=https://docs.coronalabs.com/guide/hardware/appleATS/index.html>Managing App Transport Security</a> guide.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/17/about-app-transport-security-ats/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Xcode Requirements: iOS 8.3 + iOS 8.4-beta</title>
+		<link>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/</link>
+		<comments>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/#comments</comments>
+		<pubDate>Wed, 22 Apr 2015 22:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[8.3]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=62399</guid>
+		<description><![CDATA[Apple just released iOS 8.3 SDK, so starting in <a href="https://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default. ]]></description>
+				<content:encoded><![CDATA[<p>Apple just released iOS 8.3 SDK, so starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default.</p>
+<p>As always, the target iOS version does not affect backward compatibility. The apps you build with Corona will still be backwards compatible to iOS 6.0.</p>
+<h3>Changes to Xcode Requirements</h3>
+<p>Starting with 2015.2616, Corona Simulator will be more stringent about the version of Xcode you have installed (older versions work like before, in a less stringent manner). In particular, when you select a particular target iOS version, you must have the corresponding version of Xcode installed. For example, if you want to target iOS 8.3, you must install Xcode 6.3 which includes iOS 8.3 SDK.</p>
+<p>We made these changes due to <a href=https://devforums.apple.com/message/1127742>subtle issues</a> that were introduced in Xcode 6.3. To ensure that device builds for iOS 8.3 work properly with plugins, we had to make Corona Simulator more picky about which version of Xcode it uses; otherwise, device builds involving plugins will fail.</p>
+<p>Apple engineers have suggested that this more stringent pairing of iOS SDK version to Xcode version is technically more correct. While Xcode has been more forgiving in the past, we have chosen the more conservative route to minimize chances for future errors that you may encounter.</p>
+<h3>Unsupported Xcode versions</h3>
+<p>The changes we describe simply mean that you&#8217;ll have to download the appropriate version of Xcode whenever Corona Simulator changes its default iOS version target.</p>
+<p>However, if you have a version of Xcode installed that does <strong>not</strong> match what Corona Simulator expects, you can still use it. We call this the &#8220;I&#8217;m feeling lucky&#8221; option. That means, maybe it&#8217;ll work; maybe it won&#8217;t. Either way, you&#8217;re free to try, but you&#8217;re on your own. We won&#8217;t support it.</p>
+<p>In this situation, you will see the following warning dialog. You can still proceed, but you&#8217;ll also see a big <code>"UNSUPPORTED"</code> in the iOS SDK pulldown.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png alt="Corona Simulator iOS SDK mismatch warning" width="563" height="322" class="aligncenter size-full wp-image-62527" /></a></p>
+<h3>Multiple versions of Xcode</h3>
+<p>Sometimes there are situations where you will want multiple versions of Xcode installed. One reason is that we include access to iOS beta builds, e.g. iOS 8.4-beta is a version you can target in the latest daily build, as shown in the following diagram:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png alt="Corona Simulator Device Build Dialog Xcode 6.3" width="562" height="322" class="aligncenter size-full wp-image-62521" /></a></p>
+<p>In order to access the iOS 8.4-beta target, you must (of course) install that version. You will also need to use <a href=https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcode-select.1.html>xcode-select</a> to ensure that Corona Simulator finds this version of Xcode. You can type <code>xcode-select -p</code> to find out which version of Xcode is currently selected on your system.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>CoronaViewer: Instant on-device previews</title>
+		<link>/blog/2014/06/26/coronaviewer-instant-on-device-previews/</link>
+		<comments>/blog/2014/06/26/coronaviewer-instant-on-device-previews/#comments</comments>
+		<pubDate>Thu, 26 Jun 2014 12:32:25 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59031</guid>
+		<description><![CDATA[One of the things app developers love about Corona is the fast iteration. 
+
+Today, we're taking that one step further with CoronaViewer - edit your project from your desktop and preview them right away on your device!]]></description>
+				<content:encoded><![CDATA[<p>One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. </p>
+<p>Today, we&#8217;re going to take that one step further with CoronaViewer. It&#8217;s going to dramatically improve your productivity. With CoronaViewer, you&#8217;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. </p>
+<p>CoronaViewer is an app that you run on your device. It works by sync&#8217;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#8217;ll automatically be updated to CoronaViewer.</p>
+<p>Here&#8217;s a quick video showing how CoronaViewer works in practice:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/bpXE6MgyPQc?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#8217;ll find it&#8217;s well worth it to be able to preview your app instantly on device.</p>
+<p>To access CoronaViewer, you&#8217;ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/26/coronaviewer-instant-on-device-previews/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #91 &#8211; Exploring Composer GUI Beta, iOS Calendar Events, and Social Sharing Panels</title>
+		<link>/blog/coronageek/corona-geek-hangout-91/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-91/#respond</comments>
+		<pubDate>Mon, 26 May 2014 21:51:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Calendar Events]]></category>
+		<category><![CDATA[Composer GUI]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Social Sharing]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58668</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we took a sneak peek at a beta version of Composer GUI. We explored a creative solution for implementing iOS calendar events in Corona, and we walked through example code for creating social sharing panels within our apps.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/z5zasmLvKBI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we took a sneak peek at a beta version of <a href=/blog/2014/04/17/composer-gui-beta/>Composer GUI</a>. We explored a creative solution for implementing iOS calendar events in Corona, and we walked through example code for creating social sharing panels within our apps. It was a fun show. Thanks to everyone who listened in live and joined the developer panel.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-hangout-90/>Hackathon Pro Tips</a></li>
+<li><a href=http://coronium.io/ target="_blank">Coronium Cloud Server</a></li>
+<li><a href=http://docs.coronalabs.com/guide/distribution/buildSettings/index.html>Corona Build Settings Docs</a></li>
+<li><a href=/blog/2014/04/08/widgets-creating-a-sliding-panel/>Creating a Sliding Panel</a></li>
+<li><a href=http://docs.coronalabs.com/daily/composer/tutorial.html>Composer GUI Tutorial</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-91/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-91-2014-05-26-composer-gui-ios-calendar-events-sharing-panels.mp3" length="60746728" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-91-2014-05-26-composer-gui-ios-calendar-events-sharing-panels.mp3" length="60746728" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-91-2014-05-26-composer-gui-ios-calendar-events-sharing-panels.mp3" length="60746728" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-91-2014-05-26-composer-gui-ios-calendar-events-sharing-panels.mp3" length="60746728" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Changes in minimum OS version: iOS 6</title>
+		<link>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/</link>
+		<comments>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/#comments</comments>
+		<pubDate>Fri, 25 Apr 2014 19:18:44 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[GameCenter]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ios6]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=58354</guid>
+		<description><![CDATA[Starting in <a href="http://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2014.2277, we are changing the minimum supported version on iOS from 5.1 to 6. This means that if you do a device build with 2014.2277 (or later), your app will not run on a device whose version is below iOS 6.
+
+This change is needed to move our iOS architecture forward, and finally pay off technical debt that has been accumulating for nearly 18 months, which is an eternity in the mobile space.]]></description>
+				<content:encoded><![CDATA[<p>Starting in <a href=http://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2014.2277, we are changing the minimum supported version on iOS from 5.1 to 6. This means that if you do a device build with 2014.2277 (or later), your app will not run on a device whose version is below iOS 6.</p>
+<p>This change is needed to move our iOS architecture forward, and finally pay off technical debt that has been accumulating for nearly 18 months — an eternity in the mobile space.</p>
+<p>Now that previous iOS versions (3.x, 4.x, 5.x) account has declined to a mere 2% (according to <a href=https://developer.apple.com/support/appstore/>Apple</a>), we can no longer justify accumulating this sort of technical debt. It&#8217;s difficult to maintain; it&#8217;s fragile; and it&#8217;s not future-proof — we inevitably had to introduce new hacks.</p>
+<p>Back when iOS 6 was released, Apple made fundamental changes to how apps supported multiple orientations. Unfortunately, these changes were not compatible with code designed to work against earlier versions of iOS. </p>
+<p>Historically, to maintain support for both older and modern iOS versions, we had to do things that were not true to the modern way of doing things in iOS. This created a conflict in our architecture, one we predicted would generate problems in the future. And we were right — you may recall these unsavory strings in your build.settings:</p>
+<p></p><pre class="crayon-plain-tag">CoronaUseIOS6PortraitOnlyWorkaround
+CoronaUseIOS6LandscapeOnlyWorkaround
+CoronaUseIOS6IPadPhotoPickerLandscapeOnlyWorkaround
+CoronaUseIOS7LandscapeOnlyWorkaround
+CoronaUseIOS7IPadPhotoPickerLandscapeOnlyWorkaround</pre><p></p>
+<p>In the latest daily builds, we have modernized our orientation support, fully embracing the iOS 6 model for orientation support, thus removing the internal architectural conflict. That means we&#8217;ll no longer be able to deal with orientation properly on older iOS versions such as 5.1.</p>
+<p>The great thing about these changes are that they completely remove the need for the above hacks. For example, built-in UI like the photo picker and Game Center no longer require the hack. They&#8217;ll also eliminate the need for them in the <em>future</em>, so newer UI that Apple introduces will not need separate hacks. </p>
+<p>If you must release on iOS 5.1, we recommend you use an older daily build (prior to 2014.2277) or the last public release. All future daily builds and future releases will require iOS 6.0 or higher.</p>
+<p>&#8212;</p>
+<p>Enterprise users take note that if you update to the latest daily build: </p>
+<p>(1) You should update your Xcode project so that the &#8220;iOS Deployment Target&#8221; is 6.0, as this controls the minimum version.<br />
+(2) &#8216;UISupportedInterfaceOrientations&#8217; is now ignored, so if you want to control the orientations that the application (not to be confused with the Corona content) supports, your implementation of the &#8216;CoronaDelegate&#8217; should override &#8216;application:supportedInterfaceOrientationsForWindow:&#8217;.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/04/25/changes-in-minimum-os-version-ios-6/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elevator Joe</title>
+		<link>/blog/2013/11/04/app-of-the-week-elevator-joe/</link>
+		<comments>/blog/2013/11/04/app-of-the-week-elevator-joe/#comments</comments>
+		<pubDate>Mon, 04 Nov 2013 22:56:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=50949</guid>
+		<description><![CDATA[Riding on the coattails of <a href="http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/">Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, developer Erick Garayblas partnered with graphic artist Ryan Sumo to launch <a href="https://itunes.apple.com/us/app/elevator-joe/id646358937&#038;">Elevator Joe</a> in September 2013.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50951" style="margin-right: 20px; margin-left: 0px;" alt="Elevator Joe screenshot" src="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png" srcset="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM.png 184w, /wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-31-at-1.19.52-PM-150x150.png 150w" sizes="(max-width: 184px) 100vw, 184px" />Since childhood, Erick Garayblas has been fascinated with elevators. Stemming from the intrigue of how the machines coordinate with one another to fetch passengers on the proper floor at the requested time, Erick decided to create an elevator-based game. Riding on the coattails of <a href=http://www.coronalabs.com/blog/2012/03/28/guest-blog-post-the-making-of-streetfood-tycoon/>Streetfood Tycoon</a>, a game that’s enjoyed 9M+ downloads, Erick partnered with graphic artist Ryan Sumo to launch <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937&>Elevator Joe</a> in September 2013.</p>
+<p><img class="alignright  wp-image-50950" style="margin-left: 20px; margin-top: 2px;" alt="Elevator Joe" src="/wordpress/wp-content/uploads/2013/10/Elevator-Joe.jpeg" width="288" height="511" />Elevator Joe is a time management and elevator simulation game where you have to bring tiny &#8220;Chibizens&#8221; to their destination floors as fast as possible. Along the way, you can upgrade your elevator, work through scenarios, unlock various items, and customize your tower. For every Chibizen you deliver, you receive Chibi Yens that can be used to purchase upgrades such as skill points, a new floor in the tower, and more. However, time is of the essence as Chibizens are a bit impatient and turn bright red when they’ve waited too long.</p>
+<p>The game took Erick and Ryan four months to develop, with Erick focusing on coding and design while Ryan worked on graphics. Erick noted that, &#8220;Corona SDK made it easier for us to prototype, iterate, and improve the game as we moved along.&#8221;</p>
+<p>Download Elevator Joe from <a href=https://itunes.apple.com/us/app/elevator-joe/id646358937>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.kuyimobile.elevatorjoe>Google Play</a> for a free and enjoyable challenge!</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/mE8VF1k6bSY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/04/app-of-the-week-elevator-joe/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Mind Stuck</title>
+		<link>/blog/2013/10/07/app-of-the-week-mind-stuck/</link>
+		<comments>/blog/2013/10/07/app-of-the-week-mind-stuck/#comments</comments>
+		<pubDate>Mon, 07 Oct 2013 20:04:51 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[puzzle game]]></category>
+
+		<guid isPermaLink="false">/?p=47647</guid>
+		<description><![CDATA[Based on the concept of the award-winning game "Vexed," <a href="https://itunes.apple.com/us/app/mind-stuck/id683164356?mt=8">Mind Stuck</a> is a free Corona-powered block puzzler for iOS. In Mind Stuck, you're given an assortment of blocks and tasked with matching blocks of the same symbol and color by sliding them from left to right to clear the board.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-thumbnail wp-image-47648" style="margin-top: 0px; margin-right: 20px; margin-bottom: 10px;" alt="Mind Stuck icon" src="/wordpress/wp-content/uploads/2013/10/Mind-Stuck-icon-150x148.png" /></p>
+<p>Based on the concept of the award-winning game &#8220;Vexed,&#8221; <a href=https://itunes.apple.com/us/app/mind-stuck/id683164356?mt=8>Mind Stuck</a> is a free Corona-powered block puzzler for iOS.</p>
+<p><img class="alignright size-medium wp-image-47650" alt="Mind Stuck screenshots" src="/wordpress/wp-content/uploads/2013/10/Mind-Stuck-screenshots-283x300.png" />In Mind Stuck, you&#8217;re given an assortment of blocks and tasked with matching blocks of the same symbol and color by sliding them from left to right. While you can push the blocks from side to side and allow gravity to drop them downwards, you can’t move the blocks upwards, making this already tricky game considerably more challenging. Ultimately, the goal is to clear all the blocks in each level.</p>
+<p>To help you along, Mind Stuck features a &#8220;hint system&#8221; which guides you through a step-by-step solution of a puzzle in case you become stumped. While the app offers a few free hints, you can acquire more through in-app purchases.</p>
+<p>With more than 200 brain-warping levels, Mind Stuck is a great way to challenge your mind. Download <a href=https://itunes.apple.com/us/app/mind-stuck/id683164356?mt=8>Mind Stuck from iTunes</a> and let us know what you think!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/07/app-of-the-week-mind-stuck/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elements of Photography</title>
+		<link>/blog/2013/09/23/app-of-the-week-elements-of-photography/</link>
+		<comments>/blog/2013/09/23/app-of-the-week-elements-of-photography/#comments</comments>
+		<pubDate>Mon, 23 Sep 2013 20:53:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=45686</guid>
+		<description><![CDATA[Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in "auto" mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href="http://elementsofphotography.com/">Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-thumbnail wp-image-45687" style="margin-top: 0px; margin-right: 20px;" alt="Elements of Photography icon" src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png" align="left" srcset="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png 150w, /wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM.png 249w" sizes="(max-width: 150px) 100vw, 150px" />Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in &#8220;auto&#8221; mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href=http://elementsofphotography.com/>Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade. Organized into chapters with beautiful HD photos and easy-to-understand text snippets, the app offers a beginner course in &#8220;Photography 101,&#8221; covering everything from focal length to shutter speed to advanced topics.</p>
+<p>Hoping to reach as many users as possible, the team developed the app with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> to target photographers-in-training who use iOS, Android, and Kindle devices. Lead developer and amateur photographer Amiya Patanaik told us, “Developing natively was out of question as it would have been prohibitively time consuming. Moreover, no one in the development team had a Mac and for a long time, I did not even have an Android phone. So we had to choose a cross-platform development framework to satisfy our needs.”</p>
+<p class="ac"><img src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.24.15-AM.png" alt="Elements of Photography icon" class="wp-image-46027" /></p>
+<p>The team considered wrapping the app with PhoneGap, but after some experimentation, felt it lacked the polish for commercial appeal. After evaluating other tools like Cocos2d-x, Moai, Gideros, GameMaker, and GameSalad, the team decided on Corona SDK for the platform&#8217;s rapid development capabilities, ease of use, and level of control. Patanaik noted that, “Most importantly, Corona SDK offered a vibrant community that shares code and ideas freely. This made it very easy to troubleshoot when we were stuck.” You can read more about Patanaik&#8217;s experience working with Corona SDK on his <a href=http://aptnk.in/2013/06/one-code-to-rule-them-all-writing-cross-platform-application-from-single-codebase-using-corona-sdk/>personal blog</a>.</p>
+<p>With over 20,000 downloads to date, Elements of Photography is even used by the <a href=http://www.veteraneducation.org>Veterans/ Vocational Education and Training (V-VET)</a>, a non-profit organization that helps recently-returned military veterans increase their skill set, assimilate into society, and generate an income.</p>
+<p>If you have a DSLR but don&#8217;t understand its full capabilities, or if you simply want to learn the basics of photography, download the app from <a href=https://itunes.apple.com/us/app/elements-of-photography/id654806469?mt=8>iTunes</a>, <a href= https://play.google.com/store/apps/details?id=com.aksharastudios.eop>Google Play</a> or the <a href=http://www.amazon.com/Akshara-Studios-Elements-of-Photography/dp/B00D5XYY4M>Amazon Appstore</a>.</p>
+<p><iframe src="//www.youtube.com/embed/lsIzXZSVbZE" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/23/app-of-the-week-elements-of-photography/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cross promotion &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/cross-promotion-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>cross promotion &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Weekly Update: New Plugin Partners + Core gets lighter</title>
+		<link>/blog/2013/05/21/corona-weekly-update-new-plugin-partners-core-gets-lighter/</link>
+		<comments>/blog/2013/05/21/corona-weekly-update-new-plugin-partners-core-gets-lighter/#comments</comments>
+		<pubDate>Tue, 21 May 2013 13:18:09 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[cross promotion]]></category>
+		<category><![CDATA[mobile ads]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=34387</guid>
+		<description><![CDATA[Today, I'm happy to announce our first batch of <a href="www.coronalabs.com/resources/plugins">Corona Plugin partners</a>.
+
+It's great partners like these that enable Corona developers to access the best new functionality and 3rd party services. In particular, today's batch span a wider variety of services from app advertising to cross-promotion and  value-exchange ads, from social campaigns to game controllers.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m happy to announce our first batch of <a href=http://www.coronalabs.com/resources/plugins>Corona Plugin partners</a>:</p>
+<ul>
+<li>Sponsorpay</li>
+<li>Tap for Tap</li>
+<li>inneractive</li>
+<li>Green Throttle</li>
+<li>Carrot</li>
+</ul>
+<p>It&#8217;s great partners like these that enable Corona developers to access the best new functionality and 3rd party services. In particular, today&#8217;s batch span a wide variety of services from app advertising to cross-promotion and value-exchange ads, from social campaigns to game controllers.</p>
+<p>You can see more information at the <a href=http://www.coronalabs.com/resources/plugins>Corona Plugin Directory</a>. You&#8217;ll notice a &#8220;Docs&#8221; link below each partner that&#8217;s got all the technical docs you&#8217;ll need to use the plugin in your app. In the coming days, you will see more info from these partners about their services and why you should use them.</p>
+<p>Just keep in mind that, for now, you need access to daily builds to use these plugins.</p>
+<p>This is just the first wave. We have more partners coming in the next few weeks, adding to the growing list of additional features and services you&#8217;ll want to use in your apps. As you can see, Corona plugins are going to play an increasingly important role in your apps.</p>
+<h3>Corona core gets lighter</h3>
+<p>Another things that is happening this week is that the core Corona engine is about to get lighter.</p>
+<p>Last week, I talked about <a href=http://www.coronalabs.com/blog/2013/05/13/corona-weekly-update-plugins-now-beta-in-daily-builds/>our plans</a> to move certain services into plugins that currently reside in the core Corona engine.</p>
+<p>That move is happening this week. In tomorrow&#8217;s daily build (<em>after</em> 1115), the following services will be moved into plugins:</p>
+<ul>
+<li>iAds: iOS</li>
+<li>InMobi: iOS + Android</li>
+<li>Inneractive: Android</li>
+</ul>
+<p>This will make the core even smaller than it already is.</p>
+<p>We&#8217;ll also be rolling out a new &#8220;Plugins&#8221; section in our daily build docs where you can get details on the &#8216;build.settings&#8217; changes needed to use those plugins in your device builds. Again, this will start in tomorrow&#8217;s daily builds.</p>
+<h3>Plugins for Enterprise</h3>
+<p>Two final notes for Corona Enterprise users.</p>
+<p>First, we plan to make plugin binaries available to you soon. These plugins will probably be available as a separate download. That&#8217;s because plugins will generally be the same across daily builds.</p>
+<p>Second, if you are using Corona Enterprise and you require InMobi or inneractive, the corresponding plugin binaries will not be available immediately. So if you use those services, stay on 1115 or earlier for now. These will be available in the separate download I mentioned above.</p>
+<p><center>* * *</center></p>
+<p>We&#8217;re going to have more plugin announcements in the coming weeks, but after Memorial Day, what I&#8217;d like to get back to in the weekly updates is more eye candy. With that in mind, if you have a favorite filter effect, let me know!</p>
+<p>Oh, and if you happen to be in the Big Apple today, we&#8217;re exhibiting at AppNation, <a href=http://appnationconference.com/nyc/schedule/masters-of-monetization-part-ii-free-paid-or-freemium/>hosting a panel</a> on app monetization, and also crashing the <a href=http://www.meetup.com/Corona-SDK-NYC-Meetup/>Corona NYC meetup</a> to share the latest and greatest.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/21/corona-weekly-update-new-plugin-partners-core-gets-lighter/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

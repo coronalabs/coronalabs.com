@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>laserdog &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/laserdog/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>laserdog &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>PKTBALL &#8211; the biggest small game Laser Dog has ever made</title>
+		<link>/blog/2016/04/08/devblog-pktball-the-latest-from-laser-dog-studios/</link>
+		<comments>/blog/2016/04/08/devblog-pktball-the-latest-from-laser-dog-studios/#comments</comments>
+		<pubDate>Fri, 08 Apr 2016 23:11:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[devlog]]></category>
+		<category><![CDATA[laserdog]]></category>
+		<category><![CDATA[mobile games]]></category>
+
+		<guid isPermaLink="false">/?p=66413</guid>
+		<description><![CDATA[Learn why Rob Allison of Laser Dog studios thinks that their new game PKTBALL is the biggest small game they have ever made.]]></description>
+				<content:encoded><![CDATA[<p>Repeatedly publishing hit titles that shoot up in the app store rankings is a skill that Rob Allison and Simon Renshaw from <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog</a> seem to have mastered. First <a href=http://www.laserdog.co.uk/alone/ target="_blank">Alone</a>, to <a href=http://www.laserdog.co.uk/hopiko-1/ target="_blank">HoPiKo</a>, and now <a href=http://apple.co/1VecfXV target="_blank">PKTBALL</a>, which they call &#8220;the biggest small game we&#8217;ve ever made.&#8221;</p>
+<p>PKTBALL is based on the classic air hockey design pattern with a lot of focus on great graphics and great touch controls. But even a simple game can take on a life of its own and the Laser Dog duo has done big things with this little game, including multiplayer support, rewarded game play, and a natural interaction model that just feels right.</p>
+<p><iframe width="480" height="854" src="//giphy.com/embed/l0O7O9g8owQEcNYAw" frameborder="0" class="giphy-embed" allowfullscreen="allowfullscreen"></iframe></p>
+<p><iframe width="480" height="270" src="//giphy.com/embed/3o85fSsMDO7VK0lCp2" frameborder="0" class="giphy-embed" allowfullscreen="allowfullscreen"></iframe></p>
+<p>As a special treat, Rob also blogged about what it took to make PKTBALL into an engaging game. Head on over to <a href=http://www.laserdog.co.uk/blog/5/4/2016/pktball-the-biggest-small-game-weve-ever-made target="_blank">the Laser Dog devlog</a> to learn how the idea came about, how the project was divided between design and development, and why they decided to make a game within a game to give out player rewards.</p>
+<p><iframe width="480" height="270" src="//giphy.com/embed/xTiQyMMYlQfWQyIy9a" frameborder="0" class="giphy-embed" allowfullscreen="allowfullscreen"></iframe></p>
+<p>PKTBALL is already featured as an <a href=http://apple.co/1VecfXV>Editors&#8217; Choice pick in the Apple App Store</a> which should inspire us all as app developers.</p>
+<p>Thanks Rob and Simon for showing off what Corona SDK can do! <a href=/ target="_blank">Download Corona today</a> and feed your imagination.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/08/devblog-pktball-the-latest-from-laser-dog-studios/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

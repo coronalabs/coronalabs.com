@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>on-demand resources &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/on-demand-resources/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>on-demand resources &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Apple &#8220;on-demand resources&#8221; plugin now available</title>
+		<link>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/</link>
+		<comments>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 23 Mar 2016 17:50:43 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[on-demand resources]]></category>
+
+		<guid isPermaLink="false">/?p=66158</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the "on-demand resources" plugin for tvOS. Read further to learn how this can be used to minimize your app footprint.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/on-demand-resources target="_blank">on-demand resources</a> plugin, currently supported on tvOS. Similar in concept to Android expansion files (but functionally quite different), on-demand resources allow you to specify parts/assets of your app which can be downloaded when needed. This is especially important for Apple TV because Apple limits tvOS apps to a maximum size of 200 megabytes and they provide no local storage for data. Instead, they expect developers to use on-demand resources to manage which assets are available at which points in the app.</p>
+<h3>Setup</h3>
+<p>Like any plugin, begin by including it in your <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.onDemandResources&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { tvos=true }
+        },
+    },      
+}</pre><p></p>
+<h3>Defining resources</h3>
+<p>To make on-demand resources work, you must designate various files or folders by &#8220;tags&#8221; inside the <code>tvos</code> → <code>onDemandResources</code> table of <code>build.settings</code>. Each entry is itself a table containing two required key-value pairs: the tag name (<code>tag</code>) and the file/folder it refers to (<code>resource</code>):</p><pre class="crayon-plain-tag">settings =
+{
+    tvos = 
+    {
+        onDemandResources =
+        {
+            { tag=&quot;introMusic&quot;, resource=&quot;intro.mp4&quot;, type=&quot;prefetch&quot; },
+            { tag=&quot;imgTutorial&quot;, resource=&quot;img/tutorial&quot;, type=&quot;install&quot; },
+            { tag=&quot;imgL2&quot;, resource=&quot;img/level2&quot; },
+        },
+    },
+}</pre><p>In addition, you can specify a download priority for each tag. This is done via the <code>type</code> key with one of the following values:</p>
+<ul>
+<li><code>"install"</code> &#8212; Use this for critical files that may be required immediately when the app first launches. These resources download in parallel with the app download itself, however they are not bundled in the app package as persistent resources.</li>
+<li><code>"prefetch"</code> &#8212; These resources will start downloading in the background after the app finishes downloading.</li>
+<li>No <code>type</code> &#8212; These are resources you fetch when you need them.</li>
+</ul>
+<p>Regardless of the <code>type</code> value, you need to explicitly request the tag before you can use it. Tags that don&#8217;t have a type are requested at a logical point during the app flow.</p>
+<h3>Requesting content</h3>
+<p>To download a resource file/folder when needed, for example assets for the second level after the player completes the first level, simply call the <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> function. This may be considered the &#8220;core&#8221; function of the plugin, as it&#8217;s required before you can access on-demand resources.</p><pre class="crayon-plain-tag">-- Require the plugin
+local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+
+    if not ( event.isError ) then
+        print( &quot;Resources for tag '&quot; .. event.tag .. &quot;' downloaded&quot; )
+    else
+        print( &quot;ERROR: errorCode = &quot; .. tostring(event.errorCode) )
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, true, odrListener )</pre><p>One of the most important aspects of <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> is the second parameter: a boolean <code>true</code> or <code>false</code>. Setting this to <code>true</code> (or omitting it, since <code>true</code> is the default) tells Corona to begin downloading the resources immediately.</p>
+<p>By comparison, if you set this parameter to <code>false</code>, Corona simply checks if the resources are already downloaded:</p><pre class="crayon-plain-tag">local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+    if ( event.isError ) then
+        -- Resources have not been downloaded. You need to request them.
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, false, odrListener )</pre><p></p>
+<h3>Important notes</h3>
+<ul>
+<li>All on-demand resources are subject to be evicted by the operating system if it needs space, so even your <code>install</code>&#8211; and <code>prefetch</code>-based resources should be checked for availability before you attempt to use them. If they don&#8217;t exist, you will need to request/download them again.
+<ul>
+<li>Large downloads take time, so you may consider more tags with smaller overall download sizes. Apple advises keeping tagged resources under 64 megabytes. The maximum size for a tag is 512 megabytes.</li>
+</ul>
+</li>
+<li>You have to use a service like Apple&#8217;s <a href=https://developer.apple.com/testflight/ target="_blank">TestFlight</a> to test on-demand resources &#8212; you cannot simply load the app directly onto your test device. This is the only way Apple can actually deliver the various resources from their servers.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>On-demand resources can be essential for developing tvOS games and apps, and Corona&#8217;s plugin provides the necessary interface to Apple&#8217;s servers. To learn more, please see the <a href=https://docs.coronalabs.com/plugin/onDemandResources/index.html target="_blank">documentation</a> or discuss further in the <a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

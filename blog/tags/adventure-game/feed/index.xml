@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>adventure game &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/adventure-game/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>adventure game &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: Return to Grisly Manor</title>
+		<link>/blog/2016/08/16/featured-app-return-to-grisly-manor/</link>
+		<comments>/blog/2016/08/16/featured-app-return-to-grisly-manor/#comments</comments>
+		<pubDate>Tue, 16 Aug 2016 14:57:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[adventure game]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?p=67729</guid>
+		<description><![CDATA[One of the earliest studios to achieve great success with Corona returns with their latest game, <em>Return to Grisly Manor</em>. Read on to see how Fire Maple Games continues to amaze players with beautiful, engaging adventure games.]]></description>
+				<content:encoded><![CDATA[<p>Corona developers everywhere continue to impress us with their creativity. Even small studios are raising the bar very high with incredible games.</p>
+<p>One studio that continually does amazing work is <a href=http://www.firemaplegames.com/ target="_blank">Fire Maple Games</a>. Founded by Joe Kauffman in 2008, he eventually teamed up with Pat O&#8217;Loughlin to build their first mobile adventure game, <em>The Secret of Grisly Manor</em>.</p>
+<p><em>Return to Grisly Manor</em> is a sequel to Fire Maple Games&#8217; original hit which was originally designed to run on an iPhone 2G with a slow processor and limited memory. At the time, the largest app you could download over-the-air (OTA) was 20 MB. This sequel chimes in with over 2100 art assets, 320 Lua files, and 325 sound effects. With advancements in mobile hardware and removal of OTA size limits, <em>Return to Grisly Mano</em>r is able to weigh in at four times the size of the original. All of this means that Fire Maple Games can leverage stunning images which drive amazing visual storytelling.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/_cXq6iO2cPM?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Since the original <em>Grisly Manor</em>, Fire Maple Games used <a href=http://www.coronalabs.com/ target="_blank">Corona</a> to produce two other outstanding adventure games. <em>The Lost City </em>was even more successful than <em>Grisly Manor</em> and it achieved the #1 paid app ranking in most countries. <em>The Hidden World </em>was also a commercial success, but it didn&#8217;t quite rise to the level of their previous games.</p>
+<p>&#8220;We decided to regroup and focus our efforts, and make the next game our best, most ambitious game yet,&#8221; said Kauffman.</p>
+<p><em><img class="alignnone size-full wp-image-67735" src="/wordpress/wp-content/uploads/2016/08/gm2_screenshot2_forums.jpg" alt="gm2_screenshot2_forums" width="800" height="533" /></em></p>
+<p><em>Return to Grisly Manor</em> is quickly climbing the charts and getting many 5-star reviews. Just recently released in the App Store, the game already ranks in the top 20 in several countries as well as in the top 10 for both Games/Family and Games/Adventure. On Google Play, <em>Return to Grisly Manor</em> has a 4.9/5 rating with over 70 5-star reviews. It&#8217;s also rapidly climbing the Amazon Appstore charts.</p>
+<h3>Some history</h3>
+<p>Kauffman has long had a passion for adventure games going back to the late 1970s. He has been building adventure games since he was 12 years old, starting on a classic Macintosh with 128 KB of memory. &#8220;I want to share the joy that those games brought me with other people,&#8221; he added.</p>
+<p>Joe and Pat both attended Millersville University in Pennsylvania where they studied fine art. Joe went on to work for Berkeley Systems on their popular screen saver software, but his love for games continued to fuel his imagination.</p>
+<p><img class="alignnone size-full wp-image-67739" src="/wordpress/wp-content/uploads/2016/08/gm2_screenshot5_forums.jpg" alt="gm2_screenshot5_forums" width="800" height="533" /></p>
+<p>Kauffman found <a href=http://www.coronalabs.com/ target="_blank">Corona</a> shortly after Adobe switched Flash from ActionScript 2 to ActionScript 3. &#8220;I worked as a Flash developer for many years. I loved it. I was able to create anything I could imagine. When Flash switched to AS3, I felt sort of lost. I wasn&#8217;t able to do as much as I could before and it lost a lot of its fun,&#8221; he says.</p>
+<p>&#8220;Corona was a revelation. It has the fun and ease of use of ActionScript, but it is lightning fast on mobile devices. It honestly feels like home. I can create anything I can think of. It&#8217;s wonderful,&#8221; he continued.</p>
+<h3>Conclusion</h3>
+<p><em>Return to Grisly Manor</em> is available on the <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id975985952?mt=8 target="_blank">Apple App Store</a>, <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.returntogrislymanor target="_blank">Google Play</a>, <a href=https://www.amazon.com/gp/mas/dl/android/com.firemaplegames.returntogrislymanor target="_blank">Amazon Appstore</a>, and <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id1142356357?mt=12 target="_blank">Mac App Store</a> for $2.99.</p>
+<p><a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id975985952?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.firemaplegames.returntogrislymanor target="_blank"><img class="alignnone size-full wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a> <a href=https://www.amazon.com/gp/mas/dl/android/com.firemaplegames.returntogrislymanor target="_blank"><img class="alignnone size-full wp-image-64608" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a> <a href=https://itunes.apple.com/us/app/return-to-grisly-manor/id1142356357?mt=12 target="_blank"><img class="alignnone size-full wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p><a href=http://www.firemaplegames.com/ target="_blank">Fire Maple Games</a> and their adventure titles are a great example of using Corona to achieve success. All you need is an idea and a passion to get started. Take a moment to visit the Corona <a href=https://forums.coronalabs.com/topic/64922-return-to-grisly-manor/ target="_blank">forums</a> and congratulate Joe and Pat on their wonderful new title!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/16/featured-app-return-to-grisly-manor/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Featured app – Forgotten Places: Regained Castle</title>
+		<link>/blog/2016/05/19/featured-app-forgotten-places-regained-castle/</link>
+		<pubDate>Thu, 19 May 2016 23:06:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[adventure game]]></category>
+		<category><![CDATA[artwork]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[hidden object]]></category>
+
+		<guid isPermaLink="false">/?p=66835</guid>
+		<description><![CDATA[Read further to learn about Forgotten Places: Regained Castle, an immersive adventure game with stunning artwork.]]></description>
+				<content:encoded><![CDATA[<p>Artwork can make or break a game. This is incredibly true for adventure games. For the developers at <a href=http://www.sungiftgames.com/ target="_blank">Sungift Games</a>, rocking the artwork is key to their games. Consider this week&#8217;s featured app <em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em>:</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Z7zDWf0WfA8" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Sungift Games was founded by Stas Dmytriiev and college friend Andriy Pertsov in 2009 as a self-funded indie game studio located in the Ukraine. They soon produced their first game, <a href=http://www.sungiftgames.com/games/forgotten-places-lost-circus/ target="_blank"><em>Forgotten Places: Lost Circus</em></a>, for PC and Mac. When they wanted to expand the game to other platforms as mobile gaming began to grow, they looked for an engine. They found Corona when it was still in beta and it took them just three months to port <em>Lost Circus</em> to mobile using the SDK. Fast forward to today and nine games later: their most recent game, <em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em><em>,</em> is their largest and most complex game yet.</p>
+<p>&#8220;As Lost Circus was quite successful, we raised the plank of quality we wanted to reach with the new game.&#8221; said Dmytriiev. &#8220;Corona is a great instrument and I doubt we would release our games without it. We tried other engines and SDKs like Moai, cocos-2dx, Marmalade, and Unity. They all have their pros and cons, but Corona excellently fits our needs and allows us to create games, not to struggle with technologies or platforms. We greatly appreciate the Corona team for this.&#8221;</p>
+<p><em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em> is the story of a young woman named Jane. Set in the early 20th century, her parents were killed in an accident in her childhood. A mysterious letter from her guardian who lives in an ancient castle brings her there to find answers. Your job is to guide Jane through this mystery and help break the curse of her clan.</p>
+<p><img class="alignnone size-large wp-image-66832" src="/wordpress/wp-content/uploads/2016/05/forgottenplaces1-1024x576.jpg" alt="forgottenplaces1" width="960" height="540" /></p>
+<p>As you traverse the 54 scenes covering 42 different locations, you will find incredibly detailed artwork which pulls you into this deep, rich, and challenging game. The game contains 21 mini-games and 14 puzzles along with 15 hidden object scenes to challenge you along the way. This is the kind of game that you can spend hours playing trying to solve the mystery. In fact, on <a href=http://www.wired.com/2016/03/amazon-underground-growth/ target="_blank">Amazon Underground</a> alone, the game has over 1 million minutes played. The game has also achieved a Top 100 ranking in the Games category in several countries and the Mac version is in the Top 50 in several countries. In all, over 75,000 people have downloaded the game.</p>
+<p><img class="alignnone size-large wp-image-66833" src="/wordpress/wp-content/uploads/2016/05/forgottenplaces2-1024x576.jpg" alt="forgottenplaces2" width="960" height="540" /></p>
+<p><em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em> is currently available on Apple&#8217;s iTunes App Store and Mac App Store for $4.99 and on Google Play and Amazon for free with in-app purchases to unlock the entire game. Windows desktop and Windows Phone 8 versions are currently under development as well.</p>
+<p><a href=https://itunes.apple.com/us/app/forgotten-places-regained/id1062085154?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.sungiftgames.regainedcastle target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/forgotten-places-regained/id1110722842?ls=1&mt=12 target="_blank"><img class="alignnone wp-image-64657" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a><a href=http://www.amazon.com/dp/B0195VF3RE/ target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

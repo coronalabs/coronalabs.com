@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Music &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/music/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Music &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Game development: Finding great audio for your game</title>
+		<link>/blog/2017/08/08/game-development-finding-great-audio-for-your-game/</link>
+		<pubDate>Tue, 08 Aug 2017 19:34:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Music]]></category>
+
+		<guid isPermaLink="false">/?p=72683</guid>
+		<description><![CDATA[When it comes to making a game, don't underestimate the power of quality audio. This post covers some key concepts in helping you find the right audio for your project.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-72686" src="/wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-300x300.png" alt="" width="200" height="200" srcset="/wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-300x300.png 300w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-150x150.png 150w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-768x768.png 768w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-570x570.png 570w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-500x500.png 500w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-1000x1000.png 1000w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo-700x700.png 700w, /wordpress/wp-content/uploads/2017/08/headphones-sound-audio-logo.png 1024w" sizes="(max-width: 200px) 100vw, 200px" />When it comes to making a game, whether it be for mobile, desktop, or console, we know how important <strong>art</strong> is, but for many people (in particular those with a limited budget), <strong>audio</strong> tends to take a back seat and many developers turn to the Internet to hunt for free sounds.</p>
+<p>Here are a few tips for making your game audio better:</p>
+<h3>Audio types</h3>
+<p>Games typically need several different types of audio, including:</p>
+<p><strong>Sound effects</strong> &#8212; These are the most familiar: a &#8220;ding&#8221; when you pick up a coin or a &#8220;boom&#8221; when something explodes. These tend to be small, short sounds.</p>
+<p><strong>Background music</strong> &#8212; These larger tracks set the mood for your game and they can build up excitement or provide a calming emotion for the game. These are among the most essential audio assets in any game.</p>
+<p><strong>UI effects</strong> &#8212; Quality sounds for your UI (user interface) frequently get overlooked, but adding a subtle &#8220;click&#8221; sound to a button press can provide just enough feedback to the user that it&#8217;s working.</p>
+<p><strong>Voice-overs</strong> &#8212; These are generally sounds that augment the visuals, for instance a voice reading out &#8220;eleven o&#8217;clock&#8221; to help a child tell time in an educational game.</p>
+<p><strong>Ambience</strong> &#8212; These are frequently forgotten, but they can include the sound of traffic in a city scene or song birds in a forest scene. Ambient sounds can be played randomly or whenever it makes sense.</p>
+<h3>Look for consistency</h3>
+<p>If you get your sounds from multiple audio sources (or sites), you may end up with a mix of sounds that don&#8217;t really fit well together. Your coin sound may be louder than your jump sound, or your menu background music may be heavy on guitar while your game soundtrack is filled with piano notes. This might make your beautiful art and exquisite game design look amateur.</p>
+<p>What&#8217;s the solution? One is to look for audio from the same artist. Generally speaking, audio artists tend to use similar volume levels and produce sound files in the same quality. That being said, it&#8217;s usually fine to get your sound effects from a different source than your music, as these can be integrated more harmoniously.</p>
+<h3>Understand licensing</h3>
+<p>As you rummage around the Internet looking for audio, you will find all kinds of <a href=https://gamedevelopment.tutsplus.com/articles/understanding-licenses-or-can-i-use-this-asset-in-my-game--cms-22510 target="_blank" rel="noopener">different licensing requirements</a>. Many free audio tracks (and some paid) have some form of <strong>attribution</strong> requirement. This means that you need to give <strong>credit</strong> to the sound artist. Depending on the artist, they may require that you mention their name/studio on your website or even directly within the game.</p>
+<h3>Packs vs. individual sounds</h3>
+<p>The two challenges above can often be addressed by getting sound &#8220;packs&#8221; instead of individual sounds. If you get all of your audio from one pack, it will typically be of consistent quality and have the same licensing requirements. Since the files will tend to exist in a folder, it also makes it easy to drop a small text file in that folder to keep track of the license requirements, if you intend to use the audio in multiple games over time.</p>
+<h3>Finding good packs</h3>
+<p>While Internet search queries can find a lot of good sounds, you can save time by visiting various marketplaces for game engines like <a href=/ target="_blank" rel="noopener">Corona</a>. For instance, you can visit sources like the <a href=https://marketplace.coronalabs.com/assets/audio target="_blank" rel="noopener">Corona Marketplace</a> where you will find dozens of audio packs to satisfy virtually any game you imagine.</p>
+<p>Sound effects will generally work well regardless of the game engine &#8212; artists will usually pack together similar concept sounds, so if you need sounds for a sci-fi game, you can likely find a sci-fi-specific sound pack.</p>
+<p>If you&#8217;re not seeking a specific &#8220;genre&#8221; of audio, consider packs like the <a href=https://marketplace.coronalabs.com/asset/mega-game-music-collection target="_blank" rel="noopener">Mega Game Music Collection</a>, the <a href=https://marketplace.coronalabs.com/asset/ultimate-game-music-collection target="_blank" rel="noopener">Ultimate Game Music Collection</a>, or the 8,000+ sound effects in the <a href=https://marketplace.coronalabs.com/asset/pro-sound-collection target="_blank" rel="noopener">Pro Sound Collection</a>.</p>
+<h3>Working with audio files</h3>
+<p>Once you have the sounds you need, it may be necessary to modify them slightly. For instance:</p>
+<ul>
+<li>Most short sounds don&#8217;t need to be sampled in 44.1 kHz 128-bit stereo if they’re going to play on a single-speaker phone. In these cases, you may need to <i>downsample</i> the files to be smaller, resulting in both a smaller overall app size and faster load times when the audio files are loaded into memory.</li>
+<li>Perhaps an explosion sound has 2 seconds of silence before it grows to its crescendo. You probably don&#8217;t want to have a delay between your visual explosion and the audio boom, so you may need to <i>trim</i> the clip.</li>
+</ul>
+<p>There are, of course, other actions you may want to perform like volume adjustments, converting the original format to one most compatible with your engine, and more. Here are a few tools which developers find useful when working with audio:</p>
+<ul>
+<li><a href=http://www.adobe.com/products/audition.html>Adobe Audition</a> is part of the <i>Adobe Creative Cloud</i> suite and it’s used for audio recording, editing, mixing, and finishing. It&#8217;s available for both Windows and macOS.</li>
+<li><a href=http://www.audacityteam.org/>Audacity</a> is a free, open-source application for audio recording and editing. It&#8217;s available for Windows, macOS, and Linux.</li>
+<li><a href=https://www.apple.com/mac/garageband/>GarageBand</a> is Apple’s free music production tool and it’s quite powerful. It&#8217;s available for both macOS and iOS.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Having good sounds that are consistent in feel, quality, and volume will help take your game to the next level. Fortunately, there are plenty of great audio packs that can last you a lifetime of app development!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Already There</title>
+		<link>/blog/2013/10/04/already-there/</link>
+		<pubDate>Fri, 04 Oct 2013 15:57:28 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[audio]]></category>
+		<category><![CDATA[Culture]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=33</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Already There &#8211; Remix</title>
+		<link>/blog/2013/10/04/already-there-remix/</link>
+		<pubDate>Fri, 04 Oct 2013 12:53:42 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[audio]]></category>
+		<category><![CDATA[events]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=14</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

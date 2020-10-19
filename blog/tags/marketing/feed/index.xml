@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>marketing &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/marketing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>marketing &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #134</title>
+		<link>/blog/2016/07/29/from-the-forum-issue-134/</link>
+		<pubDate>Fri, 29 Jul 2016 20:46:57 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Coronium LS]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[keystores]]></category>
+		<category><![CDATA[marketing]]></category>
+
+		<guid isPermaLink="false">/?p=67560</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>The release of Coronium LS beta</h3>
+<p>It’s great to watch an idea go from kernel to popcorn. <strong>Develephant’s</strong> Coronium has always been a boon to those of us who need a Lua-based server solution. It makes it easy for new Corona users to get started, while still being robust enough for those who are well versed in back-end server options.</p>
+<p>Now, the most recent beta development in Coronium-land is out in the wild. <a href=https://coronium.cloud/ target="_blank">Coronium LS</a>, which has been covered previously in <em>From the Forum</em>, can be freely downloaded and utilized by anyone looking to get their feet wet with this great server-side Lua development option. While it’s still in beta, other developers are already attesting to its strengths and quick startup time.</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/64759-release-coronium-ls-v100-beta/ target="_blank">original thread</a> for more information. Remember, new questions deserve new threads!</p>
+<h3>Creating keystores for Android</h3>
+<p>When first starting out, the methods necessary to build and deliver an app to the Google Play store seem a bit Byzantine. One particular step that seems to cause a lot of confusion is the generation of the keystore encryption.</p>
+<p>The purpose here is to ensure that your app isn’t being spoofed for nefarious purposes while putting your personal stamp on the encryption key. It’s definitely not the most user-friendly set of steps available, but they are definitely necessary if you plan on publishing for the Google Play store. The <a href=https://forums.coronalabs.com/topic/64772-keytool-to-bulid-release/ target="_blank">original thread</a> goes over the main steps and the pitfalls that you might encounter when creating your keystore.</p>
+<h3>The age-old question of game marketing</h3>
+<p>Interest in gaming keeps growing with no signs of waning. Consequently, eager developers fall in love with the combination of versatility and the low entry barrier that Corona offers.</p>
+<p>Eventually, these developers have their games all polished up, server maintenance done, localization checked, and in-app purchases all sewn up. Then, the challenging part comes: making people aware of the app, and making them want to download it!</p>
+<p>This <a href=https://forums.coronalabs.com/topic/64768-game-marketing-best-practices/ target="_blank">forum thread</a> talks about some of the best ways to go about getting attention as a new developer without a publishing contract. Check them out for yourself and, if you have any tips of your own, feel free to throw them on the pile!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Piece: PlayHaven Brings its Business Engine to Corona Devs</title>
+		<link>/blog/2013/09/06/guest-piece-playhaven-brings-its-business-engine-to-corona-devs/</link>
+		<pubDate>Fri, 06 Sep 2013 15:05:09 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[playhaven]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=43667</guid>
+		<description><![CDATA[Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven's team of engineers on the development of partner plugins. 
+
+PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href="http://www.playhaven.com/">playhaven.com</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven&#8217;s team of engineers on the development of partner plugins. </em></p>
+<p>PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href=http://www.playhaven.com>playhaven.com/</a>.</p>
+<hr />
+<p><img class="alignleft size-thumbnail wp-image-43699" src="/wordpress/wp-content/uploads/2013/09/logo_lrg_blk-150x135.png" alt="logo_lrg_blk" />Creative people love to create – and that’s you, game developer &#8211; whether that be rich game content, meaningful interactive experiences or experimental techniques in game design. We want to keep you focused on what you love, which is how PlayHaven came into existence. PlayHaven was built so you can focus on content and design and let us power the business side of your games.</p>
+<p>We’re thrilled to partner with <a href=www.coronalabs.com/products/Corona-SDK>Corona SDK</a> to help you with the acquisition, engagement and monetization layers in your game.</p>
+<p>By leveraging the PlayHaven Corona Plugin, you can do the following without impacting your game’s roadmap.</p>
+<p><strong>Drive high-quality players to your games</strong><br />
+Our user acquisition tools help you successfully launch your game into the marketplace and bring quality players into your game. Choose to <a href=http://www.playhaven.com/acquire?#acquire-content-advertise>advertise</a> within our ad network or distribute your users to other games in your network using our <a href=http://www.playhaven.com/acquire?#acquire-content-cross-promote>cross-promotion tool</a>.</p>
+<p><strong>Keep users playing</strong><br />
+Learn more about your players, build customer loyalty, improve communication, and re-engage them after they&#8217;ve left the app. PlayHaven’s engagement tools help you deliver targeted, personalized communications in and out of your game to keep your players engaged. From <a href=http://www.playhaven.com/engage?#engage-content-push>Push Notifications</a> (Beta) to <a href=http://www.playhaven.com/engage?#engage-content-rewards>Rewards</a>, in-game <a href=http://www.playhaven.com/engage?#engage-content-announcements>Announcements</a> and <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a>, you have lots of great ways to interact with your users in any way you choose.</p>
+<p><strong>Monetize your whales, dolphins and&#8230; EVERYONE!</strong><br />
+Increase your player conversion rate and revenue by leveraging our monetization tools. By creating and deploying <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>virtual goods</a> promotions and relevant <a href=http://www.playhaven.com/monetize?#monetize-content-ads>in-game ads</a> to the right user segment at the right time, you’re getting the tools you need to maximize revenue. PlayHaven can help you both identify monetizable user groups and deliver relevant communications designed to increase your bottom line.</p>
+<p><strong>Take a look at how our partners are using PlayHaven.</strong></p>
+<p><strong>Mobile Deluxe</strong> leveraged a combination of PlayHaven&#8217;s <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>Virtual Goods Promotion</a>, <a href=http://www.playhaven.com/monetize?#monetize-content-ads>Interstitial Ads</a>, and User Segmentation tools to improve player monetization and increase revenue in Big Win Slots. Read more <a href=http://blog.playhaven.com/success_mobiledeluxe/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43705" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_Mobile-Deluxe-VGP-1-300x211.jpg" alt="PlayHaven_Mobile Deluxe VGP" /></p>
+<p><strong>SEGA</strong> implemented PlayHaven&#8217;s <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a> to engage players outside of Sonic Jump and simultaneously cross-promote Sonic Dash. Learn more about the impressive results SEGA saw <a href=http://blog.playhaven.com/sega-nurtures-player-relationships-outside-of-gameplay/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43703" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_SEGA-Case-study-1-287x300.jpg" alt="PlayHaven_SEGA Case study (1)" /></p>
+<p>We’re excited to bring our entire platform of solutions to help Corona developers acquire, engage, retain and monetize their players. To integrate PlayHaven into your Corona-built games, please visit <a href=http://docs.coronalabs.com/daily/plugin/playhaven/>docs.coronalabs.com/daily/plugin/playhaven/</a>. If you have any questions, reach out at <a href=mailto:connect@playhaven.com>connect@playhaven.com</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona SDK now supports PlayHaven</title>
+		<link>/blog/2013/09/05/corona-sdk-now-supports-playhaven/</link>
+		<comments>/blog/2013/09/05/corona-sdk-now-supports-playhaven/#comments</comments>
+		<pubDate>Thu, 05 Sep 2013 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[playhaven]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=43807</guid>
+		<description><![CDATA[We’re happy to announce that PlayHaven is our latest Corona Plugin partner! As a Corona developer, you can now integrate PlayHaven’s acquisition, engagement and monetization tools into your Corona-built games.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/09/logo_lrg_blk-150x135.png" alt="logo_lrg_blk" class="alignleft size-thumbnail wp-image-43699" />We’re happy to announce that PlayHaven is our latest Corona Plugin partner! As a Corona developer, you can now integrate PlayHaven’s acquisition, engagement and monetization tools into your Corona-built games.</p>
+<p><strong>About PlayHaven’s services</strong><br />
+<a href=http://www.playhaven.com>PlayHaven/</a> is the business engine for mobile games offering developers flexible tools to intelligently manage player acquisition, engagement, and monetization. PlayHaven provides the only end-to-end solution that helps developers manage users at every valuable point in their lifecycle.</p>
+<p>PlayHaven is available for iOS and Android games – solutions include:</p>
+<ul>
+<li><strong>PlayHaven Acquire</strong>: power successful app launches and continuously drives high quality users into your game.</li>
+<li><strong>PlayHaven Engage</strong>: create and deliver targeted, personalized messages in and out of the game that keep users engaged in your app.</li>
+<li><strong>PlayHaven Monetize</strong>: grow revenue by creating and deploying in-app purchase promotions and relevant ads to targeted user segments.</li>
+</ul>
+<p><strong>Accessing the PlayHaven Plugin</strong><br />
+You can integrate the PlayHaven plugin by adding a few lines of code to your build settings file. For information on integrating PlayHaven into your Corona-powered games, please see the <a href=http://docs.coronalabs.com/daily/plugin/playhaven/>plugin documentation</a>.</p>
+<p><strong>More on Corona Plugins</strong><br />
+Corona Plugins offer Corona developers access to popular third party tools and services. Announced in mid-May, plugin partners include SponsorPay, Fortumo, Photon Cloud, Green Throttle, Inneractive, Fortumo, Carrot, Tap for Tap and many more!</p>
+<p>Visit the Corona Plugin Directory for a complete list of plugins. We’ll be rolling out support for more plugins soon, so check back for updates.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/05/corona-sdk-now-supports-playhaven/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

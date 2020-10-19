@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>3D &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/3d/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>3D &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: Climberia &#8211; a challenging climbing game</title>
+		<link>/blog/2016/04/05/case-study-climberia-a-challenging-climbing-game/</link>
+		<pubDate>Tue, 05 Apr 2016 14:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[case study]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=66351</guid>
+		<description><![CDATA[In this case study, we look at a new Corona-powered game called Climberia. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66359" src="/wordpress/wp-content/uploads/2016/04/icon-150x150.png" alt="icon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/icon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/icon-300x300.png 300w, /wordpress/wp-content/uploads/2016/04/icon-768x768.png 768w, /wordpress/wp-content/uploads/2016/04/icon-570x570.png 570w, /wordpress/wp-content/uploads/2016/04/icon-500x500.png 500w, /wordpress/wp-content/uploads/2016/04/icon-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/04/icon-700x700.png 700w, /wordpress/wp-content/uploads/2016/04/icon.png 1024w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are very creative and regularly produce amazing works. In this case study, we look at a new game called <a href=http://www.climberia.com/ target="_blank">Climberia</a>. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.</p>
+<p>Climberia is the brainchild of Nikola Georgiev and Stoyan Pedev of <a href=http://www.kvaba.com/ target="_blank">Kvaba</a>, a small studio in Sofia, Bulgaria. Georgiev and Pedev decided to start building games in their spare time while having a drink in their local pub.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/XFdnalWr-pY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>After trying a couple of projects that didn&#8217;t gain momentum, they stumbled upon the idea for Climberia. Using a Google search to find a 2D gaming platform, they discovered Corona SDK and quickly had a working demo of their idea. </p>
+<p>The gameplay was challenging and fun, but there was a problem: neither Georgiev or Pedev were artists and the game didn&#8217;t look very good. Fortunately, they found <a href=http://robo.bg/ target="_blank">Robo Video Lab</a> who fell in love with the game and the two companies formed a partnership to produce Climberia. The art team used low-polygon 3D models, converted them to 2D still images, and assembled it all into colorful scenes.</p>
+<p>The gameplay is very challenging. Like rock climbing, your pirate has to swing his arm and body to grab the next hand-hold. If the pirate lets go, he falls to the ocean floor and dies. Players must keep one finger on the screen the entire time while using another finger to swing the pirate and reach another hand-hold.</p>
+<p><img class="alignnone size-large wp-image-66360" src="/wordpress/wp-content/uploads/2016/04/Climberia-02-1024x576.png" alt="Climberia-02" width="960" height="540" /></p>
+<p>&#8220;We wanted to create a game where the player is challenged not only in the virtual world of the game but also in the physical world – to test his muscles and nerves&#8221;, said Georgiev. &#8220;The original idea was for a climber who has to constantly keep at least one of his hands on the wall, so a player&#8217;s thumb must always drag the screen. With the initial demo, we saw that we could improve the concept by adding the swinging and jumping features.&#8221;</p>
+<p>Corona SDK has been critical to their development process. As beginners in the game development field, Georgiev and Pedev found that it was easy to get started developing a 2D game in Corona. Rapid prototyping allowed them to assess the project early on and adjust certain aspects as the project matured.</p>
+<p>Climberia is available for iOS on April 5, 2016, and Kvaba plans to release an Android version in the coming months. Check it out in the app store!</p>
+<p><a href=https://itunes.apple.com/us/app/climberia-pirates/id1054929556?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

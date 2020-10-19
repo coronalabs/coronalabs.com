@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>App Store Compliance &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-store-compliance/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>App Store Compliance &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #93 &#8211; Apple Rejects Rewards, LiquidFun Fluid Bodies, and Swift Programming Language</title>
+		<link>/blog/coronageek/corona-geek-hangout-93/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-93/#respond</comments>
+		<pubDate>Mon, 09 Jun 2014 21:26:14 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Store Compliance]]></category>
+		<category><![CDATA[LiquidFun]]></category>
+		<category><![CDATA[Swift]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58778</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, we discussed why Apple's rejecting apps that offer rewards for video views and social sharing. We also talked about Corona SDK support for Google's LiquidFun and walked through sample code to see how rigid bodies interact with fluid bodies. We also talked about Apple's new Swift programming language and how it compares to Lua and Python.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/jPEmoAANPXY?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, we discussed why Apple&#8217;s <a href=http://techcrunch.com/2014/06/09/apple-begins-rejecting-apps-that-offer-rewards-for-video-views-social-sharing/ target="_blank">rejecting apps that offer rewards for video views and social sharing</a>. We also talked about Corona SDK support for Google&#8217;s LiquidFun and walked through sample code to see how rigid bodies interact with fluid bodies. We also talked about Apple&#8217;s new <a href=https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ target="_blank">Swift programming language</a> and how it compares to Lua and Python.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li>Play Sea Blurp for <a href=https://itunes.apple.com/us/app/sea-blurp/id879905679?ls=1&mt=8 target="_blank">iOS</a> | <a href=http://www.amazon.com/Burtons-Media-Group-Sea-Blurp/dp/B00KSMAXKW/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1402182521&sr=1-1&keywords=sea+blurp target="_blank">Android</a> | <a href=https://play.google.com/store/apps/details?id=com.burtonsmediagroup.drburton.Sea_Blurp_App target="_blank">Google Play</a></li>
+<li>Play Harmony 2 on <a href=https://itunes.apple.com/us/app/har-mo-ny-2/id729430378?mt=8+ target="_blank">iOS</a></li>
+<li><a href=http://wilcofundingportal.com/projects/snakehead-software/ target="_blank">Fund Blue Groove Racer</a></li>
+<li><a href=https://docs.google.com/forms/d/1N6MynGgM24sMSTbobCXgIhPyCkWHkgonJx4bFcWcQrA/viewform target="_blank">Corona Meetup in Moscow</a></li>
+<li><a href=https://screendoor.dobt.co/code-for-america/2015-fellowship-application target="_blank">Code for America 2015</a></li>
+</ul>
+<ul>
+<li><a href=http://bit.ly/UoWOzH target="_blank">Fotolia Stock Images and Video</a></li>
+<li><a href=http://bit.ly/1tZkll3 target="_blank">Royalty Free Vector Images</a></li>
+<li><a href=https://www.iconfinder.com/ target="_blank">Buy Stock Icons</a></li>
+<li><a href=http://www.dollarphotoclub.com/ target="_blank">More Royalty Free Images and Vectors</a></li>
+</ul>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/api/library/physics/newParticleSystem.html target="_blank">Corona SDK LiquidFun Docs</a></li>
+<li><a href=http://google.github.io/liquidfun/Programmers-Guide/html/index.html target="_blank">Google&#8217;s LiquidFun Documentation</a></li>
+<li><a href=https://www.youtube.com/watch?v=2SaYkWNv0Hg target="_blank">Google&#8217;s GDC LiquidFun talk</a> (video)</li>
+</ul>
+<ul>
+<li><a href=https://www.youtube.com/channel/UCC2lVrjh5mYJdprYonAOfWQ target="_blank">Beyond Swift variables and constants</a></li>
+<li><a href=http://www.raywenderlich.com/73997/swift-language-highlights target="_blank">Why Swift is faster than Objective-C, in some cases</a></li>
+<li><a href=https://developer.apple.com/videos/wwdc/2014/ target="_blank">WWDC14 Swift Developer videos</a></li>
+<li><a href=http://cdn2.raywenderlich.com/wp-content/uploads/2014/06/RW-Swift-Cheatsheet-0_3.pdf target="_blank">Swift Language Cheat Sheet</a> (pdf)</li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-93/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-93-2014-06-09-apple-rejects-liquidfun-swift.mp3" length="59157541" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-93-2014-06-09-apple-rejects-liquidfun-swift.mp3" length="59157541" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-93-2014-06-09-apple-rejects-liquidfun-swift.mp3" length="59157541" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-93-2014-06-09-apple-rejects-liquidfun-swift.mp3" length="59157541" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Apple requires apps to be built with Xcode 5.1.1</title>
+		<link>/blog/2014/05/19/apple-requires-apps-to-be-built-with-xcode-5-1-1/</link>
+		<comments>/blog/2014/05/19/apple-requires-apps-to-be-built-with-xcode-5-1-1/#comments</comments>
+		<pubDate>Mon, 19 May 2014 22:38:44 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[App Store Compliance]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=58605</guid>
+		<description><![CDATA[Apple quietly posted <a href="https://developer.apple.com/news/?id=04252014a">this announcement</a> requiring <strong>all</strong> iOS developers to "Build Your Apps With Xcode 5.1.1". Apple enforces this when you try to upload your binary to the iTunes App Store:
+
+<blockquote>ERROR ITMS-9000: "This bundle is invalid. New apps and app updates submitted to the App Store must be built with public (GM) versions of XCode 5.1.1 or higher and iOS 7 SDK. Do not submit apps built with beta software.”
+</blockquote>
+
+Today, we've addressed this in the last public release (2189). Just rebuild and submit. You can also use daily builds 2306 or later.]]></description>
+				<content:encoded><![CDATA[<p>Apple quietly posted <a href=https://developer.apple.com/news/?id=04252014a>this announcement</a> requiring <strong>all</strong> iOS developers to &#8220;Build Your Apps With Xcode 5.1.1&#8221;. Apple enforces this when you try to upload your binary to the iTunes App Store:</p>
+<blockquote><p>ERROR ITMS-9000: &#8220;This bundle is invalid. New apps and app updates submitted to the App Store must be built with public (GM) versions of XCode 5.1.1 or higher and iOS 7 SDK. Do not submit apps built with beta software.”
+</p></blockquote>
+<p>(BTW, technically, Xcode 5.1 was GM, not beta as the error message suggests, but Apple gets to write the rules&#8230;)</p>
+<p>Today, we&#8217;ve found a way to address this issue. You can now use the last public release (2189) — simply redo your device build and submit. In addition, you can use daily builds 2306 or later, as these have been built with Xcode 5.1.1.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/05/19/apple-requires-apps-to-be-built-with-xcode-5-1-1/feed/</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #57 &#8211; Parental Support, iOS 7, and Android Micro-Consoles</title>
+		<link>/blog/coronageek/corona-geek-hangout-57/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-57/#respond</comments>
+		<pubDate>Mon, 30 Sep 2013 21:45:03 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Store Compliance]]></category>
+		<category><![CDATA[Children's Apps]]></category>
+		<category><![CDATA[Parental Gate]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=47068</guid>
+		<description><![CDATA[During this week's Corona Geek, Doug Davies walked us through the code he used to implement a parental gate using Corona SDK for his game Buttermilk - The Bouncing Baby Goat. We also discussed Green Throttle's controller update, micro-consoles, and iOS 7 support in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/LnPf5OcmaQA?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek, Doug Davies walked us through the code he used to <a href=http://bit.ly/14YT4qi target="_blank">implement a parental gate</a> using Corona SDK for his game <a href=https://itunes.apple.com/us/app/buttermilk-bouncing-baby-goat/id611875939?mt=8 target="_blank">Buttermilk &#8211; The Bouncing Baby Goat</a>. Doug&#8217;s game complies with child safety requirements for Apple&#8217;s new <a href=http://techcrunch.com/2013/09/22/introducing-apples-new-kids-app-store/ target="_blank">Kids App Store</a>.</p>
+<p>We also discussed <a href=http://bit.ly/19j3aQe target="_blank">Green Throttle&#8217;s controller update</a>, <a href=http://bit.ly/19cTJI4 target="_blank">micro-consoles</a>, and <a href=/blog/2013/09/17/tutorial-getting-started-with-ios-7/>iOS 7 support</a> in Corona SDK.</p>
+<p>Congratulations to Rob Englebright for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the Corona Geek <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">giveaway form</a>.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek! Be sure to &#8220;thumbs up&#8221; this video on YouTube if you&#8217;d like to see more code-related sessions.</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-57/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-57-2013-09-30-parental-control-android-micro-consoles-ios7.mp3" length="46756598" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-57-2013-09-30-parental-control-android-micro-consoles-ios7.mp3" length="46756598" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-57-2013-09-30-parental-control-android-micro-consoles-ios7.mp3" length="46756598" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-57-2013-09-30-parental-control-android-micro-consoles-ios7.mp3" length="46756598" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

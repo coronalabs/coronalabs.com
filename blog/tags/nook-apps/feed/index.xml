@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nook apps &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/nook-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>nook apps &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>“Freeze!” and 100% Indie (Guest piece)</title>
+		<link>/blog/2013/03/22/freeze-and-100-indie-guest-piece/</link>
+		<comments>/blog/2013/03/22/freeze-and-100-indie-guest-piece/#comments</comments>
+		<pubDate>Fri, 22 Mar 2013 17:02:43 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[amazon appstore]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[nook apps]]></category>
+		<category><![CDATA[puzzler]]></category>
+		<category><![CDATA[Samsung Apps]]></category>
+
+		<guid isPermaLink="false">/?p=30041</guid>
+		<description><![CDATA[Andreas von Lepel is the developer of Freeze!, an award-winning game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.
+
+Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and receives glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Andreas von Lepel is the developer of <a href=http://www.coronalabs.com/blog/2012/12/03/app-of-the-week-freeze/>Freeze!</a>, an award-winning puzzler arcade game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.</p>
+<p>Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and has received glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/LepelEditorialMed-11.jpg" alt="Freeze! dev headshot" class="alignleft size-full wp-image-30510" />My name is Andreas von Lepel, and I&#8217;m the creator of <a href=https://itunes.apple.com/app/id518123684>Freeze!</a> &#8211; a physics arcade-puzzler that I published in 10 languages on <a href=https://itunes.apple.com/app/id518123684>Apple&#8217;s App Store</a>, <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze/dp/B00A1SL8SE>Amazon Appstore</a>, <a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze&hl=en>Google Play</a>, <a href=http://www.barnesandnoble.com/w/freeze-the-escape-frozen-gun-games/1113761191?ean=2940043931788>NOOK Apps</a> and Samsung Apps. Freeze! was also featured by Apple in 149 countries as “New and Noteworthy.”</p>
+<p>Freeze! climbed to the #1 position as a freemium game in 36 countries on iTunes, won the “2013 Indie Prize Europe” award and has to my surprise (and delight), received more than 1.3 million downloads.</p>
+<p>If you&#8217;re not familiar with Freeze!, take a look at the launch trailer.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/ciQgYVgT0gk" frameborder="0" allowfullscreen></iframe></p>
+<p>After Freeze! hit stores on November 30, 2012, lots of amazing things began to happen. I&#8217;d like to tell you about the most interesting.</p>
+<p>Recently I was contacted by Chillingo and was asked to sign an NDA between Chillingo, EA, Samsung and myself. It regarded the launch of a new web portal for indie developers called <a href= http://www.100percentindie.com>100%/ Indie</a>. It launched just a few weeks ago and I haven&#8217;t been able to write about it, until now that is.</p>
+<p>Chillingo asked me to write an article series about the development of Freeze! and I was, of course, happy to participate. After all, there aren&#8217;t many bigger names out there than Chillingo, EA and Samsung! I&#8217;m excited to share that the first part two parts of my series are now live, the first piece is about the <href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a>, while the second details my <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>work with Corona SDK</a>.</p>
+<p>If you take a look at the image below, it will give you a hint about the things I write about in the first piece. It&#8217;s a comparison of the initial prototype  of Freeze!, after two weeks of development, and the final game:</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Freeze-image.png" alt="Freeze! image" class="alignnone size-full wp-image-30042" /></p>
+<p>I wanted to write in order to promote <a href=www.coronalabs.com/products/Corona-sdk>Corona SDK</a>, because without it, the development of Freeze! would not have been possible. And while the first part of the Freeze! series covers lots of interesting tidbits about game design and prototyping, the second installment covers the work I did with Corona and the tools I used to make my game. And more active developers, translates to more income for Corona Labs, which means an even stronger SDK!</p>
+<p>So, and what&#8217;s 100% Indie all about? Well, as I wrote above, I did publish Freeze! for Samsung Apps. This isn&#8217;t as easy as it should be &#8211; they have a review process that&#8217;s a bit complicated and though using Corona SDK is fine for publishing to Samsung Apps, I had to make a few tweaks and problem solve through some issues.</p>
+<p>100% Indie is now offering a very attractive program: publish your game to Samsung Apps via the 100% Indie program, and if your game is accepted, (the Chillingo guys will have a closer look at the quality of your work) you will get 100% revenue for the first 6 month, then 90% for the next 6 months etc. Take a look at the <a href=http://www.100percentindie.com/about/>nice conditions</a> and of course, by working with Chillingo, you have a bigger chance of getting some app store promotions by Samsung as well.</p>
+<p>Now read my first two articles about the <a href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a> and have a good laugh at the problems I faced and the mistakes I made (thankfully I was able to correct most of them). Also, read about my experience <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>working with Corona SDK</a> as well as other tools, and then get back to coding to create some great games!</p>
+<p><em>Andreas von Lepel, Creator of Freeze!</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/22/freeze-and-100-indie-guest-piece/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

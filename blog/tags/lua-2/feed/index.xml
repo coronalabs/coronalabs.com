@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>lua &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/lua-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>lua &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #190 &#8211; Coronium LS demo &#8211; Creating an online leaderboard</title>
+		<link>/blog/coronageek/corona-geek-190/</link>
+		<comments>/blog/coronageek/corona-geek-190/#respond</comments>
+		<pubDate>Fri, 29 Jul 2016 19:28:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Cloud]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[Lua Server]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67564</guid>
+		<description><![CDATA[On this week's Corona Geek podcast, Chris Byerly demoed the latest version of Coronium LS ( Lua Server ) to create an online leaderboard with just a few lines of Coronium LS server side code and Corona SDK client side code. Catch a glimpse of some of the newest features.]]></description>
+				<content:encoded><![CDATA[<p>On this week&#8217;s Corona Geek podcast, Chris Byerly demoed the latest version of <a href=http://docs.coronium.cloud/ target="_blank">Coronium LS</a> ( Lua Server ), which is the next iteration of Coronium. Chris created an online leaderboard with just a few lines of Coronium LS server side code and <a href=http://docs.coronium.cloud/en/latest/API/Client/Usage/ target="_blank">Corona SDK client side code</a>.</p>
+<p>Coronium LS represents the latest and greatest advancements of Coronium to-date. Chris has put in two plus years of hard work on the Coronium project and with Coronium LS he has rolled in lessons learned and feedback from the Corona community.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/9zY-L-_ahmg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>If you don&#8217;t know the history, Coronium originally started as a personal project by Chris and has grown into an amazing Lua-based server side tool for Corona developers. Coronium LS is now an <a href=https://github.com/coroniumcloud/Coronium-LS target="_blank">open source project</a> that allows, and encourages, anyone to contribute to the project. This version of Coronium is a pre-cursor to Corona Cloud, which will be an enterprise product for those who don&#8217;t want to self host and manage their own instance of cloud server.</p>
+<p>Some of the new features of Coronium LS are public and private permission-based modules that can be used to either share information publicly via a web server or privately between client-server or between server modules. Data storage is handled via <a href=http://docs.coronium.cloud/en/latest/API/Server/MySQL/ target="_blank">MySQL</a> or <a href=http://docs.coronium.cloud/en/latest/API/Server/MongoDB/ target="_blank">MongoDB</a>, with the ability to mix and match between datasources. Coronium LS also supports the output of HTML, and JSON, plus plain text for IoT projects.</p>
+<p>Additional documentation and details can be found on the <a href=http://docs.coronium.cloud/ target="_blank">Coronium Lua Server</a> project website. If you love Lua and enjoy working with both client-side and server-side technologies, then Coronium LS is your newest creative outlet.</p>
+<p><strong>Panelists:</strong></p>
+<ul>
+<li><a href=http://ponywolf.com>Michael/ Wilson</a></li>
+<li><a href=http://mobileoctopus.com/ target="_blank">Noah Malewicz</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=https://www.militantgame.com/ target="_blank">Steven Johnson</a></li>
+<li><a href=https://www.linkedin.com/in/robmiracle target="_blank">Rob Miracle</a></li>
+<li><a href=https://www.linkedin.com/in/perryclarke target="_blank">Perry Clarke</a></li>
+<li><a href=https://www.linkedin.com/in/charlesmckeever/ target="_blank">Charles McKeever</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-190/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-190-2016-07-29-coronium-ls-demo-leaderboard.mp3" length="116020882" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Introducing the UTF-8 string plugin</title>
+		<link>/blog/2016/03/21/introducing-the-utf-8-string-plugin/</link>
+		<comments>/blog/2016/03/21/introducing-the-utf-8-string-plugin/#comments</comments>
+		<pubDate>Mon, 21 Mar 2016 20:24:16 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[multi-byte]]></category>
+		<category><![CDATA[string]]></category>
+		<category><![CDATA[strings]]></category>
+		<category><![CDATA[text]]></category>
+		<category><![CDATA[unicode]]></category>
+		<category><![CDATA[UTF-8]]></category>
+
+		<guid isPermaLink="false">/?p=66168</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the UTF-8 plugin, useful for managing strings with non-ASCII characters. Read further to learn how this plugin may help in your app development.]]></description>
+				<content:encoded><![CDATA[<p>One potential challenge for app developers is &#8220;localizing&#8221; their apps internationally. Perhaps it&#8217;s a simple matter of working with someone&#8217;s name which has non-ASCII characters in it, or more comprehensive support for languages like Japanese which uses a unique character set.</p>
+<p>The core issue for Corona developers is that Lua&#8217;s <a href=https://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> functions consider a string as merely a series of bytes, and it&#8217;s unaware of multi-byte characters. This causes problems if you want to know how many characters are in a string containing multi-byte characters because, in this case, Lua will simply count the bytes. Even more issues can arise if you need to gather sub-strings or convert a non-ASCII string to uppercase or lowercase. All in all, this can be considerably frustrating to developers who build apps for worldwide distribution.</p>
+<h3>The solution?</h3>
+<p>Recently, Corona Labs released the <a href=https://store.coronalabs.com/plugin/utf-8 target="_blank">UTF-8 plugin</a> to help alleviate these issues. The plugin&#8217;s functions closely mirror the existing <a href=https://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> library functions, except that the UTF-8 equivalents handle multi-byte strings. For instance, just as you might use <a href=https://docs.coronalabs.com/api/library/string/match.html target="_blank">string.match()</a>, on a normal ASCII string, you can substitute <code>utf8.match()</code> for non-ASCII strings.</p>
+<p>This plugin also introduces several new functions for advanced purposes, helping you deal with character positions, offsets, code points, sub-string insertion/removal, and more. You can see a complete list and usage details in our <a href=https://docs.coronalabs.com/plugin/utf8/index.html target="_blank">documentation</a>.</p>
+<h3>Usage</h3>
+<p>Like all Corona plugins, you need to include it in your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.utf8&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;
+        },
+    },
+}</pre><p>Then, in any module where you want to use UTF-8 functions, simply <code>require()</code> the plugin as usual:</p><pre class="crayon-plain-tag">local utf8 = require( &quot;plugin.utf8&quot; )</pre><p>After that, simply call <code>string.[methodName]</code> functions as <code>utf8.[methodName]</code> instead. For example, notice the output values of the respective &#8220;length&#8221; functions (<code>string.len()</code> and <code>utf8.len()</code>) on an identical string:</p><pre class="crayon-plain-tag">-- The Russian alphabet
+print( string.len( &quot;АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ&quot; ) )  --prints 64
+print( utf8.len( &quot;АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ&quot; ) )    --prints 32</pre><p></p>
+<h3>Conclusion</h3>
+<p>As you can see, the UTF-8 plugin offers some valuable new capabilities to Corona developers, in particular those developing apps for international distribution. To learn more, please reference the <a href=https://docs.coronalabs.com/plugin/utf8/index.html target="_blank">documentation</a> or discuss this plugin in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/21/introducing-the-utf-8-string-plugin/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #122  &#8211; Using Coroutines in Lua and Creating 2D Shadows</title>
+		<link>/blog/coronageek/corona-geek-122/</link>
+		<comments>/blog/coronageek/corona-geek-122/#comments</comments>
+		<pubDate>Mon, 29 Dec 2014 22:54:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[2D Shadows]]></category>
+		<category><![CDATA[coroutines]]></category>
+		<category><![CDATA[lua]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60723</guid>
+		<description><![CDATA[During this week's Hangout, Corona Developer, Steven Johnson introduced us to the concept of time slicing using coroutines in Lua and René Aye from PyroPixel showed us how to create 2D shadow effects on angular, round, and complex shapes using his 2D shadow system.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/wtNuzLwFLxI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Hangout, Corona Developer, Steven Johnson (aka, Star Crunch in the forums) introduced us to the concept of time slicing using <a href=http://www.lua.org/pil/9.html target="_blank">coroutines in Lua</a>. Steven presented a collection of <a href=https://github.com/ggcrunchy/samples target="_blank">lua coroutine code examples</a> to show how coroutines can be used to stop and start the execution of code and how to reduce the amount of code needed to work with timers.</p>
+<p><iframe src="//www.youtube.com/embed/1DMKZqygIek?rel=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>René Aye from <a href=http://PyroPixel.de/ target="_blank">PyroPixel</a> also showed us how to create 2D shadow effects on angular, round, and complex shapes using his 2D shadow system. René showed several <a href=https://bitbucket.org/reneaye/corona-2d-shadow-system/ target="_blank">2d shadow demos</a> including one using Corona&#8217;s built-in physics engine and one with multiple 2D shadows and draggable light sources. The effects are amazing and will add a whole new dimension to your games.</p>
+<p><iframe src="//www.youtube.com/embed/L5qNrGk1cII?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Ship Just One More App Before 2015</strong></p>
+<p style="padding-left: 30px;">Want to get that unfinished app off your hard drive and into the app store? Then participate in this year&#8217;s <a href=http://shipjam.com/ target="_blank">first annual Ship Jam</a> and win some prizes. Community members, <a href=https://twitter.com/LTallardy target="_blank">Laura Tallardy</a> and <a href=https://twitter.com/LavaLevel target="_blank">Eric Kinkead</a> are hosting the jam. Check out the <a href=http://shipjam.weebly.com/rules.html target="_blank">Ship Jam website</a> for full details.</p>
+<p><strong>December&#8217;s Geek Games Winner!</strong></p>
+<p style="padding-left: 30px;">For December, we played <a href=http://CityBirdsGame.com/ target="_blank">City Birds</a> and <a href=http://salvo.jp/app/vritra/en/ target="_blank">Vritra</a> for a chance to win two $50 gift cards.  This month&#8217;s high score winner of both gift cards is Greg Pugh from <a href=http://GPAnimations.com/ target="_blank">GPAnimations</a>.</p>
+<p style="padding-left: 30px;">While this month&#8217;s competition is over, you can still play both gamess and post your high score on the <a href=http://facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a>. Can you beat Greg&#8217;s score?</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-121/ target="_blank">Corona Geek #121 – How menuMe Is Re-Inventing The Restaurant Menu</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Time is almost up! Just 2 more days to <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek and save 20%</strong></a> at checkout when buying Corona SDK books from Burton&#8217;s Media Group. The coupon code expires on January 1st. Get it before it&#8217;s gone!</li>
+</ul>
+<ul>
+<li><a href=https://github.com/ggcrunchy/samples target="_blank">Coroutine Lua Examples</a></li>
+<li><a href=https://bitbucket.org/reneaye/corona-2d-shadow-system/ target="_blank">2D Shadow System on Bitbucket</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=https://play.google.com/store/apps/details?id=com.gpanimations.mbsttv target="_blank">Maddie Bear Snack Time on Android TV</a> &#8211; a Corona game from GPAnimations</li>
+<li><a href=http://militantgame.com/ target="_blank">MilitAnt Game</a> &#8211; A non-Corona game from Xibalba Studios</li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-122/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-122-2014-12-29-coroutines-2d-shadows.mp3" length="0" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #103 – Creating Object Oriented Character Classes for Games</title>
+		<link>/blog/coronageek/corona-geek-103/</link>
+		<comments>/blog/coronageek/corona-geek-103/#comments</comments>
+		<pubDate>Mon, 18 Aug 2014 22:07:24 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[30log]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[OOP]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59387</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Coronium Developer, Chris Byerley shows us how to use object oriented design patterns to create character classes in our games using 30log "a 30-lines library for object-orientation in Lua".]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/-R6C_aPQ1zk?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Coronium Developer, Chris Byerley shows us how to use object oriented design patterns to <a href=https://s3-us-west-2.amazonaws.com/develephant-code/corona-geek/CharacterClassesDone.zip target="_blank">create character classes in our games using 30log</a> &#8220;a 30-lines library for object-orientation in Lua&#8221;. We also learned about two new creative apps for decorating photos using words and crazy faces.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-102/ target="_blank">Corona Geek #102 – Walter Answers Community Questions and Geek Trivia</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=http://bit.ly/1mdPbDx target="_blank">Social Poetry App</a></li>
+<li><a href=http://bit.ly/1v9Nr3n target="_blank">TWURF &#8211; Decorate your face</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=/blog/2014/08/08/update-android-widget-themes/ target="_blank">Android Widget Themes</a></li>
+<li><a href=/blog/2014/08/12/tutorial-building-a-level-selection-scene/>Tutorial: Building a Level Selection Scene</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href=http://coronium.io/ target="_blank">Coronium &#8211; The Simple Cloud</a></li>
+<li><a href=http://yonaba.github.io/30log/ target="_blank">30log &#8211; OOP for Lua Library</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-103/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-103-2014-08-18-creating-object-oriented-character-classes-for-games.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-103-2014-08-18-creating-object-oriented-character-classes-for-games.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-103-2014-08-18-creating-object-oriented-character-classes-for-games.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-103-2014-08-18-creating-object-oriented-character-classes-for-games.mp3" length="0" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Wednesday FAQs: Timers and Events</title>
+		<link>/blog/2013/05/29/wednesday-faqs-timers-and-events/</link>
+		<comments>/blog/2013/05/29/wednesday-faqs-timers-and-events/#comments</comments>
+		<pubDate>Wed, 29 May 2013 20:19:11 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[timers]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34783</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.</p>
+<h2>1. I&#8217;m trying to use timer.performWithDelay to add a delay in my code but it&#8217;s not working.</h2>
+<p>The API doesn&#8217;t do an actual delay within the code chunk but schedules a callback after the delay time has occurred. This is what is known as a non-blocking call.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )
+print( &quot;Test 3&quot; )</pre><p></p>
+<p>The above will print the strings in the following order in the terminal window: &#8220;Test 1&#8221;, &#8220;Test 3&#8221;, &#8220;Test 2&#8221;. The last message is printed 1 second (1000 milliseconds) after the delay was scheduled.</p>
+<p>If you want the strings to print out in the correct order, the statements after the timer.performWithDelay call must be moved to the callback routine.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+    print( &quot;Test 3&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )</pre><p></p>
+<p>If you need to delay sections of your code from executing, it needs to be done in a timer callback function (as shown above). Corona SDK doesn&#8217;t have any blocking <strong>delay()</strong> or <strong>sleep()</strong> functions.</p>
+<h2>2. I have a loop where I update an object on the screen but it seems to only update once.</h2>
+<p></p><pre class="crayon-plain-tag">local circle = display.newCircle( 10, 20, 25 )
+for i = 1, 20 do
+    circle.x = circle.x + i
+    circle.y = circle.y + i
+end</pre><p></p>
+<p>The above code moves the circle down the screen at a very fast pace. It&#8217;s not a practical example, but looking at the code you would think that the circle is changing position each time through the <strong>for</strong> loop. In fact it only changes once &#8212; at the end of the code chunk. The circle&#8217;s x and y properties are computed each time through the loop, but it&#8217;s actual position (rendering of the object on the screen), only occurs after the code chunk has finished executing.</p>
+<p>You also need to keep this in mind if you are trying to align objects multiple times in the same code chunk using <strong>setReferencePoint</strong>. Only the last <strong>setReferencePoint</strong> takes affect because the screen update only occurs after the code chunk has executed.</p>
+<h2>3. I&#8217;m doing some long calculations in my code and my touch listeners are not working. What&#8217;s happening?</h2>
+<p>If you try to add delays in your code using <strong>for</strong> loops or looping a long time within the same code chunk, you will affect the performance of your app. All events are fired after the code chunk ends, so as long as your code chunk is running, no listener events are called. All touch, timer, network, etc. events occur after the code chunk finishes.</p>
+<p>If you do need to loop for a long time within your code, you should break it up into multiple code chunks (using <strong>timer.performWithDelay</strong>) to allow events to occur.</p>
+<h2>4. I use timer.performWithDelay but the delays times don&#8217;t seem right.</h2>
+<p>The delay time is an approximate time and is fired based on the Frames Per Second (FPS) value set in the <strong>config.lua</strong> file. The default is 30 FPS or 33.33 milliseconds. You can also set it to 60 FPS (16.166 milliseconds). As mentioned in question 3, event timers are fired at the end of the code chunk. If the code contains loops that extend beyond the timer&#8217;s value, the timer event may occur later than expected. There is a timer listener parameter, <strong>event.time</strong>, that will give you the time when the event was finally fired that you can use to calculate the true delay.</p>
+<p>Another thing should be mentioned about the timer. The time value you specify is in milliseconds and is tied to either the default frame rate (30 FPS) or what you set in <strong>config.lua</strong>. If you set a value less than the frame rate time (16 or 33 milliseconds), the timer will fire every frame time instead of the actual time you set. So if you set the delay time to 10 milliseconds and you&#8217;re using the default 30 FPS, the delay will occur every 33.333 milliseconds.</p>
+<p></p><pre class="crayon-plain-tag">local function listener( event )
+    print( &quot;Timer ID and time: &quot;, event.source, event.time )
+end
+
+print( &quot;Starting time: &quot;, system.getTimer )
+timer.performWithDelay( 1, listener, 1 )
+timer.performWithDelay( 10, listener, 1 )
+timer.performWithDelay( 25, listener, 1 )
+timer.performWithDelay( 40, listener, 1 )
+print( &quot;Ending time: &quot;, system.getTimer )</pre><p></p>
+<p>This displays the following in the terminal window (the times are in milliseconds).</p>
+<p></p><pre class="crayon-plain-tag">Starting time:  29.97
+Ending time:    30.343
+Timer ID and time:  table: 0x11fb64b20  61.031
+Timer ID and time:  table: 0x11fb17d80  61.031
+Timer ID and time:  table: 0x1016bbd90  61.031
+Timer ID and time:  table: 0x10e534c50  93.692</pre><p></p>
+<p>The bottom line is the timer delays are approximate. You can use the <strong>event.time</strong> if you need to adjust for any differences between the expected delay time and the actual delay time.</p>
+<h2>5. I have a timer call that&#8217;s not passing my parameter when done. What&#8217;s wrong?</h2>
+<p>This is a common issue for new developers in Lua. <strong>timer.performWithDelay</strong> expects to receive a reference to a function. This is common with all other APIs that expect a &#8220;listener&#8221; or &#8220;completion&#8221; reference.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    print( &quot;Value is &quot;, value )
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )</pre><p></p>
+<p>The above will print &#8220;25&#8221; because <strong>doThis( 25 )</strong> is called before the delay is scheduled. The delay is performed but the listener is not called because it doesn&#8217;t think any listener was supplied (<strong>doThis</strong> returns nil).</p>
+<p>The solution to this problem is to use Lua closures. Closures allow you to call a function with a parameter and have it return a unique local function reference that uses the supplied parameter when that function reference is called.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    return function()
+        print( &quot;Value is &quot; .. value )
+    end
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )
+timer.performWithDelay( 1000, doThis( 100 ),1 )</pre><p></p>
+<p>Calling <strong>doThis</strong> function from within the <strong>timer.performWithDelay</strong> call will save <strong>value</strong> as a Lua <strong>upvalue</strong> that is associated with the returned function reference. The key thing to remember is <strong>doThis( 25 )</strong> is executed before the delay is schedule and the value returned from the function call is used as the listener&#8217;s address when the timer is fired.</p>
+<p>The nice thing about using closures is they can be called from different places using different parameter values and they return a unique function that uses the supplied parameter. In the above example the listener is called with the value 25 and than later the same listener is called with the value 100. This will print &#8220;25&#8221; and then &#8220;100&#8221; in the terminal window.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/29/wednesday-faqs-timers-and-events/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Sub-Folder and File Access</title>
+		<link>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/</link>
+		<comments>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/#comments</comments>
+		<pubDate>Thu, 14 Feb 2013 02:36:09 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[coronSDK]]></category>
+		<category><![CDATA[file system]]></category>
+		<category><![CDATA[lua]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=29262</guid>
+		<description><![CDATA[It's Wednesday and time for another set of frequently asked questions (FAQs). Here are some FAQs about accessing sub-folders and files.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another set of frequently asked questions (FAQs). Here are some FAQs about accessing sub-folders and files.</p>
+<h2>1. How do you create a new sub-folder within the Documents or Temporary directory?</h2>
+<p>Sub-folders can be added to directories using the Lua File System (LFS). The Resource directory is read-only and cannot be modified.</p>
+<p>Here is how you can create an <strong>Images</strong> folder in the <strong>Documents</strong> directory.</p>
+<p></p><pre class="crayon-plain-tag">local lfs = require &quot;lfs&quot;
+
+-- get raw path to app's Documents directory
+local docs_path = system.pathForFile( &quot;&quot;, system.DocumentsDirectory )
+
+-- change current working directory
+local success = lfs.chdir( docs_path ) -- returns true on success
+local new_folder_path
+local dname = &quot;Images&quot;
+if success then
+    lfs.mkdir( dname )
+    new_folder_path = lfs.currentdir() .. &quot;/&quot; .. dname
+end</pre><p></p>
+<p>You can find more information about LFS <a href=http://keplerproject.github.com/luafilesystem/manual.html>here</a>.</p>
+<h2>2. How do you access (read or write) a file that has been placed in a sub-folder?</h2>
+<p>You can access files in a sub-folder in two ways depending on what you want to do with the file. If you want to display an image or play a sound from the file, you concatenate the sub-folder name with the file name and then supply the base directory. For example, if you want to display the <strong>cat.png</strong> file in the Images sub-folder in the Documents directory, do the following:</p>
+<p></p><pre class="crayon-plain-tag">local catImage = display.newImage( &quot;Images/cat.png&quot;, system.DocumentsDirectory, 0, 0 )</pre><p></p>
+<p>Note that you don&#8217;t use <strong>system.pathForFile</strong> in API calls that require a <strong>baseDirectory</strong> parameter (e.g., display.newImage, display.newImageRect, audio.loadSound, etc.).</p>
+<p>If you want to open the <strong>readme.txt</strong> file in that same directory, do the following using <strong>system.pathForFile</strong>:</p>
+<p></p><pre class="crayon-plain-tag">local path = system.pathForFile( &quot;Images/readme.txt&quot;, system.DocumentsDirectory )
+local fileHandle = io.open( path )
+-- You can now use fileHandle:read or fileHandle:write to read or write the file.</pre><p></p>
+<p>The <strong>fileHandle</strong> will not be <strong>nil</strong> if the file exists, which leads into our next question.</p>
+<h2>3. How do you test that a file exists in a folder or sub-folder?</h2>
+<p>The following function can be called from your code to see if a file exists in a folder or sub-folder. Just remember to append the sub-folder name to the file name before calling this function.</p>
+<p></p><pre class="crayon-plain-tag">----------------------------------------------------------------------------------
+-- doesFileExist
+--
+-- Checks to see if a file exists in the path.
+--
+-- Enter:   name = file name
+--  path = path to file (directory)
+--  defaults to ResourceDirectory if &quot;path&quot; is missing.
+--
+-- Returns: true = file exists, false = file not found
+----------------------------------------------------------------------------------
+--
+function doesFileExist( fname, path )
+
+    local results = false
+
+    local filePath = system.pathForFile( fname, path )
+
+    -- filePath will be nil if file doesn't exist and the path is ResourceDirectory
+    --
+    if filePath then
+        filePath = io.open( filePath, &quot;r&quot; )
+    end
+
+    if  filePath then
+        print( &quot;File found -&gt; &quot; .. fname )
+        -- Clean up our file handles
+        filePath:close()
+        results = true
+    else
+        print( &quot;File does not exist -&gt; &quot; .. fname )
+    end
+
+    print()
+
+    return results
+end</pre><p></p>
+<p>Here&#8217;s how the above function is called.</p>
+<p></p><pre class="crayon-plain-tag">-- Checking for file in Documents directory
+local results = doesFileExist( &quot;Images/cat.png&quot;, system.DocumentsDirectory )
+    
+-- or checking in Resource directory
+local results = doesFileExist( &quot;Images/cat.png&quot; )</pre><p></p>
+<h2>4. How do you copy a file to a sub-folder?</h2>
+<p>The following function allows copying a file from one folder to another. One common use is to copy a file shipped in the Resource directory to the Documents directory. You must create any sub-folders (if they don&#8217;t exist) before using this function.</p>
+<p></p><pre class="crayon-plain-tag">----------------------------------------------------------------------------------
+-- copyFile( src_name, src_path, dst_name, dst_path, overwrite )
+--
+-- Copies the source name/path to destination name/path
+--
+-- Enter:   src_name = source file name
+--      src_path = source path to file (directory), nil for ResourceDirectory
+--      dst_name = destination file name
+--      overwrite = true to overwrite file, false to not overwrite
+--
+-- Returns: false = error creating/copying file
+--      nil = source file not found
+--      1 = file already exists (not copied)
+--      2 = file copied successfully
+----------------------------------------------------------------------------------
+--
+function copyFile( srcName, srcPath, dstName, dstPath, overwrite )
+
+    local results = false
+
+    local srcPath = doesFileExist( srcName, srcPath )
+
+    if srcPath == false then
+        -- Source file doesn't exist
+        return nil
+    end
+
+    -- Check to see if destination file already exists
+    if not overwrite then
+        if fileLib.doesFileExist( dstName, dstPath ) then
+            -- Don't overwrite the file
+            return 1
+        end
+    end
+
+    -- Copy the source file to the destination file
+    --
+    local rfilePath = system.pathForFile( srcName, srcPath )
+    local wfilePath = system.pathForFile( dstName, dstPath )
+
+    local rfh = io.open( rfilePath, &quot;rb&quot; )
+
+    local wfh = io.open( wfilePath, &quot;wb&quot; )
+
+    if  not wfh then
+        print( &quot;writeFileName open error!&quot; )
+        return false            -- error
+    else
+        -- Read the file from the Resource directory and write it to the destination directory
+        local data = rfh:read( &quot;*a&quot; )
+        if not data then
+            print( &quot;read error!&quot; )
+            return false    -- error
+        else
+            if not wfh:write( data ) then
+                print( &quot;write error!&quot; )
+                return false    -- error
+            end
+        end
+    end
+
+    results = 2     -- file copied
+
+    -- Clean up our file handles
+    rfh:close()
+    wfh:close()
+
+    return results
+end</pre><p></p>
+<p>Here is how to use the copy file routine to copy the <strong>readme.txt</strong> file from the Resource to the Documents directory.</p>
+<p></p><pre class="crayon-plain-tag">copyFile( &quot;readme.txt&quot;, nil, &quot;readme.txt&quot;, system.DocumentsDirectory, true )
+local catImage = display.newImage( &quot;cat.png&quot;, system.DocumentsDirectory, 0, 0 )</pre><p></p>
+<h2>5. What are the Android restrictions concerning files?</h2>
+<p>File access in Corona is based on the underlining Operating System, which will vary depending on the platform. On iOS devices, you can access files in the Resource directory (where main.lua is located) and the Documents and Temporary directories. On Android, accessing the Resource directory is limited because it&#8217;s not a real directory, but files are enclosed in a zip file. Corona allows directly loading images and audio files using audio and image APIs, but has limited access to Resource files using the file I/O APIs.</p>
+<p>Because of this limitation on Android, if you have files shipped in the Resource directory that you want to copy to another directory (e.g., Documents), you will need to change the file name in the resource directory so it can be access by the file I/O APIs. For example, if you want to move an image file from the Resource to the documents directory, it must be renamed with a different extension so it can be accessed. Our <strong>cat.png</strong> file would need to be called <strong>cat.png.txt</strong> so it could be copied.</p>
+<p>Here is how you would copy the cat.png file to the Documents directory on Android (assuming it was stored as <strong>cat.png.txt</strong>).</p>
+<p></p><pre class="crayon-plain-tag">copyFile( &quot;cat.png.txt&quot;, nil, &quot;cat.png&quot;, system.DocumentsDirectory, true )
+local catImage = display.newImage( &quot;cat.png&quot;, system.DocumentsDirectory, 0, 100 )</pre><p></p>
+<p>The file extensions that cannot be read in the Resource directory by Android are:  html, htm, 3gp, m4v, mp4, png, jpg, and rtf.</p>
+<p>The above technique works for all platforms so if you make it work for Android, it will work everywhere.</p>
+<p>That&#8217;s it for today&#8217;s FAQs. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

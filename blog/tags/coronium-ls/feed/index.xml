@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Coronium LS &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronium-ls/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Coronium LS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #134</title>
+		<link>/blog/2016/07/29/from-the-forum-issue-134/</link>
+		<pubDate>Fri, 29 Jul 2016 20:46:57 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Coronium LS]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[keystores]]></category>
+		<category><![CDATA[marketing]]></category>
+
+		<guid isPermaLink="false">/?p=67560</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>The release of Coronium LS beta</h3>
+<p>It’s great to watch an idea go from kernel to popcorn. <strong>Develephant’s</strong> Coronium has always been a boon to those of us who need a Lua-based server solution. It makes it easy for new Corona users to get started, while still being robust enough for those who are well versed in back-end server options.</p>
+<p>Now, the most recent beta development in Coronium-land is out in the wild. <a href=https://coronium.cloud/ target="_blank">Coronium LS</a>, which has been covered previously in <em>From the Forum</em>, can be freely downloaded and utilized by anyone looking to get their feet wet with this great server-side Lua development option. While it’s still in beta, other developers are already attesting to its strengths and quick startup time.</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/64759-release-coronium-ls-v100-beta/ target="_blank">original thread</a> for more information. Remember, new questions deserve new threads!</p>
+<h3>Creating keystores for Android</h3>
+<p>When first starting out, the methods necessary to build and deliver an app to the Google Play store seem a bit Byzantine. One particular step that seems to cause a lot of confusion is the generation of the keystore encryption.</p>
+<p>The purpose here is to ensure that your app isn’t being spoofed for nefarious purposes while putting your personal stamp on the encryption key. It’s definitely not the most user-friendly set of steps available, but they are definitely necessary if you plan on publishing for the Google Play store. The <a href=https://forums.coronalabs.com/topic/64772-keytool-to-bulid-release/ target="_blank">original thread</a> goes over the main steps and the pitfalls that you might encounter when creating your keystore.</p>
+<h3>The age-old question of game marketing</h3>
+<p>Interest in gaming keeps growing with no signs of waning. Consequently, eager developers fall in love with the combination of versatility and the low entry barrier that Corona offers.</p>
+<p>Eventually, these developers have their games all polished up, server maintenance done, localization checked, and in-app purchases all sewn up. Then, the challenging part comes: making people aware of the app, and making them want to download it!</p>
+<p>This <a href=https://forums.coronalabs.com/topic/64768-game-marketing-best-practices/ target="_blank">forum thread</a> talks about some of the best ways to go about getting attention as a new developer without a publishing contract. Check them out for yourself and, if you have any tips of your own, feel free to throw them on the pile!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

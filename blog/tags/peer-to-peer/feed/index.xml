@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>peer-to-peer &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/peer-to-peer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>peer-to-peer &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Local multiplayer with UDP/TCP</title>
+		<link>/blog/2014/09/23/tutorial-local-multiplayer-with-udptcp/</link>
+		<comments>/blog/2014/09/23/tutorial-local-multiplayer-with-udptcp/#comments</comments>
+		<pubDate>Tue, 23 Sep 2014 21:56:05 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[LAN]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[peer-to-peer]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=59630</guid>
+		<description><![CDATA[In this guest tutorial, Corona developer Mark Steelman discusses the implementation of local area networking between two devices using LuaSocket and UDP/TCP. Read further to learn how.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s guest tutorial comes to you courtesy of Mark Steelman, founder of Steelman Games LLC. Mark is currently working on a turn-based RPG incorporating local multiplayer called <a href=http://www.legendofus.net/ target="_blank">Legend of Us Roleplaying Game</a>. Before becoming an indie developer, Mark worked for four years at Electronic Arts as a game designer. You can follow the progress of his projects on <a href=http://www.facebook.com/legendofusrpg target="_blank">Facebook</a>, <a title="Legend of Us RPG Google+" href=http://plus.google.com/+LegendofusNet target="_blank">Google+</a>, or by subscribing to his <a title="Legend of Us RPG main page" href=http://www.legendofus.net/ target="_blank">newsletter</a>.</em></p>
+<hr />
+<h3>Make devices find each other with UDP</h3>
+<p>As noted in the introduction, I&#8217;m building a <a href=http://www.legendofus.net/ target="_blank">turn-based role-playing game</a> using Corona SDK. As part of the design, I wanted <strong>local multiplayer</strong> and I also wanted it to be <strong>cross-platform</strong>. After a lot of research, I figured out how to accomplish this and, in this tutorial, I will share some of what I learned. Even better: this architecture will work for both turn-based and action games, so stick around if you&#8217;re making an action game!</p>
+<p>This tutorial assumes that you have a basic understanding of Corona SDK, Lua, and peer-to-peer networking. We are going to use <a title="link to LUA Socket documentation" href=http://w3.impa.br/~diego/software/luasocket/ target="_blank">LuaSocket</a> which is included in Corona SDK under the <a href=http://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket</a> library. Because this design is intended for cross-platform multiplayer, it&#8217;s not going to use any native systems. While it does assume that the player has a Local Area Network (LAN), that network doesn’t need to be connected to the internet.</p>
+<h3>Including LuaSocket</h3>
+<p>In order to use LuaSocket, you must first include it:</p><pre class="crayon-plain-tag">local socket = require( &quot;socket&quot; )</pre><p>That&#8217;s the easy part &#8212; let&#8217;s continue&#8230;</p>
+<h3>UDP and TCP</h3>
+<p>First, let me give a brief explanation of <strong>UDP</strong> and <strong>TCP</strong>. Both of these are protocols which allow computers to talk to each other and each one has certain advantages and disadvantages. However, I’m only going to cover features that are relevant to the tutorial.</p>
+<p><strong>UDP</strong> has the ability to send messages to an address without knowing if anything is there. It doesn’t check to see if the message made it anywhere &#8212; it simply transmits the message. UDP also allows you to listen to an address without being connected to a computer at that address.</p>
+<p><strong>TCP</strong> is a reliable protocol. It sends messages to another computer that it&#8217;s connected to via a TCP socket. If the other computer responds that there was a problem with the message, it sends the message again.</p>
+<p>Knowing this, you might ask &#8220;Why would anyone use UDP when TCP is so reliable?&#8221; Well, there are several reasons, but the reason most relevant to this tutorial is the fact that you must know the IP address of the server in order to use TCP. Any network which you can join without visiting the LAN administrator is assigning you a random IP address using DHCP. This means that we&#8217;ll need to discover the IP address of the server on our own. Fortunately, UDP can help with that.</p>
+<h3>Advertise the server</h3>
+<p>For local multiplayer to work, one of the devices must act as the server/host. The host doesn&#8217;t need to have special privileges in your game, but the primary record of the game in progress will be stored on this device. In the language of role-playing games, let&#8217;s call this player the <strong>game master</strong>. This game master is going to announce his/her presence to the local network via some method. I utilize an &#8220;Invite&#8221; button which calls the following function upon being pressed.</p><pre class="crayon-plain-tag">local advertiseServer = function( button )
+
+&nbsp;&nbsp; &nbsp;local send = socket.udp()
+&nbsp;&nbsp; &nbsp;send:settimeout( 0 )  --this is important (see notes below)
+
+&nbsp;&nbsp; &nbsp;local stop
+
+&nbsp;&nbsp; &nbsp;local counter = 0  --using this, we can advertise our IP address for a limited time
+
+&nbsp;&nbsp; &nbsp;local function broadcast()
+&nbsp; &nbsp; &nbsp; &nbsp; local msg = &quot;AwesomeGameServer&quot;
+&nbsp; &nbsp; &nbsp; &nbsp; --multicast IP range from 224.0.0.0 to 239.255.255.255
+&nbsp; &nbsp; &nbsp; &nbsp; send:sendto( msg, &quot;228.192.1.1&quot;, 11111 )
+&nbsp; &nbsp; &nbsp; &nbsp; --not all devices can multicast so it's a good idea to broadcast too
+&nbsp; &nbsp; &nbsp; &nbsp; --however, for broadcast to work, the network has to allow it
+&nbsp; &nbsp; &nbsp; &nbsp; send:setoption( &quot;broadcast&quot;, true )  --turn on broadcast
+&nbsp; &nbsp; &nbsp; &nbsp; send:sendto( msg, &quot;255.255.255.255&quot;, 11111 )
+&nbsp; &nbsp; &nbsp; &nbsp; send:setoption( &quot;broadcast&quot;, false )  --turn off broadcast
+
+&nbsp; &nbsp; &nbsp; &nbsp; counter = counter + 1
+&nbsp; &nbsp; &nbsp; &nbsp; if ( counter == 80 ) then  --stop after 8 seconds
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    stop()
+&nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp;end
+
+&nbsp;&nbsp; &nbsp;--pulse 10 times per second
+&nbsp;&nbsp; &nbsp;local serverBroadcast = timer.performWithDelay( 100, broadcast, 0 )
+
+&nbsp;&nbsp; &nbsp;button.stopLooking = function()
+&nbsp; &nbsp;     timer.cancel( serverBroadcast )  --cancel timer
+&nbsp; &nbsp; &nbsp; &nbsp; button.stopLooking = nil
+&nbsp;&nbsp; &nbsp;end
+&nbsp;&nbsp; &nbsp;stop = button.stopLooking
+end</pre><p>Here are some notes about this code:</p>
+<ul>
+<li><strong>Multicast</strong> is a device feature which allows one device to communicate with several. iPhones and iPads have it, but I&#8217;ve been told that iPods do not. I haven&#8217;t tried it on any Android devices, so maybe somebody can test it and report their results in the comments section. As a result of this inconsistency, we also use <strong>broadcast</strong>. &#8220;Why don&#8217;t we just use broadcast?&#8221; you might ask. Well, the catch with broadcast is that the LAN has to allow broadcasts. By using both, we are maximizing the chance of finding each other.</li>
+<li>The &#8220;pulse&#8221; of the timer is ten times per second. I don&#8217;t recommend setting your timer pulse faster than that unless you have a good reason &#8212; after all, your game needs time to do other things. This is a standard pulse speed for most action games including MMOs.</li>
+<li>The port you choose can be anything between <code>1</code> and <code>65535</code>, however, applications almost always block the port that they use and you&#8217;ll get an error if you try to bind to a port that is currently in use. Likewise, if you bind to a port, you need to unbind/close the port when you end the game so you don&#8217;t block it indefinitely on the players device. Lower number ports are used by commonly run applications, so it&#8217;s best to use a port between <code>1024</code> and <code>65535</code>.</li>
+<li>The <code>settimeout()</code> function allows you to tell the socket how long to wait for a message before moving on. Default is to wait indefinitely, meaning that your game freezes until it gets a message. Setting it to <code>0</code> tells it to just check and if there&#8217;s nothing to receive and move on to the next task.</li>
+</ul>
+<h3>Finding the server</h3>
+<p>The client will need to know its own IP address for the next step. Fortunately, UDP in LuaSocket can help with that:</p><pre class="crayon-plain-tag">local getIP = function()
+&nbsp;&nbsp; &nbsp;local s = socket.udp()  --creates a UDP object
+&nbsp;&nbsp; &nbsp;s:setpeername( &quot;74.125.115.104&quot;, 80 )  --Google website
+&nbsp;&nbsp; &nbsp;local ip, sock = s:getsockname()
+&nbsp;&nbsp; &nbsp;print( &quot;myIP:&quot;, ip, sock )
+&nbsp;&nbsp; &nbsp;return ip
+end</pre><p>The IP address in the above function is arbitrary &#8212; I used the Google address because I know it. You don&#8217;t even need to be connected to the internet for this function to return your IP address, but you must at least be on a local network.</p>
+<h3>Listening for the server</h3>
+<p>Now we are prepared to listen for the server. We will recognize the server because of the message <code>AwesomeGameServer</code>. Obviously, this could be any string; we are just going to match strings.</p><pre class="crayon-plain-tag">local function findServer( button )
+
+&nbsp;&nbsp; &nbsp;local newServers = {}
+&nbsp;&nbsp; &nbsp;local msg = &quot;AwesomeGameServer&quot;
+
+&nbsp;&nbsp; &nbsp;local listen = socket.udp()
+&nbsp;&nbsp; &nbsp;listen:setsockname( &quot;226.192.1.1&quot;, 11111 )  --this only works if the device supports multicast
+
+&nbsp;&nbsp; &nbsp;local name = listen:getsockname()
+&nbsp;&nbsp; &nbsp;if ( name ) then  --test to see if device supports multicast
+&nbsp; &nbsp; &nbsp; &nbsp; listen:setoption( &quot;ip-add-membership&quot;, { multiaddr=&quot;226.192.1.1&quot;, interface = getIP() } )
+&nbsp;&nbsp; &nbsp;else  --the device doesn't support multicast so we'll listen for broadcast
+&nbsp; &nbsp; &nbsp; &nbsp; listen:close()  --first we close the old socket; this is important
+&nbsp; &nbsp; &nbsp; &nbsp; listen = socket.udp()  --make a new socket
+&nbsp; &nbsp; &nbsp; &nbsp; listen:setsockname( getIP(), 11111 )  --set the socket name to the real IP address
+&nbsp;&nbsp; &nbsp;end
+
+&nbsp;&nbsp; &nbsp;listen:settimeout( 0 )  --move along if there is nothing to hear
+
+&nbsp;&nbsp; &nbsp;local stop
+
+&nbsp;&nbsp; &nbsp;local counter = 0  --pulse counter
+
+&nbsp;&nbsp; &nbsp;local function look()
+&nbsp; &nbsp; &nbsp; &nbsp; repeat
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;local data, ip, port = listen:receivefrom()
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--print( &quot;data: &quot;, data, &quot;IP: &quot;, ip, &quot;port: &quot;, port )
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if data and data == msg then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not newServers[ip] then
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    print( &quot;I hear a server:&quot;, ip, port )
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;local params = { [&quot;ip&quot;]=ip, [&quot;port&quot;]=22222 }
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;newServers[ip] = params
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; until not data
+
+&nbsp; &nbsp; &nbsp; &nbsp; counter = counter + 1
+&nbsp; &nbsp; &nbsp; &nbsp; if counter == 20 then  --stop after 2 seconds
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    stop()
+&nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; end
+
+     --pulse 10 times per second
+&nbsp;&nbsp; &nbsp; local beginLooking = timer.performWithDelay( 100, look, 0 )
+
+&nbsp;&nbsp; &nbsp; function stop()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;timer.cancel( beginLooking )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;button.stopLooking = nil
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;evaluateServerList( newServers ) --do something with your found servers
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;listen:close()&nbsp; --never forget to close the socket!
+&nbsp;&nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; button.stopLooking = stopLooking
+end</pre><p>I put a lot of inline comments above, but I&#8217;ll elaborate on a few things:</p>
+<ul>
+<li>Notice that we account for the fact that not all devices have Multicast.</li>
+<li>The <code>receivefrom()</code> function is going to just pull in anything that&#8217;s at that address, so we need to filter it. This is why we have the string message to compare with.</li>
+<li>When two devices find each other, it can get painful if they both have a short duration. I like to make the server wait much longer than the clients. If the server is advertising, the client finds them pretty quick. Basically, I just want to avoid &#8220;Can you try that again? I missed it.&#8221;</li>
+<li>In this example, I&#8217;m passing in a reference to the button that the player pressed to activate the function. I do this because so the player can push it again and stop broadcasting. If you don&#8217;t want to do that, you don&#8217;t need the button reference.</li>
+</ul>
+<p>So, at this point, we know how to let the game master be discovered by the players. The essential IP address required to use TCP is attached to the UDP message. Now that we have the game master&#8217;s IP address, we can connect to their device using TCP.</p>
+<h3>Swapping strings</h3>
+<p>Now we&#8217;ll discuss how to create a TCP server, connect to it, and send messages back and forth.</p>
+<p>First, let&#8217;s discuss what TCP will provide and what it won&#8217;t. Like I said above, once we have a connection between devices, they&#8217;ll be able to send messages back and forth. These messages will just be strings. Imagine it like a text message app &#8212; in this case, the app on one device sends texts to the app on another device. These messages are then interpreted by the apps on each device and some action occurs.</p>
+<h3>Security</h3>
+<p>This tutorial will not go in depth about security, but a couple points should be covered:</p>
+<ul>
+<li>The server and client can only control each other as far as you allow it. As I&#8217;ve iterated several times now, TCP just sends and receives text strings. For a Pac-Man clone that could be controlled by a second device, about the only information the server would need is &#8220;BEGIN&#8221;, &#8220;UP&#8221;, &#8220;DOWN&#8221;, &#8220;LEFT&#8221;, and &#8220;RIGHT&#8221; &#8212; all else could simply be ignored.</li>
+<li>You should <strong>never</strong> try to make your app accept functions that have been turned into a string. Let the client and the server have their own functions and just use the transmitted text to call the functions. If your app accepts functions, you open up a very serious security vulnerability, so don&#8217;t do it! Instead, just pass commands with parameters.</li>
+</ul>
+<p>In any case, don&#8217;t lie awake at night worrying about this. Neither iOS nor Android will let you damage someone&#8217;s device with such foolishness, but it may ruin the install of your game!</p>
+<h3>Starting the server</h3>
+<p>The server runs in a periodic loop. On each iteration of the loop, it checks to see if any clients want to join and whether connected clients sent a message. If the buffer has any messages to send out, it sends them. Here&#8217;s a basic TCP server module with further explanation following:</p><pre class="crayon-plain-tag">local S = {}
+
+local socket = require( &quot;socket&quot; )
+
+local clientList = {}
+local clientBuffer = {}
+
+S.getIP = function()
+&nbsp;&nbsp; &nbsp;local s = socket.udp()
+&nbsp;&nbsp; &nbsp;s:setpeername( &quot;74.125.115.104&quot;, 80 )
+&nbsp;&nbsp; &nbsp;local ip, sock = s:getsockname()
+&nbsp;&nbsp; &nbsp;print( &quot;myIP:&quot;, ip, sock )
+&nbsp;&nbsp; &nbsp;return ip
+end
+
+S.createServer = function()
+
+&nbsp;&nbsp; &nbsp;local tcp, err = socket.bind( S.getIP(), 22222 )  --create a server object
+&nbsp;&nbsp; &nbsp;tcp:settimeout( 0 )
+
+&nbsp;&nbsp; &nbsp;local function sPulse()
+&nbsp; &nbsp; &nbsp; &nbsp; repeat
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;local client = tcp:accept()  --allow a new client to connect
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if client then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     print( &quot;found client&quot; )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; client:settimeout( 0 )  --just check the socket and keep going
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --TO DO: implement a way to check to see if the client has connected previously
+                --consider assigning the client a session ID and use it on reconnect.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clientList[#clientList+1] = client
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clientBuffer[client] = { &quot;hello_client\n&quot; }  --just including something to send below
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; until not client
+&nbsp; &nbsp; &nbsp; &nbsp; 
+        local ready, writeReady, err = socket.select( clientList, clientList, 0 )
+&nbsp; &nbsp; &nbsp; &nbsp; if err == nil then
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    for i = 1, #ready do&nbsp; --list of clients who are available
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     local client = ready[i]
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; local allData = {}  --this holds all lines from a given client
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; repeat
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;local data, err = client:receive()  --get a line of data from the client, if any
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if data then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allData[#allData+1] = data
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; until not data
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if ( #allData &gt; 0 ) then  --figure out what the client said to the server
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for i, thisData in ipairs( allData ) do
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print( &quot;thisData: &quot;, thisData )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --do stuff with data
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for sock, buffer in pairs( clientBuffer ) do
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     for _, msg in pairs( buffer ) do  --might be empty
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    local data, err = sock:send( msg )  --send the message to the client
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp;end
+
+    --pulse 10 times per second
+&nbsp;&nbsp; &nbsp;local serverPulse = timer.performWithDelay( 100, sPulse, 0 )
+
+&nbsp;&nbsp; &nbsp;local function stopServer()
+&nbsp; &nbsp; &nbsp; &nbsp; timer.cancel( serverPulse )  --cancel timer
+&nbsp; &nbsp; &nbsp; &nbsp; tcp:close()
+&nbsp; &nbsp; &nbsp; &nbsp; for i, v in pairs( clientList ) do
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    v:close()
+&nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp;end
+&nbsp;&nbsp; &nbsp;return stopServer
+end
+
+return S</pre><p>And that is a basic server. Let&#8217;s start at the top with some explanation:</p>
+<ul>
+<li><code>socket.bind()</code> creates a server object which you bind to the port of your choice. I used <code>11111</code>, but you can use any that we listed in the earlier section. Remember to close the TCP object when you shut down the server via the <code>stopServer()</code> function!</li>
+<li><code>settimeout( 0 )</code> tells LuaSocket to move on if there&#8217;s no information waiting at the socket.</li>
+<li><code>accept()</code> returns a client object which represents the connection to the other device. Each client will get their own object and each one will need to be closed when the game is done. We do this in the function at the bottom called <code>stopServer()</code>.</li>
+<li><code>socket.select()</code> goes through our list of client connections to see which are available. Any that are not available are ignored but not closed.</li>
+<li><code>receive()</code> receives one line of data. You can designate a line of data in a string by putting <code>\n</code> at the end. It&#8217;s simple and you&#8217;ll be able to create bite-sized pieces of data. This function is structured so that you end up with a numbered table of string lines. They are numbered in the order that they were received, but you can&#8217;t rely on the lines you send being received in the order you sent them. If this is important, and it often is, you&#8217;ll need to create a way for the server to know if a line is in the right order.</li>
+<li>Next we go through the list of lines and interpret them. This is usually just a series of <code>if</code>&#8211;<code>then</code> statements with a liberal use of the <a href=http://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> library.</li>
+<li>Finally, we send whatever is in the buffer. The buffer is another list of strings. Again, you can&#8217;t absolutely control the order in which they are received. You don&#8217;t have to use a buffer, but when you are using a multi-use device like a phone as a server, it&#8217;s a good idea. You may just <code>:send()</code> to a client socket at any time but the only way the device knows that the message didn&#8217;t go through is if the other device responds. If the other device is taking a call, it will ignore your message and the message will be lost. If you implement a buffer, it sends the message every pulse until something happens that removes the message from the buffer, however you&#8217;ll need to implement a way of knowing when to remove items from the buffer.</li>
+</ul>
+<h3>Connecting to the server</h3>
+<p>Connecting to the server is much simpler:</p><pre class="crayon-plain-tag">local function connectToServer( ip, port )
+&nbsp;&nbsp; &nbsp;local sock, err = socket.connect( ip, port )
+&nbsp;&nbsp; &nbsp;if sock == nil then
+&nbsp; &nbsp; &nbsp; &nbsp; return false
+&nbsp;&nbsp; &nbsp;end
+&nbsp;&nbsp; &nbsp;sock:settimeout( 0 )
+&nbsp;&nbsp; &nbsp;sock:setoption( &quot;tcp-nodelay&quot;, true )  --disable Nagle's algorithm
+&nbsp;&nbsp; &nbsp;sock:send( &quot;we are connected\n&quot; )
+&nbsp;&nbsp; &nbsp;return sock
+end</pre><p>To elaborate on this slightly:</p>
+<ul>
+<li><code>socket.connect</code> is pretty self explanatory: attempt to connect to the server at that address.</li>
+<li><code>settimeout( 0 )</code> again lets the socket know that you want it to just check the socket and move on if there&#8217;s no incoming message.</li>
+<li>Nagle&#8217;s algorithm is a standard function that causes the socket to aggregate data until the data is of a certain size, then send it. If you are just going to send &#8220;UP&#8221; and you want it sent right away, you&#8217;ll want this off.</li>
+</ul>
+<p>What&#8217;s not included in this example is a method to determine if the client is connecting for the first time or reconnecting (return session). This is outside the scope of this tutorial, but one option is to use a session ID which the client gets the first time it connects to the server. In this case, both the client and the server save the ID. Then, if the client loses the connection, this ID is sent upon reconnection and the server can update the client&#8217;s data with the new client socket.</p>
+<h3>Client loop</h3>
+<p>The final piece of the puzzle is the client loop. This will look very much like the server loop, but it never tries to accept connections.</p><pre class="crayon-plain-tag">local function createClientLoop( sock, ip, port )
+
+&nbsp;&nbsp; &nbsp;local buffer = {}
+&nbsp;&nbsp; &nbsp;local clientPulse
+
+&nbsp;&nbsp; &nbsp;local function cPulse()
+&nbsp; &nbsp; &nbsp; &nbsp; local allData = {}
+&nbsp; &nbsp; &nbsp; &nbsp; local data, err
+
+&nbsp; &nbsp; &nbsp; &nbsp; repeat
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;data, err = sock:receive()
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if data then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allData[#allData+1] = data
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if ( err == &quot;closed&quot; and clientPulse ) then  --try again if connection closed
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     connectToServer( ip, port )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data, err = sock:receive()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if data then
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    allData[#allData+1] = data
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; until not data
+
+&nbsp; &nbsp; &nbsp; &nbsp; if ( #allData &gt; 0 ) then
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    for i, thisData in ipairs( allData ) do
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     print( &quot;thisData: &quot;, thisData )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --react to incoming data&nbsp;
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; end
+
+&nbsp; &nbsp; &nbsp; &nbsp; for i, msg in pairs( buffer ) do
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    local data, err = sock:send(msg)
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if ( err == &quot;closed&quot; and clientPulse ) then  --try to reconnect and resend
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     connectToServer( ip, port )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data, err = sock:send( msg )
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp; end
+&nbsp;&nbsp; &nbsp;end
+
+    --pulse 10 times per second
+&nbsp;&nbsp; &nbsp;clientPulse = timer.performWithDelay( 100, cPulse, 0 )
+
+&nbsp;&nbsp; &nbsp;local function stopClient()
+&nbsp; &nbsp;     timer.cancel( clientPulse )  --cancel timer
+&nbsp; &nbsp; &nbsp; &nbsp; clientPulse = nil
+&nbsp; &nbsp; &nbsp; &nbsp; sock:close()
+&nbsp;&nbsp; &nbsp;end
+&nbsp;&nbsp; &nbsp;return stopClient
+end</pre><p>Note that the client is always responsible for making the connection to the server. The server never tries to reach the client — it has enough to handle already. Beyond that, there isn&#8217;t anything clarify that wasn&#8217;t already covered in the server loop section.</p>
+<h3>Conclusion</h3>
+<p>I hope this tutorial helps you achieve your multiplayer dreams! While it&#8217;s not intended to be a comprehensive tutorial on networking, what I accomplished should help you get two devices talking with each other using TCP.</p>
+<p>Thank you for reading and remember to check out <a href=http://www.legendofus.net/ target="_blank">Legend of Us Roleplaying Game</a> which inspired me to figure all of this out.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/09/23/tutorial-local-multiplayer-with-udptcp/feed/</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+		</item>
+	</channel>
+</rss>

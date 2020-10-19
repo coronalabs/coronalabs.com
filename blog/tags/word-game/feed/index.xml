@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>word game &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/word-game/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>word game &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>App of the Week: Perplexicon</title>
+		<link>/blog/2013/11/11/app-of-the-week-perplexicon/</link>
+		<comments>/blog/2013/11/11/app-of-the-week-perplexicon/#comments</comments>
+		<pubDate>Mon, 11 Nov 2013 21:48:42 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[word game]]></category>
+
+		<guid isPermaLink="false">/?p=51319</guid>
+		<description><![CDATA[When brainstorming ideas for his latest word game, Justin Giles of <a href="http://www.greenriftsoftware.com/">Greenrift Software</a> wanted to create a game that challenged the status quo of the genre. Inspired by classics such as Boggle and Scrabble, Justin launched <a href="https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&#38;mt=8">Perplexicon</a>, presenting players with a 7×7 grid sparsely populated with a mix of letter tiles, required tiles, empty spaces, and other elements for novel gameplay.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-51320" style="margin: 2px 20px 10px 0px;" alt="Perplexicon" src="/wordpress/wp-content/uploads/2013/11/Screen-Shot-2013-11-08-at-2.29.09-PM.png" />When brainstorming ideas for his latest word game, Justin Giles of <a href=http://www.greenriftsoftware.com/>Greenrift Software</a> wanted to create a game that challenged the status quo of the genre. Inspired by classics such as Boggle and Scrabble, Justin launched <a href=https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&mt=8>Perplexicon</a>, presenting players with a 7×7 grid sparsely populated with a mix of letter tiles, required tiles, empty spaces, and other elements for novel gameplay.</p>
+<p><img class="alignright  wp-image-51321" style="margin: 2px 2px 10px 20px;" alt="Perplexicon screenshot" src="/wordpress/wp-content/uploads/2013/11/Perplexicon-screenshot.jpeg" width="256" height="454" />In Perplexicon, you must race against the clock to place tiles on the grid and drag them around to create words. Things get more complicated as &#8220;viral&#8221; tiles show up and consume other tiles, and once the board is filled or time runs out, the game is over. Featuring more than 100 levels, players can enjoy the gradual increase in difficulty and hours of word-building fun.</p>
+<p>When developing Perplexicon, Justin relied on <a href=/resources/3rd-party-tools-and-services/>Particle Candy</a> for the particle effects, along with various code packages from <a href=http://www.glitchgames.co.uk/>Glitch Games</a> to help with sounds and data storage. He also implemented the Carrot plugin for Facebook integration and used the store library for in-app purchases via iTunes, Google Play, and Amazon.</p>
+<p>When asked about sharing tips with fellow developers, Justin noted that, “For app development, the odds are against us — your app may succeed and it may not. If you love making games, just roll with the punches and keep producing them. Your games will get better, your skills will improve, and eventually you might just make the next big hit!”</p>
+<p>If you enjoy a good word challenge, download Perplexicon for free from the app markets listed below.</p>
+<p>iTunes: <a href=https://itunes.apple.com/us/app/perplexicon/id599310368?ls=1&mt=8>itunes.apple.com/us/app/perplexicon/id599310368?ls=1&amp;mt=8</a><br />
+Google Play: <a href=https://play.google.com/store/apps/details?id=com.greenrift.perplexicon>play.google.com/store/apps/details?id=com.greenrift.perplexicon</a><br />
+Amazon Appstore: <a href=http://www.amazon.com/Greenrift-Software-LLC-Perplexicon/dp/B00FXISJDO>amazon.com/Greenrift-Software-LLC-Perplexicon/dp/B00FXISJDO</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/11/app-of-the-week-perplexicon/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

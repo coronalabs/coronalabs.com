@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Android Studio &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/android-studio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Android Studio &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Android Studio templates now available for Corona Enterprise</title>
+		<link>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/</link>
+		<comments>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/#comments</comments>
+		<pubDate>Wed, 25 May 2016 20:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+
+		<guid isPermaLink="false">/?p=66638</guid>
+		<description><![CDATA[Android Studio support for Corona Enterprise is here! Read further to learn how Android Studio can benefit your development.]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2886</a>, Android and iOS development for Corona Enterprise are finally on equal footing; Android Studio support for Corona Enterprise is here!</p>
+<p>Google released Android Studio 1.0 as the official IDE for Android Development in December 2014. This change brought several useful tools to the Android development landscape, but focused around the development of standard Android applications.</p>
+<p>For Corona Enterprise on Android, we simply relied on the Android command line tools and custom scripts for doing Enterprise development; no IDE integration whatsoever. This left Android Enterprise developers with very few tools to iterate on code quickly and the whole process more painful than it had to be.</p>
+<h3>What about the old project model?</h3>
+<p>Just as Google moved away from the Ant build system, so are we. Android Studio is the present and future; this is where we want to be.</p>
+<p>Now that Android Studio templates are available, <strong>the Ant project templates have been deprecated</strong> and all new Enterprise projects should use Android Studio.</p>
+<p>Despite being deprecated, documentation for using Enterprise with the Ant build system will still be available through around September or October of this year.</p>
+<h3>Getting started with Android Studio</h3>
+<p>If you&#8217;re new to Corona Enterprise or Android Studio, see our <a href=https://docs.coronalabs.com/daily/native/android/prereqs.html target="_blank">Android Prerequisites</a> guide for instructions on how to set up Android Studio for Corona Enterprise development.</p>
+<h3>Migrating to Android Studio</h3>
+<p>For existing Android Enterprise projects, see our <a href=https://docs.coronalabs.com/native/android/androidStudio/index.html>Migration to Android Studio</a> guide. We will be <strong>dropping support for the Ant project model </strong>in the coming months. Specifically, the public release in <strong>September/October</strong> will mark the end of Ant project support for Corona Enterprise. Please have all of the Enterprise apps that you&#8217;ll continue to support migrated by this time.</p>
+<h3>How Android Studio makes development easier</h3>
+<p>Android Studio brings several useful tools that make the Android Enterprise developer&#8217;s life much easier. Some of these include:</p>
+<h4>Code completion</h4>
+<p>Can&#8217;t remember what that exact Android API was? No problem – Android Studio&#8217;s got you covered!</p>
+<h4>Static Code Analyzer</h4>
+<p>This handy tool can inspect Java code throughout your project and help you catch possible bugs, simplify complex code snippets, find coding style issues, typos, and so much more. We highly recommend giving this a run via Analyze → Inspect Code&#8230;</p>
+<h4>JAR Decompilation</h4>
+<p>Ever been in a situation where your app is crashing inside some library that you don&#8217;t have the source code to? Assuming that library isn&#8217;t obfuscated with ProGuard, the JAR decompilation tool will let you take a peek into the implementation for better understanding of the library.</p>
+<h4>Integrated support for Android Virtual Device (AVD) testing</h4>
+<p>While it was possible to test out Corona Enterprise projects using Android Virtual Devices (AVDs) before, Android Studio makes this significantly better by offering improved performance and easy integration into the IDE.</p>
+<p>Testing with AVDs does come with some caveats you should be aware of:</p>
+<ul>
+<li>Since Corona is built with the ARMv7 architecture in mind, be sure to <strong>only</strong> use system images with ABI: <strong>armeabi-v7a</strong>.</li>
+<li>AVDs do <strong>not </strong>have Google Play installed on them. This means that testing things like Google Licensing, Expansion Files, or IAP cannot be done in AVDs.</li>
+<li>AVDs are a little slow to boot. Be patient and don&#8217;t accidentally close one AVD after running a single test.</li>
+</ul>
+<h4>No more command line</h4>
+<p>You can now do all building, deployment, and view logcat through Android Studio. No need for shell scripts!</p>
+<h4>No guessing at API Levels for Android APIs</h4>
+<p>Android Studio warns you if you use an API that was introduced later than your <code>minSDKVersion</code>. No more redesigning for older Android versions at the last minute.</p>
+<h4>Easier integration of common external libraries</h4>
+<p>While this doesn&#8217;t apply to libraries that are only distributed as JAR files, Android Studio makes it significantly easier to add things like the Android Support libraries and Google Play Services to your projects.</p>
+<p>A simple line in the dependencies block of your <code>build.gradle</code> script it all it takes for adding in whichever version of the Android Support libraries you desire:</p><pre class="crayon-plain-tag">dependencies {
+    ...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+}</pre><p>For Google Play Services, you can even <a href=https://developers.google.com/android/guides/setup?#add_google_play_services_to_your_project>select which components of it</a> to compile into your app. This is especially helpful if your app is getting close to the <a href=http://developer.android.com/tools/building/multidex.html?#about>method reference limit</a> for a single dex file.</p>
+<h4>Multi-dex support is now easy as pie</h4>
+<p>This can now be added to Corona Enterprise projects using the simple steps outlined by Google <a href=http://developer.android.com/tools/building/multidex.html target="_blank">here</a>.</p>
+<h3>Testimonials</h3>
+<p>Still not convinced that Android Studio is the best thing since sliced bread? Read these testimonials from our engineers:</p>
+<ul>
+<li><em>&#8220;I don&#8217;t have to switch between Sublime Text and the Terminal 200 times a day now!&#8221;</em> — Danny Glover</li>
+<li><em>&#8220;It&#8217;s like Xcode for Android&#8230;.but better.&#8221;</em> — Ingemar Bergmark</li>
+<li><em>&#8220;The only disadvantage of using Android Studio over the old Ant method is&#8230; oh, well, there is none.&#8221;</em> — Sergey Lerg</li>
+</ul>
+<h3>Regarding AVD testing</h3>
+<p>If you&#8217;re giving AVD testing a try for the first time with Android Studio, there are some best practices you should be aware of:</p>
+<p>You <strong>should </strong>use AVD testing for:</p>
+<ul>
+<li><strong>Testing UI on form factors that aren&#8217;t readily available to you.</strong> While Google&#8217;s <a href=https://developers.google.com/cloud-test-lab/overview>Android Cloud Test Lab</a> does allow some form of UI testing, you&#8217;ll be able to iterate faster using AVDs.</li>
+<li><strong>Testing with OS versions that aren&#8217;t readily available to you.</strong> If your app is using some APIs or features that aren&#8217;t available on all the API Levels you support, this is a good way to quickly test behaviors on any questionable API levels.</li>
+<li><strong>Testing situations that are difficult to set up on actual devices.</strong> The emulator that AVDs run in allow you to mock up situations that may be more difficult to test on real hardware. For example, you can mock up the battery state and phone calls.</li>
+</ul>
+<p>You <strong>should not</strong> use AVD testing for:</p>
+<ul>
+<li><strong>Performance testing.</strong> Because this is an emulated environment, the performance you see with an AVD is not the same as what you&#8217;ll see on real hardware. For bigger apps, testing in this manner may not produce usable/practical results.</li>
+<li><strong>As a substitute for on-device testing.</strong> You should make sure your app works on a plethora of actual hardware before submitting it anywhere.</li>
+</ul>
+<p>For more info, consult Google&#8217;s <a href=http://developer.android.com/tools/devices/managing-avds.html>Managing AVDs with the AVD Manager</a> Guide.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

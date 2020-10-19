@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sdk &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/sdk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>sdk &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Expansion File Support for Android</title>
+		<link>/blog/2013/04/17/expansion-file-support-for-android/</link>
+		<comments>/blog/2013/04/17/expansion-file-support-for-android/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 13:35:41 +0000</pubDate>
+		<dc:creator><![CDATA[Perry Clarke]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[sdk]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31944</guid>
+		<description><![CDATA[We're happy to announce support for Google Play expansion files that will vastly simplify mobile app development. Why would you want to use expansion files? Read the full post to learn more!]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build</a> 1082, we&#8217;re happy to announce support for Google Play expansion files that will vastly simplify your <a href=http://www.coronalabs.com/products/corona-sdk/ target="_blank">mobile app development</a>. Why would you want to use expansion files? It turns out that Google Play has a 50MB size limit on APK files.  They have this limit so that when the user has to update their app, they don&#8217;t have to download all the asset files again, which can take up a long time.  To combat this, Google also lets you upload expansion files.  These files aren&#8217;t meant to be updated since they can be up to 2GB in size.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/04/downloading-187x300.png" alt="Downloading an Expansion File" /></p>
+<p>We&#8217;ve tried to make it as simple as possible for you to use.  Corona SDK will package everything except your Lua scripts into the expansion file, name it properly, and then put it in the correct format.  All of this is done locally so even if you have 2GB worth of asset files you won&#8217;t have to worry about a slow internet connection. All you have to do is to put a setting in the <code>build.settings</code> file, put your licensing key into <code>config.lua</code> file, and then upload your APK and expansion files onto Google Play.  Here are is a sample <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = 
+{
+	orientation =
+	{
+		default = &quot;landscapeLeft&quot;,
+		supported = { &quot;portrait&quot;, &quot;portraitUpsideDown&quot;, &quot;landscapeLeft&quot;, &quot;landscapeRight&quot; }
+	},
+	android =
+		{
+			&lt;strong&gt;usesExpansionFile = true&lt;/strong&gt;,
+			usesPermissions =
+			{
+				&quot;android.permission.INTERNET&quot;,
+				&quot;com.android.vending.CHECK_LICENSE&quot;,
+				&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;
+			},
+		},
+}</pre><p>Notice the line that says <code>usesExpansionFile = true</code> which will build the expansion file for you to upload ONLY if your build target is the Google Play store.  You should also add those 3 permissions so that we can download the expansion files for you.  You&#8217;ll need add 3 permissions so that we can automatically download the expansion files for you.  The <code>android.permission.INTERNET</code> permission lets us download the expansion files from Google&#8217;s servers.  The expansion files have to be saved in a specific location on external storage so that&#8217;s why we need the <code>android.permission.WRITE_EXTERNAL_STORAGE</code> permission.  That leaves us with the final permission: <code>com.android.vending.CHECK_LICENSE</code>.  In order for us to get the URL to download the expansion file, we have to go through Google Play&#8217;s Application Licensing Service.  Let&#8217;s take a look at <code>config.lua</code> to see how we have to set up licensing.</p><pre class="crayon-plain-tag">application =
+{
+	content =
+	{
+		width = 768,
+		height = 1024,
+		scale = &quot;letterbox&quot;,
+	},
+	license =
+	{
+		google =
+		{
+			key = &quot;Your key here&quot;
+		},
+	},
+}</pre><p>All you have to do is to put your key into the appropriate section of <code>config.lua</code> and you&#8217;re done.  This key lets us check with Google&#8217;s servers to see which files we need to download and see if we need to download anything new or missing.</p>
+<p>If you had to write your application natively in Java, then there are a lot of situations you have have to think about before you can even start your application.  </p>
+<ul>
+<li>What if the user doesn&#8217;t have enough space on their external storage? I better check to make sure they have the space.
+</li>
+<li>What if the user doesn&#8217;t even have their external storage mounted?  Looks like I&#8217;ll have to check on that first.
+</li>
+<li>What if the user doesn&#8217;t have a network connection?  I better warn them.  
+</li>
+<li>What if I updated my APK without updating my expansion file?  Guess I&#8217;ll need to update my code to use the correct expansion files.
+</li>
+<li>What if the user wipes their external storage?  I&#8217;ll have to download the files again in a download screen which has to work on all orientations and look good.
+</li>
+<li>What if the network fails in the middle of a download?  I&#8217;ll have to let the user retry the download.
+</li>
+<li>What if the user leaves the application while the download is happening?  I&#8217;ll have to handle the user exiting the app.
+</li>
+<li>How will the user know when the expansion files have been downloaded?  I&#8217;ll need to implement notifications.
+</li>
+<li>How do I even make the expansion files?  I&#8217;ll have to do a ton of research on how to package them.
+</li>
+<li>Where should I download the expansion files to?  More research time.
+</li>
+<li>What can I do to make my life easier? <strong><a href=http://www.coronalabs.com/store>Use Corona SDK!</a></strong></li>
+</ul>
+<p>All of these situations and more are handled by Corona SDK, so you don&#8217;t have to even think about them.  </p>
+<p>Time to go wild with your asset files!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/17/expansion-file-support-for-android/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

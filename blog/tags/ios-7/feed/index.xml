@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ios 7 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ios-7/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ios 7 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Getting Started with iOS 7</title>
+		<link>/blog/2013/09/17/tutorial-getting-started-with-ios-7/</link>
+		<comments>/blog/2013/09/17/tutorial-getting-started-with-ios-7/#comments</comments>
+		<pubDate>Tue, 17 Sep 2013 20:50:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ios 7]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=45111</guid>
+		<description><![CDATA[At the keynote Apple event on September 10, 2013, the company not only unveiled their newest iPhones, but they formally announced iOS 7, the latest version of the operating system which drives all Apple mobile devices. It's scheduled to roll out to the public on Wednesday, September 18, and it brings with it a few things that Corona developers should be aware of.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-full wp-image-45116" style="margin-right: 20px; margin-top: 4px;" alt="ios7-w-border" src="http://www.coronalabs.com/wp-content/uploads/2013/09/ios7-w-border.png" align="left" />At the keynote Apple event on September 10, 2013, the company not only unveiled their newest iPhones, but they formally announced <a href=http://www.apple.com/ios/ target="_blank">iOS 7</a>, the latest version of the operating system which drives all Apple mobile devices. It&#8217;s scheduled to roll out to the public on Wednesday, September 18 (tomorrow!) and it brings with it a few things that Corona developers should be aware of.</p>
+<p>First and foremost, your existing iOS 6.1 and earlier apps should run without any problems. There are, however, a few things that your Corona-built apps must have to behave properly on iOS 7.</p>
+<h3>App Icons</h3>
+<p>In iOS 7, Apple has added a few new icon sizes, effectively increased by a few pixels in each of the core usage cases. Of course, you should still support iOS 6.1 and earlier, so the previous icon sizes remain valid and necessary. The questions that arise in regards to iOS icons include:</p>
+<ul>
+<li>What size(s) are the required icon image files?</li>
+<li>How must I name these icon image files?</li>
+<li>Does each icon image file need to be named exactly and specifically?</li>
+<li>Do they have to be listed in the <strong>build.settings</strong> file, and if so, where?</li>
+</ul>
+<p>Let&#8217;s answer these questions now. Since iOS 3.2, Apple has used a <strong>plist</strong> in the bundle information called <strong>CFBundleIconFiles</strong>. This is an array of strings equating to the names of the icons used in your app. For the most part, the naming scheme is fairly flexible, which creates some confusion about exactly <em>how</em> the icons should be named.</p>
+<p>To keep this simple for Corona developers, you need to add 4 new <strong>required</strong> icons and 2 new  <strong>recommended</strong> icons, for a total of 6 new image files. Remember to place these files inside your core project folder, not inside a subfolder.</p>
+<table style="margin-bottom: 20px;" width="80%" border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr bgcolor="#eee">
+<td><b>Icon Purpose</b></td>
+<td><b>Recommended Name</b></td>
+<td><b>Size</b></td>
+<td><b>Required</b></td>
+</tr>
+<tr>
+<td>iPhone/iPod</td>
+<td>Icon-60.png</td>
+<td>60×60</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>iPhone/iPod (Retina)</td>
+<td>Icon-60@2x.png</td>
+<td>120×120</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>iPad 1/2, iPad Mini</td>
+<td>Icon-76.png</td>
+<td>76×76</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>iPad 3/4 (Retina)</td>
+<td>Icon-76@2x.png</td>
+<td>152×152</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Spotlight/Settings</td>
+<td>Icon-Small-40.png</td>
+<td>40×40</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>Spotlight/Settings (Retina)</td>
+<td>Icon-Small-40@2x.png</td>
+<td>80×80</td>
+<td>Recommended</td>
+</tr>
+</tbody>
+</table>
+<p>To minimize changes in your code, we recommend keeping the existing icon file names that you use today, then simply add these new ones to the mix. Your new <strong>build.settings</strong> file would then contain:</p><pre class="crayon-plain-tag">settings =
+{
+   iphone =
+   {
+      plist =
+      {
+         CFBundleIconFiles = {
+            &quot;Icon.png&quot;,
+            &quot;Icon@2x.png&quot;,
+            &quot;Icon-Small-40.png&quot;,
+            &quot;Icon-Small-40@2x.png&quot;,
+            &quot;Icon-60.png&quot;,
+            &quot;Icon-60@2x.png&quot;,
+            &quot;Icon-72.png&quot;,
+            &quot;Icon-72@2x.png&quot;,
+            &quot;Icon-76.png&quot;,
+            &quot;Icon-76@2x.png&quot;,
+            &quot;Icon-Small-50.png&quot;,
+            &quot;Icon-Small-50@2x.png&quot;,
+            &quot;Icon-Small.png&quot;,
+            &quot;Icon-Small@2x.png&quot;
+         },
+      }
+   },
+}</pre><p>Please refer to our <a href=http://docs.coronalabs.com/guide/distribution/buildSettings/index.html?#appicons target="_blank">Project Build Settings</a> guide for a <strong>complete list</strong> of the required icon sizes. Many of you may not be including the smaller settings/spotlight search icons.</p>
+<p><strong>NOTE:</strong> Although this is an iOS-related post, we&#8217;ve also added a quick Android update as of <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build #1206</a>. Specifically, the new Android <strong>xxhdpi.png</strong> icon is now supported in Corona, so you should include it if you&#8217;re publishing to Android. This new icon size is 144×144 pixels in size — conveniently the same as the iOS <strong>Icon-72@2x.png</strong> file.</p>
+<h3>Styling Apps For iOS 7</h3>
+<p>Perhaps the <em>biggest</em> change in iOS 7 is a completely new look and feel. Apple has &#8220;flattened&#8221; the interface considerably, steering away from that &#8220;real world&#8221; look known as <a href=http://en.wikipedia.org/wiki/Skeuomorph target="_blank">skeuomorphic</a>. In other words, buttons don&#8217;t need to look like physical buttons to be functional. If you&#8217;re a fan of skeuomorphic designs, like a compass app that looks like an actual compass, iOS 7 may not appeal to you visually. However, for those who hate skeuomorphic design (a calendar app doesn&#8217;t really need a &#8220;spiral binding&#8221; after all), Apple has sided with the &#8220;less UI is more&#8221; team.</p>
+<p>In the world of games, this is probably going to have very little impact on your development. However, in the business and utility world, there is a strong, industry-wide movement to flatten designs and move away from skeuomorphism.</p>
+<p>For developers using Corona&#8217;s current <a href=http://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget library</a>, set to the default iOS theme, you know that the widgets resemble the native widgets in iOS 6.1 and earlier. Now, for those who are eager to begin styling their apps for iOS 7, we have added an <strong>iOS 7 widget theme</strong> as of <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build #1206</a>. To use it, simply include this line of code after you require the <strong>widget</strong> library:</p><pre class="crayon-plain-tag">local widget = require( &quot;widget&quot; )
+widget.setTheme( &quot;widget_theme_ios7&quot; )</pre><p>One current exception is the <strong>picker wheel</strong> widget. Native iOS 7 uses some 2.5D visualizations wherein the top and bottom of the wheel is skewed slightly to provide a sense of depth. We&#8217;ll add this to the Corona picker wheel widget when Graphics 2.0 is officially released, but for now your picker wheels will appear flat.</p>
+<h3>Fonts</h3>
+<p>The new <strong>font</strong> for iOS 7, in most cases, is <strong>Helvetica Neue Light</strong>. If you want to build apps that match iOS 7 in typography, you&#8217;ll probably want to use this font as well, for example:</p><pre class="crayon-plain-tag">local myButton = widget.newButton{
+   left = display.contentCenterX - 100,
+   top = 360,
+   label = &quot;Send Message&quot;,
+   width = 200, 
+   height = 48,
+   font = &quot;HelveticaNeue-Light&quot;,
+   onEvent = onButtonEvent
+}</pre><p>Fortunately, this font is included in both iOS 6 and iOS 7, as well as on OS X. If you want a bolder version, just use <strong>&#8220;HelveticaNeue&#8221;</strong>. If you need a template for iOS 7 imagery, an Adobe Photoshop PSD of graphical elements is located <a href=http://www.teehanlax.com/tools/ios7/ target="_blank">here</a> — just make sure that you read and understand the <strong>legal usage terms</strong> that accompany this download. Finally, a good article that describes Apple&#8217;s requirements and recommendations is located <a href=http://www.webdesignerdepot.com/2013/07/how-to-transition-app-designs-to-ios-7/ target="_blank">here</a>.</p>
+<h3>Building for iOS 7</h3>
+<p>Public Build #1202 can only build for iOS 6.1 and earlier, but <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Builds</a> after that have an additional dialog option called <strong>iOS SDK</strong> which we include at any time there are two versions of the iOS SDK to build for. As of Daily Build #1203, choosing <strong>iOS 7</strong> will build against the &#8220;iOS 7 Gold Master seed.&#8221; This means that you can submit builds to Apple using this option. Daily Build #1203 &#8211; #1206 lists this as a &#8220;Beta&#8221; but it is the GM seed, not one of the Beta versions.</p>
+<p>While we are using the iOS 7 GM seed SDK, it&#8217;s still in testing mode.  We are working out the last few details before we enable app submission against the iOS 7 target. However, you should be testing against it, and there are a few other software requirements before you can do so:</p>
+<ol>
+<li>Building for iOS 7 requires <strong>XCode 5</strong>. Apple made XCode 5 available today in the Mac App Store as a free download. This will install over top of your existing Xcode 4.x installation.</li>
+<li>You must be running OS-X Mountain Lion (<strong>10.8</strong>) or later to run XCode 5.</li>
+</ol>
+<p>If you have been running the XCode 5 developer preview, but you need to revert back to building with 4.x or if you want to use the XCode 5 GM Seed, you&#8217;ll need to specify so using the following command line (Terminal) command:</p><pre class="crayon-plain-tag">sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer</pre><p></p>
+<h3>In Summary</h3>
+<p>iOS 7 brings a fresh new look to iOS, while at the same time introducing many new features and UI improvements. As a Corona developer, you can build for iOS 7 <em>now</em> and begin implementing the new widget theme as well. Get started today by downloading <a href=http://developer.coronalabs.com/downloads/daily-builds target="_blank">Daily Build #1206</a>, available to <a href=http://www.coronalabs.com/pricing/ target="_blank">Corona SDK Pro</a> subscribers.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/17/tutorial-getting-started-with-ios-7/feed/</wfw:commentRss>
+		<slash:comments>35</slash:comments>
+		</item>
+	</channel>
+</rss>

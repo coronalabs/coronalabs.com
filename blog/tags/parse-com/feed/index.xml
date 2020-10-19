@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>parse.com &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/parse-com/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>parse.com &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #108</title>
+		<link>/blog/2016/01/29/from-the-forum-issue-108/</link>
+		<pubDate>Fri, 29 Jan 2016 23:15:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[fill]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[Ldoc]]></category>
+		<category><![CDATA[parse.com]]></category>
+		<category><![CDATA[textures]]></category>
+
+		<guid isPermaLink="false">/?p=65456</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Parse leaves a void</h3>
+<p>For those of us who have been living under a rock may be surprised to learn that <strong>Parse</strong>, one of the most powerful third party server backends, has announced plans to shutter its service in a year&#8217;s time. There are a fair amount of Corona apps created with a Parse backbone, so this is potentially a huge blow to the community.</p>
+<p>Where do we go from here? There are several different options in the realm of backends server products. You can&#8217;t shake a stick without hitting one. However, today we&#8217;re going to highlight a solution that combines a few different pieces into a virtual Voltron of awesomeness.</p>
+<p>Corona dev (and our new best friend) <strong>Simon Fearby</strong> details how to get a managed server solution implemented that replaced Parse in functionality, with step by step instructions. Do yourself a favor and check out the link, and don&#8217;t forget to say thanks!</p>
+<p><a href=https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/ target="_blank">https://forums.coronalabs.com/topic/61378-parse-is-dying-now-what/</a></p>
+<h3>Documentation: the elephant in the room</h3>
+<p>I love backstory. I usually err on the side of over-explaining, sometimes, to my detriment. When it comes to documentation, though, I drop the ball and just start creating syntax that is nigh-impossible to decipher.</p>
+<p>If you&#8217;re like me, there is how fire us after all. Instead of resorting to electric shock, we can leverage a handy program called <a href=http://stevedonovan.github.io/ldoc/ target="_blank">Ldoc</a>. Developer <strong>Rene</strong> from <strong><a href=http://devilsquid.com/ target="_blank">DevilSquid</a></strong> lays out the details on its use, and even gives some instructions and pointers for getting started.</p>
+<p>Check out the original thread to see where Ldoc can fit into your workflow. Documentation for a program that generated documentation? What a time to be alive.</p>
+<p><a href=https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/ target="_blank">https://forums.coronalabs.com/topic/61391-how-to-document-lua-code-with-ldoc/</a></p>
+<h3>A fill, three years in the making</h3>
+<p>Way back during the pre-Graphics 2.0 days, we imagined new ways to use our compositions and captured images in interesting ways. With the advent of snapshots, many though a fill using the same was just around the corner.</p>
+<p>At last, <strong>Vlad</strong> from Corona has delivered the coolest of fills, allowing us to finally use snapshots. It’s a new feature, and one that needs the tired kicked on it by the entire Corona community. So do Vlad and yourself a favor, check out the original thread, and see how you can start using snapshot fills in your apps and games right now!</p>
+<p><a href=https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/ target="_blank">https://forums.coronalabs.com/topic/40590-snapshot-as-paint-input/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

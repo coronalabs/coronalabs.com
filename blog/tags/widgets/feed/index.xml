@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Widgets &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/widgets/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Widgets &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Update: Android Widget Themes</title>
+		<link>/blog/2014/08/08/update-android-widget-themes/</link>
+		<comments>/blog/2014/08/08/update-android-widget-themes/#comments</comments>
+		<pubDate>Fri, 08 Aug 2014 20:41:44 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">/?p=59334</guid>
+		<description><![CDATA[Starting in the most recent public build, all Corona developers can now opt to use two new widget themes in their projects. These new themes are styled after the Android "Holo Light" and "Holo Dark" themes which are commonly found on Android devices running recent versions of the OS.]]></description>
+				<content:encoded><![CDATA[<p>Starting in the most recent <a href=https://developer.coronalabs.com/downloads/corona-sdk target="_blank">public build</a>, all Corona developers can now opt to use two new <a href=http://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> themes in their projects. These new themes are styled after the Android <strong>&#8220;Holo Light&#8221;</strong> and <strong>&#8220;Holo Dark&#8221;</strong> themes which are commonly found on Android devices running recent versions of the OS.</p>
+<p>Both of the new themes contain assets up to the <code>@4x</code> scale profile, which means that your widgets should appear crisp and clean on even the highest resolution Android devices like the Nexus 10.</p>
+<div style="width: 95%;">
+<p><img class="alignnone size-full wp-image-59335" style="margin: 0px; padding-bottom: 20px; padding-top: 10px;" src="/wordpress/wp-content/uploads/2014/08/android-themes.png" alt="android-themes" /></p>
+</div>
+<h3>Setting the Themes</h3>
+<p>The new themes can be set by passing the proper value to the <a href=http://docs.coronalabs.com/api/library/widget/setTheme.html target="_blank">widget.setTheme()</a> API:</p><pre class="crayon-plain-tag">-- Use new 'Holo Light' theme
+widget.setTheme( &quot;widget_theme_android_holo_light&quot; )</pre><p></p><pre class="crayon-plain-tag">-- Use new 'Holo Dark' theme
+widget.setTheme( &quot;widget_theme_android_holo_dark&quot; )</pre><p>And that&#8217;s it &#8212; all non-skinned widgets throughout the project will appear in the new chosen theme.</p>
+<h3>Updated Sample Project</h3>
+<p>To preview the new themes in action, please load the <strong>WidgetDemo</strong> sample project included with Corona SDK:</p>
+<p><code>CoronaSDK</code> → <code>SampleCode</code> → <code>Interface</code> → <code>WidgetDemo</code></p>
+<h3>Previous Android Theme</h3>
+<p>Note that using the new Holo themes is entirely optional. The previous Android theme files are still available, so if you wish to continue using that theme, be sure to set the theme as follows:</p><pre class="crayon-plain-tag">-- Use older Android 2.x theme
+widget.setTheme( &quot;widget_theme_android&quot; )</pre><p></p>
+<h3>In Summary</h3>
+<p>Hopefully you can easily integrate these new themes into your existing projects with a minimal amount of repositioning, although some adjustments will be necessary due to slightly differing sizes of the updated styles.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/08/update-android-widget-themes/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #77 &#8211; Using Parse With TableView Widgets and Match Three Game Design</title>
+		<link>/blog/coronageek/corona-geek-hangout-77/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-77/#respond</comments>
+		<pubDate>Mon, 17 Feb 2014 23:09:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[Parse]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=56253</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout Washington D.C business app developer Theo Rushin Jr. walked us through his solution for displaying data from a Parse database using TableView widgets. We also talked with Portland Oregon game developer, Ed Maurina about his new unorthodox match three game named Reflexivity. Ed explained some of the design decisions he made during development and how he handles user experience on different devices.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/RTdo_VUOagk?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout <a href=http://therush.wordpress.com/ target="_blank">Washington D.C business app developer</a> Theo Rushin Jr. walked us through his solution for displaying data from a Parse database using TableView widgets. We discussed how cloud services can be used to control various aspects of the user experience and data delivery. Theo&#8217;s <a href=http://bit.ly/O11f0y target="_blank">Just Say No app</a> makes use of TableView widgets in the menu system. We also talked with <a href=http://roaminggamer.com/ target="_blank">Portland Oregon game developer</a>, Ed Maurina about his new unorthodox <a href=http://bit.ly/1gcGg2h target="_blank">match three game</a> named Reflexivity. Ed explained some of the design decisions he made during development and how he handles user experience on different devices.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://www.ladeezfirstmedia.com/category/parse-com/ target="_blank">Using Parse with Corona SDK (Tutorials)</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+<p><strong>Need to market your app?</strong> Sign up for a <a href=http://www.preapps.com/about-us target="_blank">PreApps developer account</a> and use the <strong>promo code &#8220;CoronaLabs&#8221;</strong> at checkout to try their <a href=http://www.preapps.com/featured-options target="_blank">PreApps Featured Feedback app posting</a> free for 30 days. Hurry, offer ends February 28th, 2014.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-77/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Wednesday FAQs: Miscellaneous Questions</title>
+		<link>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/</link>
+		<comments>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/#comments</comments>
+		<pubDate>Wed, 24 Apr 2013 23:19:37 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=32583</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).</p>
+<h2>1. Why doesn&#8217;t native.setActivityIndicator work in my code?</h2>
+<p><strong>native.setActivityIndicator</strong> cannot be set and cleared in the same code chunk. All display objects (including native objects) are not rendered on the screen until the code chunk ends.</p>
+<p>The following is the wrong way to set the Activity Indicator. The activity indicator is not set until AFTER the function ends, and then it&#8217;s cleared. (Note: There is a current bug in Android where the activity indicator does not turn off in this example.)</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+native.setActivityIndicator( false )</pre><p></p>
+<p>This is the right way to set the Activity Indicator. The indicator is cleared after one second. The problem with this approach is the activity indicator is set after the <strong>for loop</strong> executes so it&#8217;s not displaying the activity indicator during the time the <strong>for loop</strong> is running.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+
+-- Turn off the indicator after one second
+timer.performWithDelay( 1000, function() native.setActivityIndicator( false ) end )</pre><p></p>
+<p>The solution to the above problem would be running the <strong>for loop</strong> code in a timer function. You start the activity indicator before the timer starts and turn off the activity indicator in the timer function.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+timer.performWithDelay( 100,
+    function()
+        for i = 1, 1000 do
+            print( &quot;i = &quot; .. i )
+        end
+        native.setActivityIndicator( false )
+    end
+)</pre><p></p>
+<h2>2. I&#8217;m using Dynamic Scaling and don&#8217;t see native textField and textBox font sizes changing when I test on different devices.</h2>
+<p>When you specify the target screen size in <strong>config.lua</strong>, this allows display objects to scale depending on the native screen size of the device. The one exception is fonts used in native text fields. The fonts don&#8217;t automatically scale so the font size needs to be adjusted manually. You can determine the correct size by either reading the device type (using <strong>system.getInfo( &#8220;model&#8221; )</strong>) or reading the scaling factor of the device (<strong>display.contentScaleX</strong> and <strong>display.contentScaleY</strong>). For Android, we recently added some new <strong>system.getInfo</strong> API calls in our Daily builds that may help: <strong>&#8220;androidDisplayWidthInInches&#8221;</strong>, <strong>&#8220;androidDisplayHeightInInches&#8221;</strong>, <strong>&#8220;androidDisplayXDpi&#8221;</strong>, and <strong>&#8220;androidDisplayYDpi&#8221;</strong>.</p>
+<h2>3. My network.request calls are no longer working starting with build 1076. What happen?</h2>
+<p>Starting with build 1053 we added a default <strong>Content-Type</strong> field of &#8220;text/plain&#8221; for all platforms. This was done to be consistent among the platforms. Before build 1053 we relied on the OS to provide the <strong>Content-Type</strong> field if it was missing from the <strong>network.request</strong>. If your <strong>network.request</strong> contains a <strong>parms.bodyType</strong> equal to &#8220;binary&#8221;, or your <strong>parms.body</strong> contains a table (specifying filename), <strong>Content-Type</strong> will be set to &#8221; application/octet-stream&#8221;. If your <strong>network.request</strong> specifies a value for <strong>Content-Type</strong>, it will override the default value. In all other cases it will be set to &#8220;text/plain&#8221;.</p>
+<p></p><pre class="crayon-plain-tag">-- Example code to log in with username/password
+
+local function networkListener( event )
+    print( &quot;networkListener called&quot;, event.response )
+end
+
+local user = &quot;myName&quot;
+local password = &quot;abc&quot;
+
+local headers = {}
+headers[&quot;Content-Type&quot;] = &quot;application/x-www-form-urlencoded&quot;
+
+local body = &quot;login=&quot;..user..&quot;&amp;password=&quot;..password
+local params = {}
+params.headers = headers
+params.body = body
+-- go to http://requestb.in/ to set up an test page
+network.request(&quot;http://requestb.in/&quot;, &quot;POST&quot;, networkListener, params )</pre><p></p>
+<h2>4. Display.save now shows a white background in the saved image. The background use to be black.</h2>
+<p>We had a blending issue with <strong>display.save</strong> captures and it was fixed by making the background full alpha behind the objects being saved. This changed occurred in build 1079. If you are saving a group, the background will be transparent, which is undefined. Before 1079 we made the background black, which was causing problems for some users. Now the transparent areas may show up as either black or white when saving to a .JPEG file. If you save it to a .PNG file (which <strong>display.save</strong> now supports), the background will be transparent and take on the existing background when displayed.</p>
+<p>Specifying a .PNG file in <strong>display.save</strong> is one solution to the problem when saving a group. The other is creating a black <strong>display.newRect</strong> the size of your group and filling it with black and inserting it behind all your other group objects. You do this before calling <strong>display.save</strong> and remove the newRect object afterwards.</p>
+<h2>5. I&#8217;m using the released version of Corona SDK and seeing bugs in Widgets. What can I do?</h2>
+<p>The good news is we decided to open-source our Widgets 2.0 library. We have put the library up on <a href=https://github.com/coronalabs/>GitHub</a> that you can include in your own project. This is the same code we include in our Daily Builds and our plan is to keep both in sync. This means Starters, who don&#8217;t have access to our Daily Builds, can still use the latest Widget library. If you do find a Widget bug, please submit a bug report and a small test project demonstrating the bug. In the report please mention the Corona build you&#8217;re using and which version of the Widget library you&#8217;re reporting. Get more information <a href=http://forums.coronalabs.com/topic/34183-widgets-20-open-source/?hl=github>here</a></p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

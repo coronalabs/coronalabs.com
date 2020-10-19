@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Widget 2.0 is here! Bam! | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/ae4fcfbed4b08dd68cd924dabf522eb5.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2013/02/22/widget-2-0-is-here-bam/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="It&#039;s here! We rewrote Corona&#039;s widget library from the ground up and it&#039;s now available in Daily Build 1034. (Side note: There was a little snafu with the 1034&#039;s Daily Build API docs. It&#039;s now fixed!) The most important thing we did was decide to start from scratch in order to build a stable, rock-solid foundation. It&#039;s much easier to extend, has better error handling, and is more maintainable." />
+
+<meta name="keywords"  content="corona sdk,daily build,news &amp; announcements" />
+
+<link rel="canonical" href="/blog/2013/02/22/widget-2-0-is-here-bam/" />
+<meta property="og:title" content="Widget 2.0 is here! Bam! | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2013/02/22/widget-2-0-is-here-bam/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="It&#039;s here! We rewrote Corona&#039;s widget library from the ground up and it&#039;s now available in Daily Build 1034. IMPORTANT: Please refer to the updated documentation that accompanies each Daily Build. Several things have changed or have been renamed, so you should study it carefully. To assist you, we have included a Migration Guide, also bundled with the documentation in the applicable Daily Builds. (Side note: There was a little snafu with the 1034&#039;s Daily Build API docs. It&#039;s now fixed!) Features and Improvements The most important thing we did was decide to start from scratch, which was critical in building a stable, rock-solid foundation. As a result, Widget 2.0 will be easier to extend and much more maintainable. (More on the woes of the 1.0 code, and a surprise, at the end.) One of the major changes was integrating the notion of image sheets. The old widget library didn&#039;t fully embrace image sheets, so in order to create a theme, you&#039;d have to have a bunch of individual image files." />
+<meta property="article:published_time" content="2013-02-22T23:54:21Z" />
+<meta property="article:modified_time" content="2013-02-22T23:54:21Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Widget 2.0 is here! Bam! | Corona Labs" />
+<meta name="twitter:description" content="It&#039;s here! We rewrote Corona&#039;s widget library from the ground up and it&#039;s now available in Daily Build 1034. IMPORTANT: Please refer to the updated documentation that accompanies each Daily Build. Several things have changed or have been renamed, so you should study it carefully. To assist you, we have included a Migration Guide, also bundled with the documentation in the applicable Daily Builds. (Side note: There was a little snafu with the 1034&#039;s Daily Build API docs. It&#039;s now fixed!) Features and Improvements The most important thing we did was decide to start from scratch, which was critical in building a stable, rock-solid foundation. As a result, Widget 2.0 will be easier to extend and much more maintainable. (More on the woes of the 1.0 code, and a surprise, at the end.) One of the major changes was integrating the notion of image sheets. The old widget library didn&#039;t fully embrace image sheets, so in order to create a theme, you&#039;d have to have a bunch of individual image files." />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2014/05/FB_banner_2.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-b66c534ea2d32d9123d9ba2034031f08.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Widget 2.0 is here! Bam! Comments Feed" href="/blog/2013/02/22/widget-2-0-is-here-bam/feed/" />
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='https://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='https://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-b8674cbf705f6800e4c39626ea12a541.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-1a19bb4009b00727ae545e834c88ec1f.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-88312d6ccff4a3570b3db197b12cb532.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-698aa832940bd67decd795f1bd23433b.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2013\/02\/22\/widget-2-0-is-here-bam\/","en":"\/blog\/2013\/02\/22\/widget-2-0-is-here-bam\/","US":"\/blog\/2013\/02\/22\/widget-2-0-is-here-bam\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-824426e66e79e692e26c5e5b63cb6452.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-3d7bf654e9e30cc40e584574182b2763.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Update on Corona Cloud and Analytics' href='/blog/2013/02/21/update-on-corona-cloud-and-analytics/' />
+<link rel='next' title='App of the Week: Space Missile Command' href='/blog/2013/02/25/app-of-the-week-space-missile-command/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=29526' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-29526 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2013/02/22/widget-2-0-is-here-bam/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2013/02/22/widget-2-0-is-here-bam/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Widget 2.0 is here! Bam!</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-29526" class="post-29526 post type-post status-publish format-standard hentry category-corona-sdk category-dailybuild category-announcements">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">22 February 2013<meta itemprop="interactionCount" content="UserComments: 63"/></span></p>
+						<h2 itemprop="name" class="entry_title">Widget 2.0 is here! Bam!</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/walter/">walter</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/corona-sdk/" rel="category tag">Corona SDK</a>, <a href="/blog/topics/dailybuild/" rel="category tag">Daily Build</a>, <a href="/blog/topics/announcements/" rel="category tag">News &amp; Announcements</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Widget+2.0+is+here%21+Bam%21&amp;p[url]=%2Fblog%2F2013%2F02%2F22%2Fwidget-2-0-is-here-bam%2F&amp;p[images][0]=&amp;p[summary]=It%5C%27s+here%21+We+rewrote+Corona%5C%27s+widget+library+from+the+ground+up+and+it%5C%27s+now+available+in+%3Ca+href%3D%5C%22http%3A%2F%2Fdeveloper.coronalabs.com%2Fdownloads%2Fdaily-builds%5C%22%3EDaily+Build%3C%2Fa%3E+1034.%0A%0A%28Side+note%3A+There+was+a+little+snafu+with+the+1034%5C%27s+Daily+Build+API+docs.+It%5C%27s+now+fixed%21%29%0A%0AThe+most+important+thing+we+did+was+decide+to+start+from+scratch+in+order+to+build+a+stable%2C+rock-solid+foundation.+It%5C%27s+much+easier+to+extend%2C+has+better+error+handling%2C+and+is+more+maintainable.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=It%27s+here%21+We+rewrote+Corona%27s+widget+library+from+the+ground+up+and+it%27s+now+available+in+%3Ca+/blog/2013/02/22/widget-2-0-is-here-bam/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F02%2F22%2Fwidget-2-0-is-here-bam%2F&amp;title=Widget+2.0+is+here%21+Bam%21&amp;description=It%27s+here%21+We+rewrote+Corona%27s+widget+library+from+the+ground+up+and+it%27s+now+available+in+%3Ca+href%3D%22http%3A%2F%2Fdeveloper.coronalabs.com%2Fdownloads%2Fdaily-builds%22%3EDaily+Build%3C%2Fa%3E+1034.%0A%0A%28Side+note%3A+There+was+a+little+snafu+with+the+1034%27s+Daily+Build+API+docs.+It%27s+now+fixed%21%29%0A%0AThe+most+important+thing+we+did+was+decide+to+start+from+scratch+in+order+to+build+a+stable%2C+rock-solid+foundation.+It%27s+much+easier+to+extend%2C+has+better+error+handling%2C+and+is+more+maintainable.&amp;image=', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>It&#8217;s here! We rewrote Corona&#8217;s widget library from the ground up and it&#8217;s now available in <a href=http://developer.coronalabs.com/downloads/daily-builds>Daily Build</a> 1034.</p>
+<p><strong>IMPORTANT:</strong> Please refer to the <strong>updated documentation</strong> that accompanies each Daily Build. Several things have changed or have been renamed, so you should study it carefully. To assist you, we have included a <strong>Migration Guide</strong>, also bundled with the documentation in the applicable Daily Builds.</p>
+<p>(Side note: There was a little snafu with the 1034&#8217;s Daily Build API docs. It&#8217;s now fixed!)</p>
+<h1>Features and Improvements</h1>
+<p>The most important thing we did was decide to start from scratch, which was critical in building a stable, rock-solid foundation. As a result, Widget 2.0 will be easier to extend and much more maintainable. (More on the woes of the 1.0 code, and a surprise, at the end.)</p>
+<p>One of the major changes was integrating the notion of image sheets. The old widget library didn&#8217;t fully embrace image sheets, so in order to create a theme, you&#8217;d have to have a bunch of individual image files. It was a mess!</p>
+<p>With the new widget library, we&#8217;ve fully embraced image sheets. Widget themes are now constructed with imageSheets to conserve texture memory and disk space.</p>
+<p>In addition, we decided to ship an iOS theme and an Android theme. That means you no longer have to copy over extra widget asset files into your project. We always felt that was a little clumsy, especially when you realize that the widget framework was incomplete without those image assets. Now when you build for iOS, we pre-bake in the iOS image assets. And similarly, for Android.</p>
+<p>We also added a ton of other features. Here are several examples to give you an idea of how much TLC we put into this:</p>
+<ul>
+<li>Ability to create a 9-slice widget button.</li>
+<li>Vertical sliders can now also be created, along with the previous horizontal sliders.</li>
+<li>Widget buttons can now have their labels aligned to one of three constants via the new &#8220;labelAlign&#8221; property.</li>
+<li>Vastly improved widget documentation.</li>
+<li>Unified API naming conventions across the board.</li>
+<li>Ability to be able to graphically theme a tab bar, (previously only gradients were supported).</li>
+<li>Built-in ability to disable a widget button from receiving touch events, which is useful for login screens etc.</li>
+<li>Built-in ability to insert widget buttons into a scrollView.</li>
+</ul>
+<h1>Bugs fixed</h1>
+<p>The code re-architecting of widgets allowed us to address a huge number of bugs:</p>
+<ul>
+<li>18143: Corona Docs Feedback &#8211; Add visuals, especially for widgets and UI items.</li>
+<li>18217: widget.newTableView category rolls do not scroll off the top of the form with the rows.</li>
+<li>18496: Missing widget documentation for switches, etc.</li>
+<li>18503: widget.newProgressView does not have correct referencePoint.</li>
+<li>18505: widget.newProgressView default value cannot reached or measured.</li>
+<li>18528: Segmented Control missing from the docs.</li>
+<li>18537: widget.newStepper() reference point is incorrect.</li>
+<li>18538: widget.newStepper() behaves strangely if moved after creation.</li>
+<li>18975: widget.newButton&#8217;s inside a scrollView widget, the events malfunction.</li>
+<li>19004, 19030: widget.newTableView() &#8211; hideBackground incorrect description.</li>
+<li>20003: On-Off switch widget fails on double-taps if onRelease method removes the switch.</li>
+<li>20341: Incorrect widget.newSpinner() imageSheet documentation.</li>
+<li>20462: widget.newTableView() documentation referencing depreciated APIs.</li>
+<li>20601: widget.newProgressView() is not documented.</li>
+<li>16094: widget.tableView:scrollToY / scrollToIndex etc. don&#8217;t take in account topPadding</li>
+<li>12749: widget.newSlider rotates visually, but ignores rotation functionally (we added the ability to * create vertical sliders).</li>
+<li>19031: Button Widget Bugs.</li>
+<li>18720: bottomPadding does not work on scrollview widget.</li>
+<li>20583: &#8220;release&#8221; and &#8220;moved&#8221; events not triggered by onEvent in a button in ScrollView.</li>
+<li>20468: Moved event phase not occurring in objects that are inside a scrollView.</li>
+<li>18750: ScrollView in Simulator goes way out of bounds.</li>
+<li>15112: widget.newTableView displayed on top of another widget.newTableView both are  getting touch events*.</li>
+<li>15857: TableView rows dont scroll smoothly / &#8220;shake&#8221; on borders.</li>
+<li>18457: Problem on TableView function scrollToIndex on new CoronaSDK.2012.942.</li>
+<li>18778: Feature request: Scoll-event in tableview widget.</li>
+<li>19570: widget.tabbar button autospacing adds unnecessary padding.</li>
+<li>18886: Slider widget doesn&#8217;t return event phase.</li>
+</ul>
+<h1>Migrating from widget 1.0</h1>
+<p>Now, if you are migrating from widget 1.0, you&#8217;ll need to be aware that we made some API changes.</p>
+<p>In the latest daily build docs, there is a migration guide linked from the top of the widget library index that tells you how to go about updating your code to take full advantage of widget 2.0.</p>
+<p>The short story is you should pay attention to the following APIs:</p>
+<ul>
+<li>widget.newButton()</li>
+<li>widget.newPickerWheel()</li>
+<li>widget.newScrollView()</li>
+<li>widget.newTabBar()</li>
+<li>widget.newTableView()</li>
+</ul>
+<p>In the migration guide, we show you side-by-side examples of what the code looked like before and after so that your transition will be as painless as possible.</p>
+<h1>Known Issues</h1>
+<p>Of course, no release is perfect. Here are the issues we&#8217;re already looking into:</p>
+<ul>
+<li>TableView categories currently don’t push each other on/off screen.</li>
+<li>TableView’s/ScrollView’s are missing scroll bars.</li>
+<li>Grouping of radio buttons.</li>
+<li>Adding the Tab Bar to the default widget themes.</li>
+<li>WidgetDemo doesn&#8217;t look quite right on Android-based devices due to bad math related to status bar height.</li>
+</ul>
+<h1>One more thing&#8230;</h1>
+<p>We realize that some of you may be close to shipping or are unable to deal with the various widget 2.0 API changes. Therefore, we are open sourcing Widget 1.0 code today!</p>
+<p>The <a href=https://github.com/coronalabs/widget-v1>Corona Widget 1.0</a> sources are now available on GitHub.</p>
+<p>This lets you use the old widget library (even though we think you&#8217;re better off using Widget 2.0). Just download &#8216;widget-v1.lua&#8217; from GitHub and put the following line at the top of each Lua file that&#8217;s using widgets:</p>
+<p><code>local widget = require "widget-v1"</code></p>
+<p></p>
+<p>To tell you the truth, we look at the Widget 1.0 code and feel embarrassed by it – we even debated whether or not we should release this code to you. However, I felt it was important to get this into your hands for exactly the reason I mentioned above — to minimize disruptions to those of you trying to ship apps.</p>
+<p>Now with that said, I also had to appease our engineering team&#8217;s sense of pride. So if you go to GitHub, you&#8217;ll see the following disclaimer in the &#8216;Readme&#8217; file:</p>
+<blockquote><p>
+<small><br />
+We should warn you that this code is very spaghetti-like. It&#8217;s not clean and is highly unmaintainable. It is really an anti-pattern for any budding framework writer. When you read this code, you should see right away why we struggled so much to maintain the old widget code, and why we ultimately decided to rewrite the widget library.<br />
+</small>
+</p></blockquote>
+<div style="text-align: center;">&#42; &#42; &#42;</div>
+<p>As I alluded to yesterday, we have been working on a ton of stuff. This is just the first of many &#8220;2.0&#8221; items that we&#8217;re shipping to you!</p>
+					</div>
+				</div>
+			</div>
+		
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				walter			    </span>
+				</h5>
+				<span class="author_email"></span>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>63 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-675">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96488f05aab50f7a48d03bab4b5b6a2e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://icyspark.com/' rel='external nofollow' class='url'>IcySpark</a></h5>
+			<span class="comment_date">Posted at 18:41h, 22 February</span>
+						<div class="text_holder" id="comment-675">
+				<p>Built-in ability to insert widget buttons into a scrollView.</p>
+<p>How do you go about this, as I&#8217;m having problems getting this working, as the button wont release the focus back to the scrollView.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-676">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 19:17h, 22 February</span>
+						<div class="text_holder" id="comment-676">
+				<p>Hey IcySpark.</p>
+<p>are you using multi-touch in your app?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-677">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/13a6517b095597b3648690d9be4a5e65-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.lavamind.com/' rel='external nofollow' class='url'>Naomi</a></h5>
+			<span class="comment_date">Posted at 19:28h, 22 February</span>
+						<div class="text_holder" id="comment-677">
+				<p>Thank you, Walter, for the detailed info about widget v2.0.  I also appreciate you posting the link to widget v1.0 with disclaimer.  I decided to drop back to 1030 due to one issue (which is v2.0&#8217;s inability to dynamically set/change the onRelease property of widget buttons).  Even though I&#8217;d like to be able to try out latest changes and fixes being made to new daily builds, I&#8217;ll probably stay with daily build 1030 for now.  I just hope by the time I really need to use more recent build, additional fixes and updates are made to widget v2.0 so that, perhaps, I don&#8217;t have to require widget v1.0 after all.  At least I now know that I can use the fall back if I needed it.  </p>
+<p>Thanks again.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-678">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9cb110c7860d466e2ffe37c9ec837596-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.easeit.co/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 22:12h, 22 February</span>
+						<div class="text_holder" id="comment-678">
+				<p>Are widgets like tableView now working with storyboard effects?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-679">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9cb110c7860d466e2ffe37c9ec837596-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.easeit.co/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 22:28h, 22 February</span>
+						<div class="text_holder" id="comment-679">
+				<p>One more thing&#8230;</p>
+<p>It was intended that the new tableView will support the possibility to rerender the hole tableView (it was told me as a response to a bug report) . But I didn&#8217;t found the method. Is there a undocumented feature?</p>
+<p>Thanks.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-702">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 15:38h, 25 February</span>
+						<div class="text_holder" id="comment-702">
+				<p>Hey Mike, sorry for the late reply. I missed your question.</p>
+<p>Can you elaborate on your request. My main questions:</p>
+<p>1) What is the use case for re-rendering the whole tableView?<br />
+2) What exactly would be re-rendered?<br />
+3) By re-rendering do you mean that the tableView should be destroyed and recreated?</p>
+<p>I just want to better understand what your intentions for this request are.<br />
+Thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-718">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8b1ec7fdcae76b0b0e00e28d2bcdaa91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 06:07h, 27 February</span>
+						<div class="text_holder" id="comment-718">
+				<p>The use case is to add a button to every row of the tableView if a edit-button in the toolbar has been hit.  In my case if you hit an entry of the tableview, you come to the normal content. If you press the edit button, you will come in an edit mode of each entry. Like the edit button at the iOS phonebook recents list.</p>
+<p>Should possibly work like this:</p>
+<p>local list &#8212; the tableView<br />
+local flag</p>
+<p>local function buttonHandler(event) &#8211;toolBarButton Handler<br />
+  flag = true<br />
+  list.reRender<br />
+end</p>
+<p>local function onRowRender(event)<br />
+  if flag then<br />
+      &#8212; put something new in the row<br />
+  end<br />
+end</p>
+<p>Hope that makes clear what I mean, my english is not the best, cause Im german. Thanks for looking into that.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-720">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 09:19h, 27 February</span>
+						<div class="text_holder" id="comment-720">
+				<p>Hey Mike.</p>
+<p>I understand what you want to do now. I will try and get this ability added asap.</p>
+<p>Thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-724">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8b1ec7fdcae76b0b0e00e28d2bcdaa91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 23:31h, 27 February</span>
+						<div class="text_holder" id="comment-724">
+				<p>I&#8217;m looking forward to it. thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-725">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/24d462b0eeb25dab2c97ff338f9454be-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.simha-studios.com/' rel='external nofollow' class='url'>ShivaP</a></h5>
+			<span class="comment_date">Posted at 10:46h, 28 February</span>
+						<div class="text_holder" id="comment-725">
+				<p>Yes, I need something like this too. Right now I have to delete all the rows and add them again. Ability to re-render all rows or a subset of them would be very helpful.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-680">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/15889a741ef172639734762e4f1e33c0-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.chickenkatsu.co.uk/' rel='external nofollow' class='url'>open768</a></h5>
+			<span class="comment_date">Posted at 02:29h, 23 February</span>
+						<div class="text_holder" id="comment-680">
+				<p>Hah like the spaghetti warning disclaimer! Happens everywhere, though game coders typically sacrifice structure and maintainability for speed &#8211; and speed of execution and speed to market is usually more important. Maybe you guys can post coding standards out of all this to help others learn.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-681">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e69ff1fb4fc1136d08024138b9496674-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Mitaten</h5>
+			<span class="comment_date">Posted at 02:48h, 23 February</span>
+						<div class="text_holder" id="comment-681">
+				<p>How is the performance of the new widgets compared to the old ones? Is it worth migrating to if you don&#8217;t need any of the new stuff?</p>
+<p>Awesome nonetheless 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-682">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96488f05aab50f7a48d03bab4b5b6a2e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://icyspark.com/' rel='external nofollow' class='url'>IcySpark</a></h5>
+			<span class="comment_date">Posted at 03:10h, 23 February</span>
+						<div class="text_holder" id="comment-682">
+				<p>@Danny No multitouch.</p>
+<p>I just had a look at the button tables when printed and noticed this:</p>
+<p>_insertedIntoScrollView false</p>
+<p>What does this do?  And how do we access it?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-683">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 04:25h, 23 February</span>
+						<div class="text_holder" id="comment-683">
+				<p>Hey IcySpark.</p>
+<p>I don&#8217;t recommend modifying any widget properties that are prefixed with an underscore &#8220;_&#8221;.</p>
+<p>They are all handled internally and modifying them yourself could lead to unexpected bugs.</p>
+<p>That being said, I haven&#8217;t seen the issue you mentioned with buttons not releasing focus back to the scrollView. I will take a look, in the meantime if you wouldn&#8217;t mind posting a bug so I can keep track of it here: <a href="http://developer.coronalabs.com/content/bug-submission" rel="nofollow">http://developer.coronalabs.com/content/bug-submission</a> </p>
+<p>Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-684">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/0a9e78b33634f256501ff53243c32997-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.BurtonsMediaGroup.com/' rel='external nofollow' class='url'>Brian Burton</a></h5>
+			<span class="comment_date">Posted at 16:45h, 23 February</span>
+						<div class="text_holder" id="comment-684">
+				<p>Perfect timing Walter!  I was just getting ready to write the widgets chapter of my new book!<br />
+Thanks to you and the Corona Labs team for such great features and big improvements!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-685">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d3ad679f18645743e5925d2818b7a5eb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.notavailableatthismomentsorry.com/' rel='external nofollow' class='url'>Francisco</a></h5>
+			<span class="comment_date">Posted at 01:47h, 24 February</span>
+						<div class="text_holder" id="comment-685">
+				<p>I would like to know how to create a custom theme using Widgets 2.0, because right now there is not any example inside the WidgetDemo project.</p>
+<p>Inside the API you can read: &#8220;See the WidgetDemo sample to see how a theme file is structured and can used in a real app.&#8221; That&#8217;s OK but I can&#8217;t find that sample. I use Widgets 1.0 with a custom theme and it would be cool to know how is done with 2.0 too.</p>
+<p>Cheers!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-686">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c538c9d0ca810d57d38e97b6411ac69b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.typo3-webdesign.nl/' rel='external nofollow' class='url'>Jack01</a></h5>
+			<span class="comment_date">Posted at 05:43h, 24 February</span>
+						<div class="text_holder" id="comment-686">
+				<p>Where exactly are the docs / guide for Widget 2.0 to be found? I downloaded 1035 but the only thing I can find is the samplecode.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-687">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c538c9d0ca810d57d38e97b6411ac69b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.typo3-webdesign.nl/' rel='external nofollow' class='url'>Jack01</a></h5>
+			<span class="comment_date">Posted at 05:48h, 24 February</span>
+						<div class="text_holder" id="comment-687">
+				<p>Aaah ok a zip of the docs can be downloaded at <a href="https://developer.coronalabs.com/downloads/daily-builds" rel="nofollow">https://developer.coronalabs.com/downloads/daily-builds</a></p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-688">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/6dc80ae52a11aa6d960e58c3be038b91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Alex M</h5>
+			<span class="comment_date">Posted at 22:12h, 24 February</span>
+						<div class="text_holder" id="comment-688">
+				<p>Wow walter, as the CTO, CEO or whatever you are now, you sure have a way with words. First as the former CTO and now CEO what does this say about you when you talk about your own code calling it embarrassing, especially when widgets was something that came after beta and not an early rushed addition to corona? It is nice to see how you deliberately go out of your way to belittle your own teams work. What is it to imply that 2.0 is not spaghetti code or anti-pattern when it is clearly completely broken, look at all the complaints, it might be the most broken thing you have ever released.<br />
+You might as well call the code and your team worthless.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-689">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 22:37h, 24 February</span>
+						<div class="text_holder" id="comment-689">
+				<p>Alex, what&#8217;s with all the anger? That leads to the dark side!</p>
+<p>All products I&#8217;ve worked on (e.g. Adobe Illustrator, Apple&#8217;s pre-Cocoa-ified Final Cut Pro, Macromedia Flash, etc) have had their fair share of unsavory bits – code that nobody wants to touch, especially when the original author has moved on. </p>
+<p>I&#8217;ve heard similar horror stories about other famous products as well.</p>
+<p>For us, the big difference is (a) we&#8217;re releasing it for the benefit of those who need to continue to code against the old version and (b) we&#8217;re being very matter of fact about the quality of the 1.0 code – I&#8217;d be more worried if we didn&#8217;t have the self-awareness to say so!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-691">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/6dc80ae52a11aa6d960e58c3be038b91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Alex M</h5>
+			<span class="comment_date">Posted at 00:15h, 25 February</span>
+						<div class="text_holder" id="comment-691">
+				<p>Anger? Walter clearly Adobe or Apple any company that you have had the privilege to work for has never opened up their source code and called it spaghetti code, or anti-pattern, which is just an indirect way of saying they have bad programmers.</p>
+<p>If your releasing it for the benefit of those who need to keep going with the old version it was not needed for you as CEO/CTO and leader of the company to stoop so low and almost directly call your subordinates incompetent, even if it&#8217;s someone who left your company and &#8216;moved on&#8217; as you say.</p>
+<p>You could have mentioned it and moved on but blaming budding programmers makes it sound like you are failing as a leader. No wonder so many staff have left your company, if you blame them all like this it&#8217;s just poor leadership.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-693">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/6215b28b4992d74e5dda3ddc71b5cfca-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.wowow.com/' rel='external nofollow' class='url'>Rob</a></h5>
+			<span class="comment_date">Posted at 00:38h, 25 February</span>
+						<div class="text_holder" id="comment-693">
+				<p>@Alex M; who said this code wasn&#8217;t developed by Walter himself? You seem to have info about who coded this, as you refer to them as &#8220;budding programmer&#8221;?<br />
+Care to share?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-704">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/6dc80ae52a11aa6d960e58c3be038b91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Alex M</h5>
+			<span class="comment_date">Posted at 16:16h, 25 February</span>
+						<div class="text_holder" id="comment-704">
+				<p>@Rob, I suppose you didn&#8217;t read. Walter said explicitly it was the code of someone who had moved on and the term &#8216;budding programmers&#8217; you highlighted comes from his own readme file, hence the quotation marks. wowow.com? Nice, hiding behind a fake url.<br />
+@Dean, some of us get stuck using corona because we are so far into a project we can&#8217;t simply abandon it when we realize how bad the SDK actually is, or we have apps that require updates in the meantime even if we are working on porting them. I notice you get your panties in a bunch with me but look at all the negative comments, you don&#8217;t have a fit when others talk about the countless bugs and issues they face. All I can say is a leader would have taken responsibility and not blamed others, especially those who left. It makes the whole thing completely unsavoury and if you took time to read the other comments before jumping on me you&#8217;d see others have issues too, whether they sugarcoat them or not.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-696">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96488f05aab50f7a48d03bab4b5b6a2e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://icyspark.com/' rel='external nofollow' class='url'>IcySpark</a></h5>
+			<span class="comment_date">Posted at 04:14h, 25 February</span>
+						<div class="text_holder" id="comment-696">
+				<p>Alex, I think you are being overly harsh.  Yes there are issues with widget v2, but they can be worked around and will be fixed in time.  Also even apple release buggy iOS updates that have been tested rigorously, so please give these guys a break.  They could have left the widgets the way they were, but instead are trying to improve them for everyones benefit.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-706">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 19:08h, 25 February</span>
+						<div class="text_holder" id="comment-706">
+				<p>Alex, the Readme statement was a warning to the community. We don&#8217;t think these are best practices, so anyone who wants to write one should view this with that in mind. </p>
+<p>Also, my point was that spaghetti code happens all the time, even on products we all love. It&#8217;s not supposed to be an indictment. The key is to recognize what to do about it, which is what we are doing.</p>
+<p>Anyway, I can see that something deep is bothering you. Let&#8217;s chat about it offline and see if we can figure it out. My e-mail is walter at coronalabs</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-707">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96b8c18a56758ece53869e2ec1ec7ce8-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.hi-alex.com/' rel='external nofollow' class='url'>Rob</a></h5>
+			<span class="comment_date">Posted at 21:31h, 25 February</span>
+						<div class="text_holder" id="comment-707">
+				<p>Actually Alex you are wrong, Walter referred to &#8220;any budding framework writer&#8221; in respect to someone taking the current 1.0 to learn from or build on, and not as you say was describing the developer of the widget 1.0.<br />
+Wow seems like I ruffled your feather that you checked the link? Whats your link?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-690">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96b8c18a56758ece53869e2ec1ec7ce8-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://memegenerator.net/instance/35357332' rel='external nofollow' class='url'>Dean</a></h5>
+			<span class="comment_date">Posted at 23:51h, 24 February</span>
+						<div class="text_holder" id="comment-690">
+				<p>Sweet another Alex M masterful post to enjoy this evening.<br />
+Actually this time I am going to resist the urge to be sarcastic and just ask an honest question, and I wish deep Deep inside that you would honor me with a reply.</p>
+<p>What do you get out of just going out of your way to bash everything that Corona does? I have not read a single post from you that isn&#8217;t totally negativity and under handed remarks.</p>
+<p>I mean if you don&#8217;t like the product so much why don&#8217;t you just go somewhere else? Do you really have that much time on your hand?<br />
+What do you expect to achieve out of this? </p>
+<p>If your intention is to discredit Corona, I am afraid that this is not working, because without doubt everyone here (with the exception of one other, you know who you are) totally ignores what you say or considers it total nonsense.</p>
+<p>I think we all appreciate constructive comments, even a few digs at Corona here and there, but your systematic bashing is neither useful nor constructive.</p>
+<p>Can you give us some insight?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-692">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/7c686b88b5db8eae4a7d5f5575e13079-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Master Preenz</a></h5>
+			<span class="comment_date">Posted at 00:31h, 25 February</span>
+						<div class="text_holder" id="comment-692">
+				<p>I have installed the daily build and it was nice BUT when I tried to use widget.newButton() and set default and over parameters with image, no image appears.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-705">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 17:11h, 25 February</span>
+						<div class="text_holder" id="comment-705">
+				<p>Please consult the latest daily build docs.</p>
+<p>Some parameters have changed as have some methods for various widgets.</p>
+<p>default =&gt; defaultFile<br />
+over =&gt; overFIle</p>
+<p>Thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-694">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c538c9d0ca810d57d38e97b6411ac69b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.typo3-webdesign.nl/' rel='external nofollow' class='url'>Jack01</a></h5>
+			<span class="comment_date">Posted at 02:21h, 25 February</span>
+						<div class="text_holder" id="comment-694">
+				<p>&#8220;In addition, we decided to ship an iOS theme and an Android theme. &#8221;  Ok, but what is exactly in those shipped themes, any documentation about that? Or how to make your own theme?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-695">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96488f05aab50f7a48d03bab4b5b6a2e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://icyspark.com/' rel='external nofollow' class='url'>IcySpark</a></h5>
+			<span class="comment_date">Posted at 04:08h, 25 February</span>
+						<div class="text_holder" id="comment-695">
+				<p>I&#8217;m sure one of Corona&#8217;s tutorials will soon explain how to do this hopefully.  Im thankful for CoronaLabs releasing the source code of widget v1 as it allows us to still use it with the new daily builds, so cudos for that</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-697">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 04:47h, 25 February</span>
+						<div class="text_holder" id="comment-697">
+				<p>AlexM: Saying widgets 2.0 is completely broken is an extremist statement. There have been a handful of minor bugs reported and one missing method, no show stopping issues have been reported thus far.</p>
+<p>@Jack01:</p>
+<p>I am aiming to have a guide made this week that explains how to create your own widget themes and what is contained in the default widget themes that we now provide.</p>
+<p>Thanks for your patience!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-698">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8b1ec7fdcae76b0b0e00e28d2bcdaa91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 07:32h, 25 February</span>
+						<div class="text_holder" id="comment-698">
+				<p>I also dont&#8217;t understand why v2 is already released (with a &#8220;BAM!&#8221;) with all that bugs. And essential features are apparent not included at all, even though they where often requested by users and promised with the update. And my requests referring to this above are not even answered.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-703">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 15:39h, 25 February</span>
+						<div class="text_holder" id="comment-703">
+				<p>Mike, sorry about missing your question.</p>
+<p>Please see my reply to your question above.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-699">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c538c9d0ca810d57d38e97b6411ac69b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.typo3-webdesign.nl/' rel='external nofollow' class='url'>Jack01</a></h5>
+			<span class="comment_date">Posted at 08:27h, 25 February</span>
+						<div class="text_holder" id="comment-699">
+				<p>@danny, allright thx for your reaction and efforts.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-700">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d3ad679f18645743e5925d2818b7a5eb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.prueberscorona.com/' rel='external nofollow' class='url'>Francisco</a></h5>
+			<span class="comment_date">Posted at 11:04h, 25 February</span>
+						<div class="text_holder" id="comment-700">
+				<p>@danny yeah thanks for your efforts! I personally can&#8217;t wait to read that guide, because using my own theme is essential for my app! hehe 😉</p>
+<p>I would want to add that I&#8217;m happy to be able to continue using widgets 1.0 in the meantime, thx for that detail guys!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-701">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f55339dee34757cda575aec1e705ced2-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://tapps.com.br/' rel='external nofollow' class='url'>Pezzolo</a></h5>
+			<span class="comment_date">Posted at 14:58h, 25 February</span>
+						<div class="text_holder" id="comment-701">
+				<p>I&#8217;ve got over 40 applications that use your widget.<br />
+And they won&#8217;t work with your new widget version.</p>
+<p>What I&#8217;m looking for is a way to have the old &#8220;widget&#8221; to be called as require &#8220;widget&#8221; and the widget v2.0 to be required as require &#8220;widget2&#8221;. Is that possible?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-709">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 11:17h, 26 February</span>
+						<div class="text_holder" id="comment-709">
+				<p>Yes, you can do that super easily. See bottom of the blog post. Just include widget-v1.lua in your project and then replace all &#8216;require &#8220;widget&#8221;&#8216; calls with: local widget = require &#8220;widget-v1&#8221;.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-708">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ad6bbb989a40a8ce49c78e9e9c8ccf2b-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Joris Verschoor</h5>
+			<span class="comment_date">Posted at 00:53h, 26 February</span>
+						<div class="text_holder" id="comment-708">
+				<p>Sorry.. Moved on.. Too little too late.<br />
+Find me at moai and cocos2d</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-714">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/980281dfddef68bba1ecd136fe2108de-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://www.coronalabs.com/' rel='external nofollow' class='url'>David Rangel</a></h5>
+			<span class="comment_date">Posted at 15:50h, 26 February</span>
+						<div class="text_holder" id="comment-714">
+				<p>Joris &#8211; sorry to hear that. But thanks for reading and hopefully we will have you back in the not too distant future.</p>
+<p>David</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-710">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 12:40h, 26 February</span>
+						<div class="text_holder" id="comment-710">
+				<p>Just an update for everyone.</p>
+<p>The majority of bugs and issues people have brought up thus far have been fixed and the fixes will be available in the next daily build.</p>
+<p>Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-711">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/008bf6d8b5a3a7be7024c73e2153e8d3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://ninjapigstudios.com/' rel='external nofollow' class='url'>Jordan Schuetz</a></h5>
+			<span class="comment_date">Posted at 13:20h, 26 February</span>
+						<div class="text_holder" id="comment-711">
+				<p>This will be nice! Thanks for the new library.  It&#8217;s awesome that it&#8217;s for Android too&#8230;.but was this really necessary &#8220;It is really an anti-pattern for any budding framework writer&#8221;. LOL your calling your engineers out!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-712">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 13:33h, 26 February</span>
+						<div class="text_holder" id="comment-712">
+				<p>Thanks! Goal was to warn (see above). Also motivated us to rewrite for widget 2.0 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-713">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f556a50e6a74127c7ef6063c3f30cac9-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://chip-chain.com/' rel='external nofollow' class='url'>Aaron Isaksen</a></h5>
+			<span class="comment_date">Posted at 14:20h, 26 February</span>
+						<div class="text_holder" id="comment-713">
+				<p>where is the migration guide in the daily docs?  I can&#8217;t find it.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-717">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 02:52h, 27 February</span>
+						<div class="text_holder" id="comment-717">
+				<p>If you look under the widget* section you should see &#8220;V2.0 Migration Guide&#8221;.</p>
+<p>Or alternatively scroll down to the bottom of the api index page and you will see it there.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-715">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/dbc8d8ecdeacb1252d7184981bfe7460-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.rainbirth.com/' rel='external nofollow' class='url'>Norvin Altamirano</a></h5>
+			<span class="comment_date">Posted at 22:56h, 26 February</span>
+						<div class="text_holder" id="comment-715">
+				<p>Hey, I&#8217;m implementing own buttons and I need the ability to take focus in a scroll view. How are you going to support that? I mean you&#8217;re forcing us to use the widget buttons right? I can&#8217;t find anything related to this and no answer to first posted question.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-716">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/dbc8d8ecdeacb1252d7184981bfe7460-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.rainbirth.com/' rel='external nofollow' class='url'>Norvin Altamirano</a></h5>
+			<span class="comment_date">Posted at 23:54h, 26 February</span>
+						<div class="text_holder" id="comment-716">
+				<p>Never mind, I&#8217;ve fixed it. just created a takeFocus implementation for the use of others just call the code previously present on v1:</p>
+<p>display.getCurrentStage():setFocus( nil )<br />
+	target.isFocus = false</p>
+<p>	&#8212; set event.target to scrollView and start back at &#8220;began&#8221; phase<br />
+	event.target = self._scrollView._view<br />
+	event.phase = &#8220;began&#8221;<br />
+	self._scrollView._view.touch( self._scrollView._view, event )</p>
+<p>I hope it&#8217;s helpful for someone.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-735">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f4f9d1c720635938c93c44e77242593f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">yhx</h5>
+			<span class="comment_date">Posted at 00:14h, 12 April</span>
+						<div class="text_holder" id="comment-735">
+				<p>very nice!<br />
+thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-719">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/8b1ec7fdcae76b0b0e00e28d2bcdaa91-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Mike M</a></h5>
+			<span class="comment_date">Posted at 06:09h, 27 February</span>
+						<div class="text_holder" id="comment-719">
+				<p>Thanks danny for the reply. I answered your questions above.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-721">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/65c8bf40dc2cf268d97d67e114e327c7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">mick</h5>
+			<span class="comment_date">Posted at 19:43h, 27 February</span>
+						<div class="text_holder" id="comment-721">
+				<p>When will this be release for free version ?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-730">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f76e1d84fd3026ed3029073efd04e788-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Ross</h5>
+			<span class="comment_date">Posted at 13:23h, 08 March</span>
+						<div class="text_holder" id="comment-730">
+				<p>Yes,  For those of us evaluating if Corona could actually be used for a business app (and the current widget library leads me to say only if you want to a lot of work arounds), when can we put 2.0 to the test?   High Hopes for 2.0!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-722">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/21d72ecd158cb5e17ec5ad6d1895d25d-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Daniel</h5>
+			<span class="comment_date">Posted at 20:22h, 27 February</span>
+						<div class="text_holder" id="comment-722">
+				<p>My old widgets are no longer working with the new widgets, I recompiled but it didn&#8217;t work. Can you please post an example of how it should work or some other tutorial because the Tuesday tutorial also doesn&#8217;t work like others said in the comments there already.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-726">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/341d02767ab0e24921cb5b523b75f0c6-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">danny</h5>
+			<span class="comment_date">Posted at 10:46h, 28 February</span>
+						<div class="text_holder" id="comment-726">
+				<p>Daniel:</p>
+<p>They won&#8217;t work just by recompiling. You need to migrate as some properties were changed, removed or replaced.</p>
+<p>Please see the widget v2.0 migration guide here: <a href="http://docs.coronalabs.com/daily/api/library/widget/migration.html" rel="nofollow">http://docs.coronalabs.com/daily/api/library/widget/migration.html</a></p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-723">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c924f14ae46546e12ca3cc5d055ae35c-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.rmbsoft.com/' rel='external nofollow' class='url'>Robert de Boer</a></h5>
+			<span class="comment_date">Posted at 21:05h, 27 February</span>
+						<div class="text_holder" id="comment-723">
+				<p>@Joris<br />
+If you moved on, why are you still hanging around here lol.</p>
+<p>You know you love Corona! The grass isn&#8217;t always greener on the other side 🙂</p>
+<p>Dutch greetings 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-727">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/24d462b0eeb25dab2c97ff338f9454be-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.simha-studios.com/' rel='external nofollow' class='url'>ShivaP</a></h5>
+			<span class="comment_date">Posted at 10:51h, 28 February</span>
+						<div class="text_holder" id="comment-727">
+				<p>Thanks for this. I am close to release my new app. The question I have is if I am using build 1025 then do I still need to add the require widget-v1 or is that step applicable on build 1034 and newer?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-728">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/fa207e91cd9682427d22ca558c3a78fe-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.zondle.com/' rel='external nofollow' class='url'>Dougi</a></h5>
+			<span class="comment_date">Posted at 02:25h, 01 March</span>
+						<div class="text_holder" id="comment-728">
+				<p>Great new widgets.  However, just ran the widget demo on my HTC sensation Android phone to test it and the widget.newTableView() is still really unresponsive.  I&#8217;ve had loads of feedback from users about it being unusable.</p>
+<p>You have to press for a really long time for the item selection to work.</p>
+<p>Am I doing something wrong or is this bug?</p>
+<p>I also found an issue with the picker wheel.  Using storyboard I created a picker wheel, then slide it off screen, then click on the backbutton to open another storyboard scene and the app bombs out.</p>
+<p>Thank you very much for these great new widgets.  They will make life a LOT easier.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-729">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/309b6cf414d724f1d8adf24e28c3d6f4-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://winicius.mobi/' rel='external nofollow' class='url'>Winicius Siqueira</a></h5>
+			<span class="comment_date">Posted at 19:23h, 04 March</span>
+						<div class="text_holder" id="comment-729">
+				<p>This is true. The rows on the widget.newTableView() takes a few seconds to respond.</p>
+<p>Any daily build software (or experimental software, if you are familiar with Debian) is usually buggy and is waiting for the community to test and report bugs. I tried daily build 1041 and I was not satisfied with the widgets because the demo that showcased it was laggy. I&#8217;m sure once the bugs are removed it will be a pleasant experience to use and develop with.</p>
+<p>Thanks Corona Labs.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-731">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/81317e68c0e2b43b6e7ee1a6b6a80dd5-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.active-documents.com/' rel='external nofollow' class='url'>JCH_APPLE</a></h5>
+			<span class="comment_date">Posted at 09:50h, 18 March</span>
+						<div class="text_holder" id="comment-731">
+				<p>Any way to re-enable &#8220;tabBar:deselectAll()&#8221;</p>
+<p>Or just disable 1 button in a tabBar ? setSelected allow to select but how to &#8220;unselect&#8221; ?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-732">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/a24ac0b4e8fa90e8a0b452c2c7d23825-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://Idonthaveone.com/' rel='external nofollow' class='url'>Paul</a></h5>
+			<span class="comment_date">Posted at 14:28h, 27 March</span>
+						<div class="text_holder" id="comment-732">
+				<p>Don&#8217;t suppose there&#8217;s any plans to support ARMV6 for Android? I&#8217;d come on board if there was!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-733">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1eafb9003ae98c829cd54b51777ab6fc-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>stuart warren</a></h5>
+			<span class="comment_date">Posted at 08:17h, 28 March</span>
+						<div class="text_holder" id="comment-733">
+				<p>Has anyone documented the button theme functionality?</p>
+<p>If you follow the examples, and then add a theme, it blows up.  Apparently, the themes override what you tell it in the code, or enable / disable certain features.</p>
+<p>I feel like a mouse in a maze with documentation that does not match the code I am running, code that does not run reliably, and minimal tech support. When I cold boot my machine and run a minimal stub code app from the simulator, it first thinks it is running on a Droid, then it shuts down and starts back up as an iPad as it was initially supposed to do. so far I don&#8217;t have enough confidence in Corona to release an app to the public.</p>
+<p>In the docs, there is no easy way to go back up, once you drill down. The see-also fields are almost never used, and most of it is written for people who don&#8217;t need docs. </p>
+<p>When a coder makes a change that changes the docs, they should define the changes so docs appear when the code does. There is very little value in releasing code in advance of the docs that describes it. every coder should be responsible for making sure the docs work as described with their code, and sit with the writer to make the two meet.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-734">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/855c1321b49046dc68dcc593edde3759-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>Paulo</a></h5>
+			<span class="comment_date">Posted at 12:35h, 03 April</span>
+						<div class="text_holder" id="comment-734">
+				<p>Is there a way to dynamically change the defaultFile/overFile option?</p>
+<p>I just want to create a button to switch on/off the music theme. But I&#8217;d like to use my own images, there are 4, mute default-ON/OFF and over-ON/OFF.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-736">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f979ed423492e0939f86d18386b04f31-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://peterbookmace.appspot.com/' rel='external nofollow' class='url'>Peter Chen</a></h5>
+			<span class="comment_date">Posted at 07:37h, 17 May</span>
+						<div class="text_holder" id="comment-736">
+				<p>When I apply the widget-v1, I found the widget.newSpinner is not included in the library. So could you update the widget-v1? Thanks very much.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-737">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f979ed423492e0939f86d18386b04f31-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://peterbookmace.appspot.com/' rel='external nofollow' class='url'>Peter Chen</a></h5>
+			<span class="comment_date">Posted at 07:39h, 17 May</span>
+						<div class="text_holder" id="comment-737">
+				<p>When I applied the widget-v1.lua, I found widget.newSpinner is not available within this program. Could you help us to update this code? Thanks very much.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-44ab35495eb13b448ea9307a96f479f3.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"29526","is_front_page":"","is_blog_page":"","is_category":"","site_url":"\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-933b528a2d57748fe8c83f115a193bac.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-301fe8920786443d62854aa56f62d416.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-589214c34f008189ea441c146f569db3.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-7509df77330fcb9cc352a1e134790124.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-46e09ba307b0b6c4b86ea442fd0f8392.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

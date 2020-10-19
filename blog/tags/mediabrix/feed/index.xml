@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MediaBrix &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mediabrix/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>MediaBrix &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>MediaBrix ad/monetization plugin now available</title>
+		<link>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/</link>
+		<comments>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 03 May 2016 11:39:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[MediaBrix]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=66040</guid>
+		<description><![CDATA[Corona Labs announces a new ad/monetization partner in MediaBrix. Learn more about the MediaBrix plugin and how to use it in your apps.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/03/mediabrix.png rel="attachment wp-att-66067"><img class="alignright wp-image-66067" style="margin: 2px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/mediabrix-300x97.png" alt="mediabrix" width="241" height="78" /></a>Corona Labs is pleased to announce the availability of the <a href=https://www.mediabrix.com/ target="_blank">MediaBrix</a> plugin for both iOS and Android.</p>
+<p>MediaBrix has one goal – to create and deliver the most meaningful, contextual and emotional ad experiences for our premium brand partners in-app! 85% of Ad Age’s top global brands trust MediaBrix to curate the most premium emotional moments native to every app environment. You’ve carefully built your app environment for superb user interaction, flow and engagement; and we’ve taken the same care into building an emotional product suite that benefits brands and app developers in a big way! Plug into our SDK and choose which emotional moment makes sense for your app and start enjoying 2X the CPMs, that are to garner you, increased engagement and reduced user churn. MediaBrix solely provides brand advertising dollars and does not accept UA campaigns.</p>
+<h3>Rally</h3>
+<p>Rally is intended to encourage the user during times of mild success or challenge.  The format is similar to an interstitial ad, but one that appears during breaks to encourage users as they navigate the app experience. Examples include:</p>
+<ul>
+<li>Games &#8211; User levels up</li>
+<li>Fitness &#8211; User completes an exercise</li>
+<li>Music – User completes a song they like</li>
+</ul>
+<h3>Rescue</h3>
+<p>Rescue is a value exchange moment that requires the user to perform an engagement in return for an app reward. When the user is stuck or needs help, the sponsoring brand becomes the hero by offering timely assistance. Examples include:</p>
+<ul>
+<li>Games – User fails to pass a level more than one</li>
+<li>General – User wants locked content but unwilling to pay</li>
+</ul>
+<h3>Reward</h3>
+<p>Reward is presented during high achievement moments when the user is feeling happy and excited. Reward allows a brand to emotionally target achievements/milestones. This creates a halo effect on the brand and users reciprocate by engaging with the assets in a genuine fashion.  Example include:</p>
+<ul>
+<li>Games – User obtains a new high score</li>
+<li>Fitness – User has a new high fitness achievement</li>
+<li>Finance – User achieved a weekly or monthly budget</li>
+</ul>
+<p>You could also integrate all three; &#8220;rescue&#8221;, &#8220;rally&#8221; and/or &#8220;reward&#8221; at different moments within the same app. Rewards and rescue require that your app provide a reward, so that, the user loyalty remains with the app.</p>
+<p><a href=http://mediabrix.com/developers/ target="_blank">Learn More</a>.</p>
+<h3>What do I need to do?</h3>
+<ol>
+<li>Open an account with MediaBrix and register your app(s) at <a href=https://platform.mediabrix.com/signup target="_blank">https://platform.mediabrix.com/signup</a></li>
+<li>MediaBrix will contact you and review your apps’ Break Through Moments™ to insure a continuous and uninterrupted experience</li>
+<li>Mediabrix approves account and sends app ID and zone names</li>
+<li>Review the <a href=http://knowledge.mediabrix.com/ target="_blank">Knowledge Center</a> documentation*.  Review each ad product’s customization</li>
+<li>Provide MediaBrix custom images and messaging to make the ad product contextual to your app and moment</li>
+<li>Integrate the plugin and create a test app for MediaBrix to review</li>
+<li>MediaBrix approves and sets app to get live ads</li>
+</ol>
+<p>*Knowledge Center access requires account approval</p>
+<h3>How do I integerate MediaBrix?</h3>
+<p>Using MediaBrix in your app is just like other ad plugins, you&#8217;ll need to add code to  your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.mediaBrix&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true }
+        },
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },
+}</pre><p>In addition, if building for iOS, add the following key-value pair within the <code>iphone-&gt;plist</code> table of <code>build.settings</code>.</p><pre class="crayon-plain-tag">settings =
+{
+    iphone =
+    {
+        plist =
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+        },
+    },
+}</pre><p>Then in your <code>main.lua</code> file, <code>require()</code> the plugin, set up a basic ad event listener, and initialize MediaBrix, substituting the unique app ID provided by MediaBrix in place of <code>"YOUR_APP_ID"</code>:</p><pre class="crayon-plain-tag">local mediaBrix = require( &quot;plugin.mediaBrix&quot; )
+
+local function adListener( event )
+
+    if ( event.phase == &quot;init&quot; ) then  -- Successful initialization
+        print( event.isError )
+    end
+end
+
+-- Initialize MediaBrix
+mediaBrix.init( adListener, { appId=&quot;YOUR_APP_ID&quot; } )</pre><p>After successfully initializing the plugin, you can load an ad using <a href=https://docs.coronalabs.com/plugin/mediaBrix/load.html target="_blank">mediaBrix.load()</a>, substituting one of the placement IDs provided by MediaBrix in place of <code>"PLACEMENT_ID"</code>:</p><pre class="crayon-plain-tag">mediaBrix.load( &quot;PLACEMENT_ID&quot; )</pre><p>Finally, when you&#8217;re ready, display the ad via <a href=https://docs.coronalabs.com/plugin/mediaBrix/show.html target="_blank">mediaBrix.show()</a>, using the same placement ID associated with the ad that was loaded:</p><pre class="crayon-plain-tag">mediaBrix.show( &quot;PLACEMENT_ID&quot; )</pre><p>Note that the MediaBrix plugin also offers the <a href=https://docs.coronalabs.com/plugin/mediaBrix/isLoaded.html target="_blank">mediaBrix.isLoaded()</a> API to check whether an ad is loaded in advance of showing it.</p>
+<h3>Ad events and phases</h3>
+<p>Like other ad plugins, the MediaBrix plugin reports various <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/index.html target="_blank">event</a> properties, and among these, the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">event.phase</a> property can be associated with various function calls and the user&#8217;s interaction with ads. Please see the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">documentation</a> for details.</p>
+<h3>Conclusion</h3>
+<p>Learn more about the <a href=https://docs.coronalabs.com/plugin/mediaBrix/index.html target="_blank">MediaBrix plugin</a>, or see it in action by downloading the <a href=https://github.com/coronalabs/plugins-sample-mediabrix target="_blank">sample app</a> from GitHub.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>peanut labs &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/peanut-labs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>peanut labs &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Peanut Labs – monetization through surveys</title>
+		<link>/blog/2016/08/02/introducing-peanut-labs-monetization-through-surveys/</link>
+		<pubDate>Tue, 02 Aug 2016 22:09:34 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[peanut labs]]></category>
+		<category><![CDATA[survey]]></category>
+
+		<guid isPermaLink="false">/?p=67504</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Peanut Labs plugin, a survey-based monetization option. Click to learn more!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-67508" style="margin: 10px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/07/pl-logo1.png" alt="pl-logo1" width="146" height="56" />A growing trend in app monetization is rewarding users for their time. We have seen rewarded video plugins, but there are other ways to engage your customers. Enter <a href=http://web.peanutlabs.com/ target="_blank">Peanut Labs</a>, a monetization solution which lets your users take surveys from popular brands. You can reward your customers with virtual currency for taking the survey and you get paid for doing so. Your users will find a new and free way to earn credits every single day while having a quality customer experience.</p>
+<p>&#8220;We are thrilled to partner with Corona Labs to boost the monetization opportunity for its developer community which will help app developers create extra revenue’’ says Noman Ali, Co-Founder and CEO of Peanut Labs.</p>
+<h3>Implementing Peanut Labs</h3>
+<p>Implementing the Peanut Labs plugin is pretty straightforward. Include the plugin in <code>build.settings</code>, <a href=https://docs.coronalabs.com/plugin/peanutlabs/init.html target="_blank">initialize</a> it, and call the <a href=https://docs.coronalabs.com/plugin/peanutlabs/show.html target="_blank">show()</a> method. Of course, you will first need to <a href=https://www.peanutlabs.com/js/pubdash/bin/?#/register/company target="_blank">apply for a developer account</a> with Peanut Labs. Once they approve your account, you can log into their <a href=https://www.peanutlabs.com/js/pubdash/bin/index.php target="_blank">dashboard</a> and start setting up your app. You will need an <code>appKey</code> and an <code>appId</code> which can be found in the dashboard. In addition, you will need to provide a unique <code>userId</code> for each user. Rewards are tied to this ID. It&#8217;s just a string to them, so it can be any format in your app, but it needs to be unique. One option is to use a person&#8217;s Facebook ID, an email address, or some other ID.</p>
+<p>There is a <a href=https://docs.coronalabs.com/plugin/peanutlabs/server.html target="_blank">server-side requirement</a> to use the Peanut Labs plugin. When you show a survey, the user will either be allowed to participate or they will be screened out due to demographics, previously completed surveys, etc. When the results are known, Peanut Labs servers will call a web script that you host on your web server. How you write that script and set up your database is completely up to you, since they expect you to have a server-based economy system in place. If you don&#8217;t, we have included a basic PHP script to handle their callback needs, in addition to a MySQL statement to create the table. Most web hosting providers offer MySQL databases and the ability to execute PHP scripts. See our <a href=https://docs.coronalabs.com/plugin/peanutlabs/server.html target="_blank">documentation</a> for these example scripts.</p>
+<h4>Completing the transaction</h4>
+<p>If the user completes the survey, you need to reward currency. But even if the user was screened out, they should still get a small reward. This encourages the user to try again another time, so when they do successfully complete a survey, you earn the revenue. After a survey attempt, Peanut Labs will update your server with information about the transaction. The data will indicate survey completion status, the amount of money you made, and an amount of virtual currency to give your user. You need to get that information to your app.</p>
+<p>By their design, you should query your database, find that user&#8217;s information, and have your app react to the information found. Their system is set to work with games that drive an app&#8217;s full economic system on a server, so having the ability to inject the information into your system makes sense. However, if your app is not server-connected, you still need the information in your app. We&#8217;ve provided an additional PHP script which will query your database for the most recent entry from Peanut Labs. You can access this with <a href=https://docs.coronalabs.com/api/library/network/request.html target="_blank">network.request()</a>:</p><pre class="crayon-plain-tag">local json = require( &quot;json&quot; )
+
+local function getResultListener( event )
+    if not event.isError then
+        local result = json.decode( event.response )
+        print( json.prettify( result ) )
+        local currencyAmt = result.currencyAmount
+    end
+end
+
+local URL = &quot;https://yourserver.com/path/to/getresult.php?userId=&quot; .. yourUserId
+network.request( URL, &quot;GET&quot;, getResultListener )</pre><p>Using this, you can compare the time stamp in the result with the current time using <a href=https://docs.coronalabs.com/api/library/os/time.html target="_blank">os.time()</a>. If they are in close proximity to each other, it&#8217;s probably the transaction for the most recent survey completed. In this case, you can process the rewards.</p>
+<h3>Conclusion</h3>
+<p>Peanut Labs is a different kind of monetization tool that you can add to your arsenal. To learn more, visit their website and read our <a href=https://docs.coronalabs.com/plugin/peanutlabs/index.html target="_blank">documentation</a> and, if you have any further questions, please contact the Peanut Labs Team at <a href=mailto:publishers@peanutlabs.com>publishers@peanutlabs.com</a>. Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a>!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>daily builds &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/daily-builds/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>daily builds &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing new Android 6 features</title>
+		<link>/blog/2016/02/16/introducing-new-android-6-features/</link>
+		<comments>/blog/2016/02/16/introducing-new-android-6-features/#comments</comments>
+		<pubDate>Wed, 17 Feb 2016 00:13:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android 6]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[marshmallow]]></category>
+
+		<guid isPermaLink="false">/?p=65566</guid>
+		<description><![CDATA[Initial Android 6 support has arrived as of daily build 2016.2828. Read further to learn about changes which may impact you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65567" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/android-6-marshmallow-150x150.png" alt="android-6-marshmallow" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/android-6-marshmallow-150x150.png 150w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow-300x300.png 300w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow-500x500.png 500w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow.png 512w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs is pleased to announce initial support for <strong>Android 6</strong> &#8220;Marshmallow&#8221; in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.2828</a> and later. This brings some significant changes and improvements to Android developers.</p>
+<h3>Overview</h3>
+<p>Android 6 introduces some pretty fantastic changes. One of the most significant involves &#8220;on-demand permissions&#8221; which behave more like iOS in that, instead of requesting several permissions from the start, you can defer the request for a permission until you need it.</p>
+<p>On the Corona side, some additions and changes for Android 6 include:</p>
+<ul>
+<li><span class="comment-text ">Additions to <a href=https://docs.coronalabs.com/daily/api/library/native/showPopup.html?#requestapppermission target="_blank">native.showPopup()</a> to request permissions at appropriate times in your app, along with methods to handle the user&#8217;s response to these requests.</span></li>
+<li>Additions to <a href=https://docs.coronalabs.com/daily/api/library/native/canShowPopup.html?#requestapppermission target="_blank">native.canShowPopup()</a> to check whether you&#8217;re on a platform that supports requesting permissions.</li>
+<li>Additions to <a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">system.getInfo()</a> related to which permissions have been granted or denied.</li>
+<li>Enhancement of <a href=https://docs.coronalabs.com/daily/api/library/media/hasSource.html target="_blank">media.hasSource()</a> to check for both the existence of a camera and whether the app has permission to access it.</li>
+<li><span class="comment-text ">Existing Lua APIs that require permissions will now prompt the user. By default, these will behave similar to permission requests on iOS.</span></li>
+</ul>
+<h3>Important notes</h3>
+<div>With any new release, there are some known issues you should be aware of:</div>
+<ul>
+<li><span class="comment-text ">Plugins which use any permissions in Android&#8217;s <a href=http://developer.android.com/guide/topics/security/permissions.html?#permission-groups target="_blank">dangerous permissions and permission groups</a> table are at risk of breaking. Plugin developers should test against <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.2828</a> or later to see if their plugin may need to updated to support the new permissions framework. We will have more information on the process as we come closer to the next public release.</span></li>
+<li><span class="comment-text ">Apps using expansion files should have <code>STORAGE</code> permissions granted before launching.</span></li>
+<li>The runtime permission model introduces a behavior change to <code>system.getInfo("deviceID")</code> (<a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">reference</a>) which makes it possible for a user to manipulate the value returned from this API call. Depending on the user&#8217;s action, this may negatively impact analytics that an app is collecting which depend on the results of this API being consistent. See the <a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">documentation</a> for more details on how to handle this issue. Also note that you&#8217;ll have to restart your app to see the related changes.</li>
+</ul>
+<h3>Feedback and issues</h3>
+<p>We would like to get your feedback on Android 6 and the new APIs. Let us know of any issues you encounter by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/16/introducing-new-android-6-features/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona Build Servers</title>
+		<link>/blog/2013/07/10/wednesday-faqs-corona-build-servers/</link>
+		<comments>/blog/2013/07/10/wednesday-faqs-corona-build-servers/#comments</comments>
+		<pubDate>Wed, 10 Jul 2013 21:07:35 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[server]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=37617</guid>
+		<description><![CDATA[It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.</p>
+<h2>1. Is there a difference between developer and distribution builds for iOS?</h2>
+<p>Yes, with distribution builds (App Store and adhoc), Apple&#8217;s <strong>PNGCRUSH</strong> utility is called to compress the PNG files. To save time, the utility is not called when doing a <strong>developer</strong> build.</p>
+<p>We&#8217;ve had some reported cases where images were mangled when submitted to the App Store and rejected by Apple. The issue seems to be a problem with how some PNG images are formatted that causes problems when <strong>PNGCRUSH</strong> is used to compress the images. If this happens to you, the solution is to open the PNG file in Photoshop (or a similar photo editor) and re-save the image. You can probably do the same thing using Mac&#8217;s Preview program. It&#8217;s always a good idea to test an adhoc build of your app because that also calls <strong>PNGCRUSH</strong> to compress the images.</p>
+<h2>2. Why do I need an Internet connection to build my project?</h2>
+<p>The Corona servers host multiple versions of the Corona SDK. This includes all the public builds as well as daily builds. When you do a build on the Corona Simulator, it sends the build information to the Corona servers so it can pick the correct <strong>template</strong> (build file) and plugins. Having the build templates and plugins in the cloud, allow us to update the files as needed and add additional plugins as they become available.</p>
+<p>For users who want to build offline, we do offer <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a>.</p>
+<h2>3. When I do a build, is the source code and all my assets sent to Corona&#8217;s servers?</h2>
+<p>Your project code is converted into Lua byte code and sent to Corona servers so it can be packaged with the <strong>template</strong> file for the associated build. None of project&#8217;s assets are sent to the Corona servers. After the Lua code has been linked to the template, it&#8217;s sent back to the client (Corona Simulator) where all the project&#8217;s assets are added to the project and the app is digitally signed.</p>
+<h2>4. My hard drive failed and I lost my Corona project. Can I get a copy that was sent to your servers when I did a build?</h2>
+<p>No, as mentioned in the previous answer, only the Lua byte code for your project is sent to the Corona servers. This byte code is not human readable plus it doesn&#8217;t contain any comments you may have in your code nor are any of the project assets included. None project files are saved on our servers once it&#8217;s send back to the client to build the project locally.</p>
+<h2>5. Are daily builds stable enough to use if I want to distribute to the App Store?</h2>
+<p>Daily builds contain new features and bug fixes. If you want to publish your app with a daily build, it&#8217;s best to test as much as you can to ensure there are no bugs. We do try to fix regression bugs in daily builds as soon as we are aware of them, so it&#8217;s a good idea to hold off and monitor the forums and the <a href=https://developer.coronalabs.com/corona-daily-builds/summary>daily build summary</a> page for bug reports and fixes.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/10/wednesday-faqs-corona-build-servers/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Google &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/google/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Google &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #115</title>
+		<link>/blog/2016/03/18/from-the-forum-issue-115/</link>
+		<pubDate>Fri, 18 Mar 2016 23:56:51 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[icon generation]]></category>
+		<category><![CDATA[Icons]]></category>
+		<category><![CDATA[keyboards]]></category>
+		<category><![CDATA[oAuth]]></category>
+		<category><![CDATA[win32]]></category>
+
+		<guid isPermaLink="false">/?p=66172</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Google oAuth 2.0 and the triumph of success</h3>
+<p>And lo, the clouds parted and Google oAuth sign-in has been achieved! It’s always a fantastic revelation to see community members provide code snippets for us to use in our own projects, and I always make a point to applaud these achievements.</p>
+<p>Such is the case with the below forum thread. Corona dev <strong>thomas6</strong> exclaims in the discovery and confirmation of getting oAuth to work with Google credentials. Everything necessary to get it to work is in the below forum thread, so what are you waiting for? Click through right now!</p>
+<p><a href=https://forums.coronalabs.com/topic/62087-succes-google-oauth2-for-corona-and-lua/ target="_blank">https://forums.coronalabs.com/topic/62087-succes-google-oauth2-for-corona-and-lua/</a></p>
+<h3>Win32 apps and the keyboards that love them</h3>
+<p>For Corona developers, Windows desktop is a brave new world that has been sought after for years. Even though it’s been a dominant environment for quite some time, we have been hacking away at the learning curve when releasing our apps and games to a desktop OS. This has run the gamut from “<em>dead-simple</em>” to “<em>hair-pullingly infuriating</em>”, which a large spectrum in between.</p>
+<p>One of the more difficult facets of the new Windows OSes (8 and 10, for example) is the relationship between Win32 apps, and virtual and physical keyboards. This is really all the pre-amble you need to before tuning into the below forum thread. It’s really a great read, and has a lot of useful hints for folks that are are in the process of creating or porting apps to the platform, or anyone that has aspirations of their killer app on Windows 10 tablets. Head on over for an insightful discussion!</p>
+<p><a href=https://forums.coronalabs.com/topic/62083-nativesetkeyboardfocus-doesnt-work-properly-for-win32-apps/ target="_blank">https://forums.coronalabs.com/topic/62083-nativesetkeyboardfocus-doesnt-work-properly-for-win32-apps/</a></p>
+<h3>More icon generating resources</h3>
+<p>As sure as the sun sets in the West, we Corona developers need to puzzle out the arcane sets of icons necessary to release their apps and games to the masses. Plus, with the addition of desktop builds, you’re looking at far more icons and naming conventions than you can shake a stick at.</p>
+<p>The best way to create all of these, is to not create them at all. I’ve covered generators and templates before, so think of this as more of a PSA: <strong>Rene</strong> from <strong>Devilsquid</strong> has updated their Photoshop template to include all necessary icons and launch images needed for our apps. There are some other very use links in the thread below, so click through and check’em out!</p>
+<p><a href=https://forums.coronalabs.com/topic/62150-icon-naming/ target="_blank">https://forums.coronalabs.com/topic/62150-icon-naming/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing the Google Analytics plugin</title>
+		<link>/blog/2016/02/15/announcing-the-google-analytics-plugin/</link>
+		<comments>/blog/2016/02/15/announcing-the-google-analytics-plugin/#comments</comments>
+		<pubDate>Mon, 15 Feb 2016 23:40:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65734</guid>
+		<description><![CDATA[Corona Labs is pleased to introduce the Google Analytics plugin. This plugin can be used to gain valuable insight about your users and how they interact with your apps.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65732" src="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png" alt="EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png 150w, /wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Under the category of &#8220;<em>The more you know,</em>&#8221; we&#8217;ve increased our suite of analytics engine support with the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin.</p>
+<p>In addition to basics like the number of users and sessions, you get a wealth of demographic information about your users such as city, country, language, and &#8220;new&#8221; versus &#8220;returning&#8221; users. You also get detailed information like the app version, which OS it&#8217;s running on, the device type, screen resolution, and more. Finally, you can track custom events within the app, for example the user&#8217;s actions, which UI elements are interacted with the most, and more.</p>
+<h3>Setting up Google Analytics</h3>
+<p>To use Google Analytics, you must first set up an account with Google at <a href=http://www.google.com/analytics/ target="_blank">www.google.com/analytics/</a>. You can have up to 100 <strong>accounts</strong> under a single login, each account can have up to 50 <strong>properties</strong>, and each property can have up to 25 <strong>views</strong>. While each of your apps could be its own account, you&#8217;ll probably just need one account with each app as a unique property of it.</p>
+<p>To begin, <strong>activate</strong> the Google Analytics plugin <a href=https://store.coronalabs.com/plugin/google-analytics target="_blank">here</a>.</p>
+<p>Next, you&#8217;ll need to include the plugin within the app&#8217;s <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.googleAnalytics&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, }
+        },
+    },
+}</pre><p>When you create a property in the Google Analytics dashboard &#8212; assigning the <strong>app name</strong> along with it &#8212; you&#8217;ll get a unique <strong>Tracking ID</strong> such as <code>UA-12345678-1</code>. You&#8217;ll need to pass both of these values to the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/init.html target="_blank">googleAnalytics.init()</a> API. For example:</p><pre class="crayon-plain-tag">local googleAnalytics = require( &quot;plugin.googleAnalytics&quot; )
+
+googleAnalytics.init( &quot;Mega Race 3000&quot;, &quot;UA-12345678-1&quot; )</pre><p></p>
+<h3>Logging analytics events</h3>
+<p>While simply setting up Google Analytics will give you insight into various demographic and device-related details as mentioned above, you&#8217;ll probably want to gather specific data about the user&#8217;s actions <em>within</em> the app. Some examples include:</p>
+<ul>
+<li>Checking how long users play the game. If the results aren&#8217;t meeting your expectations, you may consider adding incentives or additional features.</li>
+<li>Checking how often &#8212; and how long &#8212; users play a specific level in the game.</li>
+<li>Checking which options/settings are the most popular among a wide user demographic.</li>
+</ul>
+<p>All of these examples involve <strong>logging events</strong> with Google Analytics. To log an event, simply call the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( category, action, label )</pre><p>The first parameter, <code>category</code>, is a required parameter used to create a &#8220;group&#8221; of events within Google Analytics. For example, a category such as <code>"userAction"</code> may be used to track actions performed by the user. Or, if your app interacts with a server and data is processed by the server, you might want a category named <code>"serverAction"</code>.</p>
+<p>The second parameter, <code>action</code>, is a required parameter which associates a specific action with the category. For instance, if the user interacts with a button in your game, you could log an action of <code>"buttonPressed"</code> in the <code>"userAction"</code> category.</p>
+<p>The third parameter, <code>label</code>, is an optional parameter which lets you define additional information for the action, for instance the specific button which was pressed. For example, if the user pressed the &#8220;Play&#8221; button in your game, your <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> call might look like this:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( &quot;userAction&quot;, &quot;Button pressed&quot;, &quot;Play&quot; )</pre><p>Ultimately, it&#8217;s your choice on which events should be logged, when, and why. We recommend a certain level of discretion in terms of which events/actions will be useful for analyzing user behavior in your app.</p>
+<h3>Tracking screens/scenes</h3>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin features an additional tracking call which is used to track different <strong>screens</strong>. Google Analytics&#8217; heritage is based on tracking website activity, which is &#8220;screen&#8221;-oriented, but the concept of screens can easily be compared to app <strong>scenes</strong>. This can give you insight on how frequently users visit particular scenes in your app, for example how often the &#8220;settings&#8221; scene is visited or whether users even view your &#8220;help&#8221; scene.</p>
+<p>To track screen usage, use the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logScreenName.html target="_blank">googleAnalytics.logScreenName()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logScreenName( screenName )</pre><p>This call simply requires a string which names your screen/scene. If you are using Corona&#8217;s <a href=https://docs.coronalabs.com/daily/guide/system/composer/index.html target="_blank">Composer</a> scene management library, you can simply add one line of code in the <code>scene:show()</code> function&#8217;s <code>"did"</code> phase to log the screen/scene name with Google Analytics:</p><pre class="crayon-plain-tag">function scene:show( event )
+    if ( event.phase == &quot;did&quot; ) then
+        -- Log the screen/scene name with Google Analytics
+        googleAnalytics.logScreenName( composer.getSceneName( &quot;current&quot; ) )
+    end
+end</pre><p></p>
+<h3>Additional notes</h3>
+<p>Like any analytics engine, data isn&#8217;t very useful until you&#8217;ve accumulated enough to analyze. A majority of the reports you can view need &#8220;aggregated&#8221; data, although some information is available &#8220;live.&#8221;</p>
+<p>If you intend to track user information, you will likely need to include a <strong>privacy policy</strong> in your app or on your website so that users can learn about what is being tracked. If you require a privacy policy, please search the web for a template that can be adapted to your company/app.</p>
+<h3>In summary</h3>
+<p>As you can see, the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin can be used to gain virtually any degree of insight about your apps, from user demographics to specific in-app usage patterns.</p>
+<p>To learn more about the Google Analytics plugin, please proceed to our <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">documentation</a>, and if you have further questions, please visit the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/15/announcing-the-google-analytics-plugin/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

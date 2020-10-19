@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IPv6 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ipv6/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>IPv6 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #130</title>
+		<link>/blog/2016/07/01/from-the-forum-issue-130/</link>
+		<pubDate>Fri, 01 Jul 2016 18:40:02 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[autolan]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[IPv6]]></category>
+		<category><![CDATA[redirection]]></category>
+		<category><![CDATA[sockets]]></category>
+		<category><![CDATA[urls]]></category>
+		<category><![CDATA[wifi]]></category>
+
+		<guid isPermaLink="false">/?p=67335</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Scenes from a Corona restaurant</h3>
+<p>Using <a href=https://docs.coronalabs.com/guide/system/composer/index.html target="_blank">Composer</a> as a scene management system is a great way to keep your app light without having to roll your own overlay/transition manager when going from one screen to the next. It also gives you a handy method to sidestep the age-old problem of global variable creation.</p>
+<p>I find the latter advantage to be invaluable when dealing with smaller projects that don’t need a robust solution for variable access throughout modules. <a href=https://forums.coronalabs.com/topic/63763-accessing-the-scene-from-an-external-class/ target="_blank">This thread</a> talks a bit about how one can leverage the Composer API to get at the ever-changing values upon which your app depends.</p>
+<h3>AutoLAN back from the beyond!</h3>
+<p>I’ve always had a soft spot for <strong>autoLAN</strong>. It’s a great library that allows for multiplayer support through local WiFi. It’s lightweight, relatively simple to implement, and easy to maintain. Those features are already a lot, but the real kicker is that it’s available at the low, low price of <strong>free</strong>!</p>
+<p>Alas, with the introduction of IPv6 requirements in the <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket()</a> API &#8212; necessary changes required for continued OS compatibility &#8212; autoLAN fell on hard times. It seemed that the days when you could fire up two devices and have players battle it out in your game were gone.</p>
+<p>It didn’t stay down for long, though! The Corona community <a href=https://forums.coronalabs.com/topic/63788-autolan-ipv6 target="_blank">lept into the fray</a> and came out of the jungle with an update to the library in record time. Check out the updated code base that is referenced <a href=https://forums.coronalabs.com/topic/63788-autolan-ipv6 target="_blank">here</a>.</p>
+<h3>Dynamic URL redirection</h3>
+<p>Apple has been much better about app approvals these days. Simplified checks and streamlined guidelines have reduced wait times and generated clearer feedback for developers.</p>
+<p>Sometimes, though, you need to make a quick change to your app that shouldn’t necessitate an entire review by Apple &#8212; a typo in a JSON file, an update to a graphical asset, etc. These topics have been covered in previous <em>From the Forum</em> entries, but today we have another option to add to our toolbox in the form of dynamic URL handling.</p>
+<p>This can be a great time saver when, for instance, you want to point a FAQ page from your site to another community-operated site. Click through to the <a href=https://forums.coronalabs.com/topic/63817-tip-dynamic-url-redirection/ target="_blank">original thread</a> for a bit more information.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tvOS &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/tvos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>tvOS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Submitting apps to Apple&#8217;s iTunes Connect</title>
+		<link>/blog/2016/09/14/submitting-apps-to-apples-itunes/</link>
+		<pubDate>Wed, 14 Sep 2016 20:46:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=68058</guid>
+		<description><![CDATA[Great news! Corona developers can submit to Apple's iTunes Connect again. Read further to get the details.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-58813" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2014/06/apple-129x150.jpg" alt="Apple logo" width="100" height="116" />Great news! Corona developers can submit to Apple&#8217;s iTunes Connect again, but doing so requires <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> or later.</p>
+<p>To better outline the context of this: When Apple enabled iOS 10 submissions following their September 7, 2016 keynote event, one of the updates was additional automatic scanning of files in the app bundle to detect potential issues. With this new process in place, everyone who submitted a Corona Simulator or Corona Enterprise build started getting a failure message from Apple due to problems with &#8220;app thinning.&#8221;</p>
+<p>Our engineers have been working tirelessly to discover the root cause of the problem and deliver a solution to Corona developers. Essentially, Apple is now scanning files with an extension that they were not previously looking at. Corona&#8217;s products used that extension for our internal files and it suddenly started being flagged as problematic. We have switched to a name-spaced extension that should not cause this issue in the future.</p>
+<p><strong>Remember, these fixes are only available in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> and later</strong> &#8212; you will have to update to this build in order to submit your apps to Apple.</p>
+<p>Thank you to everyone who reported issues and provided additional details. Your assistance and patience is truly appreciated!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Congratulations Takashi Iyoda, winner of AppLovin’s Apple TV App Challenge!</title>
+		<link>/blog/2016/04/27/congratulations-takashi-iyoda-winner-of-applovins-apple-tv-app-challenge/</link>
+		<pubDate>Wed, 27 Apr 2016 21:55:59 +0000</pubDate>
+		<dc:creator><![CDATA[leigh]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=66606</guid>
+		<description><![CDATA[Using Corona SDK, developer Takashi Iyoda recently won $25,000 for his strategic puzzle game <em>Dungeon Tiles</em>. Read further to learn more about Takashi’s big win.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-66608" src="/wordpress/wp-content/uploads/2016/04/applovin-app-challenge-corona-winner-300x225.jpg" alt="applovin app challenge corona winner" width="300" height="225" />Imagine you have an idea for an app. So you build it in Corona, fly all the way from Japan to San Francisco, stay in a hostel, and win $25,000. Sound like an amazing journey?</p>
+<p>Well that&#8217;s exactly what Takashi Iyoda did. Takashi used Corona SDK to develop a tvOS app to compete in <a href=https://applovin.com/ target="_blank">AppLovin&#8217;s</a> <a href=https://applovin.com/appchallenge target="_blank"> Apple TV App Challenge</a>.</p>
+<p>Takashi&#8217;s app <em>Dungeon Tiles</em> was selected as the winner of the contest portion of the App Challenge. Participants were required to submit an original, unpublished Apple TV app. Now he gets to fly home with an amazing story and a lot more money in his pocket.</p>
+<p>What made <em>Dungeon Tiles</em> stand out from the crowd and take the top prize? Basil Shikin, VP of Engineering at AppLovin and one of the judges of the contest, said three things came to his mind:</p>
+<ol>
+<li>&#8220;The graphics were great. I thought the way the app was designed really lends itself to a TV screen.</li>
+<li>The gameplay is deceptively simple. You can start with a pretty simple game and it gets really challenging really fast.</li>
+<li>Player vs. player mode is awesome. I love games where you have a choice to either improve your position, worsen position of your enemy or maybe improve enemy’s position. It gives a lot of room for strategy.”</li>
+</ol>
+<h2>About Dungeon Tiles</h2>
+<p><img class="aligncenter wp-image-66609 size-large" src="/wordpress/wp-content/uploads/2016/04/1player_4-1024x576.png" alt="1player_4" width="960" height="540" /></p>
+<p>“<em>Dungeon Tiles</em> is a strategic puzzle game with minimalism and RPG elements in which players swipe the touch surface to collect swords, dragons, lives, and gold,” says Takashi. “First of all, I developed a prototype of <em>Dungeon Tiles</em> for iOS. Corona has an iOS simulator, so it&#8217;s easy to check how the game works. And then I added Siri Controller codes. With Corona SDK, I can rapidly develop <em>Dungeon Tiles</em>.”</p>
+<p><em>Dungeon Tiles</em> is set to launch on Apple TV this June.</p>
+<p><img class="alignright size-medium wp-image-66607" src="/wordpress/wp-content/uploads/2016/04/takashi-in-palo-alto-300x225.jpg" alt="takashi in palo alto" width="300" height="225" />We also got a chance to meet Takashi in person after his big win when he stopped by our office. Congratulations again Takashi Iyoda. We are all very proud of you!</p>
+<p>If you want to read more about Takashi’s big win, check out the <a href=https://blog.applovin.com/the-tvos-contest-winners-excellence-in-gameplay/ target="_blank">rundown of this year’s event here</a> or learn more about <a href=https://applovin.com/appchallenge target="_blank">AppLovin’s App Challenge here</a>. And don’t forget to check out the <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">AppLovin plugin</a> with <a href=/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/ target="_blank">tvOS support</a>!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Apple &#8220;on-demand resources&#8221; plugin now available</title>
+		<link>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/</link>
+		<comments>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 23 Mar 2016 17:50:43 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[on-demand resources]]></category>
+
+		<guid isPermaLink="false">/?p=66158</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the "on-demand resources" plugin for tvOS. Read further to learn how this can be used to minimize your app footprint.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/on-demand-resources target="_blank">on-demand resources</a> plugin, currently supported on tvOS. Similar in concept to Android expansion files (but functionally quite different), on-demand resources allow you to specify parts/assets of your app which can be downloaded when needed. This is especially important for Apple TV because Apple limits tvOS apps to a maximum size of 200 megabytes and they provide no local storage for data. Instead, they expect developers to use on-demand resources to manage which assets are available at which points in the app.</p>
+<h3>Setup</h3>
+<p>Like any plugin, begin by including it in your <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.onDemandResources&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { tvos=true }
+        },
+    },      
+}</pre><p></p>
+<h3>Defining resources</h3>
+<p>To make on-demand resources work, you must designate various files or folders by &#8220;tags&#8221; inside the <code>tvos</code> → <code>onDemandResources</code> table of <code>build.settings</code>. Each entry is itself a table containing two required key-value pairs: the tag name (<code>tag</code>) and the file/folder it refers to (<code>resource</code>):</p><pre class="crayon-plain-tag">settings =
+{
+    tvos = 
+    {
+        onDemandResources =
+        {
+            { tag=&quot;introMusic&quot;, resource=&quot;intro.mp4&quot;, type=&quot;prefetch&quot; },
+            { tag=&quot;imgTutorial&quot;, resource=&quot;img/tutorial&quot;, type=&quot;install&quot; },
+            { tag=&quot;imgL2&quot;, resource=&quot;img/level2&quot; },
+        },
+    },
+}</pre><p>In addition, you can specify a download priority for each tag. This is done via the <code>type</code> key with one of the following values:</p>
+<ul>
+<li><code>"install"</code> &#8212; Use this for critical files that may be required immediately when the app first launches. These resources download in parallel with the app download itself, however they are not bundled in the app package as persistent resources.</li>
+<li><code>"prefetch"</code> &#8212; These resources will start downloading in the background after the app finishes downloading.</li>
+<li>No <code>type</code> &#8212; These are resources you fetch when you need them.</li>
+</ul>
+<p>Regardless of the <code>type</code> value, you need to explicitly request the tag before you can use it. Tags that don&#8217;t have a type are requested at a logical point during the app flow.</p>
+<h3>Requesting content</h3>
+<p>To download a resource file/folder when needed, for example assets for the second level after the player completes the first level, simply call the <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> function. This may be considered the &#8220;core&#8221; function of the plugin, as it&#8217;s required before you can access on-demand resources.</p><pre class="crayon-plain-tag">-- Require the plugin
+local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+
+    if not ( event.isError ) then
+        print( &quot;Resources for tag '&quot; .. event.tag .. &quot;' downloaded&quot; )
+    else
+        print( &quot;ERROR: errorCode = &quot; .. tostring(event.errorCode) )
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, true, odrListener )</pre><p>One of the most important aspects of <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> is the second parameter: a boolean <code>true</code> or <code>false</code>. Setting this to <code>true</code> (or omitting it, since <code>true</code> is the default) tells Corona to begin downloading the resources immediately.</p>
+<p>By comparison, if you set this parameter to <code>false</code>, Corona simply checks if the resources are already downloaded:</p><pre class="crayon-plain-tag">local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+    if ( event.isError ) then
+        -- Resources have not been downloaded. You need to request them.
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, false, odrListener )</pre><p></p>
+<h3>Important notes</h3>
+<ul>
+<li>All on-demand resources are subject to be evicted by the operating system if it needs space, so even your <code>install</code>&#8211; and <code>prefetch</code>-based resources should be checked for availability before you attempt to use them. If they don&#8217;t exist, you will need to request/download them again.
+<ul>
+<li>Large downloads take time, so you may consider more tags with smaller overall download sizes. Apple advises keeping tagged resources under 64 megabytes. The maximum size for a tag is 512 megabytes.</li>
+</ul>
+</li>
+<li>You have to use a service like Apple&#8217;s <a href=https://developer.apple.com/testflight/ target="_blank">TestFlight</a> to test on-demand resources &#8212; you cannot simply load the app directly onto your test device. This is the only way Apple can actually deliver the various resources from their servers.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>On-demand resources can be essential for developing tvOS games and apps, and Corona&#8217;s plugin provides the necessary interface to Apple&#8217;s servers. To learn more, please see the <a href=https://docs.coronalabs.com/plugin/onDemandResources/index.html target="_blank">documentation</a> or discuss further in the <a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>More AppLovin love! Announcing support for tvOS</title>
+		<link>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/</link>
+		<comments>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/#comments</comments>
+		<pubDate>Sat, 13 Feb 2016 03:25:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[monetization]]></category>
+
+		<guid isPermaLink="false">/?p=65699</guid>
+		<description><![CDATA[AppLovin is now available for your tvOS apps. Read further to learn more about this new capability.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />Corona Labs is pleased to announce that our <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin plugin</a> is now compatible with <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS apps</a>. Currently, AppLovin is one of the few monetization options available for Apple TV apps.</p>
+<p>You will need to make one minor adjustment to your <code>build.settings</code> file if you&#8217;re using the <code>supportedPlatforms</code> line. If building for tvOS, simply include the <code>appletvos</code> option:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+    },
+}</pre><p>Note that AppLovin ads for tvOS will always be <strong>videos</strong> (no static interstitials), just as if you&#8217;re watching TV. Also note that if the ad is associated with a tvOS app, clicking the remote button while the ad displays may take you to the app&#8217;s entry in the store.</p>
+<p>To learn more about implementing AppLovin in your app, check out our <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">announcement</a> and the AppLovin plugin <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a>.</p>
+<p>If you have more questions or need help, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Labs Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Announcing OS X, tvOS updates, and the new iCloud plugin!</title>
+		<link>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/</link>
+		<comments>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:17:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">/?p=64961</guid>
+		<description><![CDATA[The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work on OS X builds, tvOS builds, and the new iCloud plugin.]]></description>
+				<content:encoded><![CDATA[<p>The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work giving us some exciting new features and platforms to explore.</p>
+<h3>OS X initial release</h3>
+<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>, we are proud to announce that OS X is no longer in beta! We have the core features working at a level where we feel comfortable encouraging you to release apps to the Mac App store. Platforms like this are never complete and there are more features to add, but this marks a stable point in OS X development where we think you can successfully deploy desktop apps for Mac. To learn more, see our <a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html target="_blank">Creating OS X Desktop Apps</a> guide.</p>
+<h3>tvOS now in beta</h3>
+<p>Additionally, we are removing the &#8220;alpha&#8221; label from our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS support</a>. We believe that you should be able to publish apps to iTunes Connect for tvOS. Of course there is more to do before we can mark this as fully released, but the core features are now in place. You can pick this up in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a> as well. To learn more, check out our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">Apple TV and tvOS guide</a>.</p>
+<h3>The iCloud plugin (beta)</h3>
+<p>We are also pleased to announce the immediate availability of the new <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>. This plugin lets you store various data types in Apple&#8217;s iCloud service. The three main types of data you can store are:</p>
+<ul>
+<li><strong>Key-Value Storage</strong> &#8212; This lets you store simple data values like numbers, strings, and tables.</li>
+<li><strong>Documents</strong> &#8212; This lets you develop apps where you can save whole files to the cloud and sync them with other devices.</li>
+<li><strong>CloudKit</strong> &#8212; This is a full database implementation where you can have public and private database implementations which your app can access from multiple devices.</li>
+</ul>
+<p>In its simplest use, iCloud (all three methods) lets you save data from your app to iCloud and retrieve it later when you need it. In addition, if you have your app installed on multiple devices, for example your iPhone and iPad, the app can share data.</p>
+<p>To get started with the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, see the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and our <a href=/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/ target="_blank">first tutorial</a>.</p>
+<h3>Get started!</h3>
+<p>With this progress on both OS X desktop builds and tvOS builds, now is a great time to consider additional platforms for your existing apps!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

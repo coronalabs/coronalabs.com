@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>physics joints &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/physics-joints/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>physics joints &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights &#8211; Rag Doll Physics Code Walk-Thru</title>
+		<link>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/</link>
+		<comments>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/#respond</comments>
+		<pubDate>Wed, 01 Jul 2015 16:43:38 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[rag doll]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63185</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 147, we stepped through source code to create rag doll characters using pivot joints and Corona’s built in physics engine. We also shared tips for organizing project code. If you missed the Hangout, here are clips to help you catch up.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 147, we stepped through source code to <a href=/blog/coronageek/corona-geek-147/>create rag doll characters</a> using pivot joints and Corona&#8217;s built in physics engine. We also shared tips for organizing project code. <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">Download the examples from the Hangout</a> to see how everything works.</p>
+<p>If you missed the Hangout, here are clips to help you catch up. <a href=/blog/coronageek/corona-geek-147/>Watch the entire conversation</a>, or just the parts that interest you most.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/LUpOY8mqOFQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Ed Maurina shows off a physics sampler</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/A7yeWhuakFg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Ed discusses attaching properties to a scene</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/1ojiPfkTPzw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Using physics body filters</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/06GlPY6rZ54?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Constructing a rag doll</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/b5qoBGf02EY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Physic joint placement</h3>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/36b2BD77O6c?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Be sure to watch Hangout #148 where we <a href=/blog/coronageek/corona-geek-148/>create a motorized wheeled cart</a> using pivot joints and physics. Links to the source code and other resources are also provided, so have fun.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-rag-doll-physics-code-walk-thru/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #148 &#8211; Creating Motorized Wheeled Carts Using Pivot Joints</title>
+		<link>/blog/coronageek/corona-geek-148/</link>
+		<comments>/blog/coronageek/corona-geek-148/#respond</comments>
+		<pubDate>Mon, 29 Jun 2015 22:04:40 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[box2d]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63133</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we learned how to build a motorized wheeled cart using Corona’s built-in physics engine and pivot joints. We explored why you should consider adding display objects to a group and how torque affects different parts of a wheeled physics simulation. We also explored ideas for using a wheeled cart in a game. Download the source code from today's discussion.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/L3Mt4Ablslo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout we learned how to build a motorized wheeled cart using Corona’s built-in physics engine and pivot joints. We explored why you should consider adding display objects to a group and how torque affects different parts of a wheeled physics simulation. We also explored ideas for using a wheeled cart in a game. <a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Sampler target="_blank">Download the code from today&#8217;s discussion</a> to play with the examples.</p>
+<p>If you missed last week’s Hangout on <a href=/blog/coronageek/corona-geek-147/>creating rag doll characters</a>, be sure to watch the code walk through. We talked about using pivot and touch joints to create complex structures that other objects and players can interact with.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>Don&#8217;t forget, this is the last week to submit your high score for this month&#8217;s Corona Geek Games Challenge. We are playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a> for the chance to win a $50 gift card. ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app. Our you can play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a> for free.</p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce the Corona Geek Game Challenge winner on July 6th. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ) to find out who wins.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-147/>Corona Geek #147 – Creating A Rag Doll Character Using Pivot Joints and Physics Bodies</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Hangout Resources</strong></p>
+<ul>
+<li><a href=https://dl.dropboxusercontent.com/u/55969280/Space3.apk target="_blank">An APK of Sergey&#8217;s Developer Conference Space Game</a></li>
+<li><a href=https://github.com/Lerg/space3 target="_blank">Source code for Sergey&#8217;s Developer Conference Space Game</a></li>
+<li><a href=http://developers.magmic.com/46-things-launch-mobile-game-app-store/ target="_blank">46 things to do before you launch a mobile game on the App Store</a></li>
+<li><a href=http://incompetech.com/music/royalty-free/ target="_blank">Royalty-Free Music from Kevin MacLeod</a></li>
+<li><a href=http://nosoapradio.us/ target="_blank">Royalty-Free Music from NoSoapRadio</a></li>
+<li><a href=http://www.jasonschroeder.com/2015/02/25/timer-2-0-library-for-corona-sdk/ target="_blank">Timer 2.0 Library for Corona SDK</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-148/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-148-2015-06-29-creating-motorized-wheeled-carts.mp3" length="88959418" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #147 &#8211; Creating A Rag Doll Character Using Pivot Joints and Physics Bodies</title>
+		<link>/blog/coronageek/corona-geek-147/</link>
+		<comments>/blog/coronageek/corona-geek-147/#respond</comments>
+		<pubDate>Tue, 23 Jun 2015 01:04:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Physics Engine]]></category>
+		<category><![CDATA[Physics Examples]]></category>
+		<category><![CDATA[physics joints]]></category>
+		<category><![CDATA[pivot joints]]></category>
+		<category><![CDATA[touch joints]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63084</guid>
+		<description><![CDATA[Last Monday we started a series on working with Corona's built-in physics engine. We took a look at the Physics API documentation and we discussed the concepts behind constructing a rag doll from primitive shapes. This week we continued the physics conversation with a look at the code used to create the rag doll example and tips on how to organize project code. We even discussed how a simple dress up, or object placement game could be constructed, using the sampler code as a reference.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/AOq-49nH4Wc?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we started a series on working with <a href=/blog/coronageek/corona-geek-146/>Corona&#8217;s built-in physics engine</a>. We took a look at the Physics API documentation, which also covers creating different types of physics joints, like pivot and touch joints. Then we discussed the concepts behind constructing a rag doll character from primitive shapes.</p>
+<p>This week we continued the physics conversation with a look at the code used to create the rag doll example and tips on how to organize project code. We even discussed how a simple dress up, or object placement game might be constructed, using the sampler code as a reference. If you are interested in saving the state of your game so players can return to where they left off when they close the app, then <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/PhysicsFun.zip target="_blank">download the code from today&#8217;s discussion</a> to see how the samples are coded.</p>
+<p><strong>Let’s Play Alone for June’s Corona Geek Games Challenge</strong></p>
+<p>Don&#8217;t forget, this month we’re playing Alone by <a href=http://www.laserdog.co.uk/ target="_blank">Laser Dog Games</a> for the chance to win a $50 gift card. ALONE is available on both <a href=https://itunes.apple.com/us/app/alone.../id848515450?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.laserdog.alone&hl=en target="_blank">Android</a> as a paid app. Our you can play One Dot One Target on <a href=https://itunes.apple.com/US/app/id989565231?mt=8 target="_blank">iOS</a> or <a href=https://play.google.com/store/apps/details?id=com.twodgamearena.targetthedot target="_blank">Android</a> for free.</p>
+<p>To participate, share a picture of your highest score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>We&#8217;ll announce the Corona Geek Game Challenge winner on July 6th. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ) to find out who wins.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-146/>Corona Geek #146 &#8211; Creating Draggable Rag Dolls, Using Physics Bodies, and Creating Joints</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-147/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-147-2015-06-22-ragdoll-physics-part-2.mp3" length="78856655" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

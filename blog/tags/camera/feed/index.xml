@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>camera &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/camera/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>camera &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #127</title>
+		<link>/blog/2016/06/12/from-the-forum-issue-127/</link>
+		<pubDate>Sun, 12 Jun 2016 16:52:47 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[camera]]></category>
+		<category><![CDATA[platform]]></category>
+		<category><![CDATA[sharing]]></category>
+		<category><![CDATA[social media]]></category>
+
+		<guid isPermaLink="false">/?p=67136</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Useful camera module</h3>
+<p>If you’ve been around the Corona forums as much as some &#8220;old timers&#8221; have, you’ll know the affection we have for <strong>Gymbyl Coding</strong>’s time-tested <a href=https://gist.github.com/GymbylCoding/8675733 target="_blank">Perspective</a> game world camera module. Lightweight, simple to implement, tastes great, <em>and</em> less filling: a perfect recipe for an indispensable utility!</p>
+<p>There are some times, however, when you have to think outside the box to obtain a proper solution, and <strong>Roaming Gamer</strong> has a camera template that is perfect as a base for in-game object tracking.</p>
+<p>According to the author, an updated version is available in his <a href=http://roaminggamer.com/makegames/ target="_blank">EAT Framework</a> which is a handy suite of tools in its own right. Check out the <a href=https://forums.coronalabs.com/topic/63503-rg-camera-problem/ target="_blank">original thread</a> on how you can get a handle on your game&#8217;s camera.</p>
+<h3>ZeroBrane IDE updated</h3>
+<p>IDEs are, in many cases, considered essential in the success of a development venture. Gone are the days when coders type away in a plain text editor without common conveniences like auto-completion and function libraries.</p>
+<p>Corona SDK has been blessed to have quite a few IDE suitors vying for the hands of developers. Recently, <a href=https://studio.zerobrane.com/ target="_blank">ZeroBrane</a> has emerged from the pack, showing robustness of utilization, a relatively low learning curve, and active support from the original developer.</p>
+<p>The main base has just been updated, bringing with it some heavyweight features that add to the functionality of an already mature IDE. Click through to the <a href=https://forums.coronalabs.com/topic/61409-ann-zerobrane-studio-lua-ide-v130-is-released-with-updated-corona-api-and-markers-panel/ target="_blank">original link</a> to get up to date.</p>
+<h3>Native sharing and differences between OSes</h3>
+<p>Social sharing has gotten a lot of attention in recent weeks. The Corona <a href=https://store.coronalabs.com/plugin/twitter target="_blank">Twitter plugin</a> from <strong>Jason Schroeder</strong> is definitely useful and functionally rock-solid, but Facebook’s murky procedures and current setup can confuse even the savviest of veterans.</p>
+<p>I’ve gathered a couple of threads that discuss the topic in detail. <a href=https://forums.coronalabs.com/topic/63443-is-it-possible-to-share-scores-on-android-with-sms-whatsapp-twiteretc-if-so-how/ target="_blank">This one</a> includes a useful snippet of sample code to achieve the sharing that eludes some Corona developers. Check out <a href=https://forums.coronalabs.com/topic/63483-facebook-sharing-is-not-working-in-ios-in-webpopup/ target="_blank">this thread</a> as well, and remember to ask any questions that come to mind!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #167 &#8211; Creating Cameras In Desktop Games</title>
+		<link>/blog/coronageek/corona-geek-167/</link>
+		<comments>/blog/coronageek/corona-geek-167/#respond</comments>
+		<pubDate>Mon, 09 Nov 2015 22:58:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[camera]]></category>
+		<category><![CDATA[desktop game development]]></category>
+		<category><![CDATA[game cameras]]></category>
+		<category><![CDATA[Sample Code]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=64691</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we dove into the concepts and code behind creating cameras that follow the player around the world. We learned how to make the background appear to move while keeping the player in the same place. We started with a look at the full code for manually creating cameras and then we looked at using a camera module to make our code more readable.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/3wtSGgO3TNI?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we dove into the concepts and code behind creating cameras that follow the player around the world. We learned how to make the background appear to move while keeping the player in the same place. We started with a look at the full code for manually creating cameras and then we looked at using a camera module to make our code more readable.</p>
+<p><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/TopDownShooter.zip target="_blank">Download the source code</a> from today&#8217;s demo to follow along.</p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=http://roaminggamer.com/doubling-down/ target="_blank">Doubling Down &#8211; Focusing on App Development</a></li>
+<li><a href=http://ppm.roaminggamer.com/ target="_blank">Picture Perfect Memory game preview</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-167/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-167-2015-11-09-desktop-game-cameras.mp3" length="97782596" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Daily Build Roundup: Select/Capture Video + iTunes Library Access</title>
+		<link>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/</link>
+		<comments>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/#comments</comments>
+		<pubDate>Mon, 28 Oct 2013 13:07:13 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[camera]]></category>
+		<category><![CDATA[capture]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[photo]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=50461</guid>
+		<description><![CDATA[We've added some media goodies to the latest <a href="http://developer.coronalabs.com/corona-daily-builds/summary">daily builds</a>! Check out today's blog post to learn what new features are available as of Daily Build 2013.1244.]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;ve added some media goodies to the latest <a href=http://developer.coronalabs.com/corona-daily-builds/summary>daily builds</a>! The following are available as of 2013.1244.</p>
+<h2>Videos (and Photos)</h2>
+<p>In the latest daily builds, you now have the ability to select and capture videos. Instead of adding even more complexity to <a href=http://docs.coronalabs.com/api/library/media/show.html>media.show()</a>, we decided it was time to deprecate that function in favor of newer and cleaner APIs.</p>
+<p>Our goal here was to distinguish between selecting media versus capturing media. In both cases, a native UI provided by the OS is presented.</p>
+<p>To select a video, simply call the new <a href=http://docs.coronalabs.com/daily/api/library/media/selectVideo.html>media.selectVideo()</a> function and the native UI interface for selecting a video from the device&#8217;s catalog comes up:</p>
+<p></p><pre class="crayon-plain-tag">local function onComplete(event)
+    if event.completed then
+        media.playVideo(event.url)
+    end
+end
+
+if media.hasSource( media.PhotoLibrary ) then
+   media.selectVideo( { listener = onComplete )
+end</pre><p></p>
+<p>Similarly, you can present an interface to capture video using <a href=http://docs.coronalabs.com/daily/api/library/media/captureVideo.html>media.captureVideo()</a>:</p>
+<p></p><pre class="crayon-plain-tag">local function onComplete(event)
+    if event.completed then
+        media.playVideo(event.url)
+    end
+end
+
+if media.hasSource( media.Camera ) then
+    media.captureVideo( { listener = onComplete } )
+end</pre><p></p>
+<p>We also created similar functions for photos: <a href=http://docs.coronalabs.com/daily/api/library/media/selectPhoto.html>media.selectPhoto()</a> and <a href=http://docs.coronalabs.com/daily/api/library/media/capturePhoto.html>media.capturePhoto()</a>. We recommend you use these instead of the deprecated &#8220;media.show()&#8221;:</p>
+<h2>Accessing/Playing the iTunes Library</h2>
+<p>With the new <a href=http://docs.coronalabs.com/daily/plugin/iTunes/>iTunes plugin</a>, you&#8217;ll be able to access the iTunes library and play songs from them:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/show.html>iTunes.show()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/play.html>iTunes.play()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/pause.html>iTunes.pause()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/resume.html>iTunes.resume()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/stop.html>iTunes.stop()</a></li>
+<li><a href=http://docs.coronalabs.com/daily/plugin/iTunes/isPlaying.html>iTunes.isPlaying()</a></li>
+</ul>
+<p>The &#8220;iTunes.show()&#8221; allows you to pick music from the iTunes library, which you can then play using &#8220;iTunes.play()&#8221;.</p>
+<p>The full documentation is available <a href=http://docs.coronalabs.com/daily/plugin/iTunes/>here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/28/daily-build-roundup-selectcapture-video-itunes-library-access/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

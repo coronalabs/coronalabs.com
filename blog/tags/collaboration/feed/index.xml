@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>collaboration &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/collaboration/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>collaboration &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Piece: Best Practices for App Collaboration</title>
+		<link>/blog/2013/08/16/guest-piece-best-practices-for-app-collaboration/</link>
+		<comments>/blog/2013/08/16/guest-piece-best-practices-for-app-collaboration/#comments</comments>
+		<pubDate>Fri, 16 Aug 2013 15:23:27 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[collaboration]]></category>
+
+		<guid isPermaLink="false">/?p=41661</guid>
+		<description><![CDATA[Laura Tallardy is a children's app developer who has been working with Corona SDK since January 2012. She's created six apps for kids on iOS and Android - four solo and two with developer <a href="http://orionsmason.wordpress.com/about-the-developer/">Scott Adelman</a>. Their first app, <a href="http://www.coronalabs.com/blog/2012/11/12/app-of-the-week-mermaid-princess-puzzles/">Fairy Tale Games: Mermaid Princess Puzzles</a> won Corona's App of the Week and November 2012 App of the Month awards, and their second app, <a href="http://itunes.apple.com/us/app/flower-fairies-ballet-fairy/id614056889?mt=8">Flower Ballet Fairies: Fairy Ballerina Puzzles</a>, was released spring 2013. 
+
+Laura's most recent solo app, <a href="https://itunes.apple.com/us/app/ballet-fashion-show-dress/id662597566?mt=8">Ballet Fashion Show</a>, was released in 21 languages with over 15,000 downloads, and she's hard at work with Corona developer Calvin Cox of <a href="http://brightwavegames.com/">BrightWaveGames</a> on a new physics puzzle game called Pirate Kittens - look out for it later this year! Laura lives in Brooklyn, NY with her husband and their tubby dog. In this piece, Laura shares best practices for app collaboration based on her development experience.]]></description>
+				<content:encoded><![CDATA[<p><em>Laura Tallardy is a children&#8217;s app developer who has been working with Corona SDK since January 2012. She&#8217;s created six apps for kids on iOS and Android &#8211; four solo and two with developer <a href=http://orionsmason.wordpress.com/about-the-developer/>Scott Adelman</a>. Their first app, <a href=http://www.coronalabs.com/blog/2012/11/12/app-of-the-week-mermaid-princess-puzzles/>Fairy Tale Games: Mermaid Princess Puzzles</a> won Corona&#8217;s App of the Week and November 2012 App of the Month awards, and their second app, <a href=http://itunes.apple.com/us/app/flower-fairies-ballet-fairy/id614056889?mt=8> Flower Ballet Fairies: Fairy Ballerina Puzzles</a>, was released spring 2013. </p>
+<p>Laura&#8217;s most recent solo app, <a href=https://itunes.apple.com/us/app/ballet-fashion-show-dress/id662597566?mt=8>Ballet Fashion Show</a>, was released in 21 languages with over 15,000 downloads, and she&#8217;s hard at work with Corona developer Calvin Cox of <a href=http://brightwavegames.com/>BrightWaveGames</a> on a new physics puzzle game called Pirate Kittens &#8211; look out for it later this year! Laura lives in Brooklyn, NY with her husband and their tubby dog. In this piece, Laura shares best practices for app collaboration based on her development experience.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/08/tallardy20130530181718-238x300.jpg" alt="tallardy20130530181718" class="alignleft size-medium wp-image-41662" srcset="/wordpress/wp-content/uploads/2013/08/tallardy20130530181718-238x300.jpg 238w, /wordpress/wp-content/uploads/2013/08/tallardy20130530181718.jpg 250w" sizes="(max-width: 238px) 100vw, 238px" />Hello Corona Devs! Since you all are such a friendly bunch, I&#8217;m going to talk about how you guys can team up and create amazing apps together.</p>
+<p>First you&#8217;ll need a partner or a team. They should compliment your skills, not mirror them, and have a similar vision for your app. Team up with someone with a similar level of enthusiasm too &#8211; if it&#8217;s top priority for one partner and low for another, that might cause friction.</p>
+<p>Plan out what you want to make &#8211; what genre of app, features, scope/depth, graphic style, theme, audience, etc. Also, figure out who will do which tasks, your timeline and how you&#8217;ll divide up all that sweet, sweet profit.</p>
+<p>Next, get all the details down on paper with both your signatures. Writing it out isn&#8217;t difficult, but it can be uncomfortable asking someone to sign a contract. The contract is not there to rip anyone off, rather a good contract lays out the details and ensures both parties are being treated fairly and getting what they want.</p>
+<p>Now it&#8217;s time to make the app, so get to work! Check in with each other often and send &#8220;works in progress&#8221; to make sure you&#8217;re both on the same page. <a href=http://www.dropbox.com>Dropbox/</a> is ideal for sharing files back and forth.  Remember you&#8217;re on a team, not working for a client, so there might be extra work you weren&#8217;t anticipating that you might have to accommodate. On the flip side, there might be extra fame and glory you weren&#8217;t anticipating either!</p>
+<p>Creating the app and launching it with a teammate is AWESOME. Launch days are exciting but there is so much to do!  It is much more fun with a teammate as with two people the ground gets covered twice as fast, and you have more resources and stamina than you would yourself.  Plus, if your app does well you will have someone to share success with!  If you&#8217;ve ever exhausted a non-dev friend with app talk you&#8217;ll know how valuable this is.</p>
+<p>The last thing to consider is payments: Whose app account will you host the app on, who tracks the sales, and how often and how much will the payouts to the partner be? 50/50 is a common profit split and monthly or quarterly payments work well.</p>
+<p>The best part about working with a partner is seeing how someone else does things. We&#8217;re all doing basically the same job here, but there so many ways to make apps and so many ways to market them, that you&#8217;re bound to learn a few new tricks of the trade when working together.</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<p><strong>Addendum: Areas to cover in a contract</strong></p>
+<ul>
+<li>Description of the app: This doesn&#8217;t have to be precise and will probably change, but try and get the general idea down, i.e. genre, theme, scope/size of the app, which markets you&#8217;ll publish to, your monetization model, and whose account you&#8217;ll publish under.</li>
+</ul>
+<p><strong>Tasks: List out who is doing which tasks.</strong></p>
+<ul>
+<li>Art direction: Figure out the general style of the graphics and how much input the programmer has on the artwork.</li>
+<li>Credits: Determine if you&#8217;ll credit the both of you and link back to any apps you&#8217;ve made solo. This has worked out very well for myself and Scott Adelman, a Corona developer whom I&#8217;ve made two puzzle apps with. Both of us have our own apps linked up in the puzzle apps we made together, so there&#8217;s some cross-promotion.</li>
+<li>Schedule: Again, this doesn&#8217;t have to be exact, but map out an approximate timeline so you both have something to work from.</li>
+<li>Payouts: Write down how you&#8217;ll divide the profits. Also, work out a payment schedule and choose who tracks the sales data.</li>
+<li>Expenses: Chances are you&#8217;ll incur expenses while making and marketing the app. Figure out who pays what or at least how parties get paid back (usually with the app revenue before it&#8217;s divided up).</li>
+<li>Copyrights &#038; Reuse: Who owns the copyright to the art?  Who owns the code?  Who owns the app brand?  Typically it&#8217;s the artist, the programmer, or both, but if you want a different arrangement, be sure to include it in the contract. Specify which assets from the game each other can reuse for other projects.</li>
+<li>Merchandise &#038; Licensing: If this is in the roadmap for your app, figure out who will manage designing/buying the merchandise, inventory, sales etc., and how these profits will be divided up.</li>
+<li>Contract: Put a line in that says this contract only covers the project specified; new projects will need a new contract. Also, any changes to the contract should be agreed on by both parties.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/16/guest-piece-best-practices-for-app-collaboration/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

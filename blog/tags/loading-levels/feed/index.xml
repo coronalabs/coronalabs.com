@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>loading levels &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/loading-levels/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>loading levels &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #158 &#8211; Building Game Objects and Reloading Levels</title>
+		<link>/blog/coronageek/corona-geek-158/</link>
+		<comments>/blog/coronageek/corona-geek-158/#respond</comments>
+		<pubDate>Mon, 07 Sep 2015 22:02:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game pieces]]></category>
+		<category><![CDATA[loading levels]]></category>
+		<category><![CDATA[spawning]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63952</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued our "Using Gravity In Games" development discussion with a look at building game objects, restarting and advancing to new levels. This was part four of our ongoing look at developing a game similar to the popular mobile game, They Must Be Fed 3. The project's source is available. If you haven't already, download the updated code to see how everything works.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4cRPtcZ4plA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we continued our &#8220;Using Gravity In Games&#8221; development discussion with a look at building game objects, restarting and advancing to new levels. This was part four of our ongoing look at developing a game similar to the popular mobile game, They Must Be Fed 3. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. In part three, we <a href=/blog/coronageek/corona-geek-156/>added level building code for creating platforms, spikes, coins, and monsters</a>. We also looked at how to dynamically center the camera on the player&#8217;s starting position.</p>
+<p>The project&#8217;s source is available. If you haven&#8217;t already, <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated code</a> to see how everything works.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/crci08s8tvabo9234b6u3sdu1k0 target="_blank">Corona Geek After Dark #10</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://www.youtube.com/watch?v=AW-4xgLb6Lc target="_blank">Amazon Underground, Apple TV SDK, awkward Apple Watch phone calls, and QR Codes</a>, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://startappsblog.com/add-particle-effects-in-your-game-with-corona-sdk/ target="_blank">Particle Effects In Games &#8211; Deep Dive from StartAppsBlog</a></li>
+<li><a href=http://aladin.co.kr/shop/wproduct.aspx?isbn=k852433352 target="_blank">Learn Corona with Lua in Korean</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-157/>Corona Geek #157 &#8211; Alone Game Developer Talks About Developing and Launching HoPiKo Game</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-158/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-158-2015-09-07-part-4-building-objects-and-levels.mp3" length="81436735" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

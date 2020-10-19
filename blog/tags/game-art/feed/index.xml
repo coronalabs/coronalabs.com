@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Game Art &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-art/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Game Art &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #92 &#8211; Tools for Creating App Artwork</title>
+		<link>/blog/coronageek/corona-geek-hangout-92/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-92/#comments</comments>
+		<pubDate>Mon, 02 Jun 2014 21:27:42 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[Game Art]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58748</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Corona Ambassador, Artist, and Children's Book Author, Greg Pugh showed us a variety of tools he's used for creating artwork for his apps. He also walked us through the process he uses to create custom art using Flash for his apps and interactive books.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/qyO5pUl218c?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Corona Ambassador, Artist, and <a href=http://maddiebearbooks.com/ target="_blank">Children&#8217;s Book Author</a>, Greg Pugh showed us a variety of tools he&#8217;s used for creating artwork for his apps. He also walked us through the process he uses to create custom art using Flash for his apps and interactive books. Greg has a playful art style and a laid back work flow that makes the prospect of creating your own app artwork a realistic goal. Even if you don&#8217;t want to create app artwork yourself, tune in to see what&#8217;s involved so you&#8217;ll be better prepared to work with freelance artists.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://maddiebearbooks.com/>Maddie Bear Books</a></li>
+<li><a href=http://gpanimations.com/>GPAnimations</a></li>
+</ul>
+<ul>
+<li><a href=http://14px.co.uk/ target="_blank">14PX</a></li>
+<li><a href=http://www.alone-game.com/ target="_blank">Alone Game</a></li>
+<li><a href=https://twitter.com/laserdoggames target="_blank">Laser Dog Games</a></li>
+</ul>
+<ul>
+<li><a href=http://www.madewithmischief.com/ target="_blank">Mischief</a></li>
+<li><a href=https://www.toonboom.com/products/animate target="_blank">Toon Boom Animate</a></li>
+<li><a href=http://manga.smithmicro.com/ target="_blank">Manga Studio</a></li>
+<li><a href=http://www.autodesk.com/products/sketchbook-pro/overview target="_blank">Sketch Book Pro</a></li>
+<li><a href=http://www.erain.com/products/swift3d/ target="_blank">Swift3D</a></li>
+<li><a href=https://creative.adobe.com/ target="_blank">Flash</a></li>
+<li><a href=http://www.indeeo.com/idraw/ target="_blank">iDraw</a></li>
+<li><a href=http://www.gimp.org/ target="_blank">Gimp</a></li>
+<li><a href=http://www.inkscape.org/en/ target="_blank">InkScape</a></li>
+<li><a href=https://creative.adobe.com/ target="_blank">Photoshop</a></li>
+<li><a href=http://www.pixelmator.com/ target="_blank">Piximator</a></li>
+</ul>
+<ul>
+<li><a href=http://www.codeandweb.com/texturepacker target="_blank">TexturePacker</a></li>
+<li><a href=http://www.zwopple.com/zwoptex/ target="_blank">Zwoptex</a> Sprite Sheet Tool</li>
+<li><a href=https://gist.github.com/Lerg/02e228b0f5423bbaf1dc target="_blank">ImageMagic Script</a> &#8211; 2X Image Downsizer</li>
+<li><a href=http://vimeo.com/24885192 target="_blank">Icon Robot</a></li>
+<li><a href=https://itunes.apple.com/ru/app/iconify/id416289784?mt=12 target="_blank">iConify</a></li>
+</ul>
+<ul>
+<li><a href=http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=9&pub=5574640273&toolid=10001&campid=5337485902&customid&icep_uq=cintiq&icep_sellerId&icep_ex_kw&icep_sortBy=12&icep_catId&icep_minPrice&icep_maxPrice&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg target="_blank">Cintiq Drawing Tablets</a></li>
+</ul>
+<ul>
+<li><a href=https://vine.co/v/MH33IBwh2Tp target="_blank">Corona SDK running on Omate Smart Watch</a></li>
+<li><a href=http://phandroid.com/2014/05/22/is-this-how-well-game-on-the-lg-g-watch-and-moto-360-video/ target="_blank">Phandroid &#8211; Corona Smart Watch article</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-92/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-92-2014-06-02-creating-app-artwork.mp3" length="59784709" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-92-2014-06-02-creating-app-artwork.mp3" length="59784709" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-92-2014-06-02-creating-app-artwork.mp3" length="59784709" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-92-2014-06-02-creating-app-artwork.mp3" length="59784709" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #61 &#8211; Hanging Out With City Birds&#8217; Developer, Noah Malewicz</title>
+		<link>/blog/coronageek/corona-geek-hangout-61/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-61/#comments</comments>
+		<pubDate>Mon, 28 Oct 2013 22:15:42 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Art]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=50549</guid>
+		<description><![CDATA[During this week's Corona Geek we talked with cartoonist and Corona developer, Noah Malewicz about his award winning game, CityBirds. Noah created all the art work and code for his game. Noah shares his thoughts on rapid development and how Corona SDK helped him build a game that feels like playing a cartoon.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Ie5P1zlDORY?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek we talked with cartoonist and Corona developer, Noah Malewicz about his <a href=/blog/2013/10/21/app-of-the-week-city-birds/?utm_source=coronageek&utm_medium=social&utm_campaign=blogpost>award winning game, City Birds</a>. Noah created all the artwork and code for his game, learned Corona SDK from studying Dr. Brian Burton&#8217;s book, <a href=http://bit.ly/1alfCW2 target="_blank">Mobile App Development with Corona</a> and integrated code samples he found within the Corona Community. Noah shares his thoughts on rapid development and how Corona helped him build a game that feels like playing a cartoon.</p>
+<p>This week&#8217;s show also featured some Hangout fan art by Greg Pugh at <a href=http://gpanimations.com/ target="_blank">GP Animations</a>. Thanks Greg!</p>
+<p><img class="alignnone size-full wp-image-50560" alt="Corona Geek Hangout Fan Art" src="/wordpress/wp-content/uploads/2013/10/cg-61.png" /></p>
+<p><strong>Also joining the Hangout today were:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Dr. Brian Burton</a></li>
+<li><a href=https://plus.google.com/b/108159899655420864045/108670140200721855983/posts target="_blank">Colette Levesque</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://snakeheadsoftware.com/ target="_blank">Gerald Bailey</a></li>
+<li><a href=http://ninjapigstudios.com/ target="_blank">Jordan Schuetz</a></li>
+<li><a href=https://itunes.apple.com/US/app/id590540185?mt=8 target="_blank">Mohamed Bennouf</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+</ul>
+<p>&#8230; and thank you to everyone who watched the live Hangout on YouTube.</p>
+<p>Congratulations to Kiffin Ayers for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a>, <a href=http://www.facebook.com/coronageek>Facebook</a>, <a href=https://plus.google.com/b/108159899655420864045/108159899655420864045/posts target="_blank">Google+</a>, or <a href=http://youtube.com/coronageek target="_blank">YouTube</a> and complete the Corona Geek <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">giveaway form</a>.</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-61/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-61-2013-10-28-citybirds-noah-malewicz.mp3" length="47510302" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-61-2013-10-28-citybirds-noah-malewicz.mp3" length="47510302" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-61-2013-10-28-citybirds-noah-malewicz.mp3" length="47510302" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-61-2013-10-28-citybirds-noah-malewicz.mp3" length="47510302" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

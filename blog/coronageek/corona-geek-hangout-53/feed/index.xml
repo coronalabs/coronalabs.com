@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #53 &#8211; Make Rain and Lightning in Corona SDK</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-53/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-53/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Alex</title>
+		<link>/blog/coronageek/corona-geek-hangout-53/#comment-5637</link>
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2014 16:15:56 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=43512#comment-5637</guid>
+		<description><![CDATA[Found the answer with the updated library (from its author) at https://github.com/vsergeyev/Rain/tree/master/Rain]]></description>
+		<content:encoded><![CDATA[<p>Found the answer with the updated library (from its author) at <a href="https://github.com/vsergeyev/Rain/tree/master/Rain" rel="nofollow">https://github.com/vsergeyev/Rain/tree/master/Rain</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alex</title>
+		<link>/blog/coronageek/corona-geek-hangout-53/#comment-5636</link>
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2014 15:55:18 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=43512#comment-5636</guid>
+		<description><![CDATA[Did you updated the rain library to be compatible with Graphics 2.0? The current one does not work fine (positioning of the drops do not fill the entire screen - and get even worse when you change the drop angle).]]></description>
+		<content:encoded><![CDATA[<p>Did you updated the rain library to be compatible with Graphics 2.0? The current one does not work fine (positioning of the drops do not fill the entire screen &#8211; and get even worse when you change the drop angle).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: RichieLoco</title>
+		<link>/blog/coronageek/corona-geek-hangout-53/#comment-5635</link>
+		<dc:creator><![CDATA[RichieLoco]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2013 18:58:14 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=43512#comment-5635</guid>
+		<description><![CDATA[Enjoyed this!
+
+Keep it up dude :)
+
+
+Rich]]></description>
+		<content:encoded><![CDATA[<p>Enjoyed this!</p>
+<p>Keep it up dude 🙂</p>
+<p>Rich</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

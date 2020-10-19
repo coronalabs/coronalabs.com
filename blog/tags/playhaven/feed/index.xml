@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>playhaven &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/playhaven/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>playhaven &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Piece: PlayHaven Brings its Business Engine to Corona Devs</title>
+		<link>/blog/2013/09/06/guest-piece-playhaven-brings-its-business-engine-to-corona-devs/</link>
+		<pubDate>Fri, 06 Sep 2013 15:05:09 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[playhaven]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=43667</guid>
+		<description><![CDATA[Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven's team of engineers on the development of partner plugins. 
+
+PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href="http://www.playhaven.com/">playhaven.com</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven&#8217;s team of engineers on the development of partner plugins. </em></p>
+<p>PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href=http://www.playhaven.com>playhaven.com/</a>.</p>
+<hr />
+<p><img class="alignleft size-thumbnail wp-image-43699" src="/wordpress/wp-content/uploads/2013/09/logo_lrg_blk-150x135.png" alt="logo_lrg_blk" />Creative people love to create – and that’s you, game developer &#8211; whether that be rich game content, meaningful interactive experiences or experimental techniques in game design. We want to keep you focused on what you love, which is how PlayHaven came into existence. PlayHaven was built so you can focus on content and design and let us power the business side of your games.</p>
+<p>We’re thrilled to partner with <a href=www.coronalabs.com/products/Corona-SDK>Corona SDK</a> to help you with the acquisition, engagement and monetization layers in your game.</p>
+<p>By leveraging the PlayHaven Corona Plugin, you can do the following without impacting your game’s roadmap.</p>
+<p><strong>Drive high-quality players to your games</strong><br />
+Our user acquisition tools help you successfully launch your game into the marketplace and bring quality players into your game. Choose to <a href=http://www.playhaven.com/acquire?#acquire-content-advertise>advertise</a> within our ad network or distribute your users to other games in your network using our <a href=http://www.playhaven.com/acquire?#acquire-content-cross-promote>cross-promotion tool</a>.</p>
+<p><strong>Keep users playing</strong><br />
+Learn more about your players, build customer loyalty, improve communication, and re-engage them after they&#8217;ve left the app. PlayHaven’s engagement tools help you deliver targeted, personalized communications in and out of your game to keep your players engaged. From <a href=http://www.playhaven.com/engage?#engage-content-push>Push Notifications</a> (Beta) to <a href=http://www.playhaven.com/engage?#engage-content-rewards>Rewards</a>, in-game <a href=http://www.playhaven.com/engage?#engage-content-announcements>Announcements</a> and <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a>, you have lots of great ways to interact with your users in any way you choose.</p>
+<p><strong>Monetize your whales, dolphins and&#8230; EVERYONE!</strong><br />
+Increase your player conversion rate and revenue by leveraging our monetization tools. By creating and deploying <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>virtual goods</a> promotions and relevant <a href=http://www.playhaven.com/monetize?#monetize-content-ads>in-game ads</a> to the right user segment at the right time, you’re getting the tools you need to maximize revenue. PlayHaven can help you both identify monetizable user groups and deliver relevant communications designed to increase your bottom line.</p>
+<p><strong>Take a look at how our partners are using PlayHaven.</strong></p>
+<p><strong>Mobile Deluxe</strong> leveraged a combination of PlayHaven&#8217;s <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>Virtual Goods Promotion</a>, <a href=http://www.playhaven.com/monetize?#monetize-content-ads>Interstitial Ads</a>, and User Segmentation tools to improve player monetization and increase revenue in Big Win Slots. Read more <a href=http://blog.playhaven.com/success_mobiledeluxe/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43705" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_Mobile-Deluxe-VGP-1-300x211.jpg" alt="PlayHaven_Mobile Deluxe VGP" /></p>
+<p><strong>SEGA</strong> implemented PlayHaven&#8217;s <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a> to engage players outside of Sonic Jump and simultaneously cross-promote Sonic Dash. Learn more about the impressive results SEGA saw <a href=http://blog.playhaven.com/sega-nurtures-player-relationships-outside-of-gameplay/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43703" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_SEGA-Case-study-1-287x300.jpg" alt="PlayHaven_SEGA Case study (1)" /></p>
+<p>We’re excited to bring our entire platform of solutions to help Corona developers acquire, engage, retain and monetize their players. To integrate PlayHaven into your Corona-built games, please visit <a href=http://docs.coronalabs.com/daily/plugin/playhaven/>docs.coronalabs.com/daily/plugin/playhaven/</a>. If you have any questions, reach out at <a href=mailto:connect@playhaven.com>connect@playhaven.com</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona SDK now supports PlayHaven</title>
+		<link>/blog/2013/09/05/corona-sdk-now-supports-playhaven/</link>
+		<comments>/blog/2013/09/05/corona-sdk-now-supports-playhaven/#comments</comments>
+		<pubDate>Thu, 05 Sep 2013 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[playhaven]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=43807</guid>
+		<description><![CDATA[We’re happy to announce that PlayHaven is our latest Corona Plugin partner! As a Corona developer, you can now integrate PlayHaven’s acquisition, engagement and monetization tools into your Corona-built games.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/09/logo_lrg_blk-150x135.png" alt="logo_lrg_blk" class="alignleft size-thumbnail wp-image-43699" />We’re happy to announce that PlayHaven is our latest Corona Plugin partner! As a Corona developer, you can now integrate PlayHaven’s acquisition, engagement and monetization tools into your Corona-built games.</p>
+<p><strong>About PlayHaven’s services</strong><br />
+<a href=http://www.playhaven.com>PlayHaven/</a> is the business engine for mobile games offering developers flexible tools to intelligently manage player acquisition, engagement, and monetization. PlayHaven provides the only end-to-end solution that helps developers manage users at every valuable point in their lifecycle.</p>
+<p>PlayHaven is available for iOS and Android games – solutions include:</p>
+<ul>
+<li><strong>PlayHaven Acquire</strong>: power successful app launches and continuously drives high quality users into your game.</li>
+<li><strong>PlayHaven Engage</strong>: create and deliver targeted, personalized messages in and out of the game that keep users engaged in your app.</li>
+<li><strong>PlayHaven Monetize</strong>: grow revenue by creating and deploying in-app purchase promotions and relevant ads to targeted user segments.</li>
+</ul>
+<p><strong>Accessing the PlayHaven Plugin</strong><br />
+You can integrate the PlayHaven plugin by adding a few lines of code to your build settings file. For information on integrating PlayHaven into your Corona-powered games, please see the <a href=http://docs.coronalabs.com/daily/plugin/playhaven/>plugin documentation</a>.</p>
+<p><strong>More on Corona Plugins</strong><br />
+Corona Plugins offer Corona developers access to popular third party tools and services. Announced in mid-May, plugin partners include SponsorPay, Fortumo, Photon Cloud, Green Throttle, Inneractive, Fortumo, Carrot, Tap for Tap and many more!</p>
+<p>Visit the Corona Plugin Directory for a complete list of plugins. We’ll be rolling out support for more plugins soon, so check back for updates.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/05/corona-sdk-now-supports-playhaven/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

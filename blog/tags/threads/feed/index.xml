@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>threads &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/threads/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>threads &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #109</title>
+		<link>/blog/2016/02/05/from-the-forum-issue-109/</link>
+		<comments>/blog/2016/02/05/from-the-forum-issue-109/#comments</comments>
+		<pubDate>Fri, 05 Feb 2016 22:05:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[coroutines]]></category>
+		<category><![CDATA[Game Center]]></category>
+		<category><![CDATA[mouse]]></category>
+		<category><![CDATA[mouse wheel]]></category>
+		<category><![CDATA[ScrollView]]></category>
+		<category><![CDATA[threads]]></category>
+
+		<guid isPermaLink="false">/?p=65523</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Mouse wheel scrolling, in widget form</h3>
+<p>Now that Corona lets us develop games for Win32 and OSX, we can spread that sweet WASD love around every game and application we have dreamt about bringing to the desktop. There are a lot of amazing options for game development now that we aren’t bound by mobile.</p>
+<p>The main thing that I’m excited about is, getting all of my peripherals in on the party. However, for anyone that has tried this, you might have found that getting useful feedback from the mouse scroll wheel can feel like pulling teeth.</p>
+<p>Fret no more! One developer has found a suitable workaround when dealing with a scroll wheel on a <a href=https://docs.coronalabs.com/api/library/widget/newScrollView.html target="_blank">scrollView</a>. Head on down to the original thread to learn more about it.</p>
+<p><a href=https://forums.coronalabs.com/topic/61465-osx-scrollview-working-with-mouse-wheel/ target="_blank">https://forums.coronalabs.com/topic/61465-osx-scrollview-working-with-mouse-wheel/</a></p>
+<h3>Concurrent programming in Lua</h3>
+<p>Let’s assume for a second that you are attempting to some seriously high-octane permutations in your Corona-developed application. You are chugging along, thinking everything is hunky dorey, when you decide to do some quick bench-testing on a mobile device. You fire up your app, and… you hit a wall. You realize that lag from concurrently running functions and various callbacks all needing attention makes for a very bumpy user experience.</p>
+<p>Enter coroutines. I really can’t believe that I haven’t highlighted the technique before, as it’s very useful and can be implemented rather easily. Now, a caveat: there is a library that is linked in the thread that is pretty high-level, and, full disclosure: I’m not completely clear on what is being achieve! But that doesn’t mean that it’s going to go over your head too. Head down to the original thread and read up on the topic!</p>
+<p><a href=https://forums.coronalabs.com/topic/61514-threading-in-corona/ target="_blank">https://forums.coronalabs.com/topic/61514-threading-in-corona/</a></p>
+<h3>Simple Game Center</h3>
+<p>A couple weeks ago, I highlighted a thread that had a great little attachment, that showed some pretty nifty Game Center implementation, and combined with the Corona SDK-included Game Center sample code, makes for a really great base for getting these features implemented in your next game.</p>
+<p>In order to add to this base, I want to highlight the below thread. In it, Corona developer relations specialist, Rob Miracle goes in-depth on what is included in the sample project and why, and dissects the relevant lines and their uses. Great for beginners and veterans both, I urge everyone to check it out and see if you can use it, or perhaps condense your own implementation!</p>
+<p><a href=https://forums.coronalabs.com/topic/61469-apple-game-centre-sample-code/ target="_blank">https://forums.coronalabs.com/topic/61469-apple-game-centre-sample-code/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/05/from-the-forum-issue-109/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

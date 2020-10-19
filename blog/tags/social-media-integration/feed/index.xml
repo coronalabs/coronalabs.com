@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>social media integration &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/social-media-integration/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>social media integration &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #152 &#8211; Facebook Integration and Social Media Sharing</title>
+		<link>/blog/coronageek/corona-geek-152/</link>
+		<comments>/blog/coronageek/corona-geek-152/#respond</comments>
+		<pubDate>Mon, 27 Jul 2015 22:08:21 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[social media integration]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63510</guid>
+		<description><![CDATA[Today, Ed Maurina, from Roaming Gamer, took us through the basics of social media integration using the Facebook plugin. We looked at logging in, requesting permissions, and posting updates to a users timeline. We also discussed how to get an app id from the Facebook Developer portal.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/yMyWyR_lZP8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Ed Maurina took us through the basics of social media integration using the <a href=https://store.coronalabs.com/plugin/facebook target="_blank">Facebook plugin</a> ( Check out the <a href=/blog/2015/07/24/facebook-v4-plugin-android-beta/ target="_blank">new Facebook v4 plugin</a> as well ). We looked at <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/SocialMedia.zip target="_blank">logging in, requesting Facebook permissions, and posting updates</a> to the user&#8217;s timeline. We also discussed <a href=https://docs.coronalabs.com/daily/guide/social/setupFacebook/index.html?#developer-registration target="_blank">how to create an app id</a> in the Facebook Developer portal.</p>
+<p>Next week, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> will lead us through part 4 of our ongoing discussion on creating custom shaders. We will discuss using math to create pretty pictures (aka, shader math) and we will look at some new shader examples.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ckrasc7je049e8kk3dbme2clsuk target="_blank">Corona Geek After Dark #4</a> when we will discuss topics like general app development, forum questions, community insights, and more. Last week we discussed Composer GUI, Kickstarter game development campaigns, and game publisher models.</p>
+<p><strong>Last Week To Play Rise 1.0 for July&#8217;s Corona Geek Games Challenge!</strong></p>
+<p>For July we are playing Rise 1.0 by Vernon Coleman (aka, Novateur) for the chance to win a $50 gift card. To participate, share a picture of your highest Rise score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. The winner of this month&#8217;s challenge will be announced next Monday, Aug 3rd. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-151/>Corona Geek #151 &#8211; New Twitter Plugin Demo and Glass Half Full Shader Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links Discussed in Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/SocialMedia target="_blank">Facebook Social Media Integration Code Repo</a></li>
+<li><a href=http://www.jasonschroeder.com/2015/07/15/twitter-plugin-for-corona-sdk/ target="_blank">Social Media Sharing Using the new Twitter Plugin</a></li>
+<li><a href=https://docs.coronalabs.com/plugin/facebook/index.html target="_blank">Facebook Plugin Docs</a></li>
+<li><a href=https://developers.facebook.com/tools/explorer/ target="_blank">Facebook Graph API Explorer</a></li>
+<li><a href=https://docs.coronalabs.com/daily/plugin/CoronaProvider_native_popup_social/index.html target="_blank">Social Media Sharing via Native Social Plugin</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-152/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-152-2015-07-27-social-sharing-facebook-plugin.mp3" length="74125062" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #151 &#8211; New Twitter Plugin Demo and Glass Half Full Shader Effects</title>
+		<link>/blog/coronageek/corona-geek-151/</link>
+		<comments>/blog/coronageek/corona-geek-151/#respond</comments>
+		<pubDate>Mon, 20 Jul 2015 22:54:25 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[shader examples]]></category>
+		<category><![CDATA[shaders]]></category>
+		<category><![CDATA[social media integration]]></category>
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63385</guid>
+		<description><![CDATA[On today's Corona Geek Hangout, Jason Schroeder showed off features in his new plugin for Twitter integration into Corona built apps and Steven Johnson introduced us to a cool custom shader effect that fills a drinking glass with fluid on the fly.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/fIN1DcHEy4w?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout, <a href=http://jasonschroeder.com/ target="_blank">Jason Schroeder</a> showed off the features of his <a href=https://store.coronalabs.com/plugin/twitter>new Twitter plugin for Corona</a>. Jason has not only created a whole plugin to simplify Twitter integration, he has also created a beautiful sample app to show how the plugin features work. Jason also <a href=http://socialpoetry.jasonschroeder.com/ target="_blank">showed us the app that started it all</a> and inspired him to create a plugin to share what he has learned about Twitter integration in apps.</p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ci9fiqq1196dssgbbf2ibdntsho target="_blank">Corona Geek After Dark #3</a> when we will talk with Jason about plugin development for Corona SDK. We will ask him what the development process was like, what the submission process was like, and what plans he has for other plugins.</p>
+<p>Also today, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> introduced us to more custom shader effects. This time, Steven showed us how he created an effect to mimic fluid levels in a drinking glass. Using a slider, Steven was able to adjust the amount of liquid in a drinking glass in realtime. He talked about how he calculates the top most fluid level, the bottom most level, and all the in-between levels as the glass contents grow.</p>
+<p>Corona comes with a <a href=https://docs.coronalabs.com/daily/guide/graphics/effects.html target="_blank">bunch of built in shader effects</a>, but being able to create your own custom shader effects is extremely powerful as well. Next week Steven will talk about numerical problems and other shader math operations, so be sure to tune in for that Hangout.</p>
+<p><strong>Let’s Play Rise 1.0 for July&#8217;s Corona Geek Games Challenge</strong></p>
+<p>For July we are playing Rise 1.0 by Vernon Coleman (aka, Novateur) for the chance to win a $50 gift card. To participate, share a picture of your highest Rise score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-150/>Corona Geek #150 &#8211; Custom Vertex Shader Effects and More Playground Examples</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+<li><a href=http://worona.org/ target="_blank">Worona &#8211; WordPress Plugin</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=https://gumroad.com/l/dyd-ebook target="_blank">Double Your Downloads in 5 Steps</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-151/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-151-2015-07-20-new-twitter-plugin-and-shaders-part3.mp3" length="94159709" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

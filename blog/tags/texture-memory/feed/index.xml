@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>texture memory &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/texture-memory/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>texture memory &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #111 – Texture Memory Management and Ultimate Config.lua Revisited</title>
+		<link>/blog/coronageek/corona-geek-111/</link>
+		<comments>/blog/coronageek/corona-geek-111/#comments</comments>
+		<pubDate>Mon, 13 Oct 2014 22:42:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[Dynamic Content Scaling]]></category>
+		<category><![CDATA[texture memory]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59807</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Corona Ambassador Ed Maurina shared texture memory management tips for freeing up texture memory when you have to display and retain many hundreds to thousands of images on and off-screen. Also Corona Ambassador Sergey Lerg shared his config.lua solution for scaling content to fit the most common screen sizes, including iPhone 6 and 6 Plus.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/DDKceEWKq-8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, <a href=http://roaminggamer.com/makegames/ target="_blank">Corona Ambassador Ed Maurina</a> shared <a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2014/10/Texture%20Memory%20Management.zip target="_blank">texture memory management</a> tips for freeing up texture memory when you have to display and retain many hundreds to thousands of images on and off-screen. Also <a href=http://spiralcodestudio.com/ target="_blank">Corona Ambassador Sergey Lerg</a> shared his <a href=https://github.com/Lerg/awesome-config-lua target="_blank">config.lua solution</a> for scaling content to fit the most common screen sizes, including iPhone 6 and 6 Plus.</p>
+<p><strong>Compete In The &#8220;Geek Games&#8221;</strong></p>
+<p>Remember to put your gaming skills to go use. <strong>Post your <a title="2048 Hex" href=http://bit.ly/2048hex target="_blank">2048 Hex</a> high score</strong> to the <a title="Corona Geek Facebook page" href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> for a chance to win a $50 gift card to a retailer of your choice! Multiple entries are allowed. Post each time you get a new high score. A winner will be announced on November 3rd. We&#8217;ll remind you throughout the month. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-110/ target="_blank">Corona Geek #110 &#8211; Coronium Game Server, Windows Phone Apps, and Swiping Objects</a></li>
+<li><a href=/university>Corona University</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=http://burtonsmediagroup.com/ target="_blank">Burtons Media Group &#8211; Corona Books</a></li>
+<li><a href=http://roaminggamer.com/makegames/ target="_blank">Roaming Gamer &#8211; Game Templates and Tools</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Spiral Code Studio &#8211; Corona Games and Development</a></li>
+<li><a href=http://codecanyon.net/item/moons-parental-gate-for-corona-sdk/9096318 target="_blank">Swipe Parental Gate</a></li>
+<li><a href=http://www.theverge.com/2014/9/27/6854607/att-promotion-doubles-data-in-largest-mobile-share-value-plans target="_blank">AT&amp;T Doubles Data Plans</a></li>
+<li><a href=/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/>Game Center moved to plugin</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-111/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-111-2014-10-13-texture-memory-management-and-content-scaling.mp3" length="60395614" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #40 &#8211; Memory Management, Google IO, and Dilbert</title>
+		<link>/blog/coronageek/corona-geek-hangout-40/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-40/#comments</comments>
+		<pubDate>Mon, 20 May 2013 22:51:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[texture memory]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34378</guid>
+		<description><![CDATA[This week we hung out with Ed Maurina, Gerald Bailey, Jesse Warden, Matthew Chapman, and Richard Harris to discuss memory management in Corona SDK. Ed did an excellent job of explaining the sample app he created after one of our previous Hangouts where we discussed Storyboard. His app demonstrates how memory is affected when objects are set to nil at various stages of development.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/qqLZZnujog4#!?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://snakeheadsoftware.com/ target="_blank">Gerald Bailey</a>, <a href=https://plus.google.com/b/108159899655420864045/109537902154361720350/posts target="_blank">Jesse Warden</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, and <a href=http://appdevelopermagazine.com/ target="_blank">Richard Harris</a> to discuss memory management in Corona SDK. Ed did an excellent job of explaining the sample app he created after one of our previous Hangouts where we discussed Storyboard. His app demonstrates how memory is affected when objects are set to nil at various stages of development. Ed agreed to post his code on GitHub, so we&#8217;ll <a href=http://downloads.roaminggamer.com/coronageek/CoronaGeekAfterTalk.zip target="_blank">post a link to his code</a> once that is available. We also talked about the announcements at Google IO, the ongoing <a href=/blog/2013/05/15/dilbert-the-world-famous-engineer-and-corona-labs-partner-on-a-mobile-game-competition/>Dilbert contest</a>, and <a href=/blog/2013/05/16/update-on-corona-and-coppa-privacy-policies/>COPPA Privacy Policies</a>.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Theo Rushin, Jr. for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-40/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-40-2013-05-20-memory-management.mp3" length="42582430" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

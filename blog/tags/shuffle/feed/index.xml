@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shuffle &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/shuffle/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>shuffle &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #176 &#8211; Twin Stick Game Development &#8211; Creating HUDs and Shuffling Items</title>
+		<link>/blog/coronageek/corona-geek-176/</link>
+		<comments>/blog/coronageek/corona-geek-176/#comments</comments>
+		<pubDate>Mon, 18 Jan 2016 22:00:43 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[image scaling]]></category>
+		<category><![CDATA[shuffle]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65299</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued our twin stick shooter game development series with a look at creating heads up displays (HUDs) using texture wrapping, repeating fills, and image scaling. We also explored using a shuffle bag technique for randomizing items to ensure you select unique items from a given collection of objects.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/0TXlRl5l4tY?rel=0&amp;showinfo=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On today&#8217;s Corona Geek Hangout we continued our twin stick shooter game development series with a look at <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/hudTrick.zip target="_blank">creating heads up displays</a> (HUDs) using texture wrapping, repeating fills, and image scaling. We also explored using a <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/shufflebag.zip target="_blank">shuffle bag technique</a> for randomizing items to ensure you select unique items from a given collection of objects.</p>
+<p><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the twin stick shooter project code</a> and make it your own.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.cravecreative.com/poppy-droppy.php target="_blank">Play Poppy Droppy</a></li>
+<li><a href=http://www.cravecreative.com/killer-bubbles.php target="_blank">Watch out for Killer Bubble</a></li>
+<li><a href=http://spiralcodestudio.com/laser-puzzle/ target="_blank">Play Laser Puzzle</a></li>
+<li><a href=http://9to5mac.com/2016/01/15/apple-will-discontinue-iad-app-network-for-developers-on-june-30th/ target="_blank">Apple announces plans to drop iAds</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-176/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-176-2016-01-18-twin-stick-shooter-game-writing-code-part-2.mp3" length="89225927" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

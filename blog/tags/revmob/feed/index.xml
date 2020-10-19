@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>RevMob &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/revmob/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>RevMob &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #125</title>
+		<link>/blog/2016/05/31/from-the-forum-issue-125/</link>
+		<pubDate>Tue, 31 May 2016 21:41:51 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[backups]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[RevMob]]></category>
+		<category><![CDATA[SQLite3]]></category>
+
+		<guid isPermaLink="false">/?p=66976</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Security-minded Coronium instances</h3>
+<p>Coronium-based apps are coming out of the woodwork these days. Having a Corona-supported server solution developed completely in Lua is a fantastic resource to new and veteran Corona users alike.</p>
+<p>However, it’s important to remember that not everything is served on a silver platter for us. The steps available to shore up endpoints and security are not unique to Coronium, so research on those fronts is paramount. One developer, in kicking the tires on his app and Coronium instance, was wondering what was going on with their iOS 9 test device. As it turns out, the app was running afoul of the App Transport Security policy instituted by Apple.</p>
+<p>A potential fix is referenced in the original post. Click on through to find out more about making your Coronium instance that much more secure!</p>
+<p><a href=https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/ target="_blank">https://forums.coronalabs.com/topic/63216-coronium-setup-and-ios-app-transport-security-policy/</a></p>
+<h3>Coronium step-by-step walkthrough</h3>
+<p>Coronium&#8217;s server solution has been talked up quite a bit in this running feature. For good reason of course, as having a server implementation written in pure Lua means not moving between languages during development and not fragmenting your workflow.</p>
+<p>While Coronium is relatively intuitive, there are still portions that may not be clear to new users. There are security concerns that may not occur when a developer’s primary experience is in game development. The installation guide is incredibly valuable, but having something from a user’s standpoint can be useful as well.</p>
+<p>The original thread below goes through a step-by-step installation, created by a genuine Corona developer, of the Coronium product. It’s a great read, and <strong>Develephant</strong> himself commented on how useful of a resource it is. Jump on over and check it out for yourself!</p>
+<p><a href=https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/ target="_blank">https://forums.coronalabs.com/topic/63256-step-by-step-installation-walkthrough/</a></p>
+<h3>Understanding auto-backup workflow</h3>
+<p>These days, business apps are expected to allow users to pick up where they left off, regardless of device or location. The million dollar question: how can we ensure a user’s app data is available across the globe? The low barrier to entry for database implementations means that a simple SQL configuration can house any information necessary for a user to bounce around at will.</p>
+<p>If you’re using that SQL database, though, how you’re going to manage all that data becomes the primary concern. You want to make sure that you’re doing your level-best to maintain the integrity of the data that has become the real currency in your app.</p>
+<p>The below thread contains an interesting back-and-forth discussion surrounding the best way to handle data being passed between an app leveraging a SQL database, and the database itself. Have your own take? Add to the dogpile!</p>
+<p><a href=https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/ target="_blank">https://forums.coronalabs.com/topic/63167-backup-sqlite3-db-to-mysql/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Official RevMob plugin now available</title>
+		<link>/blog/2016/04/07/official-revmob-plugin-now-available/</link>
+		<comments>/blog/2016/04/07/official-revmob-plugin-now-available/#comments</comments>
+		<pubDate>Thu, 07 Apr 2016 16:41:33 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[RevMob]]></category>
+
+		<guid isPermaLink="false">/?p=66369</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of our new RevMob plugin. Learn more in this announcement.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-66373" src="/wordpress/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-11.28.02-AM.png" alt="RevMobLogo" width="229" height="79" />Corona Labs is pleased to announce the availability of our new <a href=https://www.revmobmobileadnetwork.com/ target="_blank">RevMob</a> plugin. Previously, Corona users accessed RevMob through a RESTful API. Now, it&#8217;s available as an official plugin.</p>
+<p><a href=https://www.revmobmobileadnetwork.com/ target="_blank">RevMob</a> is a popular advertising platform that offers a full range of ad types such as banners, interstitial ads, video, and rewarded video ads. They are known for high fill rates, worldwide reach, and engaging content.</p>
+<p>Gustavo Goldenberg, Head of Publisher Relations at RevMob, says of the partnership, &#8220;we have thousands of publishers in our network that have Corona as their platform of choice. By working closely with Corona Labs to create an even more seamless integration, we are sure that even more developers will join in to build amazing experiences with Corona’s versatile and easy-to-use engine.&#8221;</p>
+<p>This version of the plugin initially supports banner, full screen, interstitial video, and rewarded video ad types on iOS and Android.</p>
+<h3>Getting started</h3>
+<p>You must first sign up with RevMob at their <a href=https://www.revmobmobileadnetwork.com/ target="_blank">website</a>. From their dashboard, visit the Media tab and create various media entries. A media entry is basically an item for each app and platform you want to put ads in. If you want to have both an Android and iOS app, you will need two media entries: one for Android and one for iOS. RevMob will generate a unique Media ID for each version of your app and you will use those IDs in your code.</p>
+<p>After you have an app added to the dashboard, you need to create Placements. You will get a unique Placement ID for each ad type and ad position you wish to support in your app, and those Placement IDs can be used in your Corona code.</p>
+<h3>Including the plugin</h3>
+<p>You must modify your <code>build.settings</code> file to enable loading the plugin:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.revmob&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true }
+        },
+    },
+}</pre><p>If building for iOS, you must also bypass App Transport Security (ATS) by adding the following to the <code>plist</code> table of <code>build.settings</code>. For more information on ATS, please see the <a href=https://docs.coronalabs.com/guide/hardware/appleATS/index.html target="_blank">Managing App Transport Security</a> guide.</p><pre class="crayon-plain-tag">settings =
+{
+    iphone =
+    {
+        plist =
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+        },
+    },
+}</pre><p></p>
+<h3>Session management</h3>
+<p>RevMob needs to have their session started. As a convenience, calling <a href=https://docs.coronalabs.com/plugin/revmob/init.html target="_blank">revmob.init()</a> will start your session for you. However, if you did not have Internet connectivity when your app started or if your app resumes from being suspended, you may need to start the session manually. See the <a href=https://docs.coronalabs.com/plugin/revmob/index.html target="_blank">documentation</a> on how to do this.</p>
+<h3>Improving performance</h3>
+<p>RevMob supports targeting ads to a finer-grained audience. To do so, they need to know some demographic data about your app&#8217;s user. Once you know that data, you can inform RevMob using the <a href=https://docs.coronalabs.com/plugin/revmob/setUserDetails.html target="_blank">revmob.setUserDetails()</a> API call. For example, you can provide the app user&#8217;s gender, age range, birthday and/or user interests to RevMob so they can provide better ads. However, keep in mind that you will have to collect this information from the user for it to be useful, and users may be reluctant to provide it.</p>
+<h3>Limitations</h3>
+<p>We do not currently support popup or link type ads. We also do not support their mobile website platform.</p>
+<h3>Conclusion</h3>
+<p>RevMob is a very popular ad choice. It&#8217;s easy to implement and provides good fill rates and high quality ads. To learn more please read our <a href=https://docs.coronalabs.com/plugin/revmob/index.html target="_blank">documentation</a>. If you have questions, please visit the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank">Corona Labs forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/07/official-revmob-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

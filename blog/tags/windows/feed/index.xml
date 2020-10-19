@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>windows &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/windows/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>windows &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: Jordanian TV game show &#8220;Arrange it Correctly&#8221; powered by Corona</title>
+		<link>/blog/2016/04/26/case-study-jordanian-tv-game-show-arrange-it-correctly-powered-by-corona/</link>
+		<pubDate>Tue, 26 Apr 2016 18:49:25 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Game Show]]></category>
+		<category><![CDATA[MSSQL]]></category>
+		<category><![CDATA[TV]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=66576</guid>
+		<description><![CDATA[Think Corona SDK is for mobile games? Well it's powering a TV game show. Learn more about how this came to be.]]></description>
+				<content:encoded><![CDATA[<p>Picture this: It&#8217;s 7:00 p.m. and a popular TV game show is coming on. The host with his perfectly-coiffed hair and big smile stands at his lectern and points to a grid of TVs on a wall. Those TVs display categories, dollar amounts, and eventually answers. He also has a display in front of him with the correct answers. Nearby, three contestants stand at their podiums with TVs that show their scores. The contestants have a touch-sensitive screen to write and submit answers on. Behind the scenes, producers, directors, and judges are driving the game, timing commercials, confirming answers, and more.</p>
+<p>Someone had to write software for all of that. They had to network it together with a database and build a complex information system that drives the game. It must have required a huge team of developers and months of development time, right?</p>
+<p>For the <a href=http://www.roya.tv/ target="_blank">Roya TV</a> station in Amman, Jordan, along with a creative Corona SDK development team, it did not. Challenged to put together a TV game show in just 30 days, <a href=https://www.maysalward.com/ target="_blank">Maysalward</a>, a 16-person studio in Amman and Irbid, Jordan, beat out seven other studios to get the job of creating <a href=http://www.roya.tv/shows/196-%D8%B1%D8%AA%D8%A8%D9%87%D8%A7-%D8%B5%D8%AD/ target="_blank"><em>Arrange it Correctly</em></a><em>,</em> a TV game show about putting things in the right order. The other studios all wanted six months to do the job, but using Corona SDK, the team knew they could finish the job in much less time. Maysalward challenged a four person team consisting of a senior designer, senior developer, and two application testers to build the game. The team put Corona to the test and met their deadline, albeit with some 22-hour work days.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LZDrdeZQDgU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>The game</h3>
+<p>In <em>Arrange it Correctly,</em> three teams of two players stand at podiums with a touch screen Windows device for entering answers. This is driven by a full screen Windows desktop app. On the front of each podium is another Windows device running a full screen app to display the current score of each team. Behind the host, the audience sees a huge display known as the &#8220;big board&#8221; with the core game running. Another Corona-built Windows desktop app monitors the database and delivers the game output to the big board via HDMI cable. The host uses an Android tablet that displays the answers and other information. In the control room, the show&#8217;s director and producers control the pace of the game from a control computer. It&#8217;s all powered by a .NET system connected to a Microsoft SQL server.</p>
+<p>Apps built with Corona SDK can run on all of these devices. <a href=https://www.maysalward.com/ target="_blank">Maysalward</a> chose Corona because of how it could both connect to networked, database-driven solutions and create the game&#8217;s displays easily.</p>
+<p>According to Tariq Khatib, the senior developer on the project, &#8220;We used reusable stable code from other previous projects which shortened the total time needed for database connections.&#8221; Nour Khrais, Founder and CEO of Maysalward, added, &#8220;We have good experience with Corona and it&#8217;s a smooth development when it comes to mobile and desktop.&#8221;</p>
+<p>Corona&#8217;s ease and speed of development for both mobile and desktop came into play as the project moved towards the deadline. &#8220;It was really easy to manage change requests. Sometimes we did immediate onsite changes based on visual feedback from [the] TV Presenter or director or producer&#8230; it was really quick to recompile and replace old versions.&#8221; Khatib continued.</p>
+<p>He concluded &#8220;We are very proud of it, and it could have never been built in this time, with this performance, without Corona. Actually we agreed on the delivery time knowing that Corona can do it.&#8221;</p>
+<h3>Conclusion</h3>
+<p>We are constantly amazed at where we find Corona being used. Developers are using it to create great new entertainment apps, utility apps, and apps to enrich people&#8217;s lives. This may be one of the most unique case studies yet!</p>
+<p>Roya TV has already filmed 40 episodes of <em>Arrange it Correctly </em>with even more to come.</p>
+<p>What amazing things can you do with Corona? Cheer for the Maysalward team by reading more about their success in the <a href=https://forums.coronalabs.com/topic/62726-live-tv-show-contest-with-prizes-for-winners-made-with-corona-sdk/?#entry325559 target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Weekly Update: Fixing bugs</title>
+		<link>/blog/2013/06/24/corona-weekly-update-fixing-bugs/</link>
+		<comments>/blog/2013/06/24/corona-weekly-update-fixing-bugs/#comments</comments>
+		<pubDate>Tue, 25 Jun 2013 06:33:25 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[polish]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=36763</guid>
+		<description><![CDATA[While we work on lots of features that make <a href="/products/corona-sdk/">mobile app development</a> easier, I want to highlight all the bug fixing that's been going on in parallel.
+
+We've been very vigilant about regressions introduced in daily builds, but if there was one eye sore in our bugbase it was the bugs in the widget framework. We have attacked them with renewed vigor. 
+]]></description>
+				<content:encoded><![CDATA[<p>While we work on lots of features that make <a href=/products/corona-sdk/>mobile app development</a> easier, I want to highlight all the bug fixing that&#8217;s been going on in parallel.</p>
+<p>We&#8217;ve been very vigilant about regressions introduced in daily builds, but if there was one eye sore in our bugbase it was the bugs in the widget framework. We have attacked them with renewed vigor.</p>
+<p>Here&#8217;s a list of the widget enhancements we&#8217;ve made:</p>
+<ul>
+<li>Fixes the tableView scrollbar skinning with imageSheets. Fixes casenum 23646.</li>
+<li>Corrects the switch instantiation via image sheet. Fixes casenum 23648.</li>
+<li>Adds a custom params table to the insertRow ethod of the tableview, allowing for easy attachment of custom data to table rows. Fixes casenum 23811.</li>
+<li>Fixes the touch permission variable or tableviews if the view has hit bottom or top limit. Fixes casenum 23406.</li>
+<li>Added instance methods setScrollWidth() / setScrollHeight(). Fixes casenum 22869, casenum 21859.</li>
+<li>Exposes the stepper inc/dec speed and iteration number properties. Fixes casenum 21958.</li>
+<li>Creates the API method resizeView( newWidth ) for the progressView widget, allowing resize after creation. Fixes casenum 21874.</li>
+<li>Enables choosing elements in the picker widget by tapping on them. Fixes casenum 21788</li>
+<li>Fixes the tabBar selected image to scale to custom height if defined. Fixes casenum 21961.</li>
+<li>Return the correct value in the Picker when the user taps on a value. Casenum 24148</li>
+<li>Removed delay in resetting the tapped cell&#8217;s background color. Casenum 24263</li>
+<li>Picker view autocap text when defining large labels, and solving up the scroll issues at high speed to one of the list ends. Casenum 23290</li>
+<li>fixes involuntary scrolling after tapping and holding. Casenum 24244, 22607</li>
+<li>Added tap event to the tabbar, fixes tap event propagation on the widgets behind tab bars. Casenum 24126</li>
+<li>Fixes TabBar errors when custom images not supplied. Casenum 23996</li>
+<li>The scrollview gets the .isBounceEnabled property that allows the view to bounce back or not, like the native behaviour. Casenum: 21357</li>
+<li>Fixes changing scroll direction when the swipe occurs near one of the view limits. Casenum 22607, 24316</li>
+</ul>
+<p>We have a few more fixes coming, but widgets are a lot more polished now!</p>
+<p>Starting in tomorrow&#8217;s daily build (1150 or later), we&#8217;ll also be fixing a regression introduced late last week where certain plugins were not getting downloaded. This only affects plugins used in the Corona Simulator. Your device builds are unaffected.</p>
+<p>On top of that, we have also finished a ton of other polish items such as removing auto-suggestion on Android password fields, improved handling of disposed/invalid audio streams, and ensuring multi-byte POSTs pass the correct content length.</p>
+<p>There were also several pesky Windows-only bugs:</p>
+<ul>
+<li>Remember position of console window between restarts; reduce flashing of windows on startup &#8211; no casenum</li>
+<li>Fixed an issue where you can&#8217;t zoom out after zooming all the way in.</li>
+<li>Fixed bug where display.newText() would remove trailing spaces on Windows</li>
+<li>Fix issue with two instances of Simulator starting when a lua file was specified on the command line &#8211; fixes casenum 23206</li>
+</ul>
+<p>If you are using 3rd party tools that integrate with the Corona Simulator, that last one is something you&#8217;re really going to like!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/24/corona-weekly-update-fixing-bugs/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>beta &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/beta/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>beta &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Marketplace paid plugins in closed beta</title>
+		<link>/blog/2016/10/03/corona-marketplace-paid-plugins-in-closed-beta/</link>
+		<pubDate>Mon, 03 Oct 2016 19:28:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[marketplace]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=68307</guid>
+		<description><![CDATA[Paid plugins and assets are coming to the Corona Marketplace soon. Starting October 5, we will begin a closed beta with a select number of plugin developers. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-34463 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2013/05/Corona_Plugin_logo2-145x150.png" alt="Corona Plugin" width="145" height="150" />Corona Labs has been working hard behind the scenes to build out a marketplace where you, the developer, artist, or sound engineer, can sell your creations for other developers to use in their apps. Having a centralized, paid <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> will give everyone a chance to share their talents and benefit from being part of a creative community.</p>
+<p>Until recently, the existing marketplace only allowed for free plugins, but that&#8217;s about to change. Starting October 5, we will begin a <em>closed beta</em> to invite a select number of plugin developers to offer their existing works as paid plugins. This closed beta will give us a chance to work closely with experienced plugin authors, refine processes, and make sure our back-end, administration, and dashboard screens are working seamlessly.</p>
+<p>Our goal is to open paid plugins to all plugin developers by the end of October.</p>
+<p>Finally, by the end of November, we hope to have the Corona Marketplace open for all asset types. That means you will be able to offer images, audio, templates, and plugins to the community and find everything you need to create amazing apps, all in one place.</p>
+<p>This said, all stated target dates represent our current goals and they may change.</p>
+<h3>Conclusion</h3>
+<p>A paid marketplace is something we have dreamed of for a long time so we&#8217;re very excited to see it close to becoming a reality. We are also eager to see what great assets and plugins you will create and share with the community. If you&#8217;d like to discuss this further, join us in the <a href=http://forums.coronalabs.com/index.php?app=core&module=search&do=viewNewContent&search_app=forums target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing OS X, tvOS updates, and the new iCloud plugin!</title>
+		<link>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/</link>
+		<comments>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:17:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">/?p=64961</guid>
+		<description><![CDATA[The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work on OS X builds, tvOS builds, and the new iCloud plugin.]]></description>
+				<content:encoded><![CDATA[<p>The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work giving us some exciting new features and platforms to explore.</p>
+<h3>OS X initial release</h3>
+<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>, we are proud to announce that OS X is no longer in beta! We have the core features working at a level where we feel comfortable encouraging you to release apps to the Mac App store. Platforms like this are never complete and there are more features to add, but this marks a stable point in OS X development where we think you can successfully deploy desktop apps for Mac. To learn more, see our <a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html target="_blank">Creating OS X Desktop Apps</a> guide.</p>
+<h3>tvOS now in beta</h3>
+<p>Additionally, we are removing the &#8220;alpha&#8221; label from our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS support</a>. We believe that you should be able to publish apps to iTunes Connect for tvOS. Of course there is more to do before we can mark this as fully released, but the core features are now in place. You can pick this up in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a> as well. To learn more, check out our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">Apple TV and tvOS guide</a>.</p>
+<h3>The iCloud plugin (beta)</h3>
+<p>We are also pleased to announce the immediate availability of the new <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>. This plugin lets you store various data types in Apple&#8217;s iCloud service. The three main types of data you can store are:</p>
+<ul>
+<li><strong>Key-Value Storage</strong> &#8212; This lets you store simple data values like numbers, strings, and tables.</li>
+<li><strong>Documents</strong> &#8212; This lets you develop apps where you can save whole files to the cloud and sync them with other devices.</li>
+<li><strong>CloudKit</strong> &#8212; This is a full database implementation where you can have public and private database implementations which your app can access from multiple devices.</li>
+</ul>
+<p>In its simplest use, iCloud (all three methods) lets you save data from your app to iCloud and retrieve it later when you need it. In addition, if you have your app installed on multiple devices, for example your iPhone and iPad, the app can share data.</p>
+<p>To get started with the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, see the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and our <a href=/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/ target="_blank">first tutorial</a>.</p>
+<h3>Get started!</h3>
+<p>With this progress on both OS X desktop builds and tvOS builds, now is a great time to consider additional platforms for your existing apps!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+		<item>
+		<title>Mac App and Win32 App: Open Beta</title>
+		<link>/blog/2015/07/22/mac-app-and-win32-app-open-beta/</link>
+		<comments>/blog/2015/07/22/mac-app-and-win32-app-open-beta/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 17:08:09 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[desktop app]]></category>
+		<category><![CDATA[Mac app]]></category>
+		<category><![CDATA[win32 app]]></category>
+
+		<guid isPermaLink="false">/?p=63421</guid>
+		<description><![CDATA[At the beginning of this year, I outlined new platforms as a major theme for 2015. And a few months later, at GDC, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we've been conducting private betas with a small group of Corona developers.
+
+Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!]]></description>
+				<content:encoded><![CDATA[<p>At the beginning of this year, I outlined new platforms as a <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major theme for 2015</a>. And a few months later, at <a href=/blog/2015/03/02/corona-sdk-is-now-free/>GDC</a>, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we&#8217;ve been conducting private betas with a small group of Corona developers.</p>
+<p>Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds>Corona daily build</a> 2015.2687 (or later) to get started.</p>
+<h3>Building Desktop Apps</h3>
+<p>We&#8217;ve done a lot of work to make the experience of building desktop apps as smooth as possible.</p>
+<p>By default, you can build apps directly from Corona Simulator, just like you would for iOS or Android. No interaction with Xcode or Visual Studio is needed.</p>
+<p>You will see a new menu item under <code>File</code> => <code>Build</code> in the Corona Simulator which presents a new build dialog for desktop apps: on the Mac, you&#8217;ll be able to build Mac apps, and on Windows, you&#8217;ll be able to build Win32 apps.</p>
+<h3>Transitioning from Mobile to Desktop</h3>
+<p>When you target your project to a new platform, we&#8217;ve done a lot of heavy lifting for you.</p>
+<p>If your mobile project is fully functional in the Corona Simulator, then your project should easily port over as a desktop app.</p>
+<p>There are inevitably going to be a few things you&#8217;ll want to do: testing, tweaks (e.g. window size, behavior, and title) in <code>build.settings</code>, etc.</p>
+<p>Depending on your app design/project, you&#8217;ll also want to think about issues like:</p>
+<ul>
+<li>what&#8217;s appropriate on a desktop-sized screen such as window size, layout and orientation</li>
+<li>whether your touch-based code needs tweaking to work with a mouse</li>
+<li>how to handle plugins/services that aren&#8217;t available on desktop</li>
+<li>etc.</li>
+</ul>
+<h3>Desktop Features</h3>
+<p>In terms of features supported, you should think of the desktop feature set as what&#8217;s available in the Corona Simulator itself. This is a subset of the features supported on iOS/Android.</p>
+<p>For those of you interested in full control — accessing OS-specific features/services via native code, writing plugins, customizing things like menus, etc — you can create a truly native Xcode project (and coming later, a Visual Studio project) to fully customize your app via <a href=https://docs.coronalabs.com/daily/coronacards/osx/>CoronaCards for OS X</a>.</p>
+<h3>Examples</h3>
+<p>Some games port over really well. For example, these games from <a href=https://www.firemaplegames.com/>Fire Maple Games</a> (left), <a href=http://frozengun.com/>FrozenGun</a> (center) and <a href=http://www.glitchgames.co.uk/>Glitch Games</a> (right) worked immediately as desktop games:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Lost-City-Main.png><img src="/wordpress/wp-content/uploads/2015/07/Lost-City-Main-300x217.png" alt="Lost City Main" width="230" height="166" class="alignnone size-medium wp-image-63447" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1.png><img src="/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1-98x150.png" alt="Freeze Screenshot 1" width="98" height="150" class="alignnone size-thumbnail wp-image-63446" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/ForeverLost.png><img src="/wordpress/wp-content/uploads/2015/07/ForeverLost-300x184.png" alt="ForeverLost" width="230" height="141" class="alignnone size-medium wp-image-63422" /></a></p>
+<h3>Resources</h3>
+<p>More detail about using Corona on desktop are available in our docs:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html>Mac App Docs</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/win32Build/index.html>Win32 App Docs</a></li>
+</ul>
+<p>If you have more questions, please check out the forums:</p>
+<ul>
+<li><a href=https://forums.coronalabs.com/forum/649-os-x-desktop-app-testing/>Mac App Forums</a></li>
+<li><a href=https://forums.coronalabs.com/forum/650-win32-desktop-app-testing/>Win32 App Forums</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/07/22/mac-app-and-win32-app-open-beta/feed/</wfw:commentRss>
+		<slash:comments>41</slash:comments>
+		</item>
+		<item>
+		<title>Composer GUI Beta Update</title>
+		<link>/blog/2014/06/11/composer-gui-beta-update/</link>
+		<comments>/blog/2014/06/11/composer-gui-beta-update/#comments</comments>
+		<pubDate>Wed, 11 Jun 2014 23:43:32 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[GUI editor]]></category>
+
+		<guid isPermaLink="false">/?p=58796</guid>
+		<description><![CDATA[Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332. 
+
+This update makes significant improvements over the <a href="/blog/2014/04/17/composer-gui-beta/">previous beta</a>. We've focused on polishing the existing feature set as well as improve your workflow. ]]></description>
+				<content:encoded><![CDATA[<p>Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332 (Mac only for now). </p>
+<p>This update makes significant improvements over the <a href=/blog/2014/04/17/composer-gui-beta/>previous beta</a>. We&#8217;ve focused on polishing the existing feature set as well as improve your workflow. Several key features were missing like resizable windows, full-screen mode, zooming in/out, and multiple selection (marquee or shift-click). Plus, all Pro subscribers can start using the Composer GUI right away, no need to enable it in the terminal as required in the previous version.</p>
+<p>We also focused on lots of small things that you don&#8217;t notice until they&#8217;re missing. For example, if you&#8217;re a long-time user of Adobe products, you&#8217;re used to quickly toggling the hand tool by holding down the spacebar. In the latest Composer GUI, you&#8217;ll be able to do the same thing.</p>
+<p>Here&#8217;s a short preview of what you can do in the updated Composer GUI:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/tfyg-MYz3-g" frameborder="0" allowfullscreen></iframe></p>
+<p>If you&#8217;re ready to play, here&#8217;s a <a href=https://github.com/coronalabs/aliens-vs-mutant-mice-final>sample</a> you can use with the latest daily build, the same one we use in the video. And as always, more information is available in our <a href=http://docs.coronalabs.com/daily/composer/>docs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/11/composer-gui-beta-update/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Composer GUI Beta</title>
+		<link>/blog/2014/04/17/composer-gui-beta/</link>
+		<comments>/blog/2014/04/17/composer-gui-beta/#comments</comments>
+		<pubDate>Thu, 17 Apr 2014 14:49:41 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[GUI editor]]></category>
+
+		<guid isPermaLink="false">/?p=58258</guid>
+		<description><![CDATA[Today, we are seeding out a new product that we call the "Composer GUI", a visual editor that allows you to rapidly create scenes, user interfaces, and game levels! 
+
+Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p>[UPDATE: A new <a href=/blog/2014/06/11/composer-gui-beta-update/>Composer GUI Beta</a> is now available]</p>
+<p>Today, we are seeding out a new product that we call the &#8220;Composer GUI&#8221;, a visual editor that allows you to rapidly create scenes, user interfaces, and game levels! </p>
+<p>It allows you to visually design in a drag-and-drop GUI interface. And as the name suggests, the Composer GUI is designed to work in conjunction with the Composer API.</p>
+<p>Here&#8217;s a quick video to give you a sense for what you&#8217;ll be able to do with the Composer GUI:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/K8zLU-2wtYQ" frameborder="0" allowfullscreen></iframe></p>
+<p>In addition, we designed the Composer GUI to be an integrated part of Corona Simulator. When you edit scenes in Composer, the Simulator automatically refreshes just like when you edit/save Lua files. You&#8217;ll also be able to preview individual scenes within Composer itself for even faster iteration.</p>
+<p>As you can see, there are lots of great features. For example, timeline animation and physics body editing will dramatically speed up your app development. We envision Composer GUI being used in many different ways: </p>
+<ul>
+<li>First, it makes Corona even more accessible by allowing people with no coding experience to get up and running very quickly.</li>
+<li>Second, it allows experienced developers to design UIs or levels in a fast and visual way and then refine/augment by further coding.</li>
+<li>Third, it improves team workflow by allowing members like designers to lay a scene out visually before passing it on to developers. </li>
+</ul>
+<h4>Early Beta Access</h4>
+<p>Before I tell you how to get access, I want to mention that the Composer GUI is very much a work in progress. It&#8217;s beta, but a really early beta. So even though we&#8217;ve integrated it into the daily builds, it won&#8217;t be visible by default. It&#8217;s something you&#8217;ll have to &#8220;unlock&#8221;.</p>
+<p>To play with (and unlock) Composer GUI, you&#8217;ll need to have a Pro (or higher) subscription:</p>
+<ol>
+<li>Download <a href=http://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2014.2264 (Mac only for now)</li>
+<li>In Terminal, run the following command:
+<ul>
+<li>
+<pre class="crayon-plain-tag">defaults write com.coronalabs.Corona_Simulator enableExtensions -bool YES</pre>
+</li>
+</ul>
+</li>
+<li>Run the Corona Simulator and you&#8217;ll see an option for &#8216;Corona Composer&#8217; on the Welcome window. It&#8217;s also accessible from the menu: &#8216;Window&#8217; => &#8216;Corona Composer&#8217;.</li>
+</ol>
+<h4>Docs</h4>
+<p>The best way to get up to speed is to go through the <a href=http://docs.coronalabs.com/daily/composer/tutorial.html>tutorial walkthrough</a> which parallels the video, and shows you how to take a <a href=https://github.com/coronalabs/aliens-vs-mutant-mice>starter project</a> and turn it into a really cool <a href=https://github.com/coronalabs/aliens-vs-mutant-mice-final>sample</a>.</p>
+<p>A list of known issues is available at the bottom of the preliminary <a href=http://docs.coronalabs.com/daily/composer/>Composer GUI docs site</a>.</p>
+<h4>Feedback</h4>
+<p>We&#8217;ve created a special <a href=http://forums.coronalabs.com/forum/636-composer-gui-beta-testing/>forum</a> for your feedback/comments.</p>
+<p>
+The Composer GUI furthers our vision of making Corona the tool of choice for designing, developing and distributing rich interactive content. It is still very early in its lifecycle, but we are looking forward to seeing how you use it and to your feedback!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/04/17/composer-gui-beta/feed/</wfw:commentRss>
+		<slash:comments>38</slash:comments>
+		</item>
+	</channel>
+</rss>

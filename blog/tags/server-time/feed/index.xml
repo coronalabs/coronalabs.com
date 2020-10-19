@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>server time &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/server-time/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>server time &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #133</title>
+		<link>/blog/2016/07/22/from-the-forum-issue-133/</link>
+		<pubDate>Fri, 22 Jul 2016 20:42:28 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[Coronium GS]]></category>
+		<category><![CDATA[Game Server]]></category>
+		<category><![CDATA[server time]]></category>
+
+		<guid isPermaLink="false">/?p=67501</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Timing in the real world</h3>
+<p>Ensuring a level playing field is never easy. As long as people have the inclination to circumvent the rules of any given game, they will find a way to create an unfair advantage.</p>
+<p>One of the more popular methods to keep players honest when dealing with time-based reward systems is to use a game-specific time count for users to obtain more lives, coins, or whatever incentivizes gameplay. This technique has been used for quite a while, famously with the ever-popular Candy Crush Saga. The easiest way to check against cheating is by examining the system clock, but that is far too easy for users to manipulate to allow for unearned rewards. So what is a potential alternative? A check against a remote global clock!</p>
+<p>Check out <a href=https://forums.coronalabs.com/topic/64620-time-api-for-user-rewards/ target="_blank">the original thread</a> for best practices when implementing this option.</p>
+<h3>Another bounty of Coronium goodness</h3>
+<p>A couple weeks ago, we talked about Coronium LS, an open-source server targeted directly to the Corona community. It’s a great resource and a good option for a Corona-friendly server while we wait for the official release of Corona Cloud.</p>
+<p>However, there have been some folks talking in hushed whispers about the older <strong>Develephant</strong> gem, <em>Coronium GS</em>. This configuration was popular due to it being “a free Lua real-time multiplayer game server for your Corona SDK games,” to quote the original forum thread.</p>
+<p>It has been a few years since its release, and Coronium GS is now shuttered. However, Develephant has pulled together the majority of its dependencies and made them available to the Corona faithful. Trip down to <a href=https://forums.coronalabs.com/topic/64661-archive-coronium-gs-coronium-game-server/ target="_blank">the original thread</a> and see if it’s something from which you can benefit.</p>
+<h3>The broad-reaching effects of Pokemon Go</h3>
+<p>We all know what it is, and we all know how it has completely taken over. One can barely take a walk in the park without someone trying to lure a rare Pokemon. In my opinion, the most interesting ripple effect that occurs when a mobile app takes hold so completely is the influx of excited players that have great ideas for new, awesome games.</p>
+<p><a href=https://forums.coronalabs.com/topic/64643-augmented-reality-apps-possible-in-corona/ target="_blank">This thread</a> talks about some of the best practices and pitfalls when using Corona as a development platform for an &#8220;augmented reality&#8221; app. Some good details are hidden in the original thread, so read carefully and feel free to ask more questions!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

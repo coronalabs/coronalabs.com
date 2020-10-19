@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>plugins &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/plugins/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>plugins &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #195 &#8211; Pebble Watch, math2D, Sudoku generator, PayPal plugins</title>
+		<link>/blog/coronageek/corona-geek-195/</link>
+		<pubDate>Fri, 14 Oct 2016 00:59:14 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[math2D]]></category>
+		<category><![CDATA[Paypal]]></category>
+		<category><![CDATA[Pebble Watch]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Sudoku]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68483</guid>
+		<description><![CDATA[On this week's Corona Geek podcast, we discussed several new plugins for Pebble Watch, faster math2D operations, Sudoku puzzle generation, and offering PayPal payment options for physical goods. Plus we got a sneak peek at a modular match 3 space RPG game. ]]></description>
+				<content:encoded><![CDATA[<p>On this week&#8217;s Corona Geek podcast, we discussed several new plugins for Pebble Watch, faster math2D operations, Sudoku puzzle generation, and offering <a href=https://marketplace.coronalabs.com/plugin/paypal-plugin target="_blank">PayPal payment options for physical goods</a>. We also got a <a href=http://theoatmeal.com/comics/sneak_peek target="_blank">sneak peek</a> at a modular match 3 space RPG game that&#8217;s being developed for the Corona community by Michael Wilson at Ponywolf. Once the game is complete, the source code, asset pack, and custom sounds will be made available to the community.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/NjU-KpvXZqk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Panelists:</strong></p>
+<ul>
+<li><a href=https://forums.coronalabs.com/user/475753-scottrules44/ target="_blank">Scott Harrison</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=https://www.militantgame.com/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lera</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=https://www.linkedin.com/in/charlesmckeever/ target="_blank">Charles McKeever</a></li>
+<li><a href=http://ponywolf.com/ target="_blank">Michael Wilson</a></li>
+</ul>
+<p><strong>Time Saving Tools:</strong></p>
+<ul>
+<li>Automatically generate project configurations using <a href=http://roaminggamer.com/ target="_blank">Ed&#8217;s Awesome Tool (EAT) for Corona SDK</a>.</li>
+<li><a href=http://cravecreative.com/corona-widget-themes.php target="_blank">Check out the widget theme work</a> Mike Hempfling is doing at Crave Creative.</li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+	<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-195-2016-10-10-pebble-math2d-paypal-plugins.mp3" length="107970874" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Android plugin dependencies update</title>
+		<link>/blog/2016/10/05/android-plugin-dependencies-update/</link>
+		<pubDate>Wed, 05 Oct 2016 21:17:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=68358</guid>
+		<description><![CDATA[Corona Labs will soon be making updates to the plugin framework to improve how plugin developers can handle plugin dependencies for Android. Read further to understand these changes.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-35232" src="/wordpress/wp-content/uploads/2013/05/Icon_Resources_Plugin.png" alt="Corona Plugins" width="122" height="122" />When Corona Labs initially implemented plugins and opened up the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> to the community, plugin developers could include any external library needed by a plugin. This opened up a world of possibilities for plugin developers, but it also introduced some dependency issues for Android that now need to be addressed.</p>
+<p>Plugin dependencies on iOS aren&#8217;t an issue because of how Apple structures their libraries and frameworks. On Android, however, dependencies can lead to problems where different plugins want to use different versions of supporting libraries.</p>
+<p>Google, for instance has two main libraries that other plugins frequently need to use: Android Support Library and Google Play Services. To complicate things, there are multiple versions of these library files available.</p>
+<p>Typically a plugin developer will use the latest version of these libraries when they initially build a plugin. Over time, newer versions of the libraries are released, but plugins are not updated to use these latest versions. This results in plugins that simply don&#8217;t work together. Naturally, as the number of plugins in the marketplace grows, the number of incompatibilities will grow as well. So, over the past few months, our engineers have been working to solve this problem.</p>
+<p>In the coming weeks, we intend to introduce <strong>Dependency Plugins</strong>. These are special plugins that address the various incompatibilities between Android libraries. Essentially, plugin developers will be able to specify plugin dependencies in the <code>metadata.lua</code> of their plugin submission to ensure compatibility with other plugins.</p>
+<p>Once plugins start using these new Dependency Plugins, you should see fewer plugin conflicts. However, as plugins become more dependent on Google Play Services, it will be important for Android devices to have Google Play Services enabled. Thus, if your app user has explicitly <em>disabled</em> Google Play Services and tries to run a Corona app, they will be prompted to re-enable it before your <code>main.lua</code> code runs (a dialog message will guide them through the process).</p>
+<p>We will publish an announcement once the changes to the plugin framework are finalized. In the meantime, please join us in <a href=https://forums.coronalabs.com/forum/654-corona-store-plugins/ target="_blank">Corona Forums</a> to discuss further.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Marketplace paid plugins in closed beta</title>
+		<link>/blog/2016/10/03/corona-marketplace-paid-plugins-in-closed-beta/</link>
+		<pubDate>Mon, 03 Oct 2016 19:28:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[marketplace]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=68307</guid>
+		<description><![CDATA[Paid plugins and assets are coming to the Corona Marketplace soon. Starting October 5, we will begin a closed beta with a select number of plugin developers. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-34463 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2013/05/Corona_Plugin_logo2-145x150.png" alt="Corona Plugin" width="145" height="150" />Corona Labs has been working hard behind the scenes to build out a marketplace where you, the developer, artist, or sound engineer, can sell your creations for other developers to use in their apps. Having a centralized, paid <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> will give everyone a chance to share their talents and benefit from being part of a creative community.</p>
+<p>Until recently, the existing marketplace only allowed for free plugins, but that&#8217;s about to change. Starting October 5, we will begin a <em>closed beta</em> to invite a select number of plugin developers to offer their existing works as paid plugins. This closed beta will give us a chance to work closely with experienced plugin authors, refine processes, and make sure our back-end, administration, and dashboard screens are working seamlessly.</p>
+<p>Our goal is to open paid plugins to all plugin developers by the end of October.</p>
+<p>Finally, by the end of November, we hope to have the Corona Marketplace open for all asset types. That means you will be able to offer images, audio, templates, and plugins to the community and find everything you need to create amazing apps, all in one place.</p>
+<p>This said, all stated target dates represent our current goals and they may change.</p>
+<h3>Conclusion</h3>
+<p>A paid marketplace is something we have dreamed of for a long time so we&#8217;re very excited to see it close to becoming a reality. We are also eager to see what great assets and plugins you will create and share with the community. If you&#8217;d like to discuss this further, join us in the <a href=http://forums.coronalabs.com/index.php?app=core&module=search&do=viewNewContent&search_app=forums target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek After Dark #26 &#8211; Plugins for GPGS, Bluetooth, Touch ID, Firebase, Android address book and more</title>
+		<link>/blog/coronageek/corona-geek-after-dark-26/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-26/#respond</comments>
+		<pubDate>Thu, 15 Sep 2016 20:22:04 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[bluetooth]]></category>
+		<category><![CDATA[firebase]]></category>
+		<category><![CDATA[Google Play Games Services]]></category>
+		<category><![CDATA[GPGS]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[touch id]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=68070</guid>
+		<description><![CDATA[On Corona Geek After Dark #26, we talked about several exciting new plugins for Corona SDK. From Google Play Games Services, low energy Bluetooth, Touch ID, and Firebase to an Address Book for Android, each of these plugins are either on the Corona Marketplace now or are coming soon.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.pngalt=" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On Corona Geek After Dark #26, we talked about several exciting new plugins for Corona SDK. From Google Play Games Services, low energy Bluetooth, Touch ID, and Firebase to an Address Book for Android, these plugins are either on the Corona Marketplace now or are coming soon.</p>
+<p>We also got a special peek behind the scenes look at how game sales for <a href=http://www.elite-games.net/games/royalheroes.html target="_blank">Royal Heroes</a> compare on Steam versus iOS and Android and Noah Malewicz showed off his new <a href=https://itunes.apple.com/us/app/loopy-hoops/id1142858851?mt=8 target="_blank">LoopyHoops game</a> for iOS and Android. You can listen to the full podcast episode, or catch a replay of a specific topic below. </p>
+<p>Enjoy!</p>
+<p><strong>Part 1 &#8211; Google Play Games Services for Corona SDK</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/2K5n2Dd5PPI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 2 &#8211; Android Bluetooth Plugin for Corona SDK</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/QSKQVdbFUvk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 3 &#8211; Android Address Book Plugin for Corona SDK</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/aDOjfNCVB-Q?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 4 &#8211; Firebase Plugin for Corona SDK</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/HgSo9j4WGs8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 5 &#8211; Creating <a href=http://cravecreative.com/website-template.php target="_blank">App Marketing Landing Pages</a></strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/KbCFoyeUE4M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 6 &#8211; LoopyHoops Game for iOS and Android</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/UIqcA9IJQwA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 7 &#8211; Steam Game Sales Numbers vs Android vs iOS</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/CAboggwZIcc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Part 8 &#8211; Wireless Apple Ear Buds &#8211; Good or Bad?</strong><br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/xhThnlJFMs4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-26/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-26-gpgs-touch-id-steam-sales.mp3" length="149127388" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek After Dark #25 &#8211; Steam plugin, EAT, Coronium LS, CoronaCon, LuaConf, Win32 Pro Tips</title>
+		<link>/blog/coronageek/corona-geek-after-dark-25/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-25/#respond</comments>
+		<pubDate>Wed, 03 Aug 2016 16:07:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67707</guid>
+		<description><![CDATA[On Corona Geek After Dark #25, we talked about EAT (Ed's Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/fihLngJh_bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On Corona Geek After Dark #25, we talked about EAT (Ed&#8217;s Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-25/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-25-2016-08-03.mp3" length="153789721" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>MediaBrix ad/monetization plugin now available</title>
+		<link>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/</link>
+		<comments>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 03 May 2016 11:39:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[MediaBrix]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=66040</guid>
+		<description><![CDATA[Corona Labs announces a new ad/monetization partner in MediaBrix. Learn more about the MediaBrix plugin and how to use it in your apps.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/03/mediabrix.png rel="attachment wp-att-66067"><img class="alignright wp-image-66067" style="margin: 2px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/mediabrix-300x97.png" alt="mediabrix" width="241" height="78" /></a>Corona Labs is pleased to announce the availability of the <a href=https://www.mediabrix.com/ target="_blank">MediaBrix</a> plugin for both iOS and Android.</p>
+<p>MediaBrix has one goal – to create and deliver the most meaningful, contextual and emotional ad experiences for our premium brand partners in-app! 85% of Ad Age’s top global brands trust MediaBrix to curate the most premium emotional moments native to every app environment. You’ve carefully built your app environment for superb user interaction, flow and engagement; and we’ve taken the same care into building an emotional product suite that benefits brands and app developers in a big way! Plug into our SDK and choose which emotional moment makes sense for your app and start enjoying 2X the CPMs, that are to garner you, increased engagement and reduced user churn. MediaBrix solely provides brand advertising dollars and does not accept UA campaigns.</p>
+<h3>Rally</h3>
+<p>Rally is intended to encourage the user during times of mild success or challenge.  The format is similar to an interstitial ad, but one that appears during breaks to encourage users as they navigate the app experience. Examples include:</p>
+<ul>
+<li>Games &#8211; User levels up</li>
+<li>Fitness &#8211; User completes an exercise</li>
+<li>Music – User completes a song they like</li>
+</ul>
+<h3>Rescue</h3>
+<p>Rescue is a value exchange moment that requires the user to perform an engagement in return for an app reward. When the user is stuck or needs help, the sponsoring brand becomes the hero by offering timely assistance. Examples include:</p>
+<ul>
+<li>Games – User fails to pass a level more than one</li>
+<li>General – User wants locked content but unwilling to pay</li>
+</ul>
+<h3>Reward</h3>
+<p>Reward is presented during high achievement moments when the user is feeling happy and excited. Reward allows a brand to emotionally target achievements/milestones. This creates a halo effect on the brand and users reciprocate by engaging with the assets in a genuine fashion.  Example include:</p>
+<ul>
+<li>Games – User obtains a new high score</li>
+<li>Fitness – User has a new high fitness achievement</li>
+<li>Finance – User achieved a weekly or monthly budget</li>
+</ul>
+<p>You could also integrate all three; &#8220;rescue&#8221;, &#8220;rally&#8221; and/or &#8220;reward&#8221; at different moments within the same app. Rewards and rescue require that your app provide a reward, so that, the user loyalty remains with the app.</p>
+<p><a href=http://mediabrix.com/developers/ target="_blank">Learn More</a>.</p>
+<h3>What do I need to do?</h3>
+<ol>
+<li>Open an account with MediaBrix and register your app(s) at <a href=https://platform.mediabrix.com/signup target="_blank">https://platform.mediabrix.com/signup</a></li>
+<li>MediaBrix will contact you and review your apps’ Break Through Moments™ to insure a continuous and uninterrupted experience</li>
+<li>Mediabrix approves account and sends app ID and zone names</li>
+<li>Review the <a href=http://knowledge.mediabrix.com/ target="_blank">Knowledge Center</a> documentation*.  Review each ad product’s customization</li>
+<li>Provide MediaBrix custom images and messaging to make the ad product contextual to your app and moment</li>
+<li>Integrate the plugin and create a test app for MediaBrix to review</li>
+<li>MediaBrix approves and sets app to get live ads</li>
+</ol>
+<p>*Knowledge Center access requires account approval</p>
+<h3>How do I integerate MediaBrix?</h3>
+<p>Using MediaBrix in your app is just like other ad plugins, you&#8217;ll need to add code to  your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.mediaBrix&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true }
+        },
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },
+}</pre><p>In addition, if building for iOS, add the following key-value pair within the <code>iphone-&gt;plist</code> table of <code>build.settings</code>.</p><pre class="crayon-plain-tag">settings =
+{
+    iphone =
+    {
+        plist =
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+        },
+    },
+}</pre><p>Then in your <code>main.lua</code> file, <code>require()</code> the plugin, set up a basic ad event listener, and initialize MediaBrix, substituting the unique app ID provided by MediaBrix in place of <code>"YOUR_APP_ID"</code>:</p><pre class="crayon-plain-tag">local mediaBrix = require( &quot;plugin.mediaBrix&quot; )
+
+local function adListener( event )
+
+    if ( event.phase == &quot;init&quot; ) then  -- Successful initialization
+        print( event.isError )
+    end
+end
+
+-- Initialize MediaBrix
+mediaBrix.init( adListener, { appId=&quot;YOUR_APP_ID&quot; } )</pre><p>After successfully initializing the plugin, you can load an ad using <a href=https://docs.coronalabs.com/plugin/mediaBrix/load.html target="_blank">mediaBrix.load()</a>, substituting one of the placement IDs provided by MediaBrix in place of <code>"PLACEMENT_ID"</code>:</p><pre class="crayon-plain-tag">mediaBrix.load( &quot;PLACEMENT_ID&quot; )</pre><p>Finally, when you&#8217;re ready, display the ad via <a href=https://docs.coronalabs.com/plugin/mediaBrix/show.html target="_blank">mediaBrix.show()</a>, using the same placement ID associated with the ad that was loaded:</p><pre class="crayon-plain-tag">mediaBrix.show( &quot;PLACEMENT_ID&quot; )</pre><p>Note that the MediaBrix plugin also offers the <a href=https://docs.coronalabs.com/plugin/mediaBrix/isLoaded.html target="_blank">mediaBrix.isLoaded()</a> API to check whether an ad is loaded in advance of showing it.</p>
+<h3>Ad events and phases</h3>
+<p>Like other ad plugins, the MediaBrix plugin reports various <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/index.html target="_blank">event</a> properties, and among these, the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">event.phase</a> property can be associated with various function calls and the user&#8217;s interaction with ads. Please see the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">documentation</a> for details.</p>
+<h3>Conclusion</h3>
+<p>Learn more about the <a href=https://docs.coronalabs.com/plugin/mediaBrix/index.html target="_blank">MediaBrix plugin</a>, or see it in action by downloading the <a href=https://github.com/coronalabs/plugins-sample-mediabrix target="_blank">sample app</a> from GitHub.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek After Dark #20 &#8211; Stripe Plugin, Roof Rack Ranger, and Dancing Cat Apps</title>
+		<link>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/#respond</comments>
+		<pubDate>Thu, 10 Mar 2016 21:50:29 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66098</guid>
+		<description><![CDATA[This episode of Corona Geek After Dark we discuss Jason Schroeder's new amazing Stripe plugin, an existing app for alerting cyclists about low clearance hazards, and the mesmerizing attraction to augmented reality dancing cat apps. Enjoy!]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/i-7gsW6Iv-w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On last Wednesday&#8217;s Corona Geek After Dark, we discussed Jason Schroeder&#8217;s new amazing <a href=http://store.coronalabs.com/plugin/stripe/ target="_blank">Stripe plugin</a>, an existing app for <a href=http://roofrackranger.com/ target="_blank">alerting cyclists about low clearance hazards</a>, and the mesmerizing attraction to augmented reality <a href=https://itunes.apple.com/us/app/disco-cats-augmented-reality/id1001269184?mt=8 target="_blank">dancing cat apps</a>. Yep, it&#8217;s a thing folks. You heard it here first! Check the show notes below for links.</p>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a></li>
+<li><a href=http://www.jasonschroeder.com/ target="_blank">Jason Schroeder</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://omnigeekmedia.com/ target="_blank">Rob Miracle</a></li>
+<li><a href=http://thatssopanda.com/ target="_blank">Daniel Williams</a></li>
+<li><a href=http://roofrackranger.com/ target="_blank">Mike Kindig</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-20-2016-02-03-monetization-stripe-coronacon.mp3" length="140447347" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Apple is dropping support for the iAds App Network. What does that mean to you?</title>
+		<link>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/</link>
+		<comments>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/#comments</comments>
+		<pubDate>Wed, 17 Feb 2016 17:30:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[iAds]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65264</guid>
+		<description><![CDATA[Apple has announced that it is going to drop support for iAds. Apps must be updated to remove iAds before June 30. The iAds plugin will be removed as of March 31, 2016. Learn what this means to you.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-full wp-image-59778 alignright" src="/wordpress/wp-content/uploads/2014/10/apple-e1412720862104.png" alt="apple" width="125" height="125" />Recently, Apple <a href=https://developer.apple.com/news/?id=01152016a&1452895272 target="_blank">announced</a> plans to drop support for the iAds advertising network. However it appears that&#8217;s not the case &#8212; instead, they are dropping support for iAds App Network. Although these sound similar, they are quite different.</p>
+<p>The iAds App Network was a feature where you could become an &#8220;advertiser&#8221; and advertise your apps inside other people&#8217;s apps. This app promotion network seems to be what&#8217;s closing down. Apple will not be taking new clients for this program, but it appears that you can still use typical iAds in your app.</p>
+<p>Depending on how you interpret the announcement and subsequent tech blog posts, you may not be confident in iAds. If this is the case, you may want to consider an alternate monetization method such as the <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">Facebook Audience Network</a> or <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">AppLovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/17/apple-is-dropping-support-for-iads-what-does-that-mean-to-you/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Facebook Audience Network plugin: updated rev-share ratio</title>
+		<link>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/</link>
+		<comments>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 23:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65571</guid>
+		<description><![CDATA[Corona Labs has released an update to the Facebook Audience Network monetization plugin. Learn more about how these changes benefit you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-63472" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png" alt="facebook-logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png 150w, /wordpress/wp-content/uploads/2015/07/facebook-logo.png 160w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs has updated the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> monetization plugin.</p>
+<p>Based on feedback, we&#8217;ve decided to set the revenue-sharing ratio for the Facebook Audience Network ad provider plugin at a flat 5% instead of the more complicated &#8220;tier&#8221; system previously announced. This rate applies across the spectrum regardless of ad requests/impressions.</p>
+<p>To get started with the Facebook Audience Network plugin, see our <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">recent announcement</a> for the plugin, or see the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">documentation</a>. We thank our developer community for their feedback and support!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>AppLovin plugin: now with rewarded/incentivized ads</title>
+		<link>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/</link>
+		<comments>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 02:03:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65538</guid>
+		<description><![CDATA[Learn more about recent updates to the AppLovin plugin which let you offer virtual rewards to users in exchange for watching ads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />We are pleased to announce a new feature in the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin: rewarded/incentivized video ads! These ads &#8212; in contrast to standard graphical interstitial and video interstitial ads &#8212; can be implemented to reward users with some form of in-app currency upon viewing the ad. For example, if your game uses &#8220;coins&#8221; as an in-app currency, you can award the player with some coins each time they view a rewarded video ad.</p>
+<h3>AppLovin setup</h3>
+<p>To implement rewarded/incentivized ads, you must enable and configure them on a per-app basis within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>. The process is straightforward: basically just enable the feature, choose a frequency capping option, set up the virtual currency, select the modal options, and save your settings.</p>
+<h3>API changes</h3>
+<p>To use rewarded/incentivized ads within Corona, simply add the <code>isIncentivized</code> parameter (boolean value of <code>true</code>) to your <a href=https://docs.coronalabs.com/daily/plugin/applovin/load.html target="_blank">applovin.load()</a>, <a href=https://docs.coronalabs.com/daily/plugin/applovin/show.html target="_blank">applovin.show()</a>, or <a href=https://docs.coronalabs.com/daily/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> API calls. For instance:</p><pre class="crayon-plain-tag">applovin.load( true )
+applovin.show( true )
+applovin.isLoaded( true )</pre><p>Note that incentivized ad offers can be limited to a certain amount in a given day, defined under &#8220;frequency capping&#8221; in the <a href=https://www.applovin.com/manage>AppLovin developer portal</a>. If you are using frequency capping, we recommend that you check for an <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html>event.phase</a> value of <code>"validationExceededQuota"</code> to determine if the limit has been reached. When this occurs, you may consider showing a normal graphical or video interstitial ad instead.</p>
+<h3>Listener changes</h3>
+<p>When using rewarded/incentivized ads, you can use the same event listener function as always, although you will find some new data passed in relation to incentivized ads.</p>
+<p>First and foremost, the <code>event</code> table will contain a new entry called <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/data.html target="_blank">event.data</a>. This is a table containing key-value pairs related to incentivized/rewarded video events. For instance, after a user has successfully completed watching a video, <code>event.data</code> will contain the key-value pairs associated with the rewarded currency:</p>
+<ul>
+<li><code>event.data.currency</code> — The type of currency.</li>
+<li><code>event.data.amount</code> — The amount of currency rewarded.</li>
+</ul>
+<p>In addition, the <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html target="_blank">event.phase</a> string may be one of the following values, all specifically related to incentivized/rewarded video ads:</p>
+<ul>
+<li><code>"declinedToView"</code> — Indicates that the user chose &#8220;no&#8221; when prompted to view the ad.</li>
+<li><code>"validationSucceeded"</code> — Indicates that the user viewed the ad and that their reward was approved by the AppLovin server.</li>
+<li><code>"validationExceededQuota"</code> — Indicates that the AppLovin server was contacted, but the user has already received the maximum amount of rewards allowed in a given day.</li>
+<li><code>"validationRejected"</code> — Indicates that the AppLovin server rejected the reward request.</li>
+<li><code>"validationFailed"</code> — Indicates that the AppLovin server could not be contacted.</li>
+</ul>
+<h3>In summary</h3>
+<p>This new addition to the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin gives you even more options for engaging and monetizing your users. For more information, please read the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

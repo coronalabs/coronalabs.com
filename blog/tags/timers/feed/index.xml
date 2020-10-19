@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>timers &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/timers/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>timers &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #144 &#8211; Improving Touch Driven Game Performance Using Touch Coalescing</title>
+		<link>/blog/coronageek/corona-geek-144/</link>
+		<comments>/blog/coronageek/corona-geek-144/#respond</comments>
+		<pubDate>Mon, 01 Jun 2015 21:57:55 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[masking]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[timers]]></category>
+		<category><![CDATA[Touch Events]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62929</guid>
+		<description><![CDATA[On last week's Corona Geek we hung out with Corona Developer, Caleb Place to talk about his popular particle effects library, CBEffects. Today we talked about improving the performance of touch driven game logic using touch coalescing. We also looked at using masking to create a circular dial timer, similar to what we've look at before from Jason Schroeder. Watch the panel discussion and download the code for details.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/B2vp1-ox8L8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we <a href=/blog/coronageek/corona-geek-143/>hung out with Corona Developer, Caleb Place</a> to talk about his popular particle effects library, CBEffects. Caleb shared how CBEffects came to be and why he uses Lua and Corona for development over other platforms.</p>
+<p>Today we talked about <a href=https://github.com/roaminggamer/CoronaGeek/blob/master/Hangouts/Tips_and_Tricks/touchCoalescing.zip target="_blank">improving the performance of touch driven game logic using touch coalescing</a>. We also looked at <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/dialTimer.zip target="_blank">using masking to create a circular dial timer</a>, similar to what we&#8217;ve seen before from <a href=http://www.jasonschroeder.com/2015/02/25/timer-2-0-library-for-corona-sdk/ target="_blank">Jason Schroeder</a>.</p>
+<p>We also got to talk with QuestLord developer, Eric Kinkead about his <a href=http://www.questlord.com/ target="_blank">coming release of QuestLord 2</a> and his fun camera app, Camera Pixel. Eric did some creative things with Pixel Camera, using Corona filter effects and custom rotation using Lua tables. He published the app as part of <a href=http://shipjam.weebly.com/ target="_blank">last year&#8217;s ShipJam event</a>. The app is free and fun, so <a href=https://itunes.apple.com/us/app/pixel-camera/id877241872 target="_blank">download Pixel Camera</a> and give it a try.</p>
+<p><strong>Congratulations Jason Schroeder!</strong></p>
+<p>Congrats to Jason Schroeder (yes, the same person mentioned earlier). Jason played the wheels off of Boom Dots as part of May&#8217;s Corona Geek Games challenge and earned himself a $50 gift card with a final high score of 526. Also congrats to Luis Subirachs for coming in a close second with 445 as his top score. Luis and Jason battled it out for several days, besting each other&#8217;s scores every time. But in the end, Jason managed to secure his place as champion.</p>
+<p>We&#8217;ll announce June&#8217;s Geek Game Challenge later, on social media. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ).</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-143/>Corona Geek #143 &#8211; Hanging out with CBEffects author Caleb Place</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode <strong>CoronaGeek</strong> to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Corona Development Tips and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-144/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-144-2015-06-01-touch-coalescing.mp3" length="84375392" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Wednesday FAQs: Timers and Events</title>
+		<link>/blog/2013/05/29/wednesday-faqs-timers-and-events/</link>
+		<comments>/blog/2013/05/29/wednesday-faqs-timers-and-events/#comments</comments>
+		<pubDate>Wed, 29 May 2013 20:19:11 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[timers]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34783</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.</p>
+<h2>1. I&#8217;m trying to use timer.performWithDelay to add a delay in my code but it&#8217;s not working.</h2>
+<p>The API doesn&#8217;t do an actual delay within the code chunk but schedules a callback after the delay time has occurred. This is what is known as a non-blocking call.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )
+print( &quot;Test 3&quot; )</pre><p></p>
+<p>The above will print the strings in the following order in the terminal window: &#8220;Test 1&#8221;, &#8220;Test 3&#8221;, &#8220;Test 2&#8221;. The last message is printed 1 second (1000 milliseconds) after the delay was scheduled.</p>
+<p>If you want the strings to print out in the correct order, the statements after the timer.performWithDelay call must be moved to the callback routine.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+    print( &quot;Test 3&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )</pre><p></p>
+<p>If you need to delay sections of your code from executing, it needs to be done in a timer callback function (as shown above). Corona SDK doesn&#8217;t have any blocking <strong>delay()</strong> or <strong>sleep()</strong> functions.</p>
+<h2>2. I have a loop where I update an object on the screen but it seems to only update once.</h2>
+<p></p><pre class="crayon-plain-tag">local circle = display.newCircle( 10, 20, 25 )
+for i = 1, 20 do
+    circle.x = circle.x + i
+    circle.y = circle.y + i
+end</pre><p></p>
+<p>The above code moves the circle down the screen at a very fast pace. It&#8217;s not a practical example, but looking at the code you would think that the circle is changing position each time through the <strong>for</strong> loop. In fact it only changes once &#8212; at the end of the code chunk. The circle&#8217;s x and y properties are computed each time through the loop, but it&#8217;s actual position (rendering of the object on the screen), only occurs after the code chunk has finished executing.</p>
+<p>You also need to keep this in mind if you are trying to align objects multiple times in the same code chunk using <strong>setReferencePoint</strong>. Only the last <strong>setReferencePoint</strong> takes affect because the screen update only occurs after the code chunk has executed.</p>
+<h2>3. I&#8217;m doing some long calculations in my code and my touch listeners are not working. What&#8217;s happening?</h2>
+<p>If you try to add delays in your code using <strong>for</strong> loops or looping a long time within the same code chunk, you will affect the performance of your app. All events are fired after the code chunk ends, so as long as your code chunk is running, no listener events are called. All touch, timer, network, etc. events occur after the code chunk finishes.</p>
+<p>If you do need to loop for a long time within your code, you should break it up into multiple code chunks (using <strong>timer.performWithDelay</strong>) to allow events to occur.</p>
+<h2>4. I use timer.performWithDelay but the delays times don&#8217;t seem right.</h2>
+<p>The delay time is an approximate time and is fired based on the Frames Per Second (FPS) value set in the <strong>config.lua</strong> file. The default is 30 FPS or 33.33 milliseconds. You can also set it to 60 FPS (16.166 milliseconds). As mentioned in question 3, event timers are fired at the end of the code chunk. If the code contains loops that extend beyond the timer&#8217;s value, the timer event may occur later than expected. There is a timer listener parameter, <strong>event.time</strong>, that will give you the time when the event was finally fired that you can use to calculate the true delay.</p>
+<p>Another thing should be mentioned about the timer. The time value you specify is in milliseconds and is tied to either the default frame rate (30 FPS) or what you set in <strong>config.lua</strong>. If you set a value less than the frame rate time (16 or 33 milliseconds), the timer will fire every frame time instead of the actual time you set. So if you set the delay time to 10 milliseconds and you&#8217;re using the default 30 FPS, the delay will occur every 33.333 milliseconds.</p>
+<p></p><pre class="crayon-plain-tag">local function listener( event )
+    print( &quot;Timer ID and time: &quot;, event.source, event.time )
+end
+
+print( &quot;Starting time: &quot;, system.getTimer )
+timer.performWithDelay( 1, listener, 1 )
+timer.performWithDelay( 10, listener, 1 )
+timer.performWithDelay( 25, listener, 1 )
+timer.performWithDelay( 40, listener, 1 )
+print( &quot;Ending time: &quot;, system.getTimer )</pre><p></p>
+<p>This displays the following in the terminal window (the times are in milliseconds).</p>
+<p></p><pre class="crayon-plain-tag">Starting time:  29.97
+Ending time:    30.343
+Timer ID and time:  table: 0x11fb64b20  61.031
+Timer ID and time:  table: 0x11fb17d80  61.031
+Timer ID and time:  table: 0x1016bbd90  61.031
+Timer ID and time:  table: 0x10e534c50  93.692</pre><p></p>
+<p>The bottom line is the timer delays are approximate. You can use the <strong>event.time</strong> if you need to adjust for any differences between the expected delay time and the actual delay time.</p>
+<h2>5. I have a timer call that&#8217;s not passing my parameter when done. What&#8217;s wrong?</h2>
+<p>This is a common issue for new developers in Lua. <strong>timer.performWithDelay</strong> expects to receive a reference to a function. This is common with all other APIs that expect a &#8220;listener&#8221; or &#8220;completion&#8221; reference.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    print( &quot;Value is &quot;, value )
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )</pre><p></p>
+<p>The above will print &#8220;25&#8221; because <strong>doThis( 25 )</strong> is called before the delay is scheduled. The delay is performed but the listener is not called because it doesn&#8217;t think any listener was supplied (<strong>doThis</strong> returns nil).</p>
+<p>The solution to this problem is to use Lua closures. Closures allow you to call a function with a parameter and have it return a unique local function reference that uses the supplied parameter when that function reference is called.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    return function()
+        print( &quot;Value is &quot; .. value )
+    end
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )
+timer.performWithDelay( 1000, doThis( 100 ),1 )</pre><p></p>
+<p>Calling <strong>doThis</strong> function from within the <strong>timer.performWithDelay</strong> call will save <strong>value</strong> as a Lua <strong>upvalue</strong> that is associated with the returned function reference. The key thing to remember is <strong>doThis( 25 )</strong> is executed before the delay is schedule and the value returned from the function call is used as the listener&#8217;s address when the timer is fired.</p>
+<p>The nice thing about using closures is they can be called from different places using different parameter values and they return a unique function that uses the supplied parameter. In the above example the listener is called with the value 25 and than later the same listener is called with the value 100. This will print &#8220;25&#8221; and then &#8220;100&#8221; in the terminal window.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/29/wednesday-faqs-timers-and-events/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>justification &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/justification/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>justification &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Display Text Objects</title>
+		<link>/blog/2013/06/26/wednesday-faqs-display-text-objects/</link>
+		<comments>/blog/2013/06/26/wednesday-faqs-display-text-objects/#comments</comments>
+		<pubDate>Wed, 26 Jun 2013 21:12:13 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[justification]]></category>
+		<category><![CDATA[text]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=36836</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.</p>
+<h2>1. I&#8217;m creating lots of display.newText objects and it&#8217;s slowing down my app. Why?</h2>
+<p>It may seem like text is a simple thing to display on the screen but it can be very complicated and time consuming. When you create text with <strong>display.newText</strong>, the text must be first converted into a bit map and then sent to <strong>openGL</strong> so it can be rendered on the screen. The larger the text (in the number of character and font size), the longer this process takes. It also consumes texture memory just like displaying images.</p>
+<h2>2. I&#8217;m moving text around on the screen, will that slow down my app?</h2>
+<p>Moving or scaling text objects does not slow down Corona SDK. If you are changing the text, the bit map needs to be recreated, which can impact the frame rate. The same is true when changing the font size or the font type. These all require a new bit map and may affect performance.</p>
+<h2>3. I&#8217;m using display.newText and see a white or black block where the text should be. What&#8217;s wrong?</h2>
+<p>The black or white block is what you see when the text exceeds the texture limit of the device. Since text objects are converted to bit maps before being displayed, long text strings with a large font size can easily exceed the texture memory limit of some low-end devices. The solution is to limit the amount of text displayed in a single <strong>display.newText</strong> object. You should break up large text objects into multiple text objects.</p>
+<h2>4. How do I align text?</h2>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/06/FAQ31_image-161x300.png" alt="Text Justification" class="alignright size-medium wp-image-36838" /><br />
+Starting with Daily Build 1143 we added text alignment to <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html><strong>display.newText</strong></a>. You can specify &#8220;<strong>left</strong>&#8220;, &#8220;<strong>center</strong>&#8221; and &#8220;<strong>right</strong>&#8221; justification. The only limitation is you can&#8217;t change the justification after the text object has been constructed.</p>
+<p>When we added text justification to <strong>display.newText</strong>, we changed the way parameters are supplied to the function. The parameters are now sent in a Lua &#8220;<strong>option</strong>&#8221; table instead of as individual parameters. <strong>display.newText</strong> still supports the legacy call, but you can&#8217;t use it to justify the text. Be aware that if you call <strong>display.newText</strong> with the new option table, you specify <strong>x</strong> and <strong>y</strong> values, which reference the center of the text object and not <strong>left</strong> and <strong>top</strong> used in the legacy call.</p>
+<p>In order for text justification to work, you must supply the <strong>width</strong> parameter. If the <strong>height</strong> parameter is not supplied, it&#8217;s assumed to be 0 (this may change in the future). Left justification is assumed if no justification is specified.</p>
+<p></p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 128 )
+
+-- Create a rect to show the boundaries of our text fields
+local rect = display.newRect( 50, 35, 200, 150 )
+rect:setFillColor( 40 )
+
+-- Right aligned, single line
+local textOptions1 = { text = &quot;Line 1 right aligned&quot;, x = 100, y = 50, width = 200, align = &quot;right&quot;, font = native.systemFont, fontSize = 14 }
+local text1 = display.newText( textOptions1 )
+text1:setReferencePoint( display.TopLeftReferencePoint )
+text1.x = 50
+
+-- Center alignment, multiple lines
+local textString2 = &quot;Line 1 center aligned\nLine2 center&quot;
+local textOptions2 = { text = textString2, x = 150, y = 100, width = 200, height = 0, align = &quot;center&quot;, font = native.systemFont, fontSize = 14 }
+local text2 = display.newText( textOptions2 )
+text2:setReferencePoint( display.TopLeftReferencePoint )
+text2.x = 50
+
+-- No alignment specified
+local textOptions3 = { text = &quot;Line defaults to left aligned&quot;, x = 200, y = 150, width = 200, font = native.systemFont, fontSize = 14 }
+local text3 = display.newText( textOptions3 )
+text3:setReferencePoint( display.TopLeftReferencePoint )
+text3.x = 50</pre><p></p>
+<p>Text justification also works with custom fonts but you must install the fonts on the Mac or Windows simulator in order to make it work.</p>
+<h2>5. Does display.newEmbossedText work with justification?</h2>
+<p>Currently, text justification for <strong>display.newEmbossedText</strong> objects is not implemented. We hope to have it in a Daily Build soon.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/26/wednesday-faqs-display-text-objects/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

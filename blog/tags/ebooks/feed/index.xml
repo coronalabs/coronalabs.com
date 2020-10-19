@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>eBooks &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ebooks/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>eBooks &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Piece: The Benefits of Creating an eBook Series Over a Standalone App</title>
+		<link>/blog/2013/11/13/guest-piece-the-benefits-of-creating-an-ebook-series-over-a-standalone-app/</link>
+		<pubDate>Wed, 13 Nov 2013 17:03:28 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[eBooks]]></category>
+
+		<guid isPermaLink="false">/?p=51417</guid>
+		<description><![CDATA[Randy Lowenstein is a creative executive with over 15 years of experience in digital media. In 2011, he co-founded <a href="http://www.megapops.com/">Megapops</a>, an interactive children’s entertainment company focused on creating original content for touch devices. The company's flagship property, Millie Was Here, is a series of book apps that follow the imaginary adventures of a real-life dog. The Millie Was Here series has been featured multiple times on the App Store.]]></description>
+				<content:encoded><![CDATA[<p><em>Randy Lowenstein is a creative executive with over 15 years of experience in digital media. In 2011, he co-founded <a href=http://www.megapops.com/>Megapops</a>, an interactive children’s entertainment company focused on creating original content for touch devices. The company&#8217;s flagship property, Millie Was Here, is a series of book apps that follow the imaginary adventures of a real-life dog. The Millie Was Here series has been featured multiple times on the App Store.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/11/Millie-collage.png" alt="Millie collage" class="alignleft size-full wp-image-51421" />When we started our app studio, <a href=http://www.megapops.com/>Megapops</a>, one of the very first decisions we made was to create an app series rather than a single standalone app. It’s a choice that&#8217;s proved to be successful, as working on a series has helped us develop our brand, build an audience, hone our workflow, and maximize marketing efforts. We were developing interactive books so an episodic/serial approach was a particularly good fit. It&#8217;s also a strategy that I believe could benefit apps of all genres. </p>
+<h2>Creating a Brand</h2>
+<p>Branding an app is difficult, but can be easier and evolve more organically if it’s done over time throughout several apps. Each app in a series provides a new opportunity to establish your creative direction, to develop your characters/narrative (where applicable), and to convey your brand’s unique voice and values. This allows you to build a stronger product and develop a deeper relationship with your users over time, which leads to increased brand recognition and consumer loyalty.</p>
+<h2>Building an Audience</h2>
+<p>The most important way a serial approach can help build an audience lies in the inherent ability of a series to cross-promote. Basically, each app in a series serves as an advertisement for every other app that you create.</p>
+<p>When one of our apps happens to get featured in an app store or receive a favorable review on a review site and users download that individual app, they naturally discover our series. Our latest app, <a href=https://itunes.apple.com/us/app/millies-crazy-dinosaur-adventure/id695161183?mt=8>Millie’s Crazy Dinosaur Adventure</a> was recently featured by Apple. Throughout the duration of this feature, all four of the other apps in the series saw a 20-40% increase in downloads.</p>
+<p>App reviewers, bloggers, members of the media, and app store curators are also an important part of the audience, and building a series allows you to connect with them in a similar way. For example, if a blogger/reviewer enjoys the first app in your series, she/he will likely welcome the second and third.</p>
+<p>The media outreach that went along with our first apps, <a href=https://itunes.apple.com/us/app/millie-was-here-book-1-meet/id452174851?mt=8>Meet Millie</a> and <a href=https://itunes.apple.com/us/app/millie-lost-key-millie-was/id452175094?mt=8>Millie &#038; The Lost Key</a> (we actually launched with a pair of apps, one free and one paid), took about a month to complete. With our Halloween-themed release, <a href=https://itunes.apple.com/us/app/millies-book-tricks-treats/id472429219?mt=8>Millie’s Book of Tricks and Treats</a>, we were able to quickly reach out to the same group of people in a single afternoon. Because they were already familiar with the first books, their responses were often immediate. In some cases, we actually had reviews up in a matter of days.</p>
+<p class="ac"><img src="/wordpress/wp-content/uploads/2013/11/Millie-screenshot.png" alt="Millie screenshot"></p>
+<h2>Piloting is Much Harder Than Rolling Out</h2>
+<p>Aside from the branding and audience-building benefits of a series, there are also a number of production benefits. A lot of hard work goes into prototyping and developing an app. A million details need to be worked out on both the creative and engineering fronts. Why start over again with every new release?</p>
+<p>Once you&#8217;ve created a successful “pilot,” you can capitalize on all of that hard work in subsequent releases. You’ve already answered all of the hard questions about creative direction, architecture, style, and editorial voice. You’ve also already created a ton of code, graphics, sound effects, and music. You’ll always have to develop new assets for each new app, but having a library to draw from is a huge head start.</p>
+<p>Production efficiency is definitely one of the key benefits that we’ve seen to a serial approach. From concept to App Store release, our first apps took us about 8 months to develop; our next app took us a fraction of that time and was developed at a fraction of the cost.</p>
+<p>For “Millie’s Crazy Dinosaur Adventure,” we rebuilt everything from the ground up using <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> as our mobile development platform. By using Corona’s set of APIs, we’ve been able to make our apps more modular and easier to code. Also, Corona’s ability to build for multiple platforms with one code base makes it a perfect fit for the “pilot then rollout” model.  </p>
+<h2>Maximizing Your Marketing</h2>
+<p>Another benefit to developing a property rather than a standalone app is in the marketing. Marketing apps is extremely difficult, time consuming, and expensive (especially for independent developers).</p>
+<p>In this bizarre app economy where $0.99 is commonly referred to as &#8220;expensive,&#8221; if every dollar you spend on marketing isn’t generating over a dollar in revenue, you’re losing money. One of the benefits to marketing a series over marketing an individual app is that a single marketing effort can benefit a number of different apps. Your marketing actually becomes more cost-effective with every new app in your series.</p>
+<p>Obviously, not every app will work equally well as part of a series, and not everything I’ve outlined above applies equally to all types of apps, but it’s not that hard to turn most apps into a series of some sort. In fact, even a productivity app can be part of a suite of tools. It takes a little bit of extra planning upfront, but the possible benefits make it worth considering for your next release. In our experience we’ve found it to be a great approach.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

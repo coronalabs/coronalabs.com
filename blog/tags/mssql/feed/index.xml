@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MSSQL &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mssql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>MSSQL &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: Jordanian TV game show &#8220;Arrange it Correctly&#8221; powered by Corona</title>
+		<link>/blog/2016/04/26/case-study-jordanian-tv-game-show-arrange-it-correctly-powered-by-corona/</link>
+		<pubDate>Tue, 26 Apr 2016 18:49:25 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Game Show]]></category>
+		<category><![CDATA[MSSQL]]></category>
+		<category><![CDATA[TV]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=66576</guid>
+		<description><![CDATA[Think Corona SDK is for mobile games? Well it's powering a TV game show. Learn more about how this came to be.]]></description>
+				<content:encoded><![CDATA[<p>Picture this: It&#8217;s 7:00 p.m. and a popular TV game show is coming on. The host with his perfectly-coiffed hair and big smile stands at his lectern and points to a grid of TVs on a wall. Those TVs display categories, dollar amounts, and eventually answers. He also has a display in front of him with the correct answers. Nearby, three contestants stand at their podiums with TVs that show their scores. The contestants have a touch-sensitive screen to write and submit answers on. Behind the scenes, producers, directors, and judges are driving the game, timing commercials, confirming answers, and more.</p>
+<p>Someone had to write software for all of that. They had to network it together with a database and build a complex information system that drives the game. It must have required a huge team of developers and months of development time, right?</p>
+<p>For the <a href=http://www.roya.tv/ target="_blank">Roya TV</a> station in Amman, Jordan, along with a creative Corona SDK development team, it did not. Challenged to put together a TV game show in just 30 days, <a href=https://www.maysalward.com/ target="_blank">Maysalward</a>, a 16-person studio in Amman and Irbid, Jordan, beat out seven other studios to get the job of creating <a href=http://www.roya.tv/shows/196-%D8%B1%D8%AA%D8%A8%D9%87%D8%A7-%D8%B5%D8%AD/ target="_blank"><em>Arrange it Correctly</em></a><em>,</em> a TV game show about putting things in the right order. The other studios all wanted six months to do the job, but using Corona SDK, the team knew they could finish the job in much less time. Maysalward challenged a four person team consisting of a senior designer, senior developer, and two application testers to build the game. The team put Corona to the test and met their deadline, albeit with some 22-hour work days.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LZDrdeZQDgU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>The game</h3>
+<p>In <em>Arrange it Correctly,</em> three teams of two players stand at podiums with a touch screen Windows device for entering answers. This is driven by a full screen Windows desktop app. On the front of each podium is another Windows device running a full screen app to display the current score of each team. Behind the host, the audience sees a huge display known as the &#8220;big board&#8221; with the core game running. Another Corona-built Windows desktop app monitors the database and delivers the game output to the big board via HDMI cable. The host uses an Android tablet that displays the answers and other information. In the control room, the show&#8217;s director and producers control the pace of the game from a control computer. It&#8217;s all powered by a .NET system connected to a Microsoft SQL server.</p>
+<p>Apps built with Corona SDK can run on all of these devices. <a href=https://www.maysalward.com/ target="_blank">Maysalward</a> chose Corona because of how it could both connect to networked, database-driven solutions and create the game&#8217;s displays easily.</p>
+<p>According to Tariq Khatib, the senior developer on the project, &#8220;We used reusable stable code from other previous projects which shortened the total time needed for database connections.&#8221; Nour Khrais, Founder and CEO of Maysalward, added, &#8220;We have good experience with Corona and it&#8217;s a smooth development when it comes to mobile and desktop.&#8221;</p>
+<p>Corona&#8217;s ease and speed of development for both mobile and desktop came into play as the project moved towards the deadline. &#8220;It was really easy to manage change requests. Sometimes we did immediate onsite changes based on visual feedback from [the] TV Presenter or director or producer&#8230; it was really quick to recompile and replace old versions.&#8221; Khatib continued.</p>
+<p>He concluded &#8220;We are very proud of it, and it could have never been built in this time, with this performance, without Corona. Actually we agreed on the delivery time knowing that Corona can do it.&#8221;</p>
+<h3>Conclusion</h3>
+<p>We are constantly amazed at where we find Corona being used. Developers are using it to create great new entertainment apps, utility apps, and apps to enrich people&#8217;s lives. This may be one of the most unique case studies yet!</p>
+<p>Roya TV has already filmed 40 episodes of <em>Arrange it Correctly </em>with even more to come.</p>
+<p>What amazing things can you do with Corona? Cheer for the Maysalward team by reading more about their success in the <a href=https://forums.coronalabs.com/topic/62726-live-tv-show-contest-with-prizes-for-winners-made-with-corona-sdk/?#entry325559 target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

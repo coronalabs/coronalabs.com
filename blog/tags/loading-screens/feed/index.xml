@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>loading screens &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/loading-screens/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>loading screens &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #129</title>
+		<link>/blog/2016/06/24/from-the-forum-issue-129/</link>
+		<pubDate>Fri, 24 Jun 2016 15:33:27 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[loading screens]]></category>
+		<category><![CDATA[particles]]></category>
+		<category><![CDATA[saved files]]></category>
+		<category><![CDATA[smoke trails]]></category>
+
+		<guid isPermaLink="false">/?p=67265</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Saving in the crypt</h3>
+<p>We all value security. Whether you’re looking for a quality deadbolt for your home’s front door or a solid solution to app data, it never hurts to know all the latest security trends.</p>
+<p>It is and will remain my fervent opinion that obfuscation is the only profitable method to secure data. I was extremely pleased to see a thread pop up that not only discussed methods for saving app data, but contained a cool snippet of code that demonstrated how to encrypt the data one would be saving.</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/63717-creating-a-save-function/ target="_blank">original thread here</a>, and don’t forget to say thanks!</p>
+<h3>Await the loading screen!</h3>
+<p>I always like to have a coroutine method in my back pocket. Nothing major for the most part: just something graphical to let my users know that the app hasn’t gone &#8220;kablooie&#8221; on them &#8212; instead, it&#8217;s just chugging through some data or retrieving an asset from a server.</p>
+<p>Not everyone has a back-up plan for this kind of issue, so I wanted to share a thread where stellar Corona support engineer Rob Miracle talks about several different ways one can invent and implement a loading dialog. No need to make a separate scene if it doesn’t make sense for your app’s workflow &#8212; a simple overlay should do the trick!</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/63654-loading-system/ target="_blank">original thread</a> to find this illuminating discussion!</p>
+<h3>Leaving a smoky trail</h3>
+<p>One of the more interesting and dynamic effects in a physics-based game is representing a trail or &#8220;tail&#8221; of a projectile. Throwing a baseball, hitting a golf ball, tossing a javelin &#8212; all of these become more complex when coupled with this interesting articulation.</p>
+<p>That doesn’t mean that you can’t have fun modifying the code contained in the original thread below to suit your needs! The sky&#8217;s the limit with this base snippet at your disposal: a snake-style game, trailing columns of smoke, maybe some particle details. Have an improvement or addition? Let us know <a href=https://forums.coronalabs.com/topic/63495-smoke-trails target="_blank">in the thread</a>.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

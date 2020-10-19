@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Progress Ring &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/progress-ring/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Progress Ring &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #127 &#8211; Adding A Progress Ring Module and Color Picker To Apps</title>
+		<link>/blog/coronageek/corona-geek-127/</link>
+		<comments>/blog/coronageek/corona-geek-127/#comments</comments>
+		<pubDate>Mon, 02 Feb 2015 22:51:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Color Picker]]></category>
+		<category><![CDATA[external modules]]></category>
+		<category><![CDATA[Progress Ring]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61041</guid>
+		<description><![CDATA[During last week’s Hangout we continued our Composer Library discussion with a look at three ways to share data between scenes, how to store data long term for access between app uses, and how to add fields to a locally stored settings file without losing the original values in the file. This week we took a break from discussing Composer to talk with Jason Schroeder about his excellent Progress Ring module that let’s you add a completely custom progress ring to your games and apps with just one line of code.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4oB7EsbxPSc?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-126/>last week’s Hangout</a> we continued our Composer Library discussion with a look at three ways to share data between scenes, how to store data long term for access between app uses, and how to add fields to a locally stored settings file without losing the original values in the file.</p>
+<p>This week we took a break from discussing Composer to talk with Jason Schroeder about his excellent <a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/?#more-159 target="_blank">Progress Ring module</a> that let’s you add a completely custom progress ring to your games and apps with just one line of code. Jason shared some behind the scenes technical tips and tricks he&#8217;s used to accomplish his goals and even overcome some development challenges. We also looked at Jason&#8217;s <a href=http://www.jasonschroeder.com/2014/03/24/add-a-color-picker-to-your-corona-app-with-one-line-of-code/ target="_blank">Color Picker module</a> for adding a color picker with an alpha channel to your apps.</p>
+<p>Next week we&#8217;ll continue the Composer discussion with a look at creating custom Composer transitions and we&#8217;ll revisit a few of our earlier conversation to cover some development house keeping items.</p>
+<p><strong>Congratulations to January&#8217;s Geek Games Winner</strong></p>
+<p>Congratulations to Greg Pugh at <a href=http://gpanimations.com/ target="_blank">GP Animations</a> for winning January&#8217;s Geek Games. Last month we played <a href=http://chip-chain.com/ target="_blank">Chip Chain on iOS and Android</a> for the chance to win a $50 gift card. The rules were simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. Greg did just that and earned himself a $50 gift card. Who says playing games doesn&#8217;t pay off.</p>
+<p>Also thanks to Dan Williams, Noah Malewicz, Tyler McGraw, and others who tried hard to knock Greg off his winning thrown. Better luck next time gang 🙂</p>
+<p>We&#8217;ll announce February&#8217;s Geek Game challenge later this week. So stay tuned.</p>
+<p><strong>Want to suggest a game?</strong><br />
+The game can be yours or someone else&#8217;s. Games that play for high score on iOS and Android work best. If you have a recommendation, leave it in the comments below.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-126/ target="_blank">Corona Geek #126 &#8211; Sharing Data Between Composer Library Scenes</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Download the code from today&#8217;s Hangout</a></li>
+<li><a href=http://socialpoetry.jasonschroeder.com/ target="_blank">Create Social Poetry</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/03/24/add-a-color-picker-to-your-corona-app-with-one-line-of-code/ target="_blank">Color Picker Module</a></li>
+<li><a href=http://cravecreative.com/corona-widget-theme-1.html target="_blank">Save $5 on Widget Themes from Crave Creative</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Learn to Program Using Corona SDK</a></li>
+<li><a href=http://simon.fearby.com/blog/?p=2134 target="_blank">Explore augmented reality using Corona and Lua</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-127/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-127-2015-02-02-progress-ring-module.mp3" length="76856190" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-127-2015-02-02-progress-ring-module.mp3" length="76856190" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-127-2015-02-02-progress-ring-module.mp3" length="76856190" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-127-2015-02-02-progress-ring-module.mp3" length="76856190" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

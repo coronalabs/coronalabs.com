@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tutorial Treasury &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/tutorial-treasury/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Tutorial Treasury &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum &#8212; Issue #92</title>
+		<link>/blog/2015/10/02/from-the-forum-issue-92/</link>
+		<pubDate>Sat, 03 Oct 2015 00:17:18 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[Tutorial Treasury]]></category>
+
+		<guid isPermaLink="false">/?p=64262</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. Wrap up those variables tight</h3>
+<p>Global and local scoping could be the most important skill to learn when starting in Lua in general, and Corona specifically. Mastering this concept is integral to having a lean, well-formatted project and keeping performance high.</p>
+<p>Editing your variables easily, while keeping your scope module-appropriate was the basis of the below forum thread. The Corona developer who started the discussion was looking for a more simple method to edit their strings, as they would potentially have hundreds of variables that need to be modified. The Corona faithful came out to provide some solid suggestions, including <strong>Caleb P</strong>, who provided some useful code snippets for working and massaging the data.</p>
+<p>Head down to the original thread to read up on how to handle this kind of data, and if you have your own suggestions for a solution, throw them in!</p>
+<p><strong><a href=https://forums.coronalabs.com/topic/59471-packaging-local-variables-debug-library-dangers/ target="_blank">https://forums.coronalabs.com/topic/59471-packaging-local-variables-debug-library-dangers/</a></strong></p>
+<h3>2. Users pushing users, just trying to get to know you</h3>
+<p>Using push notifications in your app is made incredibly easy when working with Corona. There are several push providers and user-maintained libraries that can be employed to bridge the gap between players, and make this big, scary world just a little bit smaller.</p>
+<p>Having server infrastructure to facilitate push notifications is sometimes useful, but not necessary in most use-cases. This is very nice to keep in mind, as if you want to include this functionality in your app, but you don’t have the bandwidth to research and/or maintain a server. A Corona developer recently was looking for this type of implementation, and came up big after doing some research on third party services that work very well with Corona.</p>
+<p>Skip down to the original thread to learn more about this method!</p>
+<p><strong><a href=https://forums.coronalabs.com/topic/59435-can-i-make-users-send-push-notifications-to-other-users/ target="_blank">https://forums.coronalabs.com/topic/59435-can-i-make-users-send-push-notifications-to-other-users/</a></strong></p>
+<h3>3. Important note about Graphics 2.0 filters!</h3>
+<p>This is more of a PSA than a good tip, but it’s important nonetheless and I want to make sure that other developers do not fall into the hole of countless hours of testing, trying to find an already-diagnosed issue.</p>
+<p>There are two shader filters (hue and brightness, specifically) that, in the words of a core Corona engineer, do not “not support transparent regions for performance reasons because supporting zero alpha in a texture would require an if-else branch in the shader. If you apply the hue filter on a texture with regions of zero alpha, you will get undefined behavior in those regions (divide by zero is undefined in a shader), meaning the end result will vary from device to device.”</p>
+<p>There are two solutions here for this issue: Discontinue use of the shader and work around the missing functionality in your graphics assets, or generate your own custom shader effect to replicate the filter functionality. The Corona engineer highlights the best way to create the filter, so you’ve got a leg up. If you’re running into this problem, head over to the original thread to great those tips!</p>
+<p><strong><a href=https://forums.coronalabs.com/topic/59357-ios-9-graphics-transparency-issue target="_blank">https://forums.coronalabs.com/topic/59357-ios-9-graphics-transparency-issue</a></strong></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

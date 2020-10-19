@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>From the Forum &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/from-the-forum/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>From the Forum &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum – Issue #186</title>
+		<link>/blog/2018/08/10/from-the-forum-issue-186/</link>
+		<pubDate>Fri, 10 Aug 2018 21:00:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75940</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h3><a href=https://forums.coronalabs.com/topic/73524-solo-indie-gamer-developers-developing-games/ target="_blank" rel="noopener">Going Indie?</a></h3>
+<p>Many Corona developers start out as solo developers. Some may start as artists, others as programmers and some with skills in both. But when is it time to partner up with someone or work on a team? Should you use a publisher to help with marketing? In <a href=https://forums.coronalabs.com/topic/73524-solo-indie-gamer-developers-developing-games/ target="_blank" rel="noopener">this thread</a>, a developer asks these questions and got great responses.</p>
+<h3><a href=https://forums.coronalabs.com/topic/73487-shadows-for-polygons-and-rects/ target="_blank" rel="noopener">Into the Shadows</a></h3>
+<p>Many 2D games don&#8217;t need dynamic shadows, but when you do, how do you go about it? Corona developer @XeduR has come up with a pretty unique approach. Learn more about what he&#8217;s doing <a href=https://forums.coronalabs.com/topic/73487-shadows-for-polygons-and-rects/ target="_blank" rel="noopener">in this thread</a>.</p>
+<h3><a href=https://forums.coronalabs.com/topic/73501-old-game-dev-versus-modern-game-dev-biggest-hack/ target="_blank" rel="noopener">Old Game Dev vs. Modern Game Dev</a></h3>
+<p>Corona community rock star @roaminggamer has posed a very thoughtful question: What modern dev tools make your life easier today that would have required a lot of code in the golden day of game development? Jump into <a href=https://forums.coronalabs.com/topic/73501-old-game-dev-versus-modern-game-dev-biggest-hack/ target="_blank" rel="noopener">this thread</a> and add your opinion on the things that have impacted you the most.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #185</title>
+		<link>/blog/2018/07/20/from-the-forum-issue-185/</link>
+		<pubDate>Sat, 21 Jul 2018 01:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75901</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h3><a href=https://forums.coronalabs.com/topic/73101-most-optimal-way-to-update-life-bar/ rel="noopener" target="_blank">Life Bars</a></h3>
+<p>Many games allow the main hero (or the enemy spawn) to take incremental damage and as a game developer you need to communicate the current health of the character to the player. There are many ways to do this and there are many stylistic choices for the developer to make. But how do you go about updating the life bar and show damage taken? Several community developers jumped into <a href=https://forums.coronalabs.com/topic/73101-most-optimal-way-to-update-life-bar/ rel="noopener" target="_blank">this thread</a> to show the way.</p>
+<h3><a href=https://forums.coronalabs.com/topic/73309-corona-on-linux-the-ultimate-guide-for-almost-beginners/ rel="noopener" target="_blank">Corona on Linux?</a></h3>
+<p>No doubt, many developers want to use Corona on Linux. It&#8217;s been on the wish list for a long time. While our engineering team looks for time to work on this platform, an enterprising developer figured out how to get Corona working with WINE on Linux. <a href=https://forums.coronalabs.com/topic/73309-corona-on-linux-the-ultimate-guide-for-almost-beginners/ rel="noopener" target="_blank">This thread</a> documents his process for opening up our awesome engine to the Linux world</p>
+<h3><a href=https://forums.coronalabs.com/topic/73316-issue-with-tiled/ rel="noopener" target="_blank">Using Tiled</a></h3>
+<p>Tiled (<a href=https://www.mapeditor.org/ rel="noopener" target="_blank">https://www.mapeditor.org/</a>) is a great tool to layout many styles of games that can be made with Corona. There are several third-party, community-made libraries for using Tiled content, one of the most popular being <a href=https://marketplace.coronalabs.com/app-templates/sticker-knight-platformer rel="noopener" target="_blank">PonyTiled</a> from <strong>@ponywolf</strong>. <a href=https://forums.coronalabs.com/topic/73316-issue-with-tiled/ rel="noopener" target="_blank">This thread</a> helps users figure out why they’re having issues with Tiled and gets them on the right path to building games with this really great tool.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #184</title>
+		<link>/blog/2018/06/29/from-the-forum-issue-184/</link>
+		<pubDate>Sat, 30 Jun 2018 01:10:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75839</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/73137-how-to-use-numbers-greater-than-253/ target="_blank" rel="noopener">Need really big numbers?</a></h4>
+<p>Lua supports numbers up to <code>2^53</code> in value. That&#8217;s <code>9,007,199,254,740,990</code> or 9 Quadrillion. While this may be plenty for most apps, it creates a problem because after a number gets to be a certain value, it either displays in scientific notation (with a visible loss of precision) or when trying to use <a href=https://docs.coronalabs.com/api/library/string/format.html target="_blank" rel="noopener">string.format()</a>. But what if you need to display bigger numbers? Several Corona developers joined <a href=https://forums.coronalabs.com/topic/73137-how-to-use-numbers-greater-than-253/ target="_blank" rel="noopener">this thread</a> to come up with ways to manage massive numbers.</p>
+<h4><a href=https://forums.coronalabs.com/topic/73159-dialog-box-print-one-word-at-a-time-until-the-whole-conversation-is-shown/ target="_blank" rel="noopener">Old-school dialog displays</a></h4>
+<p>If you&#8217;re played any old school role-playing games where your hero interacts with non-player characters (NPCs) to get quests or information you&#8217;re used to having text displayed and scrolled words on a small screen where dialog space is a premium. Today&#8217;s devices give us quite a few more pixels to work with, but how do you go about doing that scrolling dialog in Corona? <a href=https://forums.coronalabs.com/topic/73159-dialog-box-print-one-word-at-a-time-until-the-whole-conversation-is-shown/ target="_blank" rel="noopener">This thread</a> offers up a few different approaches to providing these cool old-school dialogs.</p>
+<h4><a href=https://forums.coronalabs.com/topic/73104-finalize-event-happens-when/ target="_blank" rel="noopener">Finally…</a></h4>
+<p>Corona offers a really cool event that can be attached to objects, including Corona display objects that triggers when an object is being removed. An example of where this is useful, is you might create an enemy that moves on a platform using an <code>enterFrame</code> listener. When you go to remove the enemy, you have to remember to remove the <code>enterFrame</code> listener. Instead you can set up a <a href=https://docs.coronalabs.com/api/event/finalize/index.html target="_blank" rel="noopener">finalize event</a> where you can remove the <code>enterFrame</code> listener when the object is removed using <a href=https://docs.coronalabs.com/api/library/display/remove.html target="_blank" rel="noopener">display.remove()</a> or <a href=https://docs.coronalabs.com/api/type/DisplayObject/removeSelf.html target="_blank" rel="noopener">object:removeSelf()</a>. There is some under-the-hood mystery about when this event actually fires. <a href=https://forums.coronalabs.com/topic/73104-finalize-event-happens-when/ target="_blank" rel="noopener">This thread</a> goes into detail about how to figure out exactly when the finalize event triggers.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #183</title>
+		<link>/blog/2018/06/15/from-the-forum-issue-183/</link>
+		<pubDate>Fri, 15 Jun 2018 21:17:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75827</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72983-custom-timer-make-your-version-so-we-can-share-ways-to-do-things/ target="_blank" rel="noopener">Custom Timers</a></h4>
+<p>Several Corona developers are starting deep discussion topics that you may find interesting. <a href=https://forums.coronalabs.com/topic/72983-custom-timer-make-your-version-so-we-can-share-ways-to-do-things/ target="_blank" rel="noopener">This topic</a> dives into taking an OOP (Object Oriented Programming) approach to using timers based on objects.</p>
+<h4><a href=https://forums.coronalabs.com/topic/73021-luck-elimination-methods/ target="_blank" rel="noopener">Take a chance</a></h4>
+<p>Game designers have to make quite a few decisions when designing games and those decisions could mean the difference between success or not. In <a href=https://forums.coronalabs.com/topic/73021-luck-elimination-methods/ target="_blank" rel="noopener">this thread</a>, the question of how much randomness should a game have is discussed and a link to a great resource on skill vs. chance was shared that every game developer should read.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72911-tvshader-now-available/ target="_blank" rel="noopener">Cool retro TV shader</a></h4>
+<p>Our community is great. They love to share. In <a href=https://forums.coronalabs.com/topic/72911-tvshader-now-available/ target="_blank" rel="noopener">this post</a>, see a great new shader that lets you add a retro-TV look to your game.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #182</title>
+		<link>/blog/2018/06/01/from-the-forum-issue-182/</link>
+		<pubDate>Fri, 01 Jun 2018 22:42:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75804</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72871-design-talks-custom-runtime-events/ target="_blank" rel="noopener">Custom runtime events</a></h4>
+<p>Forum super-star <strong>@roaminggamer</strong> has been bringing up some great topics of discussion in the forums lately. <a href=https://forums.coronalabs.com/topic/72871-design-talks-custom-runtime-events/ target="_blank" rel="noopener">This topic</a> covers a cool item called custom runtime events. These are great ways to easily access code in a module without having to set up complex data passing schemes.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72808-how-do-i-use-tiled-with-corona/ target="_blank" rel="noopener">Using Tiled with Corona</a></h4>
+<p>Tiled (<a href=https://www.mapeditor.org/ target="_blank" rel="noopener">https://www.mapeditor.org/</a>) is a great tool for building 2D game maps and levels. Corona doesn&#8217;t have direct support for it, but that hasn&#8217;t stopped our community developers and there are several systems you can include in your projects that make using Tiled maps easy. <a href=https://forums.coronalabs.com/topic/72808-how-do-i-use-tiled-with-corona/ target="_blank" rel="noopener">This thread</a> discusses some of the more popular and some of the &#8220;need-to-know&#8221; items to make use of this fantastic tool.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72807-is-there-a-way-to-simulate-the-saturation-blending-mode-from-photoshop/ target="_blank" rel="noopener">Saturation blending mode?</a></h4>
+<p>In this post, the user is wanting to simulate the Adobe Photoshop™ Saturation bending mode. Corona supports many of these options through texture filters. Corona developer <strong>@sporkfin</strong> and graphics wiz jumped into <a href=https://forums.coronalabs.com/topic/72807-is-there-a-way-to-simulate-the-saturation-blending-mode-from-photoshop/ target="_blank" rel="noopener">the thread</a> with some additional suggestions to attack this problem.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #181</title>
+		<link>/blog/2018/05/18/from-the-forum-issue-181/</link>
+		<pubDate>Sat, 19 May 2018 00:57:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75785</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72692-your-game-module/ rel="noopener" target="_blank">Do you use a game module?</a></h4>
+<p>Corona community developer extraordinaire @roaminggamer, posed an interesting but simple question in the forums: &#8220;Do you use a game module?&#8221; Asking about how you organize your code. <a href=https://forums.coronalabs.com/topic/72692-your-game-module/ rel="noopener" target="_blank">This active thread</a> covers how many of our experienced developers handle placing their game code in their projects. It&#8217;s well worth the read! </p>
+<h4><a href=https://forums.coronalabs.com/topic/72721-when-are-sprites-needed/ rel="noopener" target="_blank">Need sprites?</a></h4>
+<p>While there are efficiencies in using sprite sheets (or image sheets), do you have to use them? Not always. <a href=https://forums.coronalabs.com/topic/72721-when-are-sprites-needed/ rel="noopener" target="_blank">This thread</a> jumps into circumstances about when you need them and when you don&#8217;t.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72680-need-help-with-eventlistener/ rel="noopener" target="_blank">Taps or touches?</a></h4>
+<p>And when to use them. This thread originates around the question of how to get a ship to fire a laser continuously. How do you get the event listener to make that effect possible? <a href=https://forums.coronalabs.com/topic/72680-need-help-with-eventlistener/ rel="noopener" target="_blank">Learn more</a> from our community developers!</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #180</title>
+		<link>/blog/2018/05/04/from-the-forum-issue-180/</link>
+		<pubDate>Sat, 05 May 2018 00:03:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75732</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72598-console-onedark-theme/ target="_blank" rel="noopener">Console log themes</a></h4>
+<p>If you&#8217;re a Mac user, you can create custom themes for the Corona Console Log window. This is a somewhat hidden feature, but Corona developer @LeoApprope shared a custom theme with the community <a href=https://forums.coronalabs.com/topic/72598-console-onedark-theme/ target="_blank" rel="noopener">in this post</a>.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72583-configlua-fixed-vs-calculated-resolution/ target="_blank" rel="noopener">The computed config.lua vs fixed config.lua</a></h4>
+<p>Understanding what the <code>config.lua</code> does for you can be intimidating for new and experienced Corona developers alike. Developers (including this one) always look for an answer they can write once and use repeatedly. This leads to various attempts where the <code>config.lua</code> just magically works, but there are no shortcuts here. <a href=https://forums.coronalabs.com/topic/72583-configlua-fixed-vs-calculated-resolution/ target="_blank" rel="noopener">This&nbsp;thread</a> dives into the pros and cons of trying to find that perfect <code>config.lua</code>.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72605-problem-help-me/ target="_blank" rel="noopener">Math anyone?</a></h4>
+<p>&#8220;<em>I&#8217;ll never need to use algebra again</em>&#8220;. Many people say that, but at the end of the day, if you&#8217;re going to be making games, you&#8217;re going to be using math. In <a href=https://forums.coronalabs.com/topic/72605-problem-help-me/ target="_blank" rel="noopener">this thread</a>, what started as a simple &#8220;<em>How do I aim and shoot</em>?&#8221; question, led to a great discussion on how Corona treats coordinates and some example code for aiming and shooting too.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #179</title>
+		<link>/blog/2018/04/07/from-the-forum-issue-179/</link>
+		<pubDate>Sat, 07 Apr 2018 17:35:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75535</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72287-coronium-core-html5-builds-coroniumjs/ target="_blank" rel="noopener">HTML5 server awesomeness</a></h4>
+<p>Corona mega-developer <strong>@develephant</strong> has gone full overdrive creating some great tools to go along with HTML5 builds. In his latest creation, he&#8217;s created a plugin to let HTML5 builds work with his <a href=https://marketplace.coronalabs.com/corona-plugins/coronium-core target="_blank" rel="noopener">Coronium Core</a> server product. In addition he&#8217;s created some command line tools to speed up your HTML5 development. Check out the <a href=https://forums.coronalabs.com/topic/72287-coronium-core-html5-builds-coroniumjs/ target="_blank" rel="noopener">goodness here</a>!</p>
+<h4><a href=https://forums.coronalabs.com/topic/72286-useing-tonumber-to-convert-to-binary-hex-ect/ target="_blank" rel="noopener">Converting numbers in Lua</a></h4>
+<p>Most people work in Lua with <code>base 10</code> or decimal numbers, i.e. everything you do is with digits between <strong>0</strong> and <strong>9</strong>. But there are other times where you might want to display numbers in different formats, such as hexadecimal or <code>base 16</code> numbers where digits range from <strong>0</strong> to <strong>F</strong>. In <a href=https://forums.coronalabs.com/topic/72286-useing-tonumber-to-convert-to-binary-hex-ect/ target="_blank" rel="noopener">this thread</a>, <strong>@roaminggamer</strong> addressed an easy way to convert Lua numbers to other representations other than normal numbers.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72278-disable-simulator-error-sound/ target="_blank" rel="noopener">Things that go &#8220;Bleep&#8221;</a></h4>
+<p>In this post, a Corona user was getting odd sounds every time Corona generated a run-time error. After a little investigating, the sounds were being generated by the operating system. On Windows, it&#8217;s standard for apps with errors to play a system sound. On macOS a notification is generated. Both of these sounds are controlled by the operating system. The solution? This <a href=https://forums.coronalabs.com/topic/72278-disable-simulator-error-sound/ target="_blank" rel="noopener">forum post</a> has you covered!</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #178</title>
+		<link>/blog/2018/03/23/from-the-forum-issue-178/</link>
+		<pubDate>Fri, 23 Mar 2018 22:36:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75520</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72117-spamming-buttons-causes-game-to-crash/ target="_blank" rel="noopener">Spamming buttons</a></h4>
+<p>Sometimes repeated button presses are okay, but frequently they’re not. How do you defend against them? In <a href=https://forums.coronalabs.com/topic/72117-spamming-buttons-causes-game-to-crash/ target="_blank" rel="noopener">this thread</a>, our developer community chimed in with some different ways to prevent rapid button presses.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72105-corona-html5-cookie-plugin-release/ target="_blank" rel="noopener">Wow, that was fast!</a></h4>
+<p>We just <a href=/blog/2018/03/20/html5-builds-are-now-in-open-beta/ target="_blank" rel="noopener">announced HTML5 builds</a> in open beta this week and our ever-diligent community developer <strong>@develephant</strong> has already started <a href=/blog/2018/03/22/making-html5-plugins-for-corona/ target="_blank" rel="noopener">creating useful plugins</a>. Check out <a href=https://forums.coronalabs.com/topic/72105-corona-html5-cookie-plugin-release/ target="_blank" rel="noopener">this thread</a> to get an easy to use Cookie Set/Get/Delete plugin.</p>
+<h4><a href=https://forums.coronalabs.com/topic/72095-implementing-daily-quests/ target="_blank" rel="noopener">Daily quests?</a></h4>
+<p>Many games offer players daily tasks to complete. That’s a great way to get players to engage with your app daily and keep them involved with your app. But how do you implement them? Learn a couple of ways of approaching the task in <a href=https://forums.coronalabs.com/topic/72095-implementing-daily-quests/ target="_blank" rel="noopener">this thread</a>.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #177</title>
+		<link>/blog/2018/03/09/from-the-forum-issue-177/</link>
+		<pubDate>Sat, 10 Mar 2018 00:50:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=75462</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2twk0SN rel="noopener" target="_blank">Physics and groups</a></h4>
+<p>Groups are a wonderful way to organize your display objects but sometimes this can create issues for developers using physics. <strong>@roaminggamer</strong> and <strong>@horacebury</strong> contributed <a href=http://bit.ly/2twk0SN rel="noopener" target="_blank">to a thread</a> that explains the problem and offered up some solutions. </p>
+<h4><a href=http://bit.ly/2HnKmIH rel="noopener" target="_blank">Loading large scenes</a></h4>
+<p>Doing tasks in Corona can take time. When you do many tasks in a row, your user interface will block. This can make loading large scenes appear as if your app has frozen. A standard tactic would be to show a progress bar. However, Lua is a single-threaded language that can make it difficult to avoid blocking and allow your progress bar to update. In <a href=http://bit.ly/2HnKmIH rel="noopener" target="_blank">this thread</a>, several Corona developers jumped in and offered suggestions on how to manage loading a large number of assets.</p>
+<h4><a href=http://bit.ly/2DeuJB5 rel="noopener" target="_blank">Making an accordion widget</a></h4>
+<p>There are many different ways to present data to users. A popular web technique is an accordion style display where you click on an item and it expands to show more information. Building this in Corona can be a bit tricky since you need to know the height of other objects to move them around to open space for the added info. In <a href=http://bit.ly/2DeuJB5 rel="noopener" target="_blank">this thread</a>, our wonderful community of developers joined to solve the problem.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank" rel="noopener">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

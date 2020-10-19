@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jump &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/jump/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>jump &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: The Pedestal &#8211; a unique take on a jumping game</title>
+		<link>/blog/2016/04/14/featured-app-the-pedestal-a-unique-take-on-a-jumping-game/</link>
+		<pubDate>Thu, 14 Apr 2016 13:52:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[jump]]></category>
+		<category><![CDATA[ninja]]></category>
+
+		<guid isPermaLink="false">/?p=66464</guid>
+		<description><![CDATA[Learn about the Pedestal, a new minimalist game from Daniel Ivanov in this featured app post.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66469 size-medium" src="/wordpress/wp-content/uploads/2016/04/pedestal01-169x300.jpg" alt="pedestal01" width="169" height="300" />The Pedestal is a fun game based on a minimalist approach. In the game, you play the ninja Akira who has been trapped on a desolate pedestal. Your goal is to survive by jumping to avoid shurikens being thrown at you and avoid being hit by the scythes swinging above you. The game was inspired by Eastern Asian culture and the stories of Edgar Allan Poe.</p>
+<p>The game was recently released by indie developer Daniel Ivanov to the Apple App Store. It contains stunning, eerie sound effects alongside appealing art, which creates an enjoyable atmosphere along with challenging game play. The game takes advantage of Corona SDK&#8217;s physics and particle effect libraries to give the game it&#8217;s punch.</p>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/mstvKwXJ5TQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>You can download it from the Apple App Store for $0.99.</p>
+<p><a href=https://itunes.apple.com/us/app/the-pedestal/id1093740987?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-66270 size-thumbnail" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+<p>What can you do with Corona SDK? <a href=/ target="_blank">Download it for Free</a> and see!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

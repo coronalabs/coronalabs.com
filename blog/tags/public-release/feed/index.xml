@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>public release &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/public-release/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>public release &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New public release: 2016.2830</title>
+		<link>/blog/2016/02/22/new-public-release-2016-2830/</link>
+		<comments>/blog/2016/02/22/new-public-release-2016-2830/#comments</comments>
+		<pubDate>Mon, 22 Feb 2016 21:23:42 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[public release]]></category>
+
+		<guid isPermaLink="false">/?p=65532</guid>
+		<description><![CDATA[Corona Labs has released its latest public version for download. Read more about new features and improvements to the ultimate 2D development platform.]]></description>
+				<content:encoded><![CDATA[<p>We are pleased to announce the availability of <a href=https://developer.coronalabs.com/downloads/coronasdk target="_blank">public release</a> <strong>2016.2830</strong> for Corona SDK, Corona Enterprise, and CoronaCards.</p>
+<p>With this release, both OS X and Windows desktop builds are out of beta. Several people have even had their apps greenlit for publishing on Steam! In addition, our <a href=https://docs.coronalabs.com/guide/tvos/index.html target="_blank">tvOS support</a> moved into beta state and several people have already ported apps to the tvOS app store.</p>
+<h3>Corona Simulator improvements</h3>
+<p>This release also improves upon the Corona Simulator&#8217;s interface, providing you with an even better experience. The big new feature in this regard is the <strong>Simulator</strong> <strong>console window</strong>. Previously, we used either the OS X &#8220;Terminal&#8221; app or the Windows &#8220;Command prompt&#8221; to output Corona console messages. Now, the built-in console window takes on this role and offer some exciting new features, including:</p>
+<ul>
+<li>Both<strong> errors</strong> and <strong>warnings</strong> are highlighted for quick reference</li>
+<li>Easily search for text using the built-in search feature</li>
+<li>Choose from several color themes to suit your preference</li>
+<li>Jump to an error or warning in the log by clicking/selecting its message in the bottom panel</li>
+<li>If you choose to build and copy to a tethered device, the console log will show messages from that device<br />
+<a href=/wordpress/wp-content/uploads/2016/02/console.png rel="attachment wp-att-65840"><img class="wp-image-65840 size-large" style="margin-top: 20px;" src="/wordpress/wp-content/uploads/2016/02/console-1024x618.png" alt="console" width="96%" /></a></li>
+</ul>
+<h3>Other highlights/notes</h3>
+<p>Other additions and changes to this release include:</p>
+<ul>
+<li>Android builds now <a href=/blog/2016/02/16/introducing-new-android-6-features/ target="_blank">support</a> Android 6 &#8220;Marshmallow&#8221;</li>
+<li>Windows, OS X, iOS, and tvOS game controller support; on Windows, support for both <strong>DirectInput</strong> and <strong>XInput</strong>; on OS X, support for both <strong>HID</strong> and <strong>MFi</strong> controllers</li>
+<li>iOS device builds now target the iOS 9.2 SDK</li>
+<li>3D Touch support for supported devices like the iPhone 6S and 6S Plus</li>
+<li>Corona apps now respect the &#8220;Auto-Rotate&#8221; setting on Android</li>
+<li>New <a href=https://docs.coronalabs.com/guide/graphics/textureManagement.html target="_blank">texture loading/management</a> APIs</li>
+<li>Graphics V1 compatibility is now deprecated and may be removed in a future release</li>
+</ul>
+<h3>In summary</h3>
+<p>As with each new public release, we continue to forge ahead, introducing new core improvements to make Corona better and enhance the Corona developer experience. For a complete list of additions and changes to release <a href=https://developer.coronalabs.com/downloads/coronasdk target="_blank">2016.2830</a>, see the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2016.2830 target="_blank">release notes</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/22/new-public-release-2016-2830/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>CoronaViewer: Instant on-device previews | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/ae4fcfbed4b08dd68cd924dabf522eb5.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Design[107,170] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="One of the things app developers love about Corona is the fast iteration. Today, we&#039;re taking that one step further with CoronaViewer - edit your project from your desktop and preview them right away on your device!" />
+
+<meta name="keywords"  content="coronaviewer,ios,on-device,preview,corona sdk,daily build,news &amp; announcements" />
+
+<link rel="canonical" href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/" />
+<meta property="og:title" content="CoronaViewer: Instant on-device previews | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2014/06/26/coronaviewer-instant-on-device-previews/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2013/10/Flat_Corona_250x250.png" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. Today, we&#039;re going to take that one step further with CoronaViewer. It&#039;s going to dramatically improve your productivity. With CoronaViewer, you&#039;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. CoronaViewer is an app that you run on your device. It works by sync&#039;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#039;ll automatically be updated to CoronaViewer. Here&#039;s a quick video showing how CoronaViewer works in practice: CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#039;ll find it&#039;s well worth it to be able to preview your app instantly on device. To access CoronaViewer, you&#039;ll need a Pro (or higher)" />
+<meta property="article:published_time" content="2014-06-26T12:32:25Z" />
+<meta property="article:modified_time" content="2014-06-26T12:32:25Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="CoronaViewer: Instant on-device previews | Corona Labs" />
+<meta name="twitter:description" content="One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. Today, we&#039;re going to take that one step further with CoronaViewer. It&#039;s going to dramatically improve your productivity. With CoronaViewer, you&#039;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. CoronaViewer is an app that you run on your device. It works by sync&#039;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#039;ll automatically be updated to CoronaViewer. Here&#039;s a quick video showing how CoronaViewer works in practice: CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#039;ll find it&#039;s well worth it to be able to preview your app instantly on device. To access CoronaViewer, you&#039;ll need a Pro (or higher)" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2013/10/Flat_Corona_250x250.png" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2013/10/Flat_Corona_250x250.png" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-abcc55149ca8cb52d8f1822a14eae3f6.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; CoronaViewer: Instant on-device previews Comments Feed" href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/feed/" />
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='http://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='http://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-4552022b35861dabb02f434bab7a5022.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-3ba04419323e257d3ee6dc44877419ee.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-c03f8577f822f081d9a995c119ea872a.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-4f944b57b95a0aa2775f67af2ac7ced3.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2014\/06\/26\/coronaviewer-instant-on-device-previews\/","en":"\/blog\/2014\/06\/26\/coronaviewer-instant-on-device-previews\/","US":"\/blog\/2014\/06\/26\/coronaviewer-instant-on-device-previews\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-424ae6c56e085dc425b6003bc1c7b26b.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-9da262bd04693459328c75888687169c.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='From the Forum — Issue #25' href='/blog/2014/06/20/from-the-forum-issue-25/' />
+<link rel='next' title='Guest post: Finding your app-building creativity' href='/blog/2014/06/27/guest-post-finding-your-app-building-creativity/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=59031' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body class="post-template-default single single-post postid-59031 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>CoronaViewer: Instant on-device previews</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-59031" class="post-59031 post type-post status-publish format-standard has-post-thumbnail hentry category-corona-sdk category-dailybuild category-announcements tag-coronaviewer tag-ios tag-on-device tag-preview">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">26 June 2014<meta itemprop="interactionCount" content="UserComments: 51"/></span></p>
+						<h2 itemprop="name" class="entry_title">CoronaViewer: Instant on-device previews</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/walter/">walter</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/corona-sdk/" rel="category tag">Corona SDK</a>, <a href="/blog/topics/dailybuild/" rel="category tag">Daily Build</a>, <a href="/blog/topics/announcements/" rel="category tag">News &amp; Announcements</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=CoronaViewer%3A+Instant+on-device+previews&amp;p[url]=%2Fblog%2F2014%2F06%2F26%2Fcoronaviewer-instant-on-device-previews%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/10/Flat_Corona_250x250.png&amp;p[summary]=One+of+the+things+app+developers+love+about+Corona+is+the+fast+iteration.+%0A%0AToday%2C+we%5C%27re+taking+that+one+step+further+with+CoronaViewer+-+edit+your+project+from+your+desktop+and+preview+them+right+away+on+your+device%21', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=One+of+the+things+app+developers+love+about+Corona+is+the+fast+iteration.+%0A%0AToday%2C+we%27re+taking+that+one+step+further+/blog/2014/06/26/coronaviewer-instant-on-device-previews/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2014%2F06%2F26%2Fcoronaviewer-instant-on-device-previews%2F&amp;title=CoronaViewer%3A+Instant+on-device+previews&amp;description=One+of+the+things+app+developers+love+about+Corona+is+the+fast+iteration.+%0A%0AToday%2C+we%27re+taking+that+one+step+further+with+CoronaViewer+-+edit+your+project+from+your+desktop+and+preview+them+right+away+on+your+device%21&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F10%2FFlat_Corona_250x250.png', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. </p>
+<p>Today, we&#8217;re going to take that one step further with CoronaViewer. It&#8217;s going to dramatically improve your productivity. With CoronaViewer, you&#8217;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. </p>
+<p>CoronaViewer is an app that you run on your device. It works by sync&#8217;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#8217;ll automatically be updated to CoronaViewer.</p>
+<p>Here&#8217;s a quick video showing how CoronaViewer works in practice:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/bpXE6MgyPQc?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#8217;ll find it&#8217;s well worth it to be able to preview your app instantly on device.</p>
+<p>To access CoronaViewer, you&#8217;ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/coronaviewer/" rel="tag">CoronaViewer</a>, <a href="/blog/tags/ios/" rel="tag">iOS</a>, <a href="/blog/tags/on-device/" rel="tag">on-device</a>, <a href="/blog/tags/preview/" rel="tag">preview</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				walter			    </span>
+				</h5>
+				<span class="author_email"></span>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>51 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-3512">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/eb7eb087faabdf96fbf43c2633aac719-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.gpanimations.com/shop.html' rel='external nofollow' class='url'>GP Animations</a></h5>
+			<span class="comment_date">Posted at 05:47h, 26 June</span>
+						<div class="text_holder" id="comment-3512">
+				<p>Anyone else getting errors trying to build the app? Is it because I have Xcode 5 and Xcode 6-Beta both installed?</p>
+<p>Unexpected build error (check the Simulator console for messages).</p>
+<p>2014-06-26 08:46:29.517 Corona Simulator[30152:507] Using Custom Build Id 00000<br />
+Using additional build settings from: /Users/Greg/Downloads/CoronaViewer-master/build.settings<br />
+WARNING: Your SDK may be out of date b/c the following SDK directory could not be found:	/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk<br />
+WARNING: Using the following SDK instead: 	/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk<br />
+2014-06-26 08:46:39.312 Corona Simulator[30152:507] Runtime error<br />
+	/Users/Greg/Desktop/CoronaViewer.app/.build/libtemplate/Builder.lua:310: {&#8220;status&#8221;:32512,&#8221;message&#8221;:&#8221;sh: /Applications/Xcode5-DP3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++: No such file or directory&#8221;}<br />
+stack traceback:<br />
+	[C]: ?<br />
+	[C]: in function &#8216;assert&#8217;<br />
+	/Users/Greg/Desktop/CoronaViewer.app/.build/libtemplate/Builder.lua:310: in function &#8216;checkError&#8217;<br />
+	/Users/Greg/Desktop/CoronaViewer.app/.build/libtemplate/Builder.lua:333: in function &#8216;build&#8217;<br />
+	?: in function &#8216;buildExe&#8217;<br />
+	?: in function </p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3524">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 11:05h, 26 June</span>
+						<div class="text_holder" id="comment-3524">
+				<p>From your log msg, I see &#8220;/Applications/Xcode5-DP3.app&#8221;, so it looks like you are using a Beta of Xcode5 (DP3 = developer preview 3). </p>
+<p>The issue seems to be a setup issue. You should be seeing this for any project that uses plugins.</p>
+<p>Try using a non-beta version of Xcode. You&#8217;ll need to set the path to xcode via xcode-select on the command line.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3513">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/2c57a8865f358a13e18d9d9c83ea9400-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://www.google.com/' rel='external nofollow' class='url'>Ske</a></h5>
+			<span class="comment_date">Posted at 06:35h, 26 June</span>
+						<div class="text_holder" id="comment-3513">
+				<p>This is awesome!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3514">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e64cbfb305deffb381a8966586ceb6c1-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">JCH_APPLE</h5>
+			<span class="comment_date">Posted at 08:48h, 26 June</span>
+						<div class="text_holder" id="comment-3514">
+				<p>It certainly be useful to test how an app shows on different devices, and to test how things occur when simulator doesn&#8217;t show them (maps&#8230;)<br />
+But I&#8217;m not sure this should be a priority. I mean that you provide something that will certainly help us but you have &#8220;spent&#8221; hours of work to give us a feature we can already have with &#8220;publish for device&#8221;.<br />
+In the meantime, some promised features like Windows support are &#8220;close&#8221; but not available at all. Widgets could be improved, basic features could be added (print for instance&#8230;)<br />
+My impression (and don&#8217;t want to offense anybody) is that Corona Labs is going into multiple directions (Cloud, Cards, Enterprise&#8230;.)  and that it would be better to focus on one strong product and then develop branches and related products.<br />
+Am I alone to have this opinion?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3515">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1b6441e59bb6846c123b7f0c83922b27-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.example.com/' rel='external nofollow' class='url'>Joe</a></h5>
+			<span class="comment_date">Posted at 09:26h, 26 June</span>
+						<div class="text_holder" id="comment-3515">
+				<p>Absolutely!</p>
+<p>One important thing for Corona is to allocate more time &amp; resources on bug fixing. There are many fundamental bugs that need immediate attention and there are also many advanced bugs to be fixed so we as developers can enhance our apps into the next level.</p>
+<p>It&#8217;s time for Corona to focus on keeping existing developers.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3527">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 11:32h, 26 June</span>
+						<div class="text_holder" id="comment-3527">
+				<p>Thanks for the feedback. I&#8217;ve put my e-mail below as this is a little off-topic. </p>
+<p>Let me address several things:</p>
+<p>First off, CoronaViewer is an enhancement to your existing workflow, not an entirely new product. We&#8217;ve heard numerous folks desire the ability to test features in the Simulator that were previously device only. This bridges that workflow gap.</p>
+<p>Second, everyone has features they&#8217;d like to see. We are actively working on Windows. It&#8217;s not been an easy port to say the least. </p>
+<p>For us, basic features means something that belongs in the core (while print is more like a plugin). Got other features in mind? Let me know: walter at coronalabs dot com.</p>
+<p>Finally, we do prioritize bugs based on community impact. If you&#8217;ve got bugs you&#8217;ve reported, send me a note on it: walter at coronalabs dot com. If there&#8217;s a good case, I&#8217;ll look into escalating it.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3547">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/68f2d2a41da4aabbdadee94f40ac9836-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>David Grant</a></h5>
+			<span class="comment_date">Posted at 19:50h, 26 June</span>
+						<div class="text_holder" id="comment-3547">
+				<p>I agree 100% with you. While the feature is nice I feel like I&#8217;m trying to follow a kid with ADD. First they are building an awesome lego house and out of no where he goes and starts digging a hole to china a few minutes later he&#8217;s training to be in the NBA by shooting hoops. I used to love the fact that Corona developers were always thinking and innovating, in fact that was one of the reasons why I went the corona sdk route. Lately though it seems as though there is no real direction and deadlines come and go without any mention. I was super excited for windows builds promised by 1st quarter of 2014 and that&#8217;s long gone. Next week will mark the end of Q2 actually. I was super excited for corona cards. I built an app that utilized it and figured since iOS was already released the android version would be soon to follow. I&#8217;ve had that app sitting collecting dust for 2 months now since corona cards for android is still in beta and you get this stupid popup in your app letting you know that. Since I&#8217;ve been waiting on those though we&#8217;ve received a project editor which they said the production was halted on since they had better things to work on and since other options are available and now this. I don&#8217;t want to sound ungrateful I appreciate the work they are putting into it I just wish they wouldn&#8217;t get us excited about something that is a year or more away from becoming a reality.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3516">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/bcead487938c2fa00042ab5650659c05-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.rgstudio.at/' rel='external nofollow' class='url'>Martin</a></h5>
+			<span class="comment_date">Posted at 09:41h, 26 June</span>
+						<div class="text_holder" id="comment-3516">
+				<p>Sry that Corona Viewer is a joke. Really in which direction Corona is moving? Nobody seems to focus on keeping existing devs.<br />
+It was in the past like that and its still is like that.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3520">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1b6441e59bb6846c123b7f0c83922b27-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.example.com/' rel='external nofollow' class='url'>Joe</a></h5>
+			<span class="comment_date">Posted at 10:19h, 26 June</span>
+						<div class="text_holder" id="comment-3520">
+				<p>Corona should also set up a decent QA team.</p>
+<p>But anyway, they are not fixing bugs quickly enough, why a QA team to find out more bugs?</p>
+<p>Look at the daily builds for the past month, can&#8217;t be disappointed more!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3517">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/cf2457063193dbd220aa16865a2fa6ad-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://blankblankblank.com/' rel='external nofollow' class='url'>romanski</a></h5>
+			<span class="comment_date">Posted at 09:43h, 26 June</span>
+						<div class="text_holder" id="comment-3517">
+				<p>Despite the fact that Corona should spend more time fixing existing bugs, this is quite an amazing feature. I have to say. Very cool.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3518">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/df1decc9b4cc2c790a78d8bcffa93683-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.gremlininteractive.com/' rel='external nofollow' class='url'>Gremlin Interactive</a></h5>
+			<span class="comment_date">Posted at 10:05h, 26 June</span>
+						<div class="text_holder" id="comment-3518">
+				<p>This is awesome, thanks!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3519">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5f5b6009c7a70704175539c0240b7249-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.heytopher.com/' rel='external nofollow' class='url'>Hey Topher</a></h5>
+			<span class="comment_date">Posted at 10:12h, 26 June</span>
+						<div class="text_holder" id="comment-3519">
+				<p>This is great idea and very useful.</p>
+<p>What happens when you use APIs that are not available in the simulator (ie. Game Center and native.newVideo)? Are they ignored by Corona Viewer on the device?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3521">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/df1decc9b4cc2c790a78d8bcffa93683-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.gremlininteractive.com/' rel='external nofollow' class='url'>Gremlin Interactive</a></h5>
+			<span class="comment_date">Posted at 10:25h, 26 June</span>
+						<div class="text_holder" id="comment-3521">
+				<p>Has anyone had any luck getting this to work yet?</p>
+<p>After running (using daily build 2347)</p>
+<p>: HID: The &#8216;Passive&#8217; connection &#8216;CoronaViewer&#8217; access to protected services is denied.<br />
+: Runtime error<br />
+	module &#8216;plugin.viewer&#8217; not found:resource (plugin.viewer.lu) does not exist in archive<br />
+		no field package.preload[&#8216;plugin.viewer&#8217;]<br />
+		no file &#8216;/var/mobile/Applications/A9FC1DBF-7D49-4C51-B387-F8F53AE79309/CoronaViewer.app/plugin.viewer.lua&#8217;<br />
+		no file &#8216;/var/mobile/Applications/A9FC1DBF-7D49-4C51-B387-F8F53AE79309/CoronaViewer.app/plugin.viewer.lua&#8217;<br />
+		no file &#8216;./plugin.viewer.so&#8217;<br />
+		no file &#8216;/var/mobile/Applications/A9FC1DBF-7D49-4C51-B387-F8F53AE79309/CoronaViewer.app/plugin.viewer.so&#8217;<br />
+		no file &#8216;./plugin.so&#8217;<br />
+		no file &#8216;/var/mobile/Applications/A9FC1DBF-7D49-4C51-B387-F8F53AE79309/CoronaViewer.app/plugin.so&#8217;plugin.viewer<br />
+	stack traceback:<br />
+		[C]: in function &#8216;require&#8217;<br />
+		?: in function &#8216;require&#8217;<br />
+		/Users/Danny/Downloads/CoronaViewer-master/main.lua:1: in main chunk</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3529">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 11:43h, 26 June</span>
+						<div class="text_holder" id="comment-3529">
+				<p>That&#8217;s weird. We&#8217;re not seeing these issues. Sent you a note offline for more info.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3522">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/457934d5f363413f988718d93f2ed775-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.iswdev.com/' rel='external nofollow' class='url'>Mario Roberti</a></h5>
+			<span class="comment_date">Posted at 11:00h, 26 June</span>
+						<div class="text_holder" id="comment-3522">
+				<p>NOICE!!!!!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3523">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5b2e06901c96a589c57c0030c8961365-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>nick</a></h5>
+			<span class="comment_date">Posted at 11:02h, 26 June</span>
+						<div class="text_holder" id="comment-3523">
+				<p>Can&#8217;t get it to work. Is there a detailed how to?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3525">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e7904273fd861a9d127c5db3fc6a9b00-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.timeplusq.com/' rel='external nofollow' class='url'>Satheesh</a></h5>
+			<span class="comment_date">Posted at 11:26h, 26 June</span>
+						<div class="text_holder" id="comment-3525">
+				<p>This is good news.<br />
+I am trying to make it work.. No luck till now.<br />
+That aside, will love an option to directly build using the device&#8217;s IP address(eliminating the use of Dropbox).  Similar to how Gideros does..</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3526">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/df1decc9b4cc2c790a78d8bcffa93683-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.gremlininteractive.com/' rel='external nofollow' class='url'>Gremlin Interactive</a></h5>
+			<span class="comment_date">Posted at 11:27h, 26 June</span>
+						<div class="text_holder" id="comment-3526">
+				<p>Yeah, that would be a lot better.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3528">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1cd13c5bda01c3a215d8e7b4231bdb99-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://gamethrive.com/' rel='external nofollow' class='url'>George</a></h5>
+			<span class="comment_date">Posted at 11:34h, 26 June</span>
+						<div class="text_holder" id="comment-3528">
+				<p>Wow, this is amazingly cool. Seems like it could also be used to distribute the app to testers &amp; keep it updated on their devices.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3530">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/887e41a4dfd5bf94994b6df44909825f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 11:46h, 26 June</span>
+						<div class="text_holder" id="comment-3530">
+				<p>Great to develop faster! Want to try it on Android</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3531">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/575132740fc8fb33379843767d523521-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://spiralcodestudio.com/' rel='external nofollow' class='url'>Lerg</a></h5>
+			<span class="comment_date">Posted at 11:53h, 26 June</span>
+						<div class="text_holder" id="comment-3531">
+				<p>Everytime Corona labs introduce some new feature, a lot of people start ranting &#8220;we need more bugfixes instead of this!&#8221; Even when Windows Phone support was announced.<br />
+Corona team has many people and they can work on different tasks without impacting each other much!</p>
+<p>And seriously, such plugin can&#8217;t take many days to implement. So it has little to no impact on bug fix rate. And there always will be bugs, can&#8217;t get rid of all of them.</p>
+<p>Suggestions how to improve Corona Viewer:<br />
+1. Remote control of the app. Reset &amp; relaunch with a press of the button on your machine.<br />
+2. Remote console built-in. That&#8217;s good for ordinary projects as well. Something built in into simulator. Makes more sense with Corona Viewer.<br />
+3. Instead of Dropbox, transfer files via local network.<br />
+4. Choose scenes to go from the simulator.</p>
+<p>Here is how I see it: start the app on your device, in simulator choose Run inside Corona Viewer, it then perform networks scan and detect all devices with running Corona Viewer instance. You choose the one you want, simulator transfers all the files and opens remote console window with Reset &amp; Relaunch buttons available. Easily extendable later.</p>
+<p>And Walter, TextWrangler? Seriously? Haha.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3543">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 16:54h, 26 June</span>
+						<div class="text_holder" id="comment-3543">
+				<p>Lol, I thought TextWrangler gave everything a whole retro feel!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3532">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5b2e06901c96a589c57c0030c8961365-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>nick</a></h5>
+			<span class="comment_date">Posted at 13:30h, 26 June</span>
+						<div class="text_holder" id="comment-3532">
+				<p>+1 lerg.</p>
+<p>I agree, people complain and maybe some of them have never worked in an enterprise environment or maybe just a regular place of business where there are separate areas that do different things. I work a day job, I support 1000+ people. We have something called departments, each department can work on different things. We have implementation teams, and design teams and QA teams. </p>
+<p>So apply that to corona, they probably have a bug fix team and *gasp* a design time, who probably designed this. They don&#8217;t affect one another. </p>
+<p>I say, keep it going. </p>
+<p>*</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3536">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://appynerds.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 15:48h, 26 June</span>
+						<div class="text_holder" id="comment-3536">
+				<p>I bet, if you look carefully, where you work, there also exists another team called the &#8220;Leadership&#8221;. This team makes decisions as to where to allocate resources. In other words which team is to get more people. Depending on the market pressure and needs of customers this team typically decides on where various teams are to focus their energy. </p>
+<p>The fact that we have 1+ year old libraries still not performing to the best of industry standard expectations and the fact that many API gets released IOS only or Android only while the Corona SDK itself is marketed as a cross-platform tool tells me the &#8220;Leadership&#8221; here is not necessarily making the best decisions in its existing customers favor. Look at this tool. It is IOS only once again. If you ask me there should be no such thing. Yes, its ok to release a preview on one platform but you need to quickly follow-it with the matching implementation on the other platform.</p>
+<p>Releases like this are pushing me more and more away from Corona SDK because it is not truly IOS + Android for me and it is not truly 10x for me. I get 10x speed out of the 95% of what I do and then the remaining 5% takes as much time as it would have had I developed natively. So the allure (only barely) is the cross platform thing but its quickly melting away.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3541">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://appynerds.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 16:39h, 26 June</span>
+						<div class="text_holder" id="comment-3541">
+				<p>On a more positive note&#8230; this is from today&#8217;s daily build notes : </p>
+<p>Add the ability to set the jpeg quality for display.save().</p>
+<p>Now thats more like it!!! This is great!!! Thanks much.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3555">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/587e619413e316cb6e48cde6dde923f3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.pagesay.com/' rel='external nofollow' class='url'>Joe</a></h5>
+			<span class="comment_date">Posted at 20:27h, 27 June</span>
+						<div class="text_holder" id="comment-3555">
+				<p>No matter how big the organizations are, the resources are always &#8220;limited&#8221;.</p>
+<p>So if the company does not put something in top priority, they don&#8217;t allocate enough resources (time/human resources) into it.</p>
+<p>This is why I kept telling Corona to allocate more resources into bug fixing, not that I don&#8217;t understand things can be done parallelly.</p>
+<p>And there is a strategy called &#8220;feature freeze&#8221;, why this strategy?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3533">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c41d8e0675f40fe42b49b429f4a34854-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.sarahpiercegames.com/' rel='external nofollow' class='url'>hgbrian</a></h5>
+			<span class="comment_date">Posted at 14:44h, 26 June</span>
+						<div class="text_holder" id="comment-3533">
+				<p>Sweet! Very useful for multitouch apps!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3534">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 15:10h, 26 June</span>
+						<div class="text_holder" id="comment-3534">
+				<p>For us this is great news: Our game &#8220;Freeze!&#8221; and the sequel we are developing right now depends heavily on multitouch input and we just need to test on the device all the time.</p>
+<p>And with this, as suggested by George we might even keep all our testers up to date with the newest levels and engine, without having to deploy using testflight or sending IPAs out.</p>
+<p>And after some of these comments I just have to say my bit, but please without starting a big pro/contra discussion:</p>
+<p>We released &#8220;Freeze!&#8221; more than 1 1/2 vears ago in Nov. 2012, we have 6.2 million downloads so far combined on iOS / Google Play / Amazon and an worldwide average rating of 4.2 to 4.3, got some rewards and more than 70K ratings on Google Play alone.</p>
+<p>The game was featured worldwide by Apple three times, by Google two times. And it is still in many &#8220;what&#8217;s hot&#8221; lists on iOS and on some special lists like &#8220;best game without internet&#8221; on Google Play.</p>
+<p>This success is based on the stable game we were able to develop using the Corona Labs SDK &#8211; &#8220;Freeze!&#8221; does not crash, runs perfect on more than 98% of all the supported Android devices (more than 5.000), even runs as a universal binary with an adaptive layout on the old iPhone 3GS, iPod Touch 2nd Gen, but still looks great on the iPad Air or the NEXUS 7 2nd Gen. retina devices.</p>
+<p>Google for example tested &#8220;Freeze!&#8221; for days before they sent me a big list of things I need to improve &#8211; and only after I did this the game was featured worldwide.</p>
+<p>For me as a single developer who hires an artist for the artsy stuff it would not have been possible to do this without the Corona Labs SDK, whose developers did all the hard work to support all these Android devices. And I worked with some of their guys on the Beta for Google Play Games Services, on the Beta for Google IAB v3 and they presented our game at the Microsoft Booth at the GDC this year, running on Windows for mobile. And it was always a pleasure working with them.</p>
+<p>I can only speak for games (I did not do any business apps yet), but for us it was a perfect decision to go with Corona.</p>
+<p>This said, where the h*** is the Amazon Game Circle support? 🙂</p>
+<p>Keep on the good work,<br />
+Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3548">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5662898f7edf9516d453157edde777f7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.digidingo.com/' rel='external nofollow' class='url'>dingo</a></h5>
+			<span class="comment_date">Posted at 23:29h, 26 June</span>
+						<div class="text_holder" id="comment-3548">
+				<p>hey Andreas, first of all congrats to all your success with freeze, have been following it since ever. And I think you made a valid point there. That&#8217;s why we also stick to Corona SDK, and it&#8217;s really awesome for doing casual games.</p>
+<p>Greetings from Grooh and good luck with your next game!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3550">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 00:55h, 27 June</span>
+						<div class="text_holder" id="comment-3550">
+				<p>Hi Dingo, thanks! </p>
+<p>And wow, you&#8217;ve been really busy, &#8220;ATHLETICOOH&#8221;, &#8220;&#8221;COLOROOH&#8221;, the great &amp; funny  &#8220;BUFFALOOH&#8221;, and &#8220;ELAROOH&#8221; (this IS for girls, right?), you made six more fine games since 2012 while we only did some new worlds for &#8220;Freeze!&#8221; &#8211; now I feel a bit slow, will try to pick up the pace for the sequel. </p>
+<p>Whenever you&#8217;re around Munich send me an email and then let&#8217;s share some beer / wine / coffee (whatever your poison is) and some Indie stories.</p>
+<p>Best, Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3535">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1dccc50854021f5b8e6d7a00dfbf8b84-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://tappsgames.com/' rel='external nofollow' class='url'>Bruno Pezzolo</a></h5>
+			<span class="comment_date">Posted at 15:30h, 26 June</span>
+						<div class="text_holder" id="comment-3535">
+				<p>I&#8217;ve had no trouble getting Corona Viewer to work with its basic features.<br />
+A simple app with all lua files on the root directory works fine for me.<br />
+But when I placed one of the lua files inside a new directory, and tried to require it on my main.lua file, things just didn&#8217;t work. I&#8217;ve tested the code on my simulator and it works fine.</p>
+<p>Is there any limitation to the use of lua files in different folders with Corona Viewer?</p>
+<p>I&#8217;ve got the following crash log on my device:</p>
+<p>Jun 26 19:25:56 Brunos-iPhone CoronaViewer[10103] : Runtime error<br />
+		module &#8216;folder.rect&#8217; not found:resource (folder.rect.lu) does not exist in archive<br />
+		no field package.preload[&#8216;folder.rect&#8217;]<br />
+		no file &#8216;/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/folder.rect.lua&#8217;<br />
+		no file &#8216;./folder.rect.so&#8217;<br />
+		no file &#8216;/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/CoronaViewer.app/folder.rect.so&#8217;<br />
+		no file &#8216;./folder.so&#8217;<br />
+		no file &#8216;/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/CoronaViewer.app/folder.so&#8217;folder.rect<br />
+	stack traceback:<br />
+		[C]: ?<br />
+		[C]: in function &#8216;require&#8217;<br />
+		?: in function &#8216;require&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:20: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		&#8230;<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/var/mobile/Applications/B855B13D-4ABE-4DA4-9384-6D5B11BF3CAC/Documents/.CoronaViewer/main.lua:3: in main chunk<br />
+		[C]: in function &#8216;run&#8217;<br />
+		/Users/vulpix/Projects/CoronaViewer/CoronaViewer/main.lua:3: in main chunk</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3537">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 15:51h, 26 June</span>
+						<div class="text_holder" id="comment-3537">
+				<p>Hmm, we specifically tested for Lua files in folders and that was working fine for us. Or else, do you mind sending us your project via (<a href="http://developer.coronalabs.com/content/bug-submission" rel="nofollow">http://developer.coronalabs.com/content/bug-submission</a>) and let me know the bug number?</p>
+<p>Can you try the &#8220;Reset Project&#8221; action, as described in the Readme? Maybe the file didn&#8217;t quite sync correctly. If that doesn&#8217;t help, we&#8217;ve seen force quitting the app and cold-launching can work.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3553">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/1dccc50854021f5b8e6d7a00dfbf8b84-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://tappsgames.com/' rel='external nofollow' class='url'>Bruno Pezzolo</a></h5>
+			<span class="comment_date">Posted at 10:48h, 27 June</span>
+						<div class="text_holder" id="comment-3553">
+				<p>You see, I was running a rather complex project, so I performed some more tests, starting from a very simple project and increasing the complexity of this project.<br />
+Here&#8217;s my conclusion so far, lua files inside a simple folder worked fine for me as well, the problem appeared when I tried to nest folders. (e.g.: First/Second/myfile.lua). It really fails to find the lua file inside the second level of the hierarchy.</p>
+<p>I&#8217;ve reseted the project, unistalled the Corona Viewer app from the device and installed again. Even created a new dropbox account just for testing, still no success.</p>
+<p>I uploaded a test case via corona bug report and the case number is 33774.<br />
+Thanks for the quick answer!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3538">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/0a9e78b33634f256501ff53243c32997-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.burtonsmediagroup.com/' rel='external nofollow' class='url'>Dr. Burton</a></h5>
+			<span class="comment_date">Posted at 15:58h, 26 June</span>
+						<div class="text_holder" id="comment-3538">
+				<p>This is wonderful Walter!  I&#8217;m downloading it now.  The last several projects that I have worked on have all used features that were device-only. This will definitely speed up the development process!<br />
+Looking forward to the Windows-beta!<br />
+Thank you for another great tool!</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3544">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d41d8cd98f00b204e9800998ecf8427e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Walter</h5>
+			<span class="comment_date">Posted at 16:56h, 26 June</span>
+						<div class="text_holder" id="comment-3544">
+				<p>Because you&#8217;re syncing with Dropbox, you should be able to make edits to your project from a Windows machine.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-3539">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/008bf6d8b5a3a7be7024c73e2153e8d3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://ninjapigstudios.com/' rel='external nofollow' class='url'>Jordan Schuetz</a></h5>
+			<span class="comment_date">Posted at 16:16h, 26 June</span>
+						<div class="text_holder" id="comment-3539">
+				<p>Walter, why are you such a genius?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3540">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/34ceea7ff756159e0b9b2b9d009492de-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.swipeware.com/' rel='external nofollow' class='url'>Ingemar</a></h5>
+			<span class="comment_date">Posted at 16:29h, 26 June</span>
+						<div class="text_holder" id="comment-3540">
+				<p>Please, please, pretty please, consider using the local network (device IP address) instead of Dropbox!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3542">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 16:40h, 26 June</span>
+						<div class="text_holder" id="comment-3542">
+				<p>We have added a new forum to handle support of this product.  Please go here with your issues, suggestions and such:</p>
+<p><a href="http://forums.coronalabs.com/forum/641-corona-viewer/" rel="nofollow">http://forums.coronalabs.com/forum/641-corona-viewer/</a></p>
+<p>Thanks<br />
+Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3545">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d7a942f9bf1cfd08255542dfcacb2deb-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://crossmanwilkins.com/' rel='external nofollow' class='url'>Crossman Wilkins</a></h5>
+			<span class="comment_date">Posted at 17:21h, 26 June</span>
+						<div class="text_holder" id="comment-3545">
+				<p>Once I got the cog/build settings right this worked great. </p>
+<p>Just a warning don&#8217;t copy over the existing config/build settings, just adjust them to your apps needs otherwise this breaks.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3546">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://appynerds.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 17:49h, 26 June</span>
+						<div class="text_holder" id="comment-3546">
+				<p>Side question. </p>
+<p>In order to make Corona Viewer you have clearly built Dropbox capabilities into the viewer plugin. We have been asking for a Dropbox plugin now for quite a while. It looks like a win-win outcome for Corona Labs to spin off the Dropbox capability built into the Corona Viewer plugin and make it available as a separate plugin. </p>
+<p>Any plans to do this? Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3549">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/058b9e9bd82ab713d6d2508d61d0b30a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://momedx.com/' rel='external nofollow' class='url'>yo</a></h5>
+			<span class="comment_date">Posted at 23:57h, 26 June</span>
+						<div class="text_holder" id="comment-3549">
+				<p>As a developer of business apps, which require a lot more device-specific testing than casual games which tend not to use native widgets, I greatly appreciate this new feature. I can see why casual game developers might not find this to be a big priority, but I&#8217;m sure most of us business app folks do. Plus, they probably developed this tool for in-house use first, so that they could test out device-specific code more quickly. So in the end, this might actually speed up the fixing of Corona bugs, rather than be a distraction from that important task.</p>
+<p>Finally, I understand why some would like to update via device IP instead of Dropbox, but for those who already use Dropbox, this is such a great, simple way to update rapidly with near-zero configuration. I kind of think of CoronaViewer as an internal tool that Corona decided to share with us. It doesn&#8217;t need to have every feature to be useful, and I&#8217;m glad they made it available before taking too much time to make it perfect for everyone.</p>
+<p>That said, Android please&#8230;. (it&#8217;s much more necessary on Android, which is quirkier with native widgets and more diverse with devices).</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3551">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/c08b13806a0e8ae5be28fa0cd7c63b78-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.facebook.com/JarbullGames' rel='external nofollow' class='url'>Serkan</a></h5>
+			<span class="comment_date">Posted at 05:07h, 27 June</span>
+						<div class="text_holder" id="comment-3551">
+				<p>I couldn&#8217;t get it to work but that&#8217;s great, especially for testing of our multi-touch games! We&#8217;re still waiting for the Windows Phone build(seriously, any news on that?), Amazon Game Circle etc. but that&#8217;s nice too.</p>
+<p>Whenever I reset, I&#8217;m getting this:</p>
+<p>Jun 27 15:04:01 sekos-iPhone Viewer[841] : [ERROR] error closing file (file.cpp:27: file has already been closed)<br />
+Jun 27 15:04:01 sekos-iPhone Viewer[841] : [WARNING] ERR: DROPBOX_ERROR_BADFILE: file.cpp:27: file has already been closed<br />
+Jun 27 15:04:01 sekos-iPhone Viewer[841] : [ERROR] error closing file (file.cpp:27: file has already been closed)<br />
+Jun 27 15:04:01 sekos-iPhone Viewer[841] : [WARNING] ERR: DROPBOX_ERROR_SHUTDOWN: DBHTTPRequest.mm:572: Request cancelled.</p>
+<p>Other than that, I can&#8217;t seem to have any other errors.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3552">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/4ee4a21ce221d849f86437b4eddd2d85-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://spitfiregames.com/' rel='external nofollow' class='url'>Rob Sondles</a></h5>
+			<span class="comment_date">Posted at 05:58h, 27 June</span>
+						<div class="text_holder" id="comment-3552">
+				<p>I really like this idea.  It is tiring to have to go into xCode to remove and install the test app over and over again.  Thanks for streamlining the development process Corona Labs!  I&#8217;ll try this out soon.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3554">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/72b1723556b8447b91c313dbc3b740a3-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.ancientanvil.com/' rel='external nofollow' class='url'>Austin</a></h5>
+			<span class="comment_date">Posted at 17:16h, 27 June</span>
+						<div class="text_holder" id="comment-3554">
+				<p>This is why I use Corona, innovative features being added all the time! Cannot wait for my productivity on &#8220;Letter Bank&#8221; to go through the roof!</p>
+<p>Thanks guys!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3556">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/d0a17bd8536b05d65ff1d6e9a9ee8abd-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://example.com/' rel='external nofollow' class='url'>Guy Moreau</a></h5>
+			<span class="comment_date">Posted at 06:59h, 29 June</span>
+						<div class="text_holder" id="comment-3556">
+				<p>Sounds like a great idea. I would make one suggestion, support pulling from repositories such git, svn, cvs, etc. Version control is important and DB is not my idea of a code storage area &#8211; you lose control over your files (thanks NSA).</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3557">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://appynerds.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 11:23h, 29 June</span>
+						<div class="text_holder" id="comment-3557">
+				<p>Ok. Public reversal of opinion and an apology. I still think CL should do more to bring stability and IOS vs Android feature equivalency but in the meanwhile allow me to say this tool ROCKS!!! It works as advertised for simple projects and helps greatly in expediting device dependent test activities. I just discovered one major side benefit&#8230; </p>
+<p>Using a Dropbox capable text editor on your iPad or even iPhone you can literally take your Corona SDK development on the road, away from your PC or Mac and do realtime work on the road, in the field, on top of a tree, where ever you like it! Finally Corona SDK breaks free from a PC/Mac bound development tool. This is AMAZING!!! Thank you very much Corona Labs.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3558">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5b2e06901c96a589c57c0030c8961365-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.google.com/' rel='external nofollow' class='url'>nick</a></h5>
+			<span class="comment_date">Posted at 15:37h, 01 July</span>
+						<div class="text_holder" id="comment-3558">
+				<p>I guess I&#8217;ll give this another shot. I didn&#8217;t get it working the first time.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3559">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/82817b653fcd65da835eb5030852bb88-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http:/www.rolelore.com' rel='external nofollow' class='url'>Antheor</a></h5>
+			<span class="comment_date">Posted at 14:12h, 19 July</span>
+						<div class="text_holder" id="comment-3559">
+				<p>Truly amazing ! Like Kerem explains Corona brings us mobile dev ! Thank you !</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3560">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/ff11d682709a85aca2a6dc5c35d09558-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.frozengun.com/' rel='external nofollow' class='url'>Andreas</a></h5>
+			<span class="comment_date">Posted at 14:19h, 20 July</span>
+						<div class="text_holder" id="comment-3560">
+				<p>CoronaViewer works great, there is just the problem that folder names in the project are not allowed to have upper case characters because of the way the folders are handled by the Dropbox.</p>
+<p>This is bad when you are e.g. using 3rd party tools that create upper case folders in your project by themselves.</p>
+<p>I posted a solution here for the tool &#8220;LevelHelper&#8221;, but the workaround can be easily adapted for other tools:<br />
+<a href="http://forums.coronalabs.com/topic/49622-guide-how-to-make-coronaviewer-work-with-levelhelper/" rel="nofollow">http://forums.coronalabs.com/topic/49622-guide-how-to-make-coronaviewer-work-with-levelhelper/</a> </p>
+<p>Best,<br />
+Andreas</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-3561">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e9786360990208e21c223e802bdf52dc-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">John</h5>
+			<span class="comment_date">Posted at 17:43h, 03 April</span>
+						<div class="text_holder" id="comment-3561">
+				<p>It would be really helpful if you guys could make a step-by-step video tutorial on how to get Corona Viewer to work. I still keep on getting errors every time I try to use it, it would be really helpful to have a video so I know if I&#8217;m setting this up correctly</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-3562">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 07:00h, 04 April</span>
+						<div class="text_holder" id="comment-3562">
+				<p>Can you make a post in the forums asking this? Please post the errors you are getting there!</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-95a65088037418e8646346c87072024d.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"59031","is_front_page":"","is_blog_page":"","is_category":"","site_url":"http:\/\/coronalabs.com\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-0be71dd89d0eceaca9843e7c3efe26f8.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-175d3f630150b6c2431472b6ea7bda23.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-d373414dfb3e1938c02eb07ec666bd3d.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-91fb076536097355265728cbacea3d53.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-0bdec33a45721a8ef1eaca39851674fb.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

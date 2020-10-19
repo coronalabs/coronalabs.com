@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>anno &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/anno/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>anno &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Goodbye to deauthorizations</title>
+		<link>/blog/2016/01/13/goodbye-to-deauthorizations/</link>
+		<comments>/blog/2016/01/13/goodbye-to-deauthorizations/#comments</comments>
+		<pubDate>Wed, 13 Jan 2016 13:32:39 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[anno]]></category>
+
+		<guid isPermaLink="false">/?p=65162</guid>
+		<description><![CDATA[You can now run Corona SDK on more than two computers! Read further to learn more about this change.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-65061 size-thumbnail" src="/wordpress/wp-content/uploads/2015/12/corona-labs-logo-flat-hi-res-150x150.png" alt="Corona Labs Logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/12/corona-labs-logo-flat-hi-res-150x150.png 150w, /wordpress/wp-content/uploads/2015/12/corona-labs-logo-flat-hi-res.png 237w" sizes="(max-width: 150px) 100vw, 150px" /> In the past we have limited everyone&#8217;s ability to run Corona on a maximum of two computers. This made sense when Corona SDK was subscription-based, but since the SDK has been free for over six months, continuing to limit usage to just two computers per account no longer makes sense.</p>
+<p>Moving forward, the limit of two computers has been removed.</p>
+<p>While logging into your account is still required, this change means that you can now install Corona on <em>all</em> of your computers without being told to &#8220;de-authorize&#8221; a previous computer. It also means that you won&#8217;t need to request a de-authorization so that you can use Corona on a different computer.</p>
+<p>As we move toward a paid plugin marketplace, new systems will be implemented to protect plugins at the plugin level instead of at the SDK level. In the meantime, enjoy Corona SDK without limits!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/13/goodbye-to-deauthorizations/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

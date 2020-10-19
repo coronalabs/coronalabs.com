@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iPad Pro &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ipad-pro/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iPad Pro &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #104</title>
+		<link>/blog/2016/01/01/from-the-forum-issue-104/</link>
+		<pubDate>Sat, 02 Jan 2016 00:40:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[admob]]></category>
+		<category><![CDATA[dynamic image selection]]></category>
+		<category><![CDATA[iPad Pro]]></category>
+		<category><![CDATA[tagForChildDirectedTreatment]]></category>
+
+		<guid isPermaLink="false">/?p=65142</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>iPad Pro challenges</h3>
+<p>With the holiday season passing us by, a lot of us might be a little lighter in the pocket due to some new shiny mobile devices. Making a brand new Android or iOS device a part of the family doesn’t really mean some increased leisure time for us developers; it means we have another device to do some sweet debugging on!</p>
+<p>However, with these awesome items sitting on our desks, we’re going to find those silly piccadilloes, those small idiosyncrasies that equal bugs in our apps. For the iPad Pro, that can mean massaging the dimensions of images that are captured and/or filled, as the below thread references. Take a peek and see if this is something that you have implemented in your current app. If it is, this will help you sidestep those problems.</p>
+<p><a href=https://forums.coronalabs.com/topic/60773-ipad-pro-objectfill-cant-allocate-region target="_blank">https://forums.coronalabs.com/topic/60773-ipad-pro-objectfill-cant-allocate-region</a></p>
+<h3>Dynamic image selection</h3>
+<p>We’re still in the process of debugging with the new and awesome devices we got from our rich uncles and aunts. It’s a heady game, trying to stay ahead of the issues that crop up, and making sure that your game looks stellar in every single device possible.</p>
+<p>Requirement numero uno when targeting multiple platforms with multiple resolutions and pixel densities, is making sure that your game is set up to achieve dynamic image selection. It’s important to remember that this can be the difference between crisp, detailed graphics, and a bucket of sludge that gets uninstalled in five seconds.</p>
+<p>Check out the below thread, where Corona support wizard Rob Miracle breaks down the ins and outs of dynamic selection, and gives us the skinny on when and where it’s used.</p>
+<p><a href=https://forums.coronalabs.com/topic/60769-dynamic-image-selection-and-configlua/ target="_blank">https://forums.coronalabs.com/topic/60769-dynamic-image-selection-and-configlua/</a></p>
+<h3>Stick to that “G” rating!</h3>
+<p>The fact that apps based on education and targeted at children and families are big sellers is not a secret. Having a fun, engaging, informative game that teaches children are great ways to get eyeballs on your app, and get people to open up those wallets.</p>
+<p>Having ads that are set up to be “safe” for children with the<a href=https://docs.coronalabs.com/plugin/ads-admob-v2/show.html target="_blank"> tagForChildDirectedTreatment</a> is another solid method to generate revenue from kids apps. In the recent past, Corona wasn’t able to take advantage of this configuration through adMob, and so a feature request was born. That feature request has since been completed, and the steps to utilize this can be found in the thread below! Our cup truly runneth over!</p>
+<p><a href=https://forums.coronalabs.com/topic/59347-designed-for-families-play-store target="_blank">https://forums.coronalabs.com/topic/59347-designed-for-families-play-store</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

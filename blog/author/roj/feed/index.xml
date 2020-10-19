@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>roj &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/roj/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>roj &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Labs joins Appodeal!</title>
+		<link>/blog/2017/03/16/corona-labs-joins-appodeal/</link>
+		<pubDate>Thu, 16 Mar 2017 22:26:17 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69816</guid>
+		<description><![CDATA[I'm excited to announce that Corona Labs has been acquired by Appodeal! Read more about this acquisition.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/08/appodeal-3.png><img class="alignright wp-image-67639 size-thumbnail" style="margin: 3px 0px 20px 25px;" src="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png" alt="appodeal" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w" sizes="(max-width: 150px) 100vw, 150px" /></a>Today I&#8217;m excited to announce that Corona Labs has been acquired by <a href=https://www.appodeal.com/ target="_blank">Appodeal</a>! For those of you who are not familiar with Appodeal, Appodeal is a next-generation ad mediation/monetization company that already serves millions of impressions per day in Corona games. Corona Labs will continue on as a world-class game engine company, operating as a subsidiary of Appodeal. Merging with Appodeal made sense for multiple reasons which I aim to explain below.</p>
+<h4>Appodeal + Corona Labs</h4>
+<p>One of the laurels of Corona SDK is how easy it makes it to build games across platforms without compromising on power and flexibility. For those who need to extend beyond what Corona provides &#8220;out of the box&#8221; with its many APIs and plugins, the Enterprise version of Corona is perfect.</p>
+<p>Appodeal is the functional counterpart to Corona &#8212; developers can simply sign up for Appodeal, integrate it with a few lines of code, and connect to multiple demand sources (including <a href=https://marketplace.coronalabs.com/plugin/admob target="_blank">AdMob</a> and <a href=https://marketplace.coronalabs.com/plugin/facebook-audience-network target="_blank">Facebook Audience Network</a>!). Even though Appodeal connects to dozens of ad networks, developers get the convenience of just one easy payment (with the exception of AdMob and Facebook Audience Network). For developers who want even more power and control over their ad network relationships, Appodeal puts you in the driver&#8217;s seat so you can tune as you see fit.</p>
+<p>An important note is that the acquisition of Corona Labs by Appodeal does <em>not</em> mean that developers must use Appodeal to monetize their games &#8212; Corona Labs will continue to offer and support third-party ad networks into the future, although the integration with Appodeal may get deeper over time with the aim to make it even easier to add monetization to your games.</p>
+<p>In addition to a natural fit around building easily and monetizing easily, there&#8217;s a shared appreciation around the role Corona plays in the indie developer ecosystem. While many ad networks tend to court developers that already have large audiences, Appodeal recognizes that it&#8217;s the smaller developers who make up the vast majority of the ecosystem and that nurturing the relationship with these developers will only promote the possibilities of growth and success.</p>
+<p>Appodeal is a global company with offices in San Francisco, Barcelona, and Moscow to name a few. Corona has a large developer community in every nook of the world and Appodeal&#8217;s international presence and commitment to serving developers worldwide means higher eCPMs no matter where your users are &#8212; and where they can&#8217;t deliver, their connectivity to AdMob and Facebook Audience Network solves the problem well.</p>
+<h4>Looking forward</h4>
+<p>Allow me to also take some time to talk about Corona Labs&#8217; last few years &#8212; 2016 in particular &#8212; and what the future holds. No doubt there was developer concern around the future of Corona Labs and our products based on the more-than-ordinary M&amp;A activity surrounding the company. However, the reality is that these events had little effect on the nature and level of progress made by our superstar team. In fact, if 2016 could serve as a barometer of progress, I think Corona is just getting started and I personally am excited about what the future holds. Consider that in 2016 alone, support for Apple TV was announced (by the way, Appodeal monetizes Apple TV too!), over 15 new monetization plugins were released, the Corona Marketplace was launched, and we added lightning-quick iteration via Corona Live Builds.</p>
+<p>So what happens next? In some ways &#8212; not much. We&#8217;re busy hacking away at the next major release which is right around the corner. We&#8217;re continuing to update plugins as their underlying SDKs evolve. And we&#8217;re also on-boarding more third-party assets and plugins into the Corona Marketplace as they are submitted. We want our developers to continue building fantastic games using Corona SDK, submitting valuable feedback to us, and staying in touch as your games hit the top of the charts, get featured by Apple or Google, or just because you think your game is awesome and we should know about it!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>FusePowered plugin update</title>
+		<link>/blog/2016/03/01/fusepowered-plugin-update/</link>
+		<comments>/blog/2016/03/01/fusepowered-plugin-update/#comments</comments>
+		<pubDate>Wed, 02 Mar 2016 00:01:44 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[Fuse Powered]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65898</guid>
+		<description><![CDATA[We have new news about the FusePowered plugin and it's general availability. Read the latest news on this plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-62891" src="/wordpress/wp-content/uploads/2015/05/FusePowered_Logo-300-300x43.png" alt="Fuse Powered" width="300" height="43" /></p>
+<p>If you’ve been following the latest in mobile acquisitions, you might have run across the news that Corona Labs’ previous owner Fuse Powered itself was <a href=https://www.fusepowered.com/blog/2016/01/fuse-powered-has-been-acquired-by-upsight/ target="_blank">recently acquired by Upsight</a>.</p>
+<p>While an original plan had called for the Fuse Powered plugin to generally be made available to Corona developers, this is no longer the case for the foreseeable future.</p>
+<p>We are told by Fuse Powered that while a Fuse Powered plugin for Corona SDK is of interest to them, their focus and priorities lie in integrating their SDK with the Upsight SDK in a combined solution.</p>
+<p>Developers who are currently using the Fuse Powered plugin in their apps should rest assured knowing that Fuse Powered will continue maintaining the plugin and Corona Labs will do its best to support them in this effort.</p>
+<p>This announcement is specifically for those who had been considering integrating the Fuse Powered plugin should it be released. Given we don&#8217;t know when Fuse Powered will be ready for new Corona SDK users, you should consider our <a href=/blog/topics/monetization/>other monetization options</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/01/fusepowered-plugin-update/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>We are growing! Corona Labs hires more staff</title>
+		<link>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/</link>
+		<comments>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/#comments</comments>
+		<pubDate>Mon, 18 Jan 2016 22:59:15 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona team]]></category>
+
+		<guid isPermaLink="false">/?p=65249</guid>
+		<description><![CDATA[You may have noticed a few new faces showing up in the forums, or the flurry of new features rolling out for Corona SDK! Now that Corona Labs is part of Perk.com, we’ve had the opportunity to grow our staff in some important areas.]]></description>
+				<content:encoded><![CDATA[<p>You may have noticed a few new faces showing up in the forums, or the flurry of new features rolling out for Corona SDK! Now that Corona Labs is part of Perk.com, we&#8217;ve had the opportunity to grow our staff in some important areas.</p>
+<p>Here are some of the new team members and the roles they will be filling. You will likely recognize some of the names!</p>
+<h3>Danny Glover</h3>
+<p>Danny has returned to Corona Labs as a <a href=https://www.linkedin.com/in/dannyglover86 target="_blank">Plugin and Framework Engineer</a> after running his own business for a while. Many of the plugins you use today were contributed by Danny and now he&#8217;s back to develop even more great plugins. Please welcome him back.</p>
+<h3>Sergey Lerg</h3>
+<p>You may know him in the forums as <a href=https://twitter.com/sergeylerg target="_blank">@lerg</a>. Sergey came up with great examples for doing 2.5D graphics when Graphics 2.0 came out. Now he&#8217;s an Engineer focused on updating our full featured game samples to use modern Corona SDK platform and plugin development standards.</p>
+<h3>Chris Byerley</h3>
+<p>Known in the forums as <a href=https://twitter.com/develephant target="_blank">@develephant</a>, Chris is the developer of the &#8220;mod_parse&#8221; module (now the <a href=https://store.coronalabs.com/plugin/parse target="_blank">Parse</a> plugin) and the awesome Lua-based cloud product, <a href=http://coronium.io/ target="_blank">Coronium</a>. Chris joins the team as a Lead Engineer to redefine Corona Cloud, which will be based on his work with Coronium.</p>
+<h3>Kegan <span class="comment-text ">Blumenthal</span></h3>
+<p>Kegan is new to the Perk and Corona Labs family. He joins the Corona team under the role of <a href=https://www.linkedin.com/in/keganblumenthal target="_blank">Business Development Manager</a> focused on developing new business models for Corona and spearheading commercial efforts for Corona Ads.</p>
+<h3>Charles McKeever</h3>
+<p>You probably know Charles from the weekly <a href=https://www.youtube.com/user/CoronaGeek target="_blank">Corona Geek Hangouts</a>, but Charles has also been quietly working as our Developer Evangelist in the background for several years. He&#8217;s now full time with Corona Labs, filling a Director of Publisher Relations role. He will continue to host online Corona Geek events along with attending offline events like GDC 2016, planning out CoronaCon 2016, punching out social media posts, and reaching out to developers.</p>
+<h3>Brent Sorrentino</h3>
+<p>Many of you know Brent from the forums. If you&#8217;ve ever used Corona&#8217;s documentation or referenced a guide, you&#8217;ve benefitted from Brent&#8217;s hard work. After several years of serving the Corona community, Brent is now onboard full time as a <a href=https://www.linkedin.com/in/ignisdesign target="_blank">Developer Evangelist</a>. In addition to his work in the forums and documentation, he is also working on new step-by-step guides to make it easy to get started with Corona SDK.</p>
+<h3>Rob Miracle</h3>
+<p>Sometimes referred to as &#8220;<a href=https://twitter.com/miracleman target="_blank">Miracle Man</a>&#8220;, Rob has been a forum ninja for several years. His weekly tutorials have helped countless Corona developers and his tireless dedication to the community captures the spirit of Corona SDK. Despite being employed full-time outside of Corona, Rob is continuing in his role in Developer Relations.</p>
+<p>Please take a moment to leave these exceptional talents a welcome in the comments below.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/18/we-are-growing-corona-labs-hires-more-staff/feed/</wfw:commentRss>
+		<slash:comments>34</slash:comments>
+		</item>
+		<item>
+		<title>With Perk.com, Corona Labs enters the next chapter</title>
+		<link>/blog/2015/12/01/with-perk-com-corona-labs-enters-the-next-chapter/</link>
+		<comments>/blog/2015/12/01/with-perk-com-corona-labs-enters-the-next-chapter/#comments</comments>
+		<pubDate>Tue, 01 Dec 2015 15:18:45 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=64859</guid>
+		<description><![CDATA[Hi folks, my name is Roj Niyogi and I’m President/Co-founder of Perk.com. Some of you have already had a chance to learn a little bit about both Perk.com and myself from the Corona forums. As Walter mentioned in his most recent post, Corona is joining Perk.com. Important to know and as indicated by Walter, he and I had been chatting for several months now comparing notes and sharing thoughts around his original vision of Corona and how Perk might be able to help. As a developer myself, I know that one of the most important things to me when considering...]]></description>
+				<content:encoded><![CDATA[<p>Hi folks, my name is Roj Niyogi and I’m President/Co-founder of Perk.com.  Some of you have already had a chance to learn a little bit about both Perk.com and myself from the <a href=https://forums.coronalabs.com/topic/60401-hey-folks-im-roj/>Corona forums</a>.</p>
+<p>As Walter mentioned in <a href=/blog/2015/11/30/corona-labs-joins-perk/>his most recent post</a>, Corona is joining Perk.com.  Important to know and as indicated by Walter, he and I had been chatting for several months now comparing notes and sharing thoughts around his original vision of Corona and how Perk might be able to help.  </p>
+<p>As a developer myself, I know that one of the most important things to me when considering a development platform -outside of a platform’s overall feature set and capabilities- was the platforms general viability.  I can assure the Corona developer community that with Perk.com’s support as a profitable publicly-traded company, Corona has an extremely bright future ahead.  </p>
+<p>So what does the next chapter bring?  Here’s a small preview:</p>
+<p><strong>Support for more plugins</strong><br />
+Corona already sports several popular plugins that make up the Plugin Directory today.  However, there are many many more that will help continue to “round out” the platform: plugins for services such as Segment.io, Crashlytics, Helpshift and more make up the ever-evolving landscape of mobile utilities that enhance app experiences for users and help developers make better decisions when building their apps.  We invite our community to share their plugin requests.</p>
+<p><strong>Corona Ads</strong><br />
+Corona will soon launch Corona Ads &#8211; a simple and elegant way to introduce monetization via display and video ads into your Corona apps.  With Perk.com’s deep relationships with ad partners today, we’re excited to extend this to the Corona developer community and make it even easier for developers to earn money from their mobile apps.</p>
+<p><strong>Corona Asset Store</strong><br />
+A natural extension of the Corona platform is a general marketplace that allows developers like you to take assets (components, graphics, etc) and make them available to other developers to buy and implement into their own apps.  </p>
+<p><strong>Corona Con, anyone?</strong><br />
+Corona developer forums are great and with such a vibrant developer community, it seems about time there should be a Corona SDK oriented conference to really bring the community even closer together.  And what better venue than centrally-located Austin, Texas.  Beer, BBQ, Tex-mex and good conversation around Corona seem to be the ingredients for a perfect conference recipe and we’re looking forward to bringing you the first conference in late 2016 (Austin City Limits, anyone?)</p>
+<p>All in all, I consider any and all Corona developers to be pioneers, thought-leaders, and pragmatists.  You use Corona because it just makes sense and feels right; it’s easy to learn, easy to use, and it’s cross-platform.  It’s supported both by a passionate engineering/development team and a thriving community of developers.</p>
+<p>Some of you might be wondering why Corona changed hands again.  The answer is actually fairly simple: to fully support Corona and take it to greater heights.  The Fuse acquisition could be seen as a trailer to the movie or the appetizer to the main course; metaphors aside, the fact is that much of what Fuse aimed to accomplish with its acquisition of Corona Labs, Perk.com will deliver on.  </p>
+<p>Perk ♥ Corona!</p>
+<p>Onward we go. </p>
+<p>-roj</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/01/with-perk-com-corona-labs-enters-the-next-chapter/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fire tv &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/fire-tv-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>fire tv &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Submitting Corona Apps for Amazon Fire TV</title>
+		<link>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/</link>
+		<comments>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/#comments</comments>
+		<pubDate>Thu, 29 May 2014 23:47:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[fire tv]]></category>
+
+		<guid isPermaLink="false">/?p=58707</guid>
+		<description><![CDATA[Greg Pugh is the founder of GP Animations, producer of the "Maddie Bear" book series. In this guest post, he writes about his experience in porting his recent app to the Amazon Fire TV and how simple the process can be.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-58723 size-thumbnail" style="margin: 1px 10px 10px 30px;" src="/wordpress/wp-content/uploads/2014/05/greg-pugh-126x150.jpg" alt="greg-pugh" width="126" height="150" /><em>Corona Ambassador Greg Pugh is the founder of <a href=http://www.GPAnimations.com/ target="_blank">GP Animations</a>, producer of the <a href=http://www.MaddieBearBooks.com/ target="_blank">Maddie Bear</a> book series. When he&#8217;s not writing and illustrating children&#8217;s book apps, he also works as a Flash developer, tutorial writer, and UI designer. Follow him on Twitter at <a href=http://www.twitter.com/GPAnimations target="_blank">@GPAnimations</a>.</em></p>
+<hr />
+<p>After publishing the paperback and iPad versions of <a href=http://www.MaddieBearBooks.com/ target="_blank">Maddie Bear’s Birthday</a>, I wanted to keep the series going, but I didn’t have any ideas for the next story. So, I took a break from writing and decided to create an endless runner game called <a href=http://gpanimationsblog.com/2014/04/18/maddie-bears-snack-time/ target="_blank">Maddie Bear’s Snack Time</a>. It&#8217;s a very simple game with one-touch controls that I ported to iOS, Android, Nook, and Kindle Fire very easily. My 21-month-old daughter actually figured out how to navigate through the menu and play it within 2 minutes, so in my book, the game was a success.</p>
+<p>When Amazon announced their new <a href=http://www.amazon.com/gp/product/B00CX5P8FC/ref=topnav_storetab_aftv target="_blank">Fire TV</a> device, it seemed like a natural transition to port over from Kindle Fire to the Fire TV. I assumed that all I would need to change was the &#8220;tap&#8221; events into &#8220;button&#8221; events and send it off to Amazon. The problem was that I didn’t know how the Fire TV’s remote control mapped its button layout. So, I contacted Ed Maurina (<a href=http://www.RoamingGamer.com/ target="_blank">www.RoamingGamer.com</a>) since he already knew how to map Ouya controller events to work with the Corona Simulator. After a few trial runs on a friend&#8217;s Fire TV, we achieved a solution which would allow me to get <a href=http://gpanimationsblog.com/2014/04/29/maddie-bears-snack-time-amazon-fire-tv-edition/ target="_blank">Maddie Bear’s Snack Time</a> on the Fire TV.</p>
+<h3>Prepping for Fire TV</h3>
+<p>To prepare your app for the Fire TV and Amazon App Store, I suggest you obtain Ed’s <a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/FireTVLib target="_blank">Fire TV Library</a>. Using this library, you can convert all of your &#8220;touch&#8221; and &#8220;tap&#8221; events to Fire TV remote controller events. Ed’s library is also great because you can use your computer’s keyboard to test the controls in the Corona Simulator. If you have a USB gaming controller that allows you to assign keyboard keys to its buttons, you can even test your app using that.</p>
+<p>Since I already had the Kindle Fire and Android versions of my app on the Amazon App Store, I published the Fire TV version using the same <strong>Application Name</strong>, <strong>Version Name</strong>, and <strong>Package Name</strong>. However, I changed the <strong>Version Code</strong> to <strong>2</strong>. This lets Amazon know that it&#8217;s the same app but with added support for a new device. This also prevents duplicate apps for different devices appearing on the Amazon App Store, which can confuse customers.</p>
+<h4>Notes For Publishing to Fire TV</h4>
+<ul>
+<li>The app should be 2GB or less in size. Anything 4GB or higher may not install/run on the Fire TV.</li>
+<li>The UI should be simple and easy to navigate using the Fire TV remote control with one hand.</li>
+<li>It can <strong>not</strong> require the following permissions:</li>
+</ul>
+<p><code style="margin-left: 30px; margin-top: 0px; padding-top: 0px;">android.permission.SET_WALLPAPER</code><br />
+<code style="margin-left: 30px;">android.permission.CALL_PRIVILEGED</code><br />
+<code style="margin-left: 30px;">android.permission.CALL_PHONE</code><br />
+<code style="margin-left: 30px;">android.permission.MODIFY_PHONE_STATE</code><br />
+<code style="margin-left: 30px;">android.permission.READ_PHONE_STATE</code><br />
+<code style="margin-left: 30px;">android.permission.READ_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.RECEIVE_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.SEND_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.WRITE_SMS</code><br />
+<code style="margin-left: 30px;">android.permission.ACCESS_FINE_LOCATION</code><br />
+<code style="margin-left: 30px;">android.permission.RECORD_AUDIO</code><br />
+<code style="margin-left: 30px;">android.permission.CAMERA</code></p>
+<ul>
+<li>Include a 512×512 <strong>.png</strong> icon file with square corners and without transparency.</li>
+<li>Screenshots need to be <strong>.png</strong> or <strong>.jpeg</strong> format in landscape orientation at 1280×720 px (720p), 1920×1080 px (1080p), or 1024×600 px.</li>
+</ul>
+<h3>Testing the App</h3>
+<p>Once you have the app published, you can side-load it onto a Fire TV for testing. In my case, this was done by emailing the <strong>.apk</strong> file to my friend who gave me detailed reports of how the app ran. If you’re happy with its performance, sign into your Amazon Developer account and create a new app profile. Here you’ll upload the <strong>.apk</strong>, screenshots, icon, write a description, and provide other details just like any other app.</p>
+<h3>Submission</h3>
+<p>When I submitted my app, the status went from &#8220;Submitted&#8221; to &#8220;Live&#8221; within 24 hours. Either I picked a great time to submit an app or it&#8217;s because Amazon really wants to build up their Fire TV app library. Regardless, this could be a great time to get your app in the Fire TV store while the market is unsaturated.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/05/29/guest-post-submitting-corona-apps-for-amazon-fire-tv/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

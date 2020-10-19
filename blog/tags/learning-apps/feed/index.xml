@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Learning Apps &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/learning-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Learning Apps &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights: Writing A Custom Keyboard for Spelling Test</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/</link>
+		<comments>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 23:50:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[Learning Apps]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220</guid>
+		<description><![CDATA[In this hangout snippet from Monday's Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his Spelling Test app. He also talks about his adventures in supporting Hebrew as well as multibyte characters.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4Oo4dPcu2ss?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p><img class="wp-image-477 alignright" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" /> In this hangout snippet from Monday&#8217;s Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his <a href=https://itunes.apple.com/us/app/spelling-test-by-funexam.com/id421083384?mt=8 target="_blank">Spelling Test app</a>. He also talks about his adventures in supporting Hebrew as well as multibyte characters. Watch the full hangout to catch other <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-35/>interesting app development tips</a>.</p>
+<p><strong>Subscribe:</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

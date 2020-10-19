@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ios7 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ios7/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ios7 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Apple&#8217;s iOS 7 Submission Requirements</title>
+		<link>/blog/2014/01/29/apples-ios-7-submission-requirements/</link>
+		<comments>/blog/2014/01/29/apples-ios-7-submission-requirements/#comments</comments>
+		<pubDate>Wed, 29 Jan 2014 23:11:26 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[app submission]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[ios7]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=55578</guid>
+		<description><![CDATA[As many of you are probably aware, Apple has announced they are <a href="http://www.macworld.com/article/2080865/apple-requiring-app-submissions-to-be-optimized-for-ios-7-by-feb-1.html">requiring app submissions</a> to be optimized for iOS7 starting on Feb 1.
+
+If you are using our Graphics 2.0 builds (by either migrating, or by using the compatibility mode), then you're already good to go. Graphics 2.0 builds have supported iOS7 since Day 1. ]]></description>
+				<content:encoded><![CDATA[<p>As many of you are probably aware, Apple has announced they are <a href=http://www.macworld.com/article/2080865/apple-requiring-app-submissions-to-be-optimized-for-ios-7-by-feb-1.html>requiring app submissions</a> to be optimized for iOS7 starting on Feb 1.</p>
+<p>If you are using our Graphics 2.0 builds (by either migrating, or by using the compatibility mode), then you&#8217;re already good to go. Graphics 2.0 builds have supported iOS7 since Day 1. </p>
+<p>If you are still on Graphics 1.0, you will have issues with Apple&#8217;s submission process. You have several options:</p>
+<ol>
+<li>Upgrade your project to Graphics 2.0 and use <a href=http://docs.coronalabs.com/guide/graphics/migration_v1.html>1.0 compatibility mode</a> (i.e. adding one line in config.lua). This has been used very successfully by many apps, including highly complex ones.</li>
+<li>Upgrade your project to Graphics 2.0 by <a href=http://docs.coronalabs.com/guide/graphics/migration_g20.html>migrating your code</a>. This allows you to take full advantage of the great graphics capabilities of Corona.</li>
+<li>Use a Graphics 1.0 daily build that explicitly supports iOS 7.</li>
+</ol>
+<p>&nbsp; </p>
+<p>Now, we recognize that daily builds are only available to Pro (and above) subscribers. We thought about what we can do to help you around this issue, so here&#8217;s what we are going to do:</p>
+<ul>
+<li>We are making build 2014.1262 available to all Corona developers (<a href=http://developer.coronalabs.com/sites/default/files/CoronaSDK-2014.1262.dmg>Mac</a>) (<a href=http://developer.coronalabs.com/sites/default/files/CoronaSDK-2014.1262.msi>Win</a>).</li>
+<li>This build is based on Graphics 1.0 and supports iOS7, so you can use it to build your apps and submit to the app store.</li>
+<li>This is not a public release. It is a daily build that fixes the following issues present in 2013.1260:</li>
+<ul>
+<li>The Facebook listener won&#8217;t receive an event when the user denies the login request.</li>
+<li>Requesting additional Facebook permissions returns the incorrect event state.</li>
+<li>scrollView event.phase not being passed to the listener.</li>
+</ul>
+</ul>
+<p>If there are other issues in 1262 that affect your app and you are not able to use it, we are very sorry. We want to shield you from disruptions like this, but that is not always completely possible. In this case, Apple has decided to enact a big restriction to keep pace with the mobile industry. And following Apple&#8217;s lead, we have to keep moving forward, and that means focusing 100% on our Graphics 2.0 builds.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/01/29/apples-ios-7-submission-requirements/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+		<item>
+		<title>Corona Weekly Update: iOS7 Beta, Text alignment, Facebook</title>
+		<link>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/</link>
+		<comments>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/#comments</comments>
+		<pubDate>Tue, 18 Jun 2013 04:40:10 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[ios7]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=36151</guid>
+		<description><![CDATA[Time for a quick update on your favorite <a href="/products/corona-sdk/">mobile app development</a> platform.
+
+Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the "flat" UI that was demonstrated was exactly the kind of thing we saw some of you <em>already</em> creating using Corona's graphics system. ]]></description>
+				<content:encoded><![CDATA[<p>Time for a quick update on your favorite <a href=/products/corona-sdk/>mobile app development</a> platform.</p>
+<p>Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the &#8220;flat&#8221; UI that was demonstrated was exactly the kind of thing we saw some of you <em><strong>already</strong></em> creating using Corona&#8217;s graphics system.</p>
+<p><img class="alignright size-medium wp-image-36154" alt="Corona iOS 7 Beta device build" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.04.16-PM-300x171.png" /></p>
+<p>For example, <a href=http://foreseetheday.com/>this app</a> was in the works before iOS 7 was even announced!</p>
+<p>Apple&#8217;s NDA prevents me from talking too much about iOS7, but what I can say is that we will fully support iOS7. In fact, last week, starting in <a href=http://developer.coronalabs.com/release/2013/1141/>daily build</a> 1141, you can try your app out on iOS 7 Beta. On the right, you just select &#8220;7.0 beta&#8221; from the iOS device build dialog in the Corona Simulator, and presto, you&#8217;ve got an app built against the iOS 7 Beta SDK that you can test on your own device.</p>
+<p>I really recommend you do try out your apps on iOS 7. If the past is any indication, we expect iOS 7 to introduce regression bugs that affect all iOS developers, not just Corona developers. The sooner you know about them, the less you&#8217;ll be surprised when iOS 7 is finally released!</p>
+<p><img class="alignright size-full wp-image-36163" alt="Corona SDK supports Facebook Connect" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.25.24-PM.png" /><br />
+(Our lawyers will bug me about this, so let me just remind you that if you are using iOS 7 Beta, you must honor Apple&#8217;s developer membership rules.)</p>
+<p>We also have upgraded <a href=http://www.coronalabs.com/facebook/>Corona&#8217;s Facebook support</a> on Android, so it&#8217;s on par with iOS. Now, you can run Facebook&#8217;s Scrumptious sample on Android just like you can on iOS.</p>
+<p>We&#8217;re also working on adding Facebook monetization features like <a href=https://developers.facebook.com/docs/tutorials/mobile-app-ads/>Mobile App Install Ads</a> that can help drive more installations of your app and increase discovery, all things that will help you make more money with your app! This should be coming in a daily build later this week.</p>
+<p><img class="size-medium wp-image-36165 alignright" alt="Corona-text-alignment" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Corona-text-alignment-300x45.png" width="300" height="45" /><br />
+There were a bunch of other interesting checkins that you&#8217;ll notice in the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>daily build notes</a> related to gaming, but the one I want to highlight is related to business apps or any app that&#8217;s dealing with lots of text.</p>
+<p>In the next daily build, we are going to be giving more text alignment capabilities. You&#8217;ll be able to set left, center, right alignment on multiline text objects, the ones created by &#8216;display.newText()&#8217;. There will be more docs forthcoming on our <a href=http://docs.coronalabs.com/daily/>daily build API docs</a>. I&#8217;ll update here when they&#8217;re ready.</p>
+<p><strong>UPDATE</strong>: The reference for the text alignment is <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html>here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+		</item>
+	</channel>
+</rss>

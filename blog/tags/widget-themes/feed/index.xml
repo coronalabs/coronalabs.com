@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Widget Themes &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/widget-themes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Widget Themes &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #118 – Shuffling Lua Table Items, Widget Themes, and Variable Function Arguments</title>
+		<link>/blog/coronageek/corona-geek-118/</link>
+		<comments>/blog/coronageek/corona-geek-118/#comments</comments>
+		<pubDate>Mon, 01 Dec 2014 23:00:28 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Lua Functions]]></category>
+		<category><![CDATA[Lua Tables]]></category>
+		<category><![CDATA[Widget Themes]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60393</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we had fun shuffling items in LUA tables. We looked at prebuilt widget themes that dress up your apps, and we explored using variable arguments with functions.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/2f5I8UrRPng?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we had fun shuffling items in LUA tables. We looked at prebuilt widget themes that dress up your apps, and we explored using variable arguments with functions.</p>
+<p><strong>Congratulations to Ray Delia from S. K. Studios for winning this months Corona Geek Games challenge</strong></p>
+<p>Ray scored 32,099 zeta playing <a href=http://doctorspingame.com/ target="_blank">Doctor Spin</a>. He posted his high score to the <a href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> and earned himself a $50 gift card to the retailer of his choice.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-117/ target="_blank">Corona Geek #117 – Government Grants, Windows Phone 8 Tips, and JSON Gotchas</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Burtons Media Group &#8211; Corona SDK Books &#8211; <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek</strong></a> and save 20% at checkout</li>
+<li>Crave Creative <a href=http://www.cravecreative.com/corona-widget-theme-1.html target="_blank">Widget Themes</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://www-01.ibm.com/software/marketing-solutions/benchmark-hub/alert.html target="_blank">Black Friday Mobile Sales Stats from IBM</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-118/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-118-2014-12-01-lua-tables-widgets-and-functions.mp3" length="69643840" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-118-2014-12-01-lua-tables-widgets-and-functions.mp3" length="69643840" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-118-2014-12-01-lua-tables-widgets-and-functions.mp3" length="69643840" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-118-2014-12-01-lua-tables-widgets-and-functions.mp3" length="69643840" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

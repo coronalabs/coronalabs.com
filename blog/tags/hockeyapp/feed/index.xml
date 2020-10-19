@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hockeyapp &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/hockeyapp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>hockeyapp &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>HockeyApp plugin now available for Corona apps</title>
+		<link>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/</link>
+		<comments>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/#comments</comments>
+		<pubDate>Wed, 18 May 2016 20:08:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash reporting]]></category>
+		<category><![CDATA[hockeyapp]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[testing]]></category>
+
+		<guid isPermaLink="false">/?p=66827</guid>
+		<description><![CDATA[Our new HockeyApp plugin can help you make use of the HockeyApp testing and crash reporting service. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/05/hockey.png><img class="alignright wp-image-66860 size-thumbnail" style="margin: 2px 0px 10px 25px;" src="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png" alt="hockey" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png 150w, /wordpress/wp-content/uploads/2016/05/hockey-300x300.png 300w, /wordpress/wp-content/uploads/2016/05/hockey.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a><a href=https://www.hockeyapp.net/features/ target="_blank">HockeyApp</a> is a service from Microsoft that allows you to upload test builds of your iOS, Android, Windows, and OS X apps. Once uploaded, you can easily distribute them to your testers. HockeyApp also lets you provide release notes on what has changed and gather stats on downloads and other app metrics during the testing process. In addition, it supports crash reporting. All of these factors are where the Corona <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp plugin</a> comes into play.</p>
+<h3>Getting started</h3>
+<p>Like all third-party services, you will need to <a href=https://rink.hockeyapp.net/users/sign_up target="_blank">register</a> with HockeyApp. Once that step is complete, you can start setting up your apps, your testers, and begin deploying test builds. Since this is a Corona plugin, you will also need to add the plugin to your <code>build.settings</code> and <code>require()</code> it in <code>main.lua</code> (see our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp documentation</a> for details). Finally, you will need to <a href=https://store.coronalabs.com/plugin/hockeyapp target="_blank">activate the plugin</a> in the Corona Marketplace.</p>
+<h3>Features</h3>
+<p>For crash reporting, you simply need to initialize the plugin by calling the <a href=https://docs.coronalabs.com/plugin/hockey/init.html target="_blank">hockeyApp.init()</a> function with an app ID retrieved from the HockeyApp portal. If your app crashes during testing, the plugin will detect it and report the crash to the HockeyApp dashboard.</p>
+<p>While you can choose to have HockeyApp send your testers an email when there is an app update, you may prefer to have your app detect when a new version is available via the <a href=https://docs.coronalabs.com/plugin/hockey/checkForUpdate.html target="_blank">hockeyApp.checkForUpdate()</a> call. Similarly, you can un-register for updates with the <a href=https://docs.coronalabs.com/plugin/hockey/unRegisterForUpdate.html target="_blank">hockeyApp.unRegisterForUpdate()</a> call.</p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> plugin is simple &#8212; just add a few lines of code and let HockeyApp do the rest! You can find complete usage details for HockeyApp in our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">plugin documentation</a>, or discuss it further in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

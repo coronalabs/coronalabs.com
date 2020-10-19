@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CoronaCards &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/coronacards/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>CoronaCards &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New public build 2016.2992 now available</title>
+		<link>/blog/2016/11/16/new-public-build-2016-2992-now-available/</link>
+		<pubDate>Wed, 16 Nov 2016 22:07:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=68731</guid>
+		<description><![CDATA[The latest public build of Corona SDK, Corona Enterprise, and CoronaCards is now available for download. Read on to learn more about this release!]]></description>
+				<content:encoded><![CDATA[<p><a href=https://developer.coronalabs.com/downloads/coronasdk><img class="alignright wp-image-68862" style="margin: 5px 0px 20px 15px;" src="/wordpress/wp-content/uploads/2016/11/download.png" alt="download" width="143" height="52" /></a>The latest public build of Corona SDK, Corona Enterprise, and CoronaCards is now <a href=https://developer.coronalabs.com/downloads/coronasdk target="_blank">available for download</a>. We&#8217;ve added quite a few new features and made several updates. With this build (<a href=https://developer.coronalabs.com/downloads/coronasdk target="_blank">2016.2992</a>), Corona is more solid than ever and it continues to grow!</p>
+<p>Read on for a summary of the changes you&#8217;ll see if you&#8217;re upgrading from 2016.2949, or check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-20162992 target="_blank">full release notes</a>.</p>
+<h3>Corona Simulator</h3>
+<ul>
+<li>Introduction of a new Welcome window. We&#8217;ve made useful links more, well, &#8220;useful.&#8221; You also have a better view of your recent projects.<br />
+<img class="alignnone wp-image-68732" style="margin-top: 20px; margin-bottom: 20px;" src="/wordpress/wp-content/uploads/2016/11/Screen-Shot-2016-11-09-at-9.46.27-PM-1024x653.png" alt="screen-shot-2016-11-09-at-9-46-27-pm" width="552" height="352" /></li>
+<li>We now attempt to validate keys and values in <code>build.settings</code> and <code>config.lua</code>. For example, if your app requires a key like <code>FacebookAppId</code> and you enter <code>FaceBookID</code> instead, Corona will alert you that the key isn&#8217;t recognized, helping you pinpoint potential issues <em>before</em> you build your app.</li>
+<li>With iOS 10, Apple made changes to how they scan submitted apps and, as a result, we now provide default values for the various <code>NSDescription</code> strings required by Apple. If you use these <a href=https://docs.coronalabs.com/guide/distribution/buildSettings/index.html?#permissions target="_blank">permission-based features</a>, however, we <em>strongly</em> recommend that you provide actual values for these strings.</li>
+<li>macOS 10.12, Xcode 8.x, and iOS 10.x brought considerable changes that needed to be reflected in the Simulator and build process. This build of Corona will require you to use Xcode 8.1 since we now default to iOS 10.1 as the primary SDK.</li>
+<li>Introduction of Corona live builds (beta) from the Corona Simulator for macOS. These builds are a powerful and efficient way to see exactly how your in-development Corona app will appear on real devices.</li>
+<li>New borderless skin for testing the iPad Pro.</li>
+<li>The Simulator for macOS now supports the hardware &#8220;back&#8221; button when you use an Android or WP8 skin &#8212; just select <strong>Hardware</strong> → <strong>Back</strong> from the main menu.</li>
+<li>Minor improvements to the console log screen introduced in the previous public build.</li>
+</ul>
+<h3>Core</h3>
+<ul>
+<li>Widget <a href=https://docs.coronalabs.com/api/library/widget/newPickerWheel.html target="_blank">picker wheels</a> are now resizable so that you can incorporate them into your UI with much greater flexibility.</li>
+<li>Improved splash screen controls including per-platform support. You now have the ability to use a unique splash screen image for iOS and another for Android. You can also enable and disable the splash screen for each platform, if desired.</li>
+</ul>
+<h3>Windows</h3>
+<ul>
+<li>Previously, the default behavior for Windows Desktop builds was to allow multiple instances of apps to run. Most apps, in particular games, only allow one version to run at a time. We have changed it so that Windows desktop apps are now single-instance by default. However, if you are building an app that needs multiple instances, this can still be enabled via a <code>build.settings</code> entry (see <a href=https://docs.coronalabs.com/guide/distribution/win32Build/index.html?#singleinstance target="_blank">here</a> for details).</li>
+<li>We have improved command line parameter handling for desktop builds and added <code>applicationOpen</code> support to single-instance Win32 desktop apps.</li>
+</ul>
+<h3>macOS</h3>
+<ul>
+<li>Similar to Windows, improved command line parameter handling for desktop builds.</li>
+</ul>
+<h3>Android</h3>
+<ul>
+<li>We&#8217;ve worked to improve the way video plays on Android. With improvements to <a href=https://docs.coronalabs.com/api/library/native/newVideo.html target="_blank">native.newVideo()</a> and <a href=https://docs.coronalabs.com/api/library/media/playVideo.html target="_blank">media.playVideo()</a>, you should now have more success pausing and seeking within videos loaded from remote sources.</li>
+<li>Corona Enterprise for Android developers get new APIs for creating <code>AlertDialog.Builders</code> such as:<br />
+<code>CoronaActivity.createAlertDialogBuilder()</code><br />
+<code>CoronaActivity.createDarkAlertDialogBuilder()</code><br />
+<code>CoronaActivity.createLightAlertDialogBuilder()</code></li>
+<li>New <code>PackageServices</code> Enterprise APIs for interacting with Android packages.</li>
+</ul>
+<h3>iOS</h3>
+<ul>
+<li>Corona Enterprise for iOS developers get a new API, <code>CoronaEventDataKey()</code>.</li>
+</ul>
+<h3>tvOS</h3>
+<ul>
+<li>Updates to support the latest version of the tvOS SDK as required by Apple, including new graphic asset requirements like a &#8220;top shelf wide&#8221; image.</li>
+<li>Support for <code>native.showPopup( "appstore" )</code> on tvOS. This is the popup that lets you easily rate, review, and download apps.</li>
+</ul>
+<h3>Other notes</h3>
+<p>On October 1st, 2016, we changed our Terms of Service to reflect some important changes. Specifically, Corona Enterprise users may not build custom monetization-oriented plugins with their license. Instead, these users may use hosted monetization plugins offered in the <a href=https://marketplace.coronalabs.com/plugins/monetization target="_blank">Corona Marketplace</a>. Corona Enterprise users wishing to build/use a monetization plugin that is not hosted in the Corona Marketplace may contact us for permitted usage.</p>
+<p>This new policy will grant the platform and its users with plugins and adapters that are officially supported and maintained by the Corona team. This will ensure build quality and ultimately bring many options for our customers to implement and experiment with. Our goal is to bring the best options the industry has to offer and, moreover, ensure the integrity of builds and the platform as a whole into the future.</p>
+<h3>Conclusion</h3>
+<p>Corona Labs&#8217; team of engineers continues to innovate and grow our suite of products. Make sure you <a href=https://developer.coronalabs.com/downloads/coronasdk target="_blank">download build 2016.2992</a> to see all of these new improvements. Shortly upcoming, we will resume daily builds and march onward to our next public build!</p>
+<p>Questions or comments? Join us in the <a href=https://forums.coronalabs.com/forum/551-daily-builds-and-public-releases/ target="_blank">Corona Forums</a> to discuss this release.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona major build release 2016.2949</title>
+		<link>/blog/2016/09/19/corona-major-build-release-2016-2949/</link>
+		<pubDate>Mon, 19 Sep 2016 22:50:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=68100</guid>
+		<description><![CDATA[Corona Labs is pleased to announce build 2016.2949 as a major release. Click through to read the details!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67801" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png" alt="Corona Labs logo" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/corona_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/corona_logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/08/corona_logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/08/corona_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/corona_logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/08/corona_logo.png 862w" sizes="(max-width: 120px) 100vw, 120px" />Corona Labs is pleased to announce the immediate availability of build <a href=http://developer.coronalabs.com/content/coronasdk-20162949-0 target="_blank">2016.2949</a> as a major release.</p>
+<p>There are several reasons for this, but the main impetus was recent changes in Apple&#8217;s submission process. Because of their new requirements for app submissions, our previous public build (2016.2906) can&#8217;t be used by developers submitting apps for iOS/tvOS, and it was not practical to retrofit that build to meet Apple&#8217;s new guidelines. Since our next intended public release is at least a month away, we felt it necessary to provide a major release that works with Apple&#8217;s new rules.</p>
+<p>This major release also includes the <strong>iOS 10</strong> SDK &#8212; you can now use Xcode 8 and the iOS 10 SDK to build apps, or you can continue with Xcode 7.3 and the iOS 9 SDK.</p>
+<p>Starting today, downloading the public build will get you build <a href=http://developer.coronalabs.com/content/coronasdk-20162949-0 target="_blank">2016.2949</a> instead of 2016.2906.</p>
+<h3>And more&#8230;</h3>
+<p>In the current development cycle, our engineers have been working hard on addressing infrastructure and core improvements to Corona to make a more stable platform. See the release notes below for a list of many of the changes in this release, including new features which we plan to announce over the next couple of weeks.</p>
+<p>One of these features is new &#8220;splash screen&#8221; controls, a system which will drastically simplify splash screen implementation. Starting with this build, a default Corona-branded splash screen will appear briefly when the app starts. We continue to believe in keeping Corona free to use, but we also need to grow Corona. A few seconds of branding will help improve our brand awareness. For those who want to use their own branding, you can purchase a plugin from the <a href=https://marketplace.coronalabs.com/plugin/splash-screen-control target="_blank">Corona Marketplace</a> for $99/year per user &#8212; this will let you use your own image for the splash screen or disable it completely. In summary, the splash screen feature will help us continue to build the best cross-platform 2D app development platform in the market.</p>
+<p>As a bonus, we&#8217;ve also re-designed the developer portal at <a href=https://portal.coronalabs.com/ target="_blank">portal.coronalabs.com</a>. With this new portal, you have quick access to useful resources like the <a href=https://monetize.coronalabs.com/ target="_blank">Corona Ads dashboard</a>, <a href=https://docs.coronalabs.com/ target="_blank">documentation</a>, the <a href=https://docs.coronalabs.com/guide/programming/index.html target="_blank">Getting Started</a> guide, bug reporting, community forums, and the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. You can also quickly view your existing subscriptions and access/update your account information.</p>
+<h3>Release notes (2016.2949)</h3>
+<ul>
+<li>macOS: improve reliability of &#8220;Copy to device&#8221; option on build dialogs; add &#8220;Retry&#8221; button for when you forget to plug in a device.</li>
+<li>Simulators: add missing &#8220;Borderless&#8221; skin in iPad Pro size.</li>
+<li>Fixed issue with splash screen code which caused stacktraces to appear for some people when the splash screen was disabled.</li>
+<li>macOS: Removed beta tag from iOS and tvOS building with Xcode 8.0.</li>
+<li>iOS, tvOS: fix issue which prevented apps being submitted to the App Store.</li>
+<li>macOS: Added Back key support for Android skins in Simulator (Hardware→Back).</li>
+<li>Core: Fixed crash when custom shader contains empty table. Casenum 5894470.</li>
+<li>Core: Added ability to read/write custom &#8220;app&#8221; preferences to storage. See APIs <a href=https://docs.coronalabs.com/api/library/system/getPreference.html target="_blank">system.getPreference()</a>, <a href=https://docs.coronalabs.com/api/library/system/setPreferences.html target="_blank">system.setPreferences()</a>, and <a href=https://docs.coronalabs.com/api/library/system/deletePreferences.html target="_blank">system.deletePreferences()</a>.</li>
+<li>Android: Fixed a potential crash that can occur when an app with notification permissions is updated to remove said permissions. Casenum 40070.</li>
+<li>Windows: Fixed bug where &#8220;mouse&#8221; event would not provide a double right click or double middle click&#8217;s 2nd down phase.</li>
+<li>macOS, Windows: fix issue with app sometimes exiting when a build is requested. No casenum.</li>
+<li>Core: Fixes crash caused by an out-of-range frame index for Image Sheets when used with <a href=https://docs.coronalabs.com/api/library/display/newImage.html target="_blank">display.newImage()</a>. Now it will display a warning message and default to the last frame in the Image Sheet (same behavior as with <a href=https://docs.coronalabs.com/api/library/display/newImageRect.html target="_blank">display.newImageRect()</a>). Casenum: 47013.</li>
+<li>Physics: Fixed debug draw mode to show the real position of physics bodies in groups that have been scaled or translated. This doesn&#8217;t fix the issue with using physics objects in groups but will display the true location of the physics body in relation to the display object. Casenum: 46663.</li>
+<li>Windows, macOS: display a message in the console if an app closes because <a href=https://docs.coronalabs.com/api/library/native/requestExit.html target="_blank">native.requestExit()</a> was called. No casenum.</li>
+<li>Android: Fixed an issue where setting the <code>minSdkVersion</code> in <code>build.settings</code> could only go as high as API Level 21 (Android 5.0). Now this can be set as high as API Level 23 (Android 6.0).</li>
+<li>Android &#8211; Enterprise: Added new APIs for interacting with packages on Android devices (PackageServices). These can be used to quickly tell if a package is installed and enabled on a device.</li>
+<li>Core: fixing new display objects not triggering scene update after <code>display.save()</code>.</li>
+<li>macOS: Handle hung iOS device installs correctly. No casenum.</li>
+<li>Updated viewer subrepo to latest version.</li>
+<li>Core: fixing culling offscreen objects with <code>display.save()</code>. Casenum 43011.</li>
+<li>Enterprise: fix issue with signing apps. No casenum.</li>
+<li>iOS: tweaks for iOS 10 beta.</li>
+<li>OS X: Support builds against iOS/tvOS 10.0 beta.</li>
+<li>Core: fixing crash when using TextureResourceCanvas as mask. Hit testing doesn&#8217;t work for these masks.</li>
+<li>Core: fixing TextureResourceCanvas not invalidating if released in same frame.</li>
+<li>Core: tweaking warning messages when fill images contain invalid data.</li>
+<li>Core: fixing containers sometimes affecting masked objects (casenum 46668).</li>
+<li>Core: fixing crash when changing masks within frame (casenum 46685).</li>
+<li>Windows: Improved clarity of text in top-right corner of the Welcome window (was blurry).</li>
+<li>Add total elapsed time to the &#8220;build succeeded&#8221; line for all build types.</li>
+<li>OS X, Windows: change build process to download built app directly from S3 to improve build latencies. No casenum.</li>
+<li>tvOS Enterprise: fixing various issues with bitcode.</li>
+<li>OS X: improve dafaults for Build dialog. Casenum 44272.</li>
+<li>Make the location of the output archive more deterministic.</li>
+<li>OS X: improve logging performance under some circumstances. No casenum.</li>
+<li>Fix issue with some iOS plugin builds.</li>
+<li>OS X, Windows: improve unconfigured plugins warning message. No casenum.</li>
+<li>Android: Fixed an issue introduced in build 2016.2825 where <a href=https://docs.coronalabs.com/api/library/media/selectPhoto.html target="_blank">media.selectPhoto()</a> and <a href=https://docs.coronalabs.com/api/library/media/selectVideo.html target="_blank">media.selectVideo()</a> would fail on devices older than Android 4.1. Casenum 46579.</li>
+<li>OS X: don&#8217;t warn incorrectly about plugins in Desktop apps. Casenum 46336.</li>
+<li>OS X: fix issue with downloading very large apps during builds. No casenum.</li>
+<li>OS X: fix performance issues with native controls and mouse cursor on some computers. Casenum 46495.</li>
+<li>OS X: fix issue with running Simulator on OS X 10.9. No casenum.</li>
+<li>Remove references to <code>[NSString constainsString:]</code> and replace with <code>[NSString+Extensions contains:]</code>.</li>
+<li>OS X: stop mouse and location events firing when Simulator is suspended. Casenums 46574, 44126.</li>
+<li>OS X: don&#8217;t include <code>build.settings</code> in built app. No casenum.</li>
+<li>Android &#8211; Enterprise: Maintenance.</li>
+<li>Android &#8211; Enterprise: Fixed an issue where <code>PermissionsServices.findAllPermissionsInManifestForGroup()</code> would return null if a permission was requested that doesn&#8217;t exist on the device, e.g. <code>"com.sec.android.provider.badge.permission.READ"</code> on a non-Samsung device. Casenum 46616.</li>
+<li>Android: <a href=https://docs.coronalabs.com/api/library/system/hasEventSource.html target="_blank">system.hasEventSource(&#8220;heading&#8221;) </a>no longer assumes all Android devices have compass hardware.</li>
+<li>tvOS: adding <a href=https://docs.coronalabs.com/api/library/native/showPopup.html target="_blank">native.showPopup(&#8220;appStore&#8221;)</a>; fixing error message for iOS.</li>
+<li>iOS Enterprise: added <code>CoronaEventDataKey()</code>.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Corona Labs is committed to bringing you the best 2D programming platform on the market. If you would like to discuss this release, please join us in our <a href=https://forums.coronalabs.com/ target="_blank">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>New Public Release: 2015.2731</title>
+		<link>/blog/2015/10/07/new-public-release-2015-2731/</link>
+		<comments>/blog/2015/10/07/new-public-release-2015-2731/#comments</comments>
+		<pubDate>Wed, 07 Oct 2015 19:02:29 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=64297</guid>
+		<description><![CDATA[Today, we are shipping a new public release (2015.2731) for Corona SDK, Corona Enterprise, and CoronaCards. A major theme for this year was new platforms. With this release, we spent a lot of time in the plumbing, so that we could have a solid foundation to support Mac Apps and Win32 Apps (currently in beta). Here are some highlights on what&#8217;s new in this release: OS X and Windows Desktop App builds (beta). iOS device builds now target iOS 9.0 SDK. Workflow/productivity improvements to device build dialog on OS X Simulator (see figure below) Windows: Added basic support for native...]]></description>
+				<content:encoded><![CDATA[<p>Today, we are shipping a <a href=https://developer.coronalabs.com/downloads/coronasdk>new public release</a> (2015.2731) for Corona SDK, Corona Enterprise, and CoronaCards.</p>
+<p>A <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major theme</a> for this year was new platforms. With this release, we spent a lot of time in the plumbing, so that we could have a solid foundation to support Mac Apps and Win32 Apps (currently in beta).</p>
+<p>Here are some highlights on what&#8217;s new in this release:</p>
+<ul>
+<li><a href=/blog/2015/07/22/mac-app-and-win32-app-open-beta/>OS X and Windows Desktop App builds (beta)</a>.</li>
+<li>iOS device builds now target iOS 9.0 SDK.</li>
+<li>Workflow/productivity improvements to device build dialog on OS X Simulator (see figure below)</li>
+<li><a href=/blog/2015/08/13/big-news-for-the-windows-simulator/>Windows: Added basic support for native TextField and TextBox</a>.</li>
+<li><a href=https://docs.coronalabs.com/guide/graphics/textureManagement.html>Manual texture loading/management</a> via <a href=https://docs.coronalabs.com/api/type/TextureResource/index.html>TextureResource</a> objects.</li>
+</ul>
+<p>Check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2015.2731>release notes</a> for a full list of features and improvements.</p>
+<div id="attachment_64299" style="width: 760px" class="wp-caption aligncenter"><a href=/wordpress/wp-content/uploads/2015/10/Corona-Build-Dialog-iOS.png><img src="/wordpress/wp-content/uploads/2015/10/Corona-Build-Dialog-iOS-1024x900.png" alt="Here&#039;s" width="750" height="659" class="size-large wp-image-64299" /></a><p class="wp-caption-text"><strong>New device build dialog available in the OS X Corona Simulator.</strong><br />You can choose from a number of post-build steps on iOS and Android. Shown above is the iOS build dialog where you can load your .app device build onto a device, send it to the App Store, or even launch it in Xcode&#8217;s iOS Simulator.</p></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/10/07/new-public-release-2015-2731/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release: 2015.2646</title>
+		<link>/blog/2015/06/02/new-public-release-2015-2646/</link>
+		<comments>/blog/2015/06/02/new-public-release-2015-2646/#comments</comments>
+		<pubDate>Tue, 02 Jun 2015 15:18:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=62937</guid>
+		<description><![CDATA[Today, we are shipping a new public release (2014.2646) for Corona SDK, Corona Enterprise, and CoronaCards.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are shipping a new public release (2014.2646) for Corona SDK, Corona Enterprise, and CoronaCards.</p>
+<p>Back in Jan, I identified <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>several themes for the year</a>. This public release exhibits a few of those themes as well as numerous other improvements. Here are a few highlights:</p>
+<ul>
+<li>Android 5.0 support.</li>
+<li>Apple’s TestFlightApp is now supported.</li>
+<li><a href=/blog/2015/03/02/corona-sdk-is-now-free/>Corona SDK is now free (along with access to Daily Builds)</a></li>
+<li><a href=/blog/2015/04/15/custom-shader-effects/>Custom Shader Effects</a></li>
+<li><a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>iOS 64-bit Support</a></li>
+<li><a href=/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/>iOS 8.3 support</a></li>
+<li><a href=/blog/2015/05/22/writing-plugins-in-pure-lua/>Lua Plugins Support</a></li>
+</ul>
+<p>Check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2015.2646>release notes</a> for a full list of features and improvements.</p>
+<p>Incidentally, if you have a Mac, we gave a minor facelift to several of the folder/tool icons:</p>
+<p><img src="/wordpress/wp-content/uploads/2015/06/Corona-folder-icons.png" alt="Corona-folder-icons" width="587" height="494" class="aligncenter size-full wp-image-62939" /></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/06/02/new-public-release-2015-2646/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Building a Custom Launcher with CoronaCards</title>
+		<link>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/</link>
+		<comments>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/#comments</comments>
+		<pubDate>Thu, 09 Apr 2015 21:38:06 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[guestpost]]></category>
+
+		<guid isPermaLink="false">/?p=61888</guid>
+		<description><![CDATA[Learn how Bonfire Media used <a href="http://coronacards.com/" target="_new">CoronaCards</a> to create "Aero Launcher," an enhanced launcher app for Android which has received almost 1,000,000 downloads.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s feature comes to you courtesy of <a href=http://www.bonfiremedia.com/ target="_blank">Bonfire Media</a>. As a long-time veteran of the mobile software industry, Bonfire Media has been making apps and games for over 10 years, and in the last few years has been using Corona SDK for several projects. One of their most recent releases, <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, was built with <a href=http://coronacards.com/ target="_blank">CoronaCards</a> and has already received almost 1,000,000 downloads.</em></p>
+<hr />
+<p><b>What is Aero Launcher?</b></p>
+<p>Before I describe <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Aero Launcher</a>, it probably makes sense to clarify what a &#8220;launcher&#8221; is. Almost everyone with a mobile device uses a launcher every day, as it&#8217;s simply the screen that appears on your smartphone or tablet when you hit the &#8220;home&#8221; button. Essentially, the launcher is the application we all use to launch and organize our apps and, as such, all mobile devices come with a built-in launcher. However, many people may not realize that, on Android devices, you can replace the boring stock launcher with an awesome, custom launcher.</p>
+<p>Aero Launcher is one such custom launcher. Here&#8217;s a short video:</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/QpmizVPRerE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Aero Launcher provides three main advantages over your default Android launcher:</p>
+<ol>
+<li>It automatically organizes all of your apps and games into simple tabs: <strong>Favorites</strong>, <strong>Apps</strong>, <strong>Games</strong> and <strong>System</strong>. Within each tab, you can optionally ask Aero to organize your apps even further into subcategories. This feature is great for users who don&#8217;t like to spend the time grouping all of their apps manually. In addition, you can easily move apps to your favorites tabs or uninstall unwanted apps by long-pressing an icon.</li>
+<li>Aero brings your homescreen alive with beautiful wallpapers, animated particle effects, custom fonts, and unique sounds. Here is an example of the &#8220;Fireworks&#8221; theme which shoots fireworks whenever you touch the screen, and the &#8220;Snow&#8221; theme that features falling snow:<a href=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg><img class="alignnone size-full wp-image-61893" src=/wordpress/wp-content/uploads/2015/03/aerolauncher.jpg alt="aerolauncher" width="1290" height="940" /></a></li>
+<li>Aero&#8217;s <strong>Genie</strong> tab recommends apps and games which you might enjoy, based on apps that you already have installed and use the most.</li>
+</ol>
+<h3>Why CoronaCards?</h3>
+<p>Why did we use Corona products instead of opting for the fully native Java development route? First of all, we really wanted a smooth, 60 fps experience for our launcher, including smooth animations, particle effects, and game-like responsiveness. Corona is very good for this, and because we are very experienced with Corona, we knew that we could make great themes using Corona rather than native Java. Plus, playing with cool animations and effects is more fun in Corona than in Java!</p>
+<p>So, why did we use <a href=http://coronacards.com/ target="_blank">CoronaCards</a> instead of simply Corona SDK? Well, one of the things which all custom launchers need is an inventory of all the apps that a user has installed. Corona SDK doesn&#8217;t have access to this information, but the native Android SDK does and we needed a way to check this. Thus, we were left with the choice between <a href=/products/enterprise/ target="_blank">Corona Enterprise</a> and CoronaCards. Both solutions would have worked, but the reason we went with CoronaCards is that we already had a large codebase from an old launcher we had written natively, and it felt simpler to embed a CoronaCards &#8220;view&#8221; into our existing launcher code rather than rewrite the bulk of our code in Lua and add native extensions.</p>
+<p>Essentially we considered it like this: Corona Enterprise is ideal if you want to create your apps primarily in Lua and Corona SDK and then add native extensions whenever necessary. CoronaCards, on the other hand, is a better fit for developers writing the bulk of their code natively who would then like to utilize the power and simplicity of Corona SDK for aspects of the front-end UI. For Aero Launcher, we used CoronaCards not just for elements of our UI, but for the <em>entire</em> UI. This pushed the boundaries of CoronaCards in a few cases, but with the help of other Corona developers, we were able to make it work, and work very well. In the end, Aero Launcher&#8217;s codebase is about 50% Java and 50% Lua.</p>
+<h3>Getting Aero Launcher</h3>
+<p>Aero Launcher is currently available on <a href=https://play.google.com/store/apps/details?id=com.bonfiremedia.launcher target="_blank">Google Play</a>. Please try it out and let us know what you think!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/09/guest-post-building-a-custom-launcher-with-coronacards/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>State of Corona: Thoughts and Reflections 2015</title>
+		<link>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/</link>
+		<comments>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/#comments</comments>
+		<pubDate>Fri, 30 Jan 2015 18:48:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=60991</guid>
+		<description><![CDATA[A lot has happened in the past year, so let's talk about where we've been and where we're headed in 2015.]]></description>
+				<content:encoded><![CDATA[<p>A lot has happened in the past year, so let&#8217;s talk about where we&#8217;ve been and where we&#8217;re headed.</p>
+<p>The biggest thing that happened was that we were acquired by <a href=http://fusepowered.com>Fuse/ Powered</a>. We&#8217;re all really happy to be part of the Fuse family. It sounds cliché but there couldn&#8217;t be a better cultural fit. The more we interact, the more it feels like we&#8217;ve all been working together for a lot longer — and having been through a couple of other acquisitions, that actually is a pretty big deal.</p>
+<p>As I&#8217;ve mentioned before, Fuse&#8217;s products help developers make more money. Right now, we&#8217;re in a small pilot with a small group of Corona developers. We want to make sure the Fuse/Corona integration is rock solid and battle-tested before we open the doors to everyone.</p>
+<p>On the Corona and product side there are lots of highlights, including CoronaCards, Windows Phone 8 support, debugging introspection, CoronaViewer, Composer API, Composer GUI Beta, Particle Designer support, and much more. These were all great additions to the Corona platform and we continue to work on them.</p>
+<h3>Looking ahead</h3>
+<p>Now, as I look ahead, I&#8217;m incredibly excited about where Corona is headed this year, so I&#8217;d thought I&#8217;d share the direction we&#8217;re taking this year.</p>
+<p>Before we dive in, I should emphasize that this is not a roadmap. I&#8217;ve previously discussed our thoughts on <a href=http://forums.coronalabs.com/topic/52439-fuse-acquires-corona/?p=272367>why we don&#8217;t do roadmaps</a> (and neither do other companies, at least not successfully) as well as our strong bias to talk about what we&#8217;ve actually delivered.</p>
+<p>So instead, I&#8217;ll touch on some of our thinking around four different themes where we will be doing significant work:</p>
+<ul>
+<li>Platforms</li>
+<li>Plugins</li>
+<li>Graphics</li>
+<li>Workflow</li>
+</ul>
+<p>And in keeping with our philosophy, I&#8217;ll talk about our approach and direction, holding off on specifics until I have concrete news to share.</p>
+<h3>Platforms</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/platform-logos.png><img src=/wordpress/wp-content/uploads/2015/01/platform-logos.png alt="platform logos" width="108" height="40" class="alignright size-full wp-image-60995" /></a>Corona has been designed to be portable and cross-platform, but that doesn&#8217;t mean there aren&#8217;t challenges in supporting new platforms. There&#8217;s a lot of effort to support an initial port, and a continuing cost to support OS updates and new hardware for that OS.</p>
+<p>That complexity is compounded by the sheer amount of features in Corona SDK. In this context, it only makes sense to target platforms with iOS/Android-level market traction.</p>
+<p>So how do we square the circle?</p>
+<p>We think the way forward is to simplify, as we did with Windows Phone 8. Support for new platforms becomes a lot more feasible if we only have to commit to a core set of features, leaving out ancillary feature and/or services.</p>
+<h3>Plugins</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/plugin-icon.png><img src="/wordpress/wp-content/uploads/2015/01/plugin-icon-150x131.png" alt="plugin icon" width="150" height="131" class="alignright size-thumbnail wp-image-60996" /></a>When we first introduced plugins, we architected it to be optimized for distribution. A plugin could be hosted on our server and be made available instantly to all Corona developers.</p>
+<p>Originally, we focused on 3rd parties that wanted to offer their services to the Corona community via these plugins.</p>
+<p>Today, we recognize that we could do more to make this more open. So our goal is to broaden the types of folks who can offer their plugins to the entire Corona community. At the same time, there are some key steps we need to take to help would-be plugin writers, especially resources focused on learning by example.</p>
+<h3>Graphics</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/2Dvenndiagram.png><img src="/wordpress/wp-content/uploads/2015/01/2Dvenndiagram-150x144.png" alt="2Dvenndiagram" width="150" height="144" class="alignright size-thumbnail wp-image-60997" /></a>Our vision for 2D graphics has always been very ambitious. With our graphics engine, we&#8217;ve vastly simplified how you achieve numerous visual effects intuitively and efficiently on modern GPU&#8217;s.</p>
+<p>This is all possible thanks to a lot of insightful and clever work under the hood. However, we&#8217;ve limited what you can do to what&#8217;s available in our API. In other words, we still haven&#8217;t taken full advantage of what our engine can offer.</p>
+<p>One reason we took a conservative approach was that GPU support was not consistent. We&#8217;ve rewritten our shaders numerous times to work around driver-specific bugs in the shader compiler — in some cases, basic GLSL language features did not work on certain GPU&#8217;s.</p>
+<p>Nowadays there&#8217;s just a little less fragmentation (hopefully), so we think the time is ripe to start opening up our graphics system. This means giving you more control and more techniques to extend beyond what we&#8217;ve done. We&#8217;ll also keep an eye out for obvious, missing gaps in the API.</p>
+<h3>Workflow</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/01/shortcut-thru-maze.png><img src="/wordpress/wp-content/uploads/2015/01/shortcut-thru-maze-150x108.png" alt="shortcut thru maze" width="150" height="108" class="alignright size-thumbnail wp-image-60999" /></a>We&#8217;ve always been very proud of Corona&#8217;s incredibly simple workflow. By eliminating complexity and the associated learning curves, we helped save you time and hopefully enabled you to find a little more delight in your day-to-day development.</p>
+<p>With Corona&#8217;s Lua API, you can put images on the screen and interact with them with just a few lines of code. With Corona Simulator, you can test our your ideas rapidly and in real-time. With Corona Editor, you&#8217;re focusing on editing code without worrying about how to navigate a confusing IDE.</p>
+<p>We think there&#8217;s a lot more to do here. Our work, for example, on Composer GUI and CoronaViewer is far from finished.</p>
+<p><center>* * *</center></p>
+<p>I&#8217;ve focused a lot on what we&#8217;re doing with Corona specifically, and only briefly touched on what the combination of Corona and Fuse will achieve together. Corona&#8217;s strength is helping you turn your ideas into working realities, building your apps faster. Fuse&#8217;s strength is enabling you to convert your apps into financially-viable realities, monetizing your apps better.</p>
+<p>So the direction we&#8217;re taking collectively is guided by the same principle that I&#8217;ve expressed many times before — your success is our success.</p>
+<h4><span style="font-family: serif; font-style: italic;">Walter</span></h4>
+<p>&nbsp;<br />
+&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/feed/</wfw:commentRss>
+		<slash:comments>36</slash:comments>
+		</item>
+		<item>
+		<title>Update on Corona, iOS 64-bit support and plugins</title>
+		<link>/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/</link>
+		<comments>/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/#comments</comments>
+		<pubDate>Thu, 22 Jan 2015 01:27:52 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60894</guid>
+		<description><![CDATA[As I previously explained in <a href="/blog/2014/12/03/coronas-ios-64-bit-transition-plan/">Corona's iOS 64-bit transition plan</a>, Apple has imposed new app <a href="https://developer.apple.com/news/?id=12172014b">submission requirements</a> that require 64-bit slices to be present in your application binaries. 
+
+Corona is now ready. Read on for the update.]]></description>
+				<content:encoded><![CDATA[<p>As I previously explained in <a href=/blog/2014/12/03/coronas-ios-64-bit-transition-plan/>Corona&#8217;s iOS 64-bit transition plan</a>, Apple has imposed new app <a href=https://developer.apple.com/news/?id=12172014b>submission requirements</a> that require 64-bit slices to be present in your application binaries.</p>
+<p>These rules vary, depending on whether you are submitting a new app or updating an existing one:</p>
+<ul>
+<li>Submissions of *new* apps are subject to the new rules starting Feb 1, 2015.</li>
+<li>Updates to *existing* apps are subject to the new rules starting June 1, 2015.</li>
+</ul>
+<h3>Universal Build Availability</h3>
+<p>Last month, I mentioned that CoronaEnterprise and CoronaCards were already set up for the universal 32/64-bit requirements.</p>
+<p><strong>Today, starting in daily build 2015.2543, Corona SDK is now 32/64-bit universal.</strong> This is available immediately to Pro (and higher) subscribers.</p>
+<p><strike>For all other subscription tiers, we will be making an upcoming daily (beta) build available before the end of the month.</strike></p>
+<p>[UPDATE] We have now posted a <a href=https://developer.coronalabs.com/sites/default/files/CoronaSDK-2015.2545-release.dmg>beta build</a> available to all subscribers.</p>
+<p>Finally, if have an existing app in the iTunes Store, you can <em>continue</em> to use the last public release (2014.2511) which is 32-bit until June 1, 2015. You only need to worry about the universal requirements for <em>new</em> apps.</p>
+<h3>Plugins</h3>
+<p>For backward compatibility purposes, all daily builds up to (and including) 2015.2534 will continue to have access to plugins that were previously available.</p>
+<p>However, starting with 2015.2543, newer versions of Corona will only have access to the plugins listed <a href=http://docs.coronalabs.com/daily/plugin/>here</a>.</p>
+<p>This is due to the fact that in order for your game/app to to satisfy Apple&#8217;s new requirements, plugins must also be 32/64-bit universal. In some cases, 3rd party partners could not/have not updated their plugin for various reasons. We are working with some of them to bring their updated plugins back as much as possible. We will also have all-new options soon.</p>
+<h4>Known Issues</h4>
+<p>The OpenSSL plugin works on device. However, there is an unresolved linker issue preventing its use in the Xcode Simulator.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+		<item>
+		<title>Corona&#8217;s iOS 64-bit Transition Plan</title>
+		<link>/blog/2014/12/03/coronas-ios-64-bit-transition-plan/</link>
+		<comments>/blog/2014/12/03/coronas-ios-64-bit-transition-plan/#comments</comments>
+		<pubDate>Wed, 03 Dec 2014 23:33:56 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60293</guid>
+		<description><![CDATA[Starting Feb 1, 2015, Apple is <a href="https://developer.apple.com/news/?id=10202014a">requiring</a> all new app submissions to be 32/64-bit-universal. So between now and Jan 31, 2015, you can continue to submit your apps just as you do today, but once Feb 1 hits you'll need to make sure certain changes are in place.]]></description>
+				<content:encoded><![CDATA[<p><strong>[UPDATE]</strong> Please go <a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>here</a> for the latest.</p>
+<p>Starting Feb 1, 2015, Apple is <a href=https://developer.apple.com/news/?id=10202014a>requiring</a> all new app submissions to be 32/64-bit-universal.</p>
+<p>Before diving in, I should emphasize that between now and Jan 31, 2015, you can continue to submit your apps to the iTunes App Store using the current public release, just as you are doing today. The 64-bit requirement only comes into play starting Feb 1.</p>
+<p>Alright, so here&#8217;s what we are going to do to address this to make your lives as <a href=/products/corona-sdk/>iOS app developers</a> as smooth as possible. We&#8217;ll cover this across various categories:</p>
+<ul>
+<li>CoronaCards developers</li>
+<li>Corona Enterprise developers</li>
+<li>Corona SDK developers</li>
+<li>Plugin Users, i.e. Corona devs that use plugins in their projects</li>
+<li>Plugin Developers, i.e. 3rd party partners that are creating plugins</li>
+</ul>
+<h2>CoronaCards</h2>
+<p>CoronaCards developers will not have to worry about Corona-specific issues. This is because <code>CoronaCards.framework</code> is already 32/64-bit universal.</p>
+<p>However, you may have existing code and/or legacy Xcode projects that need to be transitioned. Please refer to <a href=https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html>Apple&#8217;s 64-bit transition guide</a> to ensure your project is ready.</p>
+<p>Our <a href=https://github.com/CoronaCards/>CoronaCards iOS samples</a> have been updated and should be emitting 32/64-bit universal binaries.</p>
+<h2>Corona Enterprise</h2>
+<p>Corona Enterprise developers will be able to build 32/64-bit universal binaries starting with <a href=http://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2014.2515 or after. This is compatible with older Corona Enterprise projects and new ones.</p>
+<p>Before diving in, I should mention that older Corona Enterprise projects are designed to be 32-bit only so if you are not ready to transition your Corona Enterprise project to 32/64-bit universal, you can still use the latest 32/64-bit universal daily builds of Corona Enterprise. Your older Xcode projects are already setup to ignore the 64-bit slice available in the latest versions of CoronaEnterprise.</p>
+<p>The primary reason you would not be ready to transition is that you may depend on plugins which do not have 32/64-bit universal binaries available yet. If that&#8217;s the case, then the plugin will appear to be missing when run on a 64-bit device such as an iPhone 6 — see <a href=http://docs.coronalabs.com/daily/native/plugin/ios-64-bit-transition-guide.html?#bit-only-plugins-no-forward-compatibility>32-bit-only plugins: No Forward Compatibility</a> for more information.</p>
+<p>For those of you who have decided you are ready to make the transition, here&#8217;s what you need to know:</p>
+<ul>
+<li>For <em>existing</em> Corona Enterprise Xcode projects, you will need to make simple changes to your Xcode project settings. These changes are explained under the <a href=http://docs.coronalabs.com/daily/native/plugin/ios-64-bit-transition-guide.html?#xcode>&#8216;Xcode&#8217; section of our 64-bit Transition Guide</a>. These changes will ensure that both 32-bit and 64-bit slices available in 2014.2515 are bundled into your app executable.</li>
+<li>For <em>new</em> projects, you should model off the projects off the project templates and/or samples in this daily build (or after) so that you are building 32/64-bit universal binaries.</li>
+<li>Most likely, as a Corona Enterprise developer, you have native (C/C++/Obj-C) code. If that&#8217;s the case, you need to make sure that code is 64-bit compliant. Please refer to <a href=https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html>Apple&#8217;s 64-bit transition guide</a> for additional guidance.</li>
+</ul>
+<p>REMINDER: If you are transitioning and are using plugins, you must ensure that the plugin binary files include both 32-bit and 64-bit slices. See &#8216;Plugin Users&#8217; for additional details.</p>
+<h2>Corona SDK</h2>
+<p>Starting in early Jan 2015, we will be making a 32/64-bit universal version of Corona SDK available to all subscription tiers. Depending on the progress of our plugin partners, we may make daily builds available to Pro (and higher) subscribers earlier than that.</p>
+<p>When this build becomes available, you will just need to rebuild your app with this version of Corona SDK.</p>
+<p>The primary reason for not making this available sooner is because we want to give our 3rd party plugin partners time to update their plugins.</p>
+<p>We could make a 32/64-bit universal version of Corona SDK available immediately, but we have decided that it makes more sense to wait:</p>
+<ol>
+<li>You can continue to submit apps to Apple using 32-bit only builds until Jan 31, 2015.</li>
+<li>We do not want to disrupt your app development plans prior to the holiday rush.</li>
+<li>A 32/64-bit universal Corona SDK requires 32/64-bit plugin binaries to be available to operate correctly.
+<ul>
+<li>In particular, if (instead) a 32-bit-only plugin binary is used, this plugin will appear to be missing when run on a 64-bit device (e.g. iPhone 6) – see <a href=http://docs.coronalabs.com/daily/native/plugin/ios-64-bit-transition-guide.html?#bit-only-plugins-no-forward-compatibility>32-bit-only plugins: No Forward Compatibility</a> for more information.</li>
+<li>3rd party partner plugins need time to upgrade their plugins to 32/64-bit universal.</li>
+</ul>
+</li>
+</ol>
+<p><strike>For these reasons, we have decided it makes the most practical and pragmatic sense to wait until early Jan 2015.</strike></p>
+<p><strong>[UPDATE]</strong> Please go <a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>here</a> for the latest.</p>
+<h2>Plugin Users</h2>
+<p>Plugin binaries are being migrated to be 32/64-bit universal:</p>
+<ul>
+<li>Plugins offered by Corona have already been transitioned to universal and are posted on our servers.
+<ul>
+<li>These will not affect existing daily builds. The pre-existing Corona SDK and Corona Enterprise are setup to ignore 64-bit slices.</li>
+<li>Once a 32/64-bit universal version of Corona SDK is available, both 32-bit and 64-bit slices of the plugin will automatically be bundled into your app binary.</li>
+</ul>
+</li>
+<li>3rd party plugin partners are in the process of upgrading their plugins to 32/64-bit universal.</li>
+</ul>
+<p>For Corona Enterprise developers who want to transition, you should check whether a plugin binary is 32/64-bit universal. You can use the <code>file</code> command line tool to perform this check, as explained in the <a href=http://docs.coronalabs.com/daily/native/plugin/ios-64-bit-transition-guide.html?#plugin-submission>&#8216;Plugin Submission&#8217; of our 64-bit transition guide</a>.</p>
+<h2>Plugin Developers</h2>
+<p>If you are a 3rd party partner, you should consult our <a href=http://docs.coronalabs.com/daily/native/plugin/ios-64-bit-transition-guide.html>Corona 64-bit Transition Guide</a> so you can update your plugins that are hosted on our servers.</p>
+<p>Starting today, any plugin binary updates posted to our server are required to be 32/64-bit universal. In addition, by Jan 5, 2015, your plugin binaries MUST BE universal. We will remove all plugins that have not been updated to be 32/64-bit universal.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/03/coronas-ios-64-bit-transition-plan/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release: 2014.2511</title>
+		<link>/blog/2014/11/20/new-public-release-2014-2511/</link>
+		<comments>/blog/2014/11/20/new-public-release-2014-2511/#comments</comments>
+		<pubDate>Thu, 20 Nov 2014 17:02:45 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60247</guid>
+		<description><![CDATA[Today, we are shipping a new public release (2014.2511) for <a href="http://www.coronalabs.com/products/corona-sdk/">Corona SDK</a>, <a href="/products/enterprise/">Corona Enterprise</a>, and <a href="http://coronacards.com/">CoronaCards</a>. 
+
+The theme for this release has been around app development workflow. ]]></description>
+				<content:encoded><![CDATA[<p>Today, we are shipping a new public release (2014.2511) for <a href=http://www.coronalabs.com/products/corona-sdk/>Corona SDK</a>, <a href=/products/enterprise/>Corona Enterprise</a>, and <a href=http://coronacards.com/>CoronaCards</a>.</p>
+<p>The theme for this release has been around app development workflow. We&#8217;ve made numerous improvements to the Corona Simulator, so here are a few highlights:</p>
+<ul>
+<li>Each device skin now has screen dimensions, so you can preview across the various screen size classes.</li>
+<li>There&#8217;s also a new set of borderless Simulator skins which are more convenient for laptop-sized screens</li>
+<li>In conjunction, with Corona Editor, we&#8217;ve added introspection code, so it&#8217;s easier to see property values for display objects, paths, and fills from the debugger.</li>
+<li>A Corona Terminal (now called the Corona Console) will automatically open when launching Corona Simulator on Mac (now the same as on Windows)</li>
+<li>Better integration with the Xcode Simulator — if you have an iOS skin selected in the Corona Simulator, the corresponding device will launch under the Xcode Simulator when you do a device build.</li>
+<li>Device builds now let you exclude files from the build on a per-platform basis.</li>
+<li>Runtime error popups now show by default on devices for <em>development</em> builds (this is turned off on distribution builds). </li>
+</ul>
+<p>Other highlights include:</p>
+<ul>
+<li>Adaptive content scaling</li>
+<li>Windows Phone 8 support available via CoronaCards</li>
+<li>Support for Mac OS X 10.10 (Yosemite)</li>
+<li>Support for iOS 8.0 and 8.1</li>
+<li>Support for iPhone 6 and iPhone 6 Plus</li>
+</ul>
+<p>Check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2014.2511>release notes</a> for a full list of features and improvements.</p>
+<p><center>* * *</center></p>
+<p>On the horizon, Apple has <a href=https://developer.apple.com/news/?id=10202014a>new requirements</a> for app submissions starting Feb 1, 2015.</p>
+<p>I&#8217;ll have an update very soon on our plans regarding iOS/64-bit support for both Corona SDK and CoronaEnterprise (CoronaCards is already compliant).</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/11/20/new-public-release-2014-2511/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Introducing Corona Support for Windows Phone 8</title>
+		<link>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/</link>
+		<comments>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/#comments</comments>
+		<pubDate>Tue, 21 Oct 2014 18:43:15 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">/?p=59909</guid>
+		<description><![CDATA[Today we are announcing v1 support for Windows Phone 8 via CoronaCards for WP8!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/10/Windows_Phone_logo.png" alt="Windows Phone" class="alignright size-full wp-image-59933" />We are very happy to announce v1 support for Windows Phone 8! </p>
+<p>For now, support for WP8 is done via <a href=http://coronacards.com>CoronaCards/</a>, which brings a lot of flexibility to how Corona developers can start developing for WP8. CoronaCards is a version of the Corona platform (running the usual Corona Lua code) that can be embedded into any native app and that allows developers to also hook in any native functionality via a <a href=http://docs.coronalabs.com/daily/coronacards/wp8/communication.html>native/Lua bridge</a>. </p>
+<p>There is an unlimited trial for CoronaCards for WP8, so <a href=http://developer.coronalabs.com/downloads/coronacards>download the bits</a> right away and start building WP8 apps and games! You can see more about how to get started with CoronaCards for WP8 in our <a href=http://docs.coronalabs.com/daily/coronacards/wp8/index.html>guides</a> and videos. You will need a Windows 8.1 machine, along with Visual Studio (of which there are free versions). We currently build Windows Phone 8 apps and games, which also run on Windows Phone 8.1 devices.</p>
+<p>If you are an existing Corona developer, you rely heavily on the Corona Simulator. When building for WP8, this will largely stay the same: we will add Windows Phone skins to a daily build in the next few days and you will be able to use the Corona Simulator to work on all your Lua code (as usual) and then just do builds quickly inside Visual Studio and CoronaCards.</p>
+<p><strong>Licensing</strong></p>
+<p>We want all Corona developers to build for WP8 as soon as possible, so starting now ALL purchases of Corona SDK Pro and Corona Enterprise will include a CoronaCards for WP8 license. We are also giving ALL current Pro and Enterprise developers a license of CoronaCards for WP8 (with the same expiration date as your existing Pro or Enterprise license). You should see that appear in your account in the next day. </p>
+<p>There is a guide on how licensing works <a href=http://docs.coronalabs.com/daily/coronacards/wp8/license.html>here</a>. </p>
+<p><strong>Support</strong></p>
+<p>As always, we have a specific <a href=http://forums.coronalabs.com/forum/642-coronacards-for-wp8/>CoronaCards for WP8 forum</a> where you can ask questions and discuss. There are a good number of valuable threads already in there from our beta testers.</p>
+<p>Finally, I&#8217;d like to thank the Corona team (all of whom worked very hard on this), our contacts at Microsoft (who have been great to work with), as well as all the beta testers that have been using the product for the last month or so. </p>
+<p>There are several games built with CoronaCards for WP8 that are already in the Windows Phone app store, including <a href=http://www.windowsphone.com/en-us/store/app/feed-omnomster-the-hungry-monster/05696854-39a9-464b-887c-35dce28a6148>OmNomster</a>, <a href=http://www.windowsphone.com/en-us/store/app/basketball-superstar/362b654a-827f-45bc-b20e-3f61c4d0afeb>Basketball Superstar</a>, <a href=http://www.windowsphone.com/en-us/store/app/bloody-monsters/5c3c1f4b-eaa7-4767-a58c-9ce9e2c496c8>Bloody Monsters</a>, <a href=http://www.windowsphone.com/en-us/store/app/my-boo/dd870cd8-e252-49f8-8e63-5236d1b48023>My Boo</a> and <a href=http://www.windowsphone.com/en-us/store/app/toilet-time/5f160ab2-a469-4c11-b908-dccc3e08845b>Toilet Time</a>! Check them out &#8211; several of these have millions of downloads on iOS and Android and are sure to do equally well on Windows Phone!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/feed/</wfw:commentRss>
+		<slash:comments>30</slash:comments>
+		</item>
+	</channel>
+</rss>

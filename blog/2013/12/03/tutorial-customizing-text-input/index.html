@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en-US"
+	prefix="og: http://ogp.me/ns#" >
+<head>
+	
+	<meta charset="UTF-8" />
+	
+	<title>Tutorial: Customizing text input | Corona Labs</title><link rel="stylesheet" href="/wordpress/wp-content/cache/min/1/00d0de513e0511587eebe2100ad2cfec.css" data-minify="1" />
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="/wordpress/xmlrpc.php" />
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#f96f29">
+	<meta name="msapplication-TileColor" content="#f96f29">
+	<meta name="msapplication-config" content="/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<script type="application/javascript">var QodeAjaxUrl = "/wordpress/wp-admin/admin-ajax.php"</script><link rel="alternate" hreflang="en" href="/blog/2013/12/03/tutorial-customizing-text-input/" />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="author" href="https://plus.google.com/106405667962965815359/" />
+<meta name="description"  content="One commonly requested feature is a &quot;widget-based&quot; text input field — one that allows for more &quot;styling&quot; than a device&#039;s native input field. Today&#039;s tutorial gives you a foundation to build this." />
+
+<meta name="keywords"  content="native text input,tutorial,ui,tutorials, tips and demos" />
+
+<link rel="canonical" href="/blog/2013/12/03/tutorial-customizing-text-input/" />
+<meta property="og:title" content="Tutorial: Customizing text input | Corona Labs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2013/12/03/tutorial-customizing-text-input/" />
+<meta property="og:image" content="/wordpress/wp-content/uploads/2013/06/nativekeyboard-thumb.jpg" />
+<meta property="og:site_name" content="Corona Labs" />
+<meta property="fb:app_id" content="1891032014500066" />
+<meta property="og:description" content="One commonly requested feature is a &quot;widget-based&quot; text input field and today&#039;s tutorial gives you a foundation to build your own. This isn&#039;t a complete implementation, and it only overcomes a few issues related with native.newTextField(), but it should provide a good starting point. Let&#039;s begin with some basic setup code: [crayon-5f8df295266d4979007745/] Naturally, a widget like this could end up with an enormous number of options, but let&#039;s start by considering some basic options: top — distance from the top of the screen left — distance from the left of the screen x — location of the widget horizontally (center) y — location of the widget vertically (center) width — width of the field height — height of the field font — Font to use fontSize — size of the font backgroundColor — the color behind the text strokeColor — the color of the stroke around the field strokeWidth — the size of the stroke cornerRadius — if you want rounded corners text — the initial text inputType — the type of" />
+<meta property="article:published_time" content="2013-12-03T22:33:22Z" />
+<meta property="article:modified_time" content="2013-12-03T22:33:22Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@coronalabs" />
+<meta name="twitter:title" content="Tutorial: Customizing text input | Corona Labs" />
+<meta name="twitter:description" content="One commonly requested feature is a &quot;widget-based&quot; text input field and today&#039;s tutorial gives you a foundation to build your own. This isn&#039;t a complete implementation, and it only overcomes a few issues related with native.newTextField(), but it should provide a good starting point. Let&#039;s begin with some basic setup code: [crayon-5f8df295266d4979007745/] Naturally, a widget like this could end up with an enormous number of options, but let&#039;s start by considering some basic options: top — distance from the top of the screen left — distance from the left of the screen x — location of the widget horizontally (center) y — location of the widget vertically (center) width — width of the field height — height of the field font — Font to use fontSize — size of the font backgroundColor — the color behind the text strokeColor — the color of the stroke around the field strokeWidth — the size of the stroke cornerRadius — if you want rounded corners text — the initial text inputType — the type of" />
+<meta name="twitter:image" content="/wordpress/wp-content/uploads/2013/06/nativekeyboard-thumb.jpg" />
+<meta itemprop="image" content="/wordpress/wp-content/uploads/2013/06/nativekeyboard-thumb.jpg" />
+			<script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-9574984-6', 'auto', { 'allowLinker': true } );
+				// Plugins
+				ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+				ga('send', 'pageview');
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+			<script data-minify="1" async src="/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/all-in-one-seo-pack/public/js/vendor/autotrack-b66c534ea2d32d9123d9ba2034031f08.js"></script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Corona Labs &raquo; Tutorial: Customizing text input Comments Feed" href="/blog/2013/12/03/tutorial-customizing-text-input/feed/" />
+
+
+
+
+
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}
+</style>
+
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-exo2-css'  href='https://fonts.googleapis.com/css?family=Exo+2%3A600&#038;subset=cyrillic&#038;ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-lato-css'  href='https://fonts.googleapis.com/css?family=Lato&#038;ver=4.9.8' type='text/css' media='all' />
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-1.12.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/nix-gravatar-cache-master/js/main-b8674cbf705f6800e4c39626ea12a541.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min-_2.7.2_beta.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/js.cookie-1a19bb4009b00727ae545e834c88ec1f.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var handl_utm = [];
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/handl-utm-grabber/js/handl-utm-grabber-88312d6ccff4a3570b3db197b12cb532.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/lightbox-698aa832940bd67decd795f1bd23433b.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min-2.1.0.2.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min-5.4.7.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/hooks.min-2.0.3.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_US":"\/blog\/2013\/12\/03\/tutorial-customizing-text-input\/","en":"\/blog\/2013\/12\/03\/tutorial-customizing-text-input\/","US":"\/blog\/2013\/12\/03\/tutorial-customizing-text-input\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"coronalabs.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app-824426e66e79e692e26c5e5b63cb6452.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php","current_lang":"en"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data-3d7bf654e9e30cc40e584574182b2763.js'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='App of the Week: Windsquire' href='/blog/2013/12/02/app-of-the-week-windsquire/' />
+<link rel='next' title='Guest piece: Finding a niche market, publishing three-figure apps' href='/blog/2013/12/06/guest-piece-finding-a-niche-market-publishing-three-figure-apps/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='/?p=53051' />
+<meta name="generator" content="WPML ver:4.1.1 stt:1,46;" />
+<link rel="alternate" type="application/json" title="Corona Labs &raquo; JSON Feed" href="/feed/json/" />		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'a5acf8e1ab';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"/wordpress/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wordpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="spu-css-76435" class="spu-css">		#spu-bg-76435 {
+			background-color: rgba(117, 169, 177, 0.33);
+		}
+
+		#spu-76435 .spu-close {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			text-shadow: 0 1px 0#000;
+		}
+
+		#spu-76435 .spu-close:hover {
+			color: #000;
+		}
+
+		#spu-76435 {
+			background-color: rgb(246, 246, 240);
+			max-width: 750px;
+			
+					height: auto;
+					box-shadow:  5px 5px 5px 0px #ccc;
+				}
+
+		#spu-76435 .spu-container {
+					border: 5px solid;
+			border-color: rgb(6, 94, 79);
+			border-radius: 0px;
+			margin: 14px;
+					padding: 50px;
+			height: calc(100% - 28px);
+		}
+								</style>
+		<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	
+<script>
+var trackOutboundLink = function(url, name) {
+ga('send', 'event', name, 'click', url, {
+'transport': 'beacon'
+});
+}
+</script>
+
+<!-- Yandex1.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46455807 = new Ya.Metrika({
+                    id:46455807,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/46455807" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+<!-- /Yandex.Metrika counter -->
+<!-- VK pixel -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196975-5tu0N';</script>
+</head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-53051 single-format-standard  qode-child-theme-ver-1.0.0 qode-theme-ver-11.0 qode-theme-bridge wpb-js-composer js-comp-ver-5.5.5 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+						<div class="wrapper">
+	<div class="wrapper_inner">
+	<!-- Google Analytics start -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9574984-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Google Analytics end -->
+
+	
+
+
+<header class="scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+    <div class="header_inner clearfix">
+
+		<div class="header_top_bottom_holder">
+		<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);' >
+		                    					<div class="header_inner_left">
+                        													<div class="mobile_menu_button">
+                                <span>
+                                    <i class="qode_icon_font_awesome fa fa-bars" ></i>                                </span>
+                            </div>
+												<div class="logo_wrapper">
+                            							<div class="q_logo">
+								<a itemprop="url" href="/">
+									<img itemprop="image" class="normal" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="light" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="dark" src="/wordpress/wp-content/uploads/2017/12/logo_s.svg" alt="Logo"/>
+									<img itemprop="image" class="sticky" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+									<img itemprop="image" class="mobile" src="/wordpress/wp-content/uploads/2017/12/logo_w.svg" alt="Logo"/>
+																	</a>
+							</div>
+                            						</div>
+                                                					</div>
+                    					                                                							<div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+																		                                    <div class="side_menu_button">
+									
+										                                                                                                                    </div>
+                                </div>
+							</div>
+												
+						
+						<nav class="main_menu drop_down right">
+						<ul id="menu-top-menu-corona" class=""><li id="nav-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Product" href="/product/" class=""><i class="menu_icon blank fa"></i><span>PRODUCT</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Learn" href="/learn/" class=""><i class="menu_icon blank fa"></i><span>LEARN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Stories" href="/stories/" class=""><i class="menu_icon blank fa"></i><span>STORIES</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent  narrow"><a href="/blog/" class=""><i class="menu_icon blank fa"></i><span>BLOG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><i class="menu_icon blank fa"></i><span>FORUM</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><i class="menu_icon blank fa"></i><span>MARKET</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><i class="menu_icon blank fa"></i><span>LOG IN</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><i class="menu_icon blank fa"></i><span>DOWNLOAD</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item  narrow"><a title="EN" href="/blog/2013/12/03/tutorial-customizing-text-input/" class=""><i class="menu_icon blank fa"></i><span><span class="wpml-ls-native">EN</span></span><span class="plus"></span></a></li>
+</ul>						</nav>
+						                        										<nav class="mobile_menu">
+                        <ul id="menu-top-menu-corona-1" class=""><li id="mobile-menu-item-71022" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Product" href="/product/" class=""><span>PRODUCT</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71023" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Learn" href="/learn/" class=""><span>LEARN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71024" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Stories" href="/stories/" class=""><span>STORIES</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-76070" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="/blog/" class=""><span>BLOG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71112" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Forum" target="_blank" href="https://forums.solar2d.com/" class=""><span>FORUM</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-72910" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Marketplace" target="_blank" href="https://marketplace.coronalabs.com/" class=""><span>MARKET</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71027" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Login" target="_blank" href="https://github.com/coronalabs/corona" class=""><span>LOG IN</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-71028" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Download" target="_blank" href="https://github.com/coronalabs/corona/releases/latest" class=""><span>DOWNLOAD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-wpml-ls-1014-en" class="menu-item wpml-ls-slot-1014 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item"><a title="EN" href="/blog/2013/12/03/tutorial-customizing-text-input/" class=""><span><span class="wpml-ls-native">EN</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>					</nav>
+				</div>
+	</div>
+	</div>
+
+</header>
+		
+
+    		<a id='back_to_top' href='#'>
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+	    	
+    
+		
+	
+    
+<div class="content">
+						<div class="content_inner">
+						<div class="title_outer title_without_animation"    data-height="364">
+		<div class="title title_size_large  position_center  has_background" style="background-size:1920px auto;background-image:url(/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg);height:364px;">
+			<div class="image not_responsive"><img itemprop="image" src="/wordpress/wp-content/uploads/2017/06/bg_short_header.jpg" alt="&nbsp;" /> </div>
+										<div class="title_holder"  style="padding-top:42px;height:322px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 ><span>Tutorial: Customizing text input</span></h1>
+																	
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+																
+							<div class="two_columns_75_25 background_color_sidebar grid2 clearfix">
+								<div class="column1">
+											
+									<div class="column_inner">
+										<div class="blog_single blog_holder">
+													<article id="post-53051" class="post-53051 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials-tips-demos tag-native-text-input tag-tutorial tag-ui">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+<p><span itemprop="dateCreated" class="date entry_date updated">03 December 2013<meta itemprop="interactionCount" content="UserComments: 19"/></span></p>
+						<h2 itemprop="name" class="entry_title">Tutorial: Customizing text input</h2>
+
+						<div class="post_info">
+
+<i class="fa fa-user" aria-hidden="true"></i> <span class="post_author" itemprop="author" itemscope itemtype="http://schema.org/Person"> <a itemprop="name" class="post_author_link" href="/blog/author/rob/">Rob Miracle</a>
+							</span>
+
+							<br><i class="fa fa-hashtag" aria-hidden="true"></i> <span class="time"><a href="/blog/topics/tutorials-tips-demos/" rel="category tag">Tutorials, Tips and Demos</a></span>
+							
+							
+							
+                                            <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Tutorial%3A+Customizing+text+input&amp;p[url]=%2Fblog%2F2013%2F12%2F03%2Ftutorial-customizing-text-input%2F&amp;p[images][0]=/wordpress/wp-content/uploads/2013/06/nativekeyboard-thumb.jpg&amp;p[summary]=One+commonly+requested+feature+is+a+%5C%22widget-based%5C%22+text+input+field+%E2%80%94+one+that+allows+for+more+%5C%22styling%5C%22+than+a+device%5C%27s+native+input+field.+Today%5C%27s+tutorial+gives+you+a+foundation+to+build+this.', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="#" onclick="popUp=window.open('http://twitter.com/home?status=One+commonly+requested+feature+is+a+%22widget-based%22+text+input+field+%E2%80%94+one+that+allows+for+more+%22styling%22+than+a+/blog/2013/12/03/tutorial-customizing-text-input/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="vk_share"><a href="#" onclick="popUp=window.open('http://vkontakte.ru/share.php?url=%2Fblog%2F2013%2F12%2F03%2Ftutorial-customizing-text-input%2F&amp;title=Tutorial%3A+Customizing+text+input&amp;description=One+commonly+requested+feature+is+a+%22widget-based%22+text+input+field+%E2%80%94+one+that+allows+for+more+%22styling%22+than+a+device%27s+native+input+field.+Today%27s+tutorial+gives+you+a+foundation+to+build+this.&amp;image=%2Fwordpress%2Fwp-content%2Fuploads%2F2013%2F06%2Fnativekeyboard-thumb.jpg', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-vk"></i></a></li></ul></div></div></div>    						</div>
+						<p>One commonly requested feature is a &#8220;widget-based&#8221; text input field and today&#8217;s tutorial gives you a foundation to build your own. This isn&#8217;t a complete implementation, and it only overcomes a few issues related with <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField()</a>, but it should provide a good starting point.</p>
+<p>Let&#8217;s begin with some basic setup code:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266d4979007745" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local myTextField = widget.newTextField(
+   {
+   top = 10,
+   left = 20,
+   width = 200,
+   height = 30,
+   cornerRadius = 8,
+   strokeWidth = 3,
+   backgroundColor = { 1, 1, 1 },
+   strokeColor = { 0, 0, 0 },
+   font = "Helvetica",
+   fontSize = 24,
+   listener = textFieldHandler
+   }
+)</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-4">4</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-6">6</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-8">8</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-10">10</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-12">12</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266d4979007745-14">14</div><div class="crayon-num" data-line="crayon-5f8df295266d4979007745-15">15</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266d4979007745-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">myTextField</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">widget</span><span class="crayon-sy">.</span><span class="crayon-e">newTextField</span><span class="crayon-sy">(</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-2"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">top</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">10</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-4"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">left</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">20</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-5"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">200</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">30</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-7"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">cornerRadius</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">8</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-8"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">strokeWidth</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">3</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-9"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">backgroundColor</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-10"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">strokeColor</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-11"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">font</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"Helvetica"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-12"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">fontSize</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-13"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">listener</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-i">textFieldHandler</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266d4979007745-14"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8df295266d4979007745-15"><span class="crayon-sy">)</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0041 seconds] -->
+<p>Naturally, a widget like this could end up with an enormous number of options, but let&#8217;s start by considering some basic options:</p>
+<ul>
+<li><strong>top</strong> — distance from the top of the screen</li>
+<li><strong>left</strong> — distance from the left of the screen</li>
+<li><strong>x</strong> — location of the widget horizontally (center)</li>
+<li><strong>y</strong> — location of the widget vertically (center)</li>
+<li><strong>width</strong> — width of the field</li>
+<li><strong>height</strong> — height of the field</li>
+<li><strong>font</strong> — Font to use</li>
+<li><strong>fontSize</strong> — size of the font</li>
+<li><strong>backgroundColor</strong> — the color behind the text</li>
+<li><strong>strokeColor</strong> — the color of the stroke around the field</li>
+<li><strong>strokeWidth</strong> — the size of the stroke</li>
+<li><strong>cornerRadius</strong> — if you want rounded corners</li>
+<li><strong>text</strong> — the initial text</li>
+<li><strong>inputType</strong> — the type of keyboard to show</li>
+<li><strong>listener</strong> — the input handler</li>
+</ul>
+<p>Obviously this could be extended to include things like the value of the &#8220;return&#8221; button, having placeholder text that disappears when you first start editing the field, and even skinning features. However, since this function is going to use a native text field, we&#8217;ll need to write — at the core — a function to handle editing of the field:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266e4285572158" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local function textFieldHandler( event )
+
+   -- "event.text" only exists during the editing phase to show what's being edited; 
+   -- it is NOT the field's ".text" attribute (that is "event.target.text").
+
+   if ( event.phase == "began" ) then
+      -- user begins editing textField
+      print( "Begin editing", event.target.text )
+   elseif ( event.phase == "ended" or event.phase == "submitted" ) then
+      -- do something with defaulField's text
+      print( "Final Text: ", event.target.text )
+      native.setKeyboardFocus( nil )
+   elseif ( event.phase == "editing" ) then
+      print( event.newCharacters )
+      print( event.oldText )
+      print( event.startPosition )
+      print( event.text )
+   end
+end</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-4">4</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-6">6</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-8">8</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-10">10</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-12">12</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-14">14</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-16">16</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266e4285572158-18">18</div><div class="crayon-num" data-line="crayon-5f8df295266e4285572158-19">19</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266e4285572158-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-e">textFieldHandler</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-2">&nbsp;</div><div class="crayon-line" id="crayon-5f8df295266e4285572158-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-c">-- "event.text" only exists during the editing phase to show what's being edited; </span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-4"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-c">-- it is NOT the field's ".text" attribute (that is "event.target.text").</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"began"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- user begins editing textField</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Begin editing"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">target</span><span class="crayon-sy">.</span><span class="crayon-i">text</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-9"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"ended"</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"submitted"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- do something with defaulField's text</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"Final Text: "</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">target</span><span class="crayon-sy">.</span><span class="crayon-i">text</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">native</span><span class="crayon-sy">.</span><span class="crayon-e">setKeyboardFocus</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-r">nil</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-13"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">phase</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"editing"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">newCharacters</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">oldText</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">startPosition</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-i">text</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266e4285572158-18"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8df295266e4285572158-19"><span class="crayon-st">end</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0034 seconds] -->
+<p>If we want this to be part of the widget library, we simply add it to a module and include the widget library:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266ea370256396" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local widget = require( "widget" )
+function widget.newTextField( options )
+   ...
+end</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266ea370256396-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ea370256396-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266ea370256396-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ea370256396-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266ea370256396-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">widget</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">require</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"widget"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ea370256396-2"><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-v">widget</span><span class="crayon-sy">.</span><span class="crayon-e">newTextField</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">options</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266ea370256396-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ea370256396-4"><span class="crayon-st">end</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p>This will cause a new function, <code>newTextField()</code>, to be added to the instance of the widget library that has been included in your project. Then, in any scene or module where you require the <a href=https://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> library, the function will be available.</p>
+<p>Now let&#8217;s define the default option values:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266ef893180553" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+function widget.newTextField( options )
+   local customOptions = options or {}
+   local opt = {}
+   opt.left = customOptions.left or 0
+   opt.top = customOptions.top or 0
+   opt.x = customOptions.x or 0
+   opt.y = customOptions.y or 0
+   opt.width = customOptions.width or (display.contentWidth * 0.75)
+   opt.height = customOptions.height or 20
+   opt.id = customOptions.id
+   opt.listener = customOptions.listener or nil
+   opt.text = customOptions.text or ""
+   opt.inputType = customOptions.inputType or "default"
+   opt.font = customOptions.font or native.systemFont
+   opt.fontSize = customOptions.fontSize or opt.height * 0.67
+
+   -- Vector options
+   opt.strokeWidth = customOptions.strokeWidth or 2
+   opt.cornerRadius = customOptions.cornerRadius or opt.height * 0.33 or 10
+   opt.strokeColor = customOptions.strokeColor or { 0, 0, 0 }
+   opt.backgroundColor = customOptions.backgroundColor or { 1, 1, 1 }
+   ...</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-4">4</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-6">6</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-8">8</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-10">10</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-12">12</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-14">14</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-16">16</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-18">18</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-20">20</div><div class="crayon-num" data-line="crayon-5f8df295266ef893180553-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266ef893180553-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266ef893180553-1"><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-v">widget</span><span class="crayon-sy">.</span><span class="crayon-e">newTextField</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">options</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-2"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">options</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-4"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">left</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">left </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-5"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">top</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">top </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-i">x</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-7"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-i">y</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-8"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">width </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-v">contentWidth</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.75</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-9"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">height </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">20</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-10"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">id</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">id</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-11"><span class="crayon-e">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">listener</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">listener </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-r">nil</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-12"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">text </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-s">""</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-13"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">inputType</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">inputType </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-s">"default"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-14"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">font</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">font </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">native</span><span class="crayon-sy">.</span><span class="crayon-e">systemFont</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-15"><span class="crayon-e">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">fontSize</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">fontSize </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.67</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-16">&nbsp;</div><div class="crayon-line" id="crayon-5f8df295266ef893180553-17"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-c">-- Vector options</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-18"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">strokeWidth</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">strokeWidth </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">2</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-19"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">cornerRadius</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">cornerRadius </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.33</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-cn">10</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-20"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">strokeColor</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">strokeColor </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5f8df295266ef893180553-21"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">backgroundColor</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">customOptions</span><span class="crayon-sy">.</span><span class="crayon-e">backgroundColor </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266ef893180553-22"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0060 seconds] -->
+<p>The code above may seem a bit confusing, but we&#8217;re simply accepting a parameter to the function called <code>options</code>. The first line creates a table named <code>customOptions</code> which makes sure it&#8217;s a Lua table. If you don&#8217;t pass the <code>options</code> parameter, an empty table is created. After that, we just set each of the individual options to either the passed value or a default value. For this widget, things like the corner radius and the font size should default to values that adapt to the size of the field.</p>
+<h3>Creating the visual elements</h3>
+<p>In this section, we&#8217;ll create the visual part of our text field widget, including the <strong>native</strong> UI element to pair it with:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266f5204353981" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local field = display.newGroup()
+
+local background = display.newRoundedRect( 0, 0, opt.width, opt.height, opt.cornerRadius )
+background:setFillColor( unpack(opt.backgroundColor) )
+background.strokeWidth = opt.strokeWidth
+background.stroke = opt.strokeColor
+field:insert( background )
+
+if ( opt.x ) then
+   field.x = opt.x
+elseif ( opt.left ) then
+   field.x = opt.left + opt.width * 0.5
+end
+if ( opt.y ) then
+   field.y = opt.y
+elseif ( opt.top ) then
+   field.y = opt.top + opt.height * 0.5
+end
+
+-- Native UI element
+local tHeight = opt.height - opt.strokeWidth * 2
+if "Android" == system.getInfo("platformName") then
+    --
+    -- Older Android devices have extra "chrome" that needs to be compesnated for.
+    --
+    tHeight = tHeight + 10
+end
+
+field.textField = native.newTextField( 0, 0, opt.width - opt.cornerRadius, tHeight )
+field.textField.x = field.x
+field.textField.y = field.y
+field.textField.hasBackground = false
+field.textField.inputType = opt.inputType
+field.textField.text = opt.text
+print( opt.listener, type(opt.listener) )
+if ( opt.listener and type(opt.listener) == "function" ) then
+   field.textField:addEventListener( "userInput", opt.listener )
+end
+
+local deviceScale = ( display.pixelWidth / display.contentWidth ) * 0.5
+
+field.textField.font = native.newFont( opt.font )
+field.textField.size = opt.fontSize * deviceScale</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-4">4</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-6">6</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-8">8</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-10">10</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-12">12</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-14">14</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-16">16</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-18">18</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-20">20</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-22">22</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-24">24</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-26">26</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-28">28</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-30">30</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-32">32</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-34">34</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-36">36</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-38">38</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-40">40</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266f5204353981-42">42</div><div class="crayon-num" data-line="crayon-5f8df295266f5204353981-43">43</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266f5204353981-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">field</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newGroup</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-2">&nbsp;</div><div class="crayon-line" id="crayon-5f8df295266f5204353981-3"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">background</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">newRoundedRect</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">width</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">cornerRadius</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-4"><span class="crayon-v">background</span><span class="crayon-o">:</span><span class="crayon-e">setFillColor</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-r">unpack</span><span class="crayon-sy">(</span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">backgroundColor</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-5"><span class="crayon-v">background</span><span class="crayon-sy">.</span><span class="crayon-v">strokeWidth</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-e">strokeWidth</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-6"><span class="crayon-v">background</span><span class="crayon-sy">.</span><span class="crayon-v">stroke</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-e">strokeColor</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-7"><span class="crayon-v">field</span><span class="crayon-o">:</span><span class="crayon-e">insert</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">background</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-8">&nbsp;</div><div class="crayon-line" id="crayon-5f8df295266f5204353981-9"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">x</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-10"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">x</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-11"><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">left</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-12"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">left</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.5</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-13"><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-14"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">y</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-15"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">y</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-16"><span class="crayon-st">elseif</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">top</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-17"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">top</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.5</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-18"><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-19">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-20"><span class="crayon-c">-- Native UI element</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-21"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">tHeight</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">strokeWidth</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">2</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-22"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-s">"Android"</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-v">system</span><span class="crayon-sy">.</span><span class="crayon-e">getInfo</span><span class="crayon-sy">(</span><span class="crayon-s">"platformName"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-23"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-24"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">-- Older Android devices have extra "chrome" that needs to be compesnated for.</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-25"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-26"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">tHeight</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">tHeight</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">10</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-27"><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-28">&nbsp;</div><div class="crayon-line" id="crayon-5f8df295266f5204353981-29"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">native</span><span class="crayon-sy">.</span><span class="crayon-e">newTextField</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">cornerRadius</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">tHeight</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-30"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-i">x</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-31"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-i">y</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-32"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">hasBackground</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">false</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-33"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">inputType</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-e">inputType</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-34"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-e">text</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-35"><span class="crayon-r">print</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">listener</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">type</span><span class="crayon-sy">(</span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">listener</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-36"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-e">listener </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-r">type</span><span class="crayon-sy">(</span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">listener</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-s">"function"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">then</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-37"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-o">:</span><span class="crayon-e">addEventListener</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"userInput"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">listener</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-38"><span class="crayon-st">end</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-39">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-40"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">deviceScale</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-v">pixelWidth</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-i">contentWidth</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-cn">0.5</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-41">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266f5204353981-42"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">font</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">native</span><span class="crayon-sy">.</span><span class="crayon-e">newFont</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-i">font</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266f5204353981-43"><span class="crayon-v">field</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">size</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">opt</span><span class="crayon-sy">.</span><span class="crayon-v">fontSize</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-v">deviceScale</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0090 seconds] -->
+<p>Here are a few points to consider as you inspect this code:</p>
+<ul>
+<li>If you round the corners, don&#8217;t let the actual text field extend into the corners.</li>
+<li>Remember to hide the native text field background so that your custom visuals show up.</li>
+<li><a href=https://docs.coronalabs.com/api/library/native/newTextField.html>native.newTextField()</a> needs the font string name converted to a <a href=https://docs.coronalabs.com/api/library/native/newFont.html target="_blank">native.newFont()</a>. However, the size is a bit tricky because native text fields do not automatically scale. Thus, we must calculate the device&#8217;s real scale factor and then multiply the desired font size by that scale factor.</li>
+</ul>
+<h3>Removing the elements</h3>
+<p>We need to make sure that when the widget gets removed, the native text field gets removed as well. Previously, we would need to override the <a href=https://docs.coronalabs.com/api/type/DisplayObject/removeSelf.html target="_blank">removeSelf()</a> function with our own function that would eventually call the original <a href=https://docs.coronalabs.com/api/type/DisplayObject/removeSelf.html target="_blank">removeSelf()</a>. However, the new <a href=http://docs.coronalabs.com/api/event/finalize/index.html target="_blank">finalize</a> event makes this process easier. This allows us to set up a function that&#8217;s executed <em>just before the display object is removed from the stage</em>, in case there are related cleanup tasks we need to handle — in this case, removing the native text field just before our custom text field group is removed.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df295266fc638633163" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+function field:finalize( event )
+   event.target.textField:removeSelf()
+end
+field:addEventListener( "finalize" ) 
+
+return field
+</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df295266fc638633163-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266fc638633163-2">2</div><div class="crayon-num" data-line="crayon-5f8df295266fc638633163-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266fc638633163-4">4</div><div class="crayon-num" data-line="crayon-5f8df295266fc638633163-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df295266fc638633163-6">6</div><div class="crayon-num" data-line="crayon-5f8df295266fc638633163-7">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df295266fc638633163-1"><span class="crayon-r">function</span><span class="crayon-h"> </span><span class="crayon-v">field</span><span class="crayon-o">:</span><span class="crayon-e">finalize</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-i">event</span><span class="crayon-h"> </span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266fc638633163-2"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">target</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-o">:</span><span class="crayon-e">removeSelf</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df295266fc638633163-3"><span class="crayon-st">end</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266fc638633163-4"><span class="crayon-v">field</span><span class="crayon-o">:</span><span class="crayon-e">addEventListener</span><span class="crayon-sy">(</span><span class="crayon-h"> </span><span class="crayon-s">"finalize"</span><span class="crayon-h"> </span><span class="crayon-sy">)</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5f8df295266fc638633163-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df295266fc638633163-6"><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-i">field</span></div><div class="crayon-line" id="crayon-5f8df295266fc638633163-7">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p></p>
+<h3>Using the custom text field</h3>
+<p>Using our new &#8220;widget&#8221; text field is simple. To place it on screen, our code may look like this:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df29526700646710954" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local myTextField = widget.newTextField(
+   {
+   width = 250,
+   height = 30,
+   text = "Hello World!",
+   fontSize = 18,
+   font = "HelveticaNeue-Light",
+   listener = textFieldHandler
+   }
+)
+
+myTextField.x = display.contentCenterX
+myTextField.y = 100</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df29526700646710954-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-2">2</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-4">4</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-6">6</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-8">8</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-10">10</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5f8df29526700646710954-12">12</div><div class="crayon-num" data-line="crayon-5f8df29526700646710954-13">13</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df29526700646710954-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">myTextField</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">widget</span><span class="crayon-sy">.</span><span class="crayon-e">newTextField</span><span class="crayon-sy">(</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-2"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">width</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">250</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-4"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">height</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">30</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-5"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"Hello World!"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">fontSize</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">18</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-7"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">font</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"HelveticaNeue-Light"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-8"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">listener</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-i">textFieldHandler</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-9"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-10"><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-11">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5f8df29526700646710954-12"><span class="crayon-v">myTextField</span><span class="crayon-sy">.</span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">display</span><span class="crayon-sy">.</span><span class="crayon-e">contentCenterX</span></div><div class="crayon-line" id="crayon-5f8df29526700646710954-13"><span class="crayon-v">myTextField</span><span class="crayon-sy">.</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">100</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0017 seconds] -->
+<p></p>
+<h4>Retrieve the value of the text field</h4>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df29526704870360763" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+local myText = myTextField.textField.text</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df29526704870360763-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df29526704870360763-1"><span class="crayon-r">local</span><span class="crayon-h"> </span><span class="crayon-v">myText</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">myTextField</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">text</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p></p>
+<h4>Set the value of the text field</h4>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5f8df29526708687133406" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Lua</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+myTextField.textField.text = "Edited Value"</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums" data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5f8df29526708687133406-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5f8df29526708687133406-1"><span class="crayon-v">myTextField</span><span class="crayon-sy">.</span><span class="crayon-v">textField</span><span class="crayon-sy">.</span><span class="crayon-v">text</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"Edited Value"</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<h3>In summary</h3>
+<p>This tutorial should get you started with implementing &#8220;styled&#8221; text input fields and, hopefully, extending them to more complex use cases.</p>
+<hr />
+					</div>
+				</div>
+			</div>
+		
+			<div class="single_tags clearfix">
+            <div class="tags_text">
+				<h5>Tags:</h5>
+				<a href="/blog/tags/native-text-input/" rel="tag">native text input</a>, <a href="/blog/tags/tutorial/" rel="tag">tutorial</a>, <a href="/blog/tags/ui/" rel="tag">ui</a>			</div>
+		</div>
+	    		<div class="author_description">
+		<div class="author_description_inner">
+			<div class="image">
+				<img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" />			</div>
+			<div class="author_text_holder">
+				<h5 class="author_name vcard author">
+				<span class="fu">
+				Rob Miracle			    </span>
+				</h5>
+				<span class="author_email">rob@coronalabs.com</span>
+									<div class="author_text">
+						<p>Rob is the Developer Relations Manager for Corona Labs. Besides being passionate about helping other developers make great games using Corona, he is also enjoys making games in his spare time.
+
+Rob has been coding games since 1979 from personal computers to mainframes. He has over 16 years professional experience in the gaming industry.</p>
+					</div>
+							</div>
+		</div>
+	</div>
+</article>										</div>
+										
+										<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>19 Comments</h5></div></div>
+<div class="comments">
+
+	<ul class="comment-list">
+		
+<li id="comment-2467">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/96488f05aab50f7a48d03bab4b5b6a2e-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://icyspark.com/' rel='external nofollow' class='url'>Dean Hodge</a></h5>
+			<span class="comment_date">Posted at 15:34h, 03 December</span>
+						<div class="text_holder" id="comment-2467">
+				<p>Rob, great tutorial but&#8230;  </p>
+<p>I got super excited for a moment thinking this would resolve the biggest issue with textFields, ie the font size scaling on various devices, especially Android.</p>
+<p>Every time I do a business app, this one issue always bites me, as with many others.</p>
+<p>Hopefully we can get the font size scaling issue resolved soon as it&#8217;s been plaguing me and many other developers for a very long time.</p>
+<p>Please try and find a solution for this issue.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2468">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/dafaa55bcc7e9623e5fec8ba64bdeb1a-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Chris</h5>
+			<span class="comment_date">Posted at 16:01h, 03 December</span>
+						<div class="text_holder" id="comment-2468">
+				<p>+1 on the font scaling on devices</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-2469">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 16:03h, 03 December</span>
+						<div class="text_holder" id="comment-2469">
+				<p>Did you try this?  I ran the code on my iPhone 5, iPad 4 and Google Nexus 7 (with a 320&#215;480 base content area) and the font size was consistent from device to device.   There is code in there to maintain the scaling.</p>
+<p>Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2475">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://www.coronalabs.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 11:54h, 05 December</span>
+						<div class="text_holder" id="comment-2475">
+				<p>Just tried the code on my Android 2.2 Samsung Galaxy S. The font size issue is still there. Not sure if this is due to the real old OS revision.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2477">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 17:32h, 05 December</span>
+						<div class="text_holder" id="comment-2477">
+				<p>Can you reply to this on the forum post and provide a screen shot?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2470">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/aaaba44865e96be70caa15f6fc3078f7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.xibalbastudios.com/' rel='external nofollow' class='url'>Star Crunch</a></h5>
+			<span class="comment_date">Posted at 15:03h, 04 December</span>
+						<div class="text_holder" id="comment-2470">
+				<p>I seem to remember having to explicitly removeSelf() widgets&#8230; have those been rewritten with finalize in mind? That is, can I get rid of that handling code?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2471">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 15:20h, 04 December</span>
+						<div class="text_holder" id="comment-2471">
+				<p>All display objects need to be explicitly removed and nil&#8217;ed with the exception of Storyboard where display objects in the scene&#8217;s view are removed for you when the scene is destroyed.</p>
+<p>Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2472">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/aaaba44865e96be70caa15f6fc3078f7-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.xibalbastudios.com/' rel='external nofollow' class='url'>Star Crunch</a></h5>
+			<span class="comment_date">Posted at 16:57h, 04 December</span>
+						<div class="text_holder" id="comment-2472">
+				<p>Sorry, I wasn&#8217;t precise enough; that probably sounded like a bit of a trivial question. I meant is removeSelf() still necessary for widgets versus, say, group:remove()&#8217;ing or removing the parent group, on account of the logic being moved into the finalizer. At least, I&#8217;d assumed those don&#8217;t invoke the (possibly overridden) removeSelf() method&#8230;</p>
+<p>Of course, maybe I&#8217;ll test and see my assumptions were wrong all along. 🙂</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2473">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e808666db3477cf885161d504bf3f619-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='https://www.coronalabs.com/' rel='external nofollow' class='url'>Kerem</a></h5>
+			<span class="comment_date">Posted at 00:14h, 05 December</span>
+						<div class="text_holder" id="comment-2473">
+				<p>Thanks for a great tutorial. This is a great starting point for what I hope will evolve into a formal Corona Labs widget.newTextField() soon.</p>
+<p>Question &#8211; how can we extend the functionality so that if a new parameter (ie eraseInitialText) is set to true then the initially supplied text is erased when user first taps into this input field? I am able to do this in the began field of my listener function but I would like to push this code into the widget extension code so it can be reused. Is this possible? Thanks</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2476">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 17:30h, 05 December</span>
+						<div class="text_holder" id="comment-2476">
+				<p>I responded in the forum thread for this:  <a href="http://forums.coronalabs.com/topic/41661-widget-for-text-input/" rel="nofollow">http://forums.coronalabs.com/topic/41661-widget-for-text-input/</a></p>
+<p>Please direct responses there.<br />
+Thanks<br />
+Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2474">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/9b4aad7e0ba07441b8cbc37dc0d9d94f-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://www.seanperryman.com/' rel='external nofollow' class='url'>Sean</a></h5>
+			<span class="comment_date">Posted at 06:54h, 05 December</span>
+						<div class="text_holder" id="comment-2474">
+				<p>Hey Rob, will these text fields scroll in a widget ScrollView now? That has always been a big issue for me; getting the text fields to scroll with the rest of the screen. Is there any sort of time frame on when this will be implemented in the actual widget code base?</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2478">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 16:31h, 06 December</span>
+						<div class="text_holder" id="comment-2478">
+				<p>I didn&#8217;t try it, but it should.  The sync code keeps the native text field wherever the object is.  Depending on how fast you scroll the scrollView there may be some lag while the system moves the native.newTextField.</p>
+<p>Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2479">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e1289f230c128878726af57112196bd8-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Kawika</h5>
+			<span class="comment_date">Posted at 10:03h, 08 December</span>
+						<div class="text_holder" id="comment-2479">
+				<p>Anyone using &#8220;Text Candy&#8221; by X-PRESSIVE.COM?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-2480">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/e1289f230c128878726af57112196bd8-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Kawika</h5>
+			<span class="comment_date">Posted at 12:35h, 08 December</span>
+						<div class="text_holder" id="comment-2480">
+				<p>Anyone using “Widget Candy” by X-PRESSIVE.COM?</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+
+<li id="comment-2481">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/f4dbdbf4cdb1f0940fa2b73f070c04a2-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">bobcgausa</h5>
+			<span class="comment_date">Posted at 06:49h, 15 January</span>
+						<div class="text_holder" id="comment-2481">
+				<p>i use corona to teach students who use the simulator on mac or windows and who do not necessarily have a droid.</p>
+<p>&#8220;Since this module still utilizes native text fields, it will draw the widget background on the Windows Corona Simulator, but the text field will not function.&#8221;</p>
+<p>Really, how hard can it be to have a single line text box that is multi-platform?<br />
+This is a huge restriction for classroom use.</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2482">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='/' rel='external nofollow' class='url'>Rob Miracle</a></h5>
+			<span class="comment_date">Posted at 17:51h, 15 January</span>
+						<div class="text_holder" id="comment-2482">
+				<p>We&#8217;ve explained this on many occasions.  Corona SDK is based on OpenGL.  On OS-X, iOS and Android, the OS&#8217;s permit native objects and the OpenGL canvas to occupy the same window.  On Windows, they do not permit native objects and OpenGL objects to co-exist in the same window.  Mircosoft lets this happen for DirectX based apps, but we are an OpenGL based app.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2483">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/7a9378b68d0a545670868a24fe881917-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://indivar.com/' rel='external nofollow' class='url'>sangu</a></h5>
+			<span class="comment_date">Posted at 01:07h, 17 September</span>
+						<div class="text_holder" id="comment-2483">
+				<p>widget.newTextField({}) is showing error in my code, while referencing to widget.<br />
+does it support in pro-corona or i m doing something wrong in code?<br />
+local widget = require(&#8220;widget&#8221;)<br />
+    local myTextField = widget.newTextField(<br />
+   {<br />
+   top = 10,<br />
+   left = 20,<br />
+   width = 200,<br />
+   height = 30,<br />
+   cornerRadius = 8,<br />
+   strokeWidth = 3,<br />
+   backgroundColor = { 1, 1, 1 },<br />
+   strokeColor = { 0, 0, 0 },<br />
+   font = &#8220;Helvetica&#8221;,<br />
+   fontSize = 24<br />
+   &#8211;listener = textFieldHandler<br />
+   }</p>
+			</div>
+		</div>
+	</div>                          
+                
+<ul class="children">
+
+<li id="comment-2484">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/5fe5451355e7a006bc1dc1176ef23933-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name">Rob Miracle</h5>
+			<span class="comment_date">Posted at 17:28h, 17 September</span>
+						<div class="text_holder" id="comment-2484">
+				<p>Please ask this this in the forums.</p>
+<p>Thanks<br />
+Rob</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li id="comment-2485">
+	<div class="comment">
+		<div class="image"> <img alt="" src='/wordpress/wp-content/uploads/gravatar/fb3c48fb8381aaf664336ac119109892-s75.jpg' class="avatar avatar-75" width="75" height="75" /> </div>
+		<div class="text">
+			<h5 class="name"><a href='http://jubjubstudios.com/' rel='external nofollow' class='url'>Julius Bangert</a></h5>
+			<span class="comment_date">Posted at 06:21h, 08 September</span>
+						<div class="text_holder" id="comment-2485">
+				<p>Is there any module or plugin anyone has come up which that offers typeahead / autocomplete functionality?<br />
+So as the user types the first few letters, something in the UI near the text input suggests terms pulled from a lua table?<br />
+This would be so good.</p>
+			</div>
+		</div>
+	</div>                          
+                
+</li><!-- #comment-## -->
+	</ul>
+
+
+
+ </div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>
+						
+								
+							
+
+
+ 
+									</div>
+								</div>	
+								<div class="column2"> 
+										<div class="column_inner">
+		<aside class="sidebar">
+							
+			<div id="search-2" class="widget widget_search posts_holder"><h5>Search</h5><form role="search" method="get" id="searchform" action="/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" placeholder="Search Here" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="&#xf002" />
+    </div>
+</form></div>		<div id="recent-posts-9" class="widget widget_recent_entries posts_holder">		<h5>Recent Posts</h5>		<ul>
+											<li>
+					<a href="/blog/2020/04/30/future-of-corona/">Future of Corona</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/30/the-forums-are-moving/">The Forums are moving&#8230;</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/22/corona-labs-transition-update-22-april-2020/">Corona Labs transition update 22-April-2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/">Google 64-bit deadline coming August 1, 2020</a>
+									</li>
+											<li>
+					<a href="/blog/2020/03/24/keep-calm-and-corona-the-game-engine-no-relation-on/">Keep Calm and Corona (the game engine, no relation) On!</a>
+									</li>
+					</ul>
+		</div><div id="categories-8" class="widget widget_categories posts_holder"><h5>Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="68">Amazon Kindle&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Android&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="887">Art&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="889">Business&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="599">Business of Apps&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="419">Case Study&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="420">Case Study &#8211; Education&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="435">Case Study &#8211; Game Studios&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="37">Composer&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="617">Corona Ads&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="266">Corona Editor&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="54">Corona Geek&nbsp;&nbsp;(320)</option>
+	<option class="level-0" value="858">Corona Geek Developer Interviews&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="624">Corona Marketplace&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="136">Corona native builds&nbsp;&nbsp;(21)</option>
+	<option class="level-0" value="257">Corona Professional Services&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="13">Corona SDK&nbsp;&nbsp;(175)</option>
+	<option class="level-0" value="284">CoronaCards&nbsp;&nbsp;(12)</option>
+	<option class="level-0" value="39">Daily Build&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="890">Design&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="591">eBooks&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="421">Education&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="63">FAQ&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="458">Featured App&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="67">Friday Night Forum&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="268">From the Forum&nbsp;&nbsp;(179)</option>
+	<option class="level-0" value="383">From the Store&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="468">Fuse Powered&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="14">Game Development&nbsp;&nbsp;(60)</option>
+	<option class="level-0" value="641">Google+ Hangouts&nbsp;&nbsp;(293)</option>
+	<option class="level-0" value="15">Guest Bloggers&nbsp;&nbsp;(77)</option>
+	<option class="level-0" value="316">iOS&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="56">iPad&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="58">iPhone&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="43">Lua&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="57">Mobile App of the Week&nbsp;&nbsp;(51)</option>
+	<option class="level-0" value="451">Monetization&nbsp;&nbsp;(43)</option>
+	<option class="level-0" value="892">Music&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="17">News &amp; Announcements&nbsp;&nbsp;(248)</option>
+	<option class="level-0" value="69">NOOK&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="413">OS-X&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="98">Partners&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="895">Photography&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="50">Plugins&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="897">Sport&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="112">Tech&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="515">Third-Party Tools&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="379">Tutorial Treasury&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">Tutorials, Tips and Demos&nbsp;&nbsp;(42)</option>
+	<option class="level-0" value="411">tvOS&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(24)</option>
+	<option class="level-0" value="195">Videos&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="443">Win32&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="289">Windows Phone&nbsp;&nbsp;(2)</option>
+</select>
+</form>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div id="custom_html-4" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/topics/">View all</a></div></div><div id="tag_cloud-8" class="widget widget_tag_cloud posts_holder"><h5>Tags</h5><div class="tagcloud"><a href="/blog/tags/ads/" class="tag-cloud-link tag-link-428 tag-link-position-1" aria-label="ads (9 items)">ads</a>
+<a href="/blog/tags/analytics/" class="tag-cloud-link tag-link-120 tag-link-position-2" aria-label="Analytics (6 items)">Analytics</a>
+<a href="/blog/tags/android-2/" class="tag-cloud-link tag-link-51 tag-link-position-3" aria-label="android (27 items)">android</a>
+<a href="/blog/tags/app-development/" class="tag-cloud-link tag-link-162 tag-link-position-4" aria-label="app development (13 items)">app development</a>
+<a href="/blog/tags/app-marketing/" class="tag-cloud-link tag-link-598 tag-link-position-5" aria-label="App Marketing (11 items)">App Marketing</a>
+<a href="/blog/tags/app-monetization/" class="tag-cloud-link tag-link-135 tag-link-position-6" aria-label="App Monetization (11 items)">App Monetization</a>
+<a href="/blog/tags/art/" class="tag-cloud-link tag-link-574 tag-link-position-7" aria-label="art (7 items)">art</a>
+<a href="/blog/tags/articles/" class="tag-cloud-link tag-link-902 tag-link-position-8" aria-label="Articles (9 items)">Articles</a>
+<a href="/blog/tags/business-2/" class="tag-cloud-link tag-link-74 tag-link-position-9" aria-label="business (11 items)">business</a>
+<a href="/blog/tags/cloud/" class="tag-cloud-link tag-link-415 tag-link-position-10" aria-label="cloud (8 items)">cloud</a>
+<a href="/blog/tags/code-samples/" class="tag-cloud-link tag-link-471 tag-link-position-11" aria-label="Code Samples (13 items)">Code Samples</a>
+<a href="/blog/tags/collision-detection/" class="tag-cloud-link tag-link-178 tag-link-position-12" aria-label="collision detection (7 items)">collision detection</a>
+<a href="/blog/tags/composer/" class="tag-cloud-link tag-link-36 tag-link-position-13" aria-label="composer (11 items)">composer</a>
+<a href="/blog/tags/corona/" class="tag-cloud-link tag-link-75 tag-link-position-14" aria-label="corona (16 items)">corona</a>
+<a href="/blog/tags/corona-plug-ins/" class="tag-cloud-link tag-link-139 tag-link-position-15" aria-label="Corona Plug-ins (7 items)">Corona Plug-ins</a>
+<a href="/blog/tags/corona-sdk/" class="tag-cloud-link tag-link-80 tag-link-position-16" aria-label="Corona SDK (14 items)">Corona SDK</a>
+<a href="/blog/tags/coronasdk/" class="tag-cloud-link tag-link-61 tag-link-position-17" aria-label="CoronaSDK (10 items)">CoronaSDK</a>
+<a href="/blog/tags/coronium/" class="tag-cloud-link tag-link-475 tag-link-position-18" aria-label="Coronium (11 items)">Coronium</a>
+<a href="/blog/tags/desktop-game-development/" class="tag-cloud-link tag-link-841 tag-link-position-19" aria-label="desktop game development (20 items)">desktop game development</a>
+<a href="/blog/tags/facebook/" class="tag-cloud-link tag-link-22 tag-link-position-20" aria-label="Facebook (9 items)">Facebook</a>
+<a href="/blog/tags/faq/" class="tag-cloud-link tag-link-64 tag-link-position-21" aria-label="FAQ (6 items)">FAQ</a>
+<a href="/blog/tags/game/" class="tag-cloud-link tag-link-82 tag-link-position-22" aria-label="game (22 items)">game</a>
+<a href="/blog/tags/game-design/" class="tag-cloud-link tag-link-473 tag-link-position-23" aria-label="Game Design (23 items)">Game Design</a>
+<a href="/blog/tags/game-development-2/" class="tag-cloud-link tag-link-587 tag-link-position-24" aria-label="game development (28 items)">game development</a>
+<a href="/blog/tags/game-development/" class="tag-cloud-link tag-link-211 tag-link-position-25" aria-label="Game Development (33 items)">Game Development</a>
+<a href="/blog/tags/gpgs/" class="tag-cloud-link tag-link-49 tag-link-position-26" aria-label="GPGS (7 items)">GPGS</a>
+<a href="/blog/tags/graphics-2/" class="tag-cloud-link tag-link-103 tag-link-position-27" aria-label="graphics (8 items)">graphics</a>
+<a href="/blog/tags/graphics-2-0/" class="tag-cloud-link tag-link-31 tag-link-position-28" aria-label="Graphics 2.0 (11 items)">Graphics 2.0</a>
+<a href="/blog/tags/hackathon/" class="tag-cloud-link tag-link-109 tag-link-position-29" aria-label="hackathon (6 items)">hackathon</a>
+<a href="/blog/tags/indie/" class="tag-cloud-link tag-link-83 tag-link-position-30" aria-label="indie (10 items)">indie</a>
+<a href="/blog/tags/ios/" class="tag-cloud-link tag-link-52 tag-link-position-31" aria-label="iOS (36 items)">iOS</a>
+<a href="/blog/tags/ipad-2/" class="tag-cloud-link tag-link-76 tag-link-position-32" aria-label="ipad (11 items)">ipad</a>
+<a href="/blog/tags/iphone-2/" class="tag-cloud-link tag-link-77 tag-link-position-33" aria-label="iphone (10 items)">iphone</a>
+<a href="/blog/tags/level-design/" class="tag-cloud-link tag-link-822 tag-link-position-34" aria-label="level design (7 items)">level design</a>
+<a href="/blog/tags/lua-2/" class="tag-cloud-link tag-link-44 tag-link-position-35" aria-label="lua (7 items)">lua</a>
+<a href="/blog/tags/marketplace/" class="tag-cloud-link tag-link-596 tag-link-position-36" aria-label="marketplace (29 items)">marketplace</a>
+<a href="/blog/tags/monetization-2/" class="tag-cloud-link tag-link-151 tag-link-position-37" aria-label="monetization (24 items)">monetization</a>
+<a href="/blog/tags/physics/" class="tag-cloud-link tag-link-55 tag-link-position-38" aria-label="physics (14 items)">physics</a>
+<a href="/blog/tags/physics-examples/" class="tag-cloud-link tag-link-809 tag-link-position-39" aria-label="Physics Examples (11 items)">Physics Examples</a>
+<a href="/blog/tags/plugin/" class="tag-cloud-link tag-link-140 tag-link-position-40" aria-label="plugin (16 items)">plugin</a>
+<a href="/blog/tags/plugins/" class="tag-cloud-link tag-link-104 tag-link-position-41" aria-label="plugins (26 items)">plugins</a>
+<a href="/blog/tags/sample-code/" class="tag-cloud-link tag-link-363 tag-link-position-42" aria-label="Sample Code (8 items)">Sample Code</a>
+<a href="/blog/tags/tutorial/" class="tag-cloud-link tag-link-6 tag-link-position-43" aria-label="tutorial (32 items)">tutorial</a>
+<a href="/blog/tags/utility-2/" class="tag-cloud-link tag-link-78 tag-link-position-44" aria-label="utility (6 items)">utility</a>
+<a href="/blog/tags/widget-2/" class="tag-cloud-link tag-link-35 tag-link-position-45" aria-label="widget (7 items)">widget</a></div>
+</div><div id="custom_html-5" class="widget_text widget widget_custom_html posts_holder"><div class="textwidget custom-html-widget"><a class="sidebar_viewall" href="/blog/tags/">View all</a></div></div>		</aside>
+	</div>
+								</div>
+							</div>
+											</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+                            <div style="background-color: #ededed;height: 1px" class="footer_top_border"></div>
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="four_columns clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="text_icl-3" class="widget widget_text_icl"><h5>About</h5>		<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+<li><a title="" href="/product/">Product</a></li>
+<li><a title="FAQ" href="/faq/">FAQ</a></li>
+<li><a href="/roadmap/">Roadmap</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/presskit.pdf" target="_blank" rel="noopener">Press Kit</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="text-15" class="widget widget_text"><h5>Learn</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+<ul class="footer_nav">
+<li>
+    <a href="https://docs.coronalabs.com/guide/programming/index.html" target="_blank" rel="noopener">Getting started</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/index.html" target="_blank" rel="noopener">Developer guides</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/" target="_blank" rel="noopener">Documentation</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/tutorial/" target="_blank" rel="noopener">Tutorials</a>
+  </li>
+<li>
+    <a href="https://docs.coronalabs.com/guide/start/introLua/index.html" target="_blank" rel="noopener">Learn Lua</a>
+  </li>
+</ul>
+</div>
+		</div>									</div>
+								</div>
+								<div class="column3 footer_col3">
+									<div class="column_inner">
+										<div id="text-6" class="widget widget_text"><h5>Community</h5>			<div class="textwidget"><hr class="footer_hr_list" />
+
+<ul class="footer_nav">
+ 	<li><a href="https://forums.solar2d.com/" target="_blank" rel="noopener">Forum</a></li>
+ 	<li><a href="https://marketplace.coronalabs.com/" target="_blank" rel="noopener">Marketplace</a></li>
+ 	<li><a href="/blog/">Blog</a></li>
+ 	<li><a href="/support/">Support</a></li>
+</ul></div>
+		</div>									</div>
+								</div>
+								<div class="column4 footer_col4">
+									<div class="column_inner">
+										<div id="text-2" class="widget widget_text">			<div class="textwidget"><p><span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.facebook.com/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://twitter.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://vk.com/corona_pub' target='_blank'><i class="qode_icon_font_awesome fa fa-vk fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://t.me/CoronaRu' target='_blank'><i class="qode_icon_font_awesome fa fa-telegram fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.linkedin.com/company/corona-labs' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://www.youtube.com/user/CoronaLabs' target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='https://github.com/coronalabs' target='_blank'><i class="qode_icon_font_awesome fa fa-github fa-lg simple_social" style="font-size: 15px;" ></i></a></span> <span class='q_social_icon_holder normal_social' ><a itemprop='url' href='/slack/' target='_self'><i class="qode_icon_font_awesome fa fa-slack fa-lg simple_social" style="font-size: 15px;" ></i></a></span></p>
+<hr class="footer_hr_list" />
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p><img class="footer_logo" style="width: 50%;" src="/wordpress/wp-content/uploads/2017/06/corona_logo_footer2906.png" alt="logo" /></p>
+<div class="separator  transparent center" style="margin-top: 1px;margin-bottom: 1px;"></div>
+
+<p style="font-size: 15px; line-height: 22px;">Our mission is to enable anyone to create great mobile apps. Our flagship product, Corona, is the world’s most advanced 2D mobile development platform.</p>
+</div>
+		</div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+						<div class="textwidget">© 2018 Corona Labs Inc. <a style="text-decoration: underline; color: #707a89;" href="/terms-and-conditions/"> Terms of service</a> &amp; <a style="text-decoration: underline; color: #707a89;" href="/privacy-policy/">Privacy policy</a></div>
+					</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div class="wppopups-whole" style="display: none"><div class="spu-bg" id="spu-bg-76435"></div><div class="spu-box spu-animation-fade spu-theme-elegant spu-position-centered" id="spu-76435" data-id="76435" data-parent="0" data-settings="{&quot;position&quot;:{&quot;position&quot;:&quot;centered&quot;},&quot;animation&quot;:{&quot;animation&quot;:&quot;fade&quot;},&quot;colors&quot;:{&quot;show_overlay&quot;:&quot;yes-color&quot;,&quot;overlay_color&quot;:&quot;rgba(117, 169, 177, 0.33)&quot;,&quot;overlay_blur&quot;:&quot;2&quot;,&quot;bg_color&quot;:&quot;rgb(246, 246, 240)&quot;,&quot;bg_img&quot;:&quot;&quot;,&quot;bg_img_repeat&quot;:&quot;no-repeat&quot;,&quot;bg_img_size&quot;:&quot;cover&quot;},&quot;close&quot;:{&quot;close_color&quot;:&quot;rgb(255, 255, 255)&quot;,&quot;close_hover_color&quot;:&quot;#000&quot;,&quot;close_shadow_color&quot;:&quot;#000&quot;,&quot;close_size&quot;:&quot;40&quot;,&quot;close_position&quot;:&quot;top_right&quot;},&quot;popup_box&quot;:{&quot;width&quot;:&quot;750px&quot;,&quot;padding&quot;:&quot;50&quot;,&quot;auto_height&quot;:&quot;yes&quot;,&quot;height&quot;:&quot;430px&quot;},&quot;border&quot;:{&quot;border_type&quot;:&quot;solid&quot;,&quot;border_color&quot;:&quot;rgb(6, 94, 79)&quot;,&quot;border_width&quot;:&quot;5&quot;,&quot;border_radius&quot;:&quot;0&quot;,&quot;border_margin&quot;:&quot;14&quot;},&quot;shadow&quot;:{&quot;shadow_color&quot;:&quot;#ccc&quot;,&quot;shadow_type&quot;:&quot;outset&quot;,&quot;shadow_x_offset&quot;:&quot;5&quot;,&quot;shadow_y_offset&quot;:&quot;5&quot;,&quot;shadow_blur&quot;:&quot;5&quot;,&quot;shadow_spread&quot;:&quot;0&quot;},&quot;css&quot;:{&quot;custom_css&quot;:&quot;&quot;},&quot;id&quot;:&quot;76435&quot;,&quot;rules&quot;:{&quot;group_0&quot;:{&quot;rule_0&quot;:{&quot;rule&quot;:&quot;page_type&quot;,&quot;operator&quot;:&quot;==&quot;,&quot;value&quot;:&quot;all_pages&quot;}}},&quot;settings&quot;:{&quot;popup_title&quot;:&quot;Corona SDK is now Solar2D&quot;,&quot;popup_desc&quot;:&quot;&quot;,&quot;test_mode&quot;:&quot;0&quot;,&quot;powered_link&quot;:&quot;0&quot;,&quot;popup_class&quot;:&quot;&quot;,&quot;popup_hidden_class&quot;:&quot;spu-theme-elegant&quot;,&quot;close_on_conversion&quot;:&quot;0&quot;,&quot;conversion_cookie_name&quot;:&quot;now_solar2d&quot;,&quot;conversion_cookie_duration&quot;:&quot;1&quot;,&quot;conversion_cookie_type&quot;:&quot;h&quot;,&quot;closing_cookie_name&quot;:&quot;now_solar2d_close&quot;,&quot;closing_cookie_duration&quot;:&quot;1&quot;,&quot;closing_cookie_type&quot;:&quot;h&quot;},&quot;triggers&quot;:{&quot;trigger_0&quot;:{&quot;trigger&quot;:&quot;seconds&quot;,&quot;value&quot;:&quot;1&quot;}}}"><div class="spu-container"><div class="spu-content"><div style="text-align: center; font-family: 'Lato',Open Sans;">
+<h5 style="text-align: center; color: #646464;">The website is no longer being updated, and is for archival purposes only.</h5>
+<p>&nbsp;</p>
+<h3>Corona SDK is now Solar2D</h3>
+<p><a href="https://Solar2D.com/"><img class="alignnone size-medium wp-image-76413" style="font-size: 16px;" src="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png" alt="" width="300" height="124" srcset="/wordpress/wp-content/uploads/2020/04/finalpost-art-300x124.png 300w, /wordpress/wp-content/uploads/2020/04/finalpost-art-768x317.png 768w, /wordpress/wp-content/uploads/2020/04/finalpost-art-1024x423.png 1024w, /wordpress/wp-content/uploads/2020/04/finalpost-art-700x289.png 700w, /wordpress/wp-content/uploads/2020/04/finalpost-art-125x52.png 125w, /wordpress/wp-content/uploads/2020/04/finalpost-art.png 1240w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3><a href="https://Solar2D.com/">https://Solar2D.com/</a></h3>
+</div>
+</div><a href="#" class="spu-close spu-close-popup spu-close-top_right">&times;</a><span class="spu-timer"></span></div></div><!--spu-box--></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts-44ab35495eb13b448ea9307a96f479f3.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"\/wordpress\/wp-admin\/admin-ajax.php?lang=en","pid":"53051","is_front_page":"","is_blog_page":"","is_category":"","site_url":"\/wordpress","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","nonce":"b47d1a0f1c"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups-933b528a2d57748fe8c83f115a193bac.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/qode-like.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/core.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/widget.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/accordion.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/position.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/menu.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/autocomplete.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/button.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/datepicker.min-1.11.4.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/mouse.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/resizable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/draggable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/dialog.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/droppable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/progressbar.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/selectable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/sortable.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/slider.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/spinner.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tooltip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/tabs.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-blind.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-bounce.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-clip.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-drop.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-explode.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fade.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-fold.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-highlight.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-pulsate.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-size.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-scale.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-shake.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-slide.min-1.11.4.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-includes/js/jquery/ui/effect-transfer.min-1.11.4.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/plugins-301fe8920786443d62854aa56f62d416.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min-5.5.5.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/jquery.stretch-589214c34f008189ea441c146f569db3.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/default_dynamic-7509df77330fcb9cc352a1e134790124.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wordpress/wp-content/themes/bridge/js/default.min.js'></script>
+<script data-minify="1" type='text/javascript' src='/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/bridge/js/custom_js-46e09ba307b0b6c4b86ea442fd0f8392.js'></script>
+<script type='text/javascript' src='/wordpress/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='/wordpress/wp-content/cache/busting/1/wordpress/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min-5.5.5.js'></script>
+<script type="text/javascript">
+                WebFontConfig = {
+                    google: { families: [ 'Lato:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo 2:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Exo:100,200,300,400,500,600,700,800,900,300italic,400italic:latin,latin-ext', 'Open Sans:400,300:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+<script>
+jQuery( document ).ready(function() {
+jQuery('a[title="Forum"]').click(function(e) {trackOutboundLink('https://forums.coronalabs.com/', "outboundForum"); console.log("Forum clicked");});
+jQuery('a[title="Marketplace"]').click(function(e) {trackOutboundLink('https://marketplace.coronalabs.com/', "outboundMarketplace"); console.log("Marketplace clicked");});
+});
+</script>
+
+
+</body>
+</html>	
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

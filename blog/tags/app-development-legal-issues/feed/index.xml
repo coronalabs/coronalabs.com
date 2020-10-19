@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>app development legal issues &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/app-development-legal-issues/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>app development legal issues &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New York game lawyer, Chris Reid shares app development legal tips</title>
+		<link>/blog/coronageek/new-york-game-lawyer-chris-reid-shares-app-development-legal-tips/</link>
+		<comments>/blog/coronageek/new-york-game-lawyer-chris-reid-shares-app-development-legal-tips/#respond</comments>
+		<pubDate>Fri, 10 Jun 2016 20:54:33 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development legal issues]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67152</guid>
+		<description><![CDATA[In this special Corona Geek podcast, we talked Chris Reid, a New York game lawyer, about protecting against app store clones, handling cease and desists letters, structuring app development contracts and more.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/FEccF2wQNV8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />In this special <a href=http://bit.ly/19JGUiG target="_blank">Corona Geek podcast</a>, we talked Chris Reid, a <a href=http://chrisreidlaw.com/ target="_blank">New York game lawyer</a>, about protecting against app store clones, handling cease and desists letters, structuring app development contracts and more.</p>
+<p>As a member of the state bars of both New York and New Jersey, Chris handles a wide range of intellectual property matters, including copyright, trademark, as well as start-up, business and contract law. He uses his <a href=http://www.gdcvault.com/play/1023404/Practical-Law-101-For-Indie target="_blank">extensive knowledge of the gaming industry</a> to provide comprehensive advice and legal service to developers.</p>
+<p>Chris was extremely informative and we look forward to having him back on Corona Geek and eventually as a speaker at a Corona event.</p>
+<p><strong>Here are a few clips from the interview where Chris answers community questions:</strong></p>
+<ul>
+<li><a href=https://www.youtube.com/watch?v=31an444BYO0 target="_blank">Protecting Apps from App Store Clones</a></li>
+<li><a href=https://www.youtube.com/watch?v=PQZwYqrGsyU target="_blank">Handling App Store Cease and Desist Letters</a></li>
+<li><a href=https://www.youtube.com/watch?v=E03xFgmxbUE target="_blank">Can You Ignore App Store Cease and Desist Letters?</a></li>
+<li><a href=https://www.youtube.com/watch?v=fY_KOOvpn2I target="_blank">Can You Show A Business Name On A Personal App Store Account?</a></li>
+<li><a href=https://www.youtube.com/watch?v=Is4eC1II7ag target="_blank">How Should You Handle Taxes When Outsourcing App Development?</a></li>
+<li><a href=https://www.youtube.com/watch?v=6pt1lSn7XRs target="_blank">What Should Be Included In An App Development Contract?</a></li>
+</ul>
+<p><strong>Here are written versions of Chris&#8217; answers as well:</strong></p>
+<p><strong>Raphael:</strong> What&#8217;s the best way, preventative and/or after-the-fact, to protect your game idea or IP from clones that hit the App Store?<br />
+<strong>Chris:</strong> The idea isn&#8217;t protectable. But you can send C&amp;D letters and do takedown notices to Apple, Google, Steam etc. Copyright AND TM.</p>
+<hr />
+<p><strong>Dave:</strong> If you are selling a game under your iTunes individual account as a sole proprietor, do you need a DBA to show another name as the maker? i.e., can I release a game and on the splash show &#8220;Mikesell Software&#8221;, even though I don&#8217;t have an LLC or DBA by that name?<br />
+<strong>Chris:</strong> No, Apple requires you to have an actual legal entity to use the entity name. <a href=https://developer.apple.com/support/enrollment/ target="_blank">Individuals must enroll with their legal name</a>.</p>
+<hr />
+<p><strong>Jason:</strong> Any suggested template contracts or boilerplate language to use for client work?<br />
+<strong>Chris:</strong> Include these items</p>
+<ul>
+<li>Term</li>
+<li>Percentage up front</li>
+<li>Kill Fee</li>
+<li>Attorney&#8217;s Fees</li>
+<li>Change orders for scope increase</li>
+<li>Clear approval process</li>
+<li>Portfolio license</li>
+<li>Assignment on final payment vs. Work for Hire</li>
+</ul>
+<hr />
+<p><strong>Raphael:</strong> Best practices or precautions when partnering with another developer, designer, or artist to develop an app?<br />
+<strong>Chris:</strong> Always sign something in advance of work. Ideally, form a company to hold the IP. Joint ownership is messy. Are both people members? Is one just a contractor?</p>
+<hr />
+<p><strong>Dan:</strong> When dealing with outsourced development, how should I handle taxes? i.e I pay $1,000 for a developer in EU to create an app. I&#8217;m based in US. How do I handle this from a tax perspective?<br />
+<strong>Chris:</strong> Ask an accountant, especially one who understands international tax law, if your situation dictates.</p>
+<hr />
+<p><strong>Adi:</strong> What do you do when an over zealous lawyer sends you via Google/Apple a removal notice since you app is using their freshly received trademark.. What is allowed and what is not allowed to be used? Examples or usecases? It seems like lawyer season the past month as more and more of the successful companies find ridiculous words to register as their very own contribution to the English vocabulary.</p>
+<p><strong>Chris:</strong> Before you chose a company/app name, do a quick <a href=http://www.uspto.gov/trademark target="_blank">PTO database search on marks</a>. Be especially wary if there are LIVE marks that are in the same class as your app (likely International Class 009 [software]). Also, just Google ahead of time. Find out if there are big players using the name for similar products.</p>
+<p>If you get a letter: Check to make sure the rights they are asserting check out (ie. that their product was on the market when they said it was/that they have a registered mark). See what they are asking (usually just for you to change the name. Decide if it is worth a fight. Change the name if it isn&#8217;t. Marks have to be similar AND goods/services have to be similar.</p>
+<hr />
+<p>Thanks Chris!</p>
+<p><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank"><img class="size-full wp-image-65914 aligncenter" src="/wordpress/wp-content/uploads/2016/02/coronageek-fb-status-podcast-scheduling.png" alt="Corona Geek Developer Conversations Promo" width="484" height="254" /></a></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/new-york-game-lawyer-chris-reid-shares-app-development-legal-tips/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-2016-06-10-chris-reid-law-interview.mp3" length="62395648" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

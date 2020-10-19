@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>upload &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/upload/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>upload &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Uploading files demystified</title>
+		<link>/blog/2014/02/25/tutorial-uploading-files-demystified/</link>
+		<comments>/blog/2014/02/25/tutorial-uploading-files-demystified/#comments</comments>
+		<pubDate>Tue, 25 Feb 2014 20:10:05 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=56479</guid>
+		<description><![CDATA[Uploading files to a web server can be a tricky process because a lot depends on the web server's features, abilities, and limits. This week's tutorial aims to demystify some of the complexity behind this process and includes a sample project for download and testing.]]></description>
+				<content:encoded><![CDATA[<p>Uploading files to a web server can be a tricky process because a lot depends on the web server&#8217;s features, abilities, and limits. One might think that there&#8217;s a &#8220;standard&#8221; upload method, but unfortunately there&#8217;s not. How an Apache server running PHP handles things could be drastically different than a .NET server running Visual Basic or C#. Even within a family of servers sharing a common language, the rules vary from server to server and from upload script to upload script.</p>
+<p>You must also be very careful about which files should be allowed to upload to your web server. Since you&#8217;re creating a script that anybody with the URL can run — and effectively send data to your server — you may open your server to being hacked unless you utilize caution and care. It&#8217;s quite easy with server-side scripts to allow the ability to write over critical files with malicious code, so if you don&#8217;t know what you&#8217;re doing on the server side, you may want to consider other options. In addition, your server may enforce limits on your upload abilities that are beyond your control. For example, many servers limit uploads to small files (under 2 MB), or they may limit the number of files that can be uploaded. All of these limitations must be considered before you begin implementing a file upload process.</p>
+<h3>Before you begin</h3>
+<p>Before you proceed with this tutorial, you should read <a href=http://www.php.net/manual/en/features.file-upload.php target="_blank" rel="noopener">this manual</a> to gain a clearer understanding of the entire process. This tutorial presents a &#8220;quick and dirty&#8221; method to upload files, but before you use this in production, you must make some adjustments and secure the script as necessary. You should anticipate that it&#8217;ll take some effort to get this right!</p>
+<h3>Using &#8220;network.upload()&#8221;</h3>
+<p>Corona&#8217;s <code>network.*</code> library contains an API called <a href=http://docs.coronalabs.com/daily/api/library/network/upload.html target="_blank" rel="noopener">network.upload()</a> which is a simple method for uploading files to a server, assuming that your server handles the simple method of uploading files using <code>HTTP PUT</code>. Most existing scripts that accept file upload probably won&#8217;t work with <a href=http://docs.coronalabs.com/daily/api/library/network/upload.html target="_blank" rel="noopener">network.upload()</a> because they&#8217;re looking for an <code>HTTP POST</code> form-based MIME multi-part upload format. Corona&#8217;s <a href=http://docs.coronalabs.com/daily/api/library/network/upload.html target="_blank" rel="noopener">network.upload()</a> API does not talk to these kinds of scripts, but we&#8217;ll discuss this further in a bit. First, let&#8217;s look at the Corona side&#8230;</p>
+<h3>The Corona script</h3>
+<p></p><pre class="crayon-plain-tag">-- Callback function to handle the upload events that are generated.
+-- There will be several events: one to indicate the start and end of the
+-- process and several to indicate the progress (depends on the file size).
+-- Always test for your error conditions!
+
+local function uploadListener( event )
+   if ( event.isError ) then
+      print( &quot;Network Error.&quot; )
+
+      -- This is likely a time out or server being down. In other words,
+      -- It was unable to communicate with the web server. Now if the
+      -- connection to the web server worked, but the request is bad, this
+      -- will be false and you need to look at event.status and event.response
+      -- to see why the web server failed to do what you want.
+   else
+      if ( event.phase == &quot;began&quot; ) then
+         print( &quot;Upload started&quot; )
+      elseif ( event.phase == &quot;progress&quot; ) then
+         print( &quot;Uploading... bytes transferred &quot;, event.bytesTransferred )
+      elseif ( event.phase == &quot;ended&quot; ) then
+         print( &quot;Upload ended...&quot; )
+         print( &quot;Status:&quot;, event.status )
+         print( &quot;Response:&quot;, event.response )
+      end
+   end
+end
+
+-- Sepcify the URL of the PHP script to upload to. Do this on your own server.
+-- Also define the method as &quot;PUT&quot;.
+local url = &quot;http://yourwebserver.com/somepath/upload.php&quot;
+local method = &quot;PUT&quot;
+
+-- Set some reasonable parameters for the upload process:
+local params = {
+   timeout = 60,
+   progress = true,
+   bodyType = &quot;binary&quot;
+}
+
+-- Specify what file to upload and where to upload it from.
+-- Also, set the MIME type of the file so that the server knows what to expect.
+local filename = &quot;image.jpg&quot;
+local baseDirectory = system.ResourceDirectory
+local contentType = &quot;image/jpeg&quot;  --another option is &quot;text/plain&quot;
+
+-- There is no standard way of using HTTP PUT to tell the remote host what
+-- to name the file. We'll make up our own header here so that our PHP script
+-- expects to look for that and provides the name of the file. Your PHP script
+-- needs to be &quot;hardened&quot; because this is a security risk. For example, someone
+-- could pass in a path name that might try to write arbitrary files to your
+-- server and overwrite critical system files with malicious code.
+-- Don't assume &quot;This won't happen to me!&quot; because it very well could.
+local headers = {}
+headers.filename = filename
+params.headers = headers
+
+network.upload( url , method, uploadListener, params, filename, baseDirectory, contentType )</pre><p></p>
+<h3>The script demystified&#8230;</h3>
+<p>As with all <code>network.*</code> API calls, this operates asynchronously, meaning that it will return to your program immediately and process the upload in the background. However, you need to know the status of the upload, in particular when it completes, which is handled by the event listener function:</p><pre class="crayon-plain-tag">local function uploadListener( event )
+   if ( event.isError ) then
+      print( &quot;Network Error.&quot; )
+      -- This is likely a result of a timeout or the server being down.
+      -- In other words, it was unable to communicate with the web server.
+      -- If the connection to the web server worked, but the request is bad, this
+      -- will be 'false' and you need to look at 'event.status' and 'event.response'
+      -- to see why the web server failed to process your request.
+   else
+      if ( event.phase == &quot;began&quot; ) then
+         print( &quot;Upload started&quot; )
+      elseif ( event.phase == &quot;progress&quot; ) then
+         print( &quot;Uploading... bytes transfered &quot;, event.bytesTransfered )
+      elseif ( event.phase == &quot;ended&quot; ) then
+         print( &quot;Upload ended...&quot; )
+         print( &quot;Status:&quot;, event.status )
+         print( &quot;Response:&quot;, event.response )
+      end
+   end
+end</pre><p>Let&#8217;s inspect this function in more detail. The first thing you must check is whether a network error occurred. This is returned in the <code>event.isError</code> attribute. In network programming, it&#8217;s important to understand that this error may indicate that the server is down, it&#8217;s unreachable, or it&#8217;s timing out. Effectively, it means that you never successfully communicated with the server.</p>
+<p>You can successfully connect to and interact with the web server, asking it to do something that it can&#8217;t, but it will report a &#8220;success&#8221; in regards to the <code>isError</code> attribute. In other words, regardless of whether the server sends you a &#8220;right&#8221; or &#8220;wrong&#8221; response, you technically had a successful transaction with it. Thus, the <code>else</code> condition block is where you can inspect and handle the various phases of the upload. For instance, in the <code>"began"</code> phase, you may choose to display a <a href=http://docs.coronalabs.com/api/library/widget/newProgressView.html target="_blank" rel="noopener">widget.newProgressView()</a>. Then in the <code>"progress"</code> phase, increment that widget&#8217;s status based on the amount of bytes transmitted. Finally, the <code>"ended"</code> phase lets you know that the web server has completed the upload process.</p>
+<p>All finished, correct? Not so fast! The file may still have failed to upload for various reasons, for example, the file was too large, it was not a valid file name, or some permission issue on the server prevented it from uploading. Thus, you should check the <code>event.status</code> attribute which will hold the HTTP &#8220;result&#8221; code, such as <strong>201</strong> (success) or <strong>403</strong> (permission denied). Depending on the server, there may be additional information in the <code>event.response</code> attribute that can indicate where the problem resided.</p>
+<p>Now, let&#8217;s re-inspect the various variables and tables required for the <a href=http://docs.coronalabs.com/daily/api/library/network/upload.html target="_blank" rel="noopener">network.upload()</a> API call. These include:</p>
+<ul>
+<li>The URL of the server script to execute.</li>
+<li>The HTTP method (in this case we&#8217;re going to use &#8220;PUT&#8221;).</li>
+<li>Some parameters to configure the API Call, including the timeout, body type, and whether you want progress updates.</li>
+<li>The filename to upload.</li>
+<li>The source directory where the file can be found.</li>
+<li>A MIME type string indicating the file type for the server&#8217;s use.</li>
+<li>A custom header for the PHP script (we&#8217;ll discuss this further down).</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">-- Sepcify the URL of the PHP script to upload to. Do this on your own server.
+-- Also define the method as &quot;PUT&quot;.
+local url = &quot;http://yourwebserver.com/somepath/upload.php&quot;
+local method = &quot;PUT&quot;
+
+-- Set some reasonable parameters for the upload process:
+local params = {
+   timeout = 60,
+   progress = true,
+   bodyType = &quot;binary&quot;
+}
+
+-- Specify what file to upload and where to upload it from.
+-- Also, set the MIME type of the file so that the server knows what to expect.
+local filename = &quot;image.jpg&quot;
+local baseDirectory = system.ResourceDirectory
+local contentType = &quot;image/jpeg&quot;  --another option is &quot;text/plain&quot;
+
+local headers = {}
+headers.filename = filename
+params.headers = headers</pre><p>Because this method has no way of telling the server the name of the file to save, we must create a special header named <code>filename</code> that will contain that name (the file we want to use on the remote server). With this step done, add the <code>headers</code> table to the <code>params</code> table and then call <a href=http://docs.coronalabs.com/daily/api/library/network/upload.html target="_blank" rel="noopener">network.upload()</a>:</p><pre class="crayon-plain-tag">network.upload( url , method, uploadListener, params, filename, baseDirectory, contentType )</pre><p></p>
+<h3>The PHP script</h3>
+<p>For usage with this tutorial, we&#8217;re providing a sample <a href=https://gist.github.com/coronarob/221e23618615ae2ff0b9?#file-upload-php target="_blank" rel="noopener">PHP script for download</a>. This script is fairly simple and straightforward, but unless you know PHP, it will look intimidating. Before you attempt to modify it for your own project, there are a few important things to understand:</p>
+<h4>1. Security</h4>
+<p>When you write a script online, it&#8217;s 100% your responsibility to ensure that it cannot be easily hacked. Scripts that write files to the server are the most vulnerable. You may think that only your app will use it, but once it&#8217;s on a website, anybody can execute it, figure out the parameters and the methods, and find holes to exploit. We&#8217;ve taken some basic steps to prevent this, but you need to take it the rest of the way. This script lets the caller set the filename which is inherently dangerous since people can put in tricks to create false paths that may let them write files to arbitrary locations. Your script should <strong>never</strong> run at elevated permissions, and your file system should be <strong>read-only</strong> wherever there are executable script files or system binary executables. Finally, you should do your best to scrub any provided file name before putting this code into production. The safest thing is to prevent the caller from specifying the filename, but this can create usability issues in regards to keeping the files organized.</p>
+<h4>2. Know your server&#8217;s limits</h4>
+<p>Many PHP servers, if they allow uploads at all, will have very tight limits on the file size that can be uploaded. The code above has a size limit check, but it only works if the server allows larger files and you want to limit the size. In this sample, we allow up to a 5 MB file, but the server itself may only allow 1 MB. The server may not even reach your script if the file is too large, so it&#8217;s your responsibility to control the limits. Many websites live in a shared environment with other websites and you should be a good network citizen!</p>
+<h4>3. Handling files of the same name</h4>
+<p>The code above uses a simple (but somewhat flawed) method of adding an increasing sequence number to the end of the string. It stops incrementing the number at 100. The <code>while</code> loop that checks for duplicate file names can&#8217;t run forever and after you hit 100 uploads of the same name, it will start overwriting the 100th file. Again, this is <strong>not production-ready script</strong> and you must adapt it to your needs. Another potential method is to get a list of files, find the one with the highest number, parse the name from the number, and increment it.</p>
+<h4>4. The upload directory</h4>
+<p>This script assumes that you&#8217;ll create a folder named <strong>upload</strong> as a child folder of where this script is located, but this may not be the best option for your website. This upload folder must have <strong>write</strong> permissions for the ID your web server runs at. Generally the web server will not run with an ID or within a group that your account has access to. This means the folder needs to be <strong>World writable</strong>. As a safety precaution, you probably don&#8217;t want the folder to have <strong>READ</strong> or <strong>EXECUTE/LIST</strong> privileges for the <strong>World</strong> user. Finally, your server may need to dump the files in a completely different location in your server tree, so you must figure out that path and adjust the PHP script accordingly.</p>
+<h3>In summary</h3>
+<p>As you can see, the act of uploading files can be a complex task. Hopefully this tutorial has shed some light on the process. As always, please leave your questions and comments below. You may also <a href=https://gist.github.com/coronarob/221e23618615ae2ff0b9?#file-upload-php target="_blank" rel="noopener">download the PHP script</a> based on this tutorial if you wish to use it as a foundation for your own implementation.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/02/25/tutorial-uploading-files-demystified/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+	</channel>
+</rss>

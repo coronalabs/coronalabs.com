@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>javascript &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>javascript &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CoronaCards is cool. Here&#8217;s something even cooler!</title>
+		<link>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/</link>
+		<comments>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/#comments</comments>
+		<pubDate>Fri, 07 Mar 2014 14:08:37 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[webgl]]></category>
+
+		<guid isPermaLink="false">/?p=56812</guid>
+		<description><![CDATA[We think yesterday's <a href="/blog/2014/03/06/introducing-coronacards/">announcement</a> of <a href="http://www.coronacards.com/">CoronaCards</a> is a game changer. It changes the equation. Instead of a choice, it's all of the above — you get to leverage Corona technology in any existing native app!
+
+This may be hard to believe, but today, I want to give you a taste of something that's even more exciting. ]]></description>
+				<content:encoded><![CDATA[<p>We think yesterday&#8217;s <a href=/blog/2014/03/06/introducing-coronacards/>announcement</a> of <a href=http://www.coronacards.com>CoronaCards/</a> is a game changer. It changes the equation. Instead of a choice, it&#8217;s all of the above — you get to leverage Corona technology in any existing native app!</p>
+<p>Now as hard as this is to believe, I want to give you a taste of something that&#8217;s even more exciting. </p>
+<p>You may remember our &#8220;DebugDraw&#8221; sample app, as seen in a couple of the CoronaCards videos and as included in your Corona SDK installation.</p>
+<p>Well, check this out (works best in Chrome on a desktop):<br />
+<center><iframe src="http://coronacards.com/html5/Corona_Physics.html" seamless width="320" height="480" frameborder="0" scrolling="no"></iframe></center></p>
+<p>Yes, that&#8217;s what you think it is. A Corona app running in the browser. No plugins required. Enjoy!!!</p>
+<p><em>[Update: <a href=http://caniuse.com/webgl>Check browser support</a>. IE11 has a bug we haven&#8217;t worked around yet. Finally, you may need to <a href=http://www.khronos.org/webgl/wiki_1_15/index.php/Getting_a_WebGL_Implementation>turn on WebGL</a>, e.g. Safari users]</em></p>
+<p><em>[Update 2: The above demo code is available on <a href=https://github.com/coronalabs/sample-webgl-demo>github</a>, and also can be used in Corona-based native apps on iOS/Android]</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/07/coronacards-is-cool-heres-something-even-cooler/feed/</wfw:commentRss>
+		<slash:comments>59</slash:comments>
+		</item>
+	</channel>
+</rss>

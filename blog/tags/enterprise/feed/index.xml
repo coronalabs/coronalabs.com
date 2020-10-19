@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>enterprise &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/enterprise/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>enterprise &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #132</title>
+		<link>/blog/2016/07/15/from-the-forum-issue-132/</link>
+		<pubDate>Fri, 15 Jul 2016 18:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[Remote Control]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=67463</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>tvOS helper code makes life much easier</h3>
+<p>Getting our apps onto as many devices and platforms as possible is clearly a top priority among Corona developers. Why else would we decide to leverage the best SDK that can target the most OSes with minimal code changes between them?</p>
+<p>One of the most exciting (and most challenging) platforms has been tvOS. It’s a fascinating option for deployment that brings with it some unique challenges, including a custom controller and no &#8220;save-state&#8221; option on the device.</p>
+<p>Fortunately, stalwart developer <strong>Rakoonic</strong> has gifted us with a little utility that should streamline one aspect of tvOS development: a &#8220;remote controller&#8221; library which helps to standardize input for your apps and games. Speed over to <a href=https://forums.coronalabs.com/topic/64503-remote-controller-library-test/ target="_blank">the original thread</a> and check out what he’s offering!</p>
+<h3>A memory manager by any other name</h3>
+<p>Maintaining a trim and slim app can be a key to success. The way you manage the load time your program is incurring is something that users expect from modern developers. It’s also an integral part of software development that requires both creativity and focus to master.</p>
+<p>One developer was wondering why the memory in their game was going up significantly during testing. Corona Support Engineer <strong>Rob Miracle</strong> chimed in with some serious knowledge on Composer scene management and image sheet optimization. It never hurts to brush up on the best methods to keep your app overhead low and your user base high! Check out those techniques in <a href=https://forums.coronalabs.com/topic/64515-why-does-texture-memory-jump/ target="_blank">the forum thread</a>.</p>
+<h3>A leg up on Corona Enterprise for Android</h3>
+<p>I realize that the number of Corona SDK users dwarfs the user base for Corona Enterprise, but that doesn’t mean we can’t highlight some awesomeness from the Enterprise sub-forum!</p>
+<p>Recently, one Enterprise developer had some questions regarding sending messages from native iOS and what would be the best way to implement single message response callbacks on the Corona side. What they received was a great response pointing to the exact iOS API that should be utilized, a super reference to related tutorials, and a fantastic GitHub link with working code around the theory.</p>
+<p>The Corona engineer that responded went both “above” and “beyond” with a great answer to the question. Click through to <a href=https://forums.coronalabs.com/topic/64566-delegate-self/ target="_blank">the original link</a> to for more information on this process!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Wednesday FAQs: Corona SDK Plugins</title>
+		<link>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/</link>
+		<comments>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/#comments</comments>
+		<pubDate>Wed, 07 Aug 2013 18:06:12 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=40349</guid>
+		<description><![CDATA[Wednesday calls for another session of frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />Wednesday calls for another session on frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.</p>
+<h2>1. How do plugins work?</h2>
+<p>Plugins are stored on Corona Labs&#8217; server and linked into your project when you do a build. To add a plugin to your project, you need to do two things: 1) add the plugin name to the <strong>build.settings</strong> file, and 2) add a &#8220;require&#8221; statement to your <strong>main.lua</strong> file to load the plugin code.</p>
+<p>The <strong>build.settings</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        -- key is the name passed to Lua's 'require()'
+        [&quot;plugin.zip&quot;] =
+        {
+            -- required
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },      
+}</pre><p></p>
+<p>The <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local zip = require( &quot;plugin.zip&quot; )</pre><p></p>
+<p>Visit the documentation for the plugin to determine the extract information needed. You can find plugin documentation <a href=http://docs.coronalabs.com/daily/plugin/index.html>here</a>.</p>
+<p>The great thing about plugins is they are only added to your project when needed. This reduces the size of your app by eliminating unneeded code.</p>
+<h2>2. Are plugins available for everyone?</h2>
+<p>Most plugins are only available to <strong>Pro</strong> users but there are some plugins available to <strong>Starter</strong> users. The &#8220;Availability&#8221; line at the top of the plugin&#8217;s main document page (index.html) indicates who can use the plugin. You can also see the plugin availability in the <a href=http://www.coronalabs.com/resources/plugins/><strong>Corona Plugin Directory.</strong></a></p>
+<h2>3. I&#8217;m trying to use a plugin in my project and it&#8217;s giving me an error. What&#8217;s wrong?</h2>
+<p>There are a number of potential reasons for plugin errors. Check the following:</p>
+<ul>
+<li>If you are a <strong>Starter</strong> user, make sure you are authorized to use the plugin (check <strong>Availability</strong>).</li>
+<li>Make sure you are using the proper Corona SDK build for the plugin. Some plugins require features/bug fixes only available starting with a specific build number. Most plugins work with the recent Public Build, but you should check this if you are getting a &#8220;plugin not available&#8221; error.</li>
+<li>Is the plugin available for the platform you&#8217;re building for? If the plugin is only available for Android, you will get a build error when building for iOS or iOS Simulator.</li>
+<li>Double check your code and make sure you&#8217;re using the correct calls for the plugin. All the plugins have sample code available, so it&#8217;s a good idea to download and run the vendor&#8217;s sample code to make sure that is working if you&#8217;re having problems.</li>
+</ul>
+<p>Most plugins are written and supported by third party vendors. Check out our <a href=http://forums.coronalabs.com/forum/605-corona-plugins/>Plugin Forum</a> for more information and please post questions for the vendors and other users.</p>
+<h2>4. Will I always get the most up-to-date plugin when I build my project?</h2>
+<p>The system will download and build with the latest plugin for the version of Corona SDK you&#8217;re running. The plugins are tied to the Corona build number so when you open a project that requires a plugin, the simulator checks to see if you have the most recent plugin module on your machine and downloads the latest version. When you do a build, the plugins for the build platform is linked into your project from our servers. This ensures you are always using the latest plugin version.</p>
+<h2>5. Can I write my own plugin?</h2>
+<p>Currently, plugins are provided by official partners, or by Corona Labs. In the near future, we plan to roll out a full plugin marketplace where any developer can submit plugins for sale. If you are serious about developing a plugin, please email us at <a href=mailto:partnerships@coronalabs.com>partnerships@coronalabs.com</a> and tell us what you have in mind. </p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

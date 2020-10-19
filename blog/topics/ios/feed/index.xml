@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iOS &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/ios/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>iOS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona now supports Dark Mode</title>
+		<link>/blog/2019/10/27/corona-now-supports-dark-mode/</link>
+		<pubDate>Sun, 27 Oct 2019 16:12:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+
+		<guid isPermaLink="false">/?p=76365</guid>
+		<description><![CDATA[Corona now supports Dark Mode. Learn more about how this feature might affect your apps!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-76366" src="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png 150w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-300x300.png 300w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-125x125.png 125w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode.png 344w" sizes="(max-width: 150px) 100vw, 150px" />Apple recently added support for Dark Mode. Dark Mode first appeared in macOS Mojave and continues with macOS Catalina. On iOS Dark Mode first appeared in iOS 13. Even tvOS supports it! Dark Mode is a popular feature because many people prefer light text on a dark background and there is evidence that it’s more energy friendly as well. Android supports &#8220;Dark Theme&#8221; starting with Android 10. Corona now supports this across all supported platforms as well.</p>
+<p>Starting with daily build 2019.3545 , Corona now recognizes Dark Mode automatically and updates <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank" rel="noopener">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank" rel="noopener">native.newTextBox()</a> objects to work with the selected mode.</p>
+<p>In addition, <a href=http://docs.coronalabs.com/api/library/system/getInfo.html target="_blank" rel="noopener">system.getInfo(“darkMode”)</a> will return a true or false value, so you can now theme your app to the mode selected.</p><pre class="crayon-plain-tag">local darkMode = system.getInfo("darkMode")</pre><p>On iOS based builds, you can force your your app into &#8220;light&#8221; mode by adding an entry into the plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    iphone = 
+    { 
+         plist =
+         {
+               UIUserInterfaceStyle = "Light",
+         }
+     }
+}</pre><p>Please note, &#8220;Light&#8221; is case sensitive and must be capitalized. This works on older Corona builds and if you don&#8217;t want to update to the latest daily build, this is a way to keep the native text objects themed with your current app. If you want to do this for macOS builds, use this entry in your macOS plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    macos = 
+    { 
+         plist =
+         {
+               NSRequiresAquaSystemAppearance = true,
+         }
+     }
+}</pre><p></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>iOS 11 update: icons and safe area APIs</title>
+		<link>/blog/2017/09/21/ios-11-update-icons-and-safe-area-apis/</link>
+		<pubDate>Thu, 21 Sep 2017 20:02:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=72894</guid>
+		<description><![CDATA[Now that iOS 11 has been officially released, there are several things you must do to prepare iOS apps for submission to Apple. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p>Now that <strong>iOS 11</strong> has been officially released, there are several things you must do to prepare iOS apps for submission to Apple. Also, the upcoming <strong>iPhone X</strong> creates some unique challenges when creating a user interface, so we&#8217;ve added some useful new APIs to help you adjust your UI.</p>
+<h3>Icons</h3>
+<p>Starting with iOS 11, Apple now <strong>requires</strong> that you include an <code>Icon-1024.png</code> file in your app package. However, current Corona-built apps cannot find that file correctly using the <code>CFBundleIconFiles</code> table. Thus, to make this work today and going forward, you <strong>must</strong> switch from using static icons to using the modern <code>Images.xcassets</code> package.</p>
+<p>Starting with daily build <a href=https://developer.coronalabs.com/release/2017/3144/ target="_blank" rel="noopener">2017.3144</a>, you can easily implement the <code>Images.xcassets</code> method &#8212; simply consult our <a href=https://docs.coronalabs.com/guide/distribution/xcAssets/index.html target="_blank" rel="noopener">Managing Xcode Assets</a> guide for instructions.</p>
+<h3>Safe areas</h3>
+<p>The iPhone X creates a unique challenge for app developers. Between rounded corners and the sensor housing protruding into the screen, developers need a way to know where they can safely place critical UI elements so that they are fully visible and accessible to users. Toward this end, Apple has provided this <a href=https://developer.apple.com/ios/human-interface-guidelines/overview/iphone-x/ target="_blank" rel="noopener">helpful guide</a> outlining what you need to do.</p>
+<p><img class="wp-image-72895 aligncenter" src="/wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1024x512.png" alt="" width="600" height="300" srcset="/wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1024x512.png 1024w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-300x150.png 300w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-768x384.png 768w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1000x500.png 1000w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-700x350.png 700w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-125x63.png 125w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869.png 1076w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>In short, you need to fill the entire screen, including areas outside the &#8220;safe area&#8221; (the darker region bounded with the red line in the illustration). Also note that the iPhone X has an extra-tall aspect ratio of 2.165:1 &#8212; surpassing even the 2:1 aspect ratio of the Samsung S8 &#8212; so for a Corona content area size of 320×480, you will need to fill a total area of 360×693 for the iPhone X screen and iPad screens.</p>
+<p>Even more importantly, your app should not place important UI elements like buttons, scores, navigation elements, etc. <em>outside</em> of the &#8220;safe area&#8221; on the screen. In truth, the &#8220;safe area&#8221; is not a new concept with the iPhone X &#8212; for instance, TVs have overscan areas and some mobile devices utilize status bars and soft button rows where you shouldn&#8217;t be placing UI elements.</p>
+<p>To address this, starting with daily build <a href=https://developer.coronalabs.com/release/2017/3135/ target="_blank" rel="noopener">2017.3135</a>, we added several new properties and a new function which you can use to determine the safe zone on the screen. These additions to the <code>display</code> library include:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/api/library/display/getSafeAreaInsets.html target="_blank" rel="noopener">display.getSafeAreaInsets()</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeScreenOriginX.html target="_blank" rel="noopener">display.safeScreenOriginX</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeScreenOriginY.html target="_blank" rel="noopener">display.safeScreenOriginY</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeActualContentWidth.html target="_blank" rel="noopener">display.safeActualContentWidth</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeActualContentHeight.html target="_blank" rel="noopener">display.safeActualContentHeight</a></li>
+</ul>
+<p>Please click through to the documentation for examples on how to use these.</p>
+<h3>Conclusion</h3>
+<p>In addition to the above features, we are preparing a new iPhone X skin for the Corona Simulator, to be released soon. In the meantime, you can start preparing your apps for the iPhone X, test them in the Xcode Simulator, and submit them to Apple using the iOS 11 SDK.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>iOS 8 to become minimum supported version</title>
+		<link>/blog/2017/01/25/ios-8-to-become-minimum-supported-version/</link>
+		<pubDate>Wed, 25 Jan 2017 20:32:17 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69479</guid>
+		<description><![CDATA[We are preparing to adjust the minimum supported version of iOS to iOS 8. Learn what this means for you.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://data.apteligent.com/ios/ target="_blank"><img class="alignright wp-image-69486" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2017/01/chart-1.png" width="230" height="296" /></a><strong>UPDATE</strong>: We have set a specific date to drop iOS 6 and iOS 7 in favor of iOS 8 becoming the new minimum supported iOS version for Corona-built apps. This will take effect beginning with the daily build on February 13th, 2017.</p>
+<p>Corona currently supports iOS 6 through iOS 10 for Apple&#8217;s popular mobile devices. However, <a href=https://data.apteligent.com/ios/ target="_blank">metrics</a> show that end users with iOS 6 and iOS 7 are now below 1.5% of iOS users. Continuing to support these two extremely old operating systems restricts Corona Labs from advancing the core platform, so we plan to discontinue support for both in the coming weeks. This means that Corona-built apps will no longer run on older Apple devices like the iPhone 3GS, iPhone 4, or the 4th-generation iPod Touch.</p>
+<p>In a few weeks, Corona Labs will start issuing daily builds that no longer include iOS 6 or iOS 7 support. From a developer standpoint, this entails no significant changes except for possibly removing the <code>MinimumOSVersion</code> key in your app&#8217;s <code>build.settings</code> (or update it to at least <code>8.0</code>).</p>
+<p>Key benefits of this change will apply to Corona Enterprise and plugin developers. Apple is migrating away from using static libraries to dynamic frameworks and these require at least iOS 8. Also, this also opens up the possibility of using Swift to make Corona plugins, and Swift can only produce frameworks so it&#8217;s important that we support them in all Corona-built apps.</p>
+<p>Please join us in <a href=https://forums.coronalabs.com/forum/86-ios/ target="_blank">Corona Forums</a> to discuss this change.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Submitting apps to Apple&#8217;s iTunes Connect</title>
+		<link>/blog/2016/09/14/submitting-apps-to-apples-itunes/</link>
+		<pubDate>Wed, 14 Sep 2016 20:46:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=68058</guid>
+		<description><![CDATA[Great news! Corona developers can submit to Apple's iTunes Connect again. Read further to get the details.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-58813" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2014/06/apple-129x150.jpg" alt="Apple logo" width="100" height="116" />Great news! Corona developers can submit to Apple&#8217;s iTunes Connect again, but doing so requires <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> or later.</p>
+<p>To better outline the context of this: When Apple enabled iOS 10 submissions following their September 7, 2016 keynote event, one of the updates was additional automatic scanning of files in the app bundle to detect potential issues. With this new process in place, everyone who submitted a Corona Simulator or Corona Enterprise build started getting a failure message from Apple due to problems with &#8220;app thinning.&#8221;</p>
+<p>Our engineers have been working tirelessly to discover the root cause of the problem and deliver a solution to Corona developers. Essentially, Apple is now scanning files with an extension that they were not previously looking at. Corona&#8217;s products used that extension for our internal files and it suddenly started being flagged as problematic. We have switched to a name-spaced extension that should not cause this issue in the future.</p>
+<p><strong>Remember, these fixes are only available in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> and later</strong> &#8212; you will have to update to this build in order to submit your apps to Apple.</p>
+<p>Thank you to everyone who reported issues and provided additional details. Your assistance and patience is truly appreciated!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Apple iOS and the IPv6 deadline</title>
+		<link>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/</link>
+		<comments>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/#comments</comments>
+		<pubDate>Fri, 27 May 2016 22:06:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=66979</guid>
+		<description><![CDATA[Starting on June 1, 2016, Apple will begin enforcing a new policy on apps that use networking. Read further to understand the implications of this policy and how it might affect you.]]></description>
+				<content:encoded><![CDATA[<p>Starting on <strong>June 1, 2016</strong>, Apple will start enforcing a <a href=https://developer.apple.com/news/?id=05042016a target="_blank">new policy</a> that you may need to be aware of. If your app does any networking – opening a WebView, doing a <a href=https://docs.coronalabs.com/api/library/network/request.html target="_blank">network.request()</a>, or using LuaSocket to talk to another server or device – then read on. If you&#8217;re not, you simply need to know the following:</p>
+<p><strong>TL/DR</strong>: All apps have to be IPv6 compliant after June 1, 2016.</p>
+<h3>A little history</h3>
+<p>For a long time, the Internet has used a four-byte (<code>0</code>&#8211;<code>255</code>) IP address to represent each connected device. In network jargon, this is known as <strong>IPv4</strong>. You&#8217;re probably familiar with them as they look like <code>192.168.1.15</code>. This pool of numbers is a worldwide resource and the Internet has run out of them.</p>
+<p>For the past several years, the Internet has been moving to a different way to give your computer, phone, tablet, and smart device a unique address. This new system is known as <strong>IPv6</strong> and it has a considerably larger pool of numbers which shouldn&#8217;t run out for a very long time.</p>
+<p>Since the Internet is out of IPv4 addresses, there are now some resources that are only identified by their IPv6 addresses. Apple wants to make sure your apps all work with the new networking numbers. Starting on June 1, 2016, any newly submitted or updated apps must work on networks that only allow IPv6 addresses.</p>
+<h3>What does this mean for you?</h3>
+<p>You can no longer use IP addresses instead of server names. This applies to every kind of networking from WebViews to socket calls. Sometimes, it is just easier to use the IP address of a server (i.e. <code>192.168.212.15</code>) instead of a server name (i.e. <code>www.example.com</code>), but this is no longer allowed. If you’re currently using IP addresses for your servers and need to switch, do an Internet search for <a href=https://www.google.com/?gws_rd=ssl#safe=off&q=dynamic+dns target="_blank">dynamic dns</a> and you’ll find a variety of services that will map server names to your IP addresses. If you have a domain name already, check out the DNS setup at your registrar which will let you set up your own mappings.</p>
+<p>Corona SDK has two lower-level networking layers that your apps may be utilizing: the <a href=https://docs.coronalabs.com/api/library/network/index.html target="_blank">network.*</a> API calls and the <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket.*</a> library. The <a href=https://docs.coronalabs.com/api/library/network/index.html target="_blank">network.*</a> API calls have been IPv6 compatible for some time. If you&#8217;re using the latest public build and only use these functions, you should be in good shape from a Corona perspective. However, if you are connecting to servers using their IP addresses instead of a server name, you will need to stop using the IP address and use a server name instead.</p>
+<p>If you&#8217;re using <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket.*</a>, you will need to get <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2883</a> or later and rebuild your app. Essentially, this build has an upgrade to the latest LuaSocket library that supports IPv6.</p>
+<h3>How do you know if you&#8217;re using sockets?</h3>
+<p>If you are using third-party plugins or libraries, then you may need to make sure they work as expected. If you are doing any peer-to-peer connectivity (where to devices talk to each other without going through a network server), or are implementing your own FTP file transfer, then the library you&#8217;re using may need updating to avoid using IP addresses.</p>
+<p>If you’re using LuaSocket, let’s look at some typical code that needs to be changed:</p><pre class="crayon-plain-tag">local socket = require( &quot;socket&quot; )
+
+local serverName = &quot;ipv4.test-ipv6.com&quot;
+local server_address, mesg = socket.dns.toip( serverName )  -- IPv4
+
+print( &quot;server_address: &quot;, serverName, server_address, mesg )</pre><p>Since the <code>socket.dns.toip()</code> call only works for IPv4 addresses, it needs to be changed to the more modern equivalent:</p><pre class="crayon-plain-tag">local socket = require( &quot;socket&quot; )
+
+local serverName = &quot;ipv6.test-ipv6.com&quot;
+local addr_info, mesg = socket.dns.getaddrinfo( serverName )
+print( &quot;server_address: &quot;, addr_info[1].addr, mesg )</pre><p>If you’ve already changed over to (or started with) the more modern <code>socket.dns.getaddrinfo()</code> style calls, then you should be good to go.</p>
+<h3>Conclusion</h3>
+<p>iOS will be able to talk to IPv4 sites for the foreseeable future. However, if the only way your app uses the Internet is with IPv4, then Apple will not approve your app or any updates to it. Apple will not be taking any apps down, so you do not need to update existing apps. But any updates you do submit or new apps will be subject to this policy.</p>
+<p>To learn more, read Apple&#8217;s <a href=https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html?#//apple_ref/doc/uid/TP40010220-CH213-SW1 target="_blank">developer documentation</a> on the issue.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Featured App: The Pedestal &#8211; a unique take on a jumping game</title>
+		<link>/blog/2016/04/14/featured-app-the-pedestal-a-unique-take-on-a-jumping-game/</link>
+		<pubDate>Thu, 14 Apr 2016 13:52:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[jump]]></category>
+		<category><![CDATA[ninja]]></category>
+
+		<guid isPermaLink="false">/?p=66464</guid>
+		<description><![CDATA[Learn about the Pedestal, a new minimalist game from Daniel Ivanov in this featured app post.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66469 size-medium" src="/wordpress/wp-content/uploads/2016/04/pedestal01-169x300.jpg" alt="pedestal01" width="169" height="300" />The Pedestal is a fun game based on a minimalist approach. In the game, you play the ninja Akira who has been trapped on a desolate pedestal. Your goal is to survive by jumping to avoid shurikens being thrown at you and avoid being hit by the scythes swinging above you. The game was inspired by Eastern Asian culture and the stories of Edgar Allan Poe.</p>
+<p>The game was recently released by indie developer Daniel Ivanov to the Apple App Store. It contains stunning, eerie sound effects alongside appealing art, which creates an enjoyable atmosphere along with challenging game play. The game takes advantage of Corona SDK&#8217;s physics and particle effect libraries to give the game it&#8217;s punch.</p>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/mstvKwXJ5TQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>You can download it from the Apple App Store for $0.99.</p>
+<p><a href=https://itunes.apple.com/us/app/the-pedestal/id1093740987?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-66270 size-thumbnail" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+<p>What can you do with Corona SDK? <a href=/ target="_blank">Download it for Free</a> and see!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona: tvOS and Apple TV (Alpha)</title>
+		<link>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/</link>
+		<comments>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/#comments</comments>
+		<pubDate>Wed, 11 Nov 2015 00:00:39 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=64670</guid>
+		<description><![CDATA[Today, we&#8217;re happy to announce that an alpha version of tvOS (Apple TV) is available, starting in daily build 2015.2765. Alpha vs Beta Corona&#8217;s support for tvOS is currently in an alpha state. In a nutshell, this means we have proven that Corona can work on tvOS. Concretely, the &#8216;PewPew&#8217; demo sample works, but almost no testing has been done beyond that. We&#8217;ve learned it&#8217;s generally a bad idea to release things too early. As a result, we normally choose to delay things until they reach Beta-level maturity. However, we felt it was important to give you an opportunity to...]]></description>
+				<content:encoded><![CDATA[<p>Today, we&#8217;re happy to announce that an alpha version of tvOS (Apple TV) is available, starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2765.</p>
+<h3>Alpha vs Beta</h3>
+<p>Corona&#8217;s support for tvOS is currently in an alpha state. In a nutshell, this means we have proven that Corona can work on tvOS. Concretely, the &#8216;PewPew&#8217; demo sample works, but almost no testing has been done beyond that.</p>
+<p>We&#8217;ve learned it&#8217;s generally a bad idea to release things too early. As a result, we normally choose to delay things until they reach Beta-level maturity.</p>
+<p>However, we felt it was important to give you an opportunity to play with tvOS/Apple TV — mainly because we think you&#8217;ll want the extra time to think about how you can migrate your existing titles to this platform.</p>
+<h3>New Interaction Model</h3>
+<p>While tvOS shares its heritage with iOS, there are many fundamental differences beyond just a much larger screen size. The biggest difference is touch. Unlike iOS, there is no touch interaction in tvOS.</p>
+<p>Instead, the primary interaction model with Apple TV (and other TV platforms, for that matter) is via a remote. In the case of Apple TV&#8217;s remote, the remote can also act as a mini-game controller (Apple calls this a microgamepad).</p>
+<p>In most cases, you will likely have to rethink how your users will interact with your games.</p>
+<h3>Road to Beta</h3>
+<p>When will this get to Beta?</p>
+<p>It depends. Right now, our priority is bringing Mac App and Win32 App support from Beta to 1.0 quality. Because of that, tvOS sits at a lower priority.</p>
+<p>While it may look like the Alpha is pretty far along, it&#8217;s not battle-ready in the way that our support for iOS and Android are.</p>
+<p>In other words, we took all the low-hanging fruit to quickly put together enough pieces so you can play with AppleTV; however, we estimate a significant amount of work remains, especially in terms of features, polish, and quality.</p>
+<p>Therefore, it&#8217;s fair to say you should not expect frequent of regular updates until we bring our other projects across the finish line.</p>
+<h3>Resources</h3>
+<p>In spite of the low priority and lack of completeness, we think this alpha will be useful for you. You will need time to re-think your games for a much larger screen and a pure game controller-based interaction model. And we will want feedback to help prioritize our tvOS efforts post-Mac/Win32 app.</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/daily/guide/tvos/index.html>Corona: AppleTV and tvOS (Alpha) Guide</a></li>
+<li><a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/>Forums: Apple TV and tvOS Testing Forum</a></li>
+<li>The <code>PewPew</code> sample in <code>/Applications/CoronaSDK-2765/SampleCode/Demos</code></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: iOS Beta, improvements, and new features</title>
+		<link>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/</link>
+		<comments>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/#comments</comments>
+		<pubDate>Wed, 02 Sep 2015 03:18:48 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63836</guid>
+		<description><![CDATA[More good news for Facebook integration. Coinciding with the recent beta release of Facebook-v4 on Android, we&#8217;ve launched the iOS version of the Facebook v4 plugin! The iOS version does come with a couple caveats to be aware of: iOS 6 is not supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK. iOS 9 is supported with a couple additional setup steps detailed here. Improvements In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK...]]></description>
+				<content:encoded><![CDATA[<p>More good news for Facebook integration.</p>
+<p>Coinciding with the recent beta release of Facebook-v4 on Android, <strong>we&#8217;ve launched the iOS version of the Facebook v4 plugin</strong>! The iOS version does come with a couple caveats to be aware of:</p>
+<ul>
+<li>iOS 6 is <strong>not</strong> supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK.</li>
+<li>iOS 9 is supported with a couple additional setup steps detailed <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#ios9 target="_blank">here</a>.</li>
+</ul>
+<h2>Improvements</h2>
+<p>In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK 4.5.1. and the Android version has been upgraded to 4.5.0.</p>
+<p>Another improvement we&#8217;ve made concerns Corona Enterprise. In the past setting up the Facebook plugin with Corona Enterprise hadn&#8217;t been very obvious. We&#8217;ve rectified this by providing a more step-by-step guide for setup with Corona Enterprise available <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#enterprise target="_blank">here</a>.</p>
+<h2>New features</h2>
+<p>We&#8217;re always striving to make our APIs more useful with less hassle. We feel that these new features show evidence of that aspiration and hope they will make your lives easier when it comes to Facebook integration.</p>
+<p>First off, facebook.currentAccessToken has been deprecated in favor of <strong><a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a></strong>. Before, facebook.currentAccessToken could be used to determine if someone was logged in already. For <a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a>, on top of providing knowledge of whether you have a logged in user, this new API provides access to:</p>
+<ul>
+<li>The permissions the user has granted your app</li>
+<li>The permission they&#8217;ve denied your app</li>
+<li>Their Facebook User ID</li>
+<li>and more.</li>
+</ul>
+<p>Also, <a href=https://docs.coronalabs.com/plugin/facebook-v4/showDialog.html target="_blank">facebook.showDialog()</a> now integrates Facebook&#8217;s new &#8220;Share Dialog&#8221;.</p>
+<ul>
+<li>This will bring up the Share Dialog and let you share a link with it.</li>
+<li>If you have the Facebook app installed on your device, bringing up this dialog will allow you to tag friends and a place, all without additional calls to bring up the Places and Friends dialogs.</li>
+</ul>
+<p>In the old plugin, you could only present the Feed dialog for letting users post on Facebook. Tagging a location and friends required bringing up two more dialogs before the Feed dialog.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_FEED.png><img class="alignnone size-medium wp-image-63913 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_FEED-225x300.png" alt="FBv4_FEED" width="225" height="300" /></a></p>
+<p>Now with Facebook-v4, tagging friends and a location couldn&#8217;t be easier.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_LINK1.png><img class="alignnone size-medium wp-image-63915 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_LINK1-225x300.png" alt="FBv4_LINK" width="225" height="300" /></a></p>
+<p>See the <a class="bbc_url" title="External link" href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#settings rel="nofollow external">Facebook v4 plugin home page</a> to get started!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: Android Beta</title>
+		<link>/blog/2015/07/24/facebook-v4-plugin-android-beta/</link>
+		<pubDate>Fri, 24 Jul 2015 17:12:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63464</guid>
+		<description><![CDATA[Since Facebook released <a href="https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/" target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href="https://developers.facebook.com/docs/graph-api" target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.]]></description>
+				<content:encoded><![CDATA[<p>Since Facebook released <a href=https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/ target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.</p>
+<p>We are releasing a new <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin built on top of <a href=https://developers.facebook.com/docs/android target="_blank">Facebook SDK</a> v4.4.0!</p>
+<p>Currently this plugin is in beta and is currently available <strong>on Android only</strong> as we&#8217;re finishing up the iOS side.</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Corona daily build</a> 2015.2685 (or later) to get started.</p>
+<h2>What about the old Facebook plugin?</h2>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin supercedes the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a>. Consequently, we are deprecating the old facebook plugin. While it will still be available, Corona will no longer be supporting it or providing any maintenance updates to it.</p>
+<p>The main reason is because Facebook will deprecate <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v2.1 on <em>October 30, 2016</em>, and the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a> depends on that API.</p>
+<p>Therefore, we recommend migrating to the <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin, as it will soon be required.</p>
+<h2>New features</h2>
+<p>For this initial release, we&#8217;ve provided some new APIs that improve developer and user experience with login.</p>
+<p>In particular, one popular request has been saving login info in a better manner. To address this, we now provide the AccessToken for a logged in user through <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/currentAccessToken.html>facebook.currentAccessToken</a>. This property is updated inside the plugin, so managing access tokens is no longer the responsibility of the Corona developer!</p>
+<h2>Upgrading to Facebook v4</h2>
+<p>With the new facebook plugin, we wanted to be sure that the migration process would be as painless as possible. This was accomplished by making the new plugin a nearly complete superset of the old one. We&#8217;ve maintained all the old APIs while adding new ones and new possibilities with old ones.</p>
+<p>Outside of different responses you may get in the <code>fbconnect</code> event from <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/request.html>facebook.request()</a> and <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/showDialog.html>facebook.showDialog()</a>, the rest of your facebook code should be backward-compatible!</p>
+<p>For more detailed instructions on upgrading, see our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/migration.html>migration guide</a>.</p>
+<h2>Resources</h2>
+<p>More detail on the new plugin can be found in our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html>docs</a>.</p>
+<p>Feel free to discuss the new plugin on the <a href=https://forums.coronalabs.com/forum/653-facebook-v4/>Facebook v4 forum</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Xcode Requirements: iOS 8.3 + iOS 8.4-beta</title>
+		<link>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/</link>
+		<comments>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/#comments</comments>
+		<pubDate>Wed, 22 Apr 2015 22:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[8.3]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=62399</guid>
+		<description><![CDATA[Apple just released iOS 8.3 SDK, so starting in <a href="https://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default. ]]></description>
+				<content:encoded><![CDATA[<p>Apple just released iOS 8.3 SDK, so starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default.</p>
+<p>As always, the target iOS version does not affect backward compatibility. The apps you build with Corona will still be backwards compatible to iOS 6.0.</p>
+<h3>Changes to Xcode Requirements</h3>
+<p>Starting with 2015.2616, Corona Simulator will be more stringent about the version of Xcode you have installed (older versions work like before, in a less stringent manner). In particular, when you select a particular target iOS version, you must have the corresponding version of Xcode installed. For example, if you want to target iOS 8.3, you must install Xcode 6.3 which includes iOS 8.3 SDK.</p>
+<p>We made these changes due to <a href=https://devforums.apple.com/message/1127742>subtle issues</a> that were introduced in Xcode 6.3. To ensure that device builds for iOS 8.3 work properly with plugins, we had to make Corona Simulator more picky about which version of Xcode it uses; otherwise, device builds involving plugins will fail.</p>
+<p>Apple engineers have suggested that this more stringent pairing of iOS SDK version to Xcode version is technically more correct. While Xcode has been more forgiving in the past, we have chosen the more conservative route to minimize chances for future errors that you may encounter.</p>
+<h3>Unsupported Xcode versions</h3>
+<p>The changes we describe simply mean that you&#8217;ll have to download the appropriate version of Xcode whenever Corona Simulator changes its default iOS version target.</p>
+<p>However, if you have a version of Xcode installed that does <strong>not</strong> match what Corona Simulator expects, you can still use it. We call this the &#8220;I&#8217;m feeling lucky&#8221; option. That means, maybe it&#8217;ll work; maybe it won&#8217;t. Either way, you&#8217;re free to try, but you&#8217;re on your own. We won&#8217;t support it.</p>
+<p>In this situation, you will see the following warning dialog. You can still proceed, but you&#8217;ll also see a big <code>"UNSUPPORTED"</code> in the iOS SDK pulldown.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png alt="Corona Simulator iOS SDK mismatch warning" width="563" height="322" class="aligncenter size-full wp-image-62527" /></a></p>
+<h3>Multiple versions of Xcode</h3>
+<p>Sometimes there are situations where you will want multiple versions of Xcode installed. One reason is that we include access to iOS beta builds, e.g. iOS 8.4-beta is a version you can target in the latest daily build, as shown in the following diagram:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png alt="Corona Simulator Device Build Dialog Xcode 6.3" width="562" height="322" class="aligncenter size-full wp-image-62521" /></a></p>
+<p>In order to access the iOS 8.4-beta target, you must (of course) install that version. You will also need to use <a href=https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcode-select.1.html>xcode-select</a> to ensure that Corona Simulator finds this version of Xcode. You can type <code>xcode-select -p</code> to find out which version of Xcode is currently selected on your system.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

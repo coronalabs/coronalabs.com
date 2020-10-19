@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rewarded ads &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/rewarded-ads/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>rewarded ads &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Kiip to increase user engagement and loyalty</title>
+		<link>/blog/2016/11/30/using-kiip-to-increase-user-engagement-and-loyalty/</link>
+		<pubDate>Wed, 30 Nov 2016 17:07:48 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[rewarded ads]]></category>
+		<category><![CDATA[rewards]]></category>
+
+		<guid isPermaLink="false">/?p=68989</guid>
+		<description><![CDATA[In this special interview, Kabir Mathur, Head of Business Development for Kiip talks about how developers can take advantage of key moments in their game to deliver relevant, branded rewarded ads to players.]]></description>
+				<content:encoded><![CDATA[<p>In this special interview, Kabir Mathur, Head of Business Development for Kiip talks about how developers can <a href=/blog/2016/11/15/introducing-kiip-a-brighter-solution-for-monetization/>take advantage of key moments</a> in their game to deliver relevant, <a href=/blog/2016/11/15/introducing-kiip-a-brighter-solution-for-monetization/>branded rewarded ads</a> to players. As Kabir points out, Kiip isn’t just for games. Productivity and niche apps can use Kiips as well. Kabir also shares two ways developers are creating a sense of urgency when presenting rewards.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/xVFk7w38g9s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Thank you for watching and listening!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing Kiip, a brighter solution for monetization</title>
+		<link>/blog/2016/11/15/introducing-kiip-a-brighter-solution-for-monetization/</link>
+		<pubDate>Tue, 15 Nov 2016 20:22:57 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[rewarded ads]]></category>
+
+		<guid isPermaLink="false">/?p=68735</guid>
+		<description><![CDATA[Kiip is a new plugin that helps increase user engagement and loyalty by offering rewarded ads to users. Read on to learn how Kiip can increase app usage and user retention.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of a new monetization plugin for Corona developers. <a href=http://www.kiip.me/ target="_blank">Kiip</a> (pronounced &#8220;keep&#8221;) provides rewarded ad units that you can integrate into your app.</p>
+<p>Typically presented at moments of in-game achievements, these types of ads are great for increasing user engagement and loyalty. According to Kiip, users who claim Kiip rewards tend to spend 68% more time in the app, more than doubling the length of a given session. Users open the app more often and apps show a 30% longer lifespan. Learn more about Kiip at <a href=http://www.kiip.me/ target="_blank">their website</a>.</p>
+<p><a href=https://app.kiip.me/register target="_blank"><img class="alignnone size-large wp-image-68742" src="/wordpress/wp-content/uploads/2016/11/Kiip-Lifestyle-Gaming-1024x768.jpg" alt="kiip-lifestyle-gaming" width="960" height="720" /></a></p>
+<p><em>&#8220;Our objective at Kiip is to make the advertising experience rewarding for users. Kiip&#8217;s unique rewards model enables us to deliver industry leading eCPMs, while keeping users engaged with the app that they are in,&#8221;</em> says Kabir Mathur, Head of Business Development at Kiip. <em>&#8220;We&#8217;re very excited to bring our rewards to the sizable Corona developer community via this partnership with Corona Labs.&#8221;</em></p>
+<p><a href=https://app.kiip.me/register target="_blank"><img class="alignnone size-large wp-image-68743" src="/wordpress/wp-content/uploads/2016/11/Kiip-virtual-currency-reward-anatomy-1024x583.jpg" alt="kiip-virtual-currency-reward-anatomy" width="960" height="547" /></a></p>
+<p>To integrate Kiip into your app, <a href=https://app.kiip.me/register target="_blank">sign up</a> to access their dashboard. Once your account is created, you can follow their <a href=http://docs.kiip.me/en/guide/corona.html target="_blank">documentation</a> to integrate Kiip into your Corona-built app. You must also include the plugin in your build.settings.</p>
+<p><a href=https://app.kiip.me/register target="_blank"><img class="alignnone size-full wp-image-68849" src="/wordpress/wp-content/uploads/2016/11/getkiipcta.png" alt="getkiipcta" width="208" height="60" /></a></p>
+<p>Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Forums</a> to discuss this wonderful addition to our family of monetization plugins.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

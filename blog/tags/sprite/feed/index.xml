@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sprite &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/sprite/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>sprite &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #128</title>
+		<link>/blog/2016/06/17/from-the-forum-issue-128/</link>
+		<pubDate>Sat, 18 Jun 2016 00:04:02 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[high score]]></category>
+		<category><![CDATA[Material]]></category>
+		<category><![CDATA[score keeping]]></category>
+		<category><![CDATA[scores]]></category>
+		<category><![CDATA[sprite]]></category>
+		<category><![CDATA[sprite edtior]]></category>
+		<category><![CDATA[ui]]></category>
+
+		<guid isPermaLink="false">/?p=67198</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A scorekeeping module keeping up with the best in branding</h3>
+<p>I’m all for making things easier in life. Superstar developer <strong>DevilSquid</strong> provided a very useful module that saves us time when handling scores in your game. It lets you use your own bitmap fonts, and has some nifty particle effects to give boring old text a little razzle dazzle.</p>
+<p>Come on over and check out the <a href=https://forums.coronalabs.com/topic/63466-uberscore-%E2%80%93-animated-score-counter-quick-easy/ target="_blank">original thread here</a>!</p>
+<h3>Crowd-sourced Material UI</h3>
+<p>I’m a pretty big fan of a unified user interface. Something about a well-thought-out UI marrying intuitive functionality with practicality turns an otherwise simple app into something I cannot do without.</p>
+<p>Google Material is one design scheme that hits every one of my interest points. That’s why, when another Corona developer took it upon themselves to re-create Google Material within Corona SDK, I applauded. When they decided to turn it into a publicly available module, complete with a home on Github, I knew that I had to do whatever I could to make sure that the project received as many eyeballs as possible.</p>
+<p>It’s already relatively robust, with <a href=https://forums.coronalabs.com/topic/62108-implementing-ui-based-on-ios-7-google-material/ target="_blank">the original thread</a> showing off some basic features and Material aesthetics. The best part of this story is that we can all add onto this great work! Make a pull request and you can contribute right now!</p>
+<h3>Community suggestions on the best sprite editor</h3>
+<p>We all have our preferences when it comes to digital editing suites. It’s difficult to find one that scratches every single itch that we developers have, but it’s possible to get pretty close.</p>
+<p>To this end, a developer was recently looking for suggestions on what Sprite editors the Corona community favored. The answers that came back ran the gamut between obscure and well-known. Anyone looking to change their graphics editing routine (or perhaps, looking for something to start out with) would do well to check out <a href=https://forums.coronalabs.com/topic/63563-sprite-editor/ target="_blank">the original thread</a>!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

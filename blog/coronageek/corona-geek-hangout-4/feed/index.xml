@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek Hangout &#8211; Episode 4 &#8211; Memory Management, Corona Project Manager, and Corona SDK JSON Usage</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-4/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-4/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-4/#comment-5467</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Thu, 06 Dec 2012 19:35:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=251#comment-5467</guid>
+		<description><![CDATA[Brian recently did a tutorial over accessing data via JSON. Check it out, http://www.burtonsmediagroup.com/blog/2012/11/how-to-download-json-data-from-mysql-using-corona-sdk/]]></description>
+		<content:encoded><![CDATA[<p>Brian recently did a tutorial over accessing data via JSON. Check it out, <a href="http://www.burtonsmediagroup.com/blog/2012/11/how-to-download-json-data-from-mysql-using-corona-sdk/" rel="nofollow">http://www.burtonsmediagroup.com/blog/2012/11/how-to-download-json-data-from-mysql-using-corona-sdk/</a></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

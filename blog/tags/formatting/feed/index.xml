@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>formatting &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/formatting/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>formatting &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial Treasury: String formatting and manipulation</title>
+		<link>/blog/2015/10/27/tutorial-treasury-string-formatting-and-manipulation/</link>
+		<comments>/blog/2015/10/27/tutorial-treasury-string-formatting-and-manipulation/#comments</comments>
+		<pubDate>Tue, 27 Oct 2015 21:53:44 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[formatting]]></category>
+		<category><![CDATA[string]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=64410</guid>
+		<description><![CDATA[In this Tutorial Treasury, discover resources related to string formatting and manipulation.]]></description>
+				<content:encoded><![CDATA[<p>As any Corona developer knows, Lua <strong>variables</strong> come in many forms &#8212; most commonly tables (arrays), numbers, strings, and booleans (true/false). Among these, <strong>strings</strong> present a nearly limitless range of possibilities, as they can be of considerable length, vary in content, and contain special characters that no other variable type can. This can present some challenge to Corona developers, especially when it comes time to &#8220;select or detect&#8221; a specific portion within a longer string or <strong>format</strong> the string in a very custom, specific manner.</p>
+<p>This tutorial treasury contains some useful and often essential resources on how to work with strings in your Corona apps.</p>
+<h3>Tutorials</h3>
+<h4>Formatting values using “string.format()”</h4>
+<p>Formatting a particular string is a common requirement in almost any app, whether it be limiting the number of decimal places in a long number, adding &#8220;placeholder&#8221; spaces, or padding a score with leading zeros. The <a href=http://docs.coronalabs.com/api/library/string/format.html target="_blank">string.format()</a> function is almost infinitely powerful for this task, but many developers are mystified by its parameters and usage. This tutorial aims to dispel some of the confusion surrounding string formatting.</p>
+<h4>Lua string magic</h4>
+<p>Sometimes, formatting strings becomes an even more specific process, and a little &#8220;magic&#8221; is required to achieve the end goal. In this tutorial, learn how to overcome special formatting challenges including splitting, trimming, line wrapping, and more.</p>
+<h4>Utilizing time and dates</h4>
+<p>Many apps rely on time and dates, and it can be tricky to properly format time/date-based data, particularly strings gathered from <a href=http://docs.coronalabs.com/api/library/os/time.html target="_blank">os.time()</a> and <a href=http://docs.coronalabs.com/api/library/os/date.html target="_blank">os.date()</a>. In this tutorial, learn how to use string functions to format time and dates exactly as required in your apps.</p>
+<h3>Further reading</h3>
+<ul>
+<li><a href=https://docs.coronalabs.com/guide/data/luaString/index.html target="_blank">Lua String Manipulation</a> guide</li>
+<li><a href=https://docs.coronalabs.com/api/library/string/format.html target="_blank">string.format()</a> documentation</li>
+<li><a href=https://docs.coronalabs.com/api/library/string/match.html target="_blank">string.match()</a> documentation</li>
+</ul>
+<h3>Conclusion</h3>
+<p>As illustrated, string formatting and manipulation is a common but often misunderstood process. Hopefully this collection of resources gets you started on the path toward understanding and mastery of string-related tasks.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/10/27/tutorial-treasury-string-formatting-and-manipulation/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

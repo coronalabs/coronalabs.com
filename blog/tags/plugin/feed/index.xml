@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>plugin &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/plugin/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>plugin &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing Steamworks, a plugin for Steam apps</title>
+		<link>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/</link>
+		<comments>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 14:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[achievements]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[leaderboards]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[steam]]></category>
+		<category><![CDATA[valve]]></category>
+
+		<guid isPermaLink="false">/?p=67650</guid>
+		<description><![CDATA[Corona Labs is pleased to announce our plugin for Steamworks. Learn how you can take advantage of this plugin to publish desktop games to Steam!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png" alt="share_steam_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w" sizes="(max-width: 150px) 100vw, 150px" />When it comes to PC desktop games, the premier place to publish is <a href=http://store.steampowered.com/ target="_blank">Steam</a>.</p>
+<p>Now, Corona developers can build apps for Windows (<code>win32.exe</code>) or macOS and submit them to Steam to be &#8220;greenlit.&#8221; During the greenlight process, the Steam community reviews apps and decides if they want them to be published.</p>
+<p>To ensure that your games can compete in the Steam store, Corona Labs has been diligently working to create a <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">plugin for Steam</a>. This plugin supports core features requested by developers who have already had their apps successfully published to Steam.</p>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">Steamworks plugin</a>, your app can now take advantage of leaderboards, achievements, user stats, player information, and various Steam overlays in your game. These features aren&#8217;t required, but their presence in your game could encourage more people to vote &#8220;yes!&#8221;.</p>
+<h3>About the plugin</h3>
+<p>This plugin is a bit different than our other game networking plugins. For example, there is no login API. Instead, you must be logged into the Steam client on your computer. The plugin then talks to the Steam client to exchange information with the Steam servers. On macOS, it&#8217;s best to set up the Corona Simulator as a Steam app and launch Corona SDK from Steam for maximum support.</p>
+<p>Many of the API calls return data immediately, if the data has been cached or is readily available. For instance, if you are getting information about a user and the plugin previously retrieved the data, it is returned to you immediately. However, if the data is not immediately available, and you have set up an event listener for that type of data, an event will trigger the listener and then you can update your local data with the new information.</p>
+<h3>In summary</h3>
+<p>Learn more about implementing Steamworks in your game by reading our Steamworks plugin <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">documentation</a> and by examining our Steamworks <a href=https://github.com/coronalabs/steamworks-sample target="_blank">sample app</a>. And, join us in the Corona <a href=https://forums.coronalabs.com/ target="_blank">forums</a> to discuss this wonderful addition to our plugin library.</p>
+<hr />
+<div style="font-size: 80%; font-color: #999;">Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Introducing Appodeal: intelligent, programmatic ad mediation</title>
+		<link>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/</link>
+		<comments>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/#comments</comments>
+		<pubDate>Thu, 04 Aug 2016 16:26:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67488</guid>
+		<description><![CDATA[Corona Labs is pleased to welcome Appodeal as our latest monetization plugin. This is our first plugin to offer complete ad mediation. Read further to learn more!]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/08/appodeal-3.png><img class="alignright wp-image-67639 size-thumbnail" style="margin: 16px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p>Ad mediation is a frequently requested app monetization feature, but it usually requires that you build in support for multiple ad networks in your app. That can be a lot of work.</p>
+<p>Fortunately, <a href=https://www.appodeal.com/ target="_blank">Appodeal</a> builds their network of ad provider SDKs directly into their plugin for you &#8212; simply include the Appodeal plugin and get the benefit of every ad network they support.</p>
+<p>One benefit of ad mediation is that you should get a 100% fill rate &#8212; never miss an ad! Appodeal&#8217;s service delivers higher-paying ads first, and they also analyze all of the ads available, factor in the user&#8217;s behavior, and find the best ad for the moment.</p>
+<p>You just need one account and one plugin (plus support plugins on Android) to benefit from all of Appodeal&#8217;s partners. They offer monthly payouts as well as on-demand payouts.</p>
+<p>&#8220;Appodeal is excited about our new partnership with Corona Labs, as it will open new doors and break the many restrictions developers often face. We look forward to helping Corona developers monetize their apps with ease while maximizing their earnings,&#8221; says Pavel Golubev, Appodeal CEO &amp; Founder.</p>
+<h3>Getting started</h3>
+<p>To begin, <a href=https://www.appodeal.com/ target="_blank">register with Appodeal</a>. Then, create an app for each platform you want to run ads on. Currently the Corona plugin supports iOS, Android, and tvOS. You will get a different application key for each platform. Finally, include the required changes in your <code>build.settings</code> file and implement the plugin much like any other Corona ad provider (see our <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for details).</p>
+<p>The Appodeal plugin offers three API calls: <a href=https://docs.coronalabs.com/plugin/appodeal/init.html target="_blank">appodeal.init()</a>, <a href=https://docs.coronalabs.com/plugin/appodeal/show.html target="_blank">appodeal.show()</a>, and <a href=https://docs.coronalabs.com/plugin/appodeal/hide.html target="_blank">appodeal.hide()</a>. If you are deploying your app to both iOS and Android,  you will have to initialize your plugin based on platform:</p><pre class="crayon-plain-tag">if &quot;Android&quot; == system.getInfo( &quot;platformName&quot; ) then
+    appodeal.init( adListener, { appKey=&quot;YOUR_ANDROID_APPLICATION_KEY&quot;, testMode=false } )
+else
+    appodeal.init( adListener, { appKey=&quot;YOUR_IOS_APPLICATION_KEY&quot;, testMode=false } )
+end</pre><p>See the Corona <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for more usage details.</p>
+<h3>Conclusion</h3>
+<p>Have any questions or comments? To discuss this wonderful addition to our suite of monetization plugins, please join us in the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">community forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Welcome Pollfish! Earn money with polls in your app</title>
+		<link>/blog/2016/07/27/welcome-pollfish-earn-money-with-polls-in-your-app/</link>
+		<pubDate>Wed, 27 Jul 2016 22:10:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[polls]]></category>
+		<category><![CDATA[surveys]]></category>
+
+		<guid isPermaLink="false">/?p=67512</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Pollfish plugin. This plugin lets you include polls and surveys in your app. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1.png><img class="alignright wp-image-67526 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-150x150.png" alt="Pollfish_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/07/Pollfish_logo-1.png 360w" sizes="(max-width: 150px) 100vw, 150px" /></a>Corona Labs is pleased to announce the availability of our Pollfish plugin. <a href=https://www.pollfish.com/ target="_blank">Pollfish</a> allows you to earn money by displaying surveys/polls in your apps and it can be used along with other ad platforms to create an additional revenue stream. In addition to showing others&#8217; polls to monetize, you can create your own polls to collect feedback from your own audience.</p>
+<p>Andreas Vourkos, Co-Founder &amp; COO of Pollfish, says &#8220;here at Pollfish we are proud to announce our latest partnership with Corona Labs. This new partnership will give Corona publishers access to Pollfish surveys, one of the most trending and high-paying solutions available in the app monetization field.</p>
+<p>&#8220;Pollfish is a survey network providing a DIY survey tool on its website in order for anyone to easily create a survey, select a target audience, pay and get results in a few hours. These surveys are distributed through the Pollfish app publishers’ network.</p>
+<p>&#8220;Corona publishers can integrate Pollfish surveys in their app quickly and easily, since no changes to the app’s UI are needed and surveys are displayed as an overlay. Users responding to surveys enter into drawings for prizes (satisfied customers!) without leaving the app environment to complete them. Publishers get paid up to 20x more compared to traditional advertising solutions and also gain access to the Pollfish DIY tool to survey their users for free, without any time limits, and thus get valuable feedback from their own users.&#8221;</p>
+<h3>Getting started</h3>
+<p>Start by <a href=https://www.pollfish.com/publisher target="_blank">signing up for an account</a> with Pollfish and setting up your app in their dashboard. After you set up your first app, you will get an API key. You will have separate app and API keys for both iOS and Android versions.</p>
+<p>Setting up for your app is similar to other plugins. You can learn about all of the API calls and setup information in our <a href=https://docs.coronalabs.com/plugin/pollfish/index.html target="_blank">documentation</a>. One call that is relatively unique to Pollfish is <a href=https://docs.coronalabs.com/plugin/pollfish/setUserDetails.html target="_blank">pollfish.setUserDetails()</a>. This gives you a chance to tell Pollfish more about your app&#8217;s user which could lead to higher-performing polls. Just be aware that if you collect this information and provide it to Pollfish, you should have a user-facing privacy policy explaining what you&#8217;re collecting and sharing.</p>
+<h3>Wrapping up</h3>
+<p>Pollfish is a great way to engage your audience and help you earn more money for your apps! Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a> to discuss the plugin.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Looking for beta developers to test Appodeal plugin</title>
+		<link>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/</link>
+		<comments>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/#comments</comments>
+		<pubDate>Tue, 19 Jul 2016 17:10:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67492</guid>
+		<description><![CDATA[Corona Labs is looking for some developers to help us test a new monetization plugin from Appodeal. Learn how you can join the beta test program for it.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67490 size-medium" src="/wordpress/wp-content/uploads/2016/07/appodeal_logo-300x67.jpg" width="300" height="67" />Corona Labs is working on a plugin for <a href=https://www.appodeal.com/ target="_blank">Appodeal</a>, a monetization partner that supports mediation.</p>
+<p>We are looking for a few developers to test the plugin. If you&#8217;re interested in getting an early look at the plugin and helping us test, please email <a href=mailto:ads@coronalabs.com>ads@coronalabs.com</a> from your registered Corona developer email. Please include the app you would like to integrate and the daily active users (DAU) for that app. We will get back with you if you&#8217;re selected.</p>
+<p>We look forward to hearing from you!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>HockeyApp plugin now available for Corona apps</title>
+		<link>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/</link>
+		<comments>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/#comments</comments>
+		<pubDate>Wed, 18 May 2016 20:08:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash reporting]]></category>
+		<category><![CDATA[hockeyapp]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[testing]]></category>
+
+		<guid isPermaLink="false">/?p=66827</guid>
+		<description><![CDATA[Our new HockeyApp plugin can help you make use of the HockeyApp testing and crash reporting service. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/05/hockey.png><img class="alignright wp-image-66860 size-thumbnail" style="margin: 2px 0px 10px 25px;" src="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png" alt="hockey" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/05/hockey-150x150.png 150w, /wordpress/wp-content/uploads/2016/05/hockey-300x300.png 300w, /wordpress/wp-content/uploads/2016/05/hockey.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a><a href=https://www.hockeyapp.net/features/ target="_blank">HockeyApp</a> is a service from Microsoft that allows you to upload test builds of your iOS, Android, Windows, and OS X apps. Once uploaded, you can easily distribute them to your testers. HockeyApp also lets you provide release notes on what has changed and gather stats on downloads and other app metrics during the testing process. In addition, it supports crash reporting. All of these factors are where the Corona <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp plugin</a> comes into play.</p>
+<h3>Getting started</h3>
+<p>Like all third-party services, you will need to <a href=https://rink.hockeyapp.net/users/sign_up target="_blank">register</a> with HockeyApp. Once that step is complete, you can start setting up your apps, your testers, and begin deploying test builds. Since this is a Corona plugin, you will also need to add the plugin to your <code>build.settings</code> and <code>require()</code> it in <code>main.lua</code> (see our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp documentation</a> for details). Finally, you will need to <a href=https://store.coronalabs.com/plugin/hockeyapp target="_blank">activate the plugin</a> in the Corona Marketplace.</p>
+<h3>Features</h3>
+<p>For crash reporting, you simply need to initialize the plugin by calling the <a href=https://docs.coronalabs.com/plugin/hockey/init.html target="_blank">hockeyApp.init()</a> function with an app ID retrieved from the HockeyApp portal. If your app crashes during testing, the plugin will detect it and report the crash to the HockeyApp dashboard.</p>
+<p>While you can choose to have HockeyApp send your testers an email when there is an app update, you may prefer to have your app detect when a new version is available via the <a href=https://docs.coronalabs.com/plugin/hockey/checkForUpdate.html target="_blank">hockeyApp.checkForUpdate()</a> call. Similarly, you can un-register for updates with the <a href=https://docs.coronalabs.com/plugin/hockey/unRegisterForUpdate.html target="_blank">hockeyApp.unRegisterForUpdate()</a> call.</p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">HockeyApp</a> plugin is simple &#8212; just add a few lines of code and let HockeyApp do the rest! You can find complete usage details for HockeyApp in our <a href=https://docs.coronalabs.com/plugin/hockey/index.html target="_blank">plugin documentation</a>, or discuss it further in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/18/hockeyapp-plugin-now-available-for-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Welcome InMobi to the Corona monetization plugin suite</title>
+		<link>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/</link>
+		<comments>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/#comments</comments>
+		<pubDate>Tue, 19 Apr 2016 20:18:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[inMobi]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=66530</guid>
+		<description><![CDATA[Corona Labs is pleased to offer the new InMobi monetization plugin. Read further to learn more about this ad provider.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66532" src="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png" alt="inMobi logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/share-logo.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Here at Corona Labs, we want you to be successful with your app development, and monetization is an important part of your success. As such, we are pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/inmobi target="_blank">InMobi</a> plugin. InMobi&#8217;s new discovery platform allows developers to monetize their apps through rich user engagement and seamlessly integrated ads.</p>
+<p>We reached out to Irene Herranz, Head of Global Developer Marketing at InMobi, for a few words on the new plugin. She says, “Gaming developers are always on the lookout for easier ways to achieve steady revenue and grow their mobile businesses. Through our partnership with Corona Labs, developers can kickstart their global monetization efforts by running InMobi&#8217;s high-performing video and display ads to focus on what they do best – developing amazing games.”</p>
+<p>InMobi&#8217;s platform allows you to use banner ads, interstitial ads, and rewarded videos. Native ads are not currently supported via the Corona plugin.</p>
+<h3>Getting started</h3>
+<p>First, you must sign up with InMobi at their <a href=https://www.inmobi.com/user/index?#signup target="_blank">developer portal</a>. After you do, you can create your app and start adding ad placements. Currently, they support one ad placement per app. If you need both banners and interstitial ads in the same app, you will need to create two apps in their portal, one for each placement (just make sure to use the same app store URL for both entries).</p>
+<p>Next, just like all plugins, you will need to add code to your <code>build.settings</code> file to include the plugin. You can get the exact required code from our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">InMobi documentation</a>.</p>
+<h3>Banner ad sizes</h3>
+<p>Unlike most ad providers that provide a fixed size for banner ads, InMobi has a &#8220;best fit&#8221; model which allows you to specify other sizes. For instance, if you want a 300×100 banner, InMobi will attempt to deliver an ad of that size (or very close). If there is no inventory for your requested size and InMobi can&#8217;t provide a &#8220;best fit&#8221; ad, they will drop back to a standard 320×50 banner ad.</p>
+<h3>Refreshing ads</h3>
+<p>InMobi allows you to turn on &#8220;automatic refreshing&#8221; of banner ads. If you enable it, the default ad refresh cycle is 60 seconds, but that time can also be customized. Just remember that your revenue from ads is not based on the number of ads delivered, but on the number of ads that users interact with. So, a faster ad rotation will not necessarily translate to better revenue, and in fact it may negatively impact the user&#8217;s experience.</p>
+<p>Enabling ad rotation and the frequency of the rotation is handled through parameters passed to <a href=https://docs.coronalabs.com/plugin/inmobi/load.html target="_blank">inMobi.load()</a>.</p>
+<h3>Conclusion</h3>
+<p>InMobi is a great service for users to integrate into their apps. To learn more, please check out our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">documentation</a> and <a href=https://github.com/coronalabs/plugins-sample-inmobi>sample app</a>. If you have questions or want to discuss this plugin further, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Announcing the Google Analytics plugin</title>
+		<link>/blog/2016/02/15/announcing-the-google-analytics-plugin/</link>
+		<comments>/blog/2016/02/15/announcing-the-google-analytics-plugin/#comments</comments>
+		<pubDate>Mon, 15 Feb 2016 23:40:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65734</guid>
+		<description><![CDATA[Corona Labs is pleased to introduce the Google Analytics plugin. This plugin can be used to gain valuable insight about your users and how they interact with your apps.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65732" src="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png" alt="EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300-150x150.png 150w, /wordpress/wp-content/uploads/2016/02/EHakXvJHpysBfnrB6Ri8c66LH4z4gLqdZ9SPVLJypCIVQyFpWXA_RERzcEdey94H9m0w300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />Under the category of &#8220;<em>The more you know,</em>&#8221; we&#8217;ve increased our suite of analytics engine support with the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin.</p>
+<p>In addition to basics like the number of users and sessions, you get a wealth of demographic information about your users such as city, country, language, and &#8220;new&#8221; versus &#8220;returning&#8221; users. You also get detailed information like the app version, which OS it&#8217;s running on, the device type, screen resolution, and more. Finally, you can track custom events within the app, for example the user&#8217;s actions, which UI elements are interacted with the most, and more.</p>
+<h3>Setting up Google Analytics</h3>
+<p>To use Google Analytics, you must first set up an account with Google at <a href=http://www.google.com/analytics/ target="_blank">www.google.com/analytics/</a>. You can have up to 100 <strong>accounts</strong> under a single login, each account can have up to 50 <strong>properties</strong>, and each property can have up to 25 <strong>views</strong>. While each of your apps could be its own account, you&#8217;ll probably just need one account with each app as a unique property of it.</p>
+<p>To begin, <strong>activate</strong> the Google Analytics plugin <a href=https://store.coronalabs.com/plugin/google-analytics target="_blank">here</a>.</p>
+<p>Next, you&#8217;ll need to include the plugin within the app&#8217;s <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.googleAnalytics&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, }
+        },
+    },
+}</pre><p>When you create a property in the Google Analytics dashboard &#8212; assigning the <strong>app name</strong> along with it &#8212; you&#8217;ll get a unique <strong>Tracking ID</strong> such as <code>UA-12345678-1</code>. You&#8217;ll need to pass both of these values to the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/init.html target="_blank">googleAnalytics.init()</a> API. For example:</p><pre class="crayon-plain-tag">local googleAnalytics = require( &quot;plugin.googleAnalytics&quot; )
+
+googleAnalytics.init( &quot;Mega Race 3000&quot;, &quot;UA-12345678-1&quot; )</pre><p></p>
+<h3>Logging analytics events</h3>
+<p>While simply setting up Google Analytics will give you insight into various demographic and device-related details as mentioned above, you&#8217;ll probably want to gather specific data about the user&#8217;s actions <em>within</em> the app. Some examples include:</p>
+<ul>
+<li>Checking how long users play the game. If the results aren&#8217;t meeting your expectations, you may consider adding incentives or additional features.</li>
+<li>Checking how often &#8212; and how long &#8212; users play a specific level in the game.</li>
+<li>Checking which options/settings are the most popular among a wide user demographic.</li>
+</ul>
+<p>All of these examples involve <strong>logging events</strong> with Google Analytics. To log an event, simply call the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( category, action, label )</pre><p>The first parameter, <code>category</code>, is a required parameter used to create a &#8220;group&#8221; of events within Google Analytics. For example, a category such as <code>"userAction"</code> may be used to track actions performed by the user. Or, if your app interacts with a server and data is processed by the server, you might want a category named <code>"serverAction"</code>.</p>
+<p>The second parameter, <code>action</code>, is a required parameter which associates a specific action with the category. For instance, if the user interacts with a button in your game, you could log an action of <code>"buttonPressed"</code> in the <code>"userAction"</code> category.</p>
+<p>The third parameter, <code>label</code>, is an optional parameter which lets you define additional information for the action, for instance the specific button which was pressed. For example, if the user pressed the &#8220;Play&#8221; button in your game, your <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logEvent.html target="_blank">googleAnalytics.logEvent()</a> call might look like this:</p><pre class="crayon-plain-tag">googleAnalytics.logEvent( &quot;userAction&quot;, &quot;Button pressed&quot;, &quot;Play&quot; )</pre><p>Ultimately, it&#8217;s your choice on which events should be logged, when, and why. We recommend a certain level of discretion in terms of which events/actions will be useful for analyzing user behavior in your app.</p>
+<h3>Tracking screens/scenes</h3>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin features an additional tracking call which is used to track different <strong>screens</strong>. Google Analytics&#8217; heritage is based on tracking website activity, which is &#8220;screen&#8221;-oriented, but the concept of screens can easily be compared to app <strong>scenes</strong>. This can give you insight on how frequently users visit particular scenes in your app, for example how often the &#8220;settings&#8221; scene is visited or whether users even view your &#8220;help&#8221; scene.</p>
+<p>To track screen usage, use the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/logScreenName.html target="_blank">googleAnalytics.logScreenName()</a> function:</p><pre class="crayon-plain-tag">googleAnalytics.logScreenName( screenName )</pre><p>This call simply requires a string which names your screen/scene. If you are using Corona&#8217;s <a href=https://docs.coronalabs.com/daily/guide/system/composer/index.html target="_blank">Composer</a> scene management library, you can simply add one line of code in the <code>scene:show()</code> function&#8217;s <code>"did"</code> phase to log the screen/scene name with Google Analytics:</p><pre class="crayon-plain-tag">function scene:show( event )
+    if ( event.phase == &quot;did&quot; ) then
+        -- Log the screen/scene name with Google Analytics
+        googleAnalytics.logScreenName( composer.getSceneName( &quot;current&quot; ) )
+    end
+end</pre><p></p>
+<h3>Additional notes</h3>
+<p>Like any analytics engine, data isn&#8217;t very useful until you&#8217;ve accumulated enough to analyze. A majority of the reports you can view need &#8220;aggregated&#8221; data, although some information is available &#8220;live.&#8221;</p>
+<p>If you intend to track user information, you will likely need to include a <strong>privacy policy</strong> in your app or on your website so that users can learn about what is being tracked. If you require a privacy policy, please search the web for a template that can be adapted to your company/app.</p>
+<h3>In summary</h3>
+<p>As you can see, the <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">Google Analytics</a> plugin can be used to gain virtually any degree of insight about your apps, from user demographics to specific in-app usage patterns.</p>
+<p>To learn more about the Google Analytics plugin, please proceed to our <a href=https://docs.coronalabs.com/daily/plugin/googleAnalytics/index.html target="_blank">documentation</a>, and if you have further questions, please visit the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/15/announcing-the-google-analytics-plugin/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Corona autocomplete package now available for Atom editor</title>
+		<link>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/</link>
+		<comments>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/#comments</comments>
+		<pubDate>Sat, 23 Jan 2016 03:52:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[atom]]></category>
+		<category><![CDATA[atom.io]]></category>
+		<category><![CDATA[build]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65325</guid>
+		<description><![CDATA[We are happy to announce the immediate availability of a convenient code completion package for the popular Atom editor. Installation of the package is simple using either Atom's package interface or from the command line.]]></description>
+				<content:encoded><![CDATA[<p>We would like to announce the immediate availability of a code completion package for the <a href=https://atom.io/ target="_blank">Atom editor</a>, which provides code completion as well as a description and links to the Corona Docs.</p>
+<p>You have two options to install the package: through Atom&#8217;s package interface or from the command line.</p>
+<p>If you choose the Atom&#8217;s package interface, open up the <strong>Preferences</strong> screen and click on <strong>Install</strong>.</p>
+<p>In the search box, type <code>corona</code> and hit enter. The <code>autocomplete-corona</code> package should show as the first option. Click on the <code>Install</code> button. This will install the package and you can start using it immediately.</p>
+<p>If you prefer, you can install it from the command line by executing:</p><pre class="crayon-plain-tag">apm install autocomplete-corona</pre><p>You may also need to enable the <code>language-lua</code> package as well, to get the syntax highlighting.</p>
+<p><img class="alignnone size-full wp-image-65328" src="/wordpress/wp-content/uploads/2016/01/demo.gif" alt="demo" width="902" height="296" /></p>
+<p>This is a no-frills package that uses Corona&#8217;s own docs to provide the code completion. Simply tab to complete and then tab between parameters to fill them out.</p>
+<p>This tool complements our Corona Editor and Corona Composer GUI tools to help you make your apps easier.</p>
+<p>Atom also supports building your project. There is not a pre-built Corona SDK build provider. However, you can configure your own by putting an extra file in the folder with your <code>main.lua</code> named:</p>
+<p><code>.atom-build.json</code></p>
+<p>You must include this file in every project you want to build. The contents of the file will vary depending on if you are using a daily build or public build. And it will vary between OS X and Windows.</p>
+<p>Here is an example OS X version for public releases:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>If you use daily builds change the first line to the right folder:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK-2811/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>For Windows, you will need to provide the right path to your Corona SDK install folder.</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;C:\Program Files (x86)\Corona Labs\Corona SDK\Corona\\ Simulator.exe&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>You must also install the build package to use this. <a href=https://github.com/noseglid/atom-build?#configuration-options target="_blank">Click here to learn more</a> about these build scripts.</p>
+<p>If you are an Atom fan, you will now be more empowered.</p>
+<p><span class="comment-text ">Having problems? Questions? <a href=https://forums.coronalabs.com/topic/61274-from-the-blog-corona-autocomplete-package-now-available-for-atom-editor/ target="_blank">Join the discussion</a> in the Corona Labs Forums.</span></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+		<item>
+		<title>Guest Piece: PlayHaven Brings its Business Engine to Corona Devs</title>
+		<link>/blog/2013/09/06/guest-piece-playhaven-brings-its-business-engine-to-corona-devs/</link>
+		<pubDate>Fri, 06 Sep 2013 15:05:09 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[playhaven]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=43667</guid>
+		<description><![CDATA[Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven's team of engineers on the development of partner plugins. 
+
+PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href="http://www.playhaven.com/">playhaven.com</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Lauren Feldman is a product manger at PlayHaven, the leading business engine for mobile games. One of her responsibilities is to work with PlayHaven&#8217;s team of engineers on the development of partner plugins. </em></p>
+<p>PlayHaven offers developers flexible tools to intelligently manage player acquisition, engagement, and monetization. For more information visit <a href=http://www.playhaven.com>playhaven.com/</a>.</p>
+<hr />
+<p><img class="alignleft size-thumbnail wp-image-43699" src="/wordpress/wp-content/uploads/2013/09/logo_lrg_blk-150x135.png" alt="logo_lrg_blk" />Creative people love to create – and that’s you, game developer &#8211; whether that be rich game content, meaningful interactive experiences or experimental techniques in game design. We want to keep you focused on what you love, which is how PlayHaven came into existence. PlayHaven was built so you can focus on content and design and let us power the business side of your games.</p>
+<p>We’re thrilled to partner with <a href=www.coronalabs.com/products/Corona-SDK>Corona SDK</a> to help you with the acquisition, engagement and monetization layers in your game.</p>
+<p>By leveraging the PlayHaven Corona Plugin, you can do the following without impacting your game’s roadmap.</p>
+<p><strong>Drive high-quality players to your games</strong><br />
+Our user acquisition tools help you successfully launch your game into the marketplace and bring quality players into your game. Choose to <a href=http://www.playhaven.com/acquire?#acquire-content-advertise>advertise</a> within our ad network or distribute your users to other games in your network using our <a href=http://www.playhaven.com/acquire?#acquire-content-cross-promote>cross-promotion tool</a>.</p>
+<p><strong>Keep users playing</strong><br />
+Learn more about your players, build customer loyalty, improve communication, and re-engage them after they&#8217;ve left the app. PlayHaven’s engagement tools help you deliver targeted, personalized communications in and out of your game to keep your players engaged. From <a href=http://www.playhaven.com/engage?#engage-content-push>Push Notifications</a> (Beta) to <a href=http://www.playhaven.com/engage?#engage-content-rewards>Rewards</a>, in-game <a href=http://www.playhaven.com/engage?#engage-content-announcements>Announcements</a> and <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a>, you have lots of great ways to interact with your users in any way you choose.</p>
+<p><strong>Monetize your whales, dolphins and&#8230; EVERYONE!</strong><br />
+Increase your player conversion rate and revenue by leveraging our monetization tools. By creating and deploying <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>virtual goods</a> promotions and relevant <a href=http://www.playhaven.com/monetize?#monetize-content-ads>in-game ads</a> to the right user segment at the right time, you’re getting the tools you need to maximize revenue. PlayHaven can help you both identify monetizable user groups and deliver relevant communications designed to increase your bottom line.</p>
+<p><strong>Take a look at how our partners are using PlayHaven.</strong></p>
+<p><strong>Mobile Deluxe</strong> leveraged a combination of PlayHaven&#8217;s <a href=http://www.playhaven.com/monetize?#monetize-content-virtual-good-promotion>Virtual Goods Promotion</a>, <a href=http://www.playhaven.com/monetize?#monetize-content-ads>Interstitial Ads</a>, and User Segmentation tools to improve player monetization and increase revenue in Big Win Slots. Read more <a href=http://blog.playhaven.com/success_mobiledeluxe/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43705" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_Mobile-Deluxe-VGP-1-300x211.jpg" alt="PlayHaven_Mobile Deluxe VGP" /></p>
+<p><strong>SEGA</strong> implemented PlayHaven&#8217;s <a href=http://www.playhaven.com/engage?#engage-content-opt-in>Opt-in Data Collection</a> to engage players outside of Sonic Jump and simultaneously cross-promote Sonic Dash. Learn more about the impressive results SEGA saw <a href=http://blog.playhaven.com/sega-nurtures-player-relationships-outside-of-gameplay/>here</a>.</p>
+<p><img class="aligncenter size-medium wp-image-43703" src="/wordpress/wp-content/uploads/2013/09/PlayHaven_SEGA-Case-study-1-287x300.jpg" alt="PlayHaven_SEGA Case study (1)" /></p>
+<p>We’re excited to bring our entire platform of solutions to help Corona developers acquire, engage, retain and monetize their players. To integrate PlayHaven into your Corona-built games, please visit <a href=http://docs.coronalabs.com/daily/plugin/playhaven/>docs.coronalabs.com/daily/plugin/playhaven/</a>. If you have any questions, reach out at <a href=mailto:connect@playhaven.com>connect@playhaven.com</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Facebook &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/facebook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Facebook &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Facebook Audience Network plugin: updated rev-share ratio</title>
+		<link>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/</link>
+		<comments>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 23:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65571</guid>
+		<description><![CDATA[Corona Labs has released an update to the Facebook Audience Network monetization plugin. Learn more about how these changes benefit you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-63472" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png" alt="facebook-logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png 150w, /wordpress/wp-content/uploads/2015/07/facebook-logo.png 160w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs has updated the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> monetization plugin.</p>
+<p>Based on feedback, we&#8217;ve decided to set the revenue-sharing ratio for the Facebook Audience Network ad provider plugin at a flat 5% instead of the more complicated &#8220;tier&#8221; system previously announced. This rate applies across the spectrum regardless of ad requests/impressions.</p>
+<p>To get started with the Facebook Audience Network plugin, see our <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">recent announcement</a> for the plugin, or see the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">documentation</a>. We thank our developer community for their feedback and support!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: iOS Beta, improvements, and new features</title>
+		<link>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/</link>
+		<comments>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/#comments</comments>
+		<pubDate>Wed, 02 Sep 2015 03:18:48 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63836</guid>
+		<description><![CDATA[More good news for Facebook integration. Coinciding with the recent beta release of Facebook-v4 on Android, we&#8217;ve launched the iOS version of the Facebook v4 plugin! The iOS version does come with a couple caveats to be aware of: iOS 6 is not supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK. iOS 9 is supported with a couple additional setup steps detailed here. Improvements In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK...]]></description>
+				<content:encoded><![CDATA[<p>More good news for Facebook integration.</p>
+<p>Coinciding with the recent beta release of Facebook-v4 on Android, <strong>we&#8217;ve launched the iOS version of the Facebook v4 plugin</strong>! The iOS version does come with a couple caveats to be aware of:</p>
+<ul>
+<li>iOS 6 is <strong>not</strong> supported with this plugin. This is due to Facebook dropping iOS 6 support with version 4+ of their SDK.</li>
+<li>iOS 9 is supported with a couple additional setup steps detailed <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#ios9 target="_blank">here</a>.</li>
+</ul>
+<h2>Improvements</h2>
+<p>In addition to iOS, we&#8217;ve done another Facebook SDK update to get you the latest fixes from them. The iOS version of Facebook-v4 targets Facebook SDK 4.5.1. and the Android version has been upgraded to 4.5.0.</p>
+<p>Another improvement we&#8217;ve made concerns Corona Enterprise. In the past setting up the Facebook plugin with Corona Enterprise hadn&#8217;t been very obvious. We&#8217;ve rectified this by providing a more step-by-step guide for setup with Corona Enterprise available <a href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#enterprise target="_blank">here</a>.</p>
+<h2>New features</h2>
+<p>We&#8217;re always striving to make our APIs more useful with less hassle. We feel that these new features show evidence of that aspiration and hope they will make your lives easier when it comes to Facebook integration.</p>
+<p>First off, facebook.currentAccessToken has been deprecated in favor of <strong><a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a></strong>. Before, facebook.currentAccessToken could be used to determine if someone was logged in already. For <a href=https://docs.coronalabs.com/plugin/facebook-v4/getCurrentAccessToken.html target="_blank">facebook.getCurrentAccessToken()</a>, on top of providing knowledge of whether you have a logged in user, this new API provides access to:</p>
+<ul>
+<li>The permissions the user has granted your app</li>
+<li>The permission they&#8217;ve denied your app</li>
+<li>Their Facebook User ID</li>
+<li>and more.</li>
+</ul>
+<p>Also, <a href=https://docs.coronalabs.com/plugin/facebook-v4/showDialog.html target="_blank">facebook.showDialog()</a> now integrates Facebook&#8217;s new &#8220;Share Dialog&#8221;.</p>
+<ul>
+<li>This will bring up the Share Dialog and let you share a link with it.</li>
+<li>If you have the Facebook app installed on your device, bringing up this dialog will allow you to tag friends and a place, all without additional calls to bring up the Places and Friends dialogs.</li>
+</ul>
+<p>In the old plugin, you could only present the Feed dialog for letting users post on Facebook. Tagging a location and friends required bringing up two more dialogs before the Feed dialog.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_FEED.png><img class="alignnone size-medium wp-image-63913 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_FEED-225x300.png" alt="FBv4_FEED" width="225" height="300" /></a></p>
+<p>Now with Facebook-v4, tagging friends and a location couldn&#8217;t be easier.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/FBv4_LINK1.png><img class="alignnone size-medium wp-image-63915 aligncenter" src="/wordpress/wp-content/uploads/2015/09/FBv4_LINK1-225x300.png" alt="FBv4_LINK" width="225" height="300" /></a></p>
+<p>See the <a class="bbc_url" title="External link" href=https://docs.coronalabs.com/plugin/facebook-v4/index.html?#settings rel="nofollow external">Facebook v4 plugin home page</a> to get started!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/01/facebook-v4-plugin-ios-beta-improvements-and-new-features/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #152 &#8211; Facebook Integration and Social Media Sharing</title>
+		<link>/blog/coronageek/corona-geek-152/</link>
+		<comments>/blog/coronageek/corona-geek-152/#respond</comments>
+		<pubDate>Mon, 27 Jul 2015 22:08:21 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[social media integration]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63510</guid>
+		<description><![CDATA[Today, Ed Maurina, from Roaming Gamer, took us through the basics of social media integration using the Facebook plugin. We looked at logging in, requesting permissions, and posting updates to a users timeline. We also discussed how to get an app id from the Facebook Developer portal.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/yMyWyR_lZP8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Ed Maurina took us through the basics of social media integration using the <a href=https://store.coronalabs.com/plugin/facebook target="_blank">Facebook plugin</a> ( Check out the <a href=/blog/2015/07/24/facebook-v4-plugin-android-beta/ target="_blank">new Facebook v4 plugin</a> as well ). We looked at <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/SocialMedia.zip target="_blank">logging in, requesting Facebook permissions, and posting updates</a> to the user&#8217;s timeline. We also discussed <a href=https://docs.coronalabs.com/daily/guide/social/setupFacebook/index.html?#developer-registration target="_blank">how to create an app id</a> in the Facebook Developer portal.</p>
+<p>Next week, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> will lead us through part 4 of our ongoing discussion on creating custom shaders. We will discuss using math to create pretty pictures (aka, shader math) and we will look at some new shader examples.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ckrasc7je049e8kk3dbme2clsuk target="_blank">Corona Geek After Dark #4</a> when we will discuss topics like general app development, forum questions, community insights, and more. Last week we discussed Composer GUI, Kickstarter game development campaigns, and game publisher models.</p>
+<p><strong>Last Week To Play Rise 1.0 for July&#8217;s Corona Geek Games Challenge!</strong></p>
+<p>For July we are playing Rise 1.0 by Vernon Coleman (aka, Novateur) for the chance to win a $50 gift card. To participate, share a picture of your highest Rise score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. The winner of this month&#8217;s challenge will be announced next Monday, Aug 3rd. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-151/>Corona Geek #151 &#8211; New Twitter Plugin Demo and Glass Half Full Shader Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links Discussed in Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/SocialMedia target="_blank">Facebook Social Media Integration Code Repo</a></li>
+<li><a href=http://www.jasonschroeder.com/2015/07/15/twitter-plugin-for-corona-sdk/ target="_blank">Social Media Sharing Using the new Twitter Plugin</a></li>
+<li><a href=https://docs.coronalabs.com/plugin/facebook/index.html target="_blank">Facebook Plugin Docs</a></li>
+<li><a href=https://developers.facebook.com/tools/explorer/ target="_blank">Facebook Graph API Explorer</a></li>
+<li><a href=https://docs.coronalabs.com/daily/plugin/CoronaProvider_native_popup_social/index.html target="_blank">Social Media Sharing via Native Social Plugin</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-152/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-152-2015-07-27-social-sharing-facebook-plugin.mp3" length="74125062" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Facebook v4 Plugin: Android Beta</title>
+		<link>/blog/2015/07/24/facebook-v4-plugin-android-beta/</link>
+		<pubDate>Fri, 24 Jul 2015 17:12:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=63464</guid>
+		<description><![CDATA[Since Facebook released <a href="https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/" target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href="https://developers.facebook.com/docs/graph-api" target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.]]></description>
+				<content:encoded><![CDATA[<p>Since Facebook released <a href=https://developers.facebook.com/blog/post/2015/03/25/Updated-Graph-API-and-improved-Facebook-SDKs-for-iOS-and-Android/ target="_blank">version 4.4.0 of their SDK</a> and deprecated <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v1.0, many of you have been asking for us to upgrade, and provide new features to our facebook plugin.</p>
+<p>We are releasing a new <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin built on top of <a href=https://developers.facebook.com/docs/android target="_blank">Facebook SDK</a> v4.4.0!</p>
+<p>Currently this plugin is in beta and is currently available <strong>on Android only</strong> as we&#8217;re finishing up the iOS side.</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Corona daily build</a> 2015.2685 (or later) to get started.</p>
+<h2>What about the old Facebook plugin?</h2>
+<p>The <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin supercedes the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a>. Consequently, we are deprecating the old facebook plugin. While it will still be available, Corona will no longer be supporting it or providing any maintenance updates to it.</p>
+<p>The main reason is because Facebook will deprecate <a href=https://developers.facebook.com/docs/graph-api target="_blank">Graph API</a> v2.1 on <em>October 30, 2016</em>, and the <a href=https://docs.coronalabs.com/daily/plugin/facebook/index.html>old facebook plugin</a> depends on that API.</p>
+<p>Therefore, we recommend migrating to the <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html target="_blank">facebook-v4</a> plugin, as it will soon be required.</p>
+<h2>New features</h2>
+<p>For this initial release, we&#8217;ve provided some new APIs that improve developer and user experience with login.</p>
+<p>In particular, one popular request has been saving login info in a better manner. To address this, we now provide the AccessToken for a logged in user through <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/currentAccessToken.html>facebook.currentAccessToken</a>. This property is updated inside the plugin, so managing access tokens is no longer the responsibility of the Corona developer!</p>
+<h2>Upgrading to Facebook v4</h2>
+<p>With the new facebook plugin, we wanted to be sure that the migration process would be as painless as possible. This was accomplished by making the new plugin a nearly complete superset of the old one. We&#8217;ve maintained all the old APIs while adding new ones and new possibilities with old ones.</p>
+<p>Outside of different responses you may get in the <code>fbconnect</code> event from <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/request.html>facebook.request()</a> and <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/showDialog.html>facebook.showDialog()</a>, the rest of your facebook code should be backward-compatible!</p>
+<p>For more detailed instructions on upgrading, see our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/migration.html>migration guide</a>.</p>
+<h2>Resources</h2>
+<p>More detail on the new plugin can be found in our <a href=https://docs.coronalabs.com/daily/plugin/facebook-v4/index.html>docs</a>.</p>
+<p>Feel free to discuss the new plugin on the <a href=https://forums.coronalabs.com/forum/653-facebook-v4/>Facebook v4 forum</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Weekly Update: iOS7 Beta, Text alignment, Facebook</title>
+		<link>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/</link>
+		<comments>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/#comments</comments>
+		<pubDate>Tue, 18 Jun 2013 04:40:10 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[ios7]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=36151</guid>
+		<description><![CDATA[Time for a quick update on your favorite <a href="/products/corona-sdk/">mobile app development</a> platform.
+
+Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the "flat" UI that was demonstrated was exactly the kind of thing we saw some of you <em>already</em> creating using Corona's graphics system. ]]></description>
+				<content:encoded><![CDATA[<p>Time for a quick update on your favorite <a href=/products/corona-sdk/>mobile app development</a> platform.</p>
+<p>Last week, Apple announced iOS7 Beta at WWDC. A lot of cool stuff was shown. The interesting thing is that a lot of the &#8220;flat&#8221; UI that was demonstrated was exactly the kind of thing we saw some of you <em><strong>already</strong></em> creating using Corona&#8217;s graphics system.</p>
+<p><img class="alignright size-medium wp-image-36154" alt="Corona iOS 7 Beta device build" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.04.16-PM-300x171.png" /></p>
+<p>For example, <a href=http://foreseetheday.com/>this app</a> was in the works before iOS 7 was even announced!</p>
+<p>Apple&#8217;s NDA prevents me from talking too much about iOS7, but what I can say is that we will fully support iOS7. In fact, last week, starting in <a href=http://developer.coronalabs.com/release/2013/1141/>daily build</a> 1141, you can try your app out on iOS 7 Beta. On the right, you just select &#8220;7.0 beta&#8221; from the iOS device build dialog in the Corona Simulator, and presto, you&#8217;ve got an app built against the iOS 7 Beta SDK that you can test on your own device.</p>
+<p>I really recommend you do try out your apps on iOS 7. If the past is any indication, we expect iOS 7 to introduce regression bugs that affect all iOS developers, not just Corona developers. The sooner you know about them, the less you&#8217;ll be surprised when iOS 7 is finally released!</p>
+<p><img class="alignright size-full wp-image-36163" alt="Corona SDK supports Facebook Connect" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Screen-Shot-2013-06-17-at-9.25.24-PM.png" /><br />
+(Our lawyers will bug me about this, so let me just remind you that if you are using iOS 7 Beta, you must honor Apple&#8217;s developer membership rules.)</p>
+<p>We also have upgraded <a href=http://www.coronalabs.com/facebook/>Corona&#8217;s Facebook support</a> on Android, so it&#8217;s on par with iOS. Now, you can run Facebook&#8217;s Scrumptious sample on Android just like you can on iOS.</p>
+<p>We&#8217;re also working on adding Facebook monetization features like <a href=https://developers.facebook.com/docs/tutorials/mobile-app-ads/>Mobile App Install Ads</a> that can help drive more installations of your app and increase discovery, all things that will help you make more money with your app! This should be coming in a daily build later this week.</p>
+<p><img class="size-medium wp-image-36165 alignright" alt="Corona-text-alignment" src="http://www.coronalabs.com/wp-content/uploads/2013/06/Corona-text-alignment-300x45.png" width="300" height="45" /><br />
+There were a bunch of other interesting checkins that you&#8217;ll notice in the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>daily build notes</a> related to gaming, but the one I want to highlight is related to business apps or any app that&#8217;s dealing with lots of text.</p>
+<p>In the next daily build, we are going to be giving more text alignment capabilities. You&#8217;ll be able to set left, center, right alignment on multiline text objects, the ones created by &#8216;display.newText()&#8217;. There will be more docs forthcoming on our <a href=http://docs.coronalabs.com/daily/>daily build API docs</a>. I&#8217;ll update here when they&#8217;re ready.</p>
+<p><strong>UPDATE</strong>: The reference for the text alignment is <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html>here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/17/corona-weekly-update-ios7-beta-text-alignment-facebook/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights: Plug-In Beta Testing, Facebook Integration, and GIG Jam 48</title>
+		<link>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/</link>
+		<comments>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/#respond</comments>
+		<pubDate>Wed, 24 Apr 2013 20:17:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[GigJam48]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32538</guid>
+		<description><![CDATA[Here are a few highlights from Monday's Corona Geek #36 when we talked about Facebook integration, plug-in beta testing, a gems development jam for Corona SDK developers, and more.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/qanbRb0LgqU?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Monday&#8217;s Corona Geek Hangout included a lively discussion about Facebook Open Graph Mobile and how Corona SDK supports Facebook&#8217;s initiative to get  developers to focus on mobile-first and structured data. Learn how <a href=http://www.coronalabs.com/blog/2013/04/18/corona-and-facebook-technology-partners/>Corona SDK integrates with Facebook</a>.</p>
+<p><iframe src="http://www.youtube.com/embed/czwSd7hl9Lo?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Later in the hangout we talked about how beta testing has started on Corona SDK plug-ins. A few members of the discussion panel had some interesting ideas for future Corona plug-ins. Learn more about <a href=http://www.coronalabs.com/blog/2013/04/22/corona-weekly-update-more-on-gluonplugins/>Corona SDK plug-in support</a>.</p>
+<p><iframe src="http://www.youtube.com/embed/BPEzLhP-82E?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>We also talked about the upcoming GIG Jam 48 online game development jam that Glitch Games is hosting on May 4th &amp; 5th for Corona SDK developers. If you haven&#8217;t heard of this event, be sure to check out all the details on the official <a href=http://www.glitchgames.co.uk/gigjam/ target="_blank">Glitch Games GIG Jam 48</a> page.</p>
+<p>Check out the <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-36/>full version of Corona Geek #36</a> for more interesting discussions and some crazy social app ideas.</p>
+<p><strong>Remember to Subscribe:</strong></p>
+<ul>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #36 &#8211; Facebook&#8217;s Open Graph Mobile, Plugin Beta Testing, and Dear John Apps</title>
+		<link>/blog/coronageek/corona-geek-hangout-36/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-36/#respond</comments>
+		<pubDate>Tue, 23 Apr 2013 02:27:02 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Ideas]]></category>
+		<category><![CDATA[beta testing]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Open Graph Mobile]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32454</guid>
+		<description><![CDATA[This week we hung out with Dr. Brian Burton,  Ed Maurina, Dean Murphy, and Matthew Chapman to discuss Corona SDK's integration with Facebook's Open Graph Mobile initiative, Corona SDK plugin beta testing, new app ideas and what to consider when creating an app that competes directly with Apple.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/sRqYN7wzAeg?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=http://burtonsmediagroup.com/books/ target="_blank">Dr. Brian Burton</a>,  <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a> to discuss: </p>
+<ul>
+<li>Corona SDK&#8217;s integration with Facebook&#8217;s Open Graph Mobile initiative</li>
+<li>Corona SDK plugin beta testing</li>
+<li>new app ideas</li>
+<li> and what to consider when creating an app that competes directly with Apple.</li>
+</ul>
+<p>In honor of the upcoming Glitch Games hosted GigJam48, Ed has taken on the challenge to <a href=http://roaminggamer.com/2013/04/22/7-games-in-7-days/ target="_blank">create 7 games in 7 days</a> as a way of warming up for the hackathon. Now that&#8217;s the spirit! </p>
+<p>Also, be sure buy your early release copy of Dr. Burton&#8217;s book. You <a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">get a copy of the book now</a>, a discount, and the final copy when its finished. Watch/listen to the full hangout for more details.</p>
+<div style="clear: both;"></div>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Jimmy McGuire for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-36/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-36-2013-04-22-facebook-plugins-dear-john.mp3" length="52468222" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-36-2013-04-22-facebook-plugins-dear-john.mp3" length="52468222" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-36-2013-04-22-facebook-plugins-dear-john.mp3" length="52468222" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-36-2013-04-22-facebook-plugins-dear-john.mp3" length="52468222" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona and Facebook Technology Partners</title>
+		<link>/blog/2013/04/18/corona-and-facebook-technology-partners/</link>
+		<comments>/blog/2013/04/18/corona-and-facebook-technology-partners/#comments</comments>
+		<pubDate>Thu, 18 Apr 2013 16:28:14 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Facebook]]></category>
+
+		<guid isPermaLink="false">/?p=32229</guid>
+		<description><![CDATA[Today Facebook announced the Facebook Technology Partners program. We're excited that Corona Labs is part of this program and we have worked to make sure Corona SDK fully supports the functionality that Facebook makes available to mobile developers. More specifically, we support the latest Facebook SDK on iOS (and will soon do so on Android as well). ]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/04/Screen-Shot-2013-04-18-at-9.18.29-AM.png" alt="FB and Corona" class="alignleft size-full wp-image-32278" />As you have undoubtedly heard, <a href=http://www.facebook.com>Facebook/</a> has been very focused on its mobile efforts lately. Today in fact, they announced the <a href=https://developers.facebook.com/blog/post/2013/04/18/next-evolution-of-facebook-platform-for-mobile/>Facebook Technology Partners</a> program. We are excited that Corona Labs is part of this program and we have worked to make sure Corona SDK fully supports the functionality that Facebook makes available to mobile developers. More specifically, we support the latest Facebook SDK on iOS (and will soon do so on Android as well). </p>
+<p>We are proud of how easy it is to develop great, connected apps with Corona SDK, and that is no less true when integrating Facebook into your apps. </p>
+<p>To get started, we&#8217;ve put together two great resources:</p>
+<p>1) <strong>Scrumptious sample app</strong> &#8211; This app replicates the functionality, in Corona SDK, of the Scrumptious Facebook sample app. You can find the project files in Corona SDK&#8217;s sample code folder (/SampleCode/Networking/Scrumptious), run it and analyze the code to see how it works.</p>
+<p>2) <strong><a href=http://youtu.be/e7Iv8yPbmYs>Screencast</a></strong> &#8211; This screencast walks through the functionality of the sample app and gives you an overview of the code and how it works. You can watch it below.</p>
+<p>Once you take a look at the code and watch the screencast, you will be well on your way to understanding how to build mobile apps integrated with Facebook to make them more social and engaging. As always, feel free to ask questions and discuss in our <a href=http://forums.coronalabs.com/>forums</a>.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/e7Iv8yPbmYs" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/18/corona-and-facebook-technology-partners/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

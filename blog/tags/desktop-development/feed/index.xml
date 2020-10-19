@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>desktop development &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/desktop-development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>desktop development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hiding the cursor in OS X and Windows desktop builds</title>
+		<link>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/</link>
+		<comments>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/#comments</comments>
+		<pubDate>Tue, 26 Jan 2016 17:16:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Win32]]></category>
+		<category><![CDATA[desktop development]]></category>
+
+		<guid isPermaLink="false">/?p=65404</guid>
+		<description><![CDATA[You can now show and hide the mouse cursor on Windows and OS X desktop builds. Learn how!]]></description>
+				<content:encoded><![CDATA[<p>Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2813</a>, you can now show and hide the mouse cursor in both OS X and Windows desktop builds. To hide the cursor, call:</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, false )</pre><p>To show it again, call the function again with <code>true</code> as the second parameter.</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, true )</pre><p>This completes the <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/11294433-optionally-hide-os-cursor-in-desktop-builds target="_blank">Optionally Hide OS Cursor in Desktop Builds</a> feedback request. If you have questions or need help, please discuss further it in the <a href=https://forums.coronalabs.com/topic/61330-from-the-blog-hiding-the-cursor-in-os-x-and-windows-desktop-builds/ target="_blank">forums</a>.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

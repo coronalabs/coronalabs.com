@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Daily Build &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/dailybuild/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Daily Build &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona now supports Dark Mode</title>
+		<link>/blog/2019/10/27/corona-now-supports-dark-mode/</link>
+		<pubDate>Sun, 27 Oct 2019 16:12:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+
+		<guid isPermaLink="false">/?p=76365</guid>
+		<description><![CDATA[Corona now supports Dark Mode. Learn more about how this feature might affect your apps!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-76366" src="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2019/10/LightModeDarkMode-150x150.png 150w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-300x300.png 300w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode-125x125.png 125w, /wordpress/wp-content/uploads/2019/10/LightModeDarkMode.png 344w" sizes="(max-width: 150px) 100vw, 150px" />Apple recently added support for Dark Mode. Dark Mode first appeared in macOS Mojave and continues with macOS Catalina. On iOS Dark Mode first appeared in iOS 13. Even tvOS supports it! Dark Mode is a popular feature because many people prefer light text on a dark background and there is evidence that it’s more energy friendly as well. Android supports &#8220;Dark Theme&#8221; starting with Android 10. Corona now supports this across all supported platforms as well.</p>
+<p>Starting with daily build 2019.3545 , Corona now recognizes Dark Mode automatically and updates <a href=http://docs.coronalabs.com/api/library/native/newTextField.html target="_blank" rel="noopener">native.newTextField()</a> and <a href=http://docs.coronalabs.com/api/library/native/newTextBox.html target="_blank" rel="noopener">native.newTextBox()</a> objects to work with the selected mode.</p>
+<p>In addition, <a href=http://docs.coronalabs.com/api/library/system/getInfo.html target="_blank" rel="noopener">system.getInfo(“darkMode”)</a> will return a true or false value, so you can now theme your app to the mode selected.</p><pre class="crayon-plain-tag">local darkMode = system.getInfo("darkMode")</pre><p>On iOS based builds, you can force your your app into &#8220;light&#8221; mode by adding an entry into the plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    iphone = 
+    { 
+         plist =
+         {
+               UIUserInterfaceStyle = "Light",
+         }
+     }
+}</pre><p>Please note, &#8220;Light&#8221; is case sensitive and must be capitalized. This works on older Corona builds and if you don&#8217;t want to update to the latest daily build, this is a way to keep the native text objects themed with your current app. If you want to do this for macOS builds, use this entry in your macOS plist:</p><pre class="crayon-plain-tag">settings = 
+{
+    macos = 
+    { 
+         plist =
+         {
+               NSRequiresAquaSystemAppearance = true,
+         }
+     }
+}</pre><p></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona is now 100% analytics free!</title>
+		<link>/blog/2018/12/27/corona-is-now-100-analytics-free/</link>
+		<pubDate>Thu, 27 Dec 2018 23:20:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76156</guid>
+		<description><![CDATA[Corona is stopping the collection of any statistics from built apps. Click through to learn the details!]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs will no longer be collecting any statistics from apps built with <a href=https://developer.coronalabs.com/downloads/daily-builds/ rel="noopener" target="_blank">daily build 2018.3454</a> or later. Many developers have asked for this feature and we are happy to do this for the community. As a closed source product, Corona Labs needed to collect basic app usage such as the number of sessions, daily average users, etc. As we transition to an open source product, we no longer need to collect this data.</p>
+<p>Simply download the latest daily build to take advantage of this new feature!</p>
+<p>We are looking forward to bring more good news and features soon!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Getting your Corona apps ready for GDPR!</title>
+		<link>/blog/2018/05/16/getting-your-corona-apps-ready-for-gdpr/</link>
+		<pubDate>Wed, 16 May 2018 19:06:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=75773</guid>
+		<description><![CDATA[GDPR is coming! What is Corona doing to help you get ready? Learn more in our GDPR update!]]></description>
+				<content:encoded><![CDATA[<p>Great news Corona developers! Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">daily build 2018.3286</a>, metrics collected by Corona-made apps are now GDPR safe. We no longer collect any ID&#8217;s or data points that would be considered personal data under these data regulations.</p>
+<p>We will be updating our privacy policy to reflect these changes. Keep in mind that builds of Corona pre-2018.3286 are not GDPR compliant and if you have apps for sale in the EU they will need to be updated with 2018.3286 or later.</p>
+<dl>
+<dt><strong>Q. What is GDPR?</strong></dt>
+<dd>A. GDPR stands for &#8220;<em>General Data Protection Regulation</em>&#8220;. It&#8217;s a law affecting businesses established in the European Union or has end users based in the EU that requires you to get explicit permission from users to collect private data and manage that data. Businesses that don&#8217;t comply can face heavy fines.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What if I want to continue to use a public build or older daily build?</strong></dt>
+<dd>A. Then you will still need to update your apps and present the user a dialog box asking for permission for Corona to collect data in addition to any other services that you need to also ask permission for.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What is the best way to know if my user is in the EU?</strong></dt>
+<dd>A. Because users travel or may use technologies like VPNs, there is no reliable way to determine if a resident of the EU is in the EU. Also, other privacy laws are changing to be more stringent in additional areas. It&#8217;s best to ask all users for this permission.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What do I need to do to get permission from our app users?</strong></dt>
+<dd>A. There are several steps you need to complete to give your users the opportunity to control their data.</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Present a dialog to your users explaining that you&#8217;re using third-party services that collect private data.</li>
+</ol>
+</li>
+</ol>
+<p><img class="alignnone size-large wp-image-75779" src="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png" alt="" width="1024" height="597" srcset="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png 1024w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-300x175.png 300w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-768x448.png 768w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-700x408.png 700w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-125x73.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<ol start="2">
+<li>Make sure to include a link to your privacy policy. To save space in your dialog, your privacy policy should link to the privacy policies of any service you&#8217;re using.</li>
+<li>Your dialog can present the user an on/off switch for each service to allow the end user to choose which services they want to grant permission to or decline permission. That switch should default to <code>off</code> since the intent is to get &#8220;opt-in&#8221; from the end user. See the UK&#8217;s Information Commissioner&#8217;s Office <a href=https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/consent/ target="_blank" rel="noopener">document on GDPR Consent</a></li>
+<li>Store the settings locally so you can remember their choices. Saving the settings online will require you to store personal data and you would have to ask permission for that.</li>
+<li>On a settings screen, include options to allow the user to select to turn on or off permissions.</li>
+<li>When the user changes their mind, then your app can react to those changes.</li>
+<li>For now, if a user declines to use a service, simply use &#8220;if&#8221; statements to not initialize the plugin or call any methods of that plugin. If they later change their mind, then you can initialize the plugin and call it&#8217;s methods.</li>
+<li>As services update their SDK&#8217;s to offer GDPR management API&#8217;s and we update our plugins to support them, you can update your apps to add support. As an example, Appodeal&#8217;s new SDK will support showing non-targeted ads to users who don&#8217;t grant permission and higher quality ads to those who grant permission. There will be a way to let Appodeal&#8217;s SDK know if the user has granted permission or not.</li>
+</ol>
+</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What changes do I need to make to take advantage of a plugin&#8217;s GDPR features?</strong></dt>
+<dd>A. Unfortunately every plugin provider is implementing this in radically different ways. Some will require you to pass a consent parameter on an initialization call, others are handling their own permission, others will have methods in their SDK to manage data. As we update the plugins to be GDPR compliant, we are also updating each <a href=https://docs.coronalabs.com/plugin/index.html target="_blank" rel="noopener">plugin&#8217;s documentation</a>. There should be a yellow note near the top of each plugin&#8217;s page that points you to GDPR additions to be aware of.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. How will I know when a plugin has been updated?</strong></dt>
+<dd>A. The best way is to check the documentation page and look for the GDPR note at the top of the document.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q: Where I can learn more about GDPR compliance?</strong></dt>
+<dd>A: See the following:</p>
+<ul>
+<li>The EU&#8217;s official site &#8211; <a href=https://gdpr-info.eu/ target="_blank" rel="noopener">https://gdpr-info.eu/</a></li>
+<li>Appodeal&#8217;s primary GDPR page: <a href=https://www.appodeal.com/home/gdpr/ target="_blank" rel="noopener">https://www.appodeal.com/home/gdpr/</a></li>
+<li>Appodeal&#8217;s GDPR guide &#8211; <a href=https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/</a></li>
+<li>Appodeal&#8217;s Blog &#8211; <a href=https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/</a></li>
+</ul>
+</dd>
+</dl>
+<p>Corona is committed to making sure you can be compliant with these laws. If you have questions about this, please ask in our <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Happy New Year from Corona Labs!</title>
+		<link>/blog/2017/01/04/happy-new-year-from-corona-labs/</link>
+		<pubDate>Wed, 04 Jan 2017 22:22:21 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69356</guid>
+		<description><![CDATA[Welcome to 2017! We have an exciting year ahead, plus a few last-minute features which wrapped up 2016. Read further to learn about them.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-67801" src="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png" alt="Corona Labs logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/corona_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/corona_logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/08/corona_logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/08/corona_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/corona_logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/08/corona_logo.png 862w" sizes="(max-width: 150px) 100vw, 150px" />Welcome to 2017! We are excited as we roll into the new year, fresh off one of the most productive years in Corona&#8217;s history.</p>
+<p>As we all return from our various holiday breaks, let&#8217;s look at a few &#8220;new year surprises&#8221; which our engineering team added to Corona, making the product even better for our customers! Note that you will need <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3012</a> or later to pick up these new features.</p>
+<p><strong>1. <a href=https://docs.coronalabs.com/daily/api/library/native/newWebView.html target="_blank">native.newWebView()</a> for Windows desktop builds and the Windows Simulator</strong></p>
+<p>This feature was a highly requested item &#8212; now we offer <a href=https://docs.coronalabs.com/daily/api/library/native/newWebView.html target="_blank">native.newWebView()</a> support on every platform except for Windows Phone 8 and tvOS.</p>
+<p><strong>2. <a href=https://docs.coronalabs.com/daily/guide/events/touchMultitouch/index.html?#multitouch target="_blank">Multi-touch support</a> for Windows touchscreen devices</strong></p>
+<p>If you have a Windows laptop that supports touchscreen or a Microsoft Surface™ device, you can now access multi-touch events in Windows desktop builds and the Corona Simulator for Windows. Note that this requires Windows 7 or later and that styluses are not currently supported.</p>
+<p><strong>3. New <a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html?#manufacturer target="_blank">system.getInfo(&#8220;manufacturer&#8221;)</a> API call</strong></p>
+<p>This requested feature lets you get more information about the device your app is running on. This new API works on all platforms except for Windows Phone 8.</p>
+<p><strong>4. Modernized Simulator device skins</strong></p>
+<p>We cleaned up the selection of device skins to make it better represent today&#8217;s supported devices.</p>
+<h3>Into 2017&#8230;</h3>
+<p>We expect 2017 to include an ever-improving core product with which you can build incredible cross-platform apps. Corona developers accomplished some <em>amazing</em> things in 2016, from successful mobile games all the way to a <a href=/blog/2016/04/26/case-study-jordanian-tv-game-show-arrange-it-correctly-powered-by-corona/ target="_blank">Corona-powered game show</a>. For some of you, it was the achievement of publishing your first app, and for one studio <a href=/blog/2016/11/25/laser-dogs-latest-game-dont-grind-featured-in-itunes/ target="_blank">featured by Apple</a>, it was reaching the lofty height of over <a href=https://twitter.com/laserdoggames/status/807619783747399680 target="_blank">4 million installs</a>.</p>
+<p>Your creativity and passion fuels our drive to be the best 2D cross-platform engine on the planet. Please join us in the <a href=http://forums.coronalabs.com/index.php target="_blank">Corona Forums</a> and tell us about your successes, your visions, and your goals for 2017!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing new preference storage features</title>
+		<link>/blog/2016/09/21/introducing-new-preference-storage-features/</link>
+		<pubDate>Wed, 21 Sep 2016 18:26:36 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=68080</guid>
+		<description><![CDATA[Great news! We've added the ability to store/retrieve settings via preferences in a cross-platform manner. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67801" style="margin: 0px 0px 20px 30px;" src="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png" alt="Corona Labs logo" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/corona_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/corona_logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/08/corona_logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/08/corona_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/corona_logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/08/corona_logo.png 862w" sizes="(max-width: 120px) 100vw, 120px" />Many developers have requested the ability to set &#8220;preferences&#8221; within their apps as a way to store settings and other small amounts of data without having to load, parse, and save a file in the operating system.</p>
+<p>For Windows apps, this could mean having access to registry settings, or for macOS, iOS, and tvOS, the ability to read and write from the app&#8217;s <code>NSUserDefaults</code>. This is especially important for tvOS since apps cannot rely on a saved settings file (tvOS may remove files from <code>system.DocumentsDirectory</code> if it needs storage space for other apps).</p>
+<p>In response, Corona&#8217;s engineers have added functionality to the existing <a href=https://docs.coronalabs.com/daily/api/library/system/getPreference.html target="_blank">system.getPreference()</a> API <strong>and</strong> they have created two new APIs in <a href=https://docs.coronalabs.com/daily/api/library/system/setPreferences.html target="_blank">system.setPreferences()</a> and <a href=https://docs.coronalabs.com/daily/api/library/system/deletePreferences.html target="_blank">system.deletePreferences()</a>.</p>
+<p>Here are some important things to understand about this set of APIs:</p>
+<ul>
+<li>Previously, <a href=https://docs.coronalabs.com/daily/api/library/system/getPreference.html target="_blank">system.getPreference()</a> was used to get read-only information about the user interface (UI) and locale settings. We have extended this API to allow you to retrieve key-value pairs in a cross-platform manner.</li>
+<li><a href=https://docs.coronalabs.com/daily/api/library/system/getPreference.html target="_blank">system.getPreference()</a> is <strong>singular</strong> and retrieves a single value based on the key.</li>
+<li><a href=https://docs.coronalabs.com/daily/api/library/system/setPreferences.html target="_blank">system.setPreferences()</a> and <a href=https://docs.coronalabs.com/daily/api/library/system/deletePreferences.html target="_blank">system.deletePreferences()</a> are <strong>plural</strong> and accept a table of multiple entries to facilitate better performance.</li>
+<li>These are <strong>storage-related</strong> APIs &#8212; they are not designed to create or manage any UI elements within the particular operating system.</li>
+<li>Only numbers, booleans, and strings are supported. If you need to save a table of data, you can use <a href=https://docs.coronalabs.com/api/library/json/encode.html target="_blank">json.encode()</a> to encode the table and then save it as a string.</li>
+<li>These APIs are designed to store <strong>small amounts of data</strong>. If you need to save large amounts of data, consider the traditional methods of using a stored file/database or cloud storage.</li>
+<li>Setting and deleting preferences are blocking actions and can affect performance. This is more noticeable on some operating systems than others (Android is the most costly, followed by Windows; Apple platforms perform the best).</li>
+<li>Apps running in the Corona Simulator will have their own preferences on a per-app basis. Apps built to run on Windows or macOS will have their own settings.</li>
+<li>These APIs are not currently available for Windows Phone 8.</li>
+<li>On Windows, preferences are stored in an SQLite database by default. If you&#8217;re interested in having preferences saved in the Windows registry, there are a few additional things to be aware of. Please see the <a href=https://docs.coronalabs.com/daily/guide/distribution/win32Build/index.html?#win32-platform-settings target="_blank">Creating Win32 Desktop Apps</a> guide for more details.</li>
+</ul>
+<h3>In conclusion</h3>
+<p>These APIs are available in major build <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">2016.2949</a>. Click on the documentation links above to learn more about each individual API, as well as the Win32 setup options. Finally, feel free to join us in the <a href=https://forums.coronalabs.com/ target="_blank">Corona Forums</a> to discuss these features further.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona major build release 2016.2949</title>
+		<link>/blog/2016/09/19/corona-major-build-release-2016-2949/</link>
+		<pubDate>Mon, 19 Sep 2016 22:50:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=68100</guid>
+		<description><![CDATA[Corona Labs is pleased to announce build 2016.2949 as a major release. Click through to read the details!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67801" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png" alt="Corona Labs logo" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/corona_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/corona_logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/08/corona_logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/08/corona_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/corona_logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/08/corona_logo.png 862w" sizes="(max-width: 120px) 100vw, 120px" />Corona Labs is pleased to announce the immediate availability of build <a href=http://developer.coronalabs.com/content/coronasdk-20162949-0 target="_blank">2016.2949</a> as a major release.</p>
+<p>There are several reasons for this, but the main impetus was recent changes in Apple&#8217;s submission process. Because of their new requirements for app submissions, our previous public build (2016.2906) can&#8217;t be used by developers submitting apps for iOS/tvOS, and it was not practical to retrofit that build to meet Apple&#8217;s new guidelines. Since our next intended public release is at least a month away, we felt it necessary to provide a major release that works with Apple&#8217;s new rules.</p>
+<p>This major release also includes the <strong>iOS 10</strong> SDK &#8212; you can now use Xcode 8 and the iOS 10 SDK to build apps, or you can continue with Xcode 7.3 and the iOS 9 SDK.</p>
+<p>Starting today, downloading the public build will get you build <a href=http://developer.coronalabs.com/content/coronasdk-20162949-0 target="_blank">2016.2949</a> instead of 2016.2906.</p>
+<h3>And more&#8230;</h3>
+<p>In the current development cycle, our engineers have been working hard on addressing infrastructure and core improvements to Corona to make a more stable platform. See the release notes below for a list of many of the changes in this release, including new features which we plan to announce over the next couple of weeks.</p>
+<p>One of these features is new &#8220;splash screen&#8221; controls, a system which will drastically simplify splash screen implementation. Starting with this build, a default Corona-branded splash screen will appear briefly when the app starts. We continue to believe in keeping Corona free to use, but we also need to grow Corona. A few seconds of branding will help improve our brand awareness. For those who want to use their own branding, you can purchase a plugin from the <a href=https://marketplace.coronalabs.com/plugin/splash-screen-control target="_blank">Corona Marketplace</a> for $99/year per user &#8212; this will let you use your own image for the splash screen or disable it completely. In summary, the splash screen feature will help us continue to build the best cross-platform 2D app development platform in the market.</p>
+<p>As a bonus, we&#8217;ve also re-designed the developer portal at <a href=https://portal.coronalabs.com/ target="_blank">portal.coronalabs.com</a>. With this new portal, you have quick access to useful resources like the <a href=https://monetize.coronalabs.com/ target="_blank">Corona Ads dashboard</a>, <a href=https://docs.coronalabs.com/ target="_blank">documentation</a>, the <a href=https://docs.coronalabs.com/guide/programming/index.html target="_blank">Getting Started</a> guide, bug reporting, community forums, and the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. You can also quickly view your existing subscriptions and access/update your account information.</p>
+<h3>Release notes (2016.2949)</h3>
+<ul>
+<li>macOS: improve reliability of &#8220;Copy to device&#8221; option on build dialogs; add &#8220;Retry&#8221; button for when you forget to plug in a device.</li>
+<li>Simulators: add missing &#8220;Borderless&#8221; skin in iPad Pro size.</li>
+<li>Fixed issue with splash screen code which caused stacktraces to appear for some people when the splash screen was disabled.</li>
+<li>macOS: Removed beta tag from iOS and tvOS building with Xcode 8.0.</li>
+<li>iOS, tvOS: fix issue which prevented apps being submitted to the App Store.</li>
+<li>macOS: Added Back key support for Android skins in Simulator (Hardware→Back).</li>
+<li>Core: Fixed crash when custom shader contains empty table. Casenum 5894470.</li>
+<li>Core: Added ability to read/write custom &#8220;app&#8221; preferences to storage. See APIs <a href=https://docs.coronalabs.com/api/library/system/getPreference.html target="_blank">system.getPreference()</a>, <a href=https://docs.coronalabs.com/api/library/system/setPreferences.html target="_blank">system.setPreferences()</a>, and <a href=https://docs.coronalabs.com/api/library/system/deletePreferences.html target="_blank">system.deletePreferences()</a>.</li>
+<li>Android: Fixed a potential crash that can occur when an app with notification permissions is updated to remove said permissions. Casenum 40070.</li>
+<li>Windows: Fixed bug where &#8220;mouse&#8221; event would not provide a double right click or double middle click&#8217;s 2nd down phase.</li>
+<li>macOS, Windows: fix issue with app sometimes exiting when a build is requested. No casenum.</li>
+<li>Core: Fixes crash caused by an out-of-range frame index for Image Sheets when used with <a href=https://docs.coronalabs.com/api/library/display/newImage.html target="_blank">display.newImage()</a>. Now it will display a warning message and default to the last frame in the Image Sheet (same behavior as with <a href=https://docs.coronalabs.com/api/library/display/newImageRect.html target="_blank">display.newImageRect()</a>). Casenum: 47013.</li>
+<li>Physics: Fixed debug draw mode to show the real position of physics bodies in groups that have been scaled or translated. This doesn&#8217;t fix the issue with using physics objects in groups but will display the true location of the physics body in relation to the display object. Casenum: 46663.</li>
+<li>Windows, macOS: display a message in the console if an app closes because <a href=https://docs.coronalabs.com/api/library/native/requestExit.html target="_blank">native.requestExit()</a> was called. No casenum.</li>
+<li>Android: Fixed an issue where setting the <code>minSdkVersion</code> in <code>build.settings</code> could only go as high as API Level 21 (Android 5.0). Now this can be set as high as API Level 23 (Android 6.0).</li>
+<li>Android &#8211; Enterprise: Added new APIs for interacting with packages on Android devices (PackageServices). These can be used to quickly tell if a package is installed and enabled on a device.</li>
+<li>Core: fixing new display objects not triggering scene update after <code>display.save()</code>.</li>
+<li>macOS: Handle hung iOS device installs correctly. No casenum.</li>
+<li>Updated viewer subrepo to latest version.</li>
+<li>Core: fixing culling offscreen objects with <code>display.save()</code>. Casenum 43011.</li>
+<li>Enterprise: fix issue with signing apps. No casenum.</li>
+<li>iOS: tweaks for iOS 10 beta.</li>
+<li>OS X: Support builds against iOS/tvOS 10.0 beta.</li>
+<li>Core: fixing crash when using TextureResourceCanvas as mask. Hit testing doesn&#8217;t work for these masks.</li>
+<li>Core: fixing TextureResourceCanvas not invalidating if released in same frame.</li>
+<li>Core: tweaking warning messages when fill images contain invalid data.</li>
+<li>Core: fixing containers sometimes affecting masked objects (casenum 46668).</li>
+<li>Core: fixing crash when changing masks within frame (casenum 46685).</li>
+<li>Windows: Improved clarity of text in top-right corner of the Welcome window (was blurry).</li>
+<li>Add total elapsed time to the &#8220;build succeeded&#8221; line for all build types.</li>
+<li>OS X, Windows: change build process to download built app directly from S3 to improve build latencies. No casenum.</li>
+<li>tvOS Enterprise: fixing various issues with bitcode.</li>
+<li>OS X: improve dafaults for Build dialog. Casenum 44272.</li>
+<li>Make the location of the output archive more deterministic.</li>
+<li>OS X: improve logging performance under some circumstances. No casenum.</li>
+<li>Fix issue with some iOS plugin builds.</li>
+<li>OS X, Windows: improve unconfigured plugins warning message. No casenum.</li>
+<li>Android: Fixed an issue introduced in build 2016.2825 where <a href=https://docs.coronalabs.com/api/library/media/selectPhoto.html target="_blank">media.selectPhoto()</a> and <a href=https://docs.coronalabs.com/api/library/media/selectVideo.html target="_blank">media.selectVideo()</a> would fail on devices older than Android 4.1. Casenum 46579.</li>
+<li>OS X: don&#8217;t warn incorrectly about plugins in Desktop apps. Casenum 46336.</li>
+<li>OS X: fix issue with downloading very large apps during builds. No casenum.</li>
+<li>OS X: fix performance issues with native controls and mouse cursor on some computers. Casenum 46495.</li>
+<li>OS X: fix issue with running Simulator on OS X 10.9. No casenum.</li>
+<li>Remove references to <code>[NSString constainsString:]</code> and replace with <code>[NSString+Extensions contains:]</code>.</li>
+<li>OS X: stop mouse and location events firing when Simulator is suspended. Casenums 46574, 44126.</li>
+<li>OS X: don&#8217;t include <code>build.settings</code> in built app. No casenum.</li>
+<li>Android &#8211; Enterprise: Maintenance.</li>
+<li>Android &#8211; Enterprise: Fixed an issue where <code>PermissionsServices.findAllPermissionsInManifestForGroup()</code> would return null if a permission was requested that doesn&#8217;t exist on the device, e.g. <code>"com.sec.android.provider.badge.permission.READ"</code> on a non-Samsung device. Casenum 46616.</li>
+<li>Android: <a href=https://docs.coronalabs.com/api/library/system/hasEventSource.html target="_blank">system.hasEventSource(&#8220;heading&#8221;) </a>no longer assumes all Android devices have compass hardware.</li>
+<li>tvOS: adding <a href=https://docs.coronalabs.com/api/library/native/showPopup.html target="_blank">native.showPopup(&#8220;appStore&#8221;)</a>; fixing error message for iOS.</li>
+<li>iOS Enterprise: added <code>CoronaEventDataKey()</code>.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Corona Labs is committed to bringing you the best 2D programming platform on the market. If you would like to discuss this release, please join us in our <a href=https://forums.coronalabs.com/ target="_blank">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Submitting apps to Apple&#8217;s iTunes Connect</title>
+		<link>/blog/2016/09/14/submitting-apps-to-apples-itunes/</link>
+		<pubDate>Wed, 14 Sep 2016 20:46:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=68058</guid>
+		<description><![CDATA[Great news! Corona developers can submit to Apple's iTunes Connect again. Read further to get the details.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-58813" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2014/06/apple-129x150.jpg" alt="Apple logo" width="100" height="116" />Great news! Corona developers can submit to Apple&#8217;s iTunes Connect again, but doing so requires <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> or later.</p>
+<p>To better outline the context of this: When Apple enabled iOS 10 submissions following their September 7, 2016 keynote event, one of the updates was additional automatic scanning of files in the app bundle to detect potential issues. With this new process in place, everyone who submitted a Corona Simulator or Corona Enterprise build started getting a failure message from Apple due to problems with &#8220;app thinning.&#8221;</p>
+<p>Our engineers have been working tirelessly to discover the root cause of the problem and deliver a solution to Corona developers. Essentially, Apple is now scanning files with an extension that they were not previously looking at. Corona&#8217;s products used that extension for our internal files and it suddenly started being flagged as problematic. We have switched to a name-spaced extension that should not cause this issue in the future.</p>
+<p><strong>Remember, these fixes are only available in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2948</a> and later</strong> &#8212; you will have to update to this build in order to submit your apps to Apple.</p>
+<p>Thank you to everyone who reported issues and provided additional details. Your assistance and patience is truly appreciated!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Apple iOS and the IPv6 deadline</title>
+		<link>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/</link>
+		<comments>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/#comments</comments>
+		<pubDate>Fri, 27 May 2016 22:06:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=66979</guid>
+		<description><![CDATA[Starting on June 1, 2016, Apple will begin enforcing a new policy on apps that use networking. Read further to understand the implications of this policy and how it might affect you.]]></description>
+				<content:encoded><![CDATA[<p>Starting on <strong>June 1, 2016</strong>, Apple will start enforcing a <a href=https://developer.apple.com/news/?id=05042016a target="_blank">new policy</a> that you may need to be aware of. If your app does any networking – opening a WebView, doing a <a href=https://docs.coronalabs.com/api/library/network/request.html target="_blank">network.request()</a>, or using LuaSocket to talk to another server or device – then read on. If you&#8217;re not, you simply need to know the following:</p>
+<p><strong>TL/DR</strong>: All apps have to be IPv6 compliant after June 1, 2016.</p>
+<h3>A little history</h3>
+<p>For a long time, the Internet has used a four-byte (<code>0</code>&#8211;<code>255</code>) IP address to represent each connected device. In network jargon, this is known as <strong>IPv4</strong>. You&#8217;re probably familiar with them as they look like <code>192.168.1.15</code>. This pool of numbers is a worldwide resource and the Internet has run out of them.</p>
+<p>For the past several years, the Internet has been moving to a different way to give your computer, phone, tablet, and smart device a unique address. This new system is known as <strong>IPv6</strong> and it has a considerably larger pool of numbers which shouldn&#8217;t run out for a very long time.</p>
+<p>Since the Internet is out of IPv4 addresses, there are now some resources that are only identified by their IPv6 addresses. Apple wants to make sure your apps all work with the new networking numbers. Starting on June 1, 2016, any newly submitted or updated apps must work on networks that only allow IPv6 addresses.</p>
+<h3>What does this mean for you?</h3>
+<p>You can no longer use IP addresses instead of server names. This applies to every kind of networking from WebViews to socket calls. Sometimes, it is just easier to use the IP address of a server (i.e. <code>192.168.212.15</code>) instead of a server name (i.e. <code>www.example.com</code>), but this is no longer allowed. If you’re currently using IP addresses for your servers and need to switch, do an Internet search for <a href=https://www.google.com/?gws_rd=ssl#safe=off&q=dynamic+dns target="_blank">dynamic dns</a> and you’ll find a variety of services that will map server names to your IP addresses. If you have a domain name already, check out the DNS setup at your registrar which will let you set up your own mappings.</p>
+<p>Corona SDK has two lower-level networking layers that your apps may be utilizing: the <a href=https://docs.coronalabs.com/api/library/network/index.html target="_blank">network.*</a> API calls and the <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket.*</a> library. The <a href=https://docs.coronalabs.com/api/library/network/index.html target="_blank">network.*</a> API calls have been IPv6 compatible for some time. If you&#8217;re using the latest public build and only use these functions, you should be in good shape from a Corona perspective. However, if you are connecting to servers using their IP addresses instead of a server name, you will need to stop using the IP address and use a server name instead.</p>
+<p>If you&#8217;re using <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket.*</a>, you will need to get <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2883</a> or later and rebuild your app. Essentially, this build has an upgrade to the latest LuaSocket library that supports IPv6.</p>
+<h3>How do you know if you&#8217;re using sockets?</h3>
+<p>If you are using third-party plugins or libraries, then you may need to make sure they work as expected. If you are doing any peer-to-peer connectivity (where to devices talk to each other without going through a network server), or are implementing your own FTP file transfer, then the library you&#8217;re using may need updating to avoid using IP addresses.</p>
+<p>If you’re using LuaSocket, let’s look at some typical code that needs to be changed:</p><pre class="crayon-plain-tag">local socket = require( &quot;socket&quot; )
+
+local serverName = &quot;ipv4.test-ipv6.com&quot;
+local server_address, mesg = socket.dns.toip( serverName )  -- IPv4
+
+print( &quot;server_address: &quot;, serverName, server_address, mesg )</pre><p>Since the <code>socket.dns.toip()</code> call only works for IPv4 addresses, it needs to be changed to the more modern equivalent:</p><pre class="crayon-plain-tag">local socket = require( &quot;socket&quot; )
+
+local serverName = &quot;ipv6.test-ipv6.com&quot;
+local addr_info, mesg = socket.dns.getaddrinfo( serverName )
+print( &quot;server_address: &quot;, addr_info[1].addr, mesg )</pre><p>If you’ve already changed over to (or started with) the more modern <code>socket.dns.getaddrinfo()</code> style calls, then you should be good to go.</p>
+<h3>Conclusion</h3>
+<p>iOS will be able to talk to IPv4 sites for the foreseeable future. However, if the only way your app uses the Internet is with IPv4, then Apple will not approve your app or any updates to it. Apple will not be taking any apps down, so you do not need to update existing apps. But any updates you do submit or new apps will be subject to this policy.</p>
+<p>To learn more, read Apple&#8217;s <a href=https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html?#//apple_ref/doc/uid/TP40010220-CH213-SW1 target="_blank">developer documentation</a> on the issue.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/27/apple-ios-and-the-ipv6-deadline/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Android Studio templates now available for Corona Enterprise</title>
+		<link>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/</link>
+		<comments>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/#comments</comments>
+		<pubDate>Wed, 25 May 2016 20:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+
+		<guid isPermaLink="false">/?p=66638</guid>
+		<description><![CDATA[Android Studio support for Corona Enterprise is here! Read further to learn how Android Studio can benefit your development.]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2886</a>, Android and iOS development for Corona Enterprise are finally on equal footing; Android Studio support for Corona Enterprise is here!</p>
+<p>Google released Android Studio 1.0 as the official IDE for Android Development in December 2014. This change brought several useful tools to the Android development landscape, but focused around the development of standard Android applications.</p>
+<p>For Corona Enterprise on Android, we simply relied on the Android command line tools and custom scripts for doing Enterprise development; no IDE integration whatsoever. This left Android Enterprise developers with very few tools to iterate on code quickly and the whole process more painful than it had to be.</p>
+<h3>What about the old project model?</h3>
+<p>Just as Google moved away from the Ant build system, so are we. Android Studio is the present and future; this is where we want to be.</p>
+<p>Now that Android Studio templates are available, <strong>the Ant project templates have been deprecated</strong> and all new Enterprise projects should use Android Studio.</p>
+<p>Despite being deprecated, documentation for using Enterprise with the Ant build system will still be available through around September or October of this year.</p>
+<h3>Getting started with Android Studio</h3>
+<p>If you&#8217;re new to Corona Enterprise or Android Studio, see our <a href=https://docs.coronalabs.com/daily/native/android/prereqs.html target="_blank">Android Prerequisites</a> guide for instructions on how to set up Android Studio for Corona Enterprise development.</p>
+<h3>Migrating to Android Studio</h3>
+<p>For existing Android Enterprise projects, see our <a href=https://docs.coronalabs.com/native/android/androidStudio/index.html>Migration to Android Studio</a> guide. We will be <strong>dropping support for the Ant project model </strong>in the coming months. Specifically, the public release in <strong>September/October</strong> will mark the end of Ant project support for Corona Enterprise. Please have all of the Enterprise apps that you&#8217;ll continue to support migrated by this time.</p>
+<h3>How Android Studio makes development easier</h3>
+<p>Android Studio brings several useful tools that make the Android Enterprise developer&#8217;s life much easier. Some of these include:</p>
+<h4>Code completion</h4>
+<p>Can&#8217;t remember what that exact Android API was? No problem – Android Studio&#8217;s got you covered!</p>
+<h4>Static Code Analyzer</h4>
+<p>This handy tool can inspect Java code throughout your project and help you catch possible bugs, simplify complex code snippets, find coding style issues, typos, and so much more. We highly recommend giving this a run via Analyze → Inspect Code&#8230;</p>
+<h4>JAR Decompilation</h4>
+<p>Ever been in a situation where your app is crashing inside some library that you don&#8217;t have the source code to? Assuming that library isn&#8217;t obfuscated with ProGuard, the JAR decompilation tool will let you take a peek into the implementation for better understanding of the library.</p>
+<h4>Integrated support for Android Virtual Device (AVD) testing</h4>
+<p>While it was possible to test out Corona Enterprise projects using Android Virtual Devices (AVDs) before, Android Studio makes this significantly better by offering improved performance and easy integration into the IDE.</p>
+<p>Testing with AVDs does come with some caveats you should be aware of:</p>
+<ul>
+<li>Since Corona is built with the ARMv7 architecture in mind, be sure to <strong>only</strong> use system images with ABI: <strong>armeabi-v7a</strong>.</li>
+<li>AVDs do <strong>not </strong>have Google Play installed on them. This means that testing things like Google Licensing, Expansion Files, or IAP cannot be done in AVDs.</li>
+<li>AVDs are a little slow to boot. Be patient and don&#8217;t accidentally close one AVD after running a single test.</li>
+</ul>
+<h4>No more command line</h4>
+<p>You can now do all building, deployment, and view logcat through Android Studio. No need for shell scripts!</p>
+<h4>No guessing at API Levels for Android APIs</h4>
+<p>Android Studio warns you if you use an API that was introduced later than your <code>minSDKVersion</code>. No more redesigning for older Android versions at the last minute.</p>
+<h4>Easier integration of common external libraries</h4>
+<p>While this doesn&#8217;t apply to libraries that are only distributed as JAR files, Android Studio makes it significantly easier to add things like the Android Support libraries and Google Play Services to your projects.</p>
+<p>A simple line in the dependencies block of your <code>build.gradle</code> script it all it takes for adding in whichever version of the Android Support libraries you desire:</p><pre class="crayon-plain-tag">dependencies {
+    ...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+}</pre><p>For Google Play Services, you can even <a href=https://developers.google.com/android/guides/setup?#add_google_play_services_to_your_project>select which components of it</a> to compile into your app. This is especially helpful if your app is getting close to the <a href=http://developer.android.com/tools/building/multidex.html?#about>method reference limit</a> for a single dex file.</p>
+<h4>Multi-dex support is now easy as pie</h4>
+<p>This can now be added to Corona Enterprise projects using the simple steps outlined by Google <a href=http://developer.android.com/tools/building/multidex.html target="_blank">here</a>.</p>
+<h3>Testimonials</h3>
+<p>Still not convinced that Android Studio is the best thing since sliced bread? Read these testimonials from our engineers:</p>
+<ul>
+<li><em>&#8220;I don&#8217;t have to switch between Sublime Text and the Terminal 200 times a day now!&#8221;</em> — Danny Glover</li>
+<li><em>&#8220;It&#8217;s like Xcode for Android&#8230;.but better.&#8221;</em> — Ingemar Bergmark</li>
+<li><em>&#8220;The only disadvantage of using Android Studio over the old Ant method is&#8230; oh, well, there is none.&#8221;</em> — Sergey Lerg</li>
+</ul>
+<h3>Regarding AVD testing</h3>
+<p>If you&#8217;re giving AVD testing a try for the first time with Android Studio, there are some best practices you should be aware of:</p>
+<p>You <strong>should </strong>use AVD testing for:</p>
+<ul>
+<li><strong>Testing UI on form factors that aren&#8217;t readily available to you.</strong> While Google&#8217;s <a href=https://developers.google.com/cloud-test-lab/overview>Android Cloud Test Lab</a> does allow some form of UI testing, you&#8217;ll be able to iterate faster using AVDs.</li>
+<li><strong>Testing with OS versions that aren&#8217;t readily available to you.</strong> If your app is using some APIs or features that aren&#8217;t available on all the API Levels you support, this is a good way to quickly test behaviors on any questionable API levels.</li>
+<li><strong>Testing situations that are difficult to set up on actual devices.</strong> The emulator that AVDs run in allow you to mock up situations that may be more difficult to test on real hardware. For example, you can mock up the battery state and phone calls.</li>
+</ul>
+<p>You <strong>should not</strong> use AVD testing for:</p>
+<ul>
+<li><strong>Performance testing.</strong> Because this is an emulated environment, the performance you see with an AVD is not the same as what you&#8217;ll see on real hardware. For bigger apps, testing in this manner may not produce usable/practical results.</li>
+<li><strong>As a substitute for on-device testing.</strong> You should make sure your app works on a plethora of actual hardware before submitting it anywhere.</li>
+</ul>
+<p>For more info, consult Google&#8217;s <a href=http://developer.android.com/tools/devices/managing-avds.html>Managing AVDs with the AVD Manager</a> Guide.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>What is Corona Engineering up to these days?</title>
+		<link>/blog/2016/03/22/what-is-corona-engineering-up-to-these-days/</link>
+		<comments>/blog/2016/03/22/what-is-corona-engineering-up-to-these-days/#comments</comments>
+		<pubDate>Tue, 22 Mar 2016 17:10:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=66175</guid>
+		<description><![CDATA[We have some lofty plans for our engineers over the next few months. Learn what they are going to be up to.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-62993" src="/wordpress/wp-content/uploads/2015/06/code-feature-150x150.png" alt="code-feature" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/06/code-feature-150x150.png 150w, /wordpress/wp-content/uploads/2015/06/code-feature.png 250w" sizes="(max-width: 150px) 100vw, 150px" />At Corona Labs, we like to be as forthcoming as possible, and that includes a certain level of transparency around what the team is currently working on. </p>
+<p>The problem with &#8220;road maps&#8221; is that they tend to be considered &#8220;promises&#8221; and in today&#8217;s rapidly-changing app development world, we must remain nimble so we can change directions when the market demands it.</p>
+<p>That being said, we want to provide insights into what we are working on at the moment. The following tasks are high on our list:</p>
+<h3>Complex plugin support</h3>
+<p>As you may have noticed, we are steadily <a href=https://store.coronalabs.com>creating/ new plugins</a>. In doing so, we&#8217;ve discovered a need for some core foundational work, which must occur before we can add more complex plugins. This includes plugin versioning and dependencies on other plugins. While this won&#8217;t be very visible to developers, it is important infrastructure work.</p>
+<h3>tvOS</h3>
+<p>Much of the recent work on tvOS support revolved around better remote support and event handling. We are also very close to offering support for &#8220;on-demand resources&#8221;, and we are investigating improved video support.</p>
+<h3>Windows</h3>
+<p>We want to bring Windows support up to modern standards, including support for Visual Studio 2015, and offer Enterprise and CoronaCards on Win32.</p>
+<h3>iOS</h3>
+<p>iOS and Android are quite solid at this point, although iOS 9 changed how permissions work. We are exploring a better framework to support this.</p>
+<h3>OS X</h3>
+<p>The OS X core is also in pretty good shape, but some effort will be allocated toward bringing Corona Simulator up to par with features found in the Windows version, for instance the sample app browser.</p>
+<h3>Android</h3>
+<p>On Android, we are facing some symbol limitations based on how plugin libraries are built. We are working on Multi-Dex support to handle this. For Corona Enterprise on Android, we are pretty much dependent on Command Line processing. Google has Android Studio, a nice IDE to build Android projects. We plan to get Enterprise working with Android Studio. There are also additional Android 6 features we want to support.</p>
+<h3>Cross-platform</h3>
+<p>There are quite a few things that benefit all platforms that we want to do. We intend to address Preference Storage (key-value storage), more plugin support features, move the widget library to a plugin and surface more widget types. And as always, we will continue to address bugs and feature requests.</p>
+<h3>Plugins</h3>
+<p>We will continue to add more ways for you to monetize and extend your apps along the way. Plugins in the pipeline include Amazon IAP V2, Hockey, Apsalar, Chromecast, Aerserv, CoronaAds, Google Play Game Services improvements, Google Cloud Save and more.</p>
+<h3>In summary</h3>
+<p>This list is far from complete and it&#8217;s subject to change. There are many other items on our goal list not listed here. If you don&#8217;t see your favorite request listed, please <a href=http://feedback.coronalabs.com/ target="_blank">vote up your feature request</a>. Your feedback helps us prioritize the work we do.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/22/what-is-corona-engineering-up-to-these-days/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

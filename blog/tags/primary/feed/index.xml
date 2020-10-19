@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>primary &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/primary/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>primary &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: DoodleMaths &#8211; teaching math the fun way</title>
+		<link>/blog/2016/03/17/case-study-doodlemaths-teaching-math-the-fun-way/</link>
+		<pubDate>Fri, 18 Mar 2016 01:23:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Education]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Education]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[doodle]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[math]]></category>
+		<category><![CDATA[primary]]></category>
+		<category><![CDATA[secondary]]></category>
+
+		<guid isPermaLink="false">/?p=66123</guid>
+		<description><![CDATA[In this case study, dive into EZ Education's DoodleMaths, a math education app from this UK based development studio. Learn more about this innovative team and their accomplishments.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66126" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png" alt="vIay5wqa" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-300x300.png 300w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-500x500.png 500w, /wordpress/wp-content/uploads/2016/03/vIay5wqa.png 551w" sizes="(max-width: 150px) 100vw, 150px" />In this post, we highlight <a href=https://www.doodlemaths.com/ target="_blank">DoodleMaths</a> by <a href=http://www.ezeducation.co.uk/ target="_blank">EZ Education</a>. DoodleMaths is an intuitive math app for children that allows them to consistently work at the best level for them. Its algorithm works to understand the level a child is currently working at and then it creates a work program for them so they can continually consolidate and learn new topics, rather than playing it safe and only doing what they know well.</p>
+<p>Tom Minor, along with co-founder Nicola Chilman, founded EZ Education in 2012 with the aim of enhancing  the way kids learn through adaptive learning programs. As experienced classroom educators, they have first-hand experience working with kids, and DoodleMaths is the top-selling math app for elementary school children in the UK.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/PvokxEqIDOo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>DoodleMaths has won many accolades. &#8220;We have had 5-star reviews from the Educational App Store and have recently won Best Mobile App at The SPARKies, run by TechSPARK. We have been in the top 10 of the education apps in iTunes, and we have been shortlisted for KPMG&#8217;s Best British Mobile Startup,&#8221; says Tom. &#8220;As a company, we have received numerous rewards and can proudly say we have the best selling primary maths app in the United Kingdom.&#8221;</p>
+<p><img class="alignnone size-full wp-image-66127" src="/wordpress/wp-content/uploads/2016/03/screen640x640.jpeg" alt="screen640x640" width="640" height="360" /></p>
+<h3>Building their app</h3>
+<p>The developers realized how much children engage with tablets and the huge potential for them to learn in a way that individually suits their needs. Their background as teachers and tutors meant that they had first-hand experience of how an app could work alongside common teaching methods in order to draw the most out of the child.</p>
+<p>For EZ Education, app development is an ongoing process, so they continuously iterate on their design and code base. The company has used Corona for development of their three existing applications and their upcoming fourth application. Thanks to Corona and the Lua language, they can develop a core app in around three months and smaller projects even faster.</p>
+<p><img class="alignnone size-full wp-image-66128" src="/wordpress/wp-content/uploads/2016/03/unnamed.jpg" alt="unnamed" width="512" height="384" /></p>
+<p>When asked about advice for developers, Tom says &#8220;My first bit of advice would be for newcomers. I would recommend that they read the tutorials and try out some sample applications to see how much time they could save. Corona really streamlines the development process.&#8221; He continues, &#8220;It was important to my team to establish a set of programming standards and best practices and we were easily able to find wonderful examples on the Corona <a href=https://code.coronalabs.com/code target="_blank">Code Exchange</a>. I recommend that others look there for patterns and inspiration when developing their own application.&#8221;</p>
+<h3>Going online</h3>
+<p>Some developers chase problems which they have little experience in solving. For some, it&#8217;s a challenge to learn new things, but sometimes recognizing that you need help is an important step. For EZ Education, their staff is educators. Building and hosting an online service is challenging, but DoodleMaths needed features to enable teachers to get the most out of the app. EZ Education found the solution in Bluefuse Systems (<a href=http://www.bluefusesystems.com>www.bluefusesystems.com/</a>) to develop parent and teacher dashboards. These dashboards contain features such as live monitoring, live messaging, and leaderboards, giving the students the ability to challenge each other while keeping the parents and teachers involved in their progress.</p>
+<h3>Conclusion</h3>
+<p>If you want to check out DoodleMaths and EZ Education&#8217;s other apps, visit their <a href=https://www.doodlemaths.com/ target="_blank">website</a> at <a href=https://www.doodlemaths.com/ target="_blank">https://www.doodlemaths.com/</a>. From there, you can download each of their apps on all of the supported platforms. DoodleMaths is a fun (but serious) tool used to educate children, and it was all built with Corona SDK. <a href=/ target="_blank">Get started today!</a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

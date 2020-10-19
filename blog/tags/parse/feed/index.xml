@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Parse &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/parse/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Parse &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #78 &#8211; Coronium Project, Parse, and Cloud Computing</title>
+		<link>/blog/coronageek/corona-geek-hangout-78/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-78/#comments</comments>
+		<pubDate>Mon, 24 Feb 2014 23:23:52 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[Parse]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=56481</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talked with Chris Byerley, aka DevElephant, to discuss his Coronium Cloud project that uses open source technology to create a data &#038; push stack for Corona SDK apps and games. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/liSppKMWRG8?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout we talked with Chris Byerley ( <a href=http://twitter.com/develephant target="_blank">@DevElephant</a> ) to discuss his <a href=http://wiki.coronium.org/ target="_blank">Coronium Cloud project</a> that uses open source technology to create a data &amp; push stack for Corona SDK apps and games. Chris has assembled an amazing stack of technology &#8220;for creating server-side components for your apps and games. Leveraging the Lua code that you already use in your Corona SDK projects you can easily call on <a href=http://bit.ly/1o1xqYn target="_blank">MySQL</a>, <a href=http://bit.ly/1jv1c7K target="_blank">MongoDB</a>, <a href=http://bit.ly/1chyfa3 target="_blank">PHP</a>, and <a href=http://bit.ly/1fOBfvv target="_blank">server-side Lua</a> to enhance your project. You can also integrate Push services from both <a href=http://bit.ly/1lgiEzL target="_blank">Apple</a> and <a href=http://bit.ly/Mpw910 target="_blank">Google</a> with the proper credentials.&#8221;</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://www.ladeezfirstmedia.com/category/parse-com/ target="_blank">Using Parse with Corona SDK (Tutorials)</a></li>
+<li><a href=http://bit.ly/1fz60Im target="_blank">DevElephant&#8217;s mod_parse module</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+<p><strong>Need to market your app?</strong> Sign up for a <a href=http://www.preapps.com/about-us target="_blank">PreApps developer account</a> and use the <strong>promo code &#8220;CoronaLabs&#8221;</strong> at checkout to try their <a href=http://www.preapps.com/featured-options target="_blank">PreApps Featured Feedback app posting</a> free for 30 days. Hurry, offer ends February 28th, 2014.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-78/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-78-2014-02-24-coronium-cloud-develephant-chris-byerley.mp3" length="44077631" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #77 &#8211; Using Parse With TableView Widgets and Match Three Game Design</title>
+		<link>/blog/coronageek/corona-geek-hangout-77/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-77/#respond</comments>
+		<pubDate>Mon, 17 Feb 2014 23:09:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[Parse]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=56253</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout Washington D.C business app developer Theo Rushin Jr. walked us through his solution for displaying data from a Parse database using TableView widgets. We also talked with Portland Oregon game developer, Ed Maurina about his new unorthodox match three game named Reflexivity. Ed explained some of the design decisions he made during development and how he handles user experience on different devices.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/RTdo_VUOagk?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During this week&#8217;s Corona Geek Hangout <a href=http://therush.wordpress.com/ target="_blank">Washington D.C business app developer</a> Theo Rushin Jr. walked us through his solution for displaying data from a Parse database using TableView widgets. We discussed how cloud services can be used to control various aspects of the user experience and data delivery. Theo&#8217;s <a href=http://bit.ly/O11f0y target="_blank">Just Say No app</a> makes use of TableView widgets in the menu system. We also talked with <a href=http://roaminggamer.com/ target="_blank">Portland Oregon game developer</a>, Ed Maurina about his new unorthodox <a href=http://bit.ly/1gcGg2h target="_blank">match three game</a> named Reflexivity. Ed explained some of the design decisions he made during development and how he handles user experience on different devices.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://www.ladeezfirstmedia.com/category/parse-com/ target="_blank">Using Parse with Corona SDK (Tutorials)</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+<p><strong>Need to market your app?</strong> Sign up for a <a href=http://www.preapps.com/about-us target="_blank">PreApps developer account</a> and use the <strong>promo code &#8220;CoronaLabs&#8221;</strong> at checkout to try their <a href=http://www.preapps.com/featured-options target="_blank">PreApps Featured Feedback app posting</a> free for 30 days. Hurry, offer ends February 28th, 2014.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-77/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-77-2014-02-17-parse-tableview-widgets-match-three-game-design.mp3" length="56959772" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

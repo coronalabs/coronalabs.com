@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>game &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>game &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured app – Forgotten Places: Regained Castle</title>
+		<link>/blog/2016/05/19/featured-app-forgotten-places-regained-castle/</link>
+		<pubDate>Thu, 19 May 2016 23:06:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[adventure game]]></category>
+		<category><![CDATA[artwork]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[hidden object]]></category>
+
+		<guid isPermaLink="false">/?p=66835</guid>
+		<description><![CDATA[Read further to learn about Forgotten Places: Regained Castle, an immersive adventure game with stunning artwork.]]></description>
+				<content:encoded><![CDATA[<p>Artwork can make or break a game. This is incredibly true for adventure games. For the developers at <a href=http://www.sungiftgames.com/ target="_blank">Sungift Games</a>, rocking the artwork is key to their games. Consider this week&#8217;s featured app <em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em>:</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Z7zDWf0WfA8" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Sungift Games was founded by Stas Dmytriiev and college friend Andriy Pertsov in 2009 as a self-funded indie game studio located in the Ukraine. They soon produced their first game, <a href=http://www.sungiftgames.com/games/forgotten-places-lost-circus/ target="_blank"><em>Forgotten Places: Lost Circus</em></a>, for PC and Mac. When they wanted to expand the game to other platforms as mobile gaming began to grow, they looked for an engine. They found Corona when it was still in beta and it took them just three months to port <em>Lost Circus</em> to mobile using the SDK. Fast forward to today and nine games later: their most recent game, <em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em><em>,</em> is their largest and most complex game yet.</p>
+<p>&#8220;As Lost Circus was quite successful, we raised the plank of quality we wanted to reach with the new game.&#8221; said Dmytriiev. &#8220;Corona is a great instrument and I doubt we would release our games without it. We tried other engines and SDKs like Moai, cocos-2dx, Marmalade, and Unity. They all have their pros and cons, but Corona excellently fits our needs and allows us to create games, not to struggle with technologies or platforms. We greatly appreciate the Corona team for this.&#8221;</p>
+<p><em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em> is the story of a young woman named Jane. Set in the early 20th century, her parents were killed in an accident in her childhood. A mysterious letter from her guardian who lives in an ancient castle brings her there to find answers. Your job is to guide Jane through this mystery and help break the curse of her clan.</p>
+<p><img class="alignnone size-large wp-image-66832" src="/wordpress/wp-content/uploads/2016/05/forgottenplaces1-1024x576.jpg" alt="forgottenplaces1" width="960" height="540" /></p>
+<p>As you traverse the 54 scenes covering 42 different locations, you will find incredibly detailed artwork which pulls you into this deep, rich, and challenging game. The game contains 21 mini-games and 14 puzzles along with 15 hidden object scenes to challenge you along the way. This is the kind of game that you can spend hours playing trying to solve the mystery. In fact, on <a href=http://www.wired.com/2016/03/amazon-underground-growth/ target="_blank">Amazon Underground</a> alone, the game has over 1 million minutes played. The game has also achieved a Top 100 ranking in the Games category in several countries and the Mac version is in the Top 50 in several countries. In all, over 75,000 people have downloaded the game.</p>
+<p><img class="alignnone size-large wp-image-66833" src="/wordpress/wp-content/uploads/2016/05/forgottenplaces2-1024x576.jpg" alt="forgottenplaces2" width="960" height="540" /></p>
+<p><em><a href=http://www.sungiftgames.com/games/forgotten-places-regained-castle/ target="_blank">Forgotten Places: Regained Castle</a></em> is currently available on Apple&#8217;s iTunes App Store and Mac App Store for $4.99 and on Google Play and Amazon for free with in-app purchases to unlock the entire game. Windows desktop and Windows Phone 8 versions are currently under development as well.</p>
+<p><a href=https://itunes.apple.com/us/app/forgotten-places-regained/id1062085154?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.sungiftgames.regainedcastle target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/forgotten-places-regained/id1110722842?ls=1&mt=12 target="_blank"><img class="alignnone wp-image-64657" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a><a href=http://www.amazon.com/dp/B0195VF3RE/ target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: Alpha Omega &#8211; A game of jumbled words</title>
+		<link>/blog/2016/05/06/featured-app-alpha-omega-a-game-of-jumbled-up-words/</link>
+		<pubDate>Fri, 06 May 2016 18:43:24 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[puzzle]]></category>
+		<category><![CDATA[word]]></category>
+
+		<guid isPermaLink="false">/?p=66659</guid>
+		<description><![CDATA[Can an Internet meme be turned into a successful, compelling game built with Corona? For BorderLeap, the answer was "yes!". Read further to learn about "Alpha Omega."]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66661" src="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png" alt="alpha-omegaIcon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/alpha-omegaIcon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/alpha-omegaIcon.png 300w" sizes="(max-width: 150px) 100vw, 150px" />As a programmer, spelling isn&#8217;t my greatest strength, but I&#8217;m one of those people who can look at a jumbled-up word and actually read it. In fact, many people can decipher words as long as the first and last letters are correct and it&#8217;s the proper length.</p>
+<p>For example, can you read this?</p>
+<p style="padding-left: 30px;">&#8220;<em>it deosn&#8217;t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae.</em>&#8220;</p>
+<p>What started as an urban legend and Internet meme seems to actually have some facts and a term behind it: <a href=https://en.wikipedia.org/wiki/Typoglycemia target="_blank">typoglycemia</a>.<b> </b></p>
+<p>Leave it to an enterprising game shop to turn this phenomenon into a compelling game. <a href=http://borderleap.com/ target="_blank">BorderLeap</a>, a small studio founded by Nate Dicken, took this concept and put together <a href=http://playalphaomega.com/ target="_blank"><em>Alpha Omega</em></a>. Originally released for the &#8220;small screen&#8221; in April 2014, BorderLeap recently released the game for OS X desktop.</p>
+<p>Since then, <em>Alpha Omega</em> has reached the #1 featured position across 150+ countries. It has also been the #1 paid &#8220;Puzzle&#8221; and #1 paid &#8220;Word&#8221; game, and it currently boasts accolades as the #2 overall paid game and #3 grossing game in the Mac App Store. As if that&#8217;s not enough, Apple featured <em>Alpha Omega</em> with a large banner in the &#8220;Word&#8221; game subcategory and also featured it in the &#8220;All Time Greats&#8221; in the same category.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fuvSOzmFgzw" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Want to see what the buzz is all about and test your skills at unscrambling jumbled words? <em>Alpha Omega</em> is available for <a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega>Google Play</a>, and <a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12>OS X</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/alpha-omega/id748048441?mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.borderleap.alphaomega target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://itunes.apple.com/us/app/alpha-omega/id1053559774?mt=12 target="_blank"><img class="alignnone wp-image-64657" src="/wordpress/wp-content/uploads/2015/11/mac-badge.png" alt="mac-badge" width="50" height="50" /></a></p>
+<p>What kind of success can you achieve? Download <a href=https://www.coronalabs.com/ target="_blank">Corona SDK</a> and get started today!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: The Pedestal &#8211; a unique take on a jumping game</title>
+		<link>/blog/2016/04/14/featured-app-the-pedestal-a-unique-take-on-a-jumping-game/</link>
+		<pubDate>Thu, 14 Apr 2016 13:52:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[jump]]></category>
+		<category><![CDATA[ninja]]></category>
+
+		<guid isPermaLink="false">/?p=66464</guid>
+		<description><![CDATA[Learn about the Pedestal, a new minimalist game from Daniel Ivanov in this featured app post.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66469 size-medium" src="/wordpress/wp-content/uploads/2016/04/pedestal01-169x300.jpg" alt="pedestal01" width="169" height="300" />The Pedestal is a fun game based on a minimalist approach. In the game, you play the ninja Akira who has been trapped on a desolate pedestal. Your goal is to survive by jumping to avoid shurikens being thrown at you and avoid being hit by the scythes swinging above you. The game was inspired by Eastern Asian culture and the stories of Edgar Allan Poe.</p>
+<p>The game was recently released by indie developer Daniel Ivanov to the Apple App Store. It contains stunning, eerie sound effects alongside appealing art, which creates an enjoyable atmosphere along with challenging game play. The game takes advantage of Corona SDK&#8217;s physics and particle effect libraries to give the game it&#8217;s punch.</p>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/mstvKwXJ5TQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>You can download it from the Apple App Store for $0.99.</p>
+<p><a href=https://itunes.apple.com/us/app/the-pedestal/id1093740987?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-66270 size-thumbnail" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+<p>What can you do with Corona SDK? <a href=/ target="_blank">Download it for Free</a> and see!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Climberia &#8211; a challenging climbing game</title>
+		<link>/blog/2016/04/05/case-study-climberia-a-challenging-climbing-game/</link>
+		<pubDate>Tue, 05 Apr 2016 14:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[case study]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=66351</guid>
+		<description><![CDATA[In this case study, we look at a new Corona-powered game called Climberia. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66359" src="/wordpress/wp-content/uploads/2016/04/icon-150x150.png" alt="icon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/icon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/icon-300x300.png 300w, /wordpress/wp-content/uploads/2016/04/icon-768x768.png 768w, /wordpress/wp-content/uploads/2016/04/icon-570x570.png 570w, /wordpress/wp-content/uploads/2016/04/icon-500x500.png 500w, /wordpress/wp-content/uploads/2016/04/icon-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/04/icon-700x700.png 700w, /wordpress/wp-content/uploads/2016/04/icon.png 1024w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are very creative and regularly produce amazing works. In this case study, we look at a new game called <a href=http://www.climberia.com/ target="_blank">Climberia</a>. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.</p>
+<p>Climberia is the brainchild of Nikola Georgiev and Stoyan Pedev of <a href=http://www.kvaba.com/ target="_blank">Kvaba</a>, a small studio in Sofia, Bulgaria. Georgiev and Pedev decided to start building games in their spare time while having a drink in their local pub.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/XFdnalWr-pY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>After trying a couple of projects that didn&#8217;t gain momentum, they stumbled upon the idea for Climberia. Using a Google search to find a 2D gaming platform, they discovered Corona SDK and quickly had a working demo of their idea. </p>
+<p>The gameplay was challenging and fun, but there was a problem: neither Georgiev or Pedev were artists and the game didn&#8217;t look very good. Fortunately, they found <a href=http://robo.bg/ target="_blank">Robo Video Lab</a> who fell in love with the game and the two companies formed a partnership to produce Climberia. The art team used low-polygon 3D models, converted them to 2D still images, and assembled it all into colorful scenes.</p>
+<p>The gameplay is very challenging. Like rock climbing, your pirate has to swing his arm and body to grab the next hand-hold. If the pirate lets go, he falls to the ocean floor and dies. Players must keep one finger on the screen the entire time while using another finger to swing the pirate and reach another hand-hold.</p>
+<p><img class="alignnone size-large wp-image-66360" src="/wordpress/wp-content/uploads/2016/04/Climberia-02-1024x576.png" alt="Climberia-02" width="960" height="540" /></p>
+<p>&#8220;We wanted to create a game where the player is challenged not only in the virtual world of the game but also in the physical world – to test his muscles and nerves&#8221;, said Georgiev. &#8220;The original idea was for a climber who has to constantly keep at least one of his hands on the wall, so a player&#8217;s thumb must always drag the screen. With the initial demo, we saw that we could improve the concept by adding the swinging and jumping features.&#8221;</p>
+<p>Corona SDK has been critical to their development process. As beginners in the game development field, Georgiev and Pedev found that it was easy to get started developing a 2D game in Corona. Rapid prototyping allowed them to assess the project early on and adjust certain aspects as the project matured.</p>
+<p>Climberia is available for iOS on April 5, 2016, and Kvaba plans to release an Android version in the coming months. Check it out in the app store!</p>
+<p><a href=https://itunes.apple.com/us/app/climberia-pirates/id1054929556?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Glitch Games &#8211; building successful cross-platform adventures</title>
+		<link>/blog/2016/03/31/case-study-glitch-games-building-successful-cross-platform-adventures/</link>
+		<pubDate>Thu, 31 Mar 2016 18:05:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">/?p=66259</guid>
+		<description><![CDATA[In this case study, we take a look at Glitch Games, a two-man indie studio from Oxfordshire, UK, and their success using Corona SDK to build popular adventure games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66275" src="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png" alt="Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCA=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />This is a tale of two best friends since college: Graham Ransom the programmer and Simon Pearce the artist. Even though they went to different universities, both went on to study game development. They started <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> in January 2012 working on kids&#8217; educational titles. Within a month after they met, they took part in their first 48 hour game jam and tried to build an adventure game.</p>
+<p>The result was  a title called <em>The Hauntening</em> which went on to win that game jam. They ended up releasing the game in the App Store for free to see if there was any interest in it. The feedback was positive and they began working on their first full-fledged adventure game. Eight months later, <em><a href=http://www.foreverlostgame.com/ target="_blank">Forever Lost</a>: Episode 1</em> was released for iOS and Android. Since then they have completed the trilogy and a free prequel game.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/H9ethihZrMw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Graham first discovered Corona SDK in 2009 when Corona was a fledgling framework. When he and Simon formed Glitch Games, it only made sense to continue using Corona SDK.</p>
+<p>Having been around for a while, it&#8217;s safe to call Graham a pioneer in mobile adventure games and an early adopter of Corona Labs&#8217; technologies as they come out, including our recent desktop support. Not only is the full suite of games available on Apple&#8217;s App Store, Google Play, and Amazon, it&#8217;s also available on both OS X and Windows desktop. In addition, they have built their own adventure framework called Serenity which sits on top of Corona SDK and allows them to rapidly build adventure games.</p>
+<p><img class="alignnone size-large wp-image-66276" src="/wordpress/wp-content/uploads/2016/03/hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6ch900-1024x640.png" alt="hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6c=h900" width="960" height="600" /></p>
+<p>When asked &#8220;Why Corona?&#8221; Graham said &#8220;If it wasn&#8217;t for Corona, <em>Forever Lost</em> wouldn&#8217;t exist today. We&#8217;d most likely have to go get real jobs.&#8221;  With multiple-millions of downloads across all the the stores, Glitch games is one of the proverbial success stories for indie studios. <em>Forever Lost</em> has been #1 in multiple countries and it was short-listed for the TIGA awards a couple of years ago.</p>
+<p>Graham likes Corona for ease of development and quick iteration. Their first kids&#8217; apps were turned around in less than a month, while their full adventure games take around eight months to build. Graham&#8217;s advice to those new to app development? &#8220;Download Corona and start making a game!&#8221;</p>
+<h3>Availability</h3>
+<p><a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.glitchgames.foreverlostepisode1hd target="_blank"><img class="alignnone size-thumbnail wp-image-66269" src="/wordpress/wp-content/uploads/2016/03/GooglePlayStore-150x52.png" alt="GooglePlayStore" width="150" height="52" /></a><a href=http://www.amazon.com/Forever-Lost-Episode-1-HD/dp/B00BF9USIO/ target="_blank"><img class="alignnone size-thumbnail wp-image-66271" src="/wordpress/wp-content/uploads/2016/03/AmazonStore-150x52.png" alt="AmazonStore" width="150" height="52" /></a><a href=https://itunes.apple.com/us/app/forever-lost-episode-1/id1036708333?ls=1&mt=12 target="_blank"><img class="alignnone size-thumbnail wp-image-66274" src="/wordpress/wp-content/uploads/2016/03/MacStore-150x52.png" alt="MacStore" width="150" height="52" /></a><a href=http://glitchgames.itch.io/forever-lost-episode-1 target="_blank"><img class="alignnone size-thumbnail wp-image-66273" src="/wordpress/wp-content/uploads/2016/03/ItchIoStore-150x50.png" alt="ItchIoStore" width="150" height="50" /></a></p>
+<h3>Conclusion</h3>
+<p>With a great idea and patience, you can built successful games with Corona SDK. Dream, Build, Ship!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured app: ZOMBIE LAST STANDS</title>
+		<link>/blog/2016/03/09/featured-app-zombie-last-stands/</link>
+		<comments>/blog/2016/03/09/featured-app-zombie-last-stands/#comments</comments>
+		<pubDate>Wed, 09 Mar 2016 21:08:03 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[featured]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[zombies]]></category>
+
+		<guid isPermaLink="false">/?p=65968</guid>
+		<description><![CDATA[This week, Corona Labs is pleased to feature an intense zombie battle game from international bestselling author, Alex Scarrow, of the award winning series TimeRiders. Learn how Alex started with no coding experience to produce this amazing Corona SDK based game.]]></description>
+				<content:encoded><![CDATA[<p>Let&#8217;s be honest, who doesn&#8217;t love a good zombie game? In <a href=http://www.alexscarrow.com/?#!zombielaststands/cd07 target="_blank">ZOMBIE LAST STANDS</a> from GRRR GAMES, you build a fort, choose what skills to give your troops, manage funds and most importantly defend your realm from the hoards of attacking zombies.</p>
+<p>Set in 1879, during the Zulu War, you manage a small detachment of British soldiers running a garrison in a remote farmhouse. You must hold off the attacking zombies until help arrives.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Rlrv_moG4-4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>ZOMBIE LAST STANDS was designed and built by <a href=http://www.alexscarrow.com/ target="_blank">Alex Scarrow</a>, author of an international bestselling series of teen novels called &#8216;TimeRiders&#8221;. </p>
+<p>Alex said, &#8220;I took a sabbatical from writing for 20 months to learn to code and ZOMBIE LAST STANDS is the result.&#8221; He continued, &#8220;I think there&#8217;s something newsworthy here&#8230;apart from leveraging my fan base, there&#8217;s an angle to play on about how easy Corona is to use.&#8221;</p>
+<p>The game features frantic real time action with a pause mode to give you time to think. It contains hand drawn, graphic novel style cut scenes and fitting music. Alex proudly touts that there are no ads, in-app purchases, or rating nags to get in your way.</p>
+<p><img class="alignnone size-full wp-image-65969" src="/wordpress/wp-content/uploads/2016/02/xiiG1sEvZ7maLRIx0KGiEu55OCIUk5qoNLetciJbZ6UUdH7z7cqYexcGzD4hjIhPKQgh900.png" alt="xiiG1sEvZ7maLRIx0KGiEu55OCIUk5qoNLetciJbZ6UUdH7z7cqYexcGzD4hjIhPKQg=h900" width="960" height="600" /></p>
+<p>ZOMBIE LAST STANDS was launched on February 14, 2016 and is available both on the <a href=https://itunes.apple.com/us/app/zombie-last-stands/id1057029700?ls=1&mt=8 target="_blank">Apple App Store</a> and <a href=https://play.google.com/store/apps/details?id=com.alexscarrow.zombielaststands1_1 target="_blank">Google Play</a>. Download it today and enjoy.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/09/featured-app-zombie-last-stands/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Featured app: Hoppy Naut</title>
+		<link>/blog/2016/02/11/featured-app-hoppy-naut/</link>
+		<pubDate>Thu, 11 Feb 2016 19:54:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[side-scroller]]></category>
+
+		<guid isPermaLink="false">/?p=65526</guid>
+		<description><![CDATA[In this post we highlight a recently released Corona SDK built app: Hoppy Naut. Learn more about this app and how it was created.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65527" src="/wordpress/wp-content/uploads/2016/02/icon175x175-150x150.jpg" alt="icon175x175" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/icon175x175-150x150.jpg 150w, /wordpress/wp-content/uploads/2016/02/icon175x175.jpg 175w" sizes="(max-width: 150px) 100vw, 150px" />Corona SDK can be used to create a wide array of business apps, utility apps, and interactive books, but we have a special place in our hearts for 2D games.</p>
+<p>One such 2D game, recently released by Tony Godfrey of <a href=http://www.sharkappsllc.com/ target="_blank">Shark Apps, LLC</a>  (<strong>@tonygod</strong> in the forums!), brings you the adventures of <em>Hoppy Naut</em>.</p>
+<p><a href=http://www.hoppynaut.com/ target="_blank">Hoppy Naut</a> is a side-scrolling, jumping game. Explore ever-changing landscapes and alien towns as you jump over obstacles, attack creepy-crawlies and try to earn some coins and gifts as you move along through the world.</p>
+<p>The game features:</p>
+<ul>
+<li>30 characters that can be earned by collecting coins or as in-app purchase</li>
+<li>Six different worlds to explore, each with its own soundtrack</li>
+<li>Leaderboards and Achievements for Game Center, Google Play and Amazon GameCircle</li>
+<li>Analytics using Flurry plug-in</li>
+<li>Opt-in incentivized ads using Vungle and Fuse plug-ins</li>
+</ul>
+<p>It took Tony around 7 months, as a one-man shop, to get the game published. He said, “Building with Corona was the easy part of this project. Managing all the information in the app store dashboards and doing the right kind of marketing are much tougher challenges!”</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/FKQ3jVOyqUA?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Hoppy Naut is currently available as a free download on <a href=https://itunes.apple.com/us/app/hoppy-naut/id1016663459?ls=1&mt=8 target="_blank">iTunes for iOS </a>devices as well as <a href=https://play.google.com/store/apps/details?id=com.sharkappsllc.HoppyNaut target="_blank">Google Play</a> and <a href=http://www.amazon.com/shark-apps-LLC-Hoppy-Naut/dp/B01AR77GJI target="_blank">Amazon</a> for Android devices. Tony is also porting to OS X and tvOS as well.</p>
+<p>The game has been <a href=http://appadvice.com/appnn/2016/01/leap-and-bound-over-terrain-and-critters-in-hoppy-naut target="_blank">featured on AppAdvice.com</a> and on <a href=https://www.producthunt.com/games/hoppy-naut target="_blank">Product Hunt</a>.</p>
+<p>Follow Tony and his development on Twitter at <a href=https://twitter.com/sharkappsllc target="_blank">@SharkAppsLLC</a> and on his <a href=https://www.facebook.com/HoppyNaut/ target="_blank">Hoppy Naut Facebook page</a>.</p>
+<h3>Want to see your app featured here?</h3>
+<p>Corona Labs is always looking for apps to feature. If you&#8217;ve developed an app using Corona SDK, complete our <a href=/publishing/ target="_blank">showcase submission form</a> and you could show up in the blog, get a social media shout out, collect some cool swag or more!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: OmNomster</title>
+		<link>/blog/2013/09/02/app-of-the-week-omnomster/</link>
+		<comments>/blog/2013/09/02/app-of-the-week-omnomster/#comments</comments>
+		<pubDate>Mon, 02 Sep 2013 17:11:19 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=43029</guid>
+		<description><![CDATA[What do you get when you put a hungry monster in a room full of trash? A feast! The furry <a href="http://www.madeitapp.com/omnomster/">OmNomster</a> will eat anything in sight, from banana skins, to fishbones to broken umbrellas. This App of the Week will entertain you with a silly character, easy shake-and-play mechanics and chirpy music.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-43146" alt="OmNomster" src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-30-at-9.47.41-AM.png" srcset="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-30-at-9.47.41-AM.png 187w, /wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-30-at-9.47.41-AM-150x150.png 150w" sizes="(max-width: 187px) 100vw, 187px" />What do you get when you put a hungry monster in a room full of trash? A feast! The furry <a href=http://www.madeitapp.com/omnomster/>OmNomster</a> will eat anything in sight, from banana skins, to fishbones to broken umbrellas. This App of the Week will entertain you with a silly character, easy shake-and-play mechanics and chirpy music.</p>
+<p><img class="alignright size-full wp-image-43145" alt="OmNomster" src="/wordpress/wp-content/uploads/2013/08/OmNomster.jpeg" />To consume all the floating treats, you just shake your device to bounce OmNomster off the walls. Though it’s not too tricky, watch out for the gumball machines – upon eating these, OmNomster becomes a little sluggish and starts to stick to the walls, potentially missing pieces of “food.” Once you miss three pieces of trash, it’s game over. The fun part is working with powerups &#8211; you can customize the look and feel of your OmNomster to include a mustache, spectacles and more.</p>
+<p>OmNomster is the work of the talented Olaf Morelewski, an indie developer based in Warsaw, Poland. An architect by trade, Olaf took an interest in mobile gaming six months ago and quit his day job to start a boutique studio.</p>
+<p>The game concept of OmNomster evolved over time. At first Olaf thought to create a game where players shake a monster as fast as possible to destroy him by bouncing him off the walls. However, after sketching out the monster, he found the character too cute to destroy and thought audiences would prefer to feed him goodies instead.</p>
+<p>Olaf tells us that <a href=https://docs.coronalabs.com/api/library/physics/index.html>Corona’s Physics Library</a>, which drives all the centric-gravity gameplay, was essential to his development. He also relied on <a href=http://docs.coronalabs.com/api/library/graphics/newImageSheet.html>graphics.imageSheet</a> to manage all the spritesheets of the monster&#8217;s animation and turned to <a href=http://www.x-pressive.com/ParticleCandy_Corona/features.html>Particle Candy</a> for the special effects in the game. Olaf also implemented the <a href=http://docs.coronalabs.com/api/library/gameNetwork/index.html>gameNetwork library</a> for Game Center and Google Play Game Services, and utilized the <a href=http://docs.coronalabs.com/api/library/store/index.html>store library</a> for in-app purchases.</p>
+<p>What’s one piece of advice Olaf would give fellow developers? Make a “to do” list and stay organized throughout the process. Olaf used the <a href=http://www.actionmethod.com/>ActionMethod by Behance</a> to manage his workflow which helped him stay motivated by checking off completed task each day.</p>
+<p>If you’re hungry for a fun new gaming experience, download OmNomster from <a href=https://itunes.apple.com/app/id667957753?mt=8>iTunes</a> or <a href=https://play.google.com/store/apps/details?id=com.madeitapp.gp.omnomster>Google Play</a>.</p>
+<p><iframe src="//player.vimeo.com/video/72686027" height="281" width="500" allowfullscreen=""></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/02/app-of-the-week-omnomster/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: KungFu Quest &#8211; The Jade Tower</title>
+		<link>/blog/2013/08/12/app-of-the-week-kungfu-quest-the-jade-tower/</link>
+		<comments>/blog/2013/08/12/app-of-the-week-kungfu-quest-the-jade-tower/#comments</comments>
+		<pubDate>Mon, 12 Aug 2013 23:48:41 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[fighter]]></category>
+		<category><![CDATA[game]]></category>
+
+		<guid isPermaLink="false">/?p=41042</guid>
+		<description><![CDATA[<div>This App of the Week will bring back a rush of fond memories for gamers who remember the 1980's arcade classic <a href="http://en.wikipedia.org/wiki/Kung-Fu_Master">Kung Fu Master</a> and <a href="http://en.wikipedia.org/wiki/Karateka_(video_game)">Karateka</a>, Jordan Mechner's martial arts side-scroller. <a href="http://kungfuquest.iplayallday-studio.com/index.html" target="_blank"></div>
+
+<div style="margin-top:10px;">KungFu Quest - The Jade Tower</a>, developed by IPlayAllDay Studio, features a multitude of levels, smoothly-animated graphics, and varied garmeplay.</div>]]></description>
+				<content:encoded><![CDATA[<p><img class="wp-image-41091" style="margin-top: 0px; margin-left: 20px;" alt="kfq-icon" src="http://www.coronalabs.com/wp-content/uploads/2013/08/kfq-icon.png" width="180" height="180" align="left" srcset="/wordpress/wp-content/uploads/2013/08/kfq-icon.png 300w, /wordpress/wp-content/uploads/2013/08/kfq-icon-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" />This App of the Week will bring back a rush of fond memories for gamers who remember the 1980&#8217;s arcade classic <a href=http://en.wikipedia.org/wiki/Kung-Fu_Master>Kung Fu Master</a> and <a href=http://en.wikipedia.org/wiki/Karateka_(video_game)>Karateka</a>, Jordan Mechner&#8217;s martial arts side-scroller. <a href=http://kungfuquest.iplayallday-studio.com/index.html target="_blank">KungFu Quest &#8211; The Jade Tower</a>, developed by IPlayAllDay Studio, features a multitude of levels, smoothly-animated graphics, and varied garmeplay.</p>
+<p>In KungFu Quest, you’re a fighter that travels back in time to battle the evil Chong Lee. Your mission is to progress up the Jade Tower, floor by floor, taking down swarms of enemies using a variety of martial arts moves. To direct your fighter, you use the left and right controllers along with jump and attack buttons. Each time you hit an enemy, you gain energy and inner strength, both necessary to take down your next opponent.</p>
+<p style="text-align: center;"><img class="wp-image-41087 aligncenter" alt="kfq-2" src="http://www.coronalabs.com/wp-content/uploads/2013/08/kfq-2.jpg" width="614" height="461" /></p>
+<p>KungFu Quest features a dazzling array of opponents who stand between you and Chong Lee. Battles against basic &#8220;grunts&#8221; eases you into the gameplay, but before long you&#8217;ll encounter more skilled opponents wielding a variety of weapons including knives, swords, cleavers, and even guns. If this isn&#8217;t challenging enough, you&#8217;ll face various &#8220;bosses,&#8221; including such creative entries as a giant panda with spiked armor.</p>
+<p style="text-align: center;"><a href=http://www.coronalabs.com/wp-content/uploads/2013/08/kfq-1.jpg><img class="wp-image-41088 aligncenter" alt="kfq-1" src=http://www.coronalabs.com/wp-content/uploads/2013/08/kfq-1.jpg width="614" height="461" /></a></p>
+<p>In addition to the basic game, KungFu Quest offers unique features such as the ability to unlock new moves and customize &#8220;strike combos&#8221; that work best for a particular level. This is essential, as certain moves deal more damage but are slower to perform — and when being swarmed by enemies from both sides, speed can be a far greater asset than pure strength. You can also unlock new clothing, hair styles, and even relics such as armor and bracers to improve your stats.</p>
+<p>KungFu Quest is optimized for the mobile touch screen, providing easy and responsive inputs for the 38 challenging levels and 8 themes. Test your kung fu agility now with this side-scrolling fighting game, available for both <a href=https://itunes.apple.com/us/app/kungfu-quest-the-jade-tower-hd/id656640699?mt=8>iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.iplayalldaystudio.kungfuquest>Android</a>.</p>
+<p><iframe src="//www.youtube.com/embed/U4NtMFaSlag" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/12/app-of-the-week-kungfu-quest-the-jade-tower/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Zen Sand</title>
+		<link>/blog/2013/08/05/app-of-the-week-zen-sand/</link>
+		<pubDate>Mon, 05 Aug 2013 22:10:34 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[puzzle]]></category>
+
+		<guid isPermaLink="false">/?p=39840</guid>
+		<description><![CDATA[<a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">Zen Sand</a> is the perfect app for relaxation, combining soothing music and elegant visuals with a unique gameplay to challenge the mind. Created by <a href="http://www.polygonplay.com/">Polygon Play</a>, a one-man studio based in Finland, <a href="http://developer.coronalabs.com/showcase/zen-sand">Zen Sand</a> is the studio's latest game for iOS.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM.png" alt="Zen Sand icon" class="alignleft size-full wp-image-39841" srcset="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM.png 207w, /wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-11.58.51-AM-150x150.png 150w" sizes="(max-width: 207px) 100vw, 207px" /><a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">Zen Sand</a> is the perfect app for relaxation, combining soothing music and elegant visuals with a unique gameplay to challenge the mind. Created by <a href=http://www.polygonplay.com/>Polygon Play</a>, a one-man studio based in Finland, <a href=http://developer.coronalabs.com/showcase/zen-sand>Zen Sand</a> is the studio&#8217;s latest game for iOS.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/08/Zen-Sand-screenshot-2.jpg" alt="Zen Sand screenshot" class="alignright size-full wp-image-39842" />The objective of the game is simple: as hundreds of grains of sand fall down the screen, you must guide them into beautiful Japanese porcelain vases. Each vase displays a number that signifies the number of grains necessary to fill the vase to the brim. </p>
+<p>To guide the grains towards their destination, you must draw bamboo stalks by dragging your finger across the screen. The grains respond to the effects of gravity, wind, and collision so planning and foresight are essential to success. The less bamboo sticks you use, the more pearls you will earn which can later be used to unlock solutions to difficult levels. As you advance in the game, you&#8217;ll be challenged to fill vases with colored sand after it has been sifted through a colored Japanese lantern &#8211; the toughest element of the game.</p>
+<p>Part of what makes Zen Sand so peaceful is that each level is inspired by a season of the year that&#8217;s illustrated with lovely graphics and calming music. I especially enjoyed the words of wisdom from the Zen Master that were displayed at the completion of each level.</p>
+<p>To experience the serenity of Zen Sand, download the game from <a href="https://itunes.apple.com/us/app/zen-sand-most-relaxing-mind/id590384779?ls=1&#038;mt=8
+">iTunes</a> for $1.99 and let us know how you enjoy it.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/6qqsFW_HFDg" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Ambassadors &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona-ambassadors/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Ambassadors &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Ambassador Spotlight: Laura Tallardy</title>
+		<link>/blog/2016/03/01/corona-ambassador-spotlight-laura-tallardy/</link>
+		<comments>/blog/2016/03/01/corona-ambassador-spotlight-laura-tallardy/#comments</comments>
+		<pubDate>Tue, 01 Mar 2016 19:38:48 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Corona Ambassadors]]></category>
+
+		<guid isPermaLink="false">/?p=65900</guid>
+		<description><![CDATA[Please take a moment to welcome our latest Corona Ambassador, Laura Tallardy to the Corona Ambassador program. Learn more about Laura and her awesome contributions.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-65901" src="/wordpress/wp-content/uploads/2016/02/laura-swag-photo-300x231.jpg" alt="laura-swag-photo" width="300" height="231" srcset="/wordpress/wp-content/uploads/2016/02/laura-swag-photo-300x231.jpg 300w, /wordpress/wp-content/uploads/2016/02/laura-swag-photo-768x591.jpg 768w, /wordpress/wp-content/uploads/2016/02/laura-swag-photo-700x539.jpg 700w, /wordpress/wp-content/uploads/2016/02/laura-swag-photo.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" />Please take a moment to welcome our latest Corona Ambassador, <a href=http://www.lauratallardy.com/ target="_blank">Laura Tallardy</a> to the Corona Ambassador program.</p>
+<p>Laura lives and works in Brooklyn, NY where she creates fun apps for kids. She has 21 apps published to the iOS and Android app stores as well as more in production. She has been using Corona since 2012 and worked as a freelance illustrator before apps came onto the scene.</p>
+<p>&#8220;I had some coding experience from web development, and after some scouting around I found the best solution for developing apps cross-platform: Corona SDK,&#8221; said Laura. She also added, &#8220;The Lua language was fast and easy to learn, and thanks to Corona&#8217;s useful tools and plentiful tutorials I was able to quickly launch my my first app.&#8221;</p>
+<p>That first app took Laura 6 months from start to finish: <em><a href=https://itunes.apple.com/us/app/mermaid-fashion-show-free/id749378943?mt=8 target="_blank">Mermaid Fashion Show</a></em>. Since then Laura has collaborated with Corona SDK developer <a href=http://scottadelman.com/ target="_blank">Scott Adelman</a> to release multiple apps.</p>
+<p><img class="alignleft size-medium wp-image-65902" src="/wordpress/wp-content/uploads/2016/02/screen568x568-169x300.jpeg" alt="Mermaid Fashion Show" width="169" height="300" />&#8220;Since Corona makes developing and publishing apps so easy, it&#8217;s possible to say yes to fun project ideas with others and just see what happens.&#8221; She continues, &#8220;Corona offers a welcoming community. I&#8217;ve attended and spoken at Corona meetups in NYC, and hung out in the chat rooms and forums. I wouldn&#8217;t have gotten that first app out the door without the help of my <a href=/community/irc/ target="_blank">#corona chat room</a> buddies and the devs I&#8217;ve met at meetups.&#8221;</p>
+<p>In 2014, Laura hosted <a href=http://shipjam.weebly.com/ target="_blank">#ShipJam</a> along with Eric Kinkead. This Corona-based game jam let developers pick up a previously abandoned project and challenged them to finish and ship it by the end of the year. Laura and Eric set the rules, organized sponsors and prizes, selected judges, and ran a very successful game jam.</p>
+<p>Laura has had some other noteworthy apps in her career including <em><a href=https://itunes.apple.com/us/app/cool-careers-free-dress-up/id945061907?ls=1&mt=8 target="_blank">Cool Careers Dress Up</a></em> which lets players dress up dolls in fun STEM-related professions. The app was featured in TechWithKid&#8217;s 2015<em> Best Picks</em> app list. Her <a href=https://itunes.apple.com/us/app/app-for-dog-free-puppy-painting/id968928583?ls=1&mt=8 target="_blank"><em>App for Dogs</em></a> lets dogs create paintings on mobile devices using their nose and paws and was featured in the <em>New York Times</em>.</p>
+<p>See all of Laura&#8217;s creations <a href=http://lauratallardy.com/ target="_blank">on her website</a>.</p>
+<p>As an ambassador, Laura will continue to reach out to developers to spread the word about Corona SDK and support developers already in the Corona community.</p>
+<p>Thanks Laura!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/01/corona-ambassador-spotlight-laura-tallardy/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

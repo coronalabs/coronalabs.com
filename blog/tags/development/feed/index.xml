@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>development &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Jeffrey Veen &#8211; Design</title>
+		<link>/blog/2013/10/04/jeffrey-veen-quote/</link>
+		<pubDate>Fri, 04 Oct 2013 12:59:17 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[Information]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=38</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Post: Making Progress as a Solo Mobile Game Developer</title>
+		<link>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/</link>
+		<comments>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/#comments</comments>
+		<pubDate>Fri, 08 Mar 2013 22:57:08 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=29851</guid>
+		<description><![CDATA[Making games can be a lot fun, but it can also be a tremendous amount of work. Many people try to create games on their own but far fewer actually succeed -- myself included.
+
+With Kung-Fu Clash, I decided to try things differently than on previous projects. This post discusses some of the approaches that helped me to successfully publish my first game.]]></description>
+				<content:encoded><![CDATA[<p><em>Hugo Bonacci is the indie developer and designer of App of the Week winner, <a href=http://www.coronalabs.com/blog/2012/11/26/app-of-the-week-kung-fu-clash/>Kung-Fu Clash</a>. His passion for gaming began at a young each and Hugo is still a big fan of NES and SNES games (he even plays them with his kids!) and is inspired by games such as Final Fantasy, Zelda, Secret of Mana, and Chrono Trigger.</p>
+<p>During the day, Hugo works as a UX Consultant for a company in Dallas, Texas, but his real passion lies in game development. Check out Hugo&#8217;s software development blog and design portfolio at <a href=http://hugoware.net>hugoware.net/</a>.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Kung-Fu-Clash-150x128.png" alt="Kung-Fu Clash" class="alignleft size-thumbnail wp-image-29854" />Making games can be a lot fun, but it can also be a tremendous amount of work. Many people try to create games on their own but far fewer actually succeed &#8212; myself included.</p>
+<p>With <a href=https://itunes.apple.com/us/app/kung-fu-clash/id571843687?mt=8>Kung-Fu Clash</a> I decided to try things differently than on previous projects. This post discusses some of the approaches that helped me to successfully publish my first game.</p>
+<p><strong>Design First</strong></p>
+<p>Don&#8217;t be in a hurry to start writing code for your game. Take your time and plan what your game is about, how it works, and get a general idea of what needs to be done. It&#8217;s much quicker to find flaws on paper than to spend hours writing code only to discover an idea won&#8217;t work.</p>
+<p>Try to come up with an idea that makes your game distinct from others. Sometimes it&#8217;s as simple as taking a common gaming category (for example, a first person shooter) and giving it a unique twist (e.g. adding orange and blue portals!).</p>
+<p>You don&#8217;t need to have a detailed outline of every single screen and behavior in your game. I&#8217;ve found that simple sketches and notes are more than enough to get ideas out of your head.</p>
+<p>Planning shouldn&#8217;t be limited to only the start of a project. Any time you want to add a feature or modify the way something works, take some time to jot your ideas down before you begin.</p>
+<p><strong>Keep Things Simple</strong></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Ninja-mockups-264x300.png" alt="Ninja mockups" class="alignright size-medium wp-image-29857" /><br />
+As with any project, the number of tasks required for completion can quickly spiral out of control. Each time you think you&#8217;ve identified everything that needs to be done you end up noticing an entirely new set of tasks you&#8217;ve missed.</p>
+<p>Start by creating a list of the core requirements for your game, this means removing non-essential game elements like power-ups, high-scores, etc. Next, include each of the sprites, animations, backgrounds, music and other creative assets you&#8217;ll need to create. Lastly, don&#8217;t forget to include tasks that are generally overlooked until they&#8217;re needed, such as managing user settings, handling transitions between scenes, game menus, resource management, etc.</p>
+<p>It doesn&#8217;t take long before your &#8220;simple&#8221; game becomes a daunting list work that will take several weeks to finish. Don&#8217;t let this intimidate you. Having an overview of tasks to complete will help you set goals and track progress along the way.</p>
+<p>Lastly, if you want to add something to your game then go through this process again. Ask yourself what you will need to code and design to make it happen. Once you&#8217;ve figured out what needs to be done, decide if you really need the feature or if it can wait.</p>
+<p>Keeping things simple sometimes means telling yourself &#8220;no&#8221; about adding features to your game.</p>
+<p><strong>Stay Focused</strong></p>
+<p>It&#8217;s easy to get discouraged when you&#8217;re the only person working on a project, especially when progress is slow or you&#8217;ve been working for several months, but fortunately there are a couple ways to stay motivated.</p>
+<p>First, start by sharing your progress with friends, family, and social networks. Let people see what you&#8217;re working on and share in your excitement. Put your game on a device and let people to try it. It&#8217;s exciting, and highly motivating, to see your game in action.</p>
+<p>Don&#8217;t be discouraged if it doesn&#8217;t work correctly &#8212; it&#8217;s just a demo. Additionally, don&#8217;t act on user feedback immediately. Unless it&#8217;s a critical flaw, simply take note of their suggestions and then review it later. Trying to implement new ideas, even good ones, will slow down progress.</p>
+<p>Second, If you find yourself feeling unmotivated, overwhelmed, or simply confused on what you should be doing, then it&#8217;s probably a sign you need to get organized. Take some time to examine your project and write a list of remaining tasks. Simply knowing what needs to be done can go a long way in keeping a project on track.</p>
+<p>When you sit down to work, review your list and set yourself a goal of at least one task (or more) to finish and then mark them off as you go.</p>
+<p><strong>Use Time Wisely</strong></p>
+<p>Try and find ways to preview your ideas before you attempt to write code. For example, I use Flash for character design and animation, but it also works well for visualizing how a character looks moving across a background or to quickly experiment with different kinds of special effects.</p>
+<p>Creating art for a game is a very time consuming process so be sure to plan for high resolution displays early by using vector art, 3D, or very large PSDs. Don&#8217;t try and create your own sprite sheets by hand, but instead use applications like <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> or Zwoptex to streamline the process.</p>
+<p>Consider using stock resources for assets you’re not able to create for yourself. For example, I’m not a musician and I’ve wasted weeks of development time in the past trying to create music only to end up with sub-par results. For this project I decided to purchase royalty-free music instead. Not only did the music sound far superior to anything I would have created on my own, it saved a lot of time as a result.</p>
+<p>Avoid writing code if an open-source library is available that does the same thing. Even if it&#8217;s not an exact match, it&#8217;s much quicker to modify an existing library than write one from scratch. As interesting as writing &#8220;framework code&#8221; can be, your time is better spent focused on code specific to your game.</p>
+<p>Don&#8217;t be afraid to spend time on writing scripts that automate repetitive tasks. If you find yourself doing the same process a couple times then it&#8217;s a perfect candidate for automation. When you&#8217;re the only person working on a project, the time spent on tedious activities is time taken away from meaningful accomplishments.</p>
+<p>Lastly, avoid over-engineering your code. This isn&#8217;t a call for haphazard programming, but instead a reminder that the most perfectly abstracted code base that never ships is still a failure. Try to reuse code whenever possible (DRY), write helpful comments, and use meaningful function and variable names, but your primary focus should be on creating a flawless user experience. </p>
+<p><strong>Don&#8217;t Settle</strong></p>
+<p>Look carefully at every detail in your game and never accept &#8220;good enough.&#8221; If you aren&#8217;t happy with something, or it doesn&#8217;t &#8216;feel&#8217; right, then there&#8217;s a good chance that your audience won&#8217;t like it either. Polish every detail until you feel it&#8217;s perfect. Treat your game as if it were a masterpiece &#8212; it deserves no less!</p>
+<p>It&#8217;s difficult being the only person working on a project, but it also means you&#8217;re the only one who decides what goes into the final product. Take advantage of having complete control and only accept your best work!</p>
+<p><em>Hugo Bonacci, Creator of King-Fu Clash</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/08/guest-post-making-progress-as-a-solo-mobile-game-developer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Tips from a first-time developer</title>
+		<link>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/</link>
+		<comments>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/#comments</comments>
+		<pubDate>Thu, 28 Feb 2013 19:09:32 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[newbie]]></category>
+		<category><![CDATA[tips]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29691</guid>
+		<description><![CDATA[Andrew Kallem is the developer of What the Block?!, a February App of the Week winner. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.]]></description>
+				<content:encoded><![CDATA[<p><em>Andrew Kallem is the developer of What the Block?!, a <a href=http://www.coronalabs.com/blog/2013/02/04/app-of-the-week-what-the-block/>February App of the Week winner</a>. Based on his experience building What the Block?! with Corona SDK, he shares tips on creating a concept and prototyping, development, designing for multiple screen sizes and the importance of testing, for budding developers.</em></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-31-at-4.06.57-PM.png" alt="What the Block icon" class="alignleft size-full wp-image-28859" />My name is Andrew Kallem, and I’m the creator of <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a>, a new puzzle game for iOS that&#8217;s soon coming to Android. Like many members of the Corona community, I’m a first-time developer, so I wanted to share a few tips with others who are working on or about to start their first project.</p>
+<p><strong>Concept and Prototyping</strong></p>
+<p>The first tip: Choose your project carefully! From the beginning, I knew I wanted to make a physics-based puzzle game, but even then, settling on the idea for What the Block?!™ didn’t happen right away.</p>
+<p>First, I coded quick and dirty prototypes of several different ideas. One of the great things about Corona is that you can code a basic prototype in no time. Prototyping not only helps you see which of your ideas are actually fun to play, it also gives you a sense which will be easier or harder to code. It’s something I think all first-time developers should do.</p>
+<p>Second, I knew I wanted to have a lot of puzzles (What the Block?!™ has over 150!), so I focused on ideas where creating them would be relatively easy.  For any project, it’s worth thinking in advance how much content you want to have (puzzles in a puzzle game, levels in a platformer, questions in a trivia game, etc.). Be wary of ideas that will take you a lot of effort just to create the content (let alone the coding!).</p>
+<p><strong>Development</strong></p>
+<p>Once I settled on the idea for What the Block?!™, I started fleshing out the prototype into a fully-fledged game. I learned far too much to write about in a single blog post, but I wanted to share two tips that I think are especially useful.</p>
+<p><em>Designing for multiple screen sizes</em></p>
+<p>Corona makes it easy to deploy to devices with any shape screen using the Dynamic Content Scaling feature. But here’s a tip to make it even easier: try using letterbox scaling and placing all of your visual elements relative to the screen corners, the centers of the screen edges, or the center of the screen. That way, no matter what the shape of the screen, everything is in the right place.</p>
+<p>Here are some screenshots from an iPhone 4, iPhone 5, and iPad 3 illustrating the point. You can see that the sticky notes and photos on the top are placed relative to the corners, the blocks and the other game elements are placed relative to the center of the bottom edge, and the background is placed at the center of the screen (with a large enough image to cover all screen sizes).</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss11-300x201.png" alt="WTB ss1" class="alignnone size-medium wp-image-29698" /> <img src="http://www.coronalabs.com/wp-content/uploads/2013/02/WTB-ss21-300x201.png" alt="WTB ss2" class="alignnone size-medium wp-image-29700" /></p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/wtb-ss3-300x201.png" alt="wtb ss3" class="aligncenter size-medium wp-image-29702" /></p>
+<p><em>Test, test, test!</em></p>
+<p>Be sure to test your game on a real device as soon as you can, and more importantly, don’t just test “normal” play – do some “stress testing” too.  Try touching two buttons at the same time, touching the same button quickly and repeatedly, touching buttons that are supposed to be inactive, using four fingers, changing your device’s orientation back and forth quickly, etc.  Putting your game through the paces like this is a great way to find bugs that you wouldn’t otherwise notice but that your players will probably stumble across!</p>
+<p><strong>Final thoughts</strong></p>
+<p>I’d be happy to talk more about these topics or any other aspects of my development experience, so feel free to reach out to me.</p>
+<p>Meantime, I hope you’ll check out <a href=https://itunes.apple.com/us/app/what-the-block-!/id558301858?mt=8>What the Block?!™</a> on the App Store!</p>
+<p><em>Andrew Kallem, aukStudios</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/28/guest-post-tips-from-a-first-time-developer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

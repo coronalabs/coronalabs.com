@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GGJ &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ggj/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>GGJ &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Corona SDK at Global Game Jam 2016</title>
+		<link>/blog/2016/01/27/global-game-jam-2016-tools-2d-game-development-using-corona-sdk/</link>
+		<pubDate>Wed, 27 Jan 2016 22:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=65412</guid>
+		<description><![CDATA[We're just days away from Global Game Jam 2016, the largest game hackathon of the year. Learn how you can attend and how you can use Corona SDK to jam!]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;re just days away from <a href=http://globalgamejam.org/ target="_blank">Global Game Jam 2016</a>, the largest game hackathon of the year.<br />
+<img class="alignright size-thumbnail wp-image-65415" style="margin: 20px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png" alt="GGJ round logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo.png 900w" sizes="(max-width: 150px) 100vw, 150px" /><br />
+If you haven&#8217;t heard about it before, Global Game Jam is a great opportunity for both veteran and novice game developers to gather together, collaborate, and make games over the course of one weekend.</p>
+<p>In addition to deciding to attend and actually forming a team, choosing a game development tool is one of the main decisions you&#8217;ll have to make. Fortunately, Corona SDK is listed as one of the top tools and technologies in the website&#8217;s list of platforms, so be sure to select it as your platform of choice.</p>
+<h3>Why you should choose Corona SDK</h3>
+<p><strong>Speed</strong> &#8212; Corona is excellent for rapid prototyping. When you save your code, the Corona Simulator detects the changed file and instantly refreshes itself so that you see the changes instantly. Corona SDK is also based on Lua which is an <a href=https://docs.coronalabs.com/guide/start/introLua/index.html>easy-to-learn language</a>.</p>
+<p><strong>Rich API ecosystem</strong> &#8212; Corona SDK provides an <a href=https://docs.coronalabs.com/api/index.html>extensive API set</a> for creating/manipulating images and sprites, playing audio, applying physics, and interacting with game elements. Corona also provides a scene management library to make multiple screens/levels simple. Finally, an ever-expanding <a href=https://store.coronalabs.com>plugin/ library</a> allows you to extend your app beyond the already robust API set.</p>
+<p><strong>Diverse platform deployment</strong> &#8212; While Corona SDK is known for being a mobile development platform (iOS, Android, and Windows Phone 8), it is also a TV platform, featuring support for Android TV and Apple&#8217;s new tvOS. Even more important is that Corona SDK can also build to both Windows x86 and OS X desktop. Thus, using the same code base, you can target a whole set of entertainment platforms.</p>
+<p><strong>Learning resources</strong> &#8212; Looking for the proper resources to get started? We&#8217;ve got it covered!</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/ target="_blank">Documentation and guides</a> &#8212; Each <a href=https://docs.coronalabs.com/ target="_blank">API</a> is documented and a collection of <a href=https://docs.coronalabs.com/guide/index.html target="_blank">guides</a> cover essential topics.</li>
+<li><a href=https://github.com/coronalabs/samples-coronasdk target="_blank">Sample code</a> &#8212; Some developers learn best by inspecting existing code. We have many examples which you can use as foundational aspects for your game.</li>
+</ul>
+<div style="background-color: #fed; border: 1px solid #ccc; padding: 12px 10px 10px 10px;"><a href=/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/ target="_blank">Read about the experience</a> of a team of Corona developers from Global Game Jam 2013!</div>
+<h3>Get started!</h3>
+<p>Ready to attend <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">Global Game Jam 2016</a>? Sign up on their <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">website</a> as soon as possible.</p>
+<p>Next, <a href=/products/corona-sdk/ target="_blank">download Corona SDK</a>. With rapid prototyping, a <a href=https://docs.coronalabs.com/api/index.html>robust API set</a>, a diverse range of deployable platforms, and plenty of learning resources, Corona is the perfect tool for developing your 2D game at Global Game Jam 2016 and beyond.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Piece: A Global Game Jam (GGJ) Developer Story &#8211; San Francisco Style</title>
+		<link>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/</link>
+		<comments>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/#comments</comments>
+		<pubDate>Fri, 19 Apr 2013 20:27:38 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=32339</guid>
+		<description><![CDATA[In January 2013, Alexey Chernikov, a professional game developer collaborated with a mix of of graphic artists, sound engineers, and fellow developers at Global Game Jam (GGJ). Learn why Alexey and his team choose Corona SDK to create a winning game at the 48-hour hackathon.]]></description>
+				<content:encoded><![CDATA[<p><em>Alexey Chernikov is a professional game developer and Corona SDK user. In January 2013, Alexey collaborated with a mix of of graphic artists, sound engineers, and fellow developers at <a href=http://www.coronalabs.com/blog/coronageek/corona-labs-does-global-game-jam-san-francisco-style/>Global Game Jam (GGJ)</a> to create Heart Day with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>. Corona Labs sponsored the 48-hour hackathon, which attracted over 14,000 developers and designers worldwide.</em></p>
+<hr>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/389788_487360441283541_1455970070_n-150x150.jpg" alt="Alexey Chernikov - headshot" class="alignleft size-thumbnail wp-image-32344" />This year&#8217;s Global Game Jam (GGJ) was a blast! We had a lot of fun creating Heart Day during the weekend and it was great to be surrounded by creative people who share a love of video games.</p>
+<p>The theme of the jam was announced as an ominous, dark pulsating sound. Our team chose to interpret that as an unhealthy heartbeat. We dug through ideas and decided to go with a game where you control a heart, through whatever situations life throws at it. The ominous twist is that the game character isn’t very healthy. Even doing simple things like eating donuts, or getting stuck in traffic can clog his arteries, and clots that aren’t attended to will burst. As Heart Manager, you must take care of all the ills that befall the cardiovascular system of your avatar, and keep him alive. At the start of a mission, you get to see the &#8220;to do&#8221; list, for your mission:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/baby-Background-1.png" alt="baby Background (1)" class="alignnone size-full wp-image-32340" /></p>
+<p>Aside from creating the graphics layout, we needed to make a scripted level system, screen switching, and the general gameplay, which required input handling and timing logic. Corona SDK was a great tool to handle such time intensive events, because the API is very high level. It saved a lot of time on setting up the screen layout, implementing UI widgets &#8211; a “time left” progress bar; a gradient bar to show how far the current heart rate is from its optimal value (determined by you actually keeping the heart rate steady at that bpm), and all the various interface screens, such as level select, mission briefing, game over, and more.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/game_scene_320x480.png" alt="game_scene_320x480" class="alignnone size-full wp-image-32341" /></p>
+<p>We choose Corona SDK to develop the game, because using Lua simplified the scripting tasks. The scripted level system was key, because the game allowed for some hilarious story telling. In each level, you&#8217;re in charge of the heart of a different person who goes through a list of tasks for the day. These tasks strain the cardiovascular system in different ways &#8211; requiring different heart rates, exposing you to more clot-generating chemicals, and stress. We also used a JSON format for describing levels, which felt very seamless with Lua (because the JSON data model is exactly like Lua tables).</p>
+<p>Another goal was to get more game mechanics in the game. The game worked well as a hub of mechanics and there was a lot of room to invent what could go wrong with the cardiovascular system. We ended up submitting with four mechanics: keeping a steady bpm, clots (nudge to clear), bursts (tap to clear) and heart failure (shake to clear). We only got some of the secondary mechanics in on the last day, and it was a good help that Corona SDK provided a pretty high level input handling interface &#8211; we had some time to experiment with the way we accepted the input to clear all the hazards that could occur.</p>
+<p>Overall, we were very happy with the result, and had a great time working on the game!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/photo_19.jpg" alt="&quot;Heart Day&quot; Team" class="alignnone size-full wp-image-32345" /></p>
+<p><em>-Alexey Chernikov</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>leaderbaords &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/leaderbaords/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>leaderbaords &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #114</title>
+		<link>/blog/2016/03/11/from-the-forum-issue-114/</link>
+		<pubDate>Sat, 12 Mar 2016 03:51:28 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[debugging]]></category>
+		<category><![CDATA[leaderbaords]]></category>
+
+		<guid isPermaLink="false">/?p=66120</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Verbose debugging</h3>
+<p>The hard crash. We all know it. We all fear it. It’s no fun to run into an unhandled exception when you are really humming along in your IDE of choice. No matter how much you plan and how far along you are in your development cycle, it’s likely you’ll run into one of these problems.</p>
+<p>In the thread below, we see a Corona developer running into an issue where they are seeing a Runtime error in a very large function, and it is very hard to find the needle in this particular haystack. Searching for help, some of the more experienced Corona devs came in to provide a bit more clarity to the situation. Mainly, why exactly apps crash and what causes it. It’s well worth a read, so head on down and check it out!<br />
+<a href=https://forums.coronalabs.com/topic/61985-debugging/ target="_blank">https://forums.coronalabs.com/topic/61985-debugging/</a></p>
+<h3>Additional steps for the business app</h3>
+<p>Recently, Rob Miracle posted a <a href=/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/ target="_blank">fantastic blog write-up</a> detailing some of the updates to the business sample app included with Corona’s examples. Well-supported and informative, it covered a lot of interesting steps that can be used out-of-the-box for any productivity-minded app.</p>
+<p>What wasn’t covered, was the concept of a login mechanism, involving account logging and encryption. It’s a complicated topic, and one that was broached in the forum, by an intrepid developer looking for some guidance. Fortunately, Rob again jumped into the fray in order to help this developer out, and in doing so, laid down some useful workflow logic for anyone looking to gain a better understanding of logins can work, bouncing against a third-party server for authentication.</p>
+<p>Head down to the original thread to learn more!</p>
+<p><a href=https://forums.coronalabs.com/topic/62026-business-app-login-and-password-encryption-sample/ target="_blank">https://forums.coronalabs.com/topic/62026-business-app-login-and-password-encryption-sample/</a></p>
+<h3>Coronium for the uninitiated</h3>
+<p>When starting out on our Corona game development journey, one of the main stops along the way is getting our leaderboards set up. Giving players a tangible carrot to strive towards when toiling in your game world.</p>
+<p>That’s where the road gets a little bumpy. Should you use GPGS? GameCenter? Both? A third party option? There are several different ways to approach the problem. Creator of the Coronium Cloud Platform <strong>Develephant</strong> was able to drop some base knowledge on the subject, and what exactly is required to hit the ground running with a cross-platform leaderboard solution.</p>
+<p>Lots of good stuff in this thread, so I’m going to stop here and just tell you to click through!</p>
+<p><a href=https://forums.coronalabs.com/topic/61977-question-about-coronium-from-a-total-newbie/ target="_blank">https://forums.coronalabs.com/topic/61977-question-about-coronium-from-a-total-newbie/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

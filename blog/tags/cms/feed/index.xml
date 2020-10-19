@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cms &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/cms/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>cms &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured app: Quebec Tourism</title>
+		<link>/blog/2016/02/24/featured-app-quebec-tourism/</link>
+		<comments>/blog/2016/02/24/featured-app-quebec-tourism/#comments</comments>
+		<pubDate>Wed, 24 Feb 2016 17:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[cms]]></category>
+		<category><![CDATA[tourism]]></category>
+
+		<guid isPermaLink="false">/?p=65743</guid>
+		<description><![CDATA[Today we highlight a recently released non-game app called Quebec Tourism. This app an excellent example of how Corona can be used to deploy powerful business related apps.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-65745" src="/wordpress/wp-content/uploads/2016/02/unnamed1-169x300.jpg" alt="unnamed1" width="169" height="300" />Can you make non-game apps with Corona? That&#8217;s a question that comes up a lot. The short answer is &#8220;yes!&#8221; As an example, let&#8217;s explore <em>Quebec Tourism</em>, a recently released business-oriented app from Nicolas Michaud of <a href=http://mobeva.com/ target="_blank">Mobeva.com</a>.</p>
+<p><em>Quebec Tourism</em> is a non-game app built upon Mobeva&#8217;s white label tourism platform, created with Corona. This platform allows Mobeva to easily create custom tourism apps for different tourism offices around the world. With it they can promote the country, city, other locale, or set up guided tours.</p>
+<p>Using either Mobeva&#8217;s CMS (Content Management System), or by connecting directly to the customer&#8217;s database, the <em>Quebec Tourism</em> app can be quickly customized to offer a unique experience. It also supports both online and offline usage.</p>
+<h4>Features</h4>
+<ul>
+<li>Customized content based on user tastes</li>
+<li>Geo-location to find attractions around users</li>
+<li>An adaptive interface based on device orientation</li>
+<li>Social network sharing</li>
+<li>French and English support</li>
+</ul>
+<p><em>Quebec Tourism</em> is currently available as a free download for <a href=https://itunes.apple.com/us/app/quebec-tourism-attractions/id586600494?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.braintonik.nestorQuebec target="_blank">Android</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/24/featured-app-quebec-tourism/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

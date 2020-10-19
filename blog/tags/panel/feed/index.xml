@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>panel &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/panel/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>panel &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Widgets — Creating a sliding panel</title>
+		<link>/blog/2014/04/08/widgets-creating-a-sliding-panel/</link>
+		<comments>/blog/2014/04/08/widgets-creating-a-sliding-panel/#comments</comments>
+		<pubDate>Wed, 09 Apr 2014 01:21:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[panel]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[ui]]></category>
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">/?p=57969</guid>
+		<description><![CDATA[Today's tutorial demonstrates how to create a sliding panel that has many uses, ranging from games to business applications. Using just one core function, you can easily implement a wide variety of panels that appear from different sides of the screen and utilize unique easing transitions.]]></description>
+				<content:encoded><![CDATA[<p>Today&#8217;s tutorial demonstrates how to create a <strong>sliding panel</strong> that has many uses, ranging from games to business applications. You might build an adventure game where the player&#8217;s inventory needs to slide on the screen, then hide itself when the user is done. Or you might build a menu that slides in when the player taps the infamous &#8220;hamburger&#8221; menu icon. Yet another possibility is sliding notices in and out.</p>
+<p>As with the previous UI tutorials on <a href=http://www.coronalabs.com/blog/2013/12/31/tutorial-extending-widgets-with-a-navigation-bar/ target="_blank">navigation panels</a> and <a href=http://www.coronalabs.com/blog/2013/12/03/tutorial-customizing-text-input/ target="_blank">text fields</a>, this tutorial will extend the <a href=http://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> library, creating a <strong>new</strong> widget called <code>widget.newPanel()</code>. Let&#8217;s look at the entire function:</p><pre class="crayon-plain-tag">function widget.newPanel( options )
+    local customOptions = options or {}
+    local opt = {}
+
+    opt.location = customOptions.location or &quot;top&quot;
+
+    local default_width, default_height
+    if ( opt.location == &quot;top&quot; or opt.location == &quot;bottom&quot; ) then
+        default_width = display.contentWidth
+        default_height = display.contentHeight * 0.33
+    else
+        default_width = display.contentWidth * 0.33
+        default_height = display.contentHeight
+    end
+
+    opt.width = customOptions.width or default_width
+    opt.height = customOptions.height or default_height
+
+    opt.speed = customOptions.speed or 500
+    opt.inEasing = customOptions.inEasing or easing.linear
+    opt.outEasing = customOptions.outEasing or easing.linear
+
+    if ( customOptions.onComplete and type(customOptions.onComplete) == &quot;function&quot; ) then
+        opt.listener = customOptions.onComplete
+    else 
+        opt.listener = nil
+    end
+
+    local container = display.newContainer( opt.width, opt.height )
+
+    if ( opt.location == &quot;left&quot; ) then
+        container.anchorX = 1.0
+        container.x = display.screenOriginX
+        container.anchorY = 0.5
+        container.y = display.contentCenterY
+    elseif ( opt.location == &quot;right&quot; ) then
+        container.anchorX = 0.0
+        container.x = display.actualContentWidth
+        container.anchorY = 0.5
+        container.y = display.contentCenterY
+    elseif ( opt.location == &quot;top&quot; ) then
+        container.anchorX = 0.5
+        container.x = display.contentCenterX
+        container.anchorY = 1.0
+        container.y = display.screenOriginY
+    else
+        container.anchorX = 0.5
+        container.x = display.contentCenterX
+        container.anchorY = 0.0
+        container.y = display.actualContentHeight
+    end
+
+    function container:show()
+        local options = {
+            time = opt.speed,
+            transition = opt.inEasing
+        }
+        if ( opt.listener ) then
+            options.onComplete = opt.listener
+            self.completeState = &quot;shown&quot;
+        end
+        if ( opt.location == &quot;top&quot; ) then
+            options.y = display.screenOriginY + opt.height
+        elseif ( opt.location == &quot;bottom&quot; ) then
+            options.y = display.actualContentHeight - opt.height
+        elseif ( opt.location == &quot;left&quot; ) then
+            options.x = display.screenOriginX + opt.width
+        else
+            options.x = display.actualContentWidth - opt.width
+        end 
+        transition.to( self, options )
+    end
+
+    function container:hide()
+        local options = {
+            time = opt.speed,
+            transition = opt.outEasing
+        }
+        if ( opt.listener ) then
+            options.onComplete = opt.listener
+            self.completeState = &quot;hidden&quot;
+        end
+        if ( opt.location == &quot;top&quot; ) then
+            options.y = display.screenOriginY
+        elseif ( opt.location == &quot;bottom&quot; ) then
+            options.y = display.actualContentHeight
+        elseif ( opt.location == &quot;left&quot; ) then
+            options.x = display.screenOriginX
+        else
+            options.x = display.actualContentWidth
+        end 
+        transition.to( self, options )
+    end
+
+    return container
+end</pre><p>For consistency, this new widget will follow the coding standard of the other widgets in the Corona <a href=https://github.com/coronalabs/framework-widget target="_blank">open source</a> widget library. Like other widgets, we begin by passing in a table of parameters necessary to create the panel (lines 5 through 27). These include:</p>
+<ul>
+<li><code>location</code> — where the panel originates from (left, right, top, or bottom).</li>
+<li><code>width</code> — the width of the panel.</li>
+<li><code>height</code> — the height of the panel.</li>
+<li><code>speed</code> — how fast the panel shows and hides (slides in or out).</li>
+<li><code>inEasing</code> — the transition <a href=http://docs.coronalabs.com/api/library/easing/index.html target="_blank">easing</a> method used when the panel shows.</li>
+<li><code>outEasing</code> — the transition <a href=http://docs.coronalabs.com/api/library/easing/index.html target="_blank">easing</a> method used when the panel hides.</li>
+<li><code>onComplete</code> — a function to execute when the panel completes showing and hiding.</li>
+</ul>
+<p>All parameters are optional and are set to reasonable defaults. The <code>location</code> parameter is a string value of either <code>"left"</code>, <code>"right"</code>, <code>"top"</code> or <code>"bottom"</code> that defaults to <code>"top"</code>. The <code>speed</code> parameter defaults to <strong>500</strong> milliseconds. <code>inEasing</code> and <code>outEasing</code> are <strong>linear</strong> by default but can be set to any of the standard <a href=http://docs.coronalabs.com/api/library/easing/index.html target="_blank">easing</a> methods.</p>
+<p><code>onComplete</code> is optional and defaults to <code>nil</code>. In the above example, we actually create two completion listeners, one for each of the actions the panel supports (<code>panel:show()</code> and <code>panel:hide()</code>).</p>
+<h4>Code notes</h4>
+<p>Let&#8217;s step through the function code and inspect some important aspects:</p>
+<ul>
+<li>When adding the code to define the listener (lines 23-27), it&#8217;s helpful to make sure that a parameter was passed, but also that it&#8217;s a function and not some other variable type.</li>
+<li>If a panel slides in from the left or right, it&#8217;s reasonable to take up the full height of the visible screen, but the width would need to be specific to the app. Panels coming in from the top or bottom may take up the full width of the device but be limited to 1/3 of the screen.</li>
+<li>Line 29 creates a <a href=http://docs.coronalabs.com/api/library/display/newContainer.html target="_blank">display.newContainer()</a>. This is similar to <a href=http://docs.coronalabs.com/api/library/display/newGroup.html target="_blank">display.newGroup()</a>, except that its bounds are automatically clipped to the defined width and height. This container object is returned on line 95 to the calling function.</li>
+<li>The panel is positioned off screen based on the location specified. Since there are many ways to set up the size and scale in <code>config.lua</code>, this function uses <code>display.screenOriginX</code> and <code>display.screenOriginY</code> to reference the left and top of the screen. Likewise, <code>display.actualContentWidth</code> and <code>display.actualContentHeight</code> represents the right and bottom edges of the screen. By setting the anchor point to the side of the container that faces the content area, we can use these values to position it. The other value will simply center the container along that edge.</li>
+<li>To show and hide the panel, two methods are included named <code>show()</code> and <code>hide()</code>. Lines 53-93 implement these two functions. The panels will be shown or hidden using a simple <code>transition.to()</code> call, but first we need to determine where to move the panel to. If we&#8217;re sliding the panel in/out from the top or bottom, we need to transition the <strong>y</strong> value. If we&#8217;re sliding it in/out from either side, we need to use the <strong>x</strong> value. Again, we use the defined points for the sides of the screen and either add or subtract the width or height of the panel.</li>
+</ul>
+<h3>Using the &#8220;widget.newPanel()&#8221;</h3>
+<p>To use the panel, simply create a new object, in this case <code>panel</code>, and above that, the optional listener function that&#8217;s specified as the <code>onComplete</code> parameter:</p><pre class="crayon-plain-tag">local function panelTransDone( target )
+    native.showAlert( &quot;Panel&quot;, &quot;Complete&quot;, { &quot;Okay&quot; } )
+    if ( target.completeState ) then
+        print( &quot;PANEL STATE IS: &quot;..target.completeState )
+    end
+end
+
+local panel = widget.newPanel{
+    location = &quot;top&quot;,
+    onComplete = panelTransDone,
+    width = display.contentWidth * 0.8,
+    height = display.contentHeight * 0.8,
+    speed = 250,
+    inEasing = easing.outBack,
+    outEasing = easing.outCubic
+}</pre><p>When done, <code>panel</code> will be the container object to which we can add whatever content desired using the <code>object:insert()</code> call. To keep things more organized, display objects can optionally be added directly to the panel object:</p><pre class="crayon-plain-tag">panel.background = display.newRect( 0, 0, panel.width, panel.height )
+panel.background:setFillColor( 0, 0.25, 0.5 )
+panel:insert( panel.background )
+
+panel.title = display.newText( &quot;menu&quot;, 0, 0, native.systemFontBold, 18 )
+panel.title:setFillColor( 1, 1, 1 )
+panel:insert( panel.title )</pre><p></p>
+<h4>Showing and hiding</h4>
+<p>When desired, we can show or hide the panel by simply calling the proper method:</p><pre class="crayon-plain-tag">panel:show()
+panel:hide()</pre><p></p>
+<h4>Composer notes</h4>
+<p>If you&#8217;re using <a href=http://docs.coronalabs.com/guide/system/composer/index.html target="_blank">Composer</a>, you may not want to insert the panel into the Composer group because the panel is generally intended to slide <strong>over</strong> anything else in the scene. However, if you choose to add it to the scene&#8217;s view, it should be the <strong>last</strong> thing inserted into the scene, or else you should call <a href=http://docs.coronalabs.com/api/type/DisplayObject/toFront.html target="_blank">object:toFront()</a> to move it to the top of the scene&#8217;s view.</p>
+<p>On the general topic of Composer, you may ask &#8220;shouldn&#8217;t this be done with an overlay?&#8221;. While that is a valid approach, overlays are individual scenes and it takes more effort to construct and deconstruct a scene. In contrast, <code>widget.newPanel()</code> yields a simple slide-in/out unit which can be used with or without Composer.</p>
+<h3>In summary</h3>
+<p>This tutorial should get you started with implementing basic sliding panels in your app. With some clever adjustments to the various parameters, you can easily implement a wide variety of panels that appear from different sides of the screen and utilize unique easing transitions.</p>
+<p>To use this widget in your own projects, please download the code from our GitHub <a href=https://github.com/coronalabs/sample-widget-panel target="_blank">repository</a>.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/04/08/widgets-creating-a-sliding-panel/feed/</wfw:commentRss>
+		<slash:comments>30</slash:comments>
+		</item>
+	</channel>
+</rss>

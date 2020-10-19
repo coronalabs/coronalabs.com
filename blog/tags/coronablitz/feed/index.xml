@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>coronablitz &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronablitz/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>coronablitz &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Piece: CoronaBlitz &#8211; My First Game Jam</title>
+		<link>/blog/2013/08/29/guest-piece-coronablitz-my-first-game-jam/</link>
+		<pubDate>Thu, 29 Aug 2013 16:18:48 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[coronablitz]]></category>
+		<category><![CDATA[game jam]]></category>
+
+		<guid isPermaLink="false">/?p=42987</guid>
+		<description><![CDATA[Kyle Yamamoto is the co-founder of <a href="http://mochibits.com/">MochiBits</a>, an independent game studio. While originally working with Cocos2D, the team switch to Corona SDK to take advantage of Corona's cross-platform capabilities. To date, Kyle and co-founder Howard Go have build and published 11 mobile apps.
+
+Kyle recently participated in <a href="http://www.coronalabs.com/blog/2013/08/07/guest-piece-coronablitz-a-semi-regular-mini-coding-challenge/">CoronaBlitz</a>, a 4 hour coding challenge put on by Corona developer Andrew Potozniak. In today's piece, Kyle writes on his experience participating in his first-ever game jam. Check out all the CoronaBlitz entries in our <a href="http://forums.coronalabs.com/forum/619-coronablitz/">forum</a>.]]></description>
+				<content:encoded><![CDATA[<p><em>Kyle Yamamoto is the co-founder of <a href=http://mochibits.com/>MochiBits</a>, an independent game studio. While originally working with Cocos2D, the team switch to Corona SDK to take advantage of Corona&#8217;s cross-platform capabilities. To date, Kyle and co-founder Howard Go have build and published 11 mobile apps.</p>
+<p>Kyle recently participated in <a href=http://www.coronalabs.com/blog/2013/08/07/guest-piece-coronablitz-a-semi-regular-mini-coding-challenge/>CoronaBlitz</a>, a 4 hour coding challenge put on by Corona developer Andrew Potozniak. In today&#8217;s piece, Kyle writes on his experience participating in his first-ever game jam. If you&#8217;d like to see more from Kyle, you can follow him on Twitter at <a href=http://twitter.com/_kyleyamamoto>@_kyleyamamoto</a>. To check out all the CoronaBlitz entries, please visit our <a href=http://forums.coronalabs.com/forum/619-coronablitz/>forum</a>.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/08/Kyle-150x150.jpg" alt="Kyle" class="alignleft size-thumbnail wp-image-42994" srcset="/wordpress/wp-content/uploads/2013/08/Kyle-150x150.jpg 150w, /wordpress/wp-content/uploads/2013/08/Kyle.jpg 162w" sizes="(max-width: 150px) 100vw, 150px" />When I first heard about the CoronaBlitz, I really wanted to do it. The 4-hour time frame spread over a week was perfect for a game jam newbie. </p>
+<p>I&#8217;ve had this vague idea for a game inspired by Pivvot, Brick Roll, and the old-school Mr. Ninja.  Luckily, the idea fit perfectly with the &#8220;Collection&#8221; theme. I didn&#8217;t need any fancy graphics and the gameplay was also pretty simple.</p>
+<p>The basic premise is that you are a dot and you can only do one thing: jump. Your direction is controlled by spinning planets and your only goal is to collect all the coins on the screen. No dying and no time limit.</p>
+<p>Here&#8217;s an hour-by-hour break down of how I spent my time:</p>
+<p><strong>0:00-1:00 &#8212; Planet and coin setup</strong><br />
+I took the first hour to get the planets and coins set up. I had to iterate over all the planets and coins to make sure they weren&#8217;t drawn over each other, and to make sure that they had a minimum safe distance between each other and the edges of the screen.  </p>
+<p>The planets have a random radius with a random rotation direction and speed. They also have a marker so we can actually see which way they are rotating. I put both the planets and markers in their own display group so I could rotate that instead of each individual object.</p>
+<p><strong>1:00-2:00 &#8212; Physics and intersections</strong><br />
+I considered using real Corona physics briefly, but decided to just plot my own positions and do my own collision detection with MATH!  </p>
+<p>I used the runtime &#8220;enterFrame&#8221; event to run every 60FPS. So every frame, I rotate all the planets and also move the dot, if the dot has a velocity.</p>
+<p>Once everything is moved, I loop over all the coins and planets to see if the dot collides. The collision is just a simple radius check (since its all spheres). If the dot collides with the planet, I set the velocity to zero and then start rotating the dot around the planet&#8217;s center.</p>
+<p>Thanks to stack overflow for saving me some time on the <a href="http://stackoverflow.com/questions/2259476/rotating-a-point-about-another-point-2d
+">rotation math</a>.</p>
+<p><em>Implementation note: I decided to just keep the dot in its own worldspace instead of putting it in the planet&#8217;s display group. I wasted some time trying to get the appropriate planet rotation so I could move between world and planet space.  Keeping the dot in worldspace was way easier and it worked out fine.</em></p>
+<p><strong>2:00-2:30 &#8212; Proper collision distances</strong><br />
+One thing that was bothering me was when the dot got attached to the planet, sometimes it was a little too close due to the velocity being too high and the frame refresh. The dot&#8217;s position would update to be inside the planet. To fix that, I just offset the dot back to just outside the planets radius. Calculated at collision time.</p>
+<p><strong>2:30-3:00 &#8212; Graphical juice</strong><br />
+I tried to think of what I could do to make this juicy, and there were only a few things.</p>
+<p>1) Dot trail &#8211; If the dot was moving through space, I just inserted a circle at the dot&#8217;s old location and scaled it down and faded it out over 1/4 second. I also added a second circle interpolated between the old position and current position to make the trail more solid. You could see the individual dots it if was moving too fast.<br />
+2) Planet hit &#8212; Added a sphere at the point of collision. Scales up and fades out.<br />
+3) Coin hit &#8212; Scaled the coin in the Y and faded it out.</p>
+<p><strong>3:00-3:45 &#8212; Sounds, cleanup, initialization and play</strong><br />
+I used <a href=http://thirdcog.eu/apps/cfxr>CFXR</a> to create the sounds. It&#8217;s pretty sweet.</p>
+<p>I also cleaned up the code, added a few comments and made it so all the graphics objects got released and set to nil every time you get that last coin and reset the game.</p>
+<p><strong>3:45-4:00 &#8212; Background music</strong><br />
+I used GarageBand on my iPad with a basic arcade synthesizer to create a 15 second loop. No I didn&#8217;t do all those notes, I just held one key down and it sounded cool. </p>
+<p><strong>In conclusion</strong><br />
+Overall I&#8217;m really happy with what I was able to do in 4 hours. The game turned out really fun. </p>
+<p>It was really easy getting things up and running using <a href=http://www.coronalabs.com/products/corona-sdk/>Corona SDK</a>. I would definitely do another CoronaBlitz and maybe other game jams too!  </p>
+<p>We&#8217;re planning on taking my prototype and releasing it as a REAL game. Look for it sometime in October 2013. In the meantime, here&#8217;s a video of the game in action:</p>
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/aGXPmcBDl50" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

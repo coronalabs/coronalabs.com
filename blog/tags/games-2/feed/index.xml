@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>games &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/games-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>games &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing Steamworks, a plugin for Steam apps</title>
+		<link>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/</link>
+		<comments>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 14:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[achievements]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[leaderboards]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[steam]]></category>
+		<category><![CDATA[valve]]></category>
+
+		<guid isPermaLink="false">/?p=67650</guid>
+		<description><![CDATA[Corona Labs is pleased to announce our plugin for Steamworks. Learn how you can take advantage of this plugin to publish desktop games to Steam!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png" alt="share_steam_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w" sizes="(max-width: 150px) 100vw, 150px" />When it comes to PC desktop games, the premier place to publish is <a href=http://store.steampowered.com/ target="_blank">Steam</a>.</p>
+<p>Now, Corona developers can build apps for Windows (<code>win32.exe</code>) or macOS and submit them to Steam to be &#8220;greenlit.&#8221; During the greenlight process, the Steam community reviews apps and decides if they want them to be published.</p>
+<p>To ensure that your games can compete in the Steam store, Corona Labs has been diligently working to create a <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">plugin for Steam</a>. This plugin supports core features requested by developers who have already had their apps successfully published to Steam.</p>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">Steamworks plugin</a>, your app can now take advantage of leaderboards, achievements, user stats, player information, and various Steam overlays in your game. These features aren&#8217;t required, but their presence in your game could encourage more people to vote &#8220;yes!&#8221;.</p>
+<h3>About the plugin</h3>
+<p>This plugin is a bit different than our other game networking plugins. For example, there is no login API. Instead, you must be logged into the Steam client on your computer. The plugin then talks to the Steam client to exchange information with the Steam servers. On macOS, it&#8217;s best to set up the Corona Simulator as a Steam app and launch Corona SDK from Steam for maximum support.</p>
+<p>Many of the API calls return data immediately, if the data has been cached or is readily available. For instance, if you are getting information about a user and the plugin previously retrieved the data, it is returned to you immediately. However, if the data is not immediately available, and you have set up an event listener for that type of data, an event will trigger the listener and then you can update your local data with the new information.</p>
+<h3>In summary</h3>
+<p>Learn more about implementing Steamworks in your game by reading our Steamworks plugin <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">documentation</a> and by examining our Steamworks <a href=https://github.com/coronalabs/steamworks-sample target="_blank">sample app</a>. And, join us in the Corona <a href=https://forums.coronalabs.com/ target="_blank">forums</a> to discuss this wonderful addition to our plugin library.</p>
+<hr />
+<div style="font-size: 80%; font-color: #999;">Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>From the Forum — Issue #131</title>
+		<link>/blog/2016/07/08/from-the-forum-issue-131/</link>
+		<pubDate>Sat, 09 Jul 2016 01:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[DRY]]></category>
+		<category><![CDATA[Endless Runner]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[modules]]></category>
+
+		<guid isPermaLink="false">/?p=67414</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>When is running endlessly not really running?</h3>
+<p>Starting out on the long road of game development means learning concepts that are not intuitive, even to programmers. Procedural generation, game loops, and asset management versus memory management are all concerns facing fledgling Corona enthusiasts.</p>
+<p>The endless runner is a great project to get your feet wet in the world of Corona game development. However, though it seems simple on the candy-coated surface, things can get messy pretty quickly. Discussion on the anatomy of an endless runner came up in the forum recently <a href=https://forums.coronalabs.com/topic/64465-is-endless-running-game-really-endless/ target="_blank">here</a>. It underlines some basic elements of game design which are useful no matter where you are in your development journey.</p>
+<h3>Coronium LS</h3>
+<p>We are all waiting with baited breath for the full release of Corona Labs&#8217; hosted solution which is being discussed in hushed whispers around campfires. While we wait, <strong>Develephant</strong> unleashed a community-supported option to the masses, <strong>Coronium LS</strong>. According to the man himself, it’s a “hybrid cloud solution for your Corona SDK games. A lot of ‘love’ went into this project, and I&#8217;m very excited to share it with you. Get your helmets on.”</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64464-new-coronium-ls-the-hybrid-cloud target="_blank">original thread</a> that points to the documentation and information on the project as a whole!</p>
+<h3>When to use a module</h3>
+<p>Continuing on the theme of game development, we have a fantastic conversation going on between a relatively new Corona developer and a couple of old-timers who have been around the block. Specifically, when do you use a module instead of simply including code in <code>main.lua</code> or whichever scene you are running? Check out <a href=https://forums.coronalabs.com/topic/63854-when-does-it-make-sense-to-employ-a-module-instead-of-a-function-within-a-scene-file/ target="_blank">the discussion</a> for a thorough dissertation on the finer points of modularized code, along with the basic tenets of &#8220;DRY&#8221; programming.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Using Corona SDK at Global Game Jam 2016</title>
+		<link>/blog/2016/01/27/global-game-jam-2016-tools-2d-game-development-using-corona-sdk/</link>
+		<pubDate>Wed, 27 Jan 2016 22:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[GGJ]]></category>
+		<category><![CDATA[Global Game Jam]]></category>
+		<category><![CDATA[hackathon]]></category>
+
+		<guid isPermaLink="false">/?p=65412</guid>
+		<description><![CDATA[We're just days away from Global Game Jam 2016, the largest game hackathon of the year. Learn how you can attend and how you can use Corona SDK to jam!]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;re just days away from <a href=http://globalgamejam.org/ target="_blank">Global Game Jam 2016</a>, the largest game hackathon of the year.<br />
+<img class="alignright size-thumbnail wp-image-65415" style="margin: 20px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png" alt="GGJ round logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/01/GGJ-round-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/01/GGJ-round-logo.png 900w" sizes="(max-width: 150px) 100vw, 150px" /><br />
+If you haven&#8217;t heard about it before, Global Game Jam is a great opportunity for both veteran and novice game developers to gather together, collaborate, and make games over the course of one weekend.</p>
+<p>In addition to deciding to attend and actually forming a team, choosing a game development tool is one of the main decisions you&#8217;ll have to make. Fortunately, Corona SDK is listed as one of the top tools and technologies in the website&#8217;s list of platforms, so be sure to select it as your platform of choice.</p>
+<h3>Why you should choose Corona SDK</h3>
+<p><strong>Speed</strong> &#8212; Corona is excellent for rapid prototyping. When you save your code, the Corona Simulator detects the changed file and instantly refreshes itself so that you see the changes instantly. Corona SDK is also based on Lua which is an <a href=https://docs.coronalabs.com/guide/start/introLua/index.html>easy-to-learn language</a>.</p>
+<p><strong>Rich API ecosystem</strong> &#8212; Corona SDK provides an <a href=https://docs.coronalabs.com/api/index.html>extensive API set</a> for creating/manipulating images and sprites, playing audio, applying physics, and interacting with game elements. Corona also provides a scene management library to make multiple screens/levels simple. Finally, an ever-expanding <a href=https://store.coronalabs.com>plugin/ library</a> allows you to extend your app beyond the already robust API set.</p>
+<p><strong>Diverse platform deployment</strong> &#8212; While Corona SDK is known for being a mobile development platform (iOS, Android, and Windows Phone 8), it is also a TV platform, featuring support for Android TV and Apple&#8217;s new tvOS. Even more important is that Corona SDK can also build to both Windows x86 and OS X desktop. Thus, using the same code base, you can target a whole set of entertainment platforms.</p>
+<p><strong>Learning resources</strong> &#8212; Looking for the proper resources to get started? We&#8217;ve got it covered!</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/ target="_blank">Documentation and guides</a> &#8212; Each <a href=https://docs.coronalabs.com/ target="_blank">API</a> is documented and a collection of <a href=https://docs.coronalabs.com/guide/index.html target="_blank">guides</a> cover essential topics.</li>
+<li><a href=https://github.com/coronalabs/samples-coronasdk target="_blank">Sample code</a> &#8212; Some developers learn best by inspecting existing code. We have many examples which you can use as foundational aspects for your game.</li>
+</ul>
+<div style="background-color: #fed; border: 1px solid #ccc; padding: 12px 10px 10px 10px;"><a href=/blog/2013/04/19/guest-piece-a-global-game-jam-ggj-developer-story-san-francisco-style/ target="_blank">Read about the experience</a> of a team of Corona developers from Global Game Jam 2013!</div>
+<h3>Get started!</h3>
+<p>Ready to attend <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">Global Game Jam 2016</a>? Sign up on their <a href=http://globalgamejam.org/user/signup/to/participate/using target="_blank">website</a> as soon as possible.</p>
+<p>Next, <a href=/products/corona-sdk/ target="_blank">download Corona SDK</a>. With rapid prototyping, a <a href=https://docs.coronalabs.com/api/index.html>robust API set</a>, a diverse range of deployable platforms, and plenty of learning resources, Corona is the perfect tool for developing your 2D game at Global Game Jam 2016 and beyond.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #39 &#8211; Creating Forever Lost, Episodes 1, 2, and 3</title>
+		<link>/blog/coronageek/corona-geek-hangout-39/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-39/#respond</comments>
+		<pubDate>Mon, 13 May 2013 23:32:22 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[adventure games]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[indie developer]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=33723</guid>
+		<description><![CDATA[This week we hung out with Graham Ranson and Simon Pearce of Glitch Games to discuss how they designed and developed their hit game Forever Lost. Both game developers were brutally honest about the process and their design decisions. They also provided some encouraging insights into how two game developers make their living off of a popular game title.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Muk2Mna1rFw?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://snakeheadsoftware.com/ target="_blank">Gerald Bailey</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=http://appdevelopermagazine.com/ target="_blank">Richard Harris</a>, and of course <a href=https://twitter.com/GrahamRanson target="_blank">Graham Ranson</a> and <a href=https://twitter.com/_simon_pearce_ target="_blank">Simon Pearce</a> of <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> to discuss how they designed and developed their <a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?mt=8 target="_blank">hit game Forever Lost</a>. Graham and Simon were brutally honest about the process and their design decisions. They also provided some encouraging insights into how two game developers make their living off of a popular game title.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Peter Stanley for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-39/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-39-2013-05-13-glitch-games.mp3" length="46979454" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>App Review: 14px Game</title>
+		<link>/blog/coronageek/14px-game-review/</link>
+		<comments>/blog/coronageek/14px-game-review/#comments</comments>
+		<pubDate>Wed, 19 Dec 2012 01:29:55 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[14px]]></category>
+		<category><![CDATA[CoronaGeek]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[Platformer]]></category>
+
+		<guid isPermaLink="false">http://coronageek.com/?p=1348</guid>
+		<description><![CDATA[Here's a quick app review of 14px by Drummer Games, a 2D platformer game with a retro feel. Four worlds are included as part of the paid game along with 45 levels that range from introductory to absolutely insane. 14px also has an online level editor that allows you to create levels in your desktop browser and play them on your device and share them with your friends. More on that later.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/8g170cUyORg?rel=0" height="350" width="620" allowfullscreen="" frameborder="0"></iframe></p>
+<p style="text-align: left;"><strong>App:</strong> 14px<br />
+<strong>Category:</strong> Game<br />
+<strong>Developer:</strong> <a href=https://twitter.com/roballison target="_blank">Rob Allison</a>, Drummer Game<br />
+<strong>Price</strong>: .99 cents<br />
+<strong>In-App Purchases:</strong> None<br />
+<strong>Device:</strong> <a href=https://itunes.apple.com/us/app/14px/id576855899?mt=8 target="_blank">iOS (iPhone, iPad)</a> and <a href=https://play.google.com/store/apps/details?id=com.drummerGames.px14 target="_blank">Android</a> Developed using the Corona SDK</p>
+<p><strong>App Review:</strong></p>
+<p>14px by Drummer Games is a 2D platformer game with a retro feel. Four worlds are included as part of the paid game along with 45 levels that range from introductory to absolutely insane. 14px also has an online level editor that allows you to create levels in your desktop browser and play them on your device and share them with your friends. More on that later.</p>
+<p><img class="aligncenter" style="text-align: center;" alt="14px-game-review-9" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-9.png" width="590" height="443" /></p>
+<p>You start each level as an inkblot who is trying to get from the platform&#8217;s starting point to the end of the platform where a portal awaits to take you to the next level.</p>
+<p>Along the way, your objective is to collect orbs and free your inkblot friends without falling off the platform or being killed by a variety of hazards. Once you reach the portal, you teleport to the next level where you&#8217;re met with a whole new set of challenges.</p>
+<p><img class="aligncenter size-full wp-image-1363" alt="14px-game-review-7" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-7.png" width="590" height="443" /></p>
+<p>Each level builds on what you&#8217;ve learned in previous levels, but adds some form of unique twist to the game play to keep things interesting. Once you unlock a level, you can replay it again to improve your score, get those orbs you missed, or free the friends you ditched the first time around (don&#8217;t judge me 🙂 .</p>
+<p>14px has several settings you can adjust as well. You can turn off the music and sound effects, or change the control mode.</p>
+<p style="text-align: center;"><img class="aligncenter" alt="14px-game-review-4" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-4.png" width="590" height="443" /></p>
+<p>There are two control modes. One has offers a left and right control that you operate with your left thumb, and you jump up with your right thumb. The white control outlines are hard to see in the screen shots, so I&#8217;ve outlined them in red and labeled the controls in white.</p>
+<p><img class="aligncenter size-full wp-image-1387" alt="14px-control-mode-one" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-control-mode-one.jpg" width="590" height="443" /></p>
+<p>Control mode two, offers an option where you control the left, right, and up options with both thumbs. I found this mode hurt my brain too much, so I just play the game with control mode one turned on. I&#8217;m not that coordinated, but you might find mode two easier to operate than I did.</p>
+<p><img class="aligncenter size-full wp-image-1388" alt="14px-control-mode-two" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-control-mode-two.jpg" width="590" height="443" /></p>
+<p>One of the quirky things about the game that I love is that it keeps stats on all the different ways you die. This keeps the game feeling fun and challenging.</p>
+<p>Even during game play you are repeatedly told how you died and how many times you&#8217;ve tried to complete the level. It&#8217;s sort of like a badge of honor to know that you&#8217;ve been killed 67 times by falling off the platform when all you&#8217;re really trying to do is not get killed by a spinner, death floor, spikes, or a flying spikey thing (that what it&#8217;s actually called 🙂</p>
+<p><img class="aligncenter size-full wp-image-1361" alt="14px-game-review-5" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-5.png" width="590" height="443" /></p>
+<p>Fortunately there are some perks to being persistent. Once you build up enough points you can change your character from the default black inkblot to one of the other color characters, which gives you special abilities like super health, or super jump.</p>
+<p>Honestly, I haven&#8217;t tried to use one of these four characters yet because, I&#8217;m still trying to not fall off the platform like a duffus. I do have my eye on Prak, the blue super health inkblot. I think that will be my best bet at long term survival.</p>
+<p><img class="aligncenter size-full wp-image-1358" alt="14px-game-review-2" src="http://www.coronalabs.com/wp-content/uploads/2012/12/14px-game-review-2.png" width="590" height="443" /></p>
+<p>Overall the game is a super fun and there hasn&#8217;t been a moment when I&#8217;ve felt like the game is redundant. Each new level offers different challenges and some even offer up dimensional challenges by flipping the map around during game play. When the map flips so does the orientation of everything, including gravity.</p>
+<p><strong>Online Editor</strong></p>
+<p>Like I mentioned earlier, 14px also has an <a href=http://14px.co.uk/level-editor/ target="_blank">online level editor</a> that allows you to create levels in your desktop browser and play them on your device and share them with your friends. The editor is in beta, so there are some missing features, but for now its a lot of fun to create your own maps and share them with others.</p>
+<p><iframe width="620" height="350" src="http://www.youtube.com/embed/E-vVltvlgbQ?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>The editor is well done and is super easy to use. The only issue I had with it was that I had to mouse over each of the different game pieces to learn what they were. I think if the pieces were organized into groups it might have helped me understand at a glance what pieces were meant to kill me and which ones were just non-lethal. It only takes a minute to figure it out for now, so I highly recommend creating your own maps.</p>
+<p>There is a <a href=https://itunes.apple.com/us/app/14px-free/id578642011?mt=8 target="_blank">free version of 14px</a>, if you want to try before you buy. It offers a few sample levels, but lacks the ability to play levels created with the online editor. The full version offers all worlds and levels as well.</p>
+<p><strong>10 Star Rating</strong></p>
+<p>Overall I give 14px 10 stars. It&#8217;s fun, creative, quirky, and innovative. I like the characters and the online editor gives me control over the app in a way that keeps things fresh and new. Download it now from either the <a href=https://itunes.apple.com/us/app/14px/id576855899?mt=8 target="_blank">Apple App Store</a> or <a href=https://play.google.com/store/apps/details?id=com.drummerGames.px14 target="_blank">Google Play</a> and give it a try, then come back here and tell me what you think of it. I&#8217;d love to hear your thoughts on the game.</p>
+<p>Charles McKeever<br />
+<a title="Mobile App Development Using Corona SDK" href=http://www.coronalabs.com/coronageek/>CoronaGeek</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/14px-game-review/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

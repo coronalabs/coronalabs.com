@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>collision detection &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/collision-detection/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>collision detection &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Collision Filters plugin</title>
+		<link>/blog/2017/06/07/introducing-the-collision-filters-plugin/</link>
+		<pubDate>Wed, 07 Jun 2017 21:16:50 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[collision]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=70910</guid>
+		<description><![CDATA[Learn about the new Collision Filters plugin, designed to circumvent the math and complication of creating physics body collision filters!]]></description>
+				<content:encoded><![CDATA[<p>For game designers who utilize Corona&#8217;s built-in Box2D physics system, <strong>collision filters</strong> usually enter the design equation at some point in development. For instance, if your player in an endless runner game should collect power-ups, you&#8217;ll need a collision handler for it &#8212; but it&#8217;s a waste of time (and processing effort) to handle collisions between <em>enemies</em> and power-ups.</p>
+<p>Traditionally, setting up collision filters has been a tricky ordeal of calculating <code>categoryBits</code> and <code>maskBits</code>, as outlined in our <a href=https://docs.coronalabs.com/guide/physics/collisionDetection/index.html?#filtering target="_blank">Collision Detection</a> guide. While our &#8220;helper chart&#8221; makes the process much easier, many game developers wish there was an easier way &#8212; and now there is!</p>
+<h3>Collision Filters plugin</h3>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, you can skip all of the math and calculations involved in traditional collision filter setup. Instead, simply state your setup with clearly-named keys and strings. For instance:</p>
+<p><code>collisionFilters.setupFilters( { player={ "powerUps", "enemies" } } )</code></p>
+<p>With just this one simple command, the plugin will configure three collision filters:</p>
+<ol>
+<li><code>player</code> objects will collide with <code>powerUps</code> and <code>enemies</code></li>
+<li><code>powerUps</code> objects will only collide with <code>player</code></li>
+<li><code>enemies</code> objects will only collide with <code>player</code></li>
+</ol>
+<p>Once set up, getting the proper collision filter data is as simple as calling <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a> with a valid key or string from the configuration table:</p>
+<p><code>local playerFilter = collisionFilters.getFilter( "player" )</code></p>
+<p>Then, applying it to the player&#8217;s physics body, assuming <code>thisPlayer</code> represents the player object, is as easy as this:</p>
+<p><code>physics.addBody( thisPlayer, "dynamic", { filter=playerFilter } )</code></p>
+<h3>Smart associations</h3>
+<p>For those who have set up collision filters the traditional way, you&#8217;ll know that doing so requires a &#8220;reverse association&#8221; methodology. For instance, if you tell Box2D that <code>player</code> can collide with <code>enemies</code>, you must <strong>also</strong> tell it that <code>enemies</code> can collide with <code>player</code>. Now, using the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">Collision Filters</a> plugin, that extra step is unnecessary &#8212; simply set up your primary associations and the plugin will internally calculate the reverse relationships! What&#8217;s more, it will dispatch a console warning if you accidentally declare associations which don&#8217;t match.</p>
+<h3>Getting started</h3>
+<p>To get started, proceed to the <a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank">plugin documentation</a>. Simply add the plugin to your <code>build.settings</code> file, <code>require()</code> it in the module(s) where you&#8217;ll use it, set up your filter relationship with <a href=https://docs.coronalabs.com/plugin/collisionFilters/setupFilters.html target="_blank">collisionFilters.setupFilters()</a>, and add the appropriate filters to your physics bodies via <a href=https://docs.coronalabs.com/plugin/collisionFilters/getFilter.html target="_blank">collisionFilters.getFilter()</a>.</p>
+<p>Hopefully this new plugin will simplify collision filter setup for all Corona game developers!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #147</title>
+		<link>/blog/2017/01/13/from-the-forum-issue-147/</link>
+		<pubDate>Fri, 13 Jan 2017 19:37:47 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=69397</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://forums.coronalabs.com/ target="_blank"><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" /></a>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2ihwUsX target="_blank">Building a conveyor belt</a></h4>
+<p>Forum star <strong>roaminggamer</strong> chimed in to help someone figure out how to move objects from one place to another in a conveyor belt fashion. Check out his solution in <a href=http://bit.ly/2ihwUsX target="_blank">this post</a>.</p>
+<h4><a href=http://bit.ly/2jksgMF target="_blank">It&#8217;s all a blur!</a></h4>
+<p>When iOS 7 came out and included blurred background effects, blurring things has been all the rage. So how can you blur items in Corona? One developer was curious about blurring his app&#8217;s entire screen and forum frequent flyer <strong>ojnab</strong> &#8220;clarified&#8221; things in <a href=http://bit.ly/2jksgMF target="_blank">this post</a>.</p>
+<h4><a href=http://bit.ly/2ie7hhL target="_blank">Through the looking glass</a></h4>
+<p>Many platform games limit the play area for a level to something reasonable, memory efficiency being one of the main reasons. These games usually involve an invisible one-way portal which bridges sections of a level. In <a href=http://bit.ly/2ie7hhL target="_blank">this thread</a>, learn how to accomplish this in your game.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #146</title>
+		<link>/blog/2016/12/30/from-the-forum-issue-146/</link>
+		<pubDate>Fri, 30 Dec 2016 20:15:00 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=69350</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://forums.coronalabs.com/ target="_blank"><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" /></a>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2huvRsK target="_blank">Flipping cards</a></h4>
+<p>In a 2D system, objects have no depth. You can easily flip an image horizontally by setting its <code>xScale</code> property to <code>-1</code> and use a transition to get a nice animation, except that it disappears briefly as the scale hits exactly <code>0</code>. Fortunately, forum stars <strong>Steve Johnson (StarCrunch)</strong> and <strong>Dave Bollinger</strong> chimed in on <a href=http://bit.ly/2huvRsK target="_blank">this thread</a> with some different techniques to improve the common case of flipping a card.</p>
+<h4><a href=http://bit.ly/2iGkakv target="_blank">Rockets Red Glare</a></h4>
+<p>If you want to launch a rocket, there generally should be a smoke trail following it, and that smoke eventually fades. In <a href=http://bit.ly/2iGkakv target="_blank">this thread</a>, follow our forum heroes trying to accomplish this task.</p>
+<h4><a href=http://bit.ly/2iGc2Ar target="_blank">Lights! Camera! Action!</a></h4>
+<p>For games in a 3D world, lighting is a major consideration &#8212; your objects are made up of meshes, textures, and maps that take the position of lights, ultimately rendering a visible object. In a 2D world, we don&#8217;t think about this much, but there are times where you may need dynamic lighting in a 2D world. <a href=http://bit.ly/2iGc2Ar target="_blank">This thread</a> goes into the possibilities of 3D-style lighting using Corona&#8217;s advanced graphics features.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it! Email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #145</title>
+		<link>/blog/2016/12/16/from-the-forum-issue-145/</link>
+		<pubDate>Fri, 16 Dec 2016 23:27:35 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=69194</guid>
+		<description><![CDATA[Welcome to this edition of <em>From the Forum</em> where we highlight valuable topics from the Corona forums.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://forums.coronalabs.com/ target="_blank"><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" /></a>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Community Forums</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2hp5Efg target="_blank">Finer control for emitters</a></h4>
+<p>Corona&#8217;s built-in <a href=https://docs.coronalabs.com/api/library/display/newEmitter.html target="_blank">particle emitters</a> are quite powerful and they can do some amazing things, but sometimes you need to go beyond &#8220;normal&#8221; to get the effect you want. In <a href=http://bit.ly/2hp5Efg target="_blank">this post</a>, learn how you can change particle parameters while the emitter runs.</p>
+<h4><a href=http://bit.ly/2h4zm6w target="_blank">Aligning your score</a></h4>
+<p>Most games need a score GUI, but an unexplained number on the screen doesn&#8217;t convey a lot of information. Adding a text label like &#8220;<strong>Score:</strong>&#8221; will clarify what the number means, but how can you keep everything aligned? <a href=http://bit.ly/2h4zm6w target="_blank">This post</a> offers several tips to help with the issue.</p>
+<h4><a href=http://bit.ly/2hAV6Y7 target="_blank">Sharpening up your sprites</a></h4>
+<p>Sometimes your artwork won&#8217;t fit the size you want and Corona will need to resize the image to fill the area you requested. Sometimes this can result in blurry images. Fortunately, you have the ability to change how images get resized and <a href=http://bit.ly/2hAV6Y7 target="_blank">this post</a> explains how.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it. Email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a>, put FTF: and the forum title in the subject, and include the URL in the email. We will consider adding it to an upcoming edition of <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #144</title>
+		<link>/blog/2016/12/02/from-the-forum-issue-144/</link>
+		<pubDate>Fri, 02 Dec 2016 20:28:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=68957</guid>
+		<description><![CDATA[Welcome to this week's edition of From the Forum where we highlight valuable forum topics each week.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://forums.coronalabs.com/ target="_blank"><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" /></a>Welcome to this week&#8217;s <em>From the Forum</em>. In this post, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Community Forum</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2fSmdjd target="_blank">Chains on the edge of tomorrow</a></h4>
+<p>One of the powerful features of Corona Labs&#8217; implementation of Box2D physics is the ability to simulate &#8220;chains.&#8221; Chains, also referred to as &#8220;edge shapes,&#8221; are useful when you want to construct hills, slopes, and other physical shapes that bend the typical rules of Box2D. Basically, they are constructed from a series of vertices that define the link segments &#8212; but just how many vertices can you use? Are there other gotchas? Corona&#8217;s own <strong>Brent Sorrentino</strong> jumped into <a href=http://bit.ly/2fSmdjd target="_blank">this thread</a> to clear up the details.</p>
+<h4><a href=http://bit.ly/2gi4UbW target="_blank">How to make semi-circles</a></h4>
+<p>Corona&#8217;s powerful vector APIs are great for making boxes, circles, and polygons, but what if you want an arc or a semi-circle? Some enterprising Corona developers contributed to <a href=http://bit.ly/2gi4UbW target="_blank">this thread</a> with some inventive solutions.</p>
+<h4><a href=http://bit.ly/2g4KRuG target="_blank">What goes up must go… up?</a></h4>
+<p>When using physics in a game, not everybody wants 9.8 m/s² of gravity pulling objects toward the ground. Sometimes you want things to float in air, or maybe even go upwards! What&#8217;s more is that, in certain cases, you&#8217;ll want only <em>some</em> objects to behave outside the bounds of the &#8220;world gravity&#8221; setting. Fortunately, as illustrated in <a href=http://bit.ly/2g4KRuG target="_blank">this post</a>, you easily <em>can</em> control gravity on an object-by-object basis.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it. Email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a> and put FTF: and the forum title in the subject and include the URL in the email and we will consider adding it to an upcoming <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #143</title>
+		<link>/blog/2016/11/18/from-the-forum-issue-143/</link>
+		<pubDate>Fri, 18 Nov 2016 21:24:06 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=68875</guid>
+		<description><![CDATA[Welcome to this week's edition of From the Forum where we highlight valuable forum topics each week.]]></description>
+				<content:encoded><![CDATA[<p><a href=https://forums.coronalabs.com/ target="_blank"><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" /></a>Welcome to this week&#8217;s <em>From the Forum</em>. Each week, we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Labs Community Forum</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2fYaqQX target="_blank">It&#8217;s a confetti party!</a></h4>
+<p>Corona includes a pretty powerful <a href=https://docs.coronalabs.com/api/library/display/newEmitter.html target="_blank">particle emitter</a> system which has a slew of parameters. A recent forum poster wanted to have confetti fly when the player won the game, but the confetti had &#8220;transparency&#8221; which allowed the background to show through, an effect that wasn&#8217;t desired. Corona&#8217;s own <strong>Brent Sorrentino</strong> chimed in with a &#8220;solid&#8221; answer. Head over to <a href=http://bit.ly/2fYaqQX target="_blank">the original thread</a> to learn how to control the OpenGL blending properties of particles.</p>
+<h4><a href=http://bit.ly/2fWfrHf target="_blank">A command performance</a></h4>
+<p>The concept of a &#8220;command line&#8221; doesn&#8217;t make sense in the mobile or TV space, in contrast to desktop operating systems where opening the Terminal or Command Prompt is a common practice. Wouldn&#8217;t it be great to start up a Corona-built desktop app using additional parameters? Fortunately, this option is supported through command line arguments. In <a href=http://bit.ly/2fWfrHf target="_blank">this thread</a>, Corona Engineer <strong>Josh Quick</strong> explains how to run your Corona apps using this additional information&#8230; oh, and it <em>does</em> work on mobile and TV, through URL schemes and push notifications!</p>
+<h4><a href=http://bit.ly/2fWRmhY target="_blank">But I <em>did</em> remove the object!</a></h4>
+<p>Getting a grasp on memory management can be a challenge. With Lua, understanding who has references to objects can present challenges to even seasoned developers. In this case, the poster noticed that a table that had been removed and <code>nil</code>&#8216;ed seemed to have a ghost table hanging around. Fortunately, expert Corona developers <strong>@torbenratzlaff</strong> and <strong>@roaminggamer</strong> explain in <a href=http://bit.ly/2fWRmhY target="_blank">the thread</a> how to ensure the release of all references to an object.</p>
+<hr />
+<p>Do you have a particular forum thread that was helpful for you? Let us know about it. Email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a> and put FTF: and the forum title in the subject and include the URL in the email and we will consider adding it to an upcoming <em>From the Forum</em>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum – Issue #142</title>
+		<link>/blog/2016/11/11/from-the-forum-issue-142/</link>
+		<pubDate>Fri, 11 Nov 2016 18:47:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[collision detection]]></category>
+		<category><![CDATA[event handling]]></category>
+		<category><![CDATA[GPGS]]></category>
+
+		<guid isPermaLink="false">/?p=68591</guid>
+		<description><![CDATA[Welcome to this week's edition of From the Forum where we highlight valuable forum topics each week.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-36242" src="/wordpress/wp-content/uploads/2012/04/Icon_Resources_Forum.png" alt="Forum icon" width="122" height="122" />Welcome to this week&#8217;s <em>From the Forums</em>. Each week we highlight a few <a href=https://forums.coronalabs.com/ target="_blank">Corona Labs Community Forums</a> posts that cover important topics.</p>
+<h4><a href=http://bit.ly/2epdllp target="_blank">Handling global collisions</a></h4>
+<p>Detecting when physical objects collide is an important concept in games and Corona features several ways to test for it. In <a href=http://bit.ly/2epdllp target="_blank">this post</a>, learn how to determine exactly which objects are colliding and prevent them from creating unnecessary interactions.</p>
+<h4><a href=http://bit.ly/2eKZKjR target="_blank">Which button was pressed?</a></h4>
+<p>Corona touch handlers are incredibly easy to implement if you simply want to know when a touch begins, moves, or ends. However, if you need to do more advanced testing like determining when a player presses two or three buttons simultaneously, it takes a little more logic. Check out <a href=http://bit.ly/2eKZKjR target="_blank">this post</a> for a few helpful tips.</p>
+<h4><a href=http://bit.ly/2eQ9IDL target="_blank">Getting snapshots to work with GPGS</a></h4>
+<p>Corona is fast… sometimes too fast. In a few cases, your code may be ready to move on to other tasks while other API calls still need time to complete. To keep things moving, API calls operate asynchronously, behind the scenes. Check out <a href=http://bit.ly/2eQ9IDL target="_blank">this thread</a> which discusses how to handle delayed calls.</p>
+<hr />
+<p>Has a particular forum thread been especially helpful to you? If so, let us know about it! Simply email <a href=mailto:support@coronalabs.com target="_blank">support@coronalabs.com</a>, include <code>FTF:</code> in the subject, and specify the post&#8217;s URL in the body.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

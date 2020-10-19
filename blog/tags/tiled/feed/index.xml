@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tiled &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/tiled/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Tiled &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Tiled for layout and level design</title>
+		<link>/blog/2016/12/08/using-tiled-for-layout-and-level-design/</link>
+		<pubDate>Thu, 08 Dec 2016 21:17:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[Tiled]]></category>
+		<category><![CDATA[Tiled Map Editor]]></category>
+
+		<guid isPermaLink="false">/?p=69045</guid>
+		<description><![CDATA[In this special video series, Michael Wilson from Ponywolf walks through installing and using Tiled as a layout and level design tool. He also shares insights into the creative game design process and how his team comes up with fun games.]]></description>
+				<content:encoded><![CDATA[<p>In this special video series, Michael Wilson from <a href=http://ponywolf.com/ target="_blank">Ponywolf</a> walks through installing and using <a href=http://www.mapeditor.org/ target="_blank">Tiled</a> as a layout and level design tool. In specific, he explains:</p>
+<ul>
+<li>The difference between object layers and tile layers and how object layers can be used like display objects in Corona.</li>
+<li>How to use Tiled to design a level by composing game elements together into a simple scene.</li>
+<li>How to add custom properties to game elements within Tiled that can then be accessed in Corona for programmatic manipulation.</li>
+</ul>
+<p>Michael also shares insights into the creative game design process and how his team comes up with games like <a href=https://marketplace.coronalabs.com/asset/sticker-knight-platformer target="_blank">Sticker Knight</a>, <a href=http://ponywolf.com/timegolfsquad target="_blank">Time Golf Squad</a>, and <a href=http://ponywolf.com/skipchaser target="_blank">Skipchaser</a>.</p>
+<p>This series is full of great tips. Don&#8217;t forget to subscribe to the <a href=http://www.youtube.com/subscription_center?add_user=coronalabs target="_blank">Corona Labs YouTube channel</a> for more great videos!</p>
+<h4>Using Tiled – Part 1: Installation and Tiled Basics</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LPKrDwosYHM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 2: Object Layers versus Tile Layers</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/wYw02u0ZlaA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 3: Composing Scenes</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/cITLF45hink?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 4: Custom Object Properties</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/0ORwbEe1SCc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>Bonus Videos</h3>
+<h4>Sticker Knight Game Design: Brainstorming Ideas</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/yDrCxp-Dx0s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Sticker Knight Design: Game Design Checklists</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/oA0gv2WU4v8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>The complete Sticker Knight project can be downloaded from <a href=https://github.com/coronalabs/Sticker-Knight-Platformer/ target="_blank">GitHub</a> or from the <a href=https://marketplace.coronalabs.com/asset/sticker-knight-platformer target="_blank">Corona Marketplace</a>. If you found these videos valuable, please watch the <a href=http://PLhE_IYaXVf9skwhKXNswj0C9U3RZB3DaD/ target="_blank">Match 3 Space RPG videos</a> covering Ponywolf&#8217;s <a href=https://marketplace.coronalabs.com/asset/match-3-space-rpg target="_blank">Match 3 game template</a> for Corona.</p>
+<p>Questions or comments? Join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #186 &#8211; Using Tiled Map Editor for level design with Corona</title>
+		<link>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/</link>
+		<comments>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/#comments</comments>
+		<pubDate>Tue, 10 May 2016 01:38:24 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[level design]]></category>
+		<category><![CDATA[Tiled]]></category>
+		<category><![CDATA[Tiled Map Editor]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66787</guid>
+		<description><![CDATA[On today&#8217;s Corona Geek podcast, Michael Wilson from Pony Wolf stepped us through the basics of using the Tiled Map Editor as a layout tool with Corona. Michael gave us a quick tour of the editor&#8217;s interface and then jumped right into importing images, creating tilesets, adding physics to objects, and working with both Lua and JSON data files. He also demonstrated how he uses his PonyTiled Github library to work with Tiled in Corona. Michael&#8217;s Ludum Dare entry has been updated for Steam Greenlight. Be sure to vote it up! Show notes: Tiled Map Editor PonyTiled Github Repo ShoeBox Game Development Tool Corona...]]></description>
+				<content:encoded><![CDATA[<p>On today&#8217;s Corona Geek podcast, Michael Wilson from <a href=http://ponywolf.com/ target="_blank">Pony Wolf</a> stepped us through the basics of using the <a href=http://www.mapeditor.org/ target="_blank">Tiled Map Editor</a> as a layout tool with Corona.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/DMsiGsgwZts?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Michael gave us a quick tour of the editor&#8217;s interface and then jumped right into importing images, creating tilesets, adding physics to objects, and working with both Lua and JSON data files. He also demonstrated how he uses his <a href=https://github.com/ponywolf/ponytiled target="_blank">PonyTiled Github library</a> to work with Tiled in Corona.</p>
+<p>Michael&#8217;s Ludum Dare entry has been <a href=http://steamcommunity.com/sharedfiles/filedetails/?id=678046165 target="_blank">updated for Steam Greenlight</a>. Be sure to vote it up!</p>
+<p><strong>Show notes:</strong></p>
+<ul>
+<li><a href=http://www.mapeditor.org/ target="_blank">Tiled Map Editor</a></li>
+<li><a href=https://github.com/ponywolf/ponytiled target="_blank">PonyTiled Github Repo</a></li>
+<li><a href=http://renderhjs.net/shoebox/ target="_blank">ShoeBox Game Development Tool</a></li>
+<li><a href=https://www.youtube.com/watch?v=96GkKOdLGsQ target="_blank">Corona Geek #185 &#8211; Part 1 &#8211; Using Spine</a></li>
+<li><a href=https://www.youtube.com/watch?v=BPKQ6NZOGT4 target="_blank">Corona Geek #185 &#8211; Part 2 &#8211; Using Tiled to create The Mimic</a></li>
+<li><a href=https://ponywolf.itch.io/the-mimic target="_blank">The Mimic</a></li>
+<li><a href=https://ponywolf.itch.io/1-800-monsters target="_blank">1-800 Monsters</a></li>
+</ul>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://ponywolf.com/ target="_blank">Michael Wilson</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://www.sharkappsllc.com/ target="_blank">Tony Godfrey</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-186-using-tiled-map-editor-for-level-design-with-corona/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-186-2016-05-09-tiled-level-editor-basics.mp3" length="101691630" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #185 &#8211; Spine workflow basics and using Tiled as a level editor</title>
+		<link>/blog/coronageek/corona-geek-185-spine-workflow-and-using-tiled-as-a-level-editor/</link>
+		<comments>/blog/coronageek/corona-geek-185-spine-workflow-and-using-tiled-as-a-level-editor/#comments</comments>
+		<pubDate>Wed, 04 May 2016 23:46:35 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[Spine]]></category>
+		<category><![CDATA[Tiled]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66705</guid>
+		<description><![CDATA[On last week's Corona Geek podcast, Laura Tallardy introduced us to the basics of Spine and Michael Wilson from Pony Wolf shared how he and his team are able to knock out polished apps as part of weekend game jams.]]></description>
+				<content:encoded><![CDATA[<p>On last week&#8217;s Corona Geek podcast, <a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a> introduced us to the basics of <a href=http://esotericsoftware.com/ target="_blank">animation workflow using Spine</a>. Using a layered Photoshop file, Laura was able to break up her character into parts. Those parts were then imported into Spine, mapped to a skeleton, animated, and then exported for use with Corona SDK. The panel also discussed how to programatically control animations on the fly.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/96GkKOdLGsQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>In the second half of this extended show, Michael Wilson from <a href=http://ponywolf.com/ target="_blank">Pony Wolf</a> shared how he and his team are able to knock out polished apps as part of game jams like Ludum Dare and others. Michael gave us a peek at how he uses Tiled as a level editor, including managing physics bodies. Michael will be giving us a Tiled basics lesson on the next Corona Geek. In the meantime, check out Michael&#8217;s Ludum Dare entry, <a href=http://ponywolf.com/the-mimic target="_blank">The Mimic</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/BPKQ6NZOGT4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a></li>
+<li><a href=http://ponywolf.com/ target="_blank">Michael Wilson</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://www.sharkappsllc.com/ target="_blank">Tony Godfrey</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-185-spine-workflow-and-using-tiled-as-a-level-editor/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-185-2016-05-04-spine-workflow-tiled-level-editor.mp3" length="167336841" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #42 &#8211; Space Monsters Love Bullets</title>
+		<link>/blog/coronageek/corona-geek-hangout-42/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-42/#respond</comments>
+		<pubDate>Mon, 03 Jun 2013 22:07:45 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Tiled]]></category>
+		<category><![CDATA[Kickstarter]]></category>
+		<category><![CDATA[Mobile App Marketing]]></category>
+		<category><![CDATA[Tiled]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=35083</guid>
+		<description><![CDATA[This week we hung out with Dean Murphy, Ed Maurina, Mark Eberhardt, Matthew Chapman, Michael Wilson, Mohamed Bennouf, Rob Englebright, Rob Haney, and Theo Rushin, Jr. to discuss the Space Monsters Love Bullets Kickstarter campaign, Tiled, and Corona Tiled.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/ypcoXl2CikE?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=https://plus.google.com/b/108159899655420864045/113270705872691680194/posts target="_blank">Dean Murphy</a>, <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=https://plus.google.com/b/108159899655420864045/108831118941057202352/posts target="_blank">Mark Eberhardt</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=http://no2games.com/ target="_blank">Michael Wilson</a>, <a href=https://plus.google.com/b/108159899655420864045/115811849043797198763/posts target="_blank">Mohamed Bennouf</a>, <a href=https://plus.google.com/b/108159899655420864045/117153445773373963867/posts target="_blank">Rob Englebright</a>, <a href=https://plus.google.com/b/108159899655420864045/113056987790273197071/posts target="_blank">Rob Haney</a>, and <a href=https://plus.google.com/b/108159899655420864045/116875464241306531958/posts target="_blank">Theo Rushin, Jr.</a> to discuss the <a href=http://www.kickstarter.com/projects/1050089585/space-monsters-love-bullets/ target="_blank">Space Monsters Love Bullets Kickstarter campaign</a>, Tiled, and <a href=https://github.com/superqix/CoronaTiled target="_blank">Corona Tiled</a>.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Derek Justus for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-42/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-42-2013-06-03-space-monsters-love-bullets.mp3" length="57767625" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-42-2013-06-03-space-monsters-love-bullets.mp3" length="57767625" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-42-2013-06-03-space-monsters-love-bullets.mp3" length="57767625" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-42-2013-06-03-space-monsters-love-bullets.mp3" length="57767625" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

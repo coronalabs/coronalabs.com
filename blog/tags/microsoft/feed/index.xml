@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Microsoft &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/microsoft/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Microsoft &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Check out Visual Studio Code &#8211; a free text editor from Microsoft</title>
+		<link>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/</link>
+		<comments>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/#comments</comments>
+		<pubDate>Wed, 20 Apr 2016 17:25:19 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<category><![CDATA[Visual Studio Code]]></category>
+
+		<guid isPermaLink="false">/?p=66537</guid>
+		<description><![CDATA[Check out the latest 3rd-party tool for Corona SDK: Microsoft Visual Studio Code, a text editor born from Visual Studio.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66538" src="/wordpress/wp-content/uploads/2016/04/500px-Visual_Studio_2013_Logo.svg_-145x150.png" alt="500px-Visual_Studio_2013_Logo.svg" width="145" height="150" />Corona developers are always looking for new tools to help improve their workflow.</p>
+<p>Many people have heard about Microsoft Visual Studio, an Integrated Development Environment (IDE) for building Microsoft applications, whether it be for Windows desktop or Windows Phone.</p>
+<p>To be clear, <a href=https://code.visualstudio.com/ target="_blank"><strong>Visual Studio Code</strong></a> &#8212; the topic of this announcement &#8212; is <em>not</em> the same thing as Visual Studio. Rather, it&#8217;s a text editor born from the full Visual Studio IDE. Why is this important? Two reasons:</p>
+<h3>1. It runs on OS X</h3>
+<p>While the full Visual Studio IDE is a Windows-based tool, <a href=https://code.visualstudio.com/ target="_blank">Visual Studio Code</a> has a native version for OS X. If you&#8217;re comfortable with the IDE in Windows, you&#8217;ll feel right at home when working in OS X.</p>
+<h3>2. It supports Corona SDK</h3>
+<p>Code highlighting is part of the standard Visual Studio Code editor, and an optional extension called <a href=https://marketplace.visualstudio.com/items?itemName=Tobiah.corona-tools target="_blank">Corona Tools</a> brings Corona&#8217;s documentation to the editor. Installing the extension gives you keyboard shortcuts to either open or search Corona Labs&#8217; documentation. While this is currently a new extension with limited functionality, feel free to reach out to the developer, <a href=http://www.tobiahz.com/ target="_blank">Tobiah Zarlez</a>, to request additional features.</p>
+<h3>In summary</h3>
+<p>We love seeing new third-party tools being developed for Corona SDK. If you would like to see one featured on our <a href=/resources/third-party-tools-and-services/>Third-Party Tools and Services page</a>, please let us know in the <a href=https://forums.coronalabs.com/forum/553-other-third-party-tools/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/20/check-out-visual-studio-code-a-free-text-editor-from-microsoft/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Windows Phone 8 and Windows Store Support Coming to Corona SDK in 2014</title>
+		<link>/blog/2013/10/29/windows-phone-8-and-windows-store-support-coming-to-corona-sdk-in-2014/</link>
+		<comments>/blog/2013/10/29/windows-phone-8-and-windows-store-support-coming-to-corona-sdk-in-2014/#comments</comments>
+		<pubDate>Tue, 29 Oct 2013 16:01:25 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Microsoft]]></category>
+
+		<guid isPermaLink="false">/?p=50433</guid>
+		<description><![CDATA[We’re thrilled to announce a new alliance with Microsoft to allow Corona developers to publish apps for Windows Phone 8 and Windows Store!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/10/WinPhone_Cyan_D_rgb-300x70.png" alt="Windows Phone logo" class="alignleft size-medium wp-image-50434" />We’re thrilled to announce a new alliance with Microsoft to allow Corona developers to publish apps for Windows Phone 8 and Windows Store!</p>
+<p>In the near future, our global community of more than 300,000 developers worldwide will be able to publish to these new platforms, along with iOS, Android, Kindle, and NOOK. As always, Corona will be best-in-class in allowing developers to maximize code re-use and work with a single code base. Check out the full <a href=http://www.prweb.com/releases/2013/10/prweb11276702.htm>press release here</a>. You can also read Microsoft&#8217;s post on the <a href= http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/29/corona-labs-announces-support-for-windows-phone-8-and-windows-store-apps.aspx>announcement here</a>.</p>
+<p>Microsoft’s support for high-quality apps, together with the variety of devices running Windows Phone 8, make it an ideal platform for gaming experiences and business apps alike. Since launch in 2012, the Windows platform has grown to offer nearly 200,000 apps, with more content hitting the Windows Store each day.</p>
+<p><a href=http://flaregames.com/>Flaregames</a>, creator of Corona Enterprise-powered titles including Throne Wars, <a href=https://itunes.apple.com/us/app/bravesmart/id511892006>BraveSmart</a> and <a href=https://itunes.apple.com/hk/app/ocean-tower/id503545905?mt=8>Ocean Tower</a> is excited for the upcoming platform support. Matthias Schindler, CTO of flaregames said, “Corona SDK makes it extremely easy to publish for iOS and Android with a single code base. By supporting Windows, Corona Labs will make it even easier for us to maximize our apps’ reach and success.”</p>
+<p>Beta support for Windows Phone 8 will be available in the first quarter of 2014, followed by full support for Windows Phone 8 and Windows 8. Get ready!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/29/windows-phone-8-and-windows-store-support-coming-to-corona-sdk-in-2014/feed/</wfw:commentRss>
+		<slash:comments>66</slash:comments>
+		</item>
+	</channel>
+</rss>

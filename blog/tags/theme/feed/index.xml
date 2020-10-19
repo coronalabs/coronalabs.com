@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>theme &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/theme/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>theme &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Update: Android Widget Themes</title>
+		<link>/blog/2014/08/08/update-android-widget-themes/</link>
+		<comments>/blog/2014/08/08/update-android-widget-themes/#comments</comments>
+		<pubDate>Fri, 08 Aug 2014 20:41:44 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">/?p=59334</guid>
+		<description><![CDATA[Starting in the most recent public build, all Corona developers can now opt to use two new widget themes in their projects. These new themes are styled after the Android "Holo Light" and "Holo Dark" themes which are commonly found on Android devices running recent versions of the OS.]]></description>
+				<content:encoded><![CDATA[<p>Starting in the most recent <a href=https://developer.coronalabs.com/downloads/corona-sdk target="_blank">public build</a>, all Corona developers can now opt to use two new <a href=http://docs.coronalabs.com/api/library/widget/index.html target="_blank">widget</a> themes in their projects. These new themes are styled after the Android <strong>&#8220;Holo Light&#8221;</strong> and <strong>&#8220;Holo Dark&#8221;</strong> themes which are commonly found on Android devices running recent versions of the OS.</p>
+<p>Both of the new themes contain assets up to the <code>@4x</code> scale profile, which means that your widgets should appear crisp and clean on even the highest resolution Android devices like the Nexus 10.</p>
+<div style="width: 95%;">
+<p><img class="alignnone size-full wp-image-59335" style="margin: 0px; padding-bottom: 20px; padding-top: 10px;" src="/wordpress/wp-content/uploads/2014/08/android-themes.png" alt="android-themes" /></p>
+</div>
+<h3>Setting the Themes</h3>
+<p>The new themes can be set by passing the proper value to the <a href=http://docs.coronalabs.com/api/library/widget/setTheme.html target="_blank">widget.setTheme()</a> API:</p><pre class="crayon-plain-tag">-- Use new 'Holo Light' theme
+widget.setTheme( &quot;widget_theme_android_holo_light&quot; )</pre><p></p><pre class="crayon-plain-tag">-- Use new 'Holo Dark' theme
+widget.setTheme( &quot;widget_theme_android_holo_dark&quot; )</pre><p>And that&#8217;s it &#8212; all non-skinned widgets throughout the project will appear in the new chosen theme.</p>
+<h3>Updated Sample Project</h3>
+<p>To preview the new themes in action, please load the <strong>WidgetDemo</strong> sample project included with Corona SDK:</p>
+<p><code>CoronaSDK</code> → <code>SampleCode</code> → <code>Interface</code> → <code>WidgetDemo</code></p>
+<h3>Previous Android Theme</h3>
+<p>Note that using the new Holo themes is entirely optional. The previous Android theme files are still available, so if you wish to continue using that theme, be sure to set the theme as follows:</p><pre class="crayon-plain-tag">-- Use older Android 2.x theme
+widget.setTheme( &quot;widget_theme_android&quot; )</pre><p></p>
+<h3>In Summary</h3>
+<p>Hopefully you can easily integrate these new themes into your existing projects with a minimal amount of repositioning, although some adjustments will be necessary due to slightly differing sizes of the updated styles.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/08/update-android-widget-themes/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

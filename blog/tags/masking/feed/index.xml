@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>masking &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/masking/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>masking &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #144 &#8211; Improving Touch Driven Game Performance Using Touch Coalescing</title>
+		<link>/blog/coronageek/corona-geek-144/</link>
+		<comments>/blog/coronageek/corona-geek-144/#respond</comments>
+		<pubDate>Mon, 01 Jun 2015 21:57:55 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[masking]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[timers]]></category>
+		<category><![CDATA[Touch Events]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62929</guid>
+		<description><![CDATA[On last week's Corona Geek we hung out with Corona Developer, Caleb Place to talk about his popular particle effects library, CBEffects. Today we talked about improving the performance of touch driven game logic using touch coalescing. We also looked at using masking to create a circular dial timer, similar to what we've look at before from Jason Schroeder. Watch the panel discussion and download the code for details.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/B2vp1-ox8L8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last Monday we <a href=/blog/coronageek/corona-geek-143/>hung out with Corona Developer, Caleb Place</a> to talk about his popular particle effects library, CBEffects. Caleb shared how CBEffects came to be and why he uses Lua and Corona for development over other platforms.</p>
+<p>Today we talked about <a href=https://github.com/roaminggamer/CoronaGeek/blob/master/Hangouts/Tips_and_Tricks/touchCoalescing.zip target="_blank">improving the performance of touch driven game logic using touch coalescing</a>. We also looked at <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/dialTimer.zip target="_blank">using masking to create a circular dial timer</a>, similar to what we&#8217;ve seen before from <a href=http://www.jasonschroeder.com/2015/02/25/timer-2-0-library-for-corona-sdk/ target="_blank">Jason Schroeder</a>.</p>
+<p>We also got to talk with QuestLord developer, Eric Kinkead about his <a href=http://www.questlord.com/ target="_blank">coming release of QuestLord 2</a> and his fun camera app, Camera Pixel. Eric did some creative things with Pixel Camera, using Corona filter effects and custom rotation using Lua tables. He published the app as part of <a href=http://shipjam.weebly.com/ target="_blank">last year&#8217;s ShipJam event</a>. The app is free and fun, so <a href=https://itunes.apple.com/us/app/pixel-camera/id877241872 target="_blank">download Pixel Camera</a> and give it a try.</p>
+<p><strong>Congratulations Jason Schroeder!</strong></p>
+<p>Congrats to Jason Schroeder (yes, the same person mentioned earlier). Jason played the wheels off of Boom Dots as part of May&#8217;s Corona Geek Games challenge and earned himself a $50 gift card with a final high score of 526. Also congrats to Luis Subirachs for coming in a close second with 445 as his top score. Luis and Jason battled it out for several days, besting each other&#8217;s scores every time. But in the end, Jason managed to secure his place as champion.</p>
+<p>We&#8217;ll announce June&#8217;s Geek Game Challenge later, on social media. So be sure to follow CoronaGeek on at least one of your favorite social channels ( <a href=http://facebook.com/coronageek target="_blank">Facebook</a>, <a href=http://twitter.com/coronageek target="_blank">Twitter</a>, <a href=https://plus.google.com/b/108159899655420864045/+CoronaGeek/posts target="_blank">Google+</a> ).</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-143/>Corona Geek #143 &#8211; Hanging out with CBEffects author Caleb Place</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=https://www.udemy.com/game-development-with-corona/?couponCode=CoronaGeek target="_blank">Game Development using Corona SDK in 2015 with ASO &amp; Ads</a> ( Use CouponCode <strong>CoronaGeek</strong> to take this Udemy course for $9 )</li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Corona Development Tips and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-144/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-144-2015-06-01-touch-coalescing.mp3" length="84375392" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

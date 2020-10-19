@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Should You Develop Your App Using HTML5 or Native Code</title>
+	<atom:link href="/blog/coronageek/html5-versus-native-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/html5-versus-native-apps/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Hector Sanchez</title>
+		<link>/blog/coronageek/html5-versus-native-apps/#comment-5479</link>
+		<dc:creator><![CDATA[Hector Sanchez]]></dc:creator>
+		<pubDate>Sat, 01 Sep 2012 15:16:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=300#comment-5479</guid>
+		<description><![CDATA[Yes I agree, I think the answer has to do with who you are trying to reach rather than picking a technology. As Gary Halbert once said &quot;Go where the starving crowd is&quot;, so at this time the starving crowd is in the AppStores, so that&#039;s where I&#039;m targeting my apps. Apple already did the effort of gathering the starving crowd in a confined pond, rather than you having to hunt them in the sea,  so we as developers need to provide the right &quot;food&quot; for them]]></description>
+		<content:encoded><![CDATA[<p>Yes I agree, I think the answer has to do with who you are trying to reach rather than picking a technology. As Gary Halbert once said &#8220;Go where the starving crowd is&#8221;, so at this time the starving crowd is in the AppStores, so that&#8217;s where I&#8217;m targeting my apps. Apple already did the effort of gathering the starving crowd in a confined pond, rather than you having to hunt them in the sea,  so we as developers need to provide the right &#8220;food&#8221; for them</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/html5-versus-native-apps/#comment-5478</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2012 17:18:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=300#comment-5478</guid>
+		<description><![CDATA[Excellent observation Hector. HTML5 apps that just aggregate content are getting rejected by Apple because they say you can create a mobile version of your website that does the same thing. These same apps can be published in the Google Play store, but as you point out, there is a lot of noise in that ecosystem, which makes it hard to get noticed.
+
+
+So, really there are three issues here; 1) which technology gives you the performance and ability to do what you want to accomplish, and 2) which types of apps are most appropriate for publishing in the app stores, and 3) how do you reach a broader market if you don&#039;t leverage an existing app store audience.
+
+
+Right now, HTML5 apps are highly dependent on the speed of your device&#039;s internet connection, so the footprint of the app would have to be small and cached locally for download and fast loading. Native apps don&#039;t have this issue, but they are highly tied to app store distribution.
+
+
+Maybe the answer has more to do with who you are trying to reach and what do you want to accomplish, rather than just should you use technology A or B.
+
+
+What do you think?]]></description>
+		<content:encoded><![CDATA[<p>Excellent observation Hector. HTML5 apps that just aggregate content are getting rejected by Apple because they say you can create a mobile version of your website that does the same thing. These same apps can be published in the Google Play store, but as you point out, there is a lot of noise in that ecosystem, which makes it hard to get noticed.</p>
+<p>So, really there are three issues here; 1) which technology gives you the performance and ability to do what you want to accomplish, and 2) which types of apps are most appropriate for publishing in the app stores, and 3) how do you reach a broader market if you don&#8217;t leverage an existing app store audience.</p>
+<p>Right now, HTML5 apps are highly dependent on the speed of your device&#8217;s internet connection, so the footprint of the app would have to be small and cached locally for download and fast loading. Native apps don&#8217;t have this issue, but they are highly tied to app store distribution.</p>
+<p>Maybe the answer has more to do with who you are trying to reach and what do you want to accomplish, rather than just should you use technology A or B.</p>
+<p>What do you think?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Hector Sanchez</title>
+		<link>/blog/coronageek/html5-versus-native-apps/#comment-5477</link>
+		<dc:creator><![CDATA[Hector Sanchez]]></dc:creator>
+		<pubDate>Thu, 30 Aug 2012 18:27:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=300#comment-5477</guid>
+		<description><![CDATA[I also had this dilemma earlier in the year, when I was starting to learn Corona, and I even stopped studying Corona for a while to learn some HTML5/JavaScript app platforms, but at the end, I convinced myself that the way to go are Native Apps.
+
+
+The key here I think is the AppStore and Apple&#039;s review system that cleans it from crapps. This ecosystem brings confidence to end customers, the confidence that they are getting a good quality app, an app that will perform well on their devices and on the other side, Apple brings to the table millions of pre-qualified customers with their credit card numbers. This enables app developers to get paid well, as it has been proved by the over $5 billion dollars already paid to developers.
+
+
+It is true, that you might build a similar app with HTML5 and JavaScript, but you have to find a market to sell it to, so without a market there is no money. Apple already has the market, a huge one and a super qualified one. That allows developers to focus on building quality apps, and not worry about marketing their product, collecting money etc. I will gladly pay Apple 30% for the access to such a big qualified market.
+
+
+Kindle Fire&#039;s Appstore understands this and they are doing a similar job with that.]]></description>
+		<content:encoded><![CDATA[<p>I also had this dilemma earlier in the year, when I was starting to learn Corona, and I even stopped studying Corona for a while to learn some HTML5/JavaScript app platforms, but at the end, I convinced myself that the way to go are Native Apps.</p>
+<p>The key here I think is the AppStore and Apple&#8217;s review system that cleans it from crapps. This ecosystem brings confidence to end customers, the confidence that they are getting a good quality app, an app that will perform well on their devices and on the other side, Apple brings to the table millions of pre-qualified customers with their credit card numbers. This enables app developers to get paid well, as it has been proved by the over $5 billion dollars already paid to developers.</p>
+<p>It is true, that you might build a similar app with HTML5 and JavaScript, but you have to find a market to sell it to, so without a market there is no money. Apple already has the market, a huge one and a super qualified one. That allows developers to focus on building quality apps, and not worry about marketing their product, collecting money etc. I will gladly pay Apple 30% for the access to such a big qualified market.</p>
+<p>Kindle Fire&#8217;s Appstore understands this and they are doing a similar job with that.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

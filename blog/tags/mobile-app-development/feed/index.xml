@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mobile App Development &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/mobile-app-development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Mobile App Development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights &#8211; Matching Logic and Productivity App Development</title>
+		<link>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/</link>
+		<comments>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/#respond</comments>
+		<pubDate>Thu, 14 May 2015 03:38:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=62665</guid>
+		<description><![CDATA[Last week on Corona Geek Hangout 140, we added matching logic for our memory matching game. We also talked with Richard Brooke, developer of TaskPad+, a task management business app developed with Corona SDK. Richard shared his experience with using Corona to build a productivity app. He also told us if he would do it again. Here are clips from the Hangout.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Last week on Corona Geek Hangout 140, we added <a href=/blog/coronageek/corona-geek-140/>matching logic for our memory matching game</a>. The solution involved representing matching cards as numbers. <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat target="_blank">Download the source code</a> to see how it was developed.</p>
+<p>We also talked with Richard Brooke, developer of TaskPad+, a <a href=https://itunes.apple.com/app/id885631761 target="_blank">task management business app</a> developed with Corona SDK. Richard shared his experience with using Corona to build a productivity app. He also told us if he would do it again.</p>
+<p>Here are clips from Hangout #140. <a href=/blog/coronageek/corona-geek-140/>Watch the entire Hangout</a>, or just the pieces that interest you.</p>
+<h3>Part 1 &#8211; Community Announcements</h3>
+<p>We cover some of the things you may have missed from last time.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/d9RJlmrgFQk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 2 &#8211; Developing a productivity app using Corona SDK</h3>
+<p>TaskPad+ developer, Richard Brooke demos his new productivity app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/dblowPZBIwY?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 3 &#8211; Implementing a calendar</h3>
+<p>Richard talks about how he implemented a calendar in his app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/on-HYXUtBLE?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 4 &#8211; Developer insights</h3>
+<p>Richard tells us if he would use Corona SDK again to develop his non-game app.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/80MtcxCuV5Y?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 5 &#8211; Introducing memory matching logic</h3>
+<p>Ed Maurina introduces memory matching game logic.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/qBF1y6B8J5E?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 6 &#8211; Card flipping review</h3>
+<p>Ed reviews how card flipping works.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/6xgZ9NmH6wo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 7 &#8211; Matching logic</h3>
+<p>Ed shows how card matching works.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/nxrDv62umq4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Part 8 &#8211; Matching game sampler</h3>
+<p>Ed shows shows off a memory matching game sampler.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/v2vVrb4AgG4?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Be sure to <a href=/blog/coronageek/corona-geek-141/>watch Hangout #141</a> where we looked at how to create and match puzzle pieces as part of a classic puzzle game.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-matching-logic-and-productivity-app-development/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #70 &#8211; Illustrator, App Developer Laura Tallardy On Creating Mobile Apps</title>
+		<link>/blog/coronageek/corona-geek-hangout-70/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-70/#respond</comments>
+		<pubDate>Mon, 30 Dec 2013 23:15:07 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Children's Apps]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=54773</guid>
+		<description><![CDATA[During the last Corona Geek Hangout of 2013, we talk with App Developer / Illustrator Laura Tallardy about what it's like to be both artist and app developer. Laura has an excellent portfolio of themed children's apps and several holiday themed apps that she maintains across iOS, Android, Kindle Fire, and Nook. She has an interesting story about how she made the transition from artist to app developer. Laura also shared several excellent work flow tips and her advice to just, "get it shipped" was a powerful part of the conversation.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/5Jxem0cGJgs?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During the last Corona Geek Hangout of 2013, we talk with App Developer / Illustrator Laura Tallardy about what it&#8217;s like to be both artist and app developer. Laura has an excellent <a title="Indie app developer &amp; illustrator for kids apps" href=http://lauratallardy.com/ target="_blank">portfolio of themed children&#8217;s apps</a> and several holiday themed apps that she maintains across iOS, Android, Kindle Fire, and Nook. She has an interesting story about how she made the transition from artist to app developer. Laura also shared several excellent work flow tips and her advice to just, &#8220;get it shipped&#8221; was a powerful part of the conversation.</p>
+<p><strong>Join us January 11th, 2014</strong> for the first<strong> </strong><a href=http://www.meetup.com/Corona-SDK-Dallas-Meetup/events/156459462 target="_blank">Dallas Corona SDK Meeting</a> of the year at Reel FX&#8217;s Dallas studio. Dr. Brian Burton will be sharing information on how to build business apps using Corona SDK. Come eat pizza, meet app developers, and see where the <a title="Reel FX Dallas Animation Studio" href=http://reelfx.com/ target="_blank">movie animation</a> magic happens.</p>
+<p>Thank you to everyone who watched today&#8217;s live <a href=http://youtube.com/coronageek target="_blank">Corona Geek Hangout on YouTube</a>.</p>
+<p>Also, thank you to everyone who appeared on Corona Geek this year or was part of the weekly hangout panel.</p>
+<p><strong>Here are just a few names of people who shared their time and talents with us in 2013. </strong>We tried hard to include everyone, so if your name is missing we apologize. Thank you all so very much!</p>
+<p><strong>2013 Hangout Guests</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-hangout-32/ target="_blank">Niren Hiro &#8211; Search Man SEO</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-31/ target="_blank">Slyvain Gauchet &#8211; Apptamin</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-30/ target="_blank">Tomasz Kolinko &#8211; AppCodes</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-30/ target="_blank">Mo Bennouf &#8211; Space Missile Command</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-29/ target="_blank">Robert Gleason &#8211; Word Hunt</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-29/ target="_blank">Andreas von Lepel &#8211; Freeze</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-26/ target="_blank">Nate Sweet, and Søren Nielsen &#8211; Spine, 2D Skeletal Animation Tool</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-25/ target="_blank">Ricardo Rauber Pereira &#8211; Game Coder / Director Library</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-24/ target="_blank">George Deglin, Long Vo &#8211; ShaqDown</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-23/ target="_blank">Stian Saunes &#8211; Corona Paper</a></li>
+<li><a href=https://www.coronalabs.com/blog/coronageek/corona-geek-hangout-23/ target="_blank">Ian Master &#8211; Finger Hoola</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-42/ target="_blank">Michael Wilson &#8211; Space Monsters Love Bullets</a></li>
+<li><a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-39/ target="_blank">Graham Ranson and Simon Pearce of Glitch Games &#8211; Forever Lost</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-35/ target="_blank">Brian Park &#8211; Spelling Test</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-34/ target="_blank">Ben Wong &#8211; Climate Clock</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-33/ target="_blank">Eric Kinkead &#8211; Questlord</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-51/ target="_blank">Andrea Zanetti from 16Bit Labs &#8211; Ice Hero</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-48/ target="_blank">David L. Hoyt &#8211; Just 2 Words</a></li>
+<li><a href=https://www.coronalabs.com/blog/coronageek/corona-geek-hangout-45/ target="_blank">Nevin Flanagan &#8211; author of Corona SDK Hotshot</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-44/ target="_blank">Thomas Escourrou &#8211; Video Pixie</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-43/ target="_blank">Kimberly Voll &#8211; Discussed Challenging Gender Stereotypes in Gaming</a></li>
+<li><a href=/blog/coronageek/app-monetization-using-the-tap-for-tap-corona-sdk-plugin/ target="_blank">Eric Dyck and Phil Laird &#8211; Tap for Tap &#8211; app monetization / promotion</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-60/ target="_blank">Barry Swan &#8211; from Playlevel about Graphics 2.0 (Dungeoneer / Retro Racer)</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-57/ target="_blank">Doug Davies &#8211; Parental Controls code example</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-55/ target="_blank">Ed Maurina &#8211; SSK Corona</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-68/ target="_blank">Sergey Lerg &#8211; Graphics 2.0 Audio Visualization Demo / Skybox Demo</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-64/ target="_blank">Steve P. Young &#8211; Mobile App Chat Podcast</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-66/ target="_blank">Gabriel Machuret &#8211; ASO</a></li>
+<li><a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-63/ target="_blank">Greg Pugh &#8211; Creating Children’s Apps</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-61/ target="_blank">Noah Malewicz &#8211; City Birds</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-67/ target="_blank">Jen Looper &#8211; Belly Dancing App</a></li>
+<li><a href=/blog/coronageek/corona-geek-hangout-67/ target="_blank">Dr. Brian Burton &#8211; 2.5D Isometric Perspective</a></li>
+</ul>
+<p><strong>2013 Hangout Panel Regulars</strong></p>
+<ul>
+<li>Brian Burton</li>
+<li>Ed Maurina</li>
+<li>Jen Looper</li>
+<li>Greg Pugh</li>
+<li>Gerald Bailey</li>
+<li>Matthew Chapman</li>
+<li>Sergey Lerg</li>
+<li>Dean Murphy</li>
+<li>Theo Rushin, Jr.</li>
+<li>Richard Harris</li>
+<li>Jay Jennings</li>
+<li>David Roulin</li>
+<li>Ian Masters</li>
+<li>Mark Eberhardt</li>
+<li>Rob Englebright</li>
+<li>Rob Haney</li>
+<li>Rob Miracle</li>
+<li>Jesse Warden</li>
+<li>Colette Levesque</li>
+<li>Daniel Williams</li>
+</ul>
+<p>Again, thank you all so very much. Here&#8217;s to a another great year in 2014!!</p>
+<p><strong>Thank you for following Corona Geek below</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-70/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-70-2013-12-30-illustrator-app-developer-laura-tallardy-on-app-development.mp3" length="46125903" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-70-2013-12-30-illustrator-app-developer-laura-tallardy-on-app-development.mp3" length="46125903" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-70-2013-12-30-illustrator-app-developer-laura-tallardy-on-app-development.mp3" length="46125903" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-70-2013-12-30-illustrator-app-developer-laura-tallardy-on-app-development.mp3" length="46125903" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Hangout Highlights: Writing A Custom Keyboard for Spelling Test</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/</link>
+		<comments>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comments</comments>
+		<pubDate>Wed, 17 Apr 2013 23:50:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[Learning Apps]]></category>
+		<category><![CDATA[Mobile App Development]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220</guid>
+		<description><![CDATA[In this hangout snippet from Monday's Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his Spelling Test app. He also talks about his adventures in supporting Hebrew as well as multibyte characters.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4Oo4dPcu2ss?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p><img class="wp-image-477 alignright" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" /> In this hangout snippet from Monday&#8217;s Corona Geek Hangout, Brian Park shares why he wrote a custom keyboard for his <a href=https://itunes.apple.com/us/app/spelling-test-by-funexam.com/id421083384?mt=8 target="_blank">Spelling Test app</a>. He also talks about his adventures in supporting Hebrew as well as multibyte characters. Watch the full hangout to catch other <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-35/>interesting app development tips</a>.</p>
+<p><strong>Subscribe:</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

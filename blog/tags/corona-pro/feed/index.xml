@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Pro &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona-pro/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Pro &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Staff Conversation: Corona SDK Starter and Price Changes</title>
+		<link>/blog/coronageek/staff-conversation-corona-sdk-starter-and-price-changes/</link>
+		<comments>/blog/coronageek/staff-conversation-corona-sdk-starter-and-price-changes/#comments</comments>
+		<pubDate>Wed, 10 Apr 2013 17:30:36 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Cloud]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[Corona Pro]]></category>
+		<category><![CDATA[Corona SDK Starter]]></category>
+		<category><![CDATA[Staff]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31539</guid>
+		<description><![CDATA[We're introducing a new segment on Corona Geek called "Staff Conversations." Each week, a member of Corona Labs' team will share something new and interesting, from a Corona engineer discussing an aspect of the SDK, to Walter talking about the vision of Corona.
+
+To kick things off, we asked David Rangel to join us on Corona Geek and talk about the recent addition of Corona SDK Starter and the upcoming enhancements to Corona Pro. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/eo4MFa44qLs?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p>Starting today, we&#8217;re introducing a new segment on <a href=http://www.coronalabs.com/community/corona-geek/>Corona Geek</a> called Staff Conversations. Each week, a member of Corona Labs&#8217; team will share something new and interesting, from a Corona engineer discussing an aspect of the SDK, to Walter talking about the vision of Corona.</p>
+<p>To kick things off, we asked Corona Labs&#8217; COO, David Rangel, to come on the show and talk about the recent addition of Corona SDK Starter, as well as the upcoming enhancements to Corona Pro. We had the chance to ask David why Corona was made free, why Corona Indie went away, how the new offerings fit together with the recent launch of Corona Cloud.</p>
+<p>We hope you enjoy the new segments. If you have topic suggestions for upcoming Staff Conversations, be sure to leave them in the <a href=http://developer.coronalabs.com/forum/2013/01/08/corona-geek-show-topics-and-questions>Corona Geek forum</a>.</p>
+<p>Thanks for watching!</p>
+<p><strong>Listen and Rate</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/staff-conversation-corona-sdk-starter-and-price-changes/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

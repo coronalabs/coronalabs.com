@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>transition library &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/transition-library/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>transition library &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #129 &#8211; Game Design Basics and Using Transition Library</title>
+		<link>/blog/coronageek/corona-geek-129/</link>
+		<comments>/blog/coronageek/corona-geek-129/#comments</comments>
+		<pubDate>Mon, 16 Feb 2015 22:50:15 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[transition library]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61459</guid>
+		<description><![CDATA[During last week’s Hangout we wrapped up our series on using Composer Library with a look at creating custom Composer Library transitions. This week we started a new series on game mechanics with a focus on breaking down the various elements and mechanics of an existing endless runner game. We also spent time discussing the Transition Library and how it can be used to add motion to your apps.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/fZJSbCc63GA?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-128/>last week’s Hangout</a> we wrapped up our series on using Composer Library with a look at creating custom Composer Library transitions. We also discussed how to unload modules when loading multiple sprites into Composer scenes.</p>
+<p>We have split each of the Hangouts into snack-sized clips, so be sure to <a href=/blog/coronageek/composer-library-series-hangout-highlights/>check out the summary blog post</a> featuring all the highlights.</p>
+<p>This week we started a new series on game mechanics with a focus on breaking down the various elements and mechanics of <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat/ZigZagBoomClone target="_blank">an existing endless runner game</a>. Once we finish with the initial planning sessions to define what pieces should be included and what the rules of the game should be, we&#8217;ll dig into the concepts and the code.</p>
+<p>We also spent time discussing the <a href=http://docs.coronalabs.com/api/library/transition/index.html>Transition Library</a> and how it can be used to add motion to your apps.</p>
+<p><strong>February Geek Games is Crossy Road. Let&#8217;s Play!</strong></p>
+<p>Last month we played Chip Chain for the chance to win a $50 gift card. For February Tyler McGraw suggested we play Crossy Road on either iOS, Android, or Amazon. Thanks Tyler. The rules are simple. Cross the road and rack up points, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to earn yourself a $50 gift card. We&#8217;ll announce February&#8217;s Geek Game winner on March 2nd. Good luck!</p>
+<p><strong>Want to suggest a game?</strong><br />
+The game can be yours or someone else&#8217;s. Games that play for high score on iOS and Android work best. If you have a recommendation, leave it in the comments below.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-128/ target="_blank">Corona Geek #128 – Creating Custom Composer Library Transitions</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/transitions target="_blank">Download the Transition Library sampler code from today&#8217;s Hangout</a></li>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/ICanMakeThat/ZigZagBoomClone target="_blank">Download the &#8220;I Can Make That&#8221; game clone repo</a></li>
+<li><a href=http://cravecreative.com/corona-widget-theme-1.html target="_blank">Save $5 on Widget Themes from Crave Creative</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Learn to Program Using Corona SDK</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-129/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-129-2015-02-16-transition-library-game-design.mp3" length="80548867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-129-2015-02-16-transition-library-game-design.mp3" length="80548867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-129-2015-02-16-transition-library-game-design.mp3" length="80548867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-129-2015-02-16-transition-library-game-design.mp3" length="80548867" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Guest piece: Adding polish to your mobile game</title>
+		<link>/blog/2013/11/21/guest-piece-adding-polish-to-your-mobile-game/</link>
+		<comments>/blog/2013/11/21/guest-piece-adding-polish-to-your-mobile-game/#comments</comments>
+		<pubDate>Thu, 21 Nov 2013 23:52:42 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[transition library]]></category>
+
+		<guid isPermaLink="false">/?p=52228</guid>
+		<description><![CDATA[Noah Malewicz is the founder of <a href="http://www.chunkyapps.com/">Chunky Apps</a>, an independent development studio of one. He is passionate about making fun, cartoony games for mobile devices and uses Corona SDK to accomplish this goal. His latest game, City Birds, was Corona's App of the Week in mid-October and Noah was featured as a <a href="http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-61/">guest on Corona Geek</a> shortly thereafter.
+
+After attending a NY-based Meetup, Noah was inspired to focus on adding polish to his game - starting with jazzing up the "Menu" screen. In his guest piece, he shares how he accomplished this task, along with offering tips for other indie developers.]]></description>
+				<content:encoded><![CDATA[<p><em>Noah Malewicz is the founder of <a href=http://www.chunkyapps.com/>Chunky Apps</a>, an independent development studio of one. He is passionate about making fun, cartoony games for mobile devices and uses Corona SDK to accomplish this goal. His latest game, <a href=http://www.coronalabs.com/blog/2013/10/21/app-of-the-week-city-birds/>City Birds</a>, was a Corona App of the Week in mid-October and Noah was featured as a <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-61/>guest on Corona Geek</a> shortly thereafter.</p>
+<p>After attending a NY-based Meetup, Noah was inspired to focus on adding polish to his game &#8211; starting with jazzing up the &#8220;Menu&#8221; screen. In his guest piece, he shares how he accomplished this task, along with offering tips for other indie developers.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/11/Noah-Malewicz-headshot.jpg" alt="Noah Malewicz headshot" class="alignleft size-full wp-image-52272" srcset="/wordpress/wp-content/uploads/2013/11/Noah-Malewicz-headshot.jpg 180w, /wordpress/wp-content/uploads/2013/11/Noah-Malewicz-headshot-150x150.jpg 150w" sizes="(max-width: 180px) 100vw, 180px" />Making your game look polished can take a lot of work. In this post, I will talk about an often overlooked part of your game &#8211; the &#8220;Menu Screen&#8221; &#8211; and what you can do to add a little life and excitement to it.</p>
+<h2>Revamping the Menu screen</h2>
+<p>Over the summer, I attended a <a href=http://www.meetup.com/gaming/events/123242362/?gj=wc1c_e&a=wc1c_gnl&rv=wc1c_e&_af_eid=123242362&_af=event>Meetup in New York City</a> conducted by Jesse Freeman from Microsoft entitled: “How to Successfully Polish Your Game.&#8221; He had many good insights and I’d like to share one of them with you that really took <a href=http://www.coronalabs.com/blog/2013/10/21/app-of-the-week-city-birds/>City Birds</a> to the next level: polishing my Menu screen.</p>
+<p>The basic idea is to get &#8220;movement&#8221; on your Menu screen. This could be anything from a blinking Start button to having the individual elements slide into position from offscreen. That movement or animation, even if it&#8217;s very minimal, has a big impact on the look and feel of the game.</p>
+<p>Up until that particular Meetup, I had been working hard on my gameplay without really considering the Menu screen. I planned on showing the game logo with a big &#8220;PLAY&#8221; button and I figured that any other buttons I needed would somehow “fit in.&#8221;</p>
+<p><img src="/wordpress/wp-content/uploads/2013/11/Redesigned-menu-screen-City-Birds-300x225.png" alt="Redesigned menu screen - City Birds" class="alignright size-medium wp-image-52229" />After the event, I decided to completely redesign my Menu screen to fit the feel of the game. I pulled in one of the building images I was using in the game and put a birdcage, with a bird occupant, on the roof of it. This gives players a hint to the gameplay, where they will need to drag the birds into cages. I also carried the “city” theme into my Menu by making my buttons actual street signs that you would see in a city.</p>
+<h2>Bringing in the movement</h2>
+<p>I was happy with the look of the screen, so it was time to work on the movement. Using <a href=http://docs.coronalabs.com/api/library/transition/to.html>Corona’s transition library</a>, I was able to easily make the street signs slide in from the left and the building slide in from the right. Voilà; instant action! Then for a little effect, I had the other two buttons on the bottom slide in last, just to stack the animation, so everything didn&#8217;t happen at once.</p>
+<p>Once I was happy with the finished Menu screen, I wanted to up the ante a bit and thought: &#8220;What if the birds actually flew through the screen?&#8221; I already had the code to make them fly so why not try it here? Turns out, it looked really cool. The Menu screen had constant movement now and once the birds reached the end of the screen, they would reappear from the left again. It really brought the game to life.</p>
+<p><iframe width="1060" height="795" src="https://www.youtube.com/embed/DIbv4wtbnOo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h2>Some final touches</h2>
+<p>Finally, I tried adding the whole in-game dragging mechanic to the birds on the Menu screen. While I liked it at first, I ultimately decided it was too much and took it out. I also wanted to create a 3D feel with some birds off in the distance that would fly behind the building, so the dragging just didn&#8217;t make sense.</p>
+<p>The final touch I added may not be noticed by many but it&#8217;s still pretty cool. In City Birds, you can unlock more and more birds. I decided once you unlock a bird in the game, they would also unlock on the Menu screen. So once you unlock a bird or two, look closely and you should see your new friend flying happily about on the Menu screen with his pals.</p>
+<h2>In conclusion</h2>
+<p>All in all, I&#8217;m very happy with the way the final Menu screen came out &#8211; it&#8217;s much better than what I had originally planned. All this improvement came from just trying to get a little movement into my Menu screen. A good takeaway lesson is that you&#8217;re not finished after all the gameplay has been coded and the game is playing just right &#8211; don&#8217;t forget to make the wrapper look just as good as what you have on the inside.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/21/guest-piece-adding-polish-to-your-mobile-game/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

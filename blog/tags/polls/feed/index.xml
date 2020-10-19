@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>polls &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/polls/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>polls &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Welcome Pollfish! Earn money with polls in your app</title>
+		<link>/blog/2016/07/27/welcome-pollfish-earn-money-with-polls-in-your-app/</link>
+		<pubDate>Wed, 27 Jul 2016 22:10:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[polls]]></category>
+		<category><![CDATA[surveys]]></category>
+
+		<guid isPermaLink="false">/?p=67512</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Pollfish plugin. This plugin lets you include polls and surveys in your app. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1.png><img class="alignright wp-image-67526 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-150x150.png" alt="Pollfish_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/07/Pollfish_logo-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/07/Pollfish_logo-1.png 360w" sizes="(max-width: 150px) 100vw, 150px" /></a>Corona Labs is pleased to announce the availability of our Pollfish plugin. <a href=https://www.pollfish.com/ target="_blank">Pollfish</a> allows you to earn money by displaying surveys/polls in your apps and it can be used along with other ad platforms to create an additional revenue stream. In addition to showing others&#8217; polls to monetize, you can create your own polls to collect feedback from your own audience.</p>
+<p>Andreas Vourkos, Co-Founder &amp; COO of Pollfish, says &#8220;here at Pollfish we are proud to announce our latest partnership with Corona Labs. This new partnership will give Corona publishers access to Pollfish surveys, one of the most trending and high-paying solutions available in the app monetization field.</p>
+<p>&#8220;Pollfish is a survey network providing a DIY survey tool on its website in order for anyone to easily create a survey, select a target audience, pay and get results in a few hours. These surveys are distributed through the Pollfish app publishers’ network.</p>
+<p>&#8220;Corona publishers can integrate Pollfish surveys in their app quickly and easily, since no changes to the app’s UI are needed and surveys are displayed as an overlay. Users responding to surveys enter into drawings for prizes (satisfied customers!) without leaving the app environment to complete them. Publishers get paid up to 20x more compared to traditional advertising solutions and also gain access to the Pollfish DIY tool to survey their users for free, without any time limits, and thus get valuable feedback from their own users.&#8221;</p>
+<h3>Getting started</h3>
+<p>Start by <a href=https://www.pollfish.com/publisher target="_blank">signing up for an account</a> with Pollfish and setting up your app in their dashboard. After you set up your first app, you will get an API key. You will have separate app and API keys for both iOS and Android versions.</p>
+<p>Setting up for your app is similar to other plugins. You can learn about all of the API calls and setup information in our <a href=https://docs.coronalabs.com/plugin/pollfish/index.html target="_blank">documentation</a>. One call that is relatively unique to Pollfish is <a href=https://docs.coronalabs.com/plugin/pollfish/setUserDetails.html target="_blank">pollfish.setUserDetails()</a>. This gives you a chance to tell Pollfish more about your app&#8217;s user which could lead to higher-performing polls. Just be aware that if you collect this information and provide it to Pollfish, you should have a user-facing privacy policy explaining what you&#8217;re collecting and sharing.</p>
+<h3>Wrapping up</h3>
+<p>Pollfish is a great way to engage your audience and help you earn more money for your apps! Join us in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">forums</a> to discuss the plugin.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

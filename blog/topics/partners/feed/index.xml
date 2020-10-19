@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Partners &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/partners/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Partners &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing Amazon GameCircle Support</title>
+		<link>/blog/2014/10/22/announcing-amazon-gamecircle-support/</link>
+		<comments>/blog/2014/10/22/announcing-amazon-gamecircle-support/#comments</comments>
+		<pubDate>Wed, 22 Oct 2014 17:47:18 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=59991</guid>
+		<description><![CDATA[We now have an Amazon GameCircle plugin for Corona developers.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/10/Screen-Shot-2014-10-22-at-10.33.00-AM1.png" alt="Amazon Gamecircle" class="alignright size-full wp-image-59993" />Working in <a href=https://developer.amazon.com/public/community/post/Tx38DQBL95PGIM/GameCircle-Now-Available-in-the-Corona-SDK>partnership with Amazon</a>, we now have a GameCircle plugin for Corona developers to integrate into their games! </p>
+<p>Check out Amazon&#8217;s <a href=http://forums.coronalabs.com/forum/644-amazon-gamecircle/>blog post</a> on the announcement and <a href=https://developer.amazon.com/public/apis/engage/gamecircle/docs/corona-integration>detailed instructions</a>.</p>
+<p>Once you are ready to implement, please refer to the <a href=http://docs.coronalabs.com/daily/plugin/gamecircle/index.html>documentation page for this plugin</a> for info on how to integrate it with your games. Like all other Corona plugins, you just need to include some code in your build.settings file and it will be integrated at build time. If you have any questions, feel free to ask them in the <a href=http://forums.coronalabs.com/forum/644-amazon-gamecircle/>plugin&#8217;s forum</a>.</p>
+<p>This has also been tested out by several developers, including the great <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze-FULL/dp/B00A1SL8SE>Freeze!</a> by Frozen Gun Games. Be sure to <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze-FULL/dp/B00A1SL8SE>check it out</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/22/announcing-amazon-gamecircle-support/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Introducing Kaboom, a particle system for Kwik</title>
+		<link>/blog/2014/06/30/guest-post-introducing-kaboom-a-particle-system-for-kwik/</link>
+		<pubDate>Mon, 30 Jun 2014 20:00:42 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Partners]]></category>
+
+		<guid isPermaLink="false">/?p=59005</guid>
+		<description><![CDATA[Alex Souza is the founder of Kwiksher, creator of Kwik, a plugin that writes Corona apps directly from Photoshop. Here he announces a new product to do particle effects within Photoshop and without any code!]]></description>
+				<content:encoded><![CDATA[<p><em>Alex Souza is the founder of <a href=http://www.kwiksher.com>Kwiksher/</a>, creator of Kwik, a plugin that writes Corona apps directly from Photoshop.</em></p>
+<hr />
+<p><img class="alignright size-full wp-image-59038" src="/wordpress/wp-content/uploads/2014/06/kaboom-small.png" alt="Kaboom logo" />With Corona announcing <a href=/blog/2014/03/21/announcing-support-for-particle-designer-2-0/>support of native particle effects</a>, it was natural to extend Kwik and enable it to import the JSON format. This new feature, called Particle Replacement, allows designers to easily replace Photoshop layer contents with external designs from tools like Particle Designer 2 (PD2).</p>
+<p>However, with hundreds of users willing to stay in Photoshop while creating and editing particles, I decided to create a tool specifically to manage particles. It is called Kaboom, the first “plugin” for the Kwik “plugin”!</p>
+<p><a href=http://kwiksher.com/2014/06/30/introducing-kaboom/ target="_blank">Kaboom</a> can edit PD2 JSON files but also create new particle designs, directly from Photoshop’s interface. Users are able to control many parameters, including color, sizes and images, offering also a live preview. When perfected, the particle file is added into Kwik’s workflow, with a single click of a button.</p>
+<p><img class="alignright size-full wp-image-59011" src="/wordpress/wp-content/uploads/2014/06/Screen-Shot-2014-06-20-at-11.36.08-AM1.png" alt="Kaboom" />Greg Pugh, who has been beta testing Kaboom, created a nice tutorial on <a href=http://kwiksher.com/2014/06/30/creating-a-campfire/ target="_blank">how to create a campfire scene using the Kaboom plugin</a>.</p>
+<p>To celebrate its announcement, Kaboom is available for purchase right now with an <em><strong>introductory price of $29.99 until July 13th, 2014 (regular price is $49.99)</strong></em> or when the next Corona public build is available – whatever comes later.</p>
+<p>Kwik has been used to create more than 600 storybooks and games and I am curious to see what people will do now with the ability of creating native particle systems with Kaboom!</p>
+<hr>
+<p><em>Editor&#8217;s note: Alex was on today&#8217;s Corona Geek show talking about Kaboom and Greg Pugh (Corona Ambassador) showed off an example. <a href=/blog/coronageek/corona-geek-96/>Check it out here</a>.</em></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Additional 3rd Party Plugins</title>
+		<link>/blog/2014/06/09/additional-3rd-party-plugins/</link>
+		<comments>/blog/2014/06/09/additional-3rd-party-plugins/#comments</comments>
+		<pubDate>Mon, 09 Jun 2014 18:58:53 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=58768</guid>
+		<description><![CDATA[Gremlin Interactive, our 3rd party plugin partner, has 2 new plugins for Corona developers.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/06/amz-chart1.png" alt="amz-chart (smaller)" class="alignright size-full wp-image-58773" />A few weeks ago, we <a href=/blog/2014/04/18/introducing-3rd-party-corona-plugins/>announced that a 3rd party partner</a> (Gremlin Interactive) was making some plugins available to Corona developers for purchase. </p>
+<p>Gremlin has now made two additional plugins available: Amazon Ads and Chartboost!</p>
+<p>You can see more info on our Plugin Directory (under &#8220;3rd Party Plugins&#8221;). Make sure you give Gremlin feedback if you have any, and support them in their efforts to bring more/new plugins to Corona developers!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/09/additional-3rd-party-plugins/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>New Plugin Partner: Introducing GameAnalytics</title>
+		<link>/blog/2014/01/22/new-plugin-partner-introducing-gameanalytics/</link>
+		<comments>/blog/2014/01/22/new-plugin-partner-introducing-gameanalytics/#comments</comments>
+		<pubDate>Wed, 22 Jan 2014 15:00:20 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=55241</guid>
+		<description><![CDATA[We are proud to announce a new Corona Plugin partner: GameAnalytics! Read about their service and how to implement it in only a few minutes. ]]></description>
+				<content:encoded><![CDATA[<p>We are proud to announce a new Corona Plugin partner: <a href=http://www.gameanalytics.com/>GameAnalytics</a>! </p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-4.11.27-PM1.png" alt="Annamaria (GameAnalytics)" class="alignleft size-full wp-image-55277" /><em>This post is by Anamaria Todor, a software engineer at GameAnalytics. She focuses on maintaining a close dialogue with customers and making sure the product is tailored to their needs. Formerly an editor, Anamaria has spent several years reviewing and performing cultural analyses on triple-A games. Ana did her undergrad studies in both Cultural Studies and Software Engineering, and she is now doing research for her master’s thesis on recommender systems for the MSc in Computer Science (Digital Interactive Entertainment track) program at Copenhagen University.<br />
+</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-4.02.07-PM.png" alt="GameAnalytics" class="alignright size-full wp-image-55267" />In the darkened room, a providential click suddenly splits the silence. It’s the celestial cry of that last commit to the code base. Programmers everywhere sigh with relief as they visualize their “baby”, that game they spent more than six months on, coming to life. Becoming independent, surpassing their masters and most importantly, giving those masters their life back. </p>
+<p>Or is it? If you believe your connection to the game you just developed severs the closer you get to release, think again. This is the curse of development, being trapped in developer limbo. To stick to the “baby” analogy, near release your game resembles a rebel teenager, one you need to understand in order to get back on track. Closing your eyes and keeping your fingers crossed will never make it better and will most definitely not make it sell, no matter how great the idea and the “genes”. To turn your game around you need facts, you need figures and you need to ACT. All in all, that is what GameAnalytics is all about; improving your digital parenting. </p>
+<p><strong>So, who are we blokes exactly?</strong></p>
+<p><a href=http://www.gameanalytics.com>GameAnalytics/</a> is a completely free online service, created for developers who want to know their games better and who also want to know how to know their games better. By tying GameAnalytics to your game data, you can immediately get insights into how your game performs by consulting basic automatically generated industry-standard metrics, such as DAU, MAU, ARPPU, ARPDAU, etc. If those acronyms look like hieroglyphs to you, no need to worry. We explain everything both on <a href=http://blog.gameanalytics.com/blog/>our blog</a> and on our comprehensive <a href=http://support.gameanalytics.com/hc/en-us>support forums</a>. </p>
+<p>Put some more time into your integration and you can rely on GameAnalytics to tweak all aspects of player experience, from the tutorial flow to in-game item prices, level timers and difficulty. GameAnalytics can also be a team experience through its minimalist, customizable dashboards and targeted email reports. It’s really up to you to define the boundaries of the integration. </p>
+<p>Of course, we wouldn’t be on this blog without a good reason, so I’m delighted to announce that GameAnalytics is now also an official Corona partner (we have our own plugin section and all). This means that setting up your Corona-developed game with GameAnalytics is now a matter of just a few minutes. Moreover, the official plugin taps into some of Corona’s unique features and is able to automatically track:</p>
+<ul>
+<li>system information</li>
+<li>average and critical FPS</li>
+<li>error stack traces</li>
+<li>memory warnings (iOS only)</li>
+<li>storyboard scene changes</li>
+</ul>
+<p>But I’m not here to sell; I’m here to show and tell. If you want more details about what GameAnalytics does, <a href=http://www.gameanalytics.com/features.html>please visit this link</a>. Otherwise…</p>
+<p>If you want to sit back, you can watch this video which walks you through setting up GameAnalytics and integrating it into one of the example applications provided by Corona.</p>
+<p><iframe src="//fast.wistia.net/embed/iframe/j3zzt8adgh?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="960" height="540"></iframe><script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script></p>
+<p>OR</p>
+<p>You can read through the GameAnalytics setup walkthrough below, filled with copy paste code goodies and what not. Best way to learn, if you ask me&#8230;</p>
+<p><strong>Let’s get started</strong></p>
+<p>In order to get started with GameAnalytics, you first need to make sure that you are registered with the service. You can <a href=http://easy.gameanalytics.com/coronasignup>sign up on the GameAnalytics website directly</a>, after which you will be prompted to create a studio and a logic game entity. These are absolutely necessary for you to start sending data our way, because they provide you with an unique identifier for your game – the game key – and your own encryption key that ensures no one else can intercept and understand your data – the secret key. Here’s a screenshot of my Corona game entity, together with the attached keys:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.33.34-PM.png" alt="Screen Shot 2014-01-20 at 3.33.34 PM" class="alignnone size-full wp-image-55244" /></p>
+<p><strong>The Example </strong></p>
+<p><strong>The Basics</strong></p>
+<p>As much as we would have wanted to blow you away with the most awesome example of integrating GameAnalytics into a live Corona game, the open source examples available are a bit too outdated to really have educational value. Moreover, they are less accessible than the Sample Apps that already come with Corona. </p>
+<p>That’s why, to illustrate the power of GameAnalytics, we chose the SimplePool example available in the SampleCode / Physics / SimplePool directory.</p>
+<p>To use GameAnalytics in your game, first modify the build.settings file of your project to include these lines under “settings”:</p><pre class="crayon-plain-tag">plugins =
+	{
+		[&quot;plugin.gameanalytics&quot;] =
+		{
+			publisherId = &quot;com.gameanalytics&quot;,
+		},
+	},</pre><p></p>
+<p>The complete SimplePool build.settings file would look like:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+	orientation =
+	{
+		default = &quot;portrait&quot;,
+		supported = { &quot;portrait&quot; }
+	},
+	plugins =
+	{
+		[&quot;plugin.gameanalytics&quot;] =
+		{
+			publisherId = &quot;com.gameanalytics&quot;,
+		},
+	},
+	iphone =
+	{
+		plist =
+		{
+			CFBundleIconFile = &quot;Icon.png&quot;,
+			CFBundleIconFiles =
+			{
+				&quot;Icon.png&quot;, 
+				&quot;Icon@2x.png&quot;, 
+				&quot;Icon-72.png&quot;, 
+				&quot;Icon-72@2x.png&quot;, 
+			},
+		},
+	},
+}</pre><p></p>
+<p>Next, configure the application to use the GameAnalytics package by requiring the GameAnalytics package inside your code and then by initializing it with your corresponding game and secret keys, as well as a desired build number. For this particular game, this means that I have to add the following code just below the physics initialization:</p>
+<p></p><pre class="crayon-plain-tag">local physics = require(&quot;physics&quot;)
+local GA = require &quot;plugin.gameanalytics&quot;
+
+GA.init ( {
+       	game_key = '797e949fd13cf58ef1a98255bf9345825',
+       	secret_key = '64b58b4f0de247c61a9df9121d970d93f8cd3f09',
+       	build_name = &quot;0.1&quot;,
+} )
+physics.start()</pre><p></p>
+<p>Believe it or not, that’s it. You can already check if the GameAnalytics package works and sends data to the servers correctly. For this, enable debugging mode, set the option to allow the application to send information from the simulator and enable the submission of System Information. Don’t forget that you have to set all these flags BEFORE initializing the SDK:</p>
+<p></p><pre class="crayon-plain-tag">local GA = require &quot;plugin.gameanalytics&quot;
+GA.isDebug = true
+GA.runInSimulator = true
+GA.submitSystemInfo = true
+GA.init ( {
+       	game_key = '97e949fd13cf58ef1a98255bf9345825',
+       	secret_key = '64b58b4f0de247c61a9df9121d970d93f8cd3f09',
+       	build_name = &quot;0.1&quot;,
+} )</pre><p></p>
+<p>You can view the debug logs both in the simulator and on actual devices. For the Mac, start Corona SDK using the &#8220;corona-terminal&#8221; app in the Applications/CoronaSDK folder and then open your application. On a PC, Corona SDK will start up a cmd shell screen for you. The print messages will be shown there automatically.</p>
+<p>For example, this is my terminal window on Mac OSX:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.35.24-PM.png" alt="Screen Shot 2014-01-20 at 3.35.24 PM" class="alignnone size-full wp-image-55245" /></p>
+<p>This shows that the GameAnalytics plugin has been correctly initialized.</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.35.57-PM.png" alt="Screen Shot 2014-01-20 at 3.35.57 PM" class="alignnone size-full wp-image-55246" /></p>
+<p>The {“status”:”ok”} message in the screenshot here shows that the messages are being correctly received by the servers.<br />
+Of course, once the messages have been successfully submitted to the GameAnalytics servers, you can also view them in the Realtime tab of the GameAnalytics tool:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.36.42-PM.png" alt="Screen Shot 2014-01-20 at 3.36.42 PM" class="alignnone size-full wp-image-55247" /></p>
+<p><strong>Some Advanced Behavior</strong></p>
+<p>Now that you know that GameAnalytics actually works, let’s make tracking more interesting. Let’s say you also want to track the actual performance of your app by looking at average FPS. Add these settings BEFORE initializing the GameAnalytics SDK to send FPS data every 10 seconds:<br />
+GA.submitAverageFps = true<br />
+GA.submitAverageFpsInterval = 10</p>
+<p>In the terminal, you can see that events are indeed being sent out every 10 seconds:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.37.33-PM.png" alt="Screen Shot 2014-01-20 at 3.37.33 PM" class="alignnone size-full wp-image-55248" /></p>
+<p>And this is what you get in the quality dashboard:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.38.09-PM.png" alt="Screen Shot 2014-01-20 at 3.38.09 PM" class="alignnone size-full wp-image-55249" /></p>
+<p>So far so good. Let’s get custom!</p>
+<p>For this, we need to have a look at the actual SimplePool application anatomy.<br />
+The app consists of the following sections:<br />
+a splash screen which gives you the choices to play either a one-player or a two-player game and to access the game options<br />
+an options screen which allows you to change the pool table color<br />
+the actual game screen which is your classic pool game.</p>
+<p>It’s a rather simple application, but still there are a lot of interesting aspects that could use some tracking. For example, we would like to know </p>
+<p>1. Do players prefer single or two-player matches?</p>
+<p>This would help you understand where your game excels: is it a better single player experience or a multiplayer one? To answer this question, you could create the following event hierarchy:<br />
+GameLaunched:onePlayer<br />
+GameLaunched:twoPlayer<br />
+To get this into the GameAnalytics tool, you could insert this code in the init() function:</p><pre class="crayon-plain-tag">if mode == onePlayer or mode == twoPlayer then
+
+		if mode == onePlayer then
+			GA.newEvent ( &quot;design&quot;, { event_id = &quot;GameLaunched:onePlayer&quot; } )
+		else
+			GA.newEvent ( &quot;design&quot;, { event_id = &quot;GameLaunched:twoPlayer&quot; } )
+		end
+		timer.cancel(buzzTimer)-- Removes buzzing animation
+	end</pre><p></p>
+<p>In order to visualize this, we should create a custom widget in the GameAnalytics dashboards. Here are the settings for the widget:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.38.56-PM.png" alt="Screen Shot 2014-01-20 at 3.38.56 PM" class="alignnone size-full wp-image-55250" /></p>
+<p>And this is how the final widget looks:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.39.48-PM.png" alt="Screen Shot 2014-01-20 at 3.39.48 PM" class="alignnone size-full wp-image-55251" /></p>
+<p>2. Which table color is the most popular? </p>
+<p>In case you ever want to start selling different table colors, knowing which one is the most popular would definitely help. Use the following event hierarchy:</p>
+<p>TableColor:ColorID</p>
+<p>Note that the ColorID can actually be assigned automatically from the code, using string concatenation. Put the GA call in the OptionMenu() function, under the changeFelt() function:</p><pre class="crayon-plain-tag">local function changeFelt(event)
+		local feltObject = event.target
+		local feltColor = event.target.id
+		if event.phase == &quot;ended&quot; then
+			GA.newEvent ( &quot;design&quot;, { event_id = &quot;TableColor:&quot;.. feltColor } )</pre><p></p>
+<p>This widget is set up similarly to the one above and it will look something like: </p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.40.32-PM.png" alt="Screen Shot 2014-01-20 at 3.40.32 PM" class="alignnone size-full wp-image-55252" /></p>
+<p>3. Statistically, how many balls are left on the table when the eight ball is accidentally scored and the game is over?</p>
+<p>Knowing how many balls are left on the table can give you an idea on how hard the game is. Maybe you want to “tweak” the black eight ball to change the game difficulty. You can track this metric from the gameOver() function:</p><pre class="crayon-plain-tag">function gameOver()
+	if mode == onePlayer then
+		GA.newEvent ( &quot;design&quot;, { event_id = &quot;GameOver:onePlayer:BallsOnTable&quot; , value = 7 - solidTotal } )
+	else
+		GA.newEvent ( &quot;design&quot;, { event_id = &quot;GameOver:twoPlayer:BallsOnTable&quot; , value = 14 - stripeTotal - solidTotal } )
+	end</pre><p></p>
+<p>Here’s how you would create a custom widget for this data: </p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.41.18-PM.png" alt="Screen Shot 2014-01-20 at 3.41.18 PM" class="alignnone size-full wp-image-55253" /></p>
+<p>And for my first attempts, the results would look something like: </p>
+<p><img src="/wordpress/wp-content/uploads/2014/01/Screen-Shot-2014-01-20-at-3.42.07-PM.png" alt="Screen Shot 2014-01-20 at 3.42.07 PM" class="alignnone size-full wp-image-55254" /></p>
+<p><strong>To Wrap Up&#8230;</strong></p>
+<p>Of course, in this article I have just scratched the surface of what can be achieved with the GameAnalytics SDK. To understand the complete capabilities of this plugin, please visit <a href=http://docs.coronalabs.com/plugin/gameanalytics/index.html>our documentation</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/01/22/new-plugin-partner-introducing-gameanalytics/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Corona Labs and OUYA partner to create more opportunities for game developers on the big screen</title>
+		<link>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/</link>
+		<comments>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/#comments</comments>
+		<pubDate>Thu, 26 Sep 2013 15:57:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Ouya]]></category>
+
+		<guid isPermaLink="false">/?p=46216</guid>
+		<description><![CDATA[From an action-packed arcade game to a turn-based RPG, some games look 10x more awesome on the big screen. To provide Corona developers with more distribution opportunities, we’re thrilled to announce a partnership with <a href="https://www.ouya.tv/">OUYA</a> an innovative game console that’s made headlines for their developer-friendly approach to gaming.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/09/Ouya-game-system-300x168.jpg" alt="Ouya game system " class="alignleft size-medium wp-image-46217" />From an action-packed arcade game to a turn-based RPG, some games look 10x more awesome on the big screen. To provide Corona developers with more distribution opportunities, we’re thrilled to announce a partnership with <a href=https://www.ouya.tv/>OUYA</a> an innovative game console that’s made headlines for their developer-friendly approach to gaming.</p>
+<p>In the midst of the console versus mobile debate, we’re offering developers the best of both worlds. The power of Corona SDK’s unprecedented development speed, combined with the chance to get a head start in OUYA’s growing market, opens a new avenue for game developers. With less than 500 games on OUYA, the market is far less saturated than the App Store or Google Play, and presents an opportunity to any developer that wants to see their game on the television. That means our talented community &#8211; that’s right, all of you &#8211; can start creating the next big hit.</p>
+<h3>Getting started with OUYA</h3>
+<p>Corona SDK Pro and Enterprise developers can now incorporate OUYA’s game network and integrate in-app purchase into their OUYA games.</p>
+<p>Take a look at <a href=http://docs.coronalabs.com/daily/plugin/ouya/>OUYA’s plugin documentation</a> and download the referenced sample source code. Once your project is ready to build, select “Build for Android” in the Corona Simulator and OUYA as your “Target App Store.” </p>
+<h3>Limitless game controller support</h3>
+<p>As a reminder, beyond integrating the OUYA game controller, you can now target nearly all <a href=http://www.coronalabs.com/blog/2013/08/27/tutorial-introduction-to-game-controllers/>HID devices</a> including the GameStick (to ship on October 29) and PlayStation DualShock 3 game controllers, along with MOGA Pro and NVIDIA Shield. Customize your games by taking full advantage of controllers’ buttons, D-pad, analog thumbsticks and triggers. Taking it one step further, we also enable you to incorporate Bluetooth keyboards and mice into your games.</p>
+<h3>Why develop for OUYA?</h3>
+<p>OUYA is ramping up and providing attractive benefits to developers.</p>
+<ul>
+<li><strong>Accessibility</strong>: OUYA works diligently to support as many developers as possible.
+<li><strong>Discoverability</strong>: OUYA shares content from all sorts of great developers. From OUYA’s engagement-metrics driven trended sections, to special guest-curated categories, OUYA looks to surface unique and enjoyable content to keep gamers playing and exploring new content.</li>
+<li><strong>Publishing is easy</strong>: With a few clicks and a controller in hand, your game will be live on TV for the world to see.</li>
+<li><strong>Low financial barrier</strong>: OUYA offers an affordable console dev kit; just $99 for the console, and no fees for submission of games or updates.</li>
+</ul>
+<p>We can’t wait to see what you cook up for OUYA. So get to porting, and share your work with us!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/26/corona-sdk-and-ouya-partner-to-create-more-opportunities-for-game-developers-on-the-big-screen/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Game Coder 101: Building a mobile game on the iPad (Guest post)</title>
+		<link>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/</link>
+		<comments>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/#comments</comments>
+		<pubDate>Thu, 21 Mar 2013 18:17:37 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[app]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[tool]]></category>
+
+		<guid isPermaLink="false">/?p=30392</guid>
+		<description><![CDATA[Ricardo Rauber is the creator of Game Coder, a revolutionary tool that allows developers of all backgrounds, to build apps on the iPad. Best of all, Game Coder is built entirely with Corona SDK! 
+
+Read through Ricardo's walk-through to learn more about Game Coder and to get up and running with the app.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Ricardo Rauber is the creator of <a href=https://itunes.apple.com/us/app/game-coder/id580568570?ls=1&mt=8>Game Coder</a>, a revolutionary tool that allows developers of all backgrounds, to build apps directly on the iPad. Best of all, Game Coder is built entirely with Corona SDK! </p>
+<p>Read through Ricardo&#8217;s walk-through to learn more about Game Coder and to get up and running with the app.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM-150x150.png" alt="Game Coder" class="alignleft size-thumbnail wp-image-30402" srcset="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM-150x150.png 150w, /wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Game Coder is a wonderful new way to build your dream game on the iPad. By using simple tap and drag-and-drop features, Game Coder facilitates the game development process for newbies, skilled developers, and everything in between. Game Coder was built entirely with <a href=/products/Corona-sdk>Corona SDK</a>, and is the perfect compliment to the Corona platform.  </p>
+<p>If you just want to start a project or prototype an idea, Game Coder is good for that. If you want to work directly with Lua files, you can export from Game Coder as a Corona SDK project.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/menu-804x1024.jpg" alt="menu" class="alignnone size-large wp-image-30393" /></p>
+<p>Let&#8217;s take a look at Game Coder. You can <a href=https://itunes.apple.com/us/app/game-coder/id580568570?ls=1&mt=8>download Game Coder</a> from the App Store for $9.99. On the first screen, you&#8217;ll see your projects, images, sounds and the Game Coder configuration. When you download Game Coder, you&#8217;ll see a sample project called Dogs vs. Aliens. This is a complete game made with Game Coder. It is free for everyone that downloads Game Coder and is a great sample project for testing commands and learning how to develop. Using the &#8220;?&#8221; on each screen, you can see what each component on the screen does. </p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/project-804x1024.jpg" alt="project" class="alignnone size-large wp-image-30394" /></p>
+<p>When you tap on a project, it will show the project properties. Here you can change the project orientation, name and scenes. </p>
+<p>By touching the &#8220;+&#8221; button, you can create a new scene where you can put objects. Touching the gear next to the scene thumbnail, you can change the scene&#8217;s name and select which scene will be first. You can also touch the trash icon, and Game Coder will ask if you really want to delete the scene. </p>
+<p>Tapping the “Code” button in the top right of the screen will open the main project code, and will be similar to writing code in the main.lua file within a Corona project. The Code button is context sensitive, so it will display code for the screen or object you are working with based on where you are in Game Coder. For example, if you are on the project screen, the Code button will show the project code, if you are on the Object screen, the Code button will show the object code. We will take a look at the code screen in a moment. First, let’s cover the Scene Edit screen. Tap on a scene to view that specific scene. </p>
+<p>As a side note, you can touch the big green &#8220;Play&#8221; button at the bottom of Game Coder at any time to run your game.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/scene-804x1024.jpg" alt="scene" class="alignnone size-large wp-image-30395" /></p>
+<p>Scene edit is one of the greatest things available in Game Coder. It shows a stage with the orientation of the project and all your objects listed at the bottom of the screen. You just need to touch and hold the object and drag it to the stage. After that, you can move, rotate and resize the object using two fingers, or by double tapping to edit its properties. One cool thing is that all objects work with layers. They are positioned the same way display groups are positioned in Corona. </p>
+<p>At the top right you have the same Code button from the Projects screen but tapping it now shows you the scene code. When you want to create a new object, just tap the &#8220;+&#8221; button, or if you want to edit an object, just double tap on it and Game Coder will go to the next screen.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/object-804x1024.jpg" alt="object" class="alignnone size-large wp-image-30396" /></p>
+<p>Let’s look at the at the Object content. Here you can see the object images, attributes and a list of images. The object images at the top are the animation frames. You can play, stop and change the frame with commands in the code screen. </p>
+<p>To add new images to the animation, just double tap on an image at the list on the bottom. These are all images imported on Game Coder. If you want to delete a frame, just touch the &#8220;trash&#8221; icon right under the appropriate image. Tap the Code button again! Now it will show the object code and we will take a look at it!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/code-804x1024.jpg" alt="code" class="alignnone size-large wp-image-30397" /></p>
+<p>Don&#8217;t be afraid of this screen, it is very simple to use and to understand! Game Coder works with drag-and-drop commands that you can choose by tapping the top right button called &#8220;Commands.&#8221; It will show a list of all commands supported by Game Coder. They are classified by the type of command. For example, math commands are grouped together, as well as physics commands, etc. </p>
+<p>To add a command to the code, just touch and hold it and drag to the lines. If you drag it to the top or the bottom of the screen and the code has more lines than you can see, the code will be moved so you can put your command right where you want. For example, if you are at the line 42, you can drag the command to the top and it will start to scroll to the top of the code.</p>
+<p>After adding a command, you can change its position by holding it again and dragging it. Also, you can delete it by touching the trash icon. To change commands values, touch the value you want to change and a popup will be shown with the value to be changed. </p>
+<p>Finally, you need to know that all variables, timers, object names, transitions and procedures are globals, so if you create a procedure inside an object, it will be accessible to the entire project. Keep that in mind. But what if you want to create something just for that object? Just use the word &#8220;this&#8221; and Game Coder will set the values to be the object instance id. We will talk more about that in another post.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/dropbox-804x1024.jpg" alt="dropbox" class="alignnone size-large wp-image-30398" /></p>
+<p>You might be wondering how you add your own images and sounds inside Game Coder. It&#8217;s easy, you just need to use a <a href=https://www.dropbox.com/>Dropbox</a> account. Game Coder has full integration with Dropbox so you can download your content to your app. </p>
+<p>Let&#8217;s see an example using an image. On the first screen of the app there is a button called Images.  You can use it to see all your downloaded images from your Dropbox account. The plus button is used to download additional assets from your Dropbox. You just need to choose &#8220;Allow&#8221; and all your files and folders will be shown on the screen. You now can just choose which file you want to download by touching it. A dialog will appear asking if you want to download it and if you choose &#8220;Yes,&#8221; Game Coder will download the image and it will be available for all your projects. Use the same procedure for importing sounds.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/export-804x1024.jpg" alt="export" class="alignnone size-large wp-image-30399" /></p>
+<p>The final thing you need to know is how to export your Game Coder projects to Corona. Choose &#8220;Projects&#8221; in the main menu and touch the little gear next to the project. A popup with two options will appear: &#8220;Corona SDK&#8221; and &#8220;Publish.&#8221; </p>
+<p>If you choose &#8220;Corona SDK,&#8221; Game Coder will show your Dropbox and ask where you would like to export it. Choose a folder and Game Coder will generate all the source files, put them in a zip file, and send it to your Dropbox. </p>
+<p>If you would like someone to help you publish your apps, use the Publish button. When you touch Publish, Game Coder will ask you to confirm the request and then it will e-mail you instructions for completing the publishing process. App publishing is an extra paid service provided by Beelieve. The price for publishing is determined on a case by case basis. We can provide an estimate of cost for publishing after talking with you about your project.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/exported_object-1024x657.jpg" alt="exported_object" class="alignnone size-large wp-image-30400" /></p>
+<p>After exporting your project to Corona, you will see all the supporting images, sounds, and Lua files in a Corona project folder, just as you would if you had originally created a project on your own. The naming convention for scene and object files, are &#8220;scn_&#8221; before the name of scenes and &#8220;obj_&#8221; before the name of objects. The code is all commented so you can easily understand everything. From here you can fully edit your Corona SDK project files to make your game even better with all the power of Corona!</p>
+<p><em>Ricardo Rauber, Owner of Beelieve, Creator of Game Coder</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

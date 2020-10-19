@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GreenThrottle &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/greenthrottle/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>GreenThrottle &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Hangout Highlights: Displaying Green Throttle Controller Feedback In Corona SDK Simulator</title>
+		<link>/blog/coronageek/hangout-highlight-green-throttle-controller-plugins/</link>
+		<comments>/blog/coronageek/hangout-highlight-green-throttle-controller-plugins/#comments</comments>
+		<pubDate>Thu, 30 May 2013 17:32:06 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[GreenThrottle]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[zip]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34771</guid>
+		<description><![CDATA[During Monday's Hangout Ed Maurina showed how he gets Green Throttle controller feedback to display in the Corona SDK Simulator. Normally, feedback is only visible when testing on the actual device, so Ed's code makes development using the Green Throttle plugin even faster.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/tQRmfZ3jNaM?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />During Monday&#8217;s Hangout, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a> showed how he gets Green Throttle controller feedback to display in the Corona SDK simulator. Normally, feedback is only visible when testing on the actual device, so Ed&#8217;s code makes development using the <a href=http://docs.coronalabs.com/daily/plugin/greenthrottle/ target="_blank">Green Throttle plugin</a> even faster. You can <a href=https://gumroad.com/l/fzOt target="_blank">download the Green Throttle tools</a> from Ed&#8217;s website.</p>
+<p><iframe src="http://www.youtube.com/embed/hrP_YpyQyK4?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p>We also talked about using the new Zip plugin for downloading and using files as part of your app. Rob Miracle shared lot of great tips and if you haven&#8217;t already, take a moment to read the <a href=http://www.coronalabs.com/blog/2013/05/21/tutorial-using-zip-plugin/>Zip plugin tutorial</a>. It&#8217;s a good intro to plugins and the new Zip plugin functionality.</p>
+<p><a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-41/>Watch the full Hangout</a> for more geek fun.</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlight-green-throttle-controller-plugins/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #41 &#8211; Corona SDK Plugin Talk</title>
+		<link>/blog/coronageek/corona-geek-hangout-41/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-41/#respond</comments>
+		<pubDate>Mon, 27 May 2013 21:25:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Carrot]]></category>
+		<category><![CDATA[GreenThrottle]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[SponsorPay]]></category>
+		<category><![CDATA[Tap for Tap]]></category>
+		<category><![CDATA[zip]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=34671</guid>
+		<description><![CDATA[This week we hung out with Dr. Brian Burton, Ed Maurina, Matthew Chapman, Rob Miracle, and Theo Rushin, Jr. to discuss Corona SDK plugins. We spent quite a bit of time talking about the Zip plugin and Ed Maurina shared his project for getting Green Throttle controller feedback to display in the Corona Simulator. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/QutCATHSdT8?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />This week we hung out with <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=https://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>, <a href=http://www.coronalabs.com/blog/author/rob/>Rob Miracle</a>, and <a href=https://plus.google.com/b/108159899655420864045/116875464241306531958/posts target="_blank">Theo Rushin, Jr.</a> to discuss Corona SDK plugins. We spent quite a bit of time talking about the Zip plugin and Ed Maurina shared his project for getting Green Throttle controller feedback to display in the Corona Simulator. Code for that should be posted soon on the <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer</a> website. If you haven&#8217;t started playing with plugins yet, check out the <a href=/blog/2013/05/21/tutorial-using-zip-plugin/>Zip plugin tutorial</a> on the blog. It&#8217;s a good intro to working with them.</p>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Mark Eberhardt for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Remember To Subscribe</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-41/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-41-2013-05-27-plugins.mp3" length="42315441" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-41-2013-05-27-plugins.mp3" length="42315441" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-41-2013-05-27-plugins.mp3" length="42315441" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-41-2013-05-27-plugins.mp3" length="42315441" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

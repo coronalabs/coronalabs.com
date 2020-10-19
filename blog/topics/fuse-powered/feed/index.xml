@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Fuse Powered &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/fuse-powered/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Fuse Powered &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>FusePowered plugin update</title>
+		<link>/blog/2016/03/01/fusepowered-plugin-update/</link>
+		<comments>/blog/2016/03/01/fusepowered-plugin-update/#comments</comments>
+		<pubDate>Wed, 02 Mar 2016 00:01:44 +0000</pubDate>
+		<dc:creator><![CDATA[roj]]></dc:creator>
+				<category><![CDATA[Fuse Powered]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65898</guid>
+		<description><![CDATA[We have new news about the FusePowered plugin and it's general availability. Read the latest news on this plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-62891" src="/wordpress/wp-content/uploads/2015/05/FusePowered_Logo-300-300x43.png" alt="Fuse Powered" width="300" height="43" /></p>
+<p>If you’ve been following the latest in mobile acquisitions, you might have run across the news that Corona Labs’ previous owner Fuse Powered itself was <a href=https://www.fusepowered.com/blog/2016/01/fuse-powered-has-been-acquired-by-upsight/ target="_blank">recently acquired by Upsight</a>.</p>
+<p>While an original plan had called for the Fuse Powered plugin to generally be made available to Corona developers, this is no longer the case for the foreseeable future.</p>
+<p>We are told by Fuse Powered that while a Fuse Powered plugin for Corona SDK is of interest to them, their focus and priorities lie in integrating their SDK with the Upsight SDK in a combined solution.</p>
+<p>Developers who are currently using the Fuse Powered plugin in their apps should rest assured knowing that Fuse Powered will continue maintaining the plugin and Corona Labs will do its best to support them in this effort.</p>
+<p>This announcement is specifically for those who had been considering integrating the Fuse Powered plugin should it be released. Given we don&#8217;t know when Fuse Powered will be ready for new Corona SDK users, you should consider our <a href=/blog/topics/monetization/>other monetization options</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/01/fusepowered-plugin-update/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

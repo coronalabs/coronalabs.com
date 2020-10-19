@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>RPG &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/rpg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>RPG &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing “Match Three Space RPG” modular game template</title>
+		<link>/blog/2016/11/03/modular-match-three-space-rpg-game-template/</link>
+		<pubDate>Thu, 03 Nov 2016 16:41:57 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[match-3]]></category>
+		<category><![CDATA[modules]]></category>
+		<category><![CDATA[RPG]]></category>
+		<category><![CDATA[Sample Code]]></category>
+
+		<guid isPermaLink="false">/?p=68549</guid>
+		<description><![CDATA[Looking for a great example of how to organize your project into reusable modules? Check out this free high-quality game template to get started.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon.png><img class="alignright wp-image-68558" style="margin: 2px 0px 20px 25px;" src="/wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-150x150.png" alt="match3spacerpg_icon" width="175" height="175" srcset="/wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-150x150.png 150w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-300x300.png 300w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-768x768.png 768w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-570x570.png 570w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-500x500.png 500w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon-700x700.png 700w, /wordpress/wp-content/uploads/2016/10/Match3SpaceRPG_icon.png 1024w" sizes="(max-width: 175px) 100vw, 175px" /></a>There are many ways to learn programming with Corona and one popular option is to look at completed project source code. With that in mind, Corona Labs is partnering with Michael Wilson of <a href=http://ponywolf.com/ target="_blank">Ponywolf, LLC</a> to provide you with great projects to study and learn from.</p>
+<p>The first project in the series is <strong>Match Three Space RPG</strong>, a simple &#8220;match three&#8221; style game with a classic sci-fi RPG theme.</p>
+<p>The goal of the project is to teach modular design and project organization while also providing reusable modules for your own apps.</p>
+<p>The complete project is now available for free in the <a href=https://marketplace.coronalabs.com/asset/match-3-space-rpg target="_blank">Corona Marketplace</a>.  Or, if you wish to obtain the project directly, it&#8217;s available on <a href=https://github.com/coronalabs/Match-Three-Space-RPG target="_blank">GitHub</a>.</p>
+<p><iframe width="560" height="350" src="https://www.youtube.com/embed/videoseries?list=PLhE_IYaXVf9skwhKXNswj0C9U3RZB3DaD&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Once you download the project, open it in the Corona Simulator and play around with the game to learn its flow/gameplay. Then study the code to see how everything works and how you can use its reusable heart meter, health bar, score keeping, hallway, and other modules in your own games.</p>
+<h3>Assets for all</h3>
+<p>This project also represents our first <strong>downloadable asset</strong> in the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a>. In addition to this project, we&#8217;re currently getting several more asset providers on-boarded. While their assets won&#8217;t show up in the main directory for a little bit longer, you will be able to access them by direct link and download them as the asset landing pages become public.</p>
+<h3>Conclusion</h3>
+<p>Corona Labs is committed to providing an ever-increasing level of learning materials to help you get the most out of your Corona app development experience. Please join us in the <a href=https://forums.coronalabs.com/forum/600-general-questionsdiscussion/ target="_blank">Corona Forums</a> to discuss this project and tell us how you are using it.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #33 &#8211; Hanging out with Questlord&#8217;s Eric Kinkead</title>
+		<link>/blog/coronageek/corona-geek-hangout-33/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-33/#comments</comments>
+		<pubDate>Wed, 03 Apr 2013 16:09:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[RPG]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=30974</guid>
+		<description><![CDATA[This week we hung out with Eric Kinkead, the developer of Questlord, a turn-based Role Playing Game (RPG). Eric shared his Corona SDK mobile developer story with us, along with his views on what makes a super successful mobile game.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/SPu2EZJTZBM?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Questlord&#8217;s Eric Kinkead. <a href=http://questlord.com/ target="_blank">Questlord</a> is a turn-based Role Playing Game (RPG) in the classic style of the legendary Computer Role Playing Games that defined the genre. Eric shared his <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> mobile developer story with us, along with his views on what makes a successful mobile game. Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=https://itunes.apple.com/app/id537840971?mt=8 target="_blank">Mohamed Bennouf</a> and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear:both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Patrick Flahan. Congrats Patrick! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-33/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-33-2013-04-01-questlord.mp3" length="47514684" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

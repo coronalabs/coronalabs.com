@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>maps &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/maps/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>maps &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #124</title>
+		<link>/blog/2016/05/20/from-the-forum-issue-124/</link>
+		<pubDate>Fri, 20 May 2016 14:29:46 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[config.lua]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66877</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A little bit more from Google Maps</h3>
+<p>This first tip is short and sweet and it revolves around one of the great “gotchas” that is the basis of Corona SDK: the OpenGL layer. As we all know, because of the architecture which underlies Corona SDK, any <a href=https://docs.coronalabs.com/daily/api/library/native/index.html>native.*</a> API call that creates a native object places that element above graphical objects created within your Corona app.</p>
+<p>If you have your sights set on a super-engaging geo-tagging game, this creates quite the boondoggle. You can’t capture maps with <a href=https://docs.coronalabs.com/api/library/display/save.html target="_blank">display.save()</a> et. al, nor can you mark up the maps that you create. However, standout Corona developer <strong>AidenWolf</strong> reminds us that we can still leverage the Google Static Maps API. Check out the original thread below and get clued in on how you can modify your map images with very little hassle!</p>
+<p><a href=https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/ target="_blank">https://forums.coronalabs.com/topic/62580-how-to-save-photo-from-nativenewmapview/</a></p>
+<h3>Remote server querying workflows</h3>
+<p>If you aren’t coming from a system administrator background, configuring your Corona project to interface nicely with your remote server can be a bit of a struggle. Wrapping your head around all the moving parts isn’t the most exciting process.</p>
+<p>Fortunately, exemplary Corona support engineer Rob Miracle responded to a forum thread with some questions about this topic, and helped out everyone by giving a quick-and-dirty dissertation on the finer aspects of SQL integration. Click through to the original thread to grab a bit more info on this very necessary skill.</p>
+<p><a href=https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/ target="_blank">https://forums.coronalabs.com/topic/63163-its-possible-accessing-remote-sql-server-database/</a></p>
+<h3>Some tips for desktop window sizes</h3>
+<p>The nuts and bolts of Windows and OS X desktop deployment are still being felt out by the Corona community at large. While we do have access to the vast majority of APIs that are standard for mobile development at this point, there are still a few here and there that don’t readily apply.</p>
+<p>One of the missing pieces is the read order of our projects. Does the <code>config.lua</code> file get read first, or does the desktop environment get queued in order to identify the various values for the <a href=https://docs.coronalabs.com/api/library/display/index.html target="_blank">display.*</a> APIs? As Corona engineer <strong>Joshua Quick</strong> states:</p>
+<p>“It&#8217;s a chicken &amp; egg issue. We need to read your &#8216;<code>config.lua'</code> file to determine what the pixel width and height of the window should be, which of course means the <code>display.*</code> Lua APIs can&#8217;t be ready for you to use since the pixel width and height you want to read haven&#8217;t been determined yet.”</p>
+<p>I’ve included two different forum threads that tackle this topic in depth, so that you can be well-armed when you run up against this desktop idiosyncrasy. Truck through to the links below to get inundated with desktop display value discussions!</p>
+<p><a href=https://forums.coronalabs.com/topic/63123-display-in-configlua target="_blank">https://forums.coronalabs.com/topic/63123-display-in-configlua</a><br />
+<a href=https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/ target="_blank">https://forums.coronalabs.com/topic/63200-how-to-get-current-screen-resolution/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #123</title>
+		<link>/blog/2016/05/13/from-the-forum-issue-123/</link>
+		<pubDate>Fri, 13 May 2016 18:02:05 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[coronimum]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[MySQL]]></category>
+
+		<guid isPermaLink="false">/?p=66813</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Fonts and the developers who love them</h3>
+<p>There have been many, many posts regarding the implementation of custom fonts. For clarity, custom fonts are any font type that is not part of the underlying OS. For most business apps and generic games, the provided fonts are plenty diverse. However, when a developer really wants to leave their mark and make an impression, a striking font is a great way to add some curb appeal for a low price.</p>
+<p>Sometimes, however, custom fonts just do not want to play nice with our projects. In this case, you need to identify vagaries between the <code>.otf</code> versus <code>.ttf</code> types, kerning, and character width, just to name a few &#8212; and sometimes that custom font you’ve had your eye on just doesn’t want to work at all! Fortunately, another Corona developer ran into the same issue and, in the thread below, he provides some tips on how to overcome this hurdle by modifying the main font file. Check it out if you’ve been struggling with a font!</p>
+<p><a href=https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/ target="_blank">https://forums.coronalabs.com/topic/62964-an-error-occured-in-the-fragment-kernel/</a></p>
+<h3>Coronium with a splash of MySQL</h3>
+<p><a href=http://coronium.io/ target="_blank">Coronium</a> and Coronium Cloud are products of <strong>develephant</strong>’s creative vision and they are as much labors of love as they are products from which the greater Corona community can benefit. There has been lots of movement regarding the status of Coronium Cloud and Coronium 2, but <strong>develephant</strong> still has time to drop some gems for us in the forum.</p>
+<p>This week we found a sweet tutorial for current and future users of Coronium, showing how to handle MySQL integration with the new server configuration. Click through to the original thread to watch the YouTube video!</p>
+<p><a href=https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/ target="_blank">https://forums.coronalabs.com/topic/63021-tutorial-inserting-mysql-records/</a></p>
+<h3>Dynamic apps with interactive components&#8230;. on the fly!</h3>
+<p>The best part of the Corona forum is that sometimes simple questions turn into a larger discussion of &#8220;best practices&#8221; which convince our peers to peel the curtain back and show us how they are making their particular brand of sausage. My tortured metaphors aside, collaborating, sharing, and learning is how we all become better developers, and that should be the highest goal in our journey.</p>
+<p>The original thread I’m referencing starts off in a simple discussion regarding the extensibility of the <a href=https://docs.coronalabs.com/api/type/Map/addMarker.html target="_blank">addMarker()</a> API provided by Corona. It evolves into a examination of the efficacy of dynamic HTML file generation when the use case calls for a very specific and specialized interaction between app and user. Needless to say, it’s an intriguing topic, so head down to the original thread to pick up some pointers from the pseudo-code provided.</p>
+<p><a href=https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/ target="_blank">https://forums.coronalabs.com/topic/62631-addmarker-problemadvice/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Sample code: A Corona-powered business app</title>
+		<link>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/</link>
+		<comments>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/#comments</comments>
+		<pubDate>Wed, 09 Oct 2013 18:22:42 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[maps]]></category>
+
+		<guid isPermaLink="false">/?p=47964</guid>
+		<description><![CDATA[To show you just a few of the neat business-related elements you can incorporate with Corona SDK, we've put together an iOS 7-friendly sample business app with essentials including table views, webviews, maps and more. Our sample business app includes a menu via a tab bar controller at the bottom of the screen with buttons for the Corona blog, pictures, videos and maps.]]></description>
+				<content:encoded><![CDATA[<p>While Corona SDK has been hugely popular among game developers, more and more developers are discovering Corona as an ideal tool for business applications. From revolutionizing real estate with NuOffer to tracking fertility and ovulation with My Days, there are hundreds of fantastic Corona-powered business apps and utilities in the wild.</p>
+<p>To show you just a few of the neat business-related elements you can incorporate with Corona SDK, we&#8217;ve put together an iOS 7-friendly sample business app with essentials including tableViews, webViews, maps and more. Our sample business app includes a menu via a tab bar controller at the bottom of the screen with buttons for the Corona blog, pictures, videos and maps.</p>
+<p>The sample app also includes several <a href=http://docs.coronalabs.com/api/library/widget/>Corona SDK widgets</a> including widget.newTableView, widget.newTabBar and widget.newButton, and demonstrates how to use networking to download server data.</p>
+<p>Take a look inside:</p>
+<ul>
+<li><strong>Blog posts</strong>: The app fetches the RSS feed from Corona&#8217;s blog. Using this data, it populates the posts into a widget.newTableView. You can scroll up and down to see all the latest posts, tap on each entry for more details and interact with links within individual blog posts via a native.newWebView.</li>
+<li><strong>Photo gallery</strong>: The photo gallery includes a set of thumbnails that mirror an iPhone photo gallery, complete with a slider.</li>
+<li><strong>Video</strong>: The video section provides a list of recent videos from Corona Labs&#8217; <a href=http://www.youtube.com/coronalabs>YouTube channel</a>. <em>Please note: The videos will not play in the Corona Simulator. The videos will play on the device directly and allow you to turn the devices sideways for full-screen viewing.</em></li>
+<li><strong>Custom map</strong>: Our map pins Corona&#8217;s Palo Alto headquarters along with three local Starbucks, charted with custom markers. You can zoom in, rotate the map, see a satellite view, and more. <em>Please note: The map is not viewable in the Corona Simulator, however is viewable when you build to your device.</em></li>
+</ul>
+<p>Here are a few screenshots from the app:</p>
+<div style="margin: 0px auto; width: 548px;">
+<table>
+<tbody>
+<tr>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47967" src="/wordpress/wp-content/uploads/2013/10/photo-1-169x300.png" alt="Sample Business App - Maps" /><figcaption>Custom Map</figcaption></figure>
+</td>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47968" src="/wordpress/wp-content/uploads/2013/10/photo-4-168x300.png" alt="Sample Business App - Video" /><figcaption>Video</figcaption></figure>
+</td>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47971" src="/wordpress/wp-content/uploads/2013/10/photo-5-169x300.png" alt="Corona Business App - Blog" /><figcaption>Blog</figcaption></figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>As you can see, our sample covers just a few of the essentials, but the possibilities are endless. Get your hands on the code by downloading the file from <a href=https://gitHub.com/coronalabs/business-app-sample target="_blank">GitHub</a>.</p>
+<p><strong>Please note: We&#8217;ve created a new thread in the forum called <a href=http://forums.coronalabs.com/topic/40208-business-sample-app-discussion/>Business App Discussion</a>. Please post any questions you may have there. Thank you!</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+	</channel>
+</rss>

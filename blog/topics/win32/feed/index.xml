@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Win32 &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/win32/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Win32 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Steamworks plugin is now open-source</title>
+		<link>/blog/2018/10/17/steamworks-plugin-is-now-open-source/</link>
+		<pubDate>Wed, 17 Oct 2018 17:23:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Win32]]></category>
+
+		<guid isPermaLink="false">/?p=76043</guid>
+		<description><![CDATA[The Corona Steamworks plugin is now open-source. Learn what that means and how you can extend this cool feature.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75672" src="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png 150w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018.png 200w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs is pleased to announce that the <a href=https://marketplace.coronalabs.com/corona-plugins/steamworks target="_blank" rel="noopener">Steamworks plugin</a> is now open-source. The Steamworks plugin is used by PC and macOS games published to Valve&#8217;s Steam service that allows support for leaderboards, achievements, user profile data, and microtransaction support.</p>
+<p>Now you can download the repository for the plugin and add your own features and extensions to it. You will have to have a Steam developer account to be able to test the plugin. Follow Steamworks documentation (available on Steam’s developer portal) to learn how to enable Steamworks debugging and development for your game. You can get the plugin source at our <a href=https://github.com/coronalabs/steamworks-corona target="_blank" rel="noopener">GitHub repository</a>.</p>
+<p>You can learn more about the Steamworks plugin in our <a href=/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/ target="_blank" rel="noopener">previous announcement</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured App: The Lords of the Earth Flame</title>
+		<link>/blog/2016/10/19/featured-app-the-lords-of-the-earth-flame/</link>
+		<pubDate>Wed, 19 Oct 2016 18:13:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Win32]]></category>
+
+		<guid isPermaLink="false">/?p=68028</guid>
+		<description><![CDATA[The Lords of the Earth Flame is an interactive adventure game based on text-based RPGs. Learn more about this beautiful Corona-built app.]]></description>
+				<content:encoded><![CDATA[<p>At Corona Labs, we notice your newly released and in-development apps. What you&#8217;re creating is impressive and, in fact, it&#8217;s a blessing to show off your work. This time we would like to highlight <em><a href=https://www.facebook.com/tlotef/ target="_blank">The Lords of the Earth Flame</a> </em>from <a href=http://rhino-games.com/ target="_blank">Rhino Games</a>.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/AiUMEH1nwVY?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><em><a href=https://www.facebook.com/tlotef/ target="_blank">The Lords of the Earth Flame</a></em> is a novel game based in the genres of interactive fiction and text-based role playing games. Featuring a structure that lets you choose the path of adventure, you enjoy a rich gaming experience that can go on for hours. The non-linear nature of the game allows you to determine the course of action instead of the story defining your path for you.</p>
+<p><img class="alignnone size-large wp-image-68029" src="/wordpress/wp-content/uploads/2016/09/lordEarthFlameSS-1024x576.jpg" alt="lordearthflamess" width="960" height="540" /></p>
+<p>The game is currently available on <a href=http://store.steampowered.com/app/487180 target="_blank">Steam</a> for both Windows and macOS.</p>
+<p><a href=http://store.steampowered.com/app/487180 target="_blank"><img class="alignnone size-full wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo.png" alt="share_steam_logo" width="50" height="50" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x512.png 500w" sizes="(max-width: 50px) 100vw, 50px" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Hiding the cursor in OS X and Windows desktop builds</title>
+		<link>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/</link>
+		<comments>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/#comments</comments>
+		<pubDate>Tue, 26 Jan 2016 17:16:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Win32]]></category>
+		<category><![CDATA[desktop development]]></category>
+
+		<guid isPermaLink="false">/?p=65404</guid>
+		<description><![CDATA[You can now show and hide the mouse cursor on Windows and OS X desktop builds. Learn how!]]></description>
+				<content:encoded><![CDATA[<p>Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2813</a>, you can now show and hide the mouse cursor in both OS X and Windows desktop builds. To hide the cursor, call:</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, false )</pre><p>To show it again, call the function again with <code>true</code> as the second parameter.</p><pre class="crayon-plain-tag">native.setProperty( &quot;mouseCursorVisible&quot;, true )</pre><p>This completes the <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/11294433-optionally-hide-os-cursor-in-desktop-builds target="_blank">Optionally Hide OS Cursor in Desktop Builds</a> feedback request. If you have questions or need help, please discuss further it in the <a href=https://forums.coronalabs.com/topic/61330-from-the-blog-hiding-the-cursor-in-os-x-and-windows-desktop-builds/ target="_blank">forums</a>.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/26/hiding-the-cursor-in-os-x-and-windows-desktop-builds/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

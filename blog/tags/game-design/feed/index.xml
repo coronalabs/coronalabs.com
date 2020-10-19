@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Game Design &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/game-design/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Game Design &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Tiled for layout and level design</title>
+		<link>/blog/2016/12/08/using-tiled-for-layout-and-level-design/</link>
+		<pubDate>Thu, 08 Dec 2016 21:17:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[Tiled]]></category>
+		<category><![CDATA[Tiled Map Editor]]></category>
+
+		<guid isPermaLink="false">/?p=69045</guid>
+		<description><![CDATA[In this special video series, Michael Wilson from Ponywolf walks through installing and using Tiled as a layout and level design tool. He also shares insights into the creative game design process and how his team comes up with fun games.]]></description>
+				<content:encoded><![CDATA[<p>In this special video series, Michael Wilson from <a href=http://ponywolf.com/ target="_blank">Ponywolf</a> walks through installing and using <a href=http://www.mapeditor.org/ target="_blank">Tiled</a> as a layout and level design tool. In specific, he explains:</p>
+<ul>
+<li>The difference between object layers and tile layers and how object layers can be used like display objects in Corona.</li>
+<li>How to use Tiled to design a level by composing game elements together into a simple scene.</li>
+<li>How to add custom properties to game elements within Tiled that can then be accessed in Corona for programmatic manipulation.</li>
+</ul>
+<p>Michael also shares insights into the creative game design process and how his team comes up with games like <a href=https://marketplace.coronalabs.com/asset/sticker-knight-platformer target="_blank">Sticker Knight</a>, <a href=http://ponywolf.com/timegolfsquad target="_blank">Time Golf Squad</a>, and <a href=http://ponywolf.com/skipchaser target="_blank">Skipchaser</a>.</p>
+<p>This series is full of great tips. Don&#8217;t forget to subscribe to the <a href=http://www.youtube.com/subscription_center?add_user=coronalabs target="_blank">Corona Labs YouTube channel</a> for more great videos!</p>
+<h4>Using Tiled – Part 1: Installation and Tiled Basics</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LPKrDwosYHM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 2: Object Layers versus Tile Layers</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/wYw02u0ZlaA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 3: Composing Scenes</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/cITLF45hink?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Using Tiled – Part 4: Custom Object Properties</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/0ORwbEe1SCc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>Bonus Videos</h3>
+<h4>Sticker Knight Game Design: Brainstorming Ideas</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/yDrCxp-Dx0s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4>Sticker Knight Design: Game Design Checklists</h4>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/oA0gv2WU4v8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>The complete Sticker Knight project can be downloaded from <a href=https://github.com/coronalabs/Sticker-Knight-Platformer/ target="_blank">GitHub</a> or from the <a href=https://marketplace.coronalabs.com/asset/sticker-knight-platformer target="_blank">Corona Marketplace</a>. If you found these videos valuable, please watch the <a href=http://PLhE_IYaXVf9skwhKXNswj0C9U3RZB3DaD/ target="_blank">Match 3 Space RPG videos</a> covering Ponywolf&#8217;s <a href=https://marketplace.coronalabs.com/asset/match-3-space-rpg target="_blank">Match 3 game template</a> for Corona.</p>
+<p>Questions or comments? Join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The art of game design and its importance</title>
+		<link>/blog/2016/11/08/the-art-of-game-design-and-its-importance/</link>
+		<pubDate>Tue, 08 Nov 2016 16:54:23 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?p=68623</guid>
+		<description><![CDATA[In this post, we talk about what <strong>game design</strong> is, why it's important, where you can learn it, and how you can stay atop new game design trends.]]></description>
+				<content:encoded><![CDATA[<p>Creating a game is a truly rewarding creative process that requires skills in game design, graphic design, and programming. Most of the time these talents don&#8217;t exist all together in one person &#8212; if you&#8217;re a developer/coder, there&#8217;s a good chance that you&#8217;ll find yourself playing the role of &#8220;game designer&#8221; or looking for a talented game design team member.</p>
+<p>With that in mind, let&#8217;s take a look at what <strong>game design</strong> is, why it&#8217;s important, where you can learn it, and how you can apply your skills and stay on top of new game design trends.</p>
+<h3>What is game design?</h3>
+<p>In his book, <a href=https://www.amazon.com/Art-Game-Design-Book-Lenses/dp/0123694965 target="_blank">The Art of Game Design</a>, Jesse Schell says &#8220;Game design is the act of deciding what a game should be.&#8221; It sounds simple enough, but when we dig deep into the outcomes of those design decisions, we find that the choices can positively or negatively impact the user&#8217;s experience, level of engagement, and overall enjoyment in significant ways.</p>
+<p><img class="aligncenter wp-image-68628 size-full" src="/wordpress/wp-content/uploads/2016/11/art-of-game-design.jpg" alt="The Art of Game Design book" width="640" height="506" srcset="/wordpress/wp-content/uploads/2016/11/art-of-game-design.jpg 640w, /wordpress/wp-content/uploads/2016/11/art-of-game-design-300x237.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>If we look at the <a href=http://www.gamedesigning.org/graphics/game-animation-color-history/ target="_blank">history of video games</a> themselves, we see how the importance of game design has grown and continues to grow as games become more involved.</p>
+<p>In the early days, creating games was all about writing the least amount of code so that a game would fit into limited memory. That meant graphics and interactions were generally very simple. However, as hardware advanced, so did the game designer&#8217;s ability to storytell. In turn, graphics became more detailed and interactions became more complex.</p>
+<p>Eventually, creating a game became far more than just writing code: it also focused on defining user interactions, ensuring user engagement, and increasing overall enjoyment.</p>
+<h3>Why is game design important?</h3>
+<p>Today, game design has become a separate, dedicated field of study with some people choosing to focus <em>solely</em> on design over writing code. The concepts of experience, engagement, and enjoyment are fundamentally important to both players and developers. Players want a fun experience that serves as a temporary distraction, transports them to a different world, or just helps them kill time in the grocery checkout line. To the game creator, the players&#8217; enjoyment is tied directly to the success of the game.</p>
+<h3>How do you learn it?</h3>
+<p>Interest in game development has exploded over the last 10 years, especially with the introduction of app stores from Apple, Google, Amazon, and Steam. While there is plenty of competition, there is also no shortage of information.</p>
+<p>Naturally, there are many printed and digital books that cover game design. Unfortunately, books can become outdated as technology changes and new game design techniques are explored. That&#8217;s why authors like Dr. Brian Burton provide free updates to everyone who purchases his self-published digital <a href=http://www.burtonsmediagroup.com/books/coronasdk/ target="_blank">books on mobile app development</a>.</p>
+<p>For those who prefer watching to reading, new game-related videos can be found on YouTube and elsewhere. These are a great way to discover the latest gameplay trends or learn about a <a href=https://www.youtube.com/user/CoronaLabs target="_blank">game development tool</a>, but pulling together information from a collection of different sources doesn&#8217;t always give you the result you want.</p>
+<p>For those who are dedicated and prefer to study a topic from beginning to end, attending a <a href=http://www.gamedesigning.org/graphics/design-programs/ target="_blank">game design school</a> might be the most worthwhile educational experience.</p>
+<p>And yet for others, perhaps &#8220;learning by doing&#8221; works best. In that case, on-the-job training can give you the environment you need to thrive as a game designer.</p>
+<h3>Where can you use what you&#8217;ve learned?</h3>
+<p>No matter how you decide to <a href=http://www.gamedesigning.org/graphics/career-in-gaming-flowchart/ target="_blank">learn game design</a>, the most important thing is applying that knowledge. Creating your own games is a great way to grow your skills as a game designer and it also helps you gain a better understanding of what it means to write game code. Understanding game design from the inside out will make you a well-rounded designer who will be able to work well with others.</p>
+<p>Also, creating your own games provides you with portfolio items that you can share with hiring managers at game studios. Whether you are trying to join a major studio with teams of people or you just want to connect with another developer on a grassroots project, having some projects to showcase is a big plus.</p>
+<h3>Staying connected to the game design industry</h3>
+<p>For more information on game design, visit <a href=http://www.gamedesigning.org/ target="_blank">GameDesigning.org</a> and <a href=https://www.coronalabs.com>download/ Corona</a> to <a href=https://docs.coronalabs.com/guide/programming/index.html target="_blank">build your first game quickly</a>. You will soon learn what it means to come up with an idea, design user interactions, write code, and produce a game that you created. When you <a href=https://www.coronalabs.com>download/ Corona</a>, you will also receive our newsletter with lots of great information about creating amazing games. So, get those creative juices flowing and dive right in!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Developing Super Robot Jump Jump with Matt Rathbun</title>
+		<link>/blog/coronageek/super-robot-jump-jump-game/</link>
+		<comments>/blog/coronageek/super-robot-jump-jump-game/#respond</comments>
+		<pubDate>Mon, 31 Oct 2016 17:25:31 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67920</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Matt Rathbun about his indie game developer journey and how he managed to develop Super Robot Jump Jump while sleeping on a friend's couch.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Matt Rathbun about his indie game developer journey and how he managed to develop <a href=http://superrobotjumpjump.com/>Super Robot Jump Jump</a> while sleeping on a friend&#8217;s couch. Matt shares what it&#8217;s like to hire and work with a remote designer who later becomes full-time employed outside of the game development project. Also hear what Matt says is the secret to success in game marketing.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/aehVQGhSeIg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/super-robot-jump-jump-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-super-robot-jump-jump-game.mp3" length="22273148" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Animating Street Puncher with Bobby Rasmusson</title>
+		<link>/blog/coronageek/street-puncher-game/</link>
+		<comments>/blog/coronageek/street-puncher-game/#respond</comments>
+		<pubDate>Mon, 24 Oct 2016 18:53:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[animation]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67918</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Bobby Rasmusson about developing and hand drawing hundreds of animations for his Street Puncher game. Bobby also shares what he would do differently to get featured in the app stores.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Bobby Rasmusson about his experience developing and hand drawing hundreds of animations for his <a href=http://www.streetpuncher.com>Street/ Puncher game</a>. Bobby is a self taught animator and product manager for Lyft. During the interview, Bobby shared his experience with in-app purchases, incentivizing players to share the game, and the things he would do differently to get featured in the app stores.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/2kDNCYANQj0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/street-puncher-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-street-puncher-game.mp3" length="27806397" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Playing multiplayer GetMeBro! with Ondrej Dobsinsky</title>
+		<link>/blog/coronageek/getmebro-game/</link>
+		<comments>/blog/coronageek/getmebro-game/#respond</comments>
+		<pubDate>Mon, 26 Sep 2016 17:26:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67908</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Ondrej Dobsinsky about his multiplayer runner game that let's players ban abilities, "blink" to jump ahead of opponents, and includes a spectator mode so Twitch viewers can watch live tournaments.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Ondrej Dobsinsky about his <a href=http://www.getmebro.co.uk/>multiplayer online runner game</a>, GetMeBro!, which also includes a spectator mode so Twitch viewers can watch live tournaments. Ondrej shares how <a href=http://www.getmebro.co.uk/>GetMeBro!</a> got started with just a single soundtrack and how it evolved into an addictive game that let&#8217;s players ban certain abilities to handicap other players and &#8220;blink&#8221; to jump up ahead of their opponent.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/WuZe-QK5snM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/getmebro-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-getmebro-game.mp3" length="24614746" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #192 &#8211; EAT Lean, EAT Fat, and Game Design Notes</title>
+		<link>/blog/coronageek/corona-geek-192/</link>
+		<comments>/blog/coronageek/corona-geek-192/#respond</comments>
+		<pubDate>Mon, 22 Aug 2016 23:23:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67850</guid>
+		<description><![CDATA[On this week's Corona Geek podcast, we explored random game ideas and Ed Maurina announced the introduction of EAT Lean and EAT Fat. ]]></description>
+				<content:encoded><![CDATA[<p>On this week&#8217;s Corona Geek podcast, we explored some random game ideas and discussed how we each approach <a href=https://www.amazon.com/Art-Game-Design-Lenses-Second/dp/1466598646/ref=dp_ob_title_bk target="_blank">game design</a>. Also, Ed Maurina announced the introduction of EAT Lean and EAT Fat. These two versions of Ed&#8217;s Awesome Tool, are focused on serving the specific needs of  basic and advanced users respectively. If you&#8217;d like to be a supporter of Ed&#8217;s work, be sure to visit the <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer website</a> for more details.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/13AqnnJqniM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Also, if you would like to save hours of time creating custom widget themes, <a href=http://cravecreative.com/corona-widget-themes.php target="_blank">check out the widget theme work</a> that Mike Hempfling is doing at Crave Creative.</p>
+<p>As mentioned in the podcast, here is the Casual Connect talk by Matt Hall and Andy Sum on balancing game play and making money during the design of Crossy Road.<br />
+<iframe width="800" height="450" src="https://www.youtube.com/embed/cPYNdi2JC-E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><strong>Panelists:</strong></p>
+<ul>
+<li><a href=https://forums.coronalabs.com/user/475753-scottrules44/ target="_blank">Scott Harrison</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=https://www.militantgame.com/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://mobileoctopus.com/ target="_blank">Noah Malewicz</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=https://www.linkedin.com/in/charlesmckeever/ target="_blank">Charles McKeever</a></li>
+<li><a href=https://www.linkedin.com/in/robmiracle target="_blank">Rob Miracle</a></li>
+<li><a href=https://forums.coronalabs.com/user/458856-steven-warren/ target="_blank">Steven Warren</a></li>
+<li><a href=http://ponywolf.com/ target="_blank">Michael Wilson</a></li>
+<li><a href=https://www.linkedin.com/in/shchvova target="_blank">Vlad Shcherban</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-192/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-192-2016-08-22-EAT-LEAN-Game-Design.mp3" length="79677197" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #182 &#8211; Corona Engineers Speak Out and Two Touch Steering</title>
+		<link>/blog/coronageek/corona-geek-182/</link>
+		<comments>/blog/coronageek/corona-geek-182/#respond</comments>
+		<pubDate>Tue, 22 Mar 2016 04:55:16 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[touch input]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66187</guid>
+		<description><![CDATA[Last week we talked with a few of Corona's Core Engineers and explored the mechanics of two tough steering, all live from the Palo Alto office and just days before GDC16.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/JmqJj7qdEAE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />Last week we recorded the Corona Geek podcast live from the Palo Alto office ahead of a week filled with <a href=https://www.facebook.com/CoronaGeek/photos target="_blank">GDC Expo awesomeness</a>. We talked with a few of Corona&#8217;s Core Engineers and explored the mechanics of two tough steering. As you can see, we had a pretty good time together and it was a unique opportunity to hang with the Corona team and hear them talk about the topics you care about.</p>
+<p>Download the <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Tips_and_Tricks/two_touch_steering.zip target="_blank">two touch steering demo source code</a>.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=https://twitter.com/rakoonic target="_blank">Barry Swan</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>CoronaCon Topic / Speakers:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-182/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-182-2016-03-21-engineering-talk-and-two-touch-steering.mp3" length="134723989" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Featured app: ZOMBIE LAST STANDS</title>
+		<link>/blog/2016/03/09/featured-app-zombie-last-stands/</link>
+		<comments>/blog/2016/03/09/featured-app-zombie-last-stands/#comments</comments>
+		<pubDate>Wed, 09 Mar 2016 21:08:03 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[featured]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[zombies]]></category>
+
+		<guid isPermaLink="false">/?p=65968</guid>
+		<description><![CDATA[This week, Corona Labs is pleased to feature an intense zombie battle game from international bestselling author, Alex Scarrow, of the award winning series TimeRiders. Learn how Alex started with no coding experience to produce this amazing Corona SDK based game.]]></description>
+				<content:encoded><![CDATA[<p>Let&#8217;s be honest, who doesn&#8217;t love a good zombie game? In <a href=http://www.alexscarrow.com/?#!zombielaststands/cd07 target="_blank">ZOMBIE LAST STANDS</a> from GRRR GAMES, you build a fort, choose what skills to give your troops, manage funds and most importantly defend your realm from the hoards of attacking zombies.</p>
+<p>Set in 1879, during the Zulu War, you manage a small detachment of British soldiers running a garrison in a remote farmhouse. You must hold off the attacking zombies until help arrives.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Rlrv_moG4-4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>ZOMBIE LAST STANDS was designed and built by <a href=http://www.alexscarrow.com/ target="_blank">Alex Scarrow</a>, author of an international bestselling series of teen novels called &#8216;TimeRiders&#8221;. </p>
+<p>Alex said, &#8220;I took a sabbatical from writing for 20 months to learn to code and ZOMBIE LAST STANDS is the result.&#8221; He continued, &#8220;I think there&#8217;s something newsworthy here&#8230;apart from leveraging my fan base, there&#8217;s an angle to play on about how easy Corona is to use.&#8221;</p>
+<p>The game features frantic real time action with a pause mode to give you time to think. It contains hand drawn, graphic novel style cut scenes and fitting music. Alex proudly touts that there are no ads, in-app purchases, or rating nags to get in your way.</p>
+<p><img class="alignnone size-full wp-image-65969" src="/wordpress/wp-content/uploads/2016/02/xiiG1sEvZ7maLRIx0KGiEu55OCIUk5qoNLetciJbZ6UUdH7z7cqYexcGzD4hjIhPKQgh900.png" alt="xiiG1sEvZ7maLRIx0KGiEu55OCIUk5qoNLetciJbZ6UUdH7z7cqYexcGzD4hjIhPKQg=h900" width="960" height="600" /></p>
+<p>ZOMBIE LAST STANDS was launched on February 14, 2016 and is available both on the <a href=https://itunes.apple.com/us/app/zombie-last-stands/id1057029700?ls=1&mt=8 target="_blank">Apple App Store</a> and <a href=https://play.google.com/store/apps/details?id=com.alexscarrow.zombielaststands1_1 target="_blank">Google Play</a>. Download it today and enjoy.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/09/featured-app-zombie-last-stands/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Hoppy Naut Developer Keeps Cost Low and Value High Using Stock Assets and Advanced Features</title>
+		<link>/blog/coronageek/developer-conversations-hoppy-naut/</link>
+		<comments>/blog/coronageek/developer-conversations-hoppy-naut/#respond</comments>
+		<pubDate>Mon, 22 Feb 2016 21:00:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Corona Geek Developer Interviews]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Game Design]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65911</guid>
+		<description><![CDATA[Kicking off a new series of Corona Geek Developer Conversations, we sat down with Tony Godfrey to learn how he used stock assets and advanced features to develop a sophisticated and engaging game. Hear his experience.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="560" height="315" src="https://www.youtube.com/embed/VBOuaZ0M7eU?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />As part of a move to bring developer interviews back to the <a href=http://bit.ly/19JGUiG target="_blank">Corona Geek podcast</a>, we recently kicked off a new series called Corona Geek Developer Conversations, where we sat down with Tony Godfrey to learn how he used stock assets and advanced features to develop a sophisticated and engaging game.</p>
+<p>Tony&#8217;s game, <a href=http://www.hoppynaut.com/ target="_blank">Hoppy Naut</a>, uses stock assets from the Kenny collection. This decision helped Tony develop his game quickly while keeping his graphic design costs low.</p>
+<p>To keep the value of his game high, Tony also chose to implement advanced features like multiple levels, in-app purchases, rewarded video ads, character unlocking, leaderboards, localization, and other popular features. This gave him a chance to explore how these features worked while adding a level of polish to his game that overshadows the stock look and feel.</p>
+<p>Listen in on this information packed conversation and learn how Tony also went to lengths to think about his app marketing, which has resulted in his game being featured right next to other games with custom artwork.</p>
+<p><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank"><img class="size-full wp-image-65914 aligncenter" src="/wordpress/wp-content/uploads/2016/02/coronageek-fb-status-podcast-scheduling.png" alt="Corona Geek Developer Conversations Promo" width="484" height="254" /></a></p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.hoppynaut.com/ target="_blank">Download Hoppy Naut</a></li>
+<li><a href=http://kenney.nl/assets target="_blank">Kenny stock game assets</a></li>
+<li><a href=https://www.ibabbleon.com/ target="_blank">Babble-On localization service</a></li>
+<li><a href=https://bitbucket.org/develephant/mod_localize/wiki/Home target="_blank">mod_localization plugin</a></li>
+<li><a href=https://bitbucket.org/develephant/mod_localize/wiki/Home target="_blank">App marketing using AppMasters</a></li>
+<li><a href=https://www.buysellads.com/ target="_blank">BuySellAds</a></li>
+<li><a href=http://www.pond5.com/ target="_blank">Stock audio by Pond5</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank">Share your developer story</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>Let&#8217;s Meet Face-to-Face:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Mobile World Congress in Barcelona, February 22-25</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Game Developers Conference in San Francisco, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/developer-conversations-hoppy-naut/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-2016-02-22-hoppy-naut-interview.mp3" length="39512373" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #180 &#8211; Adding Explosive Mines and Handling Player Deaths</title>
+		<link>/blog/coronageek/corona-geek-180/</link>
+		<comments>/blog/coronageek/corona-geek-180/#respond</comments>
+		<pubDate>Tue, 16 Feb 2016 02:24:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Game Design]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=65765</guid>
+		<description><![CDATA[On today's Corona Geek we explored the code and concepts behind implementing explosive mines that wipe out all spawned enemies and we discussed how to handle player deaths when the player object runs into enemies.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/-uih6xuoX84?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" />Today&#8217;s Corona Geek Hangout was fraught with technical issues. Google Plus Hangouts kept crashing and we lost the first part of the show, but in the end we were victorious. To overcome our challenges, we switched to a new video conferencing service, which presented some interesting new options and provided some much needed video quality. You should notice these welcomed changes right away.</p>
+<p>During the second half of the show, we explored the code and concepts behind implementing explosive mines that wipe out all spawned enemies and we discussed how to handle player deaths when the player object runs into enemies.</p>
+<p>This Hangout is the last episode in our Geometry Wars Clone series. The current code is playable on mobile and desktop using touch and game controllers. <a href=http://github.com/roaminggamer/CoronaGeek/blob/master/Hangouts/ICanMakeThat/DesktopGames/GeometryWarsClone.zip target="_blank">Download the Geometry Wars Clone project</a> and make it your own.</p>
+<p>By the way, Ed Maurina is looking for testers for his new tool to automatically generate common types of starter game templates. Signup to be an <a href=https://forums.coronalabs.com/topic/61560-seeking-alpha-and-beta-testers-corona-game-dev-tool/ target="_blank">alpha / beta tester</a> for his project and help shape a development tool that will benefit the whole community.</p>
+<p><strong>Show Notes:</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://spiralcodestudio.com/ target="_blank">Sergey Lerg</a></li>
+<li><a href=http://store.steampowered.com/app/213470/ target="_blank">Steven Johnson</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+<li><a href=https://calendly.com/coronageek/20-minute-podcast-interview/ target="_blank">Share your developer story</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/apple-tv-app-showcase-submission-form/ target="_blank">Highlight your Apple TV app</a></li>
+</ul>
+<p><strong>Let&#8217;s Meet Face-to-Face:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Mobile World Congress in Barcelona, February 22-25</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Casual Connect Europe, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/event-meeting-request/ target="_blank">Game Developers Conference in San Francisco, February 16-18</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/coronacon-2016-session-speaker-suggestions/ target="_blank">Suggest CoronaCon Sessions and Speakers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-180/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-180-2016-02-15-twin-stick-shooter-game-writing-code-part-6-mines.mp3" length="41563430" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

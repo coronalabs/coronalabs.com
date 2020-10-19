@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ActionScript &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/actionscript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ActionScript &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Corona SDK + GameDevHelper = A Powerful Duo</title>
+		<link>/blog/2013/05/03/guest-post-corona-sdk-gamedevhelper-a-powerful-duo/</link>
+		<comments>/blog/2013/05/03/guest-post-corona-sdk-gamedevhelper-a-powerful-duo/#comments</comments>
+		<pubDate>Fri, 03 May 2013 19:31:55 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[ActionScript]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[GameDevHelper]]></category>
+		<category><![CDATA[Level Helper]]></category>
+		<category><![CDATA[Racing]]></category>
+		<category><![CDATA[Sprite Helper]]></category>
+
+		<guid isPermaLink="false">/?p=32951</guid>
+		<description><![CDATA[Andy Hadlington is a freelance interactive developer based in the United Kingdom. Once Andy took a dive into mobile development, he created his first 2D top down racer game - Turbo Sprint - with Corona SDK. In his guest piece, Andy breaks down several commonly asked questions about Turbo Sprint.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Andy Hadlington is a freelance interactive developer based in the United Kingdom. Once Andy took a dive into mobile development, he created his first 2D top down racer game &#8211; Turbo Sprint &#8211; with Corona SDK. In his guest piece, Andy breaks down several commonly asked questions about Turbo Sprint.<br />
+</em></p>
+<hr />
+<p><img class="alignleft size-full wp-image-32957" alt="Turbo Sprint icon" src="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-02-at-10.48.24-AM.png" />I&#8217;m Andy Hadlington, a freelance interactive developer based in Bristol, UK. My main &#8216;bread and butter&#8217; work involves developing content for the online gaming/casino sector using Flash and ActionScript but in my (very rare!) spare time, I like to develop small <a href=www.coronalabs.com/products/corona-sdk>mobile apps</a>.</p>
+<p>At first, I thought I&#8217;d leverage my existing experience/tools (i.e. Flash/AS3) to develop an app, but I soon became disappointed with the performance of the iOS packager in Flash, so I started to look for other alternatives and I discovered <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>.</p>
+<p>After some experimenting, I realized that it was a powerful and relatively easy to develop apps that would rival native apps for mobile, so I decided to start work on the type of game that I&#8217;d like to play myself, so I started to develop a 2D top down racer called <a href=https://itunes.apple.com/us/app/turbo-sprint-racing/id545725389?mt=8>Turbo Sprint</a>.</p>
+<p>This is a quick overview of the main components of the game which over the last few months I’ve been asked about. It&#8217;s by no means exhaustive but I did learn quite a lot during the project so would like to share some snippets of information and techniques I learnt with the community. If you have any more questions, feel free to ask!</p>
+<hr />
+<h3>Track And Level Design</h3>
+<p>Obviously, a racing game needs tracks and the way I approached this was to design track tiles and place them in a level using the fantastic <a href=http://www.gamedevhelper.com>Level/ Helper and Sprite Helper</a> tools. This allowed me to create a tile-set and arrange them in a grid to create the basic track layout. This did limit the track directions to a simple N, E, S and W appearance (i.e. no diagonals) but I felt that it was ok and fitted with the style of game I wanted to create. This literally saved me HOURS of development work as Level Helper provides a very simple API that allows you to load a level in just one line of code. If I wasn&#8217;t happy, I switched back to Level Helper to adjust the track, save it off, and then try it again. Fantastic!</p>
+<hr />
+<h3>Track Objects</h3>
+<p>We need cars right? Of course we do. Again, I used Sprite Helper to create a sprite sheet containing the car sprites (as well as other trackside furniture that racing games have). It was a simple matter of adding a physics hull to each object via Sprite Helper and then placing them on the track via the Level Editor. I could also add other objects (true stacks, trees etc.) to the level, save it off, and was good to go.</p>
+<hr />
+<h3>Game Logic</h3>
+<p>Although it was relatively straightforward to get a track and physics objects on the screen, it was necessary to write custom code for the cars, track logic and more. To do this was a matter of grabbing the objects from the level after it was loaded and then injecting the necessary code into them.</p>
+<p>Objects within the level can be referenced by name of course, but the nice feature was that they can be tagged by type. For example, the landscape tiles were tagged &#8216;LANDSCAPE&#8217;, car object &#8216;CARS&#8217;, trees &#8216;TREES&#8217; … you get the picture I&#8217;m sure. This made it simple to grab these objects from the level and skip through them injecting the necessary code. For example, it would be wasteful to draw every landscape tile if it wasn&#8217;t on screen, so a simple &#8216;am I on-screen&#8217; check was injected into each object tagged &#8216;LANDSCAPE&#8217; which was called every frame to make the tile visible/invisible depending on the current player car position. At first I thought this may be a performance killer as some of the tracks had upwards of 40 tiles, and although I threw away tiles I knew couldn&#8217;t possibly be on screen, I was doing this every frame. I was wrong; <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> ate it up and demanded more. I had plenty of power available for the other stuff.</p>
+<p>Similarly, an &#8216;enter frame&#8217; method was created for each car. All cars shared the same code (both player and CPU) and this handled the cards behaviour under acceleration, steering and processed the maths behind the skidding and general car handling (which aren&#8217;t as difficult was they sound!). I will endeavour to post a more in-depth explanation of this at a later date &#8211; that is, if anyone is interested!</p>
+<hr />
+<h3>Collisions</h3>
+<p>Collisions were handled using the in-built physics with event listeners added (via the Level Helper API) to collisions between certain types of objects. For example, car to car would play a crashing sound, car to power-up would process the power up and so forth. All very simple.</p>
+<hr />
+<h3>Controls and AI</h3>
+<p>The player car was controlled by on screen input (left/right/accelerate), which were passed to the &#8216;enter frame&#8217; function of the players car, but obviously, the CPU cars needed to be able to navigate around the track somehow. This is where Level Helper came to the rescue as it allows the creation of Bezier curves on the level, so it was a simple process of drawing the &#8216;racing line&#8217; on top of each track and then via code, grabbing the line from the level and querying the line points. Every few seconds, the CPU car was told to head towards a line point and when it got close enough, move to the next, etc. This proved to be very effective.</p>
+<p>Also, each car had a different max speed and acceleration parameter that ensured that they were always sufficiently spread out along the track during the race.</p>
+<hr />
+<h3>Who&#8217;s in the lead?</h3>
+<p>By using this Bezier line data, it was also possible to create a list of invisible polygons, all numbered from 1 to 20, each encapsulating the track into &#8216;segments&#8217; (around 20 segments per track was optimal).</p>
+<p>Before each race, this data was pre-processed to create each segment polygon. These were then tagged with its distance around the track (in pixels) e.g.:</p>
+View the code on <a href=https://gist.github.com/5512556>Gist</a>.
+<p>Then around 5 times per second (it wasn&#8217;t necessary to perform this check every frame), each car checks to see what segment it&#8217;s in by checking each polygon in this list. After calculating this segment number, we then query its pre-calculated distance to get a rough value of where the car is around the circuit.</p>
+<p>However, this value is a little coarse, as positional information needs to be fairly exact, especially when cars are overtaking each other constantly, so we then calculate how far the car is along the current segment and then add that to the original segment distance. By storing the total distance travelled values in each car, and dividing these values by length of the track, we can them simply compare them to decide what position each car is in. For example, a car distance of 0.5 means that it&#8217;s travelled halfway around the first lap. A car distance of 1.5 means it&#8217;s half way through its 2nd lap and a car distance of 3.9 means it&#8217;s on its 4th lap, closing in on its 5th lap.</p>
+<p>Example car positions using a track length of 500:</p>
+<table width="90%" border="3" cellspacing="3" cellpadding="4">
+<tbody>
+<tr>
+<th>Car number</th>
+<th>Distance Travelled</th>
+<th>Position</th>
+<th>Lap Value</th>
+</tr>
+<tr align="CENTER">
+<td>Car 1</td>
+<td>1578.3</td>
+<td>#2</td>
+<td>3.1566 &#8211; Lap 4</td>
+</tr>
+<tr align="CENTER">
+<td>Car 2</td>
+<td>1976.2</td>
+<td>#1</td>
+<td>3.1566 &#8211; Lap 4</td>
+</tr>
+<tr align="CENTER">
+<td>Car 3</td>
+<td>1456.7</td>
+<td>#3</td>
+<td>2.9134 &#8211; Lap 3</td>
+</tr>
+<tr align="CENTER">
+<td>Car 4</td>
+<td>1256.9</td>
+<td>#4</td>
+<td>2.5138 &#8211; Lap 3</td>
+</tr>
+<tr align="CENTER">
+<td>Car 5</td>
+<td>1000</td>
+<td>#5</td>
+<td>2.0 &#8211; Just started Lap 3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Aw, you cheat.</h3>
+<p>This method was also useful for controlling any non-standard driving on the players part (going the wrong way, detecting short cuts etc.). During each segment check, the segment number had increased, then the car is moving the correct way around the track. However, if the car had moved to a segment with a lower value, then the car was obviously going the wrong way so a message was flashed to the player. However, if the car had moved from the last to the first segment, then the car has completed a lap.</p>
+<p>To detect the player attempting short cuts, it was necessary to keep track of how many segments the player has driven though during each lap. When the player completes a lap, if it was found that he was still due to pass through segments (e.g. segments_left &gt; 0) then we can safely assume he&#8217;s taken a short cut and flash the appropriate message. This could be achieved in a similar way by using checking the total distance the car has travelled in the current lap against the lap length, but I went for the segment check (as it seemed easier).</p>
+<p><img class="alignnone size-full wp-image-33006" alt="Turbo Sprint screenshot" src="/wordpress/wp-content/uploads/2013/05/Turbo-Sprint-screenshot.jpg" /></p>
+<hr />
+<h3>Social</h3>
+<p>Facebook and Game Center integration was a lot simpler than I imagined too (so much so, that I left it until late in the game&#8217;s development as I really didn&#8217;t want to face it!). However I was pleasantly surprised and after a few questions posted on the forums, I was soon pointed in the right direction. Indeed, one of the great things about the platform is <a href=/community/>Corona SDK&#8217;s community</a> (thanks guys and gals!).</p>
+<hr />
+<h3>Summary</h3>
+<p>There are probably numerous other ways of creating a racing game and its associated logic. The way I describe here is purely a personal preference but I thought I&#8217;d share it anyway. The important thing I want to put across is speed of development that can be attained using Corona SDK and Lua. I managed to get a player controlled car and CPU cars on screen within the first few hours of development. Also, bear in mind that although I&#8217;m an experienced coder, I was completely new to Corona SDK and Lua, so I imagine that I&#8217;ll develop my future Corona SDK projects even more quickly.</p>
+<p>Coming from a Flash/AS3 background, I found Corona SDK and Lua to be extremely simple yet remarkably powerful. The techniques I&#8217;ve described above are relatively easy to implement due to the fantastic performance and dynamic, flexible nature of the SDK. I&#8217;m also a great fan of the speed in which you can edit and test code. All changes are viewable virtually instantly using the simulator, which I found incredibly useful, especially when fine-tuning the player car physics towards the end of the project. The built-in physics is great plus too.</p>
+<p>All in all. Corona SDK is a major weapon in my arsenal of game making tools these days. A veritable WMD!</p>
+<p>&#8211;<em>Andy Hadlington</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/03/guest-post-corona-sdk-gamedevhelper-a-powerful-duo/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>multidex &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/multidex/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>multidex &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing Multidex Support for Android Builds in Corona SDK</title>
+		<link>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/</link>
+		<comments>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/#comments</comments>
+		<pubDate>Thu, 31 Mar 2016 20:55:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[multidex]]></category>
+
+		<guid isPermaLink="false">/?p=66280</guid>
+		<description><![CDATA[Corona SDK now has multidex support for Android builds starting 2016.2853. Learn what multidex does for you. ]]></description>
+				<content:encoded><![CDATA[<p>With the recent wave of new plugins, some Corona developers have reported Android build failures with errors like this:</p><pre class="crayon-plain-tag">Encountered 65k symbol DEX limit. Reducing the number of plugins will help avoid this limit.</pre><p>This error happens due to a design limitation in the Android platform where the file containing the compiled Android code is limited to 65k symbols. More information on this limitation can be found <a href=http://developer.android.com/tools/building/multidex.html?#about>here</a>.</p>
+<p>Today, we are pleased to announce that Corona SDK projects built for Android are no longer subject to this limit, thanks to Multidex support!</p>
+<h3>What is Multidex support?</h3>
+<p>Multidex support allows the Android build system to generate multiple files containing Android bytecode and be able to load symbols between the two dynamically. These Android bytecode files are known as DEX files and as previously mentioned, each one has a hard limit of 65k symbols.</p>
+<h3>How do I take advantage of multidex in Corona SDK?</h3>
+<p>The only thing you&#8217;ll need to do to take advantage of multidex support is upgrade to <a href=https://developer.coronalabs.com/downloads/daily-builds/>daily build 2016.2853 or later</a>. After that, you don&#8217;t have to do <span style="text-decoration: underline;"><strong>anything</strong></span> to perform a multidex build for Android. Just do an Android build as you normally would and our build system will take care of the rest for you.</p>
+<h3>How does Corona address known multdex limitations?</h3>
+<p>The multidex system isn&#8217;t perfect for older versions of Android and there are <a href=http://developer.android.com/tools/building/multidex.html?#limitations target="_blank">known limitations</a>. We&#8217;ve done our best to ensure Corona-made apps aren&#8217;t hindered by these limitations.</p>
+<p class="">That said, we still advise you test your project on older versions of Android (2.3.3 &#8211; 4.0). If your project does run into any of the limitations listed in the link above, you may have to change the <code>minSdkVersion</code> of your project to <a href=http://developer.android.com/about/versions/android-4.0.html>API Level 14 (Android 4.0)</a>. You can do this by adding the following to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        minSdkVersion = &quot;14&quot;,
+    },
+}</pre><p></p>
+<h3>Impact on Android Builds through Corona SDK.</h3>
+<p>Generating Android apps that utilize multiple DEX files isn&#8217;t a cheap process. You may see a slight increase in build times because of this.</p>
+<h3>Reporting Issues</h3>
+<p>Should you encounter any issues with this, please let us know by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+<p>Feel free to discuss this in our <a href=https://forums.coronalabs.com/forum/531-android-including-kindle-and-nook/ target="_blank">Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

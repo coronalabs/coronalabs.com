@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Lua &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/lua/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Lua &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Functions and return statements in Corona</title>
+		<link>/blog/2019/09/13/functions-and-return-statements-in-corona/</link>
+		<pubDate>Fri, 13 Sep 2019 19:19:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Lua]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76309</guid>
+		<description><![CDATA[Functions are one of the most useful tools in a programmer's tool box. But how do you make the best use of this tool? This tutorial can help you understand how functions work.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-62993" src="/wordpress/wp-content/uploads/2015/06/code-feature-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/06/code-feature-150x150.png 150w, /wordpress/wp-content/uploads/2015/06/code-feature.png 250w" sizes="(max-width: 150px) 100vw, 150px" />A question was raised on the various Corona support channels: &#8220;What is the <code>return</code> statement and when do I need to use it?&#8221; Before that question can be answered, you need to understand what functions are and how Lua uses them.</p>
+<p>Functions are blocks of code that can be reused. Consider changing a car tire:</p>
+<ol style="padding-left:40px; line-height:10px;">
+<li>Take out jack, lug wrench and spare tire from trunk</li>
+<li>Put the lug wrench on nut #1</li>
+<li>Rotate counter-clockwise until the nut comes off</li>
+<li>Put the lug nut in a safe place</li>
+<li>Put the lug wrench on nut #2</li>
+<li>Rotate counter-clockwise until the nut comes off</li>
+<li>Put the lug nut in a safe place</li>
+<li>Put the lug wrench on nut #3</li>
+<li>Rotate counter-clockwise until the nut comes off</li>
+<li>Put the lug nut in a safe place</li>
+<li>Put the lug wrench on nut #4</li>
+<li>Rotate counter-clockwise until the nut comes off</li>
+<li>Put the lug nut in a safe place</li>
+<li>Put the lug wrench on nut #5</li>
+<li>Rotate counter-clockwise until the nut comes off</li>
+<li>Put the lug nut in a safe place</li>
+<li>Jack up the car</li>
+<li>Remove the flat tire</li>
+<li>Put the spare tire on</li>
+</ol>
+<p>etc.</p>
+<p>Computer code executes in a linear fashion. If you were to write this out in computer code you end up repeating yourself multiple times. It makes more sense to take the lug nut removal code and put it in a function. Consider this pseudo-code:</p>
+<p></p><pre class="crayon-plain-tag">Function removeLugNut( lugNutNunber )
+     Put the lug wrench on nut # lugNutNumber
+     Rotate counter-wise until the nut comes off.
+     Put the lug nut in a safe place</pre><p> </p>
+<p>This reduces our algorithm to:</p>
+<ol style="padding-left:40px; line-height:10px;">
+<li>Take out jack, lug wrench and spare tire from trunk</li>
+<li>For each lugNutNumber</li>
+<li>removeLugNut( lugNutNumber)</li>
+<li>Jack up the car</li>
+<li>Remove the flat tire</li>
+<li>Put the spare tire on</li>
+</ol>
+<p>The code is much more compact. It follows a main developer principle called <strong>DRY &#8211; Don&#8217;t Repeat Yourself</strong>.</p>
+<p>Functions can be used in a variety of ways in Corona apps. Let&#8217;s look at a basic example:</p><pre class="crayon-plain-tag">local function movePlayer()
+      player.x = player.x + 1
+end</pre><p>This function does not need any information. It uses an existing defined object: <code>player</code> and increments its <code>.x</code> position by one. It takes no parameters and doesn&#8217;t pass any data back to the calling code. You might use this inside another function that runs every clock tick:</p><pre class="crayon-plain-tag">local function enterFrameListener()
+       movePlayer()
+end</pre><p>Since you don&#8217;t put anything inside the parentheses, you are sending nothing to the function. But you could easily pass information to the function. You may want to make this function a little more generic. Instead of <code>movePlayer</code>, you could say <code>moveObject</code>. You could also provide the speed:</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       object.x = object.x + speed
+end
+
+local function enterFrameListener()
+      moveObject( player, 1)
+end</pre><p>Now that you know how to pass information to a function what about getting it back? First, not all functions need to send data back, but when you do, you can do so using Lua&#8217;s <code>return</code> statement.</p>
+<p>At the machine code level, all of the above functions have an implied <code>return</code> statement. As a convenience to Lua developers, you don&#8217;t need to specify one if you don&#8217;t need it, thus:</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       object.x = object.x + speed
+end</pre><p>and</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       object.x = object.x + speed
+       return nil
+end</pre><p>are identical.</p>
+<p>The <code>return</code> statement has two main purposes. First, it can be used to force a function to end early. Let&#8217;s look at that example:</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       If object == nil or object.x == nil then
+            -- This isn't a display object, so exit the function without doing any more work
+            return
+       end
+       object.x = object.x + speed
+end</pre><p>Since the code didn&#8217;t have a valid object to change the value of <code>x</code> on, you can exit the function and avoid a potential error.</p>
+<p>The second use of a <code>return</code> statement is to pass information back to the code that called the function, That information could be a simple success or failure indicator, or it could pass back values that are more useful. Let&#8217;s look at the simple success/failure situation modifying above function.</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       if object == nil or object.x == nil then
+            -- This isn't a display object, so exit the function without doing any more work
+            return false -- let the calling code know it failed
+       end
+       object.x = object.x + speed
+       return true -- the function successful, so let the caller know.
+end</pre><p>To receive the data, the code calling the function can either store the return value in a variable or test it in a conditional test.</p><pre class="crayon-plain-tag">local function enterFrameListener()
+      if not moveObject( player, 1) then
+           print("The object failed to move since object isn't a display object")
+      end
+end</pre><p>Sometimes you need to capture the values. Let&#8217;s look at this simple function that adds two numbers together:</p><pre class="crayon-plain-tag">local function addTwoNumbers( num1, num2 )
+        local sum = num1 + num2
+        return sum
+end
+
+local sum = addTwoNumbers(10, 20)
+print("The sum is", sum)</pre><p>Now you can pass data to the function as well as receive information back using the return statement.</p>
+<p>Most programming languages can only return one value (though it could be a table, dictionary, or list with multiple values). Lua, however lets you return multiple values. Lets go back to the <code>moveObject</code> function.</p><pre class="crayon-plain-tag">local function moveObject( object, speed )
+       if object == nil or object.x == nil then
+            -- This isn't a display object, so exit the function without doing any more work
+            return false, "This does not appear to be a display object" -- let the calling code know it failed
+       end
+       object.x = object.x + speed
+       return true, "Success"  -- the function successful, so let the caller know.
+end
+
+local function enterFrameListener()
+      local success, message = moveObject( player, 1)
+      if not success then
+           print( message )
+      end
+end</pre><p>You can see from this tutorial how the <code>return</code> statement can be useful in your Corona adventures.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Extending Corona libraries without native coding</title>
+		<link>/blog/2019/07/09/extending-corona-libraries-without-native-coding/</link>
+		<pubDate>Tue, 09 Jul 2019 21:34:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76297</guid>
+		<description><![CDATA[Matthew Webster provides a cool feature of Lua that lets you extend existing libraries without having to write your own native code in this tutorial.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-62993" src="/wordpress/wp-content/uploads/2015/06/code-feature.png" alt="" width="250" height="250" srcset="/wordpress/wp-content/uploads/2015/06/code-feature.png 250w, /wordpress/wp-content/uploads/2015/06/code-feature-150x150.png 150w" sizes="(max-width: 250px) 100vw, 250px" />This is a guest post by long time Corona user Matthew Webster.</p>
+<p>While Corona is simple, powerful and has many useful APIs, there&#8217;s always that <em>one extra thing</em>. Often, the one thing is apparently simple enough to be incorporated into an existing Lua API, but may appear forgotten about.</p>
+<p>This tutorial will show you how to:</p>
+<ul>
+<li>Add new functionality to the existing libraries</li>
+<li>Extend the existing functionality</li>
+</ul>
+<h3>Corona library APIs</h3>
+<p>All functionality in Corona are provided by library APIs. The documentation for which is <a href=http://docs.coronalabs.com/api/index.html target="_blank" rel="noopener">found here</a>.</p>
+<p>If we take a look at the <code>'string.*'</code> API we can see a collection of functions such as:</p>
+<ul>
+<li>string.find()</li>
+<li>string.format()</li>
+<li>string.gsub()</li>
+<li>string.len()</li>
+<li>string.lower()</li>
+</ul>
+<p>It happens that all of these functions are not written in Lua, they are handles into lower level functions provided in either C++ (cross platform), Objective-C (for iOS) or Java (for Android.) The same is true for libraries like the <code>'math.*'</code> APIs.</p>
+<p>Some APIs, however, are provided completely in Lua, for example Corona&#8217;s <code>'widget.*'</code> API is entirely written in Lua. Corona Labs have even made the original source code available!</p>
+<p>Whichever implementation the Corona Labs engineers have chosen to go with their code, the fact still stands that in our Lua world each function has its hands firmly tied to the rules of Lua. In fact, every library (including the <code>'string.*'</code> API) is actually a table. That&#8217;s right: <code>'string'</code> is a table and all the functions defined above are members of that table.</p>
+<p>This allows us to do some really clever things quite easily.</p>
+<h3>A Useful Function</h3>
+<p>The first thing we&#8217;ll learn is how to add our own functions to Corona SDKs own API Libraries. Why would we want to do that? Well, let&#8217;s say you&#8217;ve written a really useful function which removes the leading and trailing spaces from a string. In most languages this is usually called <code>'trim()'</code>:</p><pre class="crayon-plain-tag">local function trim( str )
+    return (str:gsub("^%s*(.-)%s*$", "%1"))
+end</pre><p>Don&#8217;t worry about what is actually happening inside the function. Just know that you&#8217;ve written it, it&#8217;s awesome and works really well when you want have a string which has really annoying spaces at the startand end:</p>
+<p><code>print( trim( " Hello World! " ) )</code></p>
+<p>Outputs:</p>
+<p><code>Hello World!</code></p>
+<p>The normal practice for many Corona developers is to put this <code>'trim()'</code> function into a library file, such as<br />
+&#8220;<code>utils.lua</code>&#8220;. What we want to do is make it a bit more memorable and categorically accurate&#8230; This function is<br />
+a string function, so it should be accessed like the other string functions.</p>
+<h3>Adding to Corona&#8217;s APIs</h3>
+<p>To be clear, our function is in a file called <code>"utils.lua"</code> so we want all the work done in that file. Of course, <code>"utils.lua"</code> will be loaded into memory in our <code>"main.lua"</code> with a standard <code>'require'</code> call:</p>
+<p><code>require("utils")</code></p>
+<p>The function in the <code>"utils.lua"</code> looks like this:</p><pre class="crayon-plain-tag">local function trim( str )
+    return (str:gsub("^%s*(.-)%s*$", "%1"))
+end</pre><p>So let&#8217;s add this function to the <code>'string.*'</code> API. In <code>"utils.lua"</code> after we define our function we follow it with a standard table value assignment (this is the magic bit):</p>
+<p><code>string.trim = trim</code></p>
+<p>And that&#8217;s it. Easy.</p>
+<p>You can now call <code>'string.trim(" Hello World! ")'</code> from anywhere in your code and it will print:</p>
+<p><code>Hello World!</code></p>
+<h3>The Beauty of a Library</h3>
+<p>Let&#8217;s say we have a string defined:</p>
+<p><code>local str = " Hello World! "</code></p>
+<p>What&#8217;s great about having the <code>'trim()'</code> function in the string API is that we can now call the function as a member of any string variable:</p>
+<p><code>print( str:trim() )</code></p>
+<p>Will output:</p>
+<p><code>Hello World!</code></p>
+<p>This is because the <code>'string'</code> library represents string variables in general.</p>
+<p>It&#8217;s important to note, that this does not add your trim function to everyone&#8217;s Corona <code>string.*</code> library nor will it make it available to your next project. You will need to continue require your <code>util.lua</code> file. But the idea here that:</p>
+<p><code>string.trim()</code></p>
+<p>makes more semantical sense than:</p>
+<p><code>util.trim()</code></p>
+<p>Hopefully this simple trick will make your development with Corona a bit more easy.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: DoodleMaths &#8211; teaching math the fun way</title>
+		<link>/blog/2016/03/17/case-study-doodlemaths-teaching-math-the-fun-way/</link>
+		<pubDate>Fri, 18 Mar 2016 01:23:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Education]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Education]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[doodle]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[math]]></category>
+		<category><![CDATA[primary]]></category>
+		<category><![CDATA[secondary]]></category>
+
+		<guid isPermaLink="false">/?p=66123</guid>
+		<description><![CDATA[In this case study, dive into EZ Education's DoodleMaths, a math education app from this UK based development studio. Learn more about this innovative team and their accomplishments.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66126" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png" alt="vIay5wqa" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-300x300.png 300w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-500x500.png 500w, /wordpress/wp-content/uploads/2016/03/vIay5wqa.png 551w" sizes="(max-width: 150px) 100vw, 150px" />In this post, we highlight <a href=https://www.doodlemaths.com/ target="_blank">DoodleMaths</a> by <a href=http://www.ezeducation.co.uk/ target="_blank">EZ Education</a>. DoodleMaths is an intuitive math app for children that allows them to consistently work at the best level for them. Its algorithm works to understand the level a child is currently working at and then it creates a work program for them so they can continually consolidate and learn new topics, rather than playing it safe and only doing what they know well.</p>
+<p>Tom Minor, along with co-founder Nicola Chilman, founded EZ Education in 2012 with the aim of enhancing  the way kids learn through adaptive learning programs. As experienced classroom educators, they have first-hand experience working with kids, and DoodleMaths is the top-selling math app for elementary school children in the UK.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/PvokxEqIDOo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>DoodleMaths has won many accolades. &#8220;We have had 5-star reviews from the Educational App Store and have recently won Best Mobile App at The SPARKies, run by TechSPARK. We have been in the top 10 of the education apps in iTunes, and we have been shortlisted for KPMG&#8217;s Best British Mobile Startup,&#8221; says Tom. &#8220;As a company, we have received numerous rewards and can proudly say we have the best selling primary maths app in the United Kingdom.&#8221;</p>
+<p><img class="alignnone size-full wp-image-66127" src="/wordpress/wp-content/uploads/2016/03/screen640x640.jpeg" alt="screen640x640" width="640" height="360" /></p>
+<h3>Building their app</h3>
+<p>The developers realized how much children engage with tablets and the huge potential for them to learn in a way that individually suits their needs. Their background as teachers and tutors meant that they had first-hand experience of how an app could work alongside common teaching methods in order to draw the most out of the child.</p>
+<p>For EZ Education, app development is an ongoing process, so they continuously iterate on their design and code base. The company has used Corona for development of their three existing applications and their upcoming fourth application. Thanks to Corona and the Lua language, they can develop a core app in around three months and smaller projects even faster.</p>
+<p><img class="alignnone size-full wp-image-66128" src="/wordpress/wp-content/uploads/2016/03/unnamed.jpg" alt="unnamed" width="512" height="384" /></p>
+<p>When asked about advice for developers, Tom says &#8220;My first bit of advice would be for newcomers. I would recommend that they read the tutorials and try out some sample applications to see how much time they could save. Corona really streamlines the development process.&#8221; He continues, &#8220;It was important to my team to establish a set of programming standards and best practices and we were easily able to find wonderful examples on the Corona <a href=https://code.coronalabs.com/code target="_blank">Code Exchange</a>. I recommend that others look there for patterns and inspiration when developing their own application.&#8221;</p>
+<h3>Going online</h3>
+<p>Some developers chase problems which they have little experience in solving. For some, it&#8217;s a challenge to learn new things, but sometimes recognizing that you need help is an important step. For EZ Education, their staff is educators. Building and hosting an online service is challenging, but DoodleMaths needed features to enable teachers to get the most out of the app. EZ Education found the solution in Bluefuse Systems (<a href=http://www.bluefusesystems.com>www.bluefusesystems.com/</a>) to develop parent and teacher dashboards. These dashboards contain features such as live monitoring, live messaging, and leaderboards, giving the students the ability to challenge each other while keeping the parents and teachers involved in their progress.</p>
+<h3>Conclusion</h3>
+<p>If you want to check out DoodleMaths and EZ Education&#8217;s other apps, visit their <a href=https://www.doodlemaths.com/ target="_blank">website</a> at <a href=https://www.doodlemaths.com/ target="_blank">https://www.doodlemaths.com/</a>. From there, you can download each of their apps on all of the supported platforms. DoodleMaths is a fun (but serious) tool used to educate children, and it was all built with Corona SDK. <a href=/ target="_blank">Get started today!</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Writing Plugins in Pure Lua</title>
+		<link>/blog/2015/05/22/writing-plugins-in-pure-lua/</link>
+		<comments>/blog/2015/05/22/writing-plugins-in-pure-lua/#comments</comments>
+		<pubDate>Fri, 22 May 2015 18:48:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=62836</guid>
+		<description><![CDATA[Continuing our theme of making <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">plugins more open</a>, we want to make plugin development better by simplifying the way you package plugins written in pure Lua.]]></description>
+				<content:encoded><![CDATA[<p>Continuing our theme of making <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>, we want to make plugin development better by simplifying the way you package plugins written in pure Lua.</p>
+<p>Previously, if you wanted to build a plugin, even if it only contained pure Lua code, you had to package it inside a native binary. This meant embedding the Lua bytecode into native source <strong>and</strong> compiling that into a native binary for <strong>each</strong> device platform (iOS, Android, etc) and <strong>each</strong> simulator platform (Mac and Win32)</p>
+<h3>Project Templates for Plugin Development</h3>
+<p>Today, we are offering you project templates that allow you to use Corona SDK, so that you can avoid all of that hassle. This way, you can easily write plugins and distribute them in the <a href=/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/>Corona Store</a> as free plugins (and later this year, as purchasable plugins).</p>
+<p>We have posted 2 plugin project templates on <a href=https://github.com/coronalabs>github</a>:</p>
+<ul>
+<li><a href=https://github.com/coronalabs/plugins-template-library-lua>Library Plugin &#8211; Project Template</a></li>
+<li><a href=https://github.com/coronalabs/plugins-template-shader-lua>Shader Effect Plugin &#8211; Project Template</a></li>
+</ul>
+<p>These project templates are designed so you can edit the plugin&#8217;s Lua code just like you would a normal Corona project. Also, we made sure that you can use them on <strong>both</strong> Mac and Windows. For example, the helper scripts have both Mac and Win variants, like the one to create a new plugin project: <code>create_project.sh</code> (Mac) and <code>create_project.bat</code> (Win).</p>
+<h3>Packaging Plugins for Distribution</h3>
+<p>For Corona Store distribution, we&#8217;ve also included packaging scripts (<code>build.sh</code> for Mac and <code>build.bat</code> for Win) that allow you to package your plugin for submission to the Corona Store. This includes logistics like directory folder structure, a stub metadata file for you to fill in, compiling Lua sources down to bytecode, etc. Full details on submission/packaging guidelines are in the respective README&#8217;s for each template.</p>
+<p>Once a plugin is on the Corona Store, the plugins get bundled into the final <code>.app</code>/<code>.apk</code> automatically by the Corona Build Server.</p>
+<p>If you are working on a plugin, we are accepting applications for free plugins (support for purchasable plugins coming later this year): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a></p>
+<h3>Plugin Docs</h3>
+<p>As part of distributing a plugin, you&#8217;ll want to write plugin documentation. To make this as easy as possible, we&#8217;ve created documentation templates that you can fork on Github, each corresponding to the plugin project templates I mentioned earlier:</p>
+<ul>
+<li><a href=https://github.com/coronalabs/plugins-template-library-docs/blob/master/Instructions.markdown>Library Docs &#8211; Template Instructions</a></li>
+<li><a href=https://github.com/coronalabs/plugins-template-shader-docs/blob/master/Instructions.markdown>Shader Effect Docs &#8211; Template Instructions</a></li>
+</ul>
+<p>When you use these doc templates, you get web hosting for free. All you have to do is create a public Github repo and the Github site renders the HTML for you.</p>
+<h3>Useful for personal/private development too</h3>
+<p>We think these project templates should also be used more generally, even if you are just creating Lua modules for your own app or game project.</p>
+<p>When you create a new plugin project, you may notice that the actual plugin files look just like the standard Lua-based module you might write in your own project.</p>
+<p>The differences are merely structural, rather than technical. They may seem small, but over time will help you be more productive, such as being able to test this module separately from your actual Corona app project. That clean separation also means you&#8217;ll be able to use it multiple Corona app projects without worrying about some accidental code dependency being injected.</p>
+<p>And who knows? You might decide to publish this module someday as a plugin on the Corona Store. In that case, there are already scripts that come with the project, ready to package your plugin for submission.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/05/22/writing-plugins-in-pure-lua/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Custom Shader Effects</title>
+		<link>/blog/2015/04/15/custom-shader-effects/</link>
+		<comments>/blog/2015/04/15/custom-shader-effects/#comments</comments>
+		<pubDate>Wed, 15 Apr 2015 12:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[effects]]></category>
+		<category><![CDATA[glsl]]></category>
+		<category><![CDATA[imaging]]></category>
+		<category><![CDATA[shader]]></category>
+		<category><![CDATA[texture]]></category>
+
+		<guid isPermaLink="false">/?p=62261</guid>
+		<description><![CDATA[One of Corona's <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">major themes</a> for this year was graphics, and in particular, giving you more "under the hood" access to our graphics engine. Starting in daily build 2015.2560, we are giving you the ability to create <a href="http://docs.coronalabs.com/daily/guide/graphics/customEffects.html">custom shader effects</a>.]]></description>
+				<content:encoded><![CDATA[<p>[Update]: Some really cool shaders being shared in the forums <a href=http://forums.coronalabs.com/topic/56284-share-your-shaders/>here</a> and <a href=http://forums.coronalabs.com/topic/56212-corona-shader-playground-from-your-web-browser/?p=290925>here</a>.</p>
+<p>One of Corona&#8217;s <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major themes</a> for this year was graphics, and in particular, giving you more &#8220;under the hood&#8221; access to our graphics engine.</p>
+<h2>Fragment/Vertex Kernels</h2>
+<p>Starting in daily build 2015.2560, we are giving you the ability to create <a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>custom shader effects</a>. If you&#8217;re familiar with writing shaders in GLSL-ES, then you&#8217;ll feel right at home writing shaders in Corona.</p>
+<p>We&#8217;ve structured things so you don&#8217;t need to write a full shader program. Instead, you write snippets of GLSL-ES shader code that we call kernels. Instead of a full vertex shader program, you write a vertex kernel; instead of a full fragment shader program, you write a fragment kernel.</p>
+<p>This way, you can focus on creating and implementing cool visual effects without worrying about the surrounding scaffolding. In fact, we&#8217;ve used this same exact system for all the <a href=http://docs.coronalabs.com/daily/guide/graphics/effects.html>built-in shader effects</a> in Corona.</p>
+<h2>Web-based Shader Playground</h2>
+<p>To make this even easier, we&#8217;ve created a <a href=https://shader.coronalabs.com/>Corona Shader Playground</a> where you can play/experiment with Corona custom (fragment) shaders right from your browser!</p>
+<p>(NOTE: WebGL is required to see the preview. If your browser doesn&#8217;t have proper support, you will only see code, no preview.)</p>
+<p>Below are some live examples of fragment kernels that you can edit (just click in the code box). The inlined examples we have here are just a partial view into what the playground lets you do — click &#8220;Open in Playground&#8221; and you&#8217;ll get the full experience such as varying parameters, changing textures, etc.</p>
+<p>Here&#8217;s a basic &#8220;Hello World&#8221; fragment shader (WebGL support is required in your browser):</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/color.frag"></div>
+<p>Fragment kernel functions are called for every single pixel to determine the color to &#8220;shade&#8221; the pixel. In the above example, the shader always returns red which is why the entire shape gets colored red. As the comment suggests, try modifying the above code to use a different color and live preview the results.</p>
+<p>Here&#8217;s a slightly more complex shader:</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/simple.frag"></div>
+<p>This example achieves its effect by mapping texture coordinate values to the the &#8220;Red&#8221; and &#8220;Green&#8221; channels and using time to vary the &#8220;Blue&#8221; channel.</p>
+<p>Both of these fragment kernels are examples of generators, because they procedurally generate the texture (no source image textures are used).</p>
+<p>There are more complex shader effect examples in the playground like:</p>
+<ul>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/plasma.frag&[16,16,0.0,0.0]>plasma generator</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/bulge.frag&textures/512/checkerboard-diffuse.jpg&[0.25,0.0,0.0,0.0]>bulge image filter</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/moon.frag&textures/512/moon-diffuse.jpg&%5B0.005,0.01,-0.3,1.5%5D>rotating moon effect</a> (Lua means &#8220;moon&#8221; in Portuguese).</li>
+</ul>
+<h2>Resources</h2>
+<p>Ready to start playing? Here&#8217;s everything you need to get going:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>Custom Shader Effects Guide</a></li>
+<li><a href=https://shader.coronalabs.com/>WebGL-based Shader Playground</a></li>
+<li><a href=https://github.com/coronalabs/sample-customFilter>Sample Corona Project</a></li>
+<li><a href=http://forums.coronalabs.com/forum/647-custom-shader-effects/>Forum</a></li>
+</ul>
+<p><script>
+    var script = document.createElement('script');
+    script.src = "//shader.coronalabs.com/src/inject-shader.js";
+    document.head.appendChild(script);
+</script></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/15/custom-shader-effects/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

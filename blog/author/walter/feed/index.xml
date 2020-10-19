@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>walter &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/walter/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>walter &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Labs Joins Perk</title>
+		<link>/blog/2015/11/30/corona-labs-joins-perk/</link>
+		<comments>/blog/2015/11/30/corona-labs-joins-perk/#comments</comments>
+		<pubDate>Mon, 30 Nov 2015 18:49:43 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Perk]]></category>
+
+		<guid isPermaLink="false">/?p=64819</guid>
+		<description><![CDATA[Today, I’m really happy to announce that Corona and the team are joining <a href="http://www.perk.com/" target="_new">Perk</a>. Perk is a publicly traded, profitable company that has built a service/platform that rewards people for everyday mobile and internet activities. Their goal is to enable developers like you to leverage their rewards system and advertiser relationships to both monetize and engage your users.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m really happy to announce that Corona and the team are joining <a href=http://www.perk.com/ target="_blank">Perk</a>.</p>
+<p>Perk is a publicly traded, profitable company that has built a service/platform that rewards people for everyday mobile and internet activities. Their goal is to enable developers like you to leverage their rewards system and advertiser relationships to both monetize and engage your users.</p>
+<p>Having gone through multiple acquisitions (most recently with Fuse), I can tell you that this is really good news for Corona.</p>
+<p>The key thing for me is that Perk builds and publishes apps — and more importantly — their engineers are huge Corona fans! They’ve built several apps with Corona already and at a fundamental level understand what makes Corona so special.</p>
+<p>In fact, when we first met, they told us that it took them 3 months for their team to build an Android app natively. In contrast, one of their developers who had never used Corona before was able to port this app to Corona in 1 month!</p>
+<p>The teams on both sides have been talking about a lot of different activities that are going to make this combination really great. And when I look at the conversations that the engineers are having on both sides, it&#8217;s clear they talk the same language: no nonsense, let&#8217;s get sh*t done.</p>
+<p><center>* * *</center>This has been an incredible year for Corona.</p>
+<p>As I look back at the <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/ target="_blank">agenda and themes</a> we set for 2015, I&#8217;m extremely happy that we accomplished nearly all of it. The list is really quite extensive: Mac App, Win32 App, Corona Store, Lua-based plugins, custom shader effects, tvOS, etc.</p>
+<p>On top of that, we now have a tremendous partner in Perk. They are excited about Corona at all levels of the company. They see value in what the team here does, in what you the community do with Corona, and in what Perk/Corona will be able to do together. The fact that they already build many of their own apps with Corona makes this transition so natural.</p>
+<p>Because of all this, I feel like Corona is in the best shape it&#8217;s ever been. So I&#8217;ve decided this is a really great time to take a step back from my day-to-day role. Moving forward, I&#8217;ll be taking on the role as advisor to Perk/Corona Labs.</p>
+<p>Pixar co-founder, Ed Catmull, talked a lot about how they built something that is self-sustaining — that will outlive the founders — in his book &#8220;Creativity, Inc.&#8221; In particular, he highlights the key role that the braintrust plays in that.</p>
+<p>Well, the Corona team is my braintrust. These guys are rockstars. I credit them for what makes Corona so special and for why Corona has helped you all build such great apps.</p>
+<p>I sometimes wondered if I would ever feel comfortable stepping away from the &#8220;captain&#8217;s chair&#8221;. Not anymore. The team has already stepped up and grown in so many ways. It&#8217;s time to take the training wheels off, so that they can continue to grow.</p>
+<p>While I won&#8217;t be working side-by-side with the team on a daily basis anymore, I hope you&#8217;ll join me in cheering them from the sidelines.</p>
+<p>Finally, as my last official act, I wanted to thank you — the community — for believing in what we are doing here with Corona. I hope I&#8217;ve played a small part in making a positive dent in your universe. I wish you all the best!</p>
+<p><span style="font-family: serif; font-style: italic; font-size: 125%;">Walter</span></p>
+<p>walter at coronalabs dot com</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/30/corona-labs-joins-perk/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Corona: tvOS and Apple TV (Alpha)</title>
+		<link>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/</link>
+		<comments>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/#comments</comments>
+		<pubDate>Wed, 11 Nov 2015 00:00:39 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=64670</guid>
+		<description><![CDATA[Today, we&#8217;re happy to announce that an alpha version of tvOS (Apple TV) is available, starting in daily build 2015.2765. Alpha vs Beta Corona&#8217;s support for tvOS is currently in an alpha state. In a nutshell, this means we have proven that Corona can work on tvOS. Concretely, the &#8216;PewPew&#8217; demo sample works, but almost no testing has been done beyond that. We&#8217;ve learned it&#8217;s generally a bad idea to release things too early. As a result, we normally choose to delay things until they reach Beta-level maturity. However, we felt it was important to give you an opportunity to...]]></description>
+				<content:encoded><![CDATA[<p>Today, we&#8217;re happy to announce that an alpha version of tvOS (Apple TV) is available, starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2765.</p>
+<h3>Alpha vs Beta</h3>
+<p>Corona&#8217;s support for tvOS is currently in an alpha state. In a nutshell, this means we have proven that Corona can work on tvOS. Concretely, the &#8216;PewPew&#8217; demo sample works, but almost no testing has been done beyond that.</p>
+<p>We&#8217;ve learned it&#8217;s generally a bad idea to release things too early. As a result, we normally choose to delay things until they reach Beta-level maturity.</p>
+<p>However, we felt it was important to give you an opportunity to play with tvOS/Apple TV — mainly because we think you&#8217;ll want the extra time to think about how you can migrate your existing titles to this platform.</p>
+<h3>New Interaction Model</h3>
+<p>While tvOS shares its heritage with iOS, there are many fundamental differences beyond just a much larger screen size. The biggest difference is touch. Unlike iOS, there is no touch interaction in tvOS.</p>
+<p>Instead, the primary interaction model with Apple TV (and other TV platforms, for that matter) is via a remote. In the case of Apple TV&#8217;s remote, the remote can also act as a mini-game controller (Apple calls this a microgamepad).</p>
+<p>In most cases, you will likely have to rethink how your users will interact with your games.</p>
+<h3>Road to Beta</h3>
+<p>When will this get to Beta?</p>
+<p>It depends. Right now, our priority is bringing Mac App and Win32 App support from Beta to 1.0 quality. Because of that, tvOS sits at a lower priority.</p>
+<p>While it may look like the Alpha is pretty far along, it&#8217;s not battle-ready in the way that our support for iOS and Android are.</p>
+<p>In other words, we took all the low-hanging fruit to quickly put together enough pieces so you can play with AppleTV; however, we estimate a significant amount of work remains, especially in terms of features, polish, and quality.</p>
+<p>Therefore, it&#8217;s fair to say you should not expect frequent of regular updates until we bring our other projects across the finish line.</p>
+<h3>Resources</h3>
+<p>In spite of the low priority and lack of completeness, we think this alpha will be useful for you. You will need time to re-think your games for a much larger screen and a pure game controller-based interaction model. And we will want feedback to help prioritize our tvOS efforts post-Mac/Win32 app.</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/daily/guide/tvos/index.html>Corona: AppleTV and tvOS (Alpha) Guide</a></li>
+<li><a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/>Forums: Apple TV and tvOS Testing Forum</a></li>
+<li>The <code>PewPew</code> sample in <code>/Applications/CoronaSDK-2765/SampleCode/Demos</code></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/10/corona-tvos-and-apple-tv-alpha/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release: 2015.2731</title>
+		<link>/blog/2015/10/07/new-public-release-2015-2731/</link>
+		<comments>/blog/2015/10/07/new-public-release-2015-2731/#comments</comments>
+		<pubDate>Wed, 07 Oct 2015 19:02:29 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=64297</guid>
+		<description><![CDATA[Today, we are shipping a new public release (2015.2731) for Corona SDK, Corona Enterprise, and CoronaCards. A major theme for this year was new platforms. With this release, we spent a lot of time in the plumbing, so that we could have a solid foundation to support Mac Apps and Win32 Apps (currently in beta). Here are some highlights on what&#8217;s new in this release: OS X and Windows Desktop App builds (beta). iOS device builds now target iOS 9.0 SDK. Workflow/productivity improvements to device build dialog on OS X Simulator (see figure below) Windows: Added basic support for native...]]></description>
+				<content:encoded><![CDATA[<p>Today, we are shipping a <a href=https://developer.coronalabs.com/downloads/coronasdk>new public release</a> (2015.2731) for Corona SDK, Corona Enterprise, and CoronaCards.</p>
+<p>A <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major theme</a> for this year was new platforms. With this release, we spent a lot of time in the plumbing, so that we could have a solid foundation to support Mac Apps and Win32 Apps (currently in beta).</p>
+<p>Here are some highlights on what&#8217;s new in this release:</p>
+<ul>
+<li><a href=/blog/2015/07/22/mac-app-and-win32-app-open-beta/>OS X and Windows Desktop App builds (beta)</a>.</li>
+<li>iOS device builds now target iOS 9.0 SDK.</li>
+<li>Workflow/productivity improvements to device build dialog on OS X Simulator (see figure below)</li>
+<li><a href=/blog/2015/08/13/big-news-for-the-windows-simulator/>Windows: Added basic support for native TextField and TextBox</a>.</li>
+<li><a href=https://docs.coronalabs.com/guide/graphics/textureManagement.html>Manual texture loading/management</a> via <a href=https://docs.coronalabs.com/api/type/TextureResource/index.html>TextureResource</a> objects.</li>
+</ul>
+<p>Check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2015.2731>release notes</a> for a full list of features and improvements.</p>
+<div id="attachment_64299" style="width: 760px" class="wp-caption aligncenter"><a href=/wordpress/wp-content/uploads/2015/10/Corona-Build-Dialog-iOS.png><img src="/wordpress/wp-content/uploads/2015/10/Corona-Build-Dialog-iOS-1024x900.png" alt="Here&#039;s" width="750" height="659" class="size-large wp-image-64299" /></a><p class="wp-caption-text"><strong>New device build dialog available in the OS X Corona Simulator.</strong><br />You can choose from a number of post-build steps on iOS and Android. Shown above is the iOS build dialog where you can load your .app device build onto a device, send it to the App Store, or even launch it in Xcode&#8217;s iOS Simulator.</p></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/10/07/new-public-release-2015-2731/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Mac App and Win32 App: Open Beta</title>
+		<link>/blog/2015/07/22/mac-app-and-win32-app-open-beta/</link>
+		<comments>/blog/2015/07/22/mac-app-and-win32-app-open-beta/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 17:08:09 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[desktop app]]></category>
+		<category><![CDATA[Mac app]]></category>
+		<category><![CDATA[win32 app]]></category>
+
+		<guid isPermaLink="false">/?p=63421</guid>
+		<description><![CDATA[At the beginning of this year, I outlined new platforms as a major theme for 2015. And a few months later, at GDC, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we've been conducting private betas with a small group of Corona developers.
+
+Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!]]></description>
+				<content:encoded><![CDATA[<p>At the beginning of this year, I outlined new platforms as a <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major theme for 2015</a>. And a few months later, at <a href=/blog/2015/03/02/corona-sdk-is-now-free/>GDC</a>, we announced bringing Mac App and Win32 App support to the Corona platform. Since then, we&#8217;ve been conducting private betas with a small group of Corona developers.</p>
+<p>Today, we are opening up the Mac App and Win32 App betas to everyone in the Corona community!</p>
+<p>Download <a href=https://developer.coronalabs.com/downloads/daily-builds>Corona daily build</a> 2015.2687 (or later) to get started.</p>
+<h3>Building Desktop Apps</h3>
+<p>We&#8217;ve done a lot of work to make the experience of building desktop apps as smooth as possible.</p>
+<p>By default, you can build apps directly from Corona Simulator, just like you would for iOS or Android. No interaction with Xcode or Visual Studio is needed.</p>
+<p>You will see a new menu item under <code>File</code> => <code>Build</code> in the Corona Simulator which presents a new build dialog for desktop apps: on the Mac, you&#8217;ll be able to build Mac apps, and on Windows, you&#8217;ll be able to build Win32 apps.</p>
+<h3>Transitioning from Mobile to Desktop</h3>
+<p>When you target your project to a new platform, we&#8217;ve done a lot of heavy lifting for you.</p>
+<p>If your mobile project is fully functional in the Corona Simulator, then your project should easily port over as a desktop app.</p>
+<p>There are inevitably going to be a few things you&#8217;ll want to do: testing, tweaks (e.g. window size, behavior, and title) in <code>build.settings</code>, etc.</p>
+<p>Depending on your app design/project, you&#8217;ll also want to think about issues like:</p>
+<ul>
+<li>what&#8217;s appropriate on a desktop-sized screen such as window size, layout and orientation</li>
+<li>whether your touch-based code needs tweaking to work with a mouse</li>
+<li>how to handle plugins/services that aren&#8217;t available on desktop</li>
+<li>etc.</li>
+</ul>
+<h3>Desktop Features</h3>
+<p>In terms of features supported, you should think of the desktop feature set as what&#8217;s available in the Corona Simulator itself. This is a subset of the features supported on iOS/Android.</p>
+<p>For those of you interested in full control — accessing OS-specific features/services via native code, writing plugins, customizing things like menus, etc — you can create a truly native Xcode project (and coming later, a Visual Studio project) to fully customize your app via <a href=https://docs.coronalabs.com/daily/coronacards/osx/>CoronaCards for OS X</a>.</p>
+<h3>Examples</h3>
+<p>Some games port over really well. For example, these games from <a href=https://www.firemaplegames.com/>Fire Maple Games</a> (left), <a href=http://frozengun.com/>FrozenGun</a> (center) and <a href=http://www.glitchgames.co.uk/>Glitch Games</a> (right) worked immediately as desktop games:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Lost-City-Main.png><img src="/wordpress/wp-content/uploads/2015/07/Lost-City-Main-300x217.png" alt="Lost City Main" width="230" height="166" class="alignnone size-medium wp-image-63447" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1.png><img src="/wordpress/wp-content/uploads/2015/07/Freeze-Screenshot-1-98x150.png" alt="Freeze Screenshot 1" width="98" height="150" class="alignnone size-thumbnail wp-image-63446" /></a></p>
+<p><a href=/wordpress/wp-content/uploads/2015/07/ForeverLost.png><img src="/wordpress/wp-content/uploads/2015/07/ForeverLost-300x184.png" alt="ForeverLost" width="230" height="141" class="alignnone size-medium wp-image-63422" /></a></p>
+<h3>Resources</h3>
+<p>More detail about using Corona on desktop are available in our docs:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html>Mac App Docs</a></li>
+<li><a href=https://docs.coronalabs.com/daily/guide/distribution/win32Build/index.html>Win32 App Docs</a></li>
+</ul>
+<p>If you have more questions, please check out the forums:</p>
+<ul>
+<li><a href=https://forums.coronalabs.com/forum/649-os-x-desktop-app-testing/>Mac App Forums</a></li>
+<li><a href=https://forums.coronalabs.com/forum/650-win32-desktop-app-testing/>Win32 App Forums</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/07/22/mac-app-and-win32-app-open-beta/feed/</wfw:commentRss>
+		<slash:comments>41</slash:comments>
+		</item>
+		<item>
+		<title>New Public Release: 2015.2646</title>
+		<link>/blog/2015/06/02/new-public-release-2015-2646/</link>
+		<comments>/blog/2015/06/02/new-public-release-2015-2646/#comments</comments>
+		<pubDate>Tue, 02 Jun 2015 15:18:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=62937</guid>
+		<description><![CDATA[Today, we are shipping a new public release (2014.2646) for Corona SDK, Corona Enterprise, and CoronaCards.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are shipping a new public release (2014.2646) for Corona SDK, Corona Enterprise, and CoronaCards.</p>
+<p>Back in Jan, I identified <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>several themes for the year</a>. This public release exhibits a few of those themes as well as numerous other improvements. Here are a few highlights:</p>
+<ul>
+<li>Android 5.0 support.</li>
+<li>Apple’s TestFlightApp is now supported.</li>
+<li><a href=/blog/2015/03/02/corona-sdk-is-now-free/>Corona SDK is now free (along with access to Daily Builds)</a></li>
+<li><a href=/blog/2015/04/15/custom-shader-effects/>Custom Shader Effects</a></li>
+<li><a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>iOS 64-bit Support</a></li>
+<li><a href=/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/>iOS 8.3 support</a></li>
+<li><a href=/blog/2015/05/22/writing-plugins-in-pure-lua/>Lua Plugins Support</a></li>
+</ul>
+<p>Check out the <a href=http://developer.coronalabs.com/content/corona-sdk-release-notes-build-2015.2646>release notes</a> for a full list of features and improvements.</p>
+<p>Incidentally, if you have a Mac, we gave a minor facelift to several of the folder/tool icons:</p>
+<p><img src="/wordpress/wp-content/uploads/2015/06/Corona-folder-icons.png" alt="Corona-folder-icons" width="587" height="494" class="aligncenter size-full wp-image-62939" /></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/06/02/new-public-release-2015-2646/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Writing Plugins in Pure Lua</title>
+		<link>/blog/2015/05/22/writing-plugins-in-pure-lua/</link>
+		<comments>/blog/2015/05/22/writing-plugins-in-pure-lua/#comments</comments>
+		<pubDate>Fri, 22 May 2015 18:48:50 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=62836</guid>
+		<description><![CDATA[Continuing our theme of making <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">plugins more open</a>, we want to make plugin development better by simplifying the way you package plugins written in pure Lua.]]></description>
+				<content:encoded><![CDATA[<p>Continuing our theme of making <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>, we want to make plugin development better by simplifying the way you package plugins written in pure Lua.</p>
+<p>Previously, if you wanted to build a plugin, even if it only contained pure Lua code, you had to package it inside a native binary. This meant embedding the Lua bytecode into native source <strong>and</strong> compiling that into a native binary for <strong>each</strong> device platform (iOS, Android, etc) and <strong>each</strong> simulator platform (Mac and Win32)</p>
+<h3>Project Templates for Plugin Development</h3>
+<p>Today, we are offering you project templates that allow you to use Corona SDK, so that you can avoid all of that hassle. This way, you can easily write plugins and distribute them in the <a href=/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/>Corona Store</a> as free plugins (and later this year, as purchasable plugins).</p>
+<p>We have posted 2 plugin project templates on <a href=https://github.com/coronalabs>github</a>:</p>
+<ul>
+<li><a href=https://github.com/coronalabs/plugins-template-library-lua>Library Plugin &#8211; Project Template</a></li>
+<li><a href=https://github.com/coronalabs/plugins-template-shader-lua>Shader Effect Plugin &#8211; Project Template</a></li>
+</ul>
+<p>These project templates are designed so you can edit the plugin&#8217;s Lua code just like you would a normal Corona project. Also, we made sure that you can use them on <strong>both</strong> Mac and Windows. For example, the helper scripts have both Mac and Win variants, like the one to create a new plugin project: <code>create_project.sh</code> (Mac) and <code>create_project.bat</code> (Win).</p>
+<h3>Packaging Plugins for Distribution</h3>
+<p>For Corona Store distribution, we&#8217;ve also included packaging scripts (<code>build.sh</code> for Mac and <code>build.bat</code> for Win) that allow you to package your plugin for submission to the Corona Store. This includes logistics like directory folder structure, a stub metadata file for you to fill in, compiling Lua sources down to bytecode, etc. Full details on submission/packaging guidelines are in the respective README&#8217;s for each template.</p>
+<p>Once a plugin is on the Corona Store, the plugins get bundled into the final <code>.app</code>/<code>.apk</code> automatically by the Corona Build Server.</p>
+<p>If you are working on a plugin, we are accepting applications for free plugins (support for purchasable plugins coming later this year): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a></p>
+<h3>Plugin Docs</h3>
+<p>As part of distributing a plugin, you&#8217;ll want to write plugin documentation. To make this as easy as possible, we&#8217;ve created documentation templates that you can fork on Github, each corresponding to the plugin project templates I mentioned earlier:</p>
+<ul>
+<li><a href=https://github.com/coronalabs/plugins-template-library-docs/blob/master/Instructions.markdown>Library Docs &#8211; Template Instructions</a></li>
+<li><a href=https://github.com/coronalabs/plugins-template-shader-docs/blob/master/Instructions.markdown>Shader Effect Docs &#8211; Template Instructions</a></li>
+</ul>
+<p>When you use these doc templates, you get web hosting for free. All you have to do is create a public Github repo and the Github site renders the HTML for you.</p>
+<h3>Useful for personal/private development too</h3>
+<p>We think these project templates should also be used more generally, even if you are just creating Lua modules for your own app or game project.</p>
+<p>When you create a new plugin project, you may notice that the actual plugin files look just like the standard Lua-based module you might write in your own project.</p>
+<p>The differences are merely structural, rather than technical. They may seem small, but over time will help you be more productive, such as being able to test this module separately from your actual Corona app project. That clean separation also means you&#8217;ll be able to use it multiple Corona app projects without worrying about some accidental code dependency being injected.</p>
+<p>And who knows? You might decide to publish this module someday as a plugin on the Corona Store. In that case, there are already scripts that come with the project, ready to package your plugin for submission.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/05/22/writing-plugins-in-pure-lua/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Xcode Requirements: iOS 8.3 + iOS 8.4-beta</title>
+		<link>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/</link>
+		<comments>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/#comments</comments>
+		<pubDate>Wed, 22 Apr 2015 22:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[8.3]]></category>
+		<category><![CDATA[Xcode]]></category>
+
+		<guid isPermaLink="false">/?p=62399</guid>
+		<description><![CDATA[Apple just released iOS 8.3 SDK, so starting in <a href="https://developer.coronalabs.com/downloads/daily-builds">daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default. ]]></description>
+				<content:encoded><![CDATA[<p>Apple just released iOS 8.3 SDK, so starting in <a href=https://developer.coronalabs.com/downloads/daily-builds>daily build</a> 2015.2616, Corona Simulator will target iOS 8.3 by default.</p>
+<p>As always, the target iOS version does not affect backward compatibility. The apps you build with Corona will still be backwards compatible to iOS 6.0.</p>
+<h3>Changes to Xcode Requirements</h3>
+<p>Starting with 2015.2616, Corona Simulator will be more stringent about the version of Xcode you have installed (older versions work like before, in a less stringent manner). In particular, when you select a particular target iOS version, you must have the corresponding version of Xcode installed. For example, if you want to target iOS 8.3, you must install Xcode 6.3 which includes iOS 8.3 SDK.</p>
+<p>We made these changes due to <a href=https://devforums.apple.com/message/1127742>subtle issues</a> that were introduced in Xcode 6.3. To ensure that device builds for iOS 8.3 work properly with plugins, we had to make Corona Simulator more picky about which version of Xcode it uses; otherwise, device builds involving plugins will fail.</p>
+<p>Apple engineers have suggested that this more stringent pairing of iOS SDK version to Xcode version is technically more correct. While Xcode has been more forgiving in the past, we have chosen the more conservative route to minimize chances for future errors that you may encounter.</p>
+<h3>Unsupported Xcode versions</h3>
+<p>The changes we describe simply mean that you&#8217;ll have to download the appropriate version of Xcode whenever Corona Simulator changes its default iOS version target.</p>
+<p>However, if you have a version of Xcode installed that does <strong>not</strong> match what Corona Simulator expects, you can still use it. We call this the &#8220;I&#8217;m feeling lucky&#8221; option. That means, maybe it&#8217;ll work; maybe it won&#8217;t. Either way, you&#8217;re free to try, but you&#8217;re on your own. We won&#8217;t support it.</p>
+<p>In this situation, you will see the following warning dialog. You can still proceed, but you&#8217;ll also see a big <code>"UNSUPPORTED"</code> in the iOS SDK pulldown.</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen-Shot-2015-04-22-at-3.21.22-PM.png alt="Corona Simulator iOS SDK mismatch warning" width="563" height="322" class="aligncenter size-full wp-image-62527" /></a></p>
+<h3>Multiple versions of Xcode</h3>
+<p>Sometimes there are situations where you will want multiple versions of Xcode installed. One reason is that we include access to iOS beta builds, e.g. iOS 8.4-beta is a version you can target in the latest daily build, as shown in the following diagram:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png><img src=/wordpress/wp-content/uploads/2015/04/Screen_Shot_2015-04-20_at_5_19_16_PM.png alt="Corona Simulator Device Build Dialog Xcode 6.3" width="562" height="322" class="aligncenter size-full wp-image-62521" /></a></p>
+<p>In order to access the iOS 8.4-beta target, you must (of course) install that version. You will also need to use <a href=https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcode-select.1.html>xcode-select</a> to ensure that Corona Simulator finds this version of Xcode. You can type <code>xcode-select -p</code> to find out which version of Xcode is currently selected on your system.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/22/xcode-requirements-ios-8-3-ios-8-4-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Custom Shader Effects</title>
+		<link>/blog/2015/04/15/custom-shader-effects/</link>
+		<comments>/blog/2015/04/15/custom-shader-effects/#comments</comments>
+		<pubDate>Wed, 15 Apr 2015 12:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[effects]]></category>
+		<category><![CDATA[glsl]]></category>
+		<category><![CDATA[imaging]]></category>
+		<category><![CDATA[shader]]></category>
+		<category><![CDATA[texture]]></category>
+
+		<guid isPermaLink="false">/?p=62261</guid>
+		<description><![CDATA[One of Corona's <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">major themes</a> for this year was graphics, and in particular, giving you more "under the hood" access to our graphics engine. Starting in daily build 2015.2560, we are giving you the ability to create <a href="http://docs.coronalabs.com/daily/guide/graphics/customEffects.html">custom shader effects</a>.]]></description>
+				<content:encoded><![CDATA[<p>[Update]: Some really cool shaders being shared in the forums <a href=http://forums.coronalabs.com/topic/56284-share-your-shaders/>here</a> and <a href=http://forums.coronalabs.com/topic/56212-corona-shader-playground-from-your-web-browser/?p=290925>here</a>.</p>
+<p>One of Corona&#8217;s <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>major themes</a> for this year was graphics, and in particular, giving you more &#8220;under the hood&#8221; access to our graphics engine.</p>
+<h2>Fragment/Vertex Kernels</h2>
+<p>Starting in daily build 2015.2560, we are giving you the ability to create <a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>custom shader effects</a>. If you&#8217;re familiar with writing shaders in GLSL-ES, then you&#8217;ll feel right at home writing shaders in Corona.</p>
+<p>We&#8217;ve structured things so you don&#8217;t need to write a full shader program. Instead, you write snippets of GLSL-ES shader code that we call kernels. Instead of a full vertex shader program, you write a vertex kernel; instead of a full fragment shader program, you write a fragment kernel.</p>
+<p>This way, you can focus on creating and implementing cool visual effects without worrying about the surrounding scaffolding. In fact, we&#8217;ve used this same exact system for all the <a href=http://docs.coronalabs.com/daily/guide/graphics/effects.html>built-in shader effects</a> in Corona.</p>
+<h2>Web-based Shader Playground</h2>
+<p>To make this even easier, we&#8217;ve created a <a href=https://shader.coronalabs.com/>Corona Shader Playground</a> where you can play/experiment with Corona custom (fragment) shaders right from your browser!</p>
+<p>(NOTE: WebGL is required to see the preview. If your browser doesn&#8217;t have proper support, you will only see code, no preview.)</p>
+<p>Below are some live examples of fragment kernels that you can edit (just click in the code box). The inlined examples we have here are just a partial view into what the playground lets you do — click &#8220;Open in Playground&#8221; and you&#8217;ll get the full experience such as varying parameters, changing textures, etc.</p>
+<p>Here&#8217;s a basic &#8220;Hello World&#8221; fragment shader (WebGL support is required in your browser):</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/color.frag"></div>
+<p>Fragment kernel functions are called for every single pixel to determine the color to &#8220;shade&#8221; the pixel. In the above example, the shader always returns red which is why the entire shape gets colored red. As the comment suggests, try modifying the above code to use a different color and live preview the results.</p>
+<p>Here&#8217;s a slightly more complex shader:</p>
+<div class="shaderCodeAndCanvas" data-vertex="[0.9,0,0,0]" data-shader-file="shaders/simple.frag"></div>
+<p>This example achieves its effect by mapping texture coordinate values to the the &#8220;Red&#8221; and &#8220;Green&#8221; channels and using time to vary the &#8220;Blue&#8221; channel.</p>
+<p>Both of these fragment kernels are examples of generators, because they procedurally generate the texture (no source image textures are used).</p>
+<p>There are more complex shader effect examples in the playground like:</p>
+<ul>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/plasma.frag&[16,16,0.0,0.0]>plasma generator</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/bulge.frag&textures/512/checkerboard-diffuse.jpg&[0.25,0.0,0.0,0.0]>bulge image filter</a></li>
+<li>a <a href=https://shader.coronalabs.com/?#shaders/moon.frag&textures/512/moon-diffuse.jpg&%5B0.005,0.01,-0.3,1.5%5D>rotating moon effect</a> (Lua means &#8220;moon&#8221; in Portuguese).</li>
+</ul>
+<h2>Resources</h2>
+<p>Ready to start playing? Here&#8217;s everything you need to get going:</p>
+<ul>
+<li><a href=http://docs.coronalabs.com/daily/guide/graphics/customEffects.html>Custom Shader Effects Guide</a></li>
+<li><a href=https://shader.coronalabs.com/>WebGL-based Shader Playground</a></li>
+<li><a href=https://github.com/coronalabs/sample-customFilter>Sample Corona Project</a></li>
+<li><a href=http://forums.coronalabs.com/forum/647-custom-shader-effects/>Forum</a></li>
+</ul>
+<p><script>
+    var script = document.createElement('script');
+    script.src = "//shader.coronalabs.com/src/inject-shader.js";
+    document.head.appendChild(script);
+</script></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/15/custom-shader-effects/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Open Source Plugins and (coming soon) Corona Store</title>
+		<link>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/</link>
+		<comments>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/#comments</comments>
+		<pubDate>Wed, 01 Apr 2015 19:35:15 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Sample Code]]></category>
+		<category><![CDATA[store]]></category>
+
+		<guid isPermaLink="false">/?p=61943</guid>
+		<description><![CDATA[At the end of January, I talked about wanting to make <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">plugins more open</a>.
+
+Today, we're doing two things to make that happen.]]></description>
+				<content:encoded><![CDATA[<p>At the end of January, I talked about wanting to make <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>.</p>
+<p>Today, we&#8217;re doing two things to make that happen:</p>
+<h3>Open Source Plugins</h3>
+<p>First, we are open sourcing <a href=https://github.com/coronalabs/plugins-source>Corona plugins on github</a>!</p>
+<p>These plugin projects are real-world examples of <a href=/products/enterprise/>CoronaEnterprise</a> projects. They come straight out of the <a href=https://store.coronalabs.com/plugins>Corona plugin directory</a>, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#8217;s <a href=http://docs.coronalabs.com/native/index.html>native APIs</a> to extend Corona&#8217;s core functionality.</p>
+<h3>Corona Store</h3>
+<p>Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free.</p>
+<p>The grand opening won&#8217;t happen until later this year, but we are accepting applications for <em>free</em> plugins (you can start charging for it after the grand opening): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a>.</p>
+<p>Also, if you have ideas or are looking for ideas, here&#8217;s a couple of resources that will be helpful:</p>
+<ol>
+<li>We are making extended CoronaEnterprise trials available for plugin developers. E-mail <code>enterprise at coronalabs dot com</code>.</li>
+<li>Lots of real-world examples of <a href=https://github.com/coronalabs/plugins-source>Corona plugins</a> available under the MIT license.</li>
+<li>A list of <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback?query=%5BPLUGIN%5D>feature requests</a> that could be implemented as plugins.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/feed/</wfw:commentRss>
+		<slash:comments>28</slash:comments>
+		</item>
+		<item>
+		<title>Corona SDK is now Free + Mac/Win Desktop Apps + GDC</title>
+		<link>/blog/2015/03/02/corona-sdk-is-now-free/</link>
+		<comments>/blog/2015/03/02/corona-sdk-is-now-free/#comments</comments>
+		<pubDate>Mon, 02 Mar 2015 16:00:49 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[App Monetization]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[gdc]]></category>
+		<category><![CDATA[Mac app]]></category>
+		<category><![CDATA[Win app]]></category>
+
+		<guid isPermaLink="false">/?p=61617</guid>
+		<description><![CDATA[We have to big announcements! Corona SDK is now completely free, and Mac and Win32 desktop apps are coming soon. Read on for all the details.]]></description>
+				<content:encoded><![CDATA[<p>This week, to coincide with GDC, we&#8217;re making some very exciting announcements!</p>
+<h3>Corona SDK is completely FREE</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/free.png><img src=/wordpress/wp-content/uploads/2015/02/free.png alt="free" width="150" height="150" class="alignright size-full wp-image-61628" /></a>First, Corona SDK is now <a href=/pricing target="_blank">completely free</a>! Starting today, anyone who registers on our site will get the full power of Corona SDK (existing users can just logout and then re-login to the Corona Simulator).</p>
+<p>Previously, you had to pay to get access to things like daily builds, in-app purchases, premium graphics, Pro-tier plugins, Windows Phone 8, etc. — now, everyone will get those for free. If you&#8217;re familiar with the old subscription tiers for Corona SDK (Starter, Basic, and Pro), everyone will now get the functionality that was available in Pro. There is now a single &#8220;Corona SDK&#8221; — one tier to rule them all.</p>
+<p>It is worth noting that Corona Enterprise, CoronaCards iOS, and CoronaCards Android will continue to be paid products.</p>
+<p>If you&#8217;re an <strong>existing subscriber</strong> — Basic, Pro, or Enterprise — see <a href="#Subscriber-Upgrades">Free Upgrades for Subscribers</a> at the bottom of this post to learn about some great upgrades.</p>
+<h3>Mac App and Win32 App support</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/Mac-Win.png><img src=/wordpress/wp-content/uploads/2015/02/Mac-Win.png alt="Mac+Win" width="168" height="76" class="alignright size-full wp-image-61620" /></a>In my <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>State of Corona</a> address, I mentioned new platforms as a major theme for 2015 and our strategy to make it happen.</p>
+<p>And that brings us to our second major announcement: We are bringing Mac App and Win32 App support to the Corona platform!</p>
+<p>Yes, you read that right.</p>
+<p>We are going to make it incredibly easy for you to create apps that run everywhere — from desktop computers to mobile devices!</p>
+<p>Currently, we are in the early stages. Our next milestone is to be able to package this up into a form that can be shared in a beta. More on this soon.</p>
+<p>But we have some demos: come by the Fuse Powered/Corona Labs booth at the GDC Expo (Booth 1244, South Hall) this week if you&#8217;d like to see a few really great Corona apps running on desktop computers — as apps! We&#8217;ll also publish some videos of these here on the blog very soon.</p>
+<h3>Fuse Powered monetization</h3>
+<p><a href=/wordpress/wp-content/uploads/2015/02/treasure-chest.jpg><img src="/wordpress/wp-content/uploads/2015/02/treasure-chest-300x188.jpg" alt="treasure-chest" width="300" height="188" class="alignright size-medium wp-image-61622" /></a>Finally, our parent company, <a href=http://fusepowered.com/>Fuse Powered</a>, is taking monetization to a whole new level with a its player-centric monetization engine. See some <a href=http://venturebeat.com/2015/02/24/fuse-powered-launches-player-centric-mobile-monetization-engine/ target="_blank">recent coverage in VentureBeat</a>.</p>
+<p>With this engine, you&#8217;ll be able to do 3 things. First, you&#8217;ll be able to analyze your players, and make meaningful conclusions from their in-game behavior. Next, you&#8217;ll be able to segment them based on these behaviors and figure out the most relevant offer to show them. Finally, you&#8217;ll be able to deliver targeted IAP offers, dynamic rewarded video, and ads.</p>
+<p>On top of it all, you&#8217;ll also be able to mediate your own ad networks and leverage AdRally, Fuse’s competitive ad marketplace.</p>
+<p>There&#8217;s nothing on the market like this today, and it all translates into helping you make significantly more money!</p>
+<p>While select Corona developers are already in private beta with Fuse Powered, we are working hard to nail down all the moving parts — there are a lot of them. Rest assured, we want to get this into your hands as quickly as possible.</p>
+<p>If you&#8217;d like to learn more, come to Jon&#8217;s session at GDC on Tuesday, Mar 3: <a href=http://schedule.gdconf.com/session/player-centric-live-ops-monetization-presented-by-fuse-powered-inc>Player Centric Live Ops Monetization</a>.</p>
+<p>Or come by the Fuse Powered/Corona Labs booth at the GDC Expo (Booth 1244, South Hall).</p>
+<p><a name="Subscriber-Upgrades"></a></p>
+<h3>Free Upgrades for Subscribers</h3>
+<p>Now that Corona is free, we do realize there are many of you that have bought/renewed your Corona subscriptions recently and we want to make sure we take care of you. If you were an existing Basic, Pro, or Enterprise customer as of this morning, we&#8217;re going to give you some amazing, free upgrades:</p>
+<ol>
+<li>Current Corona Enterprise customers get CoronaCards iOS and CoronaCards Android licenses (1 month for each month you have left).</li>
+<li>Current Corona SDK Pro customers have been upgraded to Corona Enterprise (1.5 months for each month you have left) and will also get CoronaCards iOS/Android.</li>
+<li>Current Basic customers have been upgraded to Corona Enterprise (1 month for each month you have left) and will also get CoronaCards iOS/Android.</li>
+</ol>
+<p>All these upgrades should be in place NOW, but it&#8217;s possible some of you may have to wait a day or so to see the full upgrade.</p>
+<p>However, if you&#8217;re a Basic or Pro customer <strong>who bought in 2015 (Jan 1, 2015 or after)</strong>, and you do <strong>not</strong> want these upgrades, you can request a <em>pro-rated</em> refund. Email us at refund@coronalabs.com by Mar 15, 2015 11:59pm PST. If you meet the conditions, we will issue a refund within a few days.</p>
+<p>If you have any questions, please review <a href=/frequently-asked-questions/?#what-does-it-mean-that-corona-sdk-is-now-free>the FAQs</a>. If you still have questions or want to discuss, feel free to post in <a href=http://forums.coronalabs.com/topic/54933-corona-sdk-is-now-free/>this thread in the forum</a> and we will do our best to make it all clear!</p>
+<hr />
+<p>We are super excited about making Corona SDK free and opening it up to an even bigger worldwide developer community. This, together with our expanded platform coverage and the work we are doing with Fuse Powered is making for the start of a great year!</p>
+<p>And, as always, we want to thank all our developers for using Corona and for making some amazing things with the Corona platform!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/03/02/corona-sdk-is-now-free/feed/</wfw:commentRss>
+		<slash:comments>123</slash:comments>
+		</item>
+	</channel>
+</rss>

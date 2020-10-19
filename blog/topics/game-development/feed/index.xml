@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Game Development &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/game-development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Game Development &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A different approach to game difficulty</title>
+		<link>/blog/2018/10/25/a-different-approach-to-game-difficulty/</link>
+		<pubDate>Thu, 25 Oct 2018 20:37:59 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=76048</guid>
+		<description><![CDATA[Trying to find the right balance of ease vs. difficulty in your game? This blog might help you understand the problem better.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-76049" src="/wordpress/wp-content/uploads/2018/10/Difficulty-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/10/Difficulty-150x150.png 150w, /wordpress/wp-content/uploads/2018/10/Difficulty-300x300.png 300w, /wordpress/wp-content/uploads/2018/10/Difficulty-500x500.png 500w, /wordpress/wp-content/uploads/2018/10/Difficulty-125x125.png 125w, /wordpress/wp-content/uploads/2018/10/Difficulty.png 512w" sizes="(max-width: 150px) 100vw, 150px" />The concept of game difficulty is always a challenge for developers. Games that are too easy won&#8217;t get played. Games that are too hard will frustrate the users and they will quit. You have to find that right balance of difficulty where the player feels challenged yet feels as if they are progressing.</p>
+<p>To compound matters, no two players are the same. Some need an easier game, others need a lot more challenge. How do you strike that balance? Alex Vu, pixel artist and game designer working for Fine Monkeys, LLC has contemplated the problem, and discusses some solutions in his blog post <em><a href=http://www.gamasutra.com/blogs/AlexVu/20181023/329199/A_Different_Approach_to_Difficulty.php target="_blank" rel="noopener">A Different Approach to Difficulty</a></em>.</p>
+<p>In this post, he talks about the problems with simple difficulty modes as well as Dynamic Difficulty Adjustment (DDA) and offers a deep dive into Organic Difficulty and Effectiveness-Ludoaesthetics Spectrum. This advice might just make your game more interesting to your players.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://www.gamasutra.com/blogs/AlexVu/20181023/329199/A_Different_Approach_to_Difficulty.php target="_blank" rel="noopener">Read: A Different Approach to Difficulty</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>New Google Play Games Services plugin</title>
+		<link>/blog/2018/10/04/new-google-play-games-services-plugin/</link>
+		<pubDate>Thu, 04 Oct 2018 14:50:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76037</guid>
+		<description><![CDATA[There is an updated version of the Google Play Games Services (GPGS) plugin. Learn more about this plugin and if you should update to it.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-72174" src="/wordpress/wp-content/uploads/2017/06/google-play-badge.png" alt="" width="200" height="200" srcset="/wordpress/wp-content/uploads/2017/06/google-play-badge.png 200w, /wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />Corona Labs is pleased to announce the immediate availability of a new, updated Google Play Games Services plugin. This plugin in a complete rewrite of the version one of the plugin using the latest GPGS core libraries and dependencies.</p>
+<p>One of the key reasons for the GPGS v2 plugin, besides staying with modern underlying SDK&#8217;s is support for preventing Google rejections for using <em>invalid login scopes</em>. The previous version of the underlying GPGS SDK contained Google Plus login scope which has been deprecated. The new version has this removed.</p>
+<p>The GPGS v2 plugin should be a drop in replacement for the GPGS v1 plugin. First, visit the Marketplace and <a href=https://marketplace.coronalabs.com/corona-plugins/google-play-games-services-v2 target="_blank" rel="noopener">activate the plugin</a>, then simply update your build.settings to include the plugin using:</p><pre class="crayon-plain-tag">settings = {
+    plugins = {
+        ["plugin.gpgs.v2"] = {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { ["android"] = true, }
+        }
+    }
+}</pre><p>And where you require the plugin in your lua code:</p><pre class="crayon-plain-tag">local gpgs = require( "plugin.gpgs.v2" )</pre><p>This is a completely new version of the plugin and you should fully test your app against the code. If you have questions about the new plugin, please check out <a href=http://docs.coronalabs.com/plugin/gpgs-v2/index.html target="_blank" rel="noopener">our documentation</a>. Join us in the <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">community forums</a> to discuss this new plugin.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The struggle of retention with casual games</title>
+		<link>/blog/2018/09/12/the-struggle-of-retention-with-casual-games/</link>
+		<pubDate>Wed, 12 Sep 2018 23:33:17 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75995</guid>
+		<description><![CDATA[Keeping users engaged in casual games can be a challenge. Perhaps this blog post can lead you to some inspiration on how to improve your app retention.]]></description>
+				<content:encoded><![CDATA[<p>One of the struggles with building simple &#8220;casual&#8221; free-to-play (F2P) games is how to keep the player engaged and playing for the long term. Having a lot of initial downloads is great, but you need the app users to keep playing your game so they engage with your advertising and take advantage of your in-app purchases.</p>
+<p>In <a href=http://www.gamasutra.com/blogs/JoshBycer/20180906/325959/How_Free_to_Play_Design_Runs_out_of_Steam.php target="_blank" rel="noopener">this blog post</a> by <a href=http://www.gamasutra.com/blogs/author/JoshBycer/823287/ target="_blank" rel="noopener">Josh Bycer</a>, he discusses the problems with short game-play loop games and how late game play turns into a painful grind to keep income coming in and how more complex games address additional content.</p>
+<p>Factoring these issues into your game design can go a long way to helping you build more sustainable games.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://www.gamasutra.com/blogs/JoshBycer/20180906/325959/How_Free_to_Play_Design_Runs_out_of_Steam.php target="_blank" rel="noopener">Click here to read: How Free to Play Design Runs out of Steam</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Finding playtesters for your game</title>
+		<link>/blog/2018/09/05/finding-playtesters-for-your-game/</link>
+		<pubDate>Wed, 05 Sep 2018 20:29:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75988</guid>
+		<description><![CDATA[We all want our games to be fun. But how do we assure that our games are fun? Learn more about using playtesting to achieve your goal.]]></description>
+				<content:encoded><![CDATA[<p>One of the challenges in building successful games comes down to one simple, but hard to answer question: Is it fun? We all need to know that answer. Compounding the problem is the fact that what you might find as fun, someone else may not enjoy.</p>
+<p>In <a href=http://www.gamasutra.com/blogs/JoostVanDongen/20180904/325770/The_challenge_of_finding_enough_playtesters.php target="_blank" rel="noopener">this blog post</a> by Joost van Dongen, a lead programmer and co-founder of<a href=http://www.ronimo-games.com/ target="_blank" rel="noopener"> Ronimo Games</a>, talks about how they go about finding playtesters for their games. He also discusses the differences between QA (Quality Assurance) and playtesting.</p>
+<p>Fun games lead to more successful games. How do you find playtesters? Let&#8217;s discuss playtesting further in the <a href=https://forums.coronalabs.com/topic/73771-from-the-blog-finding-playtesters-for-your-game/ target="_blank" rel="noopener">Corona community forums</a>!</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://www.gamasutra.com/blogs/JoostVanDongen/20180904/325770/The_challenge_of_finding_enough_playtesters.php target="_blank" rel="noopener">Click here to read: The challenge of finding enough playtesters</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The 10 secrets to indie game success</title>
+		<link>/blog/2018/08/29/the-10-secrets-to-indie-game-success/</link>
+		<pubDate>Thu, 30 Aug 2018 00:11:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Business of Apps]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75972</guid>
+		<description><![CDATA[So you want to be a successful indie game developer? Perhaps these 10 ideas might help you get there.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-14747" src="/wordpress/wp-content/uploads/2012/04/goldmedal-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2012/04/goldmedal-150x150.png 150w, /wordpress/wp-content/uploads/2012/04/goldmedal.png 300w" sizes="(max-width: 150px) 100vw, 150px" />We all want to make successful apps, but how do we get there? There are many different ideas of how to reach success and many different ways to get there, but it&#8217;s a challenging path. Think about <em>Fortnite&#8217;s</em> &#8220;Battle Royale&#8221; format. You start with 100 players and at the end only one person has climbed to the top and can claim &#8220;Victory Royale&#8221;.  Now imagine that but on a much grander scale.</p>
+<p>Your indie title is competing against thousands of other indie titles and of course the &#8220;pro&#8221; AAA titles that come out as well.  Luck will sometimes favor you to the top. Hard work will sometimes propel you and other times it&#8217;s perseverance.</p>
+<p>There are plenty of things for you to think about. <a href=http://www.gamasutra.com/blogs/author/PaulKilduffTaylor/764975/ target="_blank" rel="noopener">Paul Taylor</a>, the Joint Managing Director of Mode 7 Games, an indie studio based in Oxford, UK provides ten things for you to think about as you start building your next Indie title. Read over <a href=http://www.gamasutra.com/blogs/PaulKilduffTaylor/20180824/325218/The_10_Secrets_to_Indie_Game_Success_and_Why_They_Do_Not_Exist.php target="_blank" rel="noopener">this blog post</a> which just might be the key to your next hit.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://www.gamasutra.com/blogs/PaulKilduffTaylor/20180824/325218/The_10_Secrets_to_Indie_Game_Success_and_Why_They_Do_Not_Exist.php target="_blank" rel="noopener">Click here to read: The 10 Secrets to Indie Game Success </a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Building in-game tutorials</title>
+		<link>/blog/2018/08/24/building-in-game-tutorials/</link>
+		<pubDate>Fri, 24 Aug 2018 23:14:29 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75968</guid>
+		<description><![CDATA[Do you need to implement a tutorial in your game? Here's some great advice to get you going.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75821" src="/wordpress/wp-content/uploads/2018/06/corona_education_logo-1-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/06/corona_education_logo-1-150x150.png 150w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-300x300.png 300w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-768x768.png 768w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-570x570.png 570w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-500x500.png 500w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-700x700.png 700w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1-125x125.png 125w, /wordpress/wp-content/uploads/2018/06/corona_education_logo-1.png 917w" sizes="(max-width: 150px) 100vw, 150px" />Some game designs make it obvious as to how you should play. Some games are so complex the entire game may feel like it needs a constant guide to play. But in most guides a simpler tutorial is usually called for.</p>
+<p>The staff at <a href=https://gamecareerguide.com/ target="_blank" rel="noopener">Game Career Guide</a> has produced a handy tutorial guiding you through some basics on building effective tutorials for your games.  They offer six concepts that can make your in-game tutorials more effective for your players.  Head on over to <a href=https://gamecareerguide.com/features/1744/6_tips_for_designing_a_game_.php target="_blank" rel="noopener">their tutorial</a> to get this great advice.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://gamecareerguide.com/features/1744/6_tips_for_designing_a_game_.php target="_blank" rel="noopener">Read Tutorial</a></p>
+</div>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Understanding Content Scaling in Corona</title>
+		<link>/blog/2018/08/08/understanding-content-scaling-in-corona/</link>
+		<pubDate>Wed, 08 Aug 2018 22:18:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=75928</guid>
+		<description><![CDATA[Tired of black bars on the sides of your app? Struggling with positioning objects? A better understanding of Corona's content scaling may help!]]></description>
+				<content:encoded><![CDATA[<p><a href=https://docs.coronalabs.com/guide/basics/configSettings/index.html?#contentscaling target="_blank" rel="noopener">Content scaling</a> can be a mystery even for some seasoned developers. Let&#8217;s try to demystify it.</p>
+<p>First, forget pixels. You are going to create a virtual content area that is measured in values that make sense for you to use. Your content area could be 1 x 1 if you want. Of course to position something on the screen you would need to use fractional values, which is probably pretty inconvenient. You could match your content area to some device standards like a width of 1080 and a height of 1920. This would provide a 1 to 1 mapping to the typical HDTV screen or computer monitor which also happens to be a common device resolution for many modern phones. This is all defined in the <a href=https://docs.coronalabs.com/guide/basics/configSettings/index.html target="_blank" rel="noopener">config.lua</a> file.</p>
+<h3><code>config.lua</code> is always written assuming a portrait orientation</h3>
+<p>That is, your width should always be the smaller value and the height the larger value that you specify, even if your game/app is going to run in landscape mode.</p>
+<h3>Aspect ratios</h3>
+<p>You shouldn&#8217;t care about pixels. Corona converts your &#8220;<strong>content area points</strong>&#8221; to pixels for you. You only need to care about what number of points you want to work with. However, aspect ratio matters. If you set your width and height to both be 1000, then you have a 1:1 aspect ratio, the width and height are the same. If you set your width to 1000 and height to 1500 then you have a 1:1.5 aspect ratio.</p>
+<h3>There are many standard aspect ratios that are common among displays:</h3>
+<p><strong>1:1.5</strong> &#8211; Common to the iPhone 3 and 4 family, cameras produce 4&#215;6 photos (which is 2:3 or 1:1.5), some laptop screens are 1:1.5 as well.</p>
+<p><strong>3:4</strong> &#8211; Common to Standard def TV and computer monitors such as 1024&#215;768, the Apple iPad and several Android tablets. This is also 1:1.33.</p>
+<p><strong>16:9</strong> &#8211; This is the HDTV standard or 720p (1280&#215;720) or 1080p (1920&#215;1080). This is very common to many modern phones too. This works out to 1:1.777778 if you want to measure it based on a 1 point scale.</p>
+<h3>Which aspect ratio should you use?</h3>
+<p>Corona Labs recommends that you use the 2:3 or 1:1.5 aspect ratio. While this is common on older phones, using 16:9 may make more sense, however if you want to build apps that work both on more square iPads/tablets as well as more rectangular 16:9 or more extreme devices, the 1:1.5 aspect ratio fits nicely on all devices. Of course this means that you&#8217;re going to have extra screen space to use that is outside of your defined content area.</p>
+<p>It&#8217;s important to point out there is no &#8220;perfect&#8221; or &#8220;right&#8221; way to define the content area. You need to use what works for you and it may vary from app to app. This is recommended because it fits on all screens.</p>
+<p>In the graphic below, green is your defined content area in <code>config.lua</code> (based on a 1:1.5 aspect ratio). Blue is the typical 16:9 device, pink is the typical iPad/tablet.</p>
+<p><img class="alignnone size-large wp-image-75929" src="/wordpress/wp-content/uploads/2018/08/apspectratios-1024x768.jpg" alt="" width="1024" height="768" srcset="/wordpress/wp-content/uploads/2018/08/apspectratios.jpg 1024w, /wordpress/wp-content/uploads/2018/08/apspectratios-300x225.jpg 300w, /wordpress/wp-content/uploads/2018/08/apspectratios-768x576.jpg 768w, /wordpress/wp-content/uploads/2018/08/apspectratios-800x600.jpg 800w, /wordpress/wp-content/uploads/2018/08/apspectratios-700x525.jpg 700w, /wordpress/wp-content/uploads/2018/08/apspectratios-125x94.jpg 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<h3>Does width and height matter?</h3>
+<p>You should use what works best for you. But you will see that many Corona-produced samples seem to be stuck on an archaic <strong>320</strong> width and <strong>480</strong> height setting. This has not been a pixel match to any device since the iPhone 3 which makes it very old indeed. However, Apple still measures everything in points and they are using a 320 point base system. Android devices are based off of a 160dpi system so a 2&#8243; widescreen, common to phones would be 320 as well. Finally Corona&#8217;s widget library is based on a 320 point system and many of the widgets are not designed to work with arbitrary sizes, so we continue to use 320&#215;480. You should use what&#8217;s right for you, but 320&#215;480 is a pretty good standard to base your app on.</p>
+<h3>Aligning the content area</h3>
+<p>By default, Corona will center your content area on the screen for you. This is the common use case for most games. You can use the <code>xAlign</code> and <code>yAlign</code> properties to change the default. For instance, if you&#8217;re making a portrait business app, it might make more sense for the very left, top spot on the screen be 0, 0 and you fill content down the page. These apps don&#8217;t do a lot of centering and having left, top be 0, 0 and right, bottom be <a href=https://docs.coronalabs.com/api/library/display/actualContentWidth.html target="_blank" rel="noopener">display.actualContentWidth</a>, <a href=https://docs.coronalabs.com/api/library/display/actualContentHeight.html target="_blank" rel="noopener">display.actualContentHeight</a> makes that simple.</p>
+<p>Games come in two basic configurations:</p>
+<ol>
+<li>Objects have to be the same distance apart regardless of the screen. Think about Angry Birds. The distance from the sling shot to the structure has to be the same on every device for the gameplay to be consistent. Space to the left of the sling shot or to the right of the structure is just filler. In this scenario having a centered content area makes sense.</li>
+<li>Objects should fill the screen and spacing isn&#8217;t critical. Think of a card game. The stacks of cards look best when they are spread out to fill the screen. In this case, you may want to left-align the content area and use <a href=https://docs.coronalabs.com/api/library/display/actualContentWidth.html target="_blank" rel="noopener">display.actualContentWidth</a> to determine how to balance your card stacks out.</li>
+</ol>
+<h4>Corona&#8217;s display attributes</h4>
+<p>There are several important values you can get in your Corona app based on your settings in config.lua:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/api/library/display/contentWidth.html target="_blank" rel="noopener">display.contentWidth</a> = the value you set for &#8220;width&#8221; in <code>config.lua</code></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/contentHeight.html target="_blank" rel="noopener">display.contentHeight</a> = the value you set for &#8220;height&#8221; in <code>config.lua</code></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/actualContentHeight.html target="_blank" rel="noopener">display.actualContentHeight</a> = a computed value based on your width/height but adjusted for your screen&#8217;s aspect ratio. For instance if your portrait app has a height of 480, but you&#8217;re on a 16:9 device, <code>display.actualContentHeight</code> would be 568 (16/9 * 320)</li>
+<li><a href=https://docs.coronalabs.com/api/library/display/actualContentWidth.html target="_blank" rel="noopener">display.actualContentWidth</a> = a computed value based on your width/height but adjusted for the screen&#8217;s aspect ratio. For instance an iPad would return 360 for a portrait app (3 / 4 * 480)</li>
+<li><a href=https://docs.coronalabs.com/api/library/display/screenOriginX.html target="_blank" rel="noopener">display.screenOriginX</a>, <a href=https://docs.coronalabs.com/api/library/display/screenOriginY.html target="_blank" rel="noopener">display.screenOriginY</a> = for a centered content area and a bigger screen, some of the extra area will be to the left or to the top of the content area. These values provide you that offset</li>
+</ul>
+<p>These values are important for positioning their objects around the edges of your screen or to fill your screen.</p>
+<p>Consider this image:</p>
+<p><img class="alignnone size-large wp-image-75931" src="/wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-1024x685.jpg" alt="" width="1024" height="685" srcset="/wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-1024x685.jpg 1024w, /wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-300x201.jpg 300w, /wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-768x514.jpg 768w, /wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-700x468.jpg 700w, /wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations-125x84.jpg 125w, /wordpress/wp-content/uploads/2018/08/apspectratiosWithAnnotations.jpg 1148w" sizes="(max-width: 1024px) 100vw, 1024px" />Given this config.lua:</p><pre class="crayon-plain-tag">application =
+{
+    content =
+    {
+        width = 320,
+        height = 480,
+        scale = "letterbox",
+        fps = 60,
+    },
+}</pre><p>You are creating a centered content area (the green block). The blue area would be the typical 16:9 phone such as an iPhone 5 family. We will discuss the yellow block in a little bit.</p>
+<p>0, 0 is the left, top corner of your defined content area. Your right, bottom corner is <code>display.contentWidth</code>, <code>display.contentHeight</code>. Both of these are exactly what you specified in <code>config.lua</code>. Corona will fill the screen either vertically or horizontally depending on the aspect ratio of the device. For phones, the 320 will fill the narrow width of the device. For tablets, the 480 will fill the device. The other value is computed based on the actual device. These values then become <code>display.actualContentWidth</code> and <code>display.actualContentHeight</code>.</p>
+<p>Corona also automatically adjusts these values based on your device&#8217;s orientation. The <code>config.lua</code> is always written for portrait, so on a portrait app, 320 width will be 320 (or 360 for iPads). If you rotate the device, the narrow edge of the phone is now the height instead of the width. Corona adjusts these attributes to match the orientation automatically.</p>
+<p>Back to the graphic above, you will notice that there are blue areas on the left and right of the display. That&#8217;s because the content area is 480 points, but the actual screen is 568 points, an 88 point difference. Since the area is centered, that means there are 44 points left of 0, 0 and 44 points of screen to the right of your defined height.</p>
+<p>Corona makes getting the left edge in this case very easy. The <code>display.screenOriginX</code> will in this case be -44 and <code>display.screenOriginY</code> will be 0. Flip the device to portrait and <code>display.screenOriginY</code> would be -44 and <code>display.screenOriginX</code> would be 0. If you want to position a button in the left, top of the display 25 points from the edge, you could do:</p><pre class="crayon-plain-tag">button.x = 25 + display.screenOriginX
+button.y = 25 + display.screenOriginY</pre><p>Getting to the right side in this example is a little bit tricker. While <code>display.actualContentWidth</code> will return 568, which is the actual width of the content area, with the content area being centered, it will be 44 pixels too far to the right. To position a button at the right, bottom, you still have to use the <code>display.screenOrigin*</code> values:</p><pre class="crayon-plain-tag">button.x = display.actualContentWidth - 25 + display.screenOriginX
+button.y = display.actualContentHeight - 25 + display.screenOriginY</pre><p>For your game critical items that need to be at predictable distances for each other, keep them inside the 0, 0 and <code>display.contentWidth</code>, <code>display.contentHeight</code> area and it will work on all devices. Then you can fill the background to fill the full screen and edge position scores, lives, User Interface (UI) buttons and such so they also fill the screen.</p>
+<h3>iPhone X weirdness</h3>
+<p>Apple introduced some features with the iPhone X that makes laying out your app a bit of a challenge. Corona has some alternate versions of <code>display.screenOriginX</code>, <code>display.screenOriginY</code>, <code>display.actualContentWidth</code>, <code>display.actualContentHeight</code> that takes these changes into account. If you plan on supporting the iPhone X, you should use <a href=https://docs.coronalabs.com/api/library/display/safeScreenOriginX.html target="_blank" rel="noopener">display.safeScreenOriginX</a>, <a href=https://docs.coronalabs.com/api/library/display/screenOriginY.html target="_blank" rel="noopener">display.safeScreenOriginY</a>, <a href=https://docs.coronalabs.com/api/library/display/safeActualContentWidth.html target="_blank" rel="noopener">display.safeActualContentWidth</a>, and <a href=https://docs.coronalabs.com/api/library/display/safeActualContentHeight.html target="_blank" rel="noopener">display.safeActualContentHeight</a> for positioning UI elements into the safe zone. But you should still use the non-safe versions for filling the background.</p>
+<h3>Filling the background</h3>
+<p>Consider this game&#8217;s UI:</p>
+<p><img class="alignnone size-large wp-image-75933" src="/wordpress/wp-content/uploads/2018/08/gameUI-1024x577.jpg" alt="" width="1024" height="577" srcset="/wordpress/wp-content/uploads/2018/08/gameUI.jpg 1024w, /wordpress/wp-content/uploads/2018/08/gameUI-300x169.jpg 300w, /wordpress/wp-content/uploads/2018/08/gameUI-768x433.jpg 768w, /wordpress/wp-content/uploads/2018/08/gameUI-700x394.jpg 700w, /wordpress/wp-content/uploads/2018/08/gameUI-539x303.jpg 539w, /wordpress/wp-content/uploads/2018/08/gameUI-125x70.jpg 125w" sizes="(max-width: 1024px) 100vw, 1024px" />This simple interface has a health indicator, lives indicator, score indicator and some other buttons along the bottom edge. The red ship is inside the <code>config.lua's</code> defined content area.</p>
+<p>When making your background, you want to try and use graphics that can extend beyond the screen edges. Then for the UI elements, don&#8217;t build them into the background, but have them be their own graphics so they can be edge positioned to fill the visible screen. Then you can draw your hearts, bars and score values inside those graphics.</p>
+<p>Before Samsung came out with the S8 and S9 and Apple the iPhone X, the most extreme screen was the 16:9 screens and the iPads (in the other direction). This made it a very easy formula for filling the background. Based on a 320&#215;480 content area, you would want your backgrounds to be 360&#215;570 for portrait or 570&#215;360 for landscape. Center it on the screen and you would have no black &#8220;<code>letterbox</code>&#8221; bars to contend with. The S8 and S8 are a 1:2 aspect ratio which means your backgrounds need to be 640&#215;360 to fully fill the screen. Then Apple went even more extreme with the iPhone X and its 19.5:9 aspect ratio (a 1:2.1666667 screen). You will need a 694 pixel wide image to fill the background on this device.</p>
+<p>Hopefully this will help you understand the config.lua a little better and propel you to success in your next <a href=https://twitter.com/search?q=%23madewithcorona target="_blank" rel="noopener">#madewithcorona</a> app!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Cost-effective QA for your mobile games</title>
+		<link>/blog/2018/08/07/cost-effective-qa-for-your-mobile-games/</link>
+		<pubDate>Tue, 07 Aug 2018 22:31:47 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75925</guid>
+		<description><![CDATA[Everyone wants to release great, successful games and apps. Learn some great testing strategies to help you be successful.]]></description>
+				<content:encoded><![CDATA[<p>Everyone loves 5-star ratings for their apps and games and hates getting 1-star ratings. Bad ratings and reviews are a death sentence for a new game. One way to help prevent these bad ratings is to thoroughly test your app. Many new developers are in such a rush to get published, they don&#8217;t spend as much time testing their apps as they should.</p>
+<p>In <a href=http://gamasutra.com/blogs/KaushalSingh/20180806/323599/How_to_do_costeffective_QA_for_your_Mobile_Games.php target="_blank" rel="noopener">this blog post</a> by <a href=http://gamasutra.com/blogs/author/KaushalSingh/1025309/ target="_blank" rel="noopener">Kaushal Singh</a>, a QA manager at Keywords Studios, he goes over basic testing strategies you should employee during your development. It covers testing that should be done during various development and release states before you make your game public.</p>
+<p>Hopefully, armed with this information you can improve your app testing which will result in higher rankings and your success.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=http://gamasutra.com/blogs/KaushalSingh/20180806/323599/How_to_do_costeffective_QA_for_your_Mobile_Games.php target="_blank" rel="noopener">Read the post</a></p>
+</div>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Game design: Adding consistency to your games</title>
+		<link>/blog/2018/07/26/game-design-adding-consistency-to-your-games/</link>
+		<pubDate>Thu, 26 Jul 2018 16:42:59 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=75910</guid>
+		<description><![CDATA[When designing games, there are many things to consider. One item is consistency. Learn more about how this concept is important to the games you make.]]></description>
+				<content:encoded><![CDATA[<div id="attachment_75912" style="width: 160px" class="wp-caption alignright"><img class="size-thumbnail wp-image-75912" src="/wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-150x150.jpg" alt="Game Design" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-150x150.jpg 150w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-300x300.jpg 300w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-768x768.jpg 768w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-1024x1024.jpg 1024w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-570x570.jpg 570w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-500x500.jpg 500w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-1000x1000.jpg 1000w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-700x700.jpg 700w, /wordpress/wp-content/uploads/2018/07/327228-P9WQO9-378-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" /><p class="wp-caption-text"><a href=https://www.freepik.com/free-vector/games-word-concept_2453836.htm>Designed by Freepik</a></p></div>
+<p>Corona is of course popular for making 2D games. But it takes more than a great engine and a great idea to be successful. There is a lot that&#8217;s needed to bring that great idea to a complete product that will be well received by your audience.</p>
+<p>In this <a href=http://www.gamasutra.com/blogs/RichardAtlas/20180722/322637/Is_Anything_More_Important_Than_a_Games_Consistency.php target="_blank" rel="noopener">blog post on Gamasutra</a>, <a href=http://www.gamasutra.com/blogs/author/RichardAtlas/995937/ target="_blank" rel="noopener">Richard Atlas</a>, dives into the concept of consistency. Consistency comes in many forms from marketing consistency to the expectations of genre pieces.</p>
+<p>Perhaps some of this advice will help you make the next rockstar game that brings you fame and fortune.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Ludum Dare 40 starts this weekend</title>
+		<link>/blog/2017/11/29/ludum-dare-40-starts-this-weekend/</link>
+		<pubDate>Wed, 29 Nov 2017 22:50:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=73159</guid>
+		<description><![CDATA[Ludum Dare 40 starts this weekend, December 1st, 2017. Want to participate? Why not use Corona?]]></description>
+				<content:encoded><![CDATA[<p><a href=https://ldjam.com/events/ludum-dare/40 target="_blank" rel="noopener">Ludum Dare 40</a> starts this weekend, December 1st, 2017. For those not familiar, Ludum Dare is one of the most popular game jams in the universe! The <a href=https://ldjam.com/events/ludum-dare/40/theme target="_blank" rel="noopener">theme voting</a> is currently going on now.</p>
+<p><img class="alignnone size-full wp-image-73169" src="/wordpress/wp-content/uploads/2017/11/GJ_01-3.jpg" alt="" width="1074" height="480" srcset="/wordpress/wp-content/uploads/2017/11/GJ_01-3.jpg 1074w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-300x134.jpg 300w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-768x343.jpg 768w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-1024x458.jpg 1024w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-700x313.jpg 700w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-125x56.jpg 125w" sizes="(max-width: 1074px) 100vw, 1074px" /></p>
+<p>Corona developers have an advantage over other platforms with <a href=https://developer.coronalabs.com/downloads/coronasdk/ target="_blank" rel="noopener">Corona&#8217;s instant-update</a>, no compile-time simulator. You can prototype your game jam projects faster than with other platforms.</p>
+<p>It&#8217;s also a great opportunity for Corona developers to showcase their skills in this global competition. <a href=https://forums.coronalabs.com/topic/71118-is-anyone-planning-on-participating-in-ludum-dare-40-this-weekend/ target="_blank" rel="noopener">Let us know in the Corona Forums</a> if you&#8217;re planning on participating!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

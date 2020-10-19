@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>top 10 &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/top-10/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>top 10 &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Top 10 Reasons Why Corona Rocks</title>
+		<link>/blog/2013/06/13/top-10-reasons-why-corona-rocks/</link>
+		<comments>/blog/2013/06/13/top-10-reasons-why-corona-rocks/#comments</comments>
+		<pubDate>Thu, 13 Jun 2013 07:19:40 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[top 10]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=35772</guid>
+		<description><![CDATA[Hearing game legends John Romero and Brenda Brathwaite tell us why <a href="http://www.coronalabs.com/blog/2013/06/11/lunch-with-co-founder-of-id-software/">Corona is awesome</a> for <a href="/products/corona-sdk/" title="mobile app development with corona sdk">mobile app development</a> was inspiring. So in that spirit, here are the top 10 reasons why Corona is a no-brainer for native app development...]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/06/corona-top-ten-300x269.png" alt="corona-top-ten" class="alignright size-medium wp-image-35790" /><br />
+Hearing game legends John Romero and Brenda Brathwaite tell us why <a href=http://www.coronalabs.com/blog/2013/06/11/lunch-with-co-founder-of-id-software/>Corona is awesome</a> for <a href=/products/corona-sdk/ title="mobile app development with corona sdk">mobile app development</a> was inspiring. So in that spirit, here are the top 10 reasons why Corona is a no-brainer for native app development:</p>
+<p>10. <strong>Mobile first.</strong> Corona was written 100% from the ground-up for mobile. It&#8217;s lean and mean — none of that legacy cruft.</p>
+<p>9.  <strong>&#8220;OMG!&#8221;</strong> That&#8217;s the sort of reaction we get when we show Corona in action. It&#8217;s like trying to imagine life before smartphones. There&#8217;s no going back.</p>
+<p>8.  <strong>Daily builds.</strong> Waiting for a once a year update is an eternity in the mobile industry.</p>
+<p>7.  <strong>Simplicity, Performance, and Flexibility.</strong> Why compromise with one or two when you can pick all 3?</p>
+<p>6.  <strong>2D Graphics.</strong> We&#8217;ve cracked the code when it comes to building Photoshop-level graphics on top of OpenGL.</p>
+<p>5.  <strong>Documentation.</strong> There&#8217;s just a ton of it. Books (in print!), tutorials, and videos too.</p>
+<p>4.  <strong>Cross-platform.</strong> And when I say cross-platform, I actually <em>mean</em> cross-platform. You know, from the perspective of an engineer, not some marketing monkey. We strive for 95% whereas everyone else grades on a curve.</p>
+<p>3.  <strong>Elegant API&#8217;s.</strong> Build your apps 10x faster? Yup, design matters. </p>
+<p>2.  <strong>Community.</strong> You&#8217;ve touched our lives. Hopefully, we&#8217;ve touched yours in kind.</p>
+<p>And number one is&#8230; [queue the drum roll]</p>
+<p>1.  <strong>Google says so.</strong> I&#8217;m not kidding! Okay, maybe a little, but guess who happens to be the top hit for cross platform mobile development? Here&#8217;s the screenshot (via Chrome&#8217;s anonymous incognito mode):</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/06/Corona-sdk-mobile-app-development-1024x920.png" alt="Corona-sdk-mobile-app-development" class="aligncenter size-large wp-image-35779" /></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/13/top-10-reasons-why-corona-rocks/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

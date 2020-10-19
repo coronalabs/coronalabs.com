@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Plug-ins &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/corona-plug-ins/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Plug-ins &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Supersonic, our latest monetization plugin</title>
+		<link>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/</link>
+		<comments>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/#comments</comments>
+		<pubDate>Tue, 17 May 2016 19:31:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[Supersonic]]></category>
+
+		<guid isPermaLink="false">/?p=66798</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Supersonic monetization plugin. Read further to learn more about this great addition to our plugin suite.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66852" style="margin: 0px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/05/supersonic.png" alt="supersonic" width="220" height="80" srcset="/wordpress/wp-content/uploads/2016/05/supersonic.png 440w, /wordpress/wp-content/uploads/2016/05/supersonic-300x109.png 300w" sizes="(max-width: 220px) 100vw, 220px" />Corona Labs is committed to providing you with many options to make your apps financially successful. The latest addition to our suite of monetization options is popular ad provider <a href=https://www.supersonic.com/ target="_blank">Supersonic</a>. Supersonic helps you generate revenue with high fill rates and eCPMs, and provides methods to encourage your users to engage with high-definition videos from top advertising brands.</p>
+<p><span class="comment-text ">&#8220;We’re excited to partner with Corona Labs to significantly boost ad monetization for its developer community. This partnership will give Corona developers the ability to manage and optimize multiple ad networks, maximizing eCPMs and fill rates by creating an inventory marketplace in which advertisers compete,&#8221; says Gil Shoham, CRO and Co-Founder of ironSource, Supersonic&#8217;s parent company. &#8220;Developers who integrate our plugin can deploy high-definition rewarded video, interstitial, and offer wall ad units seamlessly, benefiting from our global demand without another SDK integration.&#8221;</span></p>
+<h3>Getting started</h3>
+<p>To get started with Supersonic, you will need to create an account and log in to their <a href=https://platform.supersonic.com/partners/signup target="_blank">dashboard</a> to set up your apps. You will need to provide a URL for an app in the Apple App Store or on Google Play, or you can give them a temporary name for an app that isn&#8217;t live.</p>
+<p>Just like with other ad providers, you will need to add the plugin to your <code>build.settings</code> and <code>require()</code> the plugin. For details on this and other Corona-side requirements, please see our <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">Supersonic plugin documentation</a>.</p>
+<h3>Supported ad types</h3>
+<p>The initial plugin supports offer walls, interstitial ads, and rewarded videos:</p>
+<ul>
+<li>An offer wall presents the user with a list of actions they can take to earn a reward, such as credits or extra lives. These actions include taking surveys, installing different apps, etc.</li>
+<li>Interstitial ads include both static and non-rewarded video ads. Supersonic&#8217;s servers determine if an interstitial will be static or video based on their analytic patterns.</li>
+<li>Rewarded videos allow you to give in-game currency to your users get when they view a video. You control the reward, whether it be coins, gems, credits, or some other item that works in your app.</li>
+</ul>
+<p>Note that this plugin does not currently support the Supersonic mediation service.</p>
+<h3>Conclusion</h3>
+<p>To learn more about Supersonic, its API calls, and other details, please see the <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">plugin documentation</a>, or continue the discussion in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>New Flurry Analytics plugin now available</title>
+		<link>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/</link>
+		<comments>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 12 Apr 2016 21:01:22 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Flurry]]></category>
+		<category><![CDATA[Statistics]]></category>
+
+		<guid isPermaLink="false">/?p=66437</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of a new Flurry Analytics plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. Read further to learn more about this powerful tool.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66441" src="/wordpress/wp-content/uploads/2016/04/flurrybanner.png" alt="flurrybanner" width="239" height="64" />Corona Labs is pleased to announce the availability of the new <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">Flurry Analytics</a> plugin. Flurry is a popular analytics tool for measuring the actions users take in your app. It can also tell you how much time people spend doing tasks and record errors that occur. Armed with this data, you can improve how your app flows and provide a better experience to your users.</p>
+<p>If you are migrating from the previous Flurry plugin, there are a few things to be aware of. Everything is covered in our <a href=https://docs.coronalabs.com/plugin/flurry-analytics/migration.html target="_blank">migration guide</a>, but most importantly:</p>
+<ul>
+<li>You need to update your <code>build.settings</code> file and change the plugin provider from <code>["CoronaProvider.analytics.flurry"]</code> to <code>["plugin.flurry.analytics"]</code>.</li>
+<li>For Android users, the <code>["plugin.google.play.services"]</code> plugin must now be included. Previously you were required to use the Google Play Game Services plugin (<code>["CoronaProvider.gameNetwork.google"]</code>). Note that if you are using any ad provider plugins on Android, you may already have this additional plugin included.</li>
+</ul>
+<p>Other important additions to this plugin include a required listener function for <a href=https://docs.coronalabs.com/plugin/flurry-analytics/event/analyticsRequest/index.html target="_blank">analyticsRequest</a> events, specified as part of the <a href=https://docs.coronalabs.com/plugin/flurry-analytics/init.html target="_blank">flurryAnalytics.init()</a> call. You can also enable crash analytics and set logging levels in the same function. Finally, new functions have been added to measure timed events &#8212; see <a href=https://docs.coronalabs.com/plugin/flurry-analytics/startTimedEvent.html target="_blank">flurryAnalytics.startTimedEvent()</a> and <a href=https://docs.coronalabs.com/plugin/flurry-analytics/endTimedEvent.html target="_blank">flurryAnalytics.endTimedEvent()</a>.</p>
+<p>If you are new to Flurry, you will need to sign up <a href=https://developer.yahoo.com/analytics/ target="_blank">here</a> and get an API key. Once you&#8217;re registered, you can use the same site to see your app&#8217;s statistics as they are collected.</p>
+<p>The complete <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">documentation</a> for the Flurry Analytics plugin can be found <a href=https://docs.coronalabs.com/plugin/flurry-analytics/index.html target="_blank">here</a>.</p>
+<p>Want to discuss further? Please join us in the <a href=https://forums.coronalabs.com/forum/654-corona-store-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/12/new-flurry-analytics-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Apple &#8220;on-demand resources&#8221; plugin now available</title>
+		<link>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/</link>
+		<comments>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 23 Mar 2016 17:50:43 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[on-demand resources]]></category>
+
+		<guid isPermaLink="false">/?p=66158</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the "on-demand resources" plugin for tvOS. Read further to learn how this can be used to minimize your app footprint.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/on-demand-resources target="_blank">on-demand resources</a> plugin, currently supported on tvOS. Similar in concept to Android expansion files (but functionally quite different), on-demand resources allow you to specify parts/assets of your app which can be downloaded when needed. This is especially important for Apple TV because Apple limits tvOS apps to a maximum size of 200 megabytes and they provide no local storage for data. Instead, they expect developers to use on-demand resources to manage which assets are available at which points in the app.</p>
+<h3>Setup</h3>
+<p>Like any plugin, begin by including it in your <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.onDemandResources&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { tvos=true }
+        },
+    },      
+}</pre><p></p>
+<h3>Defining resources</h3>
+<p>To make on-demand resources work, you must designate various files or folders by &#8220;tags&#8221; inside the <code>tvos</code> → <code>onDemandResources</code> table of <code>build.settings</code>. Each entry is itself a table containing two required key-value pairs: the tag name (<code>tag</code>) and the file/folder it refers to (<code>resource</code>):</p><pre class="crayon-plain-tag">settings =
+{
+    tvos = 
+    {
+        onDemandResources =
+        {
+            { tag=&quot;introMusic&quot;, resource=&quot;intro.mp4&quot;, type=&quot;prefetch&quot; },
+            { tag=&quot;imgTutorial&quot;, resource=&quot;img/tutorial&quot;, type=&quot;install&quot; },
+            { tag=&quot;imgL2&quot;, resource=&quot;img/level2&quot; },
+        },
+    },
+}</pre><p>In addition, you can specify a download priority for each tag. This is done via the <code>type</code> key with one of the following values:</p>
+<ul>
+<li><code>"install"</code> &#8212; Use this for critical files that may be required immediately when the app first launches. These resources download in parallel with the app download itself, however they are not bundled in the app package as persistent resources.</li>
+<li><code>"prefetch"</code> &#8212; These resources will start downloading in the background after the app finishes downloading.</li>
+<li>No <code>type</code> &#8212; These are resources you fetch when you need them.</li>
+</ul>
+<p>Regardless of the <code>type</code> value, you need to explicitly request the tag before you can use it. Tags that don&#8217;t have a type are requested at a logical point during the app flow.</p>
+<h3>Requesting content</h3>
+<p>To download a resource file/folder when needed, for example assets for the second level after the player completes the first level, simply call the <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> function. This may be considered the &#8220;core&#8221; function of the plugin, as it&#8217;s required before you can access on-demand resources.</p><pre class="crayon-plain-tag">-- Require the plugin
+local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+
+    if not ( event.isError ) then
+        print( &quot;Resources for tag '&quot; .. event.tag .. &quot;' downloaded&quot; )
+    else
+        print( &quot;ERROR: errorCode = &quot; .. tostring(event.errorCode) )
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, true, odrListener )</pre><p>One of the most important aspects of <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> is the second parameter: a boolean <code>true</code> or <code>false</code>. Setting this to <code>true</code> (or omitting it, since <code>true</code> is the default) tells Corona to begin downloading the resources immediately.</p>
+<p>By comparison, if you set this parameter to <code>false</code>, Corona simply checks if the resources are already downloaded:</p><pre class="crayon-plain-tag">local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+    if ( event.isError ) then
+        -- Resources have not been downloaded. You need to request them.
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, false, odrListener )</pre><p></p>
+<h3>Important notes</h3>
+<ul>
+<li>All on-demand resources are subject to be evicted by the operating system if it needs space, so even your <code>install</code>&#8211; and <code>prefetch</code>-based resources should be checked for availability before you attempt to use them. If they don&#8217;t exist, you will need to request/download them again.
+<ul>
+<li>Large downloads take time, so you may consider more tags with smaller overall download sizes. Apple advises keeping tagged resources under 64 megabytes. The maximum size for a tag is 512 megabytes.</li>
+</ul>
+</li>
+<li>You have to use a service like Apple&#8217;s <a href=https://developer.apple.com/testflight/ target="_blank">TestFlight</a> to test on-demand resources &#8212; you cannot simply load the app directly onto your test device. This is the only way Apple can actually deliver the various resources from their servers.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>On-demand resources can be essential for developing tvOS games and apps, and Corona&#8217;s plugin provides the necessary interface to Apple&#8217;s servers. To learn more, please see the <a href=https://docs.coronalabs.com/plugin/onDemandResources/index.html target="_blank">documentation</a> or discuss further in the <a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Facebook Audience Network plugin: updated rev-share ratio</title>
+		<link>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/</link>
+		<comments>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 23:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65571</guid>
+		<description><![CDATA[Corona Labs has released an update to the Facebook Audience Network monetization plugin. Learn more about how these changes benefit you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-63472" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png" alt="facebook-logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png 150w, /wordpress/wp-content/uploads/2015/07/facebook-logo.png 160w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs has updated the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> monetization plugin.</p>
+<p>Based on feedback, we&#8217;ve decided to set the revenue-sharing ratio for the Facebook Audience Network ad provider plugin at a flat 5% instead of the more complicated &#8220;tier&#8221; system previously announced. This rate applies across the spectrum regardless of ad requests/impressions.</p>
+<p>To get started with the Facebook Audience Network plugin, see our <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">recent announcement</a> for the plugin, or see the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">documentation</a>. We thank our developer community for their feedback and support!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>AppLovin plugin: now with rewarded/incentivized ads</title>
+		<link>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/</link>
+		<comments>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 02:03:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65538</guid>
+		<description><![CDATA[Learn more about recent updates to the AppLovin plugin which let you offer virtual rewards to users in exchange for watching ads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />We are pleased to announce a new feature in the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin: rewarded/incentivized video ads! These ads &#8212; in contrast to standard graphical interstitial and video interstitial ads &#8212; can be implemented to reward users with some form of in-app currency upon viewing the ad. For example, if your game uses &#8220;coins&#8221; as an in-app currency, you can award the player with some coins each time they view a rewarded video ad.</p>
+<h3>AppLovin setup</h3>
+<p>To implement rewarded/incentivized ads, you must enable and configure them on a per-app basis within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>. The process is straightforward: basically just enable the feature, choose a frequency capping option, set up the virtual currency, select the modal options, and save your settings.</p>
+<h3>API changes</h3>
+<p>To use rewarded/incentivized ads within Corona, simply add the <code>isIncentivized</code> parameter (boolean value of <code>true</code>) to your <a href=https://docs.coronalabs.com/daily/plugin/applovin/load.html target="_blank">applovin.load()</a>, <a href=https://docs.coronalabs.com/daily/plugin/applovin/show.html target="_blank">applovin.show()</a>, or <a href=https://docs.coronalabs.com/daily/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> API calls. For instance:</p><pre class="crayon-plain-tag">applovin.load( true )
+applovin.show( true )
+applovin.isLoaded( true )</pre><p>Note that incentivized ad offers can be limited to a certain amount in a given day, defined under &#8220;frequency capping&#8221; in the <a href=https://www.applovin.com/manage>AppLovin developer portal</a>. If you are using frequency capping, we recommend that you check for an <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html>event.phase</a> value of <code>"validationExceededQuota"</code> to determine if the limit has been reached. When this occurs, you may consider showing a normal graphical or video interstitial ad instead.</p>
+<h3>Listener changes</h3>
+<p>When using rewarded/incentivized ads, you can use the same event listener function as always, although you will find some new data passed in relation to incentivized ads.</p>
+<p>First and foremost, the <code>event</code> table will contain a new entry called <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/data.html target="_blank">event.data</a>. This is a table containing key-value pairs related to incentivized/rewarded video events. For instance, after a user has successfully completed watching a video, <code>event.data</code> will contain the key-value pairs associated with the rewarded currency:</p>
+<ul>
+<li><code>event.data.currency</code> — The type of currency.</li>
+<li><code>event.data.amount</code> — The amount of currency rewarded.</li>
+</ul>
+<p>In addition, the <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html target="_blank">event.phase</a> string may be one of the following values, all specifically related to incentivized/rewarded video ads:</p>
+<ul>
+<li><code>"declinedToView"</code> — Indicates that the user chose &#8220;no&#8221; when prompted to view the ad.</li>
+<li><code>"validationSucceeded"</code> — Indicates that the user viewed the ad and that their reward was approved by the AppLovin server.</li>
+<li><code>"validationExceededQuota"</code> — Indicates that the AppLovin server was contacted, but the user has already received the maximum amount of rewards allowed in a given day.</li>
+<li><code>"validationRejected"</code> — Indicates that the AppLovin server rejected the reward request.</li>
+<li><code>"validationFailed"</code> — Indicates that the AppLovin server could not be contacted.</li>
+</ul>
+<h3>In summary</h3>
+<p>This new addition to the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin gives you even more options for engaging and monetizing your users. For more information, please read the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>We&#8217;re AppLovin your Corona apps</title>
+		<link>/blog/2016/02/03/were-applovin-your-corona-apps/</link>
+		<comments>/blog/2016/02/03/were-applovin-your-corona-apps/#comments</comments>
+		<pubDate>Wed, 03 Feb 2016 18:21:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65479</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the immediate availability of the AppLovin plugin. This plugin allows developers to monetize users through AppLovin graphical interstitial and video interstitial ads.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/02/applovin.png rel="attachment wp-att-65510"><img class="alignright wp-image-65510 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" /></a>Corona Labs is pleased to announce the immediate availability of a new plugin that lets you implement ads from <a href=https://applovin.com/ target="_blank">AppLovin</a>. Their platform uses real-time data to understand your users and target them with relevant brands, ensuring that you are reaching users who are likely to interact with your marketing. AppLovin delivers content to over a billion mobile users every month.</p>
+<h3>Signing up</h3>
+<p>To use AppLovin, you will need to <a href=https://applovin.com/signup target="_blank">sign up</a> and get an AppLovin SDK key. Regardless of iOS or Android, you will get just one SDK key which should be used throughout your projects. Once you gain access to the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a><strong>, </strong>navigate to the <strong>Account</strong> section, expand the <strong>Account</strong> menu on the left side, select <strong>Keys</strong>, and your SDK key should be revealed.</p>
+<h3>Including the plugin</h3>
+<p>As with all plugins, you must include AppLovin in your <code>build.settings</code> file. For iOS, you just need the AppLovin plugin itself. For Android, you must also include the Google Play Services plugin since AppLovin needs to access library code within that plugin.</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+        -- Include this for Android only
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { android=true }
+        },
+    },
+}</pre><p></p>
+<h3>Setup and initialization</h3>
+<p>Similar to other plugins, you must <code>require()</code> the plugin in any Lua file where you plan to call AppLovin&#8217;s APIs.</p><pre class="crayon-plain-tag">-- Require the AppLovin plugin
+local applovin = require( &quot;plugin.applovin&quot; )</pre><p>Next, add a basic AppLovin event listener (it can be completed later) and initialize the AppLovin plugin:</p><pre class="crayon-plain-tag">-- AppLovin listener
+local function adListener( event )
+
+end
+
+-- Initialize the AppLovin plugin
+applovin.init( adListener, { sdkKey=&quot;YOUR_SDK_KEY&quot;, verboseLogging=false } )</pre><p>Note that the <a href=https://docs.coronalabs.com/plugin/applovin/init.html target="_blank">applovin.init()</a> call takes two parameters: the event listener function name and a table of parameters. Inside the table of parameters, your unique SDK key is required. In addition, you can include the <code>verboseLogging</code> key with a value of <code>true</code> to output AppLovin logs to the console.</p>
+<h3>Loading and showing ads</h3>
+<p>AppLovin offers graphical interstitial ads, video interstitial ads, and rewarded/incentivized video ads (no banners). The types displayed are controlled solely within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>, so the only valid parameter for the load or show APIs is the optional <code>isIncentivized</code> boolean which tells the plugin to load or show a rewarded/incentivized ad (see <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> for details). There is also no &#8220;hide&#8221; API since interstitial ads need to be closed by the user or played to completion before the app continues.</p>
+<p>To load an ad, simply call the <a href=https://docs.coronalabs.com/plugin/applovin/load.html target="_blank">applovin.load()</a> API:</p><pre class="crayon-plain-tag">applovin.load()</pre><p>Then, to show it, simply call <a href=https://docs.coronalabs.com/plugin/applovin/show.html target="_blank">applovin.show()</a>:</p><pre class="crayon-plain-tag">applovin.show()</pre><p>Similar to other ad providers, you can also call <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> to check if an ad is loaded before showing it. Like the APIs above, this accepts the boolean <code>isIncentivized</code> parameter, allowing you to check which type of ad is loaded.</p><pre class="crayon-plain-tag">if applovin.isLoaded() then
+    applovin.show()
+end</pre><p></p>
+<h3>Event listener callbacks</h3>
+<p>All of the APIs mentioned above, with the exception of  <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a>, will call the event listener function. The event table which is dispatched will contain various <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/index.html target="_blank">properties</a>, including the following <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/phase.html target="_blank">phases</a> (<code>event.phase</code>):</p>
+<ul>
+<li><code>"init"</code> &#8212; Indicates that the AppLovin plugin was initialized successfully.</li>
+<li><code>"failed"</code> &#8212; Indicates that an ad failed to load.</li>
+<li><code>"loaded"</code> &#8212; Indicates that an ad loaded successfully.</li>
+<li><code>"displayed"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was displayed.</li>
+<li><code>"hidden"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was closed/hidden.</li>
+<li><code>"playbackBegan"</code> — Indicates that a video interstitial ad was displayed.</li>
+<li><code>"playbackEnded"</code> — Indicates that a video interstitial ad was closed/hidden.</li>
+<li><code>"clicked"</code> &#8212; Indicates that an ad was clicked/tapped.</li>
+</ul>
+<p>In addition, a series of event properties help you work with <strong>rewarded/incentivized video ads</strong>. Please see <a href=/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/ target="_blank">this announcement</a> for details.</p>
+<p>For more information, please read the <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+<h3>Important notes</h3>
+<ul>
+<li>The AppLovin app configuration screen has many options for configuring and controlling the types of ads you get. For instance, you can restrict the ads to &#8220;child safe&#8221; if the app is targeting children. You can change these settings as often as needed, but <strong>for an app released to market</strong>, you must also email <a href=mailto:applovin-support@coronalabs.com>applovin-support@coronalabs.com</a> with a summary of your changes. This ensures that your ads and associated preferences will be delivered consistently.</li>
+<li>For monetization through the AppLovin plugin, Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</li>
+</ul>
+<h3>In summary</h3>
+<p>With the addition of AppLovin, Corona Labs is committed to bringing you more and more monetization options for your apps. If you have any questions about this plugin, please discuss in the <a href=https://forums.coronalabs.com/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/03/were-applovin-your-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+		<item>
+		<title>Hangout Highlights: Plug-In Beta Testing, Facebook Integration, and GIG Jam 48</title>
+		<link>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/</link>
+		<comments>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/#respond</comments>
+		<pubDate>Wed, 24 Apr 2013 20:17:13 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[GigJam48]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32538</guid>
+		<description><![CDATA[Here are a few highlights from Monday's Corona Geek #36 when we talked about Facebook integration, plug-in beta testing, a gems development jam for Corona SDK developers, and more.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/qanbRb0LgqU?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Monday&#8217;s Corona Geek Hangout included a lively discussion about Facebook Open Graph Mobile and how Corona SDK supports Facebook&#8217;s initiative to get  developers to focus on mobile-first and structured data. Learn how <a href=http://www.coronalabs.com/blog/2013/04/18/corona-and-facebook-technology-partners/>Corona SDK integrates with Facebook</a>.</p>
+<p><iframe src="http://www.youtube.com/embed/czwSd7hl9Lo?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Later in the hangout we talked about how beta testing has started on Corona SDK plug-ins. A few members of the discussion panel had some interesting ideas for future Corona plug-ins. Learn more about <a href=http://www.coronalabs.com/blog/2013/04/22/corona-weekly-update-more-on-gluonplugins/>Corona SDK plug-in support</a>.</p>
+<p><iframe src="http://www.youtube.com/embed/BPEzLhP-82E?rel=0" height="360" width="640" allowfullscreen="" frameborder="0"></iframe></p>
+<p>We also talked about the upcoming GIG Jam 48 online game development jam that Glitch Games is hosting on May 4th &amp; 5th for Corona SDK developers. If you haven&#8217;t heard of this event, be sure to check out all the details on the official <a href=http://www.glitchgames.co.uk/gigjam/ target="_blank">Glitch Games GIG Jam 48</a> page.</p>
+<p>Check out the <a href=http://www.coronalabs.com/blog/coronageek/corona-geek-hangout-36/>full version of Corona Geek #36</a> for more interesting discussions and some crazy social app ideas.</p>
+<p><strong>Remember to Subscribe:</strong></p>
+<ul>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Subscribe to the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/hangout-highlights-plug-in-beta-testing-facebook-integration-and-gig-jam-48/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Staff Conversation: Ray Casting In Corona SDK</title>
+	<atom:link href="/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Matt Pringle</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5587</link>
+		<dc:creator><![CDATA[Matt Pringle]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2013 17:11:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5587</guid>
+		<description><![CDATA[Hey Albert
+
+Nice job on the Ray Casting. It&#039;s not new to Corona though, you are 2 years late to the party :-)
+
+I had it up and running in Lua and it would scan a Lime tile map and calculate what a player could see, or in this case, light from a torch.
+
+Unfortunately it needed more processing power than a 3GS could handle so it was nothing more than an tech demo. I might pick it up again now its native.
+
+http://forums.coronalabs.com/topic/6453-field-of-view-shadow-casting-demo/?hl=%2Bshadow+%2Bcasting]]></description>
+		<content:encoded><![CDATA[<p>Hey Albert</p>
+<p>Nice job on the Ray Casting. It&#8217;s not new to Corona though, you are 2 years late to the party 🙂</p>
+<p>I had it up and running in Lua and it would scan a Lime tile map and calculate what a player could see, or in this case, light from a torch.</p>
+<p>Unfortunately it needed more processing power than a 3GS could handle so it was nothing more than an tech demo. I might pick it up again now its native.</p>
+<p><a href="http://forums.coronalabs.com/topic/6453-field-of-view-shadow-casting-demo/?hl=%2Bshadow+%2Bcasting" rel="nofollow">http://forums.coronalabs.com/topic/6453-field-of-view-shadow-casting-demo/?hl=%2Bshadow+%2Bcasting</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5586</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2013 15:59:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5586</guid>
+		<description><![CDATA[I agree Chris. We will work on adding more technical session to the list.]]></description>
+		<content:encoded><![CDATA[<p>I agree Chris. We will work on adding more technical session to the list.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Albert</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5585</link>
+		<dc:creator><![CDATA[Albert]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 17:47:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5585</guid>
+		<description><![CDATA[@Jacques: Ray casting is less expensive than sensors, and is generally easier to manage.
+
+The impact on performance varies greatly with the type of game.
+
+A simple way to use ray casting for shadows is to find the ground position under a character and place a shadow blob texture at that position.
+
+btw, take a look at physics.reflectRay() in the latest daily build (1087). It’s pretty fun to play with.]]></description>
+		<content:encoded><![CDATA[<p>@Jacques: Ray casting is less expensive than sensors, and is generally easier to manage.</p>
+<p>The impact on performance varies greatly with the type of game.</p>
+<p>A simple way to use ray casting for shadows is to find the ground position under a character and place a shadow blob texture at that position.</p>
+<p>btw, take a look at physics.reflectRay() in the latest daily build (1087). It’s pretty fun to play with.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jacques</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5584</link>
+		<dc:creator><![CDATA[Jacques]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 10:14:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5584</guid>
+		<description><![CDATA[I totally agree about the AI and game logic implementation, 75% of my code is AI and game logic.]]></description>
+		<content:encoded><![CDATA[<p>I totally agree about the AI and game logic implementation, 75% of my code is AI and game logic.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Chris Leyton</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5583</link>
+		<dc:creator><![CDATA[Chris Leyton]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 09:51:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5583</guid>
+		<description><![CDATA[Hey Charles - great to see these, I think it helps to add a further layer of explanation to new features beyond what&#039;s contained in the docs. Hoping you follow a similar concept for further additional features that are added to Corona.
+
+In terms of new topics, I&#039;d like to see you focus on advanced topics - we all know Corona is simple to use, anybody can pick it up, etc...
+
+But I think to continue giving credit to Corona as a serious framework we need to see the more tricker topics handled - things like AI implementations, game logic, etc... Generally pushing the Corona limits. Hoping we&#039;ll see lots on Graphics 2.0 when it&#039;s released.]]></description>
+		<content:encoded><![CDATA[<p>Hey Charles &#8211; great to see these, I think it helps to add a further layer of explanation to new features beyond what&#8217;s contained in the docs. Hoping you follow a similar concept for further additional features that are added to Corona.</p>
+<p>In terms of new topics, I&#8217;d like to see you focus on advanced topics &#8211; we all know Corona is simple to use, anybody can pick it up, etc&#8230;</p>
+<p>But I think to continue giving credit to Corona as a serious framework we need to see the more tricker topics handled &#8211; things like AI implementations, game logic, etc&#8230; Generally pushing the Corona limits. Hoping we&#8217;ll see lots on Graphics 2.0 when it&#8217;s released.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jacques</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5582</link>
+		<dc:creator><![CDATA[Jacques]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 09:17:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5582</guid>
+		<description><![CDATA[Apologies for the double post previously (perhaps you can indicate whether a post has been received?). 
+Anyway, just want to let you guys know that the new raycast api is awesome! Works perfectly for War of the Zombie, and is definitely a game-changer!
+Not sure how much raycasting collision detection alleviates memory/cpu over &#039;sensor&#039; physics objects collision detection but everything is running sweet!]]></description>
+		<content:encoded><![CDATA[<p>Apologies for the double post previously (perhaps you can indicate whether a post has been received?).<br />
+Anyway, just want to let you guys know that the new raycast api is awesome! Works perfectly for War of the Zombie, and is definitely a game-changer!<br />
+Not sure how much raycasting collision detection alleviates memory/cpu over &#8216;sensor&#8217; physics objects collision detection but everything is running sweet!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jacques</title>
+		<link>/blog/coronageek/staff-conversation-ray-casting-in-corona-sdk/#comment-5581</link>
+		<dc:creator><![CDATA[Jacques]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 06:59:25 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32130#comment-5581</guid>
+		<description><![CDATA[Just have to see this is a life-saver for me! As well as the upcoming graphics 2 which i hope will come out soon. My new game War of the Zombie relies heavily on detecting possible bullet collisions before a marine fires the actual shot and before the player actually gets to witness it.
+
+So if i understand correctly, with raycast, I can NOW fire out an invisible line to check if a potential bullet would hit a building or tree or a zombie directly and then stop the marine from firing if the bullet wouldn&#039;t reach the zombie? As right now i have to fire off an invisible physics object (fake sensor bullet if you like) and only if the zombie object is hit and nothing else will the player see the action (which is naturally a waste of cpu).
+
+If my assumption is correct how much different in terms of speed and CPU usage would a raycast line take compared to firing off a &#039;sensor&#039; physics object?  If its gonna be way better then you guys have done an awesome job bring in raycasting.
+
+Lastly, how easy would it be (or i should say memory/cpu intensive) would it be to use the raycast for casting shadows in corona?]]></description>
+		<content:encoded><![CDATA[<p>Just have to see this is a life-saver for me! As well as the upcoming graphics 2 which i hope will come out soon. My new game War of the Zombie relies heavily on detecting possible bullet collisions before a marine fires the actual shot and before the player actually gets to witness it.</p>
+<p>So if i understand correctly, with raycast, I can NOW fire out an invisible line to check if a potential bullet would hit a building or tree or a zombie directly and then stop the marine from firing if the bullet wouldn&#8217;t reach the zombie? As right now i have to fire off an invisible physics object (fake sensor bullet if you like) and only if the zombie object is hit and nothing else will the player see the action (which is naturally a waste of cpu).</p>
+<p>If my assumption is correct how much different in terms of speed and CPU usage would a raycast line take compared to firing off a &#8216;sensor&#8217; physics object?  If its gonna be way better then you guys have done an awesome job bring in raycasting.</p>
+<p>Lastly, how easy would it be (or i should say memory/cpu intensive) would it be to use the raycast for casting shadows in corona?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

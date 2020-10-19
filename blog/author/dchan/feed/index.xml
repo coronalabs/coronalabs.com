@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dchan &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/dchan/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>dchan &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Local/Push Notifications Moved to a Plugin</title>
+		<link>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/</link>
+		<comments>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/#comments</comments>
+		<pubDate>Wed, 21 Jan 2015 19:21:00 +0000</pubDate>
+		<dc:creator><![CDATA[dchan]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPad]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[local notifications]]></category>
+		<category><![CDATA[notifications]]></category>
+		<category><![CDATA[push notifications]]></category>
+
+		<guid isPermaLink="false">/?p=60883</guid>
+		<description><![CDATA[Starting in Corona SDK build 2015.2542, local and push notifications have been moved to a plugin. Read further to learn how to update your existing apps.]]></description>
+				<content:encoded><![CDATA[<p>Starting in Corona SDK build <strong>2015.2542</strong>, local and push notifications have been moved to a plugin. If you&#8217;re using this feature, you will need to update your project’s <code>build.settings</code> file so that the <code>plugins</code> table includes the following:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.notifications&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },
+}</pre><p>On Corona Enterprise, there will be plugin binaries available in the plugins zip corresponding to the above daily build.</p>
+<h3>iOS Push Permissions Dialog</h3>
+<p>One of the benefits of this plugin is to give you more control over the timing of the push notification permissions dialog, an often requested <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback/suggestions/5881595-control-the-timing-of-allow-push-notifications-p>feature</a>. With this plugin, push notifications on iOS are no longer automatically registered — instead, you must explicitly request for the use of push notifications, prompting iOS to ask for permission:</p><pre class="crayon-plain-tag">local notifications = require( &quot;plugin.notifications&quot; )
+notifications.registerForPushNotifications()</pre><p></p>
+<h3>Deprecated APIs</h3>
+<p>Since notifications are now a plugin, we are deprecating the following core APIs:</p>
+<ul>
+<li><code>system.cancelNotification()</code> → <a href=http://docs.coronalabs.com/daily/plugin/notifications/cancelNotification.html>notifications.cancelNotification()</a></li>
+<li><code>system.scheduleNotification()</code> → <a href=http://docs.coronalabs.com/daily/plugin/notifications/scheduleNotification.html>notifications.scheduleNotification()</a></li>
+</ul>
+<p>These deprecated APIs will eventually be removed, so we recommend that you migrate your code as soon as possible. For your convenience, we have modified these APIs to call through to the new plugin APIs, but you must still include the notification plugin.</p>
+<h3>Documentation</h3>
+<p>Please refer to the <a href=http://docs.coronalabs.com/daily/plugin/notifications/index.html>notification documentation</a> for complete details.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/21/notifications-have-been-moved-to-a-plugin/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Game Center moved to a plugin</title>
+		<link>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/</link>
+		<comments>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/#comments</comments>
+		<pubDate>Wed, 08 Oct 2014 20:02:38 +0000</pubDate>
+		<dc:creator><![CDATA[dchan]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Game Center]]></category>
+		<category><![CDATA[gameNetwork]]></category>
+
+		<guid isPermaLink="false">/?p=59787</guid>
+		<description><![CDATA[As of Corona SDK build #2455, Game Center (iOS) has been moved to a plugin. Read further to learn more.]]></description>
+				<content:encoded><![CDATA[<p>Starting in Corona SDK build 2014.2455, Game Center (iOS) has been moved to a plugin. This means that you will need to include the plugin in your <code>build.settings</code> file. In practice, this means that your <code>build.settings</code> file should include the following within the <code>plugins</code> table:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;CoronaProvider.gameNetwork.apple&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, },
+        },
+    },
+}</pre><p></p>
+<h3>Documentation</h3>
+<p>Once you&#8217;ve included the plugin, implementing Game Center is accomplished via the same methods as before. Please refer to the <a href=http://docs.coronalabs.com/daily/plugin/gameNetwork-apple/index.html target="_blank">documentation</a> for details.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/08/game-center-has-been-moved-to-a-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

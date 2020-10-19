@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Uncategorized &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Google 64-bit deadline coming August 1, 2020</title>
+		<link>/blog/2020/04/16/google-64-bit-deadline-coming-august-1-2020/</link>
+		<pubDate>Thu, 16 Apr 2020 22:34:59 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=76388</guid>
+		<description><![CDATA[Google gave Corona users extra time to update their apps to 64-bit. Are you ready?]]></description>
+				<content:encoded><![CDATA[<p>When Google started enforcing their new 64-bit requirements last year, they gave Corona developers an extension. New apps still had to be 64-bit by the deadline, but for apps currently in the app store, they provided an extension until August 1, 2020. That&#8217;s a little over three months away.</p>
+<p>While most Corona apps are now in compliance, over 4,000 Corona-made apps are not and are in threat of being taken down on or after August 1. If you have apps that need updated. Get the latest daily build at <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">https://developer.coronalabs.com/downloads/daily-builds/</a></p>
+<p>And update your apps sooner than later. This would also be a good time to disable the Corona Splash Screen. Make sure to include:</p><pre class="crayon-plain-tag">splashScreen = 
+	{
+		enable = false
+	},</pre><p>in your <code>build.settings</code> file inside the <code>settings = {}</code> table to avoid any potential confusion with the app store&#8217;s current stance on the novel coronavirus and COVID-19.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App Sign In for your Corona apps</title>
+		<link>/blog/2019/10/03/app-sign-in-for-your-corona-apps/</link>
+		<pubDate>Thu, 03 Oct 2019 15:22:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=76346</guid>
+		<description><![CDATA[Many apps need a way to log in users. Plugin developer Scott Harrison has made this pretty straight forward for Google and Apple Sign In. His guest post covers how to set up these two plugins to make your authentication simple.]]></description>
+				<content:encoded><![CDATA[<style>
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.docs-tip-inner-left .fa {
+    font-size: 36px;
+    padding-top: 3px;
+}
+.docs-tip-outer {
+    background-color: #6cb3ef;
+    margin: 20px 0px 20px 0px;
+    padding: 2px 1px 1px 0px;
+    overflow: hidden;
+}
+.docs-tip-inner-left {
+    float: left;
+    width: 50px;
+    min-height: 47px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.docs-tip-inner-right {
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.94);
+    min-height: 35px;
+    padding: 0px 24px 12px 16px;
+}
+</style>
+<div class="docs-tip-outer">
+<div class="docs-tip-inner-left">
+<div class="fa fa-cog">
+</div>
+</div>
+<div class="docs-tip-inner-right">
+<p>Thanks to master plugin creator, Scott Harrison for this guest post on using Google and Apple Sign-In in your apps.</p>
+</div>
+</div>
+<p>Many apps and games have there own login system. Whether you need a login for storing data, sharing, or multiplayer, setting up a login system is an important part of your app. While an email and password system is usually what most apps use, you should consider looking at using a third-party login system. Third-party systems allow the user to log in in faster and save the user from having to make another password. This tutorial will show you how to integrate both Google and Apple sign in.</p>
+<h3>Google Sign In</h3>
+<p>Start of by going to Corona Labs Marketplace and activate the <a href=https://marketplace.coronalabs.com/corona-plugins/google-sign-in rel="noopener" target="_blank">Google Sign In Plugin</a>. Next you need to get a client ID for Android and iOS. Go to <a href=https://console.developers.google.com/apis/library/identitytoolkit.googleapis.com rel="noopener" target="_blank">Google console and enable &#8220;Identity Toolkit API&#8221;</a>. Next create client id in Credentials section. Setup a client ID for iOS and Web (which is used for Android).<br />
+<img src="/wordpress/wp-content/uploads/2019/10/create_credentials-1024x468.png" alt="" width="1024" height="468" class="alignnone size-large wp-image-76356" srcset="/wordpress/wp-content/uploads/2019/10/create_credentials-1024x468.png 1024w, /wordpress/wp-content/uploads/2019/10/create_credentials-300x137.png 300w, /wordpress/wp-content/uploads/2019/10/create_credentials-768x351.png 768w, /wordpress/wp-content/uploads/2019/10/create_credentials-700x320.png 700w, /wordpress/wp-content/uploads/2019/10/create_credentials-125x57.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /><br />
+Also make sure to add to put your iOS URL scheme inside you <code>build.settings</code><br />
+<img src="/wordpress/wp-content/uploads/2019/10/google_ios_setup-1024x242.png" alt="" width="1024" height="242" class="alignnone size-large wp-image-76358" srcset="/wordpress/wp-content/uploads/2019/10/google_ios_setup-1024x242.png 1024w, /wordpress/wp-content/uploads/2019/10/google_ios_setup-300x71.png 300w, /wordpress/wp-content/uploads/2019/10/google_ios_setup-768x181.png 768w, /wordpress/wp-content/uploads/2019/10/google_ios_setup-700x165.png 700w, /wordpress/wp-content/uploads/2019/10/google_ios_setup-125x30.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+
+    android =
+    {
+        useGoogleServicesJson = true,
+        
+        usesPermissions =
+        {
+            "android.permission.INTERNET"
+        },
+
+    },
+    iphone = 
+    {
+        plist = 
+        {
+            CFBundleURLTypes = 
+            {
+                {
+                    CFBundleURLSchemes = 
+                    {
+                        "com.googleusercontent.apps.REPLACE_WITH_YOUR_URL_SCHEME",        
+                    }
+                }
+            },
+        },
+    },
+
+
+    plugins = {
+        ["plugin.firestore"] =
+            {
+                publisherId = "tech.scotth",
+            },
+    },
+}</pre><p> </p>
+<p>Note: if you are using Firebase, just grab the iOS client ID from the <code>GoogleService-Info.plist</code> file under <code>CLIENT_ID</code> key and for Android go to <code>google-services.json</code> under the keys <code>client >oauth_client>client_id</code>,</p>
+<p>Next use the code snippet below to insert the client id based on the platform you are using.</p>
+<p></p><pre class="crayon-plain-tag">local googleSignIn = require( "plugin.googleSignIn" )
+local json = require( "json" )
+
+googleSignIn.init()
+local androidClientID = "Your Android client id"
+local clientID = "Your iOS client id" -- iOS default
+
+if ( system.getInfo( "platform" ) == "android" ) then
+   clientID = androidClientID
+end
+
+googleSignIn.signIn( clientID, nil, nil, function ( event ) 
+        print( json.encode( event ) )
+    end 
+)</pre><p> </p>
+<p>Read more about the <a href=https://scotth.tech/plugin-googleSignIn rel="noopener" target="_blank">Google Sign In Plugin in the documentation</a>.</p>
+<h3>Apple Sign In</h3>
+<p>Apple introduced a new way to sign in on iOS 13+. They are requiring app makers to add Apple Sign In if they use other third-party sign in options like Google or Facebook. It is easy for developers to implement Apple Sign In for iOS devices. To set up all you need to do is start by activating the free <a href=https://marketplace.coronalabs.com/corona-plugins/apple-sign-in rel="noopener" target="_blank">Apple Sign In Plugin</a> in the Corona Marketplace. Make sure your App ID is setup with the <em>Apple Sign In entitlement</em>. This will require you to generate and download a new provisioning profile after adding the entitlement.<br />
+<img src="/wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-1024x594.png" alt="" width="1024" height="594" class="alignnone size-large wp-image-76360" srcset="/wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-1024x594.png 1024w, /wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-300x174.png 300w, /wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-768x446.png 768w, /wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-700x406.png 700w, /wordpress/wp-content/uploads/2019/10/apple_entitlement_setup-125x73.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Add Apple Sign In entitlements to <code>build.settings</code></p>
+<p></p><pre class="crayon-plain-tag">iphone =
+    {
+        plist =
+        {
+            -- put entitlements outside plist
+        },
+        entitlements = {
+            ["com.apple.developer.applesignin"] = {"Default"},
+        }
+    },
+    plugins = {
+        ["plugin.appleSignIn"] =
+            {
+                publisherId = "tech.scotth",
+            },
+    },</pre><p> </p>
+<p>Then just use the Apple Sign In plugin in your app to login on your iOS 13+ device</p>
+<p></p><pre class="crayon-plain-tag">local appleSignIn = require( "plugin.appleSignIn" )
+local json = require( "json" )
+
+appleSignIn.show( "name", function( event )
+        print( json.encode( event ) )
+    end 
+)</pre><p> </p>
+<p>Note: The first value in <code>appleSignIn.show()</code> can either be &#8220;<code>name</code>&#8220;, which will get the name of the user, &#8220;<code>email</code>&#8220;, will get the email of the user, or &#8220;<code>nameAndEmail</code>&#8220;, which will get the email and name.</p>
+<p>Read more about the <a href=https://scotth.tech/plugin-appleSignIn rel="noopener" target="_blank">Apple Sign In Plugin in the documentation</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona, Google Play apps and 64-bit</title>
+		<link>/blog/2019/05/28/corona-google-play-apps-and-64-bit/</link>
+		<pubDate>Tue, 28 May 2019 16:08:49 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=76279</guid>
+		<description><![CDATA[We know you have questions about the pending Google 64-bit requirements. Read on to learn where we are at in getting ready for change]]></description>
+				<content:encoded><![CDATA[<p>Google has set a date of August 1, 2019 for all apps to be updated to 64bit. Currently Corona only supports building 32-bit apps. Our engineering team is working to convert our build process to support 64-bit for Corona apps, but this is a very complex process with many parts that have to be updated. iOS apps are already 64-bit.</p>
+<p>We cannot provide a date at this time when this will be complete, but we are very aware of the looming deadline and that you need time to update your apps in advance.</p>
+<p>Please follow the discussion in our forum post for this topic: <a href=https://forums.coronalabs.com/topic/74839-google-play-64-bit-requirement/ target="_blank" rel="noopener">https://forums.coronalabs.com/topic/74839-google-play-64-bit-requirement/</a></p>
+<p>We will update you when we know more.</p>
+<p>In the mean time, you should have gotten an email from Google offering you an opportunity to take a survey about this process. It might be helpful to fill out this survey and let them know you&#8217;re being held up by third-party SDKs. You can see an example of the survey here:<br />
+<img class="alignnone size-large wp-image-76280" src="/wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-1024x908.png" alt="" width="1024" height="908" srcset="/wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-1024x908.png 1024w, /wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-300x266.png 300w, /wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-768x681.png 768w, /wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-700x621.png 700w, /wordpress/wp-content/uploads/2019/05/GooglePlaySurvey-125x111.png 125w, /wordpress/wp-content/uploads/2019/05/GooglePlaySurvey.png 1256w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>You can subscribe to the forum post to get email notifications as more content is posted there. We will also update the blog here with updates as they become available.</p>
+<p>To see our progress, you can check out <del><code>gradle</code> branch from</del> the open source version of <a href=https://github.com/coronalabs/corona/tree/master/platform/android target="_blank" rel="noopener">Corona from our GitHub</a> and build a Gradle-based 64-bit version of Corona. We’re working on integrating this build system into Corona Simulator/Native and supporting existing plugins and settings.</p>
+<p>UPDATE: <code>gradle</code> branch was merged into <code>master</code>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Welcome to the new Corona Marketplace</title>
+		<link>/blog/2018/05/09/welcome-to-the-new-corona-marketplace/</link>
+		<pubDate>Wed, 09 May 2018 16:23:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=75538</guid>
+		<description><![CDATA[Corona Labs is pleased to announce that our new Marketplace is online. Learn more about these changes.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-68792" src="/wordpress/wp-content/uploads/2016/11/corona-marketplace-icon-1-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/11/corona-marketplace-icon-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/11/corona-marketplace-icon-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/11/corona-marketplace-icon-1-500x500.png 500w, /wordpress/wp-content/uploads/2016/11/corona-marketplace-icon-1.png 512w" sizes="(max-width: 150px) 100vw, 150px" />Today, Corona Labs is pleased to announce that our <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">new Marketplace is online</a> and ready for use. Since opening our original Marketplace in 2016, hundreds of plugins and assets have been submitted to the store and is powering many Corona made apps.</p>
+<p>In addition to an all new look, the new marketplace supports a new submission form, giving you more control over your promotional images and information. This will help speed up submission approvals. This will also help us promote your products better through featuring and social sharing.</p>
+<p>If you haven&#8217;t looked at the <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">Marketplace</a> recently, please drop by <a href=https://marketplace.coronalabs.com/ target="_blank" rel="noopener">https://marketplace.coronalabs.com/</a> and give the new site a look!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>#GlitchJam 1 kicks off on the 4th of May!</title>
+		<link>/blog/2018/04/23/glitchjam-1-kicks-off-on-the-4th-of-may/</link>
+		<pubDate>Mon, 23 Apr 2018 16:57:07 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=75629</guid>
+		<description><![CDATA[#GlitchJam 1 is coming May 4th!  What is #GlitchJam? Read on to learn more about this opportunity to show off your Corona developer skills!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75634" src="/wordpress/wp-content/uploads/2018/04/gglogo-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/04/gglogo-150x150.png 150w, /wordpress/wp-content/uploads/2018/04/gglogo-125x125.png 125w, /wordpress/wp-content/uploads/2018/04/gglogo.png 256w" sizes="(max-width: 150px) 100vw, 150px" />Welcome to #GlitchJam!</p>
+<p>What is #GlitchJam? It&#8217;s a game jam, hosted by long time Corona developers <a href=http://www.glitchgames.co.uk/ target="_blank" rel="noopener">Glitch Games</a>. Early in their past, Glitch games ran their first #GlitchJam&#8217;s after some time off and with modern game jam management tools, they are ready to resume this awesome Corona based game jam. &#8220;At Glitch we love jams, be they game or strawberry, and we’re incredibly excited to be able to run #GlitchJam for all Corona developers.&#8221; said Graham Ransom of Glitch Games.</p>
+<p>#GlitchJam will be held every 6 months and will always follow the same format; 72 hours long, open to all Corona developers, a theme will be announced upon commencement, judging will be done by both Graham and Simon Pearce of ​Glitch Games​ and a pair of guest judges that change every jam, plus prizes for the top three submissions. Each jam will have some great prizes from our sponsors, including Corona Labs.</p>
+<p>The next #GlitchJam is scheduled for May 4, 2018.</p>
+<p>To learn more, please visit ​<a href=https://itch.io/jam/glitch-jam-1 target="_blank" rel="noopener">the jam page​</a>, and if you have any questions you can reach out to Graham and Simon on the forums or on <a href=https://twitter.com/GlitchGames target="_blank" rel="noopener">Twitter</a>​.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>HTML5 for Corona update</title>
+		<link>/blog/2018/04/04/html5-for-corona-update/</link>
+		<pubDate>Wed, 04 Apr 2018 15:07:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=75529</guid>
+		<description><![CDATA[Corona's engineers are continuing to work on bringing HTML5 to a production level. They have reached a big milestone. Learn more about these exciting updates!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-56850" src="/wordpress/wp-content/uploads/2014/03/HTML5_Badge_512-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2014/03/HTML5_Badge_512-150x150.png 150w, /wordpress/wp-content/uploads/2014/03/HTML5_Badge_512-300x300.png 300w, /wordpress/wp-content/uploads/2014/03/HTML5_Badge_512-500x500.png 500w, /wordpress/wp-content/uploads/2014/03/HTML5_Badge_512.png 512w" sizes="(max-width: 150px) 100vw, 150px" />Our HTML5 team has been quite busy and HTML5 builds are progressing nicely. There is a recent change that we hope you will find exciting. We&#8217;ve found a way to get HTML5 builds down to around 1 megabyte. Of course the more art and audio assets you add, the more your app will grow in size.</p>
+<p>We&#8217;ve accomplished this by temporarily removing the SQLite3 and socket modules and compressing the engine code. Starting with <a href=http://developer.coronalabs.com/corona-daily-builds/ target="_blank" rel="noopener">daily build 2018.3055</a>, these modules have been removed for HTML5 builds. We will bring them back in a future build as optional modules.</p>
+<p>If you haven&#8217;t given HTML5 a try, now&#8217;s a good time to start experimenting with it. We have even simplified testing. Instead of starting up your own local web server, we do that for you with the use of our Live Server. Simply build your HTML5 app and it will open in your default web browser automatically.</p>
+<p>As always, while it&#8217;s in open beta, please report any issues you run into in our <a href=https://forums.coronalabs.com/forum/637-html5/ target="_blank" rel="noopener">HTML5 forum</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>New third-party &#8220;Getting Started with Corona&#8221; tutorial</title>
+		<link>/blog/2017/11/09/new-third-party-getting-started-with-corona-tutorial/</link>
+		<pubDate>Thu, 09 Nov 2017 20:52:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=72978</guid>
+		<description><![CDATA[PerceptTech has created a great tutorial series for new Corona developers. Check it out!]]></description>
+				<content:encoded><![CDATA[<p>Corona developers Ryan Gainor and Zach Philip with PerceptTech have created a free course on developing Corona-based apps. The course is delivered via email with daily lessons sent to your inbox.</p>
+<p>You will learn Corona basics, from installation to displaying objects on the screen to implementing physics. You&#8217;ll even learn cool tips for animation and audio.</p>
+<p>To get signed up for the course, visit <a href=https://percepttech.co/ target="_blank" rel="noopener">https://percepttech.co/</a> and give it a go!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Featured tool: Corona Plugin for Xcode</title>
+		<link>/blog/2017/05/11/featured-tool-corona-plugin-for-xcode/</link>
+		<pubDate>Thu, 11 May 2017 19:34:38 +0000</pubDate>
+		<dc:creator><![CDATA[Brent Sorrentino]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=70795</guid>
+		<description><![CDATA[If you're a Corona developer using macOS, learn about this powerful plugin for Xcode which can optimize your development environment.]]></description>
+				<content:encoded><![CDATA[<p>Many Corona developers &#8212; especially those who don&#8217;t use Corona Enterprise &#8212; tend to view Apple&#8217;s Xcode as daunting, overwhelming, and perhaps even a bit scary. However, for iOS/macOS, Xcode is an essential development tool that works alongside Corona&#8217;s core (even if you never use the Xcode application, Corona is using it!).</p>
+<p>For those who do use Xcode, even just for the simplicity of using its &#8220;Devices&#8221; window to install Corona-built apps onto your devices, you may be interested in the powerful <a href=https://marketplace.coronalabs.com/asset/corona-plugin-for-xcode target="_blank" rel="noopener">Corona Plugin for Xcode</a> by Jacob Nielsen.</p>
+<h3>Corona Plugin for Xcode</h3>
+<p>The <a href=https://marketplace.coronalabs.com/asset/corona-plugin-for-xcode target="_blank" rel="noopener">Corona Plugin for Xcode</a> adds a vast array of new features to Xcode, turning it into an easy-to-use, smooth, and efficient editor for Corona projects. With this plugin, you get these features and more:</p>
+<ul>
+<li>Edit your pure Lua-based Corona projects directly inside Xcode &#8212; no &#8220;native&#8221; coding or development experience required!</li>
+<li>Syntax highlighting for Corona/Lua.</li>
+<li>Auto-completion library calls, keywords, constants, etc.</li>
+<li>Corona API documentation look-up from selected text.</li>
+<li>Snippets declarations, loops, conditions, etc.</li>
+<li>Corona project and file templates built into Xcode.</li>
+<li>Custom behaviors and keybinding set for Corona.</li>
+</ul>
+<p><iframe src="https://www.youtube.com/embed/vkIsjVmRIAM?rel=0&amp;showinfo=0" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>Plays well with Enterprise too!</h3>
+<p>This plugin is also a great addition if you are working with Corona Enterprise. In this case, you will achieve an excellent workflow by being able to do both Corona/Lua code and native code side-by-side in Xcode.</p>
+<h3>Affordable and optimal</h3>
+<p>The <a href=https://marketplace.coronalabs.com/asset/corona-plugin-for-xcode target="_blank" rel="noopener">Corona Plugin for Xcode</a> is available for $19.00 in the Corona Marketplace, making it an affordable alternative to higher-priced IDEs &#8212; and if you&#8217;re a Corona developer using macOS, you already have Xcode (it&#8217;s free).</p>
+<p>Atop the features listed above, this plugin can simplify your development environment by letting you use <strong>one</strong> application for editing Corona code, installing/updating apps on devices, and letting you view device-specific debugging output in the Xcode &#8220;Devices&#8221; window.</p>
+<p>Check out the <a href=https://marketplace.coronalabs.com/asset/corona-plugin-for-xcode target="_blank" rel="noopener">Corona Plugin for Xcode</a> and see how easy Xcode can be!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing Steamworks, a plugin for Steam apps</title>
+		<link>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/</link>
+		<comments>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 14:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[achievements]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[games]]></category>
+		<category><![CDATA[leaderboards]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[steam]]></category>
+		<category><![CDATA[valve]]></category>
+
+		<guid isPermaLink="false">/?p=67650</guid>
+		<description><![CDATA[Corona Labs is pleased to announce our plugin for Steamworks. Learn how you can take advantage of this plugin to publish desktop games to Steam!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-67654" src="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png" alt="share_steam_logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/share_steam_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/share_steam_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/share_steam_logo.png 512w" sizes="(max-width: 150px) 100vw, 150px" />When it comes to PC desktop games, the premier place to publish is <a href=http://store.steampowered.com/ target="_blank">Steam</a>.</p>
+<p>Now, Corona developers can build apps for Windows (<code>win32.exe</code>) or macOS and submit them to Steam to be &#8220;greenlit.&#8221; During the greenlight process, the Steam community reviews apps and decides if they want them to be published.</p>
+<p>To ensure that your games can compete in the Steam store, Corona Labs has been diligently working to create a <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">plugin for Steam</a>. This plugin supports core features requested by developers who have already had their apps successfully published to Steam.</p>
+<p>Using the new <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">Steamworks plugin</a>, your app can now take advantage of leaderboards, achievements, user stats, player information, and various Steam overlays in your game. These features aren&#8217;t required, but their presence in your game could encourage more people to vote &#8220;yes!&#8221;.</p>
+<h3>About the plugin</h3>
+<p>This plugin is a bit different than our other game networking plugins. For example, there is no login API. Instead, you must be logged into the Steam client on your computer. The plugin then talks to the Steam client to exchange information with the Steam servers. On macOS, it&#8217;s best to set up the Corona Simulator as a Steam app and launch Corona SDK from Steam for maximum support.</p>
+<p>Many of the API calls return data immediately, if the data has been cached or is readily available. For instance, if you are getting information about a user and the plugin previously retrieved the data, it is returned to you immediately. However, if the data is not immediately available, and you have set up an event listener for that type of data, an event will trigger the listener and then you can update your local data with the new information.</p>
+<h3>In summary</h3>
+<p>Learn more about implementing Steamworks in your game by reading our Steamworks plugin <a href=https://docs.coronalabs.com/plugin/steamworks/index.html target="_blank">documentation</a> and by examining our Steamworks <a href=https://github.com/coronalabs/steamworks-sample target="_blank">sample app</a>. And, join us in the Corona <a href=https://forums.coronalabs.com/ target="_blank">forums</a> to discuss this wonderful addition to our plugin library.</p>
+<hr />
+<div style="font-size: 80%; font-color: #999;">Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+	</channel>
+</rss>

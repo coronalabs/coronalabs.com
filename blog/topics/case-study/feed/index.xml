@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Case Study &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/case-study/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Case Study &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Case Study: Scott Harrison, plugin maestro</title>
+		<link>/blog/2017/05/02/case-study-scott-harrison-plugin-maestro/</link>
+		<pubDate>Tue, 02 May 2017 21:09:59 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=70717</guid>
+		<description><![CDATA[The Corona community's most active plugin developer is Scott Harrison. Learn more about the man behind the plugins.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-70722" style="margin: 4px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2017/04/scottharrisonphoto.jpg" alt="scottharrisonphoto" width="161" height="284" />Many people depend on plugins in the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> to extend their apps beyond the Corona core. Plugins range from Corona-built <a href=https://marketplace.coronalabs.com/plugins/monetization target="_blank">monetization plugins</a> to community-built plugins that let you access unique hardware features or various third-party services.</p>
+<p>One plugin developer in the community stands out among the crowd and that&#8217;s <strong>Scott Harrison.</strong> He has created a wide range of plugins from one that lets you <a href=https://marketplace.coronalabs.com/plugin/more-info target="_blank">get more information</a> from your device to the hot-off-the-press <a href=https://marketplace.coronalabs.com/plugin/passkit target="_blank">PassKit plugin</a> that lets your app save ticket information to the iOS Wallet.</p>
+<h3>About Scott</h3>
+<p>Scott is a senior at Bishop Kelley High School in Tulsa, Oklahoma. He started out making games using GameSalad but found its drag-and-drop-only system too limiting, so he found Corona and made the jump.</p>
+<p>Like many aspiring developers, his first project was a bit too ambitious, so he decided to drop back to something more simple: an <a href=https://itunes.apple.com/us/app/bishop-kelley-high-school/id1093373750?mt=8 target="_blank">app for his high school</a>.</p>
+<h3>Why plugins?</h3>
+<p>While working on his game, he needed a tool for editing physics object bodies. He found the free <a href=http://www.aurelienribon.com/blog/2011/10/physics-body-editor-2-0-ex-box2d-editor/ target="_blank">Physics Body Editor</a> but, unfortunately, it didn&#8217;t conveniently export physics data for Corona. His solution? <a href=https://docs.coronalabs.com/native/plugin/index.html target="_blank">Build a plugin!</a> He shared <a href=https://marketplace.coronalabs.com/plugin/physics-body-editor target="_blank">his plugin</a> initially in the <a href=https://forums.coronalabs.com/ target="_blank">Corona forums</a>, and soon after, a developer wanted a <a href=https://marketplace.coronalabs.com/plugin/yelp target="_blank">Yelp plugin</a>. From there, the floodgates opened.</p>
+<p><a href=/wordpress/wp-content/uploads/2017/04/scottplugins.png><img class="alignnone size-full wp-image-70730" src=/wordpress/wp-content/uploads/2017/04/scottplugins.png alt="scottplugins" width="1122" height="398" /></a></p>
+<p>Scott currently has <a href=https://marketplace.coronalabs.com/vendor/b9ab8939-5f0f-478a-ae19-b968092bdafb target="_blank">39 plugins in the Corona Marketplace</a> &#8212; spanning every category &#8212; and many of them are currently free. He has several more either in development or in processing for the Marketplace. His future plans include a calendar plugin and a wallpaper plugin for Android.</p>
+<p>Of his plugins, his favorite is the <a href=https://marketplace.coronalabs.com/plugin/replay-kit target="_blank">Replay Kit</a> plugin which allows people to record their game sessions and stream them live to viewers.</p>
+<h3>Where from here?</h3>
+<p>Scott is using his love of plugin development to drive his studies, taking what he learns in school and applying it back to his plugins.</p>
+<p>&#8220;Corona plugins help me learn the native APIs a lot better. For example, I was working on a native Android app for class and we had to save photos to the gallery. I already learned this through my <a href=https://marketplace.coronalabs.com/plugin/external-storage target="_blank">External Storage</a> plugin,&#8221; he said. &#8220;I was not really too familiar with Java before my Mobile App Development class. My first and second quarter, we focused only on Java and I learned the language. I then felt comfortable to start making Android plugins.&#8221;</p>
+<p>In the autumn, Scott will be heading to the University of Florida where he will major in Computer Science. He is looking forward to a full-time career in building mobile apps.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Floorvana by Shaw Floors</title>
+		<link>/blog/2017/01/11/case-study-floorvana-by-shaw-floors/</link>
+		<pubDate>Wed, 11 Jan 2017 18:56:16 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=69385</guid>
+		<description><![CDATA[Long-time Corona developer Dave Haynes took his love of making games into his office and built an award-winning business app. This is his story.]]></description>
+				<content:encoded><![CDATA[<p>Those little technological wonders we carry in our pockets aren&#8217;t just for entertaining ourselves with a game, reading news, or sending emojis to our friends &#8212; they can actually solve problems!</p>
+<p>Case in point: <a href=https://shawfloors.com/ target="_blank">Shaw Floors</a> dealers faced a common problem where customers would come into the store seeking a flooring product that would match the color of a piece of cloth, paint sample, or other interior item. To meet this request, some dealers added expensive in-store spectrophotometers, but they were not very accurate.</p>
+<p>Dave Haynes, long-time Corona developer and Shaw Industries employee, had an idea: &#8220;I bet we could get pretty close just with a phone camera, as long as the lighting is decent.&#8221; So he built a quick prototype with Corona, showed it to his co-workers, and they loved the idea. After some work with designers and the development team, <em><a href=https://shawfloors.com/floorvana target="_blank">Floorvana by Shaw Floors</a></em> was born.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/Zfm0dJHbKFg?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Given that Shaw Floors wanted the app to be ready for their start-of-year convention, and with only a few months remaining at the time, Dave decided to use Corona, the development platform he was familiar with, to build the full <em><a href=https://shawfloors.com/floorvana target="_blank">Floorvana</a></em> app.</p>
+<p><img class="alignnone size-full wp-image-69388" src="/wordpress/wp-content/uploads/2017/01/screen520x924.jpeg" alt="screen520x924" width="520" height="293" /></p>
+<p>With <em><a href=https://shawfloors.com/floorvana target="_blank">Floorvana</a></em>, you can take a snapshot of an item and find a Shaw Floors product that matches. Since its release, the app has won two <a href=http://www.daveyawards.com/ target="_blank">Davey Awards</a> for <em>Best User Experience</em> and <em>Best Visual Design</em>. It has also been nominated for <em>Most Creative Solution</em> by the <a href=http://www.tagonline.org/ target="_blank">Technology Association of Georgia</a>.</p>
+<p><img class="alignnone size-full wp-image-69387" src="/wordpress/wp-content/uploads/2017/01/screen520x924-1.jpeg" alt="screen520x924-1" width="520" height="293" /></p>
+<p>Haynes has been using Corona since 2011 to build his own games and he knew that it would be great for this project. His small team achieved more than they thought possible in the short amount of time they had. &#8220;Without <a href=https://docs.coronalabs.com/api/library/display/colorSample.html target="_blank">display.colorSample()</a>, we could not have completed a major part of the project,&#8221; Haynes said. &#8220;We also use the networking helper functions like <a href=https://docs.coronalabs.com/api/library/network/request.html target="_blank">network.request()</a> to communicate with our backend web API, but the main thing for us was to have a single code base for iOS and Android.&#8221;</p>
+<p>The first version of <em><a href=https://shawfloors.com/floorvana target="_blank">Floorvana</a></em> took about three months to complete. Since then, they have been providing updates and adding new features requested by consumers, dealers, and business partners.</p>
+<p><em><a href=https://shawfloors.com/floorvana target="_blank">Floorvana</a></em> is available for iOS and Android for free. Check it out!</p>
+<p><a href=https://itunes.apple.com/us/app/floorvana-by-shaw-floors/id945472387?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.shawinc.floorvana&hl=en target="_blank"><img class="alignnone size-full wp-image-67966" src="/wordpress/wp-content/uploads/2016/09/badge-google-play.png" alt="badge-google-play" width="50" height="50" srcset="/wordpress/wp-content/uploads/2016/09/badge-google-play.png 200w, /wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a></p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=/ target="_blank">What can you do with Corona?</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Relaxation Coach by Aatos Media</title>
+		<link>/blog/2016/11/29/case-study-relaxation-coach-by-aatos-media/</link>
+		<pubDate>Tue, 29 Nov 2016 21:33:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=68906</guid>
+		<description><![CDATA[While many developers use Corona for game development, it can be used to develop any genre of app, including general purpose apps and business-related apps. Read on to learn more about <em>Relaxation Coach</em>.]]></description>
+				<content:encoded><![CDATA[<p>While many developers use Corona for game development, it can be used to develop any genre of app, including general purpose apps and business-related apps.</p>
+<p>In this case study, we want to introduce you to a beautifully-designed, non-game app from <a href=http://www.aatosmedia.fi/ target="_blank">Aatos Media</a> called <em><a href=http://relaxationcoachapp.com/ target="_blank">Relaxation Coach</a></em>. Leveraging the expert knowledge of pro sport and mental coach Jouko Mikkola, Tommi Saksa created an exercise app to help people lead better lives.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/adydq0ha6P4" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><em>Relaxation Coach</em> goes beyond normal &#8220;mindfulness&#8221; apps by including exercises that relax both the mind <em>and</em> body. Unlike mindfulness apps which are intended to be used daily, the exercises in <em>Relaxation Coach</em> can be used whenever needed. Mikkola, using his expertise, designed all of the exercises as well as the concept for the app.</p>
+<p><em>Relaxation Coach</em> includes nine different exercises to help you relax, tips on how to use the app, descriptions of all the exercises, and some customization options which let the user choose the theme and music to relax to. The app was designed around a minimalistic user interface with the goal of keeping it simple to use.</p>
+<p><img class="alignnone size-full wp-image-68908" style="margin-right: 20px; margin-bottom: 10px; margin-top: 25px;" src="/wordpress/wp-content/uploads/2016/11/relaxation_coach_iphone_screenshot_title-169x300.png" alt="relaxation_coach_iphone_screenshot_title-169x300" width="169" height="300" /><img class="alignnone size-full wp-image-68909" style="margin-right: 20px; margin-bottom: 10px; margin-top: 25px;" src="/wordpress/wp-content/uploads/2016/11/relaxation_coach_iphone_screenshot_exercises-169x300.png" alt="relaxation_coach_iphone_screenshot_exercises-169x300" width="169" height="300" /><img class="alignnone size-full wp-image-68910" style="margin-right: 20px; margin-bottom: 10px; margin-top: 25px;" src="/wordpress/wp-content/uploads/2016/11/relaxation_coach_iphone_screenshot_player-169x300.png" alt="relaxation_coach_iphone_screenshot_player-169x300" width="169" height="300" /></p>
+<p>This is the first business app developed by Saksa. He made heavy use of UI widgets and found them easy to use. Currently the app is only in English but it&#8217;s designed to be easily translated. All text strings are decoded from a stored JSON file and the app’s statistics data is tracked using Corona’s built-in SQLite engine.</p>
+<p>&#8220;The main thing is that development with Corona is quite quick, because you can test the app so easily in the Simulator and then Corona does the heavy lifting (like dynamic scaling) for you,&#8221; Saksa said, &#8220;and if you get stuck, you can find a wide range of tutorials or visit active forums.&#8221;</p>
+<p>Saksa currently has his next app, an action/puzzle platform game called <em>The Sidekicks</em> targeted for a Q1 2017 release.</p>
+<p><em>Relaxation Coach </em>is currently available in the <a href=https://itunes.apple.com/us/app/relaxation-coach/id1157867172?mt=8 target="_blank">Apple App Store</a> for $2.99 (2,99 €) with an Android version coming soon.</p>
+<p><a href=https://itunes.apple.com/us/app/relaxation-coach/id1157867172?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a></p>
+<p>Join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums</a> to discuss this wonderful example of what you can build with Corona!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Yogome &#8211; educational games with a passion</title>
+		<link>/blog/2016/08/30/case-study-yogome-educational-games-with-a-passion/</link>
+		<comments>/blog/2016/08/30/case-study-yogome-educational-games-with-a-passion/#comments</comments>
+		<pubDate>Tue, 30 Aug 2016 21:02:37 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Education]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=67742</guid>
+		<description><![CDATA[In this case study, read about how Yogome is using Corona to create fun, polished, educational games for children of all ages.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67744" style="margin: 4px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/08/yogomelogo.png" alt="yogomelogo" width="200" height="60" />It&#8217;s well known that learning can be fun when a game is involved. <a href=http://www.yogome.com/ target="_blank">Yogome</a>, a studio in Mexico City with an office in San Francisco, has jumped into this genre and is creating some fantastic learning adventures for kids of all ages. Their games are targeted towards elementary and middle-school students, but kids under 5 and over 12 can also find value playing their apps.</p>
+<p>Yogome currently has <a href=https://itunes.apple.com/us/developer/yogome-inc/id536072105 target="_blank">30 titles in The App Store</a> and <a href=https://play.google.com/store/apps/developer?id=Yogome%2C+Inc. target="_blank">11 in Google Play</a>. Founded in 2010, Yogome was the brainchild of Manolo Díaz and Alberto Colin. They have since grown the studio to employ a staff of 40, including on-site language specialists for multiple language support and education experts to make sure the &#8220;education&#8221; goes with the fun.</p>
+<p><iframe width="640" height="480" src="https://www.youtube.com/embed/Ai59_f5lrFY?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Díaz heard about <a href=http://www.coronalabs.com/ target="_blank">Corona</a> in 2011 and, with its ease of use and ability to deploy to multiple platforms, it became their core technology for developing their content and powering their apps and games. Leveraging their staff and their own library of core code, Yogome can produce a game in around three months, even for a larger scope project.</p>
+<p>Their latest title, <em>Epic Heroes of Knowledge</em>, challenges students with a mix of over 100 educational mini-games featuring unique characters and a fun, rewarding game mechanic. Players gain &#8220;PowerCubes&#8221; through play to strengthen their <em>Yogotar</em> and defeat the villains of Queen Ignorantia.</p>
+<p><img class="alignnone size-large wp-image-67746" src="/wordpress/wp-content/uploads/2016/08/yogomess1-1024x767.jpg" alt="yogomess1" width="960" height="719" /></p>
+<p>The game has eight &#8220;worlds&#8221; covering eight key subjects like math, science, and programming. These worlds can be explored and students can capture characters like the <em>WiFi Warrior</em>, the <em>Continental Divider</em>, and more. In addition, parents can join in and use the Yogome <em>Parent Dashboard</em> where they can keep track of the child&#8217;s progress and even send them challenges. <em>Epic Heroes</em> includes content developed with the help of the <a href=http://www.play2prevent.org/ target="_blank">play2PREVENT</a> lab at Yale University, including the math content.</p>
+<p>The game is very deep in content &#8212; as you progress, you can pick up treasure, capture enemies, get new allies, and feed and care for them. It has its own economic system which teaches kids how to allocate resources. The game even supports multiplayer mode.</p>
+<p>Yogome games are generally free with in-app purchases to unlock content. <em>Epic Heroes</em> is subscription-based in that you get more content each month for a monthly or annual fee. Check it out in the <a href=https://itunes.apple.com/us/app/epic-heroes-of-knowledge/id904827467?mt=8 target="_blank">App Store</a> and on <a href=https://play.google.com/store/apps/details?id=com.yogome.EpicKnowledge target="_blank">Google Play</a>!</p>
+<p><a href=https://itunes.apple.com/us/app/epic-heroes-of-knowledge/id904827467?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.yogome.EpicKnowledge target="_blank"><img class="alignnone size-full wp-image-64594" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/30/case-study-yogome-educational-games-with-a-passion/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Case Study: Avokiddo builds award-winning kids apps with Corona SDK</title>
+		<link>/blog/2016/06/29/case-study-avokiddo-builds-award-winning-kids-apps/</link>
+		<comments>/blog/2016/06/29/case-study-avokiddo-builds-award-winning-kids-apps/#comments</comments>
+		<pubDate>Wed, 29 Jun 2016 17:46:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=67249</guid>
+		<description><![CDATA[Avokiddo is a small indie studio focused on making fun educational apps. Are they successful? Read about their accolades  how Corona SDK made it all possible.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-67291" style="margin: 0px;" src="/wordpress/wp-content/uploads/2016/06/Logo-avokiddo-2500px-300x117.png" alt="Logo-avokiddo-2500px" width="300" height="117" />What does it take to make great kids&#8217; apps? Just ask <a href=http://avokiddo.com/ target="_blank">Avokiddo</a>, a three-person studio that creates fantastic games and apps for families. The team shares a common passion for creating challenging and stimulating experiences that stand out among the crowd, and they have the accolades to prove it.</p>
+<p>Their app <em><a href=http://avokiddo.com/thinkrolls2/ target="_blank">Thinkrolls</a><a href=http://avokiddo.com/thinkrolls2/ target="_blank"> 2</a> </em>(video below) won the <em>2016 Google Play Award for Best Families App</em>. Science-based app <a href=http://avokiddo.com/dnaplay/ target="_blank"><em>DNA Play</em></a> was handpicked by Apple as an <em>App Store Best of 2015</em> in the US and held the #1 spot on the iPhone Kids list in the US for the first week of its launch. <em><a href=http://avokiddo.com/thinkrolls-app/ target="_blank">Thinkrolls</a></em>, the prequel to <em>Thinkrolls 2</em>, reached the top 20 overall for iPad apps. And <a href=http://avokiddo.com/avokiddo-emotions-app/ target="_blank"><em>Avokiddo Emotions</em></a> was featured for an entire year as the #1 favorite iPad Air app on Apple&#8217;s website.</p>
+<p><iframe width="800" height="450" src="https://player.vimeo.com/video/121339550?color=26c9c9&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Avokiddo currently has six apps in their portfolio. They use Corona SDK to develop for all three major mobile app stores: Apple, Google Play, and Amazon.</p>
+<p>The team at Avokiddo got their start designing interactive media for the web, but they have a very diverse background including experience in architecture, computer science, graphic arts, engineering, virtual reality, interactive design, and video production. When they chose to shift to mobile development in 2012, they did considerable online research to find the right tools for their vision.</p>
+<p>Upon discovering Corona SDK, they were pleased to find out how easy it was to learn and get things done. They were attracted to how comfortable Lua felt and how easy it would be to deploy to multiple platforms. After experimenting with some sample projects, they were amazed at how easy and quick it was to do even more complicated things. Corona SDK is the only platform they have used since.</p>
+<p>According to <span class="">Elpida Voulgari</span>, co-founder and programmer, the Avokiddo team would rather spend time creating a great design and less time coding. &#8220;Being devoted to quality and innovation, we spend a lot of time on the concept and gameplay design of our apps. Thanks to Corona SDK and its many ready-to-use libraries, development time is kept to a minimum so we have the luxury to take our time and do proper research on the theme, concept, purpose, educational value and user experience,&#8221; she said.</p>
+<p><img class="alignright size-medium wp-image-67292" src="/wordpress/wp-content/uploads/2016/06/avokiddo-thinkrolls2-slide1-200x300.jpg" alt="avokiddo-thinkrolls2-slide1" width="200" height="300" />&#8220;Developing in Corona comes naturally and effortlessly and this is what makes it special. It is a tool that helps us materialize our inspirations and it does so by simply being reliable and efficient. At the end of the day, it&#8217;s not about how much time it takes to develop an app, it&#8217;s how efficiently you spend this time to produce something meaningful and likable that serves its purpose in the best way possible,&#8221; adds Voulgari.</p>
+<p>Thinkrolls 2 is an example of Avokiddo putting Corona SDK to work. It&#8217;s a physics-based puzzle game designed for kids three to nine years old. Kids must use their skills to navigate the rolling ball characters through 270 levels. Each level&#8217;s maze increases in complexity. The players have to use various physics features like gravity, aerodynamics, buoyancy and more to get through each maze. According to Voulgari, &#8220;One of the challenges of designing this app was to provide just the right amount of increasing challenge to keep kids focused, engaged and eager to reach the end of the maze through a continuous trial-and-error process.&#8221;</p>
+<p>Corona SDK played a big role in allowing them to employ the physics and other properties that make Thinkrolls 2 so enjoyable. &#8220;We&#8217;ve used physics in all our apps but most of all in our Thinkrolls series where the natural physics behavior of objects takes a central role. Collision events, multiple joint types, flexible physics bodies, ray casting, particle designer are just some of the features that we&#8217;ve used extensively and with great ease.&#8221; she added.</p>
+<p>&nbsp;</p>
+<div style="width: 970px" class="wp-caption alignnone"><img class="wp-image-67293 size-large" src="/wordpress/wp-content/uploads/2016/06/Google-Play-Awards-Avokiddo-Receiving-1024x683.jpg" alt="Google-Play-Awards-Avokiddo-Receiving" width="960" height="640" /><p class="wp-caption-text">Avokiddo receiving the <em>2016 Google Play Award for Best Families App</em>.</p></div>
+<p>The extensive thought and care that Avokiddo is able to put into their apps leads to not only awards and accolades, but millions of happy kids. Voulgari says that the success can all be attributed to creating great products. &#8220;In the 4 years we have developed apps for kids, we&#8217;ve come to realize that being successful in this business is not about having an unlimited budget or a huge portfolio. Small, self-funded studios can very well manage to establish brand awareness, a trusted fan base, and a strong presence on the stores. It all starts with a great product, it&#8217;s as simple as that. To succeed in this business we need to be consistent and committed. Passionate about creating quality digital experiences. We need to offer something valuable that people want to use and are eager to share with their circles.</p>
+<p>&#8220;As developers we need to be consistent with our principles and have a clear business plan in order to stay focused and achieve better results. To stand out we must find and stick to our own personal style not only on what we offer, but also on decisions around marketing and monetization. There is no universal recipe for success. What works for one can be inefficient or even disastrous for another, so it&#8217;s important to stay informed, experiment, monitor and analyze all data that is available to us.&#8221;</p>
+<p>And of course, a good tool is a major factor for success too. Voulgari concluded &#8220;I would most definitely recommend Corona SDK to anyone looking for a reliable, cross-platform and easy-to-use tool for creating mobile content. We&#8217;ve been using it for the past 4 years developing award-winning apps and we will continue using it for the years to come!&#8221;</p>
+<p>You can check out <em>Thinkrolls 2</em> in these stores:</p>
+<p><a href=https://itunes.apple.com/us/app/thinkrolls-2/id968707176?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.avokiddo.games.thinkrolls2 target="_blank"><img class="alignnone wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a><a href=https://www.amazon.com/Avokiddo-Thinkrolls-2/dp/B00UL5EO5G target="_blank"><img class="alignnone wp-image-64594" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="google-play-badge" width="50" height="50" /></a></p>
+<p>Corona Labs is committed to offering the best, easiest to use, and most flexible platform for mobile, desktop, and connected TV app development. What success can you have with Corona products? <a href=/ target="_blank">Download Corona SDK</a> today and get started!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/06/29/case-study-avokiddo-builds-award-winning-kids-apps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Case Study: Lonely Woof&#8217;s &#8220;Egz&#8221;</title>
+		<link>/blog/2016/06/09/case-study-lonely-woofs-egz/</link>
+		<comments>/blog/2016/06/09/case-study-lonely-woofs-egz/#comments</comments>
+		<pubDate>Thu, 09 Jun 2016 21:38:21 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+
+		<guid isPermaLink="false">/?p=67096</guid>
+		<description><![CDATA[<em>Egz</em> is an incredibly well designed and easy-to-play game. Learn more about how it came to be.]]></description>
+				<content:encoded><![CDATA[<p>If you haven&#8217;t played <em><a href=http://www.egz-game.com/homepage-en/ target="_blank">Egz</a></em>, you&#8217;re in for a treat. This colorful game, built with Corona SDK, has a unique story, great art, and challenging gameplay.</p>
+<p>In <em>Egz</em>, you play a primordial egg: the first life form in a chaotic new world. Your goal is to not &#8220;break&#8221; while exploring a wide, complex, forming world.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/R9MjafBlyI4" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><em>Egz</em> was created by Lonely Woof&#8217;s Evans Randriamampianina (or Randria for short), an indie developer from Paris, France. It is Randria&#8217;s first game and it plays as a cross between a platformer and a mini-golf game. You control your egg by using a slingshot action to move through the scene, avoiding dangers and collecting pick-ups along the way.</p>
+<p>Randria is an art director who worked for several digital agencies and had some ActionScript experience before he started <em>Egz</em>. He decided he wanted to pursue his childhood dream of creating his own video game, experiencing the entire development process from design to programming to art.</p>
+<p><img class="alignnone size-large wp-image-67102" src="/wordpress/wp-content/uploads/2016/06/03-screenshot-2208x1242-5-1024x576.png" alt="03-screenshot-2208x1242-5" width="960" height="540" /></p>
+<p>&#8220;Several mobile games inspired me: <em>Cut the Rope</em>, <em>Tiny Wings</em>, <em>Angry Birds</em>&#8230; mainly because those games were and still are the most famous mobile games. But they also offer something unique: they are quickly enjoyable, simple to play (only one touch is needed to have fun), and they don&#8217;t require players to spend too much time learning new gameplay mechanics.&#8221; Randria said.</p>
+<p>Randria admits that he&#8217;s not a huge mobile gamer and that his playing experience comes from the console world. &#8220;I&#8217;ve grown up playing with the Nintendo NES, Sega Master System, Megadrive, Super Nintendo, PC&#8230; and there are several gameplay mechanics in <em>Egz</em> that actually come from classic games like <em>Sonic The Hedgehog</em>, <em>Mario Bros.</em>, <em>Donkey Kong Country</em>, etc. I think that trying to merge those inspirations is what makes <em>Egz</em> unique,&#8221; he added.</p>
+<p>Randria found Corona through one of his digital agencies. They needed a mobile ad game and, while researching engines, a video showed how rapid development with Corona can be.</p>
+<p><img class="alignnone size-large wp-image-67103" src="/wordpress/wp-content/uploads/2016/06/03-screenshot-2208x1242-2-1024x576.png" alt="03-screenshot-2208x1242-2" width="960" height="540" /></p>
+<p>&#8220;<em>Egz</em> is a little bit [more] complex than it seems. There are several gameplay mechanics that I probably wouldn&#8217;t have been able to add if it wasn&#8217;t for Corona,&#8221; Randria said. &#8220;The first thing that comes to mind is Corona&#8217;s many libraries, and one of the most impressive libraries is the <a href=https://docs.coronalabs.com/guide/index.html?#physics target="_blank">physics</a> library. It&#8217;s insane how easy it is to create a simple ball, bouncing on walls. Within a few lines only! I remember trying to achieve the same thing in ActionScript and&#8230; well, just trying to include the Box2D API in my project gave me headaches. With Corona, you call it by literally writing one line!&#8221;</p>
+<p>Having tried Flash, ActionScript, and Unity, Randria said &#8220;I believe that Corona SDK is the fastest way to get playable games. Especially if you&#8217;re working on your first mobile game. All those APIs included in the framework can help save a lot of time/money! And in the last couple of years, I&#8217;ve seen Corona getting bigger and bigger, evolving and offering more, but staying simple!&#8221;</p>
+<p>As with many projects, he ran into &#8220;feature creep.&#8221; At 80 levels, 7 different worlds, cutscenes, boss levels, and mini-games, the game was quite a bit for him to take on for his first game. But Corona SDK helped Randria through.</p>
+<p><em>Egz</em> has been out for a month on iOS and Android. Randria has plans to port it to Amazon, Apple TV, Windows, and OS X. Previews of the app earned <em>Egz</em> a third-best upcoming app by <a href=http://www.slidedb.com/games/egz target="_blank">SlideDB</a>, and it won the <a href=http://www.pocketgamer.co.uk/r/Android/EGZ/news.asp?c=68782 target="_blank">Very Big Indie Pitch</a> at Pocket Gamer Connects London.</p>
+<p><a href=https://itunes.apple.com/us/app/egz-the-origin-of-the-universe/id963477453?ls=1&mt=8 target="_blank"><img class="alignnone wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.finalegzgame.lonelywoof target="_blank"><img class="alignnone wp-image-64594" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a></p>
+<h3>Wrapping up</h3>
+<p><em>Egz</em> stands out among the crowd, but it wasn&#8217;t made by a big studio house. Building your app with Corona SDK will speed up your development and give you plenty of power to build something awesome. What can you create?</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/06/09/case-study-lonely-woofs-egz/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Case Study: Jordanian TV game show &#8220;Arrange it Correctly&#8221; powered by Corona</title>
+		<link>/blog/2016/04/26/case-study-jordanian-tv-game-show-arrange-it-correctly-powered-by-corona/</link>
+		<pubDate>Tue, 26 Apr 2016 18:49:25 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Game Show]]></category>
+		<category><![CDATA[MSSQL]]></category>
+		<category><![CDATA[TV]]></category>
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">/?p=66576</guid>
+		<description><![CDATA[Think Corona SDK is for mobile games? Well it's powering a TV game show. Learn more about how this came to be.]]></description>
+				<content:encoded><![CDATA[<p>Picture this: It&#8217;s 7:00 p.m. and a popular TV game show is coming on. The host with his perfectly-coiffed hair and big smile stands at his lectern and points to a grid of TVs on a wall. Those TVs display categories, dollar amounts, and eventually answers. He also has a display in front of him with the correct answers. Nearby, three contestants stand at their podiums with TVs that show their scores. The contestants have a touch-sensitive screen to write and submit answers on. Behind the scenes, producers, directors, and judges are driving the game, timing commercials, confirming answers, and more.</p>
+<p>Someone had to write software for all of that. They had to network it together with a database and build a complex information system that drives the game. It must have required a huge team of developers and months of development time, right?</p>
+<p>For the <a href=http://www.roya.tv/ target="_blank">Roya TV</a> station in Amman, Jordan, along with a creative Corona SDK development team, it did not. Challenged to put together a TV game show in just 30 days, <a href=https://www.maysalward.com/ target="_blank">Maysalward</a>, a 16-person studio in Amman and Irbid, Jordan, beat out seven other studios to get the job of creating <a href=http://www.roya.tv/shows/196-%D8%B1%D8%AA%D8%A8%D9%87%D8%A7-%D8%B5%D8%AD/ target="_blank"><em>Arrange it Correctly</em></a><em>,</em> a TV game show about putting things in the right order. The other studios all wanted six months to do the job, but using Corona SDK, the team knew they could finish the job in much less time. Maysalward challenged a four person team consisting of a senior designer, senior developer, and two application testers to build the game. The team put Corona to the test and met their deadline, albeit with some 22-hour work days.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/LZDrdeZQDgU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>The game</h3>
+<p>In <em>Arrange it Correctly,</em> three teams of two players stand at podiums with a touch screen Windows device for entering answers. This is driven by a full screen Windows desktop app. On the front of each podium is another Windows device running a full screen app to display the current score of each team. Behind the host, the audience sees a huge display known as the &#8220;big board&#8221; with the core game running. Another Corona-built Windows desktop app monitors the database and delivers the game output to the big board via HDMI cable. The host uses an Android tablet that displays the answers and other information. In the control room, the show&#8217;s director and producers control the pace of the game from a control computer. It&#8217;s all powered by a .NET system connected to a Microsoft SQL server.</p>
+<p>Apps built with Corona SDK can run on all of these devices. <a href=https://www.maysalward.com/ target="_blank">Maysalward</a> chose Corona because of how it could both connect to networked, database-driven solutions and create the game&#8217;s displays easily.</p>
+<p>According to Tariq Khatib, the senior developer on the project, &#8220;We used reusable stable code from other previous projects which shortened the total time needed for database connections.&#8221; Nour Khrais, Founder and CEO of Maysalward, added, &#8220;We have good experience with Corona and it&#8217;s a smooth development when it comes to mobile and desktop.&#8221;</p>
+<p>Corona&#8217;s ease and speed of development for both mobile and desktop came into play as the project moved towards the deadline. &#8220;It was really easy to manage change requests. Sometimes we did immediate onsite changes based on visual feedback from [the] TV Presenter or director or producer&#8230; it was really quick to recompile and replace old versions.&#8221; Khatib continued.</p>
+<p>He concluded &#8220;We are very proud of it, and it could have never been built in this time, with this performance, without Corona. Actually we agreed on the delivery time knowing that Corona can do it.&#8221;</p>
+<h3>Conclusion</h3>
+<p>We are constantly amazed at where we find Corona being used. Developers are using it to create great new entertainment apps, utility apps, and apps to enrich people&#8217;s lives. This may be one of the most unique case studies yet!</p>
+<p>Roya TV has already filmed 40 episodes of <em>Arrange it Correctly </em>with even more to come.</p>
+<p>What amazing things can you do with Corona? Cheer for the Maysalward team by reading more about their success in the <a href=https://forums.coronalabs.com/topic/62726-live-tv-show-contest-with-prizes-for-winners-made-with-corona-sdk/?#entry325559 target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Climberia &#8211; a challenging climbing game</title>
+		<link>/blog/2016/04/05/case-study-climberia-a-challenging-climbing-game/</link>
+		<pubDate>Tue, 05 Apr 2016 14:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[2d]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[case study]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=66351</guid>
+		<description><![CDATA[In this case study, we look at a new Corona-powered game called Climberia. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66359" src="/wordpress/wp-content/uploads/2016/04/icon-150x150.png" alt="icon" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/icon-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/icon-300x300.png 300w, /wordpress/wp-content/uploads/2016/04/icon-768x768.png 768w, /wordpress/wp-content/uploads/2016/04/icon-570x570.png 570w, /wordpress/wp-content/uploads/2016/04/icon-500x500.png 500w, /wordpress/wp-content/uploads/2016/04/icon-1000x1000.png 1000w, /wordpress/wp-content/uploads/2016/04/icon-700x700.png 700w, /wordpress/wp-content/uploads/2016/04/icon.png 1024w" sizes="(max-width: 150px) 100vw, 150px" />Corona developers are very creative and regularly produce amazing works. In this case study, we look at a new game called <a href=http://www.climberia.com/ target="_blank">Climberia</a>. In this innovative game, you play a legless pirate skeleton that climbs from the ocean floor, collecting coins while avoiding a greedy octopus.</p>
+<p>Climberia is the brainchild of Nikola Georgiev and Stoyan Pedev of <a href=http://www.kvaba.com/ target="_blank">Kvaba</a>, a small studio in Sofia, Bulgaria. Georgiev and Pedev decided to start building games in their spare time while having a drink in their local pub.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/XFdnalWr-pY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>After trying a couple of projects that didn&#8217;t gain momentum, they stumbled upon the idea for Climberia. Using a Google search to find a 2D gaming platform, they discovered Corona SDK and quickly had a working demo of their idea. </p>
+<p>The gameplay was challenging and fun, but there was a problem: neither Georgiev or Pedev were artists and the game didn&#8217;t look very good. Fortunately, they found <a href=http://robo.bg/ target="_blank">Robo Video Lab</a> who fell in love with the game and the two companies formed a partnership to produce Climberia. The art team used low-polygon 3D models, converted them to 2D still images, and assembled it all into colorful scenes.</p>
+<p>The gameplay is very challenging. Like rock climbing, your pirate has to swing his arm and body to grab the next hand-hold. If the pirate lets go, he falls to the ocean floor and dies. Players must keep one finger on the screen the entire time while using another finger to swing the pirate and reach another hand-hold.</p>
+<p><img class="alignnone size-large wp-image-66360" src="/wordpress/wp-content/uploads/2016/04/Climberia-02-1024x576.png" alt="Climberia-02" width="960" height="540" /></p>
+<p>&#8220;We wanted to create a game where the player is challenged not only in the virtual world of the game but also in the physical world – to test his muscles and nerves&#8221;, said Georgiev. &#8220;The original idea was for a climber who has to constantly keep at least one of his hands on the wall, so a player&#8217;s thumb must always drag the screen. With the initial demo, we saw that we could improve the concept by adding the swinging and jumping features.&#8221;</p>
+<p>Corona SDK has been critical to their development process. As beginners in the game development field, Georgiev and Pedev found that it was easy to get started developing a 2D game in Corona. Rapid prototyping allowed them to assess the project early on and adjust certain aspects as the project matured.</p>
+<p>Climberia is available for iOS on April 5, 2016, and Kvaba plans to release an Android version in the coming months. Check it out in the app store!</p>
+<p><a href=https://itunes.apple.com/us/app/climberia-pirates/id1054929556?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: Glitch Games &#8211; building successful cross-platform adventures</title>
+		<link>/blog/2016/03/31/case-study-glitch-games-building-successful-cross-platform-adventures/</link>
+		<pubDate>Thu, 31 Mar 2016 18:05:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Game Studios]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[adventure]]></category>
+		<category><![CDATA[corona sdk]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+
+		<guid isPermaLink="false">/?p=66259</guid>
+		<description><![CDATA[In this case study, we take a look at Glitch Games, a two-man indie studio from Oxfordshire, UK, and their success using Corona SDK to build popular adventure games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66275" src="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png" alt="Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCA=w300" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/Blqvc8LmI3JaPAFkANVHAfF2aQ8JBiTaaNOQf_6zKh1VRFt0hDIw320KOSYYyVKJCAw300.png 300w" sizes="(max-width: 150px) 100vw, 150px" />This is a tale of two best friends since college: Graham Ransom the programmer and Simon Pearce the artist. Even though they went to different universities, both went on to study game development. They started <a href=http://www.glitchgames.co.uk/ target="_blank">Glitch Games</a> in January 2012 working on kids&#8217; educational titles. Within a month after they met, they took part in their first 48 hour game jam and tried to build an adventure game.</p>
+<p>The result was  a title called <em>The Hauntening</em> which went on to win that game jam. They ended up releasing the game in the App Store for free to see if there was any interest in it. The feedback was positive and they began working on their first full-fledged adventure game. Eight months later, <em><a href=http://www.foreverlostgame.com/ target="_blank">Forever Lost</a>: Episode 1</em> was released for iOS and Android. Since then they have completed the trilogy and a free prequel game.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/H9ethihZrMw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>Graham first discovered Corona SDK in 2009 when Corona was a fledgling framework. When he and Simon formed Glitch Games, it only made sense to continue using Corona SDK.</p>
+<p>Having been around for a while, it&#8217;s safe to call Graham a pioneer in mobile adventure games and an early adopter of Corona Labs&#8217; technologies as they come out, including our recent desktop support. Not only is the full suite of games available on Apple&#8217;s App Store, Google Play, and Amazon, it&#8217;s also available on both OS X and Windows desktop. In addition, they have built their own adventure framework called Serenity which sits on top of Corona SDK and allows them to rapidly build adventure games.</p>
+<p><img class="alignnone size-large wp-image-66276" src="/wordpress/wp-content/uploads/2016/03/hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6ch900-1024x640.png" alt="hnReR4Kbe1NXOQoHjVgZ60lbkNO1jJKYQPp3JWi0r1otpgKah5zw0873xgmUat_bL6c=h900" width="960" height="600" /></p>
+<p>When asked &#8220;Why Corona?&#8221; Graham said &#8220;If it wasn&#8217;t for Corona, <em>Forever Lost</em> wouldn&#8217;t exist today. We&#8217;d most likely have to go get real jobs.&#8221;  With multiple-millions of downloads across all the the stores, Glitch games is one of the proverbial success stories for indie studios. <em>Forever Lost</em> has been #1 in multiple countries and it was short-listed for the TIGA awards a couple of years ago.</p>
+<p>Graham likes Corona for ease of development and quick iteration. Their first kids&#8217; apps were turned around in less than a month, while their full adventure games take around eight months to build. Graham&#8217;s advice to those new to app development? &#8220;Download Corona and start making a game!&#8221;</p>
+<h3>Availability</h3>
+<p><a href=https://itunes.apple.com/us/app/forever-lost-episode-1-hd/id542364897?ls=1&mt=8 target="_blank"><img class="alignnone size-thumbnail wp-image-66270" src="/wordpress/wp-content/uploads/2016/03/iTunesStore-150x50.png" alt="iTunesStore" width="150" height="50" /></a><a href=https://play.google.com/store/apps/details?id=com.glitchgames.foreverlostepisode1hd target="_blank"><img class="alignnone size-thumbnail wp-image-66269" src="/wordpress/wp-content/uploads/2016/03/GooglePlayStore-150x52.png" alt="GooglePlayStore" width="150" height="52" /></a><a href=http://www.amazon.com/Forever-Lost-Episode-1-HD/dp/B00BF9USIO/ target="_blank"><img class="alignnone size-thumbnail wp-image-66271" src="/wordpress/wp-content/uploads/2016/03/AmazonStore-150x52.png" alt="AmazonStore" width="150" height="52" /></a><a href=https://itunes.apple.com/us/app/forever-lost-episode-1/id1036708333?ls=1&mt=12 target="_blank"><img class="alignnone size-thumbnail wp-image-66274" src="/wordpress/wp-content/uploads/2016/03/MacStore-150x52.png" alt="MacStore" width="150" height="52" /></a><a href=http://glitchgames.itch.io/forever-lost-episode-1 target="_blank"><img class="alignnone size-thumbnail wp-image-66273" src="/wordpress/wp-content/uploads/2016/03/ItchIoStore-150x50.png" alt="ItchIoStore" width="150" height="50" /></a></p>
+<h3>Conclusion</h3>
+<p>With a great idea and patience, you can built successful games with Corona SDK. Dream, Build, Ship!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Case Study: DoodleMaths &#8211; teaching math the fun way</title>
+		<link>/blog/2016/03/17/case-study-doodlemaths-teaching-math-the-fun-way/</link>
+		<pubDate>Fri, 18 Mar 2016 01:23:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Case Study]]></category>
+		<category><![CDATA[Case Study - Education]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Education]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[doodle]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[math]]></category>
+		<category><![CDATA[primary]]></category>
+		<category><![CDATA[secondary]]></category>
+
+		<guid isPermaLink="false">/?p=66123</guid>
+		<description><![CDATA[In this case study, dive into EZ Education's DoodleMaths, a math education app from this UK based development studio. Learn more about this innovative team and their accomplishments.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66126" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png" alt="vIay5wqa" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/03/vIay5wqa-150x150.png 150w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-300x300.png 300w, /wordpress/wp-content/uploads/2016/03/vIay5wqa-500x500.png 500w, /wordpress/wp-content/uploads/2016/03/vIay5wqa.png 551w" sizes="(max-width: 150px) 100vw, 150px" />In this post, we highlight <a href=https://www.doodlemaths.com/ target="_blank">DoodleMaths</a> by <a href=http://www.ezeducation.co.uk/ target="_blank">EZ Education</a>. DoodleMaths is an intuitive math app for children that allows them to consistently work at the best level for them. Its algorithm works to understand the level a child is currently working at and then it creates a work program for them so they can continually consolidate and learn new topics, rather than playing it safe and only doing what they know well.</p>
+<p>Tom Minor, along with co-founder Nicola Chilman, founded EZ Education in 2012 with the aim of enhancing  the way kids learn through adaptive learning programs. As experienced classroom educators, they have first-hand experience working with kids, and DoodleMaths is the top-selling math app for elementary school children in the UK.</p>
+<p><iframe width="1060" height="596" src="https://www.youtube.com/embed/PvokxEqIDOo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p>DoodleMaths has won many accolades. &#8220;We have had 5-star reviews from the Educational App Store and have recently won Best Mobile App at The SPARKies, run by TechSPARK. We have been in the top 10 of the education apps in iTunes, and we have been shortlisted for KPMG&#8217;s Best British Mobile Startup,&#8221; says Tom. &#8220;As a company, we have received numerous rewards and can proudly say we have the best selling primary maths app in the United Kingdom.&#8221;</p>
+<p><img class="alignnone size-full wp-image-66127" src="/wordpress/wp-content/uploads/2016/03/screen640x640.jpeg" alt="screen640x640" width="640" height="360" /></p>
+<h3>Building their app</h3>
+<p>The developers realized how much children engage with tablets and the huge potential for them to learn in a way that individually suits their needs. Their background as teachers and tutors meant that they had first-hand experience of how an app could work alongside common teaching methods in order to draw the most out of the child.</p>
+<p>For EZ Education, app development is an ongoing process, so they continuously iterate on their design and code base. The company has used Corona for development of their three existing applications and their upcoming fourth application. Thanks to Corona and the Lua language, they can develop a core app in around three months and smaller projects even faster.</p>
+<p><img class="alignnone size-full wp-image-66128" src="/wordpress/wp-content/uploads/2016/03/unnamed.jpg" alt="unnamed" width="512" height="384" /></p>
+<p>When asked about advice for developers, Tom says &#8220;My first bit of advice would be for newcomers. I would recommend that they read the tutorials and try out some sample applications to see how much time they could save. Corona really streamlines the development process.&#8221; He continues, &#8220;It was important to my team to establish a set of programming standards and best practices and we were easily able to find wonderful examples on the Corona <a href=https://code.coronalabs.com/code target="_blank">Code Exchange</a>. I recommend that others look there for patterns and inspiration when developing their own application.&#8221;</p>
+<h3>Going online</h3>
+<p>Some developers chase problems which they have little experience in solving. For some, it&#8217;s a challenge to learn new things, but sometimes recognizing that you need help is an important step. For EZ Education, their staff is educators. Building and hosting an online service is challenging, but DoodleMaths needed features to enable teachers to get the most out of the app. EZ Education found the solution in Bluefuse Systems (<a href=http://www.bluefusesystems.com>www.bluefusesystems.com/</a>) to develop parent and teacher dashboards. These dashboards contain features such as live monitoring, live messaging, and leaderboards, giving the students the ability to challenge each other while keeping the parents and teachers involved in their progress.</p>
+<h3>Conclusion</h3>
+<p>If you want to check out DoodleMaths and EZ Education&#8217;s other apps, visit their <a href=https://www.doodlemaths.com/ target="_blank">website</a> at <a href=https://www.doodlemaths.com/ target="_blank">https://www.doodlemaths.com/</a>. From there, you can download each of their apps on all of the supported platforms. DoodleMaths is a fun (but serious) tool used to educate children, and it was all built with Corona SDK. <a href=/ target="_blank">Get started today!</a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>display.newText &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/display-newtext/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>display.newText &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Methods for positioning text</title>
+		<link>/blog/2014/02/11/tutorial-methods-for-positioning-text/</link>
+		<comments>/blog/2014/02/11/tutorial-methods-for-positioning-text/#comments</comments>
+		<pubDate>Tue, 11 Feb 2014 21:47:20 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[display.newText]]></category>
+		<category><![CDATA[text]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=55979</guid>
+		<description><![CDATA[At the basic level, creating and positioning text in Corona is simple. However, when you need to position/align text in creative ways, things get a bit more complicated. In this tutorial, we'll inspect the actual display object that Corona generates so that you can understand and achieve advanced positioning and alignment.]]></description>
+				<content:encoded><![CDATA[<p>At the basic level, creating and positioning <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">text</a> in Corona SDK is simple: just create the object at the desired position in the specified font size and you&#8217;re done. For example:</p><pre class="crayon-plain-tag">local myText = display.newText( &quot;Hello World&quot;, 200, 200, native.systemFont, 16 )</pre><p>However, when you need to position/align text in creative ways, things get a bit more complicated. In this tutorial, we&#8217;ll inspect the actual display object that Corona generates via <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> so that you can understand and achieve advanced positioning and alignment.</p>
+<h3>The basics</h3>
+<p>Under the hood, Corona takes the information that you pass to the <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> API and it generates an image, rendered to texture memory like any other display object. Because Corona SDK uses the operating system&#8217;s font rendering, fonts may render differently between devices and the Corona Simulator, in particular between Windows and OS X.</p>
+<h3>Single-line method</h3>
+<p>The most basic usage of <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> is the <strong>single-line method</strong>. Using this method, you simply output a string of text to the screen. Once it&#8217;s rendered by Corona, the theoretical &#8220;bounding box&#8221; (indicated by the green line) will fit precisely around the text display object:</p>
+<p><img class="alignnone size-full wp-image-55984" src="/wordpress/wp-content/uploads/2014/02/positioningText1.jpg" alt="positioningText1" /></p>
+<p>In regards to screen position, the <code>x</code> and <code>y</code> of this &#8220;box&#8221; is based upon its center point. You can, of course, position any text object via this center point, but if you&#8217;re building a series of text objects such as labels on a statistics screen, you&#8217;ll probably want to left-align all of them to a vertical &#8220;guide line.&#8221; This can be accomplished using <a href=http://docs.coronalabs.com/guide/graphics/transform-anchor.html target="_blank">anchor points</a>, where — in regards to the <code>x</code> position — an anchor point of <code>0</code> indicates the left-most point of the object, <code>0.5</code> indicates the center <code>x</code> point, and <code>1</code> indicates the right-most point. A similar concept applies to the <code>y</code> anchor point, where a <code>y</code> anchor of <code>0</code> represents the object&#8217;s top, <code>0.5</code> the vertical middle, and <code>1</code> the object&#8217;s bottom.</p>
+<p>Let&#8217;s inspect a basic example:</p><pre class="crayon-plain-tag">local myText = display.newText( &quot;Hello World&quot;, 0, 0, native.systemFont, 16 )
+myText:setFillColor( 0, 0, 0 )
+myText.anchorX = 0
+myText.x = 10
+myText.y = 100</pre><p>Because the <code>anchorX</code> value is set to <code>0</code> (the left edge), and the <code>x</code> value is set to <code>10</code>, this code block positions the text with its left edge 10 points to the right of the content area&#8217;s vertical <code>0</code> point. Remember, however, that you&#8217;re not &#8220;aligning the text,&#8221; but rather <em>positioning its bounding box</em> (this point will become more important further on).</p>
+<h3>Multi-line method</h3>
+<p>For more advanced alignment, you may utilize the <strong>multi-line method</strong>. In this case, you pass a table of <strong>options</strong> to the <a href=http://docs.coronalabs.com/api/library/display/newText.html target="_blank">display.newText()</a> call. Most of these options mimic those from the &#8220;shorthand&#8221; single-line declaration outlined above, but there are three additional properties which extend the alignment possibilities: <code>width</code>, <code>height</code>, and <code>align</code>.</p>
+<h4>width</h4>
+<p>This property specifies the width of the multi-line &#8220;bounding box&#8221; in pixels. This is similar to drawing a flexible text box in a graphics application like Photoshop or Illustrator, where the text — no matter how much you enter within the box — will wrap within the confines of its boundaries. As expected, if a word is too long to fit within the remaining width available on that line, it will wrap to the next line.</p>
+<h4>height</h4>
+<p>If specified, the text will be cropped at this value, in pixels. If you want an &#8220;unlimited&#8221; height for the text box, set this value to <code>0</code> and the box height will adjust depending on the amount of text within it. However, it will never exceed the maximum texture size limit for the device.</p>
+<h4>align</h4>
+<p>This specifies the alignment of the text when the <code>width</code> parameter is supplied. Default value is <code>"left"</code>. Valid values are <code>"left"</code>, <code>"center"</code>, or <code>"right"</code>. We&#8217;ll discuss this in more detail shortly.</p>
+<h3>Principles of alignment</h3>
+<p>Although it may seem non-intuitive to create a single line of text using the multi-line method, let&#8217;s explore the advantages from Corona&#8217;s standpoint:</p><pre class="crayon-plain-tag">local options = {
+   text = &quot;Hello World&quot;,
+   x = display.contentCenterX,
+   y = display.contentCenterY,
+   fontSize = 24,
+   width = 200,
+   height = 0,
+   align = &quot;left&quot;
+}
+
+local textBox = display.newText( options )
+textBox:setFillColor( 0, 0, 0 )</pre><p>Because the string <strong>Hello World</strong>, in the default system font at size 24, fits within the width of 200 pixels, it won&#8217;t wrap to a second line. Thus, this code visually produces a single line of text. However, while it may appear the same as the first example, it&#8217;s important to understand that the &#8220;bounding box&#8221; is now 200 pixels wide, <strong>not</strong> the pixel width of the actual text that you see on the screen:</p>
+<p><a href=/wordpress/wp-content/uploads/2014/02/positioningTextLeft.jpg><img class="alignnone size-full wp-image-55986" src=/wordpress/wp-content/uploads/2014/02/positioningTextLeft.jpg alt="positioningTextLeft" /></a></p>
+<p>In this manner, you can build a series of fixed-width text boxes and position them in a more unified manner rather than dealing with various text object sizes produced via the single-line method.</p>
+<p>Want to right-align the text? Simply change the <code>align</code> parameter to <code>"right"</code>…</p>
+<p><a href=/wordpress/wp-content/uploads/2014/02/positioningTextRight.jpg><img class="alignnone size-full wp-image-55987" src=/wordpress/wp-content/uploads/2014/02/positioningTextRight.jpg alt="positioningTextRight" /></a></p>
+<p>Or you may change it to <code>"center"</code>…</p>
+<p><a href=/wordpress/wp-content/uploads/2014/02/positioningTextCenter.jpg><img class="alignnone size-full wp-image-55985" src=/wordpress/wp-content/uploads/2014/02/positioningTextCenter.jpg alt="positioningTextCenter" /></a></p>
+<p>In addition to these flexible alignment options, another advantage to multi-line method is that it lets you change the value of the <code>.text</code> property and, if the new string is longer or shorter, the box remains at the fixed width and the text won&#8217;t shift unexpectedly. In single-line mode, by comparison, if you position a text object by its center point and change the text string, the object may not align as you intended.</p>
+<h3>Multiple lines</h3>
+<p>Of course, multi-line mode supports multiple lines as well! Let&#8217;s see how it looks in the three different alignment options:</p>
+<p><img class="size-full wp-image-55988 alignright" style="margin-top: 43px; margin-bottom: 0px;" src="/wordpress/wp-content/uploads/2014/02/tpss1.png" alt="tpss1" width="204" height="304" /></p>
+<h4>&#8220;left&#8221;</h4>
+<p></p><pre class="crayon-plain-tag">local myText = [[This is a long, multi-line string where we are randomly
+inserting some blank
+lines
+of text.]]
+
+local options = {
+   text = myText,
+   x = display.contentCenterX,
+   y = display.contentCenterY,
+   width = 200,
+   height = 300,
+   fontSize = 24,
+   align = &quot;left&quot;
+}
+
+local textField = display.newText( options )
+textField:setFillColor( 0, 0, 0 )</pre><p><img class="size-full wp-image-55988 alignright" style="margin-top: 43px; margin-bottom: 0px;" src="/wordpress/wp-content/uploads/2014/02/tpss2.png" alt="tpss2" width="204" height="304" /></p>
+<h4>&#8220;center&#8221;</h4>
+<p></p><pre class="crayon-plain-tag">local myText = [[This is a long, multi-line string where we are randomly
+inserting some blank
+lines
+of text.]]
+
+local options = {
+   text = myText,
+   x = display.contentCenterX,
+   y = display.contentCenterY,
+   width = 200,
+   height = 300,
+   fontSize = 24,
+   align = &quot;center&quot;
+}
+
+--Output the text box with the specified options
+local textField = display.newText( options )
+textField:setFillColor( 0, 0, 0 )</pre><p><img class="size-full wp-image-55988 alignright" style="margin-top: 43px; margin-bottom: 0px;" src="/wordpress/wp-content/uploads/2014/02/tpss3.png" alt="tpss3" width="204" height="304" /></p>
+<h4>&#8220;right&#8221;</h4>
+<p></p><pre class="crayon-plain-tag">local myText = [[This is a long, multi-line string where we are randomly
+inserting some blank
+lines
+of text.]]
+
+local options = {
+   text = myText,
+   x = display.contentCenterX,
+   y = display.contentCenterY,
+   width = 200,
+   height = 300,
+   fontSize = 24,
+   align = &quot;right&quot;
+}
+
+--Output the text box with the specified options
+local textField = display.newText( options )
+textField:setFillColor( 0, 0, 0 )</pre><p>As you can see, the <code>align</code> option affects the positioning of the text within the box. In all of these examples, the height of the box is defined at <code>300</code>. If you set the <code>height</code> to <code>0</code>, the bounding box will match the actual height of the text. However, this may affect vertical alignment depending on the box&#8217;s <code>y</code> anchor setting. Also, while a <code>height</code> setting of <code>0</code> creates a text box of &#8220;unlimited&#8221; height, the text that is created will never exceed the device&#8217;s texture size limit. This is an important restriction to be aware of if you place a significant amount of text into a single text box.</p>
+<h4>On the topic of multiple lines&#8230;</h4>
+<p>In Lua, there is some confusion around how to put line breaks into strings. While Lua supports the traditional double quotes (<code>"..."</code>) or single quotes (<code>'...'</code>), it also supports multiple lines via the <code>[[...]]</code> declaration. As such, you may use this method <strong>or</strong> the Unix &#8220;Newline&#8221; character (<code>\n</code>) within quotes:</p><pre class="crayon-plain-tag">longString = [[This is a really
+long string
+with multiple
+line breaks.]]
+
+--OR...
+longString = &quot;This is a really\nlong string\nwith multiple\nline breaks.&quot;</pre><p>Note that if you attempt to input multiple lines using Corona&#8217;s single-line method, the line breaks will be ignored.</p>
+<h3>In summary</h3>
+<p>Hopefully this tutorial has shown you some useful techniques for aligning text in Corona SDK. With the single-line method and the more powerful multi-line method, almost any alignment scenario should be possible with just a few lines of code.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/02/11/tutorial-methods-for-positioning-text/feed/</wfw:commentRss>
+		<slash:comments>21</slash:comments>
+		</item>
+	</channel>
+</rss>

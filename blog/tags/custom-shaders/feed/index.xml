@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>custom shaders &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/custom-shaders/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>custom shaders &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</title>
+		<link>/blog/coronageek/corona-geek-154/</link>
+		<comments>/blog/coronageek/corona-geek-154/#respond</comments>
+		<pubDate>Mon, 10 Aug 2015 22:13:39 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[2D Shadows]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63645</guid>
+		<description><![CDATA[Today, Steven Johnson shared his code for creating a custom 2D shadows shader example and Ed Maurina showed us how to simulate and use gravity in a games similar to They Need To Be Fed 3. Watch the replay and check the show notes to download the code.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Qktg1GIQeiI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> shared his <a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">code for creating a custom 2D shadows shader example</a> and Roaming Gamer’s, Ed Maurina showed us <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to simulate and use gravity in a games</a> similar to the popular iOS and Android game, <a href=http://www.bitatebit.com/ target="_blank">They Need To Be Fed 3</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">Corona Geek After Dark #6</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/c7uvoj9iibb7o7ogt7vr4hinc90 target="_blank">passion versus profit</a>, multiplayer game development, and a ton of other stuff.</p>
+<p><strong>Corona Geek Games July Challenge Winner!</strong></p>
+<p>Congratulations again to Huub van Vuren for being July&#8217;s high score winner at Rise 1.0 with an amazing high score of 606! Huub has earned a $50 gift card for playing games. That&#8217;s pretty cool. We&#8217;ll announce a game for August on next week&#8217;s Hangout. Thank you to everyone who participated in July&#8217;s challenge. Check out the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> for a full list of scores.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Download it and have fun!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-153/>Corona Geek #153 &#8211; Custom Shader Math and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=https://github.com/ggcrunchy/samples/tree/master/shaders target="_blank">2D Shadow Custom Shader Example Code</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://sellfy.com/p/rovA/ target="_blank">Gear Jumper Template</a></li>
+<li><a href=https://www.youtube.com/watch?v=AJdEqssNZ-U target="_blank">The Art of Screenshake</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy Apps</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-154/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-154-2015-08-10-using-gravity-in-games-and-2d-shadows.mp3" length="94398172" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #153 &#8211; Custom Shader Math and 2D Shadow Effects</title>
+		<link>/blog/coronageek/corona-geek-153/</link>
+		<comments>/blog/coronageek/corona-geek-153/#respond</comments>
+		<pubDate>Tue, 04 Aug 2015 00:50:52 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[shader effects]]></category>
+		<category><![CDATA[shader playground]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63590</guid>
+		<description><![CDATA[Today, Steven Johnson of led us through part 4 of our ongoing discussion on creating custom shader effects. During the Hangout Steven highlighted some of the exponential numerical issues surrounding shader math. We looked at a few visual representations of these “numerical issues” and talked about how to overcome hardware limitations to achieve device level precision.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/IfmM32onzq8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, Steven Johnson of <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> led us through part 4 of our ongoing discussion on creating custom shader effects. During the Hangout Steven highlighted some of the exponential numerical issues surrounding shader math. We looked at a few visual representations of these “numerical issues” and talked about how to overcome hardware limitations to achieve device level precision. We also reviewed some new <a href=https://goo.gl/AWfOtk target="_blank">Corona Shader Playground</a> examples and looked at a 2D Shader example that implemented multi-pass shader effects.</p>
+<p>Xibalba Studios is the developer of <a href=http://xibalbastudios.com/games-2/coming-soon/index.html target="_blank">MilitAnt™</a> an action-packed side-scrolling platform/shooter set in a world ruled by insects. A lone soldier ant must defend his home colony at all costs from a brutal invasion by the enemy bug nations. If you haven&#8217;t already, play MilitAnt™ and see even more of Steven’s handy work.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/c7uvoj9iibb7o7ogt7vr4hinc90 target="_blank">Corona Geek After Dark #5</a> when we will discuss topics like general app development, forum questions, community insights, and more. Last week we discussed selling premium support services, licensing characters to make games, stepping outside your comfort zone, and a ton of other stuff.</p>
+<p><strong>Corona Geek Games July Challenge Winner!</strong></p>
+<p>Congratulations to Huub van Vuren for being July&#8217;s high score winner at Rise 1.0 with an amazing high score of 606! Huub has earned a $50 gift card for playing games. That&#8217;s pretty cool. We&#8217;ll announce a game for August on next week&#8217;s Hangout. Thank you to everyone who participated in July&#8217;s challenge. Check out the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a> for a full list of scores.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Download it and have fun!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-152/>Corona Geek #152 &#8211; Facebook Integration and Social Media Sharing</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links Discussed in Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://www.patreon.com/roaminggamer target="_blank">Get App Development Help</a> from Roaming Gamer</li>
+<li><a href=https://www.shadertoy.com/ target="_blank">Shader Examples on ShaderToy</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-153/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-153-2015-08-03-custom-shader-math.mp3" length="75856980" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #151 &#8211; New Twitter Plugin Demo and Glass Half Full Shader Effects</title>
+		<link>/blog/coronageek/corona-geek-151/</link>
+		<comments>/blog/coronageek/corona-geek-151/#respond</comments>
+		<pubDate>Mon, 20 Jul 2015 22:54:25 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[custom shaders]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[shader examples]]></category>
+		<category><![CDATA[shaders]]></category>
+		<category><![CDATA[social media integration]]></category>
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63385</guid>
+		<description><![CDATA[On today's Corona Geek Hangout, Jason Schroeder showed off features in his new plugin for Twitter integration into Corona built apps and Steven Johnson introduced us to a cool custom shader effect that fills a drinking glass with fluid on the fly.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/fIN1DcHEy4w?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>On today&#8217;s Corona Geek Hangout, <a href=http://jasonschroeder.com/ target="_blank">Jason Schroeder</a> showed off the features of his <a href=https://store.coronalabs.com/plugin/twitter>new Twitter plugin for Corona</a>. Jason has not only created a whole plugin to simplify Twitter integration, he has also created a beautiful sample app to show how the plugin features work. Jason also <a href=http://socialpoetry.jasonschroeder.com/ target="_blank">showed us the app that started it all</a> and inspired him to create a plugin to share what he has learned about Twitter integration in apps.</p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/ci9fiqq1196dssgbbf2ibdntsho target="_blank">Corona Geek After Dark #3</a> when we will talk with Jason about plugin development for Corona SDK. We will ask him what the development process was like, what the submission process was like, and what plans he has for other plugins.</p>
+<p>Also today, Steven Johnson from <a href=http://xibalbastudios.com/ target="_blank">Xibalba Studios</a> introduced us to more custom shader effects. This time, Steven showed us how he created an effect to mimic fluid levels in a drinking glass. Using a slider, Steven was able to adjust the amount of liquid in a drinking glass in realtime. He talked about how he calculates the top most fluid level, the bottom most level, and all the in-between levels as the glass contents grow.</p>
+<p>Corona comes with a <a href=https://docs.coronalabs.com/daily/guide/graphics/effects.html target="_blank">bunch of built in shader effects</a>, but being able to create your own custom shader effects is extremely powerful as well. Next week Steven will talk about numerical problems and other shader math operations, so be sure to tune in for that Hangout.</p>
+<p><strong>Let’s Play Rise 1.0 for July&#8217;s Corona Geek Games Challenge</strong></p>
+<p>For July we are playing Rise 1.0 by Vernon Coleman (aka, Novateur) for the chance to win a $50 gift card. To participate, share a picture of your highest Rise score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook page</a>.</p>
+<p>Rise 1.0 is available on both <a href=http://bit.ly/rise-ios target="_blank">iOS</a> and <a href=http://bit.ly/rise-android target="_blank">Android</a>. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-150/>Corona Geek #150 &#8211; Custom Vertex Shader Effects and More Playground Examples</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+<li><a href=http://worona.org/ target="_blank">Worona &#8211; WordPress Plugin</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Get Game Templates, Tools, and Tutorials</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+<li><a href=https://gumroad.com/l/dyd-ebook target="_blank">Double Your Downloads in 5 Steps</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-151/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-151-2015-07-20-new-twitter-plugin-and-shaders-part3.mp3" length="94159709" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

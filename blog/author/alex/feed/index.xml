@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>alex &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/alex/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>alex &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #141</title>
+		<link>/blog/2016/09/16/from-the-forum-issue-141/</link>
+		<pubDate>Fri, 16 Sep 2016 20:03:44 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=68082</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Prefab versus on-the-fly: does it really matter?</h3>
+<p>I used to wonder why we needed so many different options to modify the textures and objects that Corona empowers us with. If I can do it in Photoshop, wouldn’t that be enough to get it into my program?</p>
+<p>Oh, how silly I was back then! Now I&#8217;m coming to realize that modifying textures and objects on the fly, according to user input, gives users so much more ownership over their experience when playing our games. I knew that wrapping my head around the concept was going to serve me well in the future.</p>
+<p>This <a href=https://forums.coronalabs.com/topic/65514-whats-the-difference-between-textureresource-object-compared-to-snapshot-object/ target="_blank">forum thread</a> talks about the differences between all of the fun options we get to play with. Have a question? Don’t be shy &#8212; ask it so we can all learn together.</p>
+<h3>Won’t someone please think of the children?</h3>
+<p>Catering our apps to kids under 13 years of age is a bit of a tightrope walk. Are you doing yourself a disservice by potentially pigeon-holing your game into a niche, only to be found by a significantly smaller audience?</p>
+<p>Heavy questions to be sure. Trying to adhere to the standards imposed by Apple, Google, and other app stores to gain entry into the coveted &#8220;Kids&#8217; Section&#8221; can be unclear as well.</p>
+<p>A Corona developer recently had similar questions, so Corona support engineer <strong>Rob Miracle</strong> dropped by to lay down some important facts and documentation with regards to what the app stores are looking for in a child-friendly app. Check out the original <a href=https://forums.coronalabs.com/topic/65549-kids-app-and-best-practices-questions/ target="_blank">forum thread</a> and gain some valuable knowledge on the subject!</p>
+<h3>Multidex and Android bloat</h3>
+<p>There is a very good chance that, as a Corona developer, you have never encountered or had to worry much about &#8220;multidex&#8221; as it applies to the Android build process. However, multidex support is necessary to allow more complex apps to exist in the Android ecosystem.</p>
+<p>The quick and dirty is:</p>
+<p><em>Android application (APK) files contain executable bytecode files in the form of Dalvik Executable (DEX) files, which contain the compiled code used to run your app. The Dalvik Executable specification limits the total number of methods that can be referenced within a single DEX file to 65,536, including Android framework methods, library methods, and methods in your own code. Getting past this limit requires that you configure your app build process to generate more than one DEX file, known as a multidex configuration.</em></p>
+<p>In some cases, this is a great option, and in others, it might increase the size of your APK without any increase in codebase size. This isn’t a huge issue for those targeting the Android platform, but it is something to keep in mind if you find that space is at a premium for your particular market.</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/65427-multidex-support-appears-to-increase-file-size-significantly-possible-to-disable/ target="_blank">forum thread</a> to learn how to limit the impact of multidex on your app.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #140</title>
+		<link>/blog/2016/09/09/from-the-forum-issue-140/</link>
+		<comments>/blog/2016/09/09/from-the-forum-issue-140/#comments</comments>
+		<pubDate>Fri, 09 Sep 2016 19:51:48 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=68012</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Firebase plugin open-sourced</h3>
+<p>With the shuttering of support for Coronium and all of its various derivations, Corona developers are running to locate the next best option for their back-end server solution. Coronium was ideal because it was written in Lua and the original developer was fantastic when it came to providing support.</p>
+<p>Fortunately, superstar Corona devotee <strong>scottrules44</strong> has open-sourced his Firebase plugin which hooks into the popular Google-owned platform. It has far too many features to reference here, but suffice to say, it should cover everything you need when looking for a server solution. Head to the <a href=https://forums.coronalabs.com/topic/65253-firebase-now-open-souced/ target="_blank">original forum thread</a> to learn more about this option!</p>
+<h3>Launching Google Maps from within a Corona app</h3>
+<p>We’ve talked about hook-ins and URL schemes in <em>From the Forum</em> before, and for good reason: they are a great tool to extend the utility of your app without having to reinvent the wheel and leverage Corona Enterprise functionality. After all, allowing users to open other apps on a device is key for many productivity-minded programs.</p>
+<p>When working on an app that is directly related to a real-world location, having the ability to open Google Maps to that direct location is always a nice option. In this <a href=https://forums.coronalabs.com/topic/65402-how-to-launch-google-maps-app-with-directions-from-corona/ target="_blank">forum thread</a>, one developer has hit upon the magic elixir needed to get Google Maps to bend to your will, every time! Check it out and add these tips to your repertoire.</p>
+<h3>Security-minded app data</h3>
+<p>Obfuscation and app security always go hand-in-hand. The next best thing to hiding is, quite simply, encryption. With the proliferation of ad networks and the popular option of rewarding users with in-game items after watching videos, it is more important than ever to ensure that it&#8217;s difficult to wrongly manipulate the system.</p>
+<p>For the second time this week, developer extraordinaire <strong>scottrules44</strong> comes up big, donating some killer code snippets in the form of encryption functionality. No real preamble is needed here: it’s just some really sweet code! Check it out in the <a href=https://forums.coronalabs.com/topic/65383-is-there-anyway-to-protect-my-json-file-from-my-documents-directory target="_blank">forum thread</a> and don’t forget to say thanks!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/09/09/from-the-forum-issue-140/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>From the Forum — Issue #139</title>
+		<link>/blog/2016/09/02/from-the-forum-issue-139/</link>
+		<pubDate>Fri, 02 Sep 2016 19:45:01 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=67901</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>No such thing as a free lunch</h3>
+<p>It’s the human condition to want to keep up with what other folks are doing across the fence. In a world of fast-moving software development, even having an inkling of the competitive landscape can help you shape your engineering decisions.</p>
+<p>There are quite a few websites that claim to provide a clear picture of the mobile app business scene, hooking up subscribers with charts, spreadsheets, and interactive reports galore. This <a href=https://forums.coronalabs.com/topic/65271-check-gameapp-rankings target="_blank">forum thread</a> goes over a few of these and the information is extremely valuable.</p>
+<p>It takes a lot of time to gather all of the info, digest it, and collate it, not to mention verifying facts. The informal research is provided here for free, so remember to weigh the value of the info against what is being charged for it!</p>
+<h3>The intricacies of an adaptive configuration</h3>
+<p>Corona SDK has always been a fantastic option when creating awesome games, and as soon as developers realized that it was so flexible and fast, applying the lessons learned to creating business apps was easy. We have seen some amazing apps that increase efficiency and decrease waste.</p>
+<p>In the recent past, Corona added a new option for developers to create non-game apps for larger screen sizes. The &#8220;adaptive&#8221; mode allows an app to scale up and &#8220;reveal&#8221; more of an app&#8217;s graphical interface on devices with larger screens, such as iPads. The main use-case is a calendar app. Smaller devices might only want to display the days of the week, while larger devices might want to show an entire month.</p>
+<p>In this <a href=https://forums.coronalabs.com/topic/65260-adaptive-display/ target="_blank">forum thread</a>, support engineer <strong>Rob Miracle</strong> runs down a practical example of an app that relies on adaptive scaling. Check it out and learn how to make this option work for you.</p>
+<h3>Memory constraints when you’re making pretty pictures</h3>
+<p>Mobile devices have become more powerful over the years. So, it is tempting to think that we can load up on the largest and most resource-hungry images and media in our games and apps.</p>
+<p>However, it is still important to effectively manage the sizes of your included images. Remember that images which are not created pragmatically could still potentially waste a mobile device&#8217;s precious resources!</p>
+<p>Check out this <a href=https://forums.coronalabs.com/topic/65286-power-of-two-textures/ target="_blank">forum thread</a> which discusses the pitfalls that occur when not keeping the “power of 2” rule in mind while creating images. If you have any questions or advice, don’t forget to chime in on the forum!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #138</title>
+		<link>/blog/2016/08/26/from-the-forum-issue-138/</link>
+		<pubDate>Fri, 26 Aug 2016 21:31:27 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=67875</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>File directories and their contents</h3>
+<p>A general rule for keeping code organized, is to know exactly what is inside of your project at all times. You are in control of your codebase, so you should be able to recall exactly what resources are available at any given time.</p>
+<p>However, the main codebase isn’t always the only set of files and assets that will be leveraged for your app. Often you are bringing in additional files, whether created within the app itself or downloaded from a server. While keeping a well-maintained list of resources is never a bad idea, it never hurts to have a safety net that will assist you in identifying <strong>what</strong> you have in <strong>which</strong> directories.</p>
+<p>This <a href=https://forums.coronalabs.com/topic/65218-search-for-directories/ target="_blank">forum thread</a> includes a way to obtain this info, giving you one more tool for developing a seamless app.</p>
+<h3>Preliminary spritesheet knowledge</h3>
+<p>Developers should have access to as much base knowledge about their chosen development suite as humanly possible. Documentation and sample code are integral to learning best practices and the best methods to implement popular features and functions.</p>
+<p>While there are a myriad of options when looking for additional educational resources, it never hurts to go right to the source. In this <a href=https://forums.coronalabs.com/topic/65174-jungle-sceneexplanation/>forum thread</a>, resident support magician <strong>Rob Miracle</strong> covers the ins and outs of the Jungle Spritesheet example in minute detail. Whether you’re looking for a refresher or are just starting out with spritesheet manipulation, its definitely worth a look!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #137</title>
+		<link>/blog/2016/08/19/from-the-forum-issue-137/</link>
+		<pubDate>Fri, 19 Aug 2016 21:39:12 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=67810</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Backend open-source server gets Corona plugin</h3>
+<p>If you’ve been in the tech industry for awhile, you know that having a server-side strategy for your apps and games can put you ahead of the competition.</p>
+<p>With so many big-time games and apps being produced, Corona is becoming a popular destination for backend developers to ply their wares. <strong>Coronium</strong> is clearly the leader for mind-share, but another option is <strong>BaaSBox</strong> which has the additional distinction of having a new GitHub-hosted plugin created for its service. It bills itself as being “<em>free to download and free to use! You can install the software on your own platform, at any time, and then manage your own backend as you like!</em>”</p>
+<p>Head over to the <a href=https://forums.coronalabs.com/topic/65081-baasbox-corona-sdk-lib/ target="_blank">original thread</a> to grab the link to the plugin and, if you have any additions to the code, remember to fork and put in a pull request to the plugin owner!</p>
+<h3>Every good encoder needs a decoder!</h3>
+<p>If you&#8217;re talented, maybe you can create base64 encryption and security protocols and meld them together in perfect harmony without any outside assistance. For the rest of us, a bit of third-party help can go a long way.</p>
+<p>To that end, one of our magnanimous developers decided to share his encoding and decoding snippets on the forum, allowing us to benefit from his hard work. This is useful when transmitting any kind of file and can be considered mandatory when trying to come up with a player-to-player system of communication.</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/65076-file-encoding-and-decoding/?#entry336205 target="_blank">original thread</a> to grab the info and don’t forget to say thanks to the author!</p>
+<h3>HTML, PHP, and Lua, all playing nicely together</h3>
+<p>Speaking of encryption and security, I have been looking for the best way to incorporate non-Lua technology into this blog series. So many of our apps and games rely on additional intelligence, for instance HTML and PHP. Finding quality threads that give more than a passing glimpse at coupling these options with a Corona-built app has been somewhat difficult, as you can imagine.</p>
+<p>That is, until now. This <a href=https://forums.coronalabs.com/topic/65049-registration-form/ target="_blank">forum thread</a> brings it all to the table, and then some. Forum maestro <b>Rob Miracle</b> runs down some serious assistance, going above and beyond by pulling from his wealth of experience with HTML and web tech to drop some very useful code snippets.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #136</title>
+		<link>/blog/2016/08/12/from-the-forum-issue-136/</link>
+		<pubDate>Fri, 12 Aug 2016 20:01:27 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+
+		<guid isPermaLink="false">/?p=67711</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>A super resource gives back</h3>
+<p>Chances are, if you’ve read through more than four Corona forum threads, you’ve come upon some serious knowledge dropped by the unequaled <strong>Roaming Gamer</strong>. Whether he’s pointing folks to one of his <a href=https://marketplace.coronalabs.com/plugin/math2d target="_blank">math2d</a> plugin calls or leading the charge on revamping older libraries, his help can be indispensable.</p>
+<p>It’s also highly likely that you’ve seen his <strong>SSK</strong> library linked to in quite a few forum threads. It’s done the work of multitudes by helping out new Corona developers learn the ropes, while providing a foundation of useful snippets so that more experienced programmers don’t need to re-invent the wheel.</p>
+<p>The previous incarnation of SSK has been shuttered in favor of streamlining the useful bits and excising the more redundant areas. The important part of this move is that the original SSK has been moved to a new home. Older links and trackbacks probably will not work as they were once intended, but the links in the <a href=https://forums.coronalabs.com/topic/64915-ssk-goes-private-ssk-legacy-released target="_blank">original forum thread</a> lead the way to the older code. Update your bookmarks now!</p>
+<h3>iOS contact access without breaking a sweat</h3>
+<p>The arcane inner workings of iOS devices can be a difficult thing to wrap your mind around. What is and isn&#8217;t &#8220;sandboxed,&#8221; what we need to remember from a permissions standpoint and what, if any, security concerns might arise from an errant <a href=https://docs.coronalabs.com/api/library/network/index.html target="_blank">network</a> API call should be at the forefront of everyone&#8217;s mind during iOS development.</p>
+<p>Not only does the thread below talk about how to access the iOS contact info using the normal everyday Corona flavor, but it helpfully runs down some sample code on what to do with the return data when you get it. Check out the <a href=https://forums.coronalabs.com/topic/64962-accessing-ios-contacts-not-working-even-with-the-sample-plugin-code/ target="_blank">original thread</a> to grab some quick tips!</p>
+<h3>Get a jumpstart on Coronium issues</h3>
+<p>As much as we would like to think so, no system is perfect. Reporting and squashing bugs and feature issues in our apps and games is a daily occurrence. It should come as no surprise then that other APIs that we rely on need the same kind of checkups.</p>
+<p>That’s why <a href=https://forums.coronalabs.com/topic/64976-coronium-ls-mongodb-edit-embedded-documents/ target="_blank">this thread</a> is so interesting. The normally harmonious life between mongoDB and Coronium LS can still get bumps and scrapes from time to time. The complications that come with modifying documents on the fly can be difficult to diagnose, but fortunately the worldwide Coronium faithful are up to the task! Check out the info contained therein and see if you can pick up a few tricks yourself.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #135</title>
+		<link>/blog/2016/08/05/from-the-forum-issue-135/</link>
+		<pubDate>Fri, 05 Aug 2016 21:03:54 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[conditional builds]]></category>
+		<category><![CDATA[multiplayer]]></category>
+		<category><![CDATA[photon]]></category>
+		<category><![CDATA[scope]]></category>
+		<category><![CDATA[symbolic links]]></category>
+
+		<guid isPermaLink="false">/?p=67642</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. This weeks topics include multiplayer integration, using symbolic links, and understanding scope in Lua.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Multiplayer guides always come in handy</h3>
+<p>It seems like with every rise of the morning sun, Corona developers have new multiplayer options to consider when developing their games. Fortunately, there are a few options that spring to the front and streamline the process while integrating nicely with Corona.</p>
+<p>One of the more popular options is <a href=https://docs.coronalabs.com/plugin/photon/index.html target="_blank">Photon</a>, a robust multiplayer and networking platform which has a very strong presence in the Corona forums. In addition to easy integration, a Corona YouTuber has posted an incredibly useful video tutorial on creating a multiplayer game using the Photon engine at its core.</p>
+<p>Check out the <a href=https://forums.coronalabs.com/topic/64826-full-photon-game-video-tutorial/ target="_blank">original thread</a> to learn a bit more about this project, and if you have questions, don’t be shy!</p>
+<h3>When “if-then” just isn’t enough</h3>
+<p>Let’s paint a picture: you have multiple methods for handling different types of devices, app store delivery methods, or screen sizes. You want to maintain one code base, but still want to make sure that each new build contains the correct configurations associated with your stipulations. What’s the best way to accomplish this with the least amount of code?</p>
+<p>Corona support engineer <strong>Rob Miracle</strong> chimed in on the thread below with some tips on setting up symbolic links (&#8220;symlinks&#8221;) on macOS machines. Valuable in other areas as well, symlinks can be worth their weight in gold.</p>
+<p>Read the <a href=https://forums.coronalabs.com/topic/64905-conditional-assembly-for-differing-builds-in-numerous-countries target="_blank">original thread</a> to grab some tips on this process and how it can make a complicated project much simpler.</p>
+<h3>Treading the familiar grounds of “scope”</h3>
+<p><strong>Scope</strong> in Lua is a fickle beast. It can mystify new converts and conquer the most aged among us. Learning it is a requirement, but mastering it can take years.</p>
+<p>Corona has many resources to help developers learn how scope works. Having a firm grasp of how scope relates to clean code and how it contributes to a solid project can be found in <a href=https://forums.coronalabs.com/topic/64779-scope-forward-declarations-and-functions-and-functions-event-listeners-and-ordering/>this forum discussion</a>.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #134</title>
+		<link>/blog/2016/07/29/from-the-forum-issue-134/</link>
+		<pubDate>Fri, 29 Jul 2016 20:46:57 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Coronium LS]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[keystores]]></category>
+		<category><![CDATA[marketing]]></category>
+
+		<guid isPermaLink="false">/?p=67560</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>The release of Coronium LS beta</h3>
+<p>It’s great to watch an idea go from kernel to popcorn. <strong>Develephant’s</strong> Coronium has always been a boon to those of us who need a Lua-based server solution. It makes it easy for new Corona users to get started, while still being robust enough for those who are well versed in back-end server options.</p>
+<p>Now, the most recent beta development in Coronium-land is out in the wild. <a href=https://coronium.cloud/ target="_blank">Coronium LS</a>, which has been covered previously in <em>From the Forum</em>, can be freely downloaded and utilized by anyone looking to get their feet wet with this great server-side Lua development option. While it’s still in beta, other developers are already attesting to its strengths and quick startup time.</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/64759-release-coronium-ls-v100-beta/ target="_blank">original thread</a> for more information. Remember, new questions deserve new threads!</p>
+<h3>Creating keystores for Android</h3>
+<p>When first starting out, the methods necessary to build and deliver an app to the Google Play store seem a bit Byzantine. One particular step that seems to cause a lot of confusion is the generation of the keystore encryption.</p>
+<p>The purpose here is to ensure that your app isn’t being spoofed for nefarious purposes while putting your personal stamp on the encryption key. It’s definitely not the most user-friendly set of steps available, but they are definitely necessary if you plan on publishing for the Google Play store. The <a href=https://forums.coronalabs.com/topic/64772-keytool-to-bulid-release/ target="_blank">original thread</a> goes over the main steps and the pitfalls that you might encounter when creating your keystore.</p>
+<h3>The age-old question of game marketing</h3>
+<p>Interest in gaming keeps growing with no signs of waning. Consequently, eager developers fall in love with the combination of versatility and the low entry barrier that Corona offers.</p>
+<p>Eventually, these developers have their games all polished up, server maintenance done, localization checked, and in-app purchases all sewn up. Then, the challenging part comes: making people aware of the app, and making them want to download it!</p>
+<p>This <a href=https://forums.coronalabs.com/topic/64768-game-marketing-best-practices/ target="_blank">forum thread</a> talks about some of the best ways to go about getting attention as a new developer without a publishing contract. Check them out for yourself and, if you have any tips of your own, feel free to throw them on the pile!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #133</title>
+		<link>/blog/2016/07/22/from-the-forum-issue-133/</link>
+		<pubDate>Fri, 22 Jul 2016 20:42:28 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[Coronium GS]]></category>
+		<category><![CDATA[Game Server]]></category>
+		<category><![CDATA[server time]]></category>
+
+		<guid isPermaLink="false">/?p=67501</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Timing in the real world</h3>
+<p>Ensuring a level playing field is never easy. As long as people have the inclination to circumvent the rules of any given game, they will find a way to create an unfair advantage.</p>
+<p>One of the more popular methods to keep players honest when dealing with time-based reward systems is to use a game-specific time count for users to obtain more lives, coins, or whatever incentivizes gameplay. This technique has been used for quite a while, famously with the ever-popular Candy Crush Saga. The easiest way to check against cheating is by examining the system clock, but that is far too easy for users to manipulate to allow for unearned rewards. So what is a potential alternative? A check against a remote global clock!</p>
+<p>Check out <a href=https://forums.coronalabs.com/topic/64620-time-api-for-user-rewards/ target="_blank">the original thread</a> for best practices when implementing this option.</p>
+<h3>Another bounty of Coronium goodness</h3>
+<p>A couple weeks ago, we talked about Coronium LS, an open-source server targeted directly to the Corona community. It’s a great resource and a good option for a Corona-friendly server while we wait for the official release of Corona Cloud.</p>
+<p>However, there have been some folks talking in hushed whispers about the older <strong>Develephant</strong> gem, <em>Coronium GS</em>. This configuration was popular due to it being “a free Lua real-time multiplayer game server for your Corona SDK games,” to quote the original forum thread.</p>
+<p>It has been a few years since its release, and Coronium GS is now shuttered. However, Develephant has pulled together the majority of its dependencies and made them available to the Corona faithful. Trip down to <a href=https://forums.coronalabs.com/topic/64661-archive-coronium-gs-coronium-game-server/ target="_blank">the original thread</a> and see if it’s something from which you can benefit.</p>
+<h3>The broad-reaching effects of Pokemon Go</h3>
+<p>We all know what it is, and we all know how it has completely taken over. One can barely take a walk in the park without someone trying to lure a rare Pokemon. In my opinion, the most interesting ripple effect that occurs when a mobile app takes hold so completely is the influx of excited players that have great ideas for new, awesome games.</p>
+<p><a href=https://forums.coronalabs.com/topic/64643-augmented-reality-apps-possible-in-corona/ target="_blank">This thread</a> talks about some of the best practices and pitfalls when using Corona as a development platform for an &#8220;augmented reality&#8221; app. Some good details are hidden in the original thread, so read carefully and feel free to ask more questions!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #132</title>
+		<link>/blog/2016/07/15/from-the-forum-issue-132/</link>
+		<pubDate>Fri, 15 Jul 2016 18:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[Remote Control]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=67463</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>tvOS helper code makes life much easier</h3>
+<p>Getting our apps onto as many devices and platforms as possible is clearly a top priority among Corona developers. Why else would we decide to leverage the best SDK that can target the most OSes with minimal code changes between them?</p>
+<p>One of the most exciting (and most challenging) platforms has been tvOS. It’s a fascinating option for deployment that brings with it some unique challenges, including a custom controller and no &#8220;save-state&#8221; option on the device.</p>
+<p>Fortunately, stalwart developer <strong>Rakoonic</strong> has gifted us with a little utility that should streamline one aspect of tvOS development: a &#8220;remote controller&#8221; library which helps to standardize input for your apps and games. Speed over to <a href=https://forums.coronalabs.com/topic/64503-remote-controller-library-test/ target="_blank">the original thread</a> and check out what he’s offering!</p>
+<h3>A memory manager by any other name</h3>
+<p>Maintaining a trim and slim app can be a key to success. The way you manage the load time your program is incurring is something that users expect from modern developers. It’s also an integral part of software development that requires both creativity and focus to master.</p>
+<p>One developer was wondering why the memory in their game was going up significantly during testing. Corona Support Engineer <strong>Rob Miracle</strong> chimed in with some serious knowledge on Composer scene management and image sheet optimization. It never hurts to brush up on the best methods to keep your app overhead low and your user base high! Check out those techniques in <a href=https://forums.coronalabs.com/topic/64515-why-does-texture-memory-jump/ target="_blank">the forum thread</a>.</p>
+<h3>A leg up on Corona Enterprise for Android</h3>
+<p>I realize that the number of Corona SDK users dwarfs the user base for Corona Enterprise, but that doesn’t mean we can’t highlight some awesomeness from the Enterprise sub-forum!</p>
+<p>Recently, one Enterprise developer had some questions regarding sending messages from native iOS and what would be the best way to implement single message response callbacks on the Corona side. What they received was a great response pointing to the exact iOS API that should be utilized, a super reference to related tutorials, and a fantastic GitHub link with working code around the theory.</p>
+<p>The Corona engineer that responded went both “above” and “beyond” with a great answer to the question. Click through to <a href=https://forums.coronalabs.com/topic/64566-delegate-self/ target="_blank">the original link</a> to for more information on this process!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

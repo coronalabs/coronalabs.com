@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tvOS &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/tvos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>tvOS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #132</title>
+		<link>/blog/2016/07/15/from-the-forum-issue-132/</link>
+		<pubDate>Fri, 15 Jul 2016 18:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[Remote Control]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=67463</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>tvOS helper code makes life much easier</h3>
+<p>Getting our apps onto as many devices and platforms as possible is clearly a top priority among Corona developers. Why else would we decide to leverage the best SDK that can target the most OSes with minimal code changes between them?</p>
+<p>One of the most exciting (and most challenging) platforms has been tvOS. It’s a fascinating option for deployment that brings with it some unique challenges, including a custom controller and no &#8220;save-state&#8221; option on the device.</p>
+<p>Fortunately, stalwart developer <strong>Rakoonic</strong> has gifted us with a little utility that should streamline one aspect of tvOS development: a &#8220;remote controller&#8221; library which helps to standardize input for your apps and games. Speed over to <a href=https://forums.coronalabs.com/topic/64503-remote-controller-library-test/ target="_blank">the original thread</a> and check out what he’s offering!</p>
+<h3>A memory manager by any other name</h3>
+<p>Maintaining a trim and slim app can be a key to success. The way you manage the load time your program is incurring is something that users expect from modern developers. It’s also an integral part of software development that requires both creativity and focus to master.</p>
+<p>One developer was wondering why the memory in their game was going up significantly during testing. Corona Support Engineer <strong>Rob Miracle</strong> chimed in with some serious knowledge on Composer scene management and image sheet optimization. It never hurts to brush up on the best methods to keep your app overhead low and your user base high! Check out those techniques in <a href=https://forums.coronalabs.com/topic/64515-why-does-texture-memory-jump/ target="_blank">the forum thread</a>.</p>
+<h3>A leg up on Corona Enterprise for Android</h3>
+<p>I realize that the number of Corona SDK users dwarfs the user base for Corona Enterprise, but that doesn’t mean we can’t highlight some awesomeness from the Enterprise sub-forum!</p>
+<p>Recently, one Enterprise developer had some questions regarding sending messages from native iOS and what would be the best way to implement single message response callbacks on the Corona side. What they received was a great response pointing to the exact iOS API that should be utilized, a super reference to related tutorials, and a fantastic GitHub link with working code around the theory.</p>
+<p>The Corona engineer that responded went both “above” and “beyond” with a great answer to the question. Click through to <a href=https://forums.coronalabs.com/topic/64566-delegate-self/ target="_blank">the original link</a> to for more information on this process!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Apple &#8220;on-demand resources&#8221; plugin now available</title>
+		<link>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/</link>
+		<comments>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/#comments</comments>
+		<pubDate>Wed, 23 Mar 2016 17:50:43 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[on-demand resources]]></category>
+
+		<guid isPermaLink="false">/?p=66158</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the "on-demand resources" plugin for tvOS. Read further to learn how this can be used to minimize your app footprint.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/on-demand-resources target="_blank">on-demand resources</a> plugin, currently supported on tvOS. Similar in concept to Android expansion files (but functionally quite different), on-demand resources allow you to specify parts/assets of your app which can be downloaded when needed. This is especially important for Apple TV because Apple limits tvOS apps to a maximum size of 200 megabytes and they provide no local storage for data. Instead, they expect developers to use on-demand resources to manage which assets are available at which points in the app.</p>
+<h3>Setup</h3>
+<p>Like any plugin, begin by including it in your <code>build.settings</code>:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.onDemandResources&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { tvos=true }
+        },
+    },      
+}</pre><p></p>
+<h3>Defining resources</h3>
+<p>To make on-demand resources work, you must designate various files or folders by &#8220;tags&#8221; inside the <code>tvos</code> → <code>onDemandResources</code> table of <code>build.settings</code>. Each entry is itself a table containing two required key-value pairs: the tag name (<code>tag</code>) and the file/folder it refers to (<code>resource</code>):</p><pre class="crayon-plain-tag">settings =
+{
+    tvos = 
+    {
+        onDemandResources =
+        {
+            { tag=&quot;introMusic&quot;, resource=&quot;intro.mp4&quot;, type=&quot;prefetch&quot; },
+            { tag=&quot;imgTutorial&quot;, resource=&quot;img/tutorial&quot;, type=&quot;install&quot; },
+            { tag=&quot;imgL2&quot;, resource=&quot;img/level2&quot; },
+        },
+    },
+}</pre><p>In addition, you can specify a download priority for each tag. This is done via the <code>type</code> key with one of the following values:</p>
+<ul>
+<li><code>"install"</code> &#8212; Use this for critical files that may be required immediately when the app first launches. These resources download in parallel with the app download itself, however they are not bundled in the app package as persistent resources.</li>
+<li><code>"prefetch"</code> &#8212; These resources will start downloading in the background after the app finishes downloading.</li>
+<li>No <code>type</code> &#8212; These are resources you fetch when you need them.</li>
+</ul>
+<p>Regardless of the <code>type</code> value, you need to explicitly request the tag before you can use it. Tags that don&#8217;t have a type are requested at a logical point during the app flow.</p>
+<h3>Requesting content</h3>
+<p>To download a resource file/folder when needed, for example assets for the second level after the player completes the first level, simply call the <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> function. This may be considered the &#8220;core&#8221; function of the plugin, as it&#8217;s required before you can access on-demand resources.</p><pre class="crayon-plain-tag">-- Require the plugin
+local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+
+    if not ( event.isError ) then
+        print( &quot;Resources for tag '&quot; .. event.tag .. &quot;' downloaded&quot; )
+    else
+        print( &quot;ERROR: errorCode = &quot; .. tostring(event.errorCode) )
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, true, odrListener )</pre><p>One of the most important aspects of <a href=https://docs.coronalabs.com/plugin/onDemandResources/request.html target="_blank">onDemandResources.request()</a> is the second parameter: a boolean <code>true</code> or <code>false</code>. Setting this to <code>true</code> (or omitting it, since <code>true</code> is the default) tells Corona to begin downloading the resources immediately.</p>
+<p>By comparison, if you set this parameter to <code>false</code>, Corona simply checks if the resources are already downloaded:</p><pre class="crayon-plain-tag">local odr = require( &quot;plugin.onDemandResources&quot; )
+
+-- On-demand resources listener function
+local function odrListener( event )
+    if ( event.isError ) then
+        -- Resources have not been downloaded. You need to request them.
+    end
+end
+
+-- Request image resources for second level
+odr.request( &quot;imgL2&quot;, false, odrListener )</pre><p></p>
+<h3>Important notes</h3>
+<ul>
+<li>All on-demand resources are subject to be evicted by the operating system if it needs space, so even your <code>install</code>&#8211; and <code>prefetch</code>-based resources should be checked for availability before you attempt to use them. If they don&#8217;t exist, you will need to request/download them again.
+<ul>
+<li>Large downloads take time, so you may consider more tags with smaller overall download sizes. Apple advises keeping tagged resources under 64 megabytes. The maximum size for a tag is 512 megabytes.</li>
+</ul>
+</li>
+<li>You have to use a service like Apple&#8217;s <a href=https://developer.apple.com/testflight/ target="_blank">TestFlight</a> to test on-demand resources &#8212; you cannot simply load the app directly onto your test device. This is the only way Apple can actually deliver the various resources from their servers.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>On-demand resources can be essential for developing tvOS games and apps, and Corona&#8217;s plugin provides the necessary interface to Apple&#8217;s servers. To learn more, please see the <a href=https://docs.coronalabs.com/plugin/onDemandResources/index.html target="_blank">documentation</a> or discuss further in the <a href=https://forums.coronalabs.com/forum/655-apple-tv-and-tvos-testing/ target="_blank">Corona Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/23/apple-on-demand-resources-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>More AppLovin love! Announcing support for tvOS</title>
+		<link>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/</link>
+		<comments>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/#comments</comments>
+		<pubDate>Sat, 13 Feb 2016 03:25:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[monetization]]></category>
+
+		<guid isPermaLink="false">/?p=65699</guid>
+		<description><![CDATA[AppLovin is now available for your tvOS apps. Read further to learn more about this new capability.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />Corona Labs is pleased to announce that our <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin plugin</a> is now compatible with <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS apps</a>. Currently, AppLovin is one of the few monetization options available for Apple TV apps.</p>
+<p>You will need to make one minor adjustment to your <code>build.settings</code> file if you&#8217;re using the <code>supportedPlatforms</code> line. If building for tvOS, simply include the <code>appletvos</code> option:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+    },
+}</pre><p>Note that AppLovin ads for tvOS will always be <strong>videos</strong> (no static interstitials), just as if you&#8217;re watching TV. Also note that if the ad is associated with a tvOS app, clicking the remote button while the ad displays may take you to the app&#8217;s entry in the store.</p>
+<p>To learn more about implementing AppLovin in your app, check out our <a href=/blog/2016/02/03/were-applovin-your-corona-apps/ target="_blank">announcement</a> and the AppLovin plugin <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a>.</p>
+<p>If you have more questions or need help, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona Labs Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/12/more-applovin-love-announcing-support-for-tvos/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Announcing OS X, tvOS updates, and the new iCloud plugin!</title>
+		<link>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/</link>
+		<comments>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:17:41 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[tvOS]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">/?p=64961</guid>
+		<description><![CDATA[The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work on OS X builds, tvOS builds, and the new iCloud plugin.]]></description>
+				<content:encoded><![CDATA[<p>The holiday season is upon us and once again the Corona engineering team is in a festive mood. This season they have been hard at work giving us some exciting new features and platforms to explore.</p>
+<h3>OS X initial release</h3>
+<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>, we are proud to announce that OS X is no longer in beta! We have the core features working at a level where we feel comfortable encouraging you to release apps to the Mac App store. Platforms like this are never complete and there are more features to add, but this marks a stable point in OS X development where we think you can successfully deploy desktop apps for Mac. To learn more, see our <a href=https://docs.coronalabs.com/daily/guide/distribution/osxBuild/index.html target="_blank">Creating OS X Desktop Apps</a> guide.</p>
+<h3>tvOS now in beta</h3>
+<p>Additionally, we are removing the &#8220;alpha&#8221; label from our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">tvOS support</a>. We believe that you should be able to publish apps to iTunes Connect for tvOS. Of course there is more to do before we can mark this as fully released, but the core features are now in place. You can pick this up in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a> as well. To learn more, check out our <a href=https://docs.coronalabs.com/daily/guide/tvos/index.html target="_blank">Apple TV and tvOS guide</a>.</p>
+<h3>The iCloud plugin (beta)</h3>
+<p>We are also pleased to announce the immediate availability of the new <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>. This plugin lets you store various data types in Apple&#8217;s iCloud service. The three main types of data you can store are:</p>
+<ul>
+<li><strong>Key-Value Storage</strong> &#8212; This lets you store simple data values like numbers, strings, and tables.</li>
+<li><strong>Documents</strong> &#8212; This lets you develop apps where you can save whole files to the cloud and sync them with other devices.</li>
+<li><strong>CloudKit</strong> &#8212; This is a full database implementation where you can have public and private database implementations which your app can access from multiple devices.</li>
+</ul>
+<p>In its simplest use, iCloud (all three methods) lets you save data from your app to iCloud and retrieve it later when you need it. In addition, if you have your app installed on multiple devices, for example your iPhone and iPad, the app can share data.</p>
+<p>To get started with the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, see the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and our <a href=/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/ target="_blank">first tutorial</a>.</p>
+<h3>Get started!</h3>
+<p>With this progress on both OS X desktop builds and tvOS builds, now is a great time to consider additional platforms for your existing apps!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/announcing-os-x-tvos-updates-and-the-new-icloud-plugin/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Using iCloud Key-Value Storage</title>
+		<link>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/</link>
+		<comments>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:06:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[storage]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64971</guid>
+		<description><![CDATA[In this tutorial, learn how to save and retrieve key-value pairs in Apple's iCloud.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are pleased to introduce the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, available as of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>. This plugin is currently in &#8220;beta&#8221; while we finish polishing the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and give it further rounds of testing.</p>
+<p>In this tutorial, we&#8217;ll explore <strong>Key-Value Storage</strong> or <strong>KVS</strong> (we will address &#8220;Documents in iCloud&#8221; and &#8220;CloudKit&#8221; in other tutorials).</p>
+<h3>Overview</h3>
+<p>KVS allows you to store &#8220;key-value&#8221; pairs in Apple&#8217;s iCloud using a very simple set of API calls. With KVS you can store strings, numbers, and tables of data using a simple <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> call.</p>
+<p>Before you dive in, there are some KVS limits to be aware of:</p>
+<ul>
+<li>You can use 1 megabyte of storage at most.</li>
+<li>You can have up to 1024 total keys.</li>
+<li>Keys can be up to 64 bytes long and include unicode characters. Unicode characters take up more space than alpha-numeric characters. You can use up to 63 alpha-numeric characters.</li>
+</ul>
+<p>Depending on your requirements, you can use one key with a lot of tabled data, or you can use many keys with separate bits of data. Keep in mind that when you sync one key with a lot of data, you&#8217;re changing a lot at once. Also remember that data is generally synced over both WiFi and Cellular, so syncing keys with large amounts of data can be time consuming, even when only one small part of that data changed.</p>
+<h3>Provisioning your app</h3>
+<p>Before you can deploy your iCloud-capable app to the store, your provisioning profile must have iCloud enabled. This is done in the <strong>Member Center</strong> of the <a href=https://developer.apple.com/ target="_blank">Apple Developer</a> portal under <strong>Certificates, Identifiers &amp; Profiles</strong>. Once there, click <strong>Identifiers</strong> → <strong>App IDs</strong>. Click on the desired app (it can <strong>not</strong> use a wildcard App ID) and scroll down to the <strong>iCloud</strong> row. There, check the box to enable iCloud. Next, click the radio button to enable CloudKit, then click on the <strong>Edit</strong> button.</p>
+<p><img class="alignnone size-full wp-image-64973" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.01.58-PM.png" alt="Screen Shot 2015-12-16 at 7.01.58 PM" width="667" height="132" /></p>
+<p>On the next screen, check the box for your app&#8217;s bundle ID:</p>
+<p><img class="alignnone size-full wp-image-64972" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.00.01-PM.png" alt="Screen Shot 2015-12-16 at 7.00.01 PM" width="658" height="77" /></p>
+<p>Click <strong>Continue</strong> and then <strong>Done</strong>. At this point, you will need to regenerate your provisioning profile (see the <strong>Creating Provisioning Profiles</strong> section <a href=https://docs.coronalabs.com/daily/guide/distribution/iOSBuild/index.html>here</a>).</p>
+<h3>Updating build.settings</h3>
+<p>To include the iCloud plugin, you must add it to your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = {
+
+    plugins =
+    {
+        [&quot;plugin.iCloud&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, osx=true, appletvos=true },
+        },
+    },
+}</pre><p>In addition, you must edit the block for <code>iphone</code> and/or <code>tvos</code>:</p><pre class="crayon-plain-tag">settings = {
+
+    iphone = {
+        iCloud = true, 
+        plist = {
+ 
+        }
+    },
+
+    -- Optional (only for use with Apple TV and tvOS)
+    tvos =
+    {
+        iCloud = true,
+    },
+}</pre><p></p>
+<h3>Corona Enterprise</h3>
+<p>For Enterprise builds, you have to include the <code>Corona_plugin_iCloud.framework</code> which is located in the Enterprise plugins download tab on the <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Builds page</a>.</p>
+<p>In addition, there are some Xcode settings required for enabling iCloud, located on the project&#8217;s <strong>Capabilities</strong> screen. Here, ensure that iCloud is enabled and that <strong>Key-value storage</strong> is checked.</p>
+<p><img class="alignnone size-full wp-image-64976" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.27.05-PM.png" alt="Screen Shot 2015-12-16 at 7.27.05 PM" width="695" height="264" /></p>
+<h3>Saving values to iCloud</h3>
+<p>In any scene or Lua file where you need to access iCloud services, you must require the plugin:</p><pre class="crayon-plain-tag">local iCloud = require( &quot;plugin.iCloud&quot; )</pre><p>Then, when you&#8217;re ready to save some data, simply call <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> with a key and value, for example:</p><pre class="crayon-plain-tag">iCloud.set( &quot;playMusic&quot;, &quot;on&quot; )</pre><p>This will set a key named <code>playMusic</code> with the value of <code>"on"</code>.</p>
+<h4>Accepted values</h4>
+<p>KVS allows you to store the following data types:</p>
+<ul>
+<li>numbers</li>
+<li>strings</li>
+<li>tables</li>
+</ul>
+<p>While you cannot store booleans this way, they can be part of table data. Alternatively, you can simply use numbers like <code>1</code> or <code>0</code> to indicate true or false, or just store the strings <code>"true"</code> or <code>"false"</code>, but you will need to convert them back to boolean values before you use them as Lua booleans.</p>
+<p>Note that if you choose to store a table, it must contain only <strong>key-value pairs</strong>. Tables with numeric keys (arrays) can not be stored directly as tables. In other words, the following array will produce an error if you attempt to store it to KVS:</p><pre class="crayon-plain-tag">local array = { true, 0, 10 }   -- This is analogous to { 1=true, 2=0, 3=10 }
+iCloud.set( &quot;myArray&quot;, array )  -- This value will not be stored</pre><p>If you have an array to store, one option is to use <a href=https://docs.coronalabs.com/api/library/json/encode.html target="_blank">json.encode()</a> on the table and save it as string data, then use <a href=https://docs.coronalabs.com/api/library/json/decode.html target="_blank">json.decode()</a> on the string to convert it back into a table after you retrieve it from iCloud.</p>
+<h3>Retrieving data</h3>
+<p>To get data back from KVS, simply call the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/get.html target="_blank">iCloud.get()</a> method:</p><pre class="crayon-plain-tag">local musicOn = iCloud.get( &quot;playMusic&quot; )</pre><p>If the value can&#8217;t be found, <code>nil</code> will be returned. It&#8217;s that simple!</p>
+<h3>Deleting data</h3>
+<p>If you no longer need some data, you can recover used storage by deleting the key from iCloud using the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/delete.html target="_blank">iCloud.delete()</a> method:</p><pre class="crayon-plain-tag">iCloud.delete( &quot;playMusic&quot; )</pre><p></p>
+<h3>Synchronizing data</h3>
+<p>An important purpose of iCloud is to allow users with multiple devices to share data between them. In other words, if you finish a level in a game on your iPad, you should be able to pick up your iPhone and play the next level. If you load certain saved settings (data) from KVS when the app starts, the app should have the latest data &#8212; but what if the app is open at the same time on both devices and changes to the data occur?</p>
+<p>One option is to enable a listener function via <a href=https://docs.coronalabs.com/daily/plugin/iCloud/setKVSListener.html target="_blank">iCloud.setKVSListener()</a> that will execute when values change, effectively keeping your app up-to-date. Consider this block of code:</p><pre class="crayon-plain-tag">local function on_iCloudUpdate( event )
+    if ( event.type == &quot;initialSync&quot; or event.type == &quot;serverChange&quot; ) then
+        musicOn = iCloud.get( &quot;playMusic&quot; )
+    end
+end
+
+iCloud.setKVSListener( on_iCloudUpdate )</pre><p>See the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/event/iCloudKVSEvent/index.html target="_blank">iCloudKVSEvent</a> documentation for the various values returned as part of the <code>event</code> table.</p>
+<h3>Conclusion</h3>
+<p>This tutorial is just the first in respect to storing and sharing data in Apple&#8217;s iCloud. To learn more, please refer to the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">iCloud documentation</a>.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Using the mobile/remote accelerometer</title>
+		<link>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/</link>
+		<comments>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/#comments</comments>
+		<pubDate>Tue, 24 Nov 2015 21:26:38 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[accelerometer]]></category>
+		<category><![CDATA[remote]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64766</guid>
+		<description><![CDATA[In this tutorial, learn how to use accelerometer events to detect motions of a mobile device or the accelerometer-enabled Apple TV Remote.]]></description>
+				<content:encoded><![CDATA[<p>One of the cool things about the new <a href=https://developer.apple.com/tvos/human-interface-guidelines/remote-and-interaction/ target="_blank">Apple TV Remote</a> is that it has a built-in accelerometer, and similar to mobile devices, this allows you to guage the device&#8217;s position/orientation in space. Essentially, on either a mobile device or the remote control, the accelerometer makes three discrete measurements based on the orientation and center point of the device.</p>
+<h3>Accelerometer events</h3>
+<p>The <a href=https://docs.coronalabs.com/api/event/accelerometer/index.html target="_blank">accelerometer event</a> returns several useful values, including:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/name.html target="_blank">event.name</a> &#8212; This property will always be <code>"accelerometer"</code>.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/isShake.html target="_blank">event.isShake</a> &#8212; This property will be <code>true</code> if a rapid movement of the device is detected.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xGravity.html target="_blank">event.xGravity</a> / <a href=https://docs.coronalabs.com/api/event/accelerometer/yGravity.html target="_blank">event.yGravity</a> / <a href=https://docs.coronalabs.com/api/event/accelerometer/zGravity.html target="_blank">event.zGravity</a> &#8212; These events are probably the most useful. They are normalized, so you get a value between <code>-1.0</code> and <code>1.0</code>. These values are also smoothed out to adjust for micro-movements and prevent jerky actions.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xInstant.html target="_blank">event.xInstant</a>,<a href=https://docs.coronalabs.com/api/event/accelerometer/yInstant.html target="_blank"> event.yInstant</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/zInstant.html target="_blank">event.zInstant</a> &#8212; These values report the change since the last event, for instance the current <code>event.xGravity</code> minus the last <code>event.xGravity</code>.</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/xRaw.html target="_blank">event.xRaw</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/yRaw.html target="_blank">event.yRaw</a>, <a href=https://docs.coronalabs.com/api/event/accelerometer/zRaw.html target="_blank">event.zRaw</a> &#8212; These values are the actual values from the device (there is no filtering or smoothing applied).</li>
+<li><a href=https://docs.coronalabs.com/api/event/accelerometer/deltaTime.html target="_blank">event.deltaTime</a> &#8212; Accelerometer events come at somewhat predictable intervals based on the value set by the <a href=https://docs.coronalabs.com/api/library/system/setAccelerometerInterval.html>system.setAccelerometerInterval()</a> function, but they are not guaranteed to arrive on time. This is where the <a href=https://docs.coronalabs.com/api/event/accelerometer/deltaTime.html target="_blank">event.deltaTime</a> comes in. It allows you to get the time between events so you can provide additional smoothing as needed.</li>
+</ul>
+<p>All of the &#8220;gravity,&#8221; &#8220;instant,&#8221; and &#8220;raw&#8221; values assume that the device is being held in &#8220;portrait&#8221; orientation. This is very common for people holding the Apple TV Remote (the remote being held like a traditional TV/audio remote control). However, if you&#8217;re designing a landscape-oriented app like a racing game, you might want the remote to be held in &#8220;landscape&#8221; orientation (like a traditional console game controller) in order to emulate a steering wheel. In this case, you should adjust your values by 90 degrees.</p>
+<h3>Implementation</h3>
+<p>Let&#8217;s look at a simple implementation of the accelerometer. This app will create a blue circle and allow you to move it around the screen by moving/orienting the device.</p><pre class="crayon-plain-tag">display.setDefault( &quot;anchorX&quot;, 0 )
+
+local dot = display.newCircle( display.contentCenterX, display.contentCenterY, 20 )
+dot:setFillColor( 0, 0, 1 )
+dot.color = &quot;blue&quot;
+dot.anchorX = 0.5
+
+local xGravityLabel = display.newText( &quot;xGravity:&quot;, 10, 15, native.systemFontBold, 12 )
+local yGravityLabel = display.newText( &quot;yGravity:&quot;, 10, 31, native.systemFontBold, 12 )
+local zGravityLabel = display.newText( &quot;zGravity:&quot;, 10, 47, native.systemFontBold, 12 )
+
+local xGravity = display.newText( &quot;&quot;, 80, 15, native.systemFont, 12 )
+local yGravity = display.newText( &quot;&quot;, 80, 31, native.systemFont, 12 )
+local zGravity = display.newText( &quot;&quot;, 80, 47, native.systemFont, 12 )
+
+local xInstantLabel = display.newText( &quot;xInstant:&quot;, 250, 15, native.systemFontBold, 12 )
+local yInstantLabel = display.newText( &quot;yInstant:&quot;, 250, 31, native.systemFontBold, 12 )
+local zInstantLabel = display.newText( &quot;zInstant:&quot;, 250, 47, native.systemFontBold, 12 )
+
+local xInstant = display.newText( &quot;&quot;, 330, 15, native.systemFont, 12 )
+local yInstant = display.newText( &quot;&quot;, 330, 31, native.systemFont, 12 )
+local zInstant = display.newText( &quot;&quot;, 330, 47, native.systemFont, 12 )
+
+local function onTilt( event )
+    xGravity.text = event.xGravity
+    yGravity.text = event.yGravity
+    zGravity.text = event.zGravity
+    xInstant.text = event.xInstant
+    yInstant.text = event.yInstant
+    zInstant.text = event.zInstant
+
+    dot.x = dot.x + event.xGravity
+    dot.y = dot.y + event.yGravity
+
+    if dot.x &gt; display.contentWidth then
+        dot.x = display.contentWidth
+    end
+    if dot.x &lt; 0 then
+        dot.x = 0
+    end
+    if dot.y &gt; display.contentHeight then
+        dot.y = display.contentHeight
+    end
+    if dot.y &lt; 0 then 
+        dot.y = 0
+    end
+
+    if event.isShake then
+        if dot.color == &quot;blue&quot; then
+            dot:setFillColor( 1, 0, 0 )
+            dot.color = &quot;red&quot;
+        else
+            dot:setFillColor( 0, 0, 1 )
+            dot.color = &quot;blue&quot;
+        end
+    end
+    return true
+end
+
+Runtime:addEventListener( &quot;accelerometer&quot;, onTilt )</pre><p>For this simple example, we create a dot (circle), color it blue, and set up some text display objects to show the values received from the accelerometer event.</p>
+<p>Accelerometer events require a listener function, served by our <code>onTilt()</code> function. Inside the function, we update the on-screen values based on the current accelerometer data.</p>
+<p>Next, we add the values of <code>event.xGravity</code> and <code>event.yGravity</code> to the dot&#8217;s <strong>x</strong> and <strong>y</strong> position. This will move the dot around the screen. Following this, we write four conditional statements to constrain the dot to the screen bounds.</p>
+<p>In the final block of the function, we test to see if the device was shaken and swap the color between red and blue each time a shake is detected.</p>
+<p>Finally, on the last line of the example, we enable the <code>"accelerometer"</code> event handler.</p>
+<h3>Conclusion</h3>
+<p>Using the accelerometer is an important part of getting your apps to run properly on tvOS &#8212; after all, not every control scheme can be accomplished with simple up/down/left/right key events or axis inputs. For example, consider a classic game like &#8220;Fruit Ninja.&#8221; On a mobile device, you couldn&#8217;t use the accelerometer to slash the fruit, but now with an accelerometer-enabled remote, you could detect slashing motions by tracking the accelerometer&#8217;s values.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/24/tutorial-using-the-mobileremote-accelerometer/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

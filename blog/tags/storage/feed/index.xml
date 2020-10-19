@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>storage &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/storage/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>storage &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Using iCloud Key-Value Storage</title>
+		<link>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/</link>
+		<comments>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/#comments</comments>
+		<pubDate>Sat, 19 Dec 2015 00:06:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[storage]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=64971</guid>
+		<description><![CDATA[In this tutorial, learn how to save and retrieve key-value pairs in Apple's iCloud.]]></description>
+				<content:encoded><![CDATA[<p>Today, we are pleased to introduce the <a href=https://store.coronalabs.com/plugin/iCloud target="_blank">iCloud plugin</a>, available as of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2015.2795</a>. This plugin is currently in &#8220;beta&#8221; while we finish polishing the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">documentation</a> and give it further rounds of testing.</p>
+<p>In this tutorial, we&#8217;ll explore <strong>Key-Value Storage</strong> or <strong>KVS</strong> (we will address &#8220;Documents in iCloud&#8221; and &#8220;CloudKit&#8221; in other tutorials).</p>
+<h3>Overview</h3>
+<p>KVS allows you to store &#8220;key-value&#8221; pairs in Apple&#8217;s iCloud using a very simple set of API calls. With KVS you can store strings, numbers, and tables of data using a simple <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> call.</p>
+<p>Before you dive in, there are some KVS limits to be aware of:</p>
+<ul>
+<li>You can use 1 megabyte of storage at most.</li>
+<li>You can have up to 1024 total keys.</li>
+<li>Keys can be up to 64 bytes long and include unicode characters. Unicode characters take up more space than alpha-numeric characters. You can use up to 63 alpha-numeric characters.</li>
+</ul>
+<p>Depending on your requirements, you can use one key with a lot of tabled data, or you can use many keys with separate bits of data. Keep in mind that when you sync one key with a lot of data, you&#8217;re changing a lot at once. Also remember that data is generally synced over both WiFi and Cellular, so syncing keys with large amounts of data can be time consuming, even when only one small part of that data changed.</p>
+<h3>Provisioning your app</h3>
+<p>Before you can deploy your iCloud-capable app to the store, your provisioning profile must have iCloud enabled. This is done in the <strong>Member Center</strong> of the <a href=https://developer.apple.com/ target="_blank">Apple Developer</a> portal under <strong>Certificates, Identifiers &amp; Profiles</strong>. Once there, click <strong>Identifiers</strong> → <strong>App IDs</strong>. Click on the desired app (it can <strong>not</strong> use a wildcard App ID) and scroll down to the <strong>iCloud</strong> row. There, check the box to enable iCloud. Next, click the radio button to enable CloudKit, then click on the <strong>Edit</strong> button.</p>
+<p><img class="alignnone size-full wp-image-64973" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.01.58-PM.png" alt="Screen Shot 2015-12-16 at 7.01.58 PM" width="667" height="132" /></p>
+<p>On the next screen, check the box for your app&#8217;s bundle ID:</p>
+<p><img class="alignnone size-full wp-image-64972" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.00.01-PM.png" alt="Screen Shot 2015-12-16 at 7.00.01 PM" width="658" height="77" /></p>
+<p>Click <strong>Continue</strong> and then <strong>Done</strong>. At this point, you will need to regenerate your provisioning profile (see the <strong>Creating Provisioning Profiles</strong> section <a href=https://docs.coronalabs.com/daily/guide/distribution/iOSBuild/index.html>here</a>).</p>
+<h3>Updating build.settings</h3>
+<p>To include the iCloud plugin, you must add it to your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings = {
+
+    plugins =
+    {
+        [&quot;plugin.iCloud&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, osx=true, appletvos=true },
+        },
+    },
+}</pre><p>In addition, you must edit the block for <code>iphone</code> and/or <code>tvos</code>:</p><pre class="crayon-plain-tag">settings = {
+
+    iphone = {
+        iCloud = true, 
+        plist = {
+ 
+        }
+    },
+
+    -- Optional (only for use with Apple TV and tvOS)
+    tvos =
+    {
+        iCloud = true,
+    },
+}</pre><p></p>
+<h3>Corona Enterprise</h3>
+<p>For Enterprise builds, you have to include the <code>Corona_plugin_iCloud.framework</code> which is located in the Enterprise plugins download tab on the <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Builds page</a>.</p>
+<p>In addition, there are some Xcode settings required for enabling iCloud, located on the project&#8217;s <strong>Capabilities</strong> screen. Here, ensure that iCloud is enabled and that <strong>Key-value storage</strong> is checked.</p>
+<p><img class="alignnone size-full wp-image-64976" src="/wordpress/wp-content/uploads/2015/12/Screen-Shot-2015-12-16-at-7.27.05-PM.png" alt="Screen Shot 2015-12-16 at 7.27.05 PM" width="695" height="264" /></p>
+<h3>Saving values to iCloud</h3>
+<p>In any scene or Lua file where you need to access iCloud services, you must require the plugin:</p><pre class="crayon-plain-tag">local iCloud = require( &quot;plugin.iCloud&quot; )</pre><p>Then, when you&#8217;re ready to save some data, simply call <a href=https://docs.coronalabs.com/daily/plugin/iCloud/set.html target="_blank">iCloud.set()</a> with a key and value, for example:</p><pre class="crayon-plain-tag">iCloud.set( &quot;playMusic&quot;, &quot;on&quot; )</pre><p>This will set a key named <code>playMusic</code> with the value of <code>"on"</code>.</p>
+<h4>Accepted values</h4>
+<p>KVS allows you to store the following data types:</p>
+<ul>
+<li>numbers</li>
+<li>strings</li>
+<li>tables</li>
+</ul>
+<p>While you cannot store booleans this way, they can be part of table data. Alternatively, you can simply use numbers like <code>1</code> or <code>0</code> to indicate true or false, or just store the strings <code>"true"</code> or <code>"false"</code>, but you will need to convert them back to boolean values before you use them as Lua booleans.</p>
+<p>Note that if you choose to store a table, it must contain only <strong>key-value pairs</strong>. Tables with numeric keys (arrays) can not be stored directly as tables. In other words, the following array will produce an error if you attempt to store it to KVS:</p><pre class="crayon-plain-tag">local array = { true, 0, 10 }   -- This is analogous to { 1=true, 2=0, 3=10 }
+iCloud.set( &quot;myArray&quot;, array )  -- This value will not be stored</pre><p>If you have an array to store, one option is to use <a href=https://docs.coronalabs.com/api/library/json/encode.html target="_blank">json.encode()</a> on the table and save it as string data, then use <a href=https://docs.coronalabs.com/api/library/json/decode.html target="_blank">json.decode()</a> on the string to convert it back into a table after you retrieve it from iCloud.</p>
+<h3>Retrieving data</h3>
+<p>To get data back from KVS, simply call the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/get.html target="_blank">iCloud.get()</a> method:</p><pre class="crayon-plain-tag">local musicOn = iCloud.get( &quot;playMusic&quot; )</pre><p>If the value can&#8217;t be found, <code>nil</code> will be returned. It&#8217;s that simple!</p>
+<h3>Deleting data</h3>
+<p>If you no longer need some data, you can recover used storage by deleting the key from iCloud using the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/delete.html target="_blank">iCloud.delete()</a> method:</p><pre class="crayon-plain-tag">iCloud.delete( &quot;playMusic&quot; )</pre><p></p>
+<h3>Synchronizing data</h3>
+<p>An important purpose of iCloud is to allow users with multiple devices to share data between them. In other words, if you finish a level in a game on your iPad, you should be able to pick up your iPhone and play the next level. If you load certain saved settings (data) from KVS when the app starts, the app should have the latest data &#8212; but what if the app is open at the same time on both devices and changes to the data occur?</p>
+<p>One option is to enable a listener function via <a href=https://docs.coronalabs.com/daily/plugin/iCloud/setKVSListener.html target="_blank">iCloud.setKVSListener()</a> that will execute when values change, effectively keeping your app up-to-date. Consider this block of code:</p><pre class="crayon-plain-tag">local function on_iCloudUpdate( event )
+    if ( event.type == &quot;initialSync&quot; or event.type == &quot;serverChange&quot; ) then
+        musicOn = iCloud.get( &quot;playMusic&quot; )
+    end
+end
+
+iCloud.setKVSListener( on_iCloudUpdate )</pre><p>See the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/event/iCloudKVSEvent/index.html target="_blank">iCloudKVSEvent</a> documentation for the various values returned as part of the <code>event</code> table.</p>
+<h3>Conclusion</h3>
+<p>This tutorial is just the first in respect to storing and sharing data in Apple&#8217;s iCloud. To learn more, please refer to the <a href=https://docs.coronalabs.com/daily/plugin/iCloud/index.html target="_blank">iCloud documentation</a>.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/12/18/tutorial-implementing-icloud-key-value-storage/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

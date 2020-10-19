@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>arcade &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/arcade-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>arcade &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>App of the Week: Little Galaxy</title>
+		<link>/blog/2013/08/19/app-of-the-week-little-galaxy/</link>
+		<comments>/blog/2013/08/19/app-of-the-week-little-galaxy/#comments</comments>
+		<pubDate>Mon, 19 Aug 2013 23:03:41 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[Lua Glider]]></category>
+		<category><![CDATA[TexturePacker]]></category>
+
+		<guid isPermaLink="false">/?p=41750</guid>
+		<description><![CDATA[<div><a href="http://bitmapgalaxy.com/">Bitmap Galaxy</a>, a small studio based in Slovakia, had a vision to create an "endless" game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours.</div>
+
+<div style="margin-top:10px;">From this, <a href="https://itunes.apple.com/nz/app/little-galaxy/id576764076">Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</div>
+
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-41752" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png" srcset="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png 180w, /wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" />This week’s App of the Week comes to us from <a href=http://bitmapgalaxy.com/>Bitmap Galaxy</a>, a small studio based in Slovakia. This three-person team had a vision to create an &#8220;endless&#8221; game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours. They also aimed to create a game that appeals to players&#8217; emotions with a lovable character and storyline. From this, <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</p>
+<p><img class="alignright size-full wp-image-41979" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/Little-Galaxy.jpeg" />Upon launching Little Galaxy, you’re instantly transported to space, with the mission of helping the main character navigate the universe. Each planet is in constant rotation and it&#8217;s your job to transport the little boy from place to place by tapping the screen when he&#8217;s aligned with another planet. While it&#8217;s important to collect stars along the way, it takes skill to aim properly and avoid sending him into the abyss.</p>
+<p>The team worked with Corona SDK to build Little Galaxy, spending their free time polishing a game to delight players. When asked about working with Corona on the project, lead developer Peter Janosik told us, “Thanks to Corona SDK, it was easy to rapidly prototype all of our ideas. For us, this was definitely the most interesting part of the project.”</p>
+<p>Bitmap Galaxy relied heavily upon Corona&#8217;s display APIs during development. Peter noted that, &#8220;It’s really easy to work with sprite sheets and transitions; it saves a lot of time.” The team also reviewed new Corona features regularly and found that having access to Daily Builds helped them discover new API calls to resolve issues quickly. Additionally, they relied on <a href=http://www.mydevelopersgames.com/Glider/>Lua Glider</a> for debugging needs and <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> for sprite sheet support.</p>
+<p>Download <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> from iTunes for $1.29 and watch for the game&#8217;s release for Android soon!</p>
+<p><iframe src="//www.youtube.com/embed/6_lscYW9BCE" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/19/app-of-the-week-little-galaxy/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Tiny Ball vs. Evil Devil 2</title>
+		<link>/blog/2013/06/03/app-of-the-week-tiny-ball-vs-evil-devil-2/</link>
+		<comments>/blog/2013/06/03/app-of-the-week-tiny-ball-vs-evil-devil-2/#comments</comments>
+		<pubDate>Mon, 03 Jun 2013 23:50:00 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">/?p=35041</guid>
+		<description><![CDATA[Tiny Ball vs. Evil Devil 2 is a physics-based game loaded with twists, turns and adventure. The game is a sequel to the popular Tiny Ball vs. Evil Devil 1 for iOS that reached #2 free overall in US and was downloaded by millions of users. ]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/06/Screen-Shot-2013-06-02-at-9.37.04-AM-147x150.png" alt="Tiny Ball 2 icon" class="alignleft size-thumbnail wp-image-35062" /></p>
+<p>Developed by RV Appstudios, <a href=https://itunes.apple.com/us/app/tiny-ball-vs.-evil-devil-2/id642293177?mt=8>Tiny Ball vs. Evil Devil 2</a> is a physics-based game loaded with twists, turns and adventure. The game is a sequel to the popular Tiny Ball vs. Evil Devil 1 for iOS that reached #2 free overall in the US and was downloaded by millions of users. Successfully following in the footsteps of its predecessor, the Corona-powered Tiny Ball vs. Evil Devil 2 currently enjoys an average 4.5 star review on both iOS and Google Play, and was recently featured as a “What’s Hot” app in the adventure and puzzle categories of the App Store. </p>
+<p>
+<p><img src="/wordpress/wp-content/uploads/2013/06/Tiny-Ball-2-300x168.jpg" alt="Tiny Ball 2 icon" class="alignright size-medium wp-image-35061" />Tiny Ball vs. Evil Devil 2&#8217;s crisp graphics, goofy characters and enticing gameplay contribute to the game&#8217;s success. To play, you must destroy as many evil devils as possible, in the form of angry-faced boxes. To accomplish this, you shoot cheery little balls at the devils &#8211; just aim at your target and tap to shoot. Though the devils die in a number of fairly gory ways, their snarky disposition will make you happy to rid them of each scene and to earn stars along the way.</p>
+<p>With 120 levels of gameplay, this casual yet addictive game will have you hooked for hours. It&#8217;s all around good fun and will keep you happily strategizing on the best way to eliminate the grumpy devils in each level. This <a href=www.coronalabs.com/products/corona-sdk>cross-platform</a> adventure spans the app markets, and is available for <a href=https://itunes.apple.com/us/app/tiny-ball-vs.-evil-devil-2/id642293177?mt=8>iOS</a>, <a href=https://play.google.com/store/apps/details?id=com.rvappstudios.tinyballvsevildevil2>Google Play</a>, <a href=http://www.barnesandnoble.com/w/tiny-ball-vs-evil-devil-2-rv-appstudios/1115320400?ean=2940147128404>NOOK</a> and <a href=http://www.amazon.com/Tiny-Ball-Vs-Evil-Devil/dp/B00CIV9RIA/ref=sr_1_2?s=mobile-apps&ie=UTF8&qid=1370301198&sr=1-2&keywords=tiny+balls+vs+evil+devil>Kindle</a> devices.</p>
+<p><iframe width="420" height="315" src="http://www.youtube.com/embed/BgnXJz8s15c" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/03/app-of-the-week-tiny-ball-vs-evil-devil-2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Stay Alight!</title>
+		<link>/blog/2013/04/15/app-of-the-week-stay-alight/</link>
+		<comments>/blog/2013/04/15/app-of-the-week-stay-alight/#comments</comments>
+		<pubDate>Mon, 15 Apr 2013 19:27:58 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[puzzle]]></category>
+
+		<guid isPermaLink="false">/?p=31697</guid>
+		<description><![CDATA[Developed by Wyse Games, Stay Alight! is a stunning new physics-based game for iPad/iPhone. Within a week of launch, Stay Alight! rose to the App Store's Top 10 of puzzle and arcade games.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/04/Screen-Shot-2013-04-11-at-6.57.59-PM.png" alt="Stay Alight icon" class="alignleft size-full wp-image-31698" />Created by Russia-based <a href=http://www.wysegames.com/en/>Wyse Games</a>, <a href=http://developer.coronalabs.com/showcase/stay-alight-hd-0>Stay Alight!</a> is a stunning new physics-based game for iPad/iPhone. Within a week of launch, Stay Alight! rose to the App Store&#8217;s Top 10 of puzzle and arcade game in five countries. The game&#8217;s allure lies in the captivating gameplay and the gorgeous, highly detailed graphics. Each level also provide a host of unique features, from the beautiful music, to the unique movements and sounds of the characters.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/04/Staying-Alight-screenshot.jpg" alt="Stay Alight screenshot" class="alignright size-full wp-image-31699" />In the opening scene of the game, players are shown a world filled with garbage, pollution and destruction. In short, microbes have captured the planet and it’s your job destroy them. Making use of physics-based game mechanics, you’re given power balls to complete levels by eliminating a slew of microbes.</p>
+<p>Each level provides a set number of energy balls and the challenge is to use your weapon strategically so you don&#8217;t run out or balls. By aiming a light ball at boxes and barrels in a level, you can eliminate multiple microbes at one time. When hit, these objects roll and bounce towards the monsters and instantly destroy them. </p>
+<p>Whether you’re a fan of graphical games, or if you love puzzles and arcades, Stay Alight! is sure to capture your attention. Check out Stay Alight! on <a href="https://itunes.apple.com/us/app/stay-alight!/id628008290?mt=8
+">iTunes</a> for just $0.99.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/GnNZTINHOpg" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv">
+<p><img src="/wordpress/wp-content/uploads/2013/04/Screen-Shot-2013-04-12-at-1.05.22-PM.png" alt="Hideout icon" class="alignleft size-full wp-image-31748" /></a></p>
+<h4 style="margin-bottom: 10px;">Hideout: Early Reading</h4>
+<p>Developed by <a href=http://www.coronalabs.com/case-study/brigham-young-university/>Brigham Young University</a>, a Corona Labs educational partner, Hideout: Early Reading teaches children to read through a series of interactive activities. Emphasizing letter-sound association and word repetition to enhance the reading experience, Hideout: Early Reading has already earned a 5-star rating in the App Store. The app&#8217;s vibrant illustrations, positive messages, and catchy music are nothing short of impressive. Download <a href=https://itunes.apple.com/us/app/id625966929?mt=8>Hideout: Early Reading</a> as a free app for your iPhone/iPad.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/15/app-of-the-week-stay-alight/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>“Freeze!” and 100% Indie (Guest piece)</title>
+		<link>/blog/2013/03/22/freeze-and-100-indie-guest-piece/</link>
+		<comments>/blog/2013/03/22/freeze-and-100-indie-guest-piece/#comments</comments>
+		<pubDate>Fri, 22 Mar 2013 17:02:43 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[amazon appstore]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[indie]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[nook apps]]></category>
+		<category><![CDATA[puzzler]]></category>
+		<category><![CDATA[Samsung Apps]]></category>
+
+		<guid isPermaLink="false">/?p=30041</guid>
+		<description><![CDATA[Andreas von Lepel is the developer of Freeze!, an award-winning game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.
+
+Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and receives glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Andreas von Lepel is the developer of <a href=http://www.coronalabs.com/blog/2012/12/03/app-of-the-week-freeze/>Freeze!</a>, an award-winning puzzler arcade game and a Corona SDK App of the Week winner. In Freeze!, a doomed hero tries to escape from the evil forces holding him hostage, and he needs you to to outwit his captors.</p>
+<p>Receiving well over one million downloads, Freeze! won the 2013 Indie Prize Europe award, was featured in the App Store in 149 countries, and has received glowing reviews from players around the globe. As an indie developer, Andreas writes on the evolution of Freeze!, from his development journey with Corona SDK to his recent partnership with Chillingo.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/LepelEditorialMed-11.jpg" alt="Freeze! dev headshot" class="alignleft size-full wp-image-30510" />My name is Andreas von Lepel, and I&#8217;m the creator of <a href=https://itunes.apple.com/app/id518123684>Freeze!</a> &#8211; a physics arcade-puzzler that I published in 10 languages on <a href=https://itunes.apple.com/app/id518123684>Apple&#8217;s App Store</a>, <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze/dp/B00A1SL8SE>Amazon Appstore</a>, <a href=https://play.google.com/store/apps/details?id=com.frozengun.freeze&hl=en>Google Play</a>, <a href=http://www.barnesandnoble.com/w/freeze-the-escape-frozen-gun-games/1113761191?ean=2940043931788>NOOK Apps</a> and Samsung Apps. Freeze! was also featured by Apple in 149 countries as “New and Noteworthy.”</p>
+<p>Freeze! climbed to the #1 position as a freemium game in 36 countries on iTunes, won the “2013 Indie Prize Europe” award and has to my surprise (and delight), received more than 1.3 million downloads.</p>
+<p>If you&#8217;re not familiar with Freeze!, take a look at the launch trailer.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/ciQgYVgT0gk" frameborder="0" allowfullscreen></iframe></p>
+<p>After Freeze! hit stores on November 30, 2012, lots of amazing things began to happen. I&#8217;d like to tell you about the most interesting.</p>
+<p>Recently I was contacted by Chillingo and was asked to sign an NDA between Chillingo, EA, Samsung and myself. It regarded the launch of a new web portal for indie developers called <a href= http://www.100percentindie.com>100%/ Indie</a>. It launched just a few weeks ago and I haven&#8217;t been able to write about it, until now that is.</p>
+<p>Chillingo asked me to write an article series about the development of Freeze! and I was, of course, happy to participate. After all, there aren&#8217;t many bigger names out there than Chillingo, EA and Samsung! I&#8217;m excited to share that the first part two parts of my series are now live, the first piece is about the <href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a>, while the second details my <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>work with Corona SDK</a>.</p>
+<p>If you take a look at the image below, it will give you a hint about the things I write about in the first piece. It&#8217;s a comparison of the initial prototype  of Freeze!, after two weeks of development, and the final game:</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Freeze-image.png" alt="Freeze! image" class="alignnone size-full wp-image-30042" /></p>
+<p>I wanted to write in order to promote <a href=www.coronalabs.com/products/Corona-sdk>Corona SDK</a>, because without it, the development of Freeze! would not have been possible. And while the first part of the Freeze! series covers lots of interesting tidbits about game design and prototyping, the second installment covers the work I did with Corona and the tools I used to make my game. And more active developers, translates to more income for Corona Labs, which means an even stronger SDK!</p>
+<p>So, and what&#8217;s 100% Indie all about? Well, as I wrote above, I did publish Freeze! for Samsung Apps. This isn&#8217;t as easy as it should be &#8211; they have a review process that&#8217;s a bit complicated and though using Corona SDK is fine for publishing to Samsung Apps, I had to make a few tweaks and problem solve through some issues.</p>
+<p>100% Indie is now offering a very attractive program: publish your game to Samsung Apps via the 100% Indie program, and if your game is accepted, (the Chillingo guys will have a closer look at the quality of your work) you will get 100% revenue for the first 6 month, then 90% for the next 6 months etc. Take a look at the <a href=http://www.100percentindie.com/about/>nice conditions</a> and of course, by working with Chillingo, you have a bigger chance of getting some app store promotions by Samsung as well.</p>
+<p>Now read my first two articles about the <a href=http://www.100percentindie.com/2013/03/05/84/>development of Freeze!</a> and have a good laugh at the problems I faced and the mistakes I made (thankfully I was able to correct most of them). Also, read about my experience <a href=http://www.100percentindie.com/2013/03/12/freeze-part-2-development-decisions/>working with Corona SDK</a> as well as other tools, and then get back to coding to create some great games!</p>
+<p><em>Andreas von Lepel, Creator of Freeze!</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/22/freeze-and-100-indie-guest-piece/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Cling!</title>
+		<link>/blog/2013/03/18/app-of-the-week-cling/</link>
+		<comments>/blog/2013/03/18/app-of-the-week-cling/#comments</comments>
+		<pubDate>Mon, 18 Mar 2013 18:22:22 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[action]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+
+		<guid isPermaLink="false">/?p=30116</guid>
+		<description><![CDATA[Featuring gorgeous graphics and endlessly enjoyable gameplay, this pegformer arcade game will capture your attention from the get-go. ]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-17-at-11.13.35-AM.png" alt="Cling! icon" class="alignleft size-full wp-image-30117" srcset="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-17-at-11.13.35-AM.png 205w, /wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-17-at-11.13.35-AM-150x150.png 150w" sizes="(max-width: 205px) 100vw, 205px" /></p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Cling-screenshot.jpg" alt="Cling! screenshot" class="alignright size-full wp-image-30118" /></p>
+<p>If you embraced the cartoon-esque graphics and intuitive gameplay of <a href=http://www.coronalabs.com/blog/2012/09/10/app-of-the-week-gotta-feed-garp/>Gotta Feed Garp</a>, <a href=http://developer.coronalabs.com/showcase/cling>Cling!</a> will have you instantly hooked. Cling! is a pegformer arcade game that&#8217;s developed by <a href=http://www.first5games.com/>First 5 Games</a>. The Floria based-studio&#8217;s mission is to capture a player&#8217;s attention within the first five seconds to create five lifetimes of enjoyment. By providing endlessly enjoyable gameplay and gorgeous graphics, Cling! holds true to the studio’s motto.</p>
+<p>The star of Cling! Is Edgar – a six-tentacled eyeball that lives in a toy vending machine. When a child drops a quarter into the machine to retrieve a prize, Edgar has a chance at freedom. Unfortunately, Edgar’s capsule breaks and he must battle the dangers of the machine to escape. Your job is to guide him through the vending machine maze, reaching a transporter in each level, and avoiding dangerous obstacles and falls.</p>
+<p>The gameplay is simple: as you touch pegs on the screen, Edgar uses a unique wall-crawling style of movement and &#8220;clings&#8221; onto the floating pegs. Your finger acts as a focal point for where Edgar travels in the maze. The blue pegs pull Edgar in, while green pegs push him away, and red blocks electrocute him. Edgar also happens to be a bit of a fashionista and loves his headgear &#8211; if you can lead Edgar to safety <em>and</em> pick up hats and other goodies along the way, you’ll earn extra points.</p>
+<p>See why fans award Cling! with a 5-star average rating and check is out for $2.99 in the <a href=https://itunes.apple.com/us/app/cling!/id566573977?mt=8>App Store</a>.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/Imz1668GRmw" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv">
+<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-17-at-12.47.25-PM.png" alt="Russian Dolls icon" class="alignleft size-full wp-image-30125" /></a></p>
+<h4 style="margin-bottom: 10px;">Russian Dolls</h4>
+<p>Russian Dolls is a fun, simple dress-up game for young children, that&#8217;s both entertaining and educational. From dresses to overalls to sweaters, Russian dolls offers a variety of fun clothing options to stylishly dress the on-screen doll. As a child dresses the doll by dragging and dropping articles of clothing, the app says the name and color of each selection. Once the doll is dressed in the perfect outfit, children can even snap a photo of their creation and save it to the device&#8217;s gallery. Check out this <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform game</a> in the <a href=https://itunes.apple.com/us/app/russian-dolls-dress-up-little/id594441724>App Store</a> or on <a href=https://play.google.com/store/apps/details?id=ru.hintsolutions.dressdoll>Google Play</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/18/app-of-the-week-cling/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

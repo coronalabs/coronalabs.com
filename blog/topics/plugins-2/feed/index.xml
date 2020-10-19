@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Plugins &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/plugins-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Plugins &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Important AdMob and other ad plugin changes</title>
+		<link>/blog/2019/07/22/important-admob-and-other-ad-plugin-changes/</link>
+		<pubDate>Mon, 22 Jul 2019 15:42:23 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76300</guid>
+		<description><![CDATA[There are some new requirements to implement AdMob and Appodeal. This post explains the changes you need to make to continue to integrate these plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png" alt="" width="150" height="150" class="alignright size-thumbnail wp-image-67842" srcset="/wordpress/wp-content/uploads/2016/08/admob-2-1-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/admob-2-1-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/admob-2-1.png 310w" sizes="(max-width: 150px) 100vw, 150px" />It seems that all of our news lately has been wrapped around Google, and so it is again. AdMob has update their libraries again, and in doing so, created a breaking change. Your app&#8217;s App Id previously was only needed at the time you initialized the plugin. Google is now looking for it inside the <code>AndroidManifest.XML</code> file. If you wish to use AdMob as well as Appodeal (since it includes AdMob), you must add this to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        applicationChildElements =
+        {
+            [[
+                &lt;meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+                    android:value="[YOUR_ADMOB_APP_ID]"/&gt;  -- replace with your app id. See: https://goo.gl/fQ2neu
+            ]],
+        }
+    },
+    plugins =
+    {
+        ["plugin.admob"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },
+}</pre><p> </p>
+<p>Simply replace the <code>[YOUR_ADMOB_APP_ID]</code> with your actual App ID inside the quotes and with out the square brackets. </p>
+<p>In addition, many of you are still referencing the old legacy AdMob plugin since it was a dependency for many other ad plugins. Please look through your build.settings and remove any references to:</p>
+<p><code>["plugin.google.play.services"]</code></p>
+<p>If you do not remove this, your build will fail and you should get an error message in your console using the latest builds.</p>
+<p>You should make these changes before your next attempt to build for Android. See the <a href=http://docs.coronalabs.com/plugin/admob/index.html?#project-settings rel="noopener" target="_blank">AdMob implementation documentation for more details.</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Adding speech recognition to HTML5 apps</title>
+		<link>/blog/2019/02/06/adding-speech-recognition-to-html5-apps/</link>
+		<pubDate>Wed, 06 Feb 2019 16:35:27 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76237</guid>
+		<description><![CDATA[We have created a demo project showing how to implement JavaScript plugins in HTML5. Check out this Web Speech API implemented with Corona!]]></description>
+				<content:encoded><![CDATA[<p>Corona&#8217;s plugin system provides a great <a href=https://docs.coronalabs.com/guide/html5/plugins/index.html>way</a> to extend Corona&#8217;s capabilities without having to modify Corona&#8217;s core engine. Developers building HTML5 apps have great access to JavaScript to add really cool features and it&#8217;s pretty easy to do!</p>
+<p>Let&#8217;s look at an example…</p>
+<p>Recently someone was interested in adding support for speech recognition for their HTML5 apps. We have created a demo that shows how to do just that in Chrome using the <a href=https://w3c.github.io/speech-api/speechapi.html target="_blank" rel="noopener">Web Speech API</a>.</p>
+<p>It serves as a great example of how to integrate JavaScript APIs into your HTML5 builds. <a href=https://gist.github.com/Shchvova/a9b5b22c831f312d6f924c178e857b39 target="_blank" rel="noopener">Check it out</a>!</p>
+<p>You can also view a live demo of this plugin <a href=https://vlad-test.s3.amazonaws.com/WebkitSpeech/index.html target="_blank" rel="noopener">in action here</a>! You will need Google Chrome to view the demo.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://gist.github.com/Shchvova/a9b5b22c831f312d6f924c178e857b39 target="_blank" rel="noopener">Learn more about the Web Speech Plugin</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing the new Animation Plugin</title>
+		<link>/blog/2018/11/02/introducing-the-new-animation-plugin/</link>
+		<pubDate>Fri, 02 Nov 2018 17:04:04 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76090</guid>
+		<description><![CDATA[We have a new animation plugin that's an update to the transition.* library. It now supports timelines and more!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-35232" src="/wordpress/wp-content/uploads/2013/05/Icon_Resources_Plugin.png" alt="" width="122" height="122" />Corona Labs is pleased to announce the immediate availability of a new plugin: Animations. This plugin was originally planned to be an extension to the existing <a href=http://docs.coronalabs.com/api/library/transition/index.html target="_blank" rel="noopener">transition.*</a> library. During the design, there were sufficient changes that warranted it being a new library. We also decided to make this a plugin instead of a core feature to help keep the core lightweight.</p>
+<p>The plugin is broken into two main categories: <strong>tweens</strong> and <strong>timelines</strong>. Tweens are your standard transitions like moving an object over time, fading an object in and out, etc. Tweens have new features including scalable speeds and additional events. Timelines allow you to have more control over what happens to a tween over time. You can set timeline markers that you can advance or return to. You can have events fire when the timeline passes a marker.</p>
+<p>Since it&#8217;s a plugin, you will need to go to the <a href=https://marketplace.coronalabs.com/corona-plugins/animation target="_blank" rel="noopener">Corona Marketplace and activate it</a>.</p>
+<p>Next you will need to include it in your build.settings:</p><pre class="crayon-plain-tag">plugins = {
+        ["plugin.animation"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },</pre><p>And require the plugin in modules where you will use it:</p><pre class="crayon-plain-tag">local animation = require("plugin.animation")</pre><p>For normal transitions, the call is now:</p><pre class="crayon-plain-tag">local myAnimation = animation.to( object, { x = 200, alpha = 0 }, { time = 1000, onComplete = whenDoneFunction } )</pre><p>Notice there are two tables involved, the first table is for object parameters, the second one for transition parameters.</p>
+<p>For timelines, you can now program animations that can contain multiple sequential and/or overlapping tweens, each performing unique tweens on one or multiple objects. Additionally, you can set time markers anywhere across the span of the timeline as jump-to points. For example, you could:</p><pre class="crayon-plain-tag">local function timelineListener( obj )
+    print( "Timeline completed; ID: " .. obj.id )
+end
+ 
+-- Create a timeline object
+local timelineParams = {
+    tweens = {
+        { startTime=0, tween={ object1, { x=display.contentWidth-50 }, { time=4000, iterations=5, reflect=true } } },
+        { startTime=1000, tween={ object1, { y=400 }, { time=4000, easing=easing.outQuad } } }
+    },
+    markers = {
+        { name="marker_start", time=0 },
+        { name="marker_2000", time=2000 }
+    },
+    id = "timeline1",
+    onComplete = timelineListener
+}
+local newTimeline = animation.newTimeline( timelineParams )</pre><p>Which will do a transition that moves an object back and forth on the X axis five times over four seconds. Then starting one second in, move the object down the screen over four seconds and setting markers to allow you to go back to the beginning of the timeline or jump to two seconds in.</p>
+<p>The animation plugin is free to use. You can learn more about the plugin and its new features by reading the <a href=http://docs.coronalabs.com/plugin/animation/index.html target="_blank" rel="noopener">documentation for the plugin</a>. Like many of our other Lua based libraries, we are going to go ahead and make this open source so you can <a href=https://github.com/coronalabs/framework-animation target="_blank" rel="noopener">download the source code</a> and make your own changes to the library.</p>
+<p>Let us know what you think about this new great addition to Corona in our <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Update on the new GPGS v2 plugin</title>
+		<link>/blog/2018/10/31/update-on-the-new-gpgs-v2-plugin/</link>
+		<pubDate>Wed, 31 Oct 2018 21:49:21 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76071</guid>
+		<description><![CDATA[There is a breaking change we had to make to the new GPGS v2 plugin that you need to be aware of. Learn more about this change and how it might impact your usage of this plugin.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-72174" src="/wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png 150w, /wordpress/wp-content/uploads/2017/06/google-play-badge.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs would like to update you about <a href=/blog/2018/10/04/new-google-play-games-services-plugin/ target="_blank" rel="noopener">our recent plugin for Google Play Games Services</a>. This plugin is known as GPGS v2 and there is a breaking change to be aware of.</p>
+<p>We&#8217;ve worked hard to make it call compatible with the older GPGS v1 plugin, however Google has changed their initialization and login process significantly. We had to make a change that you will need to adapt to so that you can successfully login and know if your app is connected.</p>
+<p>Simply remove any calls to the <code>gpgs.init()</code> API and instead call <a href=http://docs.coronalabs.com/plugin/gpgs2/login.html target="_blank" rel="noopener">gpgs.login()</a> directly:</p><pre class="crayon-plain-tag">gpgs.login( { userInitiated=true, listener=gpgsLoginListener } )</pre><p>Where <code>gpgsLoginListener</code> is the name of your function to handle a successful login. If you have questions about the plugin, please joins us in <a href=https://forums.coronalabs.com/topic/73999-from-the-blog-new-google-play-games-services-plugin/ target="_blank" rel="noopener">our community forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Steamworks plugin is now open-source</title>
+		<link>/blog/2018/10/17/steamworks-plugin-is-now-open-source/</link>
+		<pubDate>Wed, 17 Oct 2018 17:23:18 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[OS-X]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Win32]]></category>
+
+		<guid isPermaLink="false">/?p=76043</guid>
+		<description><![CDATA[The Corona Steamworks plugin is now open-source. Learn what that means and how you can extend this cool feature.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75672" src="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/04/steam_icon_2018-150x150.png 150w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018.png 200w, /wordpress/wp-content/uploads/2018/04/steam_icon_2018-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs is pleased to announce that the <a href=https://marketplace.coronalabs.com/corona-plugins/steamworks target="_blank" rel="noopener">Steamworks plugin</a> is now open-source. The Steamworks plugin is used by PC and macOS games published to Valve&#8217;s Steam service that allows support for leaderboards, achievements, user profile data, and microtransaction support.</p>
+<p>Now you can download the repository for the plugin and add your own features and extensions to it. You will have to have a Steam developer account to be able to test the plugin. Follow Steamworks documentation (available on Steam’s developer portal) to learn how to enable Steamworks debugging and development for your game. You can get the plugin source at our <a href=https://github.com/coronalabs/steamworks-corona target="_blank" rel="noopener">GitHub repository</a>.</p>
+<p>You can learn more about the Steamworks plugin in our <a href=/blog/2016/08/10/announcing-steamworks-a-plugin-for-steam-apps/ target="_blank" rel="noopener">previous announcement</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>New Google Play Games Services plugin</title>
+		<link>/blog/2018/10/04/new-google-play-games-services-plugin/</link>
+		<pubDate>Thu, 04 Oct 2018 14:50:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=76037</guid>
+		<description><![CDATA[There is an updated version of the Google Play Games Services (GPGS) plugin. Learn more about this plugin and if you should update to it.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-72174" src="/wordpress/wp-content/uploads/2017/06/google-play-badge.png" alt="" width="200" height="200" srcset="/wordpress/wp-content/uploads/2017/06/google-play-badge.png 200w, /wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />Corona Labs is pleased to announce the immediate availability of a new, updated Google Play Games Services plugin. This plugin in a complete rewrite of the version one of the plugin using the latest GPGS core libraries and dependencies.</p>
+<p>One of the key reasons for the GPGS v2 plugin, besides staying with modern underlying SDK&#8217;s is support for preventing Google rejections for using <em>invalid login scopes</em>. The previous version of the underlying GPGS SDK contained Google Plus login scope which has been deprecated. The new version has this removed.</p>
+<p>The GPGS v2 plugin should be a drop in replacement for the GPGS v1 plugin. First, visit the Marketplace and <a href=https://marketplace.coronalabs.com/corona-plugins/google-play-games-services-v2 target="_blank" rel="noopener">activate the plugin</a>, then simply update your build.settings to include the plugin using:</p><pre class="crayon-plain-tag">settings = {
+    plugins = {
+        ["plugin.gpgs.v2"] = {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { ["android"] = true, }
+        }
+    }
+}</pre><p>And where you require the plugin in your lua code:</p><pre class="crayon-plain-tag">local gpgs = require( "plugin.gpgs.v2" )</pre><p>This is a completely new version of the plugin and you should fully test your app against the code. If you have questions about the new plugin, please check out <a href=http://docs.coronalabs.com/plugin/gpgs-v2/index.html target="_blank" rel="noopener">our documentation</a>. Join us in the <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">community forums</a> to discuss this new plugin.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing the StartApp monetization plugin</title>
+		<link>/blog/2018/02/21/announcing-the-startapp-monetization-plugin/</link>
+		<pubDate>Wed, 21 Feb 2018 14:27:26 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73350</guid>
+		<description><![CDATA[Monetization with StartApp is now available for your Corona made app. Learn more about this exciting opportunity to be more successful with your app or game.]]></description>
+				<content:encoded><![CDATA[<p>After a lot of hard work, Corona is happy to announce the release of the <a href=https://marketplace.coronalabs.com/plugin/startapp target="_blank" rel="noopener">StartApp</a> plugin!</p>
+<p>Now, app publishers who use the Corona framework to build their mobile applications will now be able<br />
+to easily integrate StartApp’s SDK to monetize their Corona apps.</p>
+<p><a href=https://marketplace.coronalabs.com/plugin/startapp><img class="alignnone size-full wp-image-73352" src="/wordpress/wp-content/uploads/2018/02/730x300_2.jpg" alt="" width="730" height="300" srcset="/wordpress/wp-content/uploads/2018/02/730x300_2.jpg 730w, /wordpress/wp-content/uploads/2018/02/730x300_2-300x123.jpg 300w, /wordpress/wp-content/uploads/2018/02/730x300_2-700x288.jpg 700w, /wordpress/wp-content/uploads/2018/02/730x300_2-125x51.jpg 125w" sizes="(max-width: 730px) 100vw, 730px" /></a></p>
+<p>StartApp is an insight-driven mobile technology company that enables partners to turn data into fulfilling mobile moments. By creating innovative ways of exploring mobile users’ intents and behaviors, and of being smarter about responding to these factors, we help our partners optimize and better execute their strategies.</p>
+<p>Corona is excited to now enable its developers to monetize using StartApp SDK, <a href=https://www.startapp.com/blog/startapp-becomes-3rd-popular-android-monetization-sdk/ target="_blank" rel="noopener">ranked as the 3rd most popular monetization SDK</a> behind only AdMob and Facebook Audience Network, according to SDK analytics firm Mobbo with over 1 Billion MAUs, over 400,000 app partners.</p>
+<p>Not yet a using StartApp monetization plugin? <a href=https://marketplace.coronalabs.com/plugin/startapp target="_blank" rel="noopener">Start using it now</a>!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Announcing the new Appodeal plugin</title>
+		<link>/blog/2018/02/02/announcing-the-new-appodeal-plugin/</link>
+		<pubDate>Fri, 02 Feb 2018 18:33:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73290</guid>
+		<description><![CDATA[Corona Labs has a new version of the Appodeal plugin that may result in a smaller footprint. See how you can take advantage of this new version.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-67639" src="/wordpress/wp-content/uploads/2016/08/appodeal-3.png" alt="" width="194" height="194" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w, /wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w" sizes="(max-width: 194px) 100vw, 194px" />Many users love the <a href=https://marketplace.coronalabs.com/plugin/appodeal target="_blank" rel="noopener">Appodeal plugin</a>. Having access to many ad providers in one place, getting high fill rates from the best advertisers is an awesome thing. However; that comes at a price. The plugin is large… It has to include the SDKs for every provider in the plugin.</p>
+<p>Today we are announcing a new beta version of the plugin. This new version is modular. After you include the base plugin in your build.settings, you then include the adapters for the various ad types that are important to you in your <code>build.settings</code> allowing you to customize your Appodeal experience. Of course you can use every ad type but doing so will have the same size requirements as the legacy Appodeal plugin.</p>
+<p>To use this new plugin, you would alter your <code>build.settings</code> to something like:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        -- Base
+        ['plugin.appodeal.base'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.AmazonAds'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.GoogleAdMob'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.TwitterMoPub'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.StartApp'] = { publisherId = 'com.coronalabs' },
+
+        -- Banner
+        ['plugin.appodeal.AppLovin'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.FacebookAudience'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Flurry'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.InMobi'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.MyTarget'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.MillenialMedia'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Yandex'] = { publisherId = 'com.coronalabs' },
+
+        -- Interstitial
+        ['plugin.appodeal.AdColony'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.AppLovin'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Chartboost'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.FacebookAudience'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Flurry'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.InMobi'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.IronSource'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Mobvista'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.MyTarget'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.StartApp'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.MillenialMedia'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Ogury'] = { publisherId = 'com.coronalabs' },
+
+        -- Rewarded Video
+        ['plugin.appodeal.AdColony'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.AppLovin'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Chartboost'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.FacebookAudience'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Flurry'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.InMobi'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.IronSource'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Mobvista'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.MyTarget'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.StartApp'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Unity'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Vungle'] = { publisherId = 'com.coronalabs' },
+        ['plugin.appodeal.Tapjoy'] = { publisherId = 'com.coronalabs' },
+    },
+}</pre><p>The example above includes all the entries you can use. If you want a lighter footprint, simply exclude the ad types and providers that you don&#8217;t need.</p>
+<p>The legacy Appodeal plugin will stay in place for now, but eventually this model will become the primary use of the plugin. We will manage a two-plugin model going forward, a &#8220;release&#8221; model and a &#8220;beta&#8221; model. For now, the legacy plugin is the &#8220;release&#8221; version and modular version is the &#8220;beta&#8221; version.</p>
+<p>We encourage people to try the modular version and provide us feedback on the plugin.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing the Self-Hosted Plugins plan</title>
+		<link>/blog/2018/01/24/introducing-the-self-hosted-plugins-plan/</link>
+		<pubDate>Wed, 24 Jan 2018 18:47:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Marketplace]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73278</guid>
+		<description><![CDATA[There is a new plan for self-hosted plugins. Learn more about this new feature and how you can use it.]]></description>
+				<content:encoded><![CDATA[<p>There have been several requests for a standalone self-hosted plugin plan. Self-hosted plugins are a method for studios who are making their own native plugins to create plugins, yet still use the simulator for building their apps. Normally if you need to use a custom plugin, you would have to use native builds to create and test each build.</p>
+<p>Previously, the self-hosted plugin feature was part of the Unlimited Enterprise package.. Once we made native builds free, this feature was added to the <a href=https://marketplace.coronalabs.com/support/priority-plus-support target="_blank" rel="noopener">Priority Plus Support plan</a>. We have now made a standalone version of the self-hosted plugin plan. This feature is now available for $499/year and can be purchased in the <a href=https://marketplace.coronalabs.com/support/self-hosted-plugins target="_blank" rel="noopener">Corona Marketplace</a>.</p>
+<p>Now studios can access this feature without the need for the additional support plan.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android support library plugins updated</title>
+		<link>/blog/2017/12/12/android-support-library-plugins-updated/</link>
+		<pubDate>Tue, 12 Dec 2017 20:11:50 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=73192</guid>
+		<description><![CDATA[Corona Labs' engineers have updated the Android support library plugins. Learn what this means for you.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs&#8217; engineers have completed the process of updating to the latest versions of the various support libraries that other Android plugins depend on . The updates include:</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Google Play Services &#8211; 11.4.2</li>
+<li>Support libraries &#8211; 25.2.0</li>
+</ul>
+</li>
+</ul>
+<p>Plugin developers should be able to take advantage of these updates. All Corona developers using build <strong>2017.3183</strong> or later will use the new versions of these support plugins. Older versions of Corona will continue to use the older versions of the support plugins.</p>
+<p>Additionally, the Android Awareness support plugin (a new support library) is now included.</p>
+<p>We hope these updates will help you going forward.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

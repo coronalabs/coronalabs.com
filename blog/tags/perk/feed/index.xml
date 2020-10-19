@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Perk &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/perk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Perk &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Labs Joins Perk</title>
+		<link>/blog/2015/11/30/corona-labs-joins-perk/</link>
+		<comments>/blog/2015/11/30/corona-labs-joins-perk/#comments</comments>
+		<pubDate>Mon, 30 Nov 2015 18:49:43 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Perk]]></category>
+
+		<guid isPermaLink="false">/?p=64819</guid>
+		<description><![CDATA[Today, I’m really happy to announce that Corona and the team are joining <a href="http://www.perk.com/" target="_new">Perk</a>. Perk is a publicly traded, profitable company that has built a service/platform that rewards people for everyday mobile and internet activities. Their goal is to enable developers like you to leverage their rewards system and advertiser relationships to both monetize and engage your users.]]></description>
+				<content:encoded><![CDATA[<p>Today, I&#8217;m really happy to announce that Corona and the team are joining <a href=http://www.perk.com/ target="_blank">Perk</a>.</p>
+<p>Perk is a publicly traded, profitable company that has built a service/platform that rewards people for everyday mobile and internet activities. Their goal is to enable developers like you to leverage their rewards system and advertiser relationships to both monetize and engage your users.</p>
+<p>Having gone through multiple acquisitions (most recently with Fuse), I can tell you that this is really good news for Corona.</p>
+<p>The key thing for me is that Perk builds and publishes apps — and more importantly — their engineers are huge Corona fans! They’ve built several apps with Corona already and at a fundamental level understand what makes Corona so special.</p>
+<p>In fact, when we first met, they told us that it took them 3 months for their team to build an Android app natively. In contrast, one of their developers who had never used Corona before was able to port this app to Corona in 1 month!</p>
+<p>The teams on both sides have been talking about a lot of different activities that are going to make this combination really great. And when I look at the conversations that the engineers are having on both sides, it&#8217;s clear they talk the same language: no nonsense, let&#8217;s get sh*t done.</p>
+<p><center>* * *</center>This has been an incredible year for Corona.</p>
+<p>As I look back at the <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/ target="_blank">agenda and themes</a> we set for 2015, I&#8217;m extremely happy that we accomplished nearly all of it. The list is really quite extensive: Mac App, Win32 App, Corona Store, Lua-based plugins, custom shader effects, tvOS, etc.</p>
+<p>On top of that, we now have a tremendous partner in Perk. They are excited about Corona at all levels of the company. They see value in what the team here does, in what you the community do with Corona, and in what Perk/Corona will be able to do together. The fact that they already build many of their own apps with Corona makes this transition so natural.</p>
+<p>Because of all this, I feel like Corona is in the best shape it&#8217;s ever been. So I&#8217;ve decided this is a really great time to take a step back from my day-to-day role. Moving forward, I&#8217;ll be taking on the role as advisor to Perk/Corona Labs.</p>
+<p>Pixar co-founder, Ed Catmull, talked a lot about how they built something that is self-sustaining — that will outlive the founders — in his book &#8220;Creativity, Inc.&#8221; In particular, he highlights the key role that the braintrust plays in that.</p>
+<p>Well, the Corona team is my braintrust. These guys are rockstars. I credit them for what makes Corona so special and for why Corona has helped you all build such great apps.</p>
+<p>I sometimes wondered if I would ever feel comfortable stepping away from the &#8220;captain&#8217;s chair&#8221;. Not anymore. The team has already stepped up and grown in so many ways. It&#8217;s time to take the training wheels off, so that they can continue to grow.</p>
+<p>While I won&#8217;t be working side-by-side with the team on a daily basis anymore, I hope you&#8217;ll join me in cheering them from the sidelines.</p>
+<p>Finally, as my last official act, I wanted to thank you — the community — for believing in what we are doing here with Corona. I hope I&#8217;ve played a small part in making a positive dent in your universe. I wish you all the best!</p>
+<p><span style="font-family: serif; font-style: italic; font-size: 125%;">Walter</span></p>
+<p>walter at coronalabs dot com</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/11/30/corona-labs-joins-perk/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

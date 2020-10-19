@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Friday Night Forum &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/friday-night-forum/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Friday Night Forum &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum &#8212; Issue #68</title>
+		<link>/blog/2015/04/17/from-the-forum-issue-68/</link>
+		<pubDate>Fri, 17 Apr 2015 22:27:30 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=62381</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. iOS design just got simplier</h3>
+<p>Generating our UI icons is always a pain. Sizes, vector versus pixel, getting the right sheen on the lensflare… there is a lot to do in a little amount of time. Anything that takes the sting out of the research and the creation of our buttons and tabs is worth checking out.</p>
+<p>On to the the thread below, which talks about a cool website which has copies of iOS button templates, which mirror the Apple design philosophy perfectly. It seems there might be a reason for that. Head down to the original thread and check it out. It’s a dynamite resource and you would be doing a disservice in ignoring it!</p>
+<p><a href=http://forums.coronalabs.com/topic/56156-ios-8-icons/ target="_blank"><strong>http://forums.coronalabs.com/topic/56156-ios-8-icons/</strong></a></p>
+<h3>2. Text on Windows? A workaround for the rest of us</h3>
+<p>If your main development machine runs Windows, come to the front of the class and show off your behemoth of a laptop or plain black box of a desktop. Corona on Windows works very very well, but we do miss out on some cool features that OSX users have been enjoying for quite some time.</p>
+<p>One of these things is text input. Corona can run text fields on OSX, and they support keyboard inputs and generally allow you to debug text entry inside of the simulator. Windows can’t handle this natively which is a shortcoming of Microsoft, but there are a lot of folks that want this featureset anyway. And so it was that some intrepid developers were able to create a worthwhile alternative in the original thread below. Head on over to check it out of you’re itching for this functionality on your Windows machine!</p>
+<p><a href=http://forums.coronalabs.com/topic/56160-windows-simulator-text-input/ target="_blank"><strong>http://forums.coronalabs.com/topic/56160-windows-simulator-text-input/</strong></a></p>
+<h3>3. I got you.. diagonally!</h3>
+<p>Scrollviews have been an integral part of the widget library since it’s inception. Giving developers a nice option when it comes to a simple list, extending the widget functionality is sometimes necessary. As a recent developer found, diagonal scrolling isn’t enabled out-of-box, so they took it upon themselves to make up a nice edit from the open-source library, and shared it with the class!</p>
+<p>Feel free to check it out in the link below. It also provides the link to the original widget library, so if you’re hankering to get under the hood and get your hands dirty on a Corona-approved (but not supported!) open-source library then this is the one for you!</p>
+<p><a href=http://forums.coronalabs.com/topic/56034-diagonal-scrollview-widget/ target="_blank"><strong>http://forums.coronalabs.com/topic/56034-diagonal-scrollview-widget/</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum &#8212; Issue #50</title>
+		<link>/blog/2014/12/12/from-the-forum-issue-50/</link>
+		<pubDate>Sat, 13 Dec 2014 01:02:06 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=60563</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. Shadows and light, the Corona way!</h3>
+<p>We know what what we want. Amazing games. Mind-blowing apps. Easy development and fantastic features all rolled into one package. Corona SDK makes this possible for many of us, and with top-flight libraries being created and shared with the community, it has never been easier to get into Corona development.</p>
+<p>First up is a fantastic library created by Corona developer <strong>Rene Aye</strong> has given us all access to their “Dynamic Shadows” codebase, which, as the name implies, generates shadows from a lightsource created in-code. The complete project info is on bitbucket, but there is one caveat for which you need to keep an eye out. It’s called the <em>“Lucky Luke”</em> problem by the current developer, and it needs a solution.</p>
+<p>Take a look at the original thread to find the bitbucket link and more information about “Lucky Luke”. If you have a suggestion for improvements or a fix for the developers sticky wicket, feel free to chime in!</p>
+<p><a href=http://forums.coronalabs.com/topic/53127-2d-dynamic-shadows target="_blank"><strong>http://forums.coronalabs.com/topic/53127-2d-dynamic-shadows</strong></a></p>
+<h3>2. Memory management: Not child’s play</h3>
+<p>Keeping your game within the confines of performance limits with all of the mobile devices Corona is capable of targeting is a lot to bite off. Between making sure that your awesome app can run on the bargain-est of basement phones to the strongest iPhone 6+ means having clean, simple code that runs without a hitch.</p>
+<p>But what of memory leaks? Many new developers get caught up in trying to solve a problem that doesn’t really exist. Because of how Corona SDK handles garbage memory collection, developers will see what looks like an undulating sea of memory increases and decreases. It is so important to remember that garbage collection doesn’t happen on a specific timer within Corona, nor does it handle immediate zeroing of memory.</p>
+<p>Check the original thread for more information and some helpful tips to remember regarding memory management. Have a suggestion of your own? Feel free to add it in!</p>
+<p><a href=http://forums.coronalabs.com/topic/53267-memory-leak-out-of-nowhere/ target="_blank"><strong>http://forums.coronalabs.com/topic/53267-memory-leak-out-of-nowhere/</strong></a></p>
+<h3>3. Another development time-saver just in time for the holidays!</h3>
+<p>In this competitive development ecosystem, it’s always nice to get some help from your friends. Corona has an excellent developer community that is always ready to help out when needed, and to provide some great tools to make life that much easier for all of us.</p>
+<p>Corona developer <strong>Rene Aye</strong> bookends this week’s offering with a great utility that can generate our splash screens for us from within Photoshop. It’s a quick easy way to have your app’s different screen sizes created, so you don’t have to fiddle with each one individually.</p>
+<p>Head on over to the original thread to grab the download, and don’t forget to say thanks!</p>
+<p><a href=http://forums.coronalabs.com/topic/53281-fast-easy-%E2%80%93-splash-screen-template-photoshop-needed target="_blank"><strong>http://forums.coronalabs.com/topic/53281-fast-easy-%E2%80%93-splash-screen-template-photoshop-needed</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Software</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=info@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancsoftware>@pancsoftware</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum &#8212; Issue #43</title>
+		<link>/blog/2014/10/24/from-the-forum-issue-43/</link>
+		<pubDate>Fri, 24 Oct 2014 22:48:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=60047</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>1. Widgets Town, open for business!</h3>
+<p>Many of our Corona development community are bona-fide success stories. Forging ahead and leading with some truly inventive mobile apps makes us realize that with a lot of ingenuity and hard work, we can show the world what we’re made of.</p>
+<p>Ending with a preposition might be the most ironic way to introduce greatness, but the folks behind <strong>WidgetsTown</strong> are really embarking on a journey of enlightenment here. They are forging ahead with a website offering themes and tips for getting widgets to work just the way you want them. With the open-sourced widget model we have at our disposal, we have the power to make changes for the better!</p>
+<p>Head down to the original thread and take a look at the new options on display. Have a question or a concern? That’s what the forum is all about m’friend!</p>
+<p><a href=http://forums.coronalabs.com/topic/51858-widgets-town-themes/ target="_blank"><strong>http://forums.coronalabs.com/topic/51858-widgets-town-themes/</strong></a></p>
+<h3>2. WebView with some razzle dazzle</h3>
+<p>We see some pretty cool solutions being presented in the forums these days. Whether it’s folks working with physics target mapping, some backend server logic or messing with the pew-pews, we see nifty moves from the community.</p>
+<p>One interesting query comes from a developer with some questions about <a href=http://docs.coronalabs.com/api/library/native/newWebView.html target="_blank">WebView </a>properties and actions to open windows in his app. Developer <strong>dave.haynes</strong> found an intelligent way to get external HTML pages to be selectively initialized based on string values. It’s a snippet of code that can be extremely useful for many different applications.</p>
+<p>Check out the original thread to read the code in question. Have a concern or your own way of handling this? Feel free to add it in.</p>
+<p><a href=http://forums.coronalabs.com/topic/51826-webview-opening-a-new-window/ target="_blank"><strong>http://forums.coronalabs.com/topic/51826-webview-opening-a-new-window/</strong></a></p>
+<h3>3. Sorting tables and the ease of iterating</h3>
+<p>We’re taking it back to the proverbial crates with this tip! One of the most functional aspects of Lua is the fact that we can throw our values and variables in a table and run (or iterate) through it to find the variable or value that you need.</p>
+<p>Developers whom are a bit newer to the Corona SDK party may not be intimately familiar with the table.sort function, but it’s such a versatile API with low overhead, allowing us to fill up a table in any order you like, and then sort that table in whichever manner you see fit. Once you get the handle of it, it’ll be an indispensable tool in your tool belt when you’re building any app or game you can imagine.</p>
+<p>Sounds too good to be true? Don’t just take my word for it. Head down to the original thread to see the function in action!</p>
+<p><a href=%20http://forums.coronalabs.com/topic/52069-how-to-detect-lower-element-from-a-table/ target="_blank"><strong>http://forums.coronalabs.com/topic/52069-how-to-detect-lower-element-from-a-table/</strong></a></p>
+<hr />
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Software</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=info@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancsoftware>@pancsoftware</a>. Check out his new game <a href=http://crosstownsmash.com/ target="_blank">Crosstown Smash</a> on iOS, Android, and Amazon devices!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Friday Night Forum: Violence in Gaming and its Effects on Children</title>
+		<link>/blog/2013/02/15/friday-night-forum-violence-in-gaming-and-its-affects-on-children/</link>
+		<comments>/blog/2013/02/15/friday-night-forum-violence-in-gaming-and-its-affects-on-children/#comments</comments>
+		<pubDate>Sat, 16 Feb 2013 02:53:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=29302</guid>
+		<description><![CDATA[Throughout the past several months, there’s been a lot of buzz around the effects of violence in gaming on young minds. In January, President Obama proposed funding to research this relationship following a series of gun-related fatalities.
+
+As games become increasingly bloody and more realistic, many wonder whether a daily dose of violent gaming nurtures aggression in children. While children can consume TV and movies as passive viewers, video games require interaction, which is thought to have more influence over the growing mind.
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-27877" alt="Corona logo" src="/wordpress/wp-content/uploads/2013/01/Corona-logo.jpg" srcset="/wordpress/wp-content/uploads/2013/01/Corona-logo.jpg 180w, /wordpress/wp-content/uploads/2013/01/Corona-logo-150x150.jpg 150w" sizes="(max-width: 180px) 100vw, 180px" />Throughout the past several months, there’s been a lot of buzz around the effects of violence in gaming on young minds. In January, President Obama proposed funding to <a href=http://techland.time.com/2013/01/17/obama-wants-more-violent-video-game-studies-and-thats-okay/>research this relationship</a> following a series of gun-related fatalities.</p>
+<p>As games become increasingly bloody and more realistic, many wonder whether a daily dose of violent gaming nurtures aggression in children. While children can consume TV and movies as passive viewers, video games require interaction, which is thought to have more influence over the growing mind.</p>
+<p>The findings are mixed. While a recent study by <a href=http://seattletimes.com/html/nationworld/2020294832_videoviolencexml.html>Ohio State University</a> concluded that violent games could increase aggression over time, it was “impossible to link games to violent criminal behavior.” Based on another study, the Supreme Court struck down <a href=http://www.wired.com/threatlevel/2011/06/violent-video-games-scotus/>a California law</a> in 2011 that restricted the sale and rental of violent video games to minors, due to insufficient evidence that the two were connected.</p>
+<p>What&#8217;s your take: In the long term, does violent interactive media – such as video and mobile games – foster aggression in children?</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/15/friday-night-forum-violence-in-gaming-and-its-affects-on-children/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Friday Night Forum: The Rebirth of RIM</title>
+		<link>/blog/2013/02/01/friday-night-forum-the-rebirth-of-rim/</link>
+		<comments>/blog/2013/02/01/friday-night-forum-the-rebirth-of-rim/#comments</comments>
+		<pubDate>Fri, 01 Feb 2013 22:35:25 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Friday Night Forum]]></category>
+
+		<guid isPermaLink="false">/?p=28874</guid>
+		<description><![CDATA[This could be the year for RIM's rebirth. The previously struggling company made a splash with Tuesday's announcements: they're rebranding the company name to “BlackBerry,” hiring Alicia Keys as the new Global Creative Director, unveiling the BlackBerry 10 operating system, and announcing two new phones: the BlackBerry Z10, a touchscreen smartphone, and the Q10, a smartphone with a physical keyboard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-medium wp-image-28877" alt="BB Z10" src="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-01-at-12.50.44-PM-181x300.png" />This could be the year for RIM&#8217;s rebirth. The previously struggling company made a splash with Tuesday&#8217;s announcements: they&#8217;re rebranding the company name to “BlackBerry,” hiring Alicia Keys as the new Global Creative Director, unveiling the BlackBerry 10 operating system, and announcing two new phones: the BlackBerry Z10, a touchscreen smartphone, and the Q10, a smartphone with a physical keyboard.</p>
+<p>BlackBerry’s bold attempt to compete in the smartphone market could make consumers and competitors take a second look. The BlackBerry Z10 features a 4.2 inch screen, unique predictive text capabilities that adapt to writing patterns, app essentials (including video, messaging, Facebook, Twitter and more), innovative software design, and a time shift camera that allows users to capture their &#8220;best&#8221; face. On the performance front, the dual-core processor with 2GB memory makes this the fastest BlackBerry to date.</p>
+<p>Considering BlackBerry’s reinvention, how do you think the company will fare against the competition in 2013?</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/01/friday-night-forum-the-rebirth-of-rim/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Hangout Highlights: Writing A Custom Keyboard for Spelling Test</title>
+	<atom:link href="/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: James</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comment-5590</link>
+		<dc:creator><![CDATA[James]]></dc:creator>
+		<pubDate>Tue, 23 Apr 2013 01:51:34 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220#comment-5590</guid>
+		<description><![CDATA[Yeah, I thought it was interesting that on his app&#039;s description, he says:
+
+Please note: If you have not upgraded yet, I recommend you don&#039;t upgrade until the next version. I have many bug fixes coming soon.
+
+That&#039;s the first time I&#039;ve ever seen a developer tell their users NOT to download their own app!  I listened to the podcast, and if anything, the value taken away from this is to see where he made his mistakes and learn from it.  Seems when customers get used to something (like the Apple keyboard), it&#039;s best not to try and change things without first extensively testing it out on your target audience.]]></description>
+		<content:encoded><![CDATA[<p>Yeah, I thought it was interesting that on his app&#8217;s description, he says:</p>
+<p>Please note: If you have not upgraded yet, I recommend you don&#8217;t upgrade until the next version. I have many bug fixes coming soon.</p>
+<p>That&#8217;s the first time I&#8217;ve ever seen a developer tell their users NOT to download their own app!  I listened to the podcast, and if anything, the value taken away from this is to see where he made his mistakes and learn from it.  Seems when customers get used to something (like the Apple keyboard), it&#8217;s best not to try and change things without first extensively testing it out on your target audience.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comment-5589</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2013 19:04:49 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220#comment-5589</guid>
+		<description><![CDATA[Thanks for the comment Owen. What I heard was that Brian was able to come up with an initial solution that met his apps requirements and since then he has been able to respond to the diverse feedback from his users. He did mention during the hangout that he was getting ready to release a new update that would address the specific feedback that he was getting. If you get a chance, download his app, it&#039;s a very well thought out app. I&#039;m looking forward to hearing how his back end service does for him.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the comment Owen. What I heard was that Brian was able to come up with an initial solution that met his apps requirements and since then he has been able to respond to the diverse feedback from his users. He did mention during the hangout that he was getting ready to release a new update that would address the specific feedback that he was getting. If you get a chance, download his app, it&#8217;s a very well thought out app. I&#8217;m looking forward to hearing how his back end service does for him.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Owen</title>
+		<link>/blog/coronageek/hangout-highlights-writing-a-custom-keyboard-for-spelling-test/#comment-5588</link>
+		<dc:creator><![CDATA[Owen]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2013 18:49:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32220#comment-5588</guid>
+		<description><![CDATA[Sounds arduous and according to the iTunes reviews the current result is not welcomed. The video highlights the developers ingenuity in trying to solve a limitation but it&#039;s terrible advert for Corona - &#039;here&#039;s how I wasted lots of time and produced something that my previous happy users are now giving me 1 star reviews&#039;. 
+
+Funnily enough this task is trivial in html: 
+
+
+Job done. I&#039;d investigate using the web view in Corona to allow you to use this. And I would certainly do a language detection and serve up your custom keyboard only to english users in the interim of sorting out a proper solution.
+
+]]></description>
+		<content:encoded><![CDATA[<p>Sounds arduous and according to the iTunes reviews the current result is not welcomed. The video highlights the developers ingenuity in trying to solve a limitation but it&#8217;s terrible advert for Corona &#8211; &#8216;here&#8217;s how I wasted lots of time and produced something that my previous happy users are now giving me 1 star reviews&#8217;. </p>
+<p>Funnily enough this task is trivial in html: </p>
+<p>Job done. I&#8217;d investigate using the web view in Corona to allow you to use this. And I would certainly do a language detection and serve up your custom keyboard only to english users in the interim of sorting out a proper solution.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

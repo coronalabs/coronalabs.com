@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>java &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/java/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>java &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Java and Windows Simulators</title>
+		<link>/blog/2013/05/15/wednesday-faqs-java-and-windows-simulator/</link>
+		<comments>/blog/2013/05/15/wednesday-faqs-java-and-windows-simulator/#comments</comments>
+		<pubDate>Wed, 15 May 2013 17:06:58 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[java]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34017</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Java and the Windows Simulator.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Java and the Windows Simulator.</p>
+<h2>1. Java 7 is the most recent version of Java, why does Corona SDK require Java 6?</h2>
+<p>Developing for Android requires Java 6, not Java 7 (according to the <a href=http://developer.android.com/index.html>Android site</a>). Corona SDK uses the Java tools for signing the APK, so we have the same requirements as if you were doing native Android development.</p>
+<p>When you run Corona SDK and try to do a build, it checks to see if Java 6 is installed. If it doesn&#8217;t find Java 6, you will be prompted to install Java 6.</p>
+<p>Note: Starting with Build 1103, we found a way to make Corona SDK run with Java 7, so now both the Mac and Windows Simulators can run with either Java 6 or Java 7 installed.</p>
+<h2>2. I keep getting a message on my Windows machine saying Java wants to update my Java (6) to Java 7. Should I upgrade?</h2>
+<p>If you are running the public build (971 or 1076), we don&#8217;t recommend running the Java updater because it may remove the JRE 6 binary files, causing Corona SDK build errors.</p>
+<h2>3. I can&#8217;t build for Android &#8212; the &#8220;Key Alias&#8221; field is empty</h2>
+<p>This generally means the Java 6 install is damaged. You will also get <strong>&#8220;keystore password not valid&#8221;</strong> error if you browse and select the <strong>debug keystore</strong> shipped with Corona SDK.</p>
+<p>This can happen if you try to install Java 7 over Java 6 and the Java updater removes the JRE 6 (Java Runtime) binary files. We have seen this happen when you run Java (7) Updater 45. See question 5 for how to restore JRE 6.</p>
+<h2>4. I can&#8217;t build for Android &#8212; I get a &#8220;Could not load &#8230;/jvm.dll, error 126&#8221; message.</h2>
+<p>We added support for Java 7 in Build 1093 but it only worked correctly if you installed Java JDK7 from Oracle&#8217;s website. We found if you installed Java 7 using the Updater 45, it would remove a key DLL file, causing the above error message when trying to do a build in the Windows simulator. The solution is to use Build 1103, which now properly locates the DLL file. (This turned out to be a known Java Updater bug.)</p>
+<h2>5. I&#8217;ve installed Java 7 so how do I get Corona SDK Build 1076 working again?</h2>
+<p>Installing the Java 7 Updater removes the JRE 6 binary files but leaves the JRE 6 key in the Windows Registry making Corona SDK think Java 6 is installed. The solution is to re-install Java 6 JRE files. You can download JRE 6 <a href=http://www.oracle.com/technetwork/java/javase/downloads/jre6downloads-1902815.html>here</a>. Make sure you pick the 32-bit version for Windows (Windows X86).</p>
+<p>Once you&#8217;ve run the Java 7 Updater and re-installed the JRE 6 files, you can build with both the public releases and the latest Corona SDK Daily Builds (starting with Build 1103).</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/15/wednesday-faqs-java-and-windows-simulator/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

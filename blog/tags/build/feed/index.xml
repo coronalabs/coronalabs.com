@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>build &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/build/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>build &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona autocomplete package now available for Atom editor</title>
+		<link>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/</link>
+		<comments>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/#comments</comments>
+		<pubDate>Sat, 23 Jan 2016 03:52:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Editor]]></category>
+		<category><![CDATA[atom]]></category>
+		<category><![CDATA[atom.io]]></category>
+		<category><![CDATA[build]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65325</guid>
+		<description><![CDATA[We are happy to announce the immediate availability of a convenient code completion package for the popular Atom editor. Installation of the package is simple using either Atom's package interface or from the command line.]]></description>
+				<content:encoded><![CDATA[<p>We would like to announce the immediate availability of a code completion package for the <a href=https://atom.io/ target="_blank">Atom editor</a>, which provides code completion as well as a description and links to the Corona Docs.</p>
+<p>You have two options to install the package: through Atom&#8217;s package interface or from the command line.</p>
+<p>If you choose the Atom&#8217;s package interface, open up the <strong>Preferences</strong> screen and click on <strong>Install</strong>.</p>
+<p>In the search box, type <code>corona</code> and hit enter. The <code>autocomplete-corona</code> package should show as the first option. Click on the <code>Install</code> button. This will install the package and you can start using it immediately.</p>
+<p>If you prefer, you can install it from the command line by executing:</p><pre class="crayon-plain-tag">apm install autocomplete-corona</pre><p>You may also need to enable the <code>language-lua</code> package as well, to get the syntax highlighting.</p>
+<p><img class="alignnone size-full wp-image-65328" src="/wordpress/wp-content/uploads/2016/01/demo.gif" alt="demo" width="902" height="296" /></p>
+<p>This is a no-frills package that uses Corona&#8217;s own docs to provide the code completion. Simply tab to complete and then tab between parameters to fill them out.</p>
+<p>This tool complements our Corona Editor and Corona Composer GUI tools to help you make your apps easier.</p>
+<p>Atom also supports building your project. There is not a pre-built Corona SDK build provider. However, you can configure your own by putting an extra file in the folder with your <code>main.lua</code> named:</p>
+<p><code>.atom-build.json</code></p>
+<p>You must include this file in every project you want to build. The contents of the file will vary depending on if you are using a daily build or public build. And it will vary between OS X and Windows.</p>
+<p>Here is an example OS X version for public releases:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>If you use daily builds change the first line to the right folder:</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;/Applications/CoronaSDK-2811/Corona\\ Simulator.app/Contents/MacOS/Corona\\ Simulator&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>For Windows, you will need to provide the right path to your Corona SDK install folder.</p><pre class="crayon-plain-tag">{
+  &quot;cmd&quot;: &quot;C:\Program Files (x86)\Corona Labs\Corona SDK\Corona\\ Simulator.exe&quot;,
+  &quot;args&quot;: [&quot;main.lua&quot;],
+  &quot;name&quot;: &quot;Corona SDK&quot;,
+  &quot;cwd&quot;: &quot;{PROJECT_PATH}&quot;,
+  &quot;sh&quot;: true
+}</pre><p>You must also install the build package to use this. <a href=https://github.com/noseglid/atom-build?#configuration-options target="_blank">Click here to learn more</a> about these build scripts.</p>
+<p>If you are an Atom fan, you will now be more empowered.</p>
+<p><span class="comment-text ">Having problems? Questions? <a href=https://forums.coronalabs.com/topic/61274-from-the-blog-corona-autocomplete-package-now-available-for-atom-editor/ target="_blank">Join the discussion</a> in the Corona Labs Forums.</span></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/22/corona-autocomplete-package-now-available-for-atom-editor/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+	</channel>
+</rss>

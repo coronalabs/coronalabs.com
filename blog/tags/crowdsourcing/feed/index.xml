@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>crowdsourcing &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/crowdsourcing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>crowdsourcing &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest piece: Columbus Little &#8211; From app concept to working prototype</title>
+		<link>/blog/2013/08/23/guest-piece-little-columbus-from-app-concept-to-working-prototype/</link>
+		<pubDate>Fri, 23 Aug 2013 21:17:16 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[crowdsourcing]]></category>
+		<category><![CDATA[Indiegogo]]></category>
+
+		<guid isPermaLink="false">/?p=42260</guid>
+		<description><![CDATA[Philip and Tobias Schneider are the creators of <a href="http://en.columbuslittle.com/">Columbus Little</a>, an app that lets kids discover the world in a playful way. Philip and Tobias are currently running a campaign on <a href="http://igg.me/at/columbuslittle/x/3916812">Indiegogo</a> to raise funds for Columbus Little. 
+
+This piece is the first of a two-part series on turning an app idea into a crowd-sourcing campaign.]]></description>
+				<content:encoded><![CDATA[<p><em>Philip and Tobias Schneider are the creators of <a href=http://en.columbuslittle.com/>Columbus Little</a>, an app that lets kids discover the world in a playful way. Philip and Tobias are currently running a campaign on <a href=http://igg.me/at/columbuslittle/x/3916812>Indiegogo</a> to raise funds for Columbus Little. </p>
+<p>This piece is the first of a two-part series on turning an app idea into a crowd-sourcing campaign.</em></p>
+<hr />
+<p><img class="size-medium wp-image-42261 alignleft" alt="Columbus Little" src="/wordpress/wp-content/uploads/2013/08/Columbus-Little-300x117.png" width="300" height="117" srcset="/wordpress/wp-content/uploads/2013/08/Columbus-Little-300x117.png 300w, /wordpress/wp-content/uploads/2013/08/Columbus-Little.png 694w" sizes="(max-width: 300px) 100vw, 300px" />In January, we decided to dive feet first into building an app called <em>Columbus Little</em>. Based on our experience, we&#8217;d like to share some lessons from our journey, starting with how we transformed our idea into a business model to build a prototype. Our second article, to be published next week, will discuss the lessons we learned as a result of starting a crowd-funding campaign on <a href=http://igg.me/at/columbuslittle/x/3916812>Indiegogo</a>.</p>
+<h4>It starts with an idea</h4>
+<p>Do you have a great idea but don&#8217;t know where to start? Or, do you have many ideas but are having trouble determining which one to focus on? We had various ideas for potential apps — some more complex, others very sleek and simple — but we had trouble deciding on just one.</p>
+<p>In early 2013, we imagined an iPad app for children to discover the world. This idea caught our focus because it was very much in line with our own interest in traveling. This was our first important lesson: that many ideas have potential, but the important part is to pursue one idea that you&#8217;re passionate about.</p>
+<h4>Building a business model</h4>
+<p>To start, it&#8217;s important to determine the value in your idea. Will people like it? Is there a need for it in the market? Enriching and validating your idea should be done with a systematic approach. We used two different methodologies to figure out what we want to do and what not to do.</p>
+<p>First, we used a method called &#8220;the golden circle.&#8221; In a famous <a href=http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action.html>TED talk</a>, Simon Sinek describes that you should always address the &#8220;Why?&#8221; of what you&#8217;re doing. In our case, we wanted children to discover the world and enjoy it as much as we did.</p>
+<p>Simon then continues to ask about the &#8220;How?&#8221; or the way you deliver that value to your customers. For us, this was to be accomplished by showing children interesting locations in the world in a playful way.</p>
+<p>Finally, the &#8220;What?&#8221; describes the actual product with all its features. For us, the development of Columbus Little answered this question. Though this model seems obvious, many companies successfully communicate what they do, but struggle with why they do it.</p>
+<p>Second, it is important to have a comprehensive overview of your business model, not just the product. A business model describes how your product or service will deliver value to your customers and generate revenue. There are many different ways to describe business models, and we used a very simple method called the <a href=http://businessmodelgeneration.com/canvas>business model canvas</a> by Osterwalder. In a business model canvas, you sketch a company&#8217;s business model in 9 important dimensions. While we cover them briefly below, please refer to Osterwalder&#8217;s book for more details.</p>
+<ul>
+<li><strong>Value Proposition</strong>: What are the core values of your product? Why will customers buy it?</li>
+<li><strong>Customer Segments</strong>: Who are your customers?</li>
+<li><strong>Sales Channels</strong>: How will you reach your customers?</li>
+<li><strong>Customer Relationships</strong>: How will you build a lasting relationship with your customers?</li>
+<li><strong>Key Resources</strong>: Which key resources do you need to run your business?</li>
+<li><strong>Key Activities</strong>: What are the key activities you need to pursue?</li>
+<li><strong>Key Partners</strong>: Which partners might help you?</li>
+<li><strong>Cost Structure</strong>: What are the most important cost drivers? How can you keep them lean?</li>
+<li><strong>Revenue Streams</strong>: What revenue can you estimate? Where will it come from?</li>
+</ul>
+<p>Bringing all these together provides a good overview of your business. This will enable you to focus on the essentials of your idea &#8211; this allowed us to see where our app could live in the market, what we could charge, which elements could later become part of the project etc.</p>
+<h4>Building a strong team</h4>
+<p>One important realization was that while our customers would value nice design, we lacked the capabilities to create something truly impressive. To help us flesh out the idea, we reached out to a designer who shared our vision.</p>
+<p>Moreover, although we had some coding skills, we knew we couldn&#8217;t develop the app ourselves and searched for a talented developer. As a team, we were lucky to stumble across Corona SDK and enjoyed fast and easy app development, as well the ability to publish to multiple app markets. </p>
+<p><img class="aligncenter size-full wp-image-42262" alt="Colombus Little team" src="/wordpress/wp-content/uploads/2013/08/Colombus-Little-team.png" /></p>
+<h4>Beginning app development</h4>
+<p>Once we had a team in place, the development finally started. We scoured Corona&#8217;s countless tutorials, API descriptions and code snippets. For task management, we used a simple 7-week plan with Post-it notes as overview combined with Evernote for notes on Wunderlist for bugs and coding tasks.</p>
+<p>After trying several code editors we decided on <a href=http://www.mydevelopersgames.com/Glider/>Lua Glider</a>, which worked quite well for code highlighting, auto completion, and bug tracking. For graphic composition we used Adobe Photoshop and predesigned all scenes in there before exporting layers into different PNG files. We then used <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> to compose an image sheet of all images within a scene so that loading times were minimized.</p>
+<p>Animations were drawn as sprites in Photoshop and added to the image sheet. For the animations we used sprites that consisted of sometimes more than 50 different images that were played in a defined time frame and order to show an animation. To limit memory usage we sometimes used multiple sprites for one object (e.g. the head and arms of the Columbus Little character are separate).</p>
+<p>The app itself relied heavily on different scenes. Hence we used the <a href=http://docs.coronalabs.com/api/library/storyboard/>Storyboard API</a> for loading scenes and overlaying and managing memory usage. In the createScene events of each scene, we then loaded the respective image sheets and displayed all the images, create Sprite objects that we use for animation. Simple animations were done with transition.to function, while complex ones were done with transitioning along a beizer curve in the Runtime enterFrame event. All interaction was done with touch events and event listeners &#8211; very basic stuff.</p>
+<p>All in all, we loved working with Corona SDK and enjoyed the ease of development. With the help of Corona&#8217;s community, we were able to focus on our idea and not get hampered down with technological uncertainties.</p>
+<p><img class="aligncenter size-full wp-image-42263" alt="Colombus Little app" src="/wordpress/wp-content/uploads/2013/08/Colombus-Little-app.png" /></p>
+<h4>In conclusion</h4>
+<p>We started with a great idea, built a business model around it, formed a team and started app design and development. The next big milestone was building the framework for the app and developing a working prototype that we could show off in our crowd-funding campaign.</p>
+<p>Of course, there are many more details to successfully developing an app, but we hope to have covered some of the most important lessons in this piece.</p>
+<p>Here&#8217;s an overview of the 5 major lessons we learned:</p>
+<ul>
+<li><em>Lesson 1: Having great ideas is important &#8211; what&#8217;s more important is being decisive and sticking to the one idea you&#8217;re most passionate about.</em></li>
+<li><em>Lesson 2: It&#8217;s important to figure out why you want to do something and why the world needs your product.</em></li>
+<li><em>Lesson 3: To figure out how to transform your idea into a business, use a business model canvas to flesh out your thoughts and plan of action.</em></li>
+<li><em>Lesson 4: Build a strong team and use Corona SDK for easy and fast development.</em></li>
+<li><em>Lesson 5: Though an app can be quite complex, remember that it consists of a sequence of small logic snippets. Don&#8217;t get overwhelmed by the scope of the project &#8211; take it one day at a time and celebrate the little victories.</em></li>
+</ul>
+<p>We&#8217;d love your support on <a href=http://igg.me/at/columbuslittle/x/3916812>Indiegogo</a> and encourage you to preorder the app, enjoy our cool perks as a contributor, and share the campaign with family and friends.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

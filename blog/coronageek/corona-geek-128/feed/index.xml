@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #128 &#8211; Creating Custom Composer Library Transitions</title>
+	<atom:link href="/blog/coronageek/corona-geek-128/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-128/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Mike Kelly</title>
+		<link>/blog/coronageek/corona-geek-128/#comment-5743</link>
+		<dc:creator><![CDATA[Mike Kelly]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 22:59:00 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61396#comment-5743</guid>
+		<description><![CDATA[I’ve been trying to unrequire the module called game in your memory match with absolutely no success:
+package.loaded[“game”] = nil
+package.loaded.game = nil
+rawset(_G, game, nil)
+game = nil
+
+if(_G[game]) then
+_G[game]=nil
+end
+
+if(path) then
+package.loaded[path]=nil
+_G[path]=nil
+end
+
+it either remains in the scene on the screen completely when I move to the next Composer scene, or if I destroy it from inside of the module (say a more advanced level of the game), it leaves the screen but still effects the next module loaded in.
+
+thanks!]]></description>
+		<content:encoded><![CDATA[<p>I’ve been trying to unrequire the module called game in your memory match with absolutely no success:<br />
+package.loaded[“game”] = nil<br />
+package.loaded.game = nil<br />
+rawset(_G, game, nil)<br />
+game = nil</p>
+<p>if(_G[game]) then<br />
+_G[game]=nil<br />
+end</p>
+<p>if(path) then<br />
+package.loaded[path]=nil<br />
+_G[path]=nil<br />
+end</p>
+<p>it either remains in the scene on the screen completely when I move to the next Composer scene, or if I destroy it from inside of the module (say a more advanced level of the game), it leaves the screen but still effects the next module loaded in.</p>
+<p>thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mike Kelly</title>
+		<link>/blog/coronageek/corona-geek-128/#comment-5742</link>
+		<dc:creator><![CDATA[Mike Kelly]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 20:11:26 +0000</pubDate>
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61396#comment-5742</guid>
+		<description><![CDATA[I can&#039;t unrequire: local game = require &quot;scripts.game&quot; 
+I added the following to a destruct script to no effect:
+game = nil
+if(path) then
+		package.loaded[path]=nil
+		_G[path]=nil
+end
+composer.gotoScene( &quot;scene4&quot;, &quot;slideLeft&quot;, 800  )
+the card flip game remains on the screen.
+THANKS for any help!]]></description>
+		<content:encoded><![CDATA[<p>I can&#8217;t unrequire: local game = require &#8220;scripts.game&#8221;<br />
+I added the following to a destruct script to no effect:<br />
+game = nil<br />
+if(path) then<br />
+		package.loaded[path]=nil<br />
+		_G[path]=nil<br />
+end<br />
+composer.gotoScene( &#8220;scene4&#8221;, &#8220;slideLeft&#8221;, 800  )<br />
+the card flip game remains on the screen.<br />
+THANKS for any help!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

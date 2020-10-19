@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>augmented reality &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/augmented-reality/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>augmented reality &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #133</title>
+		<link>/blog/2016/07/22/from-the-forum-issue-133/</link>
+		<pubDate>Fri, 22 Jul 2016 20:42:28 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[Coronium GS]]></category>
+		<category><![CDATA[Game Server]]></category>
+		<category><![CDATA[server time]]></category>
+
+		<guid isPermaLink="false">/?p=67501</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Timing in the real world</h3>
+<p>Ensuring a level playing field is never easy. As long as people have the inclination to circumvent the rules of any given game, they will find a way to create an unfair advantage.</p>
+<p>One of the more popular methods to keep players honest when dealing with time-based reward systems is to use a game-specific time count for users to obtain more lives, coins, or whatever incentivizes gameplay. This technique has been used for quite a while, famously with the ever-popular Candy Crush Saga. The easiest way to check against cheating is by examining the system clock, but that is far too easy for users to manipulate to allow for unearned rewards. So what is a potential alternative? A check against a remote global clock!</p>
+<p>Check out <a href=https://forums.coronalabs.com/topic/64620-time-api-for-user-rewards/ target="_blank">the original thread</a> for best practices when implementing this option.</p>
+<h3>Another bounty of Coronium goodness</h3>
+<p>A couple weeks ago, we talked about Coronium LS, an open-source server targeted directly to the Corona community. It’s a great resource and a good option for a Corona-friendly server while we wait for the official release of Corona Cloud.</p>
+<p>However, there have been some folks talking in hushed whispers about the older <strong>Develephant</strong> gem, <em>Coronium GS</em>. This configuration was popular due to it being “a free Lua real-time multiplayer game server for your Corona SDK games,” to quote the original forum thread.</p>
+<p>It has been a few years since its release, and Coronium GS is now shuttered. However, Develephant has pulled together the majority of its dependencies and made them available to the Corona faithful. Trip down to <a href=https://forums.coronalabs.com/topic/64661-archive-coronium-gs-coronium-game-server/ target="_blank">the original thread</a> and see if it’s something from which you can benefit.</p>
+<h3>The broad-reaching effects of Pokemon Go</h3>
+<p>We all know what it is, and we all know how it has completely taken over. One can barely take a walk in the park without someone trying to lure a rare Pokemon. In my opinion, the most interesting ripple effect that occurs when a mobile app takes hold so completely is the influx of excited players that have great ideas for new, awesome games.</p>
+<p><a href=https://forums.coronalabs.com/topic/64643-augmented-reality-apps-possible-in-corona/ target="_blank">This thread</a> talks about some of the best practices and pitfalls when using Corona as a development platform for an &#8220;augmented reality&#8221; app. Some good details are hidden in the original thread, so read carefully and feel free to ask more questions!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek After Dark #20 &#8211; Stripe Plugin, Roof Rack Ranger, and Dancing Cat Apps</title>
+		<link>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/#respond</comments>
+		<pubDate>Thu, 10 Mar 2016 21:50:29 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[augmented reality]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=66098</guid>
+		<description><![CDATA[This episode of Corona Geek After Dark we discuss Jason Schroeder's new amazing Stripe plugin, an existing app for alerting cyclists about low clearance hazards, and the mesmerizing attraction to augmented reality dancing cat apps. Enjoy!]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/i-7gsW6Iv-w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On last Wednesday&#8217;s Corona Geek After Dark, we discussed Jason Schroeder&#8217;s new amazing <a href=http://store.coronalabs.com/plugin/stripe/ target="_blank">Stripe plugin</a>, an existing app for <a href=http://roofrackranger.com/ target="_blank">alerting cyclists about low clearance hazards</a>, and the mesmerizing attraction to augmented reality <a href=https://itunes.apple.com/us/app/disco-cats-augmented-reality/id1001269184?mt=8 target="_blank">dancing cat apps</a>. Yep, it&#8217;s a thing folks. You heard it here first! Check the show notes below for links.</p>
+<p><strong>Panel Guests:</strong></p>
+<ul>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a></li>
+<li><a href=http://www.jasonschroeder.com/ target="_blank">Jason Schroeder</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=http://omnigeekmedia.com/ target="_blank">Rob Miracle</a></li>
+<li><a href=http://thatssopanda.com/ target="_blank">Daniel Williams</a></li>
+<li><a href=http://roofrackranger.com/ target="_blank">Mike Kindig</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-20-stripe-plugin-roof-rack-ranger-and-dancing-cat-apps/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-20-2016-02-03-monetization-stripe-coronacon.mp3" length="140447347" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

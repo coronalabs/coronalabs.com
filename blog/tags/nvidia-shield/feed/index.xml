@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nvidia shield &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/nvidia-shield/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>nvidia shield &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New Public Release</title>
+		<link>/blog/2013/09/04/new-public-release-2/</link>
+		<comments>/blog/2013/09/04/new-public-release-2/#comments</comments>
+		<pubDate>Wed, 04 Sep 2013 23:01:01 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Analytics]]></category>
+		<category><![CDATA[GameStick]]></category>
+		<category><![CDATA[nvidia shield]]></category>
+		<category><![CDATA[Ouya]]></category>
+		<category><![CDATA[socialkit]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=43816</guid>
+		<description><![CDATA[</a>Today, we are announcing our latest Public Release, 2013.1202. It's immediately available for <a href="https://developer.coronalabs.com/downloads/corona-sdk">download</a> for your <a href="/products/corona-sdk/">app development</a> pleasure!
+
+There are a lots of improvements in the <a href="https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202">release notes</a>, so I'll just highlight a few.]]></description>
+				<content:encoded><![CDATA[<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg><img src=http://www.coronalabs.com/wp-content/uploads/2013/09/130327_ouya_0021.jpg alt="Ouya corona sdk" class="alignleft size-full wp-image-43820" /></a>Today, we are announcing our latest Public Release, 2013.1202. It&#8217;s immediately available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a> for your <a href=/products/corona-sdk/>app development</a> pleasure!</p>
+<p>There are a lots of improvements in the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1202>release notes</a>, so I&#8217;ll just highlight a few.</p>
+<p>First, we&#8217;ve added Ouya, GameStick, and NVIDIA Shield support. This includes support for game controllers and joysticks on those devices. We&#8217;ve also added general support for HID-based devices on Android, so you can connect your keyboard, mouse, and touchpad. If you have a MOGA Pro or a Sony PS3 controller, those are HID-based and work as well!</p>
+<p>While we&#8217;re on the gaming theme, we&#8217;ve added real-time multiplayer support via Google Play game services on Android. And we&#8217;ve added turn-based multiplayer support via Game Center on iOS. We&#8217;ve also partnered with <a href=http://www.coronalabs.com/blog/2013/08/15/guest-piece-photon-cloud-corona-sdk-a-dream-team-for-cross-platform-multiplayer-games/>Photon Cloud</a> for real-time multiplayer support across iOS and Android.</p>
+<p>For more business-oriented apps, we&#8217;ve added several features like left/center/right alignment to &#8216;display.newText&#8217;. We&#8217;ve also started to offer support for the iOS SocialKit framework. This is done via a plugin to the &#8216;native.showPopup&#8217; API that lets you post on Facebook, Twitter, and Weibo. We added Address Book popup as an iOS plugin as well.</p>
+<p>On the monetization and services side, our roster of 3rd party plugins continues to grow:</p>
+<p><a href=http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2.png><img src="http://www.coronalabs.com/wp-content/uploads/2013/09/PastedGraphic-2-216x300.png" alt="corona amplitude analytics" class="alignright size-medium wp-image-43818" /></a></p>
+<p>* Google Game Play Services<br />
+* Vungle<br />
+* CrossInstall<br />
+* AppRever<br />
+* Pinsight Media+</p>
+<p>Finally, the last thing I&#8217;ll highlight is we are upgrading our old analytics (a.k.a. LaunchPad) to <a href=https://amplitude.com/>Amplitude</a>. If you&#8217;ve ever played with other analytics services, one thing you know is that you can often wait a day or longer before you see data. As things scale up, you might experience a few hours delay, but Amplitude&#8217;s goal is to give you near real-time data!</p>
+<p>As part of this upgrade, we&#8217;ve also cleaned up the web dashboard. We think it&#8217;s a lot more usable and the information is presented in a manner that will help you understand your customers a lot better. During the transition, the old dashboard will not display your data properly.</p>
+<p>In terms of timing, the entire transition is happening right now, and we hope to have it completed by the end of September. The great thing is, you won&#8217;t have to do a thing to take advantage of the basic service — it&#8217;s free!</p>
+<p>Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/04/new-public-release-2/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

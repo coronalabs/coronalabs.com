@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>github &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/github/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>github &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Open Source Plugins and (coming soon) Corona Store</title>
+		<link>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/</link>
+		<comments>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/#comments</comments>
+		<pubDate>Wed, 01 Apr 2015 19:35:15 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Sample Code]]></category>
+		<category><![CDATA[store]]></category>
+
+		<guid isPermaLink="false">/?p=61943</guid>
+		<description><![CDATA[At the end of January, I talked about wanting to make <a href="/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/">plugins more open</a>.
+
+Today, we're doing two things to make that happen.]]></description>
+				<content:encoded><![CDATA[<p>At the end of January, I talked about wanting to make <a href=/blog/2015/01/30/state-of-corona-thoughts-and-reflections-2015/>plugins more open</a>.</p>
+<p>Today, we&#8217;re doing two things to make that happen:</p>
+<h3>Open Source Plugins</h3>
+<p>First, we are open sourcing <a href=https://github.com/coronalabs/plugins-source>Corona plugins on github</a>!</p>
+<p>These plugin projects are real-world examples of <a href=/products/enterprise/>CoronaEnterprise</a> projects. They come straight out of the <a href=https://store.coronalabs.com/plugins>Corona plugin directory</a>, the same plugins that our hosted on our build server. They show you how we are using (dogfooding) Corona&#8217;s <a href=http://docs.coronalabs.com/native/index.html>native APIs</a> to extend Corona&#8217;s core functionality.</p>
+<h3>Corona Store</h3>
+<p>Second, we are laying the groundwork for a Corona Store. The goal is to enable you to sell your plugins (and other resources) to the rest of the Corona community — or make them available for free.</p>
+<p>The grand opening won&#8217;t happen until later this year, but we are accepting applications for <em>free</em> plugins (you can start charging for it after the grand opening): <a href=https://store.coronalabs.com/corona-store-application>Corona Store application form</a>.</p>
+<p>Also, if you have ideas or are looking for ideas, here&#8217;s a couple of resources that will be helpful:</p>
+<ol>
+<li>We are making extended CoronaEnterprise trials available for plugin developers. E-mail <code>enterprise at coronalabs dot com</code>.</li>
+<li>Lots of real-world examples of <a href=https://github.com/coronalabs/plugins-source>Corona plugins</a> available under the MIT license.</li>
+<li>A list of <a href=http://feedback.coronalabs.com/forums/188732-corona-sdk-feature-requests-feedback?query=%5BPLUGIN%5D>feature requests</a> that could be implemented as plugins.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/01/open-source-plugins-and-coming-soon-corona-store/feed/</wfw:commentRss>
+		<slash:comments>28</slash:comments>
+		</item>
+	</channel>
+</rss>

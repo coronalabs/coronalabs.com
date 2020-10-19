@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek On Air &#8211; Episode 17 &#8211; Hanging with Alex Souza, Founder of Kwiksher</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-17/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-17/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Jorge Sanchez</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5523</link>
+		<dc:creator><![CDATA[Jorge Sanchez]]></dc:creator>
+		<pubDate>Sat, 08 Dec 2012 07:36:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5523</guid>
+		<description><![CDATA[Charles, I read the post, and I actually think it *is* an elegant solution. I&#039;ve done worse, much worse :) I&#039;d love to get in touch with further details on the book.
+Alex,
+Definitely planning to showcase. We submitted the app Wednesday for iOS and am in the process of submitting to Amazon, just adding final touches. I&#039;ll tweet you the details]]></description>
+		<content:encoded><![CDATA[<p>Charles, I read the post, and I actually think it *is* an elegant solution. I&#8217;ve done worse, much worse 🙂 I&#8217;d love to get in touch with further details on the book.<br />
+Alex,<br />
+Definitely planning to showcase. We submitted the app Wednesday for iOS and am in the process of submitting to Amazon, just adding final touches. I&#8217;ll tweet you the details</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5522</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Sat, 08 Dec 2012 00:51:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5522</guid>
+		<description><![CDATA[Thanks Jorge. Definitely send me details about your storybook as well. I&#039;d be interested in hearing your story. Did you see Christopher Ward&#039;s recent post on the Touch vs Tap event issue? http://coronageek.com/1162/handling-corona-sdk-tap-events-vs-touch-events/]]></description>
+		<content:encoded><![CDATA[<p>Thanks Jorge. Definitely send me details about your storybook as well. I&#8217;d be interested in hearing your story. Did you see Christopher Ward&#8217;s recent post on the Touch vs Tap event issue? <a href="http://coronageek.com/1162/handling-corona-sdk-tap-events-vs-touch-events/" rel="nofollow">http://coronageek.com/1162/handling-corona-sdk-tap-events-vs-touch-events/</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alex Souza</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5521</link>
+		<dc:creator><![CDATA[Alex Souza]]></dc:creator>
+		<pubDate>Fri, 07 Dec 2012 23:30:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5521</guid>
+		<description><![CDATA[Jorge, let me know about your Kwik made storybook. You should showcase it.]]></description>
+		<content:encoded><![CDATA[<p>Jorge, let me know about your Kwik made storybook. You should showcase it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jorge Sanchez</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5520</link>
+		<dc:creator><![CDATA[Jorge Sanchez]]></dc:creator>
+		<pubDate>Fri, 07 Dec 2012 06:44:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5520</guid>
+		<description><![CDATA[Great episode. Kwik is indeed a great tool. Used it for my latest interactive book app. Keep &#039;em coming! Btw, I ran into the &quot;tap&quot; &quot;touch&quot; event listener &quot;feature&quot; as well. My fix was to change tap to touch and check for event.phase == &quot;began&quot;, and ignore &quot;ended&quot; in the callback function. Worked a treat.]]></description>
+		<content:encoded><![CDATA[<p>Great episode. Kwik is indeed a great tool. Used it for my latest interactive book app. Keep &#8217;em coming! Btw, I ran into the &#8220;tap&#8221; &#8220;touch&#8221; event listener &#8220;feature&#8221; as well. My fix was to change tap to touch and check for event.phase == &#8220;began&#8221;, and ignore &#8220;ended&#8221; in the callback function. Worked a treat.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Toff</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5519</link>
+		<dc:creator><![CDATA[Toff]]></dc:creator>
+		<pubDate>Wed, 05 Dec 2012 21:57:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5519</guid>
+		<description><![CDATA[The part about Kwik I enjoyed was that even though the code is done for you, you can still add your own extra code if you want to.]]></description>
+		<content:encoded><![CDATA[<p>The part about Kwik I enjoyed was that even though the code is done for you, you can still add your own extra code if you want to.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alex Souza</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5518</link>
+		<dc:creator><![CDATA[Alex Souza]]></dc:creator>
+		<pubDate>Wed, 05 Dec 2012 21:43:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5518</guid>
+		<description><![CDATA[Gang, thanks for the opportunity. I loved to be in the show!]]></description>
+		<content:encoded><![CDATA[<p>Gang, thanks for the opportunity. I loved to be in the show!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-17/#comment-5517</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Tue, 04 Dec 2012 02:04:00 +0000</pubDate>
+		<guid isPermaLink="false">http://coronageek.com/?p=1098#comment-5517</guid>
+		<description><![CDATA[I&#039;m a big fan of tools that speed up my development time. Kwik sounds like the kind of tool that can make things faster for sure. I might have to add it to my work flow.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m a big fan of tools that speed up my development time. Kwik sounds like the kind of tool that can make things faster for sure. I might have to add it to my work flow.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

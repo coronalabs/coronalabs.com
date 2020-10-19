@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>brand awareness &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/brand-awareness/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>brand awareness &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Adding consumer brands to a skater game with Dain Hedgpeth</title>
+		<link>/blog/coronageek/skater-game/</link>
+		<comments>/blog/coronageek/skater-game/#respond</comments>
+		<pubDate>Mon, 07 Nov 2016 18:10:32 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[brand awareness]]></category>
+		<category><![CDATA[game development]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67914</guid>
+		<description><![CDATA[In this special Corona Geek podcast we talked with Dain Hedgpeth about adding consumer brands to apps. Dain's Skater game focuses on the authenticate elements of skate culture while  seamlessly integrating both shoe and board brands into the game play. Hear what he would do differently if he started over today.]]></description>
+				<content:encoded><![CDATA[<p>In this special Corona Geek podcast we talked with Dain Hedgpeth about adding consumer brands to apps. Dain&#8217;s <a href=http://skaterapp.com/>Skater game</a> focuses on the authenticate elements of skate culture while  seamlessly integrating both shoe and board brands into the game play. We asked Dain to share the lessons he has learned along the way and also what he would do differently if he started over today. His answers might surprise you.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/CacYhxcs90A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/skater-game/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-2016-09-01-skater-game.mp3" length="20329622" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

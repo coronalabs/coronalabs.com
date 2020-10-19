@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>utility &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/utility-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>utility &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>App of the Week: Ruffl</title>
+		<link>/blog/2013/10/28/app-of-the-week-ruffl/</link>
+		<comments>/blog/2013/10/28/app-of-the-week-ruffl/#comments</comments>
+		<pubDate>Mon, 28 Oct 2013 19:39:17 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=50241</guid>
+		<description><![CDATA[<a href="https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8">Ruffl</a> is a real-time restaurant discovery and reservation app for hungry Londoners and travelers. The app boasts partnership with more than 450 London-based restaurants to connect diners with open tables at restaurants nearby.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-50242" style="margin: 0px 20px 10px 0px;" alt="Ruffl" src="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM.png" srcset="/wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM.png 181w, /wordpress/wp-content/uploads/2013/10/Screen-Shot-2013-10-22-at-4.19.10-PM-150x150.png 150w" sizes="(max-width: 181px) 100vw, 181px" /><a href=https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8>Ruffl</a> is a real-time restaurant discovery and reservation app for hungry Londoners and travelers. The app boasts partnership with more than 450 London-based restaurants to connect diners with open tables at restaurants.</p>
+<p><img class="alignright size-full wp-image-50243" style="margin-left: 25px; margin-top: 4px; margin-right:2px;" alt="Ruffl screenshot" src="/wordpress/wp-content/uploads/2013/10/Ruffl-screenshot.jpeg" />The concept is simple: Ruffl recommends five nearby dining spots with availability, based on the size of your group and the approximate amount you’re willing to spend. Restaurants are motivated to deliver great service and satisfying food, as diners are asked to rate the establishment following the meal. The better a restaurant&#8217;s reviews, the more likely it is to show up in the search shortlist in the app. Diners can also enjoy special offers and perks such as a free glass of wine for booking a reservation, and restauranteurs can fill empty tables by attracting nearby customers.</p>
+<p>Ruffl&#8217;s lead developers &#8211; Jérôme Zattoni and Andrew Mackrodt &#8211; enjoyed a speedy development cycle with <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a> and launched to the App Store on Tuesday, October 22. Co-founder and lead designer Laurence Carver explained, “Retrieving a quick and accurate geolocation is instrumental to Ruffl. Corona provides an easy to use location library which helped speed up our development.” When asked about the team&#8217;s decision to build with Corona Enterprise, Carver noted that the platform allowed him to use native code to interface with Google’s Fused Location Provider. This allows the app to accurately and quickly retrieve a user’s location even when GPS is not available.</p>
+<p>To gear up for launch, Ruffl rounded up $1.6M in funding from industry veterans including David Pritchard, the previous CEO of <a href=http://www.OpenTable.com>OpenTable/ UK</a>, Karen Hanton, founder and previous CEO of <a href=http://www.toptable.co.uk/>toptable</a>, and Mark Ferguson, the son of Sir Alex Ferguson.</p>
+<p>The Ruffl team is hard at work adding more restaurants to the growing list of options. If you&#8217;re a hungry Londoner, head to the App Store and check out <a href=https://itunes.apple.com/gb/app/ruffl/id621516284?mt=8>Ruffl</a> for a refreshing, convenient, and spontaneous dining experience.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/28/app-of-the-week-ruffl/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Elements of Photography</title>
+		<link>/blog/2013/09/23/app-of-the-week-elements-of-photography/</link>
+		<comments>/blog/2013/09/23/app-of-the-week-elements-of-photography/#comments</comments>
+		<pubDate>Mon, 23 Sep 2013 20:53:39 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=45686</guid>
+		<description><![CDATA[Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in "auto" mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href="http://elementsofphotography.com/">Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade.]]></description>
+				<content:encoded><![CDATA[<p><img class="size-thumbnail wp-image-45687" style="margin-top: 0px; margin-right: 20px;" alt="Elements of Photography icon" src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png" align="left" srcset="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM-150x150.png 150w, /wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.19.17-AM.png 249w" sizes="(max-width: 150px) 100vw, 150px" />Learning the functionality of your digital single-lens reflex (DSLR) camera can be a tricky task — so much so, that many users resort to using their powerful new cameras in &#8220;auto&#8221; mode. In response to this trend, a group of photography enthusiasts and graduate students created <a href=http://elementsofphotography.com/>Elements of Photography</a>, an app that helps novice photographers understand the basics of the trade. Organized into chapters with beautiful HD photos and easy-to-understand text snippets, the app offers a beginner course in &#8220;Photography 101,&#8221; covering everything from focal length to shutter speed to advanced topics.</p>
+<p>Hoping to reach as many users as possible, the team developed the app with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> to target photographers-in-training who use iOS, Android, and Kindle devices. Lead developer and amateur photographer Amiya Patanaik told us, “Developing natively was out of question as it would have been prohibitively time consuming. Moreover, no one in the development team had a Mac and for a long time, I did not even have an Android phone. So we had to choose a cross-platform development framework to satisfy our needs.”</p>
+<p class="ac"><img src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-20-at-9.24.15-AM.png" alt="Elements of Photography icon" class="wp-image-46027" /></p>
+<p>The team considered wrapping the app with PhoneGap, but after some experimentation, felt it lacked the polish for commercial appeal. After evaluating other tools like Cocos2d-x, Moai, Gideros, GameMaker, and GameSalad, the team decided on Corona SDK for the platform&#8217;s rapid development capabilities, ease of use, and level of control. Patanaik noted that, “Most importantly, Corona SDK offered a vibrant community that shares code and ideas freely. This made it very easy to troubleshoot when we were stuck.” You can read more about Patanaik&#8217;s experience working with Corona SDK on his <a href=http://aptnk.in/2013/06/one-code-to-rule-them-all-writing-cross-platform-application-from-single-codebase-using-corona-sdk/>personal blog</a>.</p>
+<p>With over 20,000 downloads to date, Elements of Photography is even used by the <a href=http://www.veteraneducation.org>Veterans/ Vocational Education and Training (V-VET)</a>, a non-profit organization that helps recently-returned military veterans increase their skill set, assimilate into society, and generate an income.</p>
+<p>If you have a DSLR but don&#8217;t understand its full capabilities, or if you simply want to learn the basics of photography, download the app from <a href=https://itunes.apple.com/us/app/elements-of-photography/id654806469?mt=8>iTunes</a>, <a href= https://play.google.com/store/apps/details?id=com.aksharastudios.eop>Google Play</a> or the <a href=http://www.amazon.com/Akshara-Studios-Elements-of-Photography/dp/B00D5XYY4M>Amazon Appstore</a>.</p>
+<p><iframe src="//www.youtube.com/embed/lsIzXZSVbZE" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/23/app-of-the-week-elements-of-photography/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: Handy Tools 7-in-1</title>
+		<link>/blog/2013/09/09/app-of-the-week-handy-tools-7-in-1/</link>
+		<pubDate>Mon, 09 Sep 2013 21:27:32 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=43958</guid>
+		<description><![CDATA[For your next home renovation or decoration project, consider dumping your heavy toolkit and enjoying handy utilities in the palm of your hand. <a href="https://itunes.apple.com/us/app/handy-tools-7-in-1/id578393110?mt=8">Handy Tools 7-in-1</a> is an app packed with intuitive, easy-to-use tools that are easily accessible on your iOS device.]]></description>
+				<content:encoded><![CDATA[<div class="row-fluid">
+<div class="span3"><img alt="Handy Tools icon" src="/wordpress/wp-content/uploads/2013/09/Screen-Shot-2013-09-06-at-8.29.02-AM-148x150.png" /></div>
+<div class="span9">
+<p>For your next home renovation or decoration project, consider dumping your heavy toolkit and enjoying handy utilities in the palm of your hand. <a href=https://itunes.apple.com/us/app/handy-tools-7-in-1/id578393110?mt=8>Handy Tools 7-in-1</a> is an app packed with intuitive, easy-to-use tools that are easily accessible on your iOS device. The app features the following:</p>
+<ul>
+<li>A<strong> spirit level</strong> to measure alignment accurately.</li>
+<li>A<strong> surface level</strong> to check if a flat surface is parallel to the ground.</li>
+<li>A<strong> protractor</strong> to measure an angle in the 0 to 180 degree range.</li>
+<li>A<strong> caliper</strong> for precise measurements of small objects.</li>
+<li>A<strong> plumb-bob</strong> to check if an object is perpendicular to the ground.</li>
+<li>A<strong> light bulb</strong> to turn your screen white, so you can use the device as a &#8220;flashlight.&#8221;</li>
+<li>A<strong> ruler</strong> to measure distances.</li>
+</ul>
+</div>
+</div>
+<p><img class="aligncenter size-full wp-image-44260" alt="Handy Tools image" src="/wordpress/wp-content/uploads/2013/09/Handy-Tools-image.jpg" /></p>
+<p>Handy Tools was even <a href=http://www.youtube.com/watch?v=jB2-vB_eT1w&t=0m11s target="_blank">recognized by Apple in a recent iPhone TV ad</a>:</p>
+<p><iframe src="//www.youtube.com/embed/jB2-vB_eT1w" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Built by <a href=http://ofijo.com/>Ofijo</a>, a Warsaw-based mobile development company, the story of how Handy Tools 7-in-1 came into existence is serendipitous. One day, a colleague noticed that his pen kept rolling of his desk. The Ofijo team saw this as an opportunity to find an unconventional way of determining whether the table was leveled. As they pondered a solution, they soon realized that many people need simple tools for projects, but they rarely carry around rulers, calipers, or surface levels.</p>
+<p>To address this problem, the team began spec&#8217;ing out Handy Tools 7-in-1, an app that’s easy to use and features a beautiful UI as well. Relying on Corona SDK&#8217;s strengths in core libraries, including graphics, input, and hardware, it took the team just five weeks to create the app&#8217;s custom controls and user interfaces.</p>
+<p>Luke Wilczynski, co-founder of Ofijo, told me that the team chose <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> due to the platform&#8217;s &#8220;&#8230;flawless design, cross-platform capabilities, and handling. We dropped our previous engine and never looked back. We could focus on making apps instead of worrying about technology.&#8221;</p>
+<p>Put <a href=https://itunes.apple.com/en/app/handy-tools-7-in-1/id578393110?mt=8#">Handy Tools 7-in-1</a> to the test and let us know what you think of this savvy utility app.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest post: Building a #1 business app with Corona SDK</title>
+		<link>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/</link>
+		<comments>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/#comments</comments>
+		<pubDate>Thu, 09 May 2013 17:00:21 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=33543</guid>
+		<description><![CDATA[Chris Russell is the creator of the Corona-powered Cost a Cake and Cost a Cake Pro for iOS. Created for cake makers, Chris’s business apps have soared to #1 in the Food &#038; Drink category of the US and UK App Stores, and reached the Top 10 in a number of additional stores around the world.
+
+Chris initially started the project as a native iOS-only app, but transitioned to Corona SDK for the cross-platform capabilities. Today, Chris shares his experience developing a successful business app with Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><em>Chris Russell is the creator of the Corona-powered Cost a Cake and Cost a Cake Pro for iOS. Created for cake makers, Chris&#8217;s business apps have soared to #1 in the Food &#038; Drink category of the US and UK App Stores, and reached the Top 10 in a number of additional stores around the world. </p>
+<p>Chris initially started the project as an Xcode-based iOS-only app, but quickly transitioned to Corona SDK for the cross-platform capabilities of the platform. Today, Chris shares his experience developing a successful business app with Corona SDK.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM.png" alt="Cost a Cake Pro icon" class="alignleft size-full wp-image-33546" srcset="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM.png 202w, /wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM-150x150.png 150w" sizes="(max-width: 202px) 100vw, 202px" />Building business apps with a games creation toolkit is a bit risky, isn’t it?</p>
+<p>I have to admit, that when I started to code <a href=https://itunes.apple.com/us/app/cost-a-cake/id553290399?mt=8>Cost A Cake</a>, a paid-for big sister <a href=https://itunes.apple.com/us/app/cost-a-cake-pro/id615555385?mt=8>Cost A Cake Pro</a>, with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>, I wasn’t totally sure that it would be a success.</p>
+<p>Glancing through the forums there was little support for anyone in the ‘serious’ app market. Sure, if I wanted to produce a cake balancing game with Box2D physics, parallax backgrounds and online high score tables I was in luck, but for an app that would allow business owners to price up cakes and produce quotes, was I biting off more than I could chew?</p>
+<p>The last 12 months have been a real eye-opener to the possibilities that Corona SDK offers. It’s not perfect, but it’s orders of magnitude better then any of its competitors, and the results have been pretty good, as our customer feedback can attest.</p>
+<p>Compared with games, business apps can be tricky beasts. There’s a structure to &#8216;serious&#8217; software that requires insight into databases, workflows, page designs and all kinds of things that would normally make you shudder with fear, but the single biggest takeaway I’ve found with Corona SDK is that it CAN be done, if there isn’t an out-of-box solution, then you can take the box, duck tape a few extra flaps on it and you’re ready to go!</p>
+<p>It sounds simple, and sometimes it is. On other occasions you have to strike out in new and unknown directions, try something different and wait for feedback. In Cost A Cake Pro, I implemented a custom keyboard. It was quite a cool module that allowed the keyboard to be skinned and colour-coordinated to the app and it was configureable to a stupid degree. I was very pleased with it. Sadly, the paying customers weren’t and wanted to use the native keyboard of their phones and tablets so there was nothing for it but to start work on an immediate update swapping new and groovy for old and familiar. I have to admit to being disappointed but, as the old store saying goes “the customer is always right.”</p>
+<p>It occurs to me after 12 months of late nights and hard work there are some things that could improve for serious app devs &#8211; some form of scene layout tool (think XCode’s design tool) could seriously reduce development time, but for any shortcomings in the software, it’s the initial planning and prep BEFORE touching the keyboard that can make the difference: Is there a market for the app? How big is that market? Have you considered marketing? What about social media integration? Do you understand the requirements for the target market? And so forth. It’s these kinds of issues that will make or break your work and determine whether you’ll make money or lose hope.</p>
+<p>It strikes me that Corona provides plenty of opportunity for business app development as well as for game developers but from what I’ve seen on the forums (three posts in the &#8216;Business Apps&#8217; sub-forum!) there are few taking on the challenge &#8211; care to join me?</p>
+<p>&#8211;<em>Chris Russell</em>	</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #34 &#8211; Hanging out with Climate Clock&#8217;s Ben Wong</title>
+		<link>/blog/coronageek/corona-geek-hangout-34/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-34/#respond</comments>
+		<pubDate>Tue, 09 Apr 2013 01:50:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31456</guid>
+		<description><![CDATA[This week, we hung out with Climate Clock's, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it's design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/S3OWp49EqVo?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Climate Clock&#8217;s, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it&#8217;s design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.</p>
+<p>Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information and <a title="Download Climate Clock" href=http://climateclockapp.com/ target="_blank">check out Climate Clock</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Justin Giles. Congrats Justin! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-34/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>App of the Week: Climate Clock</title>
+		<link>/blog/2013/03/04/app-of-the-week-climate-clock/</link>
+		<comments>/blog/2013/03/04/app-of-the-week-climate-clock/#comments</comments>
+		<pubDate>Mon, 04 Mar 2013 21:10:57 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[app]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29712</guid>
+		<description><![CDATA[When checking climate conditions locally and while traveling, weather apps are a handy way to get the latest updates.  As the #1 weather app in the App Store, Climate Clock is the superstar of utility apps.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM.png" alt="Climate Clock" class="alignleft size-full wp-image-29713" srcset="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM.png 182w, /wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM-150x150.png 150w" sizes="(max-width: 182px) 100vw, 182px" />Whether you’re checking climate conditions locally or while traveling, weather apps are a handy way to get the latest updates. This week’s App of the Week, <a href=https://itunes.apple.com/cn/app/climate-clock-minimal-hourly/id586030399?mt=8>Climate Clock</a>, is the superstar of weather apps. Available for iPhone, Climate Clock soared as the #1 weather app in the App Store, in a dozen countries last week. </p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Climate-Clock-168x300.jpg" alt="Climate Clock" class="alignright size-medium wp-image-29714" /><br />
+Climate Clock provides both time and hourly forecasts in one sleek, elegant package. The home screen reflects a clock with digits replaced by weather predictions. In the case of today&#8217;s San Francisco forecast, the number digits on the clock were swapped with hourly temperatures, encased by bubbly suns and clouds. To gain more insight on the day, I tapped the screen to switch from the hourly temperature to today&#8217;s wind speed and chance of rain.</p>
+<p>Based on Climate Clock&#8217;s predictions, I learned that San Francisco can expect a little sunshine today, with a high temperature of 57 degrees Fahrenheit. And thanks to the app&#8217;s 10-day forecast, I&#8217;m looking forward to soaking up more sun over the weekend, with expected highs in the low 70s.</p>
+<p><a href=https://itunes.apple.com/cn/app/climate-clock-minimal-hourly/id586030399?mt=8><br />
+Climate Clock</a> is available for a special price of $.99 in the App Store. Snag it today!</p>
+<p><iframe src="http://player.vimeo.com/video/60117218?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> </p>
+<p><a href=http://vimeo.com/60117218>Climate Clock App &#8211; Minimal Hourly Weather Forecast</a> from <a href=http://vimeo.com/benwongfilm>Benjamin Wong</a> on <a href=http://vimeo.com>Vimeo/</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/04/app-of-the-week-climate-clock/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

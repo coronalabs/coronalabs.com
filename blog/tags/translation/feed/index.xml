@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>translation &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/translation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>translation &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Localizing your app – a community language resource</title>
+		<link>/blog/2017/01/24/localizing-your-app-a-community-language-resource/</link>
+		<pubDate>Tue, 24 Jan 2017 20:24:17 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[Third-Party Tools]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[translation]]></category>
+
+		<guid isPermaLink="false">/?p=69470</guid>
+		<description><![CDATA[Several years ago, a group of Corona developers started a Google spreadsheet which provides you with translations for localizing your apps. Check it out!]]></description>
+				<content:encoded><![CDATA[<p>The term &#8220;localize your app&#8221; simply means to present the UI/text in your users&#8217; local language, but where do you begin? Online translation sites and dictionaries can supply basic words, but sometimes the true meaning is lost in a language-specific subtlety, or the dictionary fails to understand which term you really need.</p>
+<p>Fortunately, a group of Corona developers recognized this dilemma and, several years ago, started a Google spreadsheet to help with app localization. It provides you with commom translations for many words/terms used in apps, organized into categories. For example, if you need to localize your &#8220;Play&#8221; button into Spanish, the answer is &#8220;Jugar.&#8221; How about Russian? Simply scan across the row and find &#8220;Запустить.&#8221;</p>
+<p><img class="alignnone size-large wp-image-69471" src="/wordpress/wp-content/uploads/2017/01/language-spreadsheet-1024x458.png" alt="language-spreadsheet" width="960" height="429" /></p>
+<p>Once you find the translated text you need, free plugins like <a href=https://marketplace.coronalabs.com/plugin/gbc-language-cabinet target="_blank">GBC Language Cabinet</a> can help you manage how to pick and display the correct text within your app.</p>
+<p><a href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">This spreadsheet</a> is a great example of &#8220;crowd-sourcing&#8221; and there is still work to be done &#8212; some languages are not yet complete, so we encourage you to help populate columns for languages which you&#8217;re fluent in.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg " href=https://docs.google.com/spreadsheets/d/197GYEhPpk0DQTEO0r80v_k_bkGVtUgBB08PP--hqCIA/edit?#gid=266818911 target="_blank">View the spreadsheet</a></p>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; }<br /></style>
+</div>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

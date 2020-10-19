@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Release Notes &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/release-notes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Release Notes &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What have Corona&#8217;s engineers accomplished lately?</title>
+		<link>/blog/2016/09/27/what-have-coronas-engineers-accomplished-lately/</link>
+		<pubDate>Tue, 27 Sep 2016 16:58:48 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Release Notes]]></category>
+
+		<guid isPermaLink="false">/?p=68177</guid>
+		<description><![CDATA[It's been a productive six months for our team! Click through to read about our key achievements in the previous development cycle.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67801" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png" alt="Corona Labs logo" width="120" height="120" srcset="/wordpress/wp-content/uploads/2016/08/corona_logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/corona_logo-300x300.png 300w, /wordpress/wp-content/uploads/2016/08/corona_logo-768x768.png 768w, /wordpress/wp-content/uploads/2016/08/corona_logo-570x570.png 570w, /wordpress/wp-content/uploads/2016/08/corona_logo-500x500.png 500w, /wordpress/wp-content/uploads/2016/08/corona_logo-700x700.png 700w, /wordpress/wp-content/uploads/2016/08/corona_logo.png 862w" sizes="(max-width: 120px) 100vw, 120px" />While we like to frequently update you on what we&#8217;ve been working on, sometimes it&#8217;s hard to keep up with the changes. Some updates have earned blog announcements,  while others simply made it into build release notes. This post is a summary of what the Corona team has accomplished over the past six months, often as a direct result of <a href=http://feedback.coronalabs.com/ target="_blank">features you requested</a>.</p>
+<h3>Plugins</h3>
+<p>Over the last six months, there has been a lot of activity in plugin development. We now offer 20 <a href=https://marketplace.coronalabs.com/plugins/monetization target="_blank">monetization plugins</a> aimed at making your development efforts pay off. This is a big improvement from the days when there were just a few options for earning ad revenue from your apps.</p>
+<p>That said, it hasn&#8217;t been all about developing ad provider plugins. The <a href=https://store.coronalabs.com/ target="_blank">Corona Marketplace</a> is rapidly growing and so are the number of plugins that add important new features to Corona. These include:</p>
+<ol>
+<li><a href=https://marketplace.coronalabs.com/plugin/google-play-games-services target="_blank"><strong>Google Play Games Services</strong></a>: This plugin is big&#8230; 1800 votes over 8 feature requests big! If it&#8217;s a feature in the Android version of the Google Play Games Services SDK, we implemented it &#8212; and we are steadily working on completing iOS support as well.</li>
+<li><a href=https://marketplace.coronalabs.com/plugin/amazon-iap target="_blank"><strong>Amazon In-App Purchases</strong></a>: We completely upgraded this popular plugin to work with Amazon&#8217;s new &#8220;version 2&#8221; purchasing system.</li>
+<li><a href=https://marketplace.coronalabs.com/plugin/steamworks target="_blank"><strong>Steamworks</strong></a>: For those building desktop games, the Steam store is a great place to publish to. Apps in this marketplace have to be approved by the community, so adding leaderboards, achievements, and more help convince people to hit the <em><strong>Yes</strong></em> button.</li>
+<li><a href=https://marketplace.coronalabs.com/plugin/on-demand-resources target="_blank"><strong>On-Demand Resources</strong></a>: tvOS requires as small of an application bundle as you can manage. This plugin lets you use content that can be downloaded from outside of the app bundle.</li>
+<li><a href=https://marketplace.coronalabs.com/plugin/utf-8 target="_blank"><strong>UTF-8</strong></a>: The Lua <a href=https://docs.coronalabs.com/api/library/string/index.html target="_blank">string</a> library that Corona uses isn&#8217;t fully UTF-8 compliant, but you can include this plugin and use it to properly manipulate strings consisting of single-byte and multi-byte Unicode characters.</li>
+<li><strong><a href=https://marketplace.coronalabs.com/plugin/flurry-analytics target="_blank">Flurry Analytics</a> / <a href=https://marketplace.coronalabs.com/plugin/tenjin target="_blank">Tenjin</a></strong>: We updated the popular <a href=https://marketplace.coronalabs.com/plugin/flurry-analytics target="_blank">Flurry</a> analytics plugin, along with <a href=https://marketplace.coronalabs.com/plugin/google-analytics target="_blank">Google Analytics</a>. In addition, we released the <a href=https://marketplace.coronalabs.com/plugin/tenjin target="_blank">Tenjin</a> plugin which handles both attribution and analytics.</li>
+<li><a href=https://marketplace.coronalabs.com/plugin/hockeyapp target="_blank"><strong>HockeyApp</strong></a>: This plugin ties into the HockeyApp beta test site, allowing you to update and offer pre-release app versions to your testers. This plugin also has the ability to catch crashes and report them.</li>
+</ol>
+<h3>Core</h3>
+<p>Our list of core, Simulator, and <a href=http://www.coronalabs.com/products/enterprise/ target="_blank">Corona Enterprise</a> features is also significant and represents our continued commitment to improving the Corona you know and love!</p>
+<ol>
+<li><strong>Multi-dex support: </strong>Google has a limit of 65K symbols in a given application. With our large offering of plugins, some developers were hitting that limit. Multi-dex support solves this issue.</li>
+<li><a href=https://docs.coronalabs.com/api/library/display/newMesh.html target="_blank"><strong>Meshes</strong></a>: One of the best things to come out of our <a href=https://docs.coronalabs.com/api/library/graphics/newTexture.html target="_blank">graphics.newTexture()</a> and related APIs is the ability to build meshes that applications like <a href=http://esotericsoftware.com/ target="_blank">Spine</a> can use for animation.</li>
+<li><a href=https://docs.coronalabs.com/native/C/CoronaGraphics.html?#external-bitmaps><strong>External bitmaps</strong></a>: While this is initially something of interest to Enterprise and plugin developers, it could herald in some really amazing features in the future. External bitmaps allow native developers to access bitmaps on the C side and manipulate them, returning the result to Corona as a texture. Some ideas tossed around include SVG rendering to a texture, using ImageMagick to manipulate images, and <a href=/blog/2016/09/22/introducing-external-bitmap-textures/>other interesting functionality</a>.</li>
+<li><a href=/blog/2016/09/21/introducing-new-preference-storage-features/ target="_blank"><strong>Preferences</strong></a>: Previously, if you wanted to save app settings, you had to use a database or a file and manage updates yourself. On tvOS, there is no reliable storage for these kinds of files, so we added the ability to <a href=/blog/2016/09/21/introducing-new-preference-storage-features/>set and get preferences</a> (and delete them) in a safe, cross-platform manner.</li>
+<li><a href=https://docs.coronalabs.com/native/android/androidStudio/index.html target="_blank"><strong>Android Studio support</strong></a>: Since we previously used ANT to build Android Apps, <a href=https://docs.coronalabs.com/native/android/index.html target="_blank">Corona Enterprise for Android </a>customers had to become skilled at working from the command line. Now you can use Google&#8217;s official IDE for Enterprise development, similar to how Apple developers use Xcode.</li>
+<li><a href=https://docs.coronalabs.com/api/library/system/canOpenURL.html target="_blank"><strong>system.canOpenURL()</strong></a>: This frequently-requested API is now available on <em>all</em> platforms.</li>
+<li><strong>Lua Sockets 3.0</strong>: This major upgrade to our socket-based networking library now supports IPv6 networks, which are required by iOS. It also fixed several bugs in the system.</li>
+<li><strong>LuaSec 0.6</strong>: Used by <a href=https://docs.coronalabs.com/plugin/openssl/index.html target="_blank">OpenSSL</a> and others, this version fixes known security issues. This was primarily added to support a Google requirement change, but improved security benefits everybody!</li>
+<li><strong>Simulator support for Android back button</strong>: We have had this on Windows for some time, but it was recently added to the macOS version of the Corona Simulator. You will find it under the <strong>Hardware</strong> menu if you are running an Android skin.</li>
+<li><strong>ScrollView/TableView mouse support</strong>: On desktop systems, it is only natural to want to use a mouse&#8217;s scroll wheel to scroll a widget <a href=https://docs.coronalabs.com/api/type/ScrollViewWidget/index.html target="_blank">ScrollView</a> or <a href=https://docs.coronalabs.com/api/type/TableViewWidget/index.html target="_blank">TableView.</a> That is now possible.</li>
+<li><a href=https://docs.coronalabs.com/api/library/native/showPopup.html?#appstore target="_blank"><strong>native.showPopup(&#8220;appStore&#8221;)</strong></a><strong> for tvOS</strong>: This call displays the &#8220;Ratings and Reviews&#8221; screen. We now also support it on tvOS.</li>
+<li><a href=https://docs.coronalabs.com/api/library/network/request.html target="_blank"><strong>network.request()</strong></a>: For a long time, we only supported the four main HTTP verbs: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>. Now Corona is future-proof, supporting all current HTTP verbs and any new ones that may be added later.</li>
+<li><strong>Corona Simulator</strong>: The Simulator now supports high-resolution displays (i.e. &#8220;Retina&#8221;) on both macOS and Windows. We also made dozens of various improvements to the Simulator&#8217;s console and build dialogs.</li>
+</ol>
+<p>That is quite a list of accomplishments and it doesn&#8217;t even include all of the bug fixes, platform-required updates, and general maintenance that the engineering team has performed.</p>
+<h3>Infrastructure</h3>
+<p>While our the engineers have been busy making Corona&#8217;s products better for you, the infrastructure team has pushed onward too. While it&#8217;s hard to make a numbered list, we have seen some pretty amazing changes with regards to your access, including:</p>
+<ul>
+<li>The <a href=https://monetize.coronalabs.com/ target="_blank">Corona Ads</a> dashboard continues to be improved, making it even easier for you to provision Corona Ads and see how your apps are doing.</li>
+<li>The <a href=https://store.coronalabs.com/ target="_blank">Corona Marketplace</a> received a major overhaul during the summer. While you have probably already noticed the improved design, the more exciting part is the considerable work that went into the back end. Most noteworthy is that the new system paves the way for <em>paid</em> community-made plugins and other assets!</li>
+<li>We have started making improvements to the <a href=https://portal.coronalabs.com/ target="_blank">Corona Developer Portal</a> with a cleaner, more refined design. This will make it easier for you to get account information, download updates, manage your password, etc. We are beginning with a new design for the main developer landing page, and we will be rolling out other updates in the future.</li>
+<li>Behind the scenes, we continue to improve the app build process. Essentially, we are making better use of our content delivery network to speed up build times, and both hardware and software upgrades have made everything more stable.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>So as you can see, a lot has happened over the last six months and we are continually pushing forward with regular updates to make your Corona experience even better. Keep your eye on the blog for announcements as we roll onward!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

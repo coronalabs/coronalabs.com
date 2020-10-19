@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Corona Geek #47 &#8211; Working With Data in Corona SDK</title>
+	<atom:link href="/blog/coronageek/corona-geek-hangout-47/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/corona-geek-hangout-47/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: TDS</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5628</link>
+		<dc:creator><![CDATA[TDS]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2013 05:08:22 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5628</guid>
+		<description><![CDATA[Thank you for clarifying that for me. It was the line in the code saying;
+
+
+-- Does the database exist in the documents directory (allows updating and persistance)
+
+which was throwing me - i&#039;m not a database pro but the &quot;allows updating..&quot; and then looking at the if statement stumped me - got me looking up the &quot;r&quot;, &quot;w&quot; etc.. terms trying to understand it.
+
+If i&#039;m right here what you are suggesting is to first open up both the RD file and the DD file and then within perhaps a table in each have a version number, then it&#039;s a case of checking if the RD one is higher if so copy across ( overwrite &quot;w+&quot; ) the DD , if not then using the DD would be fine.
+thanks
+TDS]]></description>
+		<content:encoded><![CDATA[<p>Thank you for clarifying that for me. It was the line in the code saying;</p>
+<p>&#8212; Does the database exist in the documents directory (allows updating and persistance)</p>
+<p>which was throwing me &#8211; i&#8217;m not a database pro but the &#8220;allows updating..&#8221; and then looking at the if statement stumped me &#8211; got me looking up the &#8220;r&#8221;, &#8220;w&#8221; etc.. terms trying to understand it.</p>
+<p>If i&#8217;m right here what you are suggesting is to first open up both the RD file and the DD file and then within perhaps a table in each have a version number, then it&#8217;s a case of checking if the RD one is higher if so copy across ( overwrite &#8220;w+&#8221; ) the DD , if not then using the DD would be fine.<br />
+thanks<br />
+TDS</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: DrBurton</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5627</link>
+		<dc:creator><![CDATA[DrBurton]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 22:34:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5627</guid>
+		<description><![CDATA[@TDS,
+The way the code is currently written, yes, it would see that the file exists and not replace it.  You could modify the code so that it the database exists it checks for a version number or some other field to make sure that it is current.  
+I&#039;m actually working on a project that is using a version field to ensure that the data is up-to-date.]]></description>
+		<content:encoded><![CDATA[<p>@TDS,<br />
+The way the code is currently written, yes, it would see that the file exists and not replace it.  You could modify the code so that it the database exists it checks for a version number or some other field to make sure that it is current.<br />
+I&#8217;m actually working on a project that is using a version field to ensure that the data is up-to-date.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: TDS</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5626</link>
+		<dc:creator><![CDATA[TDS]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 04:40:26 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5626</guid>
+		<description><![CDATA[Hi,
+Just a question re the ResourceDirectory(RD) transfer bit.
+
+As Brian says the Documents Directory(DD) is the place you can save data which can be unaffected by updates.
+
+My question - if you transfer your db from RD to DD via this code;
+
+[lua]local path = system.pathForFile(&quot;zip.sqlite&quot;, system.DocumentsDirectory )
+file = io.open( path, &quot;r&quot; )
+   if( file == nil )then           
+   	-- Doesn&#039;t Already Exist, So Copy it In From Resource Directory                          
+   	pathSource     = system.pathForFile( &quot;zip.sqlite&quot;, system.ResourceDirectory )  
+   	fileSource = io.open( pathSource, &quot;rb&quot; ) 
+   	contentsSource = fileSource:read( &quot;*a&quot; )                                  
+		--Write Destination File in Documents Directory                                  
+		pathDest = system.pathForFile( &quot;zip.sqlite&quot;, system.DocumentsDirectory )                 
+		fileDest = io.open( pathDest, &quot;wb&quot; )                 
+		fileDest:write( contentsSource )                 
+		 -- Done                      
+		io.close( fileSource )        
+		io.close( fileDest )         
+   end   
+[/lua]
+
+Then what happens if you change data in your original db which is included in your next App update.
+Does this code kind of say &quot;oh the file exists in DD so i will forget about the db file in RD - thus not using the updated db???
+
+thanks
+TDS]]></description>
+		<content:encoded><![CDATA[<p>Hi,<br />
+Just a question re the ResourceDirectory(RD) transfer bit.</p>
+<p>As Brian says the Documents Directory(DD) is the place you can save data which can be unaffected by updates.</p>
+<p>My question &#8211; if you transfer your db from RD to DD via this code;</p>
+<p>[lua]local path = system.pathForFile(&#8220;zip.sqlite&#8221;, system.DocumentsDirectory )<br />
+file = io.open( path, &#8220;r&#8221; )<br />
+   if( file == nil )then<br />
+   	&#8212; Doesn&#8217;t Already Exist, So Copy it In From Resource Directory<br />
+   	pathSource     = system.pathForFile( &#8220;zip.sqlite&#8221;, system.ResourceDirectory )<br />
+   	fileSource = io.open( pathSource, &#8220;rb&#8221; )<br />
+   	contentsSource = fileSource:read( &#8220;*a&#8221; )<br />
+		&#8211;Write Destination File in Documents Directory<br />
+		pathDest = system.pathForFile( &#8220;zip.sqlite&#8221;, system.DocumentsDirectory )<br />
+		fileDest = io.open( pathDest, &#8220;wb&#8221; )<br />
+		fileDest:write( contentsSource )<br />
+		 &#8212; Done<br />
+		io.close( fileSource )<br />
+		io.close( fileDest )<br />
+   end<br />
+[/lua]</p>
+<p>Then what happens if you change data in your original db which is included in your next App update.<br />
+Does this code kind of say &#8220;oh the file exists in DD so i will forget about the db file in RD &#8211; thus not using the updated db???</p>
+<p>thanks<br />
+TDS</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5625</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Fri, 26 Jul 2013 19:09:44 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5625</guid>
+		<description><![CDATA[Thanks Matt. I always wanted to be multi-colored and crunchy on the outside ;)]]></description>
+		<content:encoded><![CDATA[<p>Thanks Matt. I always wanted to be multi-colored and crunchy on the outside 😉</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Matt Kauble</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5624</link>
+		<dc:creator><![CDATA[Matt Kauble]]></dc:creator>
+		<pubDate>Fri, 26 Jul 2013 16:08:35 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5624</guid>
+		<description><![CDATA[Thanks!  You are a life saver.]]></description>
+		<content:encoded><![CDATA[<p>Thanks!  You are a life saver.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5623</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Fri, 26 Jul 2013 15:19:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5623</guid>
+		<description><![CDATA[Matt, you can find Jen&#039;s Parse tutorials here:
+
+&lt;a href=&quot;http://www.ladeezfirstmedia.com/2013/07/08/tutorial-part-3-create-a-website-for-your-coronasdk-app-using-parse-coms-javascript-sdk/&quot; title=&quot;Corona SDK Parse Tutorial 1&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Corona SDK Parse Tutorial 1&lt;/a&gt;
+
+&lt;a href=&quot;http://www.ladeezfirstmedia.com/2013/06/30/tutorial-part-2-parsedata-coronasdk-parsemodules-ftw/&quot; title=&quot;Corona SDK Parse Tutorial 2&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Corona SDK Parse Tutorial 2&lt;/a&gt;
+
+&lt;a href=&quot;http://www.ladeezfirstmedia.com/2013/07/08/tutorial-part-3-create-a-website-for-your-coronasdk-app-using-parse-coms-javascript-sdk/&quot; title=&quot;Corona SDK Parse Tutorial 2&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Corona SDK Parse Tutorial 3&lt;/a&gt;]]></description>
+		<content:encoded><![CDATA[<p>Matt, you can find Jen&#8217;s Parse tutorials here:</p>
+<p><a href="http://www.ladeezfirstmedia.com/2013/07/08/tutorial-part-3-create-a-website-for-your-coronasdk-app-using-parse-coms-javascript-sdk/" title="Corona SDK Parse Tutorial 1" target="_blank" rel="nofollow">Corona SDK Parse Tutorial 1</a></p>
+<p><a href="http://www.ladeezfirstmedia.com/2013/06/30/tutorial-part-2-parsedata-coronasdk-parsemodules-ftw/" title="Corona SDK Parse Tutorial 2" target="_blank" rel="nofollow">Corona SDK Parse Tutorial 2</a></p>
+<p><a href="http://www.ladeezfirstmedia.com/2013/07/08/tutorial-part-3-create-a-website-for-your-coronasdk-app-using-parse-coms-javascript-sdk/" title="Corona SDK Parse Tutorial 2" target="_blank" rel="nofollow">Corona SDK Parse Tutorial 3</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Matt Kauble</title>
+		<link>/blog/coronageek/corona-geek-hangout-47/#comment-5622</link>
+		<dc:creator><![CDATA[Matt Kauble]]></dc:creator>
+		<pubDate>Fri, 26 Jul 2013 15:13:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=38936#comment-5622</guid>
+		<description><![CDATA[Thanks for the great data info.  I also would love to get a link to the parse tutorials Jen mentioned.  Does anyone have that?]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the great data info.  I also would love to get a link to the parse tutorials Jen mentioned.  Does anyone have that?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

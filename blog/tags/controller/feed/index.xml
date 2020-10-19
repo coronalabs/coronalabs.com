@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>controller &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/controller/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>controller &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Game controllers and axes</title>
+		<link>/blog/2013/09/24/tutorial-controllers-and-axis/</link>
+		<comments>/blog/2013/09/24/tutorial-controllers-and-axis/#comments</comments>
+		<pubDate>Tue, 24 Sep 2013 19:56:01 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[axis]]></category>
+		<category><![CDATA[controller]]></category>
+		<category><![CDATA[Game Controllers]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=46012</guid>
+		<description><![CDATA[In a previous tutorial about HID controllers, we showed you how to read button inputs from game controllers. In contrast to basic button functionality, analog controls are more complex because they measure an almost infinite number of potential values that must be converted from the analog "infinity" to discrete digital values. Today's tutorial walks you through the process.]]></description>
+				<content:encoded><![CDATA[<p>In the <a href=http://www.coronalabs.com/blog/2013/08/27/tutorial-introduction-to-game-controllers/ target="_blank">previous tutorial</a> about HID controllers, we showed you how to read button inputs from controllers. Generally speaking, controller buttons generate a simple &#8220;down&#8221; or &#8220;up&#8221; value, so you can easily determine if the player is interacting with that button.</p>
+<h3>About analog controls</h3>
+<p>In contrast, <strong>analog</strong> controls are more complex. These measure an almost infinite number of potential values that must be converted from their analog &#8220;infinity&#8221; to discrete digital values. In the case of the Corona, these values typically range from <code>-1.0</code> to <code>1.0</code> and a very precise set of values anywhere between. To compound the complexity, some controls have <strong>two</strong> associated values — for example, an analog stick can be moved up and down in either direction over a varying distance, as well as left and right. Other controls like &#8220;triggers&#8221; generate values between <code>0.0</code> to <code>1.0</code> where the value increases the more you squeeze the trigger. As a broad definition, we refer to these control values as <strong>axis</strong>. For instance, the left analog stick has both an <strong>X axis</strong> and a <strong>Y axis</strong>. The right trigger, in comparison, has just a single axis to measure.</p>
+<p>At the hardware level, analog sticks typically depend on springs to push the stick back to the neutral center position. However, these springs don&#8217;t always push the stick back to its perfect <code>0</code> value. In fact, a stick can be &#8220;noisy&#8221; and generate events even when the control isn&#8217;t being touched. Internally, Corona tries and minimize this noise, but because controllers vary considerably (even those from the same manufacturer), you should account for a certain amount of &#8220;slop&#8221; in your analog stick handling.</p>
+<p>Another issue to contend with is the varied <strong>axis numbers</strong> that manufacturers assign to their controllers. For instance, the right trigger on the OUYA controller is axis number <strong>6</strong>, but on a DualShock controller, that same control is axis number <strong>14</strong>. In general, there are two ways to handle this:</p>
+<ol>
+<li>Build a mapping screen like those in many PC games, giving the player a chance to press the various buttons and controls, then gather those values and assign an axis number to each specific control. This is probably the best way to handle devices if you expect that players may use controllers that you know little about.</li>
+<li>Build a mapping system of specific controllers that you want to support. Since you&#8217;ll know in advance what each controller&#8217;s axes map to, you can build a table of inputs. Of course, you&#8217;ll still need to determine what the values are when you test a <em>new</em> controller.</li>
+</ol>
+<h3>Mapping system</h3>
+<p>For this tutorial, we&#8217;ll explore a basic mapping system of &#8220;known&#8221; controllers. To keep this tutorial relatively simple, we&#8217;ll only include two controllers, but you could repeat this basic pattern to handle additional controllers. Let&#8217;s look at some basic code:<br />
+View the code on <a href=https://gist.github.com/63eec6de3cb51635844c>Gist</a>.<br />
+The first block of code creates a table based on the controllers we want to to support: the standard OUYA controller and the DualShock controller. The second table maps the physical control names to specific numbers. Later, we&#8217;ll execute code that reveals the real values that should be entered into this table.</p>
+<h3>Basic game setup</h3>
+<p>Let&#8217;s explore a simple game featuring two players that can be manipulated with a controller:<br />
+View the code on <a href=https://gist.github.com/5338269f243e8a8ffc40>Gist</a>.<br />
+Each player is a colored square — one green and one red — and they begin in the center of the screen. We&#8217;ve added some properties to each player that represent the movement along the <strong>X</strong> and <strong>Y</strong> axes. The left stick is used to <em>move</em> the player and the right stick is used to <em>rotate</em> the player. Just for fun, we&#8217;ll use the triggers to change the color of the player. Because our axis events are not continuous, we need to use an <code>"enterFrame"</code> listener to move our player while the stick is being held (this listener will manage the player rotation as well).</p>
+<p>The next step is a function that calculates the player rotation angle based on the <strong>X</strong> and <strong>Y</strong> of where the stick is being held. Note that you get one event for <strong>X</strong> movement and one event for <strong>Y</strong> movement. As a result, you must store the last value generated for <strong>X</strong> so that when you receive a <strong>Y</strong> event, you can compare the two. Likewise, if you get an <strong>X</strong> event, you must have access to the previous saved <strong>Y</strong> event.<br />
+View the code on <a href=https://gist.github.com/94edfa802eba7b88d902>Gist</a>.</p>
+<h3>Game loop</h3>
+<p>Now let&#8217;s examine the game loop required to monitor the controller input:<br />
+View the code on <a href=https://gist.github.com/3623601816a1a31436d1>Gist</a>.</p>
+<h3>Axis movement</h3>
+<p>Movement with the <strong>X</strong> and <strong>Y</strong> values is straightforward. If you simply want to move around, you can apply the values from the two axis events. At this point, you could apply physics impulses or movement, or in this case, simply apply the values from the controller. Rotation is more tricky — depending on what the rotation should do, you may have to convert the <strong>X</strong> and <strong>Y</strong> into an angle. You can also consider using the distance the stick is pressed to determine how fast to rotate. Since the <strong>X</strong> and <strong>Y</strong> values for rotation comes from two separate events, you need to store the two values and perform your movement based on those values.</p>
+<p>Let&#8217;s look at the actual code to manage the axis data:<br />
+View the code on <a href=https://gist.github.com/409c3c16bcc65767e30a>Gist</a>.</p>
+<h3>Initialize the controllers</h3>
+<p>Finally we need to initialize everything, including mapping the controllers:<br />
+View the code on <a href=https://gist.github.com/8f66d2f5887ff80bcd16>Gist</a>.<br />
+The above code loops over the list of axes returned by the <code>inputDevices[deviceIndex]:getAxes()</code> function. It&#8217;s very likely that we don&#8217;t need <em>all</em> of the axes returned. This is where we use the two data tables at the top of this tutorial to pick an axis that we find and store the axis number into the second table.</p>
+<h3>Caution</h3>
+<p>Note that game controllers may run out of battery power and just &#8220;drop out&#8221; without warning. It&#8217;s also possible that a player may want to change controllers in the middle of the game, and thus &#8220;Joystick 2&#8221; is actually player 1. It&#8217;s your responsibility to manage these events, using the <strong>inputDeviceStatus</strong> event:<br />
+View the code on <a href=https://gist.github.com/762e46403020c34497d2>Gist</a>.</p>
+<h3>In summary</h3>
+<p>This tutorial should get you up to speed on the axis type inputs on your controller and the basic mapping system.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/09/24/tutorial-controllers-and-axis/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Tutorial: Introduction to game controllers</title>
+		<link>/blog/2013/08/27/tutorial-introduction-to-game-controllers/</link>
+		<comments>/blog/2013/08/27/tutorial-introduction-to-game-controllers/#comments</comments>
+		<pubDate>Tue, 27 Aug 2013 21:43:56 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[controller]]></category>
+		<category><![CDATA[key events]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=42699</guid>
+		<description><![CDATA[It's an exciting time to be a mobile app developer. Through the magic of mobile and Bluetooth support on devices, it's now possible to use controllers to play games, in addition to the standard touchscreen and accelerometer.]]></description>
+				<content:encoded><![CDATA[<p>It&#8217;s an exciting time to be a mobile app developer. Through the magic of mobile and Bluetooth support on devices, it&#8217;s now possible to use HID (<a href=http://en.wikipedia.org/wiki/Human_interface_device target="_blank">Human Interface Device</a>) controllers to play games, in addition to the standard touchscreen and accelerometer. While this isn&#8217;t yet &#8220;utopia,&#8221; you can do some really cool things with your wireless device and modern technology.</p>
+<h3>Key event framework</h3>
+<p>For HID controllers, we decided to build upon the existing <a href=https://docs.coronalabs.com/api/event/key/index.html target="_blank">key</a> event framework. Thus, programming for controllers won&#8217;t be too much different — no plugins are required for HID-compliant controllers, nor do you need to <code>require()</code> anything special.</p><pre class="crayon-plain-tag">local function onKeyEvent( event )
+
+    local phase = event.phase
+    local keyName = event.keyName
+
+    if ( phase == &quot;down&quot; ) then
+        if ( keyName == &quot;buttonA&quot; ) then
+            return true
+        elseif ( keyName == &quot;buttonB&quot; ) then
+            return true
+        elseif ( keyName == &quot;buttonX&quot; ) then
+            return true
+        elseif ( keyName == &quot;buttonY&quot; ) then
+            return true
+        elseif ( keyName == &quot;up&quot; ) then  -- D-Pad up
+            return true
+        elseif ( keyName == &quot;down&quot; ) then  -- D-Pad down
+            return true
+        elseif ( keyName == &quot;left&quot; ) then  -- D-Pad left
+            return true
+        elseif ( keyName == &quot;right&quot; ) then  -- D-Pad right
+            return true
+        elseif ( keyName == &quot;buttonSelect&quot; ) then  -- Select/Back button
+            return true
+        elseif ( keyName == &quot;buttonStart&quot; ) then  -- Start/Home button
+            return true
+        elseif ( keyName == &quot;buttonMode&quot; ) then  -- Power on/off button
+            return true
+        elseif ( keyName == &quot;leftShoulderButton1&quot; ) then  -- Top-left button
+            return true
+        elseif ( keyName == &quot;rightShoulderButton1&quot; ) then  -- Top-right button
+            return true
+        elseif ( keyName == &quot;leftShoulderButton2&quot; ) then  -- Bottom-left button
+            return true
+        elseif ( keyName == &quot;rightShoulderButton2&quot; ) then  -- Bottom-right button
+            return true
+        elseif ( keyName == &quot;leftJoyStickButton&quot; ) then  -- Pressing down on the left joystick button
+            return true
+        elseif ( keyName == &quot;rightJoystickButton&quot; ) then  -- Pressing down on the right joystick button
+            return true
+
+        -- Now deal with Android standard buttons
+        elseif ( keyName == &quot;back&quot; ) then  -- Hardware back button
+            return true
+        elseif ( keyName == &quot;volumeUp&quot; ) then
+            return true
+        elseif ( keyName == &quot;volumeDown&quot; ) then
+            return true
+        end
+        print( &quot;Done with keys&quot; )
+    end
+
+    -- IMPORTANT! Return false to indicate that this app is NOT overriding the received key
+    -- This lets the operating system execute its default handling of the key
+    return false
+end
+
+Runtime:addEventListener( &quot;key&quot;, onKeyEvent )</pre><p>Of course, we haven&#8217;t provided any code other than returning <code>true</code> because it all depends on what you want to do. The button names may also vary from controller to controller — for example, they may not always be called <code>"buttonA"</code> or <code>"buttonX"</code>, so if you are working with a new controller, it&#8217;s useful to check the value of the buttons that are pressed.</p>
+<h3>Button phases</h3>
+<p>Note that buttons/keys produce two phases, much like touch handlers. Those two phases are <code>"up"</code> and <code>"down"</code>, where <code>"down"</code> means the user has pressed the button and <code>"up"</code> means they have released it. Like touch handlers, you do not &#8220;continuously&#8221; get events — once you press the button and get the <code>"down"</code> phase, you will not get another event until the button is released, thus dispatching the <code>"up"</code> phase.</p>
+<p>Similar to touch events, it&#8217;s generally best practice to use the <code>"down"</code> state for time-sensitive actions like movement or firing weapons. However, for UI elements that typically respond like a mouse click, or touch events that trigger when the touch is complete, the <code>"up"</code> state may be warranted.</p>
+<h3>Putting it together</h3>
+<p>Let&#8217;s look at an example <code>movePlayer()</code> function using event-based buttons:</p><pre class="crayon-plain-tag">local player1 = display.newRect( 0, 0, 10, 30 )
+player1.x = 30
+player1.y = display.contentCenterY
+player1:setFillColor( 1, 0, 0 )
+player1.isMoving = false
+player1.direction = &quot;up&quot;
+
+local player2 = display.newRect( 0, 0, 10, 30 )
+player2.x = display.contentWidth-30
+player2.y = display.contentCenterY
+player2:setFillColor( 0, 0, 1 )
+player2.isMoving = false
+player2.direction = &quot;up&quot;
+
+local moveSpeed = 2
+
+local function movePlayer( player, event )
+
+    if ( player == nil ) then
+        return
+    end
+
+    if ( player.isMoving ) then
+
+        if ( player.direction == &quot;down&quot; ) then
+            player.y = player.y + moveSpeed
+            if ( player.y &gt; (display.contentHeight-20) ) then
+                player.y = display.contentHeight-20
+            end
+        else
+            player.y = player.y - moveSpeed
+            if ( player.y &lt; 20 ) then
+                player.y = 20
+            end
+        end
+    end
+end
+
+local function onKeyEvent( event )
+
+    local thisPlayer
+
+    if ( event.device.descriptor == &quot;Joystick 1&quot; ) then
+        thisPlayer = player1
+    else
+        thisPlayer = player2
+    end
+
+    if ( event.keyName == &quot;up&quot; ) then
+
+        thisPlayer.direction = &quot;up&quot;
+        if ( event.phase == &quot;down&quot; ) then
+            thisPlayer.isMoving = true
+        else
+            thisPlayer.isMoving = false
+        end
+        return true
+
+    elseif ( event.keyName == &quot;down&quot; ) then
+
+        thisPlayer.direction = &quot;down&quot;
+        if ( event.phase == &quot;down&quot; ) then
+            thisPlayer.isMoving = true
+        else
+            thisPlayer.isMoving = false
+        end
+        return true
+    end
+
+    return false
+end
+Runtime:addEventListener( &quot;key&quot;, onKeyEvent )
+
+local function onFrame()
+    movePlayer( player1 )
+    movePlayer( player2 )
+end
+Runtime:addEventListener( &quot;enterFrame&quot;, onFrame )</pre><p></p>
+<h3>Detecting controllers</h3>
+<p>Most likely, you will also need to know if the controller is attached and also know when it&#8217;s detached, or if a new controller comes into play. This is handled using the <a href=https://docs.coronalabs.com/api/type/InputDevice/index.html target="_blank">inputDevice</a> type.</p><pre class="crayon-plain-tag">-- Fetch all input devices currently connected to the system
+local inputDevices = system.getInputDevices()
+local controllersActive = {}
+
+-- Traverse all input devices
+for deviceIndex = 1,#inputDevices do
+
+&nbsp; &nbsp; -- Fetch the input device's information
+&nbsp; &nbsp; print( deviceIndex, &quot;canVibrate&quot;, inputDevices[deviceIndex].canVibrate )
+&nbsp; &nbsp; print( deviceIndex, &quot;connectionState&quot;, inputDevices[deviceIndex].connectionState )
+&nbsp; &nbsp; print( deviceIndex, &quot;descriptor&quot;, inputDevices[deviceIndex].descriptor )
+&nbsp; &nbsp; print( deviceIndex, &quot;displayName&quot;, inputDevices[deviceIndex].displayName )
+&nbsp; &nbsp; print( deviceIndex, &quot;isConnected&quot;, inputDevices[deviceIndex].isConnected )
+&nbsp; &nbsp; print( deviceIndex, &quot;type&quot;, inputDevices[deviceIndex].type )
+&nbsp; &nbsp; print( deviceIndex, &quot;permenantid&quot;, tostring(inputDevices[deviceIndex].permanentId) )
+&nbsp; &nbsp; print( deviceIndex, &quot;andoridDeviceid&quot;, inputDevices[deviceIndex].androidDeviceId )
+
+&nbsp; &nbsp; local index
+    if ( event.device.descriptor == &quot;Joystick 1&quot; ) then
+        index = 1
+    elseif ( event.device.descriptor == &quot;Joystick 2&quot; ) then
+        index = 2
+    elseif ( event.device.descriptor == &quot;Joystick 3&quot; ) then
+        index = 3
+    elseif ( event.device.descriptor == &quot;Joystick 4&quot; ) then
+        index = 4
+    end
+&nbsp; &nbsp; controllersActive[index] = inputDevices[deviceIndex].isConnected
+end</pre><p>Here are a few notes regarding controller detection:</p>
+<ul>
+<li>For multiplayer apps, the <code>event.descriptor</code> (i.e. <code>"Joystick 1"</code>, <code>"Joystick 2"</code>) can be used as a unique key that binds a particular controller to a player. This will scan for active devices and set up a table of devices that are currently connected.</li>
+<li>You should watch for connections and disconnections during gameplay and handle &#8220;losing&#8221; a controller or adding a controller. You may also want to pause the game if a controller drops out.</li>
+<li>You might want to hide any UI elements that are specific to one controller, or hide &#8220;touchscreen&#8221; features when there are controllers present.</li>
+</ul>
+<p>And here&#8217;s some sample code to handle this:</p><pre class="crayon-plain-tag">local function onInputDeviceStatusChanged( event )
+
+    -- Handle the input device change
+    if ( event.connectionStateChanged ) then
+
+        print( event.device.displayName .. &quot;: &quot; .. event.device.connectionState )
+
+        local index
+        if ( event.device.descriptor == &quot;Joystick 1&quot; ) then
+            index = 1
+        elseif ( event.device.descriptor == &quot;Joystick 2&quot; ) then
+            index = 2
+        elseif ( event.device.descriptor == &quot;Joystick 3&quot; ) then
+            index = 3
+        elseif ( event.device.descriptor == &quot;Joystick 4&quot; ) then
+            index = 4
+        end
+        controllersActive[index] = inputDevices[deviceIndex].isConnected
+    end
+end
+
+-- Add the input device status event listener
+Runtime:addEventListener( &quot;inputDeviceStatus&quot;, onInputDeviceStatusChanged )</pre><p>Note that these status changes will not register if the app is suspended. It&#8217;s your responsibility to poll the controllers if you&#8217;re resuming back to gameplay state.</p>
+<h3>Conclusion</h3>
+<p>Most game controllers offer both digital inputs (buttons) and analog inputs called sticks or joysticks. Because the typical joystick moves both up and down and left and right, we measure the movement based on which &#8220;axis&#8221; it&#8217;s moving on. An analog stick moving up and down will be measured along its Y axis, while side-to-side movement is measured on the X axis.</p>
+<p>Axis input will be covered in a future blog post, but it&#8217;s important to know that many game controllers will map the left analog stick to the D-Pad. As such, moving the left stick will frequently generate <code>"up"</code>, <code>"down"</code>, <code>"left"</code> and <code>"right"</code> events. Also, the bottom shoulder buttons are considered &#8220;analog&#8221; inputs, but they will generate &#8220;button&#8221; events when they are squeezed past a certain threshold. If your app needs to know precisely what value those triggers are producing, you would use the axis method of measuring things, for fine-tuned control.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/27/tutorial-introduction-to-game-controllers/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+	</channel>
+</rss>

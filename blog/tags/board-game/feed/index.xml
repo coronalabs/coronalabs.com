@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>board game &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/board-game/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>board game &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #155 &#8211; 3D Printed Game Pieces and Using Gravity In Games &#8211; Part 2</title>
+		<link>/blog/coronageek/corona-geek-155/</link>
+		<comments>/blog/coronageek/corona-geek-155/#respond</comments>
+		<pubDate>Mon, 17 Aug 2015 21:56:18 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[3d printing]]></category>
+		<category><![CDATA[board game]]></category>
+		<category><![CDATA[Game Mechanics]]></category>
+		<category><![CDATA[Gravity]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63761</guid>
+		<description><![CDATA[Today, we talked with special guest Todd Porter, CEO of BoardCraft about creating  3D printed game pieces. We also continued our gravity game discussion with a look at how to set up our world using layers, how to enable multitouch, and how to capture key inputs on Windows and OS X. The project code and graphics have been updated since last week, so be sure to download the updated source code.
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/8e6vHNwB4yM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Today, we talked with special guest Todd Porter, CEO of BoardCraft, about making your app stand out using 3D printed game pieces. </p>
+<p>BoardCraft is a multi-disciplined group of experienced AAA game developers that has worked with major players in the game industry such as EA, Atari, Sega, Microsoft, Epic and Ion Storm. </p>
+<p>I <a href=https://www.youtube.com/watch?v=jwxaBXlkCdA target="_blank">ran into Todd at RTX2015</a> in Austin Texas and was immediately impressed with the <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus board game</a> the <a href=http://boardcraft.com/ target="_blank">BoardCraft engine</a>. Check out their <a href=https://www.kickstarter.com/projects/necrovirus/necrovirus-customizable-zombie-game-with-boardcraf target="_blank">NecroVirus Kickstarter campaign</a> to bring the BoardCraft software to the board game community.</p>
+<p>Also on the Hangout, Roaming Gamer’s, Ed Maurina continued our gravity game discussion. Ed showed us how to set up our world using layers, how to enable multitouch, and <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">how to capture key inputs</a> on Windows and OS X for testing during game development. The code and graphics have been updated since last week, so be sure to <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated source code</a>.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/cdd8qnrdak3jiir3h35rlureves target="_blank">Corona Geek After Dark #7</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://plus.google.com/b/108159899655420864045/events/cdnvn1dq523bv3hhbinkvm1e17g target="_blank">multiplayer physics</a>, push notifications, and our favorite game development podcasts, plus a ton of other stuff.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-154/>Corona Geek #154 &#8211; Simulating and Using Gravity In Games and 2D Shadow Effects</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://BoardCraft.com/ target="_blank">3D Printed Board Game Pieces</a></li>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=http://xibalbastudios.com/militant_en.html target="_blank">MilitAnt™ by Xibalba Studios</a></li>
+<li><a href=http://jasonshroeder.com/ target="_blank">Jason Schroeder Apps</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-155/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-155-2015-08-17-3d-printed-game-pieces-and-using-gravity-in-games-part-2.mp3" length="105964104" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Guest Piece: Mastermind for Mobile &#8211; The Rebirth of a Classic Game</title>
+		<link>/blog/2013/11/08/guest-piece-mastermind-for-mobile-the-rebirth-of-a-classic-game/</link>
+		<comments>/blog/2013/11/08/guest-piece-mastermind-for-mobile-the-rebirth-of-a-classic-game/#comments</comments>
+		<pubDate>Fri, 08 Nov 2013 21:22:23 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[board game]]></category>
+
+		<guid isPermaLink="false">/?p=50919</guid>
+		<description><![CDATA[Anders Linneman Hjarnaahas has worked in the web industry for 17 years and runs his own web agency, <a href="http://cphcloud.com/">CPH Cloud</a>, in Copenhagen, Denmark. With a solid background in ASP and ActionScript, Anders quickly picked up Corona SDK and began working on his first mobile game, <a href="https://itunes.apple.com/us/app/id707512888">CodeCrusher</a>. In his guest piece, Anders writes on how he recreated the classic Mastermind board game for mobile devices with the launch CodeCrusher.]]></description>
+				<content:encoded><![CDATA[<p><em>Anders Linneman Hjarnaahas has worked in the web industry for 17 years and runs his own web agency, <a href=http://cphcloud.com/>CPH Cloud</a>, in Copenhagen, Denmark. With a solid background in ASP and ActionScript, Anders quickly picked up Corona SDK and began working on his first mobile game, <a href=https://itunes.apple.com/us/app/id707512888>CodeCrusher</a>. In today&#8217;s guest post, Anders writes on how he recreated the classic &#8220;Mastermind&#8221; board game for mobile devices with the launch of CodeCrusher.</em></p>
+<hr />
+<p><img class="wp-image-50920 alignright" style="margin: 2px 2px 30px 20px; margin-bottom: 10px;" alt="Anders Hjarnaa headshot" src="/wordpress/wp-content/uploads/2013/10/Anders-Hjarnaa-300x199.jpg" width="210" height="139" />A week before Apple released iOS 7 and moved away from the &#8220;skeumorphism&#8221; of previous versions, I decided to update my previously-released game inspired by the classic board game <a href=http://en.wikipedia.org/wiki/Mastermind_(board_game) target="_blank">Mastermind</a>. I stripped all of the &#8220;wood and velvet&#8221; out of the app and styled the game with a new, sleek design inspired by Jonathan Ives&#8217; iOS 7 design.</p>
+<p>Little did I know that my updated title – <a href=https://itunes.apple.com/us/app/id707512888>CodeCrusher for iOS 7</a> – would soon top the charts in App Stores around the world, selling more than a 1,000 copies a day.</p>
+<h3>A Spark of Inspiration</h3>
+<p>It all began last summer when I vacationed in Malta with my girlfriend and some friends. Line, my close friend for many years, brought an old board game from the 1970s called &#8220;Mastermind.&#8221; I had completely forgotten about this classic game and was a bit unfamiliar with the rules and gameplay.</p>
+<p>During the week in Malta, we played a lot of Mastermind and I developed my own technique that proved rather effective. One evening when I was waiting for my turn to play, I had the idea to make this classic board game into a mobile app. I went online and bought <em><a href=http://www.amazon.com/gp/product/1849691886/ref=as_li_tf_tl?ie=UTF8&tag=corlab-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1849691886>Corona SDK Mobile Game Development – Beginner&#8217;s Guide</a></em> to learn the basics of the platform.</p>
+<p>At the end of the vacation, I had read much of the book and I had a working prototype based on a highly modified version of the sample game from the book. This hooked me on the idea of creating a nice, mobile version of Mastermind. I searched the App Store and found quite a few versions inspired by the classic game, but none had the same feel as the original. I decided there was room for improvement.</p>
+<h3>Building CodeCrusher</h3>
+<p><img class="alignright size-medium wp-image-50922" style="margin: 2px 2px 0px 20px;" alt="Code Crusher Classic" src="/wordpress/wp-content/uploads/2013/10/CodeCrusher-Classic-200x300.png" />Back in Copenhagen, I didn’t have much spare time to work on the game. I was busy running my web agency. I only found a couple of hours after work or on the weekend to spend on the project so it took me close to a year to finish my first version of the game. I released the title as a free game on the App Store, close to a year after my vacation in Malta. I spent about one hundred hours working on the game, which included a lot of trial and error.</p>
+<p>I used <a href=http://docs.coronalabs.com/api/library/gameNetwork/>Game Center</a> for achievements and high scores. I built my own backend server to keep a local high score and keep track of new users. I integrated Flurry to have more analytics in the game, along with Facebook and Twitter to allow users to share their scores.</p>
+<h3>The First Release</h3>
+<p>Design-wise, my game was a solid remake of the original game from the seventies, very similar to the wooden game board with nearly identical gameplay. Initially, the game received many downloads with about 2,000 on the day of launch. After a month, it was still being downloaded around 500 times a day, and three months later it had reached near the 50,000 download mark.</p>
+<h3>Generating Revenue with V2</h3>
+<p><img class="alignright size-medium wp-image-50921" style="margin: 2px 2px 0px 20px; margin-bottom: 10px;" alt="Code Crusher iOS7" src="/wordpress/wp-content/uploads/2013/10/CodeCrusher-iOS7-200x300.png" />A month ago, I decided to create a remake of the game with the new and sleek iOS 7 design. I wanted to test how many downloads I could get if I priced the game at $0.99 instead of offering it for free.</p>
+<p>Our designer Mark quickly made a complete redesign for the new iOS 7 flat design. This took him roughly two days, and I spend only three days implementing the new design along with some gameplay improvements.</p>
+<p>The redesigned version of the game, now called <a href=https://itunes.apple.com/hk/app/codecrusher-classic/id579984325?mt=8>CodeCrusher for iOS 7</a>, has enjoyed many downloads from the start even though we chose a premium monetization model.</p>
+<h3>The Importance of Keywords</h3>
+<p>Apple only uses the app name and keywords in App Store searches and does not search your app description text. So, no matter how much text you have in the app description, it will not help you in searches.</p>
+<p>To work around this, I took great care when choosing the right keywords. I wanted to be ranked high in search results if users searched for “iOS 7” or “iOS7,” and because of these keywords, my game is now the ninth search result if you search for “iOS 7.&#8221; I strongly believe that this is one of the reasons my game quickly topped the charts around the world.</p>
+<h3>In Summary: a Month After Launch</h3>
+<p>Since relaunch, the game has soared to #1 in the &#8220;Board Games&#8221; category in Canada, it was a Top 10 in the U.S., and was the most purchased game in Denmark, Belgium, and Holland, surpassing even mega-popular titles like Angry Birds, Grand Theft Auto 3, Plants vs. Zombies, and FIFA 13 by EA SPORTS.</p>
+<p>At the moment I’m selling over a thousand copies a day — all of this thanks to a nice vacation in Malta with a classic board game and the ease of development using Corona SDK.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/11/08/guest-piece-mastermind-for-mobile-the-rebirth-of-a-classic-game/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+	</channel>
+</rss>

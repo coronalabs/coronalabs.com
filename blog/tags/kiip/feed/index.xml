@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kiip &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/kiip/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Kiip &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #88 &#8211; Reward Customers and Take Payments In Your Apps</title>
+		<link>/blog/coronageek/corona-geek-hangout-88/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-88/#comments</comments>
+		<pubDate>Mon, 05 May 2014 21:33:47 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[ecommerce]]></category>
+		<category><![CDATA[Kiip]]></category>
+		<category><![CDATA[Paypal]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[rewards]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58502</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talk with Gremlin Interactive CEO, Danny Glover about adding customer rewards and credit card payments to your apps. Danny has developed a custom Corona plugin for Kiip, which offers rewards to users from the world's largest brands, and he has developed a custom Corona plugin for Paypal that let's customers scan credit cards to complete transactions within apps. ]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/TjtxoNfh4LQ?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we talk with Gremlin Interactive CEO, Danny Glover about adding customer rewards and credit card payments to your apps. Danny has developed a custom <a href=http://bit.ly/1n6e2xx target="_blank">Corona plugin for Kiip</a>, which offers rewards to users from the world&#8217;s largest brands, and he has developed a custom <a href=http://bit.ly/1lI0xBV target="_blank">Corona plugin for Paypal</a> that let&#8217;s customers scan credit cards to complete transactions within apps. </p>
+<p>Both plugins are available now for integration into Corona projects and Danny is going to walk us through <a href=https://github.com/GremlinInteractive target="_blank">code demos</a> to show how easy it is to use them in your projects.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=http://coronium.org/doku.php target="_blank">Coronium Cloud</a></li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/tree/master/FireTVLib target="_blank">Amazon Fire Tv Corona library</a></li>
+<li><a href=http://gremlininteractive.com/ target="_blank">Paypal and Kiip plugins</a></li>
+</ul>
+<p><strong>Special Shout-out!</strong></p>
+<p><img src="/wordpress/wp-content/uploads/2014/05/corona-sdk-att-hackathon-washington-dc.jpg" alt="Corona SDK ATT Hackathon Winner, Washington D.C." class="alignnone size-full wp-image-58510" /></p>
+<p>Congratulations to <a href=https://www.linkedin.com/in/therush target="_blank">Theo Rushin, Jr.</a> and his team for winning the <strong>1st Place Grand Prize</strong> at the AT&#038;T Mobile App Hackathon for Public Safety &#038; Emergency Preparedness. Theo&#8217;s team built two apps using Corona SDK. One app enables the user to quickly and silently send out a group SMS through Parse.com Cloud Code and Twillio. While the second app shows a map view of all the users who have sent the SMS message. The combo makes up a public safety app that the judges and various emergency personal (at the event) said would be of great benefit to many users and could possibly help to save lives. Way to go Theo!!!</p>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-88/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-88-2014-05-05-kiip-and-paypal-plugins.mp3" length="57782275" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-88-2014-05-05-kiip-and-paypal-plugins.mp3" length="57782275" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-88-2014-05-05-kiip-and-paypal-plugins.mp3" length="57782275" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-88-2014-05-05-kiip-and-paypal-plugins.mp3" length="57782275" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

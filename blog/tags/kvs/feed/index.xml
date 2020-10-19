@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>KVS &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/kvs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>KVS &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #117</title>
+		<link>/blog/2016/04/01/from-the-forum-issue-117/</link>
+		<pubDate>Fri, 01 Apr 2016 17:12:58 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[copy]]></category>
+		<category><![CDATA[GPS]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[KVS]]></category>
+		<category><![CDATA[locationServices]]></category>
+		<category><![CDATA[paste]]></category>
+		<category><![CDATA[pasteboard]]></category>
+
+		<guid isPermaLink="false">/?p=66340</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Copy and paste across the board</h3>
+<p>We all know about the pasteboard plugin and how useful it is on mobile devices. Since Corona apps exist in the OpenGL layer, it’s necessary to use an additional Corona-provided plugin in order to get intuitive “copy and paste” into our mobile apps.</p>
+<p>The next hurdle for natural copy and paste is our desktop apps. It’s arguably even more important for our programs to have some of the basic functionality that uses expect from applications running on OSX and Windows. The thing is, the pasteboard plugin is only supported on iOS and Android!</p>
+<p>Fortunately, the below thread has us covered. There are some very useful code snippets that enable this simple desktop functionality. Click through to check it out now!</p>
+<p><a href=https://forums.coronalabs.com/topic/62377-copy-and-paste-on-win32-desktop-osx-builds/ target="_blank">https://forums.coronalabs.com/topic/62377-copy-and-paste-on-win32-desktop-osx-builds/</a></p>
+<h3>Accurate GPS on your device</h3>
+<p>Getting pinpoint GPS coordinates is a difficult task for any developer, Corona or otherwise. The handshake agreement between the app and the user is of vital importance, as every setting need to be configured correctly to get the results your app expects.</p>
+<p>In the below thread, Corona support engineer Rob Miracle tells us about the pitfalls and provides some pointers when it comes to collecting GPS values on your mobile device. Head on down to check it out now!</p>
+<p><a href=https://forums.coronalabs.com/topic/60254-making-gps-as-accurate-as-possible/ target="_blank">https://forums.coronalabs.com/topic/60254-making-gps-as-accurate-as-possible/</a></p>
+<h3>Use iCloud KVS right now!</h3>
+<p>Now that tvOS has been opened up to Corona development, we have quite a few decisions to make about how we are going to port and/or develop on this platform. There is plenty of new functionality to take advantage, and not just related to the awesome new remote control.</p>
+<p>The main issue that we are encountering is enabling the back-up of data, be it for saved games, or a persistent playlist. Since tvOS doesn’t allow us to save data to the device, we have to get creative. Using iCloud storage is one of the more intuitive methods, and I say that more so in regards to the ease in which a user would interact with it, rather than the methods a developer would take to get it to work correctly in a project. Those steps are a bit more involved, but thank goodness we have the below thread to which we can refer.</p>
+<p>A Corona engineer and a developer were kicking the tires for us on Corona versions, and were able to come to a conclusion on the working order for iCloud KVS integration. Roll through to the original thread to read up on their convo and how you can get iCloud storage working on tvOS with minimal fuss!</p>
+<p><a href=https://forums.coronalabs.com/topic/62249-icloud-kvs-between-ios-and-osx-app/ target="_blank">https://forums.coronalabs.com/topic/62249-icloud-kvs-between-ios-and-osx-app/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>keyboards &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/keyboards/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>keyboards &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #115</title>
+		<link>/blog/2016/03/18/from-the-forum-issue-115/</link>
+		<pubDate>Fri, 18 Mar 2016 23:56:51 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[icon generation]]></category>
+		<category><![CDATA[Icons]]></category>
+		<category><![CDATA[keyboards]]></category>
+		<category><![CDATA[oAuth]]></category>
+		<category><![CDATA[win32]]></category>
+
+		<guid isPermaLink="false">/?p=66172</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Google oAuth 2.0 and the triumph of success</h3>
+<p>And lo, the clouds parted and Google oAuth sign-in has been achieved! It’s always a fantastic revelation to see community members provide code snippets for us to use in our own projects, and I always make a point to applaud these achievements.</p>
+<p>Such is the case with the below forum thread. Corona dev <strong>thomas6</strong> exclaims in the discovery and confirmation of getting oAuth to work with Google credentials. Everything necessary to get it to work is in the below forum thread, so what are you waiting for? Click through right now!</p>
+<p><a href=https://forums.coronalabs.com/topic/62087-succes-google-oauth2-for-corona-and-lua/ target="_blank">https://forums.coronalabs.com/topic/62087-succes-google-oauth2-for-corona-and-lua/</a></p>
+<h3>Win32 apps and the keyboards that love them</h3>
+<p>For Corona developers, Windows desktop is a brave new world that has been sought after for years. Even though it’s been a dominant environment for quite some time, we have been hacking away at the learning curve when releasing our apps and games to a desktop OS. This has run the gamut from “<em>dead-simple</em>” to “<em>hair-pullingly infuriating</em>”, which a large spectrum in between.</p>
+<p>One of the more difficult facets of the new Windows OSes (8 and 10, for example) is the relationship between Win32 apps, and virtual and physical keyboards. This is really all the pre-amble you need to before tuning into the below forum thread. It’s really a great read, and has a lot of useful hints for folks that are are in the process of creating or porting apps to the platform, or anyone that has aspirations of their killer app on Windows 10 tablets. Head on over for an insightful discussion!</p>
+<p><a href=https://forums.coronalabs.com/topic/62083-nativesetkeyboardfocus-doesnt-work-properly-for-win32-apps/ target="_blank">https://forums.coronalabs.com/topic/62083-nativesetkeyboardfocus-doesnt-work-properly-for-win32-apps/</a></p>
+<h3>More icon generating resources</h3>
+<p>As sure as the sun sets in the West, we Corona developers need to puzzle out the arcane sets of icons necessary to release their apps and games to the masses. Plus, with the addition of desktop builds, you’re looking at far more icons and naming conventions than you can shake a stick at.</p>
+<p>The best way to create all of these, is to not create them at all. I’ve covered generators and templates before, so think of this as more of a PSA: <strong>Rene</strong> from <strong>Devilsquid</strong> has updated their Photoshop template to include all necessary icons and launch images needed for our apps. There are some other very use links in the thread below, so click through and check’em out!</p>
+<p><a href=https://forums.coronalabs.com/topic/62150-icon-naming/ target="_blank">https://forums.coronalabs.com/topic/62150-icon-naming/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

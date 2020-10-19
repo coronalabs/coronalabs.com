@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona Ads &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/corona-ads/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona Ads &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>New Corona Professional Bundle; retiring Corona Ads</title>
+		<link>/blog/2016/12/19/new-corona-professional-bundle-retiring-corona-ads/</link>
+		<pubDate>Mon, 19 Dec 2016 22:20:34 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona Ads]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=69215</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the new Corona Professional Bundle, offering you three of the most desired monetization plugins without revenue sharing. In addition, learn about our plans to retire Corona Ads.]]></description>
+				<content:encoded><![CDATA[<p>Corona Ads was initiated earlier this year as an alternative to limited ad-based monetization options at the time. Since its conception, we&#8217;ve added numerous <a href=https://marketplace.coronalabs.com/plugins/monetization target="_blank">monetization options</a> to the <a href=https://marketplace.coronalabs.com/ target="_blank">Corona Marketplace</a> that we believe are strong solutions for Corona developers &#8212; these include popular networks like <a href=https://marketplace.coronalabs.com/plugin/applovin target="_blank">AppLovin</a>, mediation providers like <a href=https://marketplace.coronalabs.com/plugin/appodeal target="_blank">Appodeal,</a> and child-friendly providers like <a href=https://marketplace.coronalabs.com/plugin/kidoz target="_blank">KIDOZ</a> and <a href=https://marketplace.coronalabs.com/plugin/superawesome target="_blank">SuperAwesome</a>, making Corona the leader in easy-to-implement monetization solutions.</p>
+<p>In addition to these monetization plugins &#8212; <a href=https://marketplace.coronalabs.com/plugins/monetization target="_blank">almost 20 in total</a> &#8212; we are excited to announce the new <a href=https://marketplace.coronalabs.com/products/corona-pro target="_blank">Corona Professional Bundle</a> for developers who wish to harness the power of other industry-leading ad networks.</p>
+<div style="width: 150px; float: right; margin-left: 30px;"><a href=https://marketplace.coronalabs.com/plugin/admob-premium-add-on target="_blank"><img class="alignnone wp-image-69225 size-thumbnail" src="/wordpress/wp-content/uploads/2016/12/admob-v2-e1482137413198-150x50.png" alt="admob-v2" width="150" height="50" /></a><br />
+<a href=https://marketplace.coronalabs.com/plugin/chartboost-premium-add-on target="_blank"><img class="alignright size-thumbnail wp-image-58766" src="/wordpress/wp-content/uploads/2013/05/Chartboost-logo-150x29.png" alt="Chartboost" width="150" height="29" /></a><br />
+<a href=https://marketplace.coronalabs.com/plugin/adcolony-premium-add-on target="_blank"><img class="alignright size-thumbnail wp-image-69218" src="/wordpress/wp-content/uploads/2016/12/adcolony-150x31.png" alt="adcolony" width="150" height="31" /></a></div>
+<p>The <a href=https://marketplace.coronalabs.com/products/corona-pro target="_blank">Corona Professional Bundle</a> is offered at $699/year &#8212; less than $59/month &#8212; and gives you access to:</p>
+<ul>
+<li>AdMob plugin (updated)</li>
+<li>Chartboost plugin (updated)</li>
+<li>AdColony plugin (updated)</li>
+<li>Unity Ads plugin (new)</li>
+<li>Splash Screen Control plugin</li>
+</ul>
+<p>With the four monetization options offered in this bundle, it’s important to note:</p>
+<ul>
+<li>There is <strong>no revenue share with Corona</strong>. You keep 100% of your ad revenue.</li>
+<li>You <strong>set up your own account</strong> with the ad network(s) and control your settings.</li>
+<li>These are standalone plugins and are not bound to Corona Ads.</li>
+</ul>
+<p>The new <a href=https://marketplace.coronalabs.com/products/corona-pro target="_blank">Corona Professional Bundle</a> is now available in the Corona Marketplace. After purchasing, the plugins above will be instantly available for activation in your developer account.</p>
+<p>In addition to being offered as part of the Corona Professional Bundle, <a href=https://marketplace.coronalabs.com/plugin/admob target="_blank">AdMob</a>, <a href=https://marketplace.coronalabs.com/plugin/chartboost target="_blank">Chartboost,</a> <a href=https://marketplace.coronalabs.com/plugin/adcolony target="_blank">AdColony </a>and <a href=https://marketplace.coronalabs.com/plugin/unity-ads target="_blank">Unity Ads</a> are also available individually at $199/year each, and the <a href=https://marketplace.coronalabs.com/plugin/splash-screen-control target="_blank">Splash Screen Control</a> plugin remains available for $99/year.</p>
+<p>Our other monetization plugins will remain free for you to use, just as they were originally designed.</p>
+<h4>Important</h4>
+<ul>
+<li>The updated versions of these monetization plugins require <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3005</a> or later. We encourage AdMob users to begin updating as soon as possible, but if you need time to migrate to the new plugin or find an alternative solution, use a build older than 2016.3005.</li>
+<li>Due to technical limitations, the changes to Chartboost and AdColony are effective immediately and also require updating to 2016.3005 or later. In exchange, if you integrated Chartboost or AdColony while they were offered via Corona Ads and you earned over $10.00 in combined ad revenue, you will be able to use these updated versions free-of-charge.</li>
+</ul>
+<h3>Retiring Corona Ads</h3>
+<p>In light of the changes above, and with a new focus on continual upkeep of the most popular monetization plugins, Corona Ads will be retired as a product and plugin by January 31, 2017. Developers currently using Corona Ads to monetize their apps will need to use <a href=https://docs.coronalabs.com/guide/monetization/monetization/index.html target="_blank">alternative monetization options</a>. As of today, we are no longer accepting new registrations for Corona Ads.</p>
+<h3>In summary</h3>
+<p>In the spirit of Corona itself, we want to continue offering a wide variety of monetization options, all cross-platform and simple to integrate (no native coding required). We believe that our current monetization plugins let you utilize an ideal blend of networks and solutions to fit your studio, business, or personal needs.</p>
+<p>Please join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums </a>to discuss these plans and plugins.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

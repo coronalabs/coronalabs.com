@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Coronium &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronium/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Coronium &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek After Dark #25 &#8211; Steam plugin, EAT, Coronium LS, CoronaCon, LuaConf, Win32 Pro Tips</title>
+		<link>/blog/coronageek/corona-geek-after-dark-25/</link>
+		<comments>/blog/coronageek/corona-geek-after-dark-25/#respond</comments>
+		<pubDate>Wed, 03 Aug 2016 16:07:08 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67707</guid>
+		<description><![CDATA[On Corona Geek After Dark #25, we talked about EAT (Ed's Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/fihLngJh_bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /> On Corona Geek After Dark #25, we talked about EAT (Ed&#8217;s Awesome Tool), Steam plugin, Coronium LS, CoronaCon, LuaConf, and Win32 Pro Tips.</p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-after-dark-25/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-after-dark-25-2016-08-03.mp3" length="153789721" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>From the Forum — Issue #134</title>
+		<link>/blog/2016/07/29/from-the-forum-issue-134/</link>
+		<pubDate>Fri, 29 Jul 2016 20:46:57 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Coronium LS]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[keystores]]></category>
+		<category><![CDATA[marketing]]></category>
+
+		<guid isPermaLink="false">/?p=67560</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>The release of Coronium LS beta</h3>
+<p>It’s great to watch an idea go from kernel to popcorn. <strong>Develephant’s</strong> Coronium has always been a boon to those of us who need a Lua-based server solution. It makes it easy for new Corona users to get started, while still being robust enough for those who are well versed in back-end server options.</p>
+<p>Now, the most recent beta development in Coronium-land is out in the wild. <a href=https://coronium.cloud/ target="_blank">Coronium LS</a>, which has been covered previously in <em>From the Forum</em>, can be freely downloaded and utilized by anyone looking to get their feet wet with this great server-side Lua development option. While it’s still in beta, other developers are already attesting to its strengths and quick startup time.</p>
+<p>Click through to the <a href=https://forums.coronalabs.com/topic/64759-release-coronium-ls-v100-beta/ target="_blank">original thread</a> for more information. Remember, new questions deserve new threads!</p>
+<h3>Creating keystores for Android</h3>
+<p>When first starting out, the methods necessary to build and deliver an app to the Google Play store seem a bit Byzantine. One particular step that seems to cause a lot of confusion is the generation of the keystore encryption.</p>
+<p>The purpose here is to ensure that your app isn’t being spoofed for nefarious purposes while putting your personal stamp on the encryption key. It’s definitely not the most user-friendly set of steps available, but they are definitely necessary if you plan on publishing for the Google Play store. The <a href=https://forums.coronalabs.com/topic/64772-keytool-to-bulid-release/ target="_blank">original thread</a> goes over the main steps and the pitfalls that you might encounter when creating your keystore.</p>
+<h3>The age-old question of game marketing</h3>
+<p>Interest in gaming keeps growing with no signs of waning. Consequently, eager developers fall in love with the combination of versatility and the low entry barrier that Corona offers.</p>
+<p>Eventually, these developers have their games all polished up, server maintenance done, localization checked, and in-app purchases all sewn up. Then, the challenging part comes: making people aware of the app, and making them want to download it!</p>
+<p>This <a href=https://forums.coronalabs.com/topic/64768-game-marketing-best-practices/ target="_blank">forum thread</a> talks about some of the best ways to go about getting attention as a new developer without a publishing contract. Check them out for yourself and, if you have any tips of your own, feel free to throw them on the pile!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone, and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #190 &#8211; Coronium LS demo &#8211; Creating an online leaderboard</title>
+		<link>/blog/coronageek/corona-geek-190/</link>
+		<comments>/blog/coronageek/corona-geek-190/#respond</comments>
+		<pubDate>Fri, 29 Jul 2016 19:28:37 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Corona Cloud]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[Lua Server]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=67564</guid>
+		<description><![CDATA[On this week's Corona Geek podcast, Chris Byerly demoed the latest version of Coronium LS ( Lua Server ) to create an online leaderboard with just a few lines of Coronium LS server side code and Corona SDK client side code. Catch a glimpse of some of the newest features.]]></description>
+				<content:encoded><![CDATA[<p>On this week&#8217;s Corona Geek podcast, Chris Byerly demoed the latest version of <a href=http://docs.coronium.cloud/ target="_blank">Coronium LS</a> ( Lua Server ), which is the next iteration of Coronium. Chris created an online leaderboard with just a few lines of Coronium LS server side code and <a href=http://docs.coronium.cloud/en/latest/API/Client/Usage/ target="_blank">Corona SDK client side code</a>.</p>
+<p>Coronium LS represents the latest and greatest advancements of Coronium to-date. Chris has put in two plus years of hard work on the Coronium project and with Coronium LS he has rolled in lessons learned and feedback from the Corona community.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/9zY-L-_ahmg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>If you don&#8217;t know the history, Coronium originally started as a personal project by Chris and has grown into an amazing Lua-based server side tool for Corona developers. Coronium LS is now an <a href=https://github.com/coroniumcloud/Coronium-LS target="_blank">open source project</a> that allows, and encourages, anyone to contribute to the project. This version of Coronium is a pre-cursor to Corona Cloud, which will be an enterprise product for those who don&#8217;t want to self host and manage their own instance of cloud server.</p>
+<p>Some of the new features of Coronium LS are public and private permission-based modules that can be used to either share information publicly via a web server or privately between client-server or between server modules. Data storage is handled via <a href=http://docs.coronium.cloud/en/latest/API/Server/MySQL/ target="_blank">MySQL</a> or <a href=http://docs.coronium.cloud/en/latest/API/Server/MongoDB/ target="_blank">MongoDB</a>, with the ability to mix and match between datasources. Coronium LS also supports the output of HTML, and JSON, plus plain text for IoT projects.</p>
+<p>Additional documentation and details can be found on the <a href=http://docs.coronium.cloud/ target="_blank">Coronium Lua Server</a> project website. If you love Lua and enjoy working with both client-side and server-side technologies, then Coronium LS is your newest creative outlet.</p>
+<p><strong>Panelists:</strong></p>
+<ul>
+<li><a href=http://ponywolf.com>Michael/ Wilson</a></li>
+<li><a href=http://mobileoctopus.com/ target="_blank">Noah Malewicz</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a></li>
+<li><a href=http://cravecreative.com/ target="_blank">Mike Hempfling</a></li>
+<li><a href=https://www.militantgame.com/ target="_blank">Steven Johnson</a></li>
+<li><a href=https://www.linkedin.com/in/robmiracle target="_blank">Rob Miracle</a></li>
+<li><a href=https://www.linkedin.com/in/perryclarke target="_blank">Perry Clarke</a></li>
+<li><a href=https://www.linkedin.com/in/charlesmckeever/ target="_blank">Charles McKeever</a></li>
+</ul>
+<p><strong>Promote Your Apps:</strong></p>
+<ul>
+<li><a href=https://coronalabs.wufoo.com/forms/showcase-app-submission/ target="_blank">Add your app to the Corona Showcase</a></li>
+<li><a href=https://coronalabs.wufoo.com/forms/case-study-app-submission/ target="_blank">Submit your app to be a Case Study candidate</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-190/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-190-2016-07-29-coronium-ls-demo-leaderboard.mp3" length="116020882" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>From the Forum — Issue #114</title>
+		<link>/blog/2016/03/11/from-the-forum-issue-114/</link>
+		<pubDate>Sat, 12 Mar 2016 03:51:28 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[debugging]]></category>
+		<category><![CDATA[leaderbaords]]></category>
+
+		<guid isPermaLink="false">/?p=66120</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Verbose debugging</h3>
+<p>The hard crash. We all know it. We all fear it. It’s no fun to run into an unhandled exception when you are really humming along in your IDE of choice. No matter how much you plan and how far along you are in your development cycle, it’s likely you’ll run into one of these problems.</p>
+<p>In the thread below, we see a Corona developer running into an issue where they are seeing a Runtime error in a very large function, and it is very hard to find the needle in this particular haystack. Searching for help, some of the more experienced Corona devs came in to provide a bit more clarity to the situation. Mainly, why exactly apps crash and what causes it. It’s well worth a read, so head on down and check it out!<br />
+<a href=https://forums.coronalabs.com/topic/61985-debugging/ target="_blank">https://forums.coronalabs.com/topic/61985-debugging/</a></p>
+<h3>Additional steps for the business app</h3>
+<p>Recently, Rob Miracle posted a <a href=/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/ target="_blank">fantastic blog write-up</a> detailing some of the updates to the business sample app included with Corona’s examples. Well-supported and informative, it covered a lot of interesting steps that can be used out-of-the-box for any productivity-minded app.</p>
+<p>What wasn’t covered, was the concept of a login mechanism, involving account logging and encryption. It’s a complicated topic, and one that was broached in the forum, by an intrepid developer looking for some guidance. Fortunately, Rob again jumped into the fray in order to help this developer out, and in doing so, laid down some useful workflow logic for anyone looking to gain a better understanding of logins can work, bouncing against a third-party server for authentication.</p>
+<p>Head down to the original thread to learn more!</p>
+<p><a href=https://forums.coronalabs.com/topic/62026-business-app-login-and-password-encryption-sample/ target="_blank">https://forums.coronalabs.com/topic/62026-business-app-login-and-password-encryption-sample/</a></p>
+<h3>Coronium for the uninitiated</h3>
+<p>When starting out on our Corona game development journey, one of the main stops along the way is getting our leaderboards set up. Giving players a tangible carrot to strive towards when toiling in your game world.</p>
+<p>That’s where the road gets a little bumpy. Should you use GPGS? GameCenter? Both? A third party option? There are several different ways to approach the problem. Creator of the Coronium Cloud Platform <strong>Develephant</strong> was able to drop some base knowledge on the subject, and what exactly is required to hit the ground running with a cross-platform leaderboard solution.</p>
+<p>Lots of good stuff in this thread, so I’m going to stop here and just tell you to click through!</p>
+<p><a href=https://forums.coronalabs.com/topic/61977-question-about-coronium-from-a-total-newbie/ target="_blank">https://forums.coronalabs.com/topic/61977-question-about-coronium-from-a-total-newbie/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek #110 &#8211; Coronium Game Server, Windows Phone Apps, and Swiping Objects</title>
+		<link>/blog/coronageek/corona-geek-110/</link>
+		<comments>/blog/coronageek/corona-geek-110/#respond</comments>
+		<pubDate>Mon, 06 Oct 2014 21:51:53 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Coronium GS]]></category>
+		<category><![CDATA[Game Server]]></category>
+		<category><![CDATA[Touch Events]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59767</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Corona Ambassador and Coronium developer, Chris Byerly walked us through a rock paper scissors demo game that shows off the new features of Coronium GS 1.0. We explored two new Windows Phone games that Tapps Games made with Corona SDK and we stepped through Corona code for swiping objects to fixed points on the screen.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/t76sZzqa06k?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Corona Ambassador and Coronium developer, Chris Byerly walked us through a <a title="Coronium GS Developer Bundle" href=https://bitbucket.org/develephant/coronium-gs-bundle target="_blank">rock paper scissors demo game</a> that shows off the new features of <a title="Coronium Game Server" href=http://coronium.gs/ target="_blank">Coronium GS 1.0</a>. We explored two new Windows Phone games that <a title="Games made with Corona SDK" href=http://tappsgames.com/ target="_blank">Tapps Games</a> made with Corona SDK and we stepped through Corona code for swiping objects to fixed points on the screen.</p>
+<p><strong>Compete In The &#8220;Geek Games&#8221;</strong></p>
+<p>Do you have mad gaming skills? Well put those skills to go use. Starting today you can<strong> post your <a title="2048 Hex" href=http://bit.ly/2048hex target="_blank">2048 Hex</a> high score</strong> to the <a title="Corona Geek Facebook page" href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook wall</a> for a chance to win a $50 gift card to a retailer of your choice! Multiple entries are allowed. Post each time you get a new high score. A winner will be announced on November 3rd. We&#8217;ll remind you throughout the month. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-109/ target="_blank">Corona Geek #109 – Lua Language Tips, No Time For Art Games, and Geek Trivia</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a title="RGB Express Mini Truck" href=https://itunes.apple.com/us/app/rgb-express-mini-truck-puzzle/id887362336?mt=8 target="_blank">RGB Express Mini Truck</a></li>
+<li>My Boo &#8211; <a href=http://www.windowsphone.com/en-us/store/app/my-boo/dd870cd8-e252-49f8-8e63-5236d1b48023 target="_blank">Windows Phone</a> | <a href=http://ad.apps.fm/Dm6vByTZs6XrYa6HnDBoMPE7og6fuV2oOMeOQdRqrE2Pk5_D_eXw-gGRFIUmThVOULuytCenpJX1yGI5yhg2Rqs9fU_WmcKcm593dSaW3bjmSrig7qZAzFJqIkJVY-Wl target="_blank">iOS</a> | <a href=http://ad.apps.fm/khREctHdVEuH4eIYa9CJLV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfJCFFAqUrx24c_d1ysznNtoh4Me8JHA_RJI60R3gmcJ9rN91TEReB1hIoEl4u6gVg5Uto3CnBHvTPLnKJfgwpZg target="_blank">Google Play</a> | <a href=http://www.amazon.com/gp/mas/dl/android?p=br.com.tapps.myboo target="_blank">Amazon</a></li>
+<li>Toilet Time &#8211; <a href=http://www.windowsphone.com/en-us/store/app/toilet-time/5f160ab2-a469-4c11-b908-dccc3e08845b target="_blank">Windows Phone</a> | <a href=https://itunes.apple.com/us/app/id736787261 target="_blank">iOS</a> | <a href=https://play.google.com/store/apps/details?id=br.com.tapps.toilettime target="_blank">Google Play</a> | <a href=http://www.amazon.com/gp/mas/dl/android?p=br.com.tapps.toilettime target="_blank">Amazon</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a title="Coronium Game Server" href=http://coronium.gs/ target="_blank">Coronium GS</a></li>
+<li><a href=https://www.youtube.com/watch?v=OlTRamT-7V0&list=PLlWSohAGdLDtpPYC_QpIJrXU01Mgs1x4Z target="_blank">Coronium GS on YouTube</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-110/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-110-2014-10-06-coronium-gs-windows-phone.mp3" length="57986188" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-110-2014-10-06-coronium-gs-windows-phone.mp3" length="57986188" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-110-2014-10-06-coronium-gs-windows-phone.mp3" length="57986188" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-110-2014-10-06-coronium-gs-windows-phone.mp3" length="57986188" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #107 – Using OOP With 30log and Building Multiplayer Games Using Coronium Game Server</title>
+		<link>/blog/coronageek/corona-geek-107/</link>
+		<comments>/blog/coronageek/corona-geek-107/#respond</comments>
+		<pubDate>Mon, 15 Sep 2014 22:29:00 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Apple Watch]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[OOP]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59569</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Ed Maurina from Roaming Gamer shared new insights into using 30log's library for objected oriented Lua to create OOP display objects and Coronium Cloud Developer Chris Byerly, demoed a multiplayer game using his new Coronium GS game server software.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/7SVIlJfRtR0?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Ed Maurina from Roaming Gamer shared new insights into using <a title="object oriented Lua" href=http://yonaba.github.io/30log/ target="_blank">30log</a>&#8216;s library for objected oriented Lua to create <a title="OOP Lua example code" href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2014/08/displayObject_OOP.zip target="_blank">OOP display objects</a> and Coronium Cloud Developer Chris Byerly, demoed a multiplayer game using his new <a title="Coronium Game Server" href=http://coronium.gs/ target="_blank">Coronium GS</a> game server software.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-106/ target="_blank">Corona Geek #106 – Source Tree Version Control Part 2, Coronium GS, and Phablet Mania</a></li>
+<li><a href=/blog/coronageek/corona-geek-103/ target="_blank">Corona Geek #103 – Creating Object Oriented Character Classes for Games</a></li>
+<li><a href=/university>Corona University &#8211; Corona SDK Guides, Tutorials, Videos</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://kwiksher.com/2014/09/02/kwiksher-future/ target="_blank">Last Chance to Purchase Kwik in 2014</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href=http://coronium.io/ target="_blank">Coronium &#8211; The Simple Cloud</a></li>
+<li><a href=http://coronium.io/gs/ target="_blank">Coronium GS</a></li>
+<li><a title="Object Oriented Lua Library" href=http://yonaba.github.io/30log/ target="_blank">30log object oriented Lua library</a></li>
+<li><a title="OOP Lua example code" href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2014/08/displayObject_OOP.zip target="_blank">Object Oriented Display Objects example code</a></li>
+<li><a title="Automatically Create App Icons Using Photoshop" href=https://github.com/beadpond/CreateAppIcons target="_blank">Photoshop Script for Creating App Icons</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-107/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-107-2014-09-15-oop-coronium-gs.mp3" length="68873641" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-107-2014-09-15-oop-coronium-gs.mp3" length="68873641" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-107-2014-09-15-oop-coronium-gs.mp3" length="68873641" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-107-2014-09-15-oop-coronium-gs.mp3" length="68873641" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #106 – Source Tree Version Control Part 2, Coronium GS, and Phablet Mania</title>
+		<link>/blog/coronageek/corona-geek-106/</link>
+		<comments>/blog/coronageek/corona-geek-106/#respond</comments>
+		<pubDate>Mon, 08 Sep 2014 22:03:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Version Control Software]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59497</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Coronium Cloud Developer Chris Byerly, walked us through part 2 of our version control discussion using Mercurial's Source Tree software. Chris shared insights on Mercurial's workflow, and tips for working solo or as part of a team. We also caught a glimpse of Coronium Game Server (GS), which Chris will be releasing docs and how-to videos for very soon. We'll also discussed the growing phablet trend and what it could mean for app developers.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/M7qmS1CQ9qI?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, <a href=http://Coronium.io/ target="_blank">Coronium Cloud</a> Developer Chris Byerly, walked us through part 2 of our version control discussion using <a href=http://www.sourcetreeapp.com/ target="_blank">Mercurial&#8217;s Source Tree software</a>. Chris shared insights on Mercurial&#8217;s workflow, and tips for working solo or as part of a team. We also caught a glimpse of <a href=http://coronium.io/gs/ target="_blank">Coronium Game Server</a> (GS), which Chris will be releasing docs and how-to videos for very soon. We&#8217;ll also discussed the growing phablet trend and what it could mean for app developers.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-105/ target="_blank">Corona Geek #105 – Using Mercurial’s Source Tree Version Control Software &#8211; Part 1</a></li>
+</ul>
+<p><strong>Apps</strong></p>
+<ul>
+<li><a href=http://snappysquirrel.com/ target="_blank">SnappySquirrel.com &#8211; Personal Finance for Kids</a></li>
+<li><a href=http://www.amazon.com/Maddie-Bears-Birthday-Bear-Books/dp/1494231948 target="_blank">Maddie Bear&#8217;s Birthday &#8211; Kindle Edition</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://kwiksher.com/2014/09/02/kwiksher-future/ target="_blank">Last Chance to Purchase Kwik in 2014</a></li>
+<li><a href=http://www.cultofmac.com/293807/phablet-shipments-expected-surpass-laptops-end-2014/ target="_blank">Apple Joining Phablet Mania</a></li>
+<li><a href=http://www.macrumors.com/2014/09/08/ipad-like-apps-5-5-inch-iphone-6/ target="_blank">iOS Phablet Design Opportunities</a></li>
+<li><a href=http://www.gizmag.com/phablet-comparison-2014-1/33026/ target="_blank">2014 Phablet Comparison</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href=http://coronium.io/ target="_blank">Coronium &#8211; The Simple Cloud</a></li>
+<li><a href=http://coronium.io/gs/ target="_blank">Coronium Game Server</a></li>
+</ul>
+<p><strong>Other Fun Stuff</strong></p>
+<ul>
+<li><a href=http://www.wacom.com/en/us/creative/intuos-creative-stylus-2 target="_blank">Intuos Creative Stylus 2</a> for iPad</li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-106/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-106-2014-09-08-soure-tree-part-2-coronium-gs-phablets.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-106-2014-09-08-soure-tree-part-2-coronium-gs-phablets.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-106-2014-09-08-soure-tree-part-2-coronium-gs-phablets.mp3" length="0" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-106-2014-09-08-soure-tree-part-2-coronium-gs-phablets.mp3" length="0" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #104 – Coronium Cloud Games, Sliding Menus, and Community Questions</title>
+		<link>/blog/coronageek/corona-geek-104/</link>
+		<comments>/blog/coronageek/corona-geek-104/#respond</comments>
+		<pubDate>Mon, 25 Aug 2014 21:52:50 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Community Questions]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[ScrollView]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59425</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Ed Maurina (aka Roaming Gamer) shared a few details around his Coronium Cloud game implementation, we walked through code for building sliding menus using scrollviews, and we answered more community questions.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/lhrscyPCNR8?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Ed Maurina (aka Roaming Gamer) shared a few details around his <a href=http://coronium.io/ target="_blank">Coronium Cloud</a> game implementation, we walked through code for <a href=/blog/2014/08/19/tutorial-building-a-sliding-menu/ target="_blank">building sliding menus using scrollviews</a>, and we answered more <a href=https://coronalabs.wufoo.com/forms/corona-geek-panel-questions/ target="_blank">community questions</a>.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-103/ target="_blank">Corona Geek #103 – Creating Object Oriented Character Classes for Games</a></li>
+<li><a href=/university target="_blank">Corona University &#8211; Corona SDK Guides, Tutorials, and Videos</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=/blog/2014/08/21/ios-building-issue/ target="_blank">App Submission Build Issue</a></li>
+<li><a href=/blog/2014/08/08/update-android-widget-themes/ target="_blank">Android Widget Themes</a></li>
+<li><a href=/blog/2014/08/12/tutorial-building-a-level-selection-scene/>Tutorial: Building a Level Selection Scene</a></li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href=http://coronium.io/ target="_blank">Coronium &#8211; The Simple Cloud</a></li>
+<li><a href=http://roaminggamer.com/makegames/ target="_blank">Roaming Gamer Game Templates</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-104/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-104-2014-08-25-coronium-sliding-menus-community-questions.mp3" length="61624513" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-104-2014-08-25-coronium-sliding-menus-community-questions.mp3" length="61624513" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-104-2014-08-25-coronium-sliding-menus-community-questions.mp3" length="61624513" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-104-2014-08-25-coronium-sliding-menus-community-questions.mp3" length="61624513" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #101 – Multi-player Flappy Bird, Coronium Updates, and Community Questions</title>
+		<link>/blog/coronageek/corona-geek-101/</link>
+		<comments>/blog/coronageek/corona-geek-101/#comments</comments>
+		<pubDate>Mon, 04 Aug 2014 23:16:09 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[Community Questions]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Flappy Bird]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=59325</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we talked about multi-player Flappy Bird, new and upcoming updates to Coronium, 2D animation using Spine, Apple's new $100 million dollard CDN, and we answered some community questions.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/GBucW6kgFYc?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we talked about multi-player Flappy Bird, new and upcoming updates to Coronium, 2D animation using Spine, Apple&#8217;s new $100 million dollar CDN, and we answered some community questions.</p>
+<p>The Corona Staff Panel Hangout has been <strong>rescheduled for next Monday, August 11th</strong>, so that means you have another week to <a href=http://bit.ly/corona-labs-101 target="_blank">submit your questions</a>. Questions can be serious or silly.</p>
+<p>Thank you to everyone who has supported the Corona Geek hangouts over the past two years. You are all super heroes!</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-100/ target="_blank">Corona Geek #100 – SMS App Installs and Implementing AdMob V2</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://www.sitepoint.com/2d-animation-tutorial-using-spine-mobile-apps/ target="_blank">2D Animation Using Spine and Corona</a></li>
+<li><a href=http://www.polygon.com/2014/8/1/5960051/flappy-birds-family-app-multiplayer target="_blank">Flappy Birds Multi-player for Amazon Fire TV</a></li>
+<li><a href=http://arstechnica.com/information-technology/2014/07/apples-multi-terabit-100m-cdn-is-live-with-paid-connection-to-comcast/ target="_blank">Apple&#8217;s CDN Is Live</a></li>
+<li><a href=http://bits.blogs.nytimes.com/2014/08/01/microsoft-sues-samsung-over-android-royalty-payments/?_php=true&_type=blogs&_r=0 target="_blank">Microsoft sues Samsung Over Android Royalty Payments</a></li>
+</ul>
+<p><strong>Books</strong></p>
+<ul>
+<li><a href=http://www.burtonsmediagroup.com/books/learning-mobile-application-development/ target="_blank">Learning Mobile Application &amp; Game Development with Corona SDK</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Beginning Mobile App Development with Corona</a></li>
+</ul>
+<p><strong>Plugins</strong></p>
+<ul>
+<li><a href=http://gremlininteractive.com/product-category/corona-plugins/ target="_blank">Plugins by Gremlin Interactive</a> ( Amazon Ads, Chartboost, Kiip, and Paypal )</li>
+</ul>
+<p><strong>Projects</strong></p>
+<ul>
+<li><a href=http://coronium.io/ target="_blank">Coronium &#8211; The Simple Cloud</a></li>
+<li><a href=https://bitbucket.org/develephant/mod_localize/wiki/Home target="_blank">Localize your apps with mod_localize</a> by Develephant</li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href=https://www.youtube.com/watch?v=MQYHT8MzRQU&feature=youtu.be target="_blank">Desperado IDE</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-101/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-101-2014-08-04-multi-player-flappy-bird-coronium-community-questions.mp3" length="65601442" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-101-2014-08-04-multi-player-flappy-bird-coronium-community-questions.mp3" length="65601442" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-101-2014-08-04-multi-player-flappy-bird-coronium-community-questions.mp3" length="65601442" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-101-2014-08-04-multi-player-flappy-bird-coronium-community-questions.mp3" length="65601442" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #95 &#8211; Coronium Cloud Updates, Fire Phone, and Comparing App Store Notes</title>
+		<link>/blog/coronageek/corona-geek-95/</link>
+		<comments>/blog/coronageek/corona-geek-95/#comments</comments>
+		<pubDate>Mon, 23 Jun 2014 21:51:10 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Stores]]></category>
+		<category><![CDATA[Cloud Code]]></category>
+		<category><![CDATA[Coronium]]></category>
+		<category><![CDATA[Fire Phone]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=58945</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout, Corona Ambassador, Chris Byerly walked us through the latest version of Coronium Cloud code. He's been hard at work adding user management, administrative tools, and enhanced push notification integration. We also had a round table discussion on Fire Phone along with some shared insights into whether Amazon's App Store does better for developers, compared to Apple and Google Play.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/DURTJbw-pz4?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout, Corona Ambassador, Chris Byerly walked us through the latest version of <a href=http://coronium.io/ target="_blank">Coronium Cloud</a> code. He&#8217;s been hard at work adding user management, administrative tools, and enhanced push notification integration. We also had a round table discussion on Fire Phone along with some shared insights into whether Amazon&#8217;s App Store does better for developers, compared to Apple and Google Play.</p>
+<p><strong>Also mentioned</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-94/>Corona Geek #94 &#8211; Apple App Store Changes, Composer GUI Beta Updates, and World Cup Open API</a></li>
+<li><a href=http://www.ladeezfirstmedia.com/apps/minute-stretches/ target="_blank">Minute Stretches for iOS</a></li>
+<li><a href=http://coronium.io/ target="_blank">Coronium Cloud</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Learning Mobile Application &amp; Game Development with Corona SDK</a></li>
+<li><a href=http://itc.acu.edu/mooc/ target="_blank">Open MOOC for Mobile App Development with Corona SDK</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Corona SDK Tutorials</a></li>
+<li><a href=http://spiralcodestudio.com/tag/corona-sdk/ target="_blank">Corona Pro Tip of the Day</a></li>
+<li><a href=http://youtu.be/KdVQoVW630I target="_blank">Spell/Weapons Cool Down Tutorial</a> ( video )</li>
+<li><a href=https://ghost.org/ target="_blank">Ghost Blogging Platform</a></li>
+</ul>
+<ul>
+<li>On Twitter, follow <a href=http://twitter.com/coroniumio target="_blank">Coroniumio</a>, <a href=http://twitter.com/develephant target="_blank">Develephant</a>, <a href=http://twitter.com/jenlooper target="_blank">JenLooper</a>, <a href=http://twitter.com/drbrianburton target="_blank">DrBrianBurton</a>, <a href=http://twitter.com/gpanimations target="_blank">GPAnimations</a>, <a href=http://twitter.com/emaurina target="_blank">EMaurina</a>, <a href=http://twitter.com/SergeyLerg target="_blank">SergeyLerg</a>, <a href=http://twitter.com/origintech target="_blank">OriginTech</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-95/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-95-2014-06-23-coronium-fire-phone-app-store-comparisons.mp3" length="61118692" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-95-2014-06-23-coronium-fire-phone-app-store-comparisons.mp3" length="61118692" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-95-2014-06-23-coronium-fire-phone-app-store-comparisons.mp3" length="61118692" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-95-2014-06-23-coronium-fire-phone-app-store-comparisons.mp3" length="61118692" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

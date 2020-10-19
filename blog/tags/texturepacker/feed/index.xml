@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TexturePacker &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/texturepacker/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>TexturePacker &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>App of the Week: Little Galaxy</title>
+		<link>/blog/2013/08/19/app-of-the-week-little-galaxy/</link>
+		<comments>/blog/2013/08/19/app-of-the-week-little-galaxy/#comments</comments>
+		<pubDate>Mon, 19 Aug 2013 23:03:41 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[arcade]]></category>
+		<category><![CDATA[Lua Glider]]></category>
+		<category><![CDATA[TexturePacker]]></category>
+
+		<guid isPermaLink="false">/?p=41750</guid>
+		<description><![CDATA[<div><a href="http://bitmapgalaxy.com/">Bitmap Galaxy</a>, a small studio based in Slovakia, had a vision to create an "endless" game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours.</div>
+
+<div style="margin-top:10px;">From this, <a href="https://itunes.apple.com/nz/app/little-galaxy/id576764076">Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</div>
+
+]]></description>
+				<content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-41752" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png" srcset="/wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512.png 180w, /wordpress/wp-content/uploads/2013/08/app_icon_little_galaxy_512x512-150x150.png 150w" sizes="(max-width: 180px) 100vw, 180px" />This week’s App of the Week comes to us from <a href=http://bitmapgalaxy.com/>Bitmap Galaxy</a>, a small studio based in Slovakia. This three-person team had a vision to create an &#8220;endless&#8221; game with a simple one-touch control and intuitive design — a game that could be easily learned and played for hours. They also aimed to create a game that appeals to players&#8217; emotions with a lovable character and storyline. From this, <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> was born: an arcade game set in space, featuring a small boy that jumps from planet to planet in search of a new home.</p>
+<p><img class="alignright size-full wp-image-41979" alt="Little Galaxy" src="/wordpress/wp-content/uploads/2013/08/Little-Galaxy.jpeg" />Upon launching Little Galaxy, you’re instantly transported to space, with the mission of helping the main character navigate the universe. Each planet is in constant rotation and it&#8217;s your job to transport the little boy from place to place by tapping the screen when he&#8217;s aligned with another planet. While it&#8217;s important to collect stars along the way, it takes skill to aim properly and avoid sending him into the abyss.</p>
+<p>The team worked with Corona SDK to build Little Galaxy, spending their free time polishing a game to delight players. When asked about working with Corona on the project, lead developer Peter Janosik told us, “Thanks to Corona SDK, it was easy to rapidly prototype all of our ideas. For us, this was definitely the most interesting part of the project.”</p>
+<p>Bitmap Galaxy relied heavily upon Corona&#8217;s display APIs during development. Peter noted that, &#8220;It’s really easy to work with sprite sheets and transitions; it saves a lot of time.” The team also reviewed new Corona features regularly and found that having access to Daily Builds helped them discover new API calls to resolve issues quickly. Additionally, they relied on <a href=http://www.mydevelopersgames.com/Glider/>Lua Glider</a> for debugging needs and <a href=http://www.codeandweb.com/texturepacker>TexturePacker</a> for sprite sheet support.</p>
+<p>Download <a href=https://itunes.apple.com/nz/app/little-galaxy/id576764076>Little Galaxy</a> from iTunes for $1.29 and watch for the game&#8217;s release for Android soon!</p>
+<p><iframe src="//www.youtube.com/embed/6_lscYW9BCE" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/19/app-of-the-week-little-galaxy/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Guest Piece: An Introduction to TexturePacker</title>
+		<link>/blog/2013/04/18/guest-piece-an-introduction-to-texturepacker/</link>
+		<comments>/blog/2013/04/18/guest-piece-an-introduction-to-texturepacker/#comments</comments>
+		<pubDate>Thu, 18 Apr 2013 18:25:40 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[sprite sheets]]></category>
+		<category><![CDATA[TexturePacker]]></category>
+
+		<guid isPermaLink="false">/?p=32203</guid>
+		<description><![CDATA[Today’s post comes to us from Andreas Loew, the creator of TexturePacker. Offering a full-featured graphical user interface, TexturePacker includes multi-touch support, zooming, and a tree view with all used sprites. Best of all, the extremely fast layout algorithm shows all changes in realtime.
+
+Learn more about TexturePacker, as well as how to use less texture memory and improve your game’s performance.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s post comes to us from Andreas Loew, the Founder of <a href=http://www.codeandweb.com/texturepacker/coronasdk>TexturePacker</a>. Offering a full-featured graphical user interface, TexturePacker includes multi-touch support, zooming, and a tree view with all used sprites. Best of all, the extremely fast layout algorithm shows all changes in realtime.</em></p>
+<p><em>Learn more about TexturePacker, as well as how to use less texture memory and improve your game&#8217;s performance.</em></p>
+<hr />
+<p><img class="alignleft size-full wp-image-32308" alt="Andreas Loew" src="/wordpress/wp-content/uploads/2013/04/AndreasLoew.jpg" />I am Andreas Loew, founder of <a href=http://www.codeandweb.com/>Code&#8217;n&#8217;Web</a>. Our goal is to help people to create awesome games by offering professional high quality tools.</p>
+<p>Currently we have two tools that work with Corona SDK: <a href=http://www.codeandweb.com/texturepacker/coronasdk?utm_source=corona&utm_medium=blogpost&utm_campaign=corona-blogpost-130418>TexturePacker</a>, which allows you to create sprite sheets that you can use with your game in less than 20 seconds, and <a href=http://www.codeandweb.com/physicseditor/coronasdk?utm_source=corona&utm_medium=blogpost&utm_campaign=corona-blogpost-130418>PhysicsEditor</a>, a physics body editor you can use to automatically trace the outlines of your game objects, creating collision shapes in seconds.</p>
+<p>In this post, I want to help you to make your game better by using less memory and getting higher frame rates.</p>
+<h3>Improving your game</h3>
+<p>For a game, you always need graphics &#8211; backgrounds, characters, objects. You paint them yourself or your artist delivers them &#8211; usually as PhotoShop PSD files, Flash animations, or already prepared as .png files.</p>
+<p>The first thing that comes to mind is placing all those graphics in your game&#8217;s folder and loading each one of them.</p>
+<p>But that&#8217;s a very bad idea! Why?</p>
+<h3>Reducing memory consumption</h3>
+<p><iframe src="http://player.vimeo.com/video/44440528?api=1" height="300" width="400" allowfullscreen="" frameborder="0"></iframe></p>
+<h3>Increasing your game&#8217;s performance</h3>
+<p><iframe src="http://player.vimeo.com/video/55557803?api=1" height="300" width="400" allowfullscreen="" frameborder="0"></iframe></p>
+<h3>Applying what you&#8217;ve just learned</h3>
+<p>Now you know why sprite sheets really help you to improve your game. So let&#8217;s see how you can use them in your game.</p>
+<p>For this you are going to do a simple setup with some graphics &#8211; and content scaling. TexturePacker will create the scaled assets for you &#8211; on the fly. No need to resize sprites by hand!</p>
+<p>The assets and the project can be downloaded here: <a href=http://www.codeandweb.com/public/corona-sdk/CoronaSDK-TexturePacker-Tutorial.zip>CoronaSDK-TexturePacker-Tutorial.zip</a>.</p>
+<h3>Creating the main sprite sheet</h3>
+<p><a href=http://www.codeandweb.com/texturepacker/coronasdk>Download TexturePacker</a>, available for MacOS and Windows. You can use it for free with some restrictions or buy the full version. You should use the trial version for this tutorial.</p>
+<p>After installation and your agreement to the license terms, you should see an empty TexturePacker screen.</p>
+<p>Now you should start by adding your assets: Drag and drop the complete assets folder onto the right pane. TexturePacker scans the contents of the folder and adds all known image formats. It creates a tree view on the right with a small icon for each sprite loaded.</p>
+<p>TexturePacker monitors this folder &#8211; any change made to a file will be updated in the sprite sheet as soon as you re-enter TexturePacker.</p>
+<p>Sprites from subfolders are also added &#8211; they will have the folder name as part of the sprite name &#8211; e.g. &#8220;cloud/cloud_01&#8221;.</p>
+<p><img class="alignnone size-large wp-image-32206" alt="sheet.tps" src="/wordpress/wp-content/uploads/2013/04/sheet.tps_-1024x715.png" /></p>
+<p>Set the <strong>Data Format</strong> to <strong>Corona SDK (image sheet)</strong> and choose PNG as the Texture format &#8211; which should be the default.</p>
+<p>To set <strong>Data file</strong> open the file dialog with the &#8220;â€¦&#8221; button and navigate to <strong>projects/sheet@2x.lua</strong>. For <strong>Texture file</strong> navigate to <strong>projects/sheet@2x.png</strong>.</p>
+<p>The path will be displayed as an absolute file path, but don&#8217;t worry &#8211; TexturePacker stores all paths relative to the .tps file (which is TexturePacker&#8217;s save file format) &#8211; so if you move your project, just make sure that the basic file layout is identical.</p>
+<p>If you press <strong>Publish</strong> now you should see a single sprite sheet &#8211; consisting of a .plist and a .lua file.</p>
+<h3>Creating resolution variants</h3>
+<p>To add the scaled-down resolution for older devices, click on the cog wheel next to <strong>AutoSD</strong>. This opens a popup window, as you can see on the next screen shot:</p>
+<p><img class="alignnone size-full wp-image-32207" alt="Resolution variants" src="/wordpress/wp-content/uploads/2013/04/Resolution-variants.png" /></p>
+<p>Select <strong>corona @2x</strong> from the <strong>Presets</strong> and press <strong>Apply</strong>. This fills the main extension with &#8220;@2x.&#8221; &#8211; that&#8217;s the part of the file name from the main sprite sheet that gets replaced to create the other resolutions.</p>
+<p>It also adds a scaling variant in the center view &#8211; with a scale factor of 0.5 and an extension of &#8220;.&#8221;. That means that the main sheet is scaled down by a factor of 0.5 and the &#8220;@2x.&#8221; is replaced with &#8220;.&#8221; &#8211; which results in <strong>projects/sheet.lua</strong> and <strong>projects/sheet.png</strong>.</p>
+<p>Make sure to check <strong>Force identical layout</strong> &#8211; Corona SDK needs this since it can only load 1 single .lua file containing the coordinates. It derives the coordinates for the scaled variants from this single file and thus requires all sprite sheets to have the same layout.</p>
+<p>Finally, press <strong>Publish</strong> to create the sprite sheet and its low-res variation.</p>
+<h3>Adding the sprite sheet to your project</h3>
+<p>First you need to set up the <strong>config.lua</strong> to allow multiple sprite sheets. I am using an iPhone resolution as base units and add the matching image suffix and scale factors.</p>
+View the code on <a href=https://gist.github.com/5406655>Gist</a>.
+<p>Next you need to load the sprite sheet data. This is done in <strong>main.lua</strong> using the following line:</p>
+View the code on <a href=https://gist.github.com/5406684>Gist</a>.
+<p>Now load the sheet&#8217;s texture and associate the sheet information with it:</p>
+View the code on <a href=https://gist.github.com/5406694>Gist</a>.
+<p>TexturePacker adds some convenience functions to the sheetInfo, allowing you to easily retrieve a sprite by its name &#8211; e.g. if you want the information for the background, simply use:</p>
+View the code on <a href=https://gist.github.com/5406703>Gist</a>.
+<p>Combined with adding the background image it&#8217;s just:</p>
+View the code on <a href=https://gist.github.com/5406713>Gist</a>.
+<p>The last 2 lines are for placing the image.</p>
+<p>You can use the sprite information with the <strong>newSprite API</strong>, too:</p>
+View the code on <a href=https://gist.github.com/5406716>Gist</a>.
+<h3>Conclusion</h3>
+<p>You&#8217;ve now learned why sprite sheets are important for your game because they:</p>
+<ul>
+<li>Reduce memory consumption</li>
+<li>Speed up the rendering process</li>
+<li>Keep your frame rates high</li>
+</ul>
+<p>You&#8217;ve also learned how you can use TexturePacker to create your game&#8217;s assets with ease:</p>
+<ul>
+<li>Drag &amp; drop the sprite</li>
+<li>Set up the parameters</li>
+<li>Press &#8220;Publish&#8221;</li>
+</ul>
+<p>Using sprite sheets has never been so easy &#8211; <a href=http://www.codeandweb.com/texturepacker/coronasdk>get TexturePacker</a> today.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/18/guest-piece-an-introduction-to-texturepacker/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

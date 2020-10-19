@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Android &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/android/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Android &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Android 64-bit is here&#8230;</title>
+		<link>/blog/2019/07/23/android-64-bit-is-here/</link>
+		<pubDate>Tue, 23 Jul 2019 15:46:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76303</guid>
+		<description><![CDATA[Corona Labs is happy to announce the general availability of the public beta of Android 64-bit Corona builds.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-71960" src="/wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-150x150.png 150w, /wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-570x570.png 570w, /wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB-500x500.png 500w" sizes="(max-width: 150px) 100vw, 150px" />Whew! That was a challenging update… But our engineering team has been working very hard and with much fanfare, we would like to introduce to you a publicly available Android 64-bit build of Corona.</p>
+<p>If you check the daily builds, you will find a <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">new daily build: 2019.3504</a>. This build should be stable enough for <em>a public beta</em> and for you to release apps to Google Play that meets all of their current new requirements.</p>
+<p>This includes:</p>
+<ul>
+<li>The August 1 deadline for 64-bit support for new apps (updated apps have a year to implement).</li>
+<li>The August 1 deadline to support Android SDK 28/Android 9/Pie (updated apps have to be using them by November 1, 2019)</li>
+<li>The recently changed AdMob requirements that require the AppId be included in the <code>AndroidManifest.xml</code> (<code>build.settings</code> file.)</li>
+<li>All Corona controlled plugins, updated to 64-bit, and many have been updated to the most recent SDK for those app plugins.</li>
+<li>Support for Android responsive icons</li>
+<li>Faster builds that are less dependent on network connections.</li>
+<li>Support for Android App Bundles (<code>.aab</code> files)</li>
+</ul>
+<p>While we are certain that there may still be edge-cases that need addressed, the only way to find them is to open this up to a wider audience. If you run into any edge case, please start a new thread in our <a href=https://forums.coronalabs.com/forum/664-android-64-bit-testing/ target="_blank" rel="noopener">Community Forums Android 64-bit testing channel</a> (please don&#8217;t add it to an existing thread.)</p>
+<p><strong><img class="alignright size-thumbnail wp-image-67966" src="/wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/09/badge-google-play-150x150.png 150w, /wordpress/wp-content/uploads/2016/09/badge-google-play.png 200w" sizes="(max-width: 150px) 100vw, 150px" />There are a few things to be aware of.</strong></p>
+<ul>
+<li><code>.aab</code> files require you to use <a href=https://support.google.com/googleplay/android-developer/answer/7384423 target="_blank" rel="noopener">Google&#8217;s new App Signing procedure</a>. While we have discouraged this in the past over your standard keystores, you have to use this now and once you convert your app to use Google&#8217;s new App Signing, you have to use it going forward, but the gains by having your app size reduced is worth it.</li>
+<li>Your first Android 64-bit build may take some time as we need to download additional content (about 250 Mb total) to support the more local-natured building. Future builds should run noticeably faster.</li>
+<li>Android&#8217;s new responsive icons require a completely different file/folder structure than putting a few <code>Icon-*dpi.png</code> files alongside <code>main.lua</code>. The best thing you can do is to use the Corona &#8220;Welcome&#8221; window, create a new project and copy the <code>AndroidResources</code> folder to your project. Look at how the files in each of the various folders are named and sized, and create your new app icons using those names and sizes and overwrite our template icons. We are working on the guide explaining the topic.</li>
+<li>If you&#8217;re using AdMob or Appodeal, you must add some new content to your <code>build.settings</code>. See <a href=/blog/2019/07/22/important-admob-and-other-ad-plugin-changes/ target="_blank" rel="noopener">yesterday&#8217;s post</a> for details.</li>
+<li>If you&#8217;re still using the legacy AdMob plugin <code>[plugin.google.play.services]</code>, you must remove it.<br />
+Several plugins still doesn’t have full 64-bit support.</li>
+</ul>
+<p>It is recommended that anyone building for Google Play, using ad or other plugins, update to this build as soon as possible.</p>
+<p>Remember to report issues regarding this update to the Forums!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Android 64-bit update July 4, 2019</title>
+		<link>/blog/2019/07/04/corona-android-64-bit-update-july-4-2019/</link>
+		<pubDate>Thu, 04 Jul 2019 17:03:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76292</guid>
+		<description><![CDATA[We thought we should provide an update on our 64-bit progress and share some good news with you…]]></description>
+				<content:encoded><![CDATA[<p><strong>We have some important (and good) updates regarding the Android 64-bit requirements.</strong></p>
+<p><img class="alignright size-full wp-image-30615" src="/wordpress/wp-content/uploads/2013/03/androidize-feat.png" alt="" width="175" height="185" />As you probably know, Google has been wanting developers to switch to 64-bit builds for some time. Converting Corona to Android 64-bit has been a major challenge for us given how our build system is constructed.</p>
+<p>Several months ago, Google set a hard date of August 1, 2019 for all apps to be 64-bit capable. If you do the math, that&#8217;s not far away.  Today, <strong><a href=https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html target="_blank" rel="noopener">Google granted Corona developers a break</a></strong><em>!</em></p>
+<p>According to the latest update to their &#8220;<a href=https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html target="_blank" rel="noopener">Getting ready for 64-bit</a>&#8221; document, Corona developers will not have to convert all of their existing 32-bit apps until August 2020.</p>
+<p><strong>What does this mean for you?</strong></p>
+<p>If you are readying a new app and August 1, 2019 comes, you will have to use a 64-bit version of Corona. However, you do not have to rush and update your existing apps by August 1 and you can continue to update them with a 32-bit version of Corona until August 1, 2020.</p>
+<p>For existing apps in Google Play, this is a huge release of pressure on you as the deadline now only impacts new apps released after the deadline.</p>
+<p><strong>Where is Corona at development wise?</strong></p>
+<p>We have made really good progress on Android 64-bit builds. There is currently a hidden build of Corona that:</p>
+<ul>
+<li>Has 64-bit support</li>
+<li>Supports Android SDK 28 (Android 9/Pie) as the target SDK</li>
+<li>Supports Adaptive Icons</li>
+<li>Supports Android App Bundles (makes your apps smaller)</li>
+<li>Works with most existing plugins</li>
+</ul>
+<p>There are a couple of known bugs and our team is working relentlessly to knock them out. Some developers have had success updating their apps with it.</p>
+<p>Some plugins from third-party developers still have 32-bit only code in their packages. We&#8217;ve reached out to them and they are working on updates, but how fast those updates happen is out of our control.<br />
+<strong><br />
+How can I get involved?</strong></p>
+<p>You can either visit our <a href=https://forums.coronalabs.com/forum/664-android-64-bit-testing/ target="_blank" rel="noopener">Android 64-bit testing forum</a> or join our <a href=/slack/ target="_blank" rel="noopener">Commuity Slack</a> and once in the system, join the <strong>#Android64</strong> channel.</p>
+<p>From either place you can access this hidden build, get instructions needed to start using it and have a targeted place to report issues.</p>
+<p>If you readying a new app, you certainly should start testing with the 64-bit build. If you just need updates, you can stay with the latest published daily build for now, but with all the features in the 64-bit version, you will want to start taking advantage of them as soon as possible.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://forums.coronalabs.com/forum/664-android-64-bit-testing/ target="_blank" rel="noopener">Corona&#8217;s Android 64-bit forums</a></p>
+</div>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=/slack/ target="_blank" rel="noopener">Join Corona&#8217;s community Slack</a></p>
+</div>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html target="_blank" rel="noopener">Read: Google&#8217;s announcement</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Google Icon changes</title>
+		<link>/blog/2019/05/14/google-icon-changes/</link>
+		<pubDate>Tue, 14 May 2019 15:51:39 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76270</guid>
+		<description><![CDATA[Google has new requirements for the Icon you upload to the Google Play developer portal for your apps and games. See if this affects you]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png" alt="" width="150" height="150" class="alignright size-thumbnail wp-image-72174" srcset="/wordpress/wp-content/uploads/2017/06/google-play-badge-150x150.png 150w, /wordpress/wp-content/uploads/2017/06/google-play-badge.png 200w" sizes="(max-width: 150px) 100vw, 150px" />This isn&#8217;t about adaptive icons. We are still working on those. This is about the 512&#215;512 that you upload to Google Play. Google is changing the rules on what is required for the developer portal. Previously they allowed you to have arbitrary shaped icons, but as of May 1, you&#8217;re required to provide a square shaped icon. You can read more about the <a href=https://android-developers.googleblog.com/2019/03/introducing-new-google-play-app-and.html rel="noopener" target="_blank">new requirements here</a>.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://android-developers.googleblog.com/2019/03/introducing-new-google-play-app-and.html target="_blank" rel="noopener">Google Play&#8217;s new icon requirements!</a></p>
+</div>
+<style>
+.btn_cta { border-color: #f96f29; background-color: #f96f29; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Using plugins with native Android builds</title>
+		<link>/blog/2017/10/19/using-plugins-with-native-android-builds/</link>
+		<pubDate>Thu, 19 Oct 2017 17:55:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=72935</guid>
+		<description><![CDATA[A frequently asked question is how to include plugins into Android based native projects. Learn how you can do that!]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-35232" src="/wordpress/wp-content/uploads/2013/05/Icon_Resources_Plugin.png" alt="" width="122" height="122" />When making Simulator builds, Corona magically binds plugins to your app for you. However on Native builds, this process is not automatic. Much like we did for <a href=/blog/2017/07/06/using-plugins-in-corona-native-projects-ios/ target="_blank" rel="noopener">Xcode builds</a>, we have come up with a way to help you get your Android based plugins into your Android Studio project.</p>
+<p>Unlike Xcode, where you run a <code>Download Plugins</code> scheme and we do all the work for you, we offer a command line script that will read your <code>build.settings</code> file and download the plugins to a common folder. From there, it&#8217;s your responsibility to integrate them into your Android Studio project. Each Android plugin may have additional settings and configuration that you need to complete before you can use it.</p>
+<p>The script is located at <code>android/download_plugins.sh</code> as part of the App template you start new projects with. To download plugins for an existing project, copy the download_plugin.sh to your <code>android</code> folder and run it from that folder.</p>
+<p>Hopefully this will help you with your native Android based Corona projects.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona updated to Google API level 25 (Android 7.1)</title>
+		<link>/blog/2017/03/07/corona-updated-to-google-api-level-25-android-7-1/</link>
+		<pubDate>Tue, 07 Mar 2017 22:21:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69709</guid>
+		<description><![CDATA[Corona Labs has updated daily build 2017.3049 to Android API level 25 (Android 7.1). Learn what this means for you.]]></description>
+				<content:encoded><![CDATA[<p>To help apps get featured and to provide support for more modern versions of Android, Corona Labs engineers have updated Corona to target <strong>Android API level 25</strong>. This gives you access to Android 7.0 and 7.1 features which Google often looks for when choosing featured apps for the Google Play store.</p>
+<p>These changes are effective in <a href=https://developer.coronalabs.com/release/2017/3049/ target="_blank">daily build 2017.3049</a> which will be made available today.</p>
+<p>With API level 25, there may be a few visual changes since more Material Design features are used, in particular around default status bars. Thus, we recommend that you test your apps before re-submitting them. If you do <strong>not</strong> want to target the new API levels, please continue to use a Corona build previous to 2017.3049 (these builds target API level 23).</p>
+<p>If you have questions or feedback about this change, please ask in the <a href=https://forums.coronalabs.com/forum/531-android/>Android forum</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Changes to Android minimum OS version</title>
+		<link>/blog/2016/12/21/changes-to-android-minimum-os-version/</link>
+		<pubDate>Thu, 22 Dec 2016 00:55:12 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=69264</guid>
+		<description><![CDATA[With upcoming enforcements from Google, along with the need to implement new features, we are updating the minimum Android OS version to 4.0.3. Read further to learn about this change.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/12/android-distribution-chart.png><img class="alignright wp-image-69307 size-medium" src="/wordpress/wp-content/uploads/2016/12/android-distribution-chart-300x150.png" alt="android-distribution-chart" width="300" height="150" /></a>Starting in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.3009</a>, we are changing the minimum supported version for Android from <strong>2.3.3</strong> to <strong>4.0.3</strong>. From this build onward, Corona device builds will <strong>not</strong> run on an Android device whose OS version is below 4.0.3.</p>
+<p>We are doing this for several reasons:</p>
+<h3>Google Play Services</h3>
+<p>When Google updates Google Play Services to version 10.2 <a href=https://android-developers.googleblog.com/2016/11/google-play-services-and-firebase-for-android-will-support-api-level-14-at-minimum.html target="_blank">early in 2017</a>, it will no longer support Android 2.3 &#8211; 3.2.6. Thus, we won&#8217;t be able to provide meaningful updates to the Google Play Services components for older Android versions. Some of these components include:</p>
+<ul>
+<li>AdMob</li>
+<li>Google Play Games Services</li>
+<li>Google Analytics</li>
+</ul>
+<h3>Core features</h3>
+<p>Some core Corona features that we wish to implement are only practical if we drop support for Android builds older than 4.0.3. For example, going forward, we need to place application icons in the <code>.apk</code>&#8216;s <code>/res/mipmap</code> directory instead of <code>/res/drawable</code>. This is now <em>required</em> for apps to be featured on Google Play.</p>
+<h3>Third-party SDK adherence</h3>
+<p>Many of the third-party SDKs we support via plugins have already dropped support for Android 2.x &#8211; 3.x. Others never supported those versions to begin with, or they required a lot of extra work to maintain/support for very little gain. Some of the plugins in this category include:</p>
+<ul>
+<li>Facebook</li>
+<li>AdColony</li>
+<li>InMobi</li>
+<li>KIDOZ</li>
+<li>Peanut Labs</li>
+<li>RevMob</li>
+<li>NFC (Near Field Control)</li>
+</ul>
+<h3>Tiny user base</h3>
+<p>Around the time of this writing, roughly 1.2% of Android devices use 2.3.3 &#8211; 2.3.7 and less than 0.2% use 3.0 &#8211; 4.0.2. Thus, it no longer makes sense for us to invest time and energy on preserving OS versions of the distant past.</p>
+<h3>Conclusion</h3>
+<p>Dropping support for older OS versions is not something we do casually or lightly &#8212; we want Corona developers&#8217; apps to run on the largest platform-respective OS base as possible. However, with less than 1.5% of Android devices using versions older than 4.0.3, along with Google encouraging (and sometimes enforcing) newer features, we feel this change is mandatory.</p>
+<p>Please join us in the <a href=https://forums.coronalabs.com/forum/541-announcements/ target="_blank">Corona Forums</a> if you have questions or concerns on this subject.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android Studio templates now available for Corona Enterprise</title>
+		<link>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/</link>
+		<comments>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/#comments</comments>
+		<pubDate>Wed, 25 May 2016 20:23:09 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+
+		<guid isPermaLink="false">/?p=66638</guid>
+		<description><![CDATA[Android Studio support for Corona Enterprise is here! Read further to learn how Android Studio can benefit your development.]]></description>
+				<content:encoded><![CDATA[<p>As of <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">Daily Build 2016.2886</a>, Android and iOS development for Corona Enterprise are finally on equal footing; Android Studio support for Corona Enterprise is here!</p>
+<p>Google released Android Studio 1.0 as the official IDE for Android Development in December 2014. This change brought several useful tools to the Android development landscape, but focused around the development of standard Android applications.</p>
+<p>For Corona Enterprise on Android, we simply relied on the Android command line tools and custom scripts for doing Enterprise development; no IDE integration whatsoever. This left Android Enterprise developers with very few tools to iterate on code quickly and the whole process more painful than it had to be.</p>
+<h3>What about the old project model?</h3>
+<p>Just as Google moved away from the Ant build system, so are we. Android Studio is the present and future; this is where we want to be.</p>
+<p>Now that Android Studio templates are available, <strong>the Ant project templates have been deprecated</strong> and all new Enterprise projects should use Android Studio.</p>
+<p>Despite being deprecated, documentation for using Enterprise with the Ant build system will still be available through around September or October of this year.</p>
+<h3>Getting started with Android Studio</h3>
+<p>If you&#8217;re new to Corona Enterprise or Android Studio, see our <a href=https://docs.coronalabs.com/daily/native/android/prereqs.html target="_blank">Android Prerequisites</a> guide for instructions on how to set up Android Studio for Corona Enterprise development.</p>
+<h3>Migrating to Android Studio</h3>
+<p>For existing Android Enterprise projects, see our <a href=https://docs.coronalabs.com/native/android/androidStudio/index.html>Migration to Android Studio</a> guide. We will be <strong>dropping support for the Ant project model </strong>in the coming months. Specifically, the public release in <strong>September/October</strong> will mark the end of Ant project support for Corona Enterprise. Please have all of the Enterprise apps that you&#8217;ll continue to support migrated by this time.</p>
+<h3>How Android Studio makes development easier</h3>
+<p>Android Studio brings several useful tools that make the Android Enterprise developer&#8217;s life much easier. Some of these include:</p>
+<h4>Code completion</h4>
+<p>Can&#8217;t remember what that exact Android API was? No problem – Android Studio&#8217;s got you covered!</p>
+<h4>Static Code Analyzer</h4>
+<p>This handy tool can inspect Java code throughout your project and help you catch possible bugs, simplify complex code snippets, find coding style issues, typos, and so much more. We highly recommend giving this a run via Analyze → Inspect Code&#8230;</p>
+<h4>JAR Decompilation</h4>
+<p>Ever been in a situation where your app is crashing inside some library that you don&#8217;t have the source code to? Assuming that library isn&#8217;t obfuscated with ProGuard, the JAR decompilation tool will let you take a peek into the implementation for better understanding of the library.</p>
+<h4>Integrated support for Android Virtual Device (AVD) testing</h4>
+<p>While it was possible to test out Corona Enterprise projects using Android Virtual Devices (AVDs) before, Android Studio makes this significantly better by offering improved performance and easy integration into the IDE.</p>
+<p>Testing with AVDs does come with some caveats you should be aware of:</p>
+<ul>
+<li>Since Corona is built with the ARMv7 architecture in mind, be sure to <strong>only</strong> use system images with ABI: <strong>armeabi-v7a</strong>.</li>
+<li>AVDs do <strong>not </strong>have Google Play installed on them. This means that testing things like Google Licensing, Expansion Files, or IAP cannot be done in AVDs.</li>
+<li>AVDs are a little slow to boot. Be patient and don&#8217;t accidentally close one AVD after running a single test.</li>
+</ul>
+<h4>No more command line</h4>
+<p>You can now do all building, deployment, and view logcat through Android Studio. No need for shell scripts!</p>
+<h4>No guessing at API Levels for Android APIs</h4>
+<p>Android Studio warns you if you use an API that was introduced later than your <code>minSDKVersion</code>. No more redesigning for older Android versions at the last minute.</p>
+<h4>Easier integration of common external libraries</h4>
+<p>While this doesn&#8217;t apply to libraries that are only distributed as JAR files, Android Studio makes it significantly easier to add things like the Android Support libraries and Google Play Services to your projects.</p>
+<p>A simple line in the dependencies block of your <code>build.gradle</code> script it all it takes for adding in whichever version of the Android Support libraries you desire:</p><pre class="crayon-plain-tag">dependencies {
+    ...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+}</pre><p>For Google Play Services, you can even <a href=https://developers.google.com/android/guides/setup?#add_google_play_services_to_your_project>select which components of it</a> to compile into your app. This is especially helpful if your app is getting close to the <a href=http://developer.android.com/tools/building/multidex.html?#about>method reference limit</a> for a single dex file.</p>
+<h4>Multi-dex support is now easy as pie</h4>
+<p>This can now be added to Corona Enterprise projects using the simple steps outlined by Google <a href=http://developer.android.com/tools/building/multidex.html target="_blank">here</a>.</p>
+<h3>Testimonials</h3>
+<p>Still not convinced that Android Studio is the best thing since sliced bread? Read these testimonials from our engineers:</p>
+<ul>
+<li><em>&#8220;I don&#8217;t have to switch between Sublime Text and the Terminal 200 times a day now!&#8221;</em> — Danny Glover</li>
+<li><em>&#8220;It&#8217;s like Xcode for Android&#8230;.but better.&#8221;</em> — Ingemar Bergmark</li>
+<li><em>&#8220;The only disadvantage of using Android Studio over the old Ant method is&#8230; oh, well, there is none.&#8221;</em> — Sergey Lerg</li>
+</ul>
+<h3>Regarding AVD testing</h3>
+<p>If you&#8217;re giving AVD testing a try for the first time with Android Studio, there are some best practices you should be aware of:</p>
+<p>You <strong>should </strong>use AVD testing for:</p>
+<ul>
+<li><strong>Testing UI on form factors that aren&#8217;t readily available to you.</strong> While Google&#8217;s <a href=https://developers.google.com/cloud-test-lab/overview>Android Cloud Test Lab</a> does allow some form of UI testing, you&#8217;ll be able to iterate faster using AVDs.</li>
+<li><strong>Testing with OS versions that aren&#8217;t readily available to you.</strong> If your app is using some APIs or features that aren&#8217;t available on all the API Levels you support, this is a good way to quickly test behaviors on any questionable API levels.</li>
+<li><strong>Testing situations that are difficult to set up on actual devices.</strong> The emulator that AVDs run in allow you to mock up situations that may be more difficult to test on real hardware. For example, you can mock up the battery state and phone calls.</li>
+</ul>
+<p>You <strong>should not</strong> use AVD testing for:</p>
+<ul>
+<li><strong>Performance testing.</strong> Because this is an emulated environment, the performance you see with an AVD is not the same as what you&#8217;ll see on real hardware. For bigger apps, testing in this manner may not produce usable/practical results.</li>
+<li><strong>As a substitute for on-device testing.</strong> You should make sure your app works on a plethora of actual hardware before submitting it anywhere.</li>
+</ul>
+<p>For more info, consult Google&#8217;s <a href=http://developer.android.com/tools/devices/managing-avds.html>Managing AVDs with the AVD Manager</a> Guide.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/25/android-studio-templates-now-available-for-corona-enterprise/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Multidex Support for Android Builds in Corona SDK</title>
+		<link>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/</link>
+		<comments>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/#comments</comments>
+		<pubDate>Thu, 31 Mar 2016 20:55:06 +0000</pubDate>
+		<dc:creator><![CDATA[ajay]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[multidex]]></category>
+
+		<guid isPermaLink="false">/?p=66280</guid>
+		<description><![CDATA[Corona SDK now has multidex support for Android builds starting 2016.2853. Learn what multidex does for you. ]]></description>
+				<content:encoded><![CDATA[<p>With the recent wave of new plugins, some Corona developers have reported Android build failures with errors like this:</p><pre class="crayon-plain-tag">Encountered 65k symbol DEX limit. Reducing the number of plugins will help avoid this limit.</pre><p>This error happens due to a design limitation in the Android platform where the file containing the compiled Android code is limited to 65k symbols. More information on this limitation can be found <a href=http://developer.android.com/tools/building/multidex.html?#about>here</a>.</p>
+<p>Today, we are pleased to announce that Corona SDK projects built for Android are no longer subject to this limit, thanks to Multidex support!</p>
+<h3>What is Multidex support?</h3>
+<p>Multidex support allows the Android build system to generate multiple files containing Android bytecode and be able to load symbols between the two dynamically. These Android bytecode files are known as DEX files and as previously mentioned, each one has a hard limit of 65k symbols.</p>
+<h3>How do I take advantage of multidex in Corona SDK?</h3>
+<p>The only thing you&#8217;ll need to do to take advantage of multidex support is upgrade to <a href=https://developer.coronalabs.com/downloads/daily-builds/>daily build 2016.2853 or later</a>. After that, you don&#8217;t have to do <span style="text-decoration: underline;"><strong>anything</strong></span> to perform a multidex build for Android. Just do an Android build as you normally would and our build system will take care of the rest for you.</p>
+<h3>How does Corona address known multdex limitations?</h3>
+<p>The multidex system isn&#8217;t perfect for older versions of Android and there are <a href=http://developer.android.com/tools/building/multidex.html?#limitations target="_blank">known limitations</a>. We&#8217;ve done our best to ensure Corona-made apps aren&#8217;t hindered by these limitations.</p>
+<p class="">That said, we still advise you test your project on older versions of Android (2.3.3 &#8211; 4.0). If your project does run into any of the limitations listed in the link above, you may have to change the <code>minSdkVersion</code> of your project to <a href=http://developer.android.com/about/versions/android-4.0.html>API Level 14 (Android 4.0)</a>. You can do this by adding the following to your <code>build.settings</code>:</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    android =
+    {
+        minSdkVersion = &quot;14&quot;,
+    },
+}</pre><p></p>
+<h3>Impact on Android Builds through Corona SDK.</h3>
+<p>Generating Android apps that utilize multiple DEX files isn&#8217;t a cheap process. You may see a slight increase in build times because of this.</p>
+<h3>Reporting Issues</h3>
+<p>Should you encounter any issues with this, please let us know by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+<p>Feel free to discuss this in our <a href=https://forums.coronalabs.com/forum/531-android-including-kindle-and-nook/ target="_blank">Forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/31/announcing-multidex-support-for-android-builds-in-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Breaking change: Android 6 and device IDs</title>
+		<link>/blog/2016/02/23/breaking-change-android-6-and-device-ids/</link>
+		<comments>/blog/2016/02/23/breaking-change-android-6-and-device-ids/#comments</comments>
+		<pubDate>Tue, 23 Feb 2016 15:37:15 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[permissions]]></category>
+
+		<guid isPermaLink="false">/?p=65748</guid>
+		<description><![CDATA[Users who upgrade to Android 6 will likely have a different deviceID than they had with earlier versions of Android. Learn how to ensure that your app continues to get the same ID as before.]]></description>
+				<content:encoded><![CDATA[<p>Before the release of Android 6, users were regularly asked to grant permissions when installing new apps. Often times users were asked to grant the <code>android.permission.READ_PHONE_STATE</code> permission, which is considered a dangerous permission. This caused many people to not install apps for fear of what the apps might be doing with that granted permission.</p>
+<p>Android 6 eases those fears by moving permissions to an on-demand system. Now you can request <code>android.permission.READ_PHONE_STATE</code> when your app needs it. However, this change creates an issue with the Corona SDK API that allows you to get the device&#8217;s device ID using <a href=https://docs.coronalabs.com/api/library/system/getInfo.html?#deviceid target="_blank"><code>system.getInfo("deviceID")</code></a>.</p>
+<p>If the user&#8217;s device grants the <code>android.permission.READ_PHONE_STATE</code> permission, then the device&#8217;s unique phone ID (IMEI, MEID or ESN depending on the carrier) is returned. For devices without a phone or which have not granted the permission, a unique system ID assigned by the operating system is returned.</p>
+<p>If your app currently uses the deviceID value, it&#8217;s very likely that any users who upgrade to Android 6 will have a different <code>deviceID</code> than they had with earlier versions of Android. If it is important to your app to maintain the same ID, you must take steps to ensure that your app continues to get the phone ID instead of the OS ID.</p>
+<p>You can do this in main.lua by requesting the proper <code>android.permission.READ_PHONE_STATE</code> permission before attempting to get the deviceID. Consider this code:</p><pre class="crayon-plain-tag">-- get the default deviceID
+
+local deviceID = system.getInfo( &quot;deviceID&quot; )
+
+local deviceIDText = display.newText(deviceID, display.contentCenterX, 50, native.systemFontBold, 20 )
+
+local function appPermissionsListener( event )
+	-- regardless of what the user chose, we now either have the Phone permission or we don't
+	-- so grab the current deviceID in case it's different than the pre-permission check value.
+	deviceID = system.getInfo( &quot;deviceID&quot; )
+	deviceIDText.text = deviceID
+end
+--
+-- all of this only matters for Android 6 or later, so don't bother non-Android 6 users:
+--
+if system.getInfo( &quot;androidApiLevel&quot; ) &amp;gt;= 23 then 
+	-- Ah ha! Android 6 or later
+	--
+	-- Check to see if the user has previouslly granted permissions.
+	-- if they have not, then we should prompt them to ask.
+	--
+	local grantedPermissions = system.getInfo( &quot;grantedAppPermissions&quot; )
+	local hasPhonePermission = false
+
+	for i = 1, #grantedPermissions do
+		--
+		-- check for the specific READ_PHONE_STATE permission or the &quot;Phone&quot; group permission
+		--
+		if &quot;android.permission.READ_PHONE_STATE&quot; == grantedPermissions[i] or &quot;Phone&quot; == grantedPermissions[i] then
+			-- found phone permissions
+			hasPhonePermission = true
+			-- exit the loop.
+			break
+		end
+	end
+
+	--
+	-- if we get to this point and hasPhonePermission is false, then we didn't find it in the 
+	-- permissions list, so prompt the user for it.
+	--
+	if not hasPhonePermission then
+		--
+		-- Create a table for the options to pass to requestAppPermission
+		--
+		local permissionOptions =
+		{
+			appPermission = &quot;android.permission.READ_PHONE_STATE&quot;,
+			urgency = &quot;Critical&quot;,
+			listener = appPermissionsListener,
+			rationaleTitle = &quot;Read phone state required&quot;,
+			rationaleDescription = &quot;This app needs this state to retrieve previously saved data. Re-request now?&quot;,
+			settingsRedirectTitle = &quot;Alert&quot;,
+			settingsRedirectDescription = &quot;Without the ability to access your device's unique ID, it can't function properly. Please grant camera access within Settings.&quot;
+		}
+		native.showPopup( &quot;requestAppPermission&quot;, permissionOptions )
+	end
+end</pre><p>Since the OS-based ID doesn&#8217;t require special permissions, we recommend that you standardize on the OS generated ID instead of the Phone ID moving forward.</p>
+<p>Have questions? Join us in the <a href=https://docs.coronalabs.com/api/library/system/getInfo.html?#deviceid target="_blank">Corona Labs Android forum</a>!</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/23/breaking-change-android-6-and-device-ids/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Introducing new Android 6 features</title>
+		<link>/blog/2016/02/16/introducing-new-android-6-features/</link>
+		<comments>/blog/2016/02/16/introducing-new-android-6-features/#comments</comments>
+		<pubDate>Wed, 17 Feb 2016 00:13:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android 6]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[marshmallow]]></category>
+
+		<guid isPermaLink="false">/?p=65566</guid>
+		<description><![CDATA[Initial Android 6 support has arrived as of daily build 2016.2828. Read further to learn about changes which may impact you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65567" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/android-6-marshmallow-150x150.png" alt="android-6-marshmallow" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/02/android-6-marshmallow-150x150.png 150w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow-300x300.png 300w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow-500x500.png 500w, /wordpress/wp-content/uploads/2016/02/android-6-marshmallow.png 512w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs is pleased to announce initial support for <strong>Android 6</strong> &#8220;Marshmallow&#8221; in <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.2828</a> and later. This brings some significant changes and improvements to Android developers.</p>
+<h3>Overview</h3>
+<p>Android 6 introduces some pretty fantastic changes. One of the most significant involves &#8220;on-demand permissions&#8221; which behave more like iOS in that, instead of requesting several permissions from the start, you can defer the request for a permission until you need it.</p>
+<p>On the Corona side, some additions and changes for Android 6 include:</p>
+<ul>
+<li><span class="comment-text ">Additions to <a href=https://docs.coronalabs.com/daily/api/library/native/showPopup.html?#requestapppermission target="_blank">native.showPopup()</a> to request permissions at appropriate times in your app, along with methods to handle the user&#8217;s response to these requests.</span></li>
+<li>Additions to <a href=https://docs.coronalabs.com/daily/api/library/native/canShowPopup.html?#requestapppermission target="_blank">native.canShowPopup()</a> to check whether you&#8217;re on a platform that supports requesting permissions.</li>
+<li>Additions to <a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">system.getInfo()</a> related to which permissions have been granted or denied.</li>
+<li>Enhancement of <a href=https://docs.coronalabs.com/daily/api/library/media/hasSource.html target="_blank">media.hasSource()</a> to check for both the existence of a camera and whether the app has permission to access it.</li>
+<li><span class="comment-text ">Existing Lua APIs that require permissions will now prompt the user. By default, these will behave similar to permission requests on iOS.</span></li>
+</ul>
+<h3>Important notes</h3>
+<div>With any new release, there are some known issues you should be aware of:</div>
+<ul>
+<li><span class="comment-text ">Plugins which use any permissions in Android&#8217;s <a href=http://developer.android.com/guide/topics/security/permissions.html?#permission-groups target="_blank">dangerous permissions and permission groups</a> table are at risk of breaking. Plugin developers should test against <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank">daily build 2016.2828</a> or later to see if their plugin may need to updated to support the new permissions framework. We will have more information on the process as we come closer to the next public release.</span></li>
+<li><span class="comment-text ">Apps using expansion files should have <code>STORAGE</code> permissions granted before launching.</span></li>
+<li>The runtime permission model introduces a behavior change to <code>system.getInfo("deviceID")</code> (<a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">reference</a>) which makes it possible for a user to manipulate the value returned from this API call. Depending on the user&#8217;s action, this may negatively impact analytics that an app is collecting which depend on the results of this API being consistent. See the <a href=https://docs.coronalabs.com/daily/api/library/system/getInfo.html target="_blank">documentation</a> for more details on how to handle this issue. Also note that you&#8217;ll have to restart your app to see the related changes.</li>
+</ul>
+<h3>Feedback and issues</h3>
+<p>We would like to get your feedback on Android 6 and the new APIs. Let us know of any issues you encounter by filing a <a href=https://developer.coronalabs.com/content/bug-submission target="_blank">bug report</a>. Please remember that a bug report should contain the minimal amount of code (<code>main.lua</code>) to show the problem, along with <code>config.lua</code> and <code>build.settings</code>. If your project requires any artwork or sound, make sure they are also included in the submitted project.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/16/introducing-new-android-6-features/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

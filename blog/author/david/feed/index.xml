@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>david &#8211; Corona Labs</title>
+	<atom:link href="/blog/author/david/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>david &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Guest Post: Building a Beautiful Business App with Corona</title>
+		<link>/blog/2015/04/29/guest-post-building-a-beautiful-business-app-with-corona/</link>
+		<comments>/blog/2015/04/29/guest-post-building-a-beautiful-business-app-with-corona/#comments</comments>
+		<pubDate>Wed, 29 Apr 2015 14:00:38 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+
+		<guid isPermaLink="false">/?p=62587</guid>
+		<description><![CDATA[This post comes courtesy of David Haynes, a Corona developer at <a href="https://shawfloors.com/">Shaw Floors</a>. The app, <a href="https://itunes.apple.com/us/app/floorvana-by-shaw-floors/id945472387?mt=8">Floorvana</a>, is available on the iTunes App Store and is currently being featured in a TV commercial airing on the DYI Network and HGTV!]]></description>
+				<content:encoded><![CDATA[<p><em>This post comes courtesy of David Haynes, a Corona developer at <a href=https://shawfloors.com/>Shaw Floors</a>. The app, <a href=https://itunes.apple.com/us/app/floorvana-by-shaw-floors/id945472387?mt=8>Floorvana</a>, is available on the iTunes App Store and is currently being featured in a TV commercial airing on the DYI Network and HGTV the week of 4/27-5/03/15. See the video at the bottom of this post. Thanks David!</em></p>
+<hr>
+<p>Back in mid-December, we released a business app written with Corona SDK &#8212; Floorvana by Shaw Floors.  Floorvana was designed to help a consumer choose the perfect flooring product (or at least narrow the search) by creating a color palette from her own photo(s), then providing options to best match her inspiration.</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image1.jpg" alt="image1" width="480" height="360" class="alignnone size-full wp-image-62593" /></p>
+<p>We just launched the project in a more official way this past week at the Shaw AWESOME convention in Orlando, FL, and it was a massive hit. Shaw has really put a lot of effort into marketing the app, and I think you&#8217;ll start to see it pop up a lot more all over the place. Many of the dealers will be placing Floorvana kiosks in their stores too.</p>
+<p>When I arrived at our hotel in Orlando, there were Shaw banners everywhere, which made sense, but I was blown away by perhaps the simplest thing &#8212; the room key.</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image2.jpg" alt="image2" width="480" height="640" class="alignnone size-full wp-image-62592" /></p>
+<p>That&#8217;s our app on the room key! Holy crap!</p>
+<p>They also had stand up things like this everywhere:</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image3.jpg" alt="image3" width="480" height="640" class="alignnone size-full wp-image-62591" /></p>
+<p>And it was on displayed (in rotation) on the 4-sided jumbotron in the center of the convention:</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image4.jpg" alt="image4" width="480" height="640" class="alignnone size-full wp-image-62590" /></p>
+<p>It was also featured on tons of swag that was given away, including pens, bracelets, and bags.  Everywhere we went at this massive hotel/conference center, there was something that said Floorvana.  The keynote presentation that day started out with a performance from Team Iluminate, whom I highly recommend checking out on YouTube. The fact that the app I&#8217;ve been developing was talked about during that same keynote is a little bit mind blowing for me.</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image5.jpg" alt="image5" width="823" height="520" class="alignnone size-full wp-image-62589" /></p>
+<p>As the lead developer on the project, I received a good bit of flak for using Corona SDK for a business app because &#8220;it&#8217;s just for games!&#8221;  In my mind, though, it was a great way to save time and effort, in order to get the project where it needed to be more quickly.  Our design team created a user experience that was easy to use, compelling, and platform-agnostic, so it looked equally at home on iOS or Android.</p>
+<p>It also looked pretty great streamed (with an Apple TV) to a 50&#8243; television designed to look like a giant iPhone:</p>
+<p><img src="/wordpress/wp-content/uploads/2015/04/image6.jpg" alt="image6" width="640" height="480" class="alignnone size-full wp-image-62588" /></p>
+<p>As we developed Floorvana, just like with any software project, we had a few challenges, but we always received help and guidance from the Corona staff and community. The new textfield scaling improvements could not have come at a better time.  And Sergey Lerg&#8217;s latest config.lua helped correct some visual discrepancies as well, so thanks for that!</p>
+<p>I think we&#8217;ve proven that with a good design, Corona is more than capable of handling business apps.</p>
+<p>View more information, including the commercial for Floorvana (which looks incredible to me, but i&#8217;m biased), here:<br />
+<a href=http://shawfloors.com/floorvana>http://shawfloors.com/floorvana</a></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Zfm0dJHbKFg" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/04/29/guest-post-building-a-beautiful-business-app-with-corona/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Guest post: 3 ways to more effectively re-engage your players</title>
+		<link>/blog/2015/02/09/guest-post-3-ways-to-more-effectively-re-engage-your-players/</link>
+		<pubDate>Tue, 10 Feb 2015 00:09:28 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+
+		<guid isPermaLink="false">/?p=61402</guid>
+		<description><![CDATA[This is a guest post by Long Vo, co-founder of GameThrive, on how to best re-engage your players.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s guest post is by Long Vo of GameThrive. GameThrive is a powerful Push Notifications platform for mobile games and apps built by game developers. GameThrive is absolutely free for any developers building apps exclusively with Corona SDK.</em></p>
+<hr/>
+<p><img src="/wordpress/wp-content/uploads/2015/02/Logo_GameThrive_Sponsorship_Web.png" alt="GameThrive logo" width="240" height="62" class="alignright size-full wp-image-61419" />So, you’ve toiled over the last several months or year making an awesome mobile game. You release it into the app stores and have gotten a large number of players engaged and playing the heck out of your game. Over time, these players will start dropping off. If you’re like most other app devs, you’ve maybe not even implemented Push Notifications or you do very little in the way of using said Push Notifications to keep your players engaged. And, just like those other app devs, you’re letting your players slip away, losing potential userbase growth and income from ads or in-app purchases.</p>
+<p>Here are 3 ways to send more effective Push Notifications using <a href=http://gamethrive.com>GameThrive/</a>&#8212; a free Push platform for Corona Devs. With GameThrive, you can set notifications to go out automatically when players reach criteria you set in player segments. </p>
+<h3>Automatically Remind Inactive Players to Play</h3>
+<p>Keep track of how active your players are. Reminders should be issued in decreasing frequency the longer they have been inactive. The trick is not to be too annoying that you risk them uninstalling your app. Your messages should also be tailored depending on how long they’ve been inactive. </p>
+<p>Using GameThrive’s Automatic Messages, you can set up a different message to go out when your players reach a specific level of inactivity. </p>
+<p><em>You can send a message for when a player is inactive for 4 days.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt1.png" alt="GameThrive" width="938" height="350" class="alignnone size-full wp-image-61411" /></p>
+<p><em>Or, you can actively remind a player every 3 days if they’ve been inactive for at least a week.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt2.png" alt="GameThrive" width="938" height="647" class="alignnone size-full wp-image-61410" /></p>
+<h3>Encourage Re-engagement with Player Progress Reminders </h3>
+<p>If your game has a leveling mechanic to it, players who invest time into leveling don’t want to waste their effort. If a player hasn’t played your game in a while, simply remind them how close they are to achieving another milestone to encourage them to come back and play.</p>
+<p>Using GameThrive’s User Tags, you can track a player’s level in the game and send an appropriate message to re-engage them.</p>
+<p><em>First, create a segment for the progress of your player. Once your segment is created, you can then create a Filter for Player Tags based on the Player’s EXP Level.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt3.png" alt="GameThrive" width="768" height="210" class="alignnone size-full wp-image-61409" /></p>
+<p><em>Your final segment should look something like this. </em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt4.png" alt="GameThrive" width="938" height="230" class="alignnone size-full wp-image-61408" /></p>
+<p><em>Finally, you can set up an Automatic Message using those segments to send them if they’ve been inactive for a week.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt5.png" alt="GameThrive" width="938" height="647" class="alignnone size-full wp-image-61407" /></p>
+<h3>New Game Updates are a Great Way to Re-engage your players</h3>
+<p>Any time you add new features or make a game update is a great way to get your players to come back and re-engage with your app.</p>
+<p>On iTunes, when you release an update to your app, all your ratings and reviews get archived to that version while your new version will have no ratings whatsoever. While we don’t recommend directly asking for reviews in the notification itself, you can pass metadata through the notification to present an in-game message inviting users to rate your game when they click the notification.</p>
+<p><em>You can include data in the Notification that your app can use to trigger a Ratings Prompt when the Notification is received.</em></p>
+<p><img src="/wordpress/wp-content/uploads/2015/02/gt6.png" alt="GameThrive" width="938" height="625" class="alignnone size-full wp-image-61406" /></p>
+<p><em>In your game code, you can create a function that triggers when the additional data is passed to the app.</em></p>
+<p></p><pre class="crayon-plain-tag">function DidReceiveRemoteNotification(message, additionalData, isActive)
+   if (additionalData and additionalData.PromptToRate) then
+       // Place your rate app prompt here.
+   end
+end</pre><p></p>
+<p>We hope these tips were useful to you. As a developer, you should know your audience better than anyone. GameThrive offers more powerful ways to customize your Push Notifications for your specific needs and the above examples are just the beginning. We encourage you to try out more ways to do things and share them with the community, especially if you find out things that work for you! </p>
+<p>If you’re not already on GameThrive, you can <a href=http://gamethrive.com>sign/ up for a free account here</a>.</p>
+<p>You can find more information on using GameThrive Push Notifications in your Corona App <a href=http://docs.coronalabs.com/daily/plugin/GameThrivePushNotifications/>here</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest Post: Up Front Planning with App Briefs</title>
+		<link>/blog/2015/01/08/guest-post-up-front-planning-with-app-briefs/</link>
+		<comments>/blog/2015/01/08/guest-post-up-front-planning-with-app-briefs/#comments</comments>
+		<pubDate>Thu, 08 Jan 2015 19:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Guest Bloggers]]></category>
+
+		<guid isPermaLink="false">/?p=60767</guid>
+		<description><![CDATA[John Luchin, of Classic Interactions, tells us about a useful tool they used in developing Lobster Tale with Corona.]]></description>
+				<content:encoded><![CDATA[<p><em>Today&#8217;s guest post is by John Luchin, the founder of <a href=http://classicinteractions.com/>Classic Interactions LLC</a> and the Author/Illustrator of <a href=https://itunes.apple.com/us/app/lobster-tale-childrens-book/id928183628?mt=8>Lobster Tale</a>. </em></p>
+<hr/>
+<p><img src="/wordpress/wp-content/uploads/2015/01/AppBrief.png" alt="App Brief" width="250" height="293" class="alignright size-full wp-image-60824" />Classic Interactions launched <a href=https://itunes.apple.com/us/app/lobster-tale-childrens-book/id928183628?mt=8>Lobster Tale – Children’s Book and Game</a>, on November 6, 2014. The app was developed in <a href=/products/corona-sdk/>Corona</a> and rose to number 5 in the iPhone Paid Book Category. It was also featured in the Family Games Section of the App Store in over 110 countries, including the US. </p>
+<p>Classic Interactions grew from a team of one to a team of four during Lobster Tale’s development and since this was our first children’s book app and the first time we utilized Corona SDK, we were pretty happy with the results. Looking back on everything we did leading up to launch day, I think the most important step we took was to create what I call an App Brief.</p>
+<p><strong>What is an App Brief?</strong></p>
+<p>Simply put, an App Brief is a PDF outlining all of the content to be included in your app. In our case, we went page-by-page or screen-by-screen of the children’s book app. A typical page in our app brief had three main elements: a description of the page/screen, a list of elements (interactions, sounds, animations, and transitions), and a screenshot mockup of the page/screen.  <a href=https://www.dropbox.com/s/1kacpkszdac1gzs/AppBriefFinal%20.pdf?dl=0>Click here</a> to download a copy of our app brief.</p>
+<p><strong>Why did we create an App Brief?</strong></p>
+<p>After doing the majority of development on our first 5 apps, I knew that I would need help with Lobster Tale. I was already 2 years into writing and illustrating the app content and I wasn’t up to the task of developing it on my own. I needed to find a good programmer, and once I found one I needed to be able to easily communicate my vision for the app. I’m way more designer than I am programmer and I’m smart enough to realize that designers and programmers communicate and problem solve differently. The App Brief was a way to bridge this gap. </p>
+<p>I connected with Jason Sypolt of <a href=http://www.sypoltsystems.com/>Sypolt Systems</a> and from the beginning we were able to cut through a lot of back and forth that usually comes with developing an app because the App Brief was so detailed. A “we can decide on this and fix that later” type of attitude is a recipe for disaster when it comes to app development. Here is what Jason had to say about App Briefs: </p>
+<blockquote><p>&#8220;Corona SDK gives us the ability to build interactive apps and iterate and evolve them extremely quickly. But that is all the more reason to have a plan in place before you start. You will work so much faster by slowing down at first to understand the big picture. Be methodical as a developer and diagram and describe every screen as well as everything that happens on every screen. Then fire up 3 or 4 Corona Simulators and some Corona Viewers for different devices and watch your app quickly come to life on all of them at once.&#8221; </p></blockquote>
+<p><strong>Why do you need an App Brief?</strong></p>
+<p>Our main reason for creating an App Brief was communication, but there are many other great reasons to create one for your next project. If you are contracting any part of your project out, an App Brief will make it easier for you to obtain a realistic quote and not run the risk of additional charges. If you have a great app idea and are looking for funding, a simple app mockup coupled with a detailed App Brief will help investors see your vision clearly. If you are working by yourself, it’s a great way to get all of your app’s functionality on paper and see the project holistically before the first line of code is even written.  If you are a designer working with a programmer, or vice versa, as I said above, a good App Brief can bridge the communication gap and work as a roadmap for your next project.</p>
+<p><strong>Final Thoughts</strong></p>
+<p><img src="/wordpress/wp-content/uploads/2015/01/AppIcon1-150x150.png" alt="Lobster Tale" width="150" height="150" class="alignright size-thumbnail wp-image-60826" srcset="/wordpress/wp-content/uploads/2015/01/AppIcon1-150x150.png 150w, /wordpress/wp-content/uploads/2015/01/AppIcon1.png 175w" sizes="(max-width: 150px) 100vw, 150px" />I started working on the draft outline of our next app a couple weeks ago and will definitely be creating a detailed App Brief for all of the reasons listed above. After releasing Lobster Tale, I realized that I missed the programming side of app development, so I am going to jump back in on the next app (I guarantee I’ll still need some help) and you better believe I will have my App Brief sitting next to me. </p>
+<p><strong>About John</strong></p>
+<p>John Luchin is the founder of Classic Interactions LLC and the Author/Illustrator of Lobster Tale. You can email John at <a href=mailto: jluchin@classicinteractions.com>jluchin@classicinteractions.com</a> or follow him <a href=http://www.twitter.com/classicinteract>@classicinteract</a>. <a href=https://itunes.apple.com/us/app/lobster-tale-childrens-book/id928183628?mt=8>Lobster Tale – Children’s Book and Game</a> is a universal app available free for limited time in the App Store, Google Play, and the Amazon Appstore.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/01/08/guest-post-up-front-planning-with-app-briefs/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>#shipjam &#8211; a community-organized year-end game jam!</title>
+		<link>/blog/2014/12/17/shipjam-a-community-organized-year-end-game-jam/</link>
+		<comments>/blog/2014/12/17/shipjam-a-community-organized-year-end-game-jam/#comments</comments>
+		<pubDate>Wed, 17 Dec 2014 16:05:25 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=60610</guid>
+		<description><![CDATA[Sign up for #shipjam, a year-end game jam organized by members of the Corona community (and win cool prizes)!]]></description>
+				<content:encoded><![CDATA[<p><em>We&#8217;re excited to support #shipjam, organized by members of the Corona community.<br />
+Read more below and <a href=http://shipjam.com>sign/ up</a>!</em></p>
+<hr/>
+<p>Join the Corona community to finish out the year with one last release &#8211; <a href=http://shipjam.com>join/ #shipjam</a>, the year-end game jam!</p>
+<p>#shipjam is about completing an unfinished project and shipping it before the end of the year. Pick up a project you loved but had to abandon for one reason or another &#8211; dust it off, tie up the loose ends and get it out the door! The contest is from now until Dec 31st, and is open to Corona developers of all levels. Apps will be judged on completeness, quality, charm, and how much you got accomplished within the jam.</p>
+<p>We’ve got three great judges: Corona’s own Rob Miracle, <a href=http://coronageek.com>Corona/ Geek</a> Charles McKeever and Graham Ranson from <a href=http://www.glitchgames.co.uk/>Glitch Games</a> and host of GIGJam 48. We have some amazing prizes too: one-year, six-month and three-month Corona Pro subscriptions, two copies of Dr. Brian Burton’s &#8220;<a href=http://www.burtonsmediagroup.com/books/mobile-app-development-with-corona-getting-started/>Mobile App Development with Corona</a>”, a press release and a couple of gift cards are up for grabs.</p>
+<p>Check out to <a href=http://shipjam.com>shipjam.com/</a> to sign up and for more details &#8211; hope to see you there!</p>
+<p>&#8212;&#8211;</p>
+<p>#shipjam was created in the IRC #corona channel by indie developers Eric Kinkead (<a href=http://erickinkead.com>erickinkead.com/</a>) and Laura Tallardy (<a href=http://lauratallardy.com>lauratallardy.com/</a>). Download Eric’s acclaimed app <a href=http://questlord.com>Questlord/</a> and Laura’s newest release <a href=https://itunes.apple.com/app/cool-careers-free-dress-up/id945061907>Cool Careers Dress Up for Girls</a>.<br /></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/17/shipjam-a-community-organized-year-end-game-jam/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Amazon GameCircle Support</title>
+		<link>/blog/2014/10/22/announcing-amazon-gamecircle-support/</link>
+		<comments>/blog/2014/10/22/announcing-amazon-gamecircle-support/#comments</comments>
+		<pubDate>Wed, 22 Oct 2014 17:47:18 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[Plugins]]></category>
+
+		<guid isPermaLink="false">/?p=59991</guid>
+		<description><![CDATA[We now have an Amazon GameCircle plugin for Corona developers.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/10/Screen-Shot-2014-10-22-at-10.33.00-AM1.png" alt="Amazon Gamecircle" class="alignright size-full wp-image-59993" />Working in <a href=https://developer.amazon.com/public/community/post/Tx38DQBL95PGIM/GameCircle-Now-Available-in-the-Corona-SDK>partnership with Amazon</a>, we now have a GameCircle plugin for Corona developers to integrate into their games! </p>
+<p>Check out Amazon&#8217;s <a href=http://forums.coronalabs.com/forum/644-amazon-gamecircle/>blog post</a> on the announcement and <a href=https://developer.amazon.com/public/apis/engage/gamecircle/docs/corona-integration>detailed instructions</a>.</p>
+<p>Once you are ready to implement, please refer to the <a href=http://docs.coronalabs.com/daily/plugin/gamecircle/index.html>documentation page for this plugin</a> for info on how to integrate it with your games. Like all other Corona plugins, you just need to include some code in your build.settings file and it will be integrated at build time. If you have any questions, feel free to ask them in the <a href=http://forums.coronalabs.com/forum/644-amazon-gamecircle/>plugin&#8217;s forum</a>.</p>
+<p>This has also been tested out by several developers, including the great <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze-FULL/dp/B00A1SL8SE>Freeze!</a> by Frozen Gun Games. Be sure to <a href=http://www.amazon.com/Frozen-Gun-Games-Freeze-FULL/dp/B00A1SL8SE>check it out</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/22/announcing-amazon-gamecircle-support/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Introducing Corona Support for Windows Phone 8</title>
+		<link>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/</link>
+		<comments>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/#comments</comments>
+		<pubDate>Tue, 21 Oct 2014 18:43:15 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">/?p=59909</guid>
+		<description><![CDATA[Today we are announcing v1 support for Windows Phone 8 via CoronaCards for WP8!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/10/Windows_Phone_logo.png" alt="Windows Phone" class="alignright size-full wp-image-59933" />We are very happy to announce v1 support for Windows Phone 8! </p>
+<p>For now, support for WP8 is done via <a href=http://coronacards.com>CoronaCards/</a>, which brings a lot of flexibility to how Corona developers can start developing for WP8. CoronaCards is a version of the Corona platform (running the usual Corona Lua code) that can be embedded into any native app and that allows developers to also hook in any native functionality via a <a href=http://docs.coronalabs.com/daily/coronacards/wp8/communication.html>native/Lua bridge</a>. </p>
+<p>There is an unlimited trial for CoronaCards for WP8, so <a href=http://developer.coronalabs.com/downloads/coronacards>download the bits</a> right away and start building WP8 apps and games! You can see more about how to get started with CoronaCards for WP8 in our <a href=http://docs.coronalabs.com/daily/coronacards/wp8/index.html>guides</a> and videos. You will need a Windows 8.1 machine, along with Visual Studio (of which there are free versions). We currently build Windows Phone 8 apps and games, which also run on Windows Phone 8.1 devices.</p>
+<p>If you are an existing Corona developer, you rely heavily on the Corona Simulator. When building for WP8, this will largely stay the same: we will add Windows Phone skins to a daily build in the next few days and you will be able to use the Corona Simulator to work on all your Lua code (as usual) and then just do builds quickly inside Visual Studio and CoronaCards.</p>
+<p><strong>Licensing</strong></p>
+<p>We want all Corona developers to build for WP8 as soon as possible, so starting now ALL purchases of Corona SDK Pro and Corona Enterprise will include a CoronaCards for WP8 license. We are also giving ALL current Pro and Enterprise developers a license of CoronaCards for WP8 (with the same expiration date as your existing Pro or Enterprise license). You should see that appear in your account in the next day. </p>
+<p>There is a guide on how licensing works <a href=http://docs.coronalabs.com/daily/coronacards/wp8/license.html>here</a>. </p>
+<p><strong>Support</strong></p>
+<p>As always, we have a specific <a href=http://forums.coronalabs.com/forum/642-coronacards-for-wp8/>CoronaCards for WP8 forum</a> where you can ask questions and discuss. There are a good number of valuable threads already in there from our beta testers.</p>
+<p>Finally, I&#8217;d like to thank the Corona team (all of whom worked very hard on this), our contacts at Microsoft (who have been great to work with), as well as all the beta testers that have been using the product for the last month or so. </p>
+<p>There are several games built with CoronaCards for WP8 that are already in the Windows Phone app store, including <a href=http://www.windowsphone.com/en-us/store/app/feed-omnomster-the-hungry-monster/05696854-39a9-464b-887c-35dce28a6148>OmNomster</a>, <a href=http://www.windowsphone.com/en-us/store/app/basketball-superstar/362b654a-827f-45bc-b20e-3f61c4d0afeb>Basketball Superstar</a>, <a href=http://www.windowsphone.com/en-us/store/app/bloody-monsters/5c3c1f4b-eaa7-4767-a58c-9ce9e2c496c8>Bloody Monsters</a>, <a href=http://www.windowsphone.com/en-us/store/app/my-boo/dd870cd8-e252-49f8-8e63-5236d1b48023>My Boo</a> and <a href=http://www.windowsphone.com/en-us/store/app/toilet-time/5f160ab2-a469-4c11-b908-dccc3e08845b>Toilet Time</a>! Check them out &#8211; several of these have millions of downloads on iOS and Android and are sure to do equally well on Windows Phone!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/feed/</wfw:commentRss>
+		<slash:comments>30</slash:comments>
+		</item>
+		<item>
+		<title>iOS Building issue</title>
+		<link>/blog/2014/08/21/ios-building-issue/</link>
+		<comments>/blog/2014/08/21/ios-building-issue/#comments</comments>
+		<pubDate>Thu, 21 Aug 2014 20:11:44 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=59402</guid>
+		<description><![CDATA[You may see an error when submitting an iOS app. This is due to a very recent change by Apple. Read on to see what to do.]]></description>
+				<content:encoded><![CDATA[<p>In the last day or so, Apple apparently made a change to its app submission checks and this is causing some apps to show an error when being submitted to the App Store (see image below). </p>
+<p><img src="/wordpress/wp-content/uploads/2014/08/2014-08-21_10-52-07-e1408651734615.jpeg" alt="Apple error screenshot" class="alignnone size-full wp-image-59403" /></p>
+<p>If you are seeing this issue, here is what you have to do:</p>
+<p>1) <strong>Pro developers</strong> should use the latest daily build (#2405 or higher). This build has a fix built in.</p>
+<p>2) <strong>Starter and Basic developers</strong> can still use the current public release build, but should manually add the following line to the plist section of your build.settings file:</p>
+<p></p><pre class="crayon-plain-tag">CFBundleShortVersionString = &quot;1.0&quot;,</pre><p></p>
+<p>You need to change the &#8220;1.0&#8221; to match what you have in Version field. </p>
+<p>(UPDATE: Here&#8217;s an <a href=https://gist.github.com/walterlua/75e29090abaca29a6510>example build.settings</a> based on the HelloWorld sample)</p>
+<p>For more info/context, you can refer to <a href=http://forums.coronalabs.com/topic/50461-publish-app-failure/>this thread</a> in our forum.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/21/ios-building-issue/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Updated Public Release: 2014.2393</title>
+		<link>/blog/2014/08/07/updated-public-release-2014-2393/</link>
+		<comments>/blog/2014/08/07/updated-public-release-2014-2393/#comments</comments>
+		<pubDate>Thu, 07 Aug 2014 16:33:04 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+
+		<guid isPermaLink="false">/?p=59346</guid>
+		<description><![CDATA[We are doing an update on the public release. The new one is 2014.2393.]]></description>
+				<content:encoded><![CDATA[<p>We are doing an update on the public release we published <a href=/blog/2014/07/30/new-public-release-2014-2381/>last week</a>. The new one is 2014.2393 and is available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download now</a>. We found a couple of bugs in the last one that were important to fix, hence the update.</p>
+<p>As always, take a quick look at the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2014.2393>release notes</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/08/07/updated-public-release-2014-2393/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: AgeCheq Makes it Easy to be COPPA Compliant!</title>
+		<link>/blog/2014/07/09/guest-post-agecheq-makes-it-easy-to-be-coppa-compliant/</link>
+		<comments>/blog/2014/07/09/guest-post-agecheq-makes-it-easy-to-be-coppa-compliant/#comments</comments>
+		<pubDate>Wed, 09 Jul 2014 16:00:01 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+
+		<guid isPermaLink="false">/?p=59087</guid>
+		<description><![CDATA[AgeCheq is a COPPA compliance service. In this guest post they explain how Corona SDK developers can take advantage of their useful services.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/07/AgeCheqlogo.png" alt="AgeCheq logo" class="alignright size-full wp-image-59094" /><em>This guest post is by Tyler Smith, Director of Game Developer Relations at AgeCheq. Since entering the game development community in 2010, he&#8217;s participated in numerous app and game development hackathons, gaming conventions, and trade shows. In 2013, Tyler worked at Intel as an HTML5 game developer where he taught mobile developers how to use HTML5 for game development.</em></p>
+<hr>
+<p>If you’re making mobile games, more often than not your target audience will be children. If your game is going to be deployed in the U.S. app stores, you’ll need to take some extra steps to get verified parental consent before collecting any piece of PII (personally identifiable information) from a child.</p>
+<p><strong>1.0 Brief History of COPPA</strong></p>
+<p>In the U.S. there has been a law in effect since the early 2000’s that requires websites to take precautions for children using the web. This law is know as COPPA or the Children’s Online Privacy Protection Act . An updated version of COPPA was passed on July 1st of 2013. This new update deals a lot more with mobile applications and data collection. It contains more restrictions and guidelines on what you are allowed to collect from users, and how you have to verify parental consent before you collect any data. </p>
+<p>For more information on COPPA and how the law applies to game developers, go to: <a href=http://www.agecheq.com/?page_id=12>http://www.agecheq.com/?page_id=12</a></p>
+<p><strong>2.0 Compliance</strong></p>
+<p>The COPPA law outlines very obtrusive practices to get parental consent. Trying to create an infrastructure that meet all of these guidelines on your own can kill an indie games budget. AgeCheq has made a simple SDK for the Corona tools so indie developers can create games for kids without having to worry about the headache of making a COPPA compliance ecosystem. The basic service that makes your game COPPA compliant is free for developers and for parents. Here is how you can add the AgeCheq SDK into your corona built application.</p>
+<p><strong>3.0 Getting started with the AgeCheq SDK</strong></p>
+<p>Go to <a href=http://documentation.agecheq.com/?page=corona#headerSection>http://documentation.agecheq.com/?page=corona#headerSection</a> to download the AgeCheq Corona SDK. You’ll also find some helpful documentation and a tutorial video that walks you through these steps. </p>
+<p>Now that you have the SDK downloaded, unzip the files and place them in the location where you keep your other corona files. This SDK has one main view that shows how to use all of the calls in the AgeCheq API. In order to use the SDK you’ll need to sign up for a free developer AgeCheq account at <a href=http://developer.agecheq.com/>http://developer.agecheq.com/</a> so you have access to a developer key and application id. </p>
+<p>Once you’re signed up, click the add “Add Application” button on the left side. Here you should fill in all the fields that apply to your game. </p>
+<p><img src="/wordpress/wp-content/uploads/2014/07/AgeCheq1.png" alt="AgeCheq" class="alignleft size-full wp-image-59089" /></p>
+<p><img src="/wordpress/wp-content/uploads/2014/07/AgeCheq2-162x300.png" alt="AgeCheq2" class="alignright size-medium wp-image-59090" />Click the save button after all the information is filled in. Now you should see your new application on the left side of the screen. Click it and the new App ID that was generated for you will appear at the top of the screen. In the top right there will also be a button labeled disclosure. That’s where you enter in all of the information about what data you collect, store ,and share.</p>
+<p>After you have your credentials, open up the main.lua file in the SDK. At around line 65 you should see developerKey and appID variables. Insert your new credentials from the dashboard into these variables. If you refresh the emulator, you will now see a view that now shows an input box next to the register button. After this is completed, all of the test API functions in the SDK will work. To fully test the SDK with parental authorization, you’ll need to sign up for a parent account as well located at http://www.parent.agecheq.com./ </p>
+<p>After you have a parent account, enter the username you created into the username textbox and hitting the “Register Device” button. This fires a network.request command that looks like this:</p>
+<p></p><pre class="crayon-plain-tag">local base_URL = &quot;https://developer.agecheq.com/&quot;
+local registerURL = base_URL .. &quot;developers/&quot; .. developerKey .. &quot;/devices/&quot; .. deviceID .. &quot;/registerdevice&quot;
+
+local registerHandler = function( event )
+		callType = &quot;reg&quot;
+		local body = &quot;username=&quot;.. username.text..&quot;&amp;devicename=New Device&quot;
+		local params = {}
+		params.body = body
+		network.request( registerURL, &quot;POST&quot;, networkListener, params) 
+end</pre><p></p>
+<p>Inside the networkListener callback, we check to make sure that the call went through correctly. If it did, we’d then call the “check” network.request to submit the application for that parents approval. Since this command has the appID, the parent dashboard now knows which device and account the app is trying to be authorized on. That callback function looks something like this:</p>
+<p></p><pre class="crayon-plain-tag">local base_URL = &quot;https://developer.agecheq.com/&quot;
+local checkURL = base_URL .. &quot;developers/&quot; .. developerKey .. &quot;/devices/&quot; .. deviceID .. &quot;/applications/&quot; .. appID .. &quot;/check&quot;
+
+local function networkListener( event )
+&hellip;
+if callType == &quot;reg&quot; then
+if json.rtn == &quot;ok&quot; then
+			callType = &quot;check&quot;
+			network.request( checkURL, &quot;GET&quot;, 	networkListener) 
+		else 
+			t.text = json.rtn
+		end
+	end
+...</pre><p></p>
+<p>Now return to the parent dashboard and you should now see a new device alert in the bottom left. Click it, and you’ll see your application asking to be authorized in the middle of the screen, like so:</p>
+<p><img src="/wordpress/wp-content/uploads/2014/07/AgeCheq3.png" alt="AgeCheq3" class="alignleft size-full wp-image-59091" /></p>
+<p>The parent at this point would click the “Privacy Disclosure” button and view your dynamically generated disclosure. </p>
+<p><img src="/wordpress/wp-content/uploads/2014/07/AgeCheq4.png" alt="AgeCheq4" class="alignleft size-full wp-image-59092" /></p>
+<p>If they are alright with the data your game will be collecting, they’ll hit the slider to authorize your game. Do this now and then go back in the Corona Simulator. If you select the “Check Auth” button, you’ll get back that the app is authorized. At this point, you’d make your game start and let the users play. </p>
+<p><strong>4.0  Other Implementations</strong></p>
+<p>When implementing AgeCheq into your game, there are a couple techniques that can help lessen the friction users experience at the beginning of the game. The first technique is to display the AgeCheq screen after 1-2 levels are completed. This allows the user get acquainted with the game before being told to stop and get parental permission. The catch is that you cannot collect any PII (personally identifiable information) until after the user has authorized the app. </p>
+<p>The second technique consists of using an agegate to determine if the user needs to go through the AgeCheq process or not. This works for games that don’t specifically target kids, but it’s probable that kids are playing the game. These types of games are classified as “General Audience”. Initially, you’ll just show a screen somewhat like the bottom of the screen in the AgeCheq SDK.  Ask for the users birth year, month and day. After they enter their information and hit submit, the request would look something like this:</p>
+<p></p><pre class="crayon-plain-tag">local base_URL = &quot;https://developer.agecheq.com/&quot;
+local agegateURL = base_URL .. &quot;developers/&quot; .. developerKey .. &quot;/devices/&quot; .. deviceID .. &quot;/agegatedevice&quot;
+
+local agegateHandler = function( event )
+		callType = &quot;agegate&quot;
+		local body = &quot;dobyear=&quot; .. agegateDOBYear.text .. &quot;&amp;dobmonth=&quot; .. agegateDOBMonth.text .. &quot;&amp;dobday=&quot; .. agegateDOBDay.text
+		local params = {}
+		params.body = body
+		network.request( agegateURL, &quot;POST&quot;, networkListener, params) 
+end</pre><p></p>
+<p>The agegate is now set on that account. To see if the user is older than 13, just use the “check” command and see if under13 is true or false (found under data.agegate in the return JSON). If they are under 13, stop your app and make them go through the AgeCheq verification process. If they are older than 13, just allow them to start playing.</p>
+<p>If you have any questions about AgeCheq, COPPA or implementation of AgeCheq into your game, you can shoot me an email at <a href=mailto:Tyler@agecheq.com>Tyler@agecheq.com</a> and I’d be happy to help out.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/07/09/guest-post-agecheq-makes-it-easy-to-be-coppa-compliant/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Guest Post: Introducing Kaboom, a particle system for Kwik</title>
+		<link>/blog/2014/06/30/guest-post-introducing-kaboom-a-particle-system-for-kwik/</link>
+		<pubDate>Mon, 30 Jun 2014 20:00:42 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Partners]]></category>
+
+		<guid isPermaLink="false">/?p=59005</guid>
+		<description><![CDATA[Alex Souza is the founder of Kwiksher, creator of Kwik, a plugin that writes Corona apps directly from Photoshop. Here he announces a new product to do particle effects within Photoshop and without any code!]]></description>
+				<content:encoded><![CDATA[<p><em>Alex Souza is the founder of <a href=http://www.kwiksher.com>Kwiksher/</a>, creator of Kwik, a plugin that writes Corona apps directly from Photoshop.</em></p>
+<hr />
+<p><img class="alignright size-full wp-image-59038" src="/wordpress/wp-content/uploads/2014/06/kaboom-small.png" alt="Kaboom logo" />With Corona announcing <a href=/blog/2014/03/21/announcing-support-for-particle-designer-2-0/>support of native particle effects</a>, it was natural to extend Kwik and enable it to import the JSON format. This new feature, called Particle Replacement, allows designers to easily replace Photoshop layer contents with external designs from tools like Particle Designer 2 (PD2).</p>
+<p>However, with hundreds of users willing to stay in Photoshop while creating and editing particles, I decided to create a tool specifically to manage particles. It is called Kaboom, the first “plugin” for the Kwik “plugin”!</p>
+<p><a href=http://kwiksher.com/2014/06/30/introducing-kaboom/ target="_blank">Kaboom</a> can edit PD2 JSON files but also create new particle designs, directly from Photoshop’s interface. Users are able to control many parameters, including color, sizes and images, offering also a live preview. When perfected, the particle file is added into Kwik’s workflow, with a single click of a button.</p>
+<p><img class="alignright size-full wp-image-59011" src="/wordpress/wp-content/uploads/2014/06/Screen-Shot-2014-06-20-at-11.36.08-AM1.png" alt="Kaboom" />Greg Pugh, who has been beta testing Kaboom, created a nice tutorial on <a href=http://kwiksher.com/2014/06/30/creating-a-campfire/ target="_blank">how to create a campfire scene using the Kaboom plugin</a>.</p>
+<p>To celebrate its announcement, Kaboom is available for purchase right now with an <em><strong>introductory price of $29.99 until July 13th, 2014 (regular price is $49.99)</strong></em> or when the next Corona public build is available – whatever comes later.</p>
+<p>Kwik has been used to create more than 600 storybooks and games and I am curious to see what people will do now with the ability of creating native particle systems with Kaboom!</p>
+<hr>
+<p><em>Editor&#8217;s note: Alex was on today&#8217;s Corona Geek show talking about Kaboom and Greg Pugh (Corona Ambassador) showed off an example. <a href=/blog/coronageek/corona-geek-96/>Check it out here</a>.</em></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

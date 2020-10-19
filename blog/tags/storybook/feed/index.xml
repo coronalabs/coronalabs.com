@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>storybook &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/storybook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>storybook &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Featured App: 12 Huia Birds &#8211; bringing extinct birds back to life through interactive storytelling</title>
+		<link>/blog/2016/09/08/featured-app-12-huia-birds-bringing-extinct-birds-back-to-life-through-interactive-storytelling/</link>
+		<pubDate>Thu, 08 Sep 2016 20:13:14 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[eBooks]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[Interactive Books]]></category>
+		<category><![CDATA[storybook]]></category>
+		<category><![CDATA[storytelling]]></category>
+
+		<guid isPermaLink="false">/?p=67984</guid>
+		<description><![CDATA[12 Huia Birds is an interactive story about the extinction of the huia bird in New Zealand. Written by Julian Stokoe and illustrated by Stacy Eyles, this amazing duo brings the ill-fated avian back to life as part of a richly interactive story.]]></description>
+				<content:encoded><![CDATA[<p>Recently we have showcased some incredible mobile games from the Corona developer community. This week, we turn our focus to a genre that isn&#8217;t covered as frequently: interactive books.</p>
+<p><a href=http://yoozoobooks.com/12huiabirds.html target="_blank"><em>12 Huia Birds</em></a> is an interactive story about the extinction of the huia bird in New Zealand. Written by Julian Stokoe and illustrated by Stacy Eyles, this amazing duo brings the ill-fated avian back to life as part of a richly interactive story.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/qC26AweOVeA?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe><br />
+Built using Corona, the book makes heavy use of <a href=http://esotericsoftware.com/ target="_blank">Spine</a> from <a href=http://esotericsoftware.com/ target="_blank">Esoteric Software</a> to create lively animations in the story. &#8220;The birds are all Spine files which loop animation cycles randomly. These were created before mesh was available so we are having fun with mesh for our next book app,&#8221; Stokoe said.</p>
+<p>The story unfolds as you touch various actors and engage in other eye-catching animations. One such animation includes a 360-degree view where you swipe your way around the bird to see it from various angles. Various worksheets and activities can also be downloaded from the app&#8217;s companion website to use in educational settings.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/zqDmPJNiLgo?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Unfortunately, the huia was lost before the invention of audio capture devices. So, their songs have been recreated based on musical notations written down by ornithologists at a time when the bird was still alive, as well as whistles recorded in the 1950s by a man who recalled the sound from his childhood.</p>
+<p><img class="alignnone size-full wp-image-67986" src="/wordpress/wp-content/uploads/2016/09/fE5Pim2ylTK3y7o_NMmAVWj-6iDPbIKiBWyGxc692QwIeQI44x5bQAQfFJmJH0KYXQh900.jpg" alt="fE5Pim2ylTK3y7o_NMmAVWj-6iDPbIKiBWyGxc692QwIeQI44x5bQAQfFJmJH0KYXQ=h900" width="960" height="540" /></p>
+<p><em>12 Huia Birds</em> won backing from <a href=http://www.nzonair.govt.nz/ target="_blank">NZ On Air&#8217;s Digital Media Fund</a> which allows <a href=http://yoozoobooks.com/ target="_blank">Yoozoo</a> to produce the book for free. Unlike many books that start in print and then are adapted to digital, this one is going the opposite direction, beginning digital with a print version in the future.</p>
+<p>If you are interested in learning more about the production of <em>12 Huia Birds</em>, visit their <a href=http://12huiabirds.tumblr.com/ target="_blank">developer blog</a> and download the book for free in the <a href=https://itunes.apple.com/us/app/12-huia-birds/id1059189790?mt=8 target="_blank">App Store</a>, on <a href=https://play.google.com/store/apps/details?id=com.yoozoo.books.huiaBirds target="_blank">Google Play</a>, and in the <a href=https://www.amazon.com/Yoozoo-Ltd-12-Huia-Birds/dp/B01CMZHGAW/ref=sr_1_1?ie=UTF8&qid=1473206630&sr=8-1&keywords=12+huia+birds target="_blank">Amazon Appstore</a>.</p>
+<p><a href=https://itunes.apple.com/us/app/12-huia-birds/id1059189790?mt=8 target="_blank"><img class="alignnone size-full wp-image-64556" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/app-store-badge.png" alt="app-store-badge" width="50" height="50" /></a> <a href=https://play.google.com/store/apps/details?id=com.yoozoo.books.huiaBirds target="_blank"><img class="alignnone size-full wp-image-64594" style="margin-right: 10px;" src="/wordpress/wp-content/uploads/2015/10/google-play-badge.png" alt="google-play-badge" width="50" height="50" /></a> <a href=https://www.amazon.com/Yoozoo-Ltd-12-Huia-Birds/dp/B01CMZHGAW/ref=sr_1_1?ie=UTF8&qid=1473206630&sr=8-1&keywords=12+huia+birds target="_blank"><img class="alignnone size-full wp-image-64608" src="/wordpress/wp-content/uploads/2015/10/amazon-apps-badge.png" alt="amazon-apps-badge" width="50" height="50" /></a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>App of the Week: Prancing, Dancing Lily</title>
+		<link>/blog/2013/03/11/app-of-the-week-prancing-dancing-lily/</link>
+		<comments>/blog/2013/03/11/app-of-the-week-prancing-dancing-lily/#comments</comments>
+		<pubDate>Mon, 11 Mar 2013 22:12:45 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[cross-platform]]></category>
+		<category><![CDATA[ebook]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[Kindle Fire]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[storybook]]></category>
+
+		<guid isPermaLink="false">/?p=29866</guid>
+		<description><![CDATA[Based on the award-winning book by Marsha Diane Arnold, Prancing, Dancing Lily tells the story of a festive young milking cow that doesn’t quite fit the herd.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-08-at-4.54.06-PM.png" alt="Lily icon" class="alignleft size-full wp-image-29867" />Based on the award-winning book by Marsha Diane Arnold, <a href=http://developer.coronalabs.com/showcase/prancing-dancing-lily>Prancing, Dancing Lily</a> tells the story of a festive young milking cow that doesn’t quite fit the herd. Brought to the digital world by <a href=http://fatredcouch.com/index.php>Fat Red Couch</a>, this heartwarming tale features whimsical illustrations, expressive characters and unique narration that readers of all ages will appreciate.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/Prancing-Dancing-Lily-screenshot.jpg" alt="Prancing, Dancing Lily screenshot" class="alignright size-full wp-image-29868" />Lily, the leading lady, comes from a long line of responsible cow-bellers; yet she herself is clumsy, inattentive and always dancing around the field at the wrong times. Once she realizes she&#8217;s different from her peers, Lily embarks on an adventure, traveling the world in search of the perfect dance. Thanks to her spunky nature, she has the opportunity to grace Radio City Music Hall as a Rockette, learns to tap dance on a cruise ship, and pirouettes on stage as a ballerina in Russia. Through her adventures, Lily learns an important lesson on self acceptance, and returns home to share her exciting new dances with the friends on the farm.</p>
+<p>Can Lily sway her herd and become an accepted member? Download Prancing, Dancing Lily for $1.99 from <a href=https://itunes.apple.com/us/app/prancing-dancing-lily/id586489276?mt=8>App Store</a>, <a href=https://play.google.com/store/apps/details?id=com.fatredcouch.pdlilyandroid>Google Play</a>, or the <a href=http://www.amazon.com/gp/product/B00BDBAVFY/ref=mas_pm_Fat-Red-Couch-Inc-Prancing>Amazon Appstore</a> and find out!</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/BrmH60mYDSc" frameborder="0" allowfullscreen></iframe></p>
+<div class="clearfix spacerDiv"></div>
+<h3>Honorable Mention</h3>
+<div class="clearfix  spacerDiv">
+<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-11-at-1.33.14-PM.png" alt="Brickout Zero Gravity" class="alignleft size-full wp-image-29881" /></a></p>
+<h4 style="margin-bottom: 10px;">Brickout Zero Gravity</h4>
+<p>Brickout Zero Gravity removes the shackles of Breakout and turns you loose in a challenging arcade game where physics are king. Keep a ricocheting ball in play by moving a paddle on one side of the screen while targeting and smashing bricks on the other. Clear the board to progress to the next level and earn power-ups to give you an edge. Check out Brickout Zero Gravity for $1.99 from the <a href= http://appstore.com/brickoutzerogravity>App Store</a>.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/qMXIe5Pn-gs" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/11/app-of-the-week-prancing-dancing-lily/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+	</channel>
+</rss>

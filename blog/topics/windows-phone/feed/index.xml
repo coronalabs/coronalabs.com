@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows Phone &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/windows-phone/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Windows Phone &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Corona Support for Windows Phone 8</title>
+		<link>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/</link>
+		<comments>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/#comments</comments>
+		<pubDate>Tue, 21 Oct 2014 18:43:15 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[CoronaCards]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">/?p=59909</guid>
+		<description><![CDATA[Today we are announcing v1 support for Windows Phone 8 via CoronaCards for WP8!]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/10/Windows_Phone_logo.png" alt="Windows Phone" class="alignright size-full wp-image-59933" />We are very happy to announce v1 support for Windows Phone 8! </p>
+<p>For now, support for WP8 is done via <a href=http://coronacards.com>CoronaCards/</a>, which brings a lot of flexibility to how Corona developers can start developing for WP8. CoronaCards is a version of the Corona platform (running the usual Corona Lua code) that can be embedded into any native app and that allows developers to also hook in any native functionality via a <a href=http://docs.coronalabs.com/daily/coronacards/wp8/communication.html>native/Lua bridge</a>. </p>
+<p>There is an unlimited trial for CoronaCards for WP8, so <a href=http://developer.coronalabs.com/downloads/coronacards>download the bits</a> right away and start building WP8 apps and games! You can see more about how to get started with CoronaCards for WP8 in our <a href=http://docs.coronalabs.com/daily/coronacards/wp8/index.html>guides</a> and videos. You will need a Windows 8.1 machine, along with Visual Studio (of which there are free versions). We currently build Windows Phone 8 apps and games, which also run on Windows Phone 8.1 devices.</p>
+<p>If you are an existing Corona developer, you rely heavily on the Corona Simulator. When building for WP8, this will largely stay the same: we will add Windows Phone skins to a daily build in the next few days and you will be able to use the Corona Simulator to work on all your Lua code (as usual) and then just do builds quickly inside Visual Studio and CoronaCards.</p>
+<p><strong>Licensing</strong></p>
+<p>We want all Corona developers to build for WP8 as soon as possible, so starting now ALL purchases of Corona SDK Pro and Corona Enterprise will include a CoronaCards for WP8 license. We are also giving ALL current Pro and Enterprise developers a license of CoronaCards for WP8 (with the same expiration date as your existing Pro or Enterprise license). You should see that appear in your account in the next day. </p>
+<p>There is a guide on how licensing works <a href=http://docs.coronalabs.com/daily/coronacards/wp8/license.html>here</a>. </p>
+<p><strong>Support</strong></p>
+<p>As always, we have a specific <a href=http://forums.coronalabs.com/forum/642-coronacards-for-wp8/>CoronaCards for WP8 forum</a> where you can ask questions and discuss. There are a good number of valuable threads already in there from our beta testers.</p>
+<p>Finally, I&#8217;d like to thank the Corona team (all of whom worked very hard on this), our contacts at Microsoft (who have been great to work with), as well as all the beta testers that have been using the product for the last month or so. </p>
+<p>There are several games built with CoronaCards for WP8 that are already in the Windows Phone app store, including <a href=http://www.windowsphone.com/en-us/store/app/feed-omnomster-the-hungry-monster/05696854-39a9-464b-887c-35dce28a6148>OmNomster</a>, <a href=http://www.windowsphone.com/en-us/store/app/basketball-superstar/362b654a-827f-45bc-b20e-3f61c4d0afeb>Basketball Superstar</a>, <a href=http://www.windowsphone.com/en-us/store/app/bloody-monsters/5c3c1f4b-eaa7-4767-a58c-9ce9e2c496c8>Bloody Monsters</a>, <a href=http://www.windowsphone.com/en-us/store/app/my-boo/dd870cd8-e252-49f8-8e63-5236d1b48023>My Boo</a> and <a href=http://www.windowsphone.com/en-us/store/app/toilet-time/5f160ab2-a469-4c11-b908-dccc3e08845b>Toilet Time</a>! Check them out &#8211; several of these have millions of downloads on iOS and Android and are sure to do equally well on Windows Phone!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/feed/</wfw:commentRss>
+		<slash:comments>30</slash:comments>
+		</item>
+		<item>
+		<title>Windows Phone 8 Update and Closed Beta</title>
+		<link>/blog/2014/03/13/windows-phone-8-update/</link>
+		<comments>/blog/2014/03/13/windows-phone-8-update/#comments</comments>
+		<pubDate>Thu, 13 Mar 2014 15:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[david]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">/?p=57009</guid>
+		<description><![CDATA[Windows Phone 8 support is coming soon. Read more about what we are showing at GDC and opportunities to participate.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2014/03/Windows.png" alt="Windows" class="alignright size-full wp-image-57085" />Ever since our <a href=/blog/2013/10/29/windows-phone-8-and-windows-store-support-coming-to-corona-sdk-in-2014/>announcement</a> late last year, we&#8217;ve been working very hard on porting Corona to Windows Phone 8. We are now getting closer, and I&#8217;m excited to announce that we will be showcasing Corona SDK and a few apps at <a href=/blog/2014/03/04/going-to-gdc-come-to-our-party/>GDC</a> with Microsoft!</p>
+<p>Developers that go to Microsoft&#8217;s booth will be able to use Corona SDK and see how easy it is to build amazing things in just a few lines of code. In addition, we&#8217;ll have a few selected Corona apps, actually running on Windows Phone 8 devices, to showcase. </p>
+<p>In fact, we *might* still have room for a couple more apps for GDC. So, if you have an app/game that&#8230;</p>
+<ul>
+<li>is built on our graphics 2.0 engine,</li>
+<li>does *not* use the widgets library, accelerometer and other sensors,</li>
+<li>is very cool :),</li>
+</ul>
+<p>&#8230;email us at <a href=mailto:windows@coronalabs.com>windows@coronalabs.com</a> <em>today</em>. <strong>Note</strong>: for this GDC closed beta, we have to do the builds internally, so we will need your code (which of course we will not share with anyone). We are looking for some really great apps to highlight for this!</p>
+<p>But enough about GDC &#8211; if you are interested in participating in the next step of the beta process, please fill out the form below. We will soon be looking for more Corona developers to help us test things out!</p>
+<p>&#8212;&#8211;</p>
+<p><strong>UPDATE</strong> (on Oct 22, 2014): we have removed the beta signup form from this post. We have now released v1 support for Windows Phone 8. For more info, please see <a href=/blog/2014/10/21/introducing-corona-support-for-windows-phone-8/>this blog post</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/03/13/windows-phone-8-update/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+	</channel>
+</rss>

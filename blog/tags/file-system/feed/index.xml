@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>file system &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/file-system/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>file system &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Sub-Folder and File Access</title>
+		<link>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/</link>
+		<comments>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/#comments</comments>
+		<pubDate>Thu, 14 Feb 2013 02:36:09 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[coronSDK]]></category>
+		<category><![CDATA[file system]]></category>
+		<category><![CDATA[lua]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=29262</guid>
+		<description><![CDATA[It's Wednesday and time for another set of frequently asked questions (FAQs). Here are some FAQs about accessing sub-folders and files.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another set of frequently asked questions (FAQs). Here are some FAQs about accessing sub-folders and files.</p>
+<h2>1. How do you create a new sub-folder within the Documents or Temporary directory?</h2>
+<p>Sub-folders can be added to directories using the Lua File System (LFS). The Resource directory is read-only and cannot be modified.</p>
+<p>Here is how you can create an <strong>Images</strong> folder in the <strong>Documents</strong> directory.</p>
+<p></p><pre class="crayon-plain-tag">local lfs = require &quot;lfs&quot;
+
+-- get raw path to app's Documents directory
+local docs_path = system.pathForFile( &quot;&quot;, system.DocumentsDirectory )
+
+-- change current working directory
+local success = lfs.chdir( docs_path ) -- returns true on success
+local new_folder_path
+local dname = &quot;Images&quot;
+if success then
+    lfs.mkdir( dname )
+    new_folder_path = lfs.currentdir() .. &quot;/&quot; .. dname
+end</pre><p></p>
+<p>You can find more information about LFS <a href=http://keplerproject.github.com/luafilesystem/manual.html>here</a>.</p>
+<h2>2. How do you access (read or write) a file that has been placed in a sub-folder?</h2>
+<p>You can access files in a sub-folder in two ways depending on what you want to do with the file. If you want to display an image or play a sound from the file, you concatenate the sub-folder name with the file name and then supply the base directory. For example, if you want to display the <strong>cat.png</strong> file in the Images sub-folder in the Documents directory, do the following:</p>
+<p></p><pre class="crayon-plain-tag">local catImage = display.newImage( &quot;Images/cat.png&quot;, system.DocumentsDirectory, 0, 0 )</pre><p></p>
+<p>Note that you don&#8217;t use <strong>system.pathForFile</strong> in API calls that require a <strong>baseDirectory</strong> parameter (e.g., display.newImage, display.newImageRect, audio.loadSound, etc.).</p>
+<p>If you want to open the <strong>readme.txt</strong> file in that same directory, do the following using <strong>system.pathForFile</strong>:</p>
+<p></p><pre class="crayon-plain-tag">local path = system.pathForFile( &quot;Images/readme.txt&quot;, system.DocumentsDirectory )
+local fileHandle = io.open( path )
+-- You can now use fileHandle:read or fileHandle:write to read or write the file.</pre><p></p>
+<p>The <strong>fileHandle</strong> will not be <strong>nil</strong> if the file exists, which leads into our next question.</p>
+<h2>3. How do you test that a file exists in a folder or sub-folder?</h2>
+<p>The following function can be called from your code to see if a file exists in a folder or sub-folder. Just remember to append the sub-folder name to the file name before calling this function.</p>
+<p></p><pre class="crayon-plain-tag">----------------------------------------------------------------------------------
+-- doesFileExist
+--
+-- Checks to see if a file exists in the path.
+--
+-- Enter:   name = file name
+--  path = path to file (directory)
+--  defaults to ResourceDirectory if &quot;path&quot; is missing.
+--
+-- Returns: true = file exists, false = file not found
+----------------------------------------------------------------------------------
+--
+function doesFileExist( fname, path )
+
+    local results = false
+
+    local filePath = system.pathForFile( fname, path )
+
+    -- filePath will be nil if file doesn't exist and the path is ResourceDirectory
+    --
+    if filePath then
+        filePath = io.open( filePath, &quot;r&quot; )
+    end
+
+    if  filePath then
+        print( &quot;File found -&gt; &quot; .. fname )
+        -- Clean up our file handles
+        filePath:close()
+        results = true
+    else
+        print( &quot;File does not exist -&gt; &quot; .. fname )
+    end
+
+    print()
+
+    return results
+end</pre><p></p>
+<p>Here&#8217;s how the above function is called.</p>
+<p></p><pre class="crayon-plain-tag">-- Checking for file in Documents directory
+local results = doesFileExist( &quot;Images/cat.png&quot;, system.DocumentsDirectory )
+    
+-- or checking in Resource directory
+local results = doesFileExist( &quot;Images/cat.png&quot; )</pre><p></p>
+<h2>4. How do you copy a file to a sub-folder?</h2>
+<p>The following function allows copying a file from one folder to another. One common use is to copy a file shipped in the Resource directory to the Documents directory. You must create any sub-folders (if they don&#8217;t exist) before using this function.</p>
+<p></p><pre class="crayon-plain-tag">----------------------------------------------------------------------------------
+-- copyFile( src_name, src_path, dst_name, dst_path, overwrite )
+--
+-- Copies the source name/path to destination name/path
+--
+-- Enter:   src_name = source file name
+--      src_path = source path to file (directory), nil for ResourceDirectory
+--      dst_name = destination file name
+--      overwrite = true to overwrite file, false to not overwrite
+--
+-- Returns: false = error creating/copying file
+--      nil = source file not found
+--      1 = file already exists (not copied)
+--      2 = file copied successfully
+----------------------------------------------------------------------------------
+--
+function copyFile( srcName, srcPath, dstName, dstPath, overwrite )
+
+    local results = false
+
+    local srcPath = doesFileExist( srcName, srcPath )
+
+    if srcPath == false then
+        -- Source file doesn't exist
+        return nil
+    end
+
+    -- Check to see if destination file already exists
+    if not overwrite then
+        if fileLib.doesFileExist( dstName, dstPath ) then
+            -- Don't overwrite the file
+            return 1
+        end
+    end
+
+    -- Copy the source file to the destination file
+    --
+    local rfilePath = system.pathForFile( srcName, srcPath )
+    local wfilePath = system.pathForFile( dstName, dstPath )
+
+    local rfh = io.open( rfilePath, &quot;rb&quot; )
+
+    local wfh = io.open( wfilePath, &quot;wb&quot; )
+
+    if  not wfh then
+        print( &quot;writeFileName open error!&quot; )
+        return false            -- error
+    else
+        -- Read the file from the Resource directory and write it to the destination directory
+        local data = rfh:read( &quot;*a&quot; )
+        if not data then
+            print( &quot;read error!&quot; )
+            return false    -- error
+        else
+            if not wfh:write( data ) then
+                print( &quot;write error!&quot; )
+                return false    -- error
+            end
+        end
+    end
+
+    results = 2     -- file copied
+
+    -- Clean up our file handles
+    rfh:close()
+    wfh:close()
+
+    return results
+end</pre><p></p>
+<p>Here is how to use the copy file routine to copy the <strong>readme.txt</strong> file from the Resource to the Documents directory.</p>
+<p></p><pre class="crayon-plain-tag">copyFile( &quot;readme.txt&quot;, nil, &quot;readme.txt&quot;, system.DocumentsDirectory, true )
+local catImage = display.newImage( &quot;cat.png&quot;, system.DocumentsDirectory, 0, 0 )</pre><p></p>
+<h2>5. What are the Android restrictions concerning files?</h2>
+<p>File access in Corona is based on the underlining Operating System, which will vary depending on the platform. On iOS devices, you can access files in the Resource directory (where main.lua is located) and the Documents and Temporary directories. On Android, accessing the Resource directory is limited because it&#8217;s not a real directory, but files are enclosed in a zip file. Corona allows directly loading images and audio files using audio and image APIs, but has limited access to Resource files using the file I/O APIs.</p>
+<p>Because of this limitation on Android, if you have files shipped in the Resource directory that you want to copy to another directory (e.g., Documents), you will need to change the file name in the resource directory so it can be access by the file I/O APIs. For example, if you want to move an image file from the Resource to the documents directory, it must be renamed with a different extension so it can be accessed. Our <strong>cat.png</strong> file would need to be called <strong>cat.png.txt</strong> so it could be copied.</p>
+<p>Here is how you would copy the cat.png file to the Documents directory on Android (assuming it was stored as <strong>cat.png.txt</strong>).</p>
+<p></p><pre class="crayon-plain-tag">copyFile( &quot;cat.png.txt&quot;, nil, &quot;cat.png&quot;, system.DocumentsDirectory, true )
+local catImage = display.newImage( &quot;cat.png&quot;, system.DocumentsDirectory, 0, 100 )</pre><p></p>
+<p>The file extensions that cannot be read in the Resource directory by Android are:  html, htm, 3gp, m4v, mp4, png, jpg, and rtf.</p>
+<p>The above technique works for all platforms so if you make it work for Android, it will work everywhere.</p>
+<p>That&#8217;s it for today&#8217;s FAQs. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/02/13/faq-wednesday-sub-folder-and-file-access/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>on-device &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/on-device/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>on-device &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CoronaViewer: Android Beta</title>
+		<link>/blog/2014/07/15/coronaviewer-android-beta/</link>
+		<comments>/blog/2014/07/15/coronaviewer-android-beta/#comments</comments>
+		<pubDate>Tue, 15 Jul 2014 20:09:34 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59184</guid>
+		<description><![CDATA[A few weeks ago, we introduced the beta of <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">CoronaViewer for iOS</a>. (If you haven't seen this yet, check out the video in the <a href="/blog/2014/06/26/coronaviewer-instant-on-device-previews/">original CoronaViewer post</a>.)
+
+Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you'll be able to preview your app across multiple OS's <em>and</em> multiple devices — simultaneously!]]></description>
+				<content:encoded><![CDATA[<p>A few weeks ago, we introduced the beta of <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>CoronaViewer for iOS</a>. (If you haven&#8217;t seen this yet, check out the video in the <a href=/blog/2014/06/26/coronaviewer-instant-on-device-previews/>original CoronaViewer post</a>.)</p>
+<p>Now, we are making a beta available for Android as well. Previously, you could preview your project on multiple devices for a single OS, e.g. iPhone and iPad. Now you&#8217;ll be able to preview your app across multiple OS&#8217;s <em>and</em> multiple devices — simultaneously!</p>
+<p>To access CoronaViewer, you’ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+<p>If you&#8217;ve got feedback on this beta, let us know in the <a href=http://forums.coronalabs.com/forum/641-coronaviewer/>CoronaViewer forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/07/15/coronaviewer-android-beta/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>CoronaViewer: Instant on-device previews</title>
+		<link>/blog/2014/06/26/coronaviewer-instant-on-device-previews/</link>
+		<comments>/blog/2014/06/26/coronaviewer-instant-on-device-previews/#comments</comments>
+		<pubDate>Thu, 26 Jun 2014 12:32:25 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[CoronaViewer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[on-device]]></category>
+		<category><![CDATA[preview]]></category>
+
+		<guid isPermaLink="false">/?p=59031</guid>
+		<description><![CDATA[One of the things app developers love about Corona is the fast iteration. 
+
+Today, we're taking that one step further with CoronaViewer - edit your project from your desktop and preview them right away on your device!]]></description>
+				<content:encoded><![CDATA[<p>One of the things app developers love about Corona is the fast iteration — make edits to your project and preview them instantly in the Corona Simulator. </p>
+<p>Today, we&#8217;re going to take that one step further with CoronaViewer. It&#8217;s going to dramatically improve your productivity. With CoronaViewer, you&#8217;ll be able to edit your project from your Mac/Win desktop and preview them right away on your device. </p>
+<p>CoronaViewer is an app that you run on your device. It works by sync&#8217;ing project files that live in a special Dropbox folder. When you make edits to these files on your desktop, they&#8217;ll automatically be updated to CoronaViewer.</p>
+<p>Here&#8217;s a quick video showing how CoronaViewer works in practice:</p>
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/bpXE6MgyPQc?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>CoronaViewer is currently in beta on iOS (Android is not available yet). There are a few quirks around first-time use and switching between your projects, but you&#8217;ll find it&#8217;s well worth it to be able to preview your app instantly on device.</p>
+<p>To access CoronaViewer, you&#8217;ll need a Pro (or higher) subscription. Install daily build 2014.2347 (or after), and then follow the instructions in the <a href=https://github.com/coronalabs/CoronaViewer/blob/master/README.md>CoronaViewer github repo</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/26/coronaviewer-instant-on-device-previews/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+	</channel>
+</rss>

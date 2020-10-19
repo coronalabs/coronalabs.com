@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>spawning &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/spawning/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>spawning &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #158 &#8211; Building Game Objects and Reloading Levels</title>
+		<link>/blog/coronageek/corona-geek-158/</link>
+		<comments>/blog/coronageek/corona-geek-158/#respond</comments>
+		<pubDate>Mon, 07 Sep 2015 22:02:17 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[game pieces]]></category>
+		<category><![CDATA[loading levels]]></category>
+		<category><![CDATA[spawning]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=63952</guid>
+		<description><![CDATA[On today's Corona Geek Hangout we continued our "Using Gravity In Games" development discussion with a look at building game objects, restarting and advancing to new levels. This was part four of our ongoing look at developing a game similar to the popular mobile game, They Must Be Fed 3. The project's source is available. If you haven't already, download the updated code to see how everything works.]]></description>
+				<content:encoded><![CDATA[<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4cRPtcZ4plA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>On today&#8217;s Corona Geek Hangout we continued our &#8220;Using Gravity In Games&#8221; development discussion with a look at building game objects, restarting and advancing to new levels. This was part four of our ongoing look at developing a game similar to the popular mobile game, They Must Be Fed 3. <img class="alignright wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>In <a href=/blog/coronageek/corona-geek-154/>part one</a> of the series we discussed game mechanics and looked at how gravity works. In <a href=/blog/coronageek/corona-geek-155/>part two</a> we added &#8220;air control&#8221; to manage what happens when the player jumps, and we added keyboard inputs to make play testing in Corona Simulator easier. In part three, we <a href=/blog/coronageek/corona-geek-156/>added level building code for creating platforms, spikes, coins, and monsters</a>. We also looked at how to dynamically center the camera on the player&#8217;s starting position.</p>
+<p>The project&#8217;s source is available. If you haven&#8217;t already, <a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">download the updated code</a> to see how everything works.</p>
+<p><strong>Join Corona Geek After Dark</strong></p>
+<p>Tune in tomorrow night at 6pm Pacific ( 8pm Central / 9pm Eastern ) for <a href=https://plus.google.com/b/108159899655420864045/events/crci08s8tvabo9234b6u3sdu1k0 target="_blank">Corona Geek After Dark #10</a> when we will discuss topics like general app development, forum questions, community insights, and more geekfoo. Last week we discussed <a href=https://www.youtube.com/watch?v=AW-4xgLb6Lc target="_blank">Amazon Underground, Apple TV SDK, awkward Apple Watch phone calls, and QR Codes</a>, plus a ton of other stuff.</p>
+<p><strong>Links For Today&#8217;s Hangout</strong></p>
+<ul>
+<li><a href=http://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/ICanMakeThat/TheyNeedToBeFed.zip target="_blank">Gravity Game Source Code</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58636-corona-answer-packs-first-release/ target="_blank">Corona Answer Packs &#8211; First Release</a></li>
+<li><a href=https://forums.coronalabs.com/topic/58639-new-roaming-gamer-modules-and-utilities/ target="_blank">New Roaming Gamer Modules and Utilities</a></li>
+<li><a href=http://spiralcodestudio.com/hire-me/ target="_blank">Project Help From Sergey Lerg</a></li>
+</ul>
+<p><strong>Learning Resources</strong></p>
+<ul>
+<li><a href=http://startappsblog.com/add-particle-effects-in-your-game-with-corona-sdk/ target="_blank">Particle Effects In Games &#8211; Deep Dive from StartAppsBlog</a></li>
+<li><a href=http://aladin.co.kr/shop/wproduct.aspx?isbn=k852433352 target="_blank">Learn Corona with Lua in Korean</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/beginning-mobile-app-development-with-corona/ target="_blank">Learn Corona SDK from Dr. Brian Burton</a></li>
+<li><a href=/university target="_blank">Watch Corona University Videos</a></li>
+<li><a href=/community/irc/ target="_blank">Corona IRC Channel</a></li>
+</ul>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-157/>Corona Geek #157 &#8211; Alone Game Developer Talks About Developing and Launching HoPiKo Game</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-158/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://corona-geek.s3.amazonaws.com/corona-geek-show-158-2015-09-07-part-4-building-objects-and-levels.mp3" length="81436735" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #115 – App Marketing in China and Spawning Random Enemies</title>
+		<link>/blog/coronageek/corona-geek-115/</link>
+		<comments>/blog/coronageek/corona-geek-115/#respond</comments>
+		<pubDate>Mon, 10 Nov 2014 22:43:51 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[App Marketing]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[spawning]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60193</guid>
+		<description><![CDATA[During this week's Corona Geek Hangout we discussed selling apps in China and why you might consider attracting downloads in one country over another. We looked at how to randomly spawn enemies in a game and how to get your apps labeled as “Optimized” for iPhone 6 and 6 Plus in the Apple App Store.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/PtaaF23CfKk?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week&#8217;s Corona Geek Hangout we discussed selling apps in China and why you might consider attracting downloads in one country over another. We looked at how to randomly spawn enemies in a game and how to get your apps labeled as “Optimized” for iPhone 6 and 6 Plus in the Apple App Store.</p>
+<p><strong>November&#8217;s Corona Geek Game</strong></p>
+<p>Congratulations to Kerem San, winner of last month&#8217;s Corona Geek Games contest. Kerem posted his <a href=http://spiralcodestudio.com/2048hex/ target="_blank">2048 Hex</a> high score on the Corona Geek Facebook page and won a $50 gift card to the retailer of his choice.</p>
+<p>This month we are playing Doctor Spin by <a href=/blog/coronageek/corona-geek-108/>Code Delivery Boy</a>. If you would like to play along and have a chance to win a gift card, <a href=http://www.doctorspingame.com/ target="_blank">download Doctor Spin</a> and share a screenshot of your high score on the <a href=https://www.facebook.com/CoronaGeek target="_blank">Corona Geek Facebook page</a>. The winner will be announced on December 1st.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-114/ target="_blank">Corona Geek #114 – Animated Counters and Adaptive Content Scaling</a></li>
+<li><a href=/university>Corona University</a></li>
+<li><a href=https://www.youtube.com/watch?v=3bUG0vDduEM&list=PLQUSbLhyMnAqAAce1xQN2k88y6Nwdng83&index=1 target="_blank">Special 1-hour Acquisition Hangout</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Burtons Media Group &#8211; Corona Books &#8211; <a href=http://burtonsmediagroup.com/ target="_blank">use coupon code <strong>CoronaGeek</strong></a> and save 20% at checkout</li>
+<li>Spiral Code Studio <a href=http://spiralcodestudio.com/ target="_blank">Corona Games and Development</a></li>
+<li>Roaming Gamer <a href=http://roaminggamer.com/makegames/ target="_blank">Game Templates and Tools</a></li>
+<li>Crave Creative <a href=http://www.cravecreative.com/ target="_blank">Widget Themes</a> &#8211; <a href=http://www.cravecreative.com/corona-widget-theme-1.html target="_blank">Bold</a>, <a href=http://www.cravecreative.com/corona-widget-theme-2.html target="_blank">Elegant</a>, <a href=http://www.cravecreative.com/corona-widget-theme-3.html target="_blank">Light</a></li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/blob/master/SSK/RGGlobals/ssk/globals/functions.lua target="_blank">First Not Nil Function &#8211; Github Repo</a></li>
+<li><a href=http://forums.coronalabs.com/topic/47560-create-random-position-that-are-not-colliding-each-other/?#entry245588 target="_blank">Generating Non-Overlapping Display Objects</a> &#8211; <a href=https://www.youtube.com/watch?v=K3ixlmzfgNk&list=UU1I_sK219oBk-5Uw2rYz3Tg target="_blank">Watch the video</a></li>
+</ul>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li><a href=http://www.forbes.com/sites/karstenstrauss/2014/09/17/want-people-to-download-your-app-translate-it-into-chinese/ target="_blank">Forbes article on getting app downloads in China</a></li>
+<li><a href=http://murphyapps.co/blog/2012/10/18/corona-sdk-tutorial-ios-app-localization target="_blank">Localizing your apps using Corona</a></li>
+<li><a href=http://online.wsj.com/articles/SB10001424127887324906004578292233989943540 target="_blank">Challenges of selling in non-english markets</a></li>
+<li><a href=http://www.androidauthority.com/samsung-devices-now-banned-use-chinese-officials-530392/ target="_blank">Samsung banned for China&#8217;s government officials</a></li>
+<li><a href=http://www.bloomberg.com/news/2014-07-16/how-china-may-make-apple-and-samsung-smartphones-a-tougher-sell.html target="_blank">2014 mobile market growth in China</a></li>
+</ul>
+<p><strong>Thank you for listening to and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-115/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-115-2014-11-10-app-marketing-in-china-and-spawning-enemies.mp3" length="62826724" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>business &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/business-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>business &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Updated: New features added to the Business App sample</title>
+		<link>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/</link>
+		<comments>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/#comments</comments>
+		<pubDate>Tue, 08 Mar 2016 16:59:56 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[business apps]]></category>
+		<category><![CDATA[Code Samples]]></category>
+		<category><![CDATA[Sample Code]]></category>
+
+		<guid isPermaLink="false">/?p=65965</guid>
+		<description><![CDATA[The Corona Labs business app sample project has been updated to support database and input operations. Read the post to learn more details and how you can grab this project and get started beyond games.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-47971" src="/wordpress/wp-content/uploads/2013/10/photo-5-169x300.png" alt="Corona Business App - Blog" width="169" height="300" />The <a href=https://github.com/coronalabs/business-app-sample target="_blank">Corona Labs Business App sample project</a> has been updated with some frequently requested &#8220;<em>How do I do this?</em>&#8221; examples. A new data tab (and menu item) have been added for you. This new scene offers:</p>
+<ul>
+<li>a <a href=https://docs.coronalabs.com/api/library/widget/newTableView.html target="_blank">tableView</a> populated from selecting data from an <a href=https://docs.coronalabs.com/api/library/sqlite3/index.html target="_blank">SQLite</a> database</li>
+<li>tapping on a tableView row lets you edit the record and store the changes</li>
+<li>tapping on the &#8220;Add&#8221; button lets you add new records to the database</li>
+</ul>
+<p>To support these changes, a database abstraction module has been added that provides initialization of the database and basic <a href=https://en.wikipedia.org/wiki/Create,_read,_update_and_delete target="_blank">CRUD operations</a> (Create, Read, Update, Delete) for records in the database.</p>
+<p>As part of the solution, you create a Lua table that defines your database scheme and the module will use that table for it&#8217;s operations.</p>
+<p>Both the <strong>Update</strong> and <strong>Add</strong> screens provide examples of using  <a href=https://docs.coronalabs.com/api/library/native/newTextField.html target="_blank">native.newTextField&#8217;s</a> to input data and write to the database.</p>
+<p>The code that populates the <code>tableView</code> uses <a href=https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller target="_blank">MVC (Model, View, Controller)</a> best practices to separate the data from the display.</p>
+<p>The <code>tableView's</code> <code><a href="https://docs.coronalabs.com/api/library/table/insert.html" target="_blank">insert</a></code> function provides the controller aspect so your <code>onRowRender()</code> function knows about it&#8217;s record and doesn&#8217;t have to know anything about how your data table is constructed and ordered.</p>
+<p>Additionally a bug was fixed in the <code>tableView</code> refresh code to handle a case where your <code>tableView</code> didn&#8217;t have enough records in it and you tapped below the last record.</p>
+<p><a href=https://github.com/coronalabs/business-app-sample target="_blank">Download these new features</a> today by visiting the project on the Corona Labs github repository. See how it can help you develop business style apps.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/03/08/updated-new-features-added-to-the-business-app-sample/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>Featured app: Quebec Tourism</title>
+		<link>/blog/2016/02/24/featured-app-quebec-tourism/</link>
+		<comments>/blog/2016/02/24/featured-app-quebec-tourism/#comments</comments>
+		<pubDate>Wed, 24 Feb 2016 17:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Featured App]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[cms]]></category>
+		<category><![CDATA[tourism]]></category>
+
+		<guid isPermaLink="false">/?p=65743</guid>
+		<description><![CDATA[Today we highlight a recently released non-game app called Quebec Tourism. This app an excellent example of how Corona can be used to deploy powerful business related apps.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-medium wp-image-65745" src="/wordpress/wp-content/uploads/2016/02/unnamed1-169x300.jpg" alt="unnamed1" width="169" height="300" />Can you make non-game apps with Corona? That&#8217;s a question that comes up a lot. The short answer is &#8220;yes!&#8221; As an example, let&#8217;s explore <em>Quebec Tourism</em>, a recently released business-oriented app from Nicolas Michaud of <a href=http://mobeva.com/ target="_blank">Mobeva.com</a>.</p>
+<p><em>Quebec Tourism</em> is a non-game app built upon Mobeva&#8217;s white label tourism platform, created with Corona. This platform allows Mobeva to easily create custom tourism apps for different tourism offices around the world. With it they can promote the country, city, other locale, or set up guided tours.</p>
+<p>Using either Mobeva&#8217;s CMS (Content Management System), or by connecting directly to the customer&#8217;s database, the <em>Quebec Tourism</em> app can be quickly customized to offer a unique experience. It also supports both online and offline usage.</p>
+<h4>Features</h4>
+<ul>
+<li>Customized content based on user tastes</li>
+<li>Geo-location to find attractions around users</li>
+<li>An adaptive interface based on device orientation</li>
+<li>Social network sharing</li>
+<li>French and English support</li>
+</ul>
+<p><em>Quebec Tourism</em> is currently available as a free download for <a href=https://itunes.apple.com/us/app/quebec-tourism-attractions/id586600494?mt=8 target="_blank">iOS</a> and <a href=https://play.google.com/store/apps/details?id=com.braintonik.nestorQuebec target="_blank">Android</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/24/featured-app-quebec-tourism/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Sample code: A Corona-powered business app</title>
+		<link>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/</link>
+		<comments>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/#comments</comments>
+		<pubDate>Wed, 09 Oct 2013 18:22:42 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[maps]]></category>
+
+		<guid isPermaLink="false">/?p=47964</guid>
+		<description><![CDATA[To show you just a few of the neat business-related elements you can incorporate with Corona SDK, we've put together an iOS 7-friendly sample business app with essentials including table views, webviews, maps and more. Our sample business app includes a menu via a tab bar controller at the bottom of the screen with buttons for the Corona blog, pictures, videos and maps.]]></description>
+				<content:encoded><![CDATA[<p>While Corona SDK has been hugely popular among game developers, more and more developers are discovering Corona as an ideal tool for business applications. From revolutionizing real estate with NuOffer to tracking fertility and ovulation with My Days, there are hundreds of fantastic Corona-powered business apps and utilities in the wild.</p>
+<p>To show you just a few of the neat business-related elements you can incorporate with Corona SDK, we&#8217;ve put together an iOS 7-friendly sample business app with essentials including tableViews, webViews, maps and more. Our sample business app includes a menu via a tab bar controller at the bottom of the screen with buttons for the Corona blog, pictures, videos and maps.</p>
+<p>The sample app also includes several <a href=http://docs.coronalabs.com/api/library/widget/>Corona SDK widgets</a> including widget.newTableView, widget.newTabBar and widget.newButton, and demonstrates how to use networking to download server data.</p>
+<p>Take a look inside:</p>
+<ul>
+<li><strong>Blog posts</strong>: The app fetches the RSS feed from Corona&#8217;s blog. Using this data, it populates the posts into a widget.newTableView. You can scroll up and down to see all the latest posts, tap on each entry for more details and interact with links within individual blog posts via a native.newWebView.</li>
+<li><strong>Photo gallery</strong>: The photo gallery includes a set of thumbnails that mirror an iPhone photo gallery, complete with a slider.</li>
+<li><strong>Video</strong>: The video section provides a list of recent videos from Corona Labs&#8217; <a href=http://www.youtube.com/coronalabs>YouTube channel</a>. <em>Please note: The videos will not play in the Corona Simulator. The videos will play on the device directly and allow you to turn the devices sideways for full-screen viewing.</em></li>
+<li><strong>Custom map</strong>: Our map pins Corona&#8217;s Palo Alto headquarters along with three local Starbucks, charted with custom markers. You can zoom in, rotate the map, see a satellite view, and more. <em>Please note: The map is not viewable in the Corona Simulator, however is viewable when you build to your device.</em></li>
+</ul>
+<p>Here are a few screenshots from the app:</p>
+<div style="margin: 0px auto; width: 548px;">
+<table>
+<tbody>
+<tr>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47967" src="/wordpress/wp-content/uploads/2013/10/photo-1-169x300.png" alt="Sample Business App - Maps" /><figcaption>Custom Map</figcaption></figure>
+</td>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47968" src="/wordpress/wp-content/uploads/2013/10/photo-4-168x300.png" alt="Sample Business App - Video" /><figcaption>Video</figcaption></figure>
+</td>
+<td>
+<figure><img class="aligncenter size-medium wp-image-47971" src="/wordpress/wp-content/uploads/2013/10/photo-5-169x300.png" alt="Corona Business App - Blog" /><figcaption>Blog</figcaption></figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>As you can see, our sample covers just a few of the essentials, but the possibilities are endless. Get your hands on the code by downloading the file from <a href=https://gitHub.com/coronalabs/business-app-sample target="_blank">GitHub</a>.</p>
+<p><strong>Please note: We&#8217;ve created a new thread in the forum called <a href=http://forums.coronalabs.com/topic/40208-business-sample-app-discussion/>Business App Discussion</a>. Please post any questions you may have there. Thank you!</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/09/a-look-inside-a-sample-corona-powered-business-app/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+		<item>
+		<title>Transitions &#8211; UX Design</title>
+		<link>/blog/2013/10/04/inteligent-transitions-in-ux-design/</link>
+		<comments>/blog/2013/10/04/inteligent-transitions-in-ux-design/#comments</comments>
+		<pubDate>Fri, 04 Oct 2013 18:00:47 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[Opportunities]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=5</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/10/04/inteligent-transitions-in-ux-design/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Trends in storytelling</title>
+		<link>/blog/2013/10/04/trends-in-storytelling/</link>
+		<pubDate>Fri, 04 Oct 2013 15:55:52 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Business]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[Information]]></category>
+		<category><![CDATA[Trends]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=26</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Guest piece: Digitizing the real estate market with Corona SDK</title>
+		<link>/blog/2013/08/01/guest-piece-digitizing-the-real-estate-market-with-corona-sdk/</link>
+		<comments>/blog/2013/08/01/guest-piece-digitizing-the-real-estate-market-with-corona-sdk/#comments</comments>
+		<pubDate>Thu, 01 Aug 2013 20:23:36 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[business]]></category>
+
+		<guid isPermaLink="false">/?p=39745</guid>
+		<description><![CDATA[Kevin Hincker is a writer, designer and programmer, and is the co-founder of <a href="http://www.nuoffer.com/site/">NuOffer</a>, a negotiation platform for the real estate industry. He lives and works in Los Angeles with his wife, his son and a hound. In his guest piece, Kevin writes on how NuOffer is revolutionizing the real estate market.
+
+NuOffer was a recent <a href="http://www.coronalabs.com/blog/2013/07/29/app-of-the-week-nuoffer/">Corona App of the Week</a> winner and is a fantastic example of a business app made with Corona SDK Pro.]]></description>
+				<content:encoded><![CDATA[<p><em>Kevin Hincker is a writer, designer and programmer, and is the co-founder of <a href=http://www.nuoffer.com/site/>NuOffer</a>, a negotiation platform for the real estate industry. He lives and works in Los Angeles with his wife, his son and a hound.</p>
+<p>NuOffer was a recent <a href=http://www.coronalabs.com/blog/2013/07/29/app-of-the-week-nuoffer/>Corona App of the Week</a> winner and is a fantastic example of a business app made with Corona SDK.</em></p>
+<hr/ >
+<p><img src="/wordpress/wp-content/uploads/2013/08/Screen-Shot-2013-08-01-at-12.33.39-PM-267x300.png" alt="Kevin Hincker" class="alignleft size-medium wp-image-39749" />A year ago, in early 2012, Imraan Ali, my co-founder in <a href=http://www.nuoffer.com/site/>NuOffer</a>, was trying to buy a house for a client. The house was reasonably priced, his client was a pleasure to work with, and he knew the agent on the other side of the deal as a friend. But he could hardly bring himself to start the offer drafting process. Because he had come to think of that part of his job as a nightmare.</p>
+<p>Using the technologies available a year ago, a real estate agent needed a minimum of 60 minutes to draft offer documents for a property. He would need to use 5 separate applications to do it. He would have to drive back to his office &#8212; because none of the tools at the time were mobile &#8212; complete the forms, print them out to be signed, scan them back in and finally email everything. The process was ridiculously complicated, full of convoluted ideas about data and communication, and incredibly time consuming. </p>
+<p>I had recently begun my exploration of mobile application development. My background had been as a designer and web developer, and though I had been searching for some time I had not found a platform I wanted to use to develop for phones and tablets. The tools I was seeing were ridiculously complicated, full of convoluted ideas about data and communication, and incredibly time consuming. </p>
+<p>Imraan and I had the same problem, though we didn’t yet know it. And the solution for both of us turned out to be something most commonly thought of as a way to make games.</p>
+<p>Imraan found me through a mutual friend. He wanted to know if there was a way to fix the digital tools real estate agents were forced to use. At our first meeting, as he described the outdated and inefficient way the real estate industry did business, I found myself nodding in complete sympathy. He told me he was even considering quitting real estate if he couldn’t fix the problems. He just wanted it to be fun again. </p>
+<p>Fortunately for both of us, I had at just about that time stumbled upon a little gem of a mobile development platform called <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>, a simple, powerful, modern tool that made building for mobile fun. Most people thought of it as a gaming platform. But after thorough analysis, I saw no reason that it couldn’t be used to build literally any kind of app, including a business app.</p>
+<p>By the end of our first meeting Imraan and I had created what we thought of as a bit of a pipe dream&#8211;a spec for a entirely new real estate technology: an offer negotiation platform which completely digitized the drafting of a contract and eliminated the paperwork, where buyers and sellers could sign offers instantly, and which was 100% mobile so that an agent could draft a contract from anywhere in the world. And as a topper, since we were in pie-in-the-sky mode, we decided that drafting that contract should take only ten minutes. </p>
+<p>Ridiculous, honestly. The two of use were sitting in a coffee shop talking about completely rebuilding the way real estate was done. And it’s not as though we were copying or iterating some existing software or vertical. What we were describing was something that simply did not exist, that had no templates to reference, no previous models that had “almost gotten it right” which we could build upon. It was, I will admit, monumentally ambitious. But I had a secret weapon: Corona SDK.</p>
+<p>Over the course of the next six months I took a crash course in real estate from Imraan, and he took a crash course in software development from me. He would describe a problem, I would create a solution, and then the two of use would pound at it until it was something that actual in-the-field real estate agents could use. And Corona was what made it possible.</p>
+<p>The Corona development cycle is so fast, the tool set so accessible and complete, that from one day to the next I often completely rewrote whole subsections. Corona made possible a style of development I had never before experienced, a sort of ad hoc circling inwards toward solutions, because the time and opportunity costs were so small relative to the payoffs. And really, thinking back, there was no other way I could have developed the app that NuOffer has become today. </p>
+<p>After about 6 months the app was finished, though beta testing would continue to reveal pieces we could make better and ways we could reduce user friction. At that point we lured Bryan Ingram away from the work he was doing with Google to lead Marketing and Product Development for the company, and the team was complete. We went out and raised a $500,000 seed round, and just last week we went live in Texas. The plan now is to scale the technology there and then quickly move it out across the rest of the country.</p>
+<p>Oh, and that pie in the sky “10 minute offer?” At the moment, we have that down to about 3 minutes. And there’s a daily build coming which could help me shave off another 20 seconds…</p>
+<p>Our transformation of real estate is just getting started.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/01/guest-piece-digitizing-the-real-estate-market-with-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>App of the Week: NuOffer</title>
+		<link>/blog/2013/07/29/app-of-the-week-nuoffer/</link>
+		<comments>/blog/2013/07/29/app-of-the-week-nuoffer/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 18:00:10 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=39475</guid>
+		<description><![CDATA[Until recently, the world of real estate hadn’t caught up to the digital age. To address this problem, programmer and designer Kevin Hincker partnered with veteran real estate agent Imraan Ali, to drastically simplify the real estate market with the launch of <a href="https://itunes.apple.com/us/app/nuoffer/id650133198?mt=8">NuOffer</a>.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/07/Screen-Shot-2013-07-26-at-4.04.03-PM.png" alt="NuOffer" class="alignleft size-full wp-image-39476" srcset="/wordpress/wp-content/uploads/2013/07/Screen-Shot-2013-07-26-at-4.04.03-PM.png 203w, /wordpress/wp-content/uploads/2013/07/Screen-Shot-2013-07-26-at-4.04.03-PM-150x150.png 150w" sizes="(max-width: 203px) 100vw, 203px" />Until recently, the world of real estate hadn’t caught up to the digital age. For real estate agents, drafting up contracts is the dreaded part of the job, while for buyers, the market is a big black hole. To address this problem, programmer and designer Kevin Hincker partnered with veteran real estate agent Imraan Ali, to drastically simplify the real estate market and bring it to the digital world. The duo turned to <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a> to develop <a href=https://itunes.apple.com/us/app/nuoffer/id650133198?mt=8>NuOffer</a>, a new business app currently being piloted in Texas. Imraan and Kevin brought on product development specialist Bryan Ingram, who was working with Google at the time, to lead marketing and product development for the company.</p>
+<p>NuOffer digitizes paperwork that normally keeps agents chained to their desks for hours each day. By quickly creating customized offer letters, NuOffer lets agents sign forms digitally and send them to buyers for review and approval. Kevin told me that manually drafting just one offer can take an hour, while NuOffer cuts this down to just 3 minutes. The app frees up time for agents to focus on networking with new clients and meeting the needs of existing buyers instead of filling out a mountain of paperwork. Selecting from a large inventory of properties, both buyers and agents can also select their “favorite” homes and schedule viewings &#8211; another way for both parties to stay active and organized.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/07/Nice-226x300.png" alt="Nice!" class="alignright size-medium wp-image-39589" />In addition to the digital housing inventory, buyers reap more benefits. Buyers can sign documents from anywhere in the world &#8211; from the comfort of their home, or while vacationing in Greece – with an internet connection. Not only does this apply to the initial negotiation letter, but also to counter offers, inspections and other documents associated with home purchase.</p>
+<p>The service gives buyers an organized way to keep track of all the documents, starting at initial home purchase to inspections to upgrades. NuOffer also alerts buyers when an inspection occurs, when escrow paperwork comes in, updates them on the status of a loan application, schedules housing check-ups and more. </p>
+<p><img src="/wordpress/wp-content/uploads/2013/07/NuOffer-screenshot--225x300.jpg" alt="NuOffer screenshot" class="alignleft size-medium wp-image-39571" />When asked why the team picked Corona SDK to develop the app, Hincker spoke of Corona’s rapid speed of development, the simplicity of the Lua language, and the ability to iterate quickly and build to the specs of the project in a fraction of the time. Kevin noted that Corona minimized the project’s opportunity cost and allowed his team to quickly launch to the App Store.</p>
+<p>The app currently features 80,000 Texas properties with plans to expand by the end of the year. The agent subscription fee is $15 a month and will soon roll out a marketplace where vendors such as contractors, landscapers, plumbers and other accredited professionals will be available for hire. If you’re an agent in the Texas area, join the pilot program and download NuOffer from the <a href=https://itunes.apple.com/us/app/nuoffer/id650133198?mt=8>App Store</a>. To stay up to date on new service areas throughout the country, check <a href=http://www.nuoffer.com/site/>NuOffer’s site</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/29/app-of-the-week-nuoffer/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Guest post: Building a #1 business app with Corona SDK</title>
+		<link>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/</link>
+		<comments>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/#comments</comments>
+		<pubDate>Thu, 09 May 2013 17:00:21 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[utility]]></category>
+
+		<guid isPermaLink="false">/?p=33543</guid>
+		<description><![CDATA[Chris Russell is the creator of the Corona-powered Cost a Cake and Cost a Cake Pro for iOS. Created for cake makers, Chris’s business apps have soared to #1 in the Food &#038; Drink category of the US and UK App Stores, and reached the Top 10 in a number of additional stores around the world.
+
+Chris initially started the project as a native iOS-only app, but transitioned to Corona SDK for the cross-platform capabilities. Today, Chris shares his experience developing a successful business app with Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><em>Chris Russell is the creator of the Corona-powered Cost a Cake and Cost a Cake Pro for iOS. Created for cake makers, Chris&#8217;s business apps have soared to #1 in the Food &#038; Drink category of the US and UK App Stores, and reached the Top 10 in a number of additional stores around the world. </p>
+<p>Chris initially started the project as an Xcode-based iOS-only app, but quickly transitioned to Corona SDK for the cross-platform capabilities of the platform. Today, Chris shares his experience developing a successful business app with Corona SDK.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM.png" alt="Cost a Cake Pro icon" class="alignleft size-full wp-image-33546" srcset="/wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM.png 202w, /wordpress/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-9.46.13-AM-150x150.png 150w" sizes="(max-width: 202px) 100vw, 202px" />Building business apps with a games creation toolkit is a bit risky, isn’t it?</p>
+<p>I have to admit, that when I started to code <a href=https://itunes.apple.com/us/app/cost-a-cake/id553290399?mt=8>Cost A Cake</a>, a paid-for big sister <a href=https://itunes.apple.com/us/app/cost-a-cake-pro/id615555385?mt=8>Cost A Cake Pro</a>, with <a href=www.coronalabs.com/products/corona-sdk>Corona SDK</a>, I wasn’t totally sure that it would be a success.</p>
+<p>Glancing through the forums there was little support for anyone in the ‘serious’ app market. Sure, if I wanted to produce a cake balancing game with Box2D physics, parallax backgrounds and online high score tables I was in luck, but for an app that would allow business owners to price up cakes and produce quotes, was I biting off more than I could chew?</p>
+<p>The last 12 months have been a real eye-opener to the possibilities that Corona SDK offers. It’s not perfect, but it’s orders of magnitude better then any of its competitors, and the results have been pretty good, as our customer feedback can attest.</p>
+<p>Compared with games, business apps can be tricky beasts. There’s a structure to &#8216;serious&#8217; software that requires insight into databases, workflows, page designs and all kinds of things that would normally make you shudder with fear, but the single biggest takeaway I’ve found with Corona SDK is that it CAN be done, if there isn’t an out-of-box solution, then you can take the box, duck tape a few extra flaps on it and you’re ready to go!</p>
+<p>It sounds simple, and sometimes it is. On other occasions you have to strike out in new and unknown directions, try something different and wait for feedback. In Cost A Cake Pro, I implemented a custom keyboard. It was quite a cool module that allowed the keyboard to be skinned and colour-coordinated to the app and it was configureable to a stupid degree. I was very pleased with it. Sadly, the paying customers weren’t and wanted to use the native keyboard of their phones and tablets so there was nothing for it but to start work on an immediate update swapping new and groovy for old and familiar. I have to admit to being disappointed but, as the old store saying goes “the customer is always right.”</p>
+<p>It occurs to me after 12 months of late nights and hard work there are some things that could improve for serious app devs &#8211; some form of scene layout tool (think XCode’s design tool) could seriously reduce development time, but for any shortcomings in the software, it’s the initial planning and prep BEFORE touching the keyboard that can make the difference: Is there a market for the app? How big is that market? Have you considered marketing? What about social media integration? Do you understand the requirements for the target market? And so forth. It’s these kinds of issues that will make or break your work and determine whether you’ll make money or lose hope.</p>
+<p>It strikes me that Corona provides plenty of opportunity for business app development as well as for game developers but from what I’ve seen on the forums (three posts in the &#8216;Business Apps&#8217; sub-forum!) there are few taking on the challenge &#8211; care to join me?</p>
+<p>&#8211;<em>Chris Russell</em>	</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/09/guest-post-building-a-1-business-app-with-corona-sdk/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #35 &#8211; Hanging out with Spelling Test developer, Brian Park</title>
+		<link>/blog/coronageek/corona-geek-hangout-35/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-35/#comments</comments>
+		<pubDate>Tue, 16 Apr 2013 03:01:19 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[educational]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Kindle Fire]]></category>
+		<category><![CDATA[Nook]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=32041</guid>
+		<description><![CDATA[This week, we hung out with Spelling Test developer, Brian Park. Spelling Test is the #1 rated spelling app for iOS, Android, Kindle Fire, and NOOK. Brian shared how his app was originally developed using x-code and objective-c and how after much personal expense and effort he ultimately decided to rewrite Spelling Test himself using Corona SDK. Even though Brian doesn't consider himself a programmer, he's developed an extremely popular cross platform educational app with many advanced features including a completely custom keyboard that suppresses spelling correction when taking tests.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/Y3ohJDOicoA?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Spelling Test developer, Brian Park. Spelling Test is the #1 rated spelling app for iOS, Android, Kindle Fire, and NOOK. Brian shared how his app was originally developed using X-Code and Objective-C and how after much personal expense and effort he ultimately decided to rewrite Spelling Test himself using Corona SDK. Even though Brian doesn&#8217;t consider himself a programmer, he&#8217;s developed an extremely popular <a href=http://www.coronalabs.com/products/corona-sdk>cross platform educational app</a> with many advanced features including a completely custom keyboard that suppresses spelling correction when taking tests. Watch/listen to the full hangout for more details.</p>
+<div style="clear: both;"></div>
+<p>Also joining us on the developer panel were <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>Congratulations to Mark Allen for winning this week&#8217;s Corona Labs&#8217; t-shirt. For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-35/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-35-2013-04-15-spelling-test.mp3" length="41874737" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #34 &#8211; Hanging out with Climate Clock&#8217;s Ben Wong</title>
+		<link>/blog/coronageek/corona-geek-hangout-34/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-34/#respond</comments>
+		<pubDate>Tue, 09 Apr 2013 01:50:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31456</guid>
+		<description><![CDATA[This week, we hung out with Climate Clock's, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it's design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/S3OWp49EqVo?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Climate Clock&#8217;s, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it&#8217;s design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.</p>
+<p>Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information and <a title="Download Climate Clock" href=http://climateclockapp.com/ target="_blank">check out Climate Clock</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Justin Giles. Congrats Justin! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-34/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+		</item>
+	</channel>
+</rss>

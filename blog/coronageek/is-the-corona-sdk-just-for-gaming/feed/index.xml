@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Is The Corona SDK Just For Gaming?</title>
+	<atom:link href="/blog/coronageek/is-the-corona-sdk-just-for-gaming/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 May 2020 09:27:45 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/#comment-5446</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2012 15:50:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=109#comment-5446</guid>
+		<description><![CDATA[I see. Thank you for the Widget Candy reference. I will have to review their library in more depth. I&#039;ve used some of the common third party libraries for other things like Director, but I&#039;m trying to stay close to the Corona API. Do you use a lot of third party libraries, or just this one?]]></description>
+		<content:encoded><![CDATA[<p>I see. Thank you for the Widget Candy reference. I will have to review their library in more depth. I&#8217;ve used some of the common third party libraries for other things like Director, but I&#8217;m trying to stay close to the Corona API. Do you use a lot of third party libraries, or just this one?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Curved Light Solutions</title>
+		<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/#comment-5445</link>
+		<dc:creator><![CDATA[Curved Light Solutions]]></dc:creator>
+		<pubDate>Thu, 30 Aug 2012 21:28:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=109#comment-5445</guid>
+		<description><![CDATA[They have a decent set of iOS widgets, there is a lack of parity with what is offered for Android ( at lease in the public release),  I actually purchased a nice 3rd party library for Corona called Widget Candy. It has parity between iOS and Android and all widgets look the same  on both platforms. In addition you can skin it to look like the native OS.]]></description>
+		<content:encoded><![CDATA[<p>They have a decent set of iOS widgets, there is a lack of parity with what is offered for Android ( at lease in the public release),  I actually purchased a nice 3rd party library for Corona called Widget Candy. It has parity between iOS and Android and all widgets look the same  on both platforms. In addition you can skin it to look like the native OS.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: charlesmckeever</title>
+		<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/#comment-5444</link>
+		<dc:creator><![CDATA[charlesmckeever]]></dc:creator>
+		<pubDate>Tue, 28 Aug 2012 18:30:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=109#comment-5444</guid>
+		<description><![CDATA[I&#039;m still building up my Corona muscles, so I can imagine there are gaps I&#039;m not aware of. Can you think of any specific examples that might help illustrate the point?]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m still building up my Corona muscles, so I can imagine there are gaps I&#8217;m not aware of. Can you think of any specific examples that might help illustrate the point?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Curved Light Solutions</title>
+		<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/#comment-5443</link>
+		<dc:creator><![CDATA[Curved Light Solutions]]></dc:creator>
+		<pubDate>Tue, 28 Aug 2012 17:34:00 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=109#comment-5443</guid>
+		<description><![CDATA[You neglect to hit on the BIGGEST thing missing for non-game apps.  A robust cross-platform set of UI widgets. What they currently have is very lacking. ]]></description>
+		<content:encoded><![CDATA[<p>You neglect to hit on the BIGGEST thing missing for non-game apps.  A robust cross-platform set of UI widgets. What they currently have is very lacking. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles McKeever</title>
+		<link>/blog/coronageek/is-the-corona-sdk-just-for-gaming/#comment-5442</link>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+		<pubDate>Thu, 10 May 2012 22:25:53 +0000</pubDate>
+		<guid isPermaLink="false">http://sdkdallas.com/?p=109#comment-5442</guid>
+		<description><![CDATA[I think it makes sense for Ansca Mobile to focus on the hotest topic in mobile development. It&#039;s not only financially the best place to focus resources, but it&#039;s also the place where most developers need the most help.  A lot of creative people would never be able to put together all the code to make game physics happen, but just about anyone can figure out how to connect a form to a database to store and retrieve data.]]></description>
+		<content:encoded><![CDATA[<p>I think it makes sense for Ansca Mobile to focus on the hotest topic in mobile development. It&#8217;s not only financially the best place to focus resources, but it&#8217;s also the place where most developers need the most help.  A lot of creative people would never be able to put together all the code to make game physics happen, but just about anyone can figure out how to connect a form to a database to store and retrieve data.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

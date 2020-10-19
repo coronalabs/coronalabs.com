@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Facebook Audience Network &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/facebook-audience-network/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Facebook Audience Network &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Facebook Audience Network plugin: updated rev-share ratio</title>
+		<link>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/</link>
+		<comments>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 23:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65571</guid>
+		<description><![CDATA[Corona Labs has released an update to the Facebook Audience Network monetization plugin. Learn more about how these changes benefit you.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-63472" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png" alt="facebook-logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2015/07/facebook-logo-150x150.png 150w, /wordpress/wp-content/uploads/2015/07/facebook-logo.png 160w" sizes="(max-width: 150px) 100vw, 150px" />Corona Labs has updated the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> monetization plugin.</p>
+<p>Based on feedback, we&#8217;ve decided to set the revenue-sharing ratio for the Facebook Audience Network ad provider plugin at a flat 5% instead of the more complicated &#8220;tier&#8221; system previously announced. This rate applies across the spectrum regardless of ad requests/impressions.</p>
+<p>To get started with the Facebook Audience Network plugin, see our <a href=/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/ target="_blank">recent announcement</a> for the plugin, or see the <a href=https://docs.coronalabs.com/daily/plugin/fbAudienceNetwork/index.html target="_blank">documentation</a>. We thank our developer community for their feedback and support!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/09/facebook-audience-network-plugin-updated-rev-share-ratio/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+	</channel>
+</rss>

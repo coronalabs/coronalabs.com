@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Corona SDK &#8211; Corona Labs</title>
+	<atom:link href="/blog/topics/corona-sdk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>Corona SDK &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>I have a question where should I ask it?</title>
+		<link>/blog/2019/04/24/i-have-a-question-where-should-i-ask-it/</link>
+		<pubDate>Wed, 24 Apr 2019 22:12:57 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Tutorials, Tips and Demos]]></category>
+
+		<guid isPermaLink="false">/?p=76261</guid>
+		<description><![CDATA[Many Corona users can be successful with just our API docs and guides, but what if you need more help? Where should you turn to?]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2012/04/community-icons_Forum.png" alt="" width="99" height="69" class="alignright size-full wp-image-13766" />It seems like we are seeing the same questions showing up in multiple places. We want you to get the best support possible and understanding the best places to ask your questions will help meet that goal.</p>
+<p>Support requests can be generally broken into three distinct categories:</p>
+<ol>
+<li>How do I use Corona?</li>
+<li>I&#8217;m having an account related issue.</li>
+<li>Letting people know about cool things you&#8217;re using Corona for.</li>
+</ol>
+<p>There are several support channels available for you:</p>
+<ol>
+<li>
+<a href=https://forums.coronalabs.com/ rel="noopener" target="_blank">The Community Forums</a></li>
+<li>
+Emailing <a href=mailto:support@coronalabs.com rel="noopener" target="_blank">support@coronalabs.com</a></li>
+<li>
+<a href=/slack/ rel="noopener" target="_blank">The Community Slack</a></li>
+<li>
+Social Media like Facebook, Twitter, Stack Overflow, Reddit, etc.</li>
+<li>
+Private messages on all of the above channels</li>
+</ol>
+<h3>Which should I use?</h3>
+<p><strong>If you have account related questions</strong>, or a plugin license issue or anything where we need something private (an email address, credit card or we need to reset your password) then emailing <a href=mailto:support@coronalabs.com rel="noopener" target="_blank">support@coronalabs.com</a> is the proper choice. This helps keep your information safe.<br />
+<strong><br />
+If you have any questions about the product</strong> and in particular if code needs to be shared to help answer your question, you should always use the forums. While forums may seem SO 2000&#8217;s, they provide you with some very important features that not only benefit you, but also benefit the community:</p>
+<ol>
+<li>You have access to developers from around the world to get your answers. You will usually get answers faster than waiting for the Corona Staff to be online.</li>
+<li>The forums are a great knowledge base because it&#8217;s searchable. You can search the forums (or use Google since it indexes the forum posts) for your question before you ask and get an answer right away. If your question can&#8217;t be found, then ask. Once answered, other developers when they have your question can find your answer. This concept is so important, that we specifically discourage 1 on 1 messages to support.</li>
+<li>Many questions relate to how to do things like make a character jump or spawn monsters in an RPG. These questions are best answered by people who are using the product, not building the product. We are great at answering questions about how a particular API works, but when it comes to game mechanics, our community developers are the best!</li>
+</ol>
+<p>It should be noted that the first time you post to the forums, it will be held until our staff can review it to make sure it&#8217;s not spam. It make take several hours before the staff can review the new posts and approve them. Once your first post is approved, other posts will show up instantly.</p>
+<p>If you have an awesome game or tool that the community will probably enjoy, let them know everywhere, except to support. Post it on Slack, Twitter, Facebook, Reddit&#8217;s <a href=https://www.reddit.com/r/gamedev/ rel="noopener" target="_blank">/r/gamedev</a> and <a href=https://www.reddit.com/r/CoronaSDK/ rel="noopener" target="_blank">/r/CoronaSDK</a>. It won&#8217;t do much good to email it to support@coronalabs.com or on any private channels, since we will see it on the other channels.</p>
+<p>Just a couple of other side notes. If you have a confirmed bug, hopefully after trying to solve the issue in the Forums, please use the <a href=https://developer.coronalabs.com/content/bug-submission rel="noopener" target="_blank">&#8220;Report a bug&#8221; link</a> at the top of the Forums page. If you see an issue with our documentation, there is a Report an Issue link at the bottom of the page. Please do not use these to ask for support or help. Use them only for confirmed problems.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona is now 100% analytics free!</title>
+		<link>/blog/2018/12/27/corona-is-now-100-analytics-free/</link>
+		<pubDate>Thu, 27 Dec 2018 23:20:02 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=76156</guid>
+		<description><![CDATA[Corona is stopping the collection of any statistics from built apps. Click through to learn the details!]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs will no longer be collecting any statistics from apps built with <a href=https://developer.coronalabs.com/downloads/daily-builds/ rel="noopener" target="_blank">daily build 2018.3454</a> or later. Many developers have asked for this feature and we are happy to do this for the community. As a closed source product, Corona Labs needed to collect basic app usage such as the number of sessions, daily average users, etc. As we transition to an open source product, we no longer need to collect this data.</p>
+<p>Simply download the latest daily build to take advantage of this new feature!</p>
+<p>We are looking forward to bring more good news and features soon!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Labs releases a new public build</title>
+		<link>/blog/2018/07/10/corona-labs-releases-a-new-public-build/</link>
+		<comments>/blog/2018/07/10/corona-labs-releases-a-new-public-build/#comments</comments>
+		<pubDate>Tue, 10 Jul 2018 14:01:44 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=75854</guid>
+		<description><![CDATA[Corona Labs is pleased to announce our latest public build of Corona! Learn more about this new release.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce the availability of our latest <a href=https://developer.coronalabs.com/downloads/coronasdk/ target="_blank" rel="noopener">public release of Corona: 2018.3326</a>. This build contains significant bug fixes and new features that we hope you will appreciate.</p>
+<h4>Google Play</h4>
+<p>One of the biggest changes in this public build is addressing changes required by Google. Since the last public build, Google has changed their Vitals detection methods and have gotten considerably more aggressive with their detection. To support these changes, we&#8217;ve updated all of our support plugins for Android to bring them up to modern standards.</p>
+<p>We have also increased our Android API level to 27 (Android 8.1) in preparation for Google&#8217;s August, 2018 requirement to have API level 26 support.</p>
+<p>Google is also pushing new app signing procedures. As such, Corona can now employ the modern encryption methods used by the latest Java keytool built keystores as well as older keystores.</p>
+<h4>HTML5</h4>
+<p>You will notice that a majority of the updates in this build are involving HTML5. That&#8217;s right &#8211; HTML5 builds are now in Open Beta! HTML5 is becoming a considerably more stable product. We now include the base code needed to build Facebook Instant Games as well as support for the VK social media site&#8217;s version as well.</p>
+<p>HTML5 builds are already having an impact on other platforms. Developers have prototyped HTML5 versions of game ideas and pitched them to publishers to build mobile versions of the games. Being able to quickly give someone a look into your prototype is a great way to market your content.</p>
+<h4>GDPR</h4>
+<p>The European Union&#8217;s General Data Protection Regulation went into effect on May 25, 2018. This public release of Corona does not collect data considered personal in nature. Also, Corona Labs doesn&#8217;t collect any personal data in Corona-managed advertising plugins. The third-party SDKs used in the plugins have their own GDPR requirements..</p>
+<h4>Apple</h4>
+<p>On the Apple side, we have updated to support iOS 11.4 and Xcode 9.4 and implemented additional features to support iOS 11 edge gestures that impact the iPhone X.</p>
+<p>One breaking change that comes with iOS 11 is that getting the default language of the device is now dependent on additions to the iOS plist. iOS 11 only returns supported values that your app supports. You must include an entry in your build.settings file to list the supported languages by the app. For example:</p><pre class="crayon-plain-tag">settings = {
+       iphone = {
+               plist = {
+                      CFBundleLocalizations = {"en", "fr", "pt", "zh", "de", "it", "ja", "es", "ru", "uk"},
+               },
+        },
+}</pre><p>You can look at the sample app: <code>SampleCode/GettingStarted/HelloWorldLocalized</code> for an example of this requirement or see our <a href=http://docs.coronalabs.com/guide/distribution/localization/index.html rel="noopener" target="_blank">localization guide</a>.</p>
+<h4>Open-source libraries</h4>
+<p>In addition to these changes, Corona Labs is open-sourcing the following libraries:</p>
+<ul>
+<li><code>timer.*</code></li>
+<li><code>easing.*</code></li>
+<li><code>transition.*</code></li>
+<li><code>composer.*</code></li>
+</ul>
+<p>You can download the Lua source for these libraries from the Corona Labs <a href=https://github.com/coronalabs target="_blank" rel="noopener">GitHub account</a>. In addition, the <code>widget.*</code> library was updated to be in sync with our internal library.</p>
+<h4>Facebook</h4>
+<p>Facebook has recently changed their permission requirements for apps. You now have to submit your app to Facebook for review and get approved to use the <code>user_friends</code> permission. We have removed the default addition of the <code>user_friends</code> permission from the login process. Starting with this release <code>(2018.3326)</code> plugin <code>facebook_v4a</code> only asks for <code>public_profile</code> by default. This may be a breaking change if your app depends on the <code>user_friends</code> permission. If this is a case, add the permission when requesting login, like <code>facebook.login( { 'user_friends' } )</code>.</p>
+<h4>Check it out!</h4>
+<p>You can see a full list of changes in our <a href=https://developer.coronalabs.com/content/release-notes-build-20183326 target="_blank" rel="noopener">release notes for 2017.3326</a>. If you have questions or comments on this release, join us in our community forums.</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="btn btn_cta btn-lg btn-solid base_clr_bg" href=https://developer.coronalabs.com/downloads/coronasdk/ target="_blank" rel="noopener">Download Corona</a></p>
+</div>
+<style>
+.btn_cta { border-color: #ff6300; background-color: #ff6300; color: #fff !important; padding:15px;}<br /></style>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2018/07/10/corona-labs-releases-a-new-public-build/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Getting your Corona apps ready for GDPR!</title>
+		<link>/blog/2018/05/16/getting-your-corona-apps-ready-for-gdpr/</link>
+		<pubDate>Wed, 16 May 2018 19:06:28 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=75773</guid>
+		<description><![CDATA[GDPR is coming! What is Corona doing to help you get ready? Learn more in our GDPR update!]]></description>
+				<content:encoded><![CDATA[<p>Great news Corona developers! Starting with <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">daily build 2018.3286</a>, metrics collected by Corona-made apps are now GDPR safe. We no longer collect any ID&#8217;s or data points that would be considered personal data under these data regulations.</p>
+<p>We will be updating our privacy policy to reflect these changes. Keep in mind that builds of Corona pre-2018.3286 are not GDPR compliant and if you have apps for sale in the EU they will need to be updated with 2018.3286 or later.</p>
+<dl>
+<dt><strong>Q. What is GDPR?</strong></dt>
+<dd>A. GDPR stands for &#8220;<em>General Data Protection Regulation</em>&#8220;. It&#8217;s a law affecting businesses established in the European Union or has end users based in the EU that requires you to get explicit permission from users to collect private data and manage that data. Businesses that don&#8217;t comply can face heavy fines.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What if I want to continue to use a public build or older daily build?</strong></dt>
+<dd>A. Then you will still need to update your apps and present the user a dialog box asking for permission for Corona to collect data in addition to any other services that you need to also ask permission for.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What is the best way to know if my user is in the EU?</strong></dt>
+<dd>A. Because users travel or may use technologies like VPNs, there is no reliable way to determine if a resident of the EU is in the EU. Also, other privacy laws are changing to be more stringent in additional areas. It&#8217;s best to ask all users for this permission.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What do I need to do to get permission from our app users?</strong></dt>
+<dd>A. There are several steps you need to complete to give your users the opportunity to control their data.</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Present a dialog to your users explaining that you&#8217;re using third-party services that collect private data.</li>
+</ol>
+</li>
+</ol>
+<p><img class="alignnone size-large wp-image-75779" src="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png" alt="" width="1024" height="597" srcset="/wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-1024x597.png 1024w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-300x175.png 300w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-768x448.png 768w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-700x408.png 700w, /wordpress/wp-content/uploads/2018/05/GDPR-Consent-ios-1-125x73.png 125w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<ol start="2">
+<li>Make sure to include a link to your privacy policy. To save space in your dialog, your privacy policy should link to the privacy policies of any service you&#8217;re using.</li>
+<li>Your dialog can present the user an on/off switch for each service to allow the end user to choose which services they want to grant permission to or decline permission. That switch should default to <code>off</code> since the intent is to get &#8220;opt-in&#8221; from the end user. See the UK&#8217;s Information Commissioner&#8217;s Office <a href=https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/consent/ target="_blank" rel="noopener">document on GDPR Consent</a></li>
+<li>Store the settings locally so you can remember their choices. Saving the settings online will require you to store personal data and you would have to ask permission for that.</li>
+<li>On a settings screen, include options to allow the user to select to turn on or off permissions.</li>
+<li>When the user changes their mind, then your app can react to those changes.</li>
+<li>For now, if a user declines to use a service, simply use &#8220;if&#8221; statements to not initialize the plugin or call any methods of that plugin. If they later change their mind, then you can initialize the plugin and call it&#8217;s methods.</li>
+<li>As services update their SDK&#8217;s to offer GDPR management API&#8217;s and we update our plugins to support them, you can update your apps to add support. As an example, Appodeal&#8217;s new SDK will support showing non-targeted ads to users who don&#8217;t grant permission and higher quality ads to those who grant permission. There will be a way to let Appodeal&#8217;s SDK know if the user has granted permission or not.</li>
+</ol>
+</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. What changes do I need to make to take advantage of a plugin&#8217;s GDPR features?</strong></dt>
+<dd>A. Unfortunately every plugin provider is implementing this in radically different ways. Some will require you to pass a consent parameter on an initialization call, others are handling their own permission, others will have methods in their SDK to manage data. As we update the plugins to be GDPR compliant, we are also updating each <a href=https://docs.coronalabs.com/plugin/index.html target="_blank" rel="noopener">plugin&#8217;s documentation</a>. There should be a yellow note near the top of each plugin&#8217;s page that points you to GDPR additions to be aware of.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q. How will I know when a plugin has been updated?</strong></dt>
+<dd>A. The best way is to check the documentation page and look for the GDPR note at the top of the document.</dd>
+</dl>
+<p>&nbsp;</p>
+<dl>
+<dt><strong>Q: Where I can learn more about GDPR compliance?</strong></dt>
+<dd>A: See the following:</p>
+<ul>
+<li>The EU&#8217;s official site &#8211; <a href=https://gdpr-info.eu/ target="_blank" rel="noopener">https://gdpr-info.eu/</a></li>
+<li>Appodeal&#8217;s primary GDPR page: <a href=https://www.appodeal.com/home/gdpr/ target="_blank" rel="noopener">https://www.appodeal.com/home/gdpr/</a></li>
+<li>Appodeal&#8217;s GDPR guide &#8211; <a href=https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/08/appodeal-gdpr-guide/</a></li>
+<li>Appodeal&#8217;s Blog &#8211; <a href=https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/ target="_blank" rel="noopener">https://blog.appodeal.com/blog/2018/05/16/gdpr-qa-getting-closer-date/</a></li>
+</ul>
+</dd>
+</dl>
+<p>Corona is committed to making sure you can be compliant with these laws. If you have questions about this, please ask in our <a href=https://forums.coronalabs.com/ target="_blank" rel="noopener">Community Forums</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona and GDPR</title>
+		<link>/blog/2018/05/02/corona-and-gdpr/</link>
+		<pubDate>Wed, 02 May 2018 18:24:58 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=75721</guid>
+		<description><![CDATA[The European Union's General Data Protection Regulation kicks into effect soon. Learn more about Corona Labs' efforts to comply with GDPR.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-75724" src="/wordpress/wp-content/uploads/2018/05/eugpdr-150x150.png" alt="" width="150" height="150" srcset="/wordpress/wp-content/uploads/2018/05/eugpdr-150x150.png 150w, /wordpress/wp-content/uploads/2018/05/eugpdr-300x300.png 300w, /wordpress/wp-content/uploads/2018/05/eugpdr-500x500.png 500w, /wordpress/wp-content/uploads/2018/05/eugpdr-125x125.png 125w, /wordpress/wp-content/uploads/2018/05/eugpdr.png 540w" sizes="(max-width: 150px) 100vw, 150px" />GDPR &#8211; or <a href=https://www.eugdpr.org/ target="_blank" rel="noopener">General Data Protection Regulation</a> is a requirement from the European Union to assure that user&#8217;s data is able to be managed by users. This requirement becomes legally enforceable on May 25th, 2018. There are many questions about what data Corona collects and how that data can be managed by developers and end users going forward.</p>
+<p>We are working closely with our lawyers and a team of experts from Appodeal to make sure we are legally compliant and update all of our various policies. We suggest you take a few minutes and <a href=https://blog.appodeal.com/blog/2018/04/02/appodeal-is-getting-ready-for-the-gdpr/ target="_blank" rel="noopener">read Appodeal&#8217;s recent blog post</a> on the actions we are taking.</p>
+<p>Stay tuned for more updates as they become available.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Ludum Dare 40 starts this weekend</title>
+		<link>/blog/2017/11/29/ludum-dare-40-starts-this-weekend/</link>
+		<pubDate>Wed, 29 Nov 2017 22:50:40 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=73159</guid>
+		<description><![CDATA[Ludum Dare 40 starts this weekend, December 1st, 2017. Want to participate? Why not use Corona?]]></description>
+				<content:encoded><![CDATA[<p><a href=https://ldjam.com/events/ludum-dare/40 target="_blank" rel="noopener">Ludum Dare 40</a> starts this weekend, December 1st, 2017. For those not familiar, Ludum Dare is one of the most popular game jams in the universe! The <a href=https://ldjam.com/events/ludum-dare/40/theme target="_blank" rel="noopener">theme voting</a> is currently going on now.</p>
+<p><img class="alignnone size-full wp-image-73169" src="/wordpress/wp-content/uploads/2017/11/GJ_01-3.jpg" alt="" width="1074" height="480" srcset="/wordpress/wp-content/uploads/2017/11/GJ_01-3.jpg 1074w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-300x134.jpg 300w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-768x343.jpg 768w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-1024x458.jpg 1024w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-700x313.jpg 700w, /wordpress/wp-content/uploads/2017/11/GJ_01-3-125x56.jpg 125w" sizes="(max-width: 1074px) 100vw, 1074px" /></p>
+<p>Corona developers have an advantage over other platforms with <a href=https://developer.coronalabs.com/downloads/coronasdk/ target="_blank" rel="noopener">Corona&#8217;s instant-update</a>, no compile-time simulator. You can prototype your game jam projects faster than with other platforms.</p>
+<p>It&#8217;s also a great opportunity for Corona developers to showcase their skills in this global competition. <a href=https://forums.coronalabs.com/topic/71118-is-anyone-planning-on-participating-in-ludum-dare-40-this-weekend/ target="_blank" rel="noopener">Let us know in the Corona Forums</a> if you&#8217;re planning on participating!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>#CoronaDefoldJam &#8211; We have a winner!</title>
+		<link>/blog/2017/11/16/coronadefoldjam-we-have-a-winner/</link>
+		<pubDate>Thu, 16 Nov 2017 17:36:19 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Game Development]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=73011</guid>
+		<description><![CDATA[The #CoronaDefoldJam is over and at DevGAMM we have announced the winner of the best Corona made entry. Learn more!]]></description>
+				<content:encoded><![CDATA[<p>During the DevGAMM conference currently going on in Minsk, Corona Labs was pleased to meet up with the winner of the first <a href=https://itch.io/jam/coronadefoldjam target="_blank" rel="noopener">#CoronaDefoldJam</a> &#8220;Best Corona-made Game&#8221; winner, Viacheslav Bogomazov from <span class="_5yl5">Kaliningrad</span>, Russia. Viacheslav created the game <a href=https://bogomazon.itch.io/sword-of-power target="_blank" rel="noopener"><em>Sword of Power</em></a> during the gamejam.</p>
+<div class="video-responsive"><iframe width="auto" height="auto" src="https://www.youtube.com/embed/F1WTS4Eze3M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<p>For his efforts during the gamejam, Viacheslav was awarded 10,000 installs of his game. Corona Labs appreciates the efforts of everyone who participated. There were several well polished entries that show what can be done with a game engine like Corona.</p>
+<div id="attachment_73014" style="width: 1034px" class="wp-caption alignnone"><img class="size-large wp-image-73014" src="/wordpress/wp-content/uploads/2017/11/IMG_0328-1024x768.jpg" alt="Photo of the Best Corona App creator recieving his prize" width="1024" height="768" srcset="/wordpress/wp-content/uploads/2017/11/IMG_0328-1024x768.jpg 1024w, /wordpress/wp-content/uploads/2017/11/IMG_0328-300x225.jpg 300w, /wordpress/wp-content/uploads/2017/11/IMG_0328-768x576.jpg 768w, /wordpress/wp-content/uploads/2017/11/IMG_0328-800x600.jpg 800w, /wordpress/wp-content/uploads/2017/11/IMG_0328-700x525.jpg 700w, /wordpress/wp-content/uploads/2017/11/IMG_0328-125x94.jpg 125w" sizes="(max-width: 1024px) 100vw, 1024px" /><p class="wp-caption-text">Corona CEO Stepan Solovyov awards Viacheslav Bogomazov his prize for &#8220;Best Corona App&#8221; during the #CoronaDefoldJam at the 2017 DevGamm conference in Minsk.</p></div>
+<p>&nbsp;</p>
+<p>Let&#8217;s all congratulate Viacheslav for his fantastic entry.</p>
+<p>You can download it from the <a href=https://bogomazon.itch.io/sword-of-power target="_blank" rel="noopener">itch.io page</a> and give it a spin!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>iOS 11 update: icons and safe area APIs</title>
+		<link>/blog/2017/09/21/ios-11-update-icons-and-safe-area-apis/</link>
+		<pubDate>Thu, 21 Sep 2017 20:02:52 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">/?p=72894</guid>
+		<description><![CDATA[Now that iOS 11 has been officially released, there are several things you must do to prepare iOS apps for submission to Apple. Read on to learn more.]]></description>
+				<content:encoded><![CDATA[<p>Now that <strong>iOS 11</strong> has been officially released, there are several things you must do to prepare iOS apps for submission to Apple. Also, the upcoming <strong>iPhone X</strong> creates some unique challenges when creating a user interface, so we&#8217;ve added some useful new APIs to help you adjust your UI.</p>
+<h3>Icons</h3>
+<p>Starting with iOS 11, Apple now <strong>requires</strong> that you include an <code>Icon-1024.png</code> file in your app package. However, current Corona-built apps cannot find that file correctly using the <code>CFBundleIconFiles</code> table. Thus, to make this work today and going forward, you <strong>must</strong> switch from using static icons to using the modern <code>Images.xcassets</code> package.</p>
+<p>Starting with daily build <a href=https://developer.coronalabs.com/release/2017/3144/ target="_blank" rel="noopener">2017.3144</a>, you can easily implement the <code>Images.xcassets</code> method &#8212; simply consult our <a href=https://docs.coronalabs.com/guide/distribution/xcAssets/index.html target="_blank" rel="noopener">Managing Xcode Assets</a> guide for instructions.</p>
+<h3>Safe areas</h3>
+<p>The iPhone X creates a unique challenge for app developers. Between rounded corners and the sensor housing protruding into the screen, developers need a way to know where they can safely place critical UI elements so that they are fully visible and accessible to users. Toward this end, Apple has provided this <a href=https://developer.apple.com/ios/human-interface-guidelines/overview/iphone-x/ target="_blank" rel="noopener">helpful guide</a> outlining what you need to do.</p>
+<p><img class="wp-image-72895 aligncenter" src="/wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1024x512.png" alt="" width="600" height="300" srcset="/wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1024x512.png 1024w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-300x150.png 300w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-768x384.png 768w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-1000x500.png 1000w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-700x350.png 700w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869-125x63.png 125w, /wordpress/wp-content/uploads/2017/09/Pasted-image-at-2017_09_15-02_25-PM-e1505962122869.png 1076w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>In short, you need to fill the entire screen, including areas outside the &#8220;safe area&#8221; (the darker region bounded with the red line in the illustration). Also note that the iPhone X has an extra-tall aspect ratio of 2.165:1 &#8212; surpassing even the 2:1 aspect ratio of the Samsung S8 &#8212; so for a Corona content area size of 320×480, you will need to fill a total area of 360×693 for the iPhone X screen and iPad screens.</p>
+<p>Even more importantly, your app should not place important UI elements like buttons, scores, navigation elements, etc. <em>outside</em> of the &#8220;safe area&#8221; on the screen. In truth, the &#8220;safe area&#8221; is not a new concept with the iPhone X &#8212; for instance, TVs have overscan areas and some mobile devices utilize status bars and soft button rows where you shouldn&#8217;t be placing UI elements.</p>
+<p>To address this, starting with daily build <a href=https://developer.coronalabs.com/release/2017/3135/ target="_blank" rel="noopener">2017.3135</a>, we added several new properties and a new function which you can use to determine the safe zone on the screen. These additions to the <code>display</code> library include:</p>
+<ul>
+<li><a href=https://docs.coronalabs.com/api/library/display/getSafeAreaInsets.html target="_blank" rel="noopener">display.getSafeAreaInsets()</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeScreenOriginX.html target="_blank" rel="noopener">display.safeScreenOriginX</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeScreenOriginY.html target="_blank" rel="noopener">display.safeScreenOriginY</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeActualContentWidth.html target="_blank" rel="noopener">display.safeActualContentWidth</a></li>
+<li><a href=https://docs.coronalabs.com/api/library/display/safeActualContentHeight.html target="_blank" rel="noopener">display.safeActualContentHeight</a></li>
+</ul>
+<p>Please click through to the documentation for examples on how to use these.</p>
+<h3>Conclusion</h3>
+<p>In addition to the above features, we are preparing a new iPhone X skin for the Corona Simulator, to be released soon. In the meantime, you can start preparing your apps for the iPhone X, test them in the Xcode Simulator, and submit them to Apple using the iOS 11 SDK.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Welcome to public release 2017.3135</title>
+		<link>/blog/2017/09/11/welcome-to-public-release-2017-3135/</link>
+		<pubDate>Mon, 11 Sep 2017 23:41:25 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona native builds]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=72808</guid>
+		<description><![CDATA[Our engineers have been very busy updating Corona, continuing to provide a world-class 2D development framework. See what has been added to the new public release.]]></description>
+				<content:encoded><![CDATA[<p>Since our last public release (2017.3068) in April, our engineers have been very busy updating Corona, continuing to provide a world-class 2D development framework. This engineering cycle has focused a lot on stability and adapting to new business models, but we&#8217;ve managed to add in some pretty cool things too!</p>
+<h3>Corona Enterprise is now free</h3>
+<p>Starting with build 2017.3100, <a href=/blog/2017/06/21/welcome-to-the-new-corona/ target="_blank" rel="noopener">Corona Enterprise became free</a>. We re-branded it as <strong>Corona Native</strong> and it&#8217;s now included in the unified Corona application. With this public release, Corona Native is now available to everyone.</p>
+<h3>Windows Simulator updates</h3>
+<p>We have also focused on improving the user interface for Windows users. Now you can stop builds in progress by simply clicking the &#8220;Stop&#8221; button. The build process also has a visual indicator of its progression. Finally, we have reduced the Java dependencies, although you will still need the 32-bit Java JDK installed.</p>
+<h3>Google IAP Plugin</h3>
+<p>This plugin was updated to make its initialization <strong>asynchronous</strong>. Prior to this, Corona would &#8220;block&#8221; while waiting for the initialization to complete. Because of this update, if your app currently makes calls to APIs like <a href=https://docs.coronalabs.com/plugin/google-iap-v3/loadProducts.html target="_blank" rel="noopener">store.loadProducts()</a> or <a href=https://docs.coronalabs.com/plugin/google-iap-v3/restore.html target="_blank" rel="noopener">store.restore()</a> within <code>main.lua</code>, these calls will likely execute <em>before</em> the plugin has finished initializing, causing them to fail. Since this change affects builds 2017.3105 and later, if you&#8217;re updating from the previous public build, <strong>this change will affect you</strong> and you should read <a href=/blog/2017/07/19/important-google-iap-plugin-update/ target="_blank" rel="noopener">this post</a> for steps on updating your code.</p>
+<h3>Facebook V4 Plugin</h3>
+<p>The Facebook V4 plugin had the same issue with initialization blocking which increased &#8220;App Not Responding&#8221; (ANR) errors on Android devices. Because updating the existing plugin would have caused a significant breaking change, we created a <strong>new</strong> plugin, <a href=https://docs.coronalabs.com/plugin/facebook-v4a/index.html target="_blank" rel="noopener">plugin.facebook.v4a</a>, so you can migrate at your convenience. For more details, see <a href=/blog/2017/08/14/introducing-new-facebook-v4a-plugin/ target="_blank" rel="noopener">this post</a>.</p>
+<h3>Changes to native text field input types</h3>
+<p>We added <code>"decimal"</code> keyboard type support for <a href=https://docs.coronalabs.com/api/type/TextField/inputType.html target="_blank" rel="noopener">native.newTextField()</a> on all platforms (previously it was only available on iOS). We also added a <code>"no-emoji"</code> keyboard type that prevents users from entering emojis, although it may still be possible for users to &#8220;paste&#8221; in emojis on some platforms.</p>
+<h3>Physics time scale APIs</h3>
+<p>Two new APIs were added to the physics library, allowing you to set/get the <strong>time scale</strong> of the physics simulation &#8212; see <a href=https://docs.coronalabs.com/api/library/physics/setTimeScale.html target="_blank" rel="noopener">physics.setTimeScale()</a> and <a href=https://docs.coronalabs.com/api/library/physics/getTimeScale.html target="_blank" rel="noopener">physics.getTimeScale()</a>.</p>
+<h3>Apple in-app purchases</h3>
+<p>The Apple IAP <a href=https://docs.coronalabs.com/api/library/store/index.html target="_blank" rel="noopener">store.*</a> APIs now work on macOS and tvOS, in addition to iOS. Also, the iOS 11 requirement that apps support store-initiated purchases has been added.</p>
+<h3>Font metrics</h3>
+<p>We have <a href=/blog/2017/08/17/introducing-new-font-metrics-apis-plus-a-new-plugin/ target="_blank" rel="noopener">added new APIs</a> to help you compute the baseline and other metrics for fonts, allowing more control of vertical alignment for text objects in relation to other graphical elements or text objects of different fonts/sizes.</p>
+<h3>Plugins</h3>
+<ul>
+<li><strong><a href=https://marketplace.coronalabs.com/search?search=applovin target="_blank" rel="noopener">AppLovin</a></strong> — Previously, AppLovin was only available as a revenue-share plugin. While this is optimal for developers with smaller revenue streams from ads, those with higher income prefer a fixed fee. As such, AppLovin is now available as two plugins: <strong>free</strong> (with revenue-share) and <strong>paid</strong> ($199/year). Now, as your income profile changes, you can use the best plugin as needed.</li>
+<li><strong><a href=https://marketplace.coronalabs.com/search?search=Facebook+Audience+Network target="_blank" rel="noopener">Facebook Audience Network</a></strong> — Similar to how we made both a paid and revenue-share version of AppLovin, the F.A.N. plugin is now available in both paid and revenue-share versions.</li>
+<li><strong><a href=https://marketplace.coronalabs.com/plugin/battery-state target="_blank" rel="noopener">BatteryState</a></strong> — This new plugin allows you to either get battery events or query the battery system to determine how much charge the battery has, if it&#8217;s charging, unplugged, etc.</li>
+<li><strong><a href=https://marketplace.coronalabs.com/plugin/nano-svg target="_blank" rel="noopener">NanoSVG</a></strong> — You can now import some SVG graphics as Corona bitmap textures using this plugin.</li>
+<li><a href=https://docs.coronalabs.com/plugin/collisionFilters/index.html target="_blank" rel="noopener"><strong>Collision Filters</strong></a> — This plugin is designed to circumvent the math and complication of creating physics body collision filters using <code>categoryBits</code> and <code>maskBits</code>, letting you assign user-friendly names to &#8220;categories&#8221; of objects in your physics simulation without worrying about internal binary values and sums which are liable to change as you adjust game behavior.</li>
+</ul>
+<p>&nbsp;</p>
+<div class="align-wrap" style="text-align: center; margin-top: 35px; margin-bottom: 35px;">
+<p><a class="qbutton" style="color: #fff;" href=https://developer.coronalabs.com/downloads/coronasdk/ target="_blank" rel="noopener">Get the latest Corona</a></p>
+</div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Introducing new font metrics APIs, plus a new plugin</title>
+		<link>/blog/2017/08/17/introducing-new-font-metrics-apis-plus-a-new-plugin/</link>
+		<pubDate>Thu, 17 Aug 2017 16:05:13 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+
+		<guid isPermaLink="false">/?p=72741</guid>
+		<description><![CDATA[Corona engineers have added new “font metrics” APIs plus a new plugin for checking the battery state. Learn more about these features!]]></description>
+				<content:encoded><![CDATA[<p>Corona&#8217;s engineers have added two new APIs for getting information about fonts, with the intent of helping you better align text in your apps. We&#8217;ve also added a new plugin that you might want to take advantage of.</p>
+<h3>Font metrics APIs</h3>
+<p>Starting with daily build <a href=https://developer.coronalabs.com/downloads/daily-builds/ target="_blank" rel="noopener">2017.3121</a>, there is a new API call, <a href=https://docs.coronalabs.com/api/library/graphics/getFontMetrics.html target="_blank" rel="noopener">graphics.getFontMetrics()</a>, which returns a table that contains values like the height of the font, font leading, and the ascent/descent values for the font. <strong>Ascent</strong> is the amount of recommended space above the baseline for single-spaced text, while <strong>descent</strong> is the suggested space below the baseline for single-spaced text. <strong>Leading</strong> is the recommended additional space between lines of text.</p>
+<p>In addition, all <a href=https://docs.coronalabs.com/api/type/TextObject/index.html target="_blank" rel="noopener">TextObject</a> objects (those created via <a href=https://docs.coronalabs.com/api/library/display/newText.html target="_blank" rel="noopener">display.newText()</a>) have a new read-only property called <a href=https://docs.coronalabs.com/api/type/TextObject/baselineOffset.html target="_blank" rel="noopener">baselineOffset</a> which lets you adjust the position of the object so that you can easily align it with other objects, including graphics or other text objects that may be constructed with different fonts or font sizes.</p>
+<p>Consider this output:</p>
+<p><img class="alignnone wp-image-72744" src="/wordpress/wp-content/uploads/2017/08/text-gem-baseline-fontmetrics-1.png" alt="" width="615" height="170" srcset="/wordpress/wp-content/uploads/2017/08/text-gem-baseline-fontmetrics-1.png 959w, /wordpress/wp-content/uploads/2017/08/text-gem-baseline-fontmetrics-1-300x83.png 300w, /wordpress/wp-content/uploads/2017/08/text-gem-baseline-fontmetrics-1-768x212.png 768w, /wordpress/wp-content/uploads/2017/08/text-gem-baseline-fontmetrics-1-700x193.png 700w" sizes="(max-width: 615px) 100vw, 615px" /></p>
+<p>By using the <a href=https://docs.coronalabs.com/api/type/TextObject/baselineOffset.html target="_blank" rel="noopener">baselineOffset</a> property, you can easily align the baseline of each text object with the bottom of the gem for a more appealing display!</p>
+<h3>Battery State plugin</h3>
+<p>We also introduced a <a href=https://marketplace.coronalabs.com/plugin/battery-state target="_blank" rel="noopener">new plugin</a> that lets you get the current state of the device&#8217;s battery. It offers an event-based update callback where you receive an event when the battery state changes (charging, unplugged, etc.). You can also call the <a href=https://docs.coronalabs.com/plugin/batteryState/getState.html target="_blank" rel="noopener">batteryState.getState()</a> function to get a one-time status on the device&#8217;s battery.</p>
+<p>To use this plugin, visit the Corona Marketplace, <a href=https://marketplace.coronalabs.com/plugin/battery-state target="_blank" rel="noopener">activate the plugin</a>, and then follow the <a href=https://docs.coronalabs.com/plugin/batteryState/index.html target="_blank" rel="noopener">integration documentation</a> to add it to your project.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

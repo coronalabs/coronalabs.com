@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pro &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/pro/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>pro &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>State of Corona: New Public Release + FREE + Re-imagining Pro</title>
+		<link>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/</link>
+		<comments>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/#comments</comments>
+		<pubDate>Thu, 04 Apr 2013 16:27:54 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[pro]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[starter]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=31173</guid>
+		<description><![CDATA[Today, we have some very exciting news. A new public release, a new version of Corona and a few other changes and coming features.
+
+We are making mobile app development more accessible than ever!
+
+]]></description>
+				<content:encoded><![CDATA[<p><em>Note: Graphics 2.0 is now in public beta for all Corona SDK Pro and Enterprise subscribers.</em></p>
+<hr />
+<p>Today, I have some very exciting news.</p>
+<p>Before I dive in, let me talk about the new public release we just made available for <a href=https://developer.coronalabs.com/downloads/corona-sdk>download</a>. We&#8217;ve been fixing a lot of plumbing this time around. Lots of infrastructure and feature improvements like a rewritten async http network library, a re-architected widget library, remote push notifications on Android, iAds, to name a few. We also have a new build server that&#8217;s much more scalable.</p>
+<p>There&#8217;s tons more listed on the <a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1076>release notes</a>. All in all, there&#8217;s been an incredible amount of work to make <a href=http://www.coronalabs.com/products/corona-sdk/>cross-platform development</a> as painless as possible. By the way, if you&#8217;re curious about Apple&#8217;s May 1 deadline on UDIDs, we&#8217;ve got you covered. Read more about it in the release notes.</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/big-news.jpg" alt="big-news" class="alignright size-full wp-image-31197" /></p>
+<h3>Introducing Corona SDK Starter</h3>
+<p>Okay, so here&#8217;s where it gets really exciting. From very early on, we have focused on democratizing app development. We felt (and still do) that anyone could create the next great app with Corona. Since then, Corona has been embraced by indies and your apps have hit the top of the charts.</p>
+<p>Indies are a key part of our community, so today, we are taking that vision a step further. We are announcing Corona SDK Starter &#8211; a completely FREE version of Corona that lets you publish to all the platforms we support without paying us a single cent.</p>
+<p>With Corona SDK Starter and the Starter tier of Corona Cloud, you can publish amazing, connected apps faster and more affordably (free!) than ever before. We are the only platform that lets developers do this. A lot of other products have hidden fees or force some sort of watermark/splash screen. There is no such restriction with Starter. That&#8217;s the difference between &#8220;fake free&#8221; and a true free option.</p>
+<p>Now, of course, not everything is free — we&#8217;ve got a business to run after all!</p>
+<p>If you want to access certain specific features like in-app purchase and analytics, you&#8217;ll need to subscribe to a paid plan. You can still build with those features on your own device, but you can&#8217;t publish apps to the store if they use those premium features. Daily builds are also only available to paying subscribers.</p>
+<h3>Re-imagining Pro</h3>
+<p>From the beginning, Corona SDK has been about packaging up industry-standard technologies that big game studios use and making them available to you. The same underlying architecture that powered all the original top apps (Angry Birds, Tap Tap Revenge, Diner Dash) was the inspiration for Corona — only we made it 10x faster and easier.</p>
+<p>That&#8217;s why nothing beats Corona when it comes to its combination of power and speed of development.</p>
+<p>Today, we are ready for the next growth spurt of innovation. We think Corona is the best platform in the universe, but the true measure is if we can make our latest innovations available to Pro subscribers.</p>
+<p>So that&#8217;s what we&#8217;re going to do. We are going to make some amazing technologies available to all paying subscribers, but especially Pro. Here&#8217;s a glimpse at some of the exciting things that we&#8217;ll be making available:</p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/04/imagine-300x187.png" alt="imagine" class="alignright size-medium wp-image-31200" /></p>
+<h4><strong>Graphics</strong></h4>
+<p>As I talked about last week, our bleeding-edge OpenGL-ES 2.0/shader-based graphics engine is in the works. You are going to be blown away with what you can do. I&#8217;ll talk about that more later but I did want to give you a teaser.</p>
+<p>If you watch this week&#8217;s <a href=http://www.youtube.com/watch?v=SPu2EZJTZBM>CoronaGeek episode</a>, you&#8217;ll be able to see 5,000 fish running at 60 fps! It may be hard to tell from the video, but this is what I showed to a lucky few at GDC. I recommend watching the whole show, but if you&#8217;re pressed for time, you can skip to roughly the 35:00 mark.</p>
+<h4><strong>Plugins</strong></h4>
+<p>Second, there&#8217;s Project Gluon, a.k.a plugins. We&#8217;ve done a ton of plumbing work so that you&#8217;ll be able to integrate 3rd party services and functionality into your app, and do so painlessly from the comfort of the Corona Simulator.</p>
+<p>Now there&#8217;s good news and bad news here. There are a lot of moving parts, so plugins didn&#8217;t quite make it to the public release — and yes, I&#8217;m disappointed too.</p>
+<p>But the good news is that plugins are coming very soon! We&#8217;re getting ready to seed this to beta testers this month. We are actively building a library of plugins that will be hosted on our servers. We&#8217;re working with folks like Amazon to get you more monetization options. We are acutely aware that this is a big issue for a lot of you.</p>
+<h4><strong>Device Access</strong></h4>
+<p>Lastly (for now), we have found a way for you to access certain Java and Objective-C APIs from Lua! On the Android side, we already have the foundation there thanks to Enterprise, and we&#8217;re looking at how we can accelerate bringing those Enterprise innovations down to Pro developers. In parallel, we also have a proof-of-concept on the iOS side, so I&#8217;ll have more news once we&#8217;re past the research phase.</p>
+<h3>New Pro Pricing and Subscriber Promotions</h3>
+<p>As you can see, we are re-imagining Pro as a much more sophisticated product. By May, we anticipate that the daily builds available to Pro will offer significantly more value than they do today. Because of that, we will be changing the price of Pro to $599/year starting May 1. Even after this change, we think Pro still remains a great bargain &#8211; it&#8217;s less than $50 per month and saves you hours of development work each and every day. And more importantly, you&#8217;ll be able to do more and more!</p>
+<p>In the mean time, we want to thank our current subscribers and do the following:</p>
+<ul>
+<li>All current Indie subscribers are now upgraded to Pro (the Indie subscription has ceased to exist). </li>
+<li>All current Pro subscribers now have an extra 2 months added on to their subscription.</li>
+</ul>
+<p>In addition, we are offering a special promotion:</p>
+<ul>
+<li>Between now and April 30, anyone can <a href="https://marketplace.coronalabs.com/
+">buy a Pro subscription</a> (or add to their existing subscription) for $349 before the new price takes effect.</li>
+<li>But wait there&#8217;s more. As long as you have an active subscription on May 1, you will be able to renew at the $349/year price for 2 more years — just don&#8217;t let your subscription lapse!</li>
+</ul>
+<p>For more info, please refer to our <a href=/faq/>Corona SDK Pricing FAQs</a>.</p>
+<p><center>* * *</center></p>
+<p>Before I wrap up, there is one more item worth mentioning: we&#8217;ve finally gotten around to putting Corona Enterprise on our <a href="https://marketplace.coronalabs.com/
+">store page</a>. If you are a small outfit, you qualify for the $999/year tier. Larger organizations can get Enterprise at $2499/year which comes with extra goodies and volume discounts. Check out our <a href="https://marketplace.coronalabs.com/
+">entire pricing lineup</a> to see which one makes the most sense for you.</p>
+<p>There&#8217;s a lot of game changing stuff here, but Corona SDK Starter brings me back to how we all got started — to change people&#8217;s lives in real ways. We think more people will have the opportunity to be a part of the mobile revolution and take advantage of the mobile revolution. We can&#8217;t wait to get all of our innovations into your hands – and more importantly, see what you do with them.</p>
+<p><em>Walter</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/04/state-of-corona-new-public-release-free-re-imagining-pro/feed/</wfw:commentRss>
+		<slash:comments>138</slash:comments>
+		</item>
+	</channel>
+</rss>

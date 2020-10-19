@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ads &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/ads/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>ads &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing Appodeal: intelligent, programmatic ad mediation</title>
+		<link>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/</link>
+		<comments>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/#comments</comments>
+		<pubDate>Thu, 04 Aug 2016 16:26:09 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67488</guid>
+		<description><![CDATA[Corona Labs is pleased to welcome Appodeal as our latest monetization plugin. This is our first plugin to offer complete ad mediation. Read further to learn more!]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/08/appodeal-3.png><img class="alignright wp-image-67639 size-thumbnail" style="margin: 16px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/08/appodeal-3-150x150.png 150w, /wordpress/wp-content/uploads/2016/08/appodeal-3.png 194w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p>Ad mediation is a frequently requested app monetization feature, but it usually requires that you build in support for multiple ad networks in your app. That can be a lot of work.</p>
+<p>Fortunately, <a href=https://www.appodeal.com/ target="_blank">Appodeal</a> builds their network of ad provider SDKs directly into their plugin for you &#8212; simply include the Appodeal plugin and get the benefit of every ad network they support.</p>
+<p>One benefit of ad mediation is that you should get a 100% fill rate &#8212; never miss an ad! Appodeal&#8217;s service delivers higher-paying ads first, and they also analyze all of the ads available, factor in the user&#8217;s behavior, and find the best ad for the moment.</p>
+<p>You just need one account and one plugin (plus support plugins on Android) to benefit from all of Appodeal&#8217;s partners. They offer monthly payouts as well as on-demand payouts.</p>
+<p>&#8220;Appodeal is excited about our new partnership with Corona Labs, as it will open new doors and break the many restrictions developers often face. We look forward to helping Corona developers monetize their apps with ease while maximizing their earnings,&#8221; says Pavel Golubev, Appodeal CEO &amp; Founder.</p>
+<h3>Getting started</h3>
+<p>To begin, <a href=https://www.appodeal.com/ target="_blank">register with Appodeal</a>. Then, create an app for each platform you want to run ads on. Currently the Corona plugin supports iOS, Android, and tvOS. You will get a different application key for each platform. Finally, include the required changes in your <code>build.settings</code> file and implement the plugin much like any other Corona ad provider (see our <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for details).</p>
+<p>The Appodeal plugin offers three API calls: <a href=https://docs.coronalabs.com/plugin/appodeal/init.html target="_blank">appodeal.init()</a>, <a href=https://docs.coronalabs.com/plugin/appodeal/show.html target="_blank">appodeal.show()</a>, and <a href=https://docs.coronalabs.com/plugin/appodeal/hide.html target="_blank">appodeal.hide()</a>. If you are deploying your app to both iOS and Android,  you will have to initialize your plugin based on platform:</p><pre class="crayon-plain-tag">if &quot;Android&quot; == system.getInfo( &quot;platformName&quot; ) then
+    appodeal.init( adListener, { appKey=&quot;YOUR_ANDROID_APPLICATION_KEY&quot;, testMode=false } )
+else
+    appodeal.init( adListener, { appKey=&quot;YOUR_IOS_APPLICATION_KEY&quot;, testMode=false } )
+end</pre><p>See the Corona <a href=https://docs.coronalabs.com/plugin/appodeal/index.html target="_blank">documentation</a> for more usage details.</p>
+<h3>Conclusion</h3>
+<p>Have any questions or comments? To discuss this wonderful addition to our suite of monetization plugins, please join us in the Corona <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">community forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/08/04/introducing-appodeal-intelligent-programmatic-ad-mediation/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Looking for beta developers to test Appodeal plugin</title>
+		<link>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/</link>
+		<comments>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/#comments</comments>
+		<pubDate>Tue, 19 Jul 2016 17:10:32 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[mediation]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">/?p=67492</guid>
+		<description><![CDATA[Corona Labs is looking for some developers to help us test a new monetization plugin from Appodeal. Learn how you can join the beta test program for it.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-67490 size-medium" src="/wordpress/wp-content/uploads/2016/07/appodeal_logo-300x67.jpg" width="300" height="67" />Corona Labs is working on a plugin for <a href=https://www.appodeal.com/ target="_blank">Appodeal</a>, a monetization partner that supports mediation.</p>
+<p>We are looking for a few developers to test the plugin. If you&#8217;re interested in getting an early look at the plugin and helping us test, please email <a href=mailto:ads@coronalabs.com>ads@coronalabs.com</a> from your registered Corona developer email. Please include the app you would like to integrate and the daily active users (DAU) for that app. We will get back with you if you&#8217;re selected.</p>
+<p>We look forward to hearing from you!</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/07/19/looking-for-beta-developers-to-test-appodeal-plugin/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Introducing Supersonic, our latest monetization plugin</title>
+		<link>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/</link>
+		<comments>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/#comments</comments>
+		<pubDate>Tue, 17 May 2016 19:31:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[Supersonic]]></category>
+
+		<guid isPermaLink="false">/?p=66798</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of the Supersonic monetization plugin. Read further to learn more about this great addition to our plugin suite.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright wp-image-66852" style="margin: 0px 0px 10px 20px;" src="/wordpress/wp-content/uploads/2016/05/supersonic.png" alt="supersonic" width="220" height="80" srcset="/wordpress/wp-content/uploads/2016/05/supersonic.png 440w, /wordpress/wp-content/uploads/2016/05/supersonic-300x109.png 300w" sizes="(max-width: 220px) 100vw, 220px" />Corona Labs is committed to providing you with many options to make your apps financially successful. The latest addition to our suite of monetization options is popular ad provider <a href=https://www.supersonic.com/ target="_blank">Supersonic</a>. Supersonic helps you generate revenue with high fill rates and eCPMs, and provides methods to encourage your users to engage with high-definition videos from top advertising brands.</p>
+<p><span class="comment-text ">&#8220;We’re excited to partner with Corona Labs to significantly boost ad monetization for its developer community. This partnership will give Corona developers the ability to manage and optimize multiple ad networks, maximizing eCPMs and fill rates by creating an inventory marketplace in which advertisers compete,&#8221; says Gil Shoham, CRO and Co-Founder of ironSource, Supersonic&#8217;s parent company. &#8220;Developers who integrate our plugin can deploy high-definition rewarded video, interstitial, and offer wall ad units seamlessly, benefiting from our global demand without another SDK integration.&#8221;</span></p>
+<h3>Getting started</h3>
+<p>To get started with Supersonic, you will need to create an account and log in to their <a href=https://platform.supersonic.com/partners/signup target="_blank">dashboard</a> to set up your apps. You will need to provide a URL for an app in the Apple App Store or on Google Play, or you can give them a temporary name for an app that isn&#8217;t live.</p>
+<p>Just like with other ad providers, you will need to add the plugin to your <code>build.settings</code> and <code>require()</code> the plugin. For details on this and other Corona-side requirements, please see our <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">Supersonic plugin documentation</a>.</p>
+<h3>Supported ad types</h3>
+<p>The initial plugin supports offer walls, interstitial ads, and rewarded videos:</p>
+<ul>
+<li>An offer wall presents the user with a list of actions they can take to earn a reward, such as credits or extra lives. These actions include taking surveys, installing different apps, etc.</li>
+<li>Interstitial ads include both static and non-rewarded video ads. Supersonic&#8217;s servers determine if an interstitial will be static or video based on their analytic patterns.</li>
+<li>Rewarded videos allow you to give in-game currency to your users get when they view a video. You control the reward, whether it be coins, gems, credits, or some other item that works in your app.</li>
+</ul>
+<p>Note that this plugin does not currently support the Supersonic mediation service.</p>
+<h3>Conclusion</h3>
+<p>To learn more about Supersonic, its API calls, and other details, please see the <a href=https://docs.coronalabs.com/plugin/supersonic/index.html target="_blank">plugin documentation</a>, or continue the discussion in the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/17/introducing-supersonic-our-latest-monetization-plugin/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>MediaBrix ad/monetization plugin now available</title>
+		<link>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/</link>
+		<comments>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/#comments</comments>
+		<pubDate>Tue, 03 May 2016 11:39:55 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[MediaBrix]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=66040</guid>
+		<description><![CDATA[Corona Labs announces a new ad/monetization partner in MediaBrix. Learn more about the MediaBrix plugin and how to use it in your apps.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/03/mediabrix.png rel="attachment wp-att-66067"><img class="alignright wp-image-66067" style="margin: 2px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/03/mediabrix-300x97.png" alt="mediabrix" width="241" height="78" /></a>Corona Labs is pleased to announce the availability of the <a href=https://www.mediabrix.com/ target="_blank">MediaBrix</a> plugin for both iOS and Android.</p>
+<p>MediaBrix has one goal – to create and deliver the most meaningful, contextual and emotional ad experiences for our premium brand partners in-app! 85% of Ad Age’s top global brands trust MediaBrix to curate the most premium emotional moments native to every app environment. You’ve carefully built your app environment for superb user interaction, flow and engagement; and we’ve taken the same care into building an emotional product suite that benefits brands and app developers in a big way! Plug into our SDK and choose which emotional moment makes sense for your app and start enjoying 2X the CPMs, that are to garner you, increased engagement and reduced user churn. MediaBrix solely provides brand advertising dollars and does not accept UA campaigns.</p>
+<h3>Rally</h3>
+<p>Rally is intended to encourage the user during times of mild success or challenge.  The format is similar to an interstitial ad, but one that appears during breaks to encourage users as they navigate the app experience. Examples include:</p>
+<ul>
+<li>Games &#8211; User levels up</li>
+<li>Fitness &#8211; User completes an exercise</li>
+<li>Music – User completes a song they like</li>
+</ul>
+<h3>Rescue</h3>
+<p>Rescue is a value exchange moment that requires the user to perform an engagement in return for an app reward. When the user is stuck or needs help, the sponsoring brand becomes the hero by offering timely assistance. Examples include:</p>
+<ul>
+<li>Games – User fails to pass a level more than one</li>
+<li>General – User wants locked content but unwilling to pay</li>
+</ul>
+<h3>Reward</h3>
+<p>Reward is presented during high achievement moments when the user is feeling happy and excited. Reward allows a brand to emotionally target achievements/milestones. This creates a halo effect on the brand and users reciprocate by engaging with the assets in a genuine fashion.  Example include:</p>
+<ul>
+<li>Games – User obtains a new high score</li>
+<li>Fitness – User has a new high fitness achievement</li>
+<li>Finance – User achieved a weekly or monthly budget</li>
+</ul>
+<p>You could also integrate all three; &#8220;rescue&#8221;, &#8220;rally&#8221; and/or &#8220;reward&#8221; at different moments within the same app. Rewards and rescue require that your app provide a reward, so that, the user loyalty remains with the app.</p>
+<p><a href=http://mediabrix.com/developers/ target="_blank">Learn More</a>.</p>
+<h3>What do I need to do?</h3>
+<ol>
+<li>Open an account with MediaBrix and register your app(s) at <a href=https://platform.mediabrix.com/signup target="_blank">https://platform.mediabrix.com/signup</a></li>
+<li>MediaBrix will contact you and review your apps’ Break Through Moments™ to insure a continuous and uninterrupted experience</li>
+<li>Mediabrix approves account and sends app ID and zone names</li>
+<li>Review the <a href=http://knowledge.mediabrix.com/ target="_blank">Knowledge Center</a> documentation*.  Review each ad product’s customization</li>
+<li>Provide MediaBrix custom images and messaging to make the ad product contextual to your app and moment</li>
+<li>Integrate the plugin and create a test app for MediaBrix to review</li>
+<li>MediaBrix approves and sets app to get live ads</li>
+</ol>
+<p>*Knowledge Center access requires account approval</p>
+<h3>How do I integerate MediaBrix?</h3>
+<p>Using MediaBrix in your app is just like other ad plugins, you&#8217;ll need to add code to  your <code>build.settings</code> file:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.mediaBrix&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true }
+        },
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },
+}</pre><p>In addition, if building for iOS, add the following key-value pair within the <code>iphone-&gt;plist</code> table of <code>build.settings</code>.</p><pre class="crayon-plain-tag">settings =
+{
+    iphone =
+    {
+        plist =
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+        },
+    },
+}</pre><p>Then in your <code>main.lua</code> file, <code>require()</code> the plugin, set up a basic ad event listener, and initialize MediaBrix, substituting the unique app ID provided by MediaBrix in place of <code>"YOUR_APP_ID"</code>:</p><pre class="crayon-plain-tag">local mediaBrix = require( &quot;plugin.mediaBrix&quot; )
+
+local function adListener( event )
+
+    if ( event.phase == &quot;init&quot; ) then  -- Successful initialization
+        print( event.isError )
+    end
+end
+
+-- Initialize MediaBrix
+mediaBrix.init( adListener, { appId=&quot;YOUR_APP_ID&quot; } )</pre><p>After successfully initializing the plugin, you can load an ad using <a href=https://docs.coronalabs.com/plugin/mediaBrix/load.html target="_blank">mediaBrix.load()</a>, substituting one of the placement IDs provided by MediaBrix in place of <code>"PLACEMENT_ID"</code>:</p><pre class="crayon-plain-tag">mediaBrix.load( &quot;PLACEMENT_ID&quot; )</pre><p>Finally, when you&#8217;re ready, display the ad via <a href=https://docs.coronalabs.com/plugin/mediaBrix/show.html target="_blank">mediaBrix.show()</a>, using the same placement ID associated with the ad that was loaded:</p><pre class="crayon-plain-tag">mediaBrix.show( &quot;PLACEMENT_ID&quot; )</pre><p>Note that the MediaBrix plugin also offers the <a href=https://docs.coronalabs.com/plugin/mediaBrix/isLoaded.html target="_blank">mediaBrix.isLoaded()</a> API to check whether an ad is loaded in advance of showing it.</p>
+<h3>Ad events and phases</h3>
+<p>Like other ad plugins, the MediaBrix plugin reports various <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/index.html target="_blank">event</a> properties, and among these, the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">event.phase</a> property can be associated with various function calls and the user&#8217;s interaction with ads. Please see the <a href=https://docs.coronalabs.com/plugin/mediaBrix/event/adsRequest/phase.html target="_blank">documentation</a> for details.</p>
+<h3>Conclusion</h3>
+<p>Learn more about the <a href=https://docs.coronalabs.com/plugin/mediaBrix/index.html target="_blank">MediaBrix plugin</a>, or see it in action by downloading the <a href=https://github.com/coronalabs/plugins-sample-mediabrix target="_blank">sample app</a> from GitHub.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/05/03/mediabrix-admonetization-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Welcome InMobi to the Corona monetization plugin suite</title>
+		<link>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/</link>
+		<comments>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/#comments</comments>
+		<pubDate>Tue, 19 Apr 2016 20:18:31 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[inMobi]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=66530</guid>
+		<description><![CDATA[Corona Labs is pleased to offer the new InMobi monetization plugin. Read further to learn more about this ad provider.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-66532" src="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png" alt="inMobi logo" width="150" height="150" srcset="/wordpress/wp-content/uploads/2016/04/share-logo-150x150.png 150w, /wordpress/wp-content/uploads/2016/04/share-logo.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Here at Corona Labs, we want you to be successful with your app development, and monetization is an important part of your success. As such, we are pleased to announce the availability of the <a href=https://store.coronalabs.com/plugin/inmobi target="_blank">InMobi</a> plugin. InMobi&#8217;s new discovery platform allows developers to monetize their apps through rich user engagement and seamlessly integrated ads.</p>
+<p>We reached out to Irene Herranz, Head of Global Developer Marketing at InMobi, for a few words on the new plugin. She says, “Gaming developers are always on the lookout for easier ways to achieve steady revenue and grow their mobile businesses. Through our partnership with Corona Labs, developers can kickstart their global monetization efforts by running InMobi&#8217;s high-performing video and display ads to focus on what they do best – developing amazing games.”</p>
+<p>InMobi&#8217;s platform allows you to use banner ads, interstitial ads, and rewarded videos. Native ads are not currently supported via the Corona plugin.</p>
+<h3>Getting started</h3>
+<p>First, you must sign up with InMobi at their <a href=https://www.inmobi.com/user/index?#signup target="_blank">developer portal</a>. After you do, you can create your app and start adding ad placements. Currently, they support one ad placement per app. If you need both banners and interstitial ads in the same app, you will need to create two apps in their portal, one for each placement (just make sure to use the same app store URL for both entries).</p>
+<p>Next, just like all plugins, you will need to add code to your <code>build.settings</code> file to include the plugin. You can get the exact required code from our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">InMobi documentation</a>.</p>
+<h3>Banner ad sizes</h3>
+<p>Unlike most ad providers that provide a fixed size for banner ads, InMobi has a &#8220;best fit&#8221; model which allows you to specify other sizes. For instance, if you want a 300×100 banner, InMobi will attempt to deliver an ad of that size (or very close). If there is no inventory for your requested size and InMobi can&#8217;t provide a &#8220;best fit&#8221; ad, they will drop back to a standard 320×50 banner ad.</p>
+<h3>Refreshing ads</h3>
+<p>InMobi allows you to turn on &#8220;automatic refreshing&#8221; of banner ads. If you enable it, the default ad refresh cycle is 60 seconds, but that time can also be customized. Just remember that your revenue from ads is not based on the number of ads delivered, but on the number of ads that users interact with. So, a faster ad rotation will not necessarily translate to better revenue, and in fact it may negatively impact the user&#8217;s experience.</p>
+<p>Enabling ad rotation and the frequency of the rotation is handled through parameters passed to <a href=https://docs.coronalabs.com/plugin/inmobi/load.html target="_blank">inMobi.load()</a>.</p>
+<h3>Conclusion</h3>
+<p>InMobi is a great service for users to integrate into their apps. To learn more, please check out our <a href=https://docs.coronalabs.com/plugin/inmobi/index.html target="_blank">documentation</a> and <a href=https://github.com/coronalabs/plugins-sample-inmobi>sample app</a>. If you have questions or want to discuss this plugin further, please visit the <a href=https://forums.coronalabs.com/forum/631-corona-premium-plugins/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/19/welcome-inmobi-to-the-corona-monetization-plugin-suite/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Official RevMob plugin now available</title>
+		<link>/blog/2016/04/07/official-revmob-plugin-now-available/</link>
+		<comments>/blog/2016/04/07/official-revmob-plugin-now-available/#comments</comments>
+		<pubDate>Thu, 07 Apr 2016 16:41:33 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[RevMob]]></category>
+
+		<guid isPermaLink="false">/?p=66369</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the availability of our new RevMob plugin. Learn more in this announcement.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-66373" src="/wordpress/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-11.28.02-AM.png" alt="RevMobLogo" width="229" height="79" />Corona Labs is pleased to announce the availability of our new <a href=https://www.revmobmobileadnetwork.com/ target="_blank">RevMob</a> plugin. Previously, Corona users accessed RevMob through a RESTful API. Now, it&#8217;s available as an official plugin.</p>
+<p><a href=https://www.revmobmobileadnetwork.com/ target="_blank">RevMob</a> is a popular advertising platform that offers a full range of ad types such as banners, interstitial ads, video, and rewarded video ads. They are known for high fill rates, worldwide reach, and engaging content.</p>
+<p>Gustavo Goldenberg, Head of Publisher Relations at RevMob, says of the partnership, &#8220;we have thousands of publishers in our network that have Corona as their platform of choice. By working closely with Corona Labs to create an even more seamless integration, we are sure that even more developers will join in to build amazing experiences with Corona’s versatile and easy-to-use engine.&#8221;</p>
+<p>This version of the plugin initially supports banner, full screen, interstitial video, and rewarded video ad types on iOS and Android.</p>
+<h3>Getting started</h3>
+<p>You must first sign up with RevMob at their <a href=https://www.revmobmobileadnetwork.com/ target="_blank">website</a>. From their dashboard, visit the Media tab and create various media entries. A media entry is basically an item for each app and platform you want to put ads in. If you want to have both an Android and iOS app, you will need two media entries: one for Android and one for iOS. RevMob will generate a unique Media ID for each version of your app and you will use those IDs in your code.</p>
+<p>After you have an app added to the dashboard, you need to create Placements. You will get a unique Placement ID for each ad type and ad position you wish to support in your app, and those Placement IDs can be used in your Corona code.</p>
+<h3>Including the plugin</h3>
+<p>You must modify your <code>build.settings</code> file to enable loading the plugin:</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.revmob&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true }
+        },
+    },
+}</pre><p>If building for iOS, you must also bypass App Transport Security (ATS) by adding the following to the <code>plist</code> table of <code>build.settings</code>. For more information on ATS, please see the <a href=https://docs.coronalabs.com/guide/hardware/appleATS/index.html target="_blank">Managing App Transport Security</a> guide.</p><pre class="crayon-plain-tag">settings =
+{
+    iphone =
+    {
+        plist =
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+        },
+    },
+}</pre><p></p>
+<h3>Session management</h3>
+<p>RevMob needs to have their session started. As a convenience, calling <a href=https://docs.coronalabs.com/plugin/revmob/init.html target="_blank">revmob.init()</a> will start your session for you. However, if you did not have Internet connectivity when your app started or if your app resumes from being suspended, you may need to start the session manually. See the <a href=https://docs.coronalabs.com/plugin/revmob/index.html target="_blank">documentation</a> on how to do this.</p>
+<h3>Improving performance</h3>
+<p>RevMob supports targeting ads to a finer-grained audience. To do so, they need to know some demographic data about your app&#8217;s user. Once you know that data, you can inform RevMob using the <a href=https://docs.coronalabs.com/plugin/revmob/setUserDetails.html target="_blank">revmob.setUserDetails()</a> API call. For example, you can provide the app user&#8217;s gender, age range, birthday and/or user interests to RevMob so they can provide better ads. However, keep in mind that you will have to collect this information from the user for it to be useful, and users may be reluctant to provide it.</p>
+<h3>Limitations</h3>
+<p>We do not currently support popup or link type ads. We also do not support their mobile website platform.</p>
+<h3>Conclusion</h3>
+<p>RevMob is a very popular ad choice. It&#8217;s easy to implement and provides good fill rates and high quality ads. To learn more please read our <a href=https://docs.coronalabs.com/plugin/revmob/index.html target="_blank">documentation</a>. If you have questions, please visit the <a href=https://forums.coronalabs.com/forum/545-monetization-in-app-purchases-ads-etc/ target="_blank">Corona Labs forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/04/07/official-revmob-plugin-now-available/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>AppLovin plugin: now with rewarded/incentivized ads</title>
+		<link>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/</link>
+		<comments>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/#comments</comments>
+		<pubDate>Tue, 09 Feb 2016 02:03:08 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65538</guid>
+		<description><![CDATA[Learn more about recent updates to the AppLovin plugin which let you offer virtual rewards to users in exchange for watching ads.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-65510" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" />We are pleased to announce a new feature in the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin: rewarded/incentivized video ads! These ads &#8212; in contrast to standard graphical interstitial and video interstitial ads &#8212; can be implemented to reward users with some form of in-app currency upon viewing the ad. For example, if your game uses &#8220;coins&#8221; as an in-app currency, you can award the player with some coins each time they view a rewarded video ad.</p>
+<h3>AppLovin setup</h3>
+<p>To implement rewarded/incentivized ads, you must enable and configure them on a per-app basis within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>. The process is straightforward: basically just enable the feature, choose a frequency capping option, set up the virtual currency, select the modal options, and save your settings.</p>
+<h3>API changes</h3>
+<p>To use rewarded/incentivized ads within Corona, simply add the <code>isIncentivized</code> parameter (boolean value of <code>true</code>) to your <a href=https://docs.coronalabs.com/daily/plugin/applovin/load.html target="_blank">applovin.load()</a>, <a href=https://docs.coronalabs.com/daily/plugin/applovin/show.html target="_blank">applovin.show()</a>, or <a href=https://docs.coronalabs.com/daily/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> API calls. For instance:</p><pre class="crayon-plain-tag">applovin.load( true )
+applovin.show( true )
+applovin.isLoaded( true )</pre><p>Note that incentivized ad offers can be limited to a certain amount in a given day, defined under &#8220;frequency capping&#8221; in the <a href=https://www.applovin.com/manage>AppLovin developer portal</a>. If you are using frequency capping, we recommend that you check for an <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html>event.phase</a> value of <code>"validationExceededQuota"</code> to determine if the limit has been reached. When this occurs, you may consider showing a normal graphical or video interstitial ad instead.</p>
+<h3>Listener changes</h3>
+<p>When using rewarded/incentivized ads, you can use the same event listener function as always, although you will find some new data passed in relation to incentivized ads.</p>
+<p>First and foremost, the <code>event</code> table will contain a new entry called <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/data.html target="_blank">event.data</a>. This is a table containing key-value pairs related to incentivized/rewarded video events. For instance, after a user has successfully completed watching a video, <code>event.data</code> will contain the key-value pairs associated with the rewarded currency:</p>
+<ul>
+<li><code>event.data.currency</code> — The type of currency.</li>
+<li><code>event.data.amount</code> — The amount of currency rewarded.</li>
+</ul>
+<p>In addition, the <a href=https://docs.coronalabs.com/daily/plugin/applovin/event/adsRequest/phase.html target="_blank">event.phase</a> string may be one of the following values, all specifically related to incentivized/rewarded video ads:</p>
+<ul>
+<li><code>"declinedToView"</code> — Indicates that the user chose &#8220;no&#8221; when prompted to view the ad.</li>
+<li><code>"validationSucceeded"</code> — Indicates that the user viewed the ad and that their reward was approved by the AppLovin server.</li>
+<li><code>"validationExceededQuota"</code> — Indicates that the AppLovin server was contacted, but the user has already received the maximum amount of rewards allowed in a given day.</li>
+<li><code>"validationRejected"</code> — Indicates that the AppLovin server rejected the reward request.</li>
+<li><code>"validationFailed"</code> — Indicates that the AppLovin server could not be contacted.</li>
+</ul>
+<h3>In summary</h3>
+<p>This new addition to the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">AppLovin</a> plugin gives you even more options for engaging and monetizing your users. For more information, please read the <a href=https://docs.coronalabs.com/daily/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>We&#8217;re AppLovin your Corona apps</title>
+		<link>/blog/2016/02/03/were-applovin-your-corona-apps/</link>
+		<comments>/blog/2016/02/03/were-applovin-your-corona-apps/#comments</comments>
+		<pubDate>Wed, 03 Feb 2016 18:21:45 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Monetization]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applovin]]></category>
+		<category><![CDATA[Corona Plug-ins]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">/?p=65479</guid>
+		<description><![CDATA[Corona Labs is pleased to announce the immediate availability of the AppLovin plugin. This plugin allows developers to monetize users through AppLovin graphical interstitial and video interstitial ads.]]></description>
+				<content:encoded><![CDATA[<p><a href=/wordpress/wp-content/uploads/2016/02/applovin.png rel="attachment wp-att-65510"><img class="alignright wp-image-65510 size-thumbnail" style="margin: 0px 0px 20px 20px;" src="/wordpress/wp-content/uploads/2016/02/applovin-150x129.png" alt="applovin" width="150" height="129" /></a>Corona Labs is pleased to announce the immediate availability of a new plugin that lets you implement ads from <a href=https://applovin.com/ target="_blank">AppLovin</a>. Their platform uses real-time data to understand your users and target them with relevant brands, ensuring that you are reaching users who are likely to interact with your marketing. AppLovin delivers content to over a billion mobile users every month.</p>
+<h3>Signing up</h3>
+<p>To use AppLovin, you will need to <a href=https://applovin.com/signup target="_blank">sign up</a> and get an AppLovin SDK key. Regardless of iOS or Android, you will get just one SDK key which should be used throughout your projects. Once you gain access to the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a><strong>, </strong>navigate to the <strong>Account</strong> section, expand the <strong>Account</strong> menu on the left side, select <strong>Keys</strong>, and your SDK key should be revealed.</p>
+<h3>Including the plugin</h3>
+<p>As with all plugins, you must include AppLovin in your <code>build.settings</code> file. For iOS, you just need the AppLovin plugin itself. For Android, you must also include the Google Play Services plugin since AppLovin needs to access library code within that plugin.</p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        [&quot;plugin.applovin&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true, appletvos=true }
+        },
+        -- Include this for Android only
+        [&quot;plugin.google.play.services&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { android=true }
+        },
+    },
+}</pre><p></p>
+<h3>Setup and initialization</h3>
+<p>Similar to other plugins, you must <code>require()</code> the plugin in any Lua file where you plan to call AppLovin&#8217;s APIs.</p><pre class="crayon-plain-tag">-- Require the AppLovin plugin
+local applovin = require( &quot;plugin.applovin&quot; )</pre><p>Next, add a basic AppLovin event listener (it can be completed later) and initialize the AppLovin plugin:</p><pre class="crayon-plain-tag">-- AppLovin listener
+local function adListener( event )
+
+end
+
+-- Initialize the AppLovin plugin
+applovin.init( adListener, { sdkKey=&quot;YOUR_SDK_KEY&quot;, verboseLogging=false } )</pre><p>Note that the <a href=https://docs.coronalabs.com/plugin/applovin/init.html target="_blank">applovin.init()</a> call takes two parameters: the event listener function name and a table of parameters. Inside the table of parameters, your unique SDK key is required. In addition, you can include the <code>verboseLogging</code> key with a value of <code>true</code> to output AppLovin logs to the console.</p>
+<h3>Loading and showing ads</h3>
+<p>AppLovin offers graphical interstitial ads, video interstitial ads, and rewarded/incentivized video ads (no banners). The types displayed are controlled solely within the <a href=https://www.applovin.com/manage target="_blank">AppLovin developer portal</a>, so the only valid parameter for the load or show APIs is the optional <code>isIncentivized</code> boolean which tells the plugin to load or show a rewarded/incentivized ad (see <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> for details). There is also no &#8220;hide&#8221; API since interstitial ads need to be closed by the user or played to completion before the app continues.</p>
+<p>To load an ad, simply call the <a href=https://docs.coronalabs.com/plugin/applovin/load.html target="_blank">applovin.load()</a> API:</p><pre class="crayon-plain-tag">applovin.load()</pre><p>Then, to show it, simply call <a href=https://docs.coronalabs.com/plugin/applovin/show.html target="_blank">applovin.show()</a>:</p><pre class="crayon-plain-tag">applovin.show()</pre><p>Similar to other ad providers, you can also call <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a> to check if an ad is loaded before showing it. Like the APIs above, this accepts the boolean <code>isIncentivized</code> parameter, allowing you to check which type of ad is loaded.</p><pre class="crayon-plain-tag">if applovin.isLoaded() then
+    applovin.show()
+end</pre><p></p>
+<h3>Event listener callbacks</h3>
+<p>All of the APIs mentioned above, with the exception of  <a href=https://docs.coronalabs.com/plugin/applovin/isLoaded.html target="_blank">applovin.isLoaded()</a>, will call the event listener function. The event table which is dispatched will contain various <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/index.html target="_blank">properties</a>, including the following <a href=https://docs.coronalabs.com/plugin/applovin/event/adsRequest/phase.html target="_blank">phases</a> (<code>event.phase</code>):</p>
+<ul>
+<li><code>"init"</code> &#8212; Indicates that the AppLovin plugin was initialized successfully.</li>
+<li><code>"failed"</code> &#8212; Indicates that an ad failed to load.</li>
+<li><code>"loaded"</code> &#8212; Indicates that an ad loaded successfully.</li>
+<li><code>"displayed"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was displayed.</li>
+<li><code>"hidden"</code> &#8212; Indicates that a graphical interstitial ad (non-video) was closed/hidden.</li>
+<li><code>"playbackBegan"</code> — Indicates that a video interstitial ad was displayed.</li>
+<li><code>"playbackEnded"</code> — Indicates that a video interstitial ad was closed/hidden.</li>
+<li><code>"clicked"</code> &#8212; Indicates that an ad was clicked/tapped.</li>
+</ul>
+<p>In addition, a series of event properties help you work with <strong>rewarded/incentivized video ads</strong>. Please see <a href=/blog/2016/02/08/applovin-plugin-now-with-rewardedincentivized-ads/ target="_blank">this announcement</a> for details.</p>
+<p>For more information, please read the <a href=https://docs.coronalabs.com/plugin/applovin/index.html target="_blank">documentation</a> or download the basic sample app from GitHub at <a href=https://github.com/coronalabs/plugins-sample-applovin target="_blank">https://github.com/coronalabs/plugins-sample-applovin</a>.</p>
+<h3>Important notes</h3>
+<ul>
+<li>The AppLovin app configuration screen has many options for configuring and controlling the types of ads you get. For instance, you can restrict the ads to &#8220;child safe&#8221; if the app is targeting children. You can change these settings as often as needed, but <strong>for an app released to market</strong>, you must also email <a href=mailto:applovin-support@coronalabs.com>applovin-support@coronalabs.com</a> with a summary of your changes. This ensures that your ads and associated preferences will be delivered consistently.</li>
+<li>For monetization through the AppLovin plugin, Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</li>
+</ul>
+<h3>In summary</h3>
+<p>With the addition of AppLovin, Corona Labs is committed to bringing you more and more monetization options for your apps. If you have any questions about this plugin, please discuss in the <a href=https://forums.coronalabs.com/ target="_blank">Corona forums</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/02/03/were-applovin-your-corona-apps/feed/</wfw:commentRss>
+		<slash:comments>51</slash:comments>
+		</item>
+		<item>
+		<title>Introducing the Facebook Audience Network plugin</title>
+		<link>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/</link>
+		<comments>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/#comments</comments>
+		<pubDate>Sat, 16 Jan 2016 01:11:53 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ads]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Facebook Audience Network]]></category>
+		<category><![CDATA[monetization]]></category>
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">/?p=65212</guid>
+		<description><![CDATA[Corona Labs is pleased to announce immediate availability of the <a href="https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with a straightforward collection of APIs.]]></description>
+				<content:encoded><![CDATA[<p>Corona Labs is pleased to announce immediate availability of the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin. This new plugin brings Facebook Ads to your Corona-based apps with the same insights and demographic targeting you get with ads in Facebook.</p>
+<p>Using familiar API calls like <code>.load()</code> and <code>.show()</code>, you can easily implement the Facebook Audience Network into your apps and begin monetizing with the power of Facebook.</p>
+<p>To get started, visit the <a href=https://developers.facebook.com/docs/audience-network/getting-started target="_blank">Getting Started with the Audience Network</a> page which will guide you through setting up your existing Facebook-enabled app or setting up a new Facebook app.</p>
+<h3>Testing Facebook Audience Network</h3>
+<div style="background-color: #fed; padding: 8px;"><strong>IMPORTANT</strong> — Facebook has a method for calling test ads which is different from other Corona ad providers. <strong>To test ads during implementation of this plugin, you must follow their requirements</strong>. Please read the notes in the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/init.html target="_blank">fbAudienceNetwork.init()</a> documentation and follow the steps to enable test ads.</div>
+<h3>Initializing the plugin</h3>
+<p>On the Corona side, this plugin has been pre-activated for you. Once the Facebook app is set up within the Facebook Developer Portal, add the plugin to your <code>build.settings</code>:</p><pre class="crayon-plain-tag">plugins =
+    {
+        [&quot;plugin.fbAudienceNetwork&quot;] =
+        {
+            publisherId = &quot;com.coronalabs&quot;,
+            supportedPlatforms = { iphone=true, android=true },
+        },
+    },</pre><p>Then, in your <code>main.lua</code>, follow this basic example as a basis for implementing Facebook Ads:</p><pre class="crayon-plain-tag">local fbAudienceNetwork = require( &quot;plugin.fbAudienceNetwork&quot; )
+
+-- Preset Facebook placement IDs; replace these with your own
+local bannerPlacementID = &quot;[your banner placement ID here]&quot;
+local interstitialPlacementID = &quot;[your interstitial placement ID here]&quot;
+
+-- Ad listener function
+local function adListener( event )
+
+    -- Successful initialization of the Facebook Audience Network
+    if ( event.phase == &quot;init&quot; ) then
+        print( &quot;Facebook Audience Network event: initialization successful&quot; )
+
+        -- An ad loaded successfully
+        elseif ( event.phase == &quot;loaded&quot; ) then
+            print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad loaded successfully&quot; )
+            if ( event.type == &quot;banner&quot; ) then
+                -- To show the banner upon load completion, call fbAudienceNetwork.show() here
+            elseif ( event.type == &quot;interstitial&quot; ) then
+                -- To show the interstitial upon load completion, call fbAudienceNetwork.show() here
+            end
+
+    -- An interstitial ad was closed by the user
+    elseif ( event.phase == &quot;closed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad closed by user&quot; )
+        -- Process any task involved with an ad being closed by the user
+
+    -- The ad was clicked/tapped
+    elseif ( event.phase == &quot;clicked&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad clicked/tapped by user&quot; )
+        -- Process any task involved with an ad being clicked by the user
+
+    -- The ad failed to load
+    elseif ( event.phase == &quot;failed&quot; ) then
+        print( &quot;Facebook Audience Network event: &quot; .. event.type .. &quot; ad failed to load&quot; )
+    end
+end
+
+-- Initialize the Facebook Audience Network
+fbAudienceNetwork.init( adListener )</pre><p></p>
+<h3>Loading ads</h3>
+<p>Unlike some ad providers, Facebook Ads <strong>must</strong> be pre-loaded before they are shown. Do this by calling <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/load.html target="_blank">fbAudienceNetwork.load()</a>:</p><pre class="crayon-plain-tag">-- Banner
+fbAudienceNetwork.load( &quot;banner&quot;, bannerPlacementID, &quot;BANNER_HEIGHT_50&quot; )
+-- Interstitial
+fbAudienceNetwork.load( &quot;interstitial&quot;, interstitialPlacementID )</pre><p></p>
+<h3>Showing ads</h3>
+<p>Once an ad is loaded, you can show it using <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/show.html target="_blank">fbAudienceNetwork.show()</a>.</p><pre class="crayon-plain-tag">fbAudienceNetwork.show( &quot;banner&quot;, bannerPlacementID, { yAlign=&quot;bottom&quot; } )</pre><p>Alternatively, here&#8217;s an example which checks if an ad is loaded before attempting to show it:</p><pre class="crayon-plain-tag">if ( fbAudienceNetwork.isLoaded( interstitialPlacementID ) == true ) then
+    fbAudienceNetwork.show( &quot;interstitial&quot;, interstitialPlacementID )
+end</pre><p></p>
+<h3>Hiding ads</h3>
+<p>Finally, just like other ad networks, you can hide ads with <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/hide.html target="_blank">fbAudienceNetwork.hide()</a>:</p><pre class="crayon-plain-tag">fbAudienceNetwork.hide( bannerPlacementID )</pre><p></p>
+<h3>Final notes</h3>
+<ul>
+<li>You can obtain a more complete <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">sample project</a> for the Facebook Audience Network plugin on <a href=https://github.com/coronalabs/plugins-sample-fbAudienceNetwork target="_blank">GitHub</a>.</li>
+<li>For full documentation, see the <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network documentation</a>.</li>
+</ul>
+<p>The Facebook Audience Network uses a revenue sharing model. Corona Labs takes a revenue share in the form of a fixed 5% flat rate.</p>
+<p><strong>And as a bonus, if you implement the Facebook Audience Network plugin before March 1st, you will be locked in to a special introductory rate of 5% for all tiers.</strong></p>
+<h3>Conclusion</h3>
+<p>The <a href=https://docs.coronalabs.com/plugin/fbAudienceNetwork/index.html target="_blank">Facebook Audience Network</a> plugin brings another monetization option to Corona developers, wrapped in a convenient, easy-to-implement collection of APIs. Get started today!</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2016/01/15/introducing-the-facebook-audience-network-plugin/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+		</item>
+	</channel>
+</rss>

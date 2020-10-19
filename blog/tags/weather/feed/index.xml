@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>weather &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/weather/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>weather &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corona Geek #34 &#8211; Hanging out with Climate Clock&#8217;s Ben Wong</title>
+		<link>/blog/coronageek/corona-geek-hangout-34/</link>
+		<comments>/blog/coronageek/corona-geek-hangout-34/#respond</comments>
+		<pubDate>Tue, 09 Apr 2013 01:50:11 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[app development]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[indie developer]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?post_type=coronageek&#038;p=31456</guid>
+		<description><![CDATA[This week, we hung out with Climate Clock's, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it's design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/S3OWp49EqVo?rel=0" height="436" width="640" frameborder="0"></iframe></p>
+<p><img class="alignleft size-thumbnail wp-image-477" alt="Corona Geek" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 150px) 100vw, 150px" />This week, we hung out with Climate Clock&#8217;s, Ben Wong. Climate Clock is a beautifully designed iOS weather app that puts the temperature on your home screen. Ben describes himself as a designer who is interested in app development. He has a background in designing websites and used the creation of Climate Clock to expand his skills into app development. Climate Clock was built in 8 weeks while Ben developed his own back end web server, taught himself Lua, and Corona SDK. Climate Clock uses a third party API to provide weather information. The app is very elegant in it&#8217;s design and has been written about by Lifehacker, CNET, and TUAW. Climate Clock soared to the #1 weather app spot in the App Store, in a dozen countries, in March of this year.</p>
+<p>Also joining us on the developer panel were <a href=http://burtonsmediagroup.com/ target="_blank">Dr. Brian Burton</a>, <a href=http://echoecho.es/ target="_blank">Dean Murphy</a>, <a href=http://roaminggamer.com/ target="_blank">Ed Maurina</a>, and <a href=http://www.origintech.net/ target="_blank">Matthew Chapman</a>.</p>
+<p>Be sure to watch/listen to the full hangout for more information and <a title="Download Climate Clock" href=http://climateclockapp.com/ target="_blank">check out Climate Clock</a>.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<div style="clear: both;"></div>
+<p><strong>Corona Labs T-Shirt Winner</strong></p>
+<p>This week&#8217;s t-shirt winner was Justin Giles. Congrats Justin! For your chance to win, follow Corona Geek on <a href=http://www.twitter.com/coronageek>Twitter</a> and <a href=http://www.facebook.com/coronageek>Facebook</a>, and complete the <a href=http://coronalabs.wufoo.com/forms/corona-geek-giveaway/ target="_blank">Corona Geek giveaway form</a>.</p>
+<p>&nbsp;</p>
+<p>Thank you for watching, we&#8217;ll see you on next week&#8217;s Corona Geek hangout!</p>
+<p><strong>Listen and Rate!</strong></p>
+<ul>
+<li><a href=http://CoronaGeek.com/itunes target="_blank">Rate the Corona Geek podcast on iTunes</a></li>
+<li><a href=http://CoronaGeek.com/stitcher target="_blank">Listen and rate on Stitcher</a></li>
+<li><a href=http://CoronaGeek.com/chrome target="_blank">Get the Corona SDK Quick Reference Chrome Extension</a></li>
+<li><a href=http://youtube.com/coronageek target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-hangout-34/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-34-2013-04-08-climate-clock.mp3" length="42266613" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>App of the Week: Climate Clock</title>
+		<link>/blog/2013/03/04/app-of-the-week-climate-clock/</link>
+		<comments>/blog/2013/03/04/app-of-the-week-climate-clock/#comments</comments>
+		<pubDate>Mon, 04 Mar 2013 21:10:57 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Mobile App of the Week]]></category>
+		<category><![CDATA[app]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[weather]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=29712</guid>
+		<description><![CDATA[When checking climate conditions locally and while traveling, weather apps are a handy way to get the latest updates.  As the #1 weather app in the App Store, Climate Clock is the superstar of utility apps.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM.png" alt="Climate Clock" class="alignleft size-full wp-image-29713" srcset="/wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM.png 182w, /wordpress/wp-content/uploads/2013/02/Screen-Shot-2013-02-28-at-2.25.18-PM-150x150.png 150w" sizes="(max-width: 182px) 100vw, 182px" />Whether you’re checking climate conditions locally or while traveling, weather apps are a handy way to get the latest updates. This week’s App of the Week, <a href=https://itunes.apple.com/cn/app/climate-clock-minimal-hourly/id586030399?mt=8>Climate Clock</a>, is the superstar of weather apps. Available for iPhone, Climate Clock soared as the #1 weather app in the App Store, in a dozen countries last week. </p>
+<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/02/Climate-Clock-168x300.jpg" alt="Climate Clock" class="alignright size-medium wp-image-29714" /><br />
+Climate Clock provides both time and hourly forecasts in one sleek, elegant package. The home screen reflects a clock with digits replaced by weather predictions. In the case of today&#8217;s San Francisco forecast, the number digits on the clock were swapped with hourly temperatures, encased by bubbly suns and clouds. To gain more insight on the day, I tapped the screen to switch from the hourly temperature to today&#8217;s wind speed and chance of rain.</p>
+<p>Based on Climate Clock&#8217;s predictions, I learned that San Francisco can expect a little sunshine today, with a high temperature of 57 degrees Fahrenheit. And thanks to the app&#8217;s 10-day forecast, I&#8217;m looking forward to soaking up more sun over the weekend, with expected highs in the low 70s.</p>
+<p><a href=https://itunes.apple.com/cn/app/climate-clock-minimal-hourly/id586030399?mt=8><br />
+Climate Clock</a> is available for a special price of $.99 in the App Store. Snag it today!</p>
+<p><iframe src="http://player.vimeo.com/video/60117218?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> </p>
+<p><a href=http://vimeo.com/60117218>Climate Clock App &#8211; Minimal Hourly Weather Forecast</a> from <a href=http://vimeo.com/benwongfilm>Benjamin Wong</a> on <a href=http://vimeo.com>Vimeo/</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/04/app-of-the-week-climate-clock/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

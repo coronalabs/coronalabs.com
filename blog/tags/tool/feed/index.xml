@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tool &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/tool/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>tool &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Game Coder 101: Building a mobile game on the iPad (Guest post)</title>
+		<link>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/</link>
+		<comments>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/#comments</comments>
+		<pubDate>Thu, 21 Mar 2013 18:17:37 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[Guest Bloggers]]></category>
+		<category><![CDATA[Partners]]></category>
+		<category><![CDATA[app]]></category>
+		<category><![CDATA[game]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[tool]]></category>
+
+		<guid isPermaLink="false">/?p=30392</guid>
+		<description><![CDATA[Ricardo Rauber is the creator of Game Coder, a revolutionary tool that allows developers of all backgrounds, to build apps on the iPad. Best of all, Game Coder is built entirely with Corona SDK! 
+
+Read through Ricardo's walk-through to learn more about Game Coder and to get up and running with the app.
+]]></description>
+				<content:encoded><![CDATA[<p><em>Ricardo Rauber is the creator of <a href=https://itunes.apple.com/us/app/game-coder/id580568570?ls=1&mt=8>Game Coder</a>, a revolutionary tool that allows developers of all backgrounds, to build apps directly on the iPad. Best of all, Game Coder is built entirely with Corona SDK! </p>
+<p>Read through Ricardo&#8217;s walk-through to learn more about Game Coder and to get up and running with the app.</em></p>
+<hr />
+<p><img src="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM-150x150.png" alt="Game Coder" class="alignleft size-thumbnail wp-image-30402" srcset="/wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM-150x150.png 150w, /wordpress/wp-content/uploads/2013/03/Screen-Shot-2013-03-20-at-2.26.08-PM.png 200w" sizes="(max-width: 150px) 100vw, 150px" />Game Coder is a wonderful new way to build your dream game on the iPad. By using simple tap and drag-and-drop features, Game Coder facilitates the game development process for newbies, skilled developers, and everything in between. Game Coder was built entirely with <a href=/products/Corona-sdk>Corona SDK</a>, and is the perfect compliment to the Corona platform.  </p>
+<p>If you just want to start a project or prototype an idea, Game Coder is good for that. If you want to work directly with Lua files, you can export from Game Coder as a Corona SDK project.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/menu-804x1024.jpg" alt="menu" class="alignnone size-large wp-image-30393" /></p>
+<p>Let&#8217;s take a look at Game Coder. You can <a href=https://itunes.apple.com/us/app/game-coder/id580568570?ls=1&mt=8>download Game Coder</a> from the App Store for $9.99. On the first screen, you&#8217;ll see your projects, images, sounds and the Game Coder configuration. When you download Game Coder, you&#8217;ll see a sample project called Dogs vs. Aliens. This is a complete game made with Game Coder. It is free for everyone that downloads Game Coder and is a great sample project for testing commands and learning how to develop. Using the &#8220;?&#8221; on each screen, you can see what each component on the screen does. </p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/project-804x1024.jpg" alt="project" class="alignnone size-large wp-image-30394" /></p>
+<p>When you tap on a project, it will show the project properties. Here you can change the project orientation, name and scenes. </p>
+<p>By touching the &#8220;+&#8221; button, you can create a new scene where you can put objects. Touching the gear next to the scene thumbnail, you can change the scene&#8217;s name and select which scene will be first. You can also touch the trash icon, and Game Coder will ask if you really want to delete the scene. </p>
+<p>Tapping the “Code” button in the top right of the screen will open the main project code, and will be similar to writing code in the main.lua file within a Corona project. The Code button is context sensitive, so it will display code for the screen or object you are working with based on where you are in Game Coder. For example, if you are on the project screen, the Code button will show the project code, if you are on the Object screen, the Code button will show the object code. We will take a look at the code screen in a moment. First, let’s cover the Scene Edit screen. Tap on a scene to view that specific scene. </p>
+<p>As a side note, you can touch the big green &#8220;Play&#8221; button at the bottom of Game Coder at any time to run your game.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/scene-804x1024.jpg" alt="scene" class="alignnone size-large wp-image-30395" /></p>
+<p>Scene edit is one of the greatest things available in Game Coder. It shows a stage with the orientation of the project and all your objects listed at the bottom of the screen. You just need to touch and hold the object and drag it to the stage. After that, you can move, rotate and resize the object using two fingers, or by double tapping to edit its properties. One cool thing is that all objects work with layers. They are positioned the same way display groups are positioned in Corona. </p>
+<p>At the top right you have the same Code button from the Projects screen but tapping it now shows you the scene code. When you want to create a new object, just tap the &#8220;+&#8221; button, or if you want to edit an object, just double tap on it and Game Coder will go to the next screen.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/object-804x1024.jpg" alt="object" class="alignnone size-large wp-image-30396" /></p>
+<p>Let’s look at the at the Object content. Here you can see the object images, attributes and a list of images. The object images at the top are the animation frames. You can play, stop and change the frame with commands in the code screen. </p>
+<p>To add new images to the animation, just double tap on an image at the list on the bottom. These are all images imported on Game Coder. If you want to delete a frame, just touch the &#8220;trash&#8221; icon right under the appropriate image. Tap the Code button again! Now it will show the object code and we will take a look at it!</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/code-804x1024.jpg" alt="code" class="alignnone size-large wp-image-30397" /></p>
+<p>Don&#8217;t be afraid of this screen, it is very simple to use and to understand! Game Coder works with drag-and-drop commands that you can choose by tapping the top right button called &#8220;Commands.&#8221; It will show a list of all commands supported by Game Coder. They are classified by the type of command. For example, math commands are grouped together, as well as physics commands, etc. </p>
+<p>To add a command to the code, just touch and hold it and drag to the lines. If you drag it to the top or the bottom of the screen and the code has more lines than you can see, the code will be moved so you can put your command right where you want. For example, if you are at the line 42, you can drag the command to the top and it will start to scroll to the top of the code.</p>
+<p>After adding a command, you can change its position by holding it again and dragging it. Also, you can delete it by touching the trash icon. To change commands values, touch the value you want to change and a popup will be shown with the value to be changed. </p>
+<p>Finally, you need to know that all variables, timers, object names, transitions and procedures are globals, so if you create a procedure inside an object, it will be accessible to the entire project. Keep that in mind. But what if you want to create something just for that object? Just use the word &#8220;this&#8221; and Game Coder will set the values to be the object instance id. We will talk more about that in another post.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/dropbox-804x1024.jpg" alt="dropbox" class="alignnone size-large wp-image-30398" /></p>
+<p>You might be wondering how you add your own images and sounds inside Game Coder. It&#8217;s easy, you just need to use a <a href=https://www.dropbox.com/>Dropbox</a> account. Game Coder has full integration with Dropbox so you can download your content to your app. </p>
+<p>Let&#8217;s see an example using an image. On the first screen of the app there is a button called Images.  You can use it to see all your downloaded images from your Dropbox account. The plus button is used to download additional assets from your Dropbox. You just need to choose &#8220;Allow&#8221; and all your files and folders will be shown on the screen. You now can just choose which file you want to download by touching it. A dialog will appear asking if you want to download it and if you choose &#8220;Yes,&#8221; Game Coder will download the image and it will be available for all your projects. Use the same procedure for importing sounds.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/export-804x1024.jpg" alt="export" class="alignnone size-large wp-image-30399" /></p>
+<p>The final thing you need to know is how to export your Game Coder projects to Corona. Choose &#8220;Projects&#8221; in the main menu and touch the little gear next to the project. A popup with two options will appear: &#8220;Corona SDK&#8221; and &#8220;Publish.&#8221; </p>
+<p>If you choose &#8220;Corona SDK,&#8221; Game Coder will show your Dropbox and ask where you would like to export it. Choose a folder and Game Coder will generate all the source files, put them in a zip file, and send it to your Dropbox. </p>
+<p>If you would like someone to help you publish your apps, use the Publish button. When you touch Publish, Game Coder will ask you to confirm the request and then it will e-mail you instructions for completing the publishing process. App publishing is an extra paid service provided by Beelieve. The price for publishing is determined on a case by case basis. We can provide an estimate of cost for publishing after talking with you about your project.</p>
+<p><img src="/wordpress/wp-content/uploads/2013/03/exported_object-1024x657.jpg" alt="exported_object" class="alignnone size-large wp-image-30400" /></p>
+<p>After exporting your project to Corona, you will see all the supporting images, sounds, and Lua files in a Corona project folder, just as you would if you had originally created a project on your own. The naming convention for scene and object files, are &#8220;scn_&#8221; before the name of scenes and &#8220;obj_&#8221; before the name of objects. The code is all commented so you can easily understand everything. From here you can fully edit your Corona SDK project files to make your game even better with all the power of Corona!</p>
+<p><em>Ricardo Rauber, Owner of Beelieve, Creator of Game Coder</em></p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/21/game-coder-101-building-a-mobile-game-on-the-ipad-guest-post/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

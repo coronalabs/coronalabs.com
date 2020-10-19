@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>server &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/server/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>server &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Corona Build Servers</title>
+		<link>/blog/2013/07/10/wednesday-faqs-corona-build-servers/</link>
+		<comments>/blog/2013/07/10/wednesday-faqs-corona-build-servers/#comments</comments>
+		<pubDate>Wed, 10 Jul 2013 21:07:35 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[server]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=37617</guid>
+		<description><![CDATA[It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.</p>
+<h2>1. Is there a difference between developer and distribution builds for iOS?</h2>
+<p>Yes, with distribution builds (App Store and adhoc), Apple&#8217;s <strong>PNGCRUSH</strong> utility is called to compress the PNG files. To save time, the utility is not called when doing a <strong>developer</strong> build.</p>
+<p>We&#8217;ve had some reported cases where images were mangled when submitted to the App Store and rejected by Apple. The issue seems to be a problem with how some PNG images are formatted that causes problems when <strong>PNGCRUSH</strong> is used to compress the images. If this happens to you, the solution is to open the PNG file in Photoshop (or a similar photo editor) and re-save the image. You can probably do the same thing using Mac&#8217;s Preview program. It&#8217;s always a good idea to test an adhoc build of your app because that also calls <strong>PNGCRUSH</strong> to compress the images.</p>
+<h2>2. Why do I need an Internet connection to build my project?</h2>
+<p>The Corona servers host multiple versions of the Corona SDK. This includes all the public builds as well as daily builds. When you do a build on the Corona Simulator, it sends the build information to the Corona servers so it can pick the correct <strong>template</strong> (build file) and plugins. Having the build templates and plugins in the cloud, allow us to update the files as needed and add additional plugins as they become available.</p>
+<p>For users who want to build offline, we do offer <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a>.</p>
+<h2>3. When I do a build, is the source code and all my assets sent to Corona&#8217;s servers?</h2>
+<p>Your project code is converted into Lua byte code and sent to Corona servers so it can be packaged with the <strong>template</strong> file for the associated build. None of project&#8217;s assets are sent to the Corona servers. After the Lua code has been linked to the template, it&#8217;s sent back to the client (Corona Simulator) where all the project&#8217;s assets are added to the project and the app is digitally signed.</p>
+<h2>4. My hard drive failed and I lost my Corona project. Can I get a copy that was sent to your servers when I did a build?</h2>
+<p>No, as mentioned in the previous answer, only the Lua byte code for your project is sent to the Corona servers. This byte code is not human readable plus it doesn&#8217;t contain any comments you may have in your code nor are any of the project assets included. None project files are saved on our servers once it&#8217;s send back to the client to build the project locally.</p>
+<h2>5. Are daily builds stable enough to use if I want to distribute to the App Store?</h2>
+<p>Daily builds contain new features and bug fixes. If you want to publish your app with a daily build, it&#8217;s best to test as much as you can to ensure there are no bugs. We do try to fix regression bugs in daily builds as soon as we are aware of them, so it&#8217;s a good idea to hold off and monitor the forums and the <a href=https://developer.coronalabs.com/corona-daily-builds/summary>daily build summary</a> page for bug reports and fixes.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/10/wednesday-faqs-corona-build-servers/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

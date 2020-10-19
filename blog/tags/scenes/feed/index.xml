@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>scenes &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/scenes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>scenes &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Controlling Composer scene transitions</title>
+		<link>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/</link>
+		<comments>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/#comments</comments>
+		<pubDate>Tue, 23 Dec 2014 20:00:03 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[effects]]></category>
+		<category><![CDATA[scenes]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=60647</guid>
+		<description><![CDATA[In this tutorial, learn how to control and edit the various scene transitions used by Corona's Composer library. In addition, discover how to create new transition effects via some basic Lua table entries.]]></description>
+				<content:encoded><![CDATA[<p>Corona&#8217;s <a href=http://docs.coronalabs.com/api/library/composer/index.html target="_blank">Composer scene management library</a> is quite powerful in giving you the ability to move multiple scenes on and off screen. As part of the core library, Composer supports numerous scene transitions including:</p>
+<ul>
+<li><strong>fade</strong> &#8212; the current scene fades out and then the next scene fades in.</li>
+<li><strong>zoomOutIn</strong> &#8212; the current scene shrinks to nothing, then the new scene emerges from nothingness to fill the screen.</li>
+<li><strong>zoomOutInFade</strong> &#8212; like <strong>zoomOutIn</strong>, but including <strong>fade</strong> as well.</li>
+<li><strong>zoomInOut</strong> &#8212; the scene starts larger than the screen, shrinks to fit, and then zooms out when closing.</li>
+<li><strong>zoomInOutFade</strong> &#8212; like <strong>zoomInOut</strong>, but including <strong>fade</strong> as well.</li>
+<li><strong>flip</strong> &#8212; the scene scales to width of 0 and then back out, providing a flip effect.</li>
+<li><strong>flipFadeOutIn</strong> &#8212; <strong>flip</strong> and <strong>fade</strong> combination.</li>
+<li><strong>zoomOutInRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with 360 degrees rotation.</li>
+<li><strong>zoomOutInFadeRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with fade and 360 degrees rotation.</li>
+<li><strong>zoomInOutRotate</strong> &#8212; like <strong>zoomInOut</strong>, but also with 360 degrees rotation.</li>
+<li><strong>zoomInOutFadeRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with fade and 360 degrees rotation.</li>
+<li><strong>fromRight</strong> &#8212; slides the new scene from the right side (over the existing scene).</li>
+<li><strong>fromLeft</strong> &#8212; slides the new scene from the left side (over the existing scene).</li>
+<li><strong>fromTop</strong> &#8212; slides the new scene from the top (over the existing scene).</li>
+<li><strong>fromBottom</strong> &#8212; slides the new scene from the bottom (over the existing scene).</li>
+<li><strong>slideLeft</strong> &#8212; like <strong>fromRight</strong>, but the new scene pushes the current scene off to the left.</li>
+<li><strong>slideRight</strong> &#8212; like <strong>fromLeft</strong>, but the new scene pushes the current scene off to the right.</li>
+<li><strong>slideUp</strong> &#8212; like <strong>fromBottom</strong>, but the new scene pushes the current scene off the top.</li>
+<li><strong>slideDown</strong> &#8212; like <strong>fromTop</strong>, but the new scene pushes the current scene off the bottom.</li>
+<li><strong>crossFade</strong> &#8212; the current scene fades out while the new scene fades in.</li>
+</ul>
+<p>These transitions cover many of the usage cases that you&#8217;ll need, but there are times when you may desire slightly different behavior. For example, let&#8217;s say you want to rotate the scene <strong>three</strong> times instead of just once, or you want the new scene to fade in while moving over top of the current scene. Essentially, if you envision some scene transition that doesn&#8217;t exist in the list above, keep reading because this tutorial will show you how to achieve it.</p>
+<h3>Introducing the &#8220;effectsList&#8221; table</h3>
+<p>When you <code>require()</code> the Composer library, there&#8217;s a publicly-accessible table which you gain access to. This is known as the <code>effectsList</code> table. Within this table, each defined effect has two subtables: <code>from</code> and <code>to</code>, and within these, several attributes to control the transition behavior.</p>
+<p>Before you continue, it will be helpful to get a table printing function from this tutorial, including the <code>print_r()</code> function. Then, assuming that both the Composer library and <code>utility.lua</code> is included in your project, code the following:</p><pre class="crayon-plain-tag">utility.print_r( composer.effectList )</pre><p>In the Terminal/console, you can examine the output and see how each effect is managed. Let&#8217;s look at the simplest case, <code>fade</code>:</p><pre class="crayon-plain-tag">[&quot;fade&quot;] =
+    {
+        [&quot;from&quot;] =
+        {
+            alphaStart = 1.0,
+            alphaEnd = 0
+        },
+        [&quot;to&quot;] =
+        {
+            alphaStart = 0,
+            alphaEnd = 1.0
+        }
+    },</pre><p>In this case, the transition is named <code>fade</code> (the first key in the table). It has two child tables, <code>from</code> and <code>to</code>. Both of these tables have two child parameters: <code>alphaStart</code> and <code>alphaEnd</code>. Effectively, the Composer library will take the <code>alphaStart</code> value and set the scene&#8217;s alpha property to that, then tell <a href=http://docs.coronalabs.com/api/library/transition/to.html target="_blank">transition.to()</a> to change the alpha to the <code>alphaEnd</code> value.</p>
+<p>A more complex example is <code>zoomOutInFadeRotate</code>:</p><pre class="crayon-plain-tag">[&quot;zoomOutInFadeRotate&quot;] =
+    {
+        [&quot;from&quot;] =
+        {
+            xEnd = displayW*0.5,
+            yEnd = displayH*0.5,
+            xScaleEnd = 0.001,
+            yScaleEnd = 0.001,
+            rotationStart = 0,
+            rotationEnd = -360,
+            alphaStart = 1.0,
+            alphaEnd = 0
+        },
+        [&quot;to&quot;] =
+        {
+            xScaleStart = 0.001,
+            yScaleStart = 0.001,
+            xScaleEnd = 1.0,
+            yScaleEnd = 1.0,
+            xStart = displayW*0.5,
+            yStart = displayH*0.5,
+            xEnd = 0,
+            yEnd = 0,
+            rotationStart = -360,
+            rotationEnd = 0,
+            alphaStart = 0,
+            alphaEnd = 1.0
+        },
+        hideOnOut = true
+    },</pre><p>In this case, <code>xScale</code>, <code>yScale</code>, <code>x</code>, <code>y</code>, <code>rotation</code> and <code>alpha</code> all have <code>Start</code> and <code>End</code> values set, just like <code>alpha</code> in the first example.</p>
+<h3>Customizing transitions</h3>
+<p>If you want to change these values, you can do so at any time before you call <a href=http://docs.coronalabs.com/api/library/composer/gotoScene.html target="_blank">composer.gotoScene()</a> or <a href=http://docs.coronalabs.com/api/library/composer/showOverlay.html target="_blank">composer.showOverlay()</a> by simply providing the proper table with new values. For instance, if you want to rotate the scene three times using <code>zoomOutInFadeRotate</code>, simply set the rotation values to <code>-1080</code> (<code>3</code>×<code>-360</code>):</p><pre class="crayon-plain-tag">composer.effectList.zoomOutInFadeRotate.from.rotationEnd = -1080
+composer.effectList.zoomOutInFadeRotate.to.rotationStart = -1080</pre><p>Keep in mind that these values will stay in effect until they are explicitly reset, the app is restarted, or you un-<code>require()</code> the Composer library.</p>
+<p>For future reference, the attributes which can be set/changed on the <code>from</code> and <code>to</code> tables of a scene transition effect include:</p>
+<ul>
+<li><code>xStart</code>, <code>xEnd</code></li>
+<li><code>yStart</code>, <code>yEnd</code></li>
+<li><code>alphaStart</code>, <code>alphaEnd</code></li>
+<li><code>xScaleStart</code>, <code>xScaleEnd</code></li>
+<li><code>yScaleStart</code>, <code>yScaleEnd</code></li>
+<li><code>rotationStart</code>, <code>rotationEnd</code></li>
+<li><code>transition</code></li>
+</ul>
+<p>In addition, there are a few attributes which can be set on the entire transition:</p>
+<ul>
+<li><code>hideOnOut</code> &#8212; hides the previous scene upon completion (for scenes which might still be on top due to their animation).</li>
+<li><code>concurrent</code> &#8212; specifies that the <code>to</code> and <code>from</code> transitions happen at the same time.</li>
+<li><code>sceneAbove</code>  &#8212; puts the new scene on top of the previous scene.</li>
+</ul>
+<p>For example, the only difference between <code>fade</code> and <code>crossFade</code> is that the <code>crossFade</code> transition is that <code>concurrent</code> is set to <code>true</code>.</p>
+<h3>Adjusting transition easing</h3>
+<p>Another thing you might want to adjust is the <strong>easing</strong> on a particular transition, or add easing to a scene transition effect which doesn&#8217;t have one. Easing allows transitions to behave distinctly based on several preset options (see the Corona <a href=http://docs.coronalabs.com/api/library/easing/index.html target="_blank">easing</a> library for details on the various easing algorithms).</p>
+<p>For instance, if you want to apply easing on the <code>fade</code> scene transition, code these lines:</p><pre class="crayon-plain-tag">composer.effectList.fade.from.transition = easing.outQuad
+composer.effectList.fade.to.transition = easing.outQuad</pre><p></p>
+<h3>Creating new scene transitions</h3>
+<p>In a similar manner to editing existing scene transition effects, you can create your own as well. For example, you can make a transition similar to the one seen in iOS 7 where the original scene and the new scene transition at different speeds, providing for a more interesting animation:</p><pre class="crayon-plain-tag">composer.effectList[&quot;iosSlideLeft&quot;] = {
+        sceneAbove = true,
+        concurrent = true,
+        to = {
+            xStart     = display.contentWidth,
+            yStart     = 0,
+            xEnd       = 0,
+            yEnd       = 0,
+            transition = easing.outQuad
+        },
+        from = {
+            xStart     = 0,
+            yStart     = 0,
+            xEnd       = -display.contentWidth * 0.3,
+            yEnd       = 0,
+            transition = easing.outQuad
+        }
+    }
+
+    composer.effectList[&quot;iosSlideRight&quot;] = {
+        sceneAbove = false,
+        concurrent = true,
+        to = {
+            xStart     = -display.contentWidth * 0.3,
+            yStart     = 0,
+            xEnd       = 0,
+            yEnd       = 0,
+            transition = easing.outQuad
+        },
+        from = {
+            xStart     = 0,
+            yStart     = 0,
+            xEnd       = display.contentWidth,
+            yEnd       = 0,
+            transition = easing.outQuad
+        }
+    }</pre><p></p>
+<h3>Conclusion</h3>
+<p>By editing and adding to the accessible <code>effectsList</code> table, you can change how Composer behaves when transitioning scenes. However, be careful with the values that you specify, as incorrect values may cause your scenes to move only partially off screen, complete upside-down, and so forth. Still, with a little experimentation &#8212; none of which will permanently corrupt the Composer library &#8212; there is virtually no limit to the interesting scene transition effects you can achieve.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>events &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/events-3/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>events &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #116</title>
+		<link>/blog/2016/03/25/from-the-forum-issue-116/</link>
+		<pubDate>Fri, 25 Mar 2016 21:53:21 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[drop shadow]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[onComplete]]></category>
+		<category><![CDATA[swiping]]></category>
+		<category><![CDATA[text]]></category>
+		<category><![CDATA[touch]]></category>
+
+		<guid isPermaLink="false">/?p=66254</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Custom drop shadow on your text objects</h3>
+<p>Getting custom text objects to appear accurately 100% of the time can feel like a bit of a magic act. Sometimes it feels like it would be easier to pull a rabbit out of a hat than ensure that all of our text effects, scaling and kerning has been implemented correctly across the board.</p>
+<p>One of the issues I always run into is the ability to add a nice shadow or outline effect to my text objects. There is of course <a href=https://docs.coronalabs.com/api/library/display/newEmbossedText.html target="_blank">display.newEmbossedText()</a> which works well in simple cases, but it is simply not robust enough to handle all of the logical gymnastics we might throw at it. Unfortunately, another developer had the same issues, and looked to the community for some assistance. Fortunately, a bunch of developers came out to throw their solutions into the ring.</p>
+<p>There are some pretty useful solutions and code snippets for this problem contained in the below thread. Click through and check’em out!</p>
+<p><a href=https://forums.coronalabs.com/topic/62161-text-drop-shadow target="_blank">https://forums.coronalabs.com/topic/62161-text-drop-shadow</a></p>
+<h3>A thorough check inside of onComplete</h3>
+<p>The onComplete() callback function that Corona provides is, as we all know, invaluable when paired with Corona’s event-driven model. With an asynchronous system, returning control to your app is a matter of course, and as Rob Miracle’s excellent tutorial points out:</p>
+<p>“When these events complete, they notify your program that they’re finished and allow you an opportunity to respond”</p>
+<p>The handling of these returned values takes place in a callback function. But what if you want to use something a bit more complex with only one callback function. Exactly the same issue was posted in the forums earlier, and the question received some fantastic responses. The suggestions were fantastic, and you would do well to read through the entire thread!</p>
+<p><a href=https://forums.coronalabs.com/topic/62229-using-one-oncomplete-with-multiple-functions/ target="_blank">https://forums.coronalabs.com/topic/62229-using-one-oncomplete-with-multiple-functions/</a></p>
+<h3>Swiping the day away</h3>
+<p>I’ve got quite an interesting thread on tap here that displays some deft mathematics for identifying some crucial user interaction. By detecting the movement of a single finger on the screen and comparing the present touch with the delta X/Y location. This has the added wrinkle of using separate functions for location detection, which, in my opinion, is an underused and oft-overlooked technique. Head on through to the original thread to learn more about how you can implement this functionality in your app now!</p>
+<p><a href=https://forums.coronalabs.com/topic/62284-best-way-to-detect-swipe-in-4-directions/ target="_blank">https://forums.coronalabs.com/topic/62284-best-way-to-detect-swipe-in-4-directions/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>FX Showreel</title>
+		<link>/blog/2013/10/04/supernatural-fx-showreel/</link>
+		<pubDate>Fri, 04 Oct 2013 15:50:08 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Art]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=22</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Photo marathon</title>
+		<link>/blog/2013/10/04/madrids-photographer-marathon/</link>
+		<pubDate>Fri, 04 Oct 2013 15:40:15 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Photography]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Culture]]></category>
+		<category><![CDATA[events]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=8</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			
+<a href=/b-madrids-photographer-marathon-01/><img width="150" height="150" src="/wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-01-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="qode interactive strata" srcset="/wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-01-150x150.jpg 150w, /wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-01-570x570.jpg 570w, /wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-01-500x500.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+<a href=/b-madrids-photographer-marathon-02/><img width="150" height="150" src="/wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-02-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="qode interactive strata" srcset="/wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-02-150x150.jpg 150w, /wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-02-570x570.jpg 570w, /wordpress/wp-content/uploads/2013/10/b-madrids-photographer-marathon-02-500x500.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+
+
+		</div> 
+	</div> </div></div></div></div></div><div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Already There &#8211; Remix</title>
+		<link>/blog/2013/10/04/already-there-remix/</link>
+		<pubDate>Fri, 04 Oct 2013 12:53:42 +0000</pubDate>
+		<dc:creator><![CDATA[oleg]]></dc:creator>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[Articles]]></category>
+		<category><![CDATA[audio]]></category>
+		<category><![CDATA[events]]></category>
+
+		<guid isPermaLink="false">http://demo.qodeinteractive.com/bridge11/?p=14</guid>
+		<description><![CDATA[The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is a major source of reference for this kind of work.]]></description>
+				<content:encoded><![CDATA[<div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+		</div> 
+	</div> <div class="separator  transparent center  " style="margin-top: 2px;margin-bottom: 0px;"></div>
+<blockquote class=' with_quote_icon' style=''><i class='fa fa-quote-right pull-left' style=''></i><h5 class='blockquote-text' style=''>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h5></blockquote><div class="separator  transparent center  " style="margin-top: 3px;margin-bottom: 0px;"></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Ambassador Accomplishments &#8211; September 2013</title>
+		<link>/blog/2013/10/04/corona-ambassador-accomplishments-september-2013/</link>
+		<pubDate>Fri, 04 Oct 2013 18:52:44 +0000</pubDate>
+		<dc:creator><![CDATA[inna]]></dc:creator>
+				<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[Ambassadors]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[Meetups]]></category>
+
+		<guid isPermaLink="false">/?p=47231</guid>
+		<description><![CDATA[Without a doubt, Corona Labs has the best group of <a href="http://www.coronalabs.com/community/ambassadors/">Ambassadors</a> anyone could hope for! We're extremely proud of our Ambassadors' hard work in building a stronger, more fruitful Corona community around the globe.
+
+We wanted to share just a few of the amazing things our Ambassadors have accomplished in the month of September.]]></description>
+				<content:encoded><![CDATA[<p>Without a doubt, Corona Labs has the best group of <a href=http://www.coronalabs.com/community/ambassadors/>Ambassadors</a> anyone could hope for! We&#8217;re extremely proud of our Ambassadors&#8217; hard work in building a stronger, more fruitful Corona community around the globe.</p>
+<p>We wanted to share just a few of the amazing things our Ambassadors have accomplished in the month of September.</p>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/Flag-of-India1.png" alt="Flag of India" class="alignleft size-full wp-image-47238" /></div>
+<div class="span10">
+<p><strong>Bangalore, India</strong>: Altaf Rehmani spoke at the <a href=http://www.siliconindia.com/events-agenda/Mobile-Application-Conference-2013-Bangalore-MAC_Blr191013.html>Silicon India Mobile Conference</a> in a session called: &#8216;Cross-Platform Game Development in Under 45 Minutes.&#8217; Altraf showed a hands-on live runner game created in just under an hour to an audience of mobile enthusiasts, engineers and entrepreneurs. </p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/Russian-flag.png" alt="Russian flag" class="alignleft size-full wp-image-47237" /></div>
+<div class="span10">
+<p><strong>Russia</strong>: Badim Starygin started a new learning group that teaches students to develop mobile games using Corona SDK. Badim also released <a href=https://itunes.apple.com/app/id659970011>Royal Offense</a>, a beautiful RPG that&#8217;s available on nearly every platform. His game was featured on the Amazon EU store and the game includes a few tricks for optimizing memory, coding awesome arrows, and a GUI that fits all devices.</p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/Germany-flag.png" alt="Germany flag" class="alignleft size-full wp-image-47473" /></div>
+<div class="span10">
+<p><strong>Berlin, Germany</strong>: In early September, David Roulin presented at Android Livecode and demoed a creative side-scroller game built with Corona SDK. Watch the <a href=http://www.youtube.com/watch?v=-DxyTMC6neA>video replay</a> of his presentation.</p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/Brazil-flag.png" alt="Brazil flag" class="alignleft size-full wp-image-47475" /></div>
+<div class="span10">
+<p><strong>Brazil</strong>: Luciano Vieira Lima is celebrating his second year as a Corona Ambassador. His team created educational materials for programming languages and Luciano teaches development at universities throughout Brazil. His Portuguese language textbook <em>Corona SDK &#8211; Arte Computacional: Animação em Spritesheets Utilizando Corona SDK</em> (<em>Computer Art: Animation Spriteheets using Corona SDK</em>), is currently being translated to English. His training books can be found on the <a href=http://coronalabs.us1.list-manage.com/track/click?u=09d686d361ce3c6ee6c8dd820&id=15d9d690fe&e=785f1d0847>Kindle Editora</a> website and on <a href=http://www.amazon.com/s/ref=ntt_athr_dp_sr_1?_encoding=UTF8&field-author=Kindle+Editora.com&search-alias=digital-text>Amazon</a>.</p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/USA-Flag.png" alt="USA Flag" class="alignleft size-full wp-image-47474" /></div>
+<div class="span10">
+<p><strong>Pennsylvania, US</strong>: Greg Pugh of GP Animations has been beta testing the <a href=http://www.kwiksher.com/news/announcing-the-new-kwik/>new version of Kwik</a> and designing a unique Corona-powered app that displays reference information for doctors and nurses.</p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/USA-Flag.png" alt="USA Flag" class="alignleft size-full wp-image-47474" /></div>
+<div class="span10">
+<p><strong>Boston, US</strong>: Jennifer Looper had a very busy month! She represented Corona Labs at the Boston Festival of Indie Games, where she mobilized the Boston meetup group to staff the table and evangelize the platform. Read her recap of the event on <a href=http://coronalabs.us1.list-manage1.com/track/click?u=09d686d361ce3c6ee6c8dd820&id=b9141e43d8&e=785f1d0847>Ladeez First Media</a>.</p>
+<p>Jen also participated in <a href=http://hack-fit.com/>Hack-Fit</a>, a hackathon dedicated to creating fitness-oriented software. Her team created myPerfectForm.co, and hopes to release the app soon. Check out Jen&#8217;s <a href=http://www.ladeezfirstmedia.com/2013/09/25/hackfit-2013-boston/>pictures from the event</a>.</p>
+</div>
+<div class="clearfix row-fluid spacerDiv"></div>
+<div class="row-fluid">
+<div class="span2">
+<img src="/wordpress/wp-content/uploads/2013/10/USA-Flag.png" alt="USA Flag" class="alignleft size-full wp-image-47474" /></div>
+<div class="span10">
+<p><strong>Washington DC</strong>: Theo Rushin, Jr. hosted <a href=http://www.meetup.com/Corona-SDK-Washington-DC-Meetup/>Washington DC&#8217;s inaugural Corona Meetup</a> and the group is already planned their next event for October. Earlier this year, VISA also chose Theo&#8217;s mobile development team to present the app they created during the NYC TechCrunch Hackathon. Theo and his team presented their work at the <a href=http://www.visasecuritysummit.com/developerschallenge.html>VISA Security Summit</a> on October 2, 2013.</p>
+</div>
+<p>Thanks again for your stellar work, Corona Ambassadors! To connect with an Ambassador in your local area, please check out our <a href=http://www.coronalabs.com/community/events/>Meetup groups and event calendar</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Wednesday FAQs: Timers and Events</title>
+		<link>/blog/2013/05/29/wednesday-faqs-timers-and-events/</link>
+		<comments>/blog/2013/05/29/wednesday-faqs-timers-and-events/#comments</comments>
+		<pubDate>Wed, 29 May 2013 20:19:11 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[timers]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34783</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.</p>
+<h2>1. I&#8217;m trying to use timer.performWithDelay to add a delay in my code but it&#8217;s not working.</h2>
+<p>The API doesn&#8217;t do an actual delay within the code chunk but schedules a callback after the delay time has occurred. This is what is known as a non-blocking call.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )
+print( &quot;Test 3&quot; )</pre><p></p>
+<p>The above will print the strings in the following order in the terminal window: &#8220;Test 1&#8221;, &#8220;Test 3&#8221;, &#8220;Test 2&#8221;. The last message is printed 1 second (1000 milliseconds) after the delay was scheduled.</p>
+<p>If you want the strings to print out in the correct order, the statements after the timer.performWithDelay call must be moved to the callback routine.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+    print( &quot;Test 3&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )</pre><p></p>
+<p>If you need to delay sections of your code from executing, it needs to be done in a timer callback function (as shown above). Corona SDK doesn&#8217;t have any blocking <strong>delay()</strong> or <strong>sleep()</strong> functions.</p>
+<h2>2. I have a loop where I update an object on the screen but it seems to only update once.</h2>
+<p></p><pre class="crayon-plain-tag">local circle = display.newCircle( 10, 20, 25 )
+for i = 1, 20 do
+    circle.x = circle.x + i
+    circle.y = circle.y + i
+end</pre><p></p>
+<p>The above code moves the circle down the screen at a very fast pace. It&#8217;s not a practical example, but looking at the code you would think that the circle is changing position each time through the <strong>for</strong> loop. In fact it only changes once &#8212; at the end of the code chunk. The circle&#8217;s x and y properties are computed each time through the loop, but it&#8217;s actual position (rendering of the object on the screen), only occurs after the code chunk has finished executing.</p>
+<p>You also need to keep this in mind if you are trying to align objects multiple times in the same code chunk using <strong>setReferencePoint</strong>. Only the last <strong>setReferencePoint</strong> takes affect because the screen update only occurs after the code chunk has executed.</p>
+<h2>3. I&#8217;m doing some long calculations in my code and my touch listeners are not working. What&#8217;s happening?</h2>
+<p>If you try to add delays in your code using <strong>for</strong> loops or looping a long time within the same code chunk, you will affect the performance of your app. All events are fired after the code chunk ends, so as long as your code chunk is running, no listener events are called. All touch, timer, network, etc. events occur after the code chunk finishes.</p>
+<p>If you do need to loop for a long time within your code, you should break it up into multiple code chunks (using <strong>timer.performWithDelay</strong>) to allow events to occur.</p>
+<h2>4. I use timer.performWithDelay but the delays times don&#8217;t seem right.</h2>
+<p>The delay time is an approximate time and is fired based on the Frames Per Second (FPS) value set in the <strong>config.lua</strong> file. The default is 30 FPS or 33.33 milliseconds. You can also set it to 60 FPS (16.166 milliseconds). As mentioned in question 3, event timers are fired at the end of the code chunk. If the code contains loops that extend beyond the timer&#8217;s value, the timer event may occur later than expected. There is a timer listener parameter, <strong>event.time</strong>, that will give you the time when the event was finally fired that you can use to calculate the true delay.</p>
+<p>Another thing should be mentioned about the timer. The time value you specify is in milliseconds and is tied to either the default frame rate (30 FPS) or what you set in <strong>config.lua</strong>. If you set a value less than the frame rate time (16 or 33 milliseconds), the timer will fire every frame time instead of the actual time you set. So if you set the delay time to 10 milliseconds and you&#8217;re using the default 30 FPS, the delay will occur every 33.333 milliseconds.</p>
+<p></p><pre class="crayon-plain-tag">local function listener( event )
+    print( &quot;Timer ID and time: &quot;, event.source, event.time )
+end
+
+print( &quot;Starting time: &quot;, system.getTimer )
+timer.performWithDelay( 1, listener, 1 )
+timer.performWithDelay( 10, listener, 1 )
+timer.performWithDelay( 25, listener, 1 )
+timer.performWithDelay( 40, listener, 1 )
+print( &quot;Ending time: &quot;, system.getTimer )</pre><p></p>
+<p>This displays the following in the terminal window (the times are in milliseconds).</p>
+<p></p><pre class="crayon-plain-tag">Starting time:  29.97
+Ending time:    30.343
+Timer ID and time:  table: 0x11fb64b20  61.031
+Timer ID and time:  table: 0x11fb17d80  61.031
+Timer ID and time:  table: 0x1016bbd90  61.031
+Timer ID and time:  table: 0x10e534c50  93.692</pre><p></p>
+<p>The bottom line is the timer delays are approximate. You can use the <strong>event.time</strong> if you need to adjust for any differences between the expected delay time and the actual delay time.</p>
+<h2>5. I have a timer call that&#8217;s not passing my parameter when done. What&#8217;s wrong?</h2>
+<p>This is a common issue for new developers in Lua. <strong>timer.performWithDelay</strong> expects to receive a reference to a function. This is common with all other APIs that expect a &#8220;listener&#8221; or &#8220;completion&#8221; reference.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    print( &quot;Value is &quot;, value )
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )</pre><p></p>
+<p>The above will print &#8220;25&#8221; because <strong>doThis( 25 )</strong> is called before the delay is scheduled. The delay is performed but the listener is not called because it doesn&#8217;t think any listener was supplied (<strong>doThis</strong> returns nil).</p>
+<p>The solution to this problem is to use Lua closures. Closures allow you to call a function with a parameter and have it return a unique local function reference that uses the supplied parameter when that function reference is called.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    return function()
+        print( &quot;Value is &quot; .. value )
+    end
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )
+timer.performWithDelay( 1000, doThis( 100 ),1 )</pre><p></p>
+<p>Calling <strong>doThis</strong> function from within the <strong>timer.performWithDelay</strong> call will save <strong>value</strong> as a Lua <strong>upvalue</strong> that is associated with the returned function reference. The key thing to remember is <strong>doThis( 25 )</strong> is executed before the delay is schedule and the value returned from the function call is used as the listener&#8217;s address when the timer is fired.</p>
+<p>The nice thing about using closures is they can be called from different places using different parameter values and they return a unique function that uses the supplied parameter. In the above example the listener is called with the value 25 and than later the same listener is called with the value 100. This will print &#8220;25&#8221; and then &#8220;100&#8221; in the terminal window.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/29/wednesday-faqs-timers-and-events/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

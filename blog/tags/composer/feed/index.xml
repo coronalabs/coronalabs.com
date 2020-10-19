@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>composer &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/composer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>composer &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>From the Forum — Issue #132</title>
+		<link>/blog/2016/07/15/from-the-forum-issue-132/</link>
+		<pubDate>Fri, 15 Jul 2016 18:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[Corona Enterprise]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[memory management]]></category>
+		<category><![CDATA[Remote Control]]></category>
+		<category><![CDATA[tvOS]]></category>
+
+		<guid isPermaLink="false">/?p=67463</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>tvOS helper code makes life much easier</h3>
+<p>Getting our apps onto as many devices and platforms as possible is clearly a top priority among Corona developers. Why else would we decide to leverage the best SDK that can target the most OSes with minimal code changes between them?</p>
+<p>One of the most exciting (and most challenging) platforms has been tvOS. It’s a fascinating option for deployment that brings with it some unique challenges, including a custom controller and no &#8220;save-state&#8221; option on the device.</p>
+<p>Fortunately, stalwart developer <strong>Rakoonic</strong> has gifted us with a little utility that should streamline one aspect of tvOS development: a &#8220;remote controller&#8221; library which helps to standardize input for your apps and games. Speed over to <a href=https://forums.coronalabs.com/topic/64503-remote-controller-library-test/ target="_blank">the original thread</a> and check out what he’s offering!</p>
+<h3>A memory manager by any other name</h3>
+<p>Maintaining a trim and slim app can be a key to success. The way you manage the load time your program is incurring is something that users expect from modern developers. It’s also an integral part of software development that requires both creativity and focus to master.</p>
+<p>One developer was wondering why the memory in their game was going up significantly during testing. Corona Support Engineer <strong>Rob Miracle</strong> chimed in with some serious knowledge on Composer scene management and image sheet optimization. It never hurts to brush up on the best methods to keep your app overhead low and your user base high! Check out those techniques in <a href=https://forums.coronalabs.com/topic/64515-why-does-texture-memory-jump/ target="_blank">the forum thread</a>.</p>
+<h3>A leg up on Corona Enterprise for Android</h3>
+<p>I realize that the number of Corona SDK users dwarfs the user base for Corona Enterprise, but that doesn’t mean we can’t highlight some awesomeness from the Enterprise sub-forum!</p>
+<p>Recently, one Enterprise developer had some questions regarding sending messages from native iOS and what would be the best way to implement single message response callbacks on the Corona side. What they received was a great response pointing to the exact iOS API that should be utilized, a super reference to related tutorials, and a fantastic GitHub link with working code around the theory.</p>
+<p>The Corona engineer that responded went both “above” and “beyond” with a great answer to the question. Click through to <a href=https://forums.coronalabs.com/topic/64566-delegate-self/ target="_blank">the original link</a> to for more information on this process!</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #130</title>
+		<link>/blog/2016/07/01/from-the-forum-issue-130/</link>
+		<pubDate>Fri, 01 Jul 2016 18:40:02 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[autolan]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[IPv6]]></category>
+		<category><![CDATA[redirection]]></category>
+		<category><![CDATA[sockets]]></category>
+		<category><![CDATA[urls]]></category>
+		<category><![CDATA[wifi]]></category>
+
+		<guid isPermaLink="false">/?p=67335</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com/ target="_blank">Corona Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com/ target="_blank">visit the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Scenes from a Corona restaurant</h3>
+<p>Using <a href=https://docs.coronalabs.com/guide/system/composer/index.html target="_blank">Composer</a> as a scene management system is a great way to keep your app light without having to roll your own overlay/transition manager when going from one screen to the next. It also gives you a handy method to sidestep the age-old problem of global variable creation.</p>
+<p>I find the latter advantage to be invaluable when dealing with smaller projects that don’t need a robust solution for variable access throughout modules. <a href=https://forums.coronalabs.com/topic/63763-accessing-the-scene-from-an-external-class/ target="_blank">This thread</a> talks a bit about how one can leverage the Composer API to get at the ever-changing values upon which your app depends.</p>
+<h3>AutoLAN back from the beyond!</h3>
+<p>I’ve always had a soft spot for <strong>autoLAN</strong>. It’s a great library that allows for multiplayer support through local WiFi. It’s lightweight, relatively simple to implement, and easy to maintain. Those features are already a lot, but the real kicker is that it’s available at the low, low price of <strong>free</strong>!</p>
+<p>Alas, with the introduction of IPv6 requirements in the <a href=https://docs.coronalabs.com/api/library/socket/index.html target="_blank">socket()</a> API &#8212; necessary changes required for continued OS compatibility &#8212; autoLAN fell on hard times. It seemed that the days when you could fire up two devices and have players battle it out in your game were gone.</p>
+<p>It didn’t stay down for long, though! The Corona community <a href=https://forums.coronalabs.com/topic/63788-autolan-ipv6 target="_blank">lept into the fray</a> and came out of the jungle with an update to the library in record time. Check out the updated code base that is referenced <a href=https://forums.coronalabs.com/topic/63788-autolan-ipv6 target="_blank">here</a>.</p>
+<h3>Dynamic URL redirection</h3>
+<p>Apple has been much better about app approvals these days. Simplified checks and streamlined guidelines have reduced wait times and generated clearer feedback for developers.</p>
+<p>Sometimes, though, you need to make a quick change to your app that shouldn’t necessitate an entire review by Apple &#8212; a typo in a JSON file, an update to a graphical asset, etc. These topics have been covered in previous <em>From the Forum</em> entries, but today we have another option to add to our toolbox in the form of dynamic URL handling.</p>
+<p>This can be a great time saver when, for instance, you want to point a FAQ page from your site to another community-operated site. Click through to the <a href=https://forums.coronalabs.com/topic/63817-tip-dynamic-url-redirection/ target="_blank">original thread</a> for a bit more information.</p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>From the Forum — Issue #106</title>
+		<link>/blog/2016/01/15/from-the-forum-issue-106/</link>
+		<pubDate>Fri, 15 Jan 2016 23:15:38 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+				<category><![CDATA[From the Forum]]></category>
+		<category><![CDATA[color tranistions]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[directory listing]]></category>
+		<category><![CDATA[LFS]]></category>
+		<category><![CDATA[swiping]]></category>
+
+		<guid isPermaLink="false">/?p=65256</guid>
+		<description><![CDATA[Welcome to the latest installment of From the Forum. In this series, guest blogger Alex Jackson highlights outstanding threads from the Corona Forum. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-54943" style="margin: 0px 0px 10px 10px;" src="/wordpress/wp-content/uploads/2014/01/Icon_Resources_Forum.png" alt="From the Forum" /><em>Welcome to the latest installment of <strong>From the Forum</strong>. In <em>this series</em>, guest blogger Alex Jackson highlights outstanding threads from the <a href=http://forum.coronalabs.com>Corona/ Forum</a>. The goal is to bring attention to the most captivating, interesting, and thought-provoking discussions taking place in our very own backyard.</em></p>
+<p><em>Please <a href=http://forum.coronalabs.com>visit/ the forum</a> to join these conversations or start your own!</em></p>
+<hr />
+<h3>Swiping through Composer</h3>
+<p>I’m always on the lookout for some sweet Composer transition magic. I think that having just the right scene change animation takes a simple storybook app or note-taking productivity app from a lump of coal to a diamond. All you need is a super-cool transition or mechanic, and the sky’s the limit!</p>
+<p>Maybe it’s not that easy, but still, having that part is important for making your app look that much more professional. If you were struggling with just the right mechanic, <strong>RoamingGamer</strong> has you covered with the below forum thread. In it, he shares a module that you can snap right now. It’s a pretty sweet swipe mechanic for your Composer-based apps, so head on down to the original thread to download it right now.</p>
+<p><a href=https://forums.coronalabs.com/topic/60980-composer-swipe-navigation-free-mini-module/ target="_blank">https://forums.coronalabs.com/topic/60980-composer-swipe-navigation-free-mini-module/</a></p>
+<h3>Tween your color</h3>
+<p>I don’t know about you folks out there in Corona-land, but I used to struggle with figuring out how to add color transitions to my objects. Whether it’s text or an image, I was baffled as to how I could accomplish this in an everyday use case!</p>
+<p>But again, <strong>RoamingGamer</strong> came along to save me, as he always does, with his utility belt of fantastic toys. He already cooked up an elegant solution in the form of a module that one can plug in set yourself off to the races. Pretty nifty, and the best part? It’s absolutely free! Check out the original thread for more the download link.<br />
+<a href=https://forums.coronalabs.com/topic/61073-rapidly-change-the-text-color/ target="_blank">https://forums.coronalabs.com/topic/61073-rapidly-change-the-text-color/</a></p>
+<h3>Listing contents of your favorite directory</h3>
+<p>I’m all about &#8220;Getting Things Done&#8221;. Making sure that you have all of your ducks in a row when your productivity apps see the light of day is just as important as implementing the beautiful material theme to your UI. When I get started with any non-game apps, I always ensure that I can find my snippet for procedural directory iteration. I make sure I have this before even put my socks on in the morning.</p>
+<p>I found a great thread that highlights a community-provided directory parser using the Corona-provided <a href=https://docs.coronalabs.com/api/library/lfs/index.html target="_blank"><strong>lfs</strong> API</a>. Now, at this point, we might see a split as far as development philosophy is concerned. Some folks would say that, when coding your project, you already know which files are included in which directory, therefore negating the need to query a directory for the files contained therein. The other half is of the mind that, hey, if I can get a shortcut to populating a table without having to hardcode it, all the better!</p>
+<p>Whichever way you lean on this most important of topics, taking a look at this quick tip might save you a few headaches down the link. Click through to the original thread and see what I’m talking about!</p>
+<p><a href=https://forums.coronalabs.com/topic/61024-list-of-files-in-particular-folder/ target="_blank">https://forums.coronalabs.com/topic/61024-list-of-files-in-particular-folder/</a></p>
+<h4>About Alex</h4>
+<p>Alex Jackson is an indie developer and the founder of <a href=http://www.panc.co/ target="_blank">Panc Interactive</a>, specializing in retro-style gaming. He has created several mobile applications, enjoys long walks on the beach, pixel art, and reading the Corona forums. Contact him by <a href=mailto:alex@panc.co>email</a> or follow him on Twitter: <a href=http://twitter.com/pancinteractive>@pancinteractive</a>. Check out his new game <a href=http://www.panc.co/segreta-download-page.html target="_blank">Segreta</a> on iOS, Android, Windows Phone and Amazon devices.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Corona Geek Composer Library Series Highlights</title>
+		<link>/blog/coronageek/composer-library-series-hangout-highlights/</link>
+		<comments>/blog/coronageek/composer-library-series-hangout-highlights/#comments</comments>
+		<pubDate>Wed, 11 Feb 2015 17:54:01 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[scene management]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61426</guid>
+		<description><![CDATA[Recently on Corona Geek, we hosted a series of discussions on Composer that focused on how it is used to manage display objects, manage memory, pass data between scenes and create custom transitions. Here's a summary of what we covered complete with video clips to help you jump into the parts of the conversation that interest you most.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>Creating and managing scenes is an important task in most mobile apps and games. Fortunately, Corona SDK provides the solid, feature rich Composer Library to help you with the heavy lifting. With Composer you can add objects to a scene and transition between scenes, and Composer will help you manage those objects on the screen and in memory.</p>
+<p>Recently on Corona Geek, we hosted a series of discussions on Composer that focused on how it is used to manage display objects, manage memory, pass data between scenes and create custom transitions. Along the way we also included some tips on how to speed up your code and how to save data between app uses.</p>
+<p>You can watch the full replays of Hangout <a title="Corona Geek Hangout #124" href=https://www.youtube.com/watch?v=-GPjsu_GNeM target="_blank">#124</a>, <a title="Corona Geek Hangout #125" href=https://www.youtube.com/watch?v=4jdDkLW-upM target="_blank">#125</a>, <a title="Corona Geek Hangout #126" href=https://www.youtube.com/watch?v=aI4Z0fuHe84 target="_blank">#126</a>, and <a title="Corona Geek Hangout #128" href=https://www.youtube.com/watch?v=sbvGwmZqnzo target="_blank">#128</a> to get the full scoop on everything that was covered or, to save time, we&#8217;ve split the Hangouts into clips that focus in on each of the topics of conversation. These clips are a great way to jump into the part of the conversation that interests you most.</p>
+<p>We plan to do more series discussions on various topics. So, if you would like us to cover a particular topic, leave suggestions in the comments below.</p>
+<h2>Hangout Snippets on Composer Library</h2>
+<p>Here are the Hangout snippets. Download links for all samples and code snippets can found in the show notes for each of the Hangouts. Enjoy!</p>
+<h3>Composer Library Example Scene Framework</h3>
+<p>Ed Maurina demonstrates a complete example of multiple scenes being tied together using Composer.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/F07Fc8vNTn0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Setting Up Composer To Manage Display Objects</h3>
+<p>Adding objects to the scene&#8217;s group is an important step when setting up a scene. This clip shows how it&#8217;s done.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/TbCu7dwVMZ0?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Understanding Composer Library Scene Sequences</h3>
+<p>When one scene appears anothe scene disappears. This clip talks about the sequence of events and how they affect the execution of code within scenes.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/QWimYbGP7yw?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Composer Library Scene Transition Sampler</h3>
+<p>Ed Maurina demos a scene transition sampler that makes experimenting with scene transitions fun.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/GgUEgZoK1oQ?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Creating Custom Composer Transitions</h3>
+<p>Composer Library provides a bunch of standard transitions and the ability to customize these transitions or create transitions from scratch. This clips shows you how.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/Ht8iSJ8uBms?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Getting Faster Scene Transitions</h3>
+<p>When objects are initialized or displayed on the screen can affect can make a difference when working with scenes. This clip talks about how to speed up transitions to get desired effects.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/YjZ35e_rPR8?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Memory Management in Composer Library Scenes</h3>
+<p>Composer assists in the management of objects and their memory. This clip talks about who that works behind the scenes.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/jem84bUl_lk?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Lua vs Corona SDK Memory Management</h3>
+<p>Both Lua and Corona work to manage memory for you. This clips highlights the differences between the two styles of memory management.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/rCkHan7-VWA?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Sharing Data Between Scenes Using a Global Module</h3>
+<p>Passing data between scenes using a global module is a flexible way to manage data within apps. This clip shows how it&#8217;s done.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/6L3Ty8HlReg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Passing Data Between Composer Scenes Using Params</h3>
+<p>You can also pass data between scenes using params. This clips covers how to do this by including parameters within the scene options.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/IlnDEyjVKOM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Sharing Data Between Scenes Using Set and Get Methods</h3>
+<p>A more scene specific way to pass data between scenes is to use Composer&#8217;s built in set and get methods.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/IaPsfvRNWoo?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Loading Sprites Into Composer Scenes</h3>
+<p>Removing modules from memory when your app isn&#8217;t using them is a great way to to conserve memeory and ensure your app continues to behave well during use.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/b0aKFE9MqJg?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Unloading Modules From Composer Scenes</h3>
+<p>Memory usage can build up fast when using sprites in different scenes. This clip covers how to unload modules from memory when your app isn&#8217;t using them.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/IL4fmK75CZU?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Faster Lua Code Using Forward Declarations</h3>
+<p>Writing efficient code is a great way to create apps that perform well and provide a great user experience. This clip covers tips on how to speed up your code by declaring commonly used pieces of code early on.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/vPnmz3Y24YM?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<h3>Saving and Loading Data to File</h3>
+<p>Storing data for later use is an important task and this clips shows a simple way to manipulate a settings file.<br />
+<iframe width="1060" height="596" src="https://www.youtube.com/embed/rsNTPw9medI?feature=oembed" frameborder="0" gesture="media" allowfullscreen></iframe></p>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/composer-library-series-hangout-highlights/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Corona Geek #128 &#8211; Creating Custom Composer Library Transitions</title>
+		<link>/blog/coronageek/corona-geek-128/</link>
+		<comments>/blog/coronageek/corona-geek-128/#comments</comments>
+		<pubDate>Tue, 10 Feb 2015 00:14:26 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[custom transitions]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=61396</guid>
+		<description><![CDATA[During last week’s Hangout we took a break from our Composer Library series to talk with Corona Ambassador, Jason Schroeder about his Progress Ring module and his Color Picker module. During this week’s Hangout we wrapped up our Composer Library discussion with a look at creating custom Composer Library transitions and we revisited tips for unloading modules with adding sprites into Composer scenes.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/sbvGwmZqnzo?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-127/>last week’s Hangout</a> we took a break from our Composer Library series to talk with Corona Ambassador, Jason Schroeder about his <a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring module</a> and his <a href=http://www.jasonschroeder.com/2014/03/24/add-a-color-picker-to-your-corona-app-with-one-line-of-code/ target="_blank">Color Picker module</a>. Both modules let you add impressive features to your apps using one line of code. Jason shared insights into both modules development and gave us a look at what’s coming next.</p>
+<p>During this week’s Hangout we wrapped up our Composer Library discussion with a look at <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20128.zip target="_blank">creating custom Composer Library transitions</a> and we revisited tips for unloading modules with adding sprites into Composer scenes.</p>
+<p>Next week we plan to start a new series where we&#8217;ll break down a popular game mechanic into reproducible steps. We&#8217;ll examine the concepts, the code, and the tips needed to implement the mechanic in your own games. We&#8217;ll also be looking at the Transitions library and how it can be used fuel many of the movements in your apps.</p>
+<p><strong>February Geek Games is Crossy Road. Let&#8217;s Play!</strong></p>
+<p>Last month we played Chip Chain for the chance to win a $50 gift card. For February Tyler McGraw suggested we play Crossy Road on either iOS, Android, or Amazon. Thanks Tyler. The rules are simple. Cross the road and rack up points, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to earn yourself a $50 gift card. We&#8217;ll announce February&#8217;s Geek Game winner on March 2nd. Good luck!</p>
+<p><strong>Want to suggest a game?</strong><br />
+The game can be yours or someone else&#8217;s. Games that play for high score on iOS and Android work best. If you have a recommendation, leave it in the comments below.</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-127/ target="_blank">Corona Geek #127 – Adding A Progress Ring Module and Color Picker To Apps</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20128.zip target="_blank">Download the transition example code from today&#8217;s Hangout</a></li>
+<li><a href=/blog/2014/07/04/from-the-forum-issue-27/>From the Forums Issue 27</a> and <a href=/blog/2014/09/05/from-the-forum-issue-36/>Issue 36</a></li>
+<li><a href=http://forums.coronalabs.com/topic/48659-missing-composer-transition-effects/>Missing Composer Transition Effects</a> (Forum Link)</li>
+<li><a href=http://forums.coronalabs.com/topic/50598-ios-7-style-scene-transitions/>iOS 7 Style Scene Transitions</a> (Forum Link)</li>
+<li><a href=https://github.com/roaminggamer/RG_FreeStuff/raw/master/AskEd/2015/01/caseDetectError.zip target="_blank">Case Sensitivity Fix Module</a></li>
+<li><a href=http://cravecreative.com/corona-widget-theme-1.html target="_blank">Save $5 on Widget Themes from Crave Creative</a></li>
+<li><a href=http://www.burtonsmediagroup.com/books/ target="_blank">Learn to Program Using Corona SDK</a></li>
+<li><a href=/blog/2015/01/21/update-on-corona-ios-64-bit-support-and-plugins/>64 bit Compatibility</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://on.fb.me/1EWdkLX target="_blank">Follow Corona Geek on Facebook</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-128/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-128-2015-02-09-custom-composer-transitions.mp3" length="79594867" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #126 &#8211; Sharing Data Between Composer Library Scenes</title>
+		<link>/blog/coronageek/corona-geek-126/</link>
+		<comments>/blog/coronageek/corona-geek-126/#respond</comments>
+		<pubDate>Mon, 26 Jan 2015 23:18:15 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[scene management]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60960</guid>
+		<description><![CDATA[During last week’s Hangout we talked about memory management in Composer library scenes. This week we continued the discussion with a look at three ways to share data between scenes, how to store data long term for access between app uses, and how to add fields to a locally stored settings file without losing the original values in the file.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/aI4Z0fuHe84?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-125/>last week’s Hangout</a> we talked about memory management in Composer library scenes. We looked at how memory usage varies between managed and unmanaged scenes. We also examined the differences between Corona SDK memory management of objects versus Lua memory management.</p>
+<p>This week we continued the discussion with a look at <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20126.zip target="_blank">three ways to share data between scenes</a>, how to store data long term for access between app uses, and how to add fields to a locally stored settings file without losing the original values in the file. Scene management is an important part of app development. Join the <a href=https://plus.google.com/b/108159899655420864045/events target="_blank">Hangout on Monday’s</a> and be part of the conversation.</p>
+<p>Next week we&#8217;ll continue the discussion with a look at creating custom Composer transitions. We&#8217;ll also talk with Jason Schroeder about his <a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module for Corona SDK</a> that let&#8217;s you add a progress indicator to your apps using one line of code.</p>
+<p><strong>Congratulations #ShipJam Winners</strong></p>
+<p>Great news, the judge’s votes are in from the end of year competition to <a href=http://shipjam.com/ target="_blank">ship an app before the end of 2014</a>. It was a tight competition and all the judges were impressed by the quality of work and how much participants got done in such a short time.</p>
+<p><strong>The top three awards went to:</strong></p>
+<ul>
+<li>First Place: <a href=https://play.google.com/store/apps/details?id=com.chunkybits.fnfootball.a target="_blank">Fantasy Night Football</a> by Noah Malewicz, Chunky Apps</li>
+<li>Second Place: <a href=https://play.google.com/store/apps/details?id=com.orionsmason.petpuzzle target="_blank">Pet Puzzles</a> by Scott Adelman, scottadelman.com</li>
+<li>Third Place: <a href=https://play.google.com/store/apps/details?id=com.raptoruvg.misiontierra2040&hl=en target="_blank">MisionTierra</a> by Raptor UVG, raptoruvg.com.mx</li>
+</ul>
+<p>Judge’s Choice went to: <a href=https://play.google.com/store/apps/details?id=com.gmail.quikclosepro.LongVowels target="_blank">Long Vowels Word Study</a> by Thomas Wilson, Out Of Touch Productions, thisreadingmama.com</p>
+<p>Great job to everyone and thank you to <a href=http://lauratallardy.com/ target="_blank">Laura Tallardy</a> and <a href=http://www.erickinkead.com/ target="_blank">Eric Kinkead</a> for inspiring the Corona community to push out one more app before the end of the year. You guys rock!</p>
+<p><strong>January&#8217;s Geek Games &#8211; Let&#8217;s Play!</strong></p>
+<p style="padding-left: 30px;">This is the last week to play for a chance to win! In January we&#8217;re playing Chip Chain on iOS or Android for the chance to win a $50 gift card. The rules are simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. The winner will be announced on February 2 when we announce the next game to play. <a href=http://chip-chain.com/ target="_blank">Download Chip Chain</a> now and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-125/ target="_blank">Corona Geek #125 &#8211; Memory Management in Composer Library Scenes</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20126.zip target="_blank">Download the code from today&#8217;s Hangout</a></li>
+<li><a href=https://github.com/roaminggamer/SSKCorona target="_blank">Super Starter Kit for Corona SDK</a></li>
+<li><a href=https://play.google.com/store/apps/details?id=com.chunkybits.deflategate.a target="_blank">Play DeflateGate on Android</a></li>
+<li><a href=http://cravecreative.com/corona-widget-theme-1.html target="_blank">Save $5 on Widget Themes from Crave Creative</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module</a></li>
+<li><a href=http://docs.coronalabs.com/api/library/composer/gotoScene.html target="_blank">Composer Library gotoScene docs</a></li>
+<li><a href=http://careers.fusepowered.com/JobDescriptionMultiple.asp?WebJobPostingsID=588 target="_blank">We&#8217;re Hiring Core Engineers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-126/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-126-2015-01-26-composer-library-sharing-data-between-scenes.mp3" length="77896908" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-126-2015-01-26-composer-library-sharing-data-between-scenes.mp3" length="77896908" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-126-2015-01-26-composer-library-sharing-data-between-scenes.mp3" length="77896908" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-126-2015-01-26-composer-library-sharing-data-between-scenes.mp3" length="77896908" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #125 &#8211; Memory Management in Composer Library Scenes</title>
+		<link>/blog/coronageek/corona-geek-125/</link>
+		<comments>/blog/coronageek/corona-geek-125/#comments</comments>
+		<pubDate>Mon, 19 Jan 2015 22:32:41 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[memory management]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60873</guid>
+		<description><![CDATA[During last week’s Hangout we started a discussion using Composer library and the Composer scene template to create and manage scenes in apps. This week we continued the discussion with a look at scene optimization tips, including scene memory usage examples.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/4jdDkLW-upM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During <a href=/blog/coronageek/corona-geek-124/>last week’s Hangout</a> we started a new discussion on how to use Composer library and the Composer scene template to create and manage scenes in our apps. We discussed the various Composer library events and pointed out some important concepts to be aware of when working with scenes using Composer.</p>
+<p>This week we continued the discussion with a look at scene optimization tips, including <a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20125.zip target="_blank">scene memory usage examples</a>. Scene management is an important part of app development. Join the Hangout on Monday&#8217;s and be part of the conversation.</p>
+<p>Next week we&#8217;ll continue the discussion with a look at the difference between shared data and persistent data between Composer scenes. We&#8217;ll also look at custom Composer transitions.</p>
+<p><strong>January&#8217;s Geek Games &#8211; Let&#8217;s Play!</strong></p>
+<p style="padding-left: 30px;">In January we&#8217;re playing Chip Chain on iOS or Android for the chance to win a $50 gift card. The rules are simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. The winner will be announced on February 2 when we announce the next game to play. <a href=http://chip-chain.com/ target="_blank">Download Chip Chain</a> now and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-124/ target="_blank">Corona Geek #124 &#8211; Composer Library Scene Management</a></li>
+<li><a href=http://forums.coronalabs.com/topic/53368-2015-hangout-topics-and-guest-suggestions/>Suggest Hangout Discussion Topics</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/raw/master/Hangouts/Hangout%20125.zip target="_blank">Download the code from today&#8217;s Hangout</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Corona Game Templates</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module</a></li>
+<li><a href=/blog/2014/12/30/tutorial-implementing-sendto-with-coronacards-and-swift/>Use Swift with CoronaCards</a></li>
+<li><a href=http://careers.fusepowered.com/JobDescriptionMultiple.asp?WebJobPostingsID=588 target="_blank">We&#8217;re Hiring Core Engineers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-125/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-125-2015-01-19-composer-library-optimization-tips.mp3" length="79071381" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Corona Geek #124 &#8211; Composer Library Scene Management</title>
+		<link>/blog/coronageek/corona-geek-124/</link>
+		<comments>/blog/coronageek/corona-geek-124/#comments</comments>
+		<pubDate>Mon, 12 Jan 2015 23:01:42 +0000</pubDate>
+		<dc:creator><![CDATA[Charles McKeever]]></dc:creator>
+				<category><![CDATA[Corona Geek]]></category>
+		<category><![CDATA[Google+ Hangouts]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[scene management]]></category>
+
+		<guid isPermaLink="false">/?post_type=coronageek&#038;p=60850</guid>
+		<description><![CDATA[During this week’s Hangout, Ed Maurina covered how to use the Composer library and scene template to create and manage scenes in our apps. We also discuss the various Composer library events and point out some important concepts to be aware of when working with scenes using the Composer library.]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube.com/embed/-GPjsu_GNeM?rel=0" width="640" height="436" frameborder="0"></iframe></p>
+<p><img class="alignright  wp-image-477" src="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png" alt="Corona Geek" width="105" height="105" srcset="/wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent-150x150.png 150w, /wordpress/wp-content/uploads/2012/08/corona-geek-head-transparent.png 250w" sizes="(max-width: 105px) 100vw, 105px" /></p>
+<p>During this week’s Hangout, <a href=http://roaminggamer.com/ target="_blank">Roaming Gamer&#8217;s Ed Maurina</a> covered how to use the <a href=http://docs.coronalabs.com/api/library/composer/index.html>Composer library and scene template</a> to create and manage scenes in our apps. We also discuss the various Composer library events and point out some important concepts to be aware of when <a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Hangout%20124/composer_scene_manager target="_blank">working with scenes using the Composer library</a>.</p>
+<p><strong>January&#8217;s Geek Games &#8211; Let&#8217;s Play!</strong></p>
+<p style="padding-left: 30px;">In January we&#8217;re playing Chip Chain on iOS or Android for the chance to win a $50 gift card. The rules are simple. Match chips in under 2 minutes, then post a photo of your high score on the <a href=http://facebook.com/coronageek target="_blank">Corona Geek Facebook wall</a> for a chance to win. The winner will be announced on February 2 when we announce the next game to play. <a href=http://chip-chain.com/ target="_blank">Download Chip Chain</a> now and start playing. Good luck!</p>
+<p><strong>Replay Last Week&#8217;s Show</strong></p>
+<ul>
+<li><a href=/blog/coronageek/corona-geek-123/ target="_blank">Corona Geek #123 &#8211; Android TV Publishing, Working With Text, and 2015 Goals</a></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href=https://github.com/roaminggamer/CoronaGeek/tree/master/Hangouts/Hangout%20124/composer_scene_manager target="_blank">Download the code from the Hangout</a></li>
+</ul>
+<ul>
+<li><a href=http://burtonsmediagroup.com/ target="_blank">Corona SDK books</a></li>
+<li><a href=http://www.infiniteskills.com/training/mobile-game-development-with-corona-sdk-2014.html?affid=jay33 target="_blank">Learn Corona SDK training videos</a></li>
+<li><a href=http://roaminggamer.com/ target="_blank">Corona Game Templates</a></li>
+<li><a href=http://www.jasonschroeder.com/2014/12/21/progress-ring-module-for-corona-sdk/ target="_blank">Progress Ring Module</a></li>
+<li><a href=http://www.questlord.com/ target="_blank">Quest Lord &#8211; Go on an epic RPG adventure</a></li>
+<li><a href=https://itunes.apple.com/us/app/quiz-pic-animals-guess-animal/id946777954?ls=1&mt=8 target="_blank">Quiz Pic Animals &#8211; Guess The Animal Photo</a></li>
+<li><a href=http://careers.fusepowered.com/JobDescriptionMultiple.asp?WebJobPostingsID=588 target="_blank">We&#8217;re Hiring Core Engineers</a></li>
+</ul>
+<p><strong>Thank you for watching, listening, and following Corona Geek:</strong></p>
+<ul>
+<li><a href=http://bit.ly/H0dEgO target="_blank">Subscribe to Corona Geek on YouTube</a></li>
+<li><a href=http://bit.ly/19JGUiG target="_blank">Download Corona Geek on iTunes</a></li>
+<li><a href=http://bit.ly/1cm2xtO target="_blank">Listen to Corona Geek on Stitcher</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/blog/coronageek/corona-geek-124/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+<enclosure url="http://coronageek.coronalabs.com/cdn/corona-geek-show-124-2015-01-12-corona-composer-library.mp3" length="100454688" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Tutorial: Controlling Composer scene transitions</title>
+		<link>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/</link>
+		<comments>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/#comments</comments>
+		<pubDate>Tue, 23 Dec 2014 20:00:03 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[effects]]></category>
+		<category><![CDATA[scenes]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=60647</guid>
+		<description><![CDATA[In this tutorial, learn how to control and edit the various scene transitions used by Corona's Composer library. In addition, discover how to create new transition effects via some basic Lua table entries.]]></description>
+				<content:encoded><![CDATA[<p>Corona&#8217;s <a href=http://docs.coronalabs.com/api/library/composer/index.html target="_blank">Composer scene management library</a> is quite powerful in giving you the ability to move multiple scenes on and off screen. As part of the core library, Composer supports numerous scene transitions including:</p>
+<ul>
+<li><strong>fade</strong> &#8212; the current scene fades out and then the next scene fades in.</li>
+<li><strong>zoomOutIn</strong> &#8212; the current scene shrinks to nothing, then the new scene emerges from nothingness to fill the screen.</li>
+<li><strong>zoomOutInFade</strong> &#8212; like <strong>zoomOutIn</strong>, but including <strong>fade</strong> as well.</li>
+<li><strong>zoomInOut</strong> &#8212; the scene starts larger than the screen, shrinks to fit, and then zooms out when closing.</li>
+<li><strong>zoomInOutFade</strong> &#8212; like <strong>zoomInOut</strong>, but including <strong>fade</strong> as well.</li>
+<li><strong>flip</strong> &#8212; the scene scales to width of 0 and then back out, providing a flip effect.</li>
+<li><strong>flipFadeOutIn</strong> &#8212; <strong>flip</strong> and <strong>fade</strong> combination.</li>
+<li><strong>zoomOutInRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with 360 degrees rotation.</li>
+<li><strong>zoomOutInFadeRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with fade and 360 degrees rotation.</li>
+<li><strong>zoomInOutRotate</strong> &#8212; like <strong>zoomInOut</strong>, but also with 360 degrees rotation.</li>
+<li><strong>zoomInOutFadeRotate</strong> &#8212; like <strong>zoomOutIn</strong>, but also with fade and 360 degrees rotation.</li>
+<li><strong>fromRight</strong> &#8212; slides the new scene from the right side (over the existing scene).</li>
+<li><strong>fromLeft</strong> &#8212; slides the new scene from the left side (over the existing scene).</li>
+<li><strong>fromTop</strong> &#8212; slides the new scene from the top (over the existing scene).</li>
+<li><strong>fromBottom</strong> &#8212; slides the new scene from the bottom (over the existing scene).</li>
+<li><strong>slideLeft</strong> &#8212; like <strong>fromRight</strong>, but the new scene pushes the current scene off to the left.</li>
+<li><strong>slideRight</strong> &#8212; like <strong>fromLeft</strong>, but the new scene pushes the current scene off to the right.</li>
+<li><strong>slideUp</strong> &#8212; like <strong>fromBottom</strong>, but the new scene pushes the current scene off the top.</li>
+<li><strong>slideDown</strong> &#8212; like <strong>fromTop</strong>, but the new scene pushes the current scene off the bottom.</li>
+<li><strong>crossFade</strong> &#8212; the current scene fades out while the new scene fades in.</li>
+</ul>
+<p>These transitions cover many of the usage cases that you&#8217;ll need, but there are times when you may desire slightly different behavior. For example, let&#8217;s say you want to rotate the scene <strong>three</strong> times instead of just once, or you want the new scene to fade in while moving over top of the current scene. Essentially, if you envision some scene transition that doesn&#8217;t exist in the list above, keep reading because this tutorial will show you how to achieve it.</p>
+<h3>Introducing the &#8220;effectsList&#8221; table</h3>
+<p>When you <code>require()</code> the Composer library, there&#8217;s a publicly-accessible table which you gain access to. This is known as the <code>effectsList</code> table. Within this table, each defined effect has two subtables: <code>from</code> and <code>to</code>, and within these, several attributes to control the transition behavior.</p>
+<p>Before you continue, it will be helpful to get a table printing function from this tutorial, including the <code>print_r()</code> function. Then, assuming that both the Composer library and <code>utility.lua</code> is included in your project, code the following:</p><pre class="crayon-plain-tag">utility.print_r( composer.effectList )</pre><p>In the Terminal/console, you can examine the output and see how each effect is managed. Let&#8217;s look at the simplest case, <code>fade</code>:</p><pre class="crayon-plain-tag">[&quot;fade&quot;] =
+    {
+        [&quot;from&quot;] =
+        {
+            alphaStart = 1.0,
+            alphaEnd = 0
+        },
+        [&quot;to&quot;] =
+        {
+            alphaStart = 0,
+            alphaEnd = 1.0
+        }
+    },</pre><p>In this case, the transition is named <code>fade</code> (the first key in the table). It has two child tables, <code>from</code> and <code>to</code>. Both of these tables have two child parameters: <code>alphaStart</code> and <code>alphaEnd</code>. Effectively, the Composer library will take the <code>alphaStart</code> value and set the scene&#8217;s alpha property to that, then tell <a href=http://docs.coronalabs.com/api/library/transition/to.html target="_blank">transition.to()</a> to change the alpha to the <code>alphaEnd</code> value.</p>
+<p>A more complex example is <code>zoomOutInFadeRotate</code>:</p><pre class="crayon-plain-tag">[&quot;zoomOutInFadeRotate&quot;] =
+    {
+        [&quot;from&quot;] =
+        {
+            xEnd = displayW*0.5,
+            yEnd = displayH*0.5,
+            xScaleEnd = 0.001,
+            yScaleEnd = 0.001,
+            rotationStart = 0,
+            rotationEnd = -360,
+            alphaStart = 1.0,
+            alphaEnd = 0
+        },
+        [&quot;to&quot;] =
+        {
+            xScaleStart = 0.001,
+            yScaleStart = 0.001,
+            xScaleEnd = 1.0,
+            yScaleEnd = 1.0,
+            xStart = displayW*0.5,
+            yStart = displayH*0.5,
+            xEnd = 0,
+            yEnd = 0,
+            rotationStart = -360,
+            rotationEnd = 0,
+            alphaStart = 0,
+            alphaEnd = 1.0
+        },
+        hideOnOut = true
+    },</pre><p>In this case, <code>xScale</code>, <code>yScale</code>, <code>x</code>, <code>y</code>, <code>rotation</code> and <code>alpha</code> all have <code>Start</code> and <code>End</code> values set, just like <code>alpha</code> in the first example.</p>
+<h3>Customizing transitions</h3>
+<p>If you want to change these values, you can do so at any time before you call <a href=http://docs.coronalabs.com/api/library/composer/gotoScene.html target="_blank">composer.gotoScene()</a> or <a href=http://docs.coronalabs.com/api/library/composer/showOverlay.html target="_blank">composer.showOverlay()</a> by simply providing the proper table with new values. For instance, if you want to rotate the scene three times using <code>zoomOutInFadeRotate</code>, simply set the rotation values to <code>-1080</code> (<code>3</code>×<code>-360</code>):</p><pre class="crayon-plain-tag">composer.effectList.zoomOutInFadeRotate.from.rotationEnd = -1080
+composer.effectList.zoomOutInFadeRotate.to.rotationStart = -1080</pre><p>Keep in mind that these values will stay in effect until they are explicitly reset, the app is restarted, or you un-<code>require()</code> the Composer library.</p>
+<p>For future reference, the attributes which can be set/changed on the <code>from</code> and <code>to</code> tables of a scene transition effect include:</p>
+<ul>
+<li><code>xStart</code>, <code>xEnd</code></li>
+<li><code>yStart</code>, <code>yEnd</code></li>
+<li><code>alphaStart</code>, <code>alphaEnd</code></li>
+<li><code>xScaleStart</code>, <code>xScaleEnd</code></li>
+<li><code>yScaleStart</code>, <code>yScaleEnd</code></li>
+<li><code>rotationStart</code>, <code>rotationEnd</code></li>
+<li><code>transition</code></li>
+</ul>
+<p>In addition, there are a few attributes which can be set on the entire transition:</p>
+<ul>
+<li><code>hideOnOut</code> &#8212; hides the previous scene upon completion (for scenes which might still be on top due to their animation).</li>
+<li><code>concurrent</code> &#8212; specifies that the <code>to</code> and <code>from</code> transitions happen at the same time.</li>
+<li><code>sceneAbove</code>  &#8212; puts the new scene on top of the previous scene.</li>
+</ul>
+<p>For example, the only difference between <code>fade</code> and <code>crossFade</code> is that the <code>crossFade</code> transition is that <code>concurrent</code> is set to <code>true</code>.</p>
+<h3>Adjusting transition easing</h3>
+<p>Another thing you might want to adjust is the <strong>easing</strong> on a particular transition, or add easing to a scene transition effect which doesn&#8217;t have one. Easing allows transitions to behave distinctly based on several preset options (see the Corona <a href=http://docs.coronalabs.com/api/library/easing/index.html target="_blank">easing</a> library for details on the various easing algorithms).</p>
+<p>For instance, if you want to apply easing on the <code>fade</code> scene transition, code these lines:</p><pre class="crayon-plain-tag">composer.effectList.fade.from.transition = easing.outQuad
+composer.effectList.fade.to.transition = easing.outQuad</pre><p></p>
+<h3>Creating new scene transitions</h3>
+<p>In a similar manner to editing existing scene transition effects, you can create your own as well. For example, you can make a transition similar to the one seen in iOS 7 where the original scene and the new scene transition at different speeds, providing for a more interesting animation:</p><pre class="crayon-plain-tag">composer.effectList[&quot;iosSlideLeft&quot;] = {
+        sceneAbove = true,
+        concurrent = true,
+        to = {
+            xStart     = display.contentWidth,
+            yStart     = 0,
+            xEnd       = 0,
+            yEnd       = 0,
+            transition = easing.outQuad
+        },
+        from = {
+            xStart     = 0,
+            yStart     = 0,
+            xEnd       = -display.contentWidth * 0.3,
+            yEnd       = 0,
+            transition = easing.outQuad
+        }
+    }
+
+    composer.effectList[&quot;iosSlideRight&quot;] = {
+        sceneAbove = false,
+        concurrent = true,
+        to = {
+            xStart     = -display.contentWidth * 0.3,
+            yStart     = 0,
+            xEnd       = 0,
+            yEnd       = 0,
+            transition = easing.outQuad
+        },
+        from = {
+            xStart     = 0,
+            yStart     = 0,
+            xEnd       = display.contentWidth,
+            yEnd       = 0,
+            transition = easing.outQuad
+        }
+    }</pre><p></p>
+<h3>Conclusion</h3>
+<p>By editing and adding to the accessible <code>effectsList</code> table, you can change how Composer behaves when transitioning scenes. However, be careful with the values that you specify, as incorrect values may cause your scenes to move only partially off screen, complete upside-down, and so forth. Still, with a little experimentation &#8212; none of which will permanently corrupt the Composer library &#8212; there is virtually no limit to the interesting scene transition effects you can achieve.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/12/23/tutorial-controlling-composer-scene-transitions/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Composer GUI Beta Update</title>
+		<link>/blog/2014/06/11/composer-gui-beta-update/</link>
+		<comments>/blog/2014/06/11/composer-gui-beta-update/#comments</comments>
+		<pubDate>Wed, 11 Jun 2014 23:43:32 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Composer]]></category>
+		<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[Daily Build]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[app design]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[composer]]></category>
+		<category><![CDATA[GUI editor]]></category>
+
+		<guid isPermaLink="false">/?p=58796</guid>
+		<description><![CDATA[Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332. 
+
+This update makes significant improvements over the <a href="/blog/2014/04/17/composer-gui-beta/">previous beta</a>. We've focused on polishing the existing feature set as well as improve your workflow. ]]></description>
+				<content:encoded><![CDATA[<p>Today, we have a new update to our visual editor Composer GUI, available in daily build 2014.2332 (Mac only for now). </p>
+<p>This update makes significant improvements over the <a href=/blog/2014/04/17/composer-gui-beta/>previous beta</a>. We&#8217;ve focused on polishing the existing feature set as well as improve your workflow. Several key features were missing like resizable windows, full-screen mode, zooming in/out, and multiple selection (marquee or shift-click). Plus, all Pro subscribers can start using the Composer GUI right away, no need to enable it in the terminal as required in the previous version.</p>
+<p>We also focused on lots of small things that you don&#8217;t notice until they&#8217;re missing. For example, if you&#8217;re a long-time user of Adobe products, you&#8217;re used to quickly toggling the hand tool by holding down the spacebar. In the latest Composer GUI, you&#8217;ll be able to do the same thing.</p>
+<p>Here&#8217;s a short preview of what you can do in the updated Composer GUI:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/tfyg-MYz3-g" frameborder="0" allowfullscreen></iframe></p>
+<p>If you&#8217;re ready to play, here&#8217;s a <a href=https://github.com/coronalabs/aliens-vs-mutant-mice-final>sample</a> you can use with the latest daily build, the same one we use in the video. And as always, more information is available in our <a href=http://docs.coronalabs.com/daily/composer/>docs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2014/06/11/composer-gui-beta-update/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+	</channel>
+</rss>

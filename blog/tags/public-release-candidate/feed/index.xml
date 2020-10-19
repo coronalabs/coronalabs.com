@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>public release candidate &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/public-release-candidate/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>public release candidate &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Public Release Candidate: 2014.2187</title>
+		<link>/blog/2014/02/28/public-release-candidate-2014-2187/</link>
+		<pubDate>Fri, 28 Feb 2014 22:01:04 +0000</pubDate>
+		<dc:creator><![CDATA[walter]]></dc:creator>
+				<category><![CDATA[Corona SDK]]></category>
+		<category><![CDATA[News & Announcements]]></category>
+		<category><![CDATA[public release candidate]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=56599</guid>
+		<description><![CDATA[Just a quick note that 2014.2187 is our candidate for the next public release. You can download it from our <a href="http://developer.coronalabs.com/downloads/daily-builds">daily builds</a> if you are a Pro/Enterprise subscriber.
+ 
+We're interested in knowing if you encounter significant regressions against the current public release (2013.2100). If you do, please let us know on <a href="http://forums.coronalabs.com/topic/44894-next-public-release-candidate-20142187/">this forum</a>.]]></description>
+				<content:encoded><![CDATA[<p>Just a quick note that 2014.2187 is our candidate for the next public release. You can download it from our <a href=http://developer.coronalabs.com/downloads/daily-builds>daily builds</a> if you are a Pro/Enterprise subscriber.</p>
+<p>We&#8217;re interested in knowing if you encounter significant regressions against the current public release (2013.2100). If you do, please let us know on <a href=http://forums.coronalabs.com/topic/44894-next-public-release-candidate-20142187/>this forum</a>.</p>
+<p>thanks!<br />
+walter</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

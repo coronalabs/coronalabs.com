@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>meter &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/meter/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>meter &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tutorial: Partially filling an object</title>
+		<link>/blog/2015/09/08/tutorial-partially-filling-an-object/</link>
+		<comments>/blog/2015/09/08/tutorial-partially-filling-an-object/#comments</comments>
+		<pubDate>Tue, 08 Sep 2015 22:43:29 +0000</pubDate>
+		<dc:creator><![CDATA[Rob Miracle]]></dc:creator>
+				<category><![CDATA[Tutorials, Tips and Demos]]></category>
+		<category><![CDATA[meter]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">/?p=63949</guid>
+		<description><![CDATA[In this tutorial, learn how to partially fill an object with color for various user interface elements in your projects.]]></description>
+				<content:encoded><![CDATA[<p>In designing your UI (User Interface), imagine that you want to include an element like a health bar or a thermometer that can be partially filled with a solid color (or any other image) which represents an &#8220;amount&#8221; that the element contains.</p>
+<p>While Corona provides the pre-packaged <a href=https://docs.coronalabs.com/api/library/widget/newProgressView.html target="_blank">ProgressView()</a> widget which may meet this goal, taking it to a more elaborate visual appearance requires some creativity. In this tutorial, we will create a more customized health bar example where a <strong>symbol</strong> represents the player&#8217;s health &#8212; this will consist of a hollow outline that can be filled with a color as the player&#8217;s health increases or decreases.</p>
+<h3>Prerequisites</h3>
+<p>To make this work, you will need three separate images:</p>
+<ol>
+<li>An image that is the &#8220;empty&#8221; outline of the object &#8212; aside from the outline, all pixels should be <em>transparent</em>, as represented by the grey checkerboard grid in the example image below.</li>
+<li>An image which represents the fully &#8220;filled&#8221; object (again, all pixels that are not part of the filled image should be transparent).</li>
+<li>A basic white <a href=https://docs.coronalabs.com/guide/media/imageMask/index.html target="_blank">mask</a> (including the required black border).</li>
+</ol>
+<p><a href=/wordpress/wp-content/uploads/2015/09/characterimageexample.png><img class="size-full wp-image-63972 aligncenter" style="margin-top: 32px; margin-bottom: 32px;" src=/wordpress/wp-content/uploads/2015/09/characterimageexample.png alt="characterimageexample" width="324" height="208" /></a></p>
+<p>Using these three elements, the general concept is to place the &#8220;filled&#8221; image on the screen, then overlay (draw at the exact same place on the screen) the &#8220;outline&#8221; image. This in itself won&#8217;t do anything &#8212; merely the outline will overlay the filled image. However, when you create and apply the <a href=https://docs.coronalabs.com/guide/media/imageMask/index.html target="_blank">mask</a> to the bottom layer, you will gain the ability to set the <em>position</em> of that mask and effectively indicate how &#8220;full&#8221; the object is.</p>
+<h3>Basic setup</h3>
+<p>Consider this code:</p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 1, 1, 1 )
+
+-- Place the &quot;filled&quot; object on the screen
+local filledUI = display.newImageRect( &quot;filled.png&quot;, 100, 200 )
+filledUI.x = display.contentCenterX
+filledUI.y = display.contentCenterY
+
+-- Create the mask object
+local UIMask = graphics.newMask( &quot;mask.png&quot; )
+-- Apply the mask to the bottom image ('filledUI')
+filledUI:setMask( UIMask )
+filledUI.maskY = 0
+
+-- Overlay the &quot;outline&quot; object over the &quot;filled&quot; object
+local outlineUI = display.newImageRect( &quot;outline.png&quot;, 100, 200 )
+outlineUI.x = display.contentCenterX
+outlineUI.y = display.contentCenterY</pre><p>The first block of code defines the underlying &#8220;filled&#8221; image (the image completely filled with color). For convenience, we position this object in the center of the content area.</p>
+<p>Next, we create a mask (<code>UIMask</code>) using <a href=https://docs.coronalabs.com/api/library/graphics/newMask.html target="_blank">graphics.newMask()</a>. This mask image is solid white except for the required black border around the edges. In this case, since the UI image is 100×200 pixels, the mask consists of a 100×200 area of white plus a 4 pixel black border, resulting in an overall mask image of 108×208. Once created, the mask is applied to the underlying image (<code>filledUI</code>) and positioned at a <a href=https://docs.coronalabs.com/api/type/DisplayObject/maskY.html target="_blank">maskY</a> value of <code>0</code> (this position will be important in the next step).</p>
+<p>Next, we overlay the &#8220;outline&#8221; image (<code>outlineUI</code>) on top. This element will simply be used as a frame for the UI object as we adjust the mask position on the underlying filled image.</p>
+<h3>Controlling the fill</h3>
+<p>The fill of the UI meter is completely controlled by adjusting the <strong>y</strong> position of the mask (<a href=https://docs.coronalabs.com/api/type/DisplayObject/maskY.html target="_blank">maskY</a>). In this example, since the object is 200 pixels tall, we can set this value to <code>100</code> to set the visual health level at 50%. As a convenience method to calculate the proper position, we can use the following code:</p><pre class="crayon-plain-tag">local meterLevel = 0.25  -- 25% = 25/100 = 0.25
+local maskPosition = filledUI.height * ( 1 - meterLevel )
+
+filledUI.maskY = maskPosition</pre><p>Alternatively, you can achieve an animated fill effect by <a href=https://docs.coronalabs.com/api/library/transition/to.html target="_blank">transitioning</a> the mask&#8217;s position. Using a transition on the mask position is very similar to a typical positional transition, except in this case, we transition the <code>maskY</code> property, <strong>not</strong> the <code>y</code> property of the actual image:</p><pre class="crayon-plain-tag">transition.to( filledUI, { time = 1000, maskY = maskPosition } )</pre><p></p>
+<h3>Conclusion</h3>
+<p>As demonstrated, creating a stylish UI meter is simple and only requires the use of three elements, a simple calculation, and a direct set (or transition) of the underlying object&#8217;s mask position. If you wish to experiment with this code, you may copy/save the following images to your system as a basis for testing:</p>
+<p><a href=/wordpress/wp-content/uploads/2015/09/outline.png><img class="size-full wp-image-63985 alignleft" style="margin: 20px;" src=/wordpress/wp-content/uploads/2015/09/outline.png alt="outline" width="100" height="200" /></a> <a href=/wordpress/wp-content/uploads/2015/09/filled.png><img class="size-full wp-image-63983 alignleft" style="margin: 20px;" src=/wordpress/wp-content/uploads/2015/09/filled.png alt="filled" width="100" height="200" /></a> <a href=/wordpress/wp-content/uploads/2015/09/mask.png><img class="size-full wp-image-63984 alignnone" style="margin: 20px;" src=/wordpress/wp-content/uploads/2015/09/mask.png alt="mask" width="108" height="208" /></a></p>
+<hr style="clear: both;" />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2015/09/08/tutorial-partially-filling-an-object/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

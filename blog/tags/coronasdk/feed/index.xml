@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CoronaSDK &#8211; Corona Labs</title>
+	<atom:link href="/blog/tags/coronasdk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2020 12:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+
+<image>
+	<url>/wordpress/wp-content/uploads/2017/06/cropped-icon_32x32@2x-32x32.png</url>
+	<title>CoronaSDK &#8211; Corona Labs</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wednesday FAQs: Corona SDK Plugins</title>
+		<link>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/</link>
+		<comments>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/#comments</comments>
+		<pubDate>Wed, 07 Aug 2013 18:06:12 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[enterprise]]></category>
+		<category><![CDATA[plugins]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=40349</guid>
+		<description><![CDATA[Wednesday calls for another session of frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />Wednesday calls for another session on frequently asked questions (FAQs). Today we cover FAQs about Corona SDK Plugins.</p>
+<h2>1. How do plugins work?</h2>
+<p>Plugins are stored on Corona Labs&#8217; server and linked into your project when you do a build. To add a plugin to your project, you need to do two things: 1) add the plugin name to the <strong>build.settings</strong> file, and 2) add a &#8220;require&#8221; statement to your <strong>main.lua</strong> file to load the plugin code.</p>
+<p>The <strong>build.settings</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">settings =
+{
+    plugins =
+    {
+        -- key is the name passed to Lua's 'require()'
+        [&quot;plugin.zip&quot;] =
+        {
+            -- required
+            publisherId = &quot;com.coronalabs&quot;,
+        },
+    },      
+}</pre><p></p>
+<p>The <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local zip = require( &quot;plugin.zip&quot; )</pre><p></p>
+<p>Visit the documentation for the plugin to determine the extract information needed. You can find plugin documentation <a href=http://docs.coronalabs.com/daily/plugin/index.html>here</a>.</p>
+<p>The great thing about plugins is they are only added to your project when needed. This reduces the size of your app by eliminating unneeded code.</p>
+<h2>2. Are plugins available for everyone?</h2>
+<p>Most plugins are only available to <strong>Pro</strong> users but there are some plugins available to <strong>Starter</strong> users. The &#8220;Availability&#8221; line at the top of the plugin&#8217;s main document page (index.html) indicates who can use the plugin. You can also see the plugin availability in the <a href=http://www.coronalabs.com/resources/plugins/><strong>Corona Plugin Directory.</strong></a></p>
+<h2>3. I&#8217;m trying to use a plugin in my project and it&#8217;s giving me an error. What&#8217;s wrong?</h2>
+<p>There are a number of potential reasons for plugin errors. Check the following:</p>
+<ul>
+<li>If you are a <strong>Starter</strong> user, make sure you are authorized to use the plugin (check <strong>Availability</strong>).</li>
+<li>Make sure you are using the proper Corona SDK build for the plugin. Some plugins require features/bug fixes only available starting with a specific build number. Most plugins work with the recent Public Build, but you should check this if you are getting a &#8220;plugin not available&#8221; error.</li>
+<li>Is the plugin available for the platform you&#8217;re building for? If the plugin is only available for Android, you will get a build error when building for iOS or iOS Simulator.</li>
+<li>Double check your code and make sure you&#8217;re using the correct calls for the plugin. All the plugins have sample code available, so it&#8217;s a good idea to download and run the vendor&#8217;s sample code to make sure that is working if you&#8217;re having problems.</li>
+</ul>
+<p>Most plugins are written and supported by third party vendors. Check out our <a href=http://forums.coronalabs.com/forum/605-corona-plugins/>Plugin Forum</a> for more information and please post questions for the vendors and other users.</p>
+<h2>4. Will I always get the most up-to-date plugin when I build my project?</h2>
+<p>The system will download and build with the latest plugin for the version of Corona SDK you&#8217;re running. The plugins are tied to the Corona build number so when you open a project that requires a plugin, the simulator checks to see if you have the most recent plugin module on your machine and downloads the latest version. When you do a build, the plugins for the build platform is linked into your project from our servers. This ensures you are always using the latest plugin version.</p>
+<h2>5. Can I write my own plugin?</h2>
+<p>Currently, plugins are provided by official partners, or by Corona Labs. In the near future, we plan to roll out a full plugin marketplace where any developer can submit plugins for sale. If you are serious about developing a plugin, please email us at <a href=mailto:partnerships@coronalabs.com>partnerships@coronalabs.com</a> and tell us what you have in mind. </p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/08/07/wednesday-faqs-corona-sdk-plugins/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona Build Servers</title>
+		<link>/blog/2013/07/10/wednesday-faqs-corona-build-servers/</link>
+		<comments>/blog/2013/07/10/wednesday-faqs-corona-build-servers/#comments</comments>
+		<pubDate>Wed, 10 Jul 2013 21:07:35 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[daily builds]]></category>
+		<category><![CDATA[server]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=37617</guid>
+		<description><![CDATA[It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It’s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about Corona Build Servers.</p>
+<h2>1. Is there a difference between developer and distribution builds for iOS?</h2>
+<p>Yes, with distribution builds (App Store and adhoc), Apple&#8217;s <strong>PNGCRUSH</strong> utility is called to compress the PNG files. To save time, the utility is not called when doing a <strong>developer</strong> build.</p>
+<p>We&#8217;ve had some reported cases where images were mangled when submitted to the App Store and rejected by Apple. The issue seems to be a problem with how some PNG images are formatted that causes problems when <strong>PNGCRUSH</strong> is used to compress the images. If this happens to you, the solution is to open the PNG file in Photoshop (or a similar photo editor) and re-save the image. You can probably do the same thing using Mac&#8217;s Preview program. It&#8217;s always a good idea to test an adhoc build of your app because that also calls <strong>PNGCRUSH</strong> to compress the images.</p>
+<h2>2. Why do I need an Internet connection to build my project?</h2>
+<p>The Corona servers host multiple versions of the Corona SDK. This includes all the public builds as well as daily builds. When you do a build on the Corona Simulator, it sends the build information to the Corona servers so it can pick the correct <strong>template</strong> (build file) and plugins. Having the build templates and plugins in the cloud, allow us to update the files as needed and add additional plugins as they become available.</p>
+<p>For users who want to build offline, we do offer <a href=http://www.coronalabs.com/products/enterprise/>Corona Enterprise</a>.</p>
+<h2>3. When I do a build, is the source code and all my assets sent to Corona&#8217;s servers?</h2>
+<p>Your project code is converted into Lua byte code and sent to Corona servers so it can be packaged with the <strong>template</strong> file for the associated build. None of project&#8217;s assets are sent to the Corona servers. After the Lua code has been linked to the template, it&#8217;s sent back to the client (Corona Simulator) where all the project&#8217;s assets are added to the project and the app is digitally signed.</p>
+<h2>4. My hard drive failed and I lost my Corona project. Can I get a copy that was sent to your servers when I did a build?</h2>
+<p>No, as mentioned in the previous answer, only the Lua byte code for your project is sent to the Corona servers. This byte code is not human readable plus it doesn&#8217;t contain any comments you may have in your code nor are any of the project assets included. None project files are saved on our servers once it&#8217;s send back to the client to build the project locally.</p>
+<h2>5. Are daily builds stable enough to use if I want to distribute to the App Store?</h2>
+<p>Daily builds contain new features and bug fixes. If you want to publish your app with a daily build, it&#8217;s best to test as much as you can to ensure there are no bugs. We do try to fix regression bugs in daily builds as soon as we are aware of them, so it&#8217;s a good idea to hold off and monitor the forums and the <a href=https://developer.coronalabs.com/corona-daily-builds/summary>daily build summary</a> page for bug reports and fixes.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/07/10/wednesday-faqs-corona-build-servers/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Display Text Objects</title>
+		<link>/blog/2013/06/26/wednesday-faqs-display-text-objects/</link>
+		<comments>/blog/2013/06/26/wednesday-faqs-display-text-objects/#comments</comments>
+		<pubDate>Wed, 26 Jun 2013 21:12:13 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[justification]]></category>
+		<category><![CDATA[text]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=36836</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about display text objects.</p>
+<h2>1. I&#8217;m creating lots of display.newText objects and it&#8217;s slowing down my app. Why?</h2>
+<p>It may seem like text is a simple thing to display on the screen but it can be very complicated and time consuming. When you create text with <strong>display.newText</strong>, the text must be first converted into a bit map and then sent to <strong>openGL</strong> so it can be rendered on the screen. The larger the text (in the number of character and font size), the longer this process takes. It also consumes texture memory just like displaying images.</p>
+<h2>2. I&#8217;m moving text around on the screen, will that slow down my app?</h2>
+<p>Moving or scaling text objects does not slow down Corona SDK. If you are changing the text, the bit map needs to be recreated, which can impact the frame rate. The same is true when changing the font size or the font type. These all require a new bit map and may affect performance.</p>
+<h2>3. I&#8217;m using display.newText and see a white or black block where the text should be. What&#8217;s wrong?</h2>
+<p>The black or white block is what you see when the text exceeds the texture limit of the device. Since text objects are converted to bit maps before being displayed, long text strings with a large font size can easily exceed the texture memory limit of some low-end devices. The solution is to limit the amount of text displayed in a single <strong>display.newText</strong> object. You should break up large text objects into multiple text objects.</p>
+<h2>4. How do I align text?</h2>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/06/FAQ31_image-161x300.png" alt="Text Justification" class="alignright size-medium wp-image-36838" /><br />
+Starting with Daily Build 1143 we added text alignment to <a href=http://docs.coronalabs.com/daily/api/library/display/newText.html><strong>display.newText</strong></a>. You can specify &#8220;<strong>left</strong>&#8220;, &#8220;<strong>center</strong>&#8221; and &#8220;<strong>right</strong>&#8221; justification. The only limitation is you can&#8217;t change the justification after the text object has been constructed.</p>
+<p>When we added text justification to <strong>display.newText</strong>, we changed the way parameters are supplied to the function. The parameters are now sent in a Lua &#8220;<strong>option</strong>&#8221; table instead of as individual parameters. <strong>display.newText</strong> still supports the legacy call, but you can&#8217;t use it to justify the text. Be aware that if you call <strong>display.newText</strong> with the new option table, you specify <strong>x</strong> and <strong>y</strong> values, which reference the center of the text object and not <strong>left</strong> and <strong>top</strong> used in the legacy call.</p>
+<p>In order for text justification to work, you must supply the <strong>width</strong> parameter. If the <strong>height</strong> parameter is not supplied, it&#8217;s assumed to be 0 (this may change in the future). Left justification is assumed if no justification is specified.</p>
+<p></p><pre class="crayon-plain-tag">display.setDefault( &quot;background&quot;, 128 )
+
+-- Create a rect to show the boundaries of our text fields
+local rect = display.newRect( 50, 35, 200, 150 )
+rect:setFillColor( 40 )
+
+-- Right aligned, single line
+local textOptions1 = { text = &quot;Line 1 right aligned&quot;, x = 100, y = 50, width = 200, align = &quot;right&quot;, font = native.systemFont, fontSize = 14 }
+local text1 = display.newText( textOptions1 )
+text1:setReferencePoint( display.TopLeftReferencePoint )
+text1.x = 50
+
+-- Center alignment, multiple lines
+local textString2 = &quot;Line 1 center aligned\nLine2 center&quot;
+local textOptions2 = { text = textString2, x = 150, y = 100, width = 200, height = 0, align = &quot;center&quot;, font = native.systemFont, fontSize = 14 }
+local text2 = display.newText( textOptions2 )
+text2:setReferencePoint( display.TopLeftReferencePoint )
+text2.x = 50
+
+-- No alignment specified
+local textOptions3 = { text = &quot;Line defaults to left aligned&quot;, x = 200, y = 150, width = 200, font = native.systemFont, fontSize = 14 }
+local text3 = display.newText( textOptions3 )
+text3:setReferencePoint( display.TopLeftReferencePoint )
+text3.x = 50</pre><p></p>
+<p>Text justification also works with custom fonts but you must install the fonts on the Mac or Windows simulator in order to make it work.</p>
+<h2>5. Does display.newEmbossedText work with justification?</h2>
+<p>Currently, text justification for <strong>display.newEmbossedText</strong> objects is not implemented. We hope to have it in a Daily Build soon.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/26/wednesday-faqs-display-text-objects/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Upgrading the Corona SDK Simulator</title>
+		<link>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/</link>
+		<comments>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/#comments</comments>
+		<pubDate>Wed, 12 Jun 2013 20:50:44 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[deauthorizing]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=35693</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /></p>
+<p>It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about upgrading the Corona SDK Simulator.</p>
+<h2 id="doihavetouninstallcoronasdkwhenupgradingtoanewversion">1. Do I have to uninstall Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t to have uninstall on Mac or Windows. </p>
+<h2 id="doihavetodeauthorizecoronasdkwhenupgradingtoanewversion">2. Do I have to deauthorize Corona SDK when upgrading to a new version?</h2>
+<p>No, you don&#8217;t have to deauthorize when installing a newer or older version. The only times you need to deauthorize is if you plan to use Corona SDK on another computer and you already have two computers authorized, if you change the email address associated with your Corona SDK license, or if you plan to reinstall the OS on your computer.</p>
+<p>When you upgrade (or downgrade) a version of Corona SDK, the newly installed version uses the account settings already stored on your computer (either in the Windows&#8217; registry or Mac&#8217;s plist file).</p>
+<h2 id="whendoineedtocontactcoronalabssupporttodeauthorizethemachinesonmyaccount">3. When do I need to contact Corona Labs&#8217; support to deauthorize the machines on my account?</h2>
+<p>There are very few times when you need to contact Corona Labs to deauthorize the machines on your account. If you forgot to deauthorize your machine, please contact us if you have changed the email address associated with your account or if you have reinstalled the operating system on your computer. Remember: to avoid these issues, don&#8217;t forget to deauthorize your computer(s) first.</p>
+<h2 id="canihavemorethanoneversionofcoronasdkinstalled">4. Can I have more than one version of Corona SDK installed?</h2>
+<p>The answer depends on the platform you&#8217;re using.</p>
+<p>On Mac, you can have many Corona SDK builds installed at the same time. The trick is to rename the <strong>CoronaSDK</strong> folder in the Applications folder after installing a new version. On my machine, I append the build number to the end of the folder name to keep them separate. For the last public build #1137, I would rename <strong>CoronaSDK</strong> to <strong>CoronaSDK&#8211;1137</strong>.</p>
+<p>For Windows, you can only have one version of Corona SDK installed at a time. You don&#8217;t have to uninstall when installing a newer version, but if you need to install an older build, you have to uninstall first.</p>
+<h2 id="faqtipoftheweek">5. FAQ Tip of the Week</h2>
+<p>The last public release (1137) added lots of bug fixes and some much needed features (<a href=https://developer.coronalabs.com/content/corona-sdk-release-notes-build-2013-1137>Build 2013.1137 Release Notes</a>). One of the features you may have missed is the ability to retrieve the app name (using <strong>system.getInfo</strong>). You may wonder what advantage there is to retrieving the app name. Here&#8217;s one example.</p>
+<p>When debugging an app on a device, I like to enable the Runtime popup message feature (setting <strong>showRuntimeErrors = true</strong>). I want the popup for my debug builds but not when I submit it to the App Store. This involves modifying my project files and having to remember to remove the code when I&#8217;m ready to release the app.</p>
+<p>My solution is to add some code to the <strong>config.lua</strong> file to control the state of <strong>showRuntimeErrors</strong> without having to modify my project files.</p><pre class="crayon-plain-tag">application =
+{
+    showRuntimeErrors = ( string.find( system.getInfo( &amp;#8220;appName&amp;#8221; ), &amp;#8220;debug&amp;#8221; ) and true ),
+    ...
+}</pre><p></p>
+<p>The above code sets the <strong>showRuntimeErrors</strong> key <strong>true</strong> or <strong>nil</strong> depending on the app name. If the app name contains &#8220;debug&#8221; anywhere in the name, <strong>showRuntimeErrors</strong> is set to <strong>true</strong>. If the string is not present in the name, it&#8217;s set to <strong>nil</strong>. So if my app is called <strong>BubbleJump</strong>, the debug code is enabled if I append &#8220;-debug&#8221; to the end of the app name in the Corona SDK build window. Seeing <strong>BubbleJump-debug</strong> is also a good reminder that this is not a production-ready app. I chose &#8220;-debug&#8221;, but you can choose whatever you like.</p>
+<p>You can go one step further by adding the following code at the top of the <strong>main.lua</strong> file.</p>
+<p></p><pre class="crayon-plain-tag">local debug = ( string.find( system.getInfo( &quot;appName&quot; ), &quot;debug&quot; ) and true )</pre><p></p>
+<p>You can now use the <strong>debug</strong> variable to enable debug statements in your code. You can even use it to disable the <strong>print</strong> statement when <strong>debug</strong> is false/nil. This allows you to control the <strong>debug flag</strong> at build time instead of having to modify your project files and run the risk of releasing a version of your app with debug code enabled.</p>
+<p>One note of caution about using <strong>debug</strong> for a variable name. If you do use <strong>debug</strong>, make sure it&#8217;s a local variable and not a global one. Lua does have an internal <strong>debug</strong> library that you will override if you define <strong>debug</strong> as a global variable. Doing so will suppress any runtime error output and <strong>print</strong> output that your code may generate. It may be better to use <strong>dbg</strong> or <strong>_debug</strong> instead.</p>
+<p>One final note: I mention public release #1137 in this blog post. This release replaces build #1135 and fixes a potential issue with plugins.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/06/12/wednesday-faqs-upgrading-the-corona-sdk-simulator/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Timers and Events</title>
+		<link>/blog/2013/05/29/wednesday-faqs-timers-and-events/</link>
+		<comments>/blog/2013/05/29/wednesday-faqs-timers-and-events/#comments</comments>
+		<pubDate>Wed, 29 May 2013 20:19:11 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[events]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[timers]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=34783</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs on timers and on how events are processed in Corona SDK.</p>
+<h2>1. I&#8217;m trying to use timer.performWithDelay to add a delay in my code but it&#8217;s not working.</h2>
+<p>The API doesn&#8217;t do an actual delay within the code chunk but schedules a callback after the delay time has occurred. This is what is known as a non-blocking call.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )
+print( &quot;Test 3&quot; )</pre><p></p>
+<p>The above will print the strings in the following order in the terminal window: &#8220;Test 1&#8221;, &#8220;Test 3&#8221;, &#8220;Test 2&#8221;. The last message is printed 1 second (1000 milliseconds) after the delay was scheduled.</p>
+<p>If you want the strings to print out in the correct order, the statements after the timer.performWithDelay call must be moved to the callback routine.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( event )
+    print( &quot;Test 2&quot; )
+    print( &quot;Test 3&quot; )
+end
+
+print( &quot;Test 1 &quot; )
+timer.performWithDelay( 1000, doThis, 1 )</pre><p></p>
+<p>If you need to delay sections of your code from executing, it needs to be done in a timer callback function (as shown above). Corona SDK doesn&#8217;t have any blocking <strong>delay()</strong> or <strong>sleep()</strong> functions.</p>
+<h2>2. I have a loop where I update an object on the screen but it seems to only update once.</h2>
+<p></p><pre class="crayon-plain-tag">local circle = display.newCircle( 10, 20, 25 )
+for i = 1, 20 do
+    circle.x = circle.x + i
+    circle.y = circle.y + i
+end</pre><p></p>
+<p>The above code moves the circle down the screen at a very fast pace. It&#8217;s not a practical example, but looking at the code you would think that the circle is changing position each time through the <strong>for</strong> loop. In fact it only changes once &#8212; at the end of the code chunk. The circle&#8217;s x and y properties are computed each time through the loop, but it&#8217;s actual position (rendering of the object on the screen), only occurs after the code chunk has finished executing.</p>
+<p>You also need to keep this in mind if you are trying to align objects multiple times in the same code chunk using <strong>setReferencePoint</strong>. Only the last <strong>setReferencePoint</strong> takes affect because the screen update only occurs after the code chunk has executed.</p>
+<h2>3. I&#8217;m doing some long calculations in my code and my touch listeners are not working. What&#8217;s happening?</h2>
+<p>If you try to add delays in your code using <strong>for</strong> loops or looping a long time within the same code chunk, you will affect the performance of your app. All events are fired after the code chunk ends, so as long as your code chunk is running, no listener events are called. All touch, timer, network, etc. events occur after the code chunk finishes.</p>
+<p>If you do need to loop for a long time within your code, you should break it up into multiple code chunks (using <strong>timer.performWithDelay</strong>) to allow events to occur.</p>
+<h2>4. I use timer.performWithDelay but the delays times don&#8217;t seem right.</h2>
+<p>The delay time is an approximate time and is fired based on the Frames Per Second (FPS) value set in the <strong>config.lua</strong> file. The default is 30 FPS or 33.33 milliseconds. You can also set it to 60 FPS (16.166 milliseconds). As mentioned in question 3, event timers are fired at the end of the code chunk. If the code contains loops that extend beyond the timer&#8217;s value, the timer event may occur later than expected. There is a timer listener parameter, <strong>event.time</strong>, that will give you the time when the event was finally fired that you can use to calculate the true delay.</p>
+<p>Another thing should be mentioned about the timer. The time value you specify is in milliseconds and is tied to either the default frame rate (30 FPS) or what you set in <strong>config.lua</strong>. If you set a value less than the frame rate time (16 or 33 milliseconds), the timer will fire every frame time instead of the actual time you set. So if you set the delay time to 10 milliseconds and you&#8217;re using the default 30 FPS, the delay will occur every 33.333 milliseconds.</p>
+<p></p><pre class="crayon-plain-tag">local function listener( event )
+    print( &quot;Timer ID and time: &quot;, event.source, event.time )
+end
+
+print( &quot;Starting time: &quot;, system.getTimer )
+timer.performWithDelay( 1, listener, 1 )
+timer.performWithDelay( 10, listener, 1 )
+timer.performWithDelay( 25, listener, 1 )
+timer.performWithDelay( 40, listener, 1 )
+print( &quot;Ending time: &quot;, system.getTimer )</pre><p></p>
+<p>This displays the following in the terminal window (the times are in milliseconds).</p>
+<p></p><pre class="crayon-plain-tag">Starting time:  29.97
+Ending time:    30.343
+Timer ID and time:  table: 0x11fb64b20  61.031
+Timer ID and time:  table: 0x11fb17d80  61.031
+Timer ID and time:  table: 0x1016bbd90  61.031
+Timer ID and time:  table: 0x10e534c50  93.692</pre><p></p>
+<p>The bottom line is the timer delays are approximate. You can use the <strong>event.time</strong> if you need to adjust for any differences between the expected delay time and the actual delay time.</p>
+<h2>5. I have a timer call that&#8217;s not passing my parameter when done. What&#8217;s wrong?</h2>
+<p>This is a common issue for new developers in Lua. <strong>timer.performWithDelay</strong> expects to receive a reference to a function. This is common with all other APIs that expect a &#8220;listener&#8221; or &#8220;completion&#8221; reference.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    print( &quot;Value is &quot;, value )
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )</pre><p></p>
+<p>The above will print &#8220;25&#8221; because <strong>doThis( 25 )</strong> is called before the delay is scheduled. The delay is performed but the listener is not called because it doesn&#8217;t think any listener was supplied (<strong>doThis</strong> returns nil).</p>
+<p>The solution to this problem is to use Lua closures. Closures allow you to call a function with a parameter and have it return a unique local function reference that uses the supplied parameter when that function reference is called.</p>
+<p></p><pre class="crayon-plain-tag">local function doThis( value )
+    return function()
+        print( &quot;Value is &quot; .. value )
+    end
+end
+
+timer.performWithDelay( 500, doThis( 25 ),1 )
+timer.performWithDelay( 1000, doThis( 100 ),1 )</pre><p></p>
+<p>Calling <strong>doThis</strong> function from within the <strong>timer.performWithDelay</strong> call will save <strong>value</strong> as a Lua <strong>upvalue</strong> that is associated with the returned function reference. The key thing to remember is <strong>doThis( 25 )</strong> is executed before the delay is schedule and the value returned from the function call is used as the listener&#8217;s address when the timer is fired.</p>
+<p>The nice thing about using closures is they can be called from different places using different parameter values and they return a unique function that uses the supplied parameter. In the above example the listener is called with the value 25 and than later the same listener is called with the value 100. This will print &#8220;25&#8221; and then &#8220;100&#8221; in the terminal window.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/05/29/wednesday-faqs-timers-and-events/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Miscellaneous Questions</title>
+		<link>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/</link>
+		<comments>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/#comments</comments>
+		<pubDate>Wed, 24 Apr 2013 23:19:37 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[Widgets]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=32583</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" />It&#8217;s Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQ).</p>
+<h2>1. Why doesn&#8217;t native.setActivityIndicator work in my code?</h2>
+<p><strong>native.setActivityIndicator</strong> cannot be set and cleared in the same code chunk. All display objects (including native objects) are not rendered on the screen until the code chunk ends.</p>
+<p>The following is the wrong way to set the Activity Indicator. The activity indicator is not set until AFTER the function ends, and then it&#8217;s cleared. (Note: There is a current bug in Android where the activity indicator does not turn off in this example.)</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+native.setActivityIndicator( false )</pre><p></p>
+<p>This is the right way to set the Activity Indicator. The indicator is cleared after one second. The problem with this approach is the activity indicator is set after the <strong>for loop</strong> executes so it&#8217;s not displaying the activity indicator during the time the <strong>for loop</strong> is running.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+for i = 1, 1000 do
+    print( &quot;i = &quot; .. i )
+end
+
+-- Turn off the indicator after one second
+timer.performWithDelay( 1000, function() native.setActivityIndicator( false ) end )</pre><p></p>
+<p>The solution to the above problem would be running the <strong>for loop</strong> code in a timer function. You start the activity indicator before the timer starts and turn off the activity indicator in the timer function.</p>
+<p></p><pre class="crayon-plain-tag">native.setActivityIndicator( true )
+timer.performWithDelay( 100,
+    function()
+        for i = 1, 1000 do
+            print( &quot;i = &quot; .. i )
+        end
+        native.setActivityIndicator( false )
+    end
+)</pre><p></p>
+<h2>2. I&#8217;m using Dynamic Scaling and don&#8217;t see native textField and textBox font sizes changing when I test on different devices.</h2>
+<p>When you specify the target screen size in <strong>config.lua</strong>, this allows display objects to scale depending on the native screen size of the device. The one exception is fonts used in native text fields. The fonts don&#8217;t automatically scale so the font size needs to be adjusted manually. You can determine the correct size by either reading the device type (using <strong>system.getInfo( &#8220;model&#8221; )</strong>) or reading the scaling factor of the device (<strong>display.contentScaleX</strong> and <strong>display.contentScaleY</strong>). For Android, we recently added some new <strong>system.getInfo</strong> API calls in our Daily builds that may help: <strong>&#8220;androidDisplayWidthInInches&#8221;</strong>, <strong>&#8220;androidDisplayHeightInInches&#8221;</strong>, <strong>&#8220;androidDisplayXDpi&#8221;</strong>, and <strong>&#8220;androidDisplayYDpi&#8221;</strong>.</p>
+<h2>3. My network.request calls are no longer working starting with build 1076. What happen?</h2>
+<p>Starting with build 1053 we added a default <strong>Content-Type</strong> field of &#8220;text/plain&#8221; for all platforms. This was done to be consistent among the platforms. Before build 1053 we relied on the OS to provide the <strong>Content-Type</strong> field if it was missing from the <strong>network.request</strong>. If your <strong>network.request</strong> contains a <strong>parms.bodyType</strong> equal to &#8220;binary&#8221;, or your <strong>parms.body</strong> contains a table (specifying filename), <strong>Content-Type</strong> will be set to &#8221; application/octet-stream&#8221;. If your <strong>network.request</strong> specifies a value for <strong>Content-Type</strong>, it will override the default value. In all other cases it will be set to &#8220;text/plain&#8221;.</p>
+<p></p><pre class="crayon-plain-tag">-- Example code to log in with username/password
+
+local function networkListener( event )
+    print( &quot;networkListener called&quot;, event.response )
+end
+
+local user = &quot;myName&quot;
+local password = &quot;abc&quot;
+
+local headers = {}
+headers[&quot;Content-Type&quot;] = &quot;application/x-www-form-urlencoded&quot;
+
+local body = &quot;login=&quot;..user..&quot;&amp;password=&quot;..password
+local params = {}
+params.headers = headers
+params.body = body
+-- go to http://requestb.in/ to set up an test page
+network.request(&quot;http://requestb.in/&quot;, &quot;POST&quot;, networkListener, params )</pre><p></p>
+<h2>4. Display.save now shows a white background in the saved image. The background use to be black.</h2>
+<p>We had a blending issue with <strong>display.save</strong> captures and it was fixed by making the background full alpha behind the objects being saved. This changed occurred in build 1079. If you are saving a group, the background will be transparent, which is undefined. Before 1079 we made the background black, which was causing problems for some users. Now the transparent areas may show up as either black or white when saving to a .JPEG file. If you save it to a .PNG file (which <strong>display.save</strong> now supports), the background will be transparent and take on the existing background when displayed.</p>
+<p>Specifying a .PNG file in <strong>display.save</strong> is one solution to the problem when saving a group. The other is creating a black <strong>display.newRect</strong> the size of your group and filling it with black and inserting it behind all your other group objects. You do this before calling <strong>display.save</strong> and remove the newRect object afterwards.</p>
+<h2>5. I&#8217;m using the released version of Corona SDK and seeing bugs in Widgets. What can I do?</h2>
+<p>The good news is we decided to open-source our Widgets 2.0 library. We have put the library up on <a href=https://github.com/coronalabs/>GitHub</a> that you can include in your own project. This is the same code we include in our Daily Builds and our plan is to keep both in sync. This means Starters, who don&#8217;t have access to our Daily Builds, can still use the latest Widget library. If you do find a Widget bug, please submit a bug report and a small test project demonstrating the bug. In the report please mention the Corona build you&#8217;re using and which version of the Widget library you&#8217;re reporting. Get more information <a href=http://forums.coronalabs.com/topic/34183-widgets-20-open-source/?hl=github>here</a></p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/04/24/faq-wednesday-miscellaneous-questions/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQs: Corona Bug Reports</title>
+		<link>/blog/2013/03/27/wednesday-faq-corona-bug-reports/</link>
+		<comments>/blog/2013/03/27/wednesday-faq-corona-bug-reports/#comments</comments>
+		<pubDate>Wed, 27 Mar 2013 17:50:47 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=30719</guid>
+		<description><![CDATA[It's Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about submitting Corona Bug Reports.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignleft size-full wp-image-28552" /><br />
+It&#8217;s Wednesday and time for another frequently asked questions (FAQs) session. Here are some FAQs about submitting Corona Bug Reports.</p>
+<h2>1. The Corona Simulator not longer works, please fix it!</h2>
+<p>That was an actual bug report we received with no other information about the problem. We do like to know about bugs and try to fix them, but you need to supply information to help us do that. At the very minimum, we need the following items in your bug report:</p>
+<ul>
+<li>What platform are you having the problem on: Mac simulator, Windows, simulator, iOS, Android?</li>
+<li>If it&#8217;s failing only on a device, which ones have you tested and what version of the OS is it using?</li>
+<li>What Corona build are you using? If it&#8217;s a Daily Build, does it work with the Release Build? What build did it stop working on?</li>
+<li>Steps to reproduce the problem</li>
+<li>Project code to demonstrate the problem</li>
+</ul>
+<p>If your project is failing when doing a build or installing on a device, try building and installing one of the Corona sample projects (e.g., HelloWorld). That will tell you if your system is set up to build and install your app.</p>
+<p>When you&#8217;re filing a bug report, please think about what you would need to troubleshoot the problem if you were assigned this bug.</p>
+<p>You will see the <a href=http://developer.coronalabs.com/content/bug-submission>&#8220;Report A Bug&#8221;</a> link at the top of the Corona website when you&#8217;re logged in. Please fill out the entire form and add any additional information to help reproduce your bug.</p>
+<h2>2. I posted my bug in the forums, so why do I need to submit a bug report?</h2>
+<p>A lot of bugs get posted in the Corona forums, and that&#8217;s a good thing. It makes users aware of the possible problem and others can help confirm the bug. We do monitor the forums and respond to reports, but just because we responded in the forums, doesn&#8217;t mean the bug is in our system to be fixed. You need to file a formal bug report with the information listed above. This adds it to our bug tracking system and allows us to assign a priority to the bug and route it to engineering for a fix. It also assigns a case number that can be used to track the bug.</p>
+<h2>3. My bug was rejected because I didn&#8217;t supply test code. Why?</h2>
+<p>We need test code in order to verify the bug. Just describing what you&#8217;re doing in your code is generally not enough. In many cases it&#8217;s the combination of all the code files and assets that factor into the bug. We have tried to reproduce many bug cases with only a code snippet and find that there wasn&#8217;t enough information to show the problem.</p>
+<p>Supplying test code also helps us verify and assign your case faster. If there is a complete test project that we can run, it will be evaluated as soon as possible. Cases that require creating a new project with your code snippet, may be pushed aside until later.</p>
+<h2>4. My bug was rejected because I only supplied a main.lua file. Why?</h2>
+<p>Many cases come in with just a <strong>main.lua</strong> file attached. Sometimes this is enough to reproduce the problem but in many cases it&#8217;s not. I remember one case where only the <strong>main.lua</strong> file was supplied. I created a new project using the file and couldn&#8217;t reproduce the bug. It turned out that the bug only occurred in landscape mode. If they had supplied a complete set of project files, I would have seen the problem and saved time.</p>
+<p>Sometimes you don&#8217;t know the exact cause of the problem so supplying an entire test project that demonstrates the issue, will help us confirm the bug and get it assigned to be fixed sooner.</p>
+<h2>5. My project is too big to submit, what can I do?</h2>
+<p>As mentioned in Question 4, we want project code that demonstrates the problem, but we don&#8217;t want your complete project. The reason is it takes to much time to go through the code and try to understand what it&#8217;s doing. Not all problems you encounter in your development will be Corona bugs so you need to debug and isolate problems you&#8217;re seeing. If in that process you find a bug, and know that it&#8217;s not something you&#8217;re doing wrong in your code, please try to create a short test case that demonstrates the problem. You can then zip up that project (with all its support files and assets) and attach it to the bug report.</p>
+<p>We&#8217;ve had some users send us their complete project code and ask us to debug it for them. We don&#8217;t have the resources nor the time to do that and can only address bug reports where someone has taken the time to isolate and identify a Corona problem.</p>
+<h2>6 Why does the simulator crash when I run my app?</h2>
+<p>Simulator crashes occur with uncaught errors in the project code. We place a high priority on fixing errors that cause the simulators to crash, but sometimes there are errors in the project code that will crash the simulator.</p>
+<p>If you&#8217;re running the Mac simulator, it will generate a &#8220;crash log.&#8221; Many users have sent us these crash logs after getting the crash. The crash logs give us an idea where the problem is, but don&#8217;t help us find and fix the cause of the crash.</p>
+<p>To help solve this bug, we really need a small test project that can reproduce the simulator crash along with the steps to reproduce it.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed them and even learned a few things.</p>
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/03/27/wednesday-faq-corona-bug-reports/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Wednesday FAQ: Runtime Error Listener</title>
+		<link>/blog/2013/03/13/wednesday-faq-runtime-error-listener/</link>
+		<pubDate>Wed, 13 Mar 2013 19:25:38 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[corona]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[runtime]]></category>
+
+		<guid isPermaLink="false">http://blog.coronalabs.com/?p=30020</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQs) about the new runtime error handler and about Android permissions.]]></description>
+				<content:encoded><![CDATA[<p><img src="/wordpress/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignleft size-full wp-image-28552" />It&#8217;s Wednesday and time for another FAQ session. Here are some frequently asked questions (FAQs) about the new runtime error handler and about Android permissions.</p>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/03/FAQ24_screen1-281x300.png" alt="FAQ Runtime Popup" class="alignright size-medium wp-image-30026" /></p>
+<h2>1. What about the Runtime Error Message Popup on current Daily Builds?</h2>
+<p>Starting with Build 1030 on Android and Build 1047 for all other platforms, runtime errors will now generate a popup message box showing the error along with the file and line number (if it&#8217;s a debug build). The error information is still displayed in the console, but you don&#8217;t need a console/terminal window open to know that an error occurred. Starting with Build 1047, you can include a runtime listener in your code to trap the error and suppress the runtime popup message (if desired).</p>
+<p>The runtime message box occurs by default on all platforms, including both the Mac and Windows Simulators.</p>
+<h2>2. How do I implement a Lua Runtime Error Listener?</h2>
+<p>The following code shows how to implement the runtime listener (&#8220;unhandledError&#8221;). If you run the code in the Corona Simulator or on a device, you will see the error caused by concatenating a nil value with a string in the print statement.</p>
+<p></p><pre class="crayon-plain-tag">local releaseBuild = true   -- Set to true to suppress popup message
+
+-- Error handler
+local function myUnhandledErrorListener( event )
+
+    if releaseBuild then
+        print( &quot;Handling the unhandled error &gt;&gt;&gt;\n&quot;, event.errorMessage )
+        display.newText( &quot;&gt;&gt;&gt; ERROR OCCURRED &lt;&lt;&lt;&quot;, 30, 1, native.systemFont, 18 )
+    else
+        print( &quot;Not handling the unhandled error &gt;&gt;&gt;\n&quot;, event.errorMessage )
+    end
+    
+    return releaseBuild
+end
+
+Runtime:addEventListener(&quot;unhandledError&quot;, myUnhandledErrorListener)
+
+-- Displays text message in center of screen
+txtMsg1 = display.newText( &quot;Runtime Error Test Code&quot;, 55, 200, &quot;Verdana-Bold&quot;, 14 )
+
+print( &quot;ABC&quot; .. nil )  -- &lt;&lt;&lt;&lt; Lua error here</pre><p></p>
+<p><img src="http://blog.coronalabs.com/wp-content/uploads/2013/03/FAQ24_screen2-146x300.png" alt="Runtime error with Popup" class="alignright size-medium wp-image-30027" /></p>
+<p>If you return <strong>false</strong> from the listener (the default value), the popup message box occurs when the listener function exits. Returning <strong>true</strong> indicates that the listener function handled the runtime error and the popup message is suppressed. In the above code, the <strong>releaseBuild</strong> variable determines if the popup message is displayed or not.</p>
+<h2>3. What is the best practices for the Runtime Error Listener?</h2>
+<p>The intent of adding the runtime popup message and the runtime error listener is to give the developer more tools to get there code running and to track down errors. If you build for debug (<strong>developer</strong> mode on iOS or using the <strong>debug</strong> key on Android), any runtime errors include the file name and line number where the error occurred. It also includes a message about the error. Normally, this information is included in the popup message box. If you add the runtime listener and suppress the popup, you still have access to the error information through the event table passed to the listener and in the console/terminal.</p>
+<p>In production release, only the error type is available. You can implement the runtime listener and use it to suppress the error popup and log the errors internally. What you do with this error log is up to you. You can ignore it or create a log file that is sent to your own server to track problems. One of the advantages of allowing popup errors to occur, is that it sends the information back to Google Play, which makes the information available to the developer. If you suppress the popup, the information will be lost unless you log and send it to your own server.</p>
+<p>You may want to allow the runtime popups during your debug and testing phases and suppress the popup when you deliver your app to the app store.</p>
+<p>One thing that I mentioned in a previous FAQ, ignoring errors is not the best practice. Runtime errors will alter the code path and may cause the app to become unstable. You should always test your app on as many devices as possible and eliminate or trap (using <strong>pcall</strong>) any errors found.</p>
+<h2>4. I&#8217;m using the Runtime Listener but I&#8217;m still getting the Runtime Error popup.</h2>
+<p>If you implemented the runtime error listener in your code that suppresses the error popup and you&#8217;re still getting the popup, you may have an error occurring before the runtime listener starts. As shown in the above example code, the runtime listener function was the first thing defined in the code. The key is enabling the runtime listener as soon as possible so it can trap the errors. Errors that occur before the runtime error listener has been enabled, will generate the popup message. Generally, errors that occur on startup are easy to fix and don&#8217;t require trapping. It&#8217;s the runtime errors that occur with touch events, collisions, etc., that occur while the app is running, that are the important ones to trap if you want to suppress the popup message to your users.</p>
+<h2>5. What about Android Permissions and runtime errors?</h2>
+<p>In Build 1030 we removed the default permissions in the Android Manifest so you are now responsible for adding back the permissions for APIs that require them. All the Daily Build sample code projects and the API pages have been updated to show the required permissions in the <strong>build.settings</strong> file.</p>
+<p>Generally, missing permissions will generate a runtime error with either a runtime popup or by calling the runtime &#8220;unHandledError&#8221; listener (if implemented). Missing permissions is something that should be tested and caught before releasing your app (see question 6).</p>
+<h2>6. Which Android Permissions won&#8217;t generate a runtime error?</h2>
+<p>Some API calls will fail silently if the proper permissions are not set in <strong>build.settings</strong> file. They are:</p>
+<ul>
+<li>display.capture</li>
+<li>display.captureBoard</li>
+<li>display.captureScreen</li>
+<li>media.newRecording</li>
+<li>media.newVideo</li>
+<li>media.save</li>
+<li>media.show</li>
+<li>native.webView</li>
+<li>native.newWebPopup</li>
+<li>heading( Compass) event</li>
+<li>location (GPS) event</li>
+</ul>
+<p>For the APIs listed above, you need to check the results to verify that the code works as expected. It&#8217;s a good idea to double check that you have set the proper permissions in the <strong>build.settings</strong> file for those APIs. For future builds we are looking at adding runtime checks for all APIs to insure they all have the proper permissions set.</p>
+<p>Check the <a href=https://developer.coronalabs.com/downloads/daily-builds>Daily Build Documents</a> for the correct Android permissions needed for each API.</p>
+<p>That&#8217;s it for today&#8217;s answers. I hope you enjoyed them and even learned a few things!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>FAQ Wednesday: Mac Simulator Updates</title>
+		<link>/blog/2013/01/30/faq-wednesday-mac-simulator-updates/</link>
+		<pubDate>Thu, 31 Jan 2013 03:53:00 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[simulator]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28827</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. This week it's not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.coronalabs.com/wp-content/uploads/2013/01/FAQ.png" alt="FAQ Icon" class="alignright size-full wp-image-28552" /><br />
+It&#8217;s Wednesday and time for another FAQ session. This week it&#8217;s not really an FAQ, but more of an update on recent Mac Simulator changes that are available in the Daily Builds.</p>
+<h2>1.  Loading the last project on simulator startup</h2>
+<p>In build #996, a new preference was added to the <strong>Preferences</strong> menu: &#8220;Automatically open last project&#8221;. This is convenient if you want the to reload the project you were working on when you last quit the simulator.<br />
+<img src="http://www.coronalabs.com/wp-content/uploads/2013/01/Build_1017_Preferences-300x249.png" alt="Corona Preference Window" class="alignright size-medium wp-image-28831" /></p>
+<h2>2. Reloading the last project</h2>
+<p>Both the Mac and Windows simulators had the ability to &#8220;Relaunch&#8221; the last project using <strong>Cmd R</strong> (<strong>Ctrl R</strong> on Windows), but that didn&#8217;t work in the Mac Simulator when the simulator was first started. As of build #1017, you can now start the simulator and press <strong>Cmd R</strong> to relaunch. You can also set the preference to always relaunch as mentioned in question 1.</p>
+<h2>3. Simulator now continues to run after a build</h2>
+<p>If you have built a project with the Mac Simulator, you no doubt have seen the giant &#8220;iOS spinner&#8221; on top of the device skin as the build was occurring. This continued after the build was done and was there to show you that the simulator was suspended. In build #996 the simulator still suspends the app during the build process, but now continues to run once the build is done. You can suspend the app in the simulator yourself by selecting <strong>Suspend</strong> from the <strong>Hardware</strong> menu or pressing <strong>Cmd downarrow</strong>.</p>
+<h2>4. Unicode characters in asset file names</h2>
+<p>As of build #1017 the Mac Simulator now supports Unicode in asset files names. This applies to image and sound files as well as subfolders. Note: Currently there is an issue using Unicode named files in Windows, which we are looking into.</p>
+<h2>5. Supporting iOS 6.1 builds</h2>
+<p>On January 28, Apple officially released iOS 6.1. We are installing the latest version on our build servers and it should be available in the next couple of days (check the <a href=http://developer.coronalabs.com/corona-daily-builds/summary>Daily Build summary</a> page). For the next few Daily Builds, we will still support building for the existing iOS 6.0 SDK as well as the new 6.1 SDK. Just select the proper <strong>iOS SDK</strong> from the pull-down menu in the build window.</p>
+<p>If you have some ideas on how to improve the simulator or some feature you would like to see added to Corona, please visit the <a href=http://feedback.coronalabs.com>Corona/ Feedback</a> page.</p>
+<p>That&#8217;s it for today&#8217;s questions. I hope you enjoyed it and even learned a few things.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Tutorial: Using Custom Fonts</title>
+		<link>/blog/2013/01/16/faq-wednesday-custom-fonts/</link>
+		<comments>/blog/2013/01/16/faq-wednesday-custom-fonts/#comments</comments>
+		<pubDate>Thu, 17 Jan 2013 07:14:19 +0000</pubDate>
+		<dc:creator><![CDATA[tom]]></dc:creator>
+				<category><![CDATA[FAQ]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[CoronaSDK]]></category>
+		<category><![CDATA[custom fonts]]></category>
+		<category><![CDATA[iOS]]></category>
+
+		<guid isPermaLink="false">http://www.coronalabs.com/?p=28549</guid>
+		<description><![CDATA[It's Wednesday and time for another FAQ session. Here are some frequently asked questions about using custom fonts in Corona.]]></description>
+				<content:encoded><![CDATA[<p><strong>NOTE:</strong> This tutorial is outdated and has been replaced by the <a href=http://docs.coronalabs.com/guide/system/customFont/index.html>Using Custom Fonts</a> guide.</p>
+<hr />
+]]></content:encoded>
+			<wfw:commentRss>/blog/2013/01/16/faq-wednesday-custom-fonts/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+		</item>
+	</channel>
+</rss>
